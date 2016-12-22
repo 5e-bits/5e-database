@@ -1,24 +1,96 @@
-[{
-	"index": 1,
-	"name": "Barbarian",
-	"flavor_text": "<p>For some, there is only rage. In the ways of their people, in the fury of their passion, in the howl of battle, conflict is all these brutal souls know. Savages, hired muscle, masters of vicious martial techniques, they are not soldiers or professional warriors—they are the battle possessed, creatures of slaughter and spirits of war. Known as barbarians, these warmongers know little of training, preparation, or the rules of warfare; for them, only the moment exists, with the foes that stand before them and the knowledge that the next moment might hold their death. They possess a sixth sense in regard to danger and the endurance to weather all that might entail. These brutal warriors might rise from all walks of life, both civilized and savage, though whole societies embracing such philosophies roam the wild places of the world. Within barbarians storms the primal spirit of battle, and woe to those who face their rage.</p>",
-	"hit_die": 12,
-	"proficiencies": "http://dnd5eapi.co/proficiencies/barbarian",
-	"starting_equipment": [
-		"http://dnd5eapi.co/api/weapons/18",
-		"http://dnd5eapi.co/api/weapons/4",
-		"http://dnd5eapi.co/api/weapons/4",
-		"http://dnd5eapi.co/api/weapons/3",
-		"http://dnd5eapi.co/api/weapons/3",
-		"http://dnd5eapi.co/api/weapons/3",
-		"http://dnd5eapi.co/api/weapons/3"
-	],
-	"class_table": "http://dnd5eapi.co/tables/barbarian",
-	"features": "http://dnd5epi.co/features/barbarian",
-	"subclasses": [{
-		"name": "Berserker",
-		"subclass_flavor": "Path",
-		"desc": "<p>For some barbarians, rage is a means to an end— that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker’s rage, you thrill in the chaos of battle, heedless of your own health or well-being.</p>"
-	}],
-	"url": "http://dnd5eapi.co/api/classes/1"
-}]
+[
+	{
+		"index": 1,
+		"name": "Barbarian",
+		"flavor_text": "<p>For some, there is only rage. In the ways of their people, in the fury of their passion, in the howl of battle, conflict is all these brutal souls know. Savages, hired muscle, masters of vicious martial techniques, they are not soldiers or professional warriors—they are the battle possessed, creatures of slaughter and spirits of war. Known as barbarians, these warmongers know little of training, preparation, or the rules of warfare; for them, only the moment exists, with the foes that stand before them and the knowledge that the next moment might hold their death. They possess a sixth sense in regard to danger and the endurance to weather all that might entail. These brutal warriors might rise from all walks of life, both civilized and savage, though whole societies embracing such philosophies roam the wild places of the world. Within barbarians storms the primal spirit of battle, and woe to those who face their rage.</p>",
+		"hit_die": 12,
+		"proficiencies": "http://dnd5eapi.co/proficiencies/barbarian",
+		"starting_equipment": [
+			[
+				["http://dnd5eapi.co/api/equipment/18",
+				"Any martial melee weapon"]
+			],
+			[
+				["http://dnd5eapi.co/api/equipment/4",
+				"http://dnd5eapi.co/api/equipment/4"],
+				["Any simple weapon"]
+			],
+			[
+				["http://dnd5eapi.co/api/equipment/5",
+				"http://dnd5eapi.co/api/equipment/5",
+				"http://dnd5eapi.co/api/equipment/5",
+				"http://dnd5eapi.co/api/equipment/5",
+				"Explorer's Pack"]
+			]
+		],
+		"class_table": "http://dnd5eapi.co/tables/barbarian",
+		"features": "http://dnd5epi.co/features/barbarian",
+		"subclasses": [{
+			"name": "Berserker",
+			"subclass_flavor": "Path",
+			"desc": "<p>For some barbarians, rage is a means to an end— that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker’s rage, you thrill in the chaos of battle, heedless of your own health or well-being.</p>"
+		}],
+		"url": "http://dnd5eapi.co/api/classes/1"
+	},
+	{
+		"index": 2,
+		"name": "Bard",
+		"flavor_text": "<p>Untold wonders and secrets exist for those skillful enough to discover them. Through cleverness, talent, and magic, these cunning few unravel the wiles of the world, becoming adept in the arts of persuasion, manipulation, and inspiration. Typically masters of one or many forms of artistry, bards possess an uncanny ability to know more than they should and use what they learn to keep themselves and their allies ever one step ahead of danger. Bards are quick-witted and captivating, and their skills might lead them down many paths, be they gamblers or jacks-of-all-trades, scholars or performers, leaders or scoundrels, or even all of the above. For bards, every day brings its own opportunities, adventures, and challenges, and only by bucking the odds, knowing the most, and being the best might they claim the treasures of each.</p>",
+		"hit_die": 8,
+		"proficiencies": "http://dnd5eapi.co/proficiencies/bard",
+		"starting_equipment": [
+			[
+				["http://dnd5eapi.co/api/equipment/26"],
+				["http://dnd5eapi.co/api/equipment/22"],
+				["Any simple weapon"]
+			],
+			[
+				["Diplomat's Pack"],
+				["Entertainer's Pack"]
+			],
+			[
+				["Lute"],
+				["Any other musical instrument"]
+			],
+			[
+				["http://dnd5eapi.co/api/equipment/39",
+				"http://dnd5eapi.co/api/equipment/2"]
+			]
+		],
+		"class_table": "http://dnd5eapi.co/tables/bard",
+		"features": "http://dnd5epi.co/features/bard",
+		"subclasses": [{
+			"name": "Lore",
+			"subclass_flavor": "College",
+			"desc": "<p>Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales. Whether singing folk ballads in taverns or elaborate compositions in royal courts, these bards use their gifts to hold audiences spellbound. When the applause dies down, the audience members might find themselves questioning everything they held to be true, from their faith in the priesthood of the local temple to their loyalty to the king. The loyalty of these bards lies in the pursuit of beauty and truth, not in fealty to a monarch or following the tenets of a deity. A noble who keeps such a bard as a herald or advisor knows that the bard would rather be honest than politic. The college's members gather in libraries and sometimes in actual colleges, complete with classrooms and dormitories, to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority.</p>"
+		}],
+		"spellcasting": [
+			{
+				"name": "Cantrips",
+				"desc": "<p>You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Bard table.</p>"
+			},
+			{
+				"name": "Spell Slots",
+				"desc": "<p>The Bard table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest. </p><p>For example, if you know the 1st-level spell cure wounds and have a 1st-level and a 2nd-level spell slot available, you can cast cure wounds using either slot.</p>"
+			},
+			{
+				"name": "Spells Known of 1st Level and Higher",
+				"desc": "<p>You know four 1st-level spells of your choice from the bard spell list. </p><p>The Spells Known column of the Bard table shows when you learn more bard spells of your choice. </p><p>Each of these spells must be of a level for which you have spell slots, as shown on the table. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level. </p><p>Additionally, when you gain a level in this class, you can choose one of the bard spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have spell slots. </p>"
+			},
+			{
+				"name": "Spellcasting Ability",
+				"desc": "<p>Charisma is your spellcasting ability for your bard spells. Your magic comes from the heart and soul you pour into the performance of your music or oration. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one. </p><p>Spell save DC = 8 + your proficiency bonus + your Charisma modifier. </p><p>Spell attack modifier = your proficiency bonus + your Charisma modifier. </p>"
+			},
+			{
+				"name": "Ritual Casting",
+				"desc": "<p><You can cast any bard spell you know as a ritual if that spell has the ritual tag./p>"
+			},
+			{
+				"name": "Spellcasting Focus",
+				"desc": "<p>You can use a musical instrument (see Equipment) as a spellcasting focus for your bard spells.</p>"
+			}
+		],
+		"spellcasting_ability": "CHA",
+		"url": "http://dnd5eapi.co/api/classes/2"
+	}
+]
