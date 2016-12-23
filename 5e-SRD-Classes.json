@@ -31,6 +31,9 @@
 		}],
 		"spellcasting": [
 			{
+				"level": 1
+			},
+			{
 				"name": "Cantrips",
 				"desc": "<p>You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Bard table.</p>"
 			},
@@ -48,7 +51,7 @@
 			},
 			{
 				"name": "Ritual Casting",
-				"desc": "<p><You can cast any bard spell you know as a ritual if that spell has the ritual tag./p>"
+				"desc": "<p>You can cast any bard spell you know as a ritual if that spell has the ritual tag.</p>"
 			},
 			{
 				"name": "Spellcasting Focus",
@@ -57,5 +60,83 @@
 		],
 		"spellcasting_ability": "CHA",
 		"url": "http://dnd5eapi.co/api/classes/2"
+	},
+	{
+		"index": 3,
+		"name": "Cleric",
+		"flavor_text": "<p>In faith and the miracles of the divine, many find a greater purpose. Called to serve powers beyond most mortal understanding, all priests preach wonders and provide for the spiritual needs of their people. Clerics are more than mere priests, though; these emissaries of the divine work the will of their deities through strength of arms and the magic of their gods. Devoted to the tenets of the religions and philosophies that inspire them, these ecclesiastics quest to spread the knowledge and influence of their faith. Yet while they might share similar abilities, clerics prove as different from one another as the divinities they serve, with some offering healing and redemption, others judging law and truth, and still others spreading conflict and corruption. The ways of the cleric are varied, yet all who tread these paths walk with the mightiest of allies and bear the arms of the gods themselves.</p>",
+		"hit_die": 8,
+		"proficiencies": "http://dnd5eapi.co/proficiencies/cleric",
+		"starting_equipment": "http://dnd5eapi.co/startingequipment/cleric",
+		"class_table": "http://dnd5eapi.co/tables/cleric",
+		"features": "http://dnd5epi.co/features/cleric",
+		"subclasses": [{
+			"name": "Life",
+			"subclass_flavor": "Domain",
+			"desc": "<p>BThe Life domain focuses on the vibrant positive energy—one of the fundamental forces of the universe—that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities, sun gods, gods of healing or endurance, and gods of home and community.</p>",
+			"spells": [
+				{
+					"level": 1,
+					"spells": [
+						"http://dnd5eapi.co/api/spells/28",
+						"http://dnd5eapi.co/api/spells/66"
+					]
+				},
+				{
+					"level": 3,
+					"spells": [
+						"http://dnd5eapi.co/api/spells/167",
+						"http://dnd5eapi.co/api/spells/265"
+					]
+				},
+				{
+					"level": 5,
+					"spells": [
+						"http://dnd5eapi.co/api/spells/24",
+						"http://dnd5eapi.co/api/spells/236"
+					]
+				},
+				{
+					"level": 7,
+					"spells": [
+						"http://dnd5eapi.co/api/spells/71"
+					]
+				},
+				{
+					"level": 9,
+					"spells": [
+						"http://dnd5eapi.co/api/spells/184",
+						"http://dnd5eapi.co/api/spells/226"
+					]
+				}
+			]
+		}],
+		"spellcasting": [
+			{
+				"level": 1
+			},
+			{
+				"name": "Cantrips",
+				"desc": "<p>At 1st level, you know three cantrips of your choice from the cleric spell list. You learn additional cleric cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Cleric table.</p>"
+			},
+			{
+				"name": "Preparing and Casting Spells",
+				"desc": "<p>The Cleric table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p><p>You prepare the list of cleric spells that are available for you to cast, choosing from the cleric spell list. When you do so, choose a number of cleric spells equal to your Wisdom modifier + your cleric level (minimum of one spell). The spells must be of a level for which you have spell slots.</p><p>For example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.</p><p>You can change your list of prepared spells when you finish a long rest. Preparing a new list of cleric spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.</p>"
+			},
+			{
+				"name": "Spellcasting Ability",
+				"desc": "<p>Wisdom is your spellcasting ability for your cleric spells. The power of your spells comes from your devotion to your deity. You use your Wisdom whenever a cleric spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.</p><p>Spell save DC = 8 + your proficiency bonus + your Wisdom modifier</p><p>Spell attack modifier = your proficiency bonus + your Wisdom modifier</p>"
+			},
+			{
+				"name": "Ritual Casting",
+				"desc": "<p>You can cast a cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared.</p>"
+			},
+			{
+				"name": "Spellcasting Focus",
+				"desc": "<p>You can use a holy symbol (see Equipment) as a spellcasting focus for your cleric spells.</p>"
+			}
+		],
+		"spellcasting_ability": "WIS",
+		"url": "http://dnd5eapi.co/api/classes/3"
 	}
 ]
