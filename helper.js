@@ -10,7 +10,7 @@ function create_upload_file(datatype_string) {
 
 		let keys = Object.keys(data);
 
-		// number the indexes
+		// number the indexes and change the URLs
 		for(let i = 0; i < data.length; i++) {
 			data[i].index = i + 1;
 			data[i].url = "http://dnd5eapi.co/api/" + datatype_string + "/"+ (i + 1).toString();
@@ -31,10 +31,10 @@ function create_upload_file(datatype_string) {
 
 }
 
-create_upload_file('spells');
-
-for (let i = 0; i < all_data_types.length; i++) {
-	create_upload_file(all_data_types[i]);
+function create_all_upload_files() {
+	for (let i = 0; i < all_data_types.length; i++) {
+		create_upload_file(all_data_types[i]);
+	}
 }
 
 // mongoimport -h ds133158.mlab.com:33158 -d 5e-srd-api -c classfeatures -u admin -p password --file upload-5e-SRD-classfeatures.json --jsonArray
