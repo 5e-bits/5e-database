@@ -2,60 +2,440 @@
     {
         "index": 1,
         "class": "Barbarian",
+		"sets": 4,
         "equipment": [
-			[["http://dnd5eapi.co/api/equipment/18"],
-				["Any martial melee weapon"]],
-			[["http://dnd5eapi.co/api/equipment/4",
-				"http://dnd5eapi.co/api/equipment/4"],
-				["Any simple weapon"]],
-			[["http://dnd5eapi.co/api/equipment/5",
-				"http://dnd5eapi.co/api/equipment/5",
-				"http://dnd5eapi.co/api/equipment/5",
-				"http://dnd5eapi.co/api/equipment/5",
-				"Explorer's Pack"]]
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/18", "quantity": 1}
+				],
+				[
+					{"item": "Any martial melee weapon", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/4", "quantity": 2}
+				],
+				[
+					{"item": "Any simple weapon", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/5", "quantity": 4},
+					{"item": "Explorer's Pack", "quantity": 1}
+				]
+			]
 		]
-    },{
+    },
+	{
         "index": 2,
         "class": "Bard",
+		"sets": 4,
         "equipment": [
-			[["http://dnd5eapi.co/api/equipment/26"],
-				["http://dnd5eapi.co/api/equipment/22"],
-				["Any simple weapon"]],
-			[["Diplomat's Pack"],
-				["Entertainer's Pack"]],
-			[["Lute"],
-				["Any other musical instrument"]],
-			[["http://dnd5eapi.co/api/equipment/39",
-				"http://dnd5eapi.co/api/equipment/2"]]
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/26", "quantity": 1}
+				],
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/22", "quantity": 1}
+				],
+				[
+					{"item": "Any simple weapon", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "Diplomat's Pack", "quantity": 1}
+				],
+				[
+					{"item": "Entertainer's Pack", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "Lute", "quantity": 1}
+				],
+				[
+					{"item": "Any other musical instrument", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/39", "quantity": 1},
+					{"item": "http://dnd5eapi.co/api/equipment/2", "quantity": 1}
+				]
+			]
 		]
-    },{
+    },
+	{
         "index": 3,
         "class": "Cleric",
+		"sets": 5,
         "equipment": [
-			[["http://dnd5eapi.co/api/equipment/7"],
-				["http://dnd5eapi.co/api/equipment/31"]],
-			[["http://dnd5eapi.co/api/equipment/43"],
-				["http://dnd5eapi.co/api/equipment/39"],
-				["http://dnd5eapi.co/api/equipment/47"]],
-			[["http://dnd5eapi.co/api/equipment/11",
-				"20 Bolts"],
-				["Any simple weapon"]],
-			[["Priest's Pack"],
-				["Explorer's Pack"]],
-			[["http://dnd5eapi.co/api/equipment/50",
-				"Holy Symbol"]]
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/7", "quantity": 1}
+				],
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/31", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/43", "quantity": 1}
+				],
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/39", "quantity": 1}
+				],
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/47", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/11", "quantity": 1},
+					{"item": "Bolts", "quantity": 20}
+				],
+				[
+					{"item": "Any simple weapon", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "Priest's Pack", "quantity": 1}
+				],
+				[
+					{"item": "Explorer's Pack", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/50", "quantity": 1},
+					{"item": "Holy Symbol", "quantity": 1}
+				]
+			]
 		]
-    },{
+    },
+	{
         "index": 4,
         "class": "Druid",
+		"sets": 3,
         "equipment": [
-			[["http://dnd5eapi.co/api/equipment/50"],
-				["Any simple weapon"]],
-			[["http://dnd5eapi.co/api/equipment/27"],
-				["Any simple melee weapon"]],
-			[["http://dnd5eapi.co/api/equipment/39",
-				"Explorer's Pack",
-				"Druidic Focus"]
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/50", "quantity": 1}
+				],
+				[
+					{"item": "Any simple weapon", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/27", "quantity": 1}
+				],
+				[
+					{"item": "Any simple melee weapon", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/39", "quantity": 1},
+					{"item": "Explorer's Pack", "quantity": 1},
+					{"item": "Holy Symbol", "quantity": 1}
+				]
+			]
+		]
+    },
+	{
+        "index": 5,
+        "class": "Fighter",
+		"sets": 4,
+        "equipment": [
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/47", "quantity": 1}
+				],
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/39", "quantity": 1},
+					{"item": "http://dnd5eapi.co/api/equipment/36", "quantity": 1},
+					{"item": "Arrow", "quantity": 20}
+				]
+			],
+			[
+				[
+					{"item": "Any martial weapon", "quantity": 1},
+					{"item": "http://dnd5eapi.co/api/equipment/50", "quantity": 1}
+				],
+				[
+					{"item": "Any martial weapon", "quantity": 2}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/11", "quantity": 1},
+					{"item": "Bolt", "quantity": 20}
+				],
+                [
+					{"item": "http://dnd5eapi.co/api/equipment/4", "quantity": 2}
+                ]
+			],
+			[
+				[
+					{"item": "Dungeoneer's Pack", "quantity": 1},
+					{"item": "Explorer's Pack", "quantity": 1}
+				]
+			]
+		]
+    },
+	{
+        "index": 6,
+        "class": "Monk",
+		"sets": 3,
+        "equipment": [
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/28", "quantity": 1}
+				],
+				[
+					{"item": "Any simple weapon", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "Dungeoneer's Pack", "quantity": 1},
+					{"item": "Explorer's Pack", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/12", "quantity": 10}
+				]
+			]
+		]
+    },
+	{
+        "index": 7,
+        "class": "Paladin",
+		"sets": 4,
+        "equipment": [
+			[
+				[
+					{"item": "Any martial weapon", "quantity": 1},
+					{"item": "http://dnd5eapi.co/api/equipment/50", "quantity": 1}
+				],
+				[
+					{"item": "Any martial weapon", "quantity": 2}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/5", "quantity": 5}
+				],
+				[
+					{"item": "Any simple melee weapon", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "Priest's Pack", "quantity": 1}
+				],
+				[
+					{"item": "Explorer's Pack", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/47", "quantity": 1},
+					{"item": "Holy Symbol", "quantity": 1}
+				]
+			]
+		]
+    },
+	{
+        "index": 8,
+        "class": "Ranger",
+		"sets": 4,
+        "equipment": [
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/43", "quantity": 1}
+				],
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/39", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/28", "quantity": 2}
+				],
+				[
+					{"item": "Any simple melee weapon", "quantity": 2}
+				]
+			],
+			[
+				[
+					{"item": "Dungeoneer's Pack", "quantity": 1}
+				],
+				[
+					{"item": "Explorer's Pack", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/36", "quantity": 1},
+					{"item": "Arrow", "quantity": 20}
+				]
+			]
+		]
+    },
+	{
+        "index": 9,
+        "class": "Rogue",
+		"sets": 4,
+        "equipment": [
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/26", "quantity": 1}
+				],
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/28", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/13", "quantity": 1}
+				],
+				[
+					{"item": "Arrow", "quantity": 20}
+				]
+			],
+			[
+				[
+					{"item": "Burglar's Pack", "quantity": 1}
+				],
+				[
+					{"item": "Dungeoneer's Pack", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/39", "quantity": 1},
+					{"item": "http://dnd5eapi.co/api/equipment/2", "quantity": 2},
+					{"item": "Thieves' Tools", "quantity": 1}
+				]
+			]
+		]
+    },
+	{
+        "index": 10,
+        "class": "Sorcerer",
+		"sets": 4,
+        "equipment": [
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/11", "quantity": 1},
+					{"item": "Bolt", "quantity": 20}
+				],
+				[
+					{"item": "Any simple weapon", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "Component Pouch", "quantity": 1}
+				],
+				[
+					{"item": "Arcane Focus", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "Dungeoneer's Pack", "quantity": 1}
+				],
+				[
+					{"item": "Explorer's Pack", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/2", "quantity": 2}
+				]
+			]
+		]
+    },
+	{
+        "index": 11,
+        "class": "Warlock",
+		"sets": 4,
+        "equipment": [
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/11", "quantity": 1},
+					{"item": "Bolt", "quantity": 20}
+				],
+				[
+					{"item": "Any simple weapon", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "Component Pouch", "quantity": 1}
+				],
+				[
+					{"item": "Arcane Focus", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "Scholar's Pack", "quantity": 1}
+				],
+				[
+					{"item": "Dungeoneer's Pack", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/39", "quantity": 2},
+					{"item": "Any simple weapon", "quantity": 2},
+					{"item": "http://dnd5eapi.co/api/equipment/2", "quantity": 2}
+				]
+			]
+		]
+    },
+	{
+        "index": 12,
+        "class": "Wizard",
+		"sets": 4,
+        "equipment": [
+			[
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/8", "quantity": 1}
+				],
+				[
+					{"item": "http://dnd5eapi.co/api/equipment/2", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "Component Pouch", "quantity": 1}
+				],
+				[
+					{"item": "Arcane Focus", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "Scholar's Pack", "quantity": 1}
+				],
+				[
+					{"item": "Explorer's Pack", "quantity": 1}
+				]
+			],
+			[
+				[
+					{"item": "Spellbook", "quantity": 1}
+				]
 			]
 		]
     }
