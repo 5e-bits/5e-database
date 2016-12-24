@@ -44,6 +44,9 @@ function create_all_upload_files() {
 	}
 }
 
-create_upload_file('spellcasting');
+const args = process.argv;
+let data_type = args[2]
+
+create_upload_file(data_type);
 
 // mongoimport -h ds133158.mlab.com:33158 -d 5e-srd-api -c classfeatures -u admin -p password --file upload-5e-SRD-classfeatures.json --jsonArray
