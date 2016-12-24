@@ -1,0 +1,306 @@
+[
+    {
+        "index": 0,
+        "class": "Barbarian",
+        "name": "Berserker",
+        "subclass_flavor": "Path",
+        "desc": ["For some barbarians, rage is a means to an end— that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker’s rage, you thrill in the chaos of battle, heedless of your own health or well-being."],
+        "features": "http://dnd5epi.co/api/features/barbarian/?subclass=Berserker",
+        "spells": []
+    },
+    {
+        "index": 0,
+        "class": "Bard",
+        "name": "Lore",
+        "subclass_flavor": "College",
+        "desc": ["Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales. Whether singing folk ballads in taverns or elaborate compositions in royal courts, these bards use their gifts to hold audiences spellbound. When the applause dies down, the audience members might find themselves questioning everything they held to be true, from their faith in the priesthood of the local temple to their loyalty to the king. The loyalty of these bards lies in the pursuit of beauty and truth, not in fealty to a monarch or following the tenets of a deity. A noble who keeps such a bard as a herald or advisor knows that the bard would rather be honest than politic. The college's members gather in libraries and sometimes in actual colleges, complete with classrooms and dormitories, to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority."],
+        "features": "http://dnd5epi.co/api/features/bard/?subclass=Lore",
+        "spells": []
+    },
+    {
+        "index": 0,
+        "class": "Cleric",
+        "name": "Domain",
+        "subclass_flavor": "Domain",
+        "desc": ["The Life domain focuses on the vibrant positive energy—one of the fundamental forces of the universe—that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities, sun gods, gods of healing or endurance, and gods of home and community."],
+        "features": "http://dnd5epi.co/api/features/cleric/?subclass=Life",
+        "spells": [
+				{
+					"level": 1,
+					"spells": [
+						"http://dnd5eapi.co/api/spells/28",
+						"http://dnd5eapi.co/api/spells/66"
+					]
+				},
+				{
+					"level": 3,
+					"spells": [
+						"http://dnd5eapi.co/api/spells/167",
+						"http://dnd5eapi.co/api/spells/265"
+					]
+				},
+				{
+					"level": 5,
+					"spells": [
+						"http://dnd5eapi.co/api/spells/24",
+						"http://dnd5eapi.co/api/spells/236"
+					]
+				},
+				{
+					"level": 7,
+					"spells": [
+						"http://dnd5eapi.co/api/spells/71"
+					]
+				},
+				{
+					"level": 9,
+					"spells": [
+						"http://dnd5eapi.co/api/spells/184",
+						"http://dnd5eapi.co/api/spells/226"
+					]
+				}
+			]
+    },
+    {
+        "index": 0,
+        "class": "Druid",
+        "name": "Land",
+        "subclass_flavor": "Circle",
+        "desc": ["The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle’s wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle’s mysterious rites."],
+        "features": "http://dnd5epi.co/api/features/druid/?subclass=Land",
+        "spells": [
+                    {
+                        "land": "Arctic",
+                        "spells": [
+                            {
+                                "level": 3,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/151",
+                                    "http://dnd5eapi.co/api/spells/263"
+                                ]
+                            },
+                            {
+                                "level": 5,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/257",
+                                    "http://dnd5eapi.co/api/spells/258"
+                                ]
+                            },
+                            {
+                                "level": 7,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/123",
+                                    "http://dnd5eapi.co/api/spells/154"
+                                ]
+                            },
+                            {
+                                "level": 9,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/46",
+                                    "http://dnd5eapi.co/api/spells/48"
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "Coast",
+                        "spells": [
+                            {
+                                "level": 3,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/196",
+                                    "http://dnd5eapi.co/api/spells/198"
+                                ]
+                            },
+                            {
+                                "level": 5,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/297",
+                                    "http://dnd5eapi.co/api/spells/298"
+                                ]
+                            },
+                            {
+                                "level": 7,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/60",
+                                    "http://dnd5eapi.co/api/spells/123"
+                                ]
+                            },
+                            {
+                                "level": 9,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/52",
+                                    "http://dnd5eapi.co/api/spells/241"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Desert",
+                        "spells": [
+                            {
+                                "level": 3,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/32",
+                                    "http://dnd5eapi.co/api/spells/253"
+                                ]
+                            },
+                            {
+                                "level": 5,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/62",
+                                    "http://dnd5eapi.co/api/spells/222"
+                                ]
+                            },
+                            {
+                                "level": 7,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/29",
+                                    "http://dnd5eapi.co/api/spells/141"
+                                ]
+                            },
+                            {
+                                "level": 9,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/160",
+                                    "http://dnd5eapi.co/api/spells/294"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Forest",
+                        "spells": [
+                            {
+                                "level": 3,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/23",
+                                    "http://dnd5eapi.co/api/spells/262"
+                                ]
+                            },
+                            {
+                                "level": 5,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/34",
+                                    "http://dnd5eapi.co/api/spells/210"
+                                ]
+                            },
+                            {
+                                "level": 7,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/83",
+                                    "http://dnd5eapi.co/api/spells/123"
+                                ]
+                            },
+                            {
+                                "level": 9,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/46",
+                                    "http://dnd5eapi.co/api/spells/284"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Grassland",
+                        "spells": [
+                            {
+                                "level": 3,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/162",
+                                    "http://dnd5eapi.co/api/spells/203"
+                                ]
+                            },
+                            {
+                                "level": 5,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/70",
+                                    "http://dnd5eapi.co/api/spells/143"
+                                ]
+                            },
+                            {
+                                "level": 7,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/83",
+                                    "http://dnd5eapi.co/api/spells/123"
+                                ]
+                            },
+                            {
+                                "level": 9,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/89",
+                                    "http://dnd5eapi.co/api/spells/160"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Mountain",
+                        "spells": [
+                            {
+                                "level": 3,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/262",
+                                    "http://dnd5eapi.co/api/spells/263"
+                                ]
+                            },
+                            {
+                                "level": 5,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/170",
+                                    "http://dnd5eapi.co/api/spells/189"
+                                ]
+                            },
+                            {
+                                "level": 7,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/267",
+                                    "http://dnd5eapi.co/api/spells/268"
+                                ]
+                            },
+                            {
+                                "level": 9,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/204",
+                                    "http://dnd5eapi.co/api/spells/294"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Swamp",
+                        "spells": [
+                            {
+                                "level": 3,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/1",
+                                    "http://dnd5eapi.co/api/spells/68"
+                                ]
+                            },
+                            {
+                                "level": 5,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/298",
+                                    "http://dnd5eapi.co/api/spells/266"
+                                ]
+                            },
+                            {
+                                "level": 7,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/123",
+                                    "http://dnd5eapi.co/api/spells/172"
+                                ]
+                            },
+                            {
+                                "level": 9,
+                                "spells": [
+                                    "http://dnd5eapi.co/api/spells/160",
+                                    "http://dnd5eapi.co/api/spells/241"
+                                ]
+                            }
+                        ]
+                    }
+        ]
+    }
+    
+]

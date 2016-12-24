@@ -13,7 +13,14 @@ function create_upload_file(datatype_string) {
 		// number the indexes and change the URLs
 		for(let i = 0; i < data.length; i++) {
 			data[i].index = i + 1;
-			data[i].url = "http://dnd5eapi.co/api/" + datatype_string + "/"+ (i + 1).toString();
+			if (datatype_string == "classfeatures") {
+				data[i].url = "http://dnd5eapi.co/api/" + "features" + "/"+ (i + 1).toString();
+			} else if (datatype_string == "classtables") {
+				data[i].url = "http://dnd5eapi.co/api/" + "tables" + "/"+ (i + 1).toString();
+			} else {
+				data[i].url = "http://dnd5eapi.co/api/" + datatype_string + "/"+ (i + 1).toString();
+			}
+			
 		}
 
 		let output_filename = "./upload-5e-SRD-" + datatype_string + ".json";
@@ -36,5 +43,7 @@ function create_all_upload_files() {
 		create_upload_file(all_data_types[i]);
 	}
 }
+
+create_upload_file('spellcasting');
 
 // mongoimport -h ds133158.mlab.com:33158 -d 5e-srd-api -c classfeatures -u admin -p password --file upload-5e-SRD-classfeatures.json --jsonArray
