@@ -285,179 +285,282 @@
 			"http://dnd5epi.co/api/subclasses/warlock"
 		],
 		"spellcasting": "http://dnd5epi.co/api/spellcasting/warlock",
-		"pact_boon": [
-			{
-				"name": "Pact of the Chain",
-				"desc": ["You learn the find familiar spell and can cast it as a ritual. The spell doesn’t count against your number of spells known.,When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, quasit, or sprite.,Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its reaction."]
-			},
-			{
-				"name": "Pact of the Blade",
-				"desc": ["You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it. You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.","Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.","You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can’t affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks."]
-			},
-			{
-				"name": "Pact of the Tome",
-				"desc": ["Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class’s spell list (the three needn’t be from the same list). While the book is on your person, you can cast those cantrips at will. They don’t count against your number of cantrips known. If they don’t appear on the warlock spell list, they are nonetheless warlock spells for you.","If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die."]
-			}
-		],
 		"eldritch_invocations": [
 			            {
 							"name": "Agonizing Blast",
-							"prerequisite": "eldritch blast* cantrip",
+							"prerequisites": [
+								{
+									"type": "Spell",
+									"spell": "http://dnd5eapi.co/api/spells/91"
+								}
+							],
 							"desc": ["When you cast eldritch blast, add your Charisma modifier to the damage it deals on a hit."]
 						},
 						{
 							"name": "Armor of Shadows",
-							"prerequisite": "",
+							"prerequisites": [],
 							"desc": ["You can cast mage armor on yourself at will, without expending a spell slot or material components."]
 						},
 						{
 							"name": "Ascendant Step",
-							"prerequisite": "9th level",
+							"prerequisites": [
+								{
+									"type": "level",
+									"level": 9
+								}
+							],
 							"desc": ["You can cast levitate on yourself at will, without expending a spell slot or material components."]
 						},
 						{
 							"name": "Beast Speech",
-							"prerequisite": "",
+							"prerequisites": [],
 							"desc": ["You can cast speak with animals at will, without expending a spell slot."]
 						},
 						{
 							"name": "Beguiling Influence",
-							"prerequisite": "",
+							"prerequisites": [],
 							"desc": ["You gain proficiency in the Deception and Persuasion skills."]
 						},
 						{
 							"name": "Bewitching Whispers",
-							"prerequisite": "7th level",
+							"prerequisites": [
+								{
+									"type": "level",
+									"level": 7
+								}
+							],
 							"desc": ["You can cast compulsion once using a warlock spell slot. You can’t do so again until you finish a long rest."]
 						},
 						{
 							"name": "Book of Ancient Secrets",
-							"prerequisite": "Pact of the Tome feature",
+							"prerequisites": [
+								{
+									"type": "feature",
+									"feature": "http://dnd5eapi.co/api/features/270"
+								}
+							],
 							"desc": ["You can now inscribe magical rituals in your Book of Shadows. Choose two 1st-level spells that have the ritual tag from any class’s spell list (the two needn’t be from the same list). The spells appear in the book and don’t count against the number of spells you know. With your Book of Shadows in hand, you can cast the chosen spells as rituals. You can’t cast the spells except as rituals, unless you’ve learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag.","On your adventures, you can add other ritual spells to your Book of Shadows. When you find such a spell, you can add it to the book if the spell’s level is equal to or less than half your warlock level (rounded up) and if you can spare the time to transcribe the spell. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it."]
 						},
 						{
 							"name": "Chains of Carceri",
-							"prerequisite": "15th level, Pact of the Chain feature",
+							"prerequisites": [
+								{
+									"type": "level",
+									"level": 15
+								},
+								{
+									"type": "feature",
+									"feature": "http://dnd5eapi.co/api/features/268"
+								}
+							],
 							"desc": ["You can cast hold monster at will—targeting a celestial, fiend, or elemental—without expending a spell slot or material components. You must finish a long rest before you can use this invocation on the same creature again."]
 						},
 						{
 							"name": "Devil’s Sight",
-							"prerequisite": "",
+							"prerequisites": [],
 							"desc": ["You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet."]
 						},
 						{
 							"name": "Dreadful Word",
-							"prerequisite": "7th level",
+							"prerequisites": [
+								{
+									"type": "level",
+									"level": 7
+								}
+							],
 							"desc": ["You can cast confusion once using a warlock spell slot. You can’t do so again until you finish a long rest."]
 						},
 						{
 							"name": "Eldritch Sight",
-							"prerequisite": "",
+							"prerequisites": [],
 							"desc": ["You can cast detect magic at will, without expending a spell slot."]
 						},
 						{
 							"name": "Eldritch Spear",
-							"prerequisite": "eldritch blast* cantrip",
+							"prerequisites": [
+								{
+									"type": "Spell",
+									"spell": "http://dnd5eapi.co/api/spells/91"
+								}
+							],
 							"desc": ["When you cast eldritch blast, its range is 300 feet."]
 						},
 						{
 							"name": "Eyes of the Rune Keeper",
-							"prerequisite": "",
+							"prerequisites": [],
 							"desc": ["You can read all writing."]
 						},
 						{
 							"name": "Fiendish Vigor",
-							"prerequisite": "",
+							"prerequisites": [],
 							"desc": ["You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components."]
 						},
 						{
 							"name": "Gaze of Two Minds",
-							"prerequisite": "",
+							"prerequisites": [],
 							"desc": ["You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature’s senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings."]
 						},
 						{
 							"name": "Lifedrinker",
-							"prerequisite": "12th level, Pact of the Blade feature",
+							"prerequisites": [
+								{
+									"type": "level",
+									"level": 12
+								},
+								{
+									"type": "feature",
+									"feature": "http://dnd5eapi.co/api/features/269"
+								}
+							],
 							"desc": ["When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum 1)."]
 						},
 						{
 							"name": "Mask of Many Faces",
-							"prerequisite": "",
+							"prerequisites": [],
 							"desc": ["You can cast disguise self at will, without expending a spell slot."]
 						},
 						{
 							"name": "Master of Myriad Forms",
-							"prerequisite": "15th level",
+							"prerequisites": [
+								{
+									"type": "level",
+									"level": 15
+								}
+							],
 							"desc": ["You can cast alter self at will, without expending a spell slot."]
 						},
 						{
 							"name": "Minions of Chaos",
-							"prerequisite": "9th level",
+							"prerequisites": [
+								{
+									"type": "level",
+									"level": 9
+								}
+							],
 							"desc": ["You can cast conjure elemental once using a warlock spell slot. You can’t do so again until you finish a long rest."]
 						},
 						{
 							"name": "Mire the Mind",
-							"prerequisite": "5th level",
+							"prerequisites": [
+								{
+									"type": "level",
+									"level": 5
+								}
+							],
 							"desc": ["You can cast slow once using a warlock spell slot. You can’t do so again until you finish a long rest."]
 						},
 						{
 							"name": "Misty Visions",
-							"prerequisite": "",
+							"prerequisites": [],
 							"desc": ["You can cast silent image at will, without expending a spell slot or material components."]
 						},
 						{
 							"name": "One with Shadows",
-							"prerequisite": "5th level",
+							"prerequisites": [
+								{
+									"type": "level",
+									"level": 5
+								}
+							],
 							"desc": ["When you are in an area of dim light or darkness, you can use your action to become invisible until you move or take an action or a reaction."]
 						},
 						{
 							"name": "Otherworldly Leap",
-							"prerequisite": "9th level",
+							"prerequisites": [
+								{
+									"type": "level",
+									"level": 9
+								}
+							],
 							"desc": ["You can cast jump on yourself at will, without expending a spell slot or material components."]
 						},
 						{
 							"name": "Repelling Blast",
-							"prerequisite": "eldritch blast* cantrip",
+							"prerequisites": [
+								{
+									"type": "Spell",
+									"spell": "http://dnd5eapi.co/api/spells/91"
+								}
+							],
 							"desc": ["When you hit a creature with eldritch blast, you can push the creature up to 10 feet away from you in a straight line."]
 						},
 						{
 							"name": "Sculptor of Flesh",
-							"prerequisite": "7th level",
+							"prerequisites": [
+								{
+									"type": "level",
+									"level": 7
+								}
+							],
 							"desc": ["You can cast polymorph once using a warlock spell slot. You can’t do so again until you finish a long rest."]
 						},
 						{
 							"name": "Sign of Ill Omen",
-							"prerequisite": "5th level",
+							"prerequisites": [
+								{
+									"type": "level",
+									"level": 5
+								}
+							],
 							"desc": ["You can cast bestow curse once using a warlock spell slot. You can’t do so again until you finish a long rest."]
 						},
 						{
 							"name": "Thief of Five Fates",
-							"prerequisite": "",
+							"prerequisites": [],
 							"desc": ["You can cast bane once using a warlock spell slot. You can’t do so again until you finish a long rest."]
 						},
 						{
 							"name": "Thirsting Blade",
-							"prerequisite": "5th level, Pact of the Blade feature",
+							"prerequisites": [
+								{
+									"type": "level",
+									"level": 5
+								},
+								{
+									"type": "feature",
+									"feature": "http://dnd5eapi.co/api/features/269"
+								}
+							],
 							"desc": ["You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn."]
 						},
 						{
 							"name": "Visions of Distant Realms",
-							"prerequisite": "15th level",
+							"prerequisites": [
+								{
+									"type": "level",
+									"level": 15
+								}
+							],
 							"desc": ["You can cast arcane eye at will, without expending a spell slot."]
 						},
 						{
 							"name": "Voice of the Chain Master",
-							"prerequisite": "Pact of the Chain feature",
+							"prerequisites": [
+								{
+									"type": "feature",
+									"feature": "http://dnd5eapi.co/api/features/268"
+								}
+							],
 							"desc": ["You can communicate telepathically with your familiar and perceive through your familiar’s senses as long as you are on the same plane of existence.","Additionally, while perceiving through your familiar’s senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech."]
 						},
 						{
 							"name": "Whispers of the Grave",
-							"prerequisite": "9th level",
+							"prerequisites": [
+								{
+									"type": "level",
+									"level": 9
+								}
+							],
 							"desc": ["You can cast speak with dead at will, without expending a spell slot."]
 						},
 						{
 							"name": "Witch Sight",
-							"prerequisite": "15th level",
+							"prerequisites": [
+								{
+									"type": "level",
+									"level": 15
+								}
+							],
 							"desc": ["You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 30 feet of you and within line of sight."]
 						}
 		],
