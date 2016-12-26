@@ -1,5 +1,5 @@
 var fs = require('fs');
-let all_data_types = ["classes", "classfeatures", "classtables", "equipment", "monsters", "proficiencies", "spells", "startingequipment"]
+let all_data_types = ["classes", "features", "tables", "equipment", "monsters", "proficiencies", "spells", "startingequipment"]
 
 function create_upload_file(datatype_string) {
 
@@ -30,7 +30,6 @@ function create_upload_file(datatype_string) {
 	})
 
 }
-
 function create_all_upload_files() {
 	for (let i = 0; i < all_data_types.length; i++) {
 		create_upload_file(all_data_types[i]);
@@ -39,7 +38,11 @@ function create_all_upload_files() {
 
 const args = process.argv;
 let data_type = args[2]
+if (data_type === "all") {
+	create_all_upload_files();
+} else {
+	create_upload_file(data_type);
+}
 
-create_upload_file(data_type);
 
 // mongoimport -h ds133158.mlab.com:33158 -d 5e-srd-api -c classfeatures -u admin -p password --file upload-5e-SRD-classfeatures.json --jsonArray
