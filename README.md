@@ -6,7 +6,8 @@ There are two helper files at the moment
  * helper.js
  * urlprinter.js
 
- **helper.js**
+ # helper.js
+ 
  example command:
  ```
  node helper features
