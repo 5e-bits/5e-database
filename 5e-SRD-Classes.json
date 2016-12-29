@@ -3,12 +3,32 @@
 		"index": 1,
 		"name": "Barbarian",
 		"hit_die": 12,
-		"starting_proficiencies": [
-				[{
-					"type": "Skill",
-					"quantity": 2
-				}]
-			],
+		"proficiency_choices": [
+                {
+					"choose": 2,
+					"type": "proficiencies",
+					"from": [
+                        "http://dnd5eapi.co/api/proficiencies/66",
+                        "http://dnd5eapi.co/api/proficiencies/67",
+                        "http://dnd5eapi.co/api/proficiencies/68",
+                        "http://dnd5eapi.co/api/proficiencies/69",
+                        "http://dnd5eapi.co/api/proficiencies/70",
+                        "http://dnd5eapi.co/api/proficiencies/71",
+                        "http://dnd5eapi.co/api/proficiencies/72",
+                        "http://dnd5eapi.co/api/proficiencies/73",
+                        "http://dnd5eapi.co/api/proficiencies/74",
+                        "http://dnd5eapi.co/api/proficiencies/75",
+                        "http://dnd5eapi.co/api/proficiencies/76",
+                        "http://dnd5eapi.co/api/proficiencies/77",
+                        "http://dnd5eapi.co/api/proficiencies/78",
+                        "http://dnd5eapi.co/api/proficiencies/79",
+                        "http://dnd5eapi.co/api/proficiencies/80",
+                        "http://dnd5eapi.co/api/proficiencies/81",
+                        "http://dnd5eapi.co/api/proficiencies/82",
+                        "http://dnd5eapi.co/api/proficiencies/83"
+                    ]
+				}
+        ],
 		"proficiencies": "http://dnd5eapi.co/api/proficiencies/barbarian",
 		"starting_equipment": "http://dnd5eapi.co/api/startingequipment/barbarian",
 		"class_table": "http://dnd5eapi.co/api/tables/barbarian",
@@ -23,16 +43,48 @@
 		"index": 2,
 		"name": "Bard",
 		"hit_die": 8,
-		"starting_proficiencies": [
-				[{
-					"type": "Musical Instrument",
-					"quantity": 3
-				}],
-				[{
-					"type": "Skill",
-					"quantity": 3
-				}]
-			],
+		"proficiency_choices": [
+                {
+					"choose": 3,
+					"type": "proficiencies",
+					"from": [
+                        "http://dnd5eapi.co/api/proficiencies/66",
+                        "http://dnd5eapi.co/api/proficiencies/67",
+                        "http://dnd5eapi.co/api/proficiencies/68",
+                        "http://dnd5eapi.co/api/proficiencies/69",
+                        "http://dnd5eapi.co/api/proficiencies/70",
+                        "http://dnd5eapi.co/api/proficiencies/71",
+                        "http://dnd5eapi.co/api/proficiencies/72",
+                        "http://dnd5eapi.co/api/proficiencies/73",
+                        "http://dnd5eapi.co/api/proficiencies/74",
+                        "http://dnd5eapi.co/api/proficiencies/75",
+                        "http://dnd5eapi.co/api/proficiencies/76",
+                        "http://dnd5eapi.co/api/proficiencies/77",
+                        "http://dnd5eapi.co/api/proficiencies/78",
+                        "http://dnd5eapi.co/api/proficiencies/79",
+                        "http://dnd5eapi.co/api/proficiencies/80",
+                        "http://dnd5eapi.co/api/proficiencies/81",
+                        "http://dnd5eapi.co/api/proficiencies/82",
+                        "http://dnd5eapi.co/api/proficiencies/83"
+                    ]
+				}, 
+                {
+					"choose": 3,
+					"type": "proficiencies",
+					"from": [
+                        "http://dnd5eapi.co/api/proficiencies/50",
+                        "http://dnd5eapi.co/api/proficiencies/51",
+                        "http://dnd5eapi.co/api/proficiencies/52",
+                        "http://dnd5eapi.co/api/proficiencies/53",
+                        "http://dnd5eapi.co/api/proficiencies/54",
+                        "http://dnd5eapi.co/api/proficiencies/55",
+                        "http://dnd5eapi.co/api/proficiencies/56",
+                        "http://dnd5eapi.co/api/proficiencies/57",
+                        "http://dnd5eapi.co/api/proficiencies/58",
+                        "http://dnd5eapi.co/api/proficiencies/59"
+                    ]
+				}
+        ],
 		"proficiencies": "http://dnd5eapi.co/api/proficiencies/bard",
 		"starting_equipment": "http://dnd5eapi.co/api/startingequipment/bard",
 		"class_table": "http://dnd5eapi.co/api/tables/bard",
@@ -47,11 +99,31 @@
 		"index": 3,
 		"name": "Cleric",
 		"hit_die": 8,
-		"starting_proficiencies": [
-				[{
-					"type": "Skill",
-					"quantity": 2
-				}]
+		"proficiency_choices": [
+				{
+					"choose": 2,
+					"type": "proficiencies",
+					"from": [
+                        "http://dnd5eapi.co/api/proficiencies/66",
+                        "http://dnd5eapi.co/api/proficiencies/67",
+                        "http://dnd5eapi.co/api/proficiencies/68",
+                        "http://dnd5eapi.co/api/proficiencies/69",
+                        "http://dnd5eapi.co/api/proficiencies/70",
+                        "http://dnd5eapi.co/api/proficiencies/71",
+                        "http://dnd5eapi.co/api/proficiencies/72",
+                        "http://dnd5eapi.co/api/proficiencies/73",
+                        "http://dnd5eapi.co/api/proficiencies/74",
+                        "http://dnd5eapi.co/api/proficiencies/75",
+                        "http://dnd5eapi.co/api/proficiencies/76",
+                        "http://dnd5eapi.co/api/proficiencies/77",
+                        "http://dnd5eapi.co/api/proficiencies/78",
+                        "http://dnd5eapi.co/api/proficiencies/79",
+                        "http://dnd5eapi.co/api/proficiencies/80",
+                        "http://dnd5eapi.co/api/proficiencies/81",
+                        "http://dnd5eapi.co/api/proficiencies/82",
+                        "http://dnd5eapi.co/api/proficiencies/83"
+                    ]
+				}
 			],
 		"proficiencies": "http://dnd5eapi.co/api/proficiencies/cleric",
 		"starting_equipment": "http://dnd5eapi.co/api/startingequipment/cleric",
@@ -67,11 +139,31 @@
 		"index": 4,
 		"name": "Druid",
 		"hit_die": 8,
-		"starting_proficiencies": [
-				[{
-					"type": "Skill",
-					"quantity": 2
-				}]
+		"proficiency_choices": [
+				{
+					"choose": 2,
+					"type": "proficiencies",
+					"from": [
+                        "http://dnd5eapi.co/api/proficiencies/66",
+                        "http://dnd5eapi.co/api/proficiencies/67",
+                        "http://dnd5eapi.co/api/proficiencies/68",
+                        "http://dnd5eapi.co/api/proficiencies/69",
+                        "http://dnd5eapi.co/api/proficiencies/70",
+                        "http://dnd5eapi.co/api/proficiencies/71",
+                        "http://dnd5eapi.co/api/proficiencies/72",
+                        "http://dnd5eapi.co/api/proficiencies/73",
+                        "http://dnd5eapi.co/api/proficiencies/74",
+                        "http://dnd5eapi.co/api/proficiencies/75",
+                        "http://dnd5eapi.co/api/proficiencies/76",
+                        "http://dnd5eapi.co/api/proficiencies/77",
+                        "http://dnd5eapi.co/api/proficiencies/78",
+                        "http://dnd5eapi.co/api/proficiencies/79",
+                        "http://dnd5eapi.co/api/proficiencies/80",
+                        "http://dnd5eapi.co/api/proficiencies/81",
+                        "http://dnd5eapi.co/api/proficiencies/82",
+                        "http://dnd5eapi.co/api/proficiencies/83"
+                    ]
+				}
 			],
 		"proficiencies": "http://dnd5eapi.co/api/proficiencies/druid",
 		"starting_equipment": "http://dnd5eapi.co/api/startingequipment/druid",
@@ -87,12 +179,32 @@
 		"index": 5,
 		"name": "Fighter",
 		"hit_die": 10,
-		"starting_proficiencies": [
-				[{
-					"type": "Skill",
-					"quantity": 2
-				}]
-			],
+		"proficiency_choices": [
+				{
+					"choose": 2,
+					"type": "proficiencies",
+					"from": [
+                        "http://dnd5eapi.co/api/proficiencies/66",
+                        "http://dnd5eapi.co/api/proficiencies/67",
+                        "http://dnd5eapi.co/api/proficiencies/68",
+                        "http://dnd5eapi.co/api/proficiencies/69",
+                        "http://dnd5eapi.co/api/proficiencies/70",
+                        "http://dnd5eapi.co/api/proficiencies/71",
+                        "http://dnd5eapi.co/api/proficiencies/72",
+                        "http://dnd5eapi.co/api/proficiencies/73",
+                        "http://dnd5eapi.co/api/proficiencies/74",
+                        "http://dnd5eapi.co/api/proficiencies/75",
+                        "http://dnd5eapi.co/api/proficiencies/76",
+                        "http://dnd5eapi.co/api/proficiencies/77",
+                        "http://dnd5eapi.co/api/proficiencies/78",
+                        "http://dnd5eapi.co/api/proficiencies/79",
+                        "http://dnd5eapi.co/api/proficiencies/80",
+                        "http://dnd5eapi.co/api/proficiencies/81",
+                        "http://dnd5eapi.co/api/proficiencies/82",
+                        "http://dnd5eapi.co/api/proficiencies/83"
+                    ]
+				}
+		],
 		"proficiencies": "http://dnd5eapi.co/api/proficiencies/fighter",
 		"starting_equipment": "http://dnd5eapi.co/api/startingequipment/fighter",
 		"class_table": "http://dnd5eapi.co/api/tables/fighter",
@@ -107,20 +219,79 @@
 		"index": 6,
 		"name": "Monk",
 		"hit_die": 8,
-		"starting_proficiencies": [
-				[{
-					"type": "Musical Instrument",
-					"quantity": 1
+		"proficiency_choices": [
+				{
+					"choose": 1,
+					"type": "choice",
+					"from": [
+						{
+							"choose": 1,
+							"type": "proficiencies",
+							"from": [
+								"http://dnd5eapi.co/api/proficiencies/50",
+								"http://dnd5eapi.co/api/proficiencies/51",
+								"http://dnd5eapi.co/api/proficiencies/52",
+								"http://dnd5eapi.co/api/proficiencies/53",
+								"http://dnd5eapi.co/api/proficiencies/54",
+								"http://dnd5eapi.co/api/proficiencies/55",
+								"http://dnd5eapi.co/api/proficiencies/56",
+								"http://dnd5eapi.co/api/proficiencies/57",
+								"http://dnd5eapi.co/api/proficiencies/58",
+								"http://dnd5eapi.co/api/proficiencies/59"
+							]
+						}, 
+						{
+							"choose": 1,
+							"type": "proficiencies",
+							"from": [
+								"http://dnd5eapi.co/api/proficiencies/29",
+								"http://dnd5eapi.co/api/proficiencies/30",
+								"http://dnd5eapi.co/api/proficiencies/31",
+								"http://dnd5eapi.co/api/proficiencies/32",
+								"http://dnd5eapi.co/api/proficiencies/33",
+								"http://dnd5eapi.co/api/proficiencies/34",
+								"http://dnd5eapi.co/api/proficiencies/35",
+								"http://dnd5eapi.co/api/proficiencies/36",
+								"http://dnd5eapi.co/api/proficiencies/37",
+								"http://dnd5eapi.co/api/proficiencies/38",
+								"http://dnd5eapi.co/api/proficiencies/39",
+								"http://dnd5eapi.co/api/proficiencies/40",
+								"http://dnd5eapi.co/api/proficiencies/41",
+								"http://dnd5eapi.co/api/proficiencies/42",
+								"http://dnd5eapi.co/api/proficiencies/43",
+								"http://dnd5eapi.co/api/proficiencies/44",
+								"http://dnd5eapi.co/api/proficiencies/45",
+								"http://dnd5eapi.co/api/proficiencies/46",
+								"http://dnd5eapi.co/api/proficiencies/47"
+							]
+						}
+					]
 				},
 				{
-					"type": "Artisan's Tools",
-					"quantity": 1
-				}],
-				[{
-					"type": "Skill",
-					"quantity": 2
-				}]
-			],
+					"choose": 2,
+					"type": "proficiencies",
+					"from": [
+                        "http://dnd5eapi.co/api/proficiencies/66",
+                        "http://dnd5eapi.co/api/proficiencies/67",
+                        "http://dnd5eapi.co/api/proficiencies/68",
+                        "http://dnd5eapi.co/api/proficiencies/69",
+                        "http://dnd5eapi.co/api/proficiencies/70",
+                        "http://dnd5eapi.co/api/proficiencies/71",
+                        "http://dnd5eapi.co/api/proficiencies/72",
+                        "http://dnd5eapi.co/api/proficiencies/73",
+                        "http://dnd5eapi.co/api/proficiencies/74",
+                        "http://dnd5eapi.co/api/proficiencies/75",
+                        "http://dnd5eapi.co/api/proficiencies/76",
+                        "http://dnd5eapi.co/api/proficiencies/77",
+                        "http://dnd5eapi.co/api/proficiencies/78",
+                        "http://dnd5eapi.co/api/proficiencies/79",
+                        "http://dnd5eapi.co/api/proficiencies/80",
+                        "http://dnd5eapi.co/api/proficiencies/81",
+                        "http://dnd5eapi.co/api/proficiencies/82",
+                        "http://dnd5eapi.co/api/proficiencies/83"
+                    ]
+				}
+		],
 		"proficiencies": "http://dnd5eapi.co/api/proficiencies/monk",
 		"starting_equipment": "http://dnd5eapi.co/api/startingequipment/monk",
 		"class_table": "http://dnd5eapi.co/api/tables/monk",
@@ -135,11 +306,31 @@
 		"index": 7,
 		"name": "Paladin",
 		"hit_die": 10,
-		"starting_proficiencies": [
-				[{
-					"type": "Skill",
-					"quantity": 2
-				}]
+		"proficiency_choices": [
+				{
+					"choose": 2,
+					"type": "proficiencies",
+					"from": [
+                        "http://dnd5eapi.co/api/proficiencies/66",
+                        "http://dnd5eapi.co/api/proficiencies/67",
+                        "http://dnd5eapi.co/api/proficiencies/68",
+                        "http://dnd5eapi.co/api/proficiencies/69",
+                        "http://dnd5eapi.co/api/proficiencies/70",
+                        "http://dnd5eapi.co/api/proficiencies/71",
+                        "http://dnd5eapi.co/api/proficiencies/72",
+                        "http://dnd5eapi.co/api/proficiencies/73",
+                        "http://dnd5eapi.co/api/proficiencies/74",
+                        "http://dnd5eapi.co/api/proficiencies/75",
+                        "http://dnd5eapi.co/api/proficiencies/76",
+                        "http://dnd5eapi.co/api/proficiencies/77",
+                        "http://dnd5eapi.co/api/proficiencies/78",
+                        "http://dnd5eapi.co/api/proficiencies/79",
+                        "http://dnd5eapi.co/api/proficiencies/80",
+                        "http://dnd5eapi.co/api/proficiencies/81",
+                        "http://dnd5eapi.co/api/proficiencies/82",
+                        "http://dnd5eapi.co/api/proficiencies/83"
+                    ]
+				}
 			],
 		"proficiencies": "http://dnd5eapi.co/api/proficiencies/paladin",
 		"starting_equipment": "http://dnd5eapi.co/api/startingequipment/paladin",
@@ -155,11 +346,31 @@
 		"index": 8,
 		"name": "Ranger",
 		"hit_die": 10,
-		"starting_proficiencies": [
-				[{
-					"type": "Skill",
-					"quantity": 3
-				}]
+		"proficiency_choices": [
+				{
+					"choose": 23,
+					"type": "proficiencies",
+					"from": [
+                        "http://dnd5eapi.co/api/proficiencies/66",
+                        "http://dnd5eapi.co/api/proficiencies/67",
+                        "http://dnd5eapi.co/api/proficiencies/68",
+                        "http://dnd5eapi.co/api/proficiencies/69",
+                        "http://dnd5eapi.co/api/proficiencies/70",
+                        "http://dnd5eapi.co/api/proficiencies/71",
+                        "http://dnd5eapi.co/api/proficiencies/72",
+                        "http://dnd5eapi.co/api/proficiencies/73",
+                        "http://dnd5eapi.co/api/proficiencies/74",
+                        "http://dnd5eapi.co/api/proficiencies/75",
+                        "http://dnd5eapi.co/api/proficiencies/76",
+                        "http://dnd5eapi.co/api/proficiencies/77",
+                        "http://dnd5eapi.co/api/proficiencies/78",
+                        "http://dnd5eapi.co/api/proficiencies/79",
+                        "http://dnd5eapi.co/api/proficiencies/80",
+                        "http://dnd5eapi.co/api/proficiencies/81",
+                        "http://dnd5eapi.co/api/proficiencies/82",
+                        "http://dnd5eapi.co/api/proficiencies/83"
+                    ]
+				}
 			],
 		"proficiencies": "http://dnd5eapi.co/api/proficiencies/ranger",
 		"starting_equipment": "http://dnd5eapi.co/api/startingequipment/ranger",
@@ -175,11 +386,31 @@
 		"index": 9,
 		"name": "Rogue",
 		"hit_die": 8,
-		"starting_proficiencies": [
-				[{
-					"type": "Skill",
-					"quantity": 4
-				}]
+		"proficiency_choices": [
+				{
+					"choose": 4,
+					"type": "proficiencies",
+					"from": [
+                        "http://dnd5eapi.co/api/proficiencies/66",
+                        "http://dnd5eapi.co/api/proficiencies/67",
+                        "http://dnd5eapi.co/api/proficiencies/68",
+                        "http://dnd5eapi.co/api/proficiencies/69",
+                        "http://dnd5eapi.co/api/proficiencies/70",
+                        "http://dnd5eapi.co/api/proficiencies/71",
+                        "http://dnd5eapi.co/api/proficiencies/72",
+                        "http://dnd5eapi.co/api/proficiencies/73",
+                        "http://dnd5eapi.co/api/proficiencies/74",
+                        "http://dnd5eapi.co/api/proficiencies/75",
+                        "http://dnd5eapi.co/api/proficiencies/76",
+                        "http://dnd5eapi.co/api/proficiencies/77",
+                        "http://dnd5eapi.co/api/proficiencies/78",
+                        "http://dnd5eapi.co/api/proficiencies/79",
+                        "http://dnd5eapi.co/api/proficiencies/80",
+                        "http://dnd5eapi.co/api/proficiencies/81",
+                        "http://dnd5eapi.co/api/proficiencies/82",
+                        "http://dnd5eapi.co/api/proficiencies/83"
+                    ]
+				}
 			],
 		"proficiencies": "http://dnd5eapi.co/api/proficiencies/rogue",
 		"starting_equipment": "http://dnd5eapi.co/api/startingequipment/rogue",
@@ -195,11 +426,31 @@
 		"index": 10,
 		"name": "Sorcerer",
 		"hit_die": 6,
-		"starting_proficiencies": [
-				[{
-					"type": "Skill",
-					"quantity": 2
-				}]
+		"proficiency_choices": [
+				{
+					"choose": 2,
+					"type": "proficiencies",
+					"from": [
+                        "http://dnd5eapi.co/api/proficiencies/66",
+                        "http://dnd5eapi.co/api/proficiencies/67",
+                        "http://dnd5eapi.co/api/proficiencies/68",
+                        "http://dnd5eapi.co/api/proficiencies/69",
+                        "http://dnd5eapi.co/api/proficiencies/70",
+                        "http://dnd5eapi.co/api/proficiencies/71",
+                        "http://dnd5eapi.co/api/proficiencies/72",
+                        "http://dnd5eapi.co/api/proficiencies/73",
+                        "http://dnd5eapi.co/api/proficiencies/74",
+                        "http://dnd5eapi.co/api/proficiencies/75",
+                        "http://dnd5eapi.co/api/proficiencies/76",
+                        "http://dnd5eapi.co/api/proficiencies/77",
+                        "http://dnd5eapi.co/api/proficiencies/78",
+                        "http://dnd5eapi.co/api/proficiencies/79",
+                        "http://dnd5eapi.co/api/proficiencies/80",
+                        "http://dnd5eapi.co/api/proficiencies/81",
+                        "http://dnd5eapi.co/api/proficiencies/82",
+                        "http://dnd5eapi.co/api/proficiencies/83"
+                    ]
+				}
 			],
 		"proficiencies": "http://dnd5eapi.co/api/proficiencies/sorcerer",
 		"starting_equipment": "http://dnd5eapi.co/api/startingequipment/sorcerer",
@@ -215,11 +466,31 @@
 		"index": 11,
 		"name": "Warlock",
 		"hit_die": 8,
-		"starting_proficiencies": [
-				[{
-					"type": "Skill",
-					"quantity": 2
-				}]
+		"proficiency_choices": [
+				{
+					"choose": 2,
+					"type": "proficiencies",
+					"from": [
+                        "http://dnd5eapi.co/api/proficiencies/66",
+                        "http://dnd5eapi.co/api/proficiencies/67",
+                        "http://dnd5eapi.co/api/proficiencies/68",
+                        "http://dnd5eapi.co/api/proficiencies/69",
+                        "http://dnd5eapi.co/api/proficiencies/70",
+                        "http://dnd5eapi.co/api/proficiencies/71",
+                        "http://dnd5eapi.co/api/proficiencies/72",
+                        "http://dnd5eapi.co/api/proficiencies/73",
+                        "http://dnd5eapi.co/api/proficiencies/74",
+                        "http://dnd5eapi.co/api/proficiencies/75",
+                        "http://dnd5eapi.co/api/proficiencies/76",
+                        "http://dnd5eapi.co/api/proficiencies/77",
+                        "http://dnd5eapi.co/api/proficiencies/78",
+                        "http://dnd5eapi.co/api/proficiencies/79",
+                        "http://dnd5eapi.co/api/proficiencies/80",
+                        "http://dnd5eapi.co/api/proficiencies/81",
+                        "http://dnd5eapi.co/api/proficiencies/82",
+                        "http://dnd5eapi.co/api/proficiencies/83"
+                    ]
+				}
 			],
 		"proficiencies": "http://dnd5eapi.co/api/proficiencies/warlock",
 		"starting_equipment": "http://dnd5eapi.co/api/startingequipment/warlock",
@@ -235,11 +506,31 @@
 		"index": 12,
 		"name": "Wizard",
 		"hit_die": 6,
-		"starting_proficiencies": [
-				[{
-					"type": "Skill",
-					"quantity": 2
-				}]
+		"proficiency_choices": [
+				{
+					"choose": 2,
+					"type": "proficiencies",
+					"from": [
+                        "http://dnd5eapi.co/api/proficiencies/66",
+                        "http://dnd5eapi.co/api/proficiencies/67",
+                        "http://dnd5eapi.co/api/proficiencies/68",
+                        "http://dnd5eapi.co/api/proficiencies/69",
+                        "http://dnd5eapi.co/api/proficiencies/70",
+                        "http://dnd5eapi.co/api/proficiencies/71",
+                        "http://dnd5eapi.co/api/proficiencies/72",
+                        "http://dnd5eapi.co/api/proficiencies/73",
+                        "http://dnd5eapi.co/api/proficiencies/74",
+                        "http://dnd5eapi.co/api/proficiencies/75",
+                        "http://dnd5eapi.co/api/proficiencies/76",
+                        "http://dnd5eapi.co/api/proficiencies/77",
+                        "http://dnd5eapi.co/api/proficiencies/78",
+                        "http://dnd5eapi.co/api/proficiencies/79",
+                        "http://dnd5eapi.co/api/proficiencies/80",
+                        "http://dnd5eapi.co/api/proficiencies/81",
+                        "http://dnd5eapi.co/api/proficiencies/82",
+                        "http://dnd5eapi.co/api/proficiencies/83"
+                    ]
+				}
 			],
 		"proficiencies": "http://dnd5eapi.co/api/proficiencies/wizard",
 		"starting_equipment": "http://dnd5eapi.co/api/startingequipment/wizard",
