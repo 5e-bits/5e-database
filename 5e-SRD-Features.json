@@ -4,7 +4,7 @@
 	"subclass": "",
 	"name": "Rage",
 	"level": 1,
-	"desc": ["In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren't wearing heavy armor:","• You have advantage on Strength checks and Strength saving throws.","• When you make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll. This bonus increases as you level.", "• You have Resistance to bludgeoning, piercing, and slashing damage.", "If you are able to cast Spells, you can't cast them or concentrate on them while raging.", "Your rage lasts for 1 minute. It ends early if you are knocked Unconscious or if Your Turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on Your Turn as a Bonus Action.", "Once you have raged the maximum number of times for your barbarian level, you must finish a Long Rest before you can rage again. You may rage 2 times at 1st level, 3 at 3rd, 4 at 6th, 5 at 12th, and 6 at 17th."],
+	"desc": ["In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren't wearing heavy armor:", "• You have advantage on Strength checks and Strength saving throws.", "• When you make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll. This bonus increases as you level.", "• You have Resistance to bludgeoning, piercing, and slashing damage.", "If you are able to cast Spells, you can't cast them or concentrate on them while raging.", "Your rage lasts for 1 minute. It ends early if you are knocked Unconscious or if Your Turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on Your Turn as a Bonus Action.", "Once you have raged the maximum number of times for your barbarian level, you must finish a Long Rest before you can rage again. You may rage 2 times at 1st level, 3 at 3rd, 4 at 6th, 5 at 12th, and 6 at 17th."],
 	"url": "http://dnd5eapi.co/api/features/1"
 }, {
 	"index": 2,
@@ -245,7 +245,7 @@
 	"subclass": "Lore",
 	"name": "Cutting Words",
 	"level": 3,
-	"desc": ["Also at 3rd level, you learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others.","When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature's roll.","You can choose to use this feature after the creature makes its roll, but before the GM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can't hear you or if it's immune to being charmed."],
+	"desc": ["Also at 3rd level, you learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others.", "When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature's roll.", "You can choose to use this feature after the creature makes its roll, but before the GM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can't hear you or if it's immune to being charmed."],
 	"url": "http://dnd5eapi.co/api/features/31"
 }, {
 	"index": 32,
@@ -254,9 +254,11 @@
 	"name": "Expertise 1",
 	"level": 3,
 	"desc": ["At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. At 10th level, you can choose another two skill proficiencies to gain this benefit."],
-	"options": ["http://dnd5eapi.co/api/features/33", "http://dnd5eapi.co/api/features/34", "http://dnd5eapi.co/api/features/35", "http://dnd5eapi.co/api/features/36", "http://dnd5eapi.co/api/features/37", "http://dnd5eapi.co/api/features/38", "http://dnd5eapi.co/api/features/39", "http://dnd5eapi.co/api/features/40", "http://dnd5eapi.co/api/features/41", "http://dnd5eapi.co/api/features/42", "http://dnd5eapi.co/api/features/43", "http://dnd5eapi.co/api/features/44", "http://dnd5eapi.co/api/features/45", "http://dnd5eapi.co/api/features/46", "http://dnd5eapi.co/api/features/47", "http://dnd5eapi.co/api/features/48", "http://dnd5eapi.co/api/features/49", "http://dnd5eapi.co/api/features/50"],
-	"option_type": "feature",
-	"options_to_add": 2,
+	"choice": {
+		"choose": 2,
+		"type": "feature",
+		"from": ["http://dnd5eapi.co/api/features/33", "http://dnd5eapi.co/api/features/34", "http://dnd5eapi.co/api/features/35", "http://dnd5eapi.co/api/features/36", "http://dnd5eapi.co/api/features/37", "http://dnd5eapi.co/api/features/38", "http://dnd5eapi.co/api/features/39", "http://dnd5eapi.co/api/features/40", "http://dnd5eapi.co/api/features/41", "http://dnd5eapi.co/api/features/42", "http://dnd5eapi.co/api/features/43", "http://dnd5eapi.co/api/features/44", "http://dnd5eapi.co/api/features/45", "http://dnd5eapi.co/api/features/46", "http://dnd5eapi.co/api/features/47", "http://dnd5eapi.co/api/features/48", "http://dnd5eapi.co/api/features/49", "http://dnd5eapi.co/api/features/50"]
+	},
 	"url": "http://dnd5eapi.co/api/features/32"
 }, {
 	"index": 33,
@@ -1059,9 +1061,11 @@
 	"name": "Fighting Style",
 	"level": 1,
 	"desc": ["You adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again."],
-	"options": ["http://dnd5eapi.co/api/features/124", "http://dnd5eapi.co/api/features/125", "http://dnd5eapi.co/api/features/126", "http://dnd5eapi.co/api/features/127", "http://dnd5eapi.co/api/features/128", "http://dnd5eapi.co/api/features/129"],
-	"option_type": "feature",
-	"options_to_add": 1,
+	"choice": {
+		"choose": 1,
+		"type": "feature",
+		"from": ["http://dnd5eapi.co/api/features/124", "http://dnd5eapi.co/api/features/125", "http://dnd5eapi.co/api/features/126", "http://dnd5eapi.co/api/features/127", "http://dnd5eapi.co/api/features/128", "http://dnd5eapi.co/api/features/129"]
+	},
 	"url": "http://dnd5eapi.co/api/features/123"
 }, {
 	"index": 124,
@@ -1204,9 +1208,11 @@
 	"name": "Additional Fighting Style",
 	"level": 10,
 	"desc": ["At 10th level, you can choose a second option from the Fighting Style class feature. Superior Critical Starting at 15th level, your weapon attacks score a critical hit on a roll of 18–20."],
-	"options": ["http://dnd5eapi.co/api/features/124", "http://dnd5eapi.co/api/features/125", "http://dnd5eapi.co/api/features/126", "http://dnd5eapi.co/api/features/127", "http://dnd5eapi.co/api/features/128", "http://dnd5eapi.co/api/features/129"],
-	"option_type": "feature",
-	"options_to_add": 1,
+	"choice": {
+		"choose": 1,
+		"type": "feature",
+		"from": ["http://dnd5eapi.co/api/features/124", "http://dnd5eapi.co/api/features/125", "http://dnd5eapi.co/api/features/126", "http://dnd5eapi.co/api/features/127", "http://dnd5eapi.co/api/features/128", "http://dnd5eapi.co/api/features/129"]
+	},
 	"url": "http://dnd5eapi.co/api/features/140"
 }, {
 	"index": 141,
@@ -1567,9 +1573,11 @@
 	"name": "Fighting Style",
 	"level": 2,
 	"desc": ["At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again."],
-	"options": ["http://dnd5eapi.co/api/features/186", "http://dnd5eapi.co/api/features/187", "http://dnd5eapi.co/api/features/188", "http://dnd5eapi.co/api/features/189"],
-	"option_type": "feature",
-	"options_to_add": 1,
+	"choice": {
+		"choose": 1,
+		"type": "feature",
+		"from": ["http://dnd5eapi.co/api/features/186", "http://dnd5eapi.co/api/features/187", "http://dnd5eapi.co/api/features/188", "http://dnd5eapi.co/api/features/189"]
+	},
 	"url": "http://dnd5eapi.co/api/features/185"
 }, {
 	"index": 186,
@@ -1791,9 +1799,11 @@
 	"name": "Fighting Style",
 	"level": 2,
 	"desc": ["At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again."],
-	"options": ["http://dnd5eapi.co/api/features/213", "http://dnd5eapi.co/api/features/214", "http://dnd5eapi.co/api/features/215", "http://dnd5eapi.co/api/features/216"],
-	"option_type": "feature",
-	"options_to_add": 1,
+	"choice": {
+		"choose": 1,
+		"type": "feature",
+		"from": ["http://dnd5eapi.co/api/features/213", "http://dnd5eapi.co/api/features/214", "http://dnd5eapi.co/api/features/215", "http://dnd5eapi.co/api/features/216"]
+	},
 	"url": "http://dnd5eapi.co/api/features/212"
 }, {
 	"index": 213,
@@ -1855,13 +1865,15 @@
 	"name": "Hunter's Prey",
 	"level": 3,
 	"desc": ["At 3rd level, you gain one of the following features of your choice.", "Colossus Slayer", "Giant Killer", "Horde Breaker"],
-	"options": [
-		"http://dnd5eapi.co/api/features/220",
-		"http://dnd5eapi.co/api/features/221",
-		"http://dnd5eapi.co/api/features/222"
-	],
-	"option_type": "feature",
-	"options_to_add": 1,
+	"choice": {
+		"choose": 1,
+		"type": "feature",
+		"from": [
+			"http://dnd5eapi.co/api/features/220",
+			"http://dnd5eapi.co/api/features/221",
+			"http://dnd5eapi.co/api/features/222"
+		]
+	},
 	"url": "http://dnd5eapi.co/api/features/219"
 }, {
 	"index": 220,
@@ -1937,13 +1949,15 @@
 	"name": "Defensive Tactics",
 	"level": 7,
 	"desc": ["At 7th level, you gain one of the following features of your choice.", "Escape the Horde", "Multiattack Defense", "Steel Will"],
-	"options": [
-		"http://dnd5eapi.co/api/features/229",
-		"http://dnd5eapi.co/api/features/230",
-		"http://dnd5eapi.co/api/features/231"
-	],
-	"option_type": "feature",
-	"options_to_add": 1,
+	"choice": {
+		"choose": 1,
+		"type": "feature",
+		"from": [
+			"http://dnd5eapi.co/api/features/229",
+			"http://dnd5eapi.co/api/features/230",
+			"http://dnd5eapi.co/api/features/231"
+		]
+	},
 	"url": "http://dnd5eapi.co/api/features/228"
 }, {
 	"index": 229,
@@ -2011,12 +2025,14 @@
 	"name": "Multiattack",
 	"level": 11,
 	"desc": ["At 11th level, you gain one of the following features of your choice.", "Volley", "Whirlwind Attack"],
-	"options": [
-		"http://dnd5eapi.co/api/features/237",
-		"http://dnd5eapi.co/api/features/238"
-	],
-	"option_type": "feature",
-	"options_to_add": 1,
+	"choice": {
+		"choose": 1,
+		"type": "feature",
+		"from": [
+			"http://dnd5eapi.co/api/features/237",
+			"http://dnd5eapi.co/api/features/238"
+		]
+	},
 	"url": "http://dnd5eapi.co/api/features/236"
 }, {
 	"index": 237,
@@ -2067,13 +2083,15 @@
 	"name": "Superior Hunter's Defense",
 	"level": 15,
 	"desc": ["At 15th level, you gain one of the following features of your choice.", "Evasion", "Stand Against the Tide", "Uncanny Dodge"],
-	"options": [
-		"http://dnd5eapi.co/api/features/243",
-		"http://dnd5eapi.co/api/features/244",
-		"http://dnd5eapi.co/api/features/245"
-	],
-	"option_type": "feature",
-	"options_to_add": 1,
+	"choice": {
+		"choose": 1,
+		"type": "feature",
+		"from": [
+			"http://dnd5eapi.co/api/features/243",
+			"http://dnd5eapi.co/api/features/244",
+			"http://dnd5eapi.co/api/features/245"
+		]
+	},
 	"url": "http://dnd5eapi.co/api/features/242"
 }, {
 	"index": 243,
@@ -2141,29 +2159,31 @@
 	"name": "Expertise 1",
 	"level": 1,
 	"desc": ["At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves’ tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.", "At 6th level, you can choose two more of your proficiencies (in skills or with thieves’ tools) to gain this benefit"],
-	"options": [
-		"http://dnd5eapi.co/api/features/251",
-		"http://dnd5eapi.co/api/features/252",
-		"http://dnd5eapi.co/api/features/253",
-		"http://dnd5eapi.co/api/features/254",
-		"http://dnd5eapi.co/api/features/255",
-		"http://dnd5eapi.co/api/features/256",
-		"http://dnd5eapi.co/api/features/257",
-		"http://dnd5eapi.co/api/features/258",
-		"http://dnd5eapi.co/api/features/259",
-		"http://dnd5eapi.co/api/features/260",
-		"http://dnd5eapi.co/api/features/261",
-		"http://dnd5eapi.co/api/features/262",
-		"http://dnd5eapi.co/api/features/263",
-		"http://dnd5eapi.co/api/features/264",
-		"http://dnd5eapi.co/api/features/265",
-		"http://dnd5eapi.co/api/features/266",
-		"http://dnd5eapi.co/api/features/267",
-		"http://dnd5eapi.co/api/features/268",
-		"http://dnd5eapi.co/api/features/269"
-	],
-	"option_type": "feature",
-	"options_to_add": 2,
+	"choice": {
+		"choose": 2,
+		"type": "feature",
+		"from": [
+			"http://dnd5eapi.co/api/features/251",
+			"http://dnd5eapi.co/api/features/252",
+			"http://dnd5eapi.co/api/features/253",
+			"http://dnd5eapi.co/api/features/254",
+			"http://dnd5eapi.co/api/features/255",
+			"http://dnd5eapi.co/api/features/256",
+			"http://dnd5eapi.co/api/features/257",
+			"http://dnd5eapi.co/api/features/258",
+			"http://dnd5eapi.co/api/features/259",
+			"http://dnd5eapi.co/api/features/260",
+			"http://dnd5eapi.co/api/features/261",
+			"http://dnd5eapi.co/api/features/262",
+			"http://dnd5eapi.co/api/features/263",
+			"http://dnd5eapi.co/api/features/264",
+			"http://dnd5eapi.co/api/features/265",
+			"http://dnd5eapi.co/api/features/266",
+			"http://dnd5eapi.co/api/features/267",
+			"http://dnd5eapi.co/api/features/268",
+			"http://dnd5eapi.co/api/features/269"
+		]
+	},
 	"url": "http://dnd5eapi.co/api/features/250"
 }, {
 	"index": 251,
@@ -2464,29 +2484,31 @@
 	"name": "Expertise 2",
 	"level": 6,
 	"desc": ["At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves’ tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.", "At 6th level, you can choose two more of your proficiencies (in skills or with thieves’ tools) to gain this benefit"],
-	"options": [
-		"http://dnd5eapi.co/api/features/251",
-		"http://dnd5eapi.co/api/features/252",
-		"http://dnd5eapi.co/api/features/253",
-		"http://dnd5eapi.co/api/features/254",
-		"http://dnd5eapi.co/api/features/255",
-		"http://dnd5eapi.co/api/features/256",
-		"http://dnd5eapi.co/api/features/257",
-		"http://dnd5eapi.co/api/features/258",
-		"http://dnd5eapi.co/api/features/259",
-		"http://dnd5eapi.co/api/features/260",
-		"http://dnd5eapi.co/api/features/261",
-		"http://dnd5eapi.co/api/features/262",
-		"http://dnd5eapi.co/api/features/263",
-		"http://dnd5eapi.co/api/features/264",
-		"http://dnd5eapi.co/api/features/265",
-		"http://dnd5eapi.co/api/features/266",
-		"http://dnd5eapi.co/api/features/267",
-		"http://dnd5eapi.co/api/features/268",
-		"http://dnd5eapi.co/api/features/269"
-	],
-	"option_type": "feature",
-	"options_to_add": 2,
+	"choice": {
+		"choose": 2,
+		"type": "feature",
+		"from": [
+			"http://dnd5eapi.co/api/features/251",
+			"http://dnd5eapi.co/api/features/252",
+			"http://dnd5eapi.co/api/features/253",
+			"http://dnd5eapi.co/api/features/254",
+			"http://dnd5eapi.co/api/features/255",
+			"http://dnd5eapi.co/api/features/256",
+			"http://dnd5eapi.co/api/features/257",
+			"http://dnd5eapi.co/api/features/258",
+			"http://dnd5eapi.co/api/features/259",
+			"http://dnd5eapi.co/api/features/260",
+			"http://dnd5eapi.co/api/features/261",
+			"http://dnd5eapi.co/api/features/262",
+			"http://dnd5eapi.co/api/features/263",
+			"http://dnd5eapi.co/api/features/264",
+			"http://dnd5eapi.co/api/features/265",
+			"http://dnd5eapi.co/api/features/266",
+			"http://dnd5eapi.co/api/features/267",
+			"http://dnd5eapi.co/api/features/268",
+			"http://dnd5eapi.co/api/features/269"
+		]
+	},
 	"url": "http://dnd5eapi.co/api/features/278"
 }, {
 	"index": 279,
@@ -2681,18 +2703,20 @@
 	"name": "Metamagic (2 options)",
 	"level": 3,
 	"desc": ["At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.", "You can use only one Metamagic option on a spell when you cast it, unless otherwise noted."],
-	"options": [
-		"http://dnd5eapi.co/api/features/301",
-		"http://dnd5eapi.co/api/features/302",
-		"http://dnd5eapi.co/api/features/303",
-		"http://dnd5eapi.co/api/features/304",
-		"http://dnd5eapi.co/api/features/305",
-		"http://dnd5eapi.co/api/features/306",
-		"http://dnd5eapi.co/api/features/307",
-		"http://dnd5eapi.co/api/features/308"
-	],
-	"option_type": "feature",
-	"options_to_add": 2,
+	"choice": {
+		"choose": 2,
+		"type": "feature",
+		"from": [
+			"http://dnd5eapi.co/api/features/301",
+			"http://dnd5eapi.co/api/features/302",
+			"http://dnd5eapi.co/api/features/303",
+			"http://dnd5eapi.co/api/features/304",
+			"http://dnd5eapi.co/api/features/305",
+			"http://dnd5eapi.co/api/features/306",
+			"http://dnd5eapi.co/api/features/307",
+			"http://dnd5eapi.co/api/features/308"
+		]
+	},
 	"url": "http://dnd5eapi.co/api/features/300"
 }, {
 	"index": 301,
@@ -2797,18 +2821,20 @@
 	"name": "Metamagic (3 options)",
 	"level": 10,
 	"desc": ["At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.", "You can use only one Metamagic option on a spell when you cast it, unless otherwise noted."],
-	"options": [
-		"http://dnd5eapi.co/api/features/301",
-		"http://dnd5eapi.co/api/features/302",
-		"http://dnd5eapi.co/api/features/303",
-		"http://dnd5eapi.co/api/features/304",
-		"http://dnd5eapi.co/api/features/305",
-		"http://dnd5eapi.co/api/features/306",
-		"http://dnd5eapi.co/api/features/307",
-		"http://dnd5eapi.co/api/features/308"
-	],
-	"option_type": "feature",
-	"options_to_add": 1,
+	"choice": {
+		"choose": 1,
+		"type": "feature",
+		"from": [
+			"http://dnd5eapi.co/api/features/301",
+			"http://dnd5eapi.co/api/features/302",
+			"http://dnd5eapi.co/api/features/303",
+			"http://dnd5eapi.co/api/features/304",
+			"http://dnd5eapi.co/api/features/305",
+			"http://dnd5eapi.co/api/features/306",
+			"http://dnd5eapi.co/api/features/307",
+			"http://dnd5eapi.co/api/features/308"
+		]
+	},
 	"url": "http://dnd5eapi.co/api/features/312"
 }, {
 	"index": 313,
@@ -2841,18 +2867,20 @@
 	"name": "Metamagic (4 options)",
 	"level": 17,
 	"desc": ["At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.", "You can use only one Metamagic option on a spell when you cast it, unless otherwise noted."],
-	"options": [
-		"http://dnd5eapi.co/api/features/301",
-		"http://dnd5eapi.co/api/features/302",
-		"http://dnd5eapi.co/api/features/303",
-		"http://dnd5eapi.co/api/features/304",
-		"http://dnd5eapi.co/api/features/305",
-		"http://dnd5eapi.co/api/features/306",
-		"http://dnd5eapi.co/api/features/307",
-		"http://dnd5eapi.co/api/features/308"
-	],
-	"option_type": "feature",
-	"options_to_add": 1,
+	"choice": {
+		"choose": 1,
+		"type": "feature",
+		"from": [
+			"http://dnd5eapi.co/api/features/301",
+			"http://dnd5eapi.co/api/features/302",
+			"http://dnd5eapi.co/api/features/303",
+			"http://dnd5eapi.co/api/features/304",
+			"http://dnd5eapi.co/api/features/305",
+			"http://dnd5eapi.co/api/features/306",
+			"http://dnd5eapi.co/api/features/307",
+			"http://dnd5eapi.co/api/features/308"
+		]
+	},
 	"url": "http://dnd5eapi.co/api/features/316"
 }, {
 	"index": 317,
@@ -2910,26 +2938,28 @@
 	"name": "Eldritch Invocations",
 	"level": 2,
 	"desc": ["In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.", "At 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.", "Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level."],
-	"options": [
-		"http://dnd5eapi.co/api/features/324",
-		"http://dnd5eapi.co/api/features/325",
-		"http://dnd5eapi.co/api/features/326",
-		"http://dnd5eapi.co/api/features/327",
-		"http://dnd5eapi.co/api/features/328",
-		"http://dnd5eapi.co/api/features/329",
-		"http://dnd5eapi.co/api/features/330",
-		"http://dnd5eapi.co/api/features/331",
-		"http://dnd5eapi.co/api/features/332",
-		"http://dnd5eapi.co/api/features/333",
-		"http://dnd5eapi.co/api/features/334",
-		"http://dnd5eapi.co/api/features/335",
-		"http://dnd5eapi.co/api/features/336",
-		"http://dnd5eapi.co/api/features/337",
-		"http://dnd5eapi.co/api/features/338",
-		"http://dnd5eapi.co/api/features/339"
-	],
-	"option_type": "feature",
-	"options_to_add": 2,
+	"choice": {
+		"choose": 2,
+		"type": "feature",
+		"from": [
+			"http://dnd5eapi.co/api/features/324",
+			"http://dnd5eapi.co/api/features/325",
+			"http://dnd5eapi.co/api/features/326",
+			"http://dnd5eapi.co/api/features/327",
+			"http://dnd5eapi.co/api/features/328",
+			"http://dnd5eapi.co/api/features/329",
+			"http://dnd5eapi.co/api/features/330",
+			"http://dnd5eapi.co/api/features/331",
+			"http://dnd5eapi.co/api/features/332",
+			"http://dnd5eapi.co/api/features/333",
+			"http://dnd5eapi.co/api/features/334",
+			"http://dnd5eapi.co/api/features/335",
+			"http://dnd5eapi.co/api/features/336",
+			"http://dnd5eapi.co/api/features/337",
+			"http://dnd5eapi.co/api/features/338",
+			"http://dnd5eapi.co/api/features/339"
+		]
+	},
 	"url": "http://dnd5eapi.co/api/features/323"
 }, {
 	"index": 324,
