@@ -1,482 +1,981 @@
-[
-    {
-        "index": 0,
-        "class": "Barbarian",
-        "name": "Berserker",
-        "subclass_flavor": "Primal Path",
-        "desc": ["For some barbarians, rage is a means to an end— that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker’s rage, you thrill in the chaos of battle, heedless of your own health or well-being."],
-        "features": "http://dnd5eapi.co/api/features/barbarian/?subclass=Berserker"
-    },
-    {
-        "index": 0,
-        "class": "Bard",
-        "name": "Lore",
-        "subclass_flavor": "Bard College",
-        "desc": ["Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales. Whether singing folk ballads in taverns or elaborate compositions in royal courts, these bards use their gifts to hold audiences spellbound. When the applause dies down, the audience members might find themselves questioning everything they held to be true, from their faith in the priesthood of the local temple to their loyalty to the king. The loyalty of these bards lies in the pursuit of beauty and truth, not in fealty to a monarch or following the tenets of a deity. A noble who keeps such a bard as a herald or advisor knows that the bard would rather be honest than politic. The college's members gather in libraries and sometimes in actual colleges, complete with classrooms and dormitories, to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority."],
-        "features": "http://dnd5eapi.co/api/features/bard/?subclass=Lore"
-    },
-    {
-        "index": 0,
-        "class": "Cleric",
-        "name": "Life",
-        "subclass_flavor": "Divine Domain",
-        "desc": ["The Life domain focuses on the vibrant positive energy—one of the fundamental forces of the universe—that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities, sun gods, gods of healing or endurance, and gods of home and community."],
-        "features": "http://dnd5eapi.co/api/features/cleric/?subclass=Life",
-        "domain_spells": [
-				{
-					"level": 1,
-					"spells": [
-						"http://dnd5eapi.co/api/spells/28",
-						"http://dnd5eapi.co/api/spells/66"
-					]
-				},
-				{
-					"level": 3,
-					"spells": [
-						"http://dnd5eapi.co/api/spells/167",
-						"http://dnd5eapi.co/api/spells/265"
-					]
-				},
-				{
-					"level": 5,
-					"spells": [
-						"http://dnd5eapi.co/api/spells/24",
-						"http://dnd5eapi.co/api/spells/236"
-					]
-				},
-				{
-					"level": 7,
-					"spells": [
-						"http://dnd5eapi.co/api/spells/71"
-					]
-				},
-				{
-					"level": 9,
-					"spells": [
-						"http://dnd5eapi.co/api/spells/184",
-						"http://dnd5eapi.co/api/spells/226"
-					]
-				}
-			]
-    },
-    {
-        "index": 0,
-        "class": "Druid",
-        "name": "Land",
-        "subclass_flavor": "Druid Circle",
-        "desc": ["The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle’s wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle’s mysterious rites."],
-        "features": "http://dnd5eapi.co/api/features/druid/?subclass=Land",
-        "lands": [
-                    {
-                        "name": "Arctic",
-                        "spells": [
-                            {
-                                "level": 3,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/151",
-                                    "http://dnd5eapi.co/api/spells/263"
-                                ]
-                            },
-                            {
-                                "level": 5,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/257",
-                                    "http://dnd5eapi.co/api/spells/258"
-                                ]
-                            },
-                            {
-                                "level": 7,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/123",
-                                    "http://dnd5eapi.co/api/spells/152"
-                                ]
-                            },
-                            {
-                                "level": 9,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/45",
-                                    "http://dnd5eapi.co/api/spells/47"
-                                ]
-                            }
-                        ]
-                    }, 
-                    {
-                        "name": "Coast",
-                        "spells": [
-                            {
-                                "level": 3,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/196",
-                                    "http://dnd5eapi.co/api/spells/198"
-                                ]
-                            },
-                            {
-                                "level": 5,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/297",
-                                    "http://dnd5eapi.co/api/spells/2998"
-                                ]
-                            },
-                            {
-                                "level": 7,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/60",
-                                    "http://dnd5eapi.co/api/spells/123"
-                                ]
-                            },
-                            {
-                                "level": 9,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/52",
-                                    "http://dnd5eapi.co/api/spells/241"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Desert",
-                        "spells": [
-                            {
-                                "level": 3,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/32",
-                                    "http://dnd5eapi.co/api/spells/253"
-                                ]
-                            },
-                            {
-                                "level": 5,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/62",
-                                    "http://dnd5eapi.co/api/spells/222"
-                                ]
-                            },
-                            {
-                                "level": 7,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/29",
-                                    "http://dnd5eapi.co/api/spells/141"
-                                ]
-                            },
-                            {
-                                "level": 9,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/160",
-                                    "http://dnd5eapi.co/api/spells/294"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Forest",
-                        "spells": [
-                            {
-                                "level": 3,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/23",
-                                    "http://dnd5eapi.co/api/spells/262"
-                                ]
-                            },
-                            {
-                                "level": 5,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/34",
-                                    "http://dnd5eapi.co/api/spells/210"
-                                ]
-                            },
-                            {
-                                "level": 7,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/83",
-                                    "http://dnd5eapi.co/api/spells/123"
-                                ]
-                            },
-                            {
-                                "level": 9,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/46",
-                                    "http://dnd5eapi.co/api/spells/284"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Grassland",
-                        "spells": [
-                            {
-                                "level": 3,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/160",
-                                    "http://dnd5eapi.co/api/spells/203"
-                                ]
-                            },
-                            {
-                                "level": 5,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/70",
-                                    "http://dnd5eapi.co/api/spells/143"
-                                ]
-                            },
-                            {
-                                "level": 7,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/83",
-                                    "http://dnd5eapi.co/api/spells/123"
-                                ]
-                            },
-                            {
-                                "level": 9,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/89",
-                                    "http://dnd5eapi.co/api/spells/160"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Mountain",
-                        "spells": [
-                            {
-                                "level": 3,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/262",
-                                    "http://dnd5eapi.co/api/spells/263"
-                                ]
-                            },
-                            {
-                                "level": 5,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/170",
-                                    "http://dnd5eapi.co/api/spells/189"
-                                ]
-                            },
-                            {
-                                "level": 7,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/267",
-                                    "http://dnd5eapi.co/api/spells/268"
-                                ]
-                            },
-                            {
-                                "level": 9,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/204",
-                                    "http://dnd5eapi.co/api/spells/294"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Swamp",
-                        "spells": [
-                            {
-                                "level": 3,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/1",
-                                    "http://dnd5eapi.co/api/spells/68"
-                                ]
-                            },
-                            {
-                                "level": 5,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/298",
-                                    "http://dnd5eapi.co/api/spells/266"
-                                ]
-                            },
-                            {
-                                "level": 7,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/123",
-                                    "http://dnd5eapi.co/api/spells/172"
-                                ]
-                            },
-                            {
-                                "level": 9,
-                                "spells": [
-                                    "http://dnd5eapi.co/api/spells/160",
-                                    "http://dnd5eapi.co/api/spells/241"
-                                ]
-                            }
-                        ]
-                    }
-        ]
-    },
-    {
-        "index": 0,
-        "class": "Fighter",
-        "name": "Champion",
-        "subclass_flavor": "Martial Archetype",
-        "desc": ["The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows."],
-        "features": "http://dnd5eapi.co/api/features/fighter/?subclass=Champion"
-    },
-    {
-        "index": 0,
-        "class": "Monk",
-        "name": "Open Hand",
-        "subclass_flavor": "Monastic Tradition",
-        "desc": ["Monks of the Way of the Open Hand are the ultimate masters of martial arts combat, whether armed or unarmed. They learn techniques to push and trip their opponents, manipulate ki to heal damage to their bodies, and practice advanced meditation that can protect them from harm."],
-        "features": "http://dnd5eapi.co/api/features/monk/?subclass=Open+Hand"
-    },
-    {
-        "index": 0,
-        "class": "Paladin",
-        "name": "Devotion",
-        "subclass_flavor": "Sacred Oath",
-        "desc": ["The Oath of Devotion binds a paladin to the loftiest ideals of justice, virtue, and order. Sometimes called cavaliers, white knights, or holy warriors, these paladins meet the ideal of the knight in shining armor, acting with honor in pursuit of justice and the greater good. They hold themselves to the highest standards of conduct, and some, for better or worse, hold the rest of the world to the same standards. Many who swear this oath are devoted to gods of law and good and use their gods' tenets as the measure of their devotion. They hold angels--the perfect servants of good--as their ideals, and incorporate images of angelic wings into their helmets or coats of arms."],
-        "features": "http://dnd5eapi.co/api/features/paladin/?subclass=Devotion",
-        "oath_spells": [
-				{
-					"level": 3,
-					"spells": [
-						"http://dnd5eapi.co/api/spells/223",
-						"http://dnd5eapi.co/api/spells/239"
-					]
-				},
-				{
-					"level": 5,
-					"spells": [
-						"http://dnd5eapi.co/api/spells/167",
-						"http://dnd5eapi.co/api/spells/305"
-					]
-				},
-				{
-					"level": 9,
-					"spells": [
-						"http://dnd5eapi.co/api/spells/24",
-						"http://dnd5eapi.co/api/spells/82"
-					]
-				},
-				{
-					"level": 13,
-					"spells": [
-						"http://dnd5eapi.co/api/spells/123"
-					]
-				},
-				{
-					"level": 17,
-					"spells": [
-						"http://dnd5eapi.co/api/spells/45",
-						"http://dnd5eapi.co/api/spells/114"
-					]
-				}
-			]
-    },
-    {
-        "index": 0,
-        "class": "Ranger",
-        "name": "Hunter",
-        "subclass_flavor": "Ranger Archetype",
-        "desc": ["Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter's path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons."],
-        "features": "http://dnd5eapi.co/api/features/ranger/?subclass=Hunter"
-    },
-    {
-        "index": 0,
-        "class": "Rogue",
-        "name": "Thief",
-        "subclass_flavor": "Sorcerous Origins",
-        "desc": ["You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using magic items you normally couldn't employ."],
-        "features": "http://dnd5eapi.co/api/features/rogue/?subclass=Thief"
-    },
-    {
-        "index": 0,
-        "class": "Sorcerer",
-        "name": "Draconic",
-        "subclass_flavor": "Sorcerous Origins",
-        "desc": ["Your innate magic comes from draconic magic that was mingled with your blood or that of your ancestors. Most often, sorcerers with this origin trace their descent back to a mighty sorcerer of ancient times who made a bargain with a dragon or who might even have claimed a dragon parent. Some of these bloodlines are well established in the world, but most are obscure. Any given sorcerer could be the first of a new bloodline, as a result of a pact or some other exceptional circumstance."],
-        "features": "http://dnd5eapi.co/api/features/sorcerer/?subclass=Draconic",
-        "dragon_ancestors": [
-            {
-                "dragon": "Black",
-                "damage_type": "Acid"
+[{
+	"index": 0,
+	"class": "Barbarian",
+	"name": "Berserker",
+	"subclass_flavor": "Primal Path",
+	"desc": ["For some barbarians, rage is a means to an end— that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker’s rage, you thrill in the chaos of battle, heedless of your own health or well-being."],
+	"features": "http://dnd5eapi.co/api/features/barbarian/?subclass=Berserker"
+}, {
+	"index": 0,
+	"class": "Bard",
+	"name": "Lore",
+	"subclass_flavor": "Bard College",
+	"desc": ["Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales. Whether singing folk ballads in taverns or elaborate compositions in royal courts, these bards use their gifts to hold audiences spellbound. When the applause dies down, the audience members might find themselves questioning everything they held to be true, from their faith in the priesthood of the local temple to their loyalty to the king. The loyalty of these bards lies in the pursuit of beauty and truth, not in fealty to a monarch or following the tenets of a deity. A noble who keeps such a bard as a herald or advisor knows that the bard would rather be honest than politic. The college's members gather in libraries and sometimes in actual colleges, complete with classrooms and dormitories, to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority."],
+	"features": "http://dnd5eapi.co/api/features/bard/?subclass=Lore"
+}, {
+	"index": 0,
+	"class": "Cleric",
+	"name": "Life",
+	"subclass_flavor": "Divine Domain",
+	"desc": ["The Life domain focuses on the vibrant positive energy—one of the fundamental forces of the universe—that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities, sun gods, gods of healing or endurance, and gods of home and community."],
+	"features": "http://dnd5eapi.co/api/features/cleric/?subclass=Life",
+	"new_spells": [{
+		"level_acquired": 1,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/28",
+			"name": ""
+		}
+	}, {
+		"level_acquired": 1,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/66",
+			"name": ""
+		}
+	}, {
+		"level_acquired": 3,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/167",
+			"name": ""
+		}
+	}, {
+		"level_acquired": 3,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/265",
+			"name": ""
+		}
+	}, {
+		"level_acquired": 5,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/24",
+			"name": ""
+		}
+	}, {
+		"level_acquired": 5,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/236",
+			"name": ""
+		}
+	}, {
+		"level_acquired": 7,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/71",
+			"name": ""
+		}
+	}, {
+		"level_acquired": 9,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/184",
+			"name": ""
+		}
+	}, {
+		"level_acquired": 9,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/226",
+			"name": ""
+		}
+	}]
+}, {
+	"index": 0,
+	"class": "Druid",
+	"name": "Land",
+	"subclass_flavor": "Druid Circle",
+	"desc": ["The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle’s wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle’s mysterious rites."],
+	"features": "http://dnd5eapi.co/api/features/druid/?subclass=Land",
+	"lands": [{
+		"name": "Arctic",
+		"spells": [{
+			"level_acquired": 3,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/151",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 3,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/263",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 5,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/257",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 5,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/258",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 7,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/123",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 7,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/152",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 9,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/45",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 9,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/47",
+				"name": ""
+			}
+		}]
+	}, {
+		"name": "Coast",
+		"spells": [{
+			"level_acquired": 3,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/196",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 3,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/198",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 5,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/297",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 5,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/2998",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 7,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/60",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 7,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/123",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 9,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/52",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 9,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/241",
+				"name": ""
+			}
+		}]
+	}, {
+		"name": "Desert",
+		"spells": [{
+			"level_acquired": 3,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/32",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 3,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/253",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 5,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/62",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 5,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/222",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 7,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/29",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 7,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/141",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 9,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/160",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 9,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/294",
+				"name": ""
+			}
+		}]
+	}, {
+		"name": "Forest",
+		"spells": [{
+			"level_acquired": 3,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/23",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 3,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/262",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 5,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/34",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 5,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/210",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 7,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/83",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 7,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/123",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 9,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/46",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 9,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/284",
+				"name": ""
+			}
+		}]
+	}, {
+		"name": "Grassland",
+		"spells": [{
+			"level_acquired": 3,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/160",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 3,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/203",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 5,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/70",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 5,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/143",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 7,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/83",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 7,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/123",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 9,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/89",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 9,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/160",
+				"name": ""
+			}
+		}]
+	}, {
+		"name": "Mountain",
+		"spells": [{
+			"level_acquired": 3,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/262",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 3,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/263",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 5,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/170",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 5,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/189",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 7,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/267",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 7,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/268",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 9,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/204",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 9,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/294",
+				"name": ""
+			}
+		}]
+	}, {
+		"name": "Swamp",
+		"spells": [{
+			"level_acquired": 3,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/1",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 3,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/68",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 5,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/298",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 5,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/266",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 7,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/123",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 7,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/172",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 9,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/160",
+				"name": ""
+			}
+		}, {
+			"level_acquired": 9,
+			"spell_acquisition_method": {
+				"name": "level",
+				"url": ""
+			},
+			"spell": {
+				"url": "http://dnd5eapi.co/api/spells/241",
+				"name": ""
+			}
+		}]
+	}]
+}, {
+	"index": 0,
+	"class": "Fighter",
+	"name": "Champion",
+	"subclass_flavor": "Martial Archetype",
+	"desc": ["The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows."],
+	"features": "http://dnd5eapi.co/api/features/fighter/?subclass=Champion"
+}, {
+	"index": 0,
+	"class": "Monk",
+	"name": "Open Hand",
+	"subclass_flavor": "Monastic Tradition",
+	"desc": ["Monks of the Way of the Open Hand are the ultimate masters of martial arts combat, whether armed or unarmed. They learn techniques to push and trip their opponents, manipulate ki to heal damage to their bodies, and practice advanced meditation that can protect them from harm."],
+	"features": "http://dnd5eapi.co/api/features/monk/?subclass=Open+Hand"
+}, {
+	"index": 0,
+	"class": "Paladin",
+	"name": "Devotion",
+	"subclass_flavor": "Sacred Oath",
+	"desc": ["The Oath of Devotion binds a paladin to the loftiest ideals of justice, virtue, and order. Sometimes called cavaliers, white knights, or holy warriors, these paladins meet the ideal of the knight in shining armor, acting with honor in pursuit of justice and the greater good. They hold themselves to the highest standards of conduct, and some, for better or worse, hold the rest of the world to the same standards. Many who swear this oath are devoted to gods of law and good and use their gods' tenets as the measure of their devotion. They hold angels--the perfect servants of good--as their ideals, and incorporate images of angelic wings into their helmets or coats of arms."],
+	"features": "http://dnd5eapi.co/api/features/paladin/?subclass=Devotion",
+	"oath_spells": [{
+		"level_acquired": 3,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/223",
+			"name": ""
+		}
+	}, {
+		"level_acquired": 3,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/239",
+			"name": ""
+		}
+	}, {
+		"level_acquired": 5,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/167",
+			"name": ""
+		}
+	}, {
+		"level_acquired": 5,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/305",
+			"name": ""
+		}
+	}, {
+		"level_acquired": 9,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/24",
+			"name": ""
+		}
+	}, {
+		"level_acquired": 9,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/82",
+			"name": ""
+		}
+	}, {
+		"level_acquired": 13,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/123",
+			"name": ""
+		}
+	}, {
+		"level_acquired": 17,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/45",
+			"name": ""
+		}
+	}, {
+		"level_acquired": 17,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/114",
+			"name": ""
+		}
+	}]
+}, {
+	"index": 0,
+	"class": "Ranger",
+	"name": "Hunter",
+	"subclass_flavor": "Ranger Archetype",
+	"desc": ["Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter's path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons."],
+	"features": "http://dnd5eapi.co/api/features/ranger/?subclass=Hunter"
+}, {
+	"index": 0,
+	"class": "Rogue",
+	"name": "Thief",
+	"subclass_flavor": "Sorcerous Origins",
+	"desc": ["You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using magic items you normally couldn't employ."],
+	"features": "http://dnd5eapi.co/api/features/rogue/?subclass=Thief"
+}, {
+	"index": 0,
+	"class": "Sorcerer",
+	"name": "Draconic",
+	"subclass_flavor": "Sorcerous Origins",
+	"desc": ["Your innate magic comes from draconic magic that was mingled with your blood or that of your ancestors. Most often, sorcerers with this origin trace their descent back to a mighty sorcerer of ancient times who made a bargain with a dragon or who might even have claimed a dragon parent. Some of these bloodlines are well established in the world, but most are obscure. Any given sorcerer could be the first of a new bloodline, as a result of a pact or some other exceptional circumstance."],
+	"features": "http://dnd5eapi.co/api/features/sorcerer/?subclass=Draconic",
+	"dragon_ancestors": [{
+		"dragon": "Black",
+		"damage_type": "Acid"
+	}, {
+		"dragon": "Blue",
+		"damage_type": "Lightning"
+	}, {
+		"dragon": "Brass",
+		"damage_type": "Fire"
+	}, {
+		"dragon": "Bronze",
+		"damage_type": "Lightning"
+	}, {
+		"dragon": "Copper",
+		"damage_type": "Acid"
+	}, {
+		"dragon": "Gold",
+		"damage_type": "Fire"
+	}, {
+		"dragon": "Green",
+		"damage_type": "Poison"
+	}, {
+		"dragon": "Red",
+		"damage_type": "Fire"
+	}, {
+		"dragon": "Silver",
+		"damage_type": "Cold"
+	}, {
+		"dragon": "White",
+		"damage_type": "Cold"
+	}]
+}, {
+	"index": 0,
+	"class": "Warlock",
+	"name": "Fiend",
+	"subclass_flavor": "Otherworldly Patron",
+	"desc": ["You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz'Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths."],
+	"features": "http://dnd5eapi.co/api/features/warlock/?subclass=Fiend",
+	"spells": [{
+		"level_acquired": 1,
+		"spell_acquisition_method": {
+			"name": "level",
+			"url": ""
+		},
+		"spell": {
+			"url": "http://dnd5eapi.co/api/spells/33",
+			"name": ""
+		}
+        }, {
+            "level_acquired": 1,
+            "spell_acquisition_method": {
+                "name": "level",
+                "url": ""
             },
-            {
-                "dragon": "Blue",
-                "damage_type": "Lightning"
-            },
-            {
-                "dragon": "Brass",
-                "damage_type": "Fire"
-            },
-            {
-                "dragon": "Bronze",
-                "damage_type": "Lightning"
-            },
-            {
-                "dragon": "Copper",
-                "damage_type": "Acid"
-            },
-            {
-                "dragon": "Gold",
-                "damage_type": "Fire"
-            },
-            {
-                "dragon": "Green",
-                "damage_type": "Poison"
-            },
-            {
-                "dragon": "Red",
-                "damage_type": "Fire"
-            },
-            {
-                "dragon": "Silver",
-                "damage_type": "Cold"
-            },
-            {
-                "dragon": "White",
-                "damage_type": "Cold"
+            "spell": {
+                "url": "http://dnd5eapi.co/api/spells/44",
+                "name": ""
             }
-        ]
-    },
-    {
-        "index": 0,
-        "class": "Warlock",
-        "name": "Fiend",
-        "subclass_flavor": "Otherworldly Patron",
-        "desc": ["You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz'Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths."],
-        "features": "http://dnd5eapi.co/api/features/warlock/?subclass=Fiend",
-        "expanded_spell_list": [
-				{
-					"spell_level": 1,
-					"spells": [
-						"http://dnd5eapi.co/api/spells/33",
-						"http://dnd5eapi.co/api/spells/44"
-					]
-				},
-				{
-					"spell_level": 2,
-					"spells": [
-						"http://dnd5eapi.co/api/spells/30",
-						"http://dnd5eapi.co/api/spells/240"
-					]
-				},
-				{
-					"spell_level": 3,
-					"spells": [
-						"http://dnd5eapi.co/api/spells/110",
-						"http://dnd5eapi.co/api/spells/266"
-					]
-				},
-				{
-					"spell_level": 4,
-					"spells": [
-						"http://dnd5eapi.co/api/spells/111",
-						"http://dnd5eapi.co/api/spells/291"
-					]
-				},
-				{
-					"spell_level": 5,
-					"spells": [
-						"http://dnd5eapi.co/api/spells/114",
-						"http://dnd5eapi.co/api/spells/140"
-					]
-				}
-			]
-    },
-    {
-        "index": 0,
-        "class": "Wizard",
-        "name": "Evocation",
-        "subclass_flavor": "Arcane Tradition",
-        "desc": ["You focus your study on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid. Some evokers find employment in military forces, serving as artillery to blast enemy armies from afar. Others use their spectacular power to protect the weak, while some seek their own gain as bandits, adventurers, or aspiring tyrants."],
-        "features": "http://dnd5eapi.co/api/features/wizard/?subclass=Evocation"
-    }
-]
+        }, {
+            "level_acquired": 1,
+            "spell_acquisition_method": {
+                "name": "level",
+                "url": ""
+            },
+            "spell": {
+                "url": "http://dnd5eapi.co/api/spells/30",
+                "name": ""
+            }
+        }, {
+            "level_acquired": 1,
+            "spell_acquisition_method": {
+                "name": "level",
+                "url": ""
+            },
+            "spell": {
+                "url": "http://dnd5eapi.co/api/spells/240",
+                "name": ""
+            }
+        }, {
+            "level_acquired": 1,
+            "spell_acquisition_method": {
+                "name": "level",
+                "url": ""
+            },
+            "spell": {
+                "url": "http://dnd5eapi.co/api/spells/110",
+                "name": ""
+            }
+        }, {
+            "level_acquired": 1,
+            "spell_acquisition_method": {
+                "name": "level",
+                "url": ""
+            },
+            "spell": {
+                "url": "http://dnd5eapi.co/api/spells/266",
+                "name": ""
+            }
+        }, {
+            "level_acquired": 1,
+            "spell_acquisition_method": {
+                "name": "level",
+                "url": ""
+            },
+            "spell": {
+                "url": "http://dnd5eapi.co/api/spells/111",
+                "name": ""
+            }
+        }, {
+            "level_acquired": 1,
+            "spell_acquisition_method": {
+                "name": "level",
+                "url": ""
+            },
+            "spell": {
+                "url": "http://dnd5eapi.co/api/spells/291",
+                "name": ""
+            }
+        }, {
+            "level_acquired": 1,
+            "spell_acquisition_method": {
+                "name": "level",
+                "url": ""
+            },
+            "spell": {
+                "url": "http://dnd5eapi.co/api/spells/114",
+                "name": ""
+            }
+        }, {
+            "level_acquired": 1,
+            "spell_acquisition_method": {
+                "name": "level",
+                "url": ""
+            },
+            "spell": {
+                "url": "http://dnd5eapi.co/api/spells/140",
+                "name": ""
+            }
+        }]
+}, {
+	"index": 0,
+	"class": "Wizard",
+	"name": "Evocation",
+	"subclass_flavor": "Arcane Tradition",
+	"desc": ["You focus your study on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid. Some evokers find employment in military forces, serving as artillery to blast enemy armies from afar. Others use their spectacular power to protect the weak, while some seek their own gain as bandits, adventurers, or aspiring tyrants."],
+	"features": "http://dnd5eapi.co/api/features/wizard/?subclass=Evocation"
+}]
