@@ -1,5 +1,4 @@
 [
-
 	{
 		"index": 0,
 		"name": "Dwarf",
@@ -9,27 +8,42 @@
 		"age": "Dwarves mature at the same rate as humans, but they’re considered young until they reach the age of 50. On average, they live about 350 years.",
 		"size": "Medium",
 		"size_description": "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium.",
-		"starting_proficiencies": [
-			"http://dnd5eapi.co/api/proficiencies/7",
-			"http://dnd5eapi.co/api/proficiencies/11",
-			"http://dnd5eapi.co/api/proficiencies/15",
-			"http://dnd5eapi.co/api/proficiencies/27", {
-				"choose": 1,
-				"type": "proficiencies",
-				"from": [
-					"http://dnd5eapi.co/api/proficiencies/29",
-					"http://dnd5eapi.co/api/proficiencies/38",
-					"http://dnd5eapi.co/api/proficiencies/41"
-				]
-			}
-		],
-		"languages": [
-			"http://dnd5eapi.co/api/languages/1",
-			"http://dnd5eapi.co/api/languages/2"
-		],
+		"starting_proficiencies": [{
+			"url": "http://dnd5eapi.co/api/proficiencies/20",
+			"name": "Battleaxes"
+		}, {
+			"url": "http://dnd5eapi.co/api/proficiencies/24",
+			"name": "Handaxes"
+		}, {
+			"url": "http://dnd5eapi.co/api/proficiencies/26",
+			"name": "Light hammers"
+		}, {
+			"url": "http://dnd5eapi.co/api/proficiencies/51",
+			"name": "Warhammers"
+		}, {
+			"choose": 1,
+			"type": "proficiencies",
+			"from": [{
+				"url": "http://dnd5eapi.co/api/proficiencies/71",
+				"name": "Smith's tools"
+			}, {
+				"url": "http://dnd5eapi.co/api/proficiencies/59",
+				"name": "Brewer's supplies"
+			}, {
+				"url": "http://dnd5eapi.co/api/proficiencies/68",
+				"name": "Mason's tools"
+			}]
+		}],
+		"languages": [{
+			"url": "http://dnd5eapi.co/api/languages/1",
+			"name": "Common"
+		}, {
+			"url": "http://dnd5eapi.co/api/languages/2",
+			"name": "Dwarvish"
+		}],
 		"language_desc": "You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.",
 		"racial_traits": "http://dnd5eapi.co/api/traits/dwarf",
-		"subraces": ["http://dnd5eapi.co/api/subraces/1"]
+		"subraces": [{"url": "http://dnd5eapi.co/api/subraces/1", "name": "Hill Dwarf"}]
 	}, {
 		"index": 0,
 		"name": "Elf",
@@ -39,16 +53,20 @@
 		"alignment": "Elves love freedom, variety, and self-expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others’ freedom as well as their own, and they are more often good than not. The drow are an exception; their exile has made them vicious and dangerous. Drow are more often evil than not.",
 		"size": "Medium",
 		"size_description": "Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium.",
-		"starting_proficiencies": [
-			"http://dnd5eapi.co/api/proficiencies/76"
-		],
-		"languages": [
-			"http://dnd5eapi.co/api/languages/1",
-			"http://dnd5eapi.co/api/languages/3"
-		],
+		"starting_proficiencies": [{
+			"url": "http://dnd5eapi.co/api/proficiencies/115",
+			"name": "Nature"
+		}],
+		"languages": [{
+			"url": "http://dnd5eapi.co/api/languages/1",
+			"name": "Common"
+		}, {
+			"url": "http://dnd5eapi.co/api/languages/3",
+			"name": "Elvish"
+		}],
 		"language_desc": "You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.",
 		"racial_traits": "http://dnd5eapi.co/api/traits/elf",
-		"subraces": ["http://dnd5eapi.co/api/subraces/2"]
+		"subraces": [{"url": "http://dnd5eapi.co/api/subraces/2", "name": "High Elf"}]
 	}
 
 	, {
@@ -61,13 +79,16 @@
 		"size": "Small",
 		"size_description": "Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small.",
 		"starting_proficiencies": [],
-		"languages": [
-			"http://dnd5eapi.co/api/languages/1",
-			"http://dnd5eapi.co/api/languages/7"
-		],
-		"language_desc": "",
+		"languages": [{
+			"url": "http://dnd5eapi.co/api/languages/1",
+			"name": "Common"
+		}, {
+			"url": "http://dnd5eapi.co/api/languages/7",
+			"name": "Halfling"
+		}],
+		"language_desc": "You can speak, read, and write Common and Halfling. The Halfling language isn’t secret, but halflings are loath to share it with others. They write very little, so they don’t have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling.",
 		"racial_traits": "http://dnd5eapi.co/api/traits/halfling",
-		"subraces": ["http://dnd5eapi.co/api/subraces/3"]
+		"subraces": [{"url": "http://dnd5eapi.co/api/subraces/3", "name": "Lightfoot Halfling"}]
 	},
 
 
@@ -81,31 +102,61 @@
 		"size": "Medium",
 		"size_description": "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.",
 		"starting_proficiencies": [],
-		"languages": [
-			"http://dnd5eapi.co/api/languages/1", {
-				"choose": 1,
-				"type": "languages",
-				"from": [
-					"http://dnd5eapi.co/api/languages/2",
-					"http://dnd5eapi.co/api/languages/3",
-					"http://dnd5eapi.co/api/languages/4",
-					"http://dnd5eapi.co/api/languages/5",
-					"http://dnd5eapi.co/api/languages/6",
-					"http://dnd5eapi.co/api/languages/7",
-					"http://dnd5eapi.co/api/languages/8",
-					"http://dnd5eapi.co/api/languages/9",
-					"http://dnd5eapi.co/api/languages/10",
-					"http://dnd5eapi.co/api/languages/11",
-					"http://dnd5eapi.co/api/languages/12",
-					"http://dnd5eapi.co/api/languages/13",
-					"http://dnd5eapi.co/api/languages/14",
-					"http://dnd5eapi.co/api/languages/15",
-					"http://dnd5eapi.co/api/languages/16"
-				]
-			}
-		],
+		"languages": [{
+			"url": "http://dnd5eapi.co/api/languages/1",
+			"name": "Common"
+		}, {
+			"choose": 1,
+			"type": "languages",
+			"from": [{
+				"url": "http://dnd5eapi.co/api/languages/2",
+				"name": "Dwarvish"
+			}, {
+				"url": "http://dnd5eapi.co/api/languages/3",
+				"name": "Elvish"
+			}, {
+				"url": "http://dnd5eapi.co/api/languages/4",
+				"name": "Giant"
+			}, {
+				"url": "http://dnd5eapi.co/api/languages/5",
+				"name": "Gnomish"
+			}, {
+				"url": "http://dnd5eapi.co/api/languages/6",
+				"name": "Goblin"
+			}, {
+				"url": "http://dnd5eapi.co/api/languages/7",
+				"name": "Halfling"
+			}, {
+				"url": "http://dnd5eapi.co/api/languages/8",
+				"name": "Orc"
+			}, {
+				"url": "http://dnd5eapi.co/api/languages/9",
+				"name": "Abyssal"
+			}, {
+				"url": "http://dnd5eapi.co/api/languages/10",
+				"name": "Celestial"
+			}, {
+				"url": "http://dnd5eapi.co/api/languages/11",
+				"name": "Draconic"
+			}, {
+				"url": "http://dnd5eapi.co/api/languages/12",
+				"name": "Deep Speech"
+			}, {
+				"url": "http://dnd5eapi.co/api/languages/13",
+				"name": "Infernal"
+			}, {
+				"url": "http://dnd5eapi.co/api/languages/14",
+				"name": "Primordial"
+			}, {
+				"url": "http://dnd5eapi.co/api/languages/15",
+				"name": "Sylvan"
+			}, {
+				"url": "http://dnd5eapi.co/api/languages/16",
+				"name": "Undercommon"
+			}]
+		}],
 		"language_desc": "You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.",
 		"racial_traits": "http://dnd5eapi.co/api/traits/human",
-        "subraces": []
+		"subraces": []
 	}
 ]
