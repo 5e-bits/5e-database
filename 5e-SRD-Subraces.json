@@ -1,40 +1,97 @@
 [{
 	"index": 1,
 	"name": "Hill Dwarf",
-	"race": "http://dnd5eapi.co/races/1",
+	"race": { "url": "http://dnd5eapi.co/api/races/1", "name": "Dwarf" },
 	"desc": "As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience.",
 	"ability_bonuses": [0, 0, 0, 0, 1, 0],
-	"starting_proficiencies:": ["http://dnd5eapi.co/api/proficiencies/1", "http://dnd5eapi.co/api/proficiencies/2"],
+	"starting_proficiencies:": [],
 	"languages": [],
-	"racial_traits": [
-		"http://dnd5eapi.co/api/traits/4"
-	],
+	"racial_traits": [{
+		"url": "http://dnd5eapi.co/api/traits/4",
+		"name": "Dwarven Toughness"
+	}],
 	"url": "http://dnd5eapi.co/api/subraces/1"
 }, {
 	"index": 2,
 	"name": "High Elf",
-	"race": "http://dnd5eapi.co/races/2",
+	"race": { "url": "http://dnd5eapi.co/api/races/2", "name": "Elf" },
 	"desc": "As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many fantasy gaming worlds, there are two kinds of high elves. One type is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type is more common and more friendly, and often encountered among humans and other races.",
 	"ability_bonuses": [0, 0, 0, 1, 0, 0],
-	"starting_proficiencies:": ["http://dnd5eapi.co/api/proficiencies/16", "http://dnd5eapi.co/api/proficiencies/17", "http://dnd5eapi.co/api/proficiencies/25", "http://dnd5eapi.co/api/proficiencies/26"],
+	"starting_proficiencies:": [{
+		"url": "http://dnd5eapi.co/api/proficiencies/42",
+		"name": "Longsword"
+	}, {
+		"url": "http://dnd5eapi.co/api/proficiencies/48",
+		"name": "Shortsword"
+	}, {
+		"url": "http://dnd5eapi.co/api/proficiencies/33",
+		"name": "Shortbow"
+	}, {
+		"url": "http://dnd5eapi.co/api/proficiencies/56",
+		"name": "Longbow"
+	}],
 	"languages": [{
 		"quantity": 1,
-		"options": ["http://dnd5eapi.co/api/languages/1", "http://dnd5eapi.co/api/languages/2", "http://dnd5eapi.co/api/languages/3", "http://dnd5eapi.co/api/languages/4", "http://dnd5eapi.co/api/languages/5", "http://dnd5eapi.co/api/languages/6", "http://dnd5eapi.co/api/languages/7", "http://dnd5eapi.co/api/languages/8", "http://dnd5eapi.co/api/languages/9", "http://dnd5eapi.co/api/languages/10", "http://dnd5eapi.co/api/languages/11", "http://dnd5eapi.co/api/languages/12", "http://dnd5eapi.co/api/languages/13", "http://dnd5eapi.co/api/languages/14", "http://dnd5eapi.co/api/languages/15", "http://dnd5eapi.co/api/languages/16"]
+		"options": [{
+			"url": "http://dnd5eapi.co/api/languages/2",
+			"name": "Dwarvish"
+		}, {
+			"url": "http://dnd5eapi.co/api/languages/4",
+			"name": "Giant"
+		}, {
+			"url": "http://dnd5eapi.co/api/languages/5",
+			"name": "Gnomish"
+		}, {
+			"url": "http://dnd5eapi.co/api/languages/6",
+			"name": "Goblin"
+		}, {
+			"url": "http://dnd5eapi.co/api/languages/7",
+			"name": "Halfling"
+		}, {
+			"url": "http://dnd5eapi.co/api/languages/8",
+			"name": "Orc"
+		}, {
+			"url": "http://dnd5eapi.co/api/languages/9",
+			"name": "Abyssal"
+		}, {
+			"url": "http://dnd5eapi.co/api/languages/10",
+			"name": "Celestial"
+		}, {
+			"url": "http://dnd5eapi.co/api/languages/11",
+			"name": "Draconic"
+		}, {
+			"url": "http://dnd5eapi.co/api/languages/12",
+			"name": "Deep Speech"
+		}, {
+			"url": "http://dnd5eapi.co/api/languages/13",
+			"name": "Infernal"
+		}, {
+			"url": "http://dnd5eapi.co/api/languages/14",
+			"name": "Primordial"
+		}, {
+			"url": "http://dnd5eapi.co/api/languages/15",
+			"name": "Sylvan"
+		}, {
+			"url": "http://dnd5eapi.co/api/languages/16",
+			"name": "Undercommon"
+		}]
 	}],
-	"racial_traits": [
-		"http://dnd5eapi.co/api/traits/8"
-	],
+	"racial_traits": [{
+		"url": "http://dnd5eapi.co/api/traits/8",
+		"name": "Cantrip"
+	}],
 	"url": "http://dnd5eapi.co/api/subraces/2"
 }, {
 	"index": 3,
 	"name": "Lightfoot Halfling",
-	"race": "http://dnd5eapi.co/races/3",
+	"race": { "url": "http://dnd5eapi.co/api/races/3", "name": "Halfling" },
 	"desc": "As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You’re inclined to be affable and get along well with others. Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life.",
 	"ability_bonuses": [0, 0, 0, 0, 0, 1],
 	"starting_proficiencies:": [],
 	"languages": [],
-	"racial_traits": [
-		"http://dnd5eapi.co/api/traits/12"
-	],
+	"racial_traits": [{
+		"url": "http://dnd5eapi.co/api/traits/12",
+		"name": "Naturally Stealthy"
+	}],
 	"url": "http://dnd5eapi.co/api/subraces/3"
 }]

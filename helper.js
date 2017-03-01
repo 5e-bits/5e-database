@@ -2,8 +2,9 @@ var fs = require('fs');
 let all_data_types = ["classes", "features", "tables", "equipment", "monsters", "proficiencies", "spells", "startingequipment"]
 
 function create_upload_file(datatype_string) {
-
+	
 	let input_filename = "./5e-SRD-" + datatype_string + ".json"
+	console.log(input_filename);
 	let index_and_urlify = (err,data) => {
 		
 		data = JSON.parse(data);

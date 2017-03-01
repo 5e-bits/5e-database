@@ -1,63 +1,73 @@
-[
-    {
-        "index": 0,
-        "name": "Darkvision (Dwarf)",
-        "race": "Dwarf",
-        "desc": ["Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."]
-    }, {
-        "index": 0,
-        "name": "Dwarven Resilience",
-        "race": "Dwarf",
-        "desc": ["You have advantage on saving throws against poison, and you have resistance against poison damage."]
-    }, {
-        "index": 0,
-        "name": "Stonecunning",
-        "race": "Dwarf",
-        "desc": ["Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."]
-    }, {
-        "index": 0,
-		"name": "Dwarven Toughness",
-        "subrace": "Hill Dwarf",
-		"desc": ["Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."]
-	}, {
-        "index": 0,
-        "name": "Darkvision (Elf)",
-        "race": "Elf",
-        "desc": ["Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."]
-    }, {
-        "index": 0,
-        "name": "Fey Ancestry",
-        "race": "Elf",
-        "desc": ["You have advantage on saving throws against being charmed, and magic can’t put you to sleep."]
-    }, {
-        "index": 0,
-        "name": "Trance",
-        "race": "Elf",
-        "desc": ["Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\")", "While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."]
-    }, {
-        "index": 0,
-		"name": "Cantrip",
-        "subrace": "High Elf",
-		"desc": ["You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it."]
-	}, {
-        "index": 0,
-        "name": "Lucky",
-        "race": "Halfling",
-        "desc": ["When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."]
-    }, {
-        "index": 0,
-        "name": "Brave",
-        "race": "Halfling",
-        "desc": ["You have advantage on saving throws against being frightened"]
-    }, {
-        "index": 0,
-        "name": "Halfling Nimbleness",
-        "race": "Halfling",
-        "desc": ["You can move through the space of any creature that is of a size larger than yours."]
-    }, {
-        "index": 0,
-		"name": "Naturally Stealthy",
-        "subrace": "Lightfoot Halfling",
-		"desc": ["You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."]
-	}
-]
+[{
+	"index": 1,
+	"name": "Darkvision (Dwarf)",
+	"race": { "url": "http://dnd5eapi.co/api/races/1", "name": "Dwarf" },
+	"desc": ["Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."],
+	"url": "http://dnd5eapi.co/api/traits/1"
+}, {
+	"index": 2,
+	"name": "Dwarven Resilience",
+	"race": { "url": "http://dnd5eapi.co/api/races/1", "name": "Dwarf" },
+	"desc": ["You have advantage on saving throws against poison, and you have resistance against poison damage."],
+	"url": "http://dnd5eapi.co/api/traits/2"
+}, {
+	"index": 3,
+	"name": "Stonecunning",
+	"race": { "url": "http://dnd5eapi.co/api/races/1", "name": "Dwarf" },
+	"desc": ["Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."],
+	"url": "http://dnd5eapi.co/api/traits/3"
+}, {
+	"index": 4,
+	"name": "Dwarven Toughness",
+	"race": { "url": "http://dnd5eapi.co/api/subraces/1", "name": "Hill Dwarf" },
+	"desc": ["Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."],
+	"url": "http://dnd5eapi.co/api/traits/4"
+}, {
+	"index": 5,
+	"name": "Darkvision (Elf)",
+	"race": { "url": "http://dnd5eapi.co/api/races/2", "name": "Elf" },
+	"desc": ["Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."],
+	"url": "http://dnd5eapi.co/api/traits/5"
+}, {
+	"index": 6,
+	"name": "Fey Ancestry",
+	"race": { "url": "http://dnd5eapi.co/api/races/2", "name": "Elf" },
+	"desc": ["You have advantage on saving throws against being charmed, and magic can’t put you to sleep."],
+	"url": "http://dnd5eapi.co/api/traits/6"
+}, {
+	"index": 7,
+	"name": "Trance",
+	"race": { "url": "http://dnd5eapi.co/api/races/2", "name": "Elf" },
+	"desc": ["Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\")", "While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."],
+	"url": "http://dnd5eapi.co/api/traits/7"
+}, {
+	"index": 8,
+	"name": "Cantrip",
+	"race": { "url": "http://dnd5eapi.co/api/subraces/2", "name": "High Elf" },
+	"desc": ["You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it."],
+	"url": "http://dnd5eapi.co/api/traits/8"
+}, {
+	"index": 9,
+	"name": "Lucky",
+	"race": { "url": "http://dnd5eapi.co/api/races/3", "name": "Halfling" },
+	"desc": ["When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."],
+	"url": "http://dnd5eapi.co/api/traits/9"
+}, {
+	"index": 10,
+	"name": "Brave",
+	"race": { "url": "http://dnd5eapi.co/api/races/3", "name": "Halfling" },
+	"desc": ["You have advantage on saving throws against being frightened"],
+	"url": "http://dnd5eapi.co/api/traits/10"
+}, {
+	"index": 11,
+	"name": "Halfling Nimbleness",
+	"race": { "url": "http://dnd5eapi.co/api/races/3", "name": "Halfling" },
+	"desc": ["You can move through the space of any creature that is of a size larger than yours."],
+	"url": "http://dnd5eapi.co/api/traits/11"
+}, {
+	"index": 12,
+	"name": "Naturally Stealthy",
+	"race": { "url": "http://dnd5eapi.co/api/subraces/3", "name": "Lightfoot Halfling" },
+	"desc": ["You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."],
+	"url": "http://dnd5eapi.co/api/traits/12"
+}]
