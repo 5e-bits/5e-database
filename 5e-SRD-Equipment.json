@@ -1,10 +1,10 @@
 [{
 	"index": 1,
 	"name": "Club",
-	"type": "Weapon",
-	"subtype:": "Simple",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Simple",
 	"weapon_range": "Melee",
-	"weapon_category": "Simple Melee",
+	"category_range": "Simple Melee",
 	"cost": {
 		"quantity": 1,
 		"unit": "sp"
@@ -17,16 +17,23 @@
 			"name": "Bludgeoning"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 2,
-	"properties": ["light", "monk"],
+	"properties": ["light", {
+		"url": "http://dnd5eapi.co/api/weapon-properties/11",
+		"name": "Monk"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/1"
 }, {
 	"index": 2,
 	"name": "Dagger",
-	"type": "Weapon",
-	"subtype:": "Simple",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Simple",
 	"weapon_range": "Melee",
-	"weapon_category": "Simple Melee",
+	"category_range": "Simple Melee",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -39,8 +46,21 @@
 			"name": "Piercing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 1,
-	"properties": ["finesse", "light", "thrown", "monk"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/2",
+		"name": "Finesse"
+	}, "light", {
+		"url": "http://dnd5eapi.co/api/weapon-properties/8",
+		"name": "Thrown"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/11",
+		"name": "Monk"
+	}],
 	"throw_range": {
 		"normal": 20,
 		"long": 60
@@ -49,10 +69,10 @@
 }, {
 	"index": 3,
 	"name": "Greatclub",
-	"type": "Weapon",
-	"subtype:": "Simple",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Simple",
 	"weapon_range": "Melee",
-	"weapon_category": "Simple Melee",
+	"category_range": "Simple Melee",
 	"cost": {
 		"quantity": 2,
 		"unit": "sp"
@@ -65,16 +85,23 @@
 			"name": "Bludgeoning"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 10,
-	"properties": ["two-handed"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/9",
+		"name": "Two-Handed"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/3"
 }, {
 	"index": 4,
 	"name": "Handaxe",
-	"type": "Weapon",
-	"subtype:": "Simple",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Simple",
 	"weapon_range": "Melee",
-	"weapon_category": "Simple Melee",
+	"category_range": "Simple Melee",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -90,8 +117,18 @@
 			}
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 2,
-	"properties": ["light", "thrown", "monk"],
+	"properties": ["light", {
+		"url": "http://dnd5eapi.co/api/weapon-properties/8",
+		"name": "Thrown"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/11",
+		"name": "Monk"
+	}],
 	"throw_range": {
 		"normal": 20,
 		"long": 60
@@ -100,10 +137,10 @@
 }, {
 	"index": 5,
 	"name": "Javelin",
-	"type": "Weapon",
-	"subtype:": "Simple",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Simple",
 	"weapon_range": "Melee",
-	"weapon_category": "Simple Melee",
+	"category_range": "Simple Melee",
 	"cost": {
 		"quantity": 5,
 		"unit": "sp"
@@ -116,8 +153,18 @@
 			"name": "Piercing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 2,
-	"properties": ["thrown", "monk"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/8",
+		"name": "Thrown"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/11",
+		"name": "Monk"
+	}],
 	"throw_range": {
 		"normal": 30,
 		"long": 120
@@ -126,10 +173,10 @@
 }, {
 	"index": 6,
 	"name": "Light hammer",
-	"type": "Weapon",
-	"subtype:": "Simple",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Simple",
 	"weapon_range": "Melee",
-	"weapon_category": "Simple Melee",
+	"category_range": "Simple Melee",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -142,8 +189,18 @@
 			"name": "Bludgeoning"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 2,
-	"properties": ["light", "thrown", "monk"],
+	"properties": ["light", {
+		"url": "http://dnd5eapi.co/api/weapon-properties/8",
+		"name": "Thrown"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/11",
+		"name": "Monk"
+	}],
 	"throw_range": {
 		"normal": 20,
 		"long": 60
@@ -152,10 +209,10 @@
 }, {
 	"index": 7,
 	"name": "Mace",
-	"type": "Weapon",
-	"subtype:": "Simple",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Simple",
 	"weapon_range": "Melee",
-	"weapon_category": "Simple Melee",
+	"category_range": "Simple Melee",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -168,16 +225,23 @@
 			"name": "Bludgeoning"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 4,
-	"properties": ["monk"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/11",
+		"name": "Monk"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/7"
 }, {
 	"index": 8,
 	"name": "Quarterstaff",
-	"type": "Weapon",
-	"subtype:": "Simple",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Simple",
 	"weapon_range": "Melee",
-	"weapon_category": "Simple Melee",
+	"category_range": "Simple Melee",
 	"cost": {
 		"quantity": 2,
 		"unit": "sp"
@@ -190,8 +254,18 @@
 			"name": "Bludgeoning"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 4,
-	"properties": ["versatile", "monk"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/10",
+		"name": "Versatile"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/11",
+		"name": "Monk"
+	}],
 	"2h_damage": {
 		"dice_count": 1,
 		"dice_value": 8,
@@ -204,10 +278,10 @@
 }, {
 	"index": 9,
 	"name": "Sickle",
-	"type": "Weapon",
-	"subtype:": "Simple",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Simple",
 	"weapon_range": "Melee",
-	"weapon_category": "Simple Melee",
+	"category_range": "Simple Melee",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -220,16 +294,23 @@
 			"name": "Slashing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 2,
-	"properties": ["light", "monk"],
+	"properties": ["light", {
+		"url": "http://dnd5eapi.co/api/weapon-properties/11",
+		"name": "Monk"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/9"
 }, {
 	"index": 10,
 	"name": "Spear",
-	"type": "Weapon",
-	"subtype:": "Simple",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Simple",
 	"weapon_range": "Melee",
-	"weapon_category": "Simple Melee",
+	"category_range": "Simple Melee",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -242,8 +323,21 @@
 			"name": "Piercing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 3,
-	"properties": ["thrown", "versatile", "monk"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/8",
+		"name": "Thrown"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/10",
+		"name": "Versatile"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/11",
+		"name": "Monk"
+	}],
 	"throw_range": {
 		"normal": 20,
 		"long": 60
@@ -260,10 +354,10 @@
 }, {
 	"index": 11,
 	"name": "Crossbow, light",
-	"type": "Weapon",
-	"subtype:": "Simple",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Simple",
 	"weapon_range": "Ranged",
-	"weapon_category": "Simple Ranged",
+	"category_range": "Simple Ranged",
 	"cost": {
 		"quantity": 25,
 		"unit": "gp"
@@ -277,19 +371,28 @@
 		}
 	},
 	"range": {
-		"normal": 80,
-		"long": 320
+		"normal": 5,
+		"long": null
 	},
 	"weight": 5,
-	"properties": ["ammunition", "loading", "two-handed"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/1",
+		"name": "Ammunition"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/5",
+		"name": "Loading"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/9",
+		"name": "Two-Handed"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/11"
 }, {
 	"index": 12,
 	"name": "Dart",
-	"type": "Weapon",
-	"subtype:": "Simple",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Simple",
 	"weapon_range": "Ranged",
-	"weapon_category": "Simple Ranged",
+	"category_range": "Simple Ranged",
 	"cost": {
 		"quantity": 5,
 		"unit": "cp"
@@ -303,11 +406,17 @@
 		}
 	},
 	"range": {
-		"normal": 20,
-		"long": 60
+		"normal": 5,
+		"long": null
 	},
 	"weight": 0.25,
-	"properties": ["finesse", "thrown"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/2",
+		"name": "Finesse"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/8",
+		"name": "Thrown"
+	}],
 	"throw_range": {
 		"normal": 20,
 		"long": 60
@@ -316,10 +425,10 @@
 }, {
 	"index": 13,
 	"name": "Shortbow",
-	"type": "Weapon",
-	"subtype:": "Simple",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Simple",
 	"weapon_range": "Ranged",
-	"weapon_category": "Simple Ranged",
+	"category_range": "Simple Ranged",
 	"cost": {
 		"quantity": 25,
 		"unit": "gp"
@@ -333,19 +442,22 @@
 		}
 	},
 	"range": {
-		"normal": 80,
-		"long": 320
+		"normal": 5,
+		"long": null
 	},
 	"weight": 2,
-	"properties": ["ammunition", "two-handed"],
+	"properties": ["ammunition", {
+		"url": "http://dnd5eapi.co/api/weapon-properties/9",
+		"name": "Two-Handed"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/13"
 }, {
 	"index": 14,
 	"name": "Sling",
-	"type": "Weapon",
-	"subtype:": "Simple",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Simple",
 	"weapon_range": "Ranged",
-	"weapon_category": "Simple Ranged",
+	"category_range": "Simple Ranged",
 	"cost": {
 		"quantity": 1,
 		"unit": "sp"
@@ -359,8 +471,8 @@
 		}
 	},
 	"range": {
-		"normal": 30,
-		"long": 120
+		"normal": 5,
+		"long": null
 	},
 	"weight": 0,
 	"properties": ["ammunition"],
@@ -368,10 +480,10 @@
 }, {
 	"index": 15,
 	"name": "Battleaxe",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -384,8 +496,15 @@
 			"name": "Slashing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 4,
-	"properties": ["versatile"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/10",
+		"name": "Versatile"
+	}],
 	"2h_damage": {
 		"dice_count": 1,
 		"dice_value": 10,
@@ -398,10 +517,10 @@
 }, {
 	"index": 16,
 	"name": "Flail",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -414,16 +533,20 @@
 			"name": "Bludgeoning"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 2,
 	"properties": [],
 	"url": "http://dnd5eapi.co/api/equipment/16"
 }, {
 	"index": 17,
 	"name": "Glaive",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 20,
 		"unit": "gp"
@@ -436,16 +559,29 @@
 			"name": "Slashing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 6,
-	"properties": ["heavy", "reach", "two-handed"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/3",
+		"name": "Heavy"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/6",
+		"name": "Reach"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/9",
+		"name": "Two-Handed"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/17"
 }, {
 	"index": 18,
 	"name": "Greataxe",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 30,
 		"unit": "gp"
@@ -458,16 +594,26 @@
 			"name": "Slashing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 7,
-	"properties": ["heavy", "two-handed"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/3",
+		"name": "Heavy"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/9",
+		"name": "Two-Handed"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/18"
 }, {
 	"index": 19,
 	"name": "Greatsword",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 50,
 		"unit": "gp"
@@ -480,16 +626,26 @@
 			"name": "Slashing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 6,
-	"properties": ["heavy", "two-handed"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/3",
+		"name": "Heavy"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/9",
+		"name": "Two-Handed"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/19"
 }, {
 	"index": 20,
 	"name": "Halberd",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 20,
 		"unit": "gp"
@@ -502,16 +658,29 @@
 			"name": "Slashing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 6,
-	"properties": ["heavy", "reach", "two-handed"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/3",
+		"name": "Heavy"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/6",
+		"name": "Reach"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/9",
+		"name": "Two-Handed"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/20"
 }, {
 	"index": 21,
 	"name": "Lance",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -524,17 +693,27 @@
 			"name": "Piercing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 6,
-	"properties": ["reach", "special"],
-	"special": "<p>You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren’t mounted.</p>",
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/6",
+		"name": "Reach"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/7",
+		"name": "Special"
+	}],
+	"special": ["You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren’t mounted."],
 	"url": "http://dnd5eapi.co/api/equipment/21"
 }, {
 	"index": 22,
 	"name": "Longsword",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 15,
 		"unit": "gp"
@@ -547,8 +726,15 @@
 			"name": "Slashing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 3,
-	"properties": ["versatile"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/10",
+		"name": "Versatile"
+	}],
 	"2h_damage": {
 		"dice_count": 1,
 		"dice_value": 10,
@@ -561,10 +747,10 @@
 }, {
 	"index": 23,
 	"name": "Maul",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -577,16 +763,26 @@
 			"name": "Bludgeoning"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 10,
-	"properties": ["heavy", "two-handed"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/3",
+		"name": "Heavy"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/9",
+		"name": "Two-Handed"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/23"
 }, {
 	"index": 24,
 	"name": "Morningstar",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 15,
 		"unit": "gp"
@@ -599,16 +795,20 @@
 			"name": "Piercing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 4,
 	"properties": [],
 	"url": "http://dnd5eapi.co/api/equipment/24"
 }, {
 	"index": 25,
 	"name": "Pike",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -621,16 +821,29 @@
 			"name": "Piercing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 18,
-	"properties": ["heavy", "reach", "two-handed"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/3",
+		"name": "Heavy"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/6",
+		"name": "Reach"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/9",
+		"name": "Two-Handed"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/25"
 }, {
 	"index": 26,
 	"name": "Rapier",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 25,
 		"unit": "gp"
@@ -643,16 +856,23 @@
 			"name": "Piercing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 2,
-	"properties": ["finesse"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/2",
+		"name": "Finesse"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/26"
 }, {
 	"index": 27,
 	"name": "Scimitar",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 25,
 		"unit": "gp"
@@ -665,16 +885,26 @@
 			"name": "Slashing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 3,
-	"properties": ["finesse", "light"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/2",
+		"name": "Finesse"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/4",
+		"name": "Light"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/27"
 }, {
 	"index": 28,
 	"name": "Shortsword",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -687,16 +917,26 @@
 			"name": "Piercing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 2,
-	"properties": ["finesse", "light", "monk"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/2",
+		"name": "Finesse"
+	}, "light", {
+		"url": "http://dnd5eapi.co/api/weapon-properties/11",
+		"name": "Monk"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/28"
 }, {
 	"index": 29,
 	"name": "Trident",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -709,8 +949,18 @@
 			"name": "Slashing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 4,
-	"properties": ["thrown", "versatile"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/8",
+		"name": "Thrown"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/10",
+		"name": "Versatile"
+	}],
 	"throw_range": {
 		"normal": 20,
 		"long": 60
@@ -719,10 +969,10 @@
 }, {
 	"index": 30,
 	"name": "War pick",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -735,16 +985,20 @@
 			"name": "Piercing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 2,
 	"properties": [],
 	"url": "http://dnd5eapi.co/api/equipment/30"
 }, {
 	"index": 31,
 	"name": "Warhammer",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 15,
 		"unit": "gp"
@@ -757,8 +1011,15 @@
 			"name": "Bludgeoning"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 2,
-	"properties": ["versatile"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/10",
+		"name": "Versatile"
+	}],
 	"2h_damage": {
 		"dice_count": 1,
 		"dice_value": 10,
@@ -771,10 +1032,10 @@
 }, {
 	"index": 32,
 	"name": "Whip",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Melee",
-	"weapon_category": "Martial Melee",
+	"category_range": "Martial Melee",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -787,16 +1048,26 @@
 			"name": "Slashing"
 		}
 	},
+	"range": {
+		"normal": 5,
+		"long": null
+	},
 	"weight": 3,
-	"properties": ["finesse", "reach"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/2",
+		"name": "Finesse"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/6",
+		"name": "Reach"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/32"
 }, {
 	"index": 33,
 	"name": "Blowgun",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Ranged",
-	"weapon_category": "Martial Ranged",
+	"category_range": "Martial Ranged",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -810,8 +1081,8 @@
 		}
 	},
 	"range": {
-		"normal": 25,
-		"long": 100
+		"normal": 5,
+		"long": null
 	},
 	"weight": 1,
 	"properties": ["ammunition", "loading"],
@@ -819,10 +1090,10 @@
 }, {
 	"index": 34,
 	"name": "Crossbow, hand",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Ranged",
-	"weapon_category": "Martial Ranged",
+	"category_range": "Martial Ranged",
 	"cost": {
 		"quantity": 75,
 		"unit": "gp"
@@ -836,8 +1107,8 @@
 		}
 	},
 	"range": {
-		"normal": 30,
-		"long": 120
+		"normal": 5,
+		"long": null
 	},
 	"weight": 3,
 	"properties": ["ammunition", "light", "loading"],
@@ -845,10 +1116,10 @@
 }, {
 	"index": 35,
 	"name": "Crossbow, heavy",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Ranged",
-	"weapon_category": "Martial Ranged",
+	"category_range": "Martial Ranged",
 	"cost": {
 		"quantity": 50,
 		"unit": "gp"
@@ -862,19 +1133,22 @@
 		}
 	},
 	"range": {
-		"normal": 100,
-		"long": 400
+		"normal": 5,
+		"long": null
 	},
 	"weight": 18,
-	"properties": ["ammunition", "light", "loading", "two-handed"],
+	"properties": ["ammunition", "light", "loading", {
+		"url": "http://dnd5eapi.co/api/weapon-properties/9",
+		"name": "Two-Handed"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/35"
 }, {
 	"index": 36,
 	"name": "Longbow",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Ranged",
-	"weapon_category": "Martial Ranged",
+	"category_range": "Martial Ranged",
 	"cost": {
 		"quantity": 50,
 		"unit": "gp"
@@ -888,19 +1162,25 @@
 		}
 	},
 	"range": {
-		"normal": 150,
-		"long": 600
+		"normal": 5,
+		"long": null
 	},
 	"weight": 2,
-	"properties": ["ammunition", "heavy", "two-handed"],
+	"properties": ["ammunition", {
+		"url": "http://dnd5eapi.co/api/weapon-properties/3",
+		"name": "Heavy"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/9",
+		"name": "Two-Handed"
+	}],
 	"url": "http://dnd5eapi.co/api/equipment/36"
 }, {
 	"index": 37,
 	"name": "Net",
-	"type": "Weapon",
-	"subtype:": "Martial",
+	"equipment_category": "Weapon",
+	"weapon_category:": "Martial",
 	"weapon_range": "Ranged",
-	"weapon_category": "Martial Ranged",
+	"category_range": "Martial Ranged",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -915,10 +1195,17 @@
 	},
 	"range": {
 		"normal": 5,
-		"long": 15
+		"long": null
 	},
 	"weight": 3,
-	"properties": ["thrown", "special"],
+	"properties": [{
+		"url": "http://dnd5eapi.co/api/weapon-properties/8",
+		"name": "Thrown"
+	}, {
+		"url": "http://dnd5eapi.co/api/weapon-properties/7",
+		"name": "Special"
+	}],
+	"special": ["A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make."],
 	"throw_range": {
 		"normal": 5,
 		"long": 15
@@ -927,15 +1214,15 @@
 }, {
 	"index": 38,
 	"name": "Padded",
-	"type": "Armor",
-	"subtype:": "Light",
+	"equipment_category": "Armor",
+	"armor_category:": "Light",
 	"armor_class": {
 		"base": 11,
 		"dex_bonus": true,
-		"max_bonus": 1000
+		"max_bonus": null
 	},
-	"strength": 0,
-	"stealth": "Disadvantage",
+	"str_minimum": 0,
+	"stealth_disadvantage": true,
 	"weight": 8,
 	"cost": {
 		"quantity": 5,
@@ -945,15 +1232,15 @@
 }, {
 	"index": 39,
 	"name": "Leather",
-	"type": "Armor",
-	"subtype:": "Light",
+	"equipment_category": "Armor",
+	"armor_category:": "Light",
 	"armor_class": {
 		"base": 11,
 		"dex_bonus": true,
-		"max_bonus": 1000
+		"max_bonus": null
 	},
-	"strength": 0,
-	"stealth": "",
+	"str_minimum": 0,
+	"stealth_disadvantage": false,
 	"weight": 10,
 	"cost": {
 		"quantity": 10,
@@ -963,15 +1250,15 @@
 }, {
 	"index": 40,
 	"name": "Studded Leather",
-	"type": "Armor",
-	"subtype:": "Light",
+	"equipment_category": "Armor",
+	"armor_category:": "Light",
 	"armor_class": {
 		"base": 12,
 		"dex_bonus": true,
-		"max_bonus": 1000
+		"max_bonus": null
 	},
-	"strength": 0,
-	"stealth": "",
+	"str_minimum": 0,
+	"stealth_disadvantage": false,
 	"weight": 13,
 	"cost": {
 		"quantity": 45,
@@ -981,15 +1268,15 @@
 }, {
 	"index": 41,
 	"name": "Hide",
-	"type": "Armor",
-	"subtype:": "Medium",
+	"equipment_category": "Armor",
+	"armor_category:": "Medium",
 	"armor_class": {
 		"base": 12,
 		"dex_bonus": true,
 		"max_bonus": 2
 	},
-	"strength": 0,
-	"stealth": "",
+	"str_minimum": 0,
+	"stealth_disadvantage": false,
 	"weight": 12,
 	"cost": {
 		"quantity": 10,
@@ -999,15 +1286,15 @@
 }, {
 	"index": 42,
 	"name": "Chain Shirt",
-	"type": "Armor",
-	"subtype:": "Medium",
+	"equipment_category": "Armor",
+	"armor_category:": "Medium",
 	"armor_class": {
 		"base": 13,
 		"dex_bonus": true,
 		"max_bonus": 2
 	},
-	"strength": 0,
-	"stealth": "",
+	"str_minimum": 0,
+	"stealth_disadvantage": false,
 	"weight": 20,
 	"cost": {
 		"quantity": 50,
@@ -1017,15 +1304,15 @@
 }, {
 	"index": 43,
 	"name": "Scale Mail",
-	"type": "Armor",
-	"subtype:": "Medium",
+	"equipment_category": "Armor",
+	"armor_category:": "Medium",
 	"armor_class": {
 		"base": 14,
 		"dex_bonus": true,
 		"max_bonus": 2
 	},
-	"strength": 0,
-	"stealth": "Disadvantage",
+	"str_minimum": 0,
+	"stealth_disadvantage": true,
 	"weight": 45,
 	"cost": {
 		"quantity": 50,
@@ -1035,15 +1322,15 @@
 }, {
 	"index": 44,
 	"name": "Breastplate",
-	"type": "Armor",
-	"subtype:": "Medium",
+	"equipment_category": "Armor",
+	"armor_category:": "Medium",
 	"armor_class": {
 		"base": 14,
 		"dex_bonus": true,
 		"max_bonus": 2
 	},
-	"strength": 0,
-	"stealth": "",
+	"str_minimum": 0,
+	"stealth_disadvantage": false,
 	"weight": 20,
 	"cost": {
 		"quantity": 400,
@@ -1053,15 +1340,15 @@
 }, {
 	"index": 45,
 	"name": "Half Plate",
-	"type": "Armor",
-	"subtype:": "Medium",
+	"equipment_category": "Armor",
+	"armor_category:": "Medium",
 	"armor_class": {
 		"base": 15,
 		"dex_bonus": true,
 		"max_bonus": 2
 	},
-	"strength": 0,
-	"stealth": "Disadvantage",
+	"str_minimum": 0,
+	"stealth_disadvantage": true,
 	"weight": 40,
 	"cost": {
 		"quantity": 750,
@@ -1071,15 +1358,18 @@
 }, {
 	"index": 46,
 	"name": "Ring Mail",
-	"type": "Armor",
-	"subtype:": "Heavy",
+	"equipment_category": "Armor",
+	"armor_category:": {
+		"url": "http://dnd5eapi.co/api/weapon-properties/3",
+		"name": "Heavy"
+	},
 	"armor_class": {
 		"base": 14,
 		"dex_bonus": false,
-		"max_bonus": 0
+		"max_bonus": null
 	},
-	"strength": 0,
-	"stealth": "Disadvantage",
+	"str_minimum": 0,
+	"stealth_disadvantage": true,
 	"weight": 40,
 	"cost": {
 		"quantity": 30,
@@ -1089,15 +1379,18 @@
 }, {
 	"index": 47,
 	"name": "Chain Mail",
-	"type": "Armor",
-	"subtype:": "Heavy",
+	"equipment_category": "Armor",
+	"armor_category:": {
+		"url": "http://dnd5eapi.co/api/weapon-properties/3",
+		"name": "Heavy"
+	},
 	"armor_class": {
 		"base": 16,
 		"dex_bonus": false,
-		"max_bonus": 0
+		"max_bonus": null
 	},
-	"strength": 13,
-	"stealth": "Disadvantage",
+	"str_minimum": 13,
+	"stealth_disadvantage": true,
 	"weight": 55,
 	"cost": {
 		"quantity": 75,
@@ -1107,15 +1400,18 @@
 }, {
 	"index": 48,
 	"name": "Splint",
-	"type": "Armor",
-	"subtype:": "Heavy",
+	"equipment_category": "Armor",
+	"armor_category:": {
+		"url": "http://dnd5eapi.co/api/weapon-properties/3",
+		"name": "Heavy"
+	},
 	"armor_class": {
 		"base": 17,
 		"dex_bonus": false,
-		"max_bonus": 0
+		"max_bonus": null
 	},
-	"strength": 15,
-	"stealth": "Disadvantage",
+	"str_minimum": 15,
+	"stealth_disadvantage": true,
 	"weight": 60,
 	"cost": {
 		"quantity": 200,
@@ -1125,15 +1421,18 @@
 }, {
 	"index": 49,
 	"name": "Plate",
-	"type": "Armor",
-	"subtype:": "Heavy",
+	"equipment_category": "Armor",
+	"armor_category:": {
+		"url": "http://dnd5eapi.co/api/weapon-properties/3",
+		"name": "Heavy"
+	},
 	"armor_class": {
 		"base": 18,
 		"dex_bonus": false,
-		"max_bonus": 0
+		"max_bonus": null
 	},
-	"strength": 15,
-	"stealth": "Disadvantage",
+	"str_minimum": 15,
+	"stealth_disadvantage": true,
 	"weight": 65,
 	"cost": {
 		"quantity": 1500,
@@ -1143,15 +1442,15 @@
 }, {
 	"index": 50,
 	"name": "Shield",
-	"type": "Armor",
-	"subtype:": "Shield",
+	"equipment_category": "Armor",
+	"armor_category:": "Shield",
 	"armor_class": {
 		"base": 2,
 		"dex_bonus": false,
-		"max_bonus": 0
+		"max_bonus": null
 	},
-	"strength": 0,
-	"stealth": "",
+	"str_minimum": 0,
+	"stealth_disadvantage": false,
 	"weight": 6,
 	"cost": {
 		"quantity": 10,
@@ -1161,8 +1460,8 @@
 }, {
 	"index": 51,
 	"name": "Abacus",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -1172,8 +1471,8 @@
 }, {
 	"index": 52,
 	"name": "Acid (vial)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 25,
 		"unit": "gp"
@@ -1184,8 +1483,8 @@
 }, {
 	"index": 53,
 	"name": "Alchemist’s fire (flask)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 50,
 		"unit": "gp"
@@ -1196,8 +1495,8 @@
 }, {
 	"index": 54,
 	"name": "Arrow",
-	"type": "Adventuring Gear",
-	"subtype": "Ammunition",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Ammunition",
 	"cost": {
 		"quantity": 5,
 		"unit": "cp"
@@ -1207,8 +1506,8 @@
 }, {
 	"index": 55,
 	"name": "Blowgun needle",
-	"type": "Adventuring Gear",
-	"subtype": "Ammunition",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Ammunition",
 	"cost": {
 		"quantity": 2,
 		"unit": "cp"
@@ -1218,8 +1517,8 @@
 }, {
 	"index": 56,
 	"name": "Crossbow bolt",
-	"type": "Adventuring Gear",
-	"subtype": "Ammunition",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Ammunition",
 	"cost": {
 		"quantity": 5,
 		"unit": "cp"
@@ -1229,10 +1528,10 @@
 }, {
 	"index": 57,
 	"name": "Sling bullet",
-	"type": "Adventuring Gear",
-	"subtype": "Ammunition",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Ammunition",
 	"cost": {
-		"quantity": 5,
+		"quantity": 1,
 		"unit": "cp"
 	},
 	"weight": 1.5,
@@ -1240,8 +1539,8 @@
 }, {
 	"index": 58,
 	"name": "Amulet",
-	"type": "Adventuring Gear",
-	"subtype": "Holy Symbol",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Holy Symbol",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -1252,8 +1551,8 @@
 }, {
 	"index": 59,
 	"name": "Antitoxin (vial)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 50,
 		"unit": "gp"
@@ -1264,8 +1563,8 @@
 }, {
 	"index": 60,
 	"name": "Crystal",
-	"type": "Adventuring Gear",
-	"subtype": "Arcane focus",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Arcane focus",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -1276,8 +1575,8 @@
 }, {
 	"index": 61,
 	"name": "Orb",
-	"type": "Adventuring Gear",
-	"subtype": "Arcane focus",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Arcane focus",
 	"cost": {
 		"quantity": 20,
 		"unit": "gp"
@@ -1288,8 +1587,8 @@
 }, {
 	"index": 62,
 	"name": "Rod",
-	"type": "Adventuring Gear",
-	"subtype": "Arcane focus",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Arcane focus",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -1300,8 +1599,8 @@
 }, {
 	"index": 63,
 	"name": "Staff",
-	"type": "Adventuring Gear",
-	"subtype": "Arcane focus",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Arcane focus",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -1312,8 +1611,8 @@
 }, {
 	"index": 64,
 	"name": "Wand",
-	"type": "Adventuring Gear",
-	"subtype": "Arcane focus",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Arcane focus",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -1324,8 +1623,8 @@
 }, {
 	"index": 65,
 	"name": "Backpack",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -1335,8 +1634,8 @@
 }, {
 	"index": 66,
 	"name": "Ball bearings (bag of 1,000)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -1347,8 +1646,8 @@
 }, {
 	"index": 67,
 	"name": "Barrel",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -1358,8 +1657,8 @@
 }, {
 	"index": 68,
 	"name": "Basket",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 4,
 		"unit": "sp"
@@ -1369,8 +1668,8 @@
 }, {
 	"index": 69,
 	"name": "Bedroll",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -1380,8 +1679,8 @@
 }, {
 	"index": 70,
 	"name": "Bell",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -1391,8 +1690,8 @@
 }, {
 	"index": 71,
 	"name": "Blanket",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "sp"
@@ -1402,8 +1701,8 @@
 }, {
 	"index": 72,
 	"name": "Block and tackle",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -1414,8 +1713,8 @@
 }, {
 	"index": 73,
 	"name": "Book",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 25,
 		"unit": "gp"
@@ -1426,8 +1725,8 @@
 }, {
 	"index": 74,
 	"name": "Bottle, glass",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -1437,8 +1736,8 @@
 }, {
 	"index": 75,
 	"name": "Bucket",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "cp"
@@ -1448,8 +1747,8 @@
 }, {
 	"index": 76,
 	"name": "Caltrops",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "cp"
@@ -1460,8 +1759,8 @@
 }, {
 	"index": 77,
 	"name": "Candle",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "cp"
@@ -1472,8 +1771,8 @@
 }, {
 	"index": 78,
 	"name": "Case, crossbow bolt",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -1484,8 +1783,8 @@
 }, {
 	"index": 79,
 	"name": "Case, map or scroll",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -1496,8 +1795,8 @@
 }, {
 	"index": 80,
 	"name": "Chain (10 feet)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -1508,8 +1807,8 @@
 }, {
 	"index": 81,
 	"name": "Chalk (1 piece)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "cp"
@@ -1519,8 +1818,8 @@
 }, {
 	"index": 82,
 	"name": "Chest",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -1530,8 +1829,8 @@
 }, {
 	"index": 83,
 	"name": "Clothes, common",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "sp"
@@ -1541,8 +1840,8 @@
 }, {
 	"index": 84,
 	"name": "Clothes, costume",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -1552,8 +1851,8 @@
 }, {
 	"index": 85,
 	"name": "Clothes, fine",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 15,
 		"unit": "gp"
@@ -1563,8 +1862,8 @@
 }, {
 	"index": 86,
 	"name": "Clothes, traveler’s",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -1574,8 +1873,8 @@
 }, {
 	"index": 87,
 	"name": "Component pouch",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 25,
 		"unit": "gp"
@@ -1586,8 +1885,8 @@
 }, {
 	"index": 88,
 	"name": "Crowbar",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -1598,8 +1897,8 @@
 }, {
 	"index": 89,
 	"name": "Sprig of mistletoe",
-	"type": "Adventuring Gear",
-	"subtype": "Druidic focus",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Druidic focus",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -1610,8 +1909,8 @@
 }, {
 	"index": 90,
 	"name": "Totem",
-	"type": "Adventuring Gear",
-	"subtype": "Druidic focus",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Druidic focus",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -1622,8 +1921,8 @@
 }, {
 	"index": 91,
 	"name": "Wooden staff",
-	"type": "Adventuring Gear",
-	"subtype": "Druidic focus",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Druidic focus",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -1634,8 +1933,8 @@
 }, {
 	"index": 92,
 	"name": "Yew wand",
-	"type": "Adventuring Gear",
-	"subtype": "Druidic focus",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Druidic focus",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -1646,8 +1945,8 @@
 }, {
 	"index": 93,
 	"name": "Emblem",
-	"type": "Adventuring Gear",
-	"subtype": "Holy Symbol",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Holy Symbol",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -1658,8 +1957,8 @@
 }, {
 	"index": 94,
 	"name": "Fishing tackle",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -1670,8 +1969,8 @@
 }, {
 	"index": 95,
 	"name": "Flask or tankard",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "cp"
@@ -1681,8 +1980,8 @@
 }, {
 	"index": 96,
 	"name": "Grappling hook",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -1692,8 +1991,8 @@
 }, {
 	"index": 97,
 	"name": "Hammer",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -1703,8 +2002,8 @@
 }, {
 	"index": 98,
 	"name": "Hammer, sledge",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -1714,8 +2013,8 @@
 }, {
 	"index": 99,
 	"name": "Holy water (flask)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 25,
 		"unit": "gp"
@@ -1726,8 +2025,8 @@
 }, {
 	"index": 100,
 	"name": "Hourglass",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 25,
 		"unit": "gp"
@@ -1737,8 +2036,8 @@
 }, {
 	"index": 101,
 	"name": "Hunting trap",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -1749,8 +2048,8 @@
 }, {
 	"index": 102,
 	"name": "Ink (1 ounce bottle)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -1760,8 +2059,8 @@
 }, {
 	"index": 103,
 	"name": "Ink pen",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "cp"
@@ -1771,8 +2070,8 @@
 }, {
 	"index": 104,
 	"name": "Jug or pitcher",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "cp"
@@ -1782,8 +2081,8 @@
 }, {
 	"index": 105,
 	"name": "Climber’s Kit",
-	"type": "Adventuring Gear",
-	"subtype": "Kit",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Kit",
 	"cost": {
 		"quantity": 25,
 		"unit": "gp"
@@ -1794,8 +2093,8 @@
 }, {
 	"index": 106,
 	"name": "Disguise Kit",
-	"type": "Adventuring Gear",
-	"subtype": "Kit",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Kit",
 	"cost": {
 		"quantity": 25,
 		"unit": "gp"
@@ -1806,8 +2105,8 @@
 }, {
 	"index": 107,
 	"name": "Forgery Kit",
-	"type": "Adventuring Gear",
-	"subtype": "Kit",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Kit",
 	"cost": {
 		"quantity": 15,
 		"unit": "gp"
@@ -1818,8 +2117,8 @@
 }, {
 	"index": 108,
 	"name": "Herbalism Kit",
-	"type": "Adventuring Gear",
-	"subtype": "Kit",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Kit",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -1830,8 +2129,8 @@
 }, {
 	"index": 109,
 	"name": "Healer’s Kit",
-	"type": "Adventuring Gear",
-	"subtype": "Kit",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Kit",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -1842,8 +2141,8 @@
 }, {
 	"index": 110,
 	"name": "Mess Kit",
-	"type": "Adventuring Gear",
-	"subtype": "Kit",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Kit",
 	"cost": {
 		"quantity": 2,
 		"unit": "sp"
@@ -1854,8 +2153,8 @@
 }, {
 	"index": 111,
 	"name": "Poisoner’s Kit",
-	"type": "Adventuring Gear",
-	"subtype": "Kit",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Kit",
 	"cost": {
 		"quantity": 50,
 		"unit": "gp"
@@ -1866,8 +2165,8 @@
 }, {
 	"index": 112,
 	"name": "Ladder (10-foot)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "sp"
@@ -1877,8 +2176,8 @@
 }, {
 	"index": 113,
 	"name": "Lamp",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "sp"
@@ -1889,8 +2188,8 @@
 }, {
 	"index": 114,
 	"name": "Lantern, bullseye",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -1901,8 +2200,8 @@
 }, {
 	"index": 115,
 	"name": "Lantern, hooded",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -1913,8 +2212,8 @@
 }, {
 	"index": 116,
 	"name": "Lock",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -1925,8 +2224,8 @@
 }, {
 	"index": 117,
 	"name": "Magnifying glass",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 100,
 		"unit": "gp"
@@ -1937,8 +2236,8 @@
 }, {
 	"index": 118,
 	"name": "Manacles",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -1949,8 +2248,8 @@
 }, {
 	"index": 119,
 	"name": "Mirror, steel",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -1960,8 +2259,8 @@
 }, {
 	"index": 120,
 	"name": "Oil (flask)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "sp"
@@ -1972,8 +2271,8 @@
 }, {
 	"index": 121,
 	"name": "Paper (one sheet)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "sp"
@@ -1983,8 +2282,8 @@
 }, {
 	"index": 122,
 	"name": "Parchment (one sheet)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "sp"
@@ -1994,8 +2293,8 @@
 }, {
 	"index": 123,
 	"name": "Perfume (vial)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -2005,8 +2304,8 @@
 }, {
 	"index": 124,
 	"name": "Pick, miner’s",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -2016,8 +2315,8 @@
 }, {
 	"index": 125,
 	"name": "Piton",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "cp"
@@ -2027,8 +2326,8 @@
 }, {
 	"index": 126,
 	"name": "Poison, basic (vial)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 100,
 		"unit": "gp"
@@ -2039,8 +2338,8 @@
 }, {
 	"index": 127,
 	"name": "Pole (10-foot)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "cp"
@@ -2050,8 +2349,8 @@
 }, {
 	"index": 128,
 	"name": "Pot, iron",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -2061,8 +2360,8 @@
 }, {
 	"index": 129,
 	"name": "Potion of healing",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 50,
 		"unit": "gp"
@@ -2073,8 +2372,8 @@
 }, {
 	"index": 130,
 	"name": "Pouch",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "sp"
@@ -2085,8 +2384,8 @@
 }, {
 	"index": 131,
 	"name": "Quiver",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -2097,8 +2396,8 @@
 }, {
 	"index": 132,
 	"name": "Ram, portable",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 4,
 		"unit": "gp"
@@ -2109,8 +2408,8 @@
 }, {
 	"index": 133,
 	"name": "Rations (1 day)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "sp"
@@ -2121,8 +2420,8 @@
 }, {
 	"index": 134,
 	"name": "Reliquary",
-	"type": "Adventuring Gear",
-	"subtype": "Holy Symbol",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Holy Symbol",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -2133,8 +2432,8 @@
 }, {
 	"index": 135,
 	"name": "Robes",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -2144,8 +2443,8 @@
 }, {
 	"index": 136,
 	"name": "Rope, hempen (50 feet)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -2156,8 +2455,8 @@
 }, {
 	"index": 137,
 	"name": "Rope, silk (50 feet)",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -2168,8 +2467,8 @@
 }, {
 	"index": 138,
 	"name": "Sack",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "cp"
@@ -2179,8 +2478,8 @@
 }, {
 	"index": 139,
 	"name": "Scale, merchant’s",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -2191,8 +2490,8 @@
 }, {
 	"index": 140,
 	"name": "Sealing wax",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "sp"
@@ -2202,8 +2501,8 @@
 }, {
 	"index": 141,
 	"name": "Shovel",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -2213,8 +2512,8 @@
 }, {
 	"index": 142,
 	"name": "Signal whistle",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "cp"
@@ -2224,8 +2523,8 @@
 }, {
 	"index": 143,
 	"name": "Signet ring",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -2235,8 +2534,8 @@
 }, {
 	"index": 144,
 	"name": "Soap",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "cp"
@@ -2246,8 +2545,8 @@
 }, {
 	"index": 145,
 	"name": "Spellbook",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 50,
 		"unit": "gp"
@@ -2258,8 +2557,8 @@
 }, {
 	"index": 146,
 	"name": "Spike, iron",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "sp"
@@ -2269,8 +2568,8 @@
 }, {
 	"index": 147,
 	"name": "Spyglass",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1000,
 		"unit": "gp"
@@ -2281,8 +2580,8 @@
 }, {
 	"index": 148,
 	"name": "Tent, two-person",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -2293,8 +2592,8 @@
 }, {
 	"index": 149,
 	"name": "Tinderbox",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 5,
 		"unit": "sp"
@@ -2305,8 +2604,8 @@
 }, {
 	"index": 150,
 	"name": "Torch",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "cp"
@@ -2317,8 +2616,8 @@
 }, {
 	"index": 151,
 	"name": "Vial",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -2328,8 +2627,8 @@
 }, {
 	"index": 152,
 	"name": "Waterskin",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 2,
 		"unit": "sp"
@@ -2339,8 +2638,8 @@
 }, {
 	"index": 153,
 	"name": "Whetstone",
-	"type": "Adventuring Gear",
-	"subtype": "",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Standard Gear",
 	"cost": {
 		"quantity": 1,
 		"unit": "cp"
@@ -2350,8 +2649,8 @@
 }, {
 	"index": 154,
 	"name": "Burglar's Pack",
-	"type": "Adventuring Gear",
-	"subtype": "Equipment Pack",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Equipment Pack",
 	"cost": {
 		"quantity": 16,
 		"unit": "gp"
@@ -2397,8 +2696,8 @@
 }, {
 	"index": 155,
 	"name": "Diplomat's Pack",
-	"type": "Adventuring Gear",
-	"subtype": "Equipment Pack",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Equipment Pack",
 	"cost": {
 		"quantity": 39,
 		"unit": "gp"
@@ -2441,8 +2740,8 @@
 }, {
 	"index": 156,
 	"name": "Dungeoneer's Pack",
-	"type": "Adventuring Gear",
-	"subtype": "Equipment Pack",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Equipment Pack",
 	"cost": {
 		"quantity": 12,
 		"unit": "gp"
@@ -2476,8 +2775,8 @@
 }, {
 	"index": 157,
 	"name": "Entertainer's Pack",
-	"type": "Adventuring Gear",
-	"subtype": "Equipment Pack",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Equipment Pack",
 	"cost": {
 		"quantity": 40,
 		"unit": "gp"
@@ -2508,8 +2807,8 @@
 }, {
 	"index": 158,
 	"name": "Explorer's Pack",
-	"type": "Adventuring Gear",
-	"subtype": "Equipment Pack",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Equipment Pack",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -2543,8 +2842,8 @@
 }, {
 	"index": 159,
 	"name": "Priest's Pack",
-	"type": "Adventuring Gear",
-	"subtype": "Equipment Pack",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Equipment Pack",
 	"cost": {
 		"quantity": 19,
 		"unit": "gp"
@@ -2572,8 +2871,8 @@
 }, {
 	"index": 160,
 	"name": "Scholar's Pack",
-	"type": "Adventuring Gear",
-	"subtype": "Equipment Pack",
+	"equipment_category": "Adventuring Gear",
+	"gear_category": "Equipment Pack",
 	"cost": {
 		"quantity": 40,
 		"unit": "gp"
@@ -2598,8 +2897,8 @@
 }, {
 	"index": 161,
 	"name": "Alchemist’s supplies",
-	"type": "Tools",
-	"subtype": "Artisan's Tools",
+	"equipment_category": "Tools",
+	"tool_category": "Artisan's Tools",
 	"cost": {
 		"quantity": 50,
 		"unit": "gp"
@@ -2610,8 +2909,8 @@
 }, {
 	"index": 162,
 	"name": "Brewer’s supplies",
-	"type": "Tools",
-	"subtype": "Artisan's Tools",
+	"equipment_category": "Tools",
+	"tool_category": "Artisan's Tools",
 	"cost": {
 		"quantity": 20,
 		"unit": "gp"
@@ -2622,8 +2921,8 @@
 }, {
 	"index": 163,
 	"name": "Calligrapher’s supplies",
-	"type": "Tools",
-	"subtype": "Artisan's Tools",
+	"equipment_category": "Tools",
+	"tool_category": "Artisan's Tools",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -2634,8 +2933,8 @@
 }, {
 	"index": 164,
 	"name": "Carpenter’s tools",
-	"type": "Tools",
-	"subtype": "Artisan's Tools",
+	"equipment_category": "Tools",
+	"tool_category": "Artisan's Tools",
 	"cost": {
 		"quantity": 8,
 		"unit": "gp"
@@ -2646,8 +2945,8 @@
 }, {
 	"index": 165,
 	"name": "Cartographer’s tools",
-	"type": "Tools",
-	"subtype": "Artisan's Tools",
+	"equipment_category": "Tools",
+	"tool_category": "Artisan's Tools",
 	"cost": {
 		"quantity": 15,
 		"unit": "gp"
@@ -2658,8 +2957,8 @@
 }, {
 	"index": 166,
 	"name": "Cobbler’s tools",
-	"type": "Tools",
-	"subtype": "Artisan's Tools",
+	"equipment_category": "Tools",
+	"tool_category": "Artisan's Tools",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -2670,8 +2969,8 @@
 }, {
 	"index": 167,
 	"name": "Cook’s utensils",
-	"type": "Tools",
-	"subtype": "Artisan's Tools",
+	"equipment_category": "Tools",
+	"tool_category": "Artisan's Tools",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -2682,8 +2981,8 @@
 }, {
 	"index": 168,
 	"name": "Glassblower’s tools",
-	"type": "Tools",
-	"subtype": "Artisan's Tools",
+	"equipment_category": "Tools",
+	"tool_category": "Artisan's Tools",
 	"cost": {
 		"quantity": 30,
 		"unit": "gp"
@@ -2694,8 +2993,8 @@
 }, {
 	"index": 169,
 	"name": "Jeweler’s tools",
-	"type": "Tools",
-	"subtype": "Artisan's Tools",
+	"equipment_category": "Tools",
+	"tool_category": "Artisan's Tools",
 	"cost": {
 		"quantity": 25,
 		"unit": "gp"
@@ -2706,8 +3005,8 @@
 }, {
 	"index": 170,
 	"name": "Leatherworker’s tools",
-	"type": "Tools",
-	"subtype": "Artisan's Tools",
+	"equipment_category": "Tools",
+	"tool_category": "Artisan's Tools",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -2718,8 +3017,8 @@
 }, {
 	"index": 171,
 	"name": "Mason’s tools",
-	"type": "Tools",
-	"subtype": "Artisan's Tools",
+	"equipment_category": "Tools",
+	"tool_category": "Artisan's Tools",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -2730,8 +3029,8 @@
 }, {
 	"index": 172,
 	"name": "Painter’s supplies",
-	"type": "Tools",
-	"subtype": "Artisan's Tools",
+	"equipment_category": "Tools",
+	"tool_category": "Artisan's Tools",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -2742,8 +3041,8 @@
 }, {
 	"index": 173,
 	"name": "Potter’s tools",
-	"type": "Tools",
-	"subtype": "Artisan's Tools",
+	"equipment_category": "Tools",
+	"tool_category": "Artisan's Tools",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -2754,8 +3053,8 @@
 }, {
 	"index": 174,
 	"name": "Smith’s tools",
-	"type": "Tools",
-	"subtype": "Artisan's Tools",
+	"equipment_category": "Tools",
+	"tool_category": "Artisan's Tools",
 	"cost": {
 		"quantity": 20,
 		"unit": "gp"
@@ -2766,8 +3065,8 @@
 }, {
 	"index": 175,
 	"name": "Tinker’s tools",
-	"type": "Tools",
-	"subtype": "Artisan's Tools",
+	"equipment_category": "Tools",
+	"tool_category": "Artisan's Tools",
 	"cost": {
 		"quantity": 50,
 		"unit": "gp"
@@ -2778,8 +3077,8 @@
 }, {
 	"index": 176,
 	"name": "Weaver’s tools",
-	"type": "Tools",
-	"subtype": "Artisan's Tools",
+	"equipment_category": "Tools",
+	"tool_category": "Artisan's Tools",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -2790,8 +3089,8 @@
 }, {
 	"index": 177,
 	"name": "Woodcarver’s tools",
-	"type": "Tools",
-	"subtype": "Artisan's Tools",
+	"equipment_category": "Tools",
+	"tool_category": "Artisan's Tools",
 	"cost": {
 		"quantity": 1,
 		"unit": "gp"
@@ -2802,8 +3101,8 @@
 }, {
 	"index": 178,
 	"name": "Dice set",
-	"type": "Tools",
-	"subtype": "Gaming sets",
+	"equipment_category": "Tools",
+	"tool_category": "Gaming Sets",
 	"cost": {
 		"quantity": 1,
 		"unit": "sp"
@@ -2814,8 +3113,8 @@
 }, {
 	"index": 179,
 	"name": "Playing card set",
-	"type": "Tools",
-	"subtype": "Gaming sets",
+	"equipment_category": "Tools",
+	"tool_category": "Gaming Sets",
 	"cost": {
 		"quantity": 5,
 		"unit": "sp"
@@ -2826,8 +3125,8 @@
 }, {
 	"index": 180,
 	"name": "Bagpipes",
-	"type": "Tools",
-	"subtype": "Musical Instrument",
+	"equipment_category": "Tools",
+	"tool_category": "Musical Instrument",
 	"cost": {
 		"quantity": 30,
 		"unit": "gp"
@@ -2838,8 +3137,8 @@
 }, {
 	"index": 181,
 	"name": "Drum",
-	"type": "Tools",
-	"subtype": "Musical Instrument",
+	"equipment_category": "Tools",
+	"tool_category": "Musical Instrument",
 	"cost": {
 		"quantity": 6,
 		"unit": "gp"
@@ -2850,8 +3149,8 @@
 }, {
 	"index": 182,
 	"name": "Dulcimer",
-	"type": "Tools",
-	"subtype": "Musical Instrument",
+	"equipment_category": "Tools",
+	"tool_category": "Musical Instrument",
 	"cost": {
 		"quantity": 25,
 		"unit": "gp"
@@ -2862,8 +3161,8 @@
 }, {
 	"index": 183,
 	"name": "Flute",
-	"type": "Tools",
-	"subtype": "Musical Instrument",
+	"equipment_category": "Tools",
+	"tool_category": "Musical Instrument",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -2874,8 +3173,8 @@
 }, {
 	"index": 184,
 	"name": "Lute",
-	"type": "Tools",
-	"subtype": "Musical Instrument",
+	"equipment_category": "Tools",
+	"tool_category": "Musical Instrument",
 	"cost": {
 		"quantity": 35,
 		"unit": "gp"
@@ -2886,8 +3185,8 @@
 }, {
 	"index": 185,
 	"name": "Lyre",
-	"type": "Tools",
-	"subtype": "Musical Instrument",
+	"equipment_category": "Tools",
+	"tool_category": "Musical Instrument",
 	"cost": {
 		"quantity": 30,
 		"unit": "gp"
@@ -2898,8 +3197,8 @@
 }, {
 	"index": 186,
 	"name": "Horn",
-	"type": "Tools",
-	"subtype": "Musical Instrument",
+	"equipment_category": "Tools",
+	"tool_category": "Musical Instrument",
 	"cost": {
 		"quantity": 3,
 		"unit": "gp"
@@ -2910,8 +3209,8 @@
 }, {
 	"index": 187,
 	"name": "Pan flute",
-	"type": "Tools",
-	"subtype": "Musical Instrument",
+	"equipment_category": "Tools",
+	"tool_category": "Musical Instrument",
 	"cost": {
 		"quantity": 12,
 		"unit": "gp"
@@ -2922,8 +3221,8 @@
 }, {
 	"index": 188,
 	"name": "Shawm",
-	"type": "Tools",
-	"subtype": "Musical Instrument",
+	"equipment_category": "Tools",
+	"tool_category": "Musical Instrument",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -2934,8 +3233,8 @@
 }, {
 	"index": 189,
 	"name": "Viol",
-	"type": "Tools",
-	"subtype": "Musical Instrument",
+	"equipment_category": "Tools",
+	"tool_category": "Musical Instrument",
 	"cost": {
 		"quantity": 30,
 		"unit": "gp"
@@ -2946,8 +3245,8 @@
 }, {
 	"index": 190,
 	"name": "Navigator’s tools",
-	"type": "Tools",
-	"subtype": "",
+	"equipment_category": "Tools",
+	"tool_category": "Other Tools",
 	"cost": {
 		"quantity": 25,
 		"unit": "gp"
@@ -2958,8 +3257,8 @@
 }, {
 	"index": 191,
 	"name": "Thieves’ tools",
-	"type": "Tools",
-	"subtype": "",
+	"equipment_category": "Tools",
+	"tool_category": "Other Tools",
 	"cost": {
 		"quantity": 25,
 		"unit": "gp"
@@ -2970,8 +3269,8 @@
 }, {
 	"index": 192,
 	"name": "Camel",
-	"type": "Mounts and Vehicles",
-	"subtype": "Mounts and Other Animals",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Mounts and Other Animals",
 	"cost": {
 		"quantity": 50,
 		"unit": "gp"
@@ -2985,8 +3284,8 @@
 }, {
 	"index": 193,
 	"name": "Donkey",
-	"type": "Mounts and Vehicles",
-	"subtype": "Mounts and Other Animals",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Mounts and Other Animals",
 	"cost": {
 		"quantity": 8,
 		"unit": "gp"
@@ -3000,8 +3299,8 @@
 }, {
 	"index": 194,
 	"name": "Mule",
-	"type": "Mounts and Vehicles",
-	"subtype": "Mounts and Other Animals",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Mounts and Other Animals",
 	"cost": {
 		"quantity": 8,
 		"unit": "gp"
@@ -3015,8 +3314,8 @@
 }, {
 	"index": 195,
 	"name": "Elephant",
-	"type": "Mounts and Vehicles",
-	"subtype": "Mounts and Other Animals",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Mounts and Other Animals",
 	"cost": {
 		"quantity": 200,
 		"unit": "gp"
@@ -3030,8 +3329,8 @@
 }, {
 	"index": 196,
 	"name": "Horse, draft",
-	"type": "Mounts and Vehicles",
-	"subtype": "Mounts and Other Animals",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Mounts and Other Animals",
 	"cost": {
 		"quantity": 50,
 		"unit": "gp"
@@ -3045,8 +3344,8 @@
 }, {
 	"index": 197,
 	"name": "Horse, riding",
-	"type": "Mounts and Vehicles",
-	"subtype": "Mounts and Other Animals",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Mounts and Other Animals",
 	"cost": {
 		"quantity": 75,
 		"unit": "gp"
@@ -3060,8 +3359,8 @@
 }, {
 	"index": 198,
 	"name": "Mastiff",
-	"type": "Mounts and Vehicles",
-	"subtype": "Mounts and Other Animals",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Mounts and Other Animals",
 	"cost": {
 		"quantity": 25,
 		"unit": "gp"
@@ -3075,8 +3374,8 @@
 }, {
 	"index": 199,
 	"name": "Pony",
-	"type": "Mounts and Vehicles",
-	"subtype": "Mounts and Other Animals",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Mounts and Other Animals",
 	"cost": {
 		"quantity": 30,
 		"unit": "gp"
@@ -3090,8 +3389,8 @@
 }, {
 	"index": 200,
 	"name": "Warhorse",
-	"type": "Mounts and Vehicles",
-	"subtype": "Mounts and Other Animals",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Mounts and Other Animals",
 	"cost": {
 		"quantity": 400,
 		"unit": "gp"
@@ -3105,8 +3404,8 @@
 }, {
 	"index": 201,
 	"name": "Barding: Padded",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 20,
 		"unit": "gp"
@@ -3117,8 +3416,8 @@
 }, {
 	"index": 202,
 	"name": "Barding: Leather",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 40,
 		"unit": "gp"
@@ -3129,8 +3428,8 @@
 }, {
 	"index": 203,
 	"name": "Barding: Studded Leather",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 180,
 		"unit": "gp"
@@ -3141,8 +3440,8 @@
 }, {
 	"index": 204,
 	"name": "Barding: Hide",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 40,
 		"unit": "gp"
@@ -3153,8 +3452,8 @@
 }, {
 	"index": 205,
 	"name": "Barding: Chain shirt",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 200,
 		"unit": "gp"
@@ -3165,8 +3464,8 @@
 }, {
 	"index": 206,
 	"name": "Barding: Scale mail",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 200,
 		"unit": "gp"
@@ -3177,8 +3476,8 @@
 }, {
 	"index": 207,
 	"name": "Barding: Breastplate",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 1600,
 		"unit": "gp"
@@ -3189,8 +3488,8 @@
 }, {
 	"index": 208,
 	"name": "Barding: Half plate",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 3000,
 		"unit": "gp"
@@ -3201,8 +3500,8 @@
 }, {
 	"index": 209,
 	"name": "Barding: Ring mail",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 12,
 		"unit": "gp"
@@ -3213,8 +3512,8 @@
 }, {
 	"index": 210,
 	"name": "Barding: Chain mail",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 300,
 		"unit": "gp"
@@ -3225,8 +3524,8 @@
 }, {
 	"index": 211,
 	"name": "Barding: Splint",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 800,
 		"unit": "gp"
@@ -3237,8 +3536,8 @@
 }, {
 	"index": 212,
 	"name": "Barding: Plate",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 6000,
 		"unit": "gp"
@@ -3249,8 +3548,8 @@
 }, {
 	"index": 213,
 	"name": "Bit and bridle",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -3260,8 +3559,8 @@
 }, {
 	"index": 214,
 	"name": "Carriage",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 100,
 		"unit": "gp"
@@ -3271,8 +3570,8 @@
 }, {
 	"index": 215,
 	"name": "Cart",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 15,
 		"unit": "gp"
@@ -3282,8 +3581,8 @@
 }, {
 	"index": 216,
 	"name": "Chariot",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 250,
 		"unit": "gp"
@@ -3293,8 +3592,8 @@
 }, {
 	"index": 217,
 	"name": "Animal Feed (1 day)",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 5,
 		"unit": "cp"
@@ -3304,8 +3603,8 @@
 }, {
 	"index": 218,
 	"name": "Saddle, Exotic",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 60,
 		"unit": "gp"
@@ -3316,8 +3615,8 @@
 }, {
 	"index": 219,
 	"name": "Saddle, Military",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 20,
 		"unit": "gp"
@@ -3328,8 +3627,8 @@
 }, {
 	"index": 220,
 	"name": "Saddle, Pack",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -3340,8 +3639,8 @@
 }, {
 	"index": 221,
 	"name": "Riding",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -3351,8 +3650,8 @@
 }, {
 	"index": 222,
 	"name": "Saddlebags",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 4,
 		"unit": "gp"
@@ -3362,8 +3661,8 @@
 }, {
 	"index": 223,
 	"name": "Sled",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 20,
 		"unit": "gp"
@@ -3373,8 +3672,8 @@
 }, {
 	"index": 224,
 	"name": "Stabling (1 day)",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 5,
 		"unit": "sp"
@@ -3384,8 +3683,8 @@
 }, {
 	"index": 225,
 	"name": "Wagon",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 35,
 		"unit": "gp"
@@ -3395,8 +3694,8 @@
 }, {
 	"index": 226,
 	"name": "Barding: Padded",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 20,
 		"unit": "gp"
@@ -3407,8 +3706,8 @@
 }, {
 	"index": 227,
 	"name": "Barding: Leather",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 40,
 		"unit": "gp"
@@ -3419,8 +3718,8 @@
 }, {
 	"index": 228,
 	"name": "Barding: Studded Leather",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 180,
 		"unit": "gp"
@@ -3431,8 +3730,8 @@
 }, {
 	"index": 229,
 	"name": "Barding: Hide",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 40,
 		"unit": "gp"
@@ -3443,8 +3742,8 @@
 }, {
 	"index": 230,
 	"name": "Barding: Chain shirt",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 200,
 		"unit": "gp"
@@ -3455,8 +3754,8 @@
 }, {
 	"index": 231,
 	"name": "Barding: Scale mail",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 200,
 		"unit": "gp"
@@ -3467,8 +3766,8 @@
 }, {
 	"index": 232,
 	"name": "Barding: Breastplate",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 1600,
 		"unit": "gp"
@@ -3479,8 +3778,8 @@
 }, {
 	"index": 233,
 	"name": "Barding: Half plate",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 3000,
 		"unit": "gp"
@@ -3491,8 +3790,8 @@
 }, {
 	"index": 234,
 	"name": "Barding: Ring mail",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 12,
 		"unit": "gp"
@@ -3503,8 +3802,8 @@
 }, {
 	"index": 235,
 	"name": "Barding: Chain mail",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 300,
 		"unit": "gp"
@@ -3515,8 +3814,8 @@
 }, {
 	"index": 236,
 	"name": "Barding: Splint",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 800,
 		"unit": "gp"
@@ -3527,8 +3826,8 @@
 }, {
 	"index": 237,
 	"name": "Barding: Plate",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 6000,
 		"unit": "gp"
@@ -3539,8 +3838,8 @@
 }, {
 	"index": 238,
 	"name": "Bit and bridle",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 2,
 		"unit": "gp"
@@ -3550,8 +3849,8 @@
 }, {
 	"index": 239,
 	"name": "Carriage",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 100,
 		"unit": "gp"
@@ -3561,8 +3860,8 @@
 }, {
 	"index": 240,
 	"name": "Cart",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 15,
 		"unit": "gp"
@@ -3572,8 +3871,8 @@
 }, {
 	"index": 241,
 	"name": "Chariot",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 250,
 		"unit": "gp"
@@ -3583,8 +3882,8 @@
 }, {
 	"index": 242,
 	"name": "Animal Feed (1 day)",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 5,
 		"unit": "cp"
@@ -3594,8 +3893,8 @@
 }, {
 	"index": 243,
 	"name": "Saddle, Exotic",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 60,
 		"unit": "gp"
@@ -3606,8 +3905,8 @@
 }, {
 	"index": 244,
 	"name": "Saddle, Military",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 20,
 		"unit": "gp"
@@ -3618,8 +3917,8 @@
 }, {
 	"index": 245,
 	"name": "Saddle, Pack",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 5,
 		"unit": "gp"
@@ -3630,8 +3929,8 @@
 }, {
 	"index": 246,
 	"name": "Riding",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 10,
 		"unit": "gp"
@@ -3641,8 +3940,8 @@
 }, {
 	"index": 247,
 	"name": "Saddlebags",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 4,
 		"unit": "gp"
@@ -3652,8 +3951,8 @@
 }, {
 	"index": 248,
 	"name": "Sled",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 20,
 		"unit": "gp"
@@ -3663,8 +3962,8 @@
 }, {
 	"index": 249,
 	"name": "Stabling (1 day)",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 5,
 		"unit": "sp"
@@ -3674,8 +3973,8 @@
 }, {
 	"index": 250,
 	"name": "Wagon",
-	"type": "Mounts and Vehicles",
-	"subtype": "Tack, Harness, and Drawn Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Tack, Harness, and Drawn Vehicles",
 	"cost": {
 		"quantity": 35,
 		"unit": "gp"
@@ -3685,8 +3984,8 @@
 }, {
 	"index": 251,
 	"name": "Galley",
-	"type": "Mounts and Vehicles",
-	"subtype": "Waterborne Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Waterborne Vehicles",
 	"cost": {
 		"quantity": 30000,
 		"unit": "gp"
@@ -3699,8 +3998,8 @@
 }, {
 	"index": 252,
 	"name": "Keelboat",
-	"type": "Mounts and Vehicles",
-	"subtype": "Waterborne Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Waterborne Vehicles",
 	"cost": {
 		"quantity": 3000,
 		"unit": "gp"
@@ -3714,8 +4013,8 @@
 }, {
 	"index": 253,
 	"name": "Longship",
-	"type": "Mounts and Vehicles",
-	"subtype": "Waterborne Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Waterborne Vehicles",
 	"cost": {
 		"quantity": 10000,
 		"unit": "gp"
@@ -3728,8 +4027,8 @@
 }, {
 	"index": 254,
 	"name": "Rowboat",
-	"type": "Mounts and Vehicles",
-	"subtype": "Waterborne Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Waterborne Vehicles",
 	"cost": {
 		"quantity": 50,
 		"unit": "gp"
@@ -3743,8 +4042,8 @@
 }, {
 	"index": 255,
 	"name": "Sailing ship",
-	"type": "Mounts and Vehicles",
-	"subtype": "Waterborne Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Waterborne Vehicles",
 	"cost": {
 		"quantity": 10000,
 		"unit": "gp"
@@ -3757,8 +4056,8 @@
 }, {
 	"index": 256,
 	"name": "Warship",
-	"type": "Mounts and Vehicles",
-	"subtype": "Waterborne Vehicles",
+	"equipment_category": "Mounts and Vehicles",
+	"vehicle_category": "Waterborne Vehicles",
 	"cost": {
 		"quantity": 25000,
 		"unit": "gp"
