@@ -1,5 +1,9 @@
 var fs = require('fs');
-let all_data_types = ["classes", "features", "tables", "equipment", "monsters", "proficiencies", "spells", "startingequipment"]
+
+const args = process.argv;
+let data_type = args[2]
+let noData = args[3]
+create_upload_file(data_type);
 
 function create_upload_file(datatype_string) {
 	
@@ -14,7 +18,9 @@ function create_upload_file(datatype_string) {
 		// number the indexes and change the URLs
 		for(let i = 0; i < data.length; i++) {
 			data[i].index = i + 1;
-			data[i].url = "http://dnd5eapi.co/api/" + datatype_string + "/"+ (i + 1).toString();			
+			if (noData !== "noindexurl") {
+				data[i].url = "http://dnd5eapi.co/api/" + datatype_string + "/"+ (i + 1).toString();
+			}			
 		}
 
 		let output_filename = "./upload-5e-SRD-" + datatype_string + ".json";
@@ -37,13 +43,6 @@ function create_all_upload_files() {
 	}
 }
 
-const args = process.argv;
-let data_type = args[2]
-if (data_type === "all") {
-	create_all_upload_files();
-} else {
-	create_upload_file(data_type);
-}
 
 
 // mongoimport -h ds133158.mlab.com:33158 -d 5e-srd-api -c classfeatures -u admin -p password --file upload-5e-SRD-classfeatures.json --jsonArray
