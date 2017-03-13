@@ -1,97 +1,210 @@
-[{
-	"index": 1,
-	"name": "Hill Dwarf",
-	"race": { "url": "http://dnd5eapi.co/api/races/1", "name": "Dwarf" },
-	"desc": "As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience.",
-	"ability_bonuses": [0, 0, 0, 0, 1, 0],
-	"starting_proficiencies:": [],
-	"languages": [],
-	"racial_traits": [{
-		"url": "http://dnd5eapi.co/api/traits/4",
-		"name": "Dwarven Toughness"
-	}],
-	"url": "http://dnd5eapi.co/api/subraces/1"
-}, {
-	"index": 2,
-	"name": "High Elf",
-	"race": { "url": "http://dnd5eapi.co/api/races/2", "name": "Elf" },
-	"desc": "As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many fantasy gaming worlds, there are two kinds of high elves. One type is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type is more common and more friendly, and often encountered among humans and other races.",
-	"ability_bonuses": [0, 0, 0, 1, 0, 0],
-	"starting_proficiencies:": [{
-		"url": "http://dnd5eapi.co/api/proficiencies/42",
-		"name": "Longsword"
-	}, {
-		"url": "http://dnd5eapi.co/api/proficiencies/48",
-		"name": "Shortsword"
-	}, {
-		"url": "http://dnd5eapi.co/api/proficiencies/33",
-		"name": "Shortbow"
-	}, {
-		"url": "http://dnd5eapi.co/api/proficiencies/56",
-		"name": "Longbow"
-	}],
-	"languages": [{
-		"quantity": 1,
-		"options": [{
-			"url": "http://dnd5eapi.co/api/languages/2",
-			"name": "Dwarvish"
-		}, {
-			"url": "http://dnd5eapi.co/api/languages/4",
-			"name": "Giant"
-		}, {
-			"url": "http://dnd5eapi.co/api/languages/5",
-			"name": "Gnomish"
-		}, {
-			"url": "http://dnd5eapi.co/api/languages/6",
-			"name": "Goblin"
-		}, {
-			"url": "http://dnd5eapi.co/api/languages/7",
+[
+	{
+		"index": 1,
+		"name": "Hill Dwarf",
+		"race": {
+			"url": "http://dnd5eapi.co/api/races/1",
+			"name": "Dwarf"
+		},
+		"desc": "As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience.",
+		"ability_bonuses": [
+			0,
+			0,
+			0,
+			0,
+			1,
+			0
+		],
+		"starting_proficiencies:": [],
+		"languages": [],
+		"racial_traits": [
+			{
+				"url": "http://dnd5eapi.co/api/traits/4",
+				"name": "Dwarven Toughness"
+			}
+		],
+		"url": "http://dnd5eapi.co/api/subraces/1"
+	},
+	{
+		"index": 2,
+		"name": "High Elf",
+		"race": {
+			"url": "http://dnd5eapi.co/api/races/2",
+			"name": "Elf"
+		},
+		"desc": "As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many fantasy gaming worlds, there are two kinds of high elves. One type is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type is more common and more friendly, and often encountered among humans and other races.",
+		"ability_bonuses": [
+			0,
+			0,
+			0,
+			1,
+			0,
+			0
+		],
+		"starting_proficiencies:": [
+			{
+				"url": "http://dnd5eapi.co/api/proficiencies/42",
+				"name": "Longswords"
+			},
+			{
+				"url": "http://dnd5eapi.co/api/proficiencies/48",
+				"name": "Shortswords"
+			},
+			{
+				"url": "http://dnd5eapi.co/api/proficiencies/33",
+				"name": "Shortbows"
+			},
+			{
+				"url": "http://dnd5eapi.co/api/proficiencies/56",
+				"name": "Longbows"
+			}
+		],
+		"languages": [
+			{
+				"choose": 1,
+				"from": [
+					{
+						"url": "http://dnd5eapi.co/api/languages/2",
+						"name": "Dwarvish"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/languages/4",
+						"name": "Giant"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/languages/5",
+						"name": "Gnomish"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/languages/6",
+						"name": "Goblin"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/languages/7",
+						"name": "Halfling"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/languages/8",
+						"name": "Orc"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/languages/9",
+						"name": "Abyssal"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/languages/10",
+						"name": "Celestial"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/languages/11",
+						"name": "Draconic"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/languages/12",
+						"name": "Deep Speech"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/languages/13",
+						"name": "Infernal"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/languages/14",
+						"name": "Primordial"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/languages/15",
+						"name": "Sylvan"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/languages/16",
+						"name": "Undercommon"
+					}
+				],
+				"type": "language"
+			}
+		],
+		"racial_traits": [
+			{
+				"choose": 1,
+				"from": [
+					{
+						"url": "http://dnd5eapi.co/api/traits/9",
+						"name": "High Elf Cantrip: Light"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/traits/10",
+						"name": "High Elf Cantrip: Mage Hand"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/traits/11",
+						"name": "High Elf Cantrip: Mending"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/traits/12",
+						"name": "High Elf Cantrip: Message"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/traits/13",
+						"name": "High Elf Cantrip: Minor Illusion"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/traits/14",
+						"name": "High Elf Cantrip: Acid Splash"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/traits/15",
+						"name": "High Elf Cantrip: Prestidigitation"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/traits/16",
+						"name": "High Elf Cantrip: Ray of Frost"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/traits/17",
+						"name": "High Elf Cantrip: Shocking Grasp"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/traits/18",
+						"name": "High Elf Cantrip: True Strike"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/traits/19",
+						"name": "High Elf Cantrip: Chill Touch"
+					},
+					{
+						"url": "http://dnd5eapi.co/api/traits/20",
+						"name": "High Elf Cantrip: Dancing Lights"
+					}
+				],
+				"type": "trait"
+			}
+		],
+		"url": "http://dnd5eapi.co/api/subraces/2"
+	},
+	{
+		"index": 3,
+		"name": "Lightfoot Halfling",
+		"race": {
+			"url": "http://dnd5eapi.co/api/races/3",
 			"name": "Halfling"
-		}, {
-			"url": "http://dnd5eapi.co/api/languages/8",
-			"name": "Orc"
-		}, {
-			"url": "http://dnd5eapi.co/api/languages/9",
-			"name": "Abyssal"
-		}, {
-			"url": "http://dnd5eapi.co/api/languages/10",
-			"name": "Celestial"
-		}, {
-			"url": "http://dnd5eapi.co/api/languages/11",
-			"name": "Draconic"
-		}, {
-			"url": "http://dnd5eapi.co/api/languages/12",
-			"name": "Deep Speech"
-		}, {
-			"url": "http://dnd5eapi.co/api/languages/13",
-			"name": "Infernal"
-		}, {
-			"url": "http://dnd5eapi.co/api/languages/14",
-			"name": "Primordial"
-		}, {
-			"url": "http://dnd5eapi.co/api/languages/15",
-			"name": "Sylvan"
-		}, {
-			"url": "http://dnd5eapi.co/api/languages/16",
-			"name": "Undercommon"
-		}]
-	}],
-	"racial_traits": [{
-		"url": "http://dnd5eapi.co/api/traits/8",
-		"name": "Cantrip"
-	}],
-	"url": "http://dnd5eapi.co/api/subraces/2"
-}, {
-	"index": 3,
-	"name": "Lightfoot Halfling",
-	"race": { "url": "http://dnd5eapi.co/api/races/3", "name": "Halfling" },
-	"desc": "As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You’re inclined to be affable and get along well with others. Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life.",
-	"ability_bonuses": [0, 0, 0, 0, 0, 1],
-	"starting_proficiencies:": [],
-	"languages": [],
-	"racial_traits": [{
-		"url": "http://dnd5eapi.co/api/traits/12",
-		"name": "Naturally Stealthy"
-	}],
-	"url": "http://dnd5eapi.co/api/subraces/3"
-}]
+		},
+		"desc": "As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You’re inclined to be affable and get along well with others. Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life.",
+		"ability_bonuses": [
+			0,
+			0,
+			0,
+			0,
+			0,
+			1
+		],
+		"starting_proficiencies:": [],
+		"languages": [],
+		"racial_traits": [
+			{
+				"url": "http://dnd5eapi.co/api/traits/23",
+				"name": "Naturally Stealthy"
+			}
+		],
+		"url": "http://dnd5eapi.co/api/subraces/3"
+	}
+]

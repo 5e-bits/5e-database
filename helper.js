@@ -2,7 +2,6 @@ var fs = require('fs');
 
 const args = process.argv;
 let data_type = args[2]
-let noData = args[3]
 create_upload_file(data_type);
 
 function create_upload_file(datatype_string) {
@@ -18,7 +17,7 @@ function create_upload_file(datatype_string) {
 		// number the indexes and change the URLs
 		for(let i = 0; i < data.length; i++) {
 			data[i].index = i + 1;
-			if (noData !== "noindexurl") {
+			if (data_type !== "levels") {
 				data[i].url = "http://dnd5eapi.co/api/" + datatype_string + "/"+ (i + 1).toString();
 			}			
 		}
