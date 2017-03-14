@@ -3,21 +3,21 @@ var fs = require('fs');
 
 const args = process.argv;
 let data_type = args[2]
-create_upload_file(data_type);
+let type_check = args[3]
 
-function create_upload_file(datatype_string) {
-	
-	let input_filename = "./5e-SRD-" + datatype_string + ".json"
+let results = [];
+getResultsFromAPI(type_check);
 
-	let urlfix = (err,data) => {
-		
-		// data = JSON.parse(data);
 
-		// var url = "http://dnd5eapi.co/api/classes"
-		http.get('http://localhost:3000/api/classes/', (res) => {
+
+
+
+function getResultsFromAPI(type_to_check) {
+		var url = 'http://www.dnd5eapi.co/api/' + type_to_check + '/';
+
+		http.get(url, (res) => {
 			const statusCode = res.statusCode;
 			const contentType = res.headers['content-type'];
-			console.log(res);
 
 			let error;
 			if (statusCode !== 200) {
@@ -39,34 +39,54 @@ function create_upload_file(datatype_string) {
 			res.on('data', (chunk) => rawData += chunk);
 			res.on('end', () => {
 				try {
-				let parsedData = JSON.parse(rawData);
-				console.log(parsedData);
+					let parsedData = JSON.parse(rawData);
+					parsedData.results.forEach( (obj) => {
+						results.push(obj);
+					})
+					
+					fixLinks(data_type, results);
+
+
 				} catch (e) {
-				console.log(e.message);
+					console.log(e.message);
 				}
 			});
 		}).on('error', (e) => {
 			console.log(`Got error: ${e.message}`);
 		});
+}
 
+function fixLinks(datatype_string, reference) {
+	
+	let input_filename = "./5e-SRD-" + datatype_string + ".json"
 
+	let urlfix = (err,data) => {
 
+		data = JSON.parse(data);
 
 		// number the indexes and change the URLs
-		// for(let i = 0; i < data.length; i++) {
-		// 	data[i].index = i + 1;
-		// 	if (data_type !== "levels") {
-		// 		data[i].url = "http://dnd5eapi.co/api/" + datatype_string + "/"+ (i + 1).toString();
-		// 	}			
-		// }
+		for(let i = 0; i < data.length; i++) {
 
-		// let output_filename = "./upload-5e-SRD-" + datatype_string + ".json";
+			// THE THING TO CHECK FOR ERRORS
+			data[i].from.forEach( function(element) {
+				// console.log(element.name);
+				let newurl =  results.find( (item) => {
+					return item.name === element.name
+				}).url;
+				// console.log(newurl);
 
-		// fs.writeFile(output_filename, JSON.stringify(data), (err) => {
-		// 	if (err) throw err;
-		// 	console.log('Success');
-		// 	console.log("mongoimport -h ds133158.mlab.com:33158 -d 5e-srd-api -c " + datatype_string + " -u admin -p password --file upload-5e-SRD-" + datatype_string + ".json --jsonArray")
-		// });
+				element.url = newurl;
+				console.log(element);
+			})
+		}
+
+		let output_filename = "./upload-5e-SRD-" + datatype_string + ".json";
+
+		fs.writeFile(output_filename, JSON.stringify(data), (err) => {
+			if (err) throw err;
+			console.log('Success');
+			console.log("mongoimport -h ds133158.mlab.com:33158 -d 5e-srd-api -c " + datatype_string + " -u admin -p password --file upload-5e-SRD-" + datatype_string + ".json --jsonArray")
+		});
 	}
 
 	fs.readFile(input_filename, 'utf8', (err,data) => {
