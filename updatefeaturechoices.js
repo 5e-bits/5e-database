@@ -5,15 +5,11 @@ const args = process.argv;
 let data_type = args[2]
 let class_name = args[3]
 
-fill_in_features(data_type, class_name);
+fill_in_features();
 
 
-
-
-
-
-function getLevelFeaturesFromAPI(class_name, level, printLength) {
-		var url = 'http://www.dnd5eapi.co/api/features/' + class_name + '/level/' + (level);
+function getFeaturesFromAPI(callback) {
+		var url = 'http://www.dnd5eapi.co/api/features/';
         // console.log(url);
 
 		http.get(url, (res) => {
@@ -49,11 +45,8 @@ function getLevelFeaturesFromAPI(class_name, level, printLength) {
 						results.push(obj);
 					})
 
-                    printLength(results);
+                    callback(results);
                     
-                    
-
-
 				} catch (e) {
 					console.log(e.message);
 				}
@@ -71,7 +64,7 @@ function sleep(seconds){
 
 function fill_in_features(datatype_string, class_name) {
 	
-	let input_filename = "./5e-SRD-" + datatype_string + ".json"
+	let input_filename = "./5e-SRD-" + "features" + ".json"
 
 	let fill_in = (err,data) => {
 
@@ -79,37 +72,36 @@ function fill_in_features(datatype_string, class_name) {
 
         newData = [];
 
-		// number the indexes and change the URLs
-		for(let i = 0; i < data.length; i++) {
-            if (data[i].class.name === class_name.charAt(0).toUpperCase() + class_name.slice(1).toLowerCase()) {
-                
-                let level = data[i].level;
-                getLevelFeaturesFromAPI(class_name, level, (filled) => {
-                    // console.log(filled.length);
-                    data[i].features = [];
-                    data[i].feature_choices = [];
-                    filled.forEach( (thing) => {
-						if (thing.choice === undefined) {
-							data[i].features.push(thing);
-						} else {
-							data[i].feature_choices.push(thing);
-						}
+        // for each feature
+        getFeaturesFromAPI((filled) => {
+            
+
+            for(let i = 0; i < data.length; i++) {
+                // filled is the correct list.
+                // we want to go through each choice'd feature and update its list
+                if (data[i].choice !== undefined) {
+
+                    data[i].choice.from.forEach( (wrongFeature) => {
+                        wrongFeature.url = filled.find( (correctFeature) => {
+                            return correctFeature.name == wrongFeature.name;
+                        }).url;
                     })
+
                     newData.push(data[i]);
+                }
 
 
-                    if (newData.length == 20) {
-                        let output_filename = "./upload-5e-SRD-" + datatype_string + ".json";
-                        fs.writeFile(output_filename, JSON.stringify(data), (err) => {
-                            if (err) throw err;
-                            console.log('Success');
-                            console.log("mongoimport -h ds133158.mlab.com:33158 -d 5e-srd-api -c " + datatype_string + " -u admin -p password --file upload-5e-SRD-" + datatype_string + ".json --jsonArray")
-                        });
-                    }
-                    
-                });
-            }
-		}
+                if (newData.length == 28) {
+                    let output_filename = "./upload-5e-SRD-" + datatype_string + ".json";
+                    fs.writeFile(output_filename, JSON.stringify(data), (err) => {
+                        if (err) throw err;
+                        console.log('Success');
+                        console.log("mongoimport -h ds133158.mlab.com:33158 -d 5e-srd-api -c " + datatype_string + " -u admin -p password --file upload-5e-SRD-" + datatype_string + ".json --jsonArray")
+                    });
+                    break;
+                }
+            } 
+        });
 
 
 	}
