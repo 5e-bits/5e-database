@@ -31,26 +31,26 @@
 			{
 				"url": "http://www.dnd5eapi.co/api/proficiencies/51",
 				"name": "Warhammers"
-			},
-			{
-				"choose": 1,
-				"type": "proficiencies",
-				"from": [
-					{
-						"url": "http://www.dnd5eapi.co/api/proficiencies/71",
-						"name": "Smith's tools"
-					},
-					{
-						"url": "http://www.dnd5eapi.co/api/proficiencies/59",
-						"name": "Brewer's supplies"
-					},
-					{
-						"url": "http://www.dnd5eapi.co/api/proficiencies/68",
-						"name": "Mason's tools"
-					}
-				]
 			}
 		],
+		"starting_proficiency_options": {
+			"choose": 1,
+			"type": "proficiencies",
+			"from": [
+				{
+					"url": "http://www.dnd5eapi.co/api/proficiencies/71",
+					"name": "Smith's tools"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/proficiencies/59",
+					"name": "Brewer's supplies"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/proficiencies/68",
+					"name": "Mason's tools"
+				}
+			]
+		},
 		"languages": [
 			{
 				"url": "http://www.dnd5eapi.co/api/languages/1",
@@ -61,6 +61,9 @@
 				"name": "Dwarvish"
 			}
 		],
+		"language_options": {
+			
+		},
 		"language_desc": "You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.",
 		"traits": [
 			{
@@ -106,6 +109,7 @@
 				"name": "Skill: Perception"
 			}
 		],
+		"starting_proficiency_options": {},
 		"languages": [
 			{
 				"url": "http://www.dnd5eapi.co/api/languages/1",
@@ -116,6 +120,9 @@
 				"name": "Elvish"
 			}
 		],
+		"language_options": {
+			
+		},
 		"language_desc": "You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.",
 		"traits": [
 			{
@@ -156,6 +163,7 @@
 		"size": "Small",
 		"size_description": "Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small.",
 		"starting_proficiencies": [],
+		"starting_proficiency_options": {},
 		"languages": [
 			{
 				"url": "http://www.dnd5eapi.co/api/languages/1",
@@ -166,6 +174,7 @@
 				"name": "Halfling"
 			}
 		],
+		"language_options": {},
 		"language_desc": "You can speak, read, and write Common and Halfling. The Halfling language isn’t secret, but halflings are loath to share it with others. They write very little, so they don’t have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling.",
 		"traits": [
 			{
@@ -206,78 +215,79 @@
 		"size": "Medium",
 		"size_description": "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.",
 		"starting_proficiencies": [],
+		"starting_proficiency_options": {},
 		"languages": [
 			{
 				"url": "http://www.dnd5eapi.co/api/languages/1",
 				"name": "Common"
-			},
-			{
-				"choose": 1,
-				"type": "languages",
-				"from": [
-					{
-						"url": "http://www.dnd5eapi.co/api/languages/2",
-						"name": "Dwarvish"
-					},
-					{
-						"url": "http://www.dnd5eapi.co/api/languages/3",
-						"name": "Elvish"
-					},
-					{
-						"url": "http://www.dnd5eapi.co/api/languages/4",
-						"name": "Giant"
-					},
-					{
-						"url": "http://www.dnd5eapi.co/api/languages/5",
-						"name": "Gnomish"
-					},
-					{
-						"url": "http://www.dnd5eapi.co/api/languages/6",
-						"name": "Goblin"
-					},
-					{
-						"url": "http://www.dnd5eapi.co/api/languages/7",
-						"name": "Halfling"
-					},
-					{
-						"url": "http://www.dnd5eapi.co/api/languages/8",
-						"name": "Orc"
-					},
-					{
-						"url": "http://www.dnd5eapi.co/api/languages/9",
-						"name": "Abyssal"
-					},
-					{
-						"url": "http://www.dnd5eapi.co/api/languages/10",
-						"name": "Celestial"
-					},
-					{
-						"url": "http://www.dnd5eapi.co/api/languages/11",
-						"name": "Draconic"
-					},
-					{
-						"url": "http://www.dnd5eapi.co/api/languages/12",
-						"name": "Deep Speech"
-					},
-					{
-						"url": "http://www.dnd5eapi.co/api/languages/13",
-						"name": "Infernal"
-					},
-					{
-						"url": "http://www.dnd5eapi.co/api/languages/14",
-						"name": "Primordial"
-					},
-					{
-						"url": "http://www.dnd5eapi.co/api/languages/15",
-						"name": "Sylvan"
-					},
-					{
-						"url": "http://www.dnd5eapi.co/api/languages/16",
-						"name": "Undercommon"
-					}
-				]
 			}
 		],
+		"language_options": {
+			"choose": 1,
+			"type": "languages",
+			"from": [
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/2",
+					"name": "Dwarvish"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/3",
+					"name": "Elvish"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/4",
+					"name": "Giant"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/5",
+					"name": "Gnomish"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/6",
+					"name": "Goblin"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/7",
+					"name": "Halfling"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/8",
+					"name": "Orc"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/9",
+					"name": "Abyssal"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/10",
+					"name": "Celestial"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/11",
+					"name": "Draconic"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/12",
+					"name": "Deep Speech"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/13",
+					"name": "Infernal"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/14",
+					"name": "Primordial"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/15",
+					"name": "Sylvan"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/16",
+					"name": "Undercommon"
+				}
+			]
+		},
 		"language_desc": "You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.",
 		"traits": [],
 		"subraces": [],
