@@ -1,312 +1,366 @@
 [
 	{
 		"index": 1,
-		"name": "Darkvision (Dwarf)",
+		"name": "Hill Dwarf",
 		"race": {
 			"url": "http://www.dnd5eapi.co/api/races/1",
 			"name": "Dwarf"
 		},
-		"desc": [
-			"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+		"desc": "As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience.",
+		"ability_bonuses": [
+			0,
+			0,
+			0,
+			0,
+			1,
+			0
 		],
-		"url": "http://www.dnd5eapi.co/api/traits/1"
+		"starting_proficiencies:": [],
+		"starting_proficiency_options": {
+			
+		},
+		"languages": [],
+		"language_options": {
+			
+		},
+		"racial_traits": [
+			{
+				"url": "http://www.dnd5eapi.co/api/traits/4",
+				"name": "Dwarven Toughness"
+			}
+		],
+		"racial_trait_options": {},
+		"url": "http://www.dnd5eapi.co/api/subraces/1"
 	},
 	{
 		"index": 2,
-		"name": "Dwarven Resilience",
+		"name": "High Elf",
 		"race": {
-			"url": "http://www.dnd5eapi.co/api/races/1",
-			"name": "Dwarf"
+			"url": "http://www.dnd5eapi.co/api/races/2",
+			"name": "Elf"
 		},
-		"desc": [
-			"You have advantage on saving throws against poison, and you have resistance against poison damage."
+		"desc": "As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many fantasy gaming worlds, there are two kinds of high elves. One type is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type is more common and more friendly, and often encountered among humans and other races.",
+		"ability_bonuses": [
+			0,
+			0,
+			0,
+			1,
+			0,
+			0
 		],
-		"url": "http://www.dnd5eapi.co/api/traits/2"
+		"starting_proficiencies:": [
+			{
+				"url": "http://www.dnd5eapi.co/api/proficiencies/42",
+				"name": "Longswords"
+			},
+			{
+				"url": "http://www.dnd5eapi.co/api/proficiencies/48",
+				"name": "Shortswords"
+			},
+			{
+				"url": "http://www.dnd5eapi.co/api/proficiencies/33",
+				"name": "Shortbows"
+			},
+			{
+				"url": "http://www.dnd5eapi.co/api/proficiencies/56",
+				"name": "Longbows"
+			}
+		],
+		"starting_proficiency_options": {
+			
+		},
+		"languages": [],
+		"language_options": {
+			"choose": 1,
+			"from": [
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/2",
+					"name": "Dwarvish"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/4",
+					"name": "Giant"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/5",
+					"name": "Gnomish"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/6",
+					"name": "Goblin"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/7",
+					"name": "Halfling"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/8",
+					"name": "Orc"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/9",
+					"name": "Abyssal"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/10",
+					"name": "Celestial"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/11",
+					"name": "Draconic"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/12",
+					"name": "Deep Speech"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/13",
+					"name": "Infernal"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/14",
+					"name": "Primordial"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/15",
+					"name": "Sylvan"
+				},
+				{
+					"url": "http://www.dnd5eapi.co/api/languages/16",
+					"name": "Undercommon"
+				}
+			],
+			"type": "language"
+		},
+		"racial_traits": [],
+		"racial_trait_options": 
+			{
+				"choose": 1,
+				"from": [
+					{
+						"url": "http://www.dnd5eapi.co/api/traits/9",
+						"name": "High Elf Cantrip: Light"
+					},
+					{
+						"url": "http://www.dnd5eapi.co/api/traits/10",
+						"name": "High Elf Cantrip: Mage Hand"
+					},
+					{
+						"url": "http://www.dnd5eapi.co/api/traits/11",
+						"name": "High Elf Cantrip: Mending"
+					},
+					{
+						"url": "http://www.dnd5eapi.co/api/traits/12",
+						"name": "High Elf Cantrip: Message"
+					},
+					{
+						"url": "http://www.dnd5eapi.co/api/traits/13",
+						"name": "High Elf Cantrip: Minor Illusion"
+					},
+					{
+						"url": "http://www.dnd5eapi.co/api/traits/14",
+						"name": "High Elf Cantrip: Acid Splash"
+					},
+					{
+						"url": "http://www.dnd5eapi.co/api/traits/15",
+						"name": "High Elf Cantrip: Prestidigitation"
+					},
+					{
+						"url": "http://www.dnd5eapi.co/api/traits/16",
+						"name": "High Elf Cantrip: Ray of Frost"
+					},
+					{
+						"url": "http://www.dnd5eapi.co/api/traits/17",
+						"name": "High Elf Cantrip: Shocking Grasp"
+					},
+					{
+						"url": "http://www.dnd5eapi.co/api/traits/18",
+						"name": "High Elf Cantrip: True Strike"
+					},
+					{
+						"url": "http://www.dnd5eapi.co/api/traits/19",
+						"name": "High Elf Cantrip: Chill Touch"
+					},
+					{
+						"url": "http://www.dnd5eapi.co/api/traits/20",
+						"name": "High Elf Cantrip: Dancing Lights"
+					}
+				],
+				"type": "trait"
+			}
+		,
+		"url": "http://www.dnd5eapi.co/api/subraces/2"
 	},
 	{
 		"index": 3,
-		"name": "Stonecunning",
+		"name": "Lightfoot Halfling",
+		"race": {
+			"url": "http://www.dnd5eapi.co/api/races/3",
+			"name": "Halfling"
+		},
+		"desc": "As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You’re inclined to be affable and get along well with others. Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life.",
+		"ability_bonuses": [
+			0,
+			0,
+			0,
+			0,
+			0,
+			1
+		],
+		"starting_proficiencies:": [],
+		"starting_proficiency_options": {
+			
+		},
+		"languages": [],
+		"language_options": {
+			
+		},
+		"racial_traits": [
+			{
+				"url": "http://www.dnd5eapi.co/api/traits/23",
+				"name": "Naturally Stealthy"
+			}
+		],
+		"racial_trait_options": {},
+		"url": "http://www.dnd5eapi.co/api/subraces/3"
+	},
+	{
+		"index": 4,
+		"name": "Mountain Dwarf",
 		"race": {
 			"url": "http://www.dnd5eapi.co/api/races/1",
 			"name": "Dwarf"
 		},
-		"desc": [
-			"Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+		"desc": "As a mountain dwarf, you're strong and hardy, accustomed to a difficult life in rugged terrain. You're probably on the tall side (for a dwarf), and tend toward lighter coloration.",
+		"ability_bonuses": [
+			2,
+			0,
+			0,
+			0,
+			0,
+			0
 		],
-		"url": "http://www.dnd5eapi.co/api/traits/3"
-	},
-	{
-		"index": 4,
-		"name": "Dwarven Toughness",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/subraces/1",
-			"name": "Hill Dwarf"
+		"starting_proficiencies:": [
+			{
+				"url": "http://www.dnd5eapi.co/api/proficiencies/2",
+				"name": "Medium armor"
+			},
+			{
+				"url": "http://www.dnd5eapi.co/api/proficiencies/3",
+				"name": "Heavy armor"
+			}
+		],
+		"starting_proficiency_options": {},
+		"languages": [],
+		"language_options": {
+			
 		},
-		"desc": [
-			"Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
-		],
-		"url": "http://www.dnd5eapi.co/api/traits/4"
+		"racial_traits": [],
+		"racial_trait_options": {},
+		"url": "http://www.dnd5eapi.co/api/subraces/4"
 	},
 	{
 		"index": 5,
-		"name": "Darkvision (Elf)",
+		"name": "Wood Elf",
 		"race": {
 			"url": "http://www.dnd5eapi.co/api/races/2",
 			"name": "Elf"
 		},
-		"desc": [
-			"Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+		"desc": "As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly through your native forrests.",
+		"ability_bonuses": [
+			0,
+			0,
+			0,
+			0,
+			1,
+			0
 		],
-		"url": "http://www.dnd5eapi.co/api/traits/5"
+		"starting_proficiencies:": [
+			{
+				"url": "http://www.dnd5eapi.co/api/proficiencies/42",
+				"name": "Longswords"
+			},
+			{
+				"url": "http://www.dnd5eapi.co/api/proficiencies/48",
+				"name": "Shortswords"
+			},
+			{
+				"url": "http://www.dnd5eapi.co/api/proficiencies/33",
+				"name": "Shortbows"
+			},
+			{
+				"url": "http://www.dnd5eapi.co/api/proficiencies/56",
+				"name": "Longbows"
+			}
+		],
+		"starting_proficiency_options": {},
+		"languages": [],
+		"language_options": {
+			
+		},
+		"racial_traits": [
+			{
+				"url": "http://www.dnd5eapi.co/api/traits/37",
+				"name": "Fleet of Foot"
+			},
+			{
+				"url": "http://www.dnd5eapi.co/api/traits/38",
+				"name": "Mask of the Wild"
+			}
+		],
+		"racial_trait_options": {},
+		"url": "http://www.dnd5eapi.co/api/subraces/5"
 	},
 	{
 		"index": 6,
-		"name": "Fey Ancestry",
+		"name": "Dark Elf (Drow)",
 		"race": {
 			"url": "http://www.dnd5eapi.co/api/races/2",
 			"name": "Elf"
 		},
-		"desc": [
-			"You have advantage on saving throws against being charmed, and magic can’t put you to sleep."
+		"desc": "As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly through your native forrests.",
+		"ability_bonuses": [
+			0,
+			0,
+			0,
+			0,
+			0,
+			1
 		],
-		"url": "http://www.dnd5eapi.co/api/traits/6"
-	},
-	{
-		"index": 7,
-		"name": "Trance",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/races/2",
-			"name": "Elf"
+		"starting_proficiencies:": [
+			{
+				"url": "http://www.dnd5eapi.co/api/proficiencies/46",
+				"name": "Rapiers"
+			},
+			{
+				"url": "http://www.dnd5eapi.co/api/proficiencies/48",
+				"name": "Shortswords"
+			},
+			{
+				"url": "http://www.dnd5eapi.co/api/proficiencies/54",
+				"name": "Crossbows, hand"
+			}
+		],
+		"starting_proficiency_options": {},
+		"languages": [],
+		"language_options": {
+			
 		},
-		"desc": [
-			"Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\")",
-			"While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+		"racial_traits": [
+			{
+				"url": "http://www.dnd5eapi.co/api/traits/39",
+				"name": "Superior Darkvision"
+			},
+			{
+				"url": "http://www.dnd5eapi.co/api/traits/40",
+				"name": "Sunlight Sensitivity"
+			},
+			{
+				"url": "http://www.dnd5eapi.co/api/traits/41",
+				"name": "Drow Magic"
+			}
 		],
-		"url": "http://www.dnd5eapi.co/api/traits/7"
-	},
-	{
-		"name": "High Elf Cantrip: Light",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/subraces/2",
-			"name": "High Elf"
-		},
-		"desc": [
-			"You know the Light cantrip from the wizard spell list. Intelligence is your spellcasting ability for it.",
-			"You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.",
-			"If you target an object held or worn by a hostile creature, that creature must succeed on a dexterity saving throw to avoid the spell."
-		],
-		"url": "http://www.dnd5eapi.co/api/traits/8",
-		"index": 8
-	},
-	{
-		"name": "High Elf Cantrip: Mage Hand",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/subraces/2",
-			"name": "High Elf"
-		},
-		"desc": [
-			"You know the Mage Hand cantrip from the wizard spell list. Intelligence is your spellcasting ability for it.",
-			"A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.",
-			"You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.",
-			"The hand can’t attack, activate magic items, or carry more than 10 pounds."
-		],
-		"url": "http://www.dnd5eapi.co/api/traits/9",
-		"index": 9
-	},
-	{
-		"name": "High Elf Cantrip: Mending",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/subraces/2",
-			"name": "High Elf"
-		},
-		"desc": [
-			"You know the Mending cantrip from the wizard spell list. Intelligence is your spellcasting ability for it.",
-			"This spell repairs a single break or tear in an object you touch, such as a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no longer than 1 foot in any dimension, you mend it, leaving no trace of the former damage.",
-			"This spell can physically repair a magic item or construct, but the spell can’t restore magic to such an object."
-		],
-		"url": "http://www.dnd5eapi.co/api/traits/10",
-		"index": 10
-	},
-	{
-		"name": "High Elf Cantrip: Message",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/subraces/2",
-			"name": "High Elf"
-		},
-		"desc": [
-			"You know the Message cantrip from the wizard spell list. Intelligence is your spellcasting ability for it.",
-			"You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear.",
-			"You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn’t have to follow a straight line and can travel freely around corners or through openings."
-		],
-		"url": "http://www.dnd5eapi.co/api/traits/11",
-		"index": 11
-	},
-	{
-		"name": "High Elf Cantrip: Minor Illusion",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/subraces/2",
-			"name": "High Elf"
-		},
-		"desc": [
-			"You know the Minor Illusion cantrip from the wizard spell list. Intelligence is your spellcasting ability for it.",
-			"You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.",
-			"If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else’s voice, a lion’s roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.",
-			"If you create an image of an object—such as a chair, muddy footprints, or a small chest—it must be no larger than a 5-foot cube. The image can’t create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.",
-			"If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature."
-		],
-		"url": "http://www.dnd5eapi.co/api/traits/12",
-		"index": 12
-	},
-	{
-		"name": "High Elf Cantrip: Acid Splash",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/subraces/2",
-			"name": "High Elf"
-		},
-		"desc": [
-			"You know the Acid Splash cantrip from the wizard spell list. Intelligence is your spellcasting ability for it.",
-			"You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a dexterity saving throw or take 1d6 acid damage.",
-			"This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
-		],
-		"url": "http://www.dnd5eapi.co/api/traits/13",
-		"index": 13
-	},
-	{
-		"name": "High Elf Cantrip: Prestidigitation",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/subraces/2",
-			"name": "High Elf"
-		},
-		"desc": [
-			"You know the Prestidigitation cantrip from the wizard spell list. Intelligence is your spellcasting ability for it.",
-			"This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within 'range':",
-			"You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.",
-			"You instantaneously light or snuff out a candle, a torch, or a small campfire.",
-			"You instantaneously clean or soil an object no larger than 1 cubic foot.",
-			"You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.",
-			"You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.",
-			"You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.",
-			"If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
-		],
-		"url": "http://www.dnd5eapi.co/api/traits/14",
-		"index": 14
-	},
-	{
-		"name": "High Elf Cantrip: Ray of Frost",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/subraces/2",
-			"name": "High Elf"
-		},
-		"desc": [
-			"You know the Ray of Frost cantrip from the wizard spell list. Intelligence is your spellcasting ability for it.",
-			"A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.",
-			"The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
-		],
-		"url": "http://www.dnd5eapi.co/api/traits/15",
-		"index": 15
-	},
-	{
-		"name": "High Elf Cantrip: Shocking Grasp",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/subraces/2",
-			"name": "High Elf"
-		},
-		"desc": [
-			"You know the Shocking Grasp cantrip from the wizard spell list. Intelligence is your spellcasting ability for it.",
-			"Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it can’t take reactions until the start of its next turn.",
-			"The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
-		],
-		"url": "http://www.dnd5eapi.co/api/traits/16",
-		"index": 16
-	},
-	{
-		"name": "High Elf Cantrip: True Strike",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/subraces/2",
-			"name": "High Elf"
-		},
-		"desc": [
-			"You know the True Strike cantrip from the wizard spell list. Intelligence is your spellcasting ability for it.",
-			"You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target’s defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn’t ended."
-		],
-		"url": "http://www.dnd5eapi.co/api/traits/17",
-		"index": 17
-	},
-	{
-		"name": "High Elf Cantrip: Chill Touch",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/subraces/2",
-			"name": "High Elf"
-		},
-		"desc": [
-			"You know the Chill Touch cantrip from the wizard spell list. Intelligence is your spellcasting ability for it.",
-			"You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can’t regain hit points until the start of your next turn. Until then, the hand clings to the target.",
-			"If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.",
-			"This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
-		],
-		"url": "http://www.dnd5eapi.co/api/traits/18",
-		"index": 18
-	},
-	{
-		"name": "High Elf Cantrip: Dancing Lights",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/subraces/2",
-			"name": "High Elf"
-		},
-		"desc": [
-			"You know the Dancing Lights cantrip from the wizard spell list. Intelligence is your spellcasting ability for it.",
-			"You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.",
-			"As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell’s range."
-		],
-		"url": "http://www.dnd5eapi.co/api/traits/19",
-		"index": 19
-	},
-	{
-		"index": 20,
-		"name": "Lucky",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/races/3",
-			"name": "Halfling"
-		},
-		"desc": [
-			"When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
-		],
-		"url": "http://www.dnd5eapi.co/api/traits/20"
-	},
-	{
-		"index": 21,
-		"name": "Brave",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/races/3",
-			"name": "Halfling"
-		},
-		"desc": [
-			"You have advantage on saving throws against being frightened"
-		],
-		"url": "http://www.dnd5eapi.co/api/traits/21"
-	},
-	{
-		"index": 22,
-		"name": "Halfling Nimbleness",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/races/3",
-			"name": "Halfling"
-		},
-		"desc": [
-			"You can move through the space of any creature that is of a size larger than yours."
-		],
-		"url": "http://www.dnd5eapi.co/api/traits/22"
-	},
-	{
-		"index": 23,
-		"name": "Naturally Stealthy",
-		"race": {
-			"url": "http://www.dnd5eapi.co/api/subraces/3",
-			"name": "Lightfoot Halfling"
-		},
-		"desc": [
-			"You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
-		],
-		"url": "http://www.dnd5eapi.co/api/traits/23"
+		"racial_trait_options": {},
+		"url": "http://www.dnd5eapi.co/api/subraces/6"
 	}
 ]
