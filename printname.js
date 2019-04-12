@@ -10,7 +10,7 @@ addsubclass();
 
 
 function addsubclass() {
-	
+
 	let input_filename = "z.json"
 
 	let urlfix = (err,data) => {
@@ -19,11 +19,11 @@ function addsubclass() {
 
 		// number the indexes and change the URLs
 		for(let i = 0; i < data.length; i++) {
-            var level = data[i].level;
-            if (data[i].patrons == "Fiend") {
-                console.log(data[i].name);
-            }
-        }
+			var level = data[i].level;
+			if (data[i].patrons == "Fiend") {
+				console.log(data[i].name);
+			}
+		}
 	}
 
 	fs.readFile(input_filename, 'utf8', (err,data) => {
