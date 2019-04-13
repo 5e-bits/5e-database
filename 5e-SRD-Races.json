@@ -4,13 +4,13 @@
 		"name": "Dwarf",
 		"speed": 30,
 		"ability_bonuses": [
-			0,
-			0,
-			2,
-			0,
-			0,
-			0
+			{
+				"name": "CON",
+				"url": "http://www.dnd5eapi.co/api/ability-scores/3",
+				"bonus": 2
+			}
 		],
+		"ability_bonus_options": {},
 		"alignment": "Most dwarves are lawful, believing firmly in the benefits of a well-ordered society. They tend toward good as well, with a strong sense of fair play and a belief that everyone deserves to share in the benefits of a just order.",
 		"age": "Dwarves mature at the same rate as humans, but they’re considered young until they reach the age of 50. On average, they live about 350 years.",
 		"size": "Medium",
@@ -96,13 +96,13 @@
 		"name": "Elf",
 		"speed": 30,
 		"ability_bonuses": [
-			0,
-			2,
-			0,
-			0,
-			0,
-			0
+			{
+				"name": "DEX",
+				"url": "http://www.dnd5eapi.co/api/ability-scores/2",
+				"bonus": 2
+			}
 		],
+		"ability_bonus_options": {},
 		"age": "Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old.",
 		"alignment": "Elves love freedom, variety, and self-expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others’ freedom as well as their own, and they are more often good than not. The drow are an exception; their exile has made them vicious and dangerous. Drow are more often evil than not.",
 		"size": "Medium",
@@ -163,13 +163,13 @@
 		"name": "Halfling",
 		"speed": 25,
 		"ability_bonuses": [
-			0,
-			2,
-			0,
-			0,
-			0,
-			0
+			{
+				"name": "DEX",
+				"url": "http://www.dnd5eapi.co/api/ability-scores/2",
+				"bonus": 2
+			}
 		],
+		"ability_bonus_options": {},
 		"age": "A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century.",
 		"alignment": "Most halflings are lawful good. As a rule, they are good-hearted and kind, hate to see others in pain, and have no tolerance for oppression. They are also very orderly and traditional, leaning heavily on the support of their community and the comfort of their old ways.",
 		"size": "Small",
@@ -215,13 +215,38 @@
 		"name": "Human",
 		"speed": 30,
 		"ability_bonuses": [
-			1,
-			1,
-			1,
-			1,
-			1,
-			1
+			{
+				"name": "STR",
+				"url": "http://www.dnd5eapi.co/api/ability-scores/1",
+				"bonus": 1
+			},
+			{
+				"name": "DEX",
+				"url": "http://www.dnd5eapi.co/api/ability-scores/2",
+				"bonus": 1
+			},
+			{
+				"name": "CON",
+				"url": "http://www.dnd5eapi.co/api/ability-scores/3",
+				"bonus": 1
+			},
+			{
+				"name": "INT",
+				"url": "http://www.dnd5eapi.co/api/ability-scores/4",
+				"bonus": 1
+			},
+			{
+				"name": "WIS",
+				"url": "http://www.dnd5eapi.co/api/ability-scores/5",
+				"bonus": 1
+			},
+			{
+				"name": "CHA",
+				"url": "http://www.dnd5eapi.co/api/ability-scores/6",
+				"bonus": 1
+			}
 		],
+		"ability_bonus_options": {},
 		"age": "Humans reach adulthood in their late teens and live less than a century.",
 		"alignment": "Humans tend toward no particular alignment. The best and the worst are found among them.",
 		"size": "Medium",
@@ -310,13 +335,18 @@
 		"name": "Dragonborn",
 		"speed": 30,
 		"ability_bonuses": [
-			2,
-			0,
-			0,
-			0,
-			0,
-			1
+			{
+				"name": "STR",
+				"url": "http://www.dnd5eapi.co/api/ability-scores/1",
+				"bonus": 2
+			},
+			{
+				"name": "CHA",
+				"url": "http://www.dnd5eapi.co/api/ability-scores/6",
+				"bonus": 1
+			}
 		],
+		"ability_bonus_options": {},
 		"alignment": " Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil. Most dragonborn are good, but those who side with evil can be terrible villains.",
 		"age": "Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80.",
 		"size": "Medium",
@@ -407,13 +437,13 @@
 		"name": "Gnome",
 		"speed": 25,
 		"ability_bonuses": [
-			0,
-			0,
-			0,
-			2,
-			0,
-			0
+			{
+				"url": "http://www.dnd5eapi.co/api/ability-scores/4",
+				"name": "INT",
+				"bonus": 2
+			}
 		],
+		"ability_bonus_options": {},
 		"alignment": "Gnomes are most often good. Those who tend toward law are sages, engineers, researchers, scholars, investigators, or inventors. Those who tend toward chaos are minstrels, tricksters, wanderers, or fanciful jewelers. Gnomes are good-hearted, and even the tricksters among them are more playful than vicious.",
 		"age": " Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years.",
 		"size": "Small",
@@ -463,13 +493,43 @@
 		"name": "Half-Elf",
 		"speed": 30,
 		"ability_bonuses": [
-			0,
-			0,
-			0,
-			0,
-			0,
-			2
+			{
+				"name": "CHA",
+				"url": "http://www.dnd5eapi.co/api/ability-scores/6",
+				"bonus": 2
+			}
 		],
+		"ability_bonus_options": {
+			"choose": 2,
+			"type": "ability_bonuses",
+			"from": [
+				{
+					"name": "STR",
+					"url": "http://www.dnd5eapi.co/api/ability-scores/1",
+					"bonus": 1
+				},
+				{
+					"name": "DEX",
+					"url": "http://www.dnd5eapi.co/api/ability-scores/2",
+					"bonus": 1
+				},
+				{
+					"name": "CON",
+					"url": "http://www.dnd5eapi.co/api/ability-scores/3",
+					"bonus": 1
+				},
+				{
+					"name": "INT",
+					"url": "http://www.dnd5eapi.co/api/ability-scores/4",
+					"bonus": 1
+				},
+				{
+					"name": "WIS",
+					"url": "http://www.dnd5eapi.co/api/ability-scores/5",
+					"bonus": 1
+				}
+			]
+		},
 		"alignment": "Half-elves share the chaotic bent of their elven heritage. They value both personal freedom and creative expression, demonstrating neither love of leaders nor desire for followers. They chafe at rules, resent others' demands, and sometimes prove unreliable, or at least unpredictable.",
 		"age": "Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years.",
 		"size": "Medium",
@@ -573,13 +633,18 @@
 		"name": "Half-Orc",
 		"speed": 30,
 		"ability_bonuses": [
-			2,
-			0,
-			1,
-			0,
-			0,
-			0
+			{
+				"name": "STR",
+				"url": "http://www.dnd5eapi.co/api/ability-scores/1",
+				"bonus": 2
+			},
+			{
+				"name": "CON",
+				"url": "http://www.dnd5eapi.co/api/ability-scores/3",
+				"bonus": 1
+			}
 		],
+		"ability_bonus_options": {},
 		"alignment": " Half-orcs inherit a tendency toward chaos from their orc parents and are not strongly inclined toward good. Half-orcs raised among orcs and willing to live out their lives among them are usually evil.",
 		"age": "Half-orcs mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years.",
 		"size": "Medium",
@@ -627,13 +692,18 @@
 		"name": "Tiefling",
 		"speed": 30,
 		"ability_bonuses": [
-			0,
-			0,
-			0,
-			1,
-			0,
-			2
+			{
+				"name": "INT",
+				"url": "http://www.dnd5eapi.co/api/ability-scores/4",
+				"bonus": 1
+			},
+			{
+				"name": "CHA",
+				"url": "http://www.dnd5eapi.co/api/ability-scores/6",
+				"bonus": 2
+			}
 		],
+		"ability_bonus_options": {},
 		"alignment": "Tieflings might not have an innate tendency toward evil, but many of them end up there. Evil or not, an independent nature inclines many tieflings toward a chaotic alignment.",
 		"age": "Tieflings mature at the same rate as humans but live a few years longer.",
 		"size": "Medium",
