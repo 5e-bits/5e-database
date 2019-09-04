@@ -423,7 +423,7 @@
 		"attack_bonus": 0
 	}, {
 		"name": "Bite",
-		"desc": "Melee Weapon Attack: +11 to hit, reach,.0 ft., one target. Hit: 17 (2d10 + 6) piercing damage.",
+		"desc": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage.",
 		"attack_bonus": 11,
 		"damage_dice": "2d10",
 		"damage_bonus": 6
@@ -1444,12 +1444,12 @@
 		"name": "Claw",
 		"desc": "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 16 (2d6 + 9) slashing damage.",
 		"attack_bonus": 16,
-		"damage_dice": "1d6",
+		"damage_dice": "2d6",
 		"damage_bonus": 9
 	}, {
 		"name": "Tail",
 		"desc": "Melee Weapon Attack: +16 to hit, reach 20 ft., one target. Hit: 18 (2d8 + 9) bludgeoning damage.",
-		"attack_bonus": 0,
+		"attack_bonus": 16,
 		"damage_dice": "2d8",
 		"damage_bonus": 9
 	}, {
@@ -1720,7 +1720,7 @@
 		"desc": "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 10 (3d6) poison damage.",
 		"attack_bonus": 15,
 		"damage_dice": "2d10 + 3d6",
-		"damage_bonus": 9
+		"damage_bonus": 8
 	}, {
 		"name": "Claw",
 		"desc": "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 22 (4d6 + 8) slashing damage.",
@@ -1730,7 +1730,7 @@
 	}, {
 		"name": "Tail",
 		"desc": "Melee Weapon Attack: +15 to hit, reach 20 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
-		"attack_bonus": 16,
+		"attack_bonus": 15,
 		"damage_dice": "2d8",
 		"damage_bonus": 8
 	}, {
@@ -3154,7 +3154,7 @@
 		"name": "Bite",
 		"desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 2 (1d4) acid damage.",
 		"attack_bonus": 4,
-		"damage_dice": "1d10",
+		"damage_dice": "1d10 + 1d4",
 		"damage_bonus": 2
 	}, {
 		"name": "Acid Breath (Recharge 5-6)",
@@ -3453,7 +3453,7 @@
 		"name": "Sting",
 		"desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) piercing damage plus 17 (5d6) poison damage, and the target must succeed on a DC 14 Constitution saving throw or become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success .",
 		"attack_bonus": 8,
-		"damage_dice": "2d8",
+		"damage_dice": "2d8 + 5d6",
 		"damage_bonus": 4
 	}],
 	"url": "http://www.dnd5eapi.co/api/monsters/53"
@@ -5297,7 +5297,7 @@
 		"name": "Bite",
 		"desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 2 (1d4) piercing damage plus 9 (2d8) poison damage.",
 		"attack_bonus": 6,
-		"damage_dice": "1d4",
+		"damage_dice": "1d4 + 2d8",
 		"damage_bonus": 2
 	}, {
 		"name": "Longsword",
@@ -5805,11 +5805,15 @@
 	"actions": [{
 		"name": "Ram",
 		"desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.",
-		"attack_bonus": 0
+		"attack_bonus": 5,
+		"damage_dice": "1d6",
+		"damage_bonus": "3"
 	}, {
 		"name": "Hooves",
 		"desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one prone creature. Hit: 8 (2d4 + 3) bludgeoning damage.",
-		"attack_bonus": 0
+		"attack_bonus": 5,
+		"damage_dice": "2d4",
+		"damage_bonus": "3"
 	}],
 	"url": "http://www.dnd5eapi.co/api/monsters/100"
 }, {
@@ -5930,7 +5934,7 @@
 		"name": "Bite",
 		"desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 6 (1d8 + 2) piercing damage plus 4 (1d8) poison damage. The target must succeed on a DC 11 Constitution saving throw or be poisoned for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
 		"attack_bonus": 4,
-		"damage_dice": "1d8",
+		"damage_dice": "1d8 + 1d8",
 		"damage_bonus": 2
 	}, {
 		"name": "Claws",
@@ -6579,7 +6583,9 @@
 	}, {
 		"name": "Claws",
 		"desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-		"attack_bonus": 0
+		"attack_bonus": 4,
+		"damage_dice": "2d4",
+		"damage_bonus": 2
 	}],
 	"url": "http://www.dnd5eapi.co/api/monsters/115"
 }, {
@@ -7203,7 +7209,7 @@
 		"name": "Bite",
 		"desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage.",
 		"attack_bonus": 5,
-		"damage_dice": "1d6",
+		"damage_dice": "2d6",
 		"damage_bonus": 3
 	}],
 	"url": "http://www.dnd5eapi.co/api/monsters/129"
@@ -7690,7 +7696,7 @@
 		"name": "Bite",
 		"desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 5 (1d10) poison damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the toad can't bite another target.",
 		"attack_bonus": 4,
-		"damage_dice": "1d10",
+		"damage_dice": "1d10 + 1d10",
 		"damage_bonus": 2
 	}, {
 		"name": "Swallow",
@@ -8343,7 +8349,7 @@
 		"name": "Pseudopod",
 		"desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage plus 7 (2d6) acid damage, and if the target is wearing nonmagical metal armor, its armor is partly corroded and takes a permanent and cumulative -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.",
 		"attack_bonus": 3,
-		"damage_dice": "1d6",
+		"damage_dice": "1d6 + 2d6",
 		"damage_bonus": 1
 	}],
 	"url": "http://www.dnd5eapi.co/api/monsters/153"
@@ -8391,7 +8397,7 @@
 		"desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 3 (1d6) poison damage.",
 		"attack_bonus": 4,
 		"damage_dice": "1d10 + 1d6",
-		"damage_bonus": 3
+		"damage_bonus": 2
 	}, {
 		"name": "Poison Breath (Recharge 5-6)",
 		"desc": "The dragon exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 11 Constitution saving throw, taking 21 (6d6) poison damage on a failed save, or half as much damage on a successful one.",
@@ -8618,7 +8624,7 @@
 		"desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage plus 2 (1d4) piercing damage.",
 		"attack_bonus": 5,
 		"damage_dice": "1d4 + 1d4",
-		"damage_bonus": 5
+		"damage_bonus": 3
 	}],
 	"url": "http://www.dnd5eapi.co/api/monsters/158"
 }, {
@@ -8962,7 +8968,7 @@
 		"name": "Bite",
 		"desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) fire damage.",
 		"attack_bonus": 5,
-		"damage_dice": "1d8",
+		"damage_dice": "1d8 + 2d6",
 		"damage_bonus": 3
 	}, {
 		"name": "Fire Breath (Recharge 5-6)",
@@ -9529,7 +9535,7 @@
 		"name": "Claws",
 		"desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) slashing damage plus 2 (1d4) cold damage.",
 		"attack_bonus": 3,
-		"damage_dice": "1d4",
+		"damage_dice": "1d4 + 1d4",
 		"damage_bonus": 1
 	}, {
 		"name": "Frost Breath (Recharge 6)",
@@ -9805,7 +9811,9 @@
 	"actions": [{
 		"name": "Bite",
 		"desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 21 (5d6 + 4) piercing damage.",
-		"attack_bonus": 0
+		"attack_bonus": 6,
+		"damage_dice": "5d6",
+		"damage_bonus": 4
 	}],
 	"url": "http://www.dnd5eapi.co/api/monsters/181"
 }, {
@@ -10094,7 +10102,7 @@
 	}],
 	"actions": [{
 		"name": "Fist",
-		"desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage",
+		"desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
 		"attack_bonus": 3,
 		"damage_dice": "1d4"
 	}],
@@ -10734,7 +10742,7 @@
 		"name": "Snake Hair",
 		"desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage plus 14 (4d6) poison damage.",
 		"attack_bonus": 5,
-		"damage_dice": "1d4",
+		"damage_dice": "1d4 + 4d6",
 		"damage_bonus": 2
 	}, {
 		"name": "Shortsword",
@@ -11042,7 +11050,7 @@
 	"actions": [{
 		"name": "Hooves",
 		"desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.",
-		"attack_bonus": 4,
+		"attack_bonus": 2,
 		"damage_dice": "1d4",
 		"damage_bonus": 2
 	}],
@@ -11082,7 +11090,7 @@
 		"name": "Rotting Fist",
 		"desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic.",
 		"attack_bonus": 5,
-		"damage_dice": "2d6",
+		"damage_dice": "2d6 + 3d6",
 		"damage_bonus": 3
 	}, {
 		"name": "Dreadful Glare",
@@ -11443,7 +11451,7 @@
 		"name": "Pseudopod",
 		"desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) bludgeoning damage plus 3 (1d6) acid damage.",
 		"attack_bonus": 4,
-		"damage_dice": "2d6",
+		"damage_dice": "2d6 + 1d6",
 		"damage_bonus": 2
 	}],
 	"reactions": [{
@@ -11746,7 +11754,7 @@
 		"name": "Tentacle",
 		"desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage plus 4 (1d8) piercing damage. If the target is Medium or smaller, it is grappled (escape DC 13) and restrained until the grapple ends. The otyugh has two tentacles, each of which can grapple one target.",
 		"attack_bonus": 6,
-		"damage_dice": "1d8",
+		"damage_dice": "1d8 + 1d8",
 		"damage_bonus": 3
 	}, {
 		"name": "Tentacle Slam",
@@ -12555,8 +12563,8 @@
 	"subtype": null,
 	"alignment": "lawful evil",
 	"armor_class": 16,
-	"hit_points": 110,
 	"hit_dice": "13d8",
+	"hit_points": 110,
 	"speed": {
 		"walk": "40 ft."
 	},
@@ -12670,7 +12678,8 @@
 	"actions": [{
 		"name": "Beak",
 		"desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
-		"attack_bonus": 0
+		"attack_bonus": 4,
+		"damage_bonus": 1
 	}],
 	"url": "http://www.dnd5eapi.co/api/monsters/236"
 }, {
@@ -14156,7 +14165,7 @@
 		"name": "Claws",
 		"desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 2 (1d4) slashing damage plus 2 (1d4) fire damage.",
 		"attack_bonus": 2,
-		"damage_dice": "2d4"
+		"damage_dice": "1d4 + 1d4"
 	}, {
 		"name": "Steam Breath (Recharge 6)",
 		"desc": "The mephit exhales a 15-foot cone of scalding steam. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 4 (1d8) fire damage on a failed save, or half as much damage on a successful one.",
@@ -15060,7 +15069,9 @@
 	}, {
 		"name": "Claw",
 		"desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage.",
-		"attack_bonus": 0
+		"attack_bonus": 5,
+		"damage_dice": "1d8",
+		"damage_bonus": 3		
 	}],
 	"url": "http://www.dnd5eapi.co/api/monsters/284"
 }, {
