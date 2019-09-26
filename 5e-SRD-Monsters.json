@@ -58,15 +58,25 @@
         "name": "Tentacle",
         "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by heal or another disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes 6 (1d12) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.",
         "attack_bonus": 9,
-        "damage_dice": "2d6",
-        "damage_bonus": 5
+        "damage": [
+          {
+            "damage_type": "acid",
+            "damage_dice": "2d6",
+            "damage_bonus": 5
+          }
+        ]
       },
       {
         "name": "Tail",
         "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft. one target. Hit: 15 (3d6 + 5) bludgeoning damage.",
         "attack_bonus": 9,
-        "damage_dice": "3d6",
-        "damage_bonus": 5
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "3d6",
+            "damage_bonus": 5
+          }
+        ]
       },
       {
         "name": "Enslave (3/day)",
@@ -88,7 +98,14 @@
       {
         "name": "Psychic Drain (Costs 2 Actions)",
         "desc": "One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.",
-        "attack_bonus": 0
+        "attack_bonus": 0,
+        "damage": [
+          {
+            "damage_type": "psychic",
+            "damage_dice": "3d6",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/1"
@@ -133,7 +150,13 @@
         "name": "Club",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
         "attack_bonus": 2,
-        "damage_dice": "1d4"
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "1d4",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/2"
@@ -194,22 +217,42 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 4 (1d8) acid damage.",
         "attack_bonus": 11,
-        "damage_dice": "2d10 + 1d8",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 6
+          },
+          {
+            "damage_type": "acid",
+            "damage_dice": "1d8",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
         "attack_bonus": 11,
-        "damage_dice": "2d6",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Tail",
         "desc": "Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.",
         "attack_bonus": 11,
-        "damage_dice": "2d8",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d8",
+            "damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Frightful Presence",
@@ -220,7 +263,13 @@
         "name": "Acid Breath (Recharge 5-6)",
         "desc": "The dragon exhales acid in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.",
         "attack_bonus": 0,
-        "damage_dice": "12d8"
+        "damage": [
+          {
+            "damage_type": "acid",
+            "damage_dice": "12d8",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "legendary_actions": [
@@ -237,7 +286,14 @@
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0
+        "attack_bonus": 0,
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d6",
+            "damage_bonus": 6
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/3"
@@ -314,22 +370,42 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) piercing damage plus 5 (1d10) lightning damage.",
         "attack_bonus": 12,
-        "damage_dice": "2d10 + 1d10",
-        "damage_bonus": 7
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 7
+          },
+          {
+            "damage_type": "lightning",
+            "damage_dice": "1d10",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) slashing damage.",
         "attack_bonus": 12,
-        "damage_dice": "2d6",
-        "damage_bonus": 7
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 7
+          }
+        ]
       },
       {
         "name": "Tail",
         "desc": "Melee Weapon Attack: +12 to hit, reach 15 ft., one target. Hit: 16 (2d8 + 7) bludgeoning damage.",
         "attack_bonus": 12,
-        "damage_dice": "2d8",
-        "damage_bonus": 7
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d8",
+            "damage_bonus": 7
+          }
+        ]
       },
       {
         "name": "Frightful Presence",
@@ -340,7 +416,13 @@
         "name": "Lightning Breath (Recharge 5-6)",
         "desc": "The dracolich exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 20 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.",
         "attack_bonus": 0,
-        "damage_dice": "12d10"
+        "damage": [
+          {
+            "damage_type": "lightning",
+            "damage_dice": "12d10",
+            "damage_bonus": 7
+          }
+        ]
       }
     ],
     "legendary_actions": [
@@ -357,7 +439,14 @@
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dracolich beats its tattered wings. Each creature within 10 ft. of the dracolich must succeed on a DC 21 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. After beating its wings this way, the dracolich can fly up to half its flying speed.",
-        "attack_bonus": 0
+        "attack_bonus": 0,
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d6",
+            "damage_bonus": 7
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/4"
@@ -413,22 +502,42 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) piercing damage plus 5 (1d10) lightning damage.",
         "attack_bonus": 12,
-        "damage_dice": "2d10 + 1d10",
-        "damage_bonus": 7
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 7
+          },
+          {
+            "damage_type": "lightning",
+            "damage_dice": "1d10",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) slashing damage.",
         "attack_bonus": 12,
-        "damage_dice": "2d6",
-        "damage_bonus": 7
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 7
+          }
+        ]
       },
       {
         "name": "Tail",
         "desc": "Melee Weapon Attack: +12 to hit, reach 15 ft., one target. Hit: 16 (2d8 + 7) bludgeoning damage.",
         "attack_bonus": 12,
-        "damage_dice": "2d8",
-        "damage_bonus": 7
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d8",
+            "damage_bonus": 7
+          }
+        ]
       },
       {
         "name": "Frightful Presence",
@@ -439,7 +548,13 @@
         "name": "Lightning Breath (Recharge 5-6)",
         "desc": "The dragon exhales lightning in a 90-foot line that is 5 ft. wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.",
         "attack_bonus": 0,
-        "damage_dice": "12d10"
+        "damage": [
+          {
+            "damage_type": "lightning",
+            "damage_dice": "12d10",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "legendary_actions": [
@@ -456,7 +571,14 @@
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0
+				"attack_bonus": 0,
+				"damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d6",
+            "damage_bonus": 6
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/5"
@@ -513,23 +635,38 @@
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage.",
-        "attack_bonus": 11,
-        "damage_dice": "2d10",
-        "damage_bonus": 6
+				"attack_bonus": 11,
+				"damage": [
+          {
+            "damage_type": "piercing",
+						"damage_dice": "2d10",
+						"damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
-        "attack_bonus": 11,
-        "damage_dice": "2d6",
-        "damage_bonus": 6
+				"attack_bonus": 11,
+				"damage": [
+          {
+            "damage_type": "slashing",
+						"damage_dice": "2d6",
+						"damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Tail",
         "desc": "Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.",
-        "attack_bonus": 11,
-        "damage_dice": "2d8",
-        "damage_bonus": 6
+				"attack_bonus": 11,
+				"damage": [
+          {
+            "damage_type": "bludgeoning",
+						"damage_dice": "2d8",
+						"damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Frightful Presence",
@@ -539,8 +676,14 @@
       {
         "name": "Breath Weapons (Recharge 5-6)",
         "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 45 (13d6) fire damage on a failed save, or half as much damage on a successful one.\nSleep Breath. The dragon exhales sleep gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
-        "attack_bonus": 0,
-        "damage_dice": "13d6"
+				"attack_bonus": 0,
+				"damage": [
+          {
+            "damage_type": "fire",
+						"damage_dice": "13d6",
+						"damage_bonus": 0
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/6"
