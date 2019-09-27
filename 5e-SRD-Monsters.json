@@ -745,22 +745,37 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) piercing damage.",
         "attack_bonus": 12,
-        "damage_dice": "2d10",
-        "damage_bonus": 7
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 7
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) slashing damage.",
         "attack_bonus": 12,
-        "damage_dice": "2d6",
-        "damage_bonus": 7
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 7
+          }
+        ]
       },
       {
         "name": "Tail",
         "desc": "Melee Weapon Attack: +12 to hit, reach 15 ft., one target. Hit: 16 (2d8 + 7) bludgeoning damage.",
         "attack_bonus": 12,
-        "damage_dice": "2d8",
-        "damage_bonus": 7
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d8",
+            "damage_bonus": 7
+          }
+        ]
       },
       {
         "name": "Frightful Presence",
@@ -771,7 +786,13 @@
         "name": "Breath Weapons (Recharge 5-6)",
         "desc": "The dragon uses one of the following breath weapons.\nLightning Breath. The dragon exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.\nRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 19 Strength saving throw. On a failed save, the creature is pushed 60 feet away from the dragon.",
         "attack_bonus": 0,
-        "damage_dice": "12d10"
+        "damage": [
+          {
+            "damage_type": "lightning",
+            "damage_dice": "12d10",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "legendary_actions": [
@@ -788,7 +809,14 @@
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0
+        "attack_bonus": 0,
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d6",
+            "damage_bonus": 7
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/7"
@@ -845,22 +873,37 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage.",
         "attack_bonus": 11,
-        "damage_dice": "2d10",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
         "attack_bonus": 11,
-        "damage_dice": "2d6",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Tail",
         "desc": "Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.",
         "attack_bonus": 11,
-        "damage_dice": "2d8",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d8",
+            "damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Frightful Presence",
@@ -871,7 +914,13 @@
         "name": "Breath Weapons (Recharge 5-6)",
         "desc": "The dragon uses one of the following breath weapons.\nAcid Breath. The dragon exhales acid in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.\nSlowing Breath. The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.",
         "attack_bonus": 0,
-        "damage_dice": "12d8"
+        "damage": [
+          {
+            "damage_type": "acid",
+            "damage_dice": "12d8",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "legendary_actions": [
@@ -888,7 +937,14 @@
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0
+        "attack_bonus": 0,
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "13d6",
+            "damage_bonus": 6
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/8"
@@ -951,22 +1007,37 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage.",
         "attack_bonus": 14,
-        "damage_dice": "2d10",
-        "damage_bonus": 8
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 8
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage.",
         "attack_bonus": 14,
-        "damage_dice": "2d6",
-        "damage_bonus": 8
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 8
+          }
+        ]
       },
       {
         "name": "Tail",
         "desc": "Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
         "attack_bonus": 14,
-        "damage_dice": "2d8",
-        "damage_bonus": 8
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d8",
+            "damage_bonus": 8
+          }
+        ]
       },
       {
         "name": "Frightful Presence",
@@ -977,7 +1048,13 @@
         "name": "Breath Weapons (Recharge 5-6)",
         "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 66 (12d10) fire damage on a failed save, or half as much damage on a successful one.\nWeakening Breath. The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a DC 21 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
         "attack_bonus": 0,
-        "damage_dice": "12d10"
+        "damage": [
+          {
+            "damage_type": "fire",
+            "damage_dice": "12d10",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "legendary_actions": [
@@ -994,7 +1071,14 @@
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0
+        "attack_bonus": 0,
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d6",
+            "damage_bonus": 8
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/9"
@@ -1063,22 +1147,42 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 7 (2d6) poison damage.",
         "attack_bonus": 11,
-        "damage_dice": "2d10 + 2d6",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 6
+          },
+          {
+            "damage_type": "poison",
+            "damage_dice": "2d6",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
         "attack_bonus": 11,
-        "damage_dice": "2d6",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Tail",
         "desc": "Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.",
         "attack_bonus": 11,
-        "damage_dice": "2d8",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d8",
+            "damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Frightful Presence",
@@ -1089,7 +1193,13 @@
         "name": "Poison Breath (Recharge 5-6)",
         "desc": "The dragon exhales poisonous gas in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 56 (16d6) poison damage on a failed save, or half as much damage on a successful one.",
         "attack_bonus": 0,
-        "damage_dice": "16d6"
+        "damage": [
+          {
+            "damage_type": "poison",
+            "damage_dice": "16d6",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "legendary_actions": [
@@ -1106,7 +1216,14 @@
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0
+        "attack_bonus": 0,
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d6",
+            "damage_bonus": 6
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/10"
@@ -1162,22 +1279,42 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 7 (2d6) fire damage.",
         "attack_bonus": 14,
-        "damage_dice": "2d10 + 2d6",
-        "damage_bonus": 8
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 8
+          },
+          {
+            "damage_type": "fire",
+            "damage_dice": "2d6",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage.",
         "attack_bonus": 14,
-        "damage_dice": "2d6",
-        "damage_bonus": 8
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 8
+          }
+        ]
       },
       {
         "name": "Tail",
         "desc": "Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
         "attack_bonus": 14,
-        "damage_dice": "2d8",
-        "damage_bonus": 8
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d8",
+            "damage_bonus": 8
+          }
+        ]
       },
       {
         "name": "Frightful Presence",
@@ -1188,13 +1325,25 @@
         "name": "Fire Breath (Recharge 5-6)",
         "desc": "The dragon exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 63 (18d6) fire damage on a failed save, or half as much damage on a successful one.",
         "attack_bonus": 0,
-        "damage_dice": "18d6"
+        "damage": [
+          {
+            "damage_type": "fire",
+            "damage_dice": "18d6",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Lair Actions",
         "desc": "On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects: the dragon can't use the same effect two rounds in a row:\n- Magma erupts from a point on the ground the dragon can see within 120 feet of it, creating a 20-foot-high, 5-foot-radius geyser. Each creature in the geyser's area must make a DC 15 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.\n- A tremor shakes the lair in a 60-foot-radius around the dragon. Each creature other than the dragon on the ground in that area must succeed on a DC 15 Dexterity saving throw or be knocked prone.\n- Volcanic gases form a cloud in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The sphere spreads around corners, and its area is lightly obscured. It lasts until initiative count 20 on the next round. Each creature that starts its turn in the cloud must succeed on a DC 13 Constitution saving throw or be poisoned until the end of its turn. While poisoned in this way, a creature is incapacitated.",
         "attack_bonus": 0,
-        "damage_dice": "6d6"
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "6d6",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "legendary_actions": [
@@ -1211,7 +1360,14 @@
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0
+        "attack_bonus": 0,
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d6",
+            "damage_bonus": 8
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/11"
@@ -1268,22 +1424,37 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage.",
         "attack_bonus": 13,
-        "damage_dice": "2d10",
-        "damage_bonus": 8
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 8
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage.",
         "attack_bonus": 13,
-        "damage_dice": "2d6",
-        "damage_bonus": 8
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 8
+          }
+        ]
       },
       {
         "name": "Tail",
         "desc": "Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
         "attack_bonus": 13,
-        "damage_dice": "2d8",
-        "damage_bonus": 8
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d8",
+            "damage_bonus": 8
+          }
+        ]
       },
       {
         "name": "Frightful Presence",
@@ -1294,7 +1465,13 @@
         "name": "Breath Weapons (Recharge 5-6)",
         "desc": "The dragon uses one of the following breath weapons.\nCold Breath. The dragon exhales an icy blast in a 60-foot cone. Each creature in that area must make a DC 20 Constitution saving throw, taking 58 (13d8) cold damage on a failed save, or half as much damage on a successful one.\nParalyzing Breath. The dragon exhales paralyzing gas in a 60-foot cone. Each creature in that area must succeed on a DC 20 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
         "attack_bonus": 0,
-        "damage_dice": "13d8"
+        "damage": [
+          {
+            "damage_type": "cold",
+            "damage_dice": "13d8",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "legendary_actions": [
@@ -1311,7 +1488,14 @@
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0
+        "attack_bonus": 0,
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d6",
+            "damage_bonus": 8
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/12"
@@ -1373,22 +1557,42 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 4 (1d8) cold damage.",
         "attack_bonus": 11,
-        "damage_dice": "2d10 + 1d8",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 6
+          },
+          {
+            "damage_type": "cold",
+            "damage_dice": "1d8",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
         "attack_bonus": 11,
-        "damage_dice": "2d6",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Tail",
         "desc": "Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.",
         "attack_bonus": 11,
-        "damage_dice": "2d8",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d8",
+            "damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Frightful Presence",
@@ -1399,7 +1603,13 @@
         "name": "Cold Breath (Recharge 5-6)",
         "desc": "The dragon exhales an icy blast in a 60-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 54 (12d8) cold damage on a failed save, or half as much damage on a successful one.",
         "attack_bonus": 0,
-        "damage_dice": "12d8"
+        "damage": [
+          {
+            "damage_type": "cold",
+            "damage_dice": "12d8",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "legendary_actions": [
@@ -1416,7 +1626,14 @@
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0
+        "attack_bonus": 0,
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d6",
+            "damage_bonus": 6
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/13"
