@@ -2,10 +2,8 @@
 
 Holds the database for the D&D 5th Edition API at http://dnd5eapi.co/
 
-There are two helper files at the moment
-
-* helper.js
-* urlprinter.js
+__Note from Author__
+So I have a full time job now and am exploring other pursuits outside of work that aren't coding related (sports, music, etc). I've preety much let the reins on this project go to anyone who wants it.
 
 # helper.js
 
