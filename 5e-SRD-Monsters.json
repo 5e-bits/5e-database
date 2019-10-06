@@ -34,34 +34,40 @@
     "special_abilities": [
       {
         "name": "Amphibious",
-        "desc": "The aboleth can breathe air and water.",
-        "attack_bonus": 0
+        "desc": "The aboleth can breathe air and water."
       },
       {
         "name": "Mucous Cloud",
         "desc": "While underwater, the aboleth is surrounded by transformative mucus. A creature that touches the aboleth or that hits it with a melee attack while within 5 ft. of it must make a DC 14 Constitution saving throw. On a failure, the creature is diseased for 1d4 hours. The diseased creature can breathe only underwater.",
-        "attack_bonus": 0
+        "dc": {
+          "type": "CON",
+          "value": 14,
+          "success_type": "none"
+        }
       },
       {
         "name": "Probing Telepathy",
-        "desc": "If a creature communicates telepathically with the aboleth, the aboleth learns the creature's greatest desires if the aboleth can see the creature.",
-        "attack_bonus": 0
+        "desc": "If a creature communicates telepathically with the aboleth, the aboleth learns the creature's greatest desires if the aboleth can see the creature."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The aboleth makes three tentacle attacks.",
-        "attack_bonus": 0
+        "desc": "The aboleth makes three tentacle attacks."
       },
       {
         "name": "Tentacle",
         "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by heal or another disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes 6 (1d12) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.",
         "attack_bonus": 9,
+        "dc": {
+          "type": "CON",
+          "value": 14,
+          "success_type": "none"
+        },
         "damage": [
           {
-            "damage_type": "acid",
-            "damage_dice": "2d6",
+            "type": "acid",
+            "dice": "2d6",
             "damage_bonus": 5
           }
         ]
@@ -72,28 +78,30 @@
         "attack_bonus": 9,
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "3d6",
-            "damage_bonus": 5
+            "type": "bludgeoning",
+            "dice": "3d6",
+            "bonus": 5
           }
         ]
       },
       {
         "name": "Enslave (3/day)",
         "desc": "The aboleth targets one creature it can see within 30 ft. of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The charmed target is under the aboleth's control and can't take reactions, and the aboleth and the target can communicate telepathically with each other over any distance.\nWhenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth.",
-        "attack_bonus": 0
+        "dc": {
+          "type": "WIS",
+          "value": 14,
+          "success_type": "none"
+        }
       }
     ],
     "legendary_actions": [
       {
         "name": "Detect",
-        "desc": "The aboleth makes a Wisdom (Perception) check.",
-        "attack_bonus": 0
+        "desc": "The aboleth makes a Wisdom (Perception) check."
       },
       {
         "name": "Tail Swipe",
-        "desc": "The aboleth makes one tail attack.",
-        "attack_bonus": 0
+        "desc": "The aboleth makes one tail attack."
       },
       {
         "name": "Psychic Drain (Costs 2 Actions)",
@@ -101,9 +109,9 @@
         "attack_bonus": 0,
         "damage": [
           {
-            "damage_type": "psychic",
-            "damage_dice": "3d6",
-            "damage_bonus": 0
+            "type": "psychic",
+            "dice": "3d6",
+            "bonus": 0
           }
         ]
       }
@@ -141,8 +149,7 @@
     "special_abilities": [
       {
         "name": "Spellcasting",
-        "desc": "The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:\n\n- Cantrips (at will): light, sacred flame, thaumaturgy\n- 1st level (3 slots): bless, cure wounds, sanctuary",
-        "attack_bonus": 0
+        "desc": "The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:\n\n- Cantrips (at will): light, sacred flame, thaumaturgy\n- 1st level (3 slots): bless, cure wounds, sanctuary"
       }
     ],
     "actions": [
@@ -152,9 +159,9 @@
         "attack_bonus": 2,
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "1d4",
-            "damage_bonus": 0
+            "type": "bludgeoning",
+            "dice": "1d4",
+            "bonus": 0
           }
         ]
       }
@@ -198,20 +205,17 @@
     "special_abilities": [
       {
         "name": "Amphibious",
-        "desc": "The dragon can breathe air and water.",
-        "attack_bonus": 0
+        "desc": "The dragon can breathe air and water."
       },
       {
         "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
-        "attack_bonus": 0
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
@@ -219,14 +223,14 @@
         "attack_bonus": 11,
         "damage": [
           {
-            "damage_type": "piercing",
-            "damage_dice": "2d10",
-            "damage_bonus": 6
+            "type": "piercing",
+            "dice": "2d10",
+            "bonus": 6
           },
           {
-            "damage_type": "acid",
-            "damage_dice": "1d8",
-            "damage_bonus": 0
+            "type": "acid",
+            "dice": "1d8",
+            "bonus": 0
           }
         ]
       },
@@ -236,9 +240,9 @@
         "attack_bonus": 11,
         "damage": [
           {
-            "damage_type": "slashing",
-            "damage_dice": "2d6",
-            "damage_bonus": 6
+            "type": "slashing",
+            "dice": "2d6",
+            "bonus": 6
           }
         ]
       },
@@ -248,26 +252,34 @@
         "attack_bonus": 11,
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d8",
-            "damage_bonus": 6
+            "type": "bludgeoning",
+            "dice": "2d8",
+            "bonus": 6
           }
         ]
       },
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "attack_bonus": 0
+        "dc": {
+          "type": "WIS",
+          "value": 16,
+          "success_type": "none"
+        }
       },
       {
         "name": "Acid Breath (Recharge 5-6)",
         "desc": "The dragon exhales acid in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.",
-        "attack_bonus": 0,
+        "dc": {
+          "type": "DEX",
+          "value": 18,
+          "success_type": "half"
+        },
         "damage": [
           {
-            "damage_type": "acid",
-            "damage_dice": "12d8",
-            "damage_bonus": 0
+            "type": "acid",
+            "dice": "12d8",
+            "bonus": 0
           }
         ]
       }
@@ -275,23 +287,25 @@
     "legendary_actions": [
       {
         "name": "Detect",
-        "desc": "The dragon makes a Wisdom (Perception) check.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a Wisdom (Perception) check."
       },
       {
         "name": "Tail Attack",
-        "desc": "The dragon makes a tail attack.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a tail attack."
       },
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0,
+        "dc": {
+          "type": "DEX",
+          "value": 19,
+          "success_type": "none"
+        },
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d6",
-            "damage_bonus": 6
+            "type": "bludgeoning",
+            "dice": "2d6",
+            "bonus": 6
           }
         ]
       }
@@ -351,20 +365,17 @@
     "special_abilities": [
       {
         "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dracolich fails a saving throw, it can choose to succeed instead.",
-        "attack_bonus": 0
+        "desc": "If the dracolich fails a saving throw, it can choose to succeed instead."
       },
       {
         "name": "Magic Resistance",
-        "desc": "The dracolich has advantage on saving throws against spells and other magical effects.",
-        "attack_bonus": 0
+        "desc": "The dracolich has advantage on saving throws against spells and other magical effects."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dracolich can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dracolich can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
@@ -372,14 +383,14 @@
         "attack_bonus": 12,
         "damage": [
           {
-            "damage_type": "piercing",
-            "damage_dice": "2d10",
-            "damage_bonus": 7
+            "type": "piercing",
+            "dice": "2d10",
+            "bonus": 7
           },
           {
-            "damage_type": "lightning",
-            "damage_dice": "1d10",
-            "damage_bonus": 0
+            "type": "lightning",
+            "dice": "1d10",
+            "bonus": 0
           }
         ]
       },
@@ -389,9 +400,9 @@
         "attack_bonus": 12,
         "damage": [
           {
-            "damage_type": "slashing",
-            "damage_dice": "2d6",
-            "damage_bonus": 7
+            "type": "slashing",
+            "dice": "2d6",
+            "bonus": 7
           }
         ]
       },
@@ -401,26 +412,34 @@
         "attack_bonus": 12,
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d8",
-            "damage_bonus": 7
+            "type": "bludgeoning",
+            "dice": "2d8",
+            "bonus": 7
           }
         ]
       },
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dracolich's choice that is within 120 feet of the dracolich and aware of it must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dracolich's Frightful Presence for the next 24 hours.",
-        "attack_bonus": 0
+        "dc": {
+          "type": "WIS",
+          "value": 18,
+          "success_type": "none"
+        }
       },
       {
         "name": "Lightning Breath (Recharge 5-6)",
         "desc": "The dracolich exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 20 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.",
-        "attack_bonus": 0,
+        "dc": {
+          "type": "DEX",
+          "value": 20,
+          "success_type": "half"
+        },
         "damage": [
           {
-            "damage_type": "lightning",
-            "damage_dice": "12d10",
-            "damage_bonus": 7
+            "type": "lightning",
+            "dice": "12d10",
+            "bonus": 7
           }
         ]
       }
@@ -428,23 +447,25 @@
     "legendary_actions": [
       {
         "name": "Detect",
-        "desc": "The dracolich makes a Wisdom (Perception) check.",
-        "attack_bonus": 0
+        "desc": "The dracolich makes a Wisdom (Perception) check."
       },
       {
         "name": "Tail Attack",
-        "desc": "The dracolich makes a tail attack.",
-        "attack_bonus": 0
+        "desc": "The dracolich makes a tail attack."
       },
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dracolich beats its tattered wings. Each creature within 10 ft. of the dracolich must succeed on a DC 21 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. After beating its wings this way, the dracolich can fly up to half its flying speed.",
-        "attack_bonus": 0,
+        "dc": {
+          "type": "DEX",
+          "value": 21,
+          "success_type": "none"
+        },
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d6",
-            "damage_bonus": 7
+            "type": "bludgeoning",
+            "dice": "2d6",
+            "bonus": 7
           }
         ]
       }
@@ -488,15 +509,13 @@
     "special_abilities": [
       {
         "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
-        "attack_bonus": 0
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
@@ -504,14 +523,14 @@
         "attack_bonus": 12,
         "damage": [
           {
-            "damage_type": "piercing",
-            "damage_dice": "2d10",
-            "damage_bonus": 7
+            "type": "piercing",
+            "dice": "2d10",
+            "bonus": 7
           },
           {
-            "damage_type": "lightning",
-            "damage_dice": "1d10",
-            "damage_bonus": 0
+            "type": "lightning",
+            "dice": "1d10",
+            "bonus": 0
           }
         ]
       },
@@ -521,9 +540,9 @@
         "attack_bonus": 12,
         "damage": [
           {
-            "damage_type": "slashing",
-            "damage_dice": "2d6",
-            "damage_bonus": 7
+            "type": "slashing",
+            "dice": "2d6",
+            "bonus": 7
           }
         ]
       },
@@ -533,26 +552,34 @@
         "attack_bonus": 12,
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d8",
-            "damage_bonus": 7
+            "type": "bludgeoning",
+            "dice": "2d8",
+            "bonus": 7
           }
         ]
       },
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 ft. of the dragon and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "attack_bonus": 0
+        "dc": {
+          "type": "WIS",
+          "value": 17,
+          "success_type": "none"
+        }
       },
       {
         "name": "Lightning Breath (Recharge 5-6)",
         "desc": "The dragon exhales lightning in a 90-foot line that is 5 ft. wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.",
-        "attack_bonus": 0,
+        "dc": {
+          "type": "DEX",
+          "value": 19,
+          "success_type": "half"
+        },
         "damage": [
           {
-            "damage_type": "lightning",
-            "damage_dice": "12d10",
-            "damage_bonus": 0
+            "type": "lightning",
+            "dice": "12d10",
+            "bonus": 0
           }
         ]
       }
@@ -560,23 +587,25 @@
     "legendary_actions": [
       {
         "name": "Detect",
-        "desc": "The dragon makes a Wisdom (Perception) check.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a Wisdom (Perception) check."
       },
       {
         "name": "Tail Attack",
-        "desc": "The dragon makes a tail attack.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a tail attack."
       },
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0,
+        "dc": {
+          "type": "DEX",
+          "value": 20,
+          "success_type": "none"
+        },
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d6",
-            "damage_bonus": 6
+            "type": "bludgeoning",
+            "dice": "2d6",
+            "bonus": 6
           }
         ]
       }
@@ -622,15 +651,13 @@
     "special_abilities": [
       {
         "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
-        "attack_bonus": 0
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
@@ -638,9 +665,9 @@
         "attack_bonus": 11,
         "damage": [
           {
-            "damage_type": "piercing",
-            "damage_dice": "2d10",
-            "damage_bonus": 6
+            "type": "piercing",
+            "dice": "2d10",
+            "bonus": 6
           }
         ]
       },
@@ -650,9 +677,9 @@
         "attack_bonus": 11,
         "damage": [
           {
-            "damage_type": "slashing",
-            "damage_dice": "2d6",
-            "damage_bonus": 6
+            "type": "slashing",
+            "dice": "2d6",
+            "bonus": 6
           }
         ]
       },
@@ -662,26 +689,47 @@
         "attack_bonus": 11,
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d8",
-            "damage_bonus": 6
+            "type": "bludgeoning",
+            "dice": "2d8",
+            "bonus": 6
           }
         ]
       },
       {
         "name": "Frightful Presence",
-        "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "attack_bonus": 0
+        "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours .",
+        "dc": {
+          "type": "WIS",
+          "value": 16,
+          "success_type": "none"
+        }
       },
       {
         "name": "Breath Weapons (Recharge 5-6)",
         "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 45 (13d6) fire damage on a failed save, or half as much damage on a successful one.\nSleep Breath. The dragon exhales sleep gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
-        "attack_bonus": 0,
-        "damage": [
+        "attacks": [
           {
-            "damage_type": "fire",
-            "damage_dice": "13d6",
-            "damage_bonus": 0
+            "name": "Fire Breath",
+            "dc": {
+              "type": "DEX",
+              "value": 18,
+              "success_type": "half"
+            },
+            "damage": [
+              {
+                "type": "fire",
+                "dice": "13d6",
+                "bonus": 0
+              }
+            ]
+          },
+          {
+            "name": "Sleep Breath",
+            "dc": {
+              "type": "CON",
+              "value": 18,
+              "success_type": "none"
+            }
           }
         ]
       }
@@ -726,20 +774,17 @@
     "special_abilities": [
       {
         "name": "Amphibious",
-        "desc": "The dragon can breathe air and water.",
-        "attack_bonus": 0
+        "desc": "The dragon can breathe air and water."
       },
       {
         "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
-        "attack_bonus": 0
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
@@ -747,9 +792,9 @@
         "attack_bonus": 12,
         "damage": [
           {
-            "damage_type": "piercing",
-            "damage_dice": "2d10",
-            "damage_bonus": 7
+            "type": "piercing",
+            "dice": "2d10",
+            "bonus": 7
           }
         ]
       },
@@ -759,9 +804,9 @@
         "attack_bonus": 12,
         "damage": [
           {
-            "damage_type": "slashing",
-            "damage_dice": "2d6",
-            "damage_bonus": 7
+            "type": "slashing",
+            "dice": "2d6",
+            "bonus": 7
           }
         ]
       },
@@ -771,26 +816,47 @@
         "attack_bonus": 12,
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d8",
-            "damage_bonus": 7
+            "type": "bludgeoning",
+            "dice": "2d8",
+            "bonus": 7
           }
         ]
       },
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "attack_bonus": 0
+        "dc": {
+          "type": "WIS",
+          "value": 17,
+          "success_type": "none"
+        }
       },
       {
         "name": "Breath Weapons (Recharge 5-6)",
         "desc": "The dragon uses one of the following breath weapons.\nLightning Breath. The dragon exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.\nRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 19 Strength saving throw. On a failed save, the creature is pushed 60 feet away from the dragon.",
-        "attack_bonus": 0,
-        "damage": [
+        "attacks": [
           {
-            "damage_type": "lightning",
-            "damage_dice": "12d10",
-            "damage_bonus": 0
+            "name": "Lightning Breath",
+            "dc": {
+              "type": "DEX",
+              "value": 19,
+              "success_type": "half"
+            },
+            "damage": [
+              {
+                "type": "lightning",
+                "dice": "12d10",
+                "bonus": 0
+              }
+            ]
+          },
+          {
+            "name": "Repulsion Breath",
+            "dc": {
+              "type": "STR",
+              "value": 19,
+              "success_type": "none"
+            }
           }
         ]
       }
@@ -798,23 +864,25 @@
     "legendary_actions": [
       {
         "name": "Detect",
-        "desc": "The dragon makes a Wisdom (Perception) check.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a Wisdom (Perception) check."
       },
       {
         "name": "Tail Attack",
-        "desc": "The dragon makes a tail attack.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a tail attack."
       },
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0,
+        "dc": {
+          "type": "DEX",
+          "value": 20,
+          "success_type": "none"
+        },
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d6",
-            "damage_bonus": 7
+            "type": "bludgeoning",
+            "dice": "2d6",
+            "bonus": 7
           }
         ]
       }
@@ -859,15 +927,13 @@
     "special_abilities": [
       {
         "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
-        "attack_bonus": 0
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
@@ -875,9 +941,9 @@
         "attack_bonus": 11,
         "damage": [
           {
-            "damage_type": "piercing",
-            "damage_dice": "2d10",
-            "damage_bonus": 6
+            "type": "piercing",
+            "dice": "2d10",
+            "bonus": 6
           }
         ]
       },
@@ -887,9 +953,9 @@
         "attack_bonus": 11,
         "damage": [
           {
-            "damage_type": "slashing",
-            "damage_dice": "2d6",
-            "damage_bonus": 6
+            "type": "slashing",
+            "dice": "2d6",
+            "bonus": 6
           }
         ]
       },
@@ -899,26 +965,47 @@
         "attack_bonus": 11,
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d8",
-            "damage_bonus": 6
+            "type": "bludgeoning",
+            "dice": "2d8",
+            "bonus": 6
           }
         ]
       },
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "attack_bonus": 0
+        "dc": {
+          "type": "WIS",
+          "value": 16,
+          "success_type": "none"
+        }
       },
       {
         "name": "Breath Weapons (Recharge 5-6)",
         "desc": "The dragon uses one of the following breath weapons.\nAcid Breath. The dragon exhales acid in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.\nSlowing Breath. The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.",
-        "attack_bonus": 0,
-        "damage": [
+        "attacks": [
           {
-            "damage_type": "acid",
-            "damage_dice": "12d8",
-            "damage_bonus": 0
+            "name": "Acid Breath",
+            "dc": {
+              "type": "DEX",
+              "value": 18,
+              "success_type": "half"
+            },
+            "damage": [
+              {
+                "type": "acid",
+                "dice": "12d8",
+                "bonus": 0
+              }
+            ]
+          },
+          {
+            "name": "Slowing Breath",
+            "dc": {
+              "type": "CON",
+              "value": 18,
+              "success_type": "none"
+            }
           }
         ]
       }
@@ -926,23 +1013,25 @@
     "legendary_actions": [
       {
         "name": "Detect",
-        "desc": "The dragon makes a Wisdom (Perception) check.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a Wisdom (Perception) check."
       },
       {
         "name": "Tail Attack",
-        "desc": "The dragon makes a tail attack.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a tail attack."
       },
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0,
+        "dc": {
+          "type": "DEX",
+          "value": 19,
+          "success_type": "none"
+        },
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "13d6",
-            "damage_bonus": 6
+            "type": "bludgeoning",
+            "dice": "13d6",
+            "bonus": 6
           }
         ]
       }
@@ -988,20 +1077,17 @@
     "special_abilities": [
       {
         "name": "Amphibious",
-        "desc": "The dragon can breathe air and water.",
-        "attack_bonus": 0
+        "desc": "The dragon can breathe air and water."
       },
       {
         "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
-        "attack_bonus": 0
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
@@ -1009,9 +1095,9 @@
         "attack_bonus": 14,
         "damage": [
           {
-            "damage_type": "piercing",
-            "damage_dice": "2d10",
-            "damage_bonus": 8
+            "type": "piercing",
+            "dice": "2d10",
+            "bonus": 8
           }
         ]
       },
@@ -1021,9 +1107,9 @@
         "attack_bonus": 14,
         "damage": [
           {
-            "damage_type": "slashing",
-            "damage_dice": "2d6",
-            "damage_bonus": 8
+            "type": "slashing",
+            "dice": "2d6",
+            "bonus": 8
           }
         ]
       },
@@ -1033,26 +1119,47 @@
         "attack_bonus": 14,
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d8",
-            "damage_bonus": 8
+            "type": "bludgeoning",
+            "dice": "2d8",
+            "bonus": 8
           }
         ]
       },
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 21 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "attack_bonus": 0
+        "dc": {
+          "type": "WIS",
+          "value": 21,
+          "success_type": "none"
+        }
       },
       {
         "name": "Breath Weapons (Recharge 5-6)",
         "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 66 (12d10) fire damage on a failed save, or half as much damage on a successful one.\nWeakening Breath. The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a DC 21 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-        "attack_bonus": 0,
-        "damage": [
+        "attacks": [
           {
-            "damage_type": "fire",
-            "damage_dice": "12d10",
-            "damage_bonus": 0
+            "name": "Fire Breath",
+            "dc": {
+              "type": "DEX",
+              "value": 21,
+              "success_type": "half"
+            },
+            "damage": [
+              {
+                "type": "fire",
+                "dice": "12d10",
+                "bonus": 0
+              }
+            ]
+          },
+          {
+            "name": "Weakening Breath",
+            "dc": {
+              "type": "STR",
+              "value": 21,
+              "success_type": "none"
+            }
           }
         ]
       }
@@ -1060,23 +1167,25 @@
     "legendary_actions": [
       {
         "name": "Detect",
-        "desc": "The dragon makes a Wisdom (Perception) check.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a Wisdom (Perception) check."
       },
       {
         "name": "Tail Attack",
-        "desc": "The dragon makes a tail attack.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a tail attack."
       },
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0,
+        "dc": {
+          "type": "DEX",
+          "value": 22,
+          "success_type": "none"
+        },
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d6",
-            "damage_bonus": 8
+            "type": "bludgeoning",
+            "dice": "2d6",
+            "bonus": 8
           }
         ]
       }
@@ -1128,20 +1237,17 @@
     "special_abilities": [
       {
         "name": "Amphibious",
-        "desc": "The dragon can breathe air and water.",
-        "attack_bonus": 0
+        "desc": "The dragon can breathe air and water."
       },
       {
         "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
-        "attack_bonus": 0
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
@@ -1149,14 +1255,14 @@
         "attack_bonus": 11,
         "damage": [
           {
-            "damage_type": "piercing",
-            "damage_dice": "2d10",
-            "damage_bonus": 6
+            "type": "piercing",
+            "dice": "2d10",
+            "bonus": 6
           },
           {
-            "damage_type": "poison",
-            "damage_dice": "2d6",
-            "damage_bonus": 0
+            "type": "poison",
+            "dice": "2d6",
+            "bonus": 0
           }
         ]
       },
@@ -1166,9 +1272,9 @@
         "attack_bonus": 11,
         "damage": [
           {
-            "damage_type": "slashing",
-            "damage_dice": "2d6",
-            "damage_bonus": 6
+            "type": "slashing",
+            "dice": "2d6",
+            "bonus": 6
           }
         ]
       },
@@ -1178,26 +1284,34 @@
         "attack_bonus": 11,
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d8",
-            "damage_bonus": 6
+            "type": "bludgeoning",
+            "dice": "2d8",
+            "bonus": 6
           }
         ]
       },
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours .",
-        "attack_bonus": 0
+        "dc": {
+          "type": "WIS",
+          "value": 16,
+          "success_type": "none"
+        }
       },
       {
         "name": "Poison Breath (Recharge 5-6)",
         "desc": "The dragon exhales poisonous gas in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 56 (16d6) poison damage on a failed save, or half as much damage on a successful one.",
-        "attack_bonus": 0,
+        "dc": {
+          "type": "CON",
+          "value": 18,
+          "success_type": "half"
+        },
         "damage": [
           {
-            "damage_type": "poison",
-            "damage_dice": "16d6",
-            "damage_bonus": 0
+            "type": "poison",
+            "dice": "16d6",
+            "bonus": 0
           }
         ]
       }
@@ -1205,23 +1319,25 @@
     "legendary_actions": [
       {
         "name": "Detect",
-        "desc": "The dragon makes a Wisdom (Perception) check.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a Wisdom (Perception) check."
       },
       {
         "name": "Tail Attack",
-        "desc": "The dragon makes a tail attack.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a tail attack."
       },
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0,
+        "dc": {
+          "type": "DEX",
+          "value": 19,
+          "success_type": "none"
+        },
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d6",
-            "damage_bonus": 6
+            "type": "bludgeoning",
+            "dice": "2d6",
+            "bonus": 6
           }
         ]
       }
@@ -1265,15 +1381,13 @@
     "special_abilities": [
       {
         "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
-        "attack_bonus": 0
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
@@ -1281,14 +1395,14 @@
         "attack_bonus": 14,
         "damage": [
           {
-            "damage_type": "piercing",
-            "damage_dice": "2d10",
-            "damage_bonus": 8
+            "type": "piercing",
+            "dice": "2d10",
+            "bonus": 8
           },
           {
-            "damage_type": "fire",
-            "damage_dice": "2d6",
-            "damage_bonus": 0
+            "type": "fire",
+            "dice": "2d6",
+            "bonus": 0
           }
         ]
       },
@@ -1298,9 +1412,9 @@
         "attack_bonus": 14,
         "damage": [
           {
-            "damage_type": "slashing",
-            "damage_dice": "2d6",
-            "damage_bonus": 8
+            "type": "slashing",
+            "dice": "2d6",
+            "bonus": 8
           }
         ]
       },
@@ -1310,38 +1424,71 @@
         "attack_bonus": 14,
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d8",
-            "damage_bonus": 8
+            "type": "bludgeoning",
+            "dice": "2d8",
+            "bonus": 8
           }
         ]
       },
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 ft. of the dragon and aware of it must succeed on a DC 19 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "attack_bonus": 0
+        "dc": {
+          "type": "WIS",
+          "value": 19,
+          "success_type": "none"
+        }
       },
       {
         "name": "Fire Breath (Recharge 5-6)",
         "desc": "The dragon exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 63 (18d6) fire damage on a failed save, or half as much damage on a successful one.",
-        "attack_bonus": 0,
+        "dc": {
+          "type": "DEX",
+          "value": 21,
+          "success_type": "none"
+        },
         "damage": [
           {
-            "damage_type": "fire",
-            "damage_dice": "18d6",
-            "damage_bonus": 0
+            "type": "fire",
+            "dice": "18d6",
+            "bonus": 0
           }
         ]
       },
       {
         "name": "Lair Actions",
         "desc": "On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects: the dragon can't use the same effect two rounds in a row:\n- Magma erupts from a point on the ground the dragon can see within 120 feet of it, creating a 20-foot-high, 5-foot-radius geyser. Each creature in the geyser's area must make a DC 15 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.\n- A tremor shakes the lair in a 60-foot-radius around the dragon. Each creature other than the dragon on the ground in that area must succeed on a DC 15 Dexterity saving throw or be knocked prone.\n- Volcanic gases form a cloud in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The sphere spreads around corners, and its area is lightly obscured. It lasts until initiative count 20 on the next round. Each creature that starts its turn in the cloud must succeed on a DC 13 Constitution saving throw or be poisoned until the end of its turn. While poisoned in this way, a creature is incapacitated.",
-        "attack_bonus": 0,
-        "damage": [
+        "attacks": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "6d6",
-            "damage_bonus": 0
+            "name": "Magma Eruption",
+            "dc": {
+              "type": "DEX",
+              "value": 15,
+              "success_type": "half"
+            },
+            "damage": [
+              {
+                "type": "fire",
+                "dice": "6d6",
+                "bonus": 0
+              }
+            ]
+          },
+          {
+            "name": "Tremor",
+            "dc": {
+              "type": "DEX",
+              "value": 15,
+              "success_type": "none"
+            }
+          },
+          {
+            "name": "Volcanic Gas",
+            "dc": {
+              "type": "CON",
+              "value": 13,
+              "success_type": "none"
+            }
           }
         ]
       }
@@ -1349,23 +1496,25 @@
     "legendary_actions": [
       {
         "name": "Detect",
-        "desc": "The dragon makes a Wisdom (Perception) check.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a Wisdom (Perception) check."
       },
       {
         "name": "Tail Attack",
-        "desc": "The dragon makes a tail attack.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a tail attack."
       },
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0,
+        "dc": {
+          "type": "DEX",
+          "value": 22,
+          "success_type": "none"
+        },
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d6",
-            "damage_bonus": 8
+            "type": "bludgeoning",
+            "dice": "2d6",
+            "bonus": 8
           }
         ]
       }
@@ -1410,15 +1559,13 @@
     "special_abilities": [
       {
         "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
-        "attack_bonus": 0
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
@@ -1426,9 +1573,9 @@
         "attack_bonus": 13,
         "damage": [
           {
-            "damage_type": "piercing",
-            "damage_dice": "2d10",
-            "damage_bonus": 8
+            "type": "piercing",
+            "dice": "2d10",
+            "bonus": 8
           }
         ]
       },
@@ -1438,9 +1585,9 @@
         "attack_bonus": 13,
         "damage": [
           {
-            "damage_type": "slashing",
-            "damage_dice": "2d6",
-            "damage_bonus": 8
+            "type": "slashing",
+            "dice": "2d6",
+            "bonus": 8
           }
         ]
       },
@@ -1450,26 +1597,47 @@
         "attack_bonus": 13,
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d8",
-            "damage_bonus": 8
+            "type": "bludgeoning",
+            "dice": "2d8",
+            "bonus": 8
           }
         ]
       },
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "attack_bonus": 0
+        "dc": {
+          "type": "WIS",
+          "value": 18,
+          "success_type": "none"
+        }
       },
       {
         "name": "Breath Weapons (Recharge 5-6)",
         "desc": "The dragon uses one of the following breath weapons.\nCold Breath. The dragon exhales an icy blast in a 60-foot cone. Each creature in that area must make a DC 20 Constitution saving throw, taking 58 (13d8) cold damage on a failed save, or half as much damage on a successful one.\nParalyzing Breath. The dragon exhales paralyzing gas in a 60-foot cone. Each creature in that area must succeed on a DC 20 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-        "attack_bonus": 0,
-        "damage": [
+        "attacks": [
           {
-            "damage_type": "cold",
-            "damage_dice": "13d8",
-            "damage_bonus": 0
+            "name": "Cold Breath",
+            "dc": {
+              "type": "CON",
+              "value": 20,
+              "success_type": "half"
+            },
+            "damage": [
+              {
+                "type": "cold",
+                "dice": "13d8",
+                "bonus": 0
+              }
+            ]
+          },
+          {
+            "name": "Paralyzing Breath",
+            "dc": {
+              "type": "CON",
+              "value": 20,
+              "success_type": "none"
+            }
           }
         ]
       }
@@ -1477,23 +1645,25 @@
     "legendary_actions": [
       {
         "name": "Detect",
-        "desc": "The dragon makes a Wisdom (Perception) check.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a Wisdom (Perception) check."
       },
       {
         "name": "Tail Attack",
-        "desc": "The dragon makes a tail attack.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a tail attack."
       },
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0,
+        "dc": {
+          "type": "DEX",
+          "value": 22,
+          "success_type": "none"
+        },
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d6",
-            "damage_bonus": 8
+            "type": "bludgeoning",
+            "dice": "2d6",
+            "bonus": 8
           }
         ]
       }
@@ -1538,20 +1708,17 @@
     "special_abilities": [
       {
         "name": "Ice Walk",
-        "desc": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment.",
-        "attack_bonus": 0
+        "desc": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment."
       },
       {
         "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
-        "attack_bonus": 0
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
@@ -1559,14 +1726,14 @@
         "attack_bonus": 11,
         "damage": [
           {
-            "damage_type": "piercing",
-            "damage_dice": "2d10",
-            "damage_bonus": 6
+            "type": "piercing",
+            "dice": "2d10",
+            "bonus": 6
           },
           {
-            "damage_type": "cold",
-            "damage_dice": "1d8",
-            "damage_bonus": 0
+            "type": "cold",
+            "dice": "1d8",
+            "bonus": 0
           }
         ]
       },
@@ -1576,9 +1743,9 @@
         "attack_bonus": 11,
         "damage": [
           {
-            "damage_type": "slashing",
-            "damage_dice": "2d6",
-            "damage_bonus": 6
+            "type": "slashing",
+            "dice": "2d6",
+            "bonus": 6
           }
         ]
       },
@@ -1588,26 +1755,34 @@
         "attack_bonus": 11,
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d8",
-            "damage_bonus": 6
+            "type": "bludgeoning",
+            "dice": "2d8",
+            "bonus": 6
           }
         ]
       },
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 ft. of the dragon and aware of it must succeed on a DC 14 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "attack_bonus": 0
+        "dc": {
+          "type": "WIS",
+          "value": 14,
+          "success_type": "none"
+        }
       },
       {
         "name": "Cold Breath (Recharge 5-6)",
         "desc": "The dragon exhales an icy blast in a 60-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 54 (12d8) cold damage on a failed save, or half as much damage on a successful one.",
-        "attack_bonus": 0,
+        "dc": {
+          "type": "CON",
+          "value": 19,
+          "success_type": "half"
+        },
         "damage": [
           {
-            "damage_type": "cold",
-            "damage_dice": "12d8",
-            "damage_bonus": 0
+            "type": "cold",
+            "dice": "12d8",
+            "bonus": 0
           }
         ]
       }
@@ -1615,23 +1790,25 @@
     "legendary_actions": [
       {
         "name": "Detect",
-        "desc": "The dragon makes a Wisdom (Perception) check.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a Wisdom (Perception) check."
       },
       {
         "name": "Tail Attack",
-        "desc": "The dragon makes a tail attack.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a tail attack."
       },
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0,
+        "dc": {
+          "type": "DEX",
+          "value": 19,
+          "success_type": "none"
+        },
         "damage": [
           {
-            "damage_type": "bludgeoning",
-            "damage_dice": "2d6",
-            "damage_bonus": 6
+            "type": "bludgeoning",
+            "dice": "2d6",
+            "bonus": 6
           }
         ]
       }
@@ -1705,27 +1882,29 @@
     "special_abilities": [
       {
         "name": "Air Form",
-        "desc": "The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.",
-        "attack_bonus": 0
+        "desc": "The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The elemental makes two slam attacks.",
-        "attack_bonus": 0
+        "desc": "The elemental makes two slam attacks."
       },
       {
         "name": "Slam",
         "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.",
         "attack_bonus": 8,
-        "damage_dice": "2d8",
-        "damage_bonus": 5
+        "damage": [
+          {
+            "type": "bludgeoning",
+            "dice": "2d8",
+            "bonus": 5
+          }
+        ]
       },
       {
         "name": "Whirlwind (Recharge 4-6)",
-        "desc": "Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.\nIf the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.",
-        "attack_bonus": 0
+        "desc": "Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.\nIf the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone."
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/14"
