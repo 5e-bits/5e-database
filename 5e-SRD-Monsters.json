@@ -2992,7 +2992,7 @@
     "special_abilities": [
       {
         "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
       }
     ],
     "actions": [
@@ -3145,55 +3145,105 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +17 to hit, reach 15 ft., one target. Hit: 21 (2d10 + 10) piercing damage.",
         "attack_bonus": 17,
-        "damage_dice": "2d10",
-        "damage_bonus": 10
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 10
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 17 (2d6 + 10) slashing damage.",
         "attack_bonus": 17,
-        "damage_dice": "2d6",
-        "damage_bonus": 10
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 10
+          }
+        ]
       },
       {
         "name": "Tail",
         "desc": "Melee Weapon Attack: +17 to hit, reach 20 ft., one target. Hit: 19 (2d8 + 10) bludgeoning damage.",
         "attack_bonus": 17,
-        "damage_dice": "2d8",
-        "damage_bonus": 10
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d8",
+            "damage_bonus": 10
+          }
+        ]
       },
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 21 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "attack_bonus": 0
+        "dc": {
+          "dc_type": "WIS",
+          "dc_value": 21,
+          "success_type": "none"
+        }
       },
       {
         "name": "Breath Weapons (Recharge 5-6)",
         "desc": "The dragon uses one of the following breath weapons.\nCold Breath. The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 24 Constitution saving throw, taking 67 (15d8) cold damage on a failed save, or half as much damage on a successful one.\nParalyzing Breath. The dragon exhales paralyzing gas in a 90- foot cone. Each creature in that area must succeed on a DC 24 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-        "attack_bonus": 0,
-        "damage_dice": "15d8"
+        "attacks": [
+          {
+            "name": "Cold Breath",
+            "dc": {
+              "dc_type": "CON",
+              "dc_value": 24,
+              "success_type": "half"
+            },
+            "damage": [
+              {
+                "damage_type": "cold",
+                "damage_dice": "15d8",
+                "damage_bonus": 0
+              }
+            ]
+          },
+          {
+            "name": "Paralyzing Breath",
+            "dc": {
+              "dc_type": "CON",
+              "dc_value": 24,
+              "success_type": "none"
+            }
+          }
+        ]
       },
       {
         "name": "Change Shape",
-        "desc": "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
-        "attack_bonus": 0
+        "desc": "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
       }
     ],
     "legendary_actions": [
       {
         "name": "Detect",
-        "desc": "The dragon makes a Wisdom (Perception) check.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a Wisdom (Perception) check."
       },
       {
         "name": "Tail Attack",
-        "desc": "The dragon makes a tail attack.",
-        "attack_bonus": 0
+        "desc": "The dragon makes a tail attack."
       },
       {
         "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "attack_bonus": 0
+        "dc": {
+          "dc_type": "DEX",
+          "dc_value": 25,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d6",
+            "damage_bonus": 10
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/23"
@@ -3236,69 +3286,109 @@
     "special_abilities": [
       {
         "name": "Ice Walk",
-        "desc": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment.",
-        "attack_bonus": 0
+        "desc": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment."
       },
       {
         "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
-        "attack_bonus": 0
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 9 (2d8) cold damage.",
         "attack_bonus": 14,
-        "damage_dice": "2d10 + 2d8",
-        "damage_bonus": 8
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 8
+          },
+          {
+            "damage_type": "cold",
+            "damage_dice": "2d8",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 15 (2d6 + 8) slashing damage.",
         "attack_bonus": 14,
-        "damage_dice": "2d6",
-        "damage_bonus": 8
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 8
+          }
+        ]
       },
       {
         "name": "Tail",
         "desc": "Melee Weapon Attack: +14 to hit, reach 20 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
         "attack_bonus": 14,
-        "damage_dice": "2d8",
-        "damage_bonus": 8
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d8",
+            "damage_bonus": 8
+          }
+        ]
       },
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours .",
-        "attack_bonus": 0
+        "dc": {
+          "dc_type": "WIS",
+          "dc_value": 16,
+          "success_type": "none"
+        }
       },
       {
         "name": "Cold Breath (Recharge 5-6)",
         "desc": "The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 22 Constitution saving throw, taking 72 (l6d8) cold damage on a failed save, or half as much damage on a successful one.",
-        "attack_bonus": 0,
-        "damage_dice": "16d8"
+        "dc": {
+          "dc_type": "CON",
+          "dc_value": 22,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": "cold",
+            "damage_dice": "16d8",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "legendary_actions": [
       {
-        "attack_bonus": 0,
-        "desc": "The dragon makes a Wisdom (Perception) check.",
-        "name": "Detect"
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check."
       },
       {
-        "attack_bonus": 0,
-        "desc": "The dragon makes a tail attack.",
-        "name": "Tail Attack"
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack."
       },
       {
-        "attack_bonus": 0,
+        "name": "Wing Attack (Costs 2 Actions)",
         "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
-        "name": "Wing Attack (Costs 2 Actions)"
+        "dc": {
+          "dc_type": "DEX",
+          "dc_value": 22,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d6",
+            "damage_bonus": 8
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/24"
@@ -3352,54 +3442,84 @@
     "special_abilities": [
       {
         "name": "Inscrutable",
-        "desc": "The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage.",
-        "attack_bonus": 0
+        "desc": "The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage."
       },
       {
         "name": "Magic Weapons",
-        "desc": "The sphinx's weapon attacks are magical.",
-        "attack_bonus": 0
+        "desc": "The sphinx's weapon attacks are magical."
       },
       {
         "name": "Spellcasting",
-        "desc": "The sphinx is a 12th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 18, +10 to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following cleric spells prepared:\n\n- Cantrips (at will): sacred flame, spare the dying, thaumaturgy\n- 1st level (4 slots): command, detect evil and good, detect magic\n- 2nd level (3 slots): lesser restoration, zone of truth\n- 3rd level (3 slots): dispel magic, tongues\n- 4th level (3 slots): banishment, freedom of movement\n- 5th level (2 slots): flame strike, greater restoration\n- 6th level (1 slot): heroes' feast",
-        "attack_bonus": 0
+        "desc": "The sphinx is a 12th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 18, +10 to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following cleric spells prepared:\n\n- Cantrips (at will): sacred flame, spare the dying, thaumaturgy\n- 1st level (4 slots): command, detect evil and good, detect magic\n- 2nd level (3 slots): lesser restoration, zone of truth\n- 3rd level (3 slots): dispel magic, tongues\n- 4th level (3 slots): banishment, freedom of movement\n- 5th level (2 slots): flame strike, greater restoration\n- 6th level (1 slot): heroes' feast"
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The sphinx makes two claw attacks.",
-        "attack_bonus": 0
+        "desc": "The sphinx makes two claw attacks."
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) slashing damage.",
         "attack_bonus": 12,
-        "damage_dice": "2d10",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d10",
+            "damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Roar (3/Day)",
         "desc": "The sphinx emits a magical roar. Each time it roars before finishing a long rest, the roar is louder and the effect is different, as detailed below. Each creature within 500 feet of the sphinx and able to hear the roar must make a saving throw.\n\nFirst Roar. Each creature that fails a DC 18 Wisdom saving throw is frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.\n\nSecond Roar. Each creature that fails a DC 18 Wisdom saving throw is deafened and frightened for 1 minute. A frightened creature is paralyzed and can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.\n\nThird Roar. Each creature makes a DC 18 Constitution saving throw. On a failed save, a creature takes 44 (8d10) thunder damage and is knocked prone. On a successful save, the creature takes half as much damage and isn't knocked prone.",
-        "attack_bonus": 0
+        "attacks": [
+          {
+            "name": "First Roar",
+            "dc": {
+              "dc_type": "WIS",
+              "dc_value": 18,
+              "success_type": "none"
+            }
+          },
+          {
+            "name": "Second Roar",
+            "dc": {
+              "dc_type": "WIS",
+              "dc_value": 18,
+              "success_type": "none"
+            }
+          },
+          {
+            "name": "Third Roar",
+            "dc": {
+              "dc_type": "CON",
+              "dc_value": 18,
+              "success_type": "half"
+            },
+            "damage": [
+              {
+                "damage_type": "thunder",
+                "damage_dice": "8d10",
+                "damage_bonus": 0
+              }
+            ]
+          }
+        ]
       }
     ],
     "legendary_actions": [
       {
         "name": "Claw Attack",
-        "desc": "The sphinx makes one claw attack.",
-        "attack_bonus": 0
+        "desc": "The sphinx makes one claw attack."
       },
       {
         "name": "Teleport (Costs 2 Actions)",
-        "desc": "The sphinx magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.",
-        "attack_bonus": 0
+        "desc": "The sphinx magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
       },
       {
         "name": "Cast a Spell (Costs 3 Actions)",
-        "desc": "The sphinx casts a spell from its list of prepared spells, using a spell slot as normal.",
-        "attack_bonus": 0
+        "desc": "The sphinx casts a spell from its list of prepared spells, using a spell slot as normal."
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/25"
@@ -3466,27 +3586,29 @@
     "special_abilities": [
       {
         "name": "Antimagic Susceptibility",
-        "desc": "The armor is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.",
-        "attack_bonus": 0
+        "desc": "The armor is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute."
       },
       {
         "name": "False Appearance",
-        "desc": "While the armor remains motionless, it is indistinguishable from a normal suit of armor.",
-        "attack_bonus": 0
+        "desc": "While the armor remains motionless, it is indistinguishable from a normal suit of armor."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The armor makes two melee attacks.",
-        "attack_bonus": 0
+        "desc": "The armor makes two melee attacks."
       },
       {
         "name": "Slam",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.",
         "attack_bonus": 4,
-        "damage_dice": "1d6",
-        "damage_bonus": 2
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "1d6",
+            "damage_bonus": 2
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/26"
@@ -3523,14 +3645,34 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage plus 3 (1d6) acid damage. If the target is a Large or smaller creature, it is grappled (escape DC 13). Until this grapple ends, the ankheg can bite only the grappled creature and has advantage on attack rolls to do so.",
         "attack_bonus": 5,
-        "damage_dice": "2d6 + 1d6",
-        "damage_bonus": 3
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 3
+          },
+          {
+            "damage_type": "acid",
+            "damage_dice": "1d6",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Acid Spray (Recharge 6)",
         "desc": "The ankheg spits acid in a line that is 30 ft. long and 5 ft. wide, provided that it has no creature grappled. Each creature in that line must make a DC 13 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one.",
-        "attack_bonus": 0,
-        "damage_dice": "3d6"
+        "dc": {
+          "dc_type": "DEX",
+          "dc_value": 13,
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "3d6",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/27"
@@ -3567,22 +3709,31 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The ape makes two fist attacks.",
-        "attack_bonus": 0
+        "desc": "The ape makes two fist attacks."
       },
       {
         "name": "Fist",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.",
         "attack_bonus": 5,
-        "damage_dice": "1d6",
-        "damage_bonus": 3
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "1d6",
+            "damage_bonus": 3
+          }
+        ]
       },
       {
         "name": "Rock",
         "desc": "Ranged Weapon Attack: +5 to hit, range 25/50 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.",
         "attack_bonus": 5,
-        "damage_dice": "1d6",
-        "damage_bonus": 3
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "1d6",
+            "damage_bonus": 3
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/28"
@@ -3623,13 +3774,11 @@
     "special_abilities": [
       {
         "name": "Magic Resistance",
-        "desc": "The archmage has advantage on saving throws against spells and other magical effects.",
-        "attack_bonus": 0
+        "desc": "The archmage has advantage on saving throws against spells and other magical effects."
       },
       {
         "name": "Spellcasting",
-        "desc": "The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The archmage can cast disguise self and invisibility at will and has the following wizard spells prepared:\n\n- Cantrips (at will): fire bolt, light, mage hand, prestidigitation, shocking grasp\n- 1st level (4 slots): detect magic, identify, mage armor*, magic missile\n- 2nd level (3 slots): detect thoughts, mirror image, misty step\n- 3rd level (3 slots): counterspell, fly, lightning bolt\n- 4th level (3 slots): banishment, fire shield, stoneskin*\n- 5th level (3 slots): cone of cold, scrying, wall of force\n- 6th level (1 slot): globe of invulnerability\n- 7th level (1 slot): teleport\n- 8th level (1 slot): mind blank*\n- 9th level (1 slot): time stop\n* The archmage casts these spells on itself before combat.",
-        "attack_bonus": 0
+        "desc": "The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The archmage can cast disguise self and invisibility at will and has the following wizard spells prepared:\n\n- Cantrips (at will): fire bolt, light, mage hand, prestidigitation, shocking grasp\n- 1st level (4 slots): detect magic, identify, mage armor*, magic missile\n- 2nd level (3 slots): detect thoughts, mirror image, misty step\n- 3rd level (3 slots): counterspell, fly, lightning bolt\n- 4th level (3 slots): banishment, fire shield, stoneskin*\n- 5th level (3 slots): cone of cold, scrying, wall of force\n- 6th level (1 slot): globe of invulnerability\n- 7th level (1 slot): teleport\n- 8th level (1 slot): mind blank*\n- 9th level (1 slot): time stop\n* The archmage casts these spells on itself before combat."
       }
     ],
     "actions": [
@@ -3637,8 +3786,13 @@
         "name": "Dagger",
         "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
         "attack_bonus": 6,
-        "damage_dice": "1d4",
-        "damage_bonus": 2
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d4",
+            "damage_bonus": 2
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/29"
@@ -3678,40 +3832,65 @@
     "special_abilities": [
       {
         "name": "Assassinate",
-        "desc": "During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit.",
-        "attack_bonus": 0
+        "desc": "During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit."
       },
       {
         "name": "Evasion",
-        "desc": "If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.",
-        "attack_bonus": 0
+        "desc": "If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
       },
       {
         "name": "Sneak Attack (1/Turn)",
-        "desc": "The assassin deals an extra 13 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 ft. of an ally of the assassin that isn't incapacitated and the assassin doesn't have disadvantage on the attack roll.",
-        "attack_bonus": 0,
-        "damage_dice": "4d6"
+        "desc": "The assassin deals an extra 13 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 ft. of an ally of the assassin that isn't incapacitated and the assassin doesn't have disadvantage on the attack roll."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The assassin makes two shortsword attacks.",
-        "attack_bonus": 0
+        "desc": "The assassin makes two shortsword attacks."
       },
       {
         "name": "Shortsword",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.",
         "attack_bonus": 6,
-        "damage_dice": "1d6",
-        "damage_bonus": 3
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d6",
+            "damage_bonus": 3
+          },
+          {
+            "dc": {
+              "dc_type": "CON",
+              "dc_value": 15,
+              "success_type": "half"
+            },
+            "damage_type": "poisin",
+            "damage_dice": "7d6",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Light Crossbow",
         "desc": "Ranged Weapon Attack: +6 to hit, range 80/320 ft., one target. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.",
         "attack_bonus": 6,
-        "damage_dice": "1d8",
-        "damage_bonus": 3
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d8",
+            "damage_bonus": 3
+          },
+          {
+            "dc": {
+              "dc_type": "CON",
+              "dc_value": 15,
+              "success_type": "half"
+            },
+            "damage_type": "poisin",
+            "damage_dice": "7d6",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/30"
@@ -3745,8 +3924,7 @@
     "special_abilities": [
       {
         "name": "False Appearance",
-        "desc": "While the shrub remains motionless, it is indistinguishable from a normal shrub.",
-        "attack_bonus": 0
+        "desc": "While the shrub remains motionless, it is indistinguishable from a normal shrub."
       }
     ],
     "actions": [
@@ -3754,8 +3932,13 @@
         "name": "Rake",
         "desc": "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) slashing damage.",
         "attack_bonus": 1,
-        "damage_dice": "1d4",
-        "damage_bonus": -1
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "1d4",
+            "damage_bonus": -1
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/31"
@@ -3789,8 +3972,7 @@
     "special_abilities": [
       {
         "name": "False Appearance",
-        "desc": "While the tree remains motionless, it is indistinguishable from a normal tree.",
-        "attack_bonus": 0
+        "desc": "While the tree remains motionless, it is indistinguishable from a normal tree."
       }
     ],
     "actions": [
@@ -3798,8 +3980,13 @@
         "name": "Slam",
         "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) bludgeoning damage.",
         "attack_bonus": 6,
-        "damage_dice": "3d6",
-        "damage_bonus": 4
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "3d6",
+            "damage_bonus": 4
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/32"
@@ -3835,8 +4022,13 @@
         "name": "Beak",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage.",
         "attack_bonus": 4,
-        "damage_dice": "1d8",
-        "damage_bonus": 2
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "1d8",
+            "damage_bonus": 2
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/33"
@@ -3877,18 +4069,28 @@
       {
         "name": "Heated Body",
         "desc": "A creature that touches the azer or hits it with a melee attack while within 5 ft. of it takes 5 (1d10) fire damage.",
-        "attack_bonus": 0,
-        "damage_dice": "1d10"
+        "damage": [
+          {
+            "damage_type": "fire",
+            "damage_dice": "1d10",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Heated Weapons",
         "desc": "When the azer hits with a metal melee weapon, it deals an extra 3 (1d6) fire damage (included in the attack).",
-        "attack_bonus": 0
+        "damage": [
+          {
+            "damage_type": "fire",
+            "damage_dice": "1d6",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Illumination",
-        "desc": "The azer sheds bright light in a 10-foot radius and dim light for an additional 10 ft..",
-        "attack_bonus": 0
+        "desc": "The azer sheds bright light in a 10-foot radius and dim light for an additional 10 ft.."
       }
     ],
     "actions": [
@@ -3896,8 +4098,18 @@
         "name": "Warhammer",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage, or 8 (1d10 + 3) bludgeoning damage if used with two hands to make a melee attack, plus 3 (1d6) fire damage.",
         "attack_bonus": 5,
-        "damage_dice": "1d8 + 1d6",
-        "damage_bonus": 3
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "1d8",
+            "damage_bonus": 3
+          },
+          {
+            "damage_type": "fire",
+            "damage_dice": "1d6",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/34"
@@ -3932,8 +4144,7 @@
     "special_abilities": [
       {
         "name": "Pack Tactics",
-        "desc": "The baboon has advantage on an attack roll against a creature if at least one of the baboon's allies is within 5 ft. of the creature and the ally isn't incapacitated.",
-        "attack_bonus": 0
+        "desc": "The baboon has advantage on an attack roll against a creature if at least one of the baboon's allies is within 5 ft. of the creature and the ally isn't incapacitated."
       }
     ],
     "actions": [
@@ -3941,8 +4152,13 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) piercing damage.",
         "attack_bonus": 1,
-        "damage_dice": "1d4",
-        "damage_bonus": -1
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d4",
+            "damage_bonus": -1
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/35"
@@ -3977,8 +4193,7 @@
     "special_abilities": [
       {
         "name": "Keen Smell",
-        "desc": "The badger has advantage on Wisdom (Perception) checks that rely on smell.",
-        "attack_bonus": 0
+        "desc": "The badger has advantage on Wisdom (Perception) checks that rely on smell."
       }
     ],
     "actions": [
@@ -3986,7 +4201,13 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
         "attack_bonus": 2,
-        "damage_bonus": 1
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "0d4",
+            "damage_bonus": 1
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/36"
@@ -4035,55 +4256,85 @@
       {
         "name": "Death Throes",
         "desc": "When the balor dies, it explodes, and each creature within 30 feet of it must make a DC 20 Dexterity saving throw, taking 70 (20d6) fire damage on a failed save, or half as much damage on a successful one. The explosion ignites flammable objects in that area that aren't being worn or carried, and it destroys the balor's weapons.",
-        "attack_bonus": 0,
-        "damage_dice": "20d6"
+        "dc": {
+          "dc_type": "DEX",
+          "dc_value": 20,
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": "fire",
+            "damage_dice": "20d6",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Fire Aura",
         "desc": "At the start of each of the balor's turns, each creature within 5 feet of it takes 10 (3d6) fire damage, and flammable objects in the aura that aren't being worn or carried ignite. A creature that touches the balor or hits it with a melee attack while within 5 feet of it takes 10 (3d6) fire damage.",
-        "attack_bonus": 0,
-        "damage_dice": "3d6"
+        "damage": [
+          {
+            "damage_type": "fire",
+            "damage_dice": "3d6",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Magic Resistance",
-        "desc": "The balor has advantage on saving throws against spells and other magical effects.",
-        "attack_bonus": 0
+        "desc": "The balor has advantage on saving throws against spells and other magical effects."
       },
       {
         "name": "Magic Weapons",
-        "desc": "The balor's weapon attacks are magical.",
-        "attack_bonus": 0
+        "desc": "The balor's weapon attacks are magical."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The balor makes two attacks: one with its longsword and one with its whip.",
-        "attack_bonus": 0
+        "desc": "The balor makes two attacks: one with its longsword and one with its whip."
       },
       {
         "name": "Longsword",
         "desc": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 21 (3d8 + 8) slashing damage plus 13 (3d8) lightning damage. If the balor scores a critical hit, it rolls damage dice three times, instead of twice.",
         "attack_bonus": 14,
-        "damage_dice": "3d8 + 3d8",
-        "damage_bonus": 8
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "3d8",
+            "damage_bonus": 8
+          },
+          {
+            "damage_type": "lightning",
+            "damage_dice": "3d8",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Whip",
         "desc": "Melee Weapon Attack: +14 to hit, reach 30 ft., one target. Hit: 15 (2d6 + 8) slashing damage plus 10 (3d6) fire damage, and the target must succeed on a DC 20 Strength saving throw or be pulled up to 25 feet toward the balor.",
         "attack_bonus": 14,
-        "damage_dice": "2d6 + 3d6",
-        "damage_bonus": 8
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 8
+          },
+          {
+            "damage_type": "fire",
+            "damage_dice": "3d6",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Teleport",
-        "desc": "The balor magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.",
-        "attack_bonus": 0
+        "desc": "The balor magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
       },
       {
         "name": "Variant: Summon Demon (1/Day)",
-        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA balor has a 50 percent chance of summoning 1d8 vrocks, 1d6 hezrous, 1d4 glabrezus, 1d3 nalfeshnees, 1d2 mariliths, or one goristro.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
-        "attack_bonus": 0
+        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA balor has a 50 percent chance of summoning 1d8 vrocks, 1d6 hezrous, 1d4 glabrezus, 1d3 nalfeshnees, 1d2 mariliths, or one goristro.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/37"
@@ -4119,15 +4370,25 @@
         "name": "Scimitar",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.",
         "attack_bonus": 3,
-        "damage_dice": "1d6",
-        "damage_bonus": 1
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "1d6",
+            "damage_bonus": 1
+          }
+        ]
       },
       {
         "name": "Light Crossbow",
         "desc": "Ranged Weapon Attack: +3 to hit, range 80 ft./320 ft., one target. Hit: 5 (1d8 + 1) piercing damage.",
         "attack_bonus": 3,
-        "damage_dice": "1d8",
-        "damage_bonus": 1
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d8",
+            "damage_bonus": 1
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/38"
@@ -4166,29 +4427,37 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers.",
-        "attack_bonus": 0
+        "desc": "The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers."
       },
       {
         "name": "Scimitar",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.",
         "attack_bonus": 5,
-        "damage_dice": "1d6",
-        "damage_bonus": 3
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "1d6",
+            "damage_bonus": 3
+          }
+        ]
       },
       {
         "name": "Dagger",
         "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
         "attack_bonus": 5,
-        "damage_dice": "1d4",
-        "damage_bonus": 3
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d4",
+            "damage_bonus": 3
+          }
+        ]
       }
     ],
     "reactions": [
       {
         "name": "Parry",
-        "desc": "The captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon.",
-        "attack_bonus": 0
+        "desc": "The captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon."
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/39"
@@ -4239,44 +4508,63 @@
         "name": "Barbed Hide",
         "desc": "At the start of each of its turns, the barbed devil deals 5 (1d10) piercing damage to any creature grappling it.",
         "attack_bonus": 0,
-        "damage_dice": "1d10"
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d10",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Devil's Sight",
-        "desc": "Magical darkness doesn't impede the devil's darkvision.",
-        "attack_bonus": 0
+        "desc": "Magical darkness doesn't impede the devil's darkvision."
       },
       {
         "name": "Magic Resistance",
-        "desc": "The devil has advantage on saving throws against spells and other magical effects.",
-        "attack_bonus": 0
+        "desc": "The devil has advantage on saving throws against spells and other magical effects."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The devil makes three melee attacks: one with its tail and two with its claws. Alternatively, it can use Hurl Flame twice.",
-        "attack_bonus": 0
+        "desc": "The devil makes three melee attacks: one with its tail and two with its claws. Alternatively, it can use Hurl Flame twice."
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft ., one target. Hit: 6 (1d6 + 3) piercing damage.",
         "attack_bonus": 6,
-        "damage_dice": "1d6",
-        "damage_bonus": 3
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d6",
+            "damage_bonus": 3
+          }
+        ]
       },
       {
         "name": "Tail",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage.",
         "attack_bonus": 6,
-        "damage_dice": "2d6",
-        "damage_bonus": 3
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d6",
+            "damage_bonus": 3
+          }
+        ]
       },
       {
         "name": "Hurl Flame",
         "desc": "Ranged Spell Attack: +5 to hit, range 150 ft., one target. Hit: 10 (3d6) fire damage. If the target is a flammable object that isn't being worn or carried, it also catches fire.",
         "attack_bonus": 5,
-        "damage_dice": "3d6"
+        "damage": [
+          {
+            "damage_type": "fire",
+            "damage_dice": "3d6",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/40"
@@ -4311,7 +4599,11 @@
       {
         "name": "Petrifying Gaze",
         "desc": "If a creature starts its turn within 30 ft. of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the greater restoration spell or other magic.\nA creature that isn't surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save.\nIf the basilisk sees its reflection within 30 ft. of it in bright light, it mistakes itself for a rival and targets itself with its gaze.",
-        "attack_bonus": 0
+        "dc": {
+          "dc_type": "CON",
+          "dc_value": 12,
+          "success_type": "none"
+        }
       }
     ],
     "actions": [
@@ -4319,8 +4611,18 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage plus 7 (2d6) poison damage.",
         "attack_bonus": 5,
-        "damage_dice": "2d6 + 2d6",
-        "damage_bonus": 3
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d6",
+            "damage_bonus": 3
+          },
+          {
+            "damage_type": "poison",
+            "damage_dice": "2d6",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/41"
@@ -4355,13 +4657,11 @@
     "special_abilities": [
       {
         "name": "Echolocation",
-        "desc": "The bat can't use its blindsight while deafened.",
-        "attack_bonus": 0
+        "desc": "The bat can't use its blindsight while deafened."
       },
       {
         "name": "Keen Hearing",
-        "desc": "The bat has advantage on Wisdom (Perception) checks that rely on hearing.",
-        "attack_bonus": 0
+        "desc": "The bat has advantage on Wisdom (Perception) checks that rely on hearing."
       }
     ],
     "actions": [
@@ -4369,7 +4669,13 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +0 to hit, reach 5 ft., one creature. Hit: 1 piercing damage.",
         "attack_bonus": 0,
-        "damage_bonus": 1
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "0d4",
+            "damage_bonus": 1
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/42"
@@ -4414,39 +4720,45 @@
     "special_abilities": [
       {
         "name": "Devil's Sight",
-        "desc": "Magical darkness doesn't impede the devil's darkvision.",
-        "attack_bonus": 0
+        "desc": "Magical darkness doesn't impede the devil's darkvision."
       },
       {
         "name": "Magic Resistance",
-        "desc": "The devil has advantage on saving throws against spells and other magical effects.",
-        "attack_bonus": 0
+        "desc": "The devil has advantage on saving throws against spells and other magical effects."
       },
       {
         "name": "Steadfast",
-        "desc": "The devil can't be frightened while it can see an allied creature within 30 feet of it.",
-        "attack_bonus": 0
+        "desc": "The devil can't be frightened while it can see an allied creature within 30 feet of it."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The devil makes two attacks: one with its beard and one with its glaive.",
-        "attack_bonus": 0
+        "desc": "The devil makes two attacks: one with its beard and one with its glaive."
       },
       {
         "name": "Beard",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d8 + 2) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target can't regain hit points. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
         "attack_bonus": 5,
-        "damage_dice": "1d8",
-        "damage_bonus": 2
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d8",
+            "damage_bonus": 2
+          }
+        ]
       },
       {
         "name": "Glaive",
         "desc": "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 8 (1d10 + 3) slashing damage. If the target is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1d10) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 (1d10). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing.",
         "attack_bonus": 5,
-        "damage_dice": "1d10",
-        "damage_bonus": 3
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "1d10",
+            "damage_bonus": 3
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/43"
@@ -4490,27 +4802,57 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 22 (3d10 + 6) piercing damage.",
         "attack_bonus": 10,
-        "damage_dice": "3d10",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "3d10",
+            "damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Constrict",
         "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one Large or smaller creature. Hit: 17 (2d10 + 6) bludgeoning damage plus 17 (2d10 + 6) slashing damage. The target is grappled (escape DC 16) if the behir isn't already constricting a creature, and the target is restrained until this grapple ends.",
         "attack_bonus": 10,
-        "damage_dice": "2d10 + 2d10",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d10",
+            "damage_bonus": 6
+          },
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d10",
+            "damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Lightning Breath (Recharge 5-6)",
         "desc": "The behir exhales a line of lightning that is 20 ft. long and 5 ft. wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.",
-        "attack_bonus": 0,
-        "damage_dice": "12d10"
+        "dc": {
+          "dc_type": "DEX",
+          "dc_value": 16,
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": "lightning",
+            "damage_dice": "12d10",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Swallow",
         "desc": "The behir makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the behir, and it takes 21 (6d6) acid damage at the start of each of the behir's turns. A behir can have only one creature swallowed at a time.\nIf the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 ft. of the behir. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 ft. of movement, exiting prone.",
-        "attack_bonus": 0,
-        "damage_dice": "6d6"
+        "damage": [
+          {
+            "damage_type": "acid",
+            "damage_dice": "6d6",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/44"
@@ -4544,8 +4886,7 @@
     "special_abilities": [
       {
         "name": "Reckless",
-        "desc": "At the start of its turn, the berserker can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn.",
-        "attack_bonus": 0
+        "desc": "At the start of its turn, the berserker can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
       }
     ],
     "actions": [
@@ -4553,8 +4894,13 @@
         "name": "Greataxe",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing damage.",
         "attack_bonus": 5,
-        "damage_dice": "1d12",
-        "damage_bonus": 3
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "1d12",
+            "damage_bonus": 3
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/45"
@@ -4589,29 +4935,37 @@
     "special_abilities": [
       {
         "name": "Keen Smell",
-        "desc": "The bear has advantage on Wisdom (Perception) checks that rely on smell.",
-        "attack_bonus": 0
+        "desc": "The bear has advantage on Wisdom (Perception) checks that rely on smell."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The bear makes two attacks: one with its bite and one with its claws.",
-        "attack_bonus": 0
+        "desc": "The bear makes two attacks: one with its bite and one with its claws."
       },
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 3,
-        "damage_dice": "1d6",
-        "damage_bonus": 2
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d6",
+            "damage_bonus": 2
+          }
+        ]
       },
       {
         "name": "Claws",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage.",
         "attack_bonus": 3,
-        "damage_dice": "2d4",
-        "damage_bonus": 2
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d4",
+            "damage_bonus": 2
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/46"
@@ -4653,8 +5007,7 @@
     "special_abilities": [
       {
         "name": "Amphibious",
-        "desc": "The dragon can breathe air and water.",
-        "attack_bonus": 0
+        "desc": "The dragon can breathe air and water."
       }
     ],
     "actions": [
@@ -4662,14 +5015,34 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 2 (1d4) acid damage.",
         "attack_bonus": 4,
-        "damage_dice": "1d10 + 1d4",
-        "damage_bonus": 2
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d10",
+            "damage_bonus": 2
+          },
+          {
+            "damage_type": "acid",
+            "damage_dice": "1d4",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Acid Breath (Recharge 5-6)",
         "desc": "The dragon exhales acid in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 22 (Sd8) acid damage on a failed save, or half as much damage on a successful one.",
-        "attack_bonus": 0,
-        "damage_dice": "5d8"
+        "dc": {
+          "dc_type": "DEX",
+          "dc_value": 11,
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": "acid",
+            "damage_dice": "5d8",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/47"
@@ -4729,19 +5102,22 @@
     "special_abilities": [
       {
         "name": "Amorphous",
-        "desc": "The pudding can move through a space as narrow as 1 inch wide without squeezing.",
-        "attack_bonus": 0
+        "desc": "The pudding can move through a space as narrow as 1 inch wide without squeezing."
       },
       {
         "name": "Corrosive Form",
         "desc": "A creature that touches the pudding or hits it with a melee attack while within 5 feet of it takes 4 (1d8) acid damage. Any nonmagical weapon made of metal or wood that hits the pudding corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits the pudding is destroyed after dealing damage. The pudding can eat through 2-inch-thick, nonmagical wood or metal in 1 round.",
-        "attack_bonus": 0,
-        "damage_dice": "1d8"
+        "damage": [
+          {
+            "damage_type": "acid",
+            "damage_dice": "1d8",
+            "damage_bonus": 8
+          }
+        ]
       },
       {
         "name": "Spider Climb",
-        "desc": "The pudding can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
-        "attack_bonus": 0
+        "desc": "The pudding can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
       }
     ],
     "actions": [
@@ -4749,15 +5125,24 @@
         "name": "Pseudopod",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 18 (4d8) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.",
         "attack_bonus": 5,
-        "damage_dice": "1d6 + 4d8",
-        "damage_bonus": 3
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "1d6",
+            "damage_bonus": 3
+          },
+          {
+            "damage_type": "acid",
+            "damage_dice": "4d8",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "reactions": [
       {
         "name": "Split",
-        "desc": "When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding.",
-        "attack_bonus": 0
+        "desc": "When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding."
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/48"
@@ -4793,8 +5178,7 @@
     "special_abilities": [
       {
         "name": "Keen Hearing and Smell",
-        "desc": "The dog has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
-        "attack_bonus": 0
+        "desc": "The dog has advantage on Wisdom (Perception) checks that rely on hearing or smell."
       }
     ],
     "actions": [
@@ -4802,13 +5186,17 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.",
         "attack_bonus": 3,
-        "damage_dice": "1d6",
-        "damage_bonus": 1
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d6",
+            "damage_bonus": 1
+          }
+        ]
       },
       {
         "name": "Teleport (Recharge 4-6)",
-        "desc": "The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 ft. to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack.",
-        "attack_bonus": 0
+        "desc": "The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 ft. to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack."
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/49"
@@ -4844,13 +5232,11 @@
     "special_abilities": [
       {
         "name": "Keen Sight",
-        "desc": "The hawk has advantage on Wisdom (Perception) checks that rely on sight.",
-        "attack_bonus": 0
+        "desc": "The hawk has advantage on Wisdom (Perception) checks that rely on sight."
       },
       {
         "name": "Pack Tactics",
-        "desc": "The hawk has advantage on an attack roll against a creature if at least one of the hawk's allies is within 5 ft. of the creature and the ally isn't incapacitated.",
-        "attack_bonus": 0
+        "desc": "The hawk has advantage on an attack roll against a creature if at least one of the hawk's allies is within 5 ft. of the creature and the ally isn't incapacitated."
       }
     ],
     "actions": [
@@ -4858,8 +5244,13 @@
         "name": "Beak",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
         "attack_bonus": 4,
-        "damage_dice": "1d4",
-        "damage_bonus": 2
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d4",
+            "damage_bonus": 2
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/50"
