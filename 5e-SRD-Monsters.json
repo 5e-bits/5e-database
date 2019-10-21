@@ -268,11 +268,26 @@
     "damage_resistances": ["necrotic"],
     "damage_immunities": ["lightning", "poison"],
     "condition_immunities": [
-      "charmed",
-      "exhaustion",
-      "frightened",
-      "paralyzed",
-      "poisoned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
     ],
     "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 22",
     "languages": "Common, Draconic",
@@ -874,7 +889,12 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 22",
     "languages": "Common, Draconic",
     "challenge_rating": 15,
@@ -1286,14 +1306,38 @@
     ],
     "damage_immunities": ["poison"],
     "condition_immunities": [
-      "exhaustion",
-      "grappled",
-      "paralyzed",
-      "petrified",
-      "poisoned",
-      "prone",
-      "restrained",
-      "unconscious"
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      },
+      {
+        "name": "Unconscious",
+        "url": "http://www.dnd5eapi.co/api/conditions/14"
+      }
     ],
     "senses": "darkvision 60 ft., passive Perception 10",
     "languages": "Auran",
@@ -1991,7 +2035,12 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 27",
     "languages": "Common, Draconic",
     "challenge_rating": 22,
@@ -2407,7 +2456,16 @@
       "psychic",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "condition_immunities": ["charmed", "frightened"],
+    "condition_immunities": [
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      }
+    ],
     "senses": "truesight 120 ft., passive Perception 20",
     "languages": "Common, Sphinx",
     "challenge_rating": 17,
@@ -2489,14 +2547,38 @@
     "damage_resistances": [],
     "damage_immunities": ["poison", "psychic"],
     "condition_immunities": [
-      "blinded",
-      "charmed",
-      "deafened",
-      "exhaustion",
-      "frightened",
-      "paralyzed",
-      "petrified",
-      "poisoned"
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
     ],
     "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 6",
     "languages": "",
@@ -2902,7 +2984,12 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": ["fire", "poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "passive Perception 11",
     "languages": "Ignan",
     "challenge_rating": 2,
@@ -3055,7 +3142,12 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
     "damage_immunities": ["fire", "poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "truesight 120 ft., passive Perception 13",
     "languages": "Abyssal, telepathy 120 ft.",
     "challenge_rating": 19,
@@ -3253,7 +3345,12 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
     "damage_immunities": ["fire", "poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 120 ft., passive Perception 18",
     "languages": "Infernal, telepathy 120 ft.",
     "challenge_rating": 5,
@@ -3425,7 +3522,12 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
     "damage_immunities": ["fire", "poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 120 ft., passive Perception 10",
     "languages": "Infernal, telepathy 120 ft.",
     "challenge_rating": 3,
@@ -3716,12 +3818,30 @@
     "damage_resistances": [],
     "damage_immunities": ["acid", "cold", "lightning", "slashing"],
     "condition_immunities": [
-      "blinded",
-      "charmed",
-      "deafened",
-      "exhaustion",
-      "frightened",
-      "prone"
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      }
     ],
     "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 8",
     "languages": "",
@@ -3996,7 +4116,12 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
     "damage_immunities": ["fire", "poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 120 ft., passive Perception 9",
     "languages": "Infernal, telepathy 120 ft.",
     "challenge_rating": 12,
@@ -4610,7 +4735,12 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
     "damage_immunities": ["fire", "poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 120 ft., passive Perception 11",
     "languages": "Infernal, telepathy 120 ft.",
     "challenge_rating": 8,
@@ -4742,7 +4872,12 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 14",
     "languages": "understands Deep Speech but can't speak",
     "challenge_rating": 4,
@@ -4807,12 +4942,30 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine"
     ],
     "condition_immunities": [
-      "charmed",
-      "exhaustion",
-      "frightened",
-      "paralyzed",
-      "petrified",
-      "poisoned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
     ],
     "senses": "darkvision 60 ft., passive Perception 9",
     "languages": "understands the languages of its creator but can't speak",
@@ -5683,7 +5836,20 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
     "damage_immunities": [],
-    "condition_immunities": ["charmed", "exhaustion", "frightened"],
+    "condition_immunities": [
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      }
+    ],
     "senses": "darkvision 120 ft., passive Perception 19",
     "languages": "all, telepathy 120 ft.",
     "challenge_rating": 10,
@@ -5873,7 +6039,12 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [],
-    "condition_immunities": ["charmed"],
+    "condition_immunities": [
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 11",
     "languages": "Common",
     "challenge_rating": 3,
@@ -6048,7 +6219,12 @@
     "damage_vulnerabilities": [],
     "damage_resistances": ["cold", "fire", "lightning"],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 9",
     "languages": "Abyssal, telepathy 60 ft. (works only with creatures that understand Abyssal)",
     "challenge_rating": 0.25,
@@ -6429,7 +6605,12 @@
     "damage_vulnerabilities": ["fire"],
     "damage_resistances": [],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 12",
     "languages": "Auran, Terran",
     "challenge_rating": 0.5,
@@ -6538,11 +6719,26 @@
     ],
     "damage_immunities": ["poison"],
     "condition_immunities": [
-      "exhaustion",
-      "paralyzed",
-      "petrified",
-      "poisoned",
-      "unconscious"
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      },
+      {
+        "name": "Unconscious",
+        "url": "http://www.dnd5eapi.co/api/conditions/14"
+      }
     ],
     "senses": "darkvision 60 ft., tremorsense 60 ft., passive Perception 10",
     "languages": "Terran",
@@ -6777,7 +6973,12 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
     "damage_immunities": ["fire", "poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "truesight 120 ft., passive Perception 12",
     "languages": "Infernal, telepathy 120 ft.",
     "challenge_rating": 12,
@@ -6997,14 +7198,38 @@
     ],
     "damage_immunities": ["fire", "poison"],
     "condition_immunities": [
-      "exhaustion",
-      "grappled",
-      "paralyzed",
-      "petrified",
-      "poisoned",
-      "prone",
-      "restrained",
-      "unconscious"
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      },
+      {
+        "name": "Unconscious",
+        "url": "http://www.dnd5eapi.co/api/conditions/14"
+      }
     ],
     "senses": "darkvision 60 ft., passive Perception 10",
     "languages": "Ignan",
@@ -7124,12 +7349,30 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine"
     ],
     "condition_immunities": [
-      "charmed",
-      "exhaustion",
-      "frightened",
-      "paralyzed",
-      "petrified",
-      "poisoned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
     ],
     "senses": "darkvision 60 ft., passive Perception 10",
     "languages": "understands the languages of its creator but can't speak",
@@ -7253,13 +7496,34 @@
     "damage_resistances": [],
     "damage_immunities": ["poison", "psychic"],
     "condition_immunities": [
-      "blinded",
-      "charmed",
-      "deafened",
-      "frightened",
-      "paralyzed",
-      "petrified",
-      "poisoned"
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
     ],
     "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 7",
     "languages": "",
@@ -7409,7 +7673,20 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine"
     ],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["exhaustion", "petrified", "poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 10",
     "languages": "Terran",
     "challenge_rating": 2,
@@ -7466,12 +7743,30 @@
     "damage_resistances": [],
     "damage_immunities": [],
     "condition_immunities": [
-      "blinded",
-      "charmed",
-      "deafened",
-      "exhaustion",
-      "frightened",
-      "prone"
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      }
     ],
     "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 8",
     "languages": "",
@@ -7525,7 +7820,12 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": ["necrotic"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 10",
     "languages": "Common",
     "challenge_rating": 2,
@@ -7590,15 +7890,42 @@
     ],
     "damage_immunities": ["cold", "necrotic", "poison"],
     "condition_immunities": [
-      "charmed",
-      "exhaustion",
-      "frightened",
-      "grappled",
-      "paralyzed",
-      "petrified",
-      "poisoned",
-      "prone",
-      "restrained"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      }
     ],
     "senses": "darkvision 60 ft., passive Perception 11",
     "languages": "any languages it knew in life",
@@ -7663,7 +7990,12 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 10",
     "languages": "Common",
     "challenge_rating": 1,
@@ -9172,7 +9504,12 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [],
-    "condition_immunities": ["prone"],
+    "condition_immunities": [
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 10",
     "languages": "",
     "challenge_rating": 2,
@@ -9239,7 +9576,12 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "truesight 120 ft., passive Perception 13",
     "languages": "Abyssal, telepathy 120 ft.",
     "challenge_rating": 9,
@@ -9597,7 +9939,12 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [],
-    "condition_immunities": ["petrified"],
+    "condition_immunities": [
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 14",
     "languages": "",
     "challenge_rating": 5,
@@ -9656,12 +10003,30 @@
     "damage_resistances": ["acid", "cold", "fire"],
     "damage_immunities": [],
     "condition_immunities": [
-      "blinded",
-      "charmed",
-      "deafened",
-      "exhaustion",
-      "frightened",
-      "prone"
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      }
     ],
     "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 8",
     "languages": "",
@@ -9724,7 +10089,12 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 14",
     "languages": "Draconic",
     "challenge_rating": 2,
@@ -9977,7 +10347,12 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [],
-    "condition_immunities": ["blinded"],
+    "condition_immunities": [
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      }
+    ],
     "senses": "blindsight 30 ft. or 10 ft. while deafened (blind beyond this radius), passive Perception 13",
     "languages": "Undercommon",
     "challenge_rating": 0.25,
@@ -10074,7 +10449,16 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["charmed", "poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 14",
     "languages": "Celestial, Common",
     "challenge_rating": 10,
@@ -10136,7 +10520,16 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
     "damage_immunities": ["psychic"],
-    "condition_immunities": ["charmed", "frightened"],
+    "condition_immunities": [
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      }
+    ],
     "senses": "truesight 120 ft., passive Perception 18",
     "languages": "Common, Sphinx",
     "challenge_rating": 11,
@@ -10438,7 +10831,12 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 120 ft., passive Perception 11",
     "languages": "Abyssal, telepathy 120 ft.",
     "challenge_rating": 8,
@@ -10665,7 +11063,16 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["charmed", "poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 10",
     "languages": "understands the languages of its creator but can't speak",
     "challenge_rating": 0,
@@ -10716,7 +11123,12 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
     "damage_immunities": ["fire", "poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 120 ft., passive Perception 13",
     "languages": "Infernal, telepathy 120 ft.",
     "challenge_rating": 11,
@@ -10949,7 +11361,12 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
     "damage_immunities": ["fire", "poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 12",
     "languages": "Infernal, telepathy 120 ft.",
     "challenge_rating": 14,
@@ -11025,7 +11442,12 @@
     "damage_vulnerabilities": ["bludgeoning", "fire"],
     "damage_resistances": [],
     "damage_immunities": ["cold", "poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 12",
     "languages": "Aquan, Auran",
     "challenge_rating": 0.5,
@@ -11098,7 +11520,12 @@
       "bludgeoning, piercing, and slashing from nonmagical/nonsilver weapons"
     ],
     "damage_immunities": ["fire", "poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 120 ft., passive Perception 11",
     "languages": "Infernal, Common",
     "challenge_rating": 1,
@@ -11169,14 +11596,38 @@
     ],
     "damage_immunities": ["poison"],
     "condition_immunities": [
-      "exhaustion",
-      "grappled",
-      "paralyzed",
-      "petrified",
-      "poisoned",
-      "prone",
-      "restrained",
-      "unconscious"
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      },
+      {
+        "name": "Unconscious",
+        "url": "http://www.dnd5eapi.co/api/conditions/14"
+      }
     ],
     "senses": "darkvision 60 ft., passive Perception 18",
     "languages": "Auran, understands Common but doesn't speak it",
@@ -11237,12 +11688,30 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine"
     ],
     "condition_immunities": [
-      "charmed",
-      "exhaustion",
-      "frightened",
-      "paralyzed",
-      "petrified",
-      "poisoned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
     ],
     "senses": "darkvision 120 ft., passive Perception 10",
     "languages": "understands the languages of its creator but can't speak",
@@ -11559,7 +12028,16 @@
       "lightning",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "condition_immunities": ["frightened", "paralyzed"],
+    "condition_immunities": [
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      }
+    ],
     "senses": "truesight 120 ft., passive Perception 14",
     "languages": "understands Abyssal, Celestial, Infernal, and Primordial but can't speak, telepathy 120 ft.",
     "challenge_rating": 23,
@@ -11717,7 +12195,20 @@
     "damage_vulnerabilities": [],
     "damage_resistances": ["cold"],
     "damage_immunities": ["fire", "poison"],
-    "condition_immunities": ["charmed", "frightened", "poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 120 ft., passive Perception 10",
     "languages": "understands infernal but can't speak",
     "challenge_rating": 0,
@@ -11776,11 +12267,26 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
     "condition_immunities": [
-      "charmed",
-      "exhaustion",
-      "frightened",
-      "paralyzed",
-      "poisoned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
     ],
     "senses": "truesight 120 ft., passive Perception 19",
     "languages": "Common plus up to five other languages",
@@ -12091,7 +12597,12 @@
     "damage_vulnerabilities": ["cold"],
     "damage_resistances": [],
     "damage_immunities": ["fire", "poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 10",
     "languages": "Ignan, Terran",
     "challenge_rating": 0.5,
@@ -12331,7 +12842,12 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "truesight 120 ft., passive Perception 13",
     "languages": "Abyssal, telepathy 120 ft.",
     "challenge_rating": 16,
@@ -12635,7 +13151,12 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": ["acid"],
-    "condition_immunities": ["prone"],
+    "condition_immunities": [
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 11",
     "languages": "",
     "challenge_rating": 2,
@@ -12764,7 +13285,16 @@
     "damage_vulnerabilities": ["bludgeoning"],
     "damage_resistances": [],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["exhaustion", "poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 9",
     "languages": "understands Abyssal but can't speak",
     "challenge_rating": 2,
@@ -12869,11 +13399,26 @@
     ],
     "damage_immunities": ["necrotic", "poison"],
     "condition_immunities": [
-      "charmed",
-      "exhaustion",
-      "frightened",
-      "paralyzed",
-      "poisoned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
     ],
     "senses": "darkvision 60 ft., passive Perception 10",
     "languages": "the languages it knew in life",
@@ -12932,11 +13477,26 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
     "condition_immunities": [
-      "charmed",
-      "exhaustion",
-      "frightened",
-      "paralyzed",
-      "poisoned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
     ],
     "senses": "darkvision 60 ft., passive Perception 14",
     "languages": "the languages it knew in life",
@@ -13038,7 +13598,12 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "truesight 120 ft., passive Perception 11",
     "languages": "Abyssal, telepathy 120 ft.",
     "challenge_rating": 13,
@@ -13117,7 +13682,12 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
     "damage_immunities": [],
-    "condition_immunities": ["charmed"],
+    "condition_immunities": [
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      }
+    ],
     "senses": "darkvision 120 ft., passive Perception 16",
     "languages": "Abyssal, Common, Infernal, Primordial",
     "challenge_rating": 5,
@@ -13305,12 +13875,30 @@
     "damage_resistances": ["acid"],
     "damage_immunities": ["lightning", "slashing"],
     "condition_immunities": [
-      "blinded",
-      "charmed",
-      "deafened",
-      "exhaustion",
-      "frightened",
-      "prone"
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      }
     ],
     "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 8",
     "languages": "",
@@ -13473,7 +14061,12 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 8",
     "languages": "understands Common and Giant but can't speak",
     "challenge_rating": 2,
@@ -13982,7 +14575,12 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
     "damage_immunities": ["fire", "poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "truesight 120 ft., passive Perception 14",
     "languages": "Infernal, telepathy 120 ft.",
     "challenge_rating": 20,
@@ -14075,7 +14673,20 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
     "damage_immunities": [],
-    "condition_immunities": ["charmed", "exhaustion", "frightened"],
+    "condition_immunities": [
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      }
+    ],
     "senses": "truesight 120 ft., passive Perception 21",
     "languages": "all, telepathy 120 ft.",
     "challenge_rating": 16,
@@ -14509,7 +15120,12 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 120 ft., passive Perception 10",
     "languages": "Abyssal, Common",
     "challenge_rating": 1,
@@ -15138,13 +15754,34 @@
     "damage_resistances": [],
     "damage_immunities": ["poison", "psychic"],
     "condition_immunities": [
-      "blinded",
-      "charmed",
-      "deafened",
-      "frightened",
-      "paralyzed",
-      "petrified",
-      "poisoned"
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
     ],
     "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 6",
     "languages": "",
@@ -15731,14 +16368,38 @@
     ],
     "damage_immunities": ["necrotic", "poison"],
     "condition_immunities": [
-      "exhaustion",
-      "frightened",
-      "grappled",
-      "paralyzed",
-      "petrified",
-      "poisoned",
-      "prone",
-      "restrained"
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      }
     ],
     "senses": "darkvision 60 ft., passive Perception 10",
     "languages": "",
@@ -15795,7 +16456,20 @@
     "damage_vulnerabilities": [],
     "damage_resistances": ["cold", "fire"],
     "damage_immunities": ["lightning"],
-    "condition_immunities": ["blinded", "deafened", "exhaustion"],
+    "condition_immunities": [
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      }
+    ],
     "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 10",
     "languages": "",
     "challenge_rating": 5,
@@ -15850,11 +16524,26 @@
     "damage_resistances": [],
     "damage_immunities": ["poison"],
     "condition_immunities": [
-      "charmed",
-      "exhaustion",
-      "frightened",
-      "paralyzed",
-      "poisoned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
     ],
     "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 10",
     "languages": "understands commands given in any language but can't speak",
@@ -15921,7 +16610,20 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [],
-    "condition_immunities": ["blinded", "deafened", "frightened"],
+    "condition_immunities": [
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      }
+    ],
     "senses": "blindsight 30 ft. (blind beyond this radius), passive Perception 6",
     "languages": "",
     "challenge_rating": 0,
@@ -16013,7 +16715,12 @@
     "damage_vulnerabilities": ["bludgeoning"],
     "damage_resistances": [],
     "damage_immunities": [],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 9",
     "languages": "understands all languages it spoke in life but can't speak",
     "challenge_rating": 0.25,
@@ -16065,7 +16772,24 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
     "damage_immunities": ["necrotic", "poison"],
-    "condition_immunities": ["charmed", "exhaustion", "frightened", "poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "truesight 120 ft., passive Perception 24",
     "languages": "all, telepathy 120 ft.",
     "challenge_rating": 21,
@@ -16173,15 +16897,42 @@
     ],
     "damage_immunities": ["necrotic", "poison"],
     "condition_immunities": [
-      "charmed",
-      "exhaustion",
-      "grappled",
-      "paralyzed",
-      "petrified",
-      "poisoned",
-      "prone",
-      "restrained",
-      "unconscious"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      },
+      {
+        "name": "Unconscious",
+        "url": "http://www.dnd5eapi.co/api/conditions/14"
+      }
     ],
     "senses": "darkvision 60 ft., passive Perception 10",
     "languages": "understands all languages it knew in life but can't speak",
@@ -16289,7 +17040,16 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["charmed", "poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 12",
     "languages": "Abyssal, Common",
     "challenge_rating": 8,
@@ -16462,7 +17222,12 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": ["fire", "poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 10",
     "languages": "Aquan, Ignan",
     "challenge_rating": 0.25,
@@ -16632,12 +17397,30 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine"
     ],
     "condition_immunities": [
-      "charmed",
-      "exhaustion",
-      "frightened",
-      "paralyzed",
-      "petrified",
-      "poisoned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
     ],
     "senses": "darkvision 120 ft., passive Perception 10",
     "languages": "understands the languages of its creator but can't speak",
@@ -16858,14 +17641,38 @@
     "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
-      "charmed",
-      "frightened",
-      "grappled",
-      "paralyzed",
-      "petrified",
-      "prone",
-      "restrained",
-      "stunned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      },
+      {
+        "name": "Stunned",
+        "url": "http://www.dnd5eapi.co/api/conditions/13"
+      }
     ],
     "senses": "blindsight 60 ft., passive Perception 11",
     "languages": "",
@@ -16922,14 +17729,38 @@
     "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
-      "charmed",
-      "frightened",
-      "grappled",
-      "paralyzed",
-      "petrified",
-      "prone",
-      "restrained",
-      "stunned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      },
+      {
+        "name": "Stunned",
+        "url": "http://www.dnd5eapi.co/api/conditions/13"
+      }
     ],
     "senses": "blindsight 10 ft., passive Perception 8",
     "languages": "",
@@ -16975,14 +17806,38 @@
     "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
-      "charmed",
-      "frightened",
-      "grappled",
-      "paralyzed",
-      "petrified",
-      "prone",
-      "restrained",
-      "stunned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      },
+      {
+        "name": "Stunned",
+        "url": "http://www.dnd5eapi.co/api/conditions/13"
+      }
     ],
     "senses": "blindsight 10 ft., passive Perception 8",
     "languages": "",
@@ -17028,14 +17883,38 @@
     "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
-      "charmed",
-      "frightened",
-      "grappled",
-      "paralyzed",
-      "petrified",
-      "prone",
-      "restrained",
-      "stunned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      },
+      {
+        "name": "Stunned",
+        "url": "http://www.dnd5eapi.co/api/conditions/13"
+      }
     ],
     "senses": "blindsight 10 ft., passive Perception 8",
     "languages": "",
@@ -17081,14 +17960,38 @@
     "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
-      "charmed",
-      "frightened",
-      "grappled",
-      "paralyzed",
-      "petrified",
-      "prone",
-      "restrained",
-      "stunned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      },
+      {
+        "name": "Stunned",
+        "url": "http://www.dnd5eapi.co/api/conditions/13"
+      }
     ],
     "senses": "blindsight 10 ft., passive Perception 10",
     "languages": "",
@@ -17134,14 +18037,38 @@
     "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
-      "charmed",
-      "frightened",
-      "grappled",
-      "paralyzed",
-      "petrified",
-      "prone",
-      "restrained",
-      "stunned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      },
+      {
+        "name": "Stunned",
+        "url": "http://www.dnd5eapi.co/api/conditions/13"
+      }
     ],
     "senses": "darkvision 60 ft., passive Perception 8",
     "languages": "",
@@ -17196,14 +18123,38 @@
     "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
-      "charmed",
-      "frightened",
-      "grappled",
-      "paralyzed",
-      "petrified",
-      "prone",
-      "restrained",
-      "stunned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      },
+      {
+        "name": "Stunned",
+        "url": "http://www.dnd5eapi.co/api/conditions/13"
+      }
     ],
     "senses": "darkvision 30 ft., passive Perception 10",
     "languages": "",
@@ -17254,14 +18205,38 @@
     "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
-      "charmed",
-      "frightened",
-      "grappled",
-      "paralyzed",
-      "petrified",
-      "prone",
-      "restrained",
-      "stunned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      },
+      {
+        "name": "Stunned",
+        "url": "http://www.dnd5eapi.co/api/conditions/13"
+      }
     ],
     "senses": "passive Perception 15",
     "languages": "",
@@ -17307,13 +18282,34 @@
     "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
-      "charmed",
-      "frightened",
-      "paralyzed",
-      "petrified",
-      "prone",
-      "restrained",
-      "stunned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      },
+      {
+        "name": "Stunned",
+        "url": "http://www.dnd5eapi.co/api/conditions/13"
+      }
     ],
     "senses": "blindsight 10 ft., passive Perception 8",
     "languages": "",
@@ -17374,14 +18370,38 @@
     "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
-      "charmed",
-      "frightened",
-      "grappled",
-      "paralyzed",
-      "petrified",
-      "prone",
-      "restrained",
-      "stunned"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      },
+      {
+        "name": "Stunned",
+        "url": "http://www.dnd5eapi.co/api/conditions/13"
+      }
     ],
     "senses": "blindsight 10 ft., passive Perception 8",
     "languages": "",
@@ -17432,7 +18452,24 @@
       "poison",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "condition_immunities": ["charmed", "frightened", "paralyzed", "poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "blindsight 120 ft., passive Perception 10",
     "languages": "",
     "challenge_rating": 30,
@@ -17936,7 +18973,20 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["charmed", "paralyzed", "poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 13",
     "languages": "Celestial, Elvish, Sylvan, telepathy 60 ft.",
     "challenge_rating": 5,
@@ -18280,7 +19330,20 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [],
-    "condition_immunities": ["blinded", "deafened", "frightened"],
+    "condition_immunities": [
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Blinded",
+        "url": "http://www.dnd5eapi.co/api/conditions/1"
+      },
+      {
+        "name": "Frightened",
+        "url": "http://www.dnd5eapi.co/api/conditions/4"
+      }
+    ],
     "senses": "blindsight 30 ft. (blind beyond this radius), passive Perception 6",
     "languages": "",
     "challenge_rating": 0.25,
@@ -18337,7 +19400,12 @@
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 120 ft., passive Perception 11",
     "languages": "Abyssal, telepathy 120 ft.",
     "challenge_rating": 6,
@@ -18502,7 +19570,16 @@
     "damage_vulnerabilities": ["bludgeoning"],
     "damage_resistances": [],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["exhaustion", "poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 9",
     "languages": "",
     "challenge_rating": 0.5,
@@ -18544,14 +19621,38 @@
     ],
     "damage_immunities": ["poison"],
     "condition_immunities": [
-      "exhaustion",
-      "grappled",
-      "paralyzed",
-      "petrified",
-      "poisoned",
-      "prone",
-      "restrained",
-      "unconscious"
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      },
+      {
+        "name": "Unconscious",
+        "url": "http://www.dnd5eapi.co/api/conditions/14"
+      }
     ],
     "senses": "darkvision 60 ft., passive Perception 10",
     "languages": "Aquan",
@@ -19121,7 +20222,12 @@
       "necrotic",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 13",
     "languages": "the languages it knew in life",
     "challenge_rating": 3,
@@ -19194,13 +20300,34 @@
     ],
     "damage_immunities": ["lightning", "poison"],
     "condition_immunities": [
-      "exhaustion",
-      "grappled",
-      "paralyzed",
-      "poisoned",
-      "prone",
-      "restrained",
-      "unconscious"
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      },
+      {
+        "name": "Unconscious",
+        "url": "http://www.dnd5eapi.co/api/conditions/14"
+      }
     ],
     "senses": "darkvision 120 ft., passive Perception 12",
     "languages": "the languages it knew in life",
@@ -19432,14 +20559,38 @@
     ],
     "damage_immunities": ["necrotic", "poison"],
     "condition_immunities": [
-      "charmed",
-      "exhaustion",
-      "grappled",
-      "paralyzed",
-      "petrified",
-      "poisoned",
-      "prone",
-      "restrained"
+      {
+        "name": "Charmed",
+        "url": "http://www.dnd5eapi.co/api/conditions/2"
+      },
+      {
+        "name": "Exhaustion",
+        "url": "http://www.dnd5eapi.co/api/conditions/15"
+      },
+      {
+        "name": "Grappled",
+        "url": "http://www.dnd5eapi.co/api/conditions/5"
+      },
+      {
+        "name": "Paralyzed",
+        "url": "http://www.dnd5eapi.co/api/conditions/8"
+      },
+      {
+        "name": "Petrified",
+        "url": "http://www.dnd5eapi.co/api/conditions/9"
+      },
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      },
+      {
+        "name": "Prone",
+        "url": "http://www.dnd5eapi.co/api/conditions/11"
+      },
+      {
+        "name": "Restrained",
+        "url": "http://www.dnd5eapi.co/api/conditions/12"
+      }
     ],
     "senses": "darkvision 60 ft., passive Perception 12",
     "languages": "the languages it knew in life",
@@ -20036,7 +21187,12 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": ["poison"],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "blindsight 30 ft., darkvision 120 ft., passive Perception 17",
     "languages": "Common, Draconic",
     "challenge_rating": 8,
@@ -20297,7 +21453,12 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [],
-    "condition_immunities": ["poisoned"],
+    "condition_immunities": [
+      {
+        "name": "Poisoned",
+        "url": "http://www.dnd5eapi.co/api/conditions/10"
+      }
+    ],
     "senses": "darkvision 60 ft., passive Perception 8",
     "languages": "understands all languages it spoke in life but can't speak",
     "challenge_rating": 0.25,
