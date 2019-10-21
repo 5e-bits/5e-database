@@ -7574,13 +7574,38 @@
         "name": "Scimitar",
         "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 3 (1d6) lightning or thunder damage (djinni's choice).",
         "attack_bonus": 9,
-        "damage_dice": "2d6 + 1d6",
-        "damage_bonus": 5
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 5
+          },
+          {
+            "choose": 1,
+            "type": "damage",
+            "from": [
+              {
+                "damage_type": "lightning",
+                "damage_dice": "1d6",
+                "damage_bonus": 0
+              },
+              {
+                "damage_type": "thunder",
+                "damage_dice": "1d6",
+                "damage_bonus": 0
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Create Whirlwind",
         "desc": "A 5-foot-radius, 30-foot-tall cylinder of swirling air magically forms on a point the djinni can see within 120 feet of it. The whirlwind lasts as long as the djinni maintains concentration (as if concentrating on a spell). Any creature but the djinni that enters the whirlwind must succeed on a DC 18 Strength saving throw or be restrained by it. The djinni can move the whirlwind up to 60 feet as an action, and creatures restrained by the whirlwind move with it. The whirlwind ends if the djinni loses sight of it.\nA creature can use its action to free a creature restrained by the whirlwind, including itself, by succeeding on a DC 18 Strength check. If the check succeeds, the creature is no longer restrained and moves to the nearest space outside the whirlwind.",
-        "attack_bonus": 0
+        "dc": {
+          "dc_type": "STR",
+          "dc_value": 18,
+          "success_type": "none"
+        }
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/85"
@@ -7621,38 +7646,37 @@
     "special_abilities": [
       {
         "name": "Shapechanger",
-        "desc": "The doppelganger can use its action to polymorph into a Small or Medium humanoid it has seen, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
-        "attack_bonus": 0
+        "desc": "The doppelganger can use its action to polymorph into a Small or Medium humanoid it has seen, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
       },
       {
         "name": "Ambusher",
-        "desc": "The doppelganger has advantage on attack rolls against any creature it has surprised.",
-        "attack_bonus": 0
+        "desc": "The doppelganger has advantage on attack rolls against any creature it has surprised."
       },
       {
         "name": "Surprise Attack",
-        "desc": "If the doppelganger surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 (3d6) damage from the attack.",
-        "attack_bonus": 0,
-        "damage_dice": "3d6"
+        "desc": "If the doppelganger surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 (3d6) damage from the attack."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The doppelganger makes two melee attacks.",
-        "attack_bonus": 0
+        "desc": "The doppelganger makes two melee attacks."
       },
       {
         "name": "Slam",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage.",
         "attack_bonus": 6,
-        "damage_dice": "1d6",
-        "damage_bonus": 4
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "1d6",
+            "damage_bonus": 4
+          }
+        ]
       },
       {
         "name": "Read Thoughts",
-        "desc": "The doppelganger magically reads the surface thoughts of one creature within 60 ft. of it. The effect can penetrate barriers, but 3 ft. of wood or dirt, 2 ft. of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target.",
-        "attack_bonus": 0
+        "desc": "The doppelganger magically reads the surface thoughts of one creature within 60 ft. of it. The effect can penetrate barriers, but 3 ft. of wood or dirt, 2 ft. of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target."
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/86"
@@ -7688,8 +7712,13 @@
         "name": "Hooves",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage.",
         "attack_bonus": 6,
-        "damage_dice": "2d4",
-        "damage_bonus": 4
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d4",
+            "damage_bonus": 4
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/87"
@@ -7727,42 +7756,65 @@
     "special_abilities": [
       {
         "name": "Amphibious",
-        "desc": "The dragon turtle can breathe air and water.",
-        "attack_bonus": 0
+        "desc": "The dragon turtle can breathe air and water."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon turtle makes three attacks: one with its bite and two with its claws. It can make one tail attack in place of its two claw attacks.",
-        "attack_bonus": 0
+        "desc": "The dragon turtle makes three attacks: one with its bite and two with its claws. It can make one tail attack in place of its two claw attacks."
       },
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 26 (3d12 + 7) piercing damage.",
         "attack_bonus": 13,
-        "damage_dice": "3d12",
-        "damage_bonus": 7
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "3d12",
+            "damage_bonus": 7
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 16 (2d8 + 7) slashing damage.",
         "attack_bonus": 13,
-        "damage_dice": "2d8",
-        "damage_bonus": 7
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d8",
+            "damage_bonus": 7
+          }
+        ]
       },
       {
         "name": "Tail",
         "desc": "Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 26 (3d12 + 7) bludgeoning damage. If the target is a creature, it must succeed on a DC 20 Strength saving throw or be pushed up to 10 feet away from the dragon turtle and knocked prone.",
         "attack_bonus": 13,
-        "damage_dice": "3d12",
-        "damage_bonus": 7
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "3d12",
+            "damage_bonus": 7
+          }
+        ]
       },
       {
         "name": "Steam Breath (Recharge 5-6)",
         "desc": "The dragon turtle exhales scalding steam in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 52 (15d6) fire damage on a failed save, or half as much damage on a successful one. Being underwater doesn't grant resistance against this damage.",
-        "attack_bonus": 0,
-        "damage_dice": "15d6"
+        "dc": {
+          "dc_type": "CON",
+          "dc_value": 18,
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": "fire",
+            "damage_dice": "15d6",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/88"
@@ -7801,25 +7853,40 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dretch makes two attacks: one with its bite and one with its claws.",
-        "attack_bonus": 0
+        "desc": "The dretch makes two attacks: one with its bite and one with its claws."
       },
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) piercing damage.",
         "attack_bonus": 2,
-        "damage_dice": "1d6"
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d6",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Claws",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 5 (2d4) slashing damage.",
         "attack_bonus": 2,
-        "damage_dice": "2d4"
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d4",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Fetid Cloud (1/Day)",
         "desc": "A 10-foot radius of disgusting green gas extends out from the dretch. The gas spreads around corners, and its area is lightly obscured. It lasts for 1 minute or until a strong wind disperses it. Any creature that starts its turn in that area must succeed on a DC 11 Constitution saving throw or be poisoned until the start of its next turn. While poisoned in this way, the target can take either an action or a bonus action on its turn, not both, and can't take reactions.",
-        "attack_bonus": 0
+        "dc": {
+          "dc_type": "CON",
+          "dc_value": 11,
+          "success_type": "none"
+        }
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/89"
@@ -7856,56 +7923,86 @@
     "special_abilities": [
       {
         "name": "Fey Ancestry",
-        "desc": "The drider has advantage on saving throws against being charmed, and magic can't put the drider to sleep.",
-        "attack_bonus": 0
+        "desc": "The drider has advantage on saving throws against being charmed, and magic can't put the drider to sleep."
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "The drider's innate spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:\nAt will: dancing lights\n1/day each: darkness, faerie fire",
-        "attack_bonus": 0
+        "desc": "The drider's innate spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:\nAt will: dancing lights\n1/day each: darkness, faerie fire"
       },
       {
         "name": "Spider Climb",
-        "desc": "The drider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
-        "attack_bonus": 0
+        "desc": "The drider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
       },
       {
         "name": "Sunlight Sensitivity",
-        "desc": "While in sunlight, the drider has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.",
-        "attack_bonus": 0
+        "desc": "While in sunlight, the drider has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
       },
       {
         "name": "Web Walker",
-        "desc": "The drider ignores movement restrictions caused by webbing.",
-        "attack_bonus": 0
+        "desc": "The drider ignores movement restrictions caused by webbing."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The drider makes three attacks, either with its longsword or its longbow. It can replace one of those attacks with a bite attack.",
-        "attack_bonus": 0
+        "desc": "The drider makes three attacks, either with its longsword or its longbow. It can replace one of those attacks with a bite attack."
       },
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 2 (1d4) piercing damage plus 9 (2d8) poison damage.",
         "attack_bonus": 6,
-        "damage_dice": "1d4 + 2d8",
-        "damage_bonus": 2
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d4",
+            "damage_bonus": 0
+          },
+          {
+            "damage_type": "poison",
+            "damage_dice": "2d8",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Longsword",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands.",
         "attack_bonus": 6,
-        "damage_dice": "1d8",
-        "damage_bonus": 3
+        "damage": [
+          {
+            "choose": 1,
+            "type": "damage",
+            "from": [
+              {
+                "damage_type": "slashing",
+                "damage_dice": "1d8",
+                "damage_bonus": 3
+              },
+              {
+                "damage_type": "slashing",
+                "damage_dice": "1d10",
+                "damage_bonus": 3
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Longbow",
         "desc": "Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 4 (1d8) poison damage.",
         "attack_bonus": 6,
-        "damage_dice": "1d8",
-        "damage_bonus": 3
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d8",
+            "damage_bonus": 3
+          },
+          {
+            "damage_type": "poison",
+            "damage_dice": "1d8",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/90"
@@ -7941,18 +8038,15 @@
     "special_abilities": [
       {
         "name": "Fey Ancestry",
-        "desc": "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep.",
-        "attack_bonus": 0
+        "desc": "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "The drow's spellcasting ability is Charisma (spell save DC 11). It can innately cast the following spells, requiring no material components:\nAt will: dancing lights\n1/day each: darkness, faerie fire",
-        "attack_bonus": 0
+        "desc": "The drow's spellcasting ability is Charisma (spell save DC 11). It can innately cast the following spells, requiring no material components:\nAt will: dancing lights\n1/day each: darkness, faerie fire"
       },
       {
         "name": "Sunlight Sensitivity",
-        "desc": "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.",
-        "attack_bonus": 0
+        "desc": "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
       }
     ],
     "actions": [
@@ -7960,15 +8054,25 @@
         "name": "Shortsword",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 4,
-        "damage_dice": "1d6",
-        "damage_bonus": 2
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "1d6",
+            "damage_bonus": 2
+          }
+        ]
       },
       {
         "name": "Hand Crossbow",
         "desc": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake.",
         "attack_bonus": 4,
-        "damage_dice": "1d6",
-        "damage_bonus": 2
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d6",
+            "damage_bonus": 2
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/91"
@@ -8005,8 +8109,7 @@
     "special_abilities": [
       {
         "name": "Spellcasting",
-        "desc": "The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared:\n\n- Cantrips (at will): druidcraft, produce flame, shillelagh\n- 1st level (4 slots): entangle, longstrider, speak with animals, thunderwave\n- 2nd level (3 slots): animal messenger, barkskin",
-        "attack_bonus": 0
+        "desc": "The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared:\n\n- Cantrips (at will): druidcraft, produce flame, shillelagh\n- 1st level (4 slots): entangle, longstrider, speak with animals, thunderwave\n- 2nd level (3 slots): animal messenger, barkskin"
       }
     ],
     "actions": [
@@ -8014,7 +8117,24 @@
         "name": "Quarterstaff",
         "desc": "Melee Weapon Attack: +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh or if wielded with two hands.",
         "attack_bonus": 2,
-        "damage_dice": "1d6"
+        "damage": [
+          {
+            "choose": 1,
+            "type": "damage",
+            "from": [
+              {
+                "damage_type": "bludgeoning",
+                "damage_dice": "1d6",
+                "damage_bonus": 0
+              },
+              {
+                "damage_type": "bludgeoning",
+                "damage_dice": "1d8",
+                "damage_bonus": 2
+              }
+            ]
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/92"
@@ -8050,23 +8170,19 @@
     "special_abilities": [
       {
         "name": "Innate Spellcasting",
-        "desc": "The dryad's innate spellcasting ability is Charisma (spell save DC 14). The dryad can innately cast the following spells, requiring no material components:\n\nAt will: druidcraft\n3/day each: entangle, goodberry\n1/day each: barkskin, pass without trace, shillelagh",
-        "attack_bonus": 0
+        "desc": "The dryad's innate spellcasting ability is Charisma (spell save DC 14). The dryad can innately cast the following spells, requiring no material components:\n\nAt will: druidcraft\n3/day each: entangle, goodberry\n1/day each: barkskin, pass without trace, shillelagh"
       },
       {
         "name": "Magic Resistance",
-        "desc": "The dryad has advantage on saving throws against spells and other magical effects.",
-        "attack_bonus": 0
+        "desc": "The dryad has advantage on saving throws against spells and other magical effects."
       },
       {
         "name": "Speak with Beasts and Plants",
-        "desc": "The dryad can communicate with beasts and plants as if they shared a language.",
-        "attack_bonus": 0
+        "desc": "The dryad can communicate with beasts and plants as if they shared a language."
       },
       {
         "name": "Tree Stride",
-        "desc": "Once on her turn, the dryad can use 10 ft. of her movement to step magically into one living tree within her reach and emerge from a second living tree within 60 ft. of the first tree, appearing in an unoccupied space within 5 ft. of the second tree. Both trees must be large or bigger.",
-        "attack_bonus": 0
+        "desc": "Once on her turn, the dryad can use 10 ft. of her movement to step magically into one living tree within her reach and emerge from a second living tree within 60 ft. of the first tree, appearing in an unoccupied space within 5 ft. of the second tree. Both trees must be large or bigger."
       }
     ],
     "actions": [
@@ -8074,12 +8190,22 @@
         "name": "Club",
         "desc": "Melee Weapon Attack: +2 to hit (+6 to hit with shillelagh), reach 5 ft., one target. Hit: 2 (1 d4) bludgeoning damage, or 8 (1d8 + 4) bludgeoning damage with shillelagh.",
         "attack_bonus": 2,
-        "damage_dice": "1d4"
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "1d4",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Fey Charm",
         "desc": "The dryad targets one humanoid or beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a DC 14 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn't under the dryad's control, it takes the dryad's requests or actions in the most favorable way it can.\nEach time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the dryad's Fey Charm for the next 24 hours.\nThe dryad can have no more than one humanoid and up to three beasts charmed at a time.",
-        "attack_bonus": 0
+        "dc": {
+          "dc_type": "WIS",
+          "dc_value": 14,
+          "success_type": "none"
+        }
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/93"
@@ -8113,39 +8239,45 @@
     "special_abilities": [
       {
         "name": "Duergar Resilience",
-        "desc": "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed.",
-        "attack_bonus": 0
+        "desc": "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
       },
       {
         "name": "Sunlight Sensitivity",
-        "desc": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.",
-        "attack_bonus": 0
+        "desc": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
       }
     ],
     "actions": [
       {
         "name": "Enlarge (Recharges after a Short or Long Rest)",
-        "desc": "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available.",
-        "attack_bonus": 0
+        "desc": "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available."
       },
       {
         "name": "War Pick",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage, or 11 (2d8 + 2) piercing damage while enlarged.",
         "attack_bonus": 4,
-        "damage_dice": "1d8",
-        "damage_bonus": 2
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "1d8",
+            "damage_bonus": 2
+          }
+        ]
       },
       {
         "name": "Javelin",
         "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage, or 9 (2d6 + 2) piercing damage while enlarged.",
         "attack_bonus": 4,
-        "damage_dice": "1d6",
-        "damage_bonus": 2
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "1d6",
+            "damage_bonus": 2
+          }
+        ]
       },
       {
         "name": "Invisibility (Recharges after a Short or Long Rest)",
-        "desc": "The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it .",
-        "attack_bonus": 0
+        "desc": "The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it ."
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/94"
@@ -8188,12 +8320,15 @@
       {
         "name": "Death Burst",
         "desc": "When the mephit dies, it explodes in a burst of dust. Each creature within 5 ft. of it must then succeed on a DC 10 Constitution saving throw or be blinded for 1 minute. A blinded creature can repeat the saving throw on each of its turns, ending the effect on itself on a success.",
-        "attack_bonus": 0
+        "dc": {
+          "dc_type": "CON",
+          "dc_value": 10,
+          "success_type": "none"
+        }
       },
       {
         "name": "Innate Spellcasting (1/Day)",
-        "desc": "The mephit can innately cast sleep, requiring no material components. Its innate spellcasting ability is Charisma.",
-        "attack_bonus": 0
+        "desc": "The mephit can innately cast sleep, requiring no material components. Its innate spellcasting ability is Charisma."
       }
     ],
     "actions": [
@@ -8201,18 +8336,26 @@
         "name": "Claws",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) slashing damage.",
         "attack_bonus": 4,
-        "damage_dice": "1d4",
-        "damage_bonus": 2
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "1d4",
+            "damage_bonus": 2
+          }
+        ]
       },
       {
         "name": "Blinding Breath (Recharge 6)",
         "desc": "The mephit exhales a 15-foot cone of blinding dust. Each creature in that area must succeed on a DC 10 Dexterity saving throw or be blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-        "attack_bonus": 0
+        "dc": {
+          "dc_type": "DEX",
+          "dc_value": 10,
+          "success_type": "none"
+        }
       },
       {
         "name": "Variant: Summon Mephits (1/Day)",
-        "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
-        "attack_bonus": 0
+        "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/95"
@@ -8248,8 +8391,7 @@
     "special_abilities": [
       {
         "name": "Keen Sight",
-        "desc": "The eagle has advantage on Wisdom (Perception) checks that rely on sight.",
-        "attack_bonus": 0
+        "desc": "The eagle has advantage on Wisdom (Perception) checks that rely on sight."
       }
     ],
     "actions": [
@@ -8257,8 +8399,13 @@
         "name": "Talons",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.",
         "attack_bonus": 4,
-        "damage_dice": "1d4",
-        "damage_bonus": 2
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "1d4",
+            "damage_bonus": 2
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/96"
@@ -8316,27 +8463,29 @@
     "special_abilities": [
       {
         "name": "Earth Glide",
-        "desc": "The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through.",
-        "attack_bonus": 0
+        "desc": "The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through."
       },
       {
         "name": "Siege Monster",
-        "desc": "The elemental deals double damage to objects and structures.",
-        "attack_bonus": 0
+        "desc": "The elemental deals double damage to objects and structures."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The elemental makes two slam attacks.",
-        "attack_bonus": 0
+        "desc": "The elemental makes two slam attacks."
       },
       {
         "name": "Slam",
         "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.",
         "attack_bonus": 8,
-        "damage_dice": "2d8",
-        "damage_bonus": 5
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d8",
+            "damage_bonus": 5
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/97"
