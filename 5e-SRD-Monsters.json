@@ -24358,35 +24358,58 @@
     "special_abilities": [
       {
         "name": "Amphibious",
-        "desc": "The dragon can breathe air and water.",
-        "attack_bonus": 0
+        "desc": "The dragon can breathe air and water."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing damage plus 4 (1d8) acid damage.",
         "attack_bonus": 7,
-        "damage_dice": "2d10 + 1d8",
-        "damage_bonus": 4
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 4
+          },
+          {
+            "damage_type": "acid",
+            "damage_dice": "1d8",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
         "attack_bonus": 7,
-        "damage_dice": "2d6",
-        "damage_bonus": 4
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 4
+          }
+        ]
       },
       {
         "name": "Acid Breath (Recharge 5-6)",
         "desc": "The dragon exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 49 (11d8) acid damage on a failed save, or half as much damage on a successful one.",
-        "attack_bonus": 0,
-        "damage_dice": "11d8"
+        "dc": {
+          "dc_type": "DEX",
+          "dc_value": 14,
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": "acid",
+            "damage_dice": "11d8",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/315"
@@ -24428,28 +24451,52 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) piercing damage plus 5 (1d10) lightning damage.",
         "attack_bonus": 9,
-        "damage_dice": "2d10 + 1d10",
-        "damage_bonus": 5
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 5
+          },
+          {
+            "damage_type": "lightning",
+            "damage_dice": "1d10",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.",
         "attack_bonus": 9,
-        "damage_dice": "2d6",
-        "damage_bonus": 5
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 5
+          }
+        ]
       },
       {
         "name": "Lightning Breath (Recharge 5-6)",
         "desc": "The dragon exhales lightning in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.",
-        "attack_bonus": 0,
-        "damage_dice": "10d10"
+        "dc": {
+          "dc_type": "DEX",
+          "dc_value": 16,
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": "lightning",
+            "damage_dice": "10d10",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/316"
@@ -24492,28 +24539,61 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing damage.",
         "attack_bonus": 7,
-        "damage_dice": "2d10",
-        "damage_bonus": 4
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 4
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
         "attack_bonus": 7,
-        "damage_dice": "2d6",
-        "damage_bonus": 4
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 4
+          }
+        ]
       },
       {
         "name": "Breath Weapons (Recharge 5-6)",
         "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 42 (12d6) fire damage on a failed save, or half as much damage on a successful one.\nSleep Breath. The dragon exhales sleep gas in a 30-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw or fall unconscious for 5 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
         "attack_bonus": 0,
-        "damage_dice": "12d6"
+        "attacks": [
+          {
+            "name": "Fire Breath",
+            "dc": {
+              "dc_type": "DEX",
+              "dc_value": 14,
+              "success_type": "half"
+            },
+            "damage": [
+              {
+                "damage_type": "fire",
+                "damage_dice": "12d6",
+                "damage_bonus": 0
+              }
+            ]
+          },
+          {
+            "name": "Sleep Breath",
+            "dc": {
+              "dc_type": "CON",
+              "dc_value": 14,
+              "success_type": "none"
+            }
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/317"
@@ -24556,35 +24636,67 @@
     "special_abilities": [
       {
         "name": "Amphibious",
-        "desc": "The dragon can breathe air and water.",
-        "attack_bonus": 0
+        "desc": "The dragon can breathe air and water."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) piercing damage.",
         "attack_bonus": 8,
-        "damage_dice": "2d10",
-        "damage_bonus": 5
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 5
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.",
         "attack_bonus": 8,
-        "damage_dice": "2d6",
-        "damage_bonus": 5
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 5
+          }
+        ]
       },
       {
         "name": "Breath Weapons (Recharge 5-6)",
         "desc": "The dragon uses one of the following breath weapons.\nLightning Breath. The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.\nRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 15 Strength saving throw. On a failed save, the creature is pushed 40 feet away from the dragon.",
         "attack_bonus": 0,
-        "damage_dice": "10d10"
+        "attacks": [
+          {
+            "name": "Lightning Breath",
+            "dc": {
+              "dc_type": "DEX",
+              "dc_value": 15,
+              "success_type": "half"
+            },
+            "damage": [
+              {
+                "damage_type": "lightning",
+                "damage_dice": "10d10",
+                "damage_bonus": 0
+              }
+            ]
+          },
+          {
+            "name": "Repulsion Breath",
+            "dc": {
+              "dc_type": "STR",
+              "dc_value": 15,
+              "success_type": "none"
+            }
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/318"
@@ -24627,28 +24739,60 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing damage.",
         "attack_bonus": 7,
-        "damage_dice": "2d10",
-        "damage_bonus": 4
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 4
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
         "attack_bonus": 7,
-        "damage_dice": "2d6",
-        "damage_bonus": 4
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 4
+          }
+        ]
       },
       {
         "name": "Breath Weapons (Recharge 5-6)",
         "desc": "The dragon uses one of the following breath weapons.\nAcid Breath. The dragon exhales acid in an 40-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 40 (9d8) acid damage on a failed save, or half as much damage on a successful one.\nSlowing Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.",
-        "attack_bonus": 0,
-        "damage_dice": "9d8"
+        "attacks": [
+          {
+            "name": "Acid Breath",
+            "dc": {
+              "dc_type": "DEX",
+              "dc_value": 14,
+              "success_type": "half"
+            },
+            "damage": [
+              {
+                "damage_type": "acid",
+                "damage_dice": "9d8",
+                "damage_bonus": 0
+              }
+            ]
+          },
+          {
+            "name": "Slowing Breath",
+            "dc": {
+              "dc_type": "CON",
+              "dc_value": 14,
+              "success_type": "none"
+            }
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/319"
@@ -24692,35 +24836,66 @@
     "special_abilities": [
       {
         "name": "Amphibious",
-        "desc": "The dragon can breathe air and water.",
-        "attack_bonus": 0
+        "desc": "The dragon can breathe air and water."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage.",
         "attack_bonus": 10,
-        "damage_dice": "2d10",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
         "attack_bonus": 10,
-        "damage_dice": "2d6",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Breath Weapons (Recharge 5-6)",
         "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 55 (10d10) fire damage on a failed save, or half as much damage on a successful one.\nWeakening Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-        "attack_bonus": 0,
-        "damage_dice": "10d10"
+        "attacks": [
+          {
+            "name": "Fire Breath",
+            "dc": {
+              "dc_type": "DEX",
+              "dc_value": 17,
+              "success_type": "half"
+            },
+            "damage": [
+              {
+                "damage_type": "fire",
+                "damage_dice": "10d10",
+                "damage_bonus": 0
+              }
+            ]
+          },
+          {
+            "name": "Weakening Breath",
+            "dc": {
+              "dc_type": "STR",
+              "dc_value": 17,
+              "success_type": "none"
+            }
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/320"
@@ -24768,35 +24943,58 @@
     "special_abilities": [
       {
         "name": "Amphibious",
-        "desc": "The dragon can breathe air and water.",
-        "attack_bonus": 0
+        "desc": "The dragon can breathe air and water."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing damage plus 7 (2d6) poison damage.",
         "attack_bonus": 7,
-        "damage_dice": "2d10 + 2d6",
-        "damage_bonus": 4
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 4
+          },
+          {
+            "damage_type": "poison",
+            "damage_dice": "2d6",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
         "attack_bonus": 7,
-        "damage_dice": "2d6",
-        "damage_bonus": 4
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 4
+          }
+        ]
       },
       {
         "name": "Poison Breath (Recharge 5-6)",
         "desc": "The dragon exhales poisonous gas in a 30-foot cone. Each creature in that area must make a DC 14 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.",
-        "attack_bonus": 0,
-        "damage_dice": "12d6"
+        "dc": {
+          "dc_type": "CON",
+          "dc_value": 14,
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": "poison",
+            "damage_dice": "12d6",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/321"
@@ -24838,28 +25036,52 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 3 (1d6) fire damage.",
         "attack_bonus": 10,
-        "damage_dice": "2d10 + 1d6",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 6
+          },
+          {
+            "damage_type": "fire",
+            "damage_dice": "1d6",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
         "attack_bonus": 10,
-        "damage_dice": "2d6",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Fire Breath (Recharge 5-6)",
         "desc": "The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one.",
-        "attack_bonus": 0,
-        "damage_dice": "16d6"
+        "dc": {
+          "dc_type": "DEX",
+          "dc_value": 17,
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": "fire",
+            "damage_dice": "16d6",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/322"
@@ -24902,28 +25124,60 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage.",
         "attack_bonus": 10,
-        "damage_dice": "2d10",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
         "attack_bonus": 10,
-        "damage_dice": "2d6",
-        "damage_bonus": 6
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 6
+          }
+        ]
       },
       {
         "name": "Breath Weapons (Recharge 5-6)",
         "desc": "The dragon uses one of the following breath weapons.\nCold Breath. The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 54 (12d8) cold damage on a failed save, or half as much damage on a successful one.\nParalyzing Breath. The dragon exhales paralyzing gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-        "attack_bonus": 0,
-        "damage_dice": "12d8"
+        "attacks": [
+          {
+            "name": "Cold Breath",
+            "dc": {
+              "dc_type": "CON",
+              "dc_value": 17,
+              "success_type": "half"
+            },
+            "damage": [
+              {
+                "damage_type": "cold",
+                "damage_dice": "12d8",
+                "damage_bonus": 0
+              }
+            ]
+          },
+          {
+            "name": "Paralyzing Breath",
+            "dc": {
+              "dc_type": "CON",
+              "dc_value": 17,
+              "success_type": "none"
+            }
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/323"
@@ -24966,35 +25220,58 @@
     "special_abilities": [
       {
         "name": "Ice Walk",
-        "desc": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment.",
-        "attack_bonus": 0
+        "desc": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment."
       }
     ],
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "attack_bonus": 0
+        "desc": "The dragon makes three attacks: one with its bite and two with its claws."
       },
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing damage plus 4 (1d8) cold damage.",
         "attack_bonus": 7,
-        "damage_dice": "2d10 + 1d8",
-        "damage_bonus": 4
+        "damage": [
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d10",
+            "damage_bonus": 4
+          },
+          {
+            "damage_type": "cold",
+            "damage_dice": "1d8",
+            "damage_bonus": 0
+          }
+        ]
       },
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
         "attack_bonus": 7,
-        "damage_dice": "2d6",
-        "damage_bonus": 4
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6",
+            "damage_bonus": 4
+          }
+        ]
       },
       {
         "name": "Cold Breath (Recharge 5-6)",
         "desc": "The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 45 (10d8) cold damage on a failed save, or half as much damage on a successful one.",
-        "attack_bonus": 0,
-        "damage_dice": "10d8"
+        "dc": {
+          "dc_type": "CON",
+          "dc_value": 15,
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": "cold",
+            "damage_dice": "10d8",
+            "damage_bonus": 0
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/324"
@@ -25034,8 +25311,7 @@
     "special_abilities": [
       {
         "name": "Undead Fortitude",
-        "desc": "If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.",
-        "attack_bonus": 0
+        "desc": "If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
       }
     ],
     "actions": [
@@ -25043,8 +25319,13 @@
         "name": "Slam",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.",
         "attack_bonus": 3,
-        "damage_dice": "1d6",
-        "damage_bonus": 1
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "1d6",
+            "damage_bonus": 1
+          }
+        ]
       }
     ],
     "url": "http://www.dnd5eapi.co/api/monsters/325"
