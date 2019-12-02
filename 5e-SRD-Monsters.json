@@ -7821,7 +7821,85 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:\n\nAt will: detect magic, fog cloud, light\n3/day each: feather fall, fly, misty step, telekinesis\n1/day each: control weather, gaseous form"
+        "desc": "The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:\n\nAt will: detect magic, fog cloud, light\n3/day each: feather fall, fly, misty step, telekinesis\n1/day each: control weather, gaseous form",
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6"
+          },
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Detect Magic",
+              "url": "http://www.dnd5eapi.co/api/spells/79",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Fog Cloud",
+              "url": "http://www.dnd5eapi.co/api/spells/126",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Light",
+              "url": "http://www.dnd5eapi.co/api/spells/180",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Feather Fall",
+              "url": "http://www.dnd5eapi.co/api/spells/109",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Fly",
+              "url": "http://www.dnd5eapi.co/api/spells/125",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Misty Step",
+              "url": "http://www.dnd5eapi.co/api/spells/209",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Telekinesis",
+              "url": "http://www.dnd5eapi.co/api/spells/287",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Control Weather",
+              "url": "http://www.dnd5eapi.co/api/spells/64",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Gaseous Form",
+              "url": "http://www.dnd5eapi.co/api/spells/132",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       }
     ],
     "actions": [
@@ -8160,7 +8238,120 @@
     "special_abilities": [
       {
         "name": "Innate Spellcasting",
-        "desc": "The couatl's spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:\n\nAt will: detect evil and good, detect magic, detect thoughts\n3/day each: bless, create food and water, cure wounds, lesser restoration, protection from poison, sanctuary, shield\n1/day each: dream, greater restoration, scrying"
+        "desc": "The couatl's spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:\n\nAt will: detect evil and good, detect magic, detect thoughts\n3/day each: bless, create food and water, cure wounds, lesser restoration, protection from poison, sanctuary, shield\n1/day each: dream, greater restoration, scrying",
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6"
+          },
+          "dc": 14,
+          "components_required": [
+            "V"
+          ],
+          "spells": [
+            {
+              "name": "Detect Evil and Good",
+              "url": "http://www.dnd5eapi.co/api/spells/78",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Detect Magic",
+              "url": "http://www.dnd5eapi.co/api/spells/79",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Detect Thoughts",
+              "url": "http://www.dnd5eapi.co/api/spells/81",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Bless",
+              "url": "http://www.dnd5eapi.co/api/spells/29",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Create Food and Water",
+              "url": "http://www.dnd5eapi.co/api/spells/66",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Cure Wounds",
+              "url": "http://www.dnd5eapi.co/api/spells/70",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Lesser Restoration",
+              "url": "http://www.dnd5eapi.co/api/spells/178",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Protection from Poison",
+              "url": "http://www.dnd5eapi.co/api/spells/236",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Sanctuary",
+              "url": "http://www.dnd5eapi.co/api/spells/251",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Shield",
+              "url": "http://www.dnd5eapi.co/api/spells/261",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Dream",
+              "url": "http://www.dnd5eapi.co/api/spells/93",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Greater Restoration",
+              "url": "http://www.dnd5eapi.co/api/spells/143",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Scrying",
+              "url": "http://www.dnd5eapi.co/api/spells/253",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "Magic Weapons",
@@ -8606,7 +8797,50 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "The gnome's innate spellcasting ability is Intelligence (spell save DC 11). It can innately cast the following spells, requiring no material components:\nAt will: nondetection (self only)\n1/day each: blindness/deafness, blur, disguise self"
+        "desc": "The gnome's innate spellcasting ability is Intelligence (spell save DC 11). It can innately cast the following spells, requiring no material components:\nAt will: nondetection (self only)\n1/day each: blindness/deafness, blur, disguise self",
+        "spellcasting": {
+          "ability": {
+            "name": "INT",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/4"
+          },
+          "dc": 11,
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Nondetection",
+              "notes": "Self only",
+              "url": "http://www.dnd5eapi.co/api/spells/213",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            "1/day each: blindness/deafness, blur, disguise self",
+            {
+              "name": "Blindness/Deafness",
+              "url": "http://www.dnd5eapi.co/api/spells/31",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Blur",
+              "url": "http://www.dnd5eapi.co/api/spells/33",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Disguise Self",
+              "url": "http://www.dnd5eapi.co/api/spells/83",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       }
     ],
     "actions": [
@@ -8747,7 +8981,43 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "The deva's spellcasting ability is Charisma (spell save DC 17). The deva can innately cast the following spells, requiring only verbal components:\nAt will: detect evil and good\n1/day each: commune, raise dead"
+        "desc": "The deva's spellcasting ability is Charisma (spell save DC 17). The deva can innately cast the following spells, requiring only verbal components:\nAt will: detect evil and good\n1/day each: commune, raise dead",
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6"
+          },
+          "dc": 17,
+          "components_required": [
+            "V"
+          ],
+          "spells": [
+            {
+              "name": "Detect Evil and Good",
+              "url": "http://www.dnd5eapi.co/api/spells/78",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            "1/Day Each: Commune, Raise Dead",
+            {
+              "name": "Commune",
+              "url": "http://www.dnd5eapi.co/api/spells/47",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Raise Dead",
+              "url": "http://www.dnd5eapi.co/api/spells/238",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "Magic Resistance",
@@ -8895,7 +9165,113 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "The djinni's innate spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\nAt will: detect evil and good, detect magic, thunderwave 3/day each: create food and water (can create wine instead of water), tongues, wind walk\n1/day each: conjure elemental (air elemental only), creation, gaseous form, invisibility, major image, plane shift"
+        "desc": "The djinni's innate spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\nAt will: detect evil and good, detect magic, thunderwave\n3/day each: create food and water (can create wine instead of water), tongues, wind walk\n1/day each: conjure elemental (air elemental only), creation, gaseous form, invisibility, major image, plane shift",
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6"
+          },
+          "dc": 17,
+          "modifier": 9,
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Detect Evil and Good",
+              "url": "http://www.dnd5eapi.co/api/spells/78",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Detect Magic",
+              "url": "http://www.dnd5eapi.co/api/spells/79",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Thunderwave",
+              "url": "http://www.dnd5eapi.co/api/spells/292",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Create Food and Water",
+              "notes": "Can create wine instead of water",
+              "url": "http://www.dnd5eapi.co/api/spells/66",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Tongues",
+              "url": "http://www.dnd5eapi.co/api/spells/295",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Wind Walk",
+              "url": "http://www.dnd5eapi.co/api/spells/315",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Conjure Elemental",
+              "notes": "Air Elemental Only",
+              "url": "http://www.dnd5eapi.co/api/spells/55",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Creation",
+              "url": "http://www.dnd5eapi.co/api/spells/69",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Gaseous Form",
+              "url": "http://www.dnd5eapi.co/api/spells/132",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Invisibility",
+              "url": "http://www.dnd5eapi.co/api/spells/173",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Major Image",
+              "url": "http://www.dnd5eapi.co/api/spells/194",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Plane Shift",
+              "url": "http://www.dnd5eapi.co/api/spells/220",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "Variant: Genie Powers",
@@ -9328,7 +9704,40 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "The drider's innate spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:\nAt will: dancing lights\n1/day each: darkness, faerie fire"
+        "desc": "The drider's innate spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:\nAt will: dancing lights\n1/day each: darkness, faerie fire",
+        "spellcasting": {
+          "ability": {
+            "name": "WIS",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/5"
+          },
+          "dc": 13,
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Entangle",
+              "url": "http://www.dnd5eapi.co/api/spells/71",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Darkness",
+              "url": "http://www.dnd5eapi.co/api/spells/72",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Faerie Fire",
+              "url": "http://www.dnd5eapi.co/api/spells/105",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "Spider Climb",
@@ -9464,7 +9873,41 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "The drow's spellcasting ability is Charisma (spell save DC 11). It can innately cast the following spells, requiring no material components:\nAt will: dancing lights\n1/day each: darkness, faerie fire"
+        "desc": "The drow's spellcasting ability is Charisma (spell save DC 11). It can innately cast the following spells, requiring no material components:\nAt will: dancing lights\n1/day each: darkness, faerie fire",
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6"
+          },
+          "dc": 11,
+          "modifier": 0,
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Dancing Lights",
+              "url": "http://www.dnd5eapi.co/api/spells/71",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Darkness",
+              "url": "http://www.dnd5eapi.co/api/spells/99",
+              "usage": {
+                "type": "per day",
+                "times": 72
+              }
+            },
+            {
+              "name": "Faerie Fire",
+              "url": "http://www.dnd5eapi.co/api/spells/105",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            }
+          ]
+        }
       },
       {
         "name": "Sunlight Sensitivity",
@@ -9609,7 +10052,64 @@
     "special_abilities": [
       {
         "name": "Innate Spellcasting",
-        "desc": "The dryad's innate spellcasting ability is Charisma (spell save DC 14). The dryad can innately cast the following spells, requiring no material components:\n\nAt will: druidcraft\n3/day each: entangle, goodberry\n1/day each: barkskin, pass without trace, shillelagh"
+        "desc": "The dryad's innate spellcasting ability is Charisma (spell save DC 14). The dryad can innately cast the following spells, requiring no material components:\n\nAt will: druidcraft\n3/day each: entangle, goodberry\n1/day each: barkskin, pass without trace, shillelagh",
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6"
+          },
+          "dc": 14,
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Druidcraft",
+              "url": "http://www.dnd5eapi.co/api/spells/94",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Entangle",
+              "url": "http://www.dnd5eapi.co/api/spells/99",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Goodberry",
+              "url": "http://www.dnd5eapi.co/api/spells/140",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Barkskin",
+              "url": "http://www.dnd5eapi.co/api/spells/24",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Pass without Trace",
+              "url": "http://www.dnd5eapi.co/api/spells/214",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Shillelagh",
+              "url": "http://www.dnd5eapi.co/api/spells/263",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "Magic Resistance",
@@ -10020,7 +10520,90 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "The efreeti's innate spell casting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\nAt will: detect magic\n3/day: enlarge/reduce, tongues\n1/day each: conjure elemental (fire elemental only), gaseous form, invisibility, major image, plane shift, wall of fire"
+        "desc": "The efreeti's innate spell casting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\nAt will: detect magic\n3/day: enlarge/reduce, tongues\n1/day each: conjure elemental (fire elemental only), gaseous form, invisibility, major image, plane shift, wall of fire",
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6"
+          },
+          "dc": 15,
+          "modifier": 7,
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Detect Magic",
+              "url": "http://www.dnd5eapi.co/api/spells/79",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Enlarge/Reduce",
+              "url": "http://www.dnd5eapi.co/api/spells/98",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Tongues",
+              "url": "http://www.dnd5eapi.co/api/spells/295",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Conjure Elemental",
+              "notes": "Fire Elemental only",
+              "url": "http://www.dnd5eapi.co/api/spells/55",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Gaseous Form",
+              "url": "http://www.dnd5eapi.co/api/spells/132",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Invisibility",
+              "url": "http://www.dnd5eapi.co/api/spells/173",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Major Image",
+              "url": "http://www.dnd5eapi.co/api/spells/194",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Plane Shift",
+              "url": "http://www.dnd5eapi.co/api/spells/220",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Wall of Fire",
+              "url": "http://www.dnd5eapi.co/api/spells/305",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "Variant: Genie Powers",
@@ -13519,7 +14102,62 @@
     "special_abilities": [
       {
         "name": "Innate Spellcasting",
-        "desc": "The glabrezu's spellcasting ability is Intelligence (spell save DC 16). The glabrezu can innately cast the following spells, requiring no material components:\nAt will: darkness, detect magic, dispel magic\n1/day each: confusion, fly, power word stun"
+        "desc": "The glabrezu's spellcasting ability is Intelligence (spell save DC 16). The glabrezu can innately cast the following spells, requiring no material components:\nAt will: darkness, detect magic, dispel magic\n1/day each: confusion, fly, power word stun",
+        "spellcasting": {
+          "ability": {
+            "name": "INT",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/4"
+          },
+          "dc": 16,
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Darkness",
+              "url": "http://www.dnd5eapi.co/api/spells/72",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Detect Magic",
+              "url": "http://www.dnd5eapi.co/api/spells/79",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Dispel Magic",
+              "url": "http://www.dnd5eapi.co/api/spells/86",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Confusion",
+              "url": "http://www.dnd5eapi.co/api/spells/52",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Fly",
+              "url": "http://www.dnd5eapi.co/api/spells/152",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Power Word Stun",
+              "url": "http://www.dnd5eapi.co/api/spells/225",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "Magic Resistance",
@@ -14326,7 +14964,38 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "The hag's innate spellcasting ability is Charisma (spell save DC 12). She can innately cast the following spells, requiring no material components:\n\nAt will: dancing lights, minor illusion, vicious mockery"
+        "desc": "The hag's innate spellcasting ability is Charisma (spell save DC 12). She can innately cast the following spells, requiring no material components:\n\nAt will: dancing lights, minor illusion, vicious mockery",
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6"
+          },
+          "dc": 12,
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Dancing Lights",
+              "url": "http://www.dnd5eapi.co/api/spells/71",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Minor Illusion",
+              "url": "http://www.dnd5eapi.co/api/spells/205",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Vicious Mockery",
+              "url": "http://www.dnd5eapi.co/api/spells/304",
+              "usage": {
+                "type": "at will"
+              }
+            }
+          ]
+        }
       },
       {
         "name": "Mimicry",
@@ -16907,7 +17576,65 @@
     "special_abilities": [
       {
         "name": "Innate Spellcasting",
-        "desc": "The lamia's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components. At will: disguise self (any humanoid form), major image 3/day each: charm person, mirror image, scrying, suggestion 1/day: geas"
+        "desc": "The lamia's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components. At will: disguise self (any humanoid form), major image 3/day each: charm person, mirror image, scrying, suggestion 1/day: geas",
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6"
+          },
+          "dc": 13,
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Major Image",
+              "url": "http://www.dnd5eapi.co/api/spells/194",
+              "notes": "Any Humanoid Form",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Charm Person",
+              "url": "http://www.dnd5eapi.co/api/spells/39",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Mirror Image",
+              "url": "http://www.dnd5eapi.co/api/spells/207",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Scrying",
+              "url": "http://www.dnd5eapi.co/api/spells/253",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Suggestion",
+              "url": "http://www.dnd5eapi.co/api/spells/283",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Geas",
+              "url": "http://www.dnd5eapi.co/api/spells/134",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       }
     ],
     "actions": [
@@ -18996,7 +19723,57 @@
     "special_abilities": [
       {
         "name": "Innate Spellcasting",
-        "desc": "The hag's innate spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). She can innately cast the following spells, requiring no material components:\n\nAt will: detect magic, magic missile\n2/day each: plane shift (self only), ray of enfeeblement, sleep"
+        "desc": "The hag's innate spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). She can innately cast the following spells, requiring no material components:\n\nAt will: detect magic, magic missile\n2/day each: plane shift (self only), ray of enfeeblement, sleep",
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6"
+          },
+          "dc": 14,
+          "modifier": 6,
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Detect Magic",
+              "url": "http://www.dnd5eapi.co/api/spells/79",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Magic Missile",
+              "url": "http://www.dnd5eapi.co/api/spells/190",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Plane Shift",
+              "notes": "Self Only",
+              "url": "http://www.dnd5eapi.co/api/spells/220",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "name": "Ray of Enfeeblement",
+              "url": "http://www.dnd5eapi.co/api/spells/239",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "name": "Sleep",
+              "url": "http://www.dnd5eapi.co/api/spells/268",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            }
+          ]
+        }
       },
       {
         "name": "Magic Resistance",
@@ -19516,7 +20293,63 @@
     "special_abilities": [
       {
         "name": "Innate Spellcasting",
-        "desc": "The oni's innate spellcasting ability is Charisma (spell save DC 13). The oni can innately cast the following spells, requiring no material components:\n\nAt will: darkness, invisibility\n1/day each: charm person, cone of cold, gaseous form, sleep"
+        "desc": "The oni's innate spellcasting ability is Charisma (spell save DC 13). The oni can innately cast the following spells, requiring no material components:\n\nAt will: darkness, invisibility\n1/day each: charm person, cone of cold, gaseous form, sleep",
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6"
+          },
+          "dc": 13,
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Darkness",
+              "url": "http://www.dnd5eapi.co/api/spells/72",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Invisibility",
+              "url": "http://www.dnd5eapi.co/api/spells/173",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Charm Person",
+              "url": "http://www.dnd5eapi.co/api/spells/39",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Cone of Cold",
+              "url": "http://www.dnd5eapi.co/api/spells/51",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Gaseous Form",
+              "url": "http://www.dnd5eapi.co/api/spells/132",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Sleep",
+              "url": "http://www.dnd5eapi.co/api/spells/268",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "Magic Weapons",
@@ -20126,7 +20959,47 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "The pit fiend's spellcasting ability is Charisma (spell save DC 21). The pit fiend can innately cast the following spells, requiring no material components:\nAt will: detect magic, fireball\n3/day each: hold monster, wall of fire"
+        "desc": "The pit fiend's spellcasting ability is Charisma (spell save DC 21). The pit fiend can innately cast the following spells, requiring no material components:\nAt will: detect magic, fireball\n3/day each: hold monster, wall of fire",
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6"
+          },
+          "dc": 21,
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Detect Magic",
+              "url": "http://www.dnd5eapi.co/api/spells/79",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Fireball",
+              "url": "http://www.dnd5eapi.co/api/spells/119",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Hold Monster",
+              "url": "http://www.dnd5eapi.co/api/spells/160",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Wall of Fire",
+              "url": "http://www.dnd5eapi.co/api/spells/305",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            }
+          ]
+        }
       }
     ],
     "actions": [
@@ -20258,7 +21131,88 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "The planetar's spellcasting ability is Charisma (spell save DC 20). The planetar can innately cast the following spells, requiring no material components:\nAt will: detect evil and good, invisibility (self only)\n3/day each: blade barrier, dispel evil and good, flame strike, raise dead\n1/day each: commune, control weather, insect plague"
+        "desc": "The planetar's spellcasting ability is Charisma (spell save DC 20). The planetar can innately cast the following spells, requiring no material components:\nAt will: detect evil and good, invisibility (self only)\n3/day each: blade barrier, dispel evil and good, flame strike, raise dead\n1/day each: commune, control weather, insect plague",
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6"
+          },
+          "dc": 20,
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Detect Evil and Good",
+              "url": "http://www.dnd5eapi.co/api/spells/78",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Invisibility",
+              "notes": "Self Only",
+              "url": "http://www.dnd5eapi.co/api/spells/173",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Blade Barrier",
+              "url": "http://www.dnd5eapi.co/api/spells/28",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Dispel Evil and Good",
+              "url": "http://www.dnd5eapi.co/api/spells/85",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Flame Strike",
+              "url": "http://www.dnd5eapi.co/api/spells/121",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Raise Dead",
+              "url": "http://www.dnd5eapi.co/api/spells/238",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Commune",
+              "url": "http://www.dnd5eapi.co/api/spells/47",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Control Weather",
+              "url": "http://www.dnd5eapi.co/api/spells/64",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Insect Plague",
+              "url": "http://www.dnd5eapi.co/api/spells/171",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "Magic Resistance",
@@ -20939,7 +21893,118 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "The rakshasa's innate spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). The rakshasa can innately cast the following spells, requiring no material components:\n\nAt will: detect thoughts, disguise self, mage hand, minor illusion\n3/day each: charm person, detect magic, invisibility, major image, suggestion\n1/day each: dominate person, fly, plane shift, true seeing"
+        "desc": "The rakshasa's innate spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). The rakshasa can innately cast the following spells, requiring no material components:\n\nAt will: detect thoughts, disguise self, mage hand, minor illusion\n3/day each: charm person, detect magic, invisibility, major image, suggestion\n1/day each: dominate person, fly, plane shift, true seeing",
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6"
+          },
+          "dc": 18,
+          "modifier": 10,
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Detect Thoughts",
+              "url": "http://www.dnd5eapi.co/api/spells/81",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Disguise Self",
+              "url": "http://www.dnd5eapi.co/api/spells/83",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Mage Hand",
+              "url": "http://www.dnd5eapi.co/api/spells/187",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Minor Illusion",
+              "url": "http://www.dnd5eapi.co/api/spells/205",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Charm Person",
+              "url": "http://www.dnd5eapi.co/api/spells/39",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Detect Magic",
+              "url": "http://www.dnd5eapi.co/api/spells/79",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Invisibility",
+              "url": "http://www.dnd5eapi.co/api/spells/173",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Major Image",
+              "url": "http://www.dnd5eapi.co/api/spells/194",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Suggestion",
+              "url": "http://www.dnd5eapi.co/api/spells/198",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Dominate Person",
+              "url": "http://www.dnd5eapi.co/api/spells/92",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Fly",
+              "url": "http://www.dnd5eapi.co/api/spells/125",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Plane Shift",
+              "url": "http://www.dnd5eapi.co/api/spells/220",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "True Seeing",
+              "url": "http://www.dnd5eapi.co/api/spells/300",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       }
     ],
     "actions": [
@@ -22927,7 +23992,72 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "The solar's spell casting ability is Charisma (spell save DC 25). It can innately cast the following spells, requiring no material components:\nAt will: detect evil and good, invisibility (self only)\n3/day each: blade barrier, dispel evil and good, resurrection\n1/day each: commune, control weather"
+        "desc": "The solar's spell casting ability is Charisma (spell save DC 25). It can innately cast the following spells, requiring no material components:\nAt will: detect evil and good, invisibility (self only)\n3/day each: blade barrier, dispel evil and good, resurrection\n1/day each: commune, control weather",
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6"
+          },
+          "dc": 25,
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Detect Evil and Good",
+              "url": "http://www.dnd5eapi.co/api/spells/78",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Invisibility",
+              "notes": "Self Only",
+              "url": "http://www.dnd5eapi.co/api/spells/173",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Blade Barrier",
+              "url": "http://www.dnd5eapi.co/api/spells/28",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Dispel Evil and Good",
+              "url": "http://www.dnd5eapi.co/api/spells/85",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Resurrection",
+              "url": "http://www.dnd5eapi.co/api/spells/246",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Commune",
+              "url": "http://www.dnd5eapi.co/api/spells/47",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Control Weather",
+              "url": "http://www.dnd5eapi.co/api/spells/64",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "Magic Resistance",
@@ -23859,7 +24989,61 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "The giant's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components:\n\nAt will: detect magic, feather fall, levitate, light\n3/day each: control weather, water breathing"
+        "desc": "The giant's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components:\n\nAt will: detect magic, feather fall, levitate, light\n3/day each: control weather, water breathing",
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6"
+          },
+          "dc": 17,
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Detect Magic",
+              "url": "http://www.dnd5eapi.co/api/spells/79",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Feather Fall",
+              "url": "http://www.dnd5eapi.co/api/spells/109",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Levitate",
+              "url": "http://www.dnd5eapi.co/api/spells/179",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Light",
+              "url": "http://www.dnd5eapi.co/api/spells/180",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Control Weather",
+              "url": "http://www.dnd5eapi.co/api/spells/64",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "name": "Water Breathing",
+              "url": "http://www.dnd5eapi.co/api/spells/311",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            }
+          ]
+        }
       }
     ],
     "actions": [
@@ -25707,7 +26891,62 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "The unicorn's innate spellcasting ability is Charisma (spell save DC 14). The unicorn can innately cast the following spells, requiring no components:\n\nAt will: detect evil and good, druidcraft, pass without trace\n1/day each: calm emotions, dispel evil and good, entangle"
+        "desc": "The unicorn's innate spellcasting ability is Charisma (spell save DC 14). The unicorn can innately cast the following spells, requiring no components:\n\nAt will: detect evil and good, druidcraft, pass without trace\n1/day each: calm emotions, dispel evil and good, entangle",
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6"
+          },
+          "dc": 14,
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Detect Evil and Good",
+              "url": "http://www.dnd5eapi.co/api/spells/78",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Druidcraft",
+              "url": "http://www.dnd5eapi.co/api/spells/94",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Pass without Trace",
+              "url": "http://www.dnd5eapi.co/api/spells/214",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "name": "Calm Emotions",
+              "url": "http://www.dnd5eapi.co/api/spells/37",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Dispel Evil and Good",
+              "url": "http://www.dnd5eapi.co/api/spells/85",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "name": "Entangle",
+              "url": "http://www.dnd5eapi.co/api/spells/99",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "Magic Resistance",
