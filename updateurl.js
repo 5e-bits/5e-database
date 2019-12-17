@@ -9,7 +9,7 @@ let results = [];
 getResultsFromAPI(type_check);
 
 function getResultsFromAPI(type_to_check) {
-  var url = "http://www.dnd5eapi.co/api/" + type_to_check + "/";
+  var url = "/api/" + type_to_check + "/";
 
   http
     .get(url, res => {

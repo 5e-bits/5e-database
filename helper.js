@@ -17,7 +17,7 @@ function create_upload_file(datatype_string) {
       data[i].index = i + 1;
       if (data_type !== "levels") {
         data[i].url =
-          "http://www.dnd5eapi.co/api/" +
+          "/api/" +
           datatype_string +
           "/" +
           (i + 1).toString();

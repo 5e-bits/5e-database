@@ -8,7 +8,7 @@ let class_name = args[3];
 fill_in_features();
 
 function getFeaturesFromAPI(callback) {
-  var url = "http://www.dnd5eapi.co/api/features/";
+  var url = "/api/features/";
   // console.log(url);
 
   http
