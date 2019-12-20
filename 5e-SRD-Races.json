@@ -1,12 +1,12 @@
 [
 	{
-		"index": 1,
+		"id": "dwarf",
 		"name": "Dwarf",
 		"speed": 30,
 		"ability_bonuses": [
 			{
 				"name": "CON",
-				"url": "/api/ability-scores/3",
+				"url": "/api/ability-scores/con",
 				"bonus": 2
 			}
 		],
@@ -17,19 +17,19 @@
 		"size_description": "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium.",
 		"starting_proficiencies": [
 			{
-				"url": "/api/proficiencies/20",
+				"url": "/api/proficiencies/battleaxes",
 				"name": "Battleaxes"
 			},
 			{
-				"url": "/api/proficiencies/24",
+				"url": "/api/proficiencies/handaxes",
 				"name": "Handaxes"
 			},
 			{
-				"url": "/api/proficiencies/26",
+				"url": "/api/proficiencies/light-hammers",
 				"name": "Light hammers"
 			},
 			{
-				"url": "/api/proficiencies/51",
+				"url": "/api/proficiencies/warhammers",
 				"name": "Warhammers"
 			}
 		],
@@ -38,26 +38,26 @@
 			"type": "proficiencies",
 			"from": [
 				{
-					"url": "/api/proficiencies/71",
+					"url": "/api/proficiencies/smiths-tools",
 					"name": "Smith's tools"
 				},
 				{
-					"url": "/api/proficiencies/59",
+					"url": "/api/proficiencies/brewers-supplies",
 					"name": "Brewer's supplies"
 				},
 				{
-					"url": "/api/proficiencies/68",
+					"url": "/api/proficiencies/masons-tools",
 					"name": "Mason's tools"
 				}
 			]
 		},
 		"languages": [
 			{
-				"url": "/api/languages/1",
+				"url": "/api/languages/common",
 				"name": "Common"
 			},
 			{
-				"url": "/api/languages/2",
+				"url": "/api/languages/dwarvish",
 				"name": "Dwarvish"
 			}
 		],
@@ -81,20 +81,20 @@
 		],
 		"subraces": [
 			{
-				"url": "/api/subraces/1",
+				"url": "/api/subraces/hill-dwarf",
 				"name": "Hill Dwarf"
 			}
 		],
-		"url": "/api/races/1"
+		"url": "/api/races/dwarf"
 	},
 	{
-		"index": 2,
+		"id": "elf",
 		"name": "Elf",
 		"speed": 30,
 		"ability_bonuses": [
 			{
 				"name": "DEX",
-				"url": "/api/ability-scores/2",
+				"url": "/api/ability-scores/dex",
 				"bonus": 2
 			}
 		],
@@ -105,18 +105,18 @@
 		"size_description": "Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium.",
 		"starting_proficiencies": [
 			{
-				"url": "/api/proficiencies/116",
+				"url": "/api/proficiencies/skill-perception",
 				"name": "Skill: Perception"
 			}
 		],
 		"starting_proficiency_options": {},
 		"languages": [
 			{
-				"url": "/api/languages/1",
+				"url": "/api/languages/common",
 				"name": "Common"
 			},
 			{
-				"url": "/api/languages/3",
+				"url": "/api/languages/elvish",
 				"name": "Elvish"
 			}
 		],
@@ -140,20 +140,20 @@
 		],
 		"subraces": [
 			{
-				"url": "/api/subraces/2",
+				"url": "/api/subraces/high-elf",
 				"name": "High Elf"
 			}
 		],
-		"url": "/api/races/2"
+		"url": "/api/races/elf"
 	},
 	{
-		"index": 3,
+		"id": "halfling",
 		"name": "Halfling",
 		"speed": 25,
 		"ability_bonuses": [
 			{
 				"name": "DEX",
-				"url": "/api/ability-scores/2",
+				"url": "/api/ability-scores/dex",
 				"bonus": 2
 			}
 		],
@@ -166,11 +166,11 @@
 		"starting_proficiency_options": {},
 		"languages": [
 			{
-				"url": "/api/languages/1",
+				"url": "/api/languages/common",
 				"name": "Common"
 			},
 			{
-				"url": "/api/languages/7",
+				"url": "/api/languages/halfling",
 				"name": "Halfling"
 			}
 		],
@@ -192,45 +192,45 @@
 		],
 		"subraces": [
 			{
-				"url": "/api/subraces/3",
+				"url": "/api/subraces/lightfoot-halfling",
 				"name": "Lightfoot Halfling"
 			}
 		],
-		"url": "/api/races/3"
+		"url": "/api/races/halfling"
 	},
 	{
-		"index": 4,
+		"id": "human",
 		"name": "Human",
 		"speed": 30,
 		"ability_bonuses": [
 			{
 				"name": "STR",
-				"url": "/api/ability-scores/1",
+				"url": "/api/ability-scores/str",
 				"bonus": 1
 			},
 			{
 				"name": "DEX",
-				"url": "/api/ability-scores/2",
+				"url": "/api/ability-scores/dex",
 				"bonus": 1
 			},
 			{
 				"name": "CON",
-				"url": "/api/ability-scores/3",
+				"url": "/api/ability-scores/con",
 				"bonus": 1
 			},
 			{
 				"name": "INT",
-				"url": "/api/ability-scores/4",
+				"url": "/api/ability-scores/int",
 				"bonus": 1
 			},
 			{
 				"name": "WIS",
-				"url": "/api/ability-scores/5",
+				"url": "/api/ability-scores/wis",
 				"bonus": 1
 			},
 			{
 				"name": "CHA",
-				"url": "/api/ability-scores/6",
+				"url": "/api/ability-scores/cha",
 				"bonus": 1
 			}
 		],
@@ -243,7 +243,7 @@
 		"starting_proficiency_options": {},
 		"languages": [
 			{
-				"url": "/api/languages/1",
+				"url": "/api/languages/common",
 				"name": "Common"
 			}
 		],
@@ -252,63 +252,63 @@
 			"type": "languages",
 			"from": [
 				{
-					"url": "/api/languages/2",
+					"url": "/api/languages/dwarvish",
 					"name": "Dwarvish"
 				},
 				{
-					"url": "/api/languages/3",
+					"url": "/api/languages/elvish",
 					"name": "Elvish"
 				},
 				{
-					"url": "/api/languages/4",
+					"url": "/api/languages/giant",
 					"name": "Giant"
 				},
 				{
-					"url": "/api/languages/5",
+					"url": "/api/languages/gnomish",
 					"name": "Gnomish"
 				},
 				{
-					"url": "/api/languages/6",
+					"url": "/api/languages/goblin",
 					"name": "Goblin"
 				},
 				{
-					"url": "/api/languages/7",
+					"url": "/api/languages/halfling",
 					"name": "Halfling"
 				},
 				{
-					"url": "/api/languages/8",
+					"url": "/api/languages/orc",
 					"name": "Orc"
 				},
 				{
-					"url": "/api/languages/9",
+					"url": "/api/languages/abyssal",
 					"name": "Abyssal"
 				},
 				{
-					"url": "/api/languages/10",
+					"url": "/api/languages/celestial",
 					"name": "Celestial"
 				},
 				{
-					"url": "/api/languages/11",
+					"url": "/api/languages/draconic",
 					"name": "Draconic"
 				},
 				{
-					"url": "/api/languages/12",
+					"url": "/api/languages/deep-speech",
 					"name": "Deep Speech"
 				},
 				{
-					"url": "/api/languages/13",
+					"url": "/api/languages/infernal",
 					"name": "Infernal"
 				},
 				{
-					"url": "/api/languages/14",
+					"url": "/api/languages/primordial",
 					"name": "Primordial"
 				},
 				{
-					"url": "/api/languages/15",
+					"url": "/api/languages/sylvan",
 					"name": "Sylvan"
 				},
 				{
-					"url": "/api/languages/16",
+					"url": "/api/languages/undercommon",
 					"name": "Undercommon"
 				}
 			]
@@ -316,21 +316,21 @@
 		"language_desc": "You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.",
 		"traits": [],
 		"subraces": [],
-		"url": "/api/races/4"
+		"url": "/api/races/human"
 	},
 	{
-		"index": 5,
+		"id": "dragonborn",
 		"name": "Dragonborn",
 		"speed": 30,
 		"ability_bonuses": [
 			{
 				"name": "STR",
-				"url": "/api/ability-scores/1",
+				"url": "/api/ability-scores/str",
 				"bonus": 2
 			},
 			{
 				"name": "CHA",
-				"url": "/api/ability-scores/6",
+				"url": "/api/ability-scores/cha",
 				"bonus": 1
 			}
 		],
@@ -343,11 +343,11 @@
 		"starting_proficiency_options": {},
 		"languages": [
 			{
-				"url": "/api/languages/1",
+				"url": "/api/languages/common",
 				"name": "Common"
 			},
 			{
-				"url": "/api/languages/11",
+				"url": "/api/languages/draconic",
 				"name": "Draconic"
 			}
 		],
@@ -418,16 +418,16 @@
 				"type": "trait"
 			},
 		"subraces": [],
-		"url": "/api/races/5"
+		"url": "/api/races/dragonborn"
 	},
 	{
-		"index": 6,
+		"id": "gnome",
 		"name": "Gnome",
 		"speed": 25,
 		"ability_bonuses": [
 			{
 				"name": "INT",
-				"url": "/api/ability-scores/4",
+				"url": "/api/ability-scores/int",
 				"bonus": 2
 			}
 		],
@@ -440,11 +440,11 @@
 		"starting_proficiency_options": {},
 		"languages": [
 			{
-				"url": "/api/languages/1",
+				"url": "/api/languages/common",
 				"name": "Common"
 			},
 			{
-				"url": "/api/languages/5",
+				"url": "/api/languages/gnomish",
 				"name": "Gnomish"
 			}
 		],
@@ -463,20 +463,20 @@
 		"trait_options": {},
 		"subraces": [
 			{
-				"url": "/api/subraces/4",
+				"url": "/api/subraces/rock-gnome",
 				"name": "Rock Gnome"
 			}
 		],
-		"url": "/api/races/6"
+		"url": "/api/races/gnome"
 	},
 	{
-		"index": 7,
+		"id": "half-elf",
 		"name": "Half-Elf",
 		"speed": 30,
 		"ability_bonuses": [
 			{
 				"name": "CHA",
-				"url": "/api/ability-scores/6",
+				"url": "/api/ability-scores/cha",
 				"bonus": 2
 			}
 		],
@@ -486,27 +486,27 @@
 			"from": [
 				{
 					"name": "STR",
-					"url": "/api/ability-scores/1",
+					"url": "/api/ability-scores/str",
 					"bonus": 1
 				},
 				{
 					"name": "DEX",
-					"url": "/api/ability-scores/2",
+					"url": "/api/ability-scores/dex",
 					"bonus": 1
 				},
 				{
 					"name": "CON",
-					"url": "/api/ability-scores/3",
+					"url": "/api/ability-scores/con",
 					"bonus": 1
 				},
 				{
 					"name": "INT",
-					"url": "/api/ability-scores/4",
+					"url": "/api/ability-scores/int",
 					"bonus": 1
 				},
 				{
 					"name": "WIS",
-					"url": "/api/ability-scores/5",
+					"url": "/api/ability-scores/wis",
 					"bonus": 1
 				}
 			]
@@ -520,11 +520,11 @@
 		"languages": [
 			{
 				"name": "Common",
-				"url": "/api/languages/1"
+				"url": "/api/languages/common"
 			},
 			{
 				"name": "Elvish",
-				"url": "/api/languages/3"
+				"url": "/api/languages/elvish"
 			}
 		],
 		"language_options": {
@@ -533,59 +533,59 @@
 			"from": [
 				{
 					"name":"Dwarvish",
-					"url":"/api/languages/2"
+					"url":"/api/languages/dwarvish"
 				},
 				{
 					"name":"Giant",
-					"url":"/api/languages/4"
+					"url":"/api/languages/giant"
 				},
 				{
 					"name":"Gnomish",
-					"url":"/api/languages/5"
+					"url":"/api/languages/gnomish"
 				},
 				{
 					"name":"Goblin",
-					"url":"/api/languages/6"
+					"url":"/api/languages/goblin"
 				},
 				{
 					"name":"Halfling",
-					"url":"/api/languages/7"
+					"url":"/api/languages/halfling"
 				},
 				{
 					"name":"Orc",
-					"url":"/api/languages/8"
+					"url":"/api/languages/orc"
 				},
 				{
 					"name":"Abyssal",
-					"url":"/api/languages/9"
+					"url":"/api/languages/abyssal"
 				},
 				{
 					"name":"Celestial",
-					"url":"/api/languages/10"
+					"url":"/api/languages/celestial"
 				},
 				{
 					"name":"Draconic",
-					"url":"/api/languages/11"
+					"url":"/api/languages/draconic"
 				},
 				{
 					"name":"Deep Speech",
-					"url":"/api/languages/12"
+					"url":"/api/languages/deep-speech"
 				},
 				{
 					"name":"Infernal",
-					"url":"/api/languages/13"
+					"url":"/api/languages/infernal"
 				},
 				{
 					"name":"Primordial",
-					"url":"/api/languages/14"
+					"url":"/api/languages/primordial"
 				},
 				{
 					"name":"Sylvan",
-					"url":"/api/languages/15"
+					"url":"/api/languages/sylvan"
 				},
 				{
 					"name":"Undercommon",
-					"url":"/api/languages/16"
+					"url":"/api/languages/undercommon"
 				}
 			]
 		},
@@ -607,21 +607,21 @@
 		],
 		"trait_options": {},
 		"subraces": [],
-		"url": "/api/races/7"
+		"url": "/api/races/half-elf"
 	},
 	{
-		"index": 8,
+		"id": "half-orc",
 		"name": "Half-Orc",
 		"speed": 30,
 		"ability_bonuses": [
 			{
 				"name": "STR",
-				"url": "/api/ability-scores/1",
+				"url": "/api/ability-scores/str",
 				"bonus": 2
 			},
 			{
 				"name": "CON",
-				"url": "/api/ability-scores/3",
+				"url": "/api/ability-scores/con",
 				"bonus": 1
 			}
 		],
@@ -633,17 +633,17 @@
 		"starting_proficiencies": [
 			{
 				"name": "Skill: Intimidation",
-				"url": "/api/proficiencies/112"
+				"url": "/api/proficiencies/skill-intimidation"
 			}
 		],
 		"starting_proficiency_options": {},
 		"languages": [
 			{
-				"url": "/api/languages/1",
+				"url": "/api/languages/common",
 				"name": "Common"
 			},
 			{
-				"url": "/api/languages/8",
+				"url": "/api/languages/orc",
 				"name": "Orcish"
 			}
 		],
@@ -666,21 +666,21 @@
 		],
 		"trait_options": {},
 		"subraces": [],
-		"url": "/api/races/8"
+		"url": "/api/races/half-orc"
 	},
 	{
-		"index": 9,
+		"id": "tiefling",
 		"name": "Tiefling",
 		"speed": 30,
 		"ability_bonuses": [
 			{
 				"name": "INT",
-				"url": "/api/ability-scores/4",
+				"url": "/api/ability-scores/int",
 				"bonus": 1
 			},
 			{
 				"name": "CHA",
-				"url": "/api/ability-scores/6",
+				"url": "/api/ability-scores/cha",
 				"bonus": 2
 			}
 		],
@@ -693,11 +693,11 @@
 		"starting_proficiency_options": {},
 		"languages": [
 			{
-				"url": "/api/languages/1",
+				"url": "/api/languages/common",
 				"name": "Common"
 			},
 			{
-				"url": "/api/languages/9",
+				"url": "/api/languages/abyssal",
 				"name": "Infernal"
 			}
 		],
@@ -719,6 +719,6 @@
 		],
 		"trait_options": {},
 		"subraces": [],
-		"url": "/api/races/9"
+		"url": "/api/races/tiefling"
 	}
 ]
