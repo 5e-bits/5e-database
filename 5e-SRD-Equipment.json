@@ -1,6 +1,6 @@
 [
   {
-    "index": 1,
+    "id": "club",
     "name": "Club",
     "equipment_category": "Weapon",
     "weapon_category": "Simple",
@@ -14,7 +14,7 @@
       "damage_dice": "1d4",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/2",
+        "url": "/api/damage-types/bludgeoning",
         "name": "Bludgeoning"
       }
     },
@@ -25,18 +25,18 @@
     "weight": 2,
     "properties": [
       {
-        "url": "/api/weapon-properties/4",
+        "url": "/api/weapon-properties/light",
         "name": "Light"
       },
       {
-        "url": "/api/weapon-properties/11",
+        "url": "/api/weapon-properties/monk",
         "name": "Monk"
       }
     ],
-    "url": "/api/equipment/1"
+    "url": "/api/equipment/club"
   },
   {
-    "index": 2,
+    "id": "dagger",
     "name": "Dagger",
     "equipment_category": "Weapon",
     "weapon_category": "Simple",
@@ -50,7 +50,7 @@
       "damage_dice": "1d4",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
@@ -61,19 +61,19 @@
     "weight": 1,
     "properties": [
       {
-        "url": "/api/weapon-properties/2",
+        "url": "/api/weapon-properties/finesse",
         "name": "Finesse"
       },
       {
-        "url": "/api/weapon-properties/4",
+        "url": "/api/weapon-properties/light",
         "name": "Light"
       },
       {
-        "url": "/api/weapon-properties/8",
+        "url": "/api/weapon-properties/thrown",
         "name": "Thrown"
       },
       {
-        "url": "/api/weapon-properties/11",
+        "url": "/api/weapon-properties/monk",
         "name": "Monk"
       }
     ],
@@ -81,10 +81,10 @@
       "normal": 20,
       "long": 60
     },
-    "url": "/api/equipment/2"
+    "url": "/api/equipment/dagger"
   },
   {
-    "index": 3,
+    "id": "greatclub",
     "name": "Greatclub",
     "equipment_category": "Weapon",
     "weapon_category": "Simple",
@@ -98,7 +98,7 @@
       "damage_dice": "1d8",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/2",
+        "url": "/api/damage-types/bludgeoning",
         "name": "Bludgeoning"
       }
     },
@@ -109,14 +109,14 @@
     "weight": 10,
     "properties": [
       {
-        "url": "/api/weapon-properties/9",
+        "url": "/api/weapon-properties/two-handed",
         "name": "Two-Handed"
       }
     ],
-    "url": "/api/equipment/3"
+    "url": "/api/equipment/greatclub"
   },
   {
-    "index": 4,
+    "id": "handaxe",
     "name": "Handaxe",
     "equipment_category": "Weapon",
     "weapon_category": "Simple",
@@ -130,7 +130,7 @@
       "damage_dice": "1d6",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/12",
+        "url": "/api/damage-types/slashing",
         "name": "Slashing"
       }
     },
@@ -141,15 +141,15 @@
     "weight": 2,
     "properties": [
       {
-        "url": "/api/weapon-properties/4",
+        "url": "/api/weapon-properties/light",
         "name": "Light"
       },
       {
-        "url": "/api/weapon-properties/8",
+        "url": "/api/weapon-properties/thrown",
         "name": "Thrown"
       },
       {
-        "url": "/api/weapon-properties/11",
+        "url": "/api/weapon-properties/monk",
         "name": "Monk"
       }
     ],
@@ -157,10 +157,10 @@
       "normal": 20,
       "long": 60
     },
-    "url": "/api/equipment/4"
+    "url": "/api/equipment/handaxe"
   },
   {
-    "index": 5,
+    "id": "javelin",
     "name": "Javelin",
     "equipment_category": "Weapon",
     "weapon_category": "Simple",
@@ -174,7 +174,7 @@
       "damage_dice": "1d6",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
@@ -185,11 +185,11 @@
     "weight": 2,
     "properties": [
       {
-        "url": "/api/weapon-properties/8",
+        "url": "/api/weapon-properties/thrown",
         "name": "Thrown"
       },
       {
-        "url": "/api/weapon-properties/11",
+        "url": "/api/weapon-properties/monk",
         "name": "Monk"
       }
     ],
@@ -197,10 +197,10 @@
       "normal": 30,
       "long": 120
     },
-    "url": "/api/equipment/5"
+    "url": "/api/equipment/javelin"
   },
   {
-    "index": 6,
+    "id": "light-hammer",
     "name": "Light hammer",
     "equipment_category": "Weapon",
     "weapon_category": "Simple",
@@ -214,7 +214,7 @@
       "damage_dice": "1d4",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/2",
+        "url": "/api/damage-types/bludgeoning",
         "name": "Bludgeoning"
       }
     },
@@ -225,15 +225,15 @@
     "weight": 2,
     "properties": [
       {
-        "url": "/api/weapon-properties/4",
+        "url": "/api/weapon-properties/light",
         "name": "Light"
       },
       {
-        "url": "/api/weapon-properties/8",
+        "url": "/api/weapon-properties/thrown",
         "name": "Thrown"
       },
       {
-        "url": "/api/weapon-properties/11",
+        "url": "/api/weapon-properties/monk",
         "name": "Monk"
       }
     ],
@@ -241,10 +241,10 @@
       "normal": 20,
       "long": 60
     },
-    "url": "/api/equipment/6"
+    "url": "/api/equipment/light-hammer"
   },
   {
-    "index": 7,
+    "id": "mace",
     "name": "Mace",
     "equipment_category": "Weapon",
     "weapon_category": "Simple",
@@ -258,7 +258,7 @@
       "damage_dice": "1d6",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/2",
+        "url": "/api/damage-types/bludgeoning",
         "name": "Bludgeoning"
       }
     },
@@ -269,14 +269,14 @@
     "weight": 4,
     "properties": [
       {
-        "url": "/api/weapon-properties/11",
+        "url": "/api/weapon-properties/monk",
         "name": "Monk"
       }
     ],
-    "url": "/api/equipment/7"
+    "url": "/api/equipment/mace"
   },
   {
-    "index": 8,
+    "id": "quarterstaff",
     "name": "Quarterstaff",
     "equipment_category": "Weapon",
     "weapon_category": "Simple",
@@ -290,7 +290,7 @@
       "damage_dice": "1d6",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/2",
+        "url": "/api/damage-types/bludgeoning",
         "name": "Bludgeoning"
       }
     },
@@ -301,11 +301,11 @@
     "weight": 4,
     "properties": [
       {
-        "url": "/api/weapon-properties/10",
+        "url": "/api/weapon-properties/versatile",
         "name": "Versatile"
       },
       {
-        "url": "/api/weapon-properties/11",
+        "url": "/api/weapon-properties/monk",
         "name": "Monk"
       }
     ],
@@ -313,14 +313,14 @@
       "damage_dice": "1d8",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/2",
+        "url": "/api/damage-types/bludgeoning",
         "name": "Bludgeoning"
       }
     },
-    "url": "/api/equipment/8"
+    "url": "/api/equipment/quarterstaff"
   },
   {
-    "index": 9,
+    "id": "sickle",
     "name": "Sickle",
     "equipment_category": "Weapon",
     "weapon_category": "Simple",
@@ -334,7 +334,7 @@
       "damage_dice": "1d4",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/12",
+        "url": "/api/damage-types/slashing",
         "name": "Slashing"
       }
     },
@@ -345,18 +345,18 @@
     "weight": 2,
     "properties": [
       {
-        "url": "/api/weapon-properties/4",
+        "url": "/api/weapon-properties/light",
         "name": "Light"
       },
       {
-        "url": "/api/weapon-properties/11",
+        "url": "/api/weapon-properties/monk",
         "name": "Monk"
       }
     ],
-    "url": "/api/equipment/9"
+    "url": "/api/equipment/sickle"
   },
   {
-    "index": 10,
+    "id": "spear",
     "name": "Spear",
     "equipment_category": "Weapon",
     "weapon_category": "Simple",
@@ -370,7 +370,7 @@
       "damage_dice": "1d4",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
@@ -381,15 +381,15 @@
     "weight": 3,
     "properties": [
       {
-        "url": "/api/weapon-properties/8",
+        "url": "/api/weapon-properties/thrown",
         "name": "Thrown"
       },
       {
-        "url": "/api/weapon-properties/10",
+        "url": "/api/weapon-properties/versatile",
         "name": "Versatile"
       },
       {
-        "url": "/api/weapon-properties/11",
+        "url": "/api/weapon-properties/monk",
         "name": "Monk"
       }
     ],
@@ -401,14 +401,14 @@
       "damage_dice": "1d8",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
-    "url": "/api/equipment/10"
+    "url": "/api/equipment/spear"
   },
   {
-    "index": 11,
+    "id": "crossbow-light",
     "name": "Crossbow, light",
     "equipment_category": "Weapon",
     "weapon_category": "Simple",
@@ -422,7 +422,7 @@
       "damage_dice": "1d8",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
@@ -433,22 +433,22 @@
     "weight": 5,
     "properties": [
       {
-        "url": "/api/weapon-properties/1",
+        "url": "/api/weapon-properties/ammunition",
         "name": "Ammunition"
       },
       {
-        "url": "/api/weapon-properties/5",
+        "url": "/api/weapon-properties/loading",
         "name": "Loading"
       },
       {
-        "url": "/api/weapon-properties/9",
+        "url": "/api/weapon-properties/two-handed",
         "name": "Two-Handed"
       }
     ],
-    "url": "/api/equipment/11"
+    "url": "/api/equipment/crossbow-light"
   },
   {
-    "index": 12,
+    "id": "dart",
     "name": "Dart",
     "equipment_category": "Weapon",
     "weapon_category": "Simple",
@@ -462,7 +462,7 @@
       "damage_dice": "1d4",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
@@ -473,11 +473,11 @@
     "weight": 0.25,
     "properties": [
       {
-        "url": "/api/weapon-properties/2",
+        "url": "/api/weapon-properties/finesse",
         "name": "Finesse"
       },
       {
-        "url": "/api/weapon-properties/8",
+        "url": "/api/weapon-properties/thrown",
         "name": "Thrown"
       }
     ],
@@ -485,10 +485,10 @@
       "normal": 20,
       "long": 60
     },
-    "url": "/api/equipment/12"
+    "url": "/api/equipment/dart"
   },
   {
-    "index": 13,
+    "id": "shortbow",
     "name": "Shortbow",
     "equipment_category": "Weapon",
     "weapon_category": "Simple",
@@ -502,7 +502,7 @@
       "damage_dice": "1d6",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
@@ -513,18 +513,18 @@
     "weight": 2,
     "properties": [
       {
-        "url": "/api/weapon-properties/1",
+        "url": "/api/weapon-properties/ammunition",
         "name": "Ammunition"
       },
       {
-        "url": "/api/weapon-properties/9",
+        "url": "/api/weapon-properties/two-handed",
         "name": "Two-Handed"
       }
     ],
-    "url": "/api/equipment/13"
+    "url": "/api/equipment/shortbow"
   },
   {
-    "index": 14,
+    "id": "sling",
     "name": "Sling",
     "equipment_category": "Weapon",
     "weapon_category": "Simple",
@@ -538,7 +538,7 @@
       "damage_dice": "1d4",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/2",
+        "url": "/api/damage-types/bludgeoning",
         "name": "Bludgeoning"
       }
     },
@@ -549,14 +549,14 @@
     "weight": 0,
     "properties": [
       {
-        "url": "/api/weapon-properties/1",
+        "url": "/api/weapon-properties/ammunition",
         "name": "Ammunition"
       }
     ],
-    "url": "/api/equipment/14"
+    "url": "/api/equipment/sling"
   },
   {
-    "index": 15,
+    "id": "battleaxe",
     "name": "Battleaxe",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -570,7 +570,7 @@
       "damage_dice": "1d8",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/12",
+        "url": "/api/damage-types/slashing",
         "name": "Slashing"
       }
     },
@@ -581,7 +581,7 @@
     "weight": 4,
     "properties": [
       {
-        "url": "/api/weapon-properties/10",
+        "url": "/api/weapon-properties/versatile",
         "name": "Versatile"
       }
     ],
@@ -589,14 +589,14 @@
       "damage_dice": "1d10",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/12",
+        "url": "/api/damage-types/slashing",
         "name": "Slashing"
       }
     },
-    "url": "/api/equipment/15"
+    "url": "/api/equipment/battleaxe"
   },
   {
-    "index": 16,
+    "id": "flail",
     "name": "Flail",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -610,7 +610,7 @@
       "damage_dice": "1d8",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/2",
+        "url": "/api/damage-types/bludgeoning",
         "name": "Bludgeoning"
       }
     },
@@ -620,10 +620,10 @@
     },
     "weight": 2,
     "properties": [],
-    "url": "/api/equipment/16"
+    "url": "/api/equipment/flail"
   },
   {
-    "index": 17,
+    "id": "glaive",
     "name": "Glaive",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -637,7 +637,7 @@
       "damage_dice": "1d10",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/12",
+        "url": "/api/damage-types/slashing",
         "name": "Slashing"
       }
     },
@@ -648,22 +648,22 @@
     "weight": 6,
     "properties": [
       {
-        "url": "/api/weapon-properties/3",
+        "url": "/api/weapon-properties/heavy",
         "name": "Heavy"
       },
       {
-        "url": "/api/weapon-properties/6",
+        "url": "/api/weapon-properties/reach",
         "name": "Reach"
       },
       {
-        "url": "/api/weapon-properties/9",
+        "url": "/api/weapon-properties/two-handed",
         "name": "Two-Handed"
       }
     ],
-    "url": "/api/equipment/17"
+    "url": "/api/equipment/glaive"
   },
   {
-    "index": 18,
+    "id": "greataxe",
     "name": "Greataxe",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -677,7 +677,7 @@
       "damage_dice": "1d12",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/12",
+        "url": "/api/damage-types/slashing",
         "name": "Slashing"
       }
     },
@@ -688,18 +688,18 @@
     "weight": 7,
     "properties": [
       {
-        "url": "/api/weapon-properties/3",
+        "url": "/api/weapon-properties/heavy",
         "name": "Heavy"
       },
       {
-        "url": "/api/weapon-properties/9",
+        "url": "/api/weapon-properties/two-handed",
         "name": "Two-Handed"
       }
     ],
-    "url": "/api/equipment/18"
+    "url": "/api/equipment/greataxe"
   },
   {
-    "index": 19,
+    "id": "greatsword",
     "name": "Greatsword",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -713,7 +713,7 @@
       "damage_dice": "2d6",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/12",
+        "url": "/api/damage-types/slashing",
         "name": "Slashing"
       }
     },
@@ -724,18 +724,18 @@
     "weight": 6,
     "properties": [
       {
-        "url": "/api/weapon-properties/3",
+        "url": "/api/weapon-properties/heavy",
         "name": "Heavy"
       },
       {
-        "url": "/api/weapon-properties/9",
+        "url": "/api/weapon-properties/two-handed",
         "name": "Two-Handed"
       }
     ],
-    "url": "/api/equipment/19"
+    "url": "/api/equipment/greatsword"
   },
   {
-    "index": 20,
+    "id": "halberd",
     "name": "Halberd",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -749,7 +749,7 @@
       "damage_dice": "1d10",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/12",
+        "url": "/api/damage-types/slashing",
         "name": "Slashing"
       }
     },
@@ -760,22 +760,22 @@
     "weight": 6,
     "properties": [
       {
-        "url": "/api/weapon-properties/3",
+        "url": "/api/weapon-properties/heavy",
         "name": "Heavy"
       },
       {
-        "url": "/api/weapon-properties/6",
+        "url": "/api/weapon-properties/reach",
         "name": "Reach"
       },
       {
-        "url": "/api/weapon-properties/9",
+        "url": "/api/weapon-properties/two-handed",
         "name": "Two-Handed"
       }
     ],
-    "url": "/api/equipment/20"
+    "url": "/api/equipment/halberd"
   },
   {
-    "index": 21,
+    "id": "lance",
     "name": "Lance",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -789,7 +789,7 @@
       "damage_dice": "1d12",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
@@ -800,21 +800,21 @@
     "weight": 6,
     "properties": [
       {
-        "url": "/api/weapon-properties/6",
+        "url": "/api/weapon-properties/reach",
         "name": "Reach"
       },
       {
-        "url": "/api/weapon-properties/7",
+        "url": "/api/weapon-properties/special",
         "name": "Special"
       }
     ],
     "special": [
       "You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted."
     ],
-    "url": "/api/equipment/21"
+    "url": "/api/equipment/lance"
   },
   {
-    "index": 22,
+    "id": "longsword",
     "name": "Longsword",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -828,7 +828,7 @@
       "damage_dice": "1d8",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/12",
+        "url": "/api/damage-types/slashing",
         "name": "Slashing"
       }
     },
@@ -839,7 +839,7 @@
     "weight": 3,
     "properties": [
       {
-        "url": "/api/weapon-properties/10",
+        "url": "/api/weapon-properties/versatile",
         "name": "Versatile"
       }
     ],
@@ -847,14 +847,14 @@
       "damage_dice": "1d10",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/12",
+        "url": "/api/damage-types/slashing",
         "name": "Slashing"
       }
     },
-    "url": "/api/equipment/22"
+    "url": "/api/equipment/longsword"
   },
   {
-    "index": 23,
+    "id": "maul",
     "name": "Maul",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -868,7 +868,7 @@
       "damage_dice": "2d6",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/2",
+        "url": "/api/damage-types/bludgeoning",
         "name": "Bludgeoning"
       }
     },
@@ -879,18 +879,18 @@
     "weight": 10,
     "properties": [
       {
-        "url": "/api/weapon-properties/3",
+        "url": "/api/weapon-properties/heavy",
         "name": "Heavy"
       },
       {
-        "url": "/api/weapon-properties/9",
+        "url": "/api/weapon-properties/two-handed",
         "name": "Two-Handed"
       }
     ],
-    "url": "/api/equipment/23"
+    "url": "/api/equipment/maul"
   },
   {
-    "index": 24,
+    "id": "morningstar",
     "name": "Morningstar",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -904,7 +904,7 @@
       "damage_dice": "1d8",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
@@ -914,10 +914,10 @@
     },
     "weight": 4,
     "properties": [],
-    "url": "/api/equipment/24"
+    "url": "/api/equipment/morningstar"
   },
   {
-    "index": 25,
+    "id": "pike",
     "name": "Pike",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -931,7 +931,7 @@
       "damage_dice": "1d10",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
@@ -942,22 +942,22 @@
     "weight": 18,
     "properties": [
       {
-        "url": "/api/weapon-properties/3",
+        "url": "/api/weapon-properties/heavy",
         "name": "Heavy"
       },
       {
-        "url": "/api/weapon-properties/6",
+        "url": "/api/weapon-properties/reach",
         "name": "Reach"
       },
       {
-        "url": "/api/weapon-properties/9",
+        "url": "/api/weapon-properties/two-handed",
         "name": "Two-Handed"
       }
     ],
-    "url": "/api/equipment/25"
+    "url": "/api/equipment/pike"
   },
   {
-    "index": 26,
+    "id": "rapier",
     "name": "Rapier",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -971,7 +971,7 @@
       "damage_dice": "1d8",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
@@ -982,14 +982,14 @@
     "weight": 2,
     "properties": [
       {
-        "url": "/api/weapon-properties/2",
+        "url": "/api/weapon-properties/finesse",
         "name": "Finesse"
       }
     ],
-    "url": "/api/equipment/26"
+    "url": "/api/equipment/rapier"
   },
   {
-    "index": 27,
+    "id": "scimitar",
     "name": "Scimitar",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -1003,7 +1003,7 @@
       "damage_dice": "1d6",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/12",
+        "url": "/api/damage-types/slashing",
         "name": "Slashing"
       }
     },
@@ -1014,18 +1014,18 @@
     "weight": 3,
     "properties": [
       {
-        "url": "/api/weapon-properties/2",
+        "url": "/api/weapon-properties/finesse",
         "name": "Finesse"
       },
       {
-        "url": "/api/weapon-properties/4",
+        "url": "/api/weapon-properties/light",
         "name": "Light"
       }
     ],
-    "url": "/api/equipment/27"
+    "url": "/api/equipment/scimitar"
   },
   {
-    "index": 28,
+    "id": "shortsword",
     "name": "Shortsword",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -1039,7 +1039,7 @@
       "damage_dice": "1d6",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
@@ -1050,22 +1050,22 @@
     "weight": 2,
     "properties": [
       {
-        "url": "/api/weapon-properties/2",
+        "url": "/api/weapon-properties/finesse",
         "name": "Finesse"
       },
       {
-        "url": "/api/weapon-properties/4",
+        "url": "/api/weapon-properties/light",
         "name": "Light"
       },
       {
-        "url": "/api/weapon-properties/11",
+        "url": "/api/weapon-properties/monk",
         "name": "Monk"
       }
     ],
-    "url": "/api/equipment/28"
+    "url": "/api/equipment/shortsword"
   },
   {
-    "index": 29,
+    "id": "trident",
     "name": "Trident",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -1079,7 +1079,7 @@
       "damage_dice": "1d6",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/12",
+        "url": "/api/damage-types/slashing",
         "name": "Slashing"
       }
     },
@@ -1090,11 +1090,11 @@
     "weight": 4,
     "properties": [
       {
-        "url": "/api/weapon-properties/8",
+        "url": "/api/weapon-properties/thrown",
         "name": "Thrown"
       },
       {
-        "url": "/api/weapon-properties/10",
+        "url": "/api/weapon-properties/versatile",
         "name": "Versatile"
       }
     ],
@@ -1106,14 +1106,14 @@
       "damage_dice": "1d8",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
-    "url": "/api/equipment/29"
+    "url": "/api/equipment/trident"
   },
   {
-    "index": 30,
+    "id": "war-pick",
     "name": "War pick",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -1127,7 +1127,7 @@
       "damage_dice": "1d8",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
@@ -1137,10 +1137,10 @@
     },
     "weight": 2,
     "properties": [],
-    "url": "/api/equipment/30"
+    "url": "/api/equipment/war-pick"
   },
   {
-    "index": 31,
+    "id": "warhammer",
     "name": "Warhammer",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -1154,7 +1154,7 @@
       "damage_dice": "1d8",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/2",
+        "url": "/api/damage-types/bludgeoning",
         "name": "Bludgeoning"
       }
     },
@@ -1165,7 +1165,7 @@
     "weight": 2,
     "properties": [
       {
-        "url": "/api/weapon-properties/10",
+        "url": "/api/weapon-properties/versatile",
         "name": "Versatile"
       }
     ],
@@ -1173,14 +1173,14 @@
       "damage_dice": "1d10",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/2",
+        "url": "/api/damage-types/bludgeoning",
         "name": "Bludgeoning"
       }
     },
-    "url": "/api/equipment/31"
+    "url": "/api/equipment/warhammer"
   },
   {
-    "index": 32,
+    "id": "whip",
     "name": "Whip",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -1194,7 +1194,7 @@
       "damage_dice": "1d4",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/12",
+        "url": "/api/damage-types/slashing",
         "name": "Slashing"
       }
     },
@@ -1205,18 +1205,18 @@
     "weight": 3,
     "properties": [
       {
-        "url": "/api/weapon-properties/2",
+        "url": "/api/weapon-properties/finesse",
         "name": "Finesse"
       },
       {
-        "url": "/api/weapon-properties/6",
+        "url": "/api/weapon-properties/reach",
         "name": "Reach"
       }
     ],
-    "url": "/api/equipment/32"
+    "url": "/api/equipment/whip"
   },
   {
-    "index": 33,
+    "id": "blowgun",
     "name": "Blowgun",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -1230,7 +1230,7 @@
       "damage_dice": "1d1",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
@@ -1242,17 +1242,17 @@
     "properties": [
       {
         "name": "Ammunition",
-        "url": "/api/weapon-properties/1"
+        "url": "/api/weapon-properties/ammunition"
       },
       {
         "name": "Loading",
-        "url": "/api/weapon-properties/5"
+        "url": "/api/weapon-properties/loading"
       }
     ],
-    "url": "/api/equipment/33"
+    "url": "/api/equipment/blowgun"
   },
   {
-    "index": 34,
+    "id": "crossbow-hand",
     "name": "Crossbow, hand",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -1266,7 +1266,7 @@
       "damage_dice": "1d6",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
@@ -1278,21 +1278,21 @@
     "properties": [
       {
         "name": "Ammunition",
-        "url": "/api/weapon-properties/1"
+        "url": "/api/weapon-properties/ammunition"
       },
       {
-        "url": "/api/weapon-properties/4",
+        "url": "/api/weapon-properties/light",
         "name": "Light"
       },
       {
         "name": "Loading",
-        "url": "/api/weapon-properties/5"
+        "url": "/api/weapon-properties/loading"
       }
     ],
-    "url": "/api/equipment/34"
+    "url": "/api/equipment/crossbow-hand"
   },
   {
-    "index": 35,
+    "id": "crossbow-heavy",
     "name": "Crossbow, heavy",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -1306,7 +1306,7 @@
       "damage_dice": "1d10",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
@@ -1318,25 +1318,25 @@
     "properties": [
       {
         "name": "Ammunition",
-        "url": "/api/weapon-properties/1"
+        "url": "/api/weapon-properties/ammunition"
       },
       {
-        "url": "/api/weapon-properties/4",
+        "url": "/api/weapon-properties/light",
         "name": "Light"
       },
       {
         "name": "Loading",
-        "url": "/api/weapon-properties/5"
+        "url": "/api/weapon-properties/loading"
       },
       {
-        "url": "/api/weapon-properties/9",
+        "url": "/api/weapon-properties/two-handed",
         "name": "Two-Handed"
       }
     ],
-    "url": "/api/equipment/35"
+    "url": "/api/equipment/crossbow-heavy"
   },
   {
-    "index": 36,
+    "id": "longbow",
     "name": "Longbow",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -1350,7 +1350,7 @@
       "damage_dice": "1d8",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/8",
+        "url": "/api/damage-types/piercing",
         "name": "Piercing"
       }
     },
@@ -1362,21 +1362,21 @@
     "properties": [
       {
         "name": "Ammunition",
-        "url": "/api/weapon-properties/1"
+        "url": "/api/weapon-properties/ammunition"
       },
       {
-        "url": "/api/weapon-properties/3",
+        "url": "/api/weapon-properties/heavy",
         "name": "Heavy"
       },
       {
-        "url": "/api/weapon-properties/9",
+        "url": "/api/weapon-properties/two-handed",
         "name": "Two-Handed"
       }
     ],
-    "url": "/api/equipment/36"
+    "url": "/api/equipment/longbow"
   },
   {
-    "index": 37,
+    "id": "net",
     "name": "Net",
     "equipment_category": "Weapon",
     "weapon_category": "Martial",
@@ -1390,7 +1390,7 @@
       "damage_dice": "1d0",
       "damage_bonus": 0,
       "damage_type": {
-        "url": "/api/damage-types/12",
+        "url": "/api/damage-types/slashing",
         "name": "Slashing"
       }
     },
@@ -1401,11 +1401,11 @@
     "weight": 3,
     "properties": [
       {
-        "url": "/api/weapon-properties/8",
+        "url": "/api/weapon-properties/thrown",
         "name": "Thrown"
       },
       {
-        "url": "/api/weapon-properties/7",
+        "url": "/api/weapon-properties/special",
         "name": "Special"
       }
     ],
@@ -1416,10 +1416,10 @@
       "normal": 5,
       "long": 15
     },
-    "url": "/api/equipment/37"
+    "url": "/api/equipment/net"
   },
   {
-    "index": 38,
+    "id": "padded",
     "name": "Padded",
     "equipment_category": "Armor",
     "armor_category": "Light",
@@ -1435,10 +1435,10 @@
       "quantity": 5,
       "unit": "gp"
     },
-    "url": "/api/equipment/38"
+    "url": "/api/equipment/padded"
   },
   {
-    "index": 39,
+    "id": "leather",
     "name": "Leather",
     "equipment_category": "Armor",
     "armor_category": "Light",
@@ -1454,10 +1454,10 @@
       "quantity": 10,
       "unit": "gp"
     },
-    "url": "/api/equipment/39"
+    "url": "/api/equipment/leather"
   },
   {
-    "index": 40,
+    "id": "studded-leather",
     "name": "Studded Leather",
     "equipment_category": "Armor",
     "armor_category": "Light",
@@ -1473,10 +1473,10 @@
       "quantity": 45,
       "unit": "gp"
     },
-    "url": "/api/equipment/40"
+    "url": "/api/equipment/studded-leather"
   },
   {
-    "index": 41,
+    "id": "hide",
     "name": "Hide",
     "equipment_category": "Armor",
     "armor_category": "Medium",
@@ -1492,10 +1492,10 @@
       "quantity": 10,
       "unit": "gp"
     },
-    "url": "/api/equipment/41"
+    "url": "/api/equipment/hide"
   },
   {
-    "index": 42,
+    "id": "chain-shirt",
     "name": "Chain Shirt",
     "equipment_category": "Armor",
     "armor_category": "Medium",
@@ -1511,10 +1511,10 @@
       "quantity": 50,
       "unit": "gp"
     },
-    "url": "/api/equipment/42"
+    "url": "/api/equipment/chain-shirt"
   },
   {
-    "index": 43,
+    "id": "scale-mail",
     "name": "Scale Mail",
     "equipment_category": "Armor",
     "armor_category": "Medium",
@@ -1530,10 +1530,10 @@
       "quantity": 50,
       "unit": "gp"
     },
-    "url": "/api/equipment/43"
+    "url": "/api/equipment/scale-mail"
   },
   {
-    "index": 44,
+    "id": "breastplate",
     "name": "Breastplate",
     "equipment_category": "Armor",
     "armor_category": "Medium",
@@ -1549,10 +1549,10 @@
       "quantity": 400,
       "unit": "gp"
     },
-    "url": "/api/equipment/44"
+    "url": "/api/equipment/breastplate"
   },
   {
-    "index": 45,
+    "id": "half-plate",
     "name": "Half Plate",
     "equipment_category": "Armor",
     "armor_category": "Medium",
@@ -1568,10 +1568,10 @@
       "quantity": 750,
       "unit": "gp"
     },
-    "url": "/api/equipment/45"
+    "url": "/api/equipment/half-plate"
   },
   {
-    "index": 46,
+    "id": "ring-mail",
     "name": "Ring Mail",
     "equipment_category": "Armor",
     "armor_category": "Heavy",
@@ -1587,10 +1587,10 @@
       "quantity": 30,
       "unit": "gp"
     },
-    "url": "/api/equipment/46"
+    "url": "/api/equipment/ring-mail"
   },
   {
-    "index": 47,
+    "id": "chain-mail",
     "name": "Chain Mail",
     "equipment_category": "Armor",
     "armor_category": "Heavy",
@@ -1606,10 +1606,10 @@
       "quantity": 75,
       "unit": "gp"
     },
-    "url": "/api/equipment/47"
+    "url": "/api/equipment/chain-mail"
   },
   {
-    "index": 48,
+    "id": "splint",
     "name": "Splint",
     "equipment_category": "Armor",
     "armor_category": "Heavy",
@@ -1625,10 +1625,10 @@
       "quantity": 200,
       "unit": "gp"
     },
-    "url": "/api/equipment/48"
+    "url": "/api/equipment/splint"
   },
   {
-    "index": 49,
+    "id": "plate",
     "name": "Plate",
     "equipment_category": "Armor",
     "armor_category": "Heavy",
@@ -1644,10 +1644,10 @@
       "quantity": 1500,
       "unit": "gp"
     },
-    "url": "/api/equipment/49"
+    "url": "/api/equipment/plate"
   },
   {
-    "index": 50,
+    "id": "shield",
     "name": "Shield",
     "equipment_category": "Armor",
     "armor_category": "Shield",
@@ -1663,10 +1663,10 @@
       "quantity": 10,
       "unit": "gp"
     },
-    "url": "/api/equipment/50"
+    "url": "/api/equipment/shield"
   },
   {
-    "index": 51,
+    "id": "abacus",
     "name": "Abacus",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -1675,10 +1675,10 @@
       "unit": "gp"
     },
     "weight": 2,
-    "url": "/api/equipment/51"
+    "url": "/api/equipment/abacus"
   },
   {
-    "index": 52,
+    "id": "acid-vial",
     "name": "Acid (vial)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -1691,10 +1691,10 @@
       "As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged attack against a creature or object, treating the acid as an improvised weapon.",
       "On a hit, the target takes 2d6 acid damage."
     ],
-    "url": "/api/equipment/52"
+    "url": "/api/equipment/acid-vial"
   },
   {
-    "index": 53,
+    "id": "alchemists-fire-flask",
     "name": "Alchemist's fire (flask)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -1708,10 +1708,10 @@
       "On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames."
     ],
     "weight": 1,
-    "url": "/api/equipment/53"
+    "url": "/api/equipment/alchemists-fire-flask"
   },
   {
-    "index": 54,
+    "id": "arrow",
     "name": "Arrow",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Ammunition",
@@ -1720,10 +1720,10 @@
       "unit": "cp"
     },
     "weight": 1,
-    "url": "/api/equipment/54"
+    "url": "/api/equipment/arrow"
   },
   {
-    "index": 55,
+    "id": "blowgun-needle",
     "name": "Blowgun needle",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Ammunition",
@@ -1732,10 +1732,10 @@
       "unit": "cp"
     },
     "weight": 1,
-    "url": "/api/equipment/55"
+    "url": "/api/equipment/blowgun-needle"
   },
   {
-    "index": 56,
+    "id": "crossbow-bolt",
     "name": "Crossbow bolt",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Ammunition",
@@ -1744,10 +1744,10 @@
       "unit": "cp"
     },
     "weight": 1.5,
-    "url": "/api/equipment/56"
+    "url": "/api/equipment/crossbow-bolt"
   },
   {
-    "index": 57,
+    "id": "sling-bullet",
     "name": "Sling bullet",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Ammunition",
@@ -1756,10 +1756,10 @@
       "unit": "cp"
     },
     "weight": 1.5,
-    "url": "/api/equipment/57"
+    "url": "/api/equipment/sling-bullet"
   },
   {
-    "index": 58,
+    "id": "amulet",
     "name": "Amulet",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Holy Symbol",
@@ -1772,10 +1772,10 @@
       "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic.",
       "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
     ],
-    "url": "/api/equipment/58"
+    "url": "/api/equipment/amulet"
   },
   {
-    "index": 59,
+    "id": "antitoxin-vial",
     "name": "Antitoxin (vial)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -1787,10 +1787,10 @@
     "desc": [
       "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs."
     ],
-    "url": "/api/equipment/59"
+    "url": "/api/equipment/antitoxin-vial"
   },
   {
-    "index": 60,
+    "id": "crystal",
     "name": "Crystal",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Arcane focus",
@@ -1802,10 +1802,10 @@
     "desc": [
       "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus."
     ],
-    "url": "/api/equipment/60"
+    "url": "/api/equipment/crystal"
   },
   {
-    "index": 61,
+    "id": "orb",
     "name": "Orb",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Arcane focus",
@@ -1817,10 +1817,10 @@
     "desc": [
       "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus."
     ],
-    "url": "/api/equipment/61"
+    "url": "/api/equipment/orb"
   },
   {
-    "index": 62,
+    "id": "rod",
     "name": "Rod",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Arcane focus",
@@ -1832,10 +1832,10 @@
     "desc": [
       "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus."
     ],
-    "url": "/api/equipment/62"
+    "url": "/api/equipment/rod"
   },
   {
-    "index": 63,
+    "id": "staff",
     "name": "Staff",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Arcane focus",
@@ -1847,10 +1847,10 @@
     "desc": [
       "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus."
     ],
-    "url": "/api/equipment/63"
+    "url": "/api/equipment/staff"
   },
   {
-    "index": 64,
+    "id": "wand",
     "name": "Wand",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Arcane focus",
@@ -1862,10 +1862,10 @@
     "desc": [
       "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus."
     ],
-    "url": "/api/equipment/64"
+    "url": "/api/equipment/wand"
   },
   {
-    "index": 65,
+    "id": "backpack",
     "name": "Backpack",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -1874,10 +1874,10 @@
       "unit": "gp"
     },
     "weight": 5,
-    "url": "/api/equipment/65"
+    "url": "/api/equipment/backpack"
   },
   {
-    "index": 66,
+    "id": "ball-bearings-bag-of-1000",
     "name": "Ball bearings (bag of 1,000)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -1891,10 +1891,10 @@
       "A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone.",
       "A creature moving through the area at half speed doesn't need to make the save."
     ],
-    "url": "/api/equipment/66"
+    "url": "/api/equipment/ball-bearings-bag-of-1000"
   },
   {
-    "index": 67,
+    "id": "barrel",
     "name": "Barrel",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -1903,10 +1903,10 @@
       "unit": "gp"
     },
     "weight": 70,
-    "url": "/api/equipment/67"
+    "url": "/api/equipment/barrel"
   },
   {
-    "index": 68,
+    "id": "basket",
     "name": "Basket",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -1915,10 +1915,10 @@
       "unit": "sp"
     },
     "weight": 2,
-    "url": "/api/equipment/68"
+    "url": "/api/equipment/basket"
   },
   {
-    "index": 69,
+    "id": "bedroll",
     "name": "Bedroll",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -1927,10 +1927,10 @@
       "unit": "gp"
     },
     "weight": 7,
-    "url": "/api/equipment/69"
+    "url": "/api/equipment/bedroll"
   },
   {
-    "index": 70,
+    "id": "bell",
     "name": "Bell",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -1939,10 +1939,10 @@
       "unit": "gp"
     },
     "weight": 0,
-    "url": "/api/equipment/70"
+    "url": "/api/equipment/bell"
   },
   {
-    "index": 71,
+    "id": "blanket",
     "name": "Blanket",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -1951,10 +1951,10 @@
       "unit": "sp"
     },
     "weight": 3,
-    "url": "/api/equipment/71"
+    "url": "/api/equipment/blanket"
   },
   {
-    "index": 72,
+    "id": "block-and-tackle",
     "name": "Block and tackle",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -1966,10 +1966,10 @@
     "desc": [
       "A set of pulleys with a cable threaded through them and a hook to attach to objects, a block and tackle allows you to hoist up to four times the weight you can normally lift."
     ],
-    "url": "/api/equipment/72"
+    "url": "/api/equipment/block-and-tackle"
   },
   {
-    "index": 73,
+    "id": "book",
     "name": "Book",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -1981,10 +1981,10 @@
     "desc": [
       "A book might contain poetry, historical accounts, information pertaining to a particular field of lore, diagrams and notes on gnomish contraptions, or just about anything else that can be represented using text or pictures. A book of spells is a spellbook (described later in this section)."
     ],
-    "url": "/api/equipment/73"
+    "url": "/api/equipment/book"
   },
   {
-    "index": 74,
+    "id": "bottle-glass",
     "name": "Bottle, glass",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -1993,10 +1993,10 @@
       "unit": "gp"
     },
     "weight": 2,
-    "url": "/api/equipment/74"
+    "url": "/api/equipment/bottle-glass"
   },
   {
-    "index": 75,
+    "id": "bucket",
     "name": "Bucket",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2005,10 +2005,10 @@
       "unit": "cp"
     },
     "weight": 2,
-    "url": "/api/equipment/75"
+    "url": "/api/equipment/bucket"
   },
   {
-    "index": 76,
+    "id": "caltrops",
     "name": "Caltrops",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2023,10 +2023,10 @@
       "Taking this damage reduces the creature's walking speed by 10 feet until the creature regains at least 1 hit point.",
       "A creature moving through the area at half speed doesn't need to make the save."
     ],
-    "url": "/api/equipment/76"
+    "url": "/api/equipment/caltrops"
   },
   {
-    "index": 77,
+    "id": "candle",
     "name": "Candle",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2038,10 +2038,10 @@
     "desc": [
       "For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet."
     ],
-    "url": "/api/equipment/77"
+    "url": "/api/equipment/candle"
   },
   {
-    "index": 78,
+    "id": "case-crossbow-bolt",
     "name": "Case, crossbow bolt",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2051,10 +2051,10 @@
     },
     "weight": 1,
     "desc": ["This wooden case can hold up to twenty crossbow bolts."],
-    "url": "/api/equipment/78"
+    "url": "/api/equipment/case-crossbow-bolt"
   },
   {
-    "index": 79,
+    "id": "case-map-or-scroll",
     "name": "Case, map or scroll",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2066,10 +2066,10 @@
     "desc": [
       "This cylindrical leather case can hold up to ten rolled-up sheets of paper or five rolled-up sheets of parchment."
     ],
-    "url": "/api/equipment/79"
+    "url": "/api/equipment/case-map-or-scroll"
   },
   {
-    "index": 80,
+    "id": "chain-10-feet",
     "name": "Chain (10 feet)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2081,10 +2081,10 @@
     "desc": [
       "A chain has 10 hit points. It can be burst with a successful DC 20 Strength check."
     ],
-    "url": "/api/equipment/80"
+    "url": "/api/equipment/chain-10-feet"
   },
   {
-    "index": 81,
+    "id": "chalk-1-piece",
     "name": "Chalk (1 piece)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2093,10 +2093,10 @@
       "unit": "cp"
     },
     "weight": 0,
-    "url": "/api/equipment/81"
+    "url": "/api/equipment/chalk-1-piece"
   },
   {
-    "index": 82,
+    "id": "chest",
     "name": "Chest",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2105,10 +2105,10 @@
       "unit": "gp"
     },
     "weight": 25,
-    "url": "/api/equipment/82"
+    "url": "/api/equipment/chest"
   },
   {
-    "index": 83,
+    "id": "clothes-common",
     "name": "Clothes, common",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2117,10 +2117,10 @@
       "unit": "sp"
     },
     "weight": 3,
-    "url": "/api/equipment/83"
+    "url": "/api/equipment/clothes-common"
   },
   {
-    "index": 84,
+    "id": "clothes-costume",
     "name": "Clothes, costume",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2129,10 +2129,10 @@
       "unit": "gp"
     },
     "weight": 4,
-    "url": "/api/equipment/84"
+    "url": "/api/equipment/clothes-costume"
   },
   {
-    "index": 85,
+    "id": "clothes-fine",
     "name": "Clothes, fine",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2141,10 +2141,10 @@
       "unit": "gp"
     },
     "weight": 6,
-    "url": "/api/equipment/85"
+    "url": "/api/equipment/clothes-fine"
   },
   {
-    "index": 86,
+    "id": "clothes-travelers",
     "name": "Clothes, traveler's",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2153,10 +2153,10 @@
       "unit": "gp"
     },
     "weight": 4,
-    "url": "/api/equipment/86"
+    "url": "/api/equipment/clothes-travelers"
   },
   {
-    "index": 87,
+    "id": "component-pouch",
     "name": "Component pouch",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2168,10 +2168,10 @@
     "desc": [
       " A component pouch is a small, watertight leather belt pouch that has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description)."
     ],
-    "url": "/api/equipment/87"
+    "url": "/api/equipment/component-pouch"
   },
   {
-    "index": 88,
+    "id": "crowbar",
     "name": "Crowbar",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2183,10 +2183,10 @@
     "desc": [
       "Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied."
     ],
-    "url": "/api/equipment/88"
+    "url": "/api/equipment/crowbar"
   },
   {
-    "index": 89,
+    "id": "sprig-of-mistletoe",
     "name": "Sprig of mistletoe",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Druidic focus",
@@ -2198,10 +2198,10 @@
     "desc": [
       "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus."
     ],
-    "url": "/api/equipment/89"
+    "url": "/api/equipment/sprig-of-mistletoe"
   },
   {
-    "index": 90,
+    "id": "totem",
     "name": "Totem",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Druidic focus",
@@ -2213,10 +2213,10 @@
     "desc": [
       "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus."
     ],
-    "url": "/api/equipment/90"
+    "url": "/api/equipment/totem"
   },
   {
-    "index": 91,
+    "id": "wooden-staff",
     "name": "Wooden staff",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Druidic focus",
@@ -2228,10 +2228,10 @@
     "desc": [
       "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus."
     ],
-    "url": "/api/equipment/91"
+    "url": "/api/equipment/wooden-staff"
   },
   {
-    "index": 92,
+    "id": "yew-wand",
     "name": "Yew wand",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Druidic focus",
@@ -2243,10 +2243,10 @@
     "desc": [
       "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus."
     ],
-    "url": "/api/equipment/92"
+    "url": "/api/equipment/yew-wand"
   },
   {
-    "index": 93,
+    "id": "emblem",
     "name": "Emblem",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Holy Symbol",
@@ -2259,10 +2259,10 @@
       "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic.",
       "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
     ],
-    "url": "/api/equipment/93"
+    "url": "/api/equipment/emblem"
   },
   {
-    "index": 94,
+    "id": "fishing-tackle",
     "name": "Fishing tackle",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2274,10 +2274,10 @@
     "desc": [
       "This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting."
     ],
-    "url": "/api/equipment/94"
+    "url": "/api/equipment/fishing-tackle"
   },
   {
-    "index": 95,
+    "id": "flask-or-tankard",
     "name": "Flask or tankard",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2286,10 +2286,10 @@
       "unit": "cp"
     },
     "weight": 1,
-    "url": "/api/equipment/95"
+    "url": "/api/equipment/flask-or-tankard"
   },
   {
-    "index": 96,
+    "id": "grappling-hook",
     "name": "Grappling hook",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2298,10 +2298,10 @@
       "unit": "gp"
     },
     "weight": 4,
-    "url": "/api/equipment/96"
+    "url": "/api/equipment/grappling-hook"
   },
   {
-    "index": 97,
+    "id": "hammer",
     "name": "Hammer",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2310,10 +2310,10 @@
       "unit": "gp"
     },
     "weight": 3,
-    "url": "/api/equipment/97"
+    "url": "/api/equipment/hammer"
   },
   {
-    "index": 98,
+    "id": "hammer-sledge",
     "name": "Hammer, sledge",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2322,10 +2322,10 @@
       "unit": "gp"
     },
     "weight": 10,
-    "url": "/api/equipment/98"
+    "url": "/api/equipment/hammer-sledge"
   },
   {
-    "index": 99,
+    "id": "holy-water-flask",
     "name": "Holy water (flask)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2340,10 +2340,10 @@
       "A cleric or paladin may create holy water by performing a special ritual.",
       "The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot."
     ],
-    "url": "/api/equipment/99"
+    "url": "/api/equipment/holy-water-flask"
   },
   {
-    "index": 100,
+    "id": "hourglass",
     "name": "Hourglass",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2352,10 +2352,10 @@
       "unit": "gp"
     },
     "weight": 1,
-    "url": "/api/equipment/100"
+    "url": "/api/equipment/hourglass"
   },
   {
-    "index": 101,
+    "id": "hunting-trap",
     "name": "Hunting trap",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2369,10 +2369,10 @@
       "A creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. Each failed check deals 1 piercing damage to the trapped creature."
     ],
     "weight": 25,
-    "url": "/api/equipment/101"
+    "url": "/api/equipment/hunting-trap"
   },
   {
-    "index": 102,
+    "id": "ink-1-ounce-bottle",
     "name": "Ink (1 ounce bottle)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2381,10 +2381,10 @@
       "unit": "gp"
     },
     "weight": 0,
-    "url": "/api/equipment/102"
+    "url": "/api/equipment/ink-1-ounce-bottle"
   },
   {
-    "index": 103,
+    "id": "ink-pen",
     "name": "Ink pen",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2393,10 +2393,10 @@
       "unit": "cp"
     },
     "weight": 0,
-    "url": "/api/equipment/103"
+    "url": "/api/equipment/ink-pen"
   },
   {
-    "index": 104,
+    "id": "jug-or-pitcher",
     "name": "Jug or pitcher",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2405,10 +2405,10 @@
       "unit": "cp"
     },
     "weight": 4,
-    "url": "/api/equipment/104"
+    "url": "/api/equipment/jug-or-pitcher"
   },
   {
-    "index": 105,
+    "id": "climbers-kit",
     "name": "Climber's Kit",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Kit",
@@ -2420,10 +2420,10 @@
     "desc": [
       "A climber's kit includes special pitons, boot tips, gloves, and a harness. You can use the climber's kit as an action to anchor yourself; when you do, you can't fall more than 25 feet from the point where you anchored yourself, and you can't climb more than 25 feet away from that point without undoing the anchor."
     ],
-    "url": "/api/equipment/105"
+    "url": "/api/equipment/climbers-kit"
   },
   {
-    "index": 106,
+    "id": "disguise-kit",
     "name": "Disguise Kit",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Kit",
@@ -2435,10 +2435,10 @@
     "desc": [
       "This pouch of cosmetics, hair dye, and small props lets you create disguises that change your physical appearance. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a visual disguise."
     ],
-    "url": "/api/equipment/106"
+    "url": "/api/equipment/disguise-kit"
   },
   {
-    "index": 107,
+    "id": "forgery-kit",
     "name": "Forgery Kit",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Kit",
@@ -2450,10 +2450,10 @@
     "desc": [
       "This small box contains a variety of papers and parchments, pens and inks, seals and sealing wax, gold and silver leaf, and other supplies necessary to create convincing forgeries of physical documents. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a physical forgery of a document."
     ],
-    "url": "/api/equipment/107"
+    "url": "/api/equipment/forgery-kit"
   },
   {
-    "index": 108,
+    "id": "herbalism-kit",
     "name": "Herbalism Kit",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Kit",
@@ -2465,10 +2465,10 @@
     "desc": [
       "This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to identify or apply herbs. Also, proficiency with this kit is required to create antitoxin and potions of healing."
     ],
-    "url": "/api/equipment/108"
+    "url": "/api/equipment/herbalism-kit"
   },
   {
-    "index": 109,
+    "id": "healers-kit",
     "name": "Healer's Kit",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Kit",
@@ -2480,10 +2480,10 @@
     "desc": [
       "This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check."
     ],
-    "url": "/api/equipment/109"
+    "url": "/api/equipment/healers-kit"
   },
   {
-    "index": 110,
+    "id": "mess-kit",
     "name": "Mess Kit",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Kit",
@@ -2495,10 +2495,10 @@
     "desc": [
       "This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl."
     ],
-    "url": "/api/equipment/110"
+    "url": "/api/equipment/mess-kit"
   },
   {
-    "index": 111,
+    "id": "poisoners-kit",
     "name": "Poisoner's Kit",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Kit",
@@ -2510,10 +2510,10 @@
     "desc": [
       "A poisoner's kit includes the vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons."
     ],
-    "url": "/api/equipment/111"
+    "url": "/api/equipment/poisoners-kit"
   },
   {
-    "index": 112,
+    "id": "ladder-10-foot",
     "name": "Ladder (10-foot)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2522,10 +2522,10 @@
       "unit": "sp"
     },
     "weight": 25,
-    "url": "/api/equipment/112"
+    "url": "/api/equipment/ladder-10-foot"
   },
   {
-    "index": 113,
+    "id": "lamp",
     "name": "Lamp",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2537,10 +2537,10 @@
     "desc": [
       "A lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil."
     ],
-    "url": "/api/equipment/113"
+    "url": "/api/equipment/lamp"
   },
   {
-    "index": 114,
+    "id": "lantern-bullseye",
     "name": "Lantern, bullseye",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2552,10 +2552,10 @@
     "desc": [
       "A bullseye lantern casts bright light in a 60-foot cone and dim light for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil."
     ],
-    "url": "/api/equipment/114"
+    "url": "/api/equipment/lantern-bullseye"
   },
   {
-    "index": 115,
+    "id": "lantern-hooded",
     "name": "Lantern, hooded",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2567,10 +2567,10 @@
     "desc": [
       "A hooded lantern casts bright light in a 30-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil. As an action, you can lower the hood, reducing the light to dim light in a 5-foot radius."
     ],
-    "url": "/api/equipment/115"
+    "url": "/api/equipment/lantern-hooded"
   },
   {
-    "index": 116,
+    "id": "lock",
     "name": "Lock",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2582,10 +2582,10 @@
     "desc": [
       "A key is provided with the lock. Without the key, a creature proficient with thieves' tools can pick this lock with a successful DC 15 Dexterity check. Your GM may decide that better locks are available for higher prices."
     ],
-    "url": "/api/equipment/116"
+    "url": "/api/equipment/lock"
   },
   {
-    "index": 117,
+    "id": "magnifying-glass",
     "name": "Magnifying glass",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2598,10 +2598,10 @@
       "This lens allows a closer look at small objects. It is also useful as a substitute for flint and steel when starting fires. Lighting a fire with a magnifying glass requires light as bright as sunlight to focus, tinder to ignite, and about 5 minutes for the fire to ignite.",
       "A magnifying glass grants advantage on any ability check made to appraise or inspect an item that is small or highly detailed."
     ],
-    "url": "/api/equipment/117"
+    "url": "/api/equipment/magnifying-glass"
   },
   {
-    "index": 118,
+    "id": "manacles",
     "name": "Manacles",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2614,10 +2614,10 @@
       "These metal restraints can bind a Small or Medium creature. Escaping the manacles requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check.",
       "Each set of manacles comes with one key. Without the key, a creature proficient with thieves' tools can pick the manacles' lock with a successful DC 15 Dexterity check. Manacles have 15 hit points."
     ],
-    "url": "/api/equipment/118"
+    "url": "/api/equipment/manacles"
   },
   {
-    "index": 119,
+    "id": "mirror-steel",
     "name": "Mirror, steel",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2626,10 +2626,10 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "url": "/api/equipment/119"
+    "url": "/api/equipment/mirror-steel"
   },
   {
-    "index": 120,
+    "id": "oil-flask",
     "name": "Oil (flask)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2645,10 +2645,10 @@
       "You can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level.",
       "If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn."
     ],
-    "url": "/api/equipment/120"
+    "url": "/api/equipment/oil-flask"
   },
   {
-    "index": 121,
+    "id": "paper-one-sheet",
     "name": "Paper (one sheet)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2657,10 +2657,10 @@
       "unit": "sp"
     },
     "weight": 0,
-    "url": "/api/equipment/121"
+    "url": "/api/equipment/paper-one-sheet"
   },
   {
-    "index": 122,
+    "id": "parchment-one-sheet",
     "name": "Parchment (one sheet)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2669,10 +2669,10 @@
       "unit": "sp"
     },
     "weight": 0,
-    "url": "/api/equipment/122"
+    "url": "/api/equipment/parchment-one-sheet"
   },
   {
-    "index": 123,
+    "id": "perfume-vial",
     "name": "Perfume (vial)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2681,10 +2681,10 @@
       "unit": "gp"
     },
     "weight": 0,
-    "url": "/api/equipment/123"
+    "url": "/api/equipment/perfume-vial"
   },
   {
-    "index": 124,
+    "id": "pick-miners",
     "name": "Pick, miner's",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2693,10 +2693,10 @@
       "unit": "gp"
     },
     "weight": 10,
-    "url": "/api/equipment/124"
+    "url": "/api/equipment/pick-miners"
   },
   {
-    "index": 125,
+    "id": "piton",
     "name": "Piton",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2705,10 +2705,10 @@
       "unit": "cp"
     },
     "weight": 0.25,
-    "url": "/api/equipment/125"
+    "url": "/api/equipment/piton"
   },
   {
-    "index": 126,
+    "id": "poison-basic-vial",
     "name": "Poison, basic (vial)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2720,10 +2720,10 @@
     "desc": [
       "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take 1d4 poison damage. Once applied, the poison retains potency for 1 minute before drying."
     ],
-    "url": "/api/equipment/126"
+    "url": "/api/equipment/poison-basic-vial"
   },
   {
-    "index": 127,
+    "id": "pole-10-foot",
     "name": "Pole (10-foot)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2732,10 +2732,10 @@
       "unit": "cp"
     },
     "weight": 7,
-    "url": "/api/equipment/127"
+    "url": "/api/equipment/pole-10-foot"
   },
   {
-    "index": 128,
+    "id": "pot-iron",
     "name": "Pot, iron",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2744,10 +2744,10 @@
       "unit": "gp"
     },
     "weight": 10,
-    "url": "/api/equipment/128"
+    "url": "/api/equipment/pot-iron"
   },
   {
-    "index": 129,
+    "id": "potion-of-healing",
     "name": "Potion of healing",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2759,10 +2759,10 @@
     "desc": [
       "A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking or administering a potion takes an action."
     ],
-    "url": "/api/equipment/129"
+    "url": "/api/equipment/potion-of-healing"
   },
   {
-    "index": 130,
+    "id": "pouch",
     "name": "Pouch",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2774,10 +2774,10 @@
     "desc": [
       "A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section)."
     ],
-    "url": "/api/equipment/130"
+    "url": "/api/equipment/pouch"
   },
   {
-    "index": 131,
+    "id": "quiver",
     "name": "Quiver",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2787,10 +2787,10 @@
     },
     "weight": 1,
     "desc": ["A quiver can hold up to 20 arrows."],
-    "url": "/api/equipment/131"
+    "url": "/api/equipment/quiver"
   },
   {
-    "index": 132,
+    "id": "ram-portable",
     "name": "Ram, portable",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2802,10 +2802,10 @@
     "desc": [
       "You can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check."
     ],
-    "url": "/api/equipment/132"
+    "url": "/api/equipment/ram-portable"
   },
   {
-    "index": 133,
+    "id": "rations-1-day",
     "name": "Rations (1 day)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2817,10 +2817,10 @@
     "desc": [
       "Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts."
     ],
-    "url": "/api/equipment/133"
+    "url": "/api/equipment/rations-1-day"
   },
   {
-    "index": 134,
+    "id": "reliquary",
     "name": "Reliquary",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Holy Symbol",
@@ -2833,10 +2833,10 @@
       "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic.",
       "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
     ],
-    "url": "/api/equipment/134"
+    "url": "/api/equipment/reliquary"
   },
   {
-    "index": 135,
+    "id": "robes",
     "name": "Robes",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2845,10 +2845,10 @@
       "unit": "gp"
     },
     "weight": 4,
-    "url": "/api/equipment/135"
+    "url": "/api/equipment/robes"
   },
   {
-    "index": 136,
+    "id": "rope-hempen-50-feet",
     "name": "Rope, hempen (50 feet)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2860,10 +2860,10 @@
     "desc": [
       "Rope, whether made of hemp or silk, has 2 hit points and can be burst with a DC 17 Strength check."
     ],
-    "url": "/api/equipment/136"
+    "url": "/api/equipment/rope-hempen-50-feet"
   },
   {
-    "index": 137,
+    "id": "rope-silk-50-feet",
     "name": "Rope, silk (50 feet)",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2875,10 +2875,10 @@
     "desc": [
       "Rope, whether made of hemp or silk, has 2 hit points and can be burst with a DC 17 Strength check."
     ],
-    "url": "/api/equipment/137"
+    "url": "/api/equipment/rope-silk-50-feet"
   },
   {
-    "index": 138,
+    "id": "sack",
     "name": "Sack",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2887,10 +2887,10 @@
       "unit": "cp"
     },
     "weight": 0.5,
-    "url": "/api/equipment/138"
+    "url": "/api/equipment/sack"
   },
   {
-    "index": 139,
+    "id": "scale-merchants",
     "name": "Scale, merchant's",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2902,10 +2902,10 @@
     "desc": [
       "A scale includes a small balance, pans, and a suitable assortment of weights up to 2 pounds. With it, you can measure the exact weight of small objects, such as raw precious metals or trade goods, to help determine their worth."
     ],
-    "url": "/api/equipment/139"
+    "url": "/api/equipment/scale-merchants"
   },
   {
-    "index": 140,
+    "id": "sealing-wax",
     "name": "Sealing wax",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2914,10 +2914,10 @@
       "unit": "sp"
     },
     "weight": 0,
-    "url": "/api/equipment/140"
+    "url": "/api/equipment/sealing-wax"
   },
   {
-    "index": 141,
+    "id": "shovel",
     "name": "Shovel",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2926,10 +2926,10 @@
       "unit": "gp"
     },
     "weight": 5,
-    "url": "/api/equipment/141"
+    "url": "/api/equipment/shovel"
   },
   {
-    "index": 142,
+    "id": "signal-whistle",
     "name": "Signal whistle",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2938,10 +2938,10 @@
       "unit": "cp"
     },
     "weight": 0,
-    "url": "/api/equipment/142"
+    "url": "/api/equipment/signal-whistle"
   },
   {
-    "index": 143,
+    "id": "signet-ring",
     "name": "Signet ring",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2950,10 +2950,10 @@
       "unit": "gp"
     },
     "weight": 0,
-    "url": "/api/equipment/143"
+    "url": "/api/equipment/signet-ring"
   },
   {
-    "index": 144,
+    "id": "soap",
     "name": "Soap",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2962,10 +2962,10 @@
       "unit": "cp"
     },
     "weight": 0,
-    "url": "/api/equipment/144"
+    "url": "/api/equipment/soap"
   },
   {
-    "index": 145,
+    "id": "spellbook",
     "name": "Spellbook",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2977,10 +2977,10 @@
     "desc": [
       "Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells."
     ],
-    "url": "/api/equipment/145"
+    "url": "/api/equipment/spellbook"
   },
   {
-    "index": 146,
+    "id": "spike-iron",
     "name": "Spike, iron",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -2989,10 +2989,10 @@
       "unit": "sp"
     },
     "weight": 5,
-    "url": "/api/equipment/146"
+    "url": "/api/equipment/spike-iron"
   },
   {
-    "index": 147,
+    "id": "spyglass",
     "name": "Spyglass",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -3004,10 +3004,10 @@
     "desc": [
       "Objects viewed through a spyglass are magnified to twice their size."
     ],
-    "url": "/api/equipment/147"
+    "url": "/api/equipment/spyglass"
   },
   {
-    "index": 148,
+    "id": "tent-two-person",
     "name": "Tent, two-person",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -3017,10 +3017,10 @@
     },
     "weight": 20,
     "desc": ["A simple and portable canvas shelter, a tent sleeps two."],
-    "url": "/api/equipment/148"
+    "url": "/api/equipment/tent-two-person"
   },
   {
-    "index": 149,
+    "id": "tinderbox",
     "name": "Tinderbox",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -3033,10 +3033,10 @@
       "This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch--or anything else with abundant, exposed fuel--takes an action.",
       "Lighting any other fire takes 1 minute."
     ],
-    "url": "/api/equipment/149"
+    "url": "/api/equipment/tinderbox"
   },
   {
-    "index": 150,
+    "id": "torch",
     "name": "Torch",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -3048,10 +3048,10 @@
     "desc": [
       "A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage."
     ],
-    "url": "/api/equipment/150"
+    "url": "/api/equipment/torch"
   },
   {
-    "index": 151,
+    "id": "vial",
     "name": "Vial",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -3060,10 +3060,10 @@
       "unit": "gp"
     },
     "weight": 0,
-    "url": "/api/equipment/151"
+    "url": "/api/equipment/vial"
   },
   {
-    "index": 152,
+    "id": "waterskin",
     "name": "Waterskin",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -3072,10 +3072,10 @@
       "unit": "sp"
     },
     "weight": 5,
-    "url": "/api/equipment/152"
+    "url": "/api/equipment/waterskin"
   },
   {
-    "index": 153,
+    "id": "whetstone",
     "name": "Whetstone",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Standard Gear",
@@ -3084,10 +3084,10 @@
       "unit": "cp"
     },
     "weight": 1,
-    "url": "/api/equipment/153"
+    "url": "/api/equipment/whetstone"
   },
   {
-    "index": 154,
+    "id": "burglars-pack",
     "name": "Burglar's Pack",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Equipment Pack",
@@ -3097,58 +3097,58 @@
     },
     "contents": [
       {
-        "item_url": "/api/equipment/65",
+        "item_url": "/api/equipment/backpack",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/66",
+        "item_url": "/api/equipment/ball-bearings-bag-of-1000",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/77",
+        "item_url": "/api/equipment/candle",
         "quantity": 5
       },
       {
-        "item_url": "/api/equipment/88",
+        "item_url": "/api/equipment/crowbar",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/97",
+        "item_url": "/api/equipment/hammer",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/125",
+        "item_url": "/api/equipment/piton",
         "quantity": 10
       },
       {
-        "item_url": "/api/equipment/115",
+        "item_url": "/api/equipment/lantern-hooded",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/120",
+        "item_url": "/api/equipment/oil-flask",
         "quantity": 2
       },
       {
-        "item_url": "/api/equipment/133",
+        "item_url": "/api/equipment/rations-1-day",
         "quantity": 5
       },
       {
-        "item_url": "/api/equipment/149",
+        "item_url": "/api/equipment/tinderbox",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/152",
+        "item_url": "/api/equipment/waterskin",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/136",
+        "item_url": "/api/equipment/rope-hempen-50-feet",
         "quantity": 1
       }
     ],
-    "url": "/api/equipment/154"
+    "url": "/api/equipment/burglars-pack"
   },
   {
-    "index": 155,
+    "id": "diplomats-pack",
     "name": "Diplomat's Pack",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Equipment Pack",
@@ -3158,54 +3158,54 @@
     },
     "contents": [
       {
-        "item_url": "/api/equipment/82",
+        "item_url": "/api/equipment/chest",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/79",
+        "item_url": "/api/equipment/case-map-or-scroll",
         "quantity": 2
       },
       {
-        "item_url": "/api/equipment/85",
+        "item_url": "/api/equipment/clothes-fine",
         "quantity": 5
       },
       {
-        "item_url": "/api/equipment/102",
+        "item_url": "/api/equipment/ink-1-ounce-bottle",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/103",
+        "item_url": "/api/equipment/ink-pen",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/113",
+        "item_url": "/api/equipment/lamp",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/120",
+        "item_url": "/api/equipment/oil-flask",
         "quantity": 2
       },
       {
-        "item_url": "/api/equipment/121",
+        "item_url": "/api/equipment/paper-one-sheet",
         "quantity": 5
       },
       {
-        "item_url": "/api/equipment/123",
+        "item_url": "/api/equipment/perfume-vial",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/140",
+        "item_url": "/api/equipment/sealing-wax",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/144",
+        "item_url": "/api/equipment/soap",
         "quantity": 1
       }
     ],
-    "url": "/api/equipment/155"
+    "url": "/api/equipment/diplomats-pack"
   },
   {
-    "index": 156,
+    "id": "dungeoneers-pack",
     "name": "Dungeoneer's Pack",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Equipment Pack",
@@ -3215,42 +3215,42 @@
     },
     "contents": [
       {
-        "item_url": "/api/equipment/65",
+        "item_url": "/api/equipment/backpack",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/88",
+        "item_url": "/api/equipment/crowbar",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/97",
+        "item_url": "/api/equipment/hammer",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/125",
+        "item_url": "/api/equipment/piton",
         "quantity": 10
       },
       {
-        "item_url": "/api/equipment/150",
+        "item_url": "/api/equipment/torch",
         "quantity": 10
       },
       {
-        "item_url": "/api/equipment/133",
+        "item_url": "/api/equipment/rations-1-day",
         "quantity": 10
       },
       {
-        "item_url": "/api/equipment/152",
+        "item_url": "/api/equipment/waterskin",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/136",
+        "item_url": "/api/equipment/rope-hempen-50-feet",
         "quantity": 1
       }
     ],
-    "url": "/api/equipment/156"
+    "url": "/api/equipment/dungeoneers-pack"
   },
   {
-    "index": 157,
+    "id": "entertainers-pack",
     "name": "Entertainer's Pack",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Equipment Pack",
@@ -3260,38 +3260,38 @@
     },
     "contents": [
       {
-        "item_url": "/api/equipment/65",
+        "item_url": "/api/equipment/backpack",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/69",
+        "item_url": "/api/equipment/bedroll",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/84",
+        "item_url": "/api/equipment/clothes-costume",
         "quantity": 2
       },
       {
-        "item_url": "/api/equipment/77",
+        "item_url": "/api/equipment/candle",
         "quantity": 5
       },
       {
-        "item_url": "/api/equipment/133",
+        "item_url": "/api/equipment/rations-1-day",
         "quantity": 5
       },
       {
-        "item_url": "/api/equipment/152",
+        "item_url": "/api/equipment/waterskin",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/106",
+        "item_url": "/api/equipment/disguise-kit",
         "quantity": 1
       }
     ],
-    "url": "/api/equipment/157"
+    "url": "/api/equipment/entertainers-pack"
   },
   {
-    "index": 158,
+    "id": "explorers-pack",
     "name": "Explorer's Pack",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Equipment Pack",
@@ -3301,42 +3301,42 @@
     },
     "contents": [
       {
-        "item_url": "/api/equipment/65",
+        "item_url": "/api/equipment/backpack",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/69",
+        "item_url": "/api/equipment/bedroll",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/110",
+        "item_url": "/api/equipment/mess-kit",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/149",
+        "item_url": "/api/equipment/tinderbox",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/150",
+        "item_url": "/api/equipment/torch",
         "quantity": 10
       },
       {
-        "item_url": "/api/equipment/133",
+        "item_url": "/api/equipment/rations-1-day",
         "quantity": 10
       },
       {
-        "item_url": "/api/equipment/152",
+        "item_url": "/api/equipment/waterskin",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/106",
+        "item_url": "/api/equipment/disguise-kit",
         "quantity": 1
       }
     ],
-    "url": "/api/equipment/158"
+    "url": "/api/equipment/explorers-pack"
   },
   {
-    "index": 159,
+    "id": "priests-pack",
     "name": "Priest's Pack",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Equipment Pack",
@@ -3346,34 +3346,34 @@
     },
     "contents": [
       {
-        "item_url": "/api/equipment/65",
+        "item_url": "/api/equipment/backpack",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/71",
+        "item_url": "/api/equipment/blanket",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/77",
+        "item_url": "/api/equipment/candle",
         "quantity": 10
       },
       {
-        "item_url": "/api/equipment/149",
+        "item_url": "/api/equipment/tinderbox",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/133",
+        "item_url": "/api/equipment/rations-1-day",
         "quantity": 2
       },
       {
-        "item_url": "/api/equipment/152",
+        "item_url": "/api/equipment/waterskin",
         "quantity": 1
       }
     ],
-    "url": "/api/equipment/159"
+    "url": "/api/equipment/priests-pack"
   },
   {
-    "index": 160,
+    "id": "scholars-pack",
     "name": "Scholar's Pack",
     "equipment_category": "Adventuring Gear",
     "gear_category": "Equipment Pack",
@@ -3383,30 +3383,30 @@
     },
     "contents": [
       {
-        "item_url": "/api/equipment/65",
+        "item_url": "/api/equipment/backpack",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/73",
+        "item_url": "/api/equipment/book",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/102",
+        "item_url": "/api/equipment/ink-1-ounce-bottle",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/103",
+        "item_url": "/api/equipment/ink-pen",
         "quantity": 1
       },
       {
-        "item_url": "/api/equipment/122",
+        "item_url": "/api/equipment/parchment-one-sheet",
         "quantity": 10
       }
     ],
-    "url": "/api/equipment/160"
+    "url": "/api/equipment/scholars-pack"
   },
   {
-    "index": 161,
+    "id": "alchemists-supplies",
     "name": "Alchemist's supplies",
     "equipment_category": "Tools",
     "tool_category": "Artisan's Tools",
@@ -3418,10 +3418,10 @@
     "desc": [
       "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
     ],
-    "url": "/api/equipment/161"
+    "url": "/api/equipment/alchemists-supplies"
   },
   {
-    "index": 162,
+    "id": "brewers-supplies",
     "name": "Brewer's supplies",
     "equipment_category": "Tools",
     "tool_category": "Artisan's Tools",
@@ -3433,10 +3433,10 @@
     "desc": [
       "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
     ],
-    "url": "/api/equipment/162"
+    "url": "/api/equipment/brewers-supplies"
   },
   {
-    "index": 163,
+    "id": "calligraphers-supplies",
     "name": "Calligrapher's supplies",
     "equipment_category": "Tools",
     "tool_category": "Artisan's Tools",
@@ -3448,10 +3448,10 @@
     "desc": [
       "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
     ],
-    "url": "/api/equipment/163"
+    "url": "/api/equipment/calligraphers-supplies"
   },
   {
-    "index": 164,
+    "id": "carpenters-tools",
     "name": "Carpenter's tools",
     "equipment_category": "Tools",
     "tool_category": "Artisan's Tools",
@@ -3463,10 +3463,10 @@
     "desc": [
       "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
     ],
-    "url": "/api/equipment/164"
+    "url": "/api/equipment/carpenters-tools"
   },
   {
-    "index": 165,
+    "id": "cartographers-tools",
     "name": "Cartographer's tools",
     "equipment_category": "Tools",
     "tool_category": "Artisan's Tools",
@@ -3478,10 +3478,10 @@
     "desc": [
       "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
     ],
-    "url": "/api/equipment/165"
+    "url": "/api/equipment/cartographers-tools"
   },
   {
-    "index": 166,
+    "id": "cobblers-tools",
     "name": "Cobbler's tools",
     "equipment_category": "Tools",
     "tool_category": "Artisan's Tools",
@@ -3493,10 +3493,10 @@
     "desc": [
       "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
     ],
-    "url": "/api/equipment/166"
+    "url": "/api/equipment/cobblers-tools"
   },
   {
-    "index": 167,
+    "id": "cooks-utensils",
     "name": "Cook's utensils",
     "equipment_category": "Tools",
     "tool_category": "Artisan's Tools",
@@ -3508,10 +3508,10 @@
     "desc": [
       "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
     ],
-    "url": "/api/equipment/167"
+    "url": "/api/equipment/cooks-utensils"
   },
   {
-    "index": 168,
+    "id": "glassblowers-tools",
     "name": "Glassblower's tools",
     "equipment_category": "Tools",
     "tool_category": "Artisan's Tools",
@@ -3523,10 +3523,10 @@
     "desc": [
       "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
     ],
-    "url": "/api/equipment/168"
+    "url": "/api/equipment/glassblowers-tools"
   },
   {
-    "index": 169,
+    "id": "jewelers-tools",
     "name": "Jeweler's tools",
     "equipment_category": "Tools",
     "tool_category": "Artisan's Tools",
@@ -3538,10 +3538,10 @@
     "desc": [
       "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
     ],
-    "url": "/api/equipment/169"
+    "url": "/api/equipment/jewelers-tools"
   },
   {
-    "index": 170,
+    "id": "leatherworkers-tools",
     "name": "Leatherworker's tools",
     "equipment_category": "Tools",
     "tool_category": "Artisan's Tools",
@@ -3553,10 +3553,10 @@
     "desc": [
       "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
     ],
-    "url": "/api/equipment/170"
+    "url": "/api/equipment/leatherworkers-tools"
   },
   {
-    "index": 171,
+    "id": "masons-tools",
     "name": "Mason's tools",
     "equipment_category": "Tools",
     "tool_category": "Artisan's Tools",
@@ -3568,10 +3568,10 @@
     "desc": [
       "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
     ],
-    "url": "/api/equipment/171"
+    "url": "/api/equipment/masons-tools"
   },
   {
-    "index": 172,
+    "id": "painters-supplies",
     "name": "Painter's supplies",
     "equipment_category": "Tools",
     "tool_category": "Artisan's Tools",
@@ -3583,10 +3583,10 @@
     "desc": [
       "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
     ],
-    "url": "/api/equipment/172"
+    "url": "/api/equipment/painters-supplies"
   },
   {
-    "index": 173,
+    "id": "potters-tools",
     "name": "Potter's tools",
     "equipment_category": "Tools",
     "tool_category": "Artisan's Tools",
@@ -3598,10 +3598,10 @@
     "desc": [
       "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
     ],
-    "url": "/api/equipment/173"
+    "url": "/api/equipment/potters-tools"
   },
   {
-    "index": 174,
+    "id": "smiths-tools",
     "name": "Smith's tools",
     "equipment_category": "Tools",
     "tool_category": "Artisan's Tools",
@@ -3613,10 +3613,10 @@
     "desc": [
       "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
     ],
-    "url": "/api/equipment/174"
+    "url": "/api/equipment/smiths-tools"
   },
   {
-    "index": 175,
+    "id": "tinkers-tools",
     "name": "Tinker's tools",
     "equipment_category": "Tools",
     "tool_category": "Artisan's Tools",
@@ -3628,10 +3628,10 @@
     "desc": [
       "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
     ],
-    "url": "/api/equipment/175"
+    "url": "/api/equipment/tinkers-tools"
   },
   {
-    "index": 176,
+    "id": "weavers-tools",
     "name": "Weaver's tools",
     "equipment_category": "Tools",
     "tool_category": "Artisan's Tools",
@@ -3643,10 +3643,10 @@
     "desc": [
       "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
     ],
-    "url": "/api/equipment/176"
+    "url": "/api/equipment/weavers-tools"
   },
   {
-    "index": 177,
+    "id": "woodcarvers-tools",
     "name": "Woodcarver's tools",
     "equipment_category": "Tools",
     "tool_category": "Artisan's Tools",
@@ -3658,10 +3658,10 @@
     "desc": [
       "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."
     ],
-    "url": "/api/equipment/177"
+    "url": "/api/equipment/woodcarvers-tools"
   },
   {
-    "index": 178,
+    "id": "dice-set",
     "name": "Dice set",
     "equipment_category": "Tools",
     "tool_category": "Gaming Sets",
@@ -3673,10 +3673,10 @@
     "desc": [
       "This item encompasses a wide range of game pieces, including dice and decks of cards (for games such as Three-Dragon Ante). A few common examples appear on the Tools table, but other kinds of gaming sets exist. If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency."
     ],
-    "url": "/api/equipment/178"
+    "url": "/api/equipment/dice-set"
   },
   {
-    "index": 179,
+    "id": "playing-card-set",
     "name": "Playing card set",
     "equipment_category": "Tools",
     "tool_category": "Gaming Sets",
@@ -3688,10 +3688,10 @@
     "desc": [
       "This item encompasses a wide range of game pieces, including dice and decks of cards (for games such as Three-Dragon Ante). A few common examples appear on the Tools table, but other kinds of gaming sets exist. If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency."
     ],
-    "url": "/api/equipment/179"
+    "url": "/api/equipment/playing-card-set"
   },
   {
-    "index": 180,
+    "id": "bagpipes",
     "name": "Bagpipes",
     "equipment_category": "Tools",
     "tool_category": "Musical Instrument",
@@ -3703,10 +3703,10 @@
     "desc": [
       "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency."
     ],
-    "url": "/api/equipment/180"
+    "url": "/api/equipment/bagpipes"
   },
   {
-    "index": 181,
+    "id": "drum",
     "name": "Drum",
     "equipment_category": "Tools",
     "tool_category": "Musical Instrument",
@@ -3718,10 +3718,10 @@
     "desc": [
       "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency."
     ],
-    "url": "/api/equipment/181"
+    "url": "/api/equipment/drum"
   },
   {
-    "index": 182,
+    "id": "dulcimer",
     "name": "Dulcimer",
     "equipment_category": "Tools",
     "tool_category": "Musical Instrument",
@@ -3733,10 +3733,10 @@
     "desc": [
       "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency."
     ],
-    "url": "/api/equipment/182"
+    "url": "/api/equipment/dulcimer"
   },
   {
-    "index": 183,
+    "id": "flute",
     "name": "Flute",
     "equipment_category": "Tools",
     "tool_category": "Musical Instrument",
@@ -3748,10 +3748,10 @@
     "desc": [
       "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency."
     ],
-    "url": "/api/equipment/183"
+    "url": "/api/equipment/flute"
   },
   {
-    "index": 184,
+    "id": "lute",
     "name": "Lute",
     "equipment_category": "Tools",
     "tool_category": "Musical Instrument",
@@ -3763,10 +3763,10 @@
     "desc": [
       "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency."
     ],
-    "url": "/api/equipment/184"
+    "url": "/api/equipment/lute"
   },
   {
-    "index": 185,
+    "id": "lyre",
     "name": "Lyre",
     "equipment_category": "Tools",
     "tool_category": "Musical Instrument",
@@ -3778,10 +3778,10 @@
     "desc": [
       "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency."
     ],
-    "url": "/api/equipment/185"
+    "url": "/api/equipment/lyre"
   },
   {
-    "index": 186,
+    "id": "horn",
     "name": "Horn",
     "equipment_category": "Tools",
     "tool_category": "Musical Instrument",
@@ -3793,10 +3793,10 @@
     "desc": [
       "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency."
     ],
-    "url": "/api/equipment/186"
+    "url": "/api/equipment/horn"
   },
   {
-    "index": 187,
+    "id": "pan-flute",
     "name": "Pan flute",
     "equipment_category": "Tools",
     "tool_category": "Musical Instrument",
@@ -3808,10 +3808,10 @@
     "desc": [
       "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency."
     ],
-    "url": "/api/equipment/187"
+    "url": "/api/equipment/pan-flute"
   },
   {
-    "index": 188,
+    "id": "shawm",
     "name": "Shawm",
     "equipment_category": "Tools",
     "tool_category": "Musical Instrument",
@@ -3823,10 +3823,10 @@
     "desc": [
       "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency."
     ],
-    "url": "/api/equipment/188"
+    "url": "/api/equipment/shawm"
   },
   {
-    "index": 189,
+    "id": "viol",
     "name": "Viol",
     "equipment_category": "Tools",
     "tool_category": "Musical Instrument",
@@ -3838,10 +3838,10 @@
     "desc": [
       "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency."
     ],
-    "url": "/api/equipment/189"
+    "url": "/api/equipment/viol"
   },
   {
-    "index": 190,
+    "id": "navigators-tools",
     "name": "Navigator's tools",
     "equipment_category": "Tools",
     "tool_category": "Other Tools",
@@ -3853,10 +3853,10 @@
     "desc": [
       "This set of instruments is used for navigation at sea. Proficiency with navigator's tools lets you chart a ship's course and follow navigation charts. In addition, these tools allow you to add your proficiency bonus to any ability check you make to avoid getting lost at sea."
     ],
-    "url": "/api/equipment/190"
+    "url": "/api/equipment/navigators-tools"
   },
   {
-    "index": 191,
+    "id": "thieves'-tools",
     "name": "Thieves' tools",
     "equipment_category": "Tools",
     "tool_category": "Other Tools",
@@ -3868,10 +3868,10 @@
     "desc": [
       "This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks."
     ],
-    "url": "/api/equipment/191"
+    "url": "/api/equipment/thieves'-tools"
   },
   {
-    "index": 192,
+    "id": "camel",
     "name": "Camel",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Mounts and Other Animals",
@@ -3884,10 +3884,10 @@
       "unit": "ft/round"
     },
     "capacity": "480 lb.",
-    "url": "/api/equipment/192"
+    "url": "/api/equipment/camel"
   },
   {
-    "index": 193,
+    "id": "donkey",
     "name": "Donkey",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Mounts and Other Animals",
@@ -3900,10 +3900,10 @@
       "unit": "ft/round"
     },
     "capacity": "420 lb.",
-    "url": "/api/equipment/193"
+    "url": "/api/equipment/donkey"
   },
   {
-    "index": 194,
+    "id": "mule",
     "name": "Mule",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Mounts and Other Animals",
@@ -3916,10 +3916,10 @@
       "unit": "ft/round"
     },
     "capacity": "420 lb.",
-    "url": "/api/equipment/194"
+    "url": "/api/equipment/mule"
   },
   {
-    "index": 195,
+    "id": "elephant",
     "name": "Elephant",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Mounts and Other Animals",
@@ -3932,10 +3932,10 @@
       "unit": "ft/round"
     },
     "capacity": "1,320 lb.",
-    "url": "/api/equipment/195"
+    "url": "/api/equipment/elephant"
   },
   {
-    "index": 196,
+    "id": "horse-draft",
     "name": "Horse, draft",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Mounts and Other Animals",
@@ -3948,10 +3948,10 @@
       "unit": "ft/round"
     },
     "capacity": "540 lb.",
-    "url": "/api/equipment/196"
+    "url": "/api/equipment/horse-draft"
   },
   {
-    "index": 197,
+    "id": "horse-riding",
     "name": "Horse, riding",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Mounts and Other Animals",
@@ -3964,10 +3964,10 @@
       "unit": "ft/round"
     },
     "capacity": "480 lb.",
-    "url": "/api/equipment/197"
+    "url": "/api/equipment/horse-riding"
   },
   {
-    "index": 198,
+    "id": "mastiff",
     "name": "Mastiff",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Mounts and Other Animals",
@@ -3980,10 +3980,10 @@
       "unit": "ft/round"
     },
     "capacity": "195 lb.",
-    "url": "/api/equipment/198"
+    "url": "/api/equipment/mastiff"
   },
   {
-    "index": 199,
+    "id": "pony",
     "name": "Pony",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Mounts and Other Animals",
@@ -3996,10 +3996,10 @@
       "unit": "ft/round"
     },
     "capacity": "225 lb.",
-    "url": "/api/equipment/199"
+    "url": "/api/equipment/pony"
   },
   {
-    "index": 200,
+    "id": "warhorse",
     "name": "Warhorse",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Mounts and Other Animals",
@@ -4012,10 +4012,10 @@
       "unit": "ft/round"
     },
     "capacity": "540 lb.",
-    "url": "/api/equipment/200"
+    "url": "/api/equipment/warhorse"
   },
   {
-    "index": 201,
+    "id": "barding-padded",
     "name": "Barding: Padded",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4027,10 +4027,10 @@
     "desc": [
       "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much."
     ],
-    "url": "/api/equipment/201"
+    "url": "/api/equipment/barding-padded"
   },
   {
-    "index": 202,
+    "id": "barding-leather",
     "name": "Barding: Leather",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4042,10 +4042,10 @@
     "desc": [
       "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much."
     ],
-    "url": "/api/equipment/202"
+    "url": "/api/equipment/barding-leather"
   },
   {
-    "index": 203,
+    "id": "barding-studded-leather",
     "name": "Barding: Studded Leather",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4057,10 +4057,10 @@
     "desc": [
       "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much."
     ],
-    "url": "/api/equipment/203"
+    "url": "/api/equipment/barding-studded-leather"
   },
   {
-    "index": 204,
+    "id": "barding-hide",
     "name": "Barding: Hide",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4072,10 +4072,10 @@
     "desc": [
       "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much."
     ],
-    "url": "/api/equipment/204"
+    "url": "/api/equipment/barding-hide"
   },
   {
-    "index": 205,
+    "id": "barding-chain-shirt",
     "name": "Barding: Chain shirt",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4087,10 +4087,10 @@
     "desc": [
       "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much."
     ],
-    "url": "/api/equipment/205"
+    "url": "/api/equipment/barding-chain-shirt"
   },
   {
-    "index": 206,
+    "id": "barding-scale-mail",
     "name": "Barding: Scale mail",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4102,10 +4102,10 @@
     "desc": [
       "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much."
     ],
-    "url": "/api/equipment/206"
+    "url": "/api/equipment/barding-scale-mail"
   },
   {
-    "index": 207,
+    "id": "barding-breastplate",
     "name": "Barding: Breastplate",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4117,10 +4117,10 @@
     "desc": [
       "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much."
     ],
-    "url": "/api/equipment/207"
+    "url": "/api/equipment/barding-breastplate"
   },
   {
-    "index": 208,
+    "id": "barding-half-plate",
     "name": "Barding: Half plate",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4132,10 +4132,10 @@
     "desc": [
       "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much."
     ],
-    "url": "/api/equipment/208"
+    "url": "/api/equipment/barding-half-plate"
   },
   {
-    "index": 209,
+    "id": "barding-ring-mail",
     "name": "Barding: Ring mail",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4147,10 +4147,10 @@
     "desc": [
       "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much."
     ],
-    "url": "/api/equipment/209"
+    "url": "/api/equipment/barding-ring-mail"
   },
   {
-    "index": 210,
+    "id": "barding-chain-mail",
     "name": "Barding: Chain mail",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4162,10 +4162,10 @@
     "desc": [
       "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much."
     ],
-    "url": "/api/equipment/210"
+    "url": "/api/equipment/barding-chain-mail"
   },
   {
-    "index": 211,
+    "id": "barding-splint",
     "name": "Barding: Splint",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4177,10 +4177,10 @@
     "desc": [
       "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much."
     ],
-    "url": "/api/equipment/211"
+    "url": "/api/equipment/barding-splint"
   },
   {
-    "index": 212,
+    "id": "barding-plate",
     "name": "Barding: Plate",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4192,10 +4192,10 @@
     "desc": [
       "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much."
     ],
-    "url": "/api/equipment/212"
+    "url": "/api/equipment/barding-plate"
   },
   {
-    "index": 213,
+    "id": "bit-and-bridle",
     "name": "Bit and bridle",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4204,10 +4204,10 @@
       "unit": "gp"
     },
     "weight": 1,
-    "url": "/api/equipment/213"
+    "url": "/api/equipment/bit-and-bridle"
   },
   {
-    "index": 214,
+    "id": "carriage",
     "name": "Carriage",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4216,10 +4216,10 @@
       "unit": "gp"
     },
     "weight": 600,
-    "url": "/api/equipment/214"
+    "url": "/api/equipment/carriage"
   },
   {
-    "index": 215,
+    "id": "cart",
     "name": "Cart",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4228,10 +4228,10 @@
       "unit": "gp"
     },
     "weight": 200,
-    "url": "/api/equipment/215"
+    "url": "/api/equipment/cart"
   },
   {
-    "index": 216,
+    "id": "chariot",
     "name": "Chariot",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4240,10 +4240,10 @@
       "unit": "gp"
     },
     "weight": 100,
-    "url": "/api/equipment/216"
+    "url": "/api/equipment/chariot"
   },
   {
-    "index": 217,
+    "id": "animal-feed-1-day",
     "name": "Animal Feed (1 day)",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4252,10 +4252,10 @@
       "unit": "cp"
     },
     "weight": 10,
-    "url": "/api/equipment/217"
+    "url": "/api/equipment/animal-feed-1-day"
   },
   {
-    "index": 218,
+    "id": "saddle-exotic",
     "name": "Saddle, Exotic",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4267,10 +4267,10 @@
     "desc": [
       "A military saddle braces the rider, helping you keep your seat on an active mount in battle. It gives you advantage on any check you make to remain mounted. An exotic saddle is required for riding any aquatic or flying mount."
     ],
-    "url": "/api/equipment/218"
+    "url": "/api/equipment/saddle-exotic"
   },
   {
-    "index": 219,
+    "id": "saddle-military",
     "name": "Saddle, Military",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4282,10 +4282,10 @@
     "desc": [
       "A military saddle braces the rider, helping you keep your seat on an active mount in battle. It gives you advantage on any check you make to remain mounted. An exotic saddle is required for riding any aquatic or flying mount."
     ],
-    "url": "/api/equipment/219"
+    "url": "/api/equipment/saddle-military"
   },
   {
-    "index": 220,
+    "id": "saddle-pack",
     "name": "Saddle, Pack",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4297,10 +4297,10 @@
     "desc": [
       "A military saddle braces the rider, helping you keep your seat on an active mount in battle. It gives you advantage on any check you make to remain mounted. An exotic saddle is required for riding any aquatic or flying mount."
     ],
-    "url": "/api/equipment/220"
+    "url": "/api/equipment/saddle-pack"
   },
   {
-    "index": 221,
+    "id": "riding",
     "name": "Riding",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4309,10 +4309,10 @@
       "unit": "gp"
     },
     "weight": 25,
-    "url": "/api/equipment/221"
+    "url": "/api/equipment/riding"
   },
   {
-    "index": 222,
+    "id": "saddlebags",
     "name": "Saddlebags",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4321,10 +4321,10 @@
       "unit": "gp"
     },
     "weight": 8,
-    "url": "/api/equipment/222"
+    "url": "/api/equipment/saddlebags"
   },
   {
-    "index": 223,
+    "id": "sled",
     "name": "Sled",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4333,10 +4333,10 @@
       "unit": "gp"
     },
     "weight": 300,
-    "url": "/api/equipment/223"
+    "url": "/api/equipment/sled"
   },
   {
-    "index": 224,
+    "id": "stabling-1-day",
     "name": "Stabling (1 day)",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4345,10 +4345,10 @@
       "unit": "sp"
     },
     "weight": 0,
-    "url": "/api/equipment/224"
+    "url": "/api/equipment/stabling-1-day"
   },
   {
-    "index": 225,
+    "id": "wagon",
     "name": "Wagon",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Tack, Harness, and Drawn Vehicles",
@@ -4357,10 +4357,10 @@
       "unit": "gp"
     },
     "weight": 400,
-    "url": "/api/equipment/225"
+    "url": "/api/equipment/wagon"
   },
   {
-    "index": 226,
+    "id": "galley",
     "name": "Galley",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Waterborne Vehicles",
@@ -4375,7 +4375,7 @@
     "url": "/api/equipment/251"
   },
   {
-    "index": 227,
+    "id": "keelboat",
     "name": "Keelboat",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Waterborne Vehicles",
@@ -4393,7 +4393,7 @@
     "url": "/api/equipment/252"
   },
   {
-    "index": 228,
+    "id": "longship",
     "name": "Longship",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Waterborne Vehicles",
@@ -4408,7 +4408,7 @@
     "url": "/api/equipment/253"
   },
   {
-    "index": 229,
+    "id": "rowboat",
     "name": "Rowboat",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Waterborne Vehicles",
@@ -4426,7 +4426,7 @@
     "url": "/api/equipment/254"
   },
   {
-    "index": 230,
+    "id": "sailing-ship",
     "name": "Sailing ship",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Waterborne Vehicles",
@@ -4441,7 +4441,7 @@
     "url": "/api/equipment/255"
   },
   {
-    "index": 231,
+    "id": "warship",
     "name": "Warship",
     "equipment_category": "Mounts and Vehicles",
     "vehicle_category": "Waterborne Vehicles",
