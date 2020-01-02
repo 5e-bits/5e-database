@@ -1,4 +1,5 @@
 # 5e-database
+[![Build Status](https://travis-ci.com/bagelbits/5e-database.svg?branch=master)](https://travis-ci.com/bagelbits/5e-database)
 
 Holds the database for the D&D 5th Edition API at http://dnd5eapi.co/
 
