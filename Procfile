@@ -1,1 +1,1 @@
-migration: npm run-script nuke-and-replace-db
+web: npm run-script nuke-and-replace-db
