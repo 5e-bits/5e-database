@@ -5,6 +5,12 @@ Holds the database for the D&D 5th Edition API at http://dnd5eapi.co/
 
 Talk to us [on Discord!](https://discord.gg/TQuYTv7)
 
+# How to load
+You can load this data locally by running:
+```
+MONGODB_URI=mongodb://localhost/5e-database npm run db:refresh
+```
+
 # API Issues
 If you see anything wrong with the API and not the data, please open an issue or PR over [here](https://github.com/bagelbits/5e-srd-api).
 
