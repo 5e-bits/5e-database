@@ -2,5 +2,9 @@ language: node_js
 node_js:
   - 11
 
+branches:
+  only:
+  - master
+
 script:
   - npm run lint
