@@ -12,4 +12,4 @@ jobs:
       script: npm run lint
     - stage: Deploy
       if: branch = master AND type != pull_request
-      script: npm run nuke-and-replace-db
+      script: npm run db:refresh
