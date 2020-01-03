@@ -122,8 +122,12 @@
         ]
       },
       {
-        "name": "Enslave (3/day)",
+        "name": "Enslave",
         "desc": "The aboleth targets one creature it can see within 30 ft. of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The charmed target is under the aboleth's control and can't take reactions, and the aboleth and the target can communicate telepathically with each other over any distance.\nWhenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        },
         "dc": {
           "dc_type": {
             "name": "WIS",
@@ -348,8 +352,12 @@
         "desc": "The dragon can breathe air and water."
       },
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -420,8 +428,13 @@
         }
       },
       {
-        "name": "Acid Breath (Recharge 5-6)",
+        "name": "Acid Breath",
         "desc": "The dragon exhales acid in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -544,8 +557,12 @@
     "challenge_rating": 16,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -616,8 +633,13 @@
         }
       },
       {
-        "name": "Lightning Breath (Recharge 5-6)",
+        "name": "Lightning Breath",
         "desc": "The dragon exhales lightning in a 90-foot line that is 5 ft. wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -750,8 +772,12 @@
     "challenge_rating": 13,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -817,8 +843,13 @@
         }
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 45 (13d6) fire damage on a failed save, or half as much damage on a successful one.\nSleep Breath. The dragon exhales sleep gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Fire Breath",
@@ -934,8 +965,12 @@
         "desc": "The dragon can breathe air and water."
       },
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -1001,8 +1036,13 @@
         }
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nLightning Breath. The dragon exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.\nRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 19 Strength saving throw. On a failed save, the creature is pushed 60 feet away from the dragon.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Lightning Breath",
@@ -1146,8 +1186,12 @@
     "challenge_rating": 14,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -1213,8 +1257,13 @@
         }
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nAcid Breath. The dragon exhales acid in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.\nSlowing Breath. The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Acid Breath",
@@ -1367,8 +1416,12 @@
         "desc": "The dragon can breathe air and water."
       },
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -1434,8 +1487,13 @@
         }
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 66 (12d10) fire damage on a failed save, or half as much damage on a successful one.\nWeakening Breath. The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a DC 21 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Fire Breath",
@@ -1598,8 +1656,12 @@
         "desc": "The dragon can breathe air and water."
       },
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -1670,8 +1732,13 @@
         }
       },
       {
-        "name": "Poison Breath (Recharge 5-6)",
+        "name": "Poison Breath",
         "desc": "The dragon exhales poisonous gas in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 56 (16d6) poison damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "CON",
@@ -1794,8 +1861,12 @@
     "challenge_rating": 17,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -1866,8 +1937,13 @@
         }
       },
       {
-        "name": "Fire Breath (Recharge 5-6)",
+        "name": "Fire Breath",
         "desc": "The dragon exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 63 (18d6) fire damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -2048,8 +2124,12 @@
     "challenge_rating": 16,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -2115,8 +2195,13 @@
         }
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nCold Breath. The dragon exhales an icy blast in a 60-foot cone. Each creature in that area must make a DC 20 Constitution saving throw, taking 58 (13d8) cold damage on a failed save, or half as much damage on a successful one.\nParalyzing Breath. The dragon exhales paralyzing gas in a 60-foot cone. Each creature in that area must succeed on a DC 20 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Cold Breath",
@@ -2260,8 +2345,12 @@
         "desc": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment."
       },
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -2332,8 +2421,13 @@
         }
       },
       {
-        "name": "Cold Breath (Recharge 5-6)",
+        "name": "Cold Breath",
         "desc": "The dragon exhales an icy blast in a 60-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 54 (12d8) cold damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "CON",
@@ -2485,8 +2579,13 @@
         ]
       },
       {
-        "name": "Whirlwind (Recharge 4-6)",
-        "desc": "Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.\nIf the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone."
+        "name": "Whirlwind",
+        "desc": "Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.\nIf the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 4
+        }
       }
     ],
     "url": "/api/monsters/air-elemental"
@@ -2563,8 +2662,12 @@
         "desc": "The dragon can breathe air and water."
       },
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -2635,8 +2738,13 @@
         }
       },
       {
-        "name": "Acid Breath (Recharge 5-6)",
+        "name": "Acid Breath",
         "desc": "The dragon exhales acid in a 90-foot line that is 10 feet wide. Each creature in that line must make a DC 22 Dexterity saving throw, taking 67 (15d8) acid damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -2825,8 +2933,13 @@
         }
       },
       {
-        "name": "Lightning Breath (Recharge 5-6)",
+        "name": "Lightning Breath",
         "desc": "The dragon exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a DC 23 Dexterity saving throw, taking 88 (16d10) lightning damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -2950,8 +3063,12 @@
     "challenge_rating": 20,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -3017,8 +3134,13 @@
         }
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons:\nFire Breath. The dragon exhales fire in an 90-foot line that is 10 feet wide. Each creature in that line must make a DC 21 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one.\nSleep Breath. The dragon exhales sleep gas in a 90-foot cone. Each creature in that area must succeed on a DC 21 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Fire Breath",
@@ -3170,8 +3292,12 @@
         "desc": "The dragon can breathe air and water."
       },
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -3237,8 +3363,13 @@
         }
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nLightning Breath. The dragon exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a DC 23 Dexterity saving throw, taking 88 (16d10) lightning damage on a failed save, or half as much damage on a successful one.\nRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 23 Strength saving throw. On a failed save, the creature is pushed 60 feet away from the dragon.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Lightning Breath",
@@ -3386,8 +3517,12 @@
     "challenge_rating": 21,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -3453,8 +3588,13 @@
         }
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nAcid Breath. The dragon exhales acid in an 90-foot line that is 10 feet wide. Each creature in that line must make a DC 22 Dexterity saving throw, taking 63 (14d8) acid damage on a failed save, or half as much damage on a successful one.\nSlowing Breath. The dragon exhales gas in a 90-foot cone. Each creature in that area must succeed on a DC 22 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Acid Breath",
@@ -3611,8 +3751,12 @@
         "desc": "The dragon can breathe air and water."
       },
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -3678,8 +3822,13 @@
         }
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 90-foot cone. Each creature in that area must make a DC 24 Dexterity saving throw, taking 71 (13d10) fire damage on a failed save, or half as much damage on a successful one.\nWeakening Breath. The dragon exhales gas in a 90-foot cone. Each creature in that area must succeed on a DC 24 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Fire Breath",
@@ -3846,8 +3995,12 @@
         "desc": "The dragon can breathe air and water."
       },
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -3921,8 +4074,13 @@
         }
       },
       {
-        "name": "Poison Breath (Recharge 5-6)",
+        "name": "Poison Breath",
         "desc": "The dragon exhales poisonous gas in a 90-foot cone. Each creature in that area must make a DC 22 Constitution saving throw, taking 77 (22d6) poison damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "CON",
@@ -4045,8 +4203,12 @@
     "challenge_rating": 24,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -4120,8 +4282,13 @@
         }
       },
       {
-        "name": "Fire Breath (Recharge 5-6)",
+        "name": "Fire Breath",
         "desc": "The dragon exhales fire in a 90-foot cone. Each creature in that area must make a DC 24 Dexterity saving throw, taking 91 (26d6) fire damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -4253,8 +4420,12 @@
     "challenge_rating": 23,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -4320,8 +4491,13 @@
         }
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nCold Breath. The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 24 Constitution saving throw, taking 67 (15d8) cold damage on a failed save, or half as much damage on a successful one.\nParalyzing Breath. The dragon exhales paralyzing gas in a 90- foot cone. Each creature in that area must succeed on a DC 24 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Cold Breath",
@@ -4469,8 +4645,12 @@
         "desc": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment."
       },
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       }
     ],
     "actions": [
@@ -4544,8 +4724,13 @@
         }
       },
       {
-        "name": "Cold Breath (Recharge 5-6)",
+        "name": "Cold Breath",
         "desc": "The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 22 Constitution saving throw, taking 72 (l6d8) cold damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "CON",
@@ -4813,8 +4998,12 @@
         ]
       },
       {
-        "name": "Roar (3/Day)",
+        "name": "Roar",
         "desc": "The sphinx emits a magical roar. Each time it roars before finishing a long rest, the roar is louder and the effect is different, as detailed below. Each creature within 500 feet of the sphinx and able to hear the roar must make a saving throw.\n\nFirst Roar. Each creature that fails a DC 18 Wisdom saving throw is frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.\n\nSecond Roar. Each creature that fails a DC 18 Wisdom saving throw is deafened and frightened for 1 minute. A frightened creature is paralyzed and can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.\n\nThird Roar. Each creature makes a DC 18 Constitution saving throw. On a failed save, a creature takes 44 (8d10) thunder damage and is knocked prone. On a successful save, the creature takes half as much damage and isn't knocked prone.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        },
         "attacks": [
           {
             "name": "First Roar",
@@ -6081,8 +6270,12 @@
         "desc": "The balor magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
       },
       {
-        "name": "Variant: Summon Demon (1/Day)",
-        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA balor has a 50 percent chance of summoning 1d8 vrocks, 1d6 hezrous, 1d4 glabrezus, 1d3 nalfeshnees, 1d2 mariliths, or one goristro.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+        "name": "Variant: Summon Demon",
+        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA balor has a 50 percent chance of summoning 1d8 vrocks, 1d6 hezrous, 1d4 glabrezus, 1d3 nalfeshnees, 1d2 mariliths, or one goristro.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "url": "/api/monsters/balor"
@@ -6733,8 +6926,13 @@
         ]
       },
       {
-        "name": "Lightning Breath (Recharge 5-6)",
+        "name": "Lightning Breath",
         "desc": "The behir exhales a line of lightning that is 20 ft. long and 5 ft. wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -6996,8 +7194,13 @@
         ]
       },
       {
-        "name": "Acid Breath (Recharge 5-6)",
+        "name": "Acid Breath",
         "desc": "The dragon exhales acid in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 22 (Sd8) acid damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -7201,8 +7404,13 @@
         ]
       },
       {
-        "name": "Teleport (Recharge 4-6)",
-        "desc": "The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 ft. to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack."
+        "name": "Teleport",
+        "desc": "The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 ft. to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 4
+        }
       }
     ],
     "url": "/api/monsters/blink-dog"
@@ -7363,8 +7571,13 @@
         ]
       },
       {
-        "name": "Lightning Breath (Recharge 5-6)",
+        "name": "Lightning Breath",
         "desc": "The dragon exhales lightning in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 22 (4d10) lightning damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -7432,8 +7645,15 @@
         ]
       },
       {
-        "name": "Relentless (Recharges after a Short or Long Rest)",
-        "desc": "If the boar takes 7 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+        "name": "Relentless",
+        "desc": "If the boar takes 7 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.",
+        "usage": {
+          "type": "recharge after rest",
+          "rest_types": [
+            "short",
+            "long"
+          ]
+        }
       }
     ],
     "actions": [
@@ -7662,8 +7882,13 @@
         ]
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in an 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one.\nSleep Breath. The dragon exhales sleep gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw or fall unconscious for 1 minute. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Fire Breath",
@@ -7791,8 +8016,13 @@
         ]
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nLightning Breath. The dragon exhales lightning in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 16 (3d10) lightning damage on a failed save, or half as much damage on a successful one.\nRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 12 Strength saving throw. On a failed save, the creature is pushed 30 feet away from the dragon.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Lightning Breath",
@@ -8379,8 +8609,15 @@
         ]
       },
       {
-        "name": "Animate Chains (Recharges after a Short or Long Rest)",
-        "desc": "Up to four chains the devil can see within 60 feet of it magically sprout razor-edged barbs and animate under the devil's control, provided that the chains aren't being worn or carried.\nEach animated chain is an object with AC 20, 20 hit points, resistance to piercing damage, and immunity to psychic and thunder damage. When the devil uses Multiattack on its turn, it can use each animated chain to make one additional chain attack. An animated chain can grapple one creature of its own but can't make attacks while grappling. An animated chain reverts to its inanimate state if reduced to 0 hit points or if the devil is incapacitated or dies."
+        "name": "Animate Chains",
+        "desc": "Up to four chains the devil can see within 60 feet of it magically sprout razor-edged barbs and animate under the devil's control, provided that the chains aren't being worn or carried.\nEach animated chain is an object with AC 20, 20 hit points, resistance to piercing damage, and immunity to psychic and thunder damage. When the devil uses Multiattack on its turn, it can use each animated chain to make one additional chain attack. An animated chain can grapple one creature of its own but can't make attacks while grappling. An animated chain reverts to its inanimate state if reduced to 0 hit points or if the devil is incapacitated or dies.",
+        "usage": {
+          "type": "recharge after rest",
+          "rest_types": [
+            "short",
+            "long"
+          ]
+        }
       }
     ],
     "reactions": [
@@ -8487,8 +8724,13 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5-6)",
+        "name": "Fire Breath",
         "desc": "The dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -8703,8 +8945,13 @@
         ]
       },
       {
-        "name": "Haste (Recharge 5-6)",
-        "desc": "Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action."
+        "name": "Haste",
+        "desc": "Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        }
       }
     ],
     "url": "/api/monsters/clay-golem"
@@ -8808,8 +9055,15 @@
         }
       },
       {
-        "name": "Phantasms (Recharges after a Short or Long Rest)",
-        "desc": "The cloaker magically creates three illusory duplicates of itself if it isn't in bright light. The duplicates move with it and mimic its actions, shifting position so as to make it impossible to track which cloaker is the real one. If the cloaker is ever in an area of bright light, the duplicates disappear.\nWhenever any creature targets the cloaker with an attack or a harmful spell while a duplicate remains, that creature rolls randomly to determine whether it targets the cloaker or one of the duplicates. A creature is unaffected by this magical effect if it can't see or if it relies on senses other than sight.\nA duplicate has the cloaker's AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears."
+        "name": "Phantasms",
+        "desc": "The cloaker magically creates three illusory duplicates of itself if it isn't in bright light. The duplicates move with it and mimic its actions, shifting position so as to make it impossible to track which cloaker is the real one. If the cloaker is ever in an area of bright light, the duplicates disappear.\nWhenever any creature targets the cloaker with an attack or a harmful spell while a duplicate remains, that creature rolls randomly to determine whether it targets the cloaker or one of the duplicates. A creature is unaffected by this magical effect if it can't see or if it relies on senses other than sight.\nA duplicate has the cloaker's AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears.",
+        "usage": {
+          "type": "recharge after rest",
+          "rest_types": [
+            "short",
+            "long"
+          ]
+        }
       }
     ],
     "url": "/api/monsters/cloaker"
@@ -9241,8 +9495,13 @@
         ]
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nAcid Breath. The dragon exhales acid in an 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 18 (4d8) acid damage on a failed save, or half as much damage on a successful one.\nSlowing Breath. The dragon exhales gas in a 1 5-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Acid Breath",
@@ -9889,8 +10148,12 @@
         ]
       },
       {
-        "name": "Darkness Aura (1/day)",
-        "desc": "A 15-foot radius of magical darkness extends out from the darkmantle, moves with it, and spreads around corners. The darkness lasts as long as the darkmantle maintains concentration, up to 10 minutes (as if concentrating on a spell). Darkvision can't penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled."
+        "name": "Darkness Aura",
+        "desc": "A 15-foot radius of magical darkness extends out from the darkmantle, moves with it, and spreads around corners. The darkness lasts as long as the darkmantle maintains concentration, up to 10 minutes (as if concentrating on a spell). Darkvision can't penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "url": "/api/monsters/darkmantle"
@@ -10295,8 +10558,12 @@
         ]
       },
       {
-        "name": "Healing Touch (3/Day)",
-        "desc": "The deva touches another creature. The target magically regains 20 (4d8 + 2) hit points and is freed from any curse, disease, poison, blindness, or deafness."
+        "name": "Healing Touch",
+        "desc": "The deva touches another creature. The target magically regains 20 (4d8 + 2) hit points and is freed from any curse, disease, poison, blindness, or deafness.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       },
       {
         "name": "Change Shape",
@@ -10842,8 +11109,13 @@
         ]
       },
       {
-        "name": "Steam Breath (Recharge 5-6)",
+        "name": "Steam Breath",
         "desc": "The dragon turtle exhales scalding steam in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 52 (15d6) fire damage on a failed save, or half as much damage on a successful one. Being underwater doesn't grant resistance against this damage.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "CON",
@@ -10943,8 +11215,12 @@
         ]
       },
       {
-        "name": "Fetid Cloud (1/Day)",
+        "name": "Fetid Cloud",
         "desc": "A 10-foot radius of disgusting green gas extends out from the dretch. The gas spreads around corners, and its area is lightly obscured. It lasts for 1 minute or until a strong wind disperses it. Any creature that starts its turn in that area must succeed on a DC 11 Constitution saving throw or be poisoned until the start of its next turn. While poisoned in this way, the target can take either an action or a bonus action on its turn, not both, and can't take reactions.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        },
         "dc": {
           "dc_type": {
             "name": "CON",
@@ -11601,8 +11877,15 @@
     ],
     "actions": [
       {
-        "name": "Enlarge (Recharges after a Short or Long Rest)",
-        "desc": "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available."
+        "name": "Enlarge",
+        "desc": "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available.",
+        "usage": {
+          "type": "recharge after rest",
+          "rest_types": [
+            "short",
+            "long"
+          ]
+        }
       },
       {
         "name": "War Pick",
@@ -11635,8 +11918,15 @@
         ]
       },
       {
-        "name": "Invisibility (Recharges after a Short or Long Rest)",
-        "desc": "The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it ."
+        "name": "Invisibility",
+        "desc": "The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it .",
+        "usage": {
+          "type": "recharge after rest",
+          "rest_types": [
+            "short",
+            "long"
+          ]
+        }
       }
     ],
     "url": "/api/monsters/duergar"
@@ -11706,8 +11996,12 @@
         }
       },
       {
-        "name": "Innate Spellcasting (1/Day)",
-        "desc": "The mephit can innately cast sleep, requiring no material components. Its innate spellcasting ability is Charisma."
+        "name": "Innate Spellcasting",
+        "desc": "The mephit can innately cast sleep, requiring no material components. Its innate spellcasting ability is Charisma.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "actions": [
@@ -11739,8 +12033,12 @@
         }
       },
       {
-        "name": "Variant: Summon Mephits (1/Day)",
-        "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+        "name": "Variant: Summon Mephits",
+        "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "url": "/api/monsters/dust-mephit"
@@ -12484,8 +12782,13 @@
         ]
       },
       {
-        "name": "Web (Recharge 5-6)",
+        "name": "Web",
         "desc": "Ranged Weapon Attack: +4 to hit, range 30/60 ft., one Large or smaller creature. Hit: The creature is restrained by webbing. As an action, the restrained creature can make a DC 11 Strength check, escaping from the webbing on a success. The effect ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, is vulnerable to fire damage and immune to bludgeoning damage.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attack_bonus": 4
       },
       {
@@ -13962,8 +14265,15 @@
         "desc": "If the boar moves at least 20 ft. straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
       },
       {
-        "name": "Relentless (Recharges after a Short or Long Rest)",
-        "desc": "If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+        "name": "Relentless",
+        "desc": "If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.",
+        "usage": {
+          "type": "recharge after rest",
+          "rest_types": [
+            "short",
+            "long"
+          ]
+        }
       }
     ],
     "actions": [
@@ -14784,8 +15094,15 @@
         ]
       },
       {
-        "name": "Ink Cloud (Recharges after a Short or Long Rest)",
-        "desc": "A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action."
+        "name": "Ink Cloud",
+        "desc": "A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.",
+        "usage": {
+          "type": "recharge after rest",
+          "rest_types": [
+            "short",
+            "long"
+          ]
+        }
       }
     ],
     "url": "/api/monsters/giant-octopus"
@@ -15286,8 +15603,13 @@
         ]
       },
       {
-        "name": "Web (Recharge 5-6)",
+        "name": "Web",
         "desc": "Ranged Weapon Attack: +5 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attack_bonus": 5
       }
     ],
@@ -15716,8 +16038,13 @@
         ]
       },
       {
-        "name": "Blinding Spittle (Recharge 5-6)",
+        "name": "Blinding Spittle",
         "desc": "The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a DC 13 Dexterity saving throw or be blinded until the end of the mouther's next turn.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -15894,8 +16221,12 @@
         ]
       },
       {
-        "name": "Variant: Summon Demon (1/Day)",
-        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA glabrezu has a 30 percent chance of summoning 1d3 vrocks, 1d2 hezrous, or one glabrezu.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+        "name": "Variant: Summon Demon",
+        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA glabrezu has a 30 percent chance of summoning 1d3 vrocks, 1d2 hezrous, or one glabrezu.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "url": "/api/monsters/glabrezu"
@@ -16346,8 +16677,13 @@
         ]
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 22 (4d10) fire damage on a failed save, or half as much damage on a successful one.\nWeakening Breath. The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Fire Breath",
@@ -16465,8 +16801,13 @@
         ]
       },
       {
-        "name": "Petrifying Breath (Recharge 5-6)",
+        "name": "Petrifying Breath",
         "desc": "The gorgon exhales petrifying gas in a 30-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw. On a failed save, a target begins to turn to stone and is restrained. The restrained target must repeat the saving throw at the end of its next turn. On a success, the effect ends on the target. On a failure, the target is petrified until freed by the greater restoration spell or other magic.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "CON",
@@ -16688,8 +17029,13 @@
         ]
       },
       {
-        "name": "Poison Breath (Recharge 5-6)",
+        "name": "Poison Breath",
         "desc": "The dragon exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 11 Constitution saving throw, taking 21 (6d6) poison damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "CON",
@@ -17676,8 +18022,13 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5-6)",
+        "name": "Fire Breath",
         "desc": "The veteran exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -17906,8 +18257,13 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5-6)",
+        "name": "Fire Breath",
         "desc": "The hound exhales fire in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -18042,8 +18398,12 @@
         ]
       },
       {
-        "name": "Variant: Summon Demon (1/Day)",
-        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA hezrou has a 30 percent chance of summoning 2d6 dretches or one hezrou.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+        "name": "Variant: Summon Demon",
+        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA hezrou has a 30 percent chance of summoning 2d6 dretches or one hezrou.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "url": "/api/monsters/hezrou"
@@ -18915,8 +19275,12 @@
         "desc": "While the mephit remains motionless, it is indistinguishable from an ordinary shard of ice."
       },
       {
-        "name": "Innate Spellcasting (1/Day)",
-        "desc": "The mephit can innately cast fog cloud, requiring no material components. Its innate spellcasting ability is Charisma."
+        "name": "Innate Spellcasting",
+        "desc": "The mephit can innately cast fog cloud, requiring no material components. Its innate spellcasting ability is Charisma.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "actions": [
@@ -18966,8 +19330,12 @@
         ]
       },
       {
-        "name": "Variant: Summon Mephits (1/Day)",
-        "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+        "name": "Variant: Summon Mephits",
+        "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "url": "/api/monsters/ice-mephit"
@@ -19301,8 +19669,13 @@
         ]
       },
       {
-        "name": "Poison Breath (Recharge 5-6)",
+        "name": "Poison Breath",
         "desc": "The golem exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 45 (l0d8) poison damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "CON",
@@ -19540,8 +19913,15 @@
         ]
       },
       {
-        "name": "Leadership (Recharges after a Short or Long Rest)",
-        "desc": "For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 ft. of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated."
+        "name": "Leadership",
+        "desc": "For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 ft. of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated.",
+        "usage": {
+          "type": "recharge after rest",
+          "rest_types": [
+            "short",
+            "long"
+          ]
+        }
       }
     ],
     "reactions": [
@@ -20115,8 +20495,12 @@
     "challenge_rating": 21,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the lich fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the lich fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       },
       {
         "name": "Rejuvenation",
@@ -20868,8 +21252,12 @@
         "desc": "While the mephit remains motionless, it is indistinguishable from an ordinary mound of magma."
       },
       {
-        "name": "Innate Spellcasting (1/Day)",
-        "desc": "The mephit can innately cast heat metal (spell save DC 10), requiring no material components. Its innate spellcasting ability is Charisma."
+        "name": "Innate Spellcasting",
+        "desc": "The mephit can innately cast heat metal (spell save DC 10), requiring no material components. Its innate spellcasting ability is Charisma.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "actions": [
@@ -20919,8 +21307,12 @@
         ]
       },
       {
-        "name": "Variant: Summon Mephits (1/Day)",
-        "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+        "name": "Variant: Summon Mephits",
+        "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "url": "/api/monsters/magma-mephit"
@@ -21282,8 +21674,12 @@
         "desc": "The marilith magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
       },
       {
-        "name": "Variant: Summon Demon (1/Day)",
-        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA marilith has a 50 percent chance of summoning 1d6 vrocks, 1d4 hezrous, 1d3 glabrezus, 1d2 nalfeshnees, or one marilith.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+        "name": "Variant: Summon Demon",
+        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA marilith has a 50 percent chance of summoning 1d6 vrocks, 1d4 hezrous, 1d3 glabrezus, 1d2 nalfeshnees, or one marilith.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "reactions": [
@@ -22477,8 +22873,13 @@
         ]
       },
       {
-        "name": "Horror Nimbus (Recharge 5-6)",
+        "name": "Horror Nimbus",
         "desc": "The nalfeshnee magically emits scintillating, multicolored light. Each creature within 15 feet of the nalfeshnee that can see the light must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the nalfeshnee's Horror Nimbus for the next 24 hours.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "WIS",
@@ -22493,8 +22894,12 @@
         "desc": "The nalfeshnee magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
       },
       {
-        "name": "Variant: Summon Demon (1/Day)",
-        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA nalfeshnee has a 50 percent chance of summoning 1d4 vrocks, 1d3 hezrous, 1d2 glabrezus, or one nalfeshnee.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+        "name": "Variant: Summon Demon",
+        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA nalfeshnee has a 50 percent chance of summoning 1d4 vrocks, 1d3 hezrous, 1d2 glabrezus, or one nalfeshnee.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "url": "/api/monsters/nalfeshnee"
@@ -22660,8 +23065,12 @@
         "desc": "The hag magically enters the Ethereal Plane from the Material Plane, or vice versa. To do so, the hag must have a heartstone in her possession."
       },
       {
-        "name": "Nightmare Haunting (1/Day)",
-        "desc": "While on the Ethereal Plane, the hag magically touches a sleeping humanoid on the Material Plane. A protection from evil and good spell cast on the target prevents this contact, as does a magic circle. As long as the contact persists, the target has dreadful visions. If these visions last for at least 1 hour, the target gains no benefit from its rest, and its hit point maximum is reduced by 5 (1d10). If this effect reduces the target's hit point maximum to 0, the target dies, and if the target was evil, its soul is trapped in the hag's soul bag. The reduction to the target's hit point maximum lasts until removed by the greater restoration spell or similar magic."
+        "name": "Nightmare Haunting",
+        "desc": "While on the Ethereal Plane, the hag magically touches a sleeping humanoid on the Material Plane. A protection from evil and good spell cast on the target prevents this contact, as does a magic circle. As long as the contact persists, the target has dreadful visions. If these visions last for at least 1 hour, the target gains no benefit from its rest, and its hit point maximum is reduced by 5 (1d10). If this effect reduces the target's hit point maximum to 0, the target dies, and if the target was evil, its soul is trapped in the hag's soul bag. The reduction to the target's hit point maximum lasts until removed by the greater restoration spell or similar magic.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "url": "/api/monsters/night-hag"
@@ -22986,8 +23395,15 @@
         ]
       },
       {
-        "name": "Ink Cloud (Recharges after a Short or Long Rest)",
+        "name": "Ink Cloud",
         "desc": "A 5-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.",
+        "usage": {
+          "type": "recharge after rest",
+          "rest_types": [
+            "short",
+            "long"
+          ]
+        },
         "attack_bonus": 0
       }
     ],
@@ -24244,8 +24660,12 @@
         ]
       },
       {
-        "name": "Healing Touch (4/Day)",
-        "desc": "The planetar touches another creature. The target magically regains 30 (6d8 + 3) hit points and is freed from any curse, disease, poison, blindness, or deafness."
+        "name": "Healing Touch",
+        "desc": "The planetar touches another creature. The target magically regains 30 (6d8 + 3) hit points and is freed from any curse, disease, poison, blindness, or deafness.",
+        "usage": {
+          "type": "per day",
+          "times": 4
+        }
       }
     ],
     "url": "/api/monsters/planetar"
@@ -24901,8 +25321,12 @@
         ]
       },
       {
-        "name": "Scare (1/day)",
+        "name": "Scare",
         "desc": "One creature of the quasit's choice within 20 ft. of it must succeed on a DC 10 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the quasit is within line of sight, ending the effect on itself on a success.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        },
         "dc": {
           "dc_type": {
             "name": "WIS",
@@ -25374,8 +25798,13 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5-6)",
+        "name": "Fire Breath",
         "desc": "The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC l3 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -27119,8 +27548,13 @@
         ]
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nCold Breath. The dragon exhales an icy blast in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.\nParalyzing Breath. The dragon exhales paralyzing gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Cold Breath",
@@ -27444,8 +27878,12 @@
         "desc": "The solar releases its greatsword to hover magically in an unoccupied space within 5 ft. of it. If the solar can see the sword, the solar can mentally command it as a bonus action to fly up to 50 ft. and either make one attack against a target or return to the solar's hands. If the hovering sword is targeted by any effect, the solar is considered to be holding it. The hovering sword falls if the solar dies."
       },
       {
-        "name": "Healing Touch (4/Day)",
-        "desc": "The solar touches another creature. The target magically regains 40 (8d8 + 4) hit points and is freed from any curse, disease, poison, blindness, or deafness."
+        "name": "Healing Touch",
+        "desc": "The solar touches another creature. The target magically regains 40 (8d8 + 4) hit points and is freed from any curse, disease, poison, blindness, or deafness.",
+        "usage": {
+          "type": "per day",
+          "times": 4
+        }
       }
     ],
     "legendary_actions": [
@@ -28116,8 +28554,12 @@
         ]
       },
       {
-        "name": "Innate Spellcasting (1/Day)",
-        "desc": "The mephit can innately cast blur, requiring no material components. Its innate spellcasting ability is Charisma."
+        "name": "Innate Spellcasting",
+        "desc": "The mephit can innately cast blur, requiring no material components. Its innate spellcasting ability is Charisma.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "actions": [
@@ -28167,8 +28609,12 @@
         ]
       },
       {
-        "name": "Variant: Summon Mephits (1/Day)",
-        "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+        "name": "Variant: Summon Mephits",
+        "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "url": "/api/monsters/steam-mephit"
@@ -28423,8 +28869,13 @@
         ]
       },
       {
-        "name": "Slow (Recharge 5-6)",
+        "name": "Slow",
         "desc": "The golem targets one or more creatures it can see within 10 ft. of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "WIS",
@@ -28613,8 +29064,13 @@
         ]
       },
       {
-        "name": "Lightning Strike (Recharge 5-6)",
+        "name": "Lightning Strike",
         "desc": "The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a DC 17 Dexterity saving throw, taking 54 (12d8) lightning damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -29786,8 +30242,12 @@
     "challenge_rating": 30,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the tarrasque fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the tarrasque fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       },
       {
         "name": "Magic Resistance",
@@ -30144,8 +30604,12 @@
         ]
       },
       {
-        "name": "Animate Trees (1/Day)",
-        "desc": "The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a treant, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible."
+        "name": "Animate Trees",
+        "desc": "The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a treant, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "url": "/api/monsters/treant"
@@ -30602,12 +31066,20 @@
         ]
       },
       {
-        "name": "Healing Touch (3/Day)",
-        "desc": "The unicorn touches another creature with its horn. The target magically regains 11 (2d8 + 2) hit points. In addition, the touch removes all diseases and neutralizes all poisons afflicting the target."
+        "name": "Healing Touch",
+        "desc": "The unicorn touches another creature with its horn. The target magically regains 11 (2d8 + 2) hit points. In addition, the touch removes all diseases and neutralizes all poisons afflicting the target.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       },
       {
-        "name": "Teleport (1/Day)",
-        "desc": "The unicorn magically teleports itself and up to three willing creatures it can see within 5 ft. of it, along with any equipment they are wearing or carrying, to a location the unicorn is familiar with, up to 1 mile away."
+        "name": "Teleport",
+        "desc": "The unicorn magically teleports itself and up to three willing creatures it can see within 5 ft. of it, along with any equipment they are wearing or carrying, to a location the unicorn is familiar with, up to 1 mile away.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "legendary_actions": [
@@ -30691,8 +31163,12 @@
         "desc": "If the vampire isn't in sun light or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form.\nWhile in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.\nWhile in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight."
       },
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the vampire fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the vampire fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       },
       {
         "name": "Misty Escape",
@@ -30767,8 +31243,12 @@
         }
       },
       {
-        "name": "Children of the Night (1/Day)",
-        "desc": "The vampire magically calls 2d4 swarms of bats or rats, provided that the sun isn't up. While outdoors, the vampire can call 3d6 wolves instead. The called creatures arrive in 1d4 rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action."
+        "name": "Children of the Night",
+        "desc": "The vampire magically calls 2d4 swarms of bats or rats, provided that the sun isn't up. While outdoors, the vampire can call 3d6 wolves instead. The called creatures arrive in 1d4 rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "legendary_actions": [
@@ -31196,8 +31676,12 @@
         }
       },
       {
-        "name": "Stunning Screech (1/Day)",
+        "name": "Stunning Screech",
         "desc": "The vrock emits a horrific screech. Each creature within 20 feet of it that can hear it and that isn't a demon must succeed on a DC 14 Constitution saving throw or be stunned until the end of the vrock's next turn .",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        },
         "dc": {
           "dc_type": {
             "name": "CON",
@@ -31208,8 +31692,12 @@
         }
       },
       {
-        "name": "Variant: Summon Demon (1/Day)",
-        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA vrock has a 30 percent chance of summoning 2d4 dretches or one vrock.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+        "name": "Variant: Summon Demon",
+        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA vrock has a 30 percent chance of summoning 2d4 dretches or one vrock.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "url": "/api/monsters/vrock"
@@ -31495,8 +31983,13 @@
         ]
       },
       {
-        "name": "Whelm (Recharge 4-6)",
+        "name": "Whelm",
         "desc": "Each creature in the elemental's space must make a DC 15 Strength saving throw. On a failure, a target takes 13 (2d8 + 4) bludgeoning damage. If it is Large or smaller, it is also grappled (escape DC 14). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental's space.\nThe elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of each of the elemental's turns, each target grappled by it takes 13 (2d8 + 4) bludgeoning damage. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a DC 14 Strength and succeeding.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 4
+        },
         "dc": {
           "dc_type": {
             "name": "STR",
@@ -31755,8 +32248,15 @@
         "desc": "If the wereboar moves at least 15 feet straight toward a target and then hits it with its tusks on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
       },
       {
-        "name": "Relentless (Recharges after a Short or Long Rest)",
+        "name": "Relentless",
         "desc": "If the wereboar takes 14 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.",
+        "usage": {
+          "type": "recharge after rest",
+          "rest_types": [
+            "short",
+            "long"
+          ]
+        },
         "attack_bonus": 0
       }
     ],
@@ -32251,8 +32751,13 @@
         ]
       },
       {
-        "name": "Cold Breath (Recharge 5-6)",
+        "name": "Cold Breath",
         "desc": "The dragon exhales an icy blast of hail in a 15-foot cone. Each creature in that area must make a DC 12 Constitution saving throw, taking 22 (5d8) cold damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "CON",
@@ -32590,8 +33095,13 @@
         ]
       },
       {
-        "name": "Cold Breath (Recharge 5-6)",
+        "name": "Cold Breath",
         "desc": "The wolf exhales a blast of freezing wind in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -33155,8 +33665,13 @@
         ]
       },
       {
-        "name": "Acid Breath (Recharge 5-6)",
+        "name": "Acid Breath",
         "desc": "The dragon exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 49 (11d8) acid damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -33289,8 +33804,13 @@
         ]
       },
       {
-        "name": "Lightning Breath (Recharge 5-6)",
+        "name": "Lightning Breath",
         "desc": "The dragon exhales lightning in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -33420,8 +33940,13 @@
         ]
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 42 (12d6) fire damage on a failed save, or half as much damage on a successful one.\nSleep Breath. The dragon exhales sleep gas in a 30-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw or fall unconscious for 5 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attack_bonus": 0,
         "attacks": [
           {
@@ -33574,8 +34099,13 @@
         ]
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nLightning Breath. The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.\nRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 15 Strength saving throw. On a failed save, the creature is pushed 40 feet away from the dragon.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attack_bonus": 0,
         "attacks": [
           {
@@ -33722,8 +34252,13 @@
         ]
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nAcid Breath. The dragon exhales acid in an 40-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 40 (9d8) acid damage on a failed save, or half as much damage on a successful one.\nSlowing Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Acid Breath",
@@ -33880,8 +34415,13 @@
         ]
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 55 (10d10) fire damage on a failed save, or half as much damage on a successful one.\nWeakening Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Fire Breath",
@@ -34046,8 +34586,13 @@
         ]
       },
       {
-        "name": "Poison Breath (Recharge 5-6)",
+        "name": "Poison Breath",
         "desc": "The dragon exhales poisonous gas in a 30-foot cone. Each creature in that area must make a DC 14 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "CON",
@@ -34180,8 +34725,13 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5-6)",
+        "name": "Fire Breath",
         "desc": "The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "DEX",
@@ -34315,8 +34865,13 @@
         ]
       },
       {
-        "name": "Breath Weapons (Recharge 5-6)",
+        "name": "Breath Weapons",
         "desc": "The dragon uses one of the following breath weapons.\nCold Breath. The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 54 (12d8) cold damage on a failed save, or half as much damage on a successful one.\nParalyzing Breath. The dragon exhales paralyzing gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "attacks": [
           {
             "name": "Cold Breath",
@@ -34472,8 +35027,13 @@
         ]
       },
       {
-        "name": "Cold Breath (Recharge 5-6)",
+        "name": "Cold Breath",
         "desc": "The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 45 (10d8) cold damage on a failed save, or half as much damage on a successful one.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "dc": {
           "dc_type": {
             "name": "CON",
