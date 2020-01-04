@@ -1,7 +1,7 @@
 [{
-	"index": 1,
+	"index": "berserker",
 	"class": {
-		"url": "/api/classes/1",
+		"url": "/api/classes/barbarian",
 		"name": "Barbarian"
 	},
 	"name": "Berserker",
@@ -10,18 +10,18 @@
 	"features": [
 		{
 			"name": "Primal Path",
-			"url": "/api/features/5"
+			"url": "/api/features/primal-path"
 		},
 		{
 			"name": "Frenzy",
-			"url": "/api/features/6"
+			"url": "/api/features/frenzy"
 		}
 	],
-	"url": "/api/subclasses/1"
+	"url": "/api/subclasses/berserker"
 }, {
-	"index": 2,
+	"index": "lore",
 	"class": {
-		"url": "/api/classes/2",
+		"url": "/api/classes/bard",
 		"name": "Bard"
 	},
 	"name": "Lore",
@@ -30,11 +30,11 @@
 	"features": [
 
 	],
-	"url": "/api/subclasses/2"
+	"url": "/api/subclasses/lore"
 }, {
-	"index": 3,
+	"index": "life",
 	"class": {
-		"url": "/api/classes/3",
+		"url": "/api/classes/cleric",
 		"name": "Cleric"
 	},
 	"name": "Life",
@@ -49,7 +49,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/28",
+			"url": "/api/spells/bless",
 			"name": "Bless"
 		}
 	}, {
@@ -58,7 +58,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/66",
+			"url": "/api/spells/cure-wounds",
 			"name": "Cure Wounds"
 		}
 	}, {
@@ -67,7 +67,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/167",
+			"url": "/api/spells/lesser-restoration",
 			"name": "Lesser Restoration"
 		}
 	}, {
@@ -76,7 +76,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/265",
+			"url": "/api/spells/spiritual-weapon",
 			"name": "Spiritual Weapon"
 		}
 	}, {
@@ -85,7 +85,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/24",
+			"url": "/api/spells/beacon-of-hope",
 			"name": "Beacon of Hope"
 		}
 	}, {
@@ -94,7 +94,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/236",
+			"url": "/api/spells/revivify",
 			"name": "Revivify"
 		}
 	}, {
@@ -103,7 +103,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/71",
+			"url": "/api/spells/death-ward",
 			"name": "Death Ward"
 		}
 	}, {
@@ -112,7 +112,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/184",
+			"url": "/api/spells/mass-cure-wounds",
 			"name": "Mass Cure Wounds"
 		}
 	}, {
@@ -121,15 +121,15 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/226",
+			"url": "/api/spells/raise-dead",
 			"name": "Raise Dead"
 		}
 	}],
-	"url": "/api/subclasses/3"
+	"url": "/api/subclasses/life"
 }, {
-	"index": 4,
+	"index": "land",
 	"class": {
-		"url": "/api/classes/4",
+		"url": "/api/classes/druid",
 		"name": "Druid"
 	},
 	"name": "Land",
@@ -144,10 +144,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Arctic",
-			"url": "/api/features/105"
+			"url": "/api/features/circle-of-the-land-arctic"
 		}],
 		"spell": {
-			"url": "/api/spells/151",
+			"url": "/api/spells/hold-person",
 			"name": "Hold Person"
 		}
 	}, {
@@ -156,10 +156,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Arctic",
-			"url": "/api/features/105"
+			"url": "/api/features/circle-of-the-land-arctic"
 		}],
 		"spell": {
-			"url": "/api/spells/263",
+			"url": "/api/spells/spike-growth",
 			"name": "Spike Growth"
 		}
 	}, {
@@ -168,10 +168,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Arctic",
-			"url": "/api/features/105"
+			"url": "/api/features/circle-of-the-land-arctic"
 		}],
 		"spell": {
-			"url": "/api/spells/257",
+			"url": "/api/spells/sleet-storm",
 			"name": "Sleet Storm"
 		}
 	}, {
@@ -180,10 +180,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Arctic",
-			"url": "/api/features/105"
+			"url": "/api/features/circle-of-the-land-arctic"
 		}],
 		"spell": {
-			"url": "/api/spells/258",
+			"url": "/api/spells/slow",
 			"name": "Slow"
 		}
 	}, {
@@ -192,10 +192,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Arctic",
-			"url": "/api/features/105"
+			"url": "/api/features/circle-of-the-land-arctic"
 		}],
 		"spell": {
-			"url": "/api/spells/123",
+			"url": "/api/spells/freedom-of-movement",
 			"name": "Freedom of Movement"
 		}
 	}, {
@@ -204,10 +204,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Arctic",
-			"url": "/api/features/105"
+			"url": "/api/features/circle-of-the-land-arctic"
 		}],
 		"spell": {
-			"url": "/api/spells/152",
+			"url": "/api/spells/holy-aura",
 			"name": "Holy Aura"
 		}
 	}, {
@@ -216,10 +216,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Arctic",
-			"url": "/api/features/105"
+			"url": "/api/features/circle-of-the-land-arctic"
 		}],
 		"spell": {
-			"url": "/api/spells/45",
+			"url": "/api/spells/commune",
 			"name": "Commune"
 		}
 	}, {
@@ -228,10 +228,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Arctic",
-			"url": "/api/features/105"
+			"url": "/api/features/circle-of-the-land-arctic"
 		}],
 		"spell": {
-			"url": "/api/spells/47",
+			"url": "/api/spells/comprehend-languages",
 			"name": "Comprehend Languages"
 		}
 	}, {
@@ -240,10 +240,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Coast",
-			"url": "/api/features/106"
+			"url": "/api/features/circle-of-the-land-coast"
 		}],
 		"spell": {
-			"url": "/api/spells/196",
+			"url": "/api/spells/mirror-image",
 			"name": "Mirror Image"
 		}
 	}, {
@@ -252,10 +252,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Coast",
-			"url": "/api/features/106"
+			"url": "/api/features/circle-of-the-land-coast"
 		}],
 		"spell": {
-			"url": "/api/spells/198",
+			"url": "/api/spells/misty-step",
 			"name": "Misty Step"
 		}
 	}, {
@@ -264,10 +264,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Coast",
-			"url": "/api/features/106"
+			"url": "/api/features/circle-of-the-land-coast"
 		}],
 		"spell": {
-			"url": "/api/spells/297",
+			"url": "/api/spells/water-breathing",
 			"name": "Water Breathing"
 		}
 	}, {
@@ -276,10 +276,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Coast",
-			"url": "/api/features/106"
+			"url": "/api/features/circle-of-the-land-coast"
 		}],
 		"spell": {
-			"url": "/api/spells/298",
+			"url": "/api/spells/water-walk",
 			"name": "Water Walk"
 		}
 	}, {
@@ -288,10 +288,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Coast",
-			"url": "/api/features/106"
+			"url": "/api/features/circle-of-the-land-coast"
 		}],
 		"spell": {
-			"url": "/api/spells/60",
+			"url": "/api/spells/control-water",
 			"name": "Control Water"
 		}
 	}, {
@@ -300,10 +300,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Coast",
-			"url": "/api/features/106"
+			"url": "/api/features/circle-of-the-land-coast"
 		}],
 		"spell": {
-			"url": "/api/spells/123",
+			"url": "/api/spells/freedom-of-movement",
 			"name": "Freedom of Movement"
 		}
 	}, {
@@ -312,10 +312,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Coast",
-			"url": "/api/features/106"
+			"url": "/api/features/circle-of-the-land-coast"
 		}],
 		"spell": {
-			"url": "/api/spells/52",
+			"url": "/api/spells/conjure-elemental",
 			"name": "Conjure Elemental"
 		}
 	}, {
@@ -324,10 +324,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Coast",
-			"url": "/api/features/106"
+			"url": "/api/features/circle-of-the-land-coast"
 		}],
 		"spell": {
-			"url": "/api/spells/241",
+			"url": "/api/spells/scrying",
 			"name": "Scrying"
 		}
 	}, {
@@ -336,10 +336,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Desert",
-			"url": "/api/features/107"
+			"url": "/api/features/circle-of-the-land-desert"
 		}],
 		"spell": {
-			"url": "/api/spells/32",
+			"url": "/api/spells/blur",
 			"name": "Blur"
 		}
 	}, {
@@ -348,10 +348,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Desert",
-			"url": "/api/features/107"
+			"url": "/api/features/circle-of-the-land-desert"
 		}],
 		"spell": {
-			"url": "/api/spells/253",
+			"url": "/api/spells/silence",
 			"name": "Silence"
 		}
 	}, {
@@ -360,10 +360,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Desert",
-			"url": "/api/features/107"
+			"url": "/api/features/circle-of-the-land-desert"
 		}],
 		"spell": {
-			"url": "/api/spells/62",
+			"url": "/api/spells/create-food-and-water",
 			"name": "Create Food and Water"
 		}
 	}, {
@@ -372,10 +372,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Desert",
-			"url": "/api/features/107"
+			"url": "/api/features/circle-of-the-land-desert"
 		}],
 		"spell": {
-			"url": "/api/spells/222",
+			"url": "/api/spells/protection-from-energy",
 			"name": "Protection From Energy"
 		}
 	}, {
@@ -384,10 +384,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Desert",
-			"url": "/api/features/107"
+			"url": "/api/features/circle-of-the-land-desert"
 		}],
 		"spell": {
-			"url": "/api/spells/29",
+			"url": "/api/spells/blight",
 			"name": "Blight"
 		}
 	}, {
@@ -396,10 +396,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Desert",
-			"url": "/api/features/107"
+			"url": "/api/features/circle-of-the-land-desert"
 		}],
 		"spell": {
-			"url": "/api/spells/141",
+			"url": "/api/spells/hallucinatory-terrain",
 			"name": "Hallucinatory Terrain"
 		}
 	}, {
@@ -408,10 +408,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Desert",
-			"url": "/api/features/107"
+			"url": "/api/features/circle-of-the-land-desert"
 		}],
 		"spell": {
-			"url": "/api/spells/160",
+			"url": "/api/spells/insect-plague",
 			"name": "Insect Plague"
 		}
 	}, {
@@ -420,10 +420,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Desert",
-			"url": "/api/features/107"
+			"url": "/api/features/circle-of-the-land-desert"
 		}],
 		"spell": {
-			"url": "/api/spells/294",
+			"url": "/api/spells/wall-of-stone",
 			"name": "Wall of Stone"
 		}
 	}, {
@@ -432,10 +432,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Forest",
-			"url": "/api/features/108"
+			"url": "/api/features/circle-of-the-land-forest"
 		}],
 		"spell": {
-			"url": "/api/spells/23",
+			"url": "/api/spells/barkskin",
 			"name": "Barkskin"
 		}
 	}, {
@@ -444,10 +444,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Forest",
-			"url": "/api/features/108"
+			"url": "/api/features/circle-of-the-land-forest"
 		}],
 		"spell": {
-			"url": "/api/spells/262",
+			"url": "/api/spells/spider-climb",
 			"name": "Spider Climb"
 		}
 	}, {
@@ -456,10 +456,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Forest",
-			"url": "/api/features/108"
+			"url": "/api/features/circle-of-the-land-forest"
 		}],
 		"spell": {
-			"url": "/api/spells/34",
+			"url": "/api/spells/call-lightning",
 			"name": "Call Lightning"
 		}
 	}, {
@@ -468,10 +468,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Forest",
-			"url": "/api/features/108"
+			"url": "/api/features/circle-of-the-land-forest"
 		}],
 		"spell": {
-			"url": "/api/spells/210",
+			"url": "/api/spells/plant-growth",
 			"name": "Plant Growth"
 		}
 	}, {
@@ -480,10 +480,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Forest",
-			"url": "/api/features/108"
+			"url": "/api/features/circle-of-the-land-forest"
 		}],
 		"spell": {
-			"url": "/api/spells/83",
+			"url": "/api/spells/divination",
 			"name": "Divination"
 		}
 	}, {
@@ -492,10 +492,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Forest",
-			"url": "/api/features/108"
+			"url": "/api/features/circle-of-the-land-forest"
 		}],
 		"spell": {
-			"url": "/api/spells/123",
+			"url": "/api/spells/freedom-of-movement",
 			"name": "Freedom of Movement"
 		}
 	}, {
@@ -504,10 +504,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Forest",
-			"url": "/api/features/108"
+			"url": "/api/features/circle-of-the-land-forest"
 		}],
 		"spell": {
-			"url": "/api/spells/46",
+			"url": "/api/spells/commune-with-nature",
 			"name": "Commune With Nature"
 		}
 	}, {
@@ -516,10 +516,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Forest",
-			"url": "/api/features/108"
+			"url": "/api/features/circle-of-the-land-forest"
 		}],
 		"spell": {
-			"url": "/api/spells/284",
+			"url": "/api/spells/tree-stride",
 			"name": "Tree Stride"
 		}
 	}, {
@@ -528,10 +528,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Grassland",
-			"url": "/api/features/109"
+			"url": "/api/features/circle-of-the-land-grassland"
 		}],
 		"spell": {
-			"url": "/api/spells/160",
+			"url": "/api/spells/invisibility",
 			"name": "Invisibility"
 		}
 	}, {
@@ -540,10 +540,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Grassland",
-			"url": "/api/features/109"
+			"url": "/api/features/circle-of-the-land-grassland"
 		}],
 		"spell": {
-			"url": "/api/spells/203",
+			"url": "/api/spells/pass-without-trace",
 			"name": "Pass Without Trace"
 		}
 	}, {
@@ -552,10 +552,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Grassland",
-			"url": "/api/features/109"
+			"url": "/api/features/circle-of-the-land-grassland"
 		}],
 		"spell": {
-			"url": "/api/spells/70",
+			"url": "/api/spells/daylight",
 			"name": "Daylight"
 		}
 	}, {
@@ -564,10 +564,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Grassland",
-			"url": "/api/features/109"
+			"url": "/api/features/circle-of-the-land-grassland"
 		}],
 		"spell": {
-			"url": "/api/spells/143",
+			"url": "/api/spells/haste",
 			"name": "Haste"
 		}
 	}, {
@@ -576,10 +576,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Grassland",
-			"url": "/api/features/109"
+			"url": "/api/features/circle-of-the-land-grassland"
 		}],
 		"spell": {
-			"url": "/api/spells/83",
+			"url": "/api/spells/divination",
 			"name": "Divination"
 		}
 	}, {
@@ -588,10 +588,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Grassland",
-			"url": "/api/features/109"
+			"url": "/api/features/circle-of-the-land-grassland"
 		}],
 		"spell": {
-			"url": "/api/spells/123",
+			"url": "/api/spells/freedom-of-movement",
 			"name": "Freedom of Movement"
 		}
 	}, {
@@ -600,10 +600,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Grassland",
-			"url": "/api/features/109"
+			"url": "/api/features/circle-of-the-land-grassland"
 		}],
 		"spell": {
-			"url": "/api/spells/89",
+			"url": "/api/spells/dream",
 			"name": "Dream"
 		}
 	}, {
@@ -612,10 +612,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Grassland",
-			"url": "/api/features/109"
+			"url": "/api/features/circle-of-the-land-grassland"
 		}],
 		"spell": {
-			"url": "/api/spells/160",
+			"url": "/api/spells/insect-plague",
 			"name": "Insect Plague"
 		}
 	}, {
@@ -624,10 +624,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Mountain",
-			"url": "/api/features/110"
+			"url": "/api/features/circle-of-the-land-mountain"
 		}],
 		"spell": {
-			"url": "/api/spells/262",
+			"url": "/api/spells/spider-climb",
 			"name": "Spider Climb"
 		}
 	}, {
@@ -636,10 +636,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Mountain",
-			"url": "/api/features/110"
+			"url": "/api/features/circle-of-the-land-mountain"
 		}],
 		"spell": {
-			"url": "/api/spells/263",
+			"url": "/api/spells/spike-growth",
 			"name": "Spike Growth"
 		}
 	}, {
@@ -648,10 +648,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Mountain",
-			"url": "/api/features/110"
+			"url": "/api/features/circle-of-the-land-mountain"
 		}],
 		"spell": {
-			"url": "/api/spells/170",
+			"url": "/api/spells/lightning-bolt",
 			"name": "Lightning Bolt"
 		}
 	}, {
@@ -660,10 +660,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Mountain",
-			"url": "/api/features/110"
+			"url": "/api/features/circle-of-the-land-mountain"
 		}],
 		"spell": {
-			"url": "/api/spells/189",
+			"url": "/api/spells/meld-into-stone",
 			"name": "Meld Into Stone"
 		}
 	}, {
@@ -672,10 +672,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Mountain",
-			"url": "/api/features/110"
+			"url": "/api/features/circle-of-the-land-mountain"
 		}],
 		"spell": {
-			"url": "/api/spells/267",
+			"url": "/api/spells/stone-shape",
 			"name": "Stone Shape"
 		}
 	}, {
@@ -684,10 +684,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Mountain",
-			"url": "/api/features/110"
+			"url": "/api/features/circle-of-the-land-mountain"
 		}],
 		"spell": {
-			"url": "/api/spells/268",
+			"url": "/api/spells/stoneskin",
 			"name": "Stoneskin"
 		}
 	}, {
@@ -696,10 +696,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Mountain",
-			"url": "/api/features/110"
+			"url": "/api/features/circle-of-the-land-mountain"
 		}],
 		"spell": {
-			"url": "/api/spells/204",
+			"url": "/api/spells/passwall",
 			"name": "Passwall"
 		}
 	}, {
@@ -708,10 +708,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Mountain",
-			"url": "/api/features/110"
+			"url": "/api/features/circle-of-the-land-mountain"
 		}],
 		"spell": {
-			"url": "/api/spells/294",
+			"url": "/api/spells/wall-of-stone",
 			"name": "Wall of Stone"
 		}
 	}, {
@@ -720,10 +720,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Swamp",
-			"url": "/api/features/112"
+			"url": "/api/features/circle-of-the-land-swamp"
 		}],
 		"spell": {
-			"url": "/api/spells/1",
+			"url": "/api/spells/acid-arrow",
 			"name": "Acid Arrow"
 		}
 	}, {
@@ -732,10 +732,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Swamp",
-			"url": "/api/features/112"
+			"url": "/api/features/circle-of-the-land-swamp"
 		}],
 		"spell": {
-			"url": "/api/spells/68",
+			"url": "/api/spells/darkness",
 			"name": "Darkness"
 		}
 	}, {
@@ -744,10 +744,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Swamp",
-			"url": "/api/features/112"
+			"url": "/api/features/circle-of-the-land-swamp"
 		}],
 		"spell": {
-			"url": "/api/spells/298",
+			"url": "/api/spells/water-walk",
 			"name": "Water Walk"
 		}
 	}, {
@@ -756,10 +756,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Swamp",
-			"url": "/api/features/112"
+			"url": "/api/features/circle-of-the-land-swamp"
 		}],
 		"spell": {
-			"url": "/api/spells/266",
+			"url": "/api/spells/stinking-cloud",
 			"name": "Stinking Cloud"
 		}
 	}, {
@@ -768,10 +768,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Swamp",
-			"url": "/api/features/112"
+			"url": "/api/features/circle-of-the-land-swamp"
 		}],
 		"spell": {
-			"url": "/api/spells/123",
+			"url": "/api/spells/freedom-of-movement",
 			"name": "Freedom of Movement"
 		}
 	}, {
@@ -780,10 +780,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Swamp",
-			"url": "/api/features/112"
+			"url": "/api/features/circle-of-the-land-swamp"
 		}],
 		"spell": {
-			"url": "/api/spells/172",
+			"url": "/api/spells/locate-creature",
 			"name": "Locate Creature"
 		}
 	}, {
@@ -792,10 +792,10 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Swamp",
-			"url": "/api/features/112"
+			"url": "/api/features/circle-of-the-land-swamp"
 		}],
 		"spell": {
-			"url": "/api/spells/160",
+			"url": "/api/spells/insect-plague",
 			"name": "Insect Plague"
 		}
 	}, {
@@ -804,18 +804,18 @@
 			"type": "level"
 		}, {
 			"name": "Circle of the Land: Swamp",
-			"url": "/api/features/112"
+			"url": "/api/features/circle-of-the-land-swamp"
 		}],
 		"spell": {
-			"url": "/api/spells/241",
+			"url": "/api/spells/scrying",
 			"name": "Scrying"
 		}
 	}],
-	"url": "/api/subclasses/4"
+	"url": "/api/subclasses/land"
 }, {
-	"index": 5,
+	"index": "champion",
 	"class": {
-		"url": "/api/classes/5",
+		"url": "/api/classes/fighter",
 		"name": "Fighter"
 	},
 	"name": "Champion",
@@ -824,11 +824,11 @@
 	"features": [
 
 	],
-	"url": "/api/subclasses/5"
+	"url": "/api/subclasses/champion"
 }, {
-	"index": 6,
+	"index": "open-hand",
 	"class": {
-		"url": "/api/classes/6",
+		"url": "/api/classes/monk",
 		"name": "Monk"
 	},
 	"name": "Open Hand",
@@ -837,11 +837,11 @@
 	"features": [
 
 	],
-	"url": "/api/subclasses/6"
+	"url": "/api/subclasses/open-hand"
 }, {
-	"index": 7,
+	"index": "devotion",
 	"class": {
-		"url": "/api/classes/7",
+		"url": "/api/classes/paladin",
 		"name": "Paladin"
 	},
 	"name": "Devotion",
@@ -856,7 +856,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/223",
+			"url": "/api/spells/protection-from-evil-and-good",
 			"name": "Protection from Evil and Good"
 		}
 	}, {
@@ -865,7 +865,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/239",
+			"url": "/api/spells/sanctuary",
 			"name": "Sanctuary"
 		}
 	}, {
@@ -874,7 +874,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/167",
+			"url": "/api/spells/lesser-restoration",
 			"name": "Lesser Restoration"
 		}
 	}, {
@@ -883,7 +883,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/305",
+			"url": "/api/spells/zone-of-truth",
 			"name": "Zone of Truth"
 		}
 	}, {
@@ -892,7 +892,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/24",
+			"url": "/api/spells/beacon-of-hope",
 			"name": "Beacon of Hope"
 		}
 	}, {
@@ -901,7 +901,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/82",
+			"url": "/api/spells/dispel-magic",
 			"name": "Dispel Magic"
 		}
 	}, {
@@ -910,7 +910,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/123",
+			"url": "/api/spells/freedom-of-movement",
 			"name": "Freedom of Movement"
 		}
 	}, {
@@ -919,7 +919,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/45",
+			"url": "/api/spells/commune",
 			"name": "Commune"
 		}
 	}, {
@@ -928,15 +928,15 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/114",
+			"url": "/api/spells/flame-strike",
 			"name": "Flame Strike"
 		}
 	}],
-	"url": "/api/subclasses/7"
+	"url": "/api/subclasses/devotion"
 }, {
-	"index": 8,
+	"index": "hunter",
 	"class": {
-		"url": "/api/classes/8",
+		"url": "/api/classes/ranger",
 		"name": "Ranger"
 	},
 	"name": "Hunter",
@@ -945,11 +945,11 @@
 	"features": [
 
 	],
-	"url": "/api/subclasses/8"
+	"url": "/api/subclasses/hunter"
 }, {
-	"index": 9,
+	"index": "thief",
 	"class": {
-		"url": "/api/classes/9",
+		"url": "/api/classes/rogue",
 		"name": "Rogue"
 	},
 	"name": "Thief",
@@ -958,11 +958,11 @@
 	"features": [
 
 	],
-	"url": "/api/subclasses/9"
+	"url": "/api/subclasses/thief"
 }, {
-	"index": 10,
+	"index": "draconic",
 	"class": {
-		"url": "/api/classes/10",
+		"url": "/api/classes/sorcerer",
 		"name": "Sorcerer"
 	},
 	"name": "Draconic",
@@ -971,11 +971,11 @@
 	"features": [
 
 	],
-	"url": "/api/subclasses/10"
+	"url": "/api/subclasses/draconic"
 }, {
-	"index": 11,
+	"index": "fiend",
 	"class": {
-		"url": "/api/classes/11",
+		"url": "/api/classes/warlock",
 		"name": "Warlock"
 	},
 	"name": "Fiend",
@@ -990,7 +990,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/33",
+			"url": "/api/spells/burning-hands",
 			"name": "Burning Hands"
 		}
 	}, {
@@ -999,7 +999,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/44",
+			"url": "/api/spells/command",
 			"name": "Command"
 		}
 	}, {
@@ -1008,7 +1008,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/30",
+			"url": "/api/spells/blindness/deafness",
 			"name": "Blindness/Deafness"
 		}
 	}, {
@@ -1017,7 +1017,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/240",
+			"url": "/api/spells/scorching-ray",
 			"name": "Scorching Ray"
 		}
 	}, {
@@ -1026,7 +1026,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/110",
+			"url": "/api/spells/fireball",
 			"name": "Fireball"
 		}
 	}, {
@@ -1035,7 +1035,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/266",
+			"url": "/api/spells/stinking-cloud",
 			"name": "Stinking Cloud"
 		}
 	}, {
@@ -1044,7 +1044,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/111",
+			"url": "/api/spells/fire-shield",
 			"name": "Fire Shield"
 		}
 	}, {
@@ -1053,7 +1053,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/291",
+			"url": "/api/spells/wall-of-fire",
 			"name": "Wall of Fire"
 		}
 	}, {
@@ -1062,7 +1062,7 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/114",
+			"url": "/api/spells/flame-strike",
 			"name": "Flame Strike"
 		}
 	}, {
@@ -1071,15 +1071,15 @@
 			"type": "level"
 		}],
 		"spell": {
-			"url": "/api/spells/140",
+			"url": "/api/spells/hallow",
 			"name": "Hallow"
 		}
 	}],
-	"url": "/api/subclasses/11"
+	"url": "/api/subclasses/fiend"
 }, {
-	"index": 12,
+	"index": "evocation",
 	"class": {
-		"url": "/api/classes/12",
+		"url": "/api/classes/wizard",
 		"name": "Wizard"
 	},
 	"name": "Evocation",
@@ -1088,5 +1088,5 @@
 	"features": [
 
 	],
-	"url": "/api/subclasses/12"
+	"url": "/api/subclasses/evocation"
 }]
