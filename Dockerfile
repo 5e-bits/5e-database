@@ -8,7 +8,7 @@ RUN mkdir -p /data/db2 \
     && echo "dbpath = /data/db2" > /etc/mongodb.conf \
     && chown -R mongodb:mongodb /data/db2
 
-ENV MONGODB_URI localhost/5e-database
+ENV MONGODB_URI mongodb://localhost/5e-database
 
 ## Add code
 COPY . /data/db2
