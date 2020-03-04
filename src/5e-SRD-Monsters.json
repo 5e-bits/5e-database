@@ -19426,14 +19426,16 @@
         "name": "Sting (Bite in Beast Form)",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft ., one target. Hit: 5 (1d4 + 3) piercing damage, and the target must make on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.",
         "attack_bonus": 5,
-        "damage": {
-          "damage_type": {
-            "name": "Piercing",
-            "url": "/api/damage-types/piercing"
-          },
-          "damage_dice": "1d4",
-          "damage_bonus": 3
-        }
+        "damage": [
+          {
+            "damage_type": {
+              "name": "Piercing",
+              "url": "/api/damage-types/piercing"
+            },
+            "damage_dice": "1d4",
+            "damage_bonus": 3
+          }
+        ]
       },
       {
         "name": "Invisibility",
