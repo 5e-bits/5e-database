@@ -1,847 +1,3311 @@
-[{
-	"index": 1,
-	"class": {
-		"url": "/api/classes/barbarian",
-		"name": "Barbarian"
+[
+	{
+		"index": 1,
+		"class": {
+			"url": "/api/classes/barbarian",
+			"name": "LANG-KEY-barbarian"
+		},
+		"starting_equipment": [
+			{
+				"item": {
+					"url": "/api/equipment/explorers-pack",
+					"name": "LANG-KEY-explorers-pack"
+				},
+				"quantity": 1
+			},
+			{
+				"item": {
+					"url": "/api/equipment/javelin",
+					"name": "LANG-KEY-javelin"
+				},
+				"quantity": 4
+			}
+		],
+		"choices_to_make": 2,
+		"choice_1": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/greataxe",
+							"name": "LANG-KEY-greataxe"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/battleaxe",
+							"name": "LANG-KEY-battleaxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/flail",
+							"name": "LANG-KEY-flail"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/glaive",
+							"name": "LANG-KEY-glaive"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greataxe",
+							"name": "LANG-KEY-greataxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greatsword",
+							"name": "LANG-KEY-greatsword"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/halberd",
+							"name": "LANG-KEY-halberd"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/lance",
+							"name": "LANG-KEY-lance"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/longsword",
+							"name": "LANG-KEY-longsword"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/maul",
+							"name": "LANG-KEY-maul"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/morningstar",
+							"name": "LANG-KEY-morningstar"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/pike",
+							"name": "LANG-KEY-pike"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/rapier",
+							"name": "LANG-KEY-rapier"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/scimitar",
+							"name": "LANG-KEY-scimitar"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/shortsword",
+							"name": "LANG-KEY-shortsword"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/trident",
+							"name": "LANG-KEY-trident"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/war-pick",
+							"name": "LANG-KEY-war-pick"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/warhammer",
+							"name": "LANG-KEY-warhammer"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/whip",
+							"name": "LANG-KEY-whip"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_2": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/handaxe",
+							"name": "LANG-KEY-handaxe"
+						},
+						"quantity": 2
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/club",
+							"name": "LANG-KEY-club"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dagger",
+							"name": "LANG-KEY-dagger"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greatclub",
+							"name": "LANG-KEY-greatclub"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/handaxe",
+							"name": "LANG-KEY-handaxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/javelin",
+							"name": "LANG-KEY-javelin"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/light-hammer",
+							"name": "LANG-KEY-light-hammer"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/mace",
+							"name": "LANG-KEY-mace"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/quarterstaff",
+							"name": "LANG-KEY-quarterstaff"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sickle",
+							"name": "LANG-KEY-sickle"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/spear",
+							"name": "LANG-KEY-spear"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-light",
+							"name": "LANG-KEY-crossbow-light"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dart",
+							"name": "LANG-KEY-dart"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/shortbow",
+							"name": "LANG-KEY-shortbow"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sling",
+							"name": "LANG-KEY-sling"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"url": "/api/starting-equipment/1"
 	},
-	"starting_equipment": [{
-		"item": { "url": "/api/equipment/explorers-pack", "name": "Explorer's Pack"}, "quantity": 1}, {
-		"item": { "url": "/api/equipment/javelin", "name": "Javelin"}, "quantity": 4}],
-	"choices_to_make": 2,
-	"choice_1": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/greataxe", "name": "Greataxe"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/battleaxe", "name": "Battleaxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/flail", "name": "Flail"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/glaive", "name": "Glaive"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greataxe", "name": "Greataxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greatsword", "name": "Greatsword"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/halberd", "name": "Halberd"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/lance", "name": "Lance"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/longsword", "name": "Longsword"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/maul", "name": "Maul"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/morningstar", "name": "Morningstar"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/pike", "name": "Pike"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/rapier", "name": "Rapier"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/scimitar", "name": "Scimitar"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/shortsword", "name": "Shortsword"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/trident", "name": "Trident"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/war-pick", "name": "War pick"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/warhammer", "name": "Warhammer"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/whip", "name": "Whip"}, "quantity": 1}]
-	}],
-	"choice_2": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/handaxe", "name": "Handaxe"}, "quantity": 2}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/club", "name": "Club"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dagger", "name": "Dagger"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greatclub", "name": "Greatclub"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/handaxe", "name": "Handaxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/javelin", "name": "Javelin"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/light-hammer", "name": "Light hammer"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/mace", "name": "Mace"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/quarterstaff", "name": "Quarterstaff"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sickle", "name": "Sickle"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/spear", "name": "Spear"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-light", "name": "Crossbow, light"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dart", "name": "Dart"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/shortbow", "name": "Shortbow"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sling", "name": "Sling"}, "quantity": 1}]
-	}],
-	"url": "/api/starting-equipment/1"
-}, {
-	"index": 2,
-	"class": {
-		"url": "/api/classes/bard",
-		"name": "Bard"
+	{
+		"index": 2,
+		"class": {
+			"url": "/api/classes/bard",
+			"name": "LANG-KEY-bard"
+		},
+		"starting_equipment": [
+			{
+				"item": {
+					"url": "/api/equipment/leather",
+					"name": "LANG-KEY-leather"
+				},
+				"quantity": 1
+			},
+			{
+				"item": {
+					"url": "/api/equipment/dagger",
+					"name": "LANG-KEY-dagger"
+				},
+				"quantity": 1
+			}
+		],
+		"choices_to_make": 3,
+		"choice_1": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/rapier",
+							"name": "LANG-KEY-rapier"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/longsword",
+							"name": "LANG-KEY-longsword"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/club",
+							"name": "LANG-KEY-club"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dagger",
+							"name": "LANG-KEY-dagger"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greatclub",
+							"name": "LANG-KEY-greatclub"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/handaxe",
+							"name": "LANG-KEY-handaxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/javelin",
+							"name": "LANG-KEY-javelin"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/light-hammer",
+							"name": "LANG-KEY-light-hammer"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/mace",
+							"name": "LANG-KEY-mace"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/quarterstaff",
+							"name": "LANG-KEY-quarterstaff"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sickle",
+							"name": "LANG-KEY-sickle"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/spear",
+							"name": "LANG-KEY-spear"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-light",
+							"name": "LANG-KEY-crossbow-light"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dart",
+							"name": "LANG-KEY-dart"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/shortbow",
+							"name": "LANG-KEY-shortbow"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sling",
+							"name": "LANG-KEY-sling"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_2": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/diplomats-pack",
+							"name": "LANG-KEY-diplomats-pack"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/entertainers-pack",
+							"name": "LANG-KEY-entertainers-pack"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_3": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/lute",
+							"name": "LANG-KEY-lute"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/bagpipes",
+							"name": "LANG-KEY-bagpipes"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/drum",
+							"name": "LANG-KEY-drum"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dulcimer",
+							"name": "LANG-KEY-dulcimer"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/flute",
+							"name": "LANG-KEY-flute"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/lute",
+							"name": "LANG-KEY-lute"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/lyre",
+							"name": "LANG-KEY-lyre"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/horn",
+							"name": "LANG-KEY-horn"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/pan-flute",
+							"name": "LANG-KEY-pan-flute"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/shawm",
+							"name": "LANG-KEY-shawm"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/viol",
+							"name": "LANG-KEY-viol"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"url": "/api/starting-equipment/2"
 	},
-	"starting_equipment": [{
-		"item": { "url": "/api/equipment/leather", "name": "Leather"}, "quantity": 1}, {
-		"item": { "url": "/api/equipment/dagger", "name": "Dagger"}, "quantity": 1}],
-	"choices_to_make": 3,
-	"choice_1": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/rapier", "name": "Rapier"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/longsword", "name": "Longsword"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/club", "name": "Club"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dagger", "name": "Dagger"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greatclub", "name": "Greatclub"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/handaxe", "name": "Handaxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/javelin", "name": "Javelin"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/light-hammer", "name": "Light hammer"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/mace", "name": "Mace"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/quarterstaff", "name": "Quarterstaff"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sickle", "name": "Sickle"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/spear", "name": "Spear"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-light", "name": "Crossbow, light"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dart", "name": "Dart"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/shortbow", "name": "Shortbow"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sling", "name": "Sling"}, "quantity": 1}]
-	}],
-	"choice_2": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/diplomats-pack", "name": "Diplomat's Pack"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/entertainers-pack", "name": "Entertainer's Pack"}, "quantity": 1}]
-	}],
-	"choice_3": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/lute", "name": "Lute"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/bagpipes", "name": "Bagpipes"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/drum", "name": "Drum"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dulcimer", "name": "Dulcimer"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/flute", "name": "Flute"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/lute", "name": "Lute"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/lyre", "name": "Lyre"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/horn", "name": "Horn"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/pan-flute", "name": "Pan flute"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/shawm", "name": "Shawm"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/viol", "name": "Viol"}, "quantity": 1}]
-	}],
-	"url": "/api/starting-equipment/2"
-}, {
-	"index": 3,
-	"class": {
-		"url": "/api/classes/cleric",
-		"name": "Cleric"
+	{
+		"index": 3,
+		"class": {
+			"url": "/api/classes/cleric",
+			"name": "LANG-KEY-cleric"
+		},
+		"starting_equipment": [
+			{
+				"item": {
+					"url": "/api/equipment/shield",
+					"name": "LANG-KEY-shield"
+				},
+				"quantity": 1
+			}
+		],
+		"choices_to_make": 5,
+		"choice_1": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/mace",
+							"name": "LANG-KEY-mace"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/warhammer",
+							"name": "LANG-KEY-warhammer"
+						},
+						"quantity": 1,
+						"prerequisites": [
+							{
+								"type": "proficiency",
+								"proficiency": {
+									"url": "/api/proficiencies/warhammers",
+									"name": "LANG-KEY-warhammers"
+								}
+							}
+						]
+					}
+				]
+			}
+		],
+		"choice_2": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/scale-mail",
+							"name": "LANG-KEY-scale-mail"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/leather",
+							"name": "LANG-KEY-leather"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/chain-mail",
+							"name": "LANG-KEY-chain-mail"
+						},
+						"quantity": 1,
+						"prerequisites": [
+							{
+								"type": "proficiency",
+								"proficiency": {
+									"url": "/api/proficiencies/chain-mail",
+									"name": "LANG-KEY-chain-mail"
+								}
+							}
+						]
+					}
+				]
+			}
+		],
+		"choice_3": [
+			{
+				"choose": 2,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-light",
+							"name": "LANG-KEY-crossbow-light"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-bolt",
+							"name": "LANG-KEY-crossbow-bolt"
+						},
+						"quantity": 20
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/club",
+							"name": "LANG-KEY-club"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dagger",
+							"name": "LANG-KEY-dagger"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greatclub",
+							"name": "LANG-KEY-greatclub"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/handaxe",
+							"name": "LANG-KEY-handaxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/javelin",
+							"name": "LANG-KEY-javelin"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/light-hammer",
+							"name": "LANG-KEY-light-hammer"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/mace",
+							"name": "LANG-KEY-mace"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/quarterstaff",
+							"name": "LANG-KEY-quarterstaff"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sickle",
+							"name": "LANG-KEY-sickle"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/spear",
+							"name": "LANG-KEY-spear"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-light",
+							"name": "LANG-KEY-crossbow-light"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dart",
+							"name": "LANG-KEY-dart"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/shortbow",
+							"name": "LANG-KEY-shortbow"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sling",
+							"name": "LANG-KEY-sling"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_4": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/priests-pack",
+							"name": "LANG-KEY-priests-pack"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/explorers-pack",
+							"name": "LANG-KEY-explorers-pack"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_5": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/amulet",
+							"name": "LANG-KEY-amulet"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/emblem",
+							"name": "LANG-KEY-emblem"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/reliquary",
+							"name": "LANG-KEY-reliquary"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"url": "/api/starting-equipment/3"
 	},
-	"starting_equipment": [{
-	"item": { "url": "/api/equipment/shield", "name": "Shield"}, "quantity": 1}],
-	"choices_to_make": 5,
-	"choice_1": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/mace", "name": "Mace" },"quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/warhammer", "name": "Warhammer" }, "quantity": 1,
-			"prerequisites": [{
-				"type": "proficiency",
-				"proficiency": { "url": "/api/proficiencies/warhammers", "name": "Warhammers" }
-			}]
-		}]
-	}],
-	"choice_2": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/scale-mail", "name": "Scale Mail"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/leather", "name": "Leather"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/chain-mail", "name": "Chain Mail"}, "quantity": 1,	"prerequisites": [{
-				"type": "proficiency",
-				"proficiency":{ "url": "/api/proficiencies/chain-mail", "name": "Chain Mail" }
-			}]
-		}]
-	}],
-	"choice_3": [{
-		"choose": 2,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/crossbow-light", "name": "Crossbow, light"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-bolt", "name": "Crossbow bolt"}, "quantity": 20}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/club", "name": "Club"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dagger", "name": "Dagger"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greatclub", "name": "Greatclub"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/handaxe", "name": "Handaxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/javelin", "name": "Javelin"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/light-hammer", "name": "Light hammer"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/mace", "name": "Mace"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/quarterstaff", "name": "Quarterstaff"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sickle", "name": "Sickle"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/spear", "name": "Spear"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-light", "name": "Crossbow, light"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dart", "name": "Dart"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/shortbow", "name": "Shortbow"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sling", "name": "Sling"}, "quantity": 1}]
-	}],
-	"choice_4": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/priests-pack", "name": "Priest's Pack"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/explorers-pack", "name": "Explorer's Pack"}, "quantity": 1}]
-	}],
-	"choice_5": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/amulet", "name": "Amulet"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/emblem", "name": "Emblem"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/reliquary", "name": "Reliquary"}, "quantity": 1}]
-	}],
-	"url": "/api/starting-equipment/3"
-}, {
-	"index": 4,
-	"class": {
-		"url": "/api/classes/druid",
-		"name": "Druid"
+	{
+		"index": 4,
+		"class": {
+			"url": "/api/classes/druid",
+			"name": "LANG-KEY-druid"
+		},
+		"starting_equipment": [
+			{
+				"item": {
+					"url": "/api/equipment/leather",
+					"name": "LANG-KEY-leather"
+				},
+				"quantity": 1
+			},
+			{
+				"item": {
+					"url": "/api/equipment/explorers-pack",
+					"name": "LANG-KEY-explorers-pack"
+				},
+				"quantity": 1
+			}
+		],
+		"choices_to_make": 3,
+		"choice_1": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/shield",
+							"name": "LANG-KEY-shield"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/club",
+							"name": "LANG-KEY-club"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dagger",
+							"name": "LANG-KEY-dagger"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greatclub",
+							"name": "LANG-KEY-greatclub"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/handaxe",
+							"name": "LANG-KEY-handaxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/javelin",
+							"name": "LANG-KEY-javelin"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/light-hammer",
+							"name": "LANG-KEY-light-hammer"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/mace",
+							"name": "LANG-KEY-mace"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/quarterstaff",
+							"name": "LANG-KEY-quarterstaff"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sickle",
+							"name": "LANG-KEY-sickle"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/spear",
+							"name": "LANG-KEY-spear"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-light",
+							"name": "LANG-KEY-crossbow-light"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dart",
+							"name": "LANG-KEY-dart"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/shortbow",
+							"name": "LANG-KEY-shortbow"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sling",
+							"name": "LANG-KEY-sling"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_2": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/scimitar",
+							"name": "LANG-KEY-scimitar"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/club",
+							"name": "LANG-KEY-club"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dagger",
+							"name": "LANG-KEY-dagger"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greatclub",
+							"name": "LANG-KEY-greatclub"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/handaxe",
+							"name": "LANG-KEY-handaxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/javelin",
+							"name": "LANG-KEY-javelin"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/light-hammer",
+							"name": "LANG-KEY-light-hammer"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/mace",
+							"name": "LANG-KEY-mace"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/quarterstaff",
+							"name": "LANG-KEY-quarterstaff"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sickle",
+							"name": "LANG-KEY-sickle"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/spear",
+							"name": "LANG-KEY-spear"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_3": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/sprig-of-mistletoe",
+							"name": "LANG-KEY-sprig-of-mistletoe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/totem",
+							"name": "LANG-KEY-totem"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/wooden-staff",
+							"name": "LANG-KEY-wooden-staff"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/yew-wand",
+							"name": "LANG-KEY-yew-wand"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"url": "/api/starting-equipment/4"
 	},
-	"starting_equipment": [{
-		"item": { "url": "/api/equipment/leather", "name": "Leather"}, "quantity": 1}, {
-		"item": { "url": "/api/equipment/explorers-pack", "name": "Explorer's Pack"}, "quantity": 1}],
-	"choices_to_make": 3,
-	"choice_1": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/shield", "name": "Shield"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/club", "name": "Club"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dagger", "name": "Dagger"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greatclub", "name": "Greatclub"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/handaxe", "name": "Handaxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/javelin", "name": "Javelin"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/light-hammer", "name": "Light hammer"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/mace", "name": "Mace"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/quarterstaff", "name": "Quarterstaff"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sickle", "name": "Sickle"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/spear", "name": "Spear"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-light", "name": "Crossbow, light"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dart", "name": "Dart"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/shortbow", "name": "Shortbow"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sling", "name": "Sling"}, "quantity": 1}]
-	}],
-	"choice_2": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/scimitar", "name": "Scimitar"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/club", "name": "Club"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dagger", "name": "Dagger"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greatclub", "name": "Greatclub"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/handaxe", "name": "Handaxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/javelin", "name": "Javelin"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/light-hammer", "name": "Light hammer"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/mace", "name": "Mace"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/quarterstaff", "name": "Quarterstaff"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sickle", "name": "Sickle"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/spear", "name": "Spear"}, "quantity": 1}]
-	}],
-	"choice_3": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/sprig-of-mistletoe", "name": "Sprig of mistletoe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/totem", "name": "Totem"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/wooden-staff", "name": "Wooden staff"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/yew-wand", "name": "Yew wand"}, "quantity": 1}]
-	}],
-	"url": "/api/starting-equipment/4"
-}, {
-	"index": 5,
-	"class": {
-		"url": "/api/classes/fighter",
-		"name": "Fighter"
+	{
+		"index": 5,
+		"class": {
+			"url": "/api/classes/fighter",
+			"name": "LANG-KEY-fighter"
+		},
+		"starting_equipment": [],
+		"choices_to_make": 5,
+		"choice_1": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/chain-mail",
+							"name": "LANG-KEY-chain-mail"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 3,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/leather",
+							"name": "LANG-KEY-leather"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/longbow",
+							"name": "LANG-KEY-longbow"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/arrow",
+							"name": "LANG-KEY-arrow"
+						},
+						"quantity": 20
+					}
+				]
+			}
+		],
+		"choice_2": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/shield",
+							"name": "LANG-KEY-shield"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/battleaxe",
+							"name": "LANG-KEY-battleaxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/flail",
+							"name": "LANG-KEY-flail"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/glaive",
+							"name": "LANG-KEY-glaive"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greataxe",
+							"name": "LANG-KEY-greataxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greatsword",
+							"name": "LANG-KEY-greatsword"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/halberd",
+							"name": "LANG-KEY-halberd"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/lance",
+							"name": "LANG-KEY-lance"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/longsword",
+							"name": "LANG-KEY-longsword"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/maul",
+							"name": "LANG-KEY-maul"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/morningstar",
+							"name": "LANG-KEY-morningstar"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/pike",
+							"name": "LANG-KEY-pike"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/rapier",
+							"name": "LANG-KEY-rapier"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/scimitar",
+							"name": "LANG-KEY-scimitar"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/shortsword",
+							"name": "LANG-KEY-shortsword"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/trident",
+							"name": "LANG-KEY-trident"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/war-pick",
+							"name": "LANG-KEY-war-pick"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/warhammer",
+							"name": "LANG-KEY-warhammer"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/whip",
+							"name": "LANG-KEY-whip"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/blowgun",
+							"name": "LANG-KEY-blowgun"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-hand",
+							"name": "LANG-KEY-crossbow-hand"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-heavy",
+							"name": "LANG-KEY-crossbow-heavy"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/longbow",
+							"name": "LANG-KEY-longbow"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/net",
+							"name": "LANG-KEY-net"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_3": [
+			{
+				"choose": 2,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-light",
+							"name": "LANG-KEY-crossbow-light"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-bolt",
+							"name": "LANG-KEY-crossbow-bolt"
+						},
+						"quantity": 20
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/handaxe",
+							"name": "LANG-KEY-handaxe"
+						},
+						"quantity": 2
+					}
+				]
+			}
+		],
+		"choice_4": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/dungeoneers-pack",
+							"name": "LANG-KEY-dungeoneers-pack"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/explorers-pack",
+							"name": "LANG-KEY-explorers-pack"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_5": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/battleaxe",
+							"name": "LANG-KEY-battleaxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/flail",
+							"name": "LANG-KEY-flail"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/glaive",
+							"name": "LANG-KEY-glaive"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greataxe",
+							"name": "LANG-KEY-greataxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greatsword",
+							"name": "LANG-KEY-greatsword"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/halberd",
+							"name": "LANG-KEY-halberd"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/lance",
+							"name": "LANG-KEY-lance"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/longsword",
+							"name": "LANG-KEY-longsword"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/maul",
+							"name": "LANG-KEY-maul"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/morningstar",
+							"name": "LANG-KEY-morningstar"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/pike",
+							"name": "LANG-KEY-pike"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/rapier",
+							"name": "LANG-KEY-rapier"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/scimitar",
+							"name": "LANG-KEY-scimitar"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/shortsword",
+							"name": "LANG-KEY-shortsword"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/trident",
+							"name": "LANG-KEY-trident"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/war-pick",
+							"name": "LANG-KEY-war-pick"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/warhammer",
+							"name": "LANG-KEY-warhammer"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/whip",
+							"name": "LANG-KEY-whip"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/blowgun",
+							"name": "LANG-KEY-blowgun"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-hand",
+							"name": "LANG-KEY-crossbow-hand"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-heavy",
+							"name": "LANG-KEY-crossbow-heavy"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/longbow",
+							"name": "LANG-KEY-longbow"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/net",
+							"name": "LANG-KEY-net"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"url": "/api/starting-equipment/5"
 	},
-"starting_equipment": [],
-	"choices_to_make": 5,
-	"choice_1": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/chain-mail", "name": "Chain Mail"}, "quantity": 1}]
-	}, {
-		"choose": 3,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/leather", "name": "Leather"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/longbow", "name": "Longbow"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/arrow", "name": "Arrow"}, "quantity": 20}]
-	}],
-	"choice_2": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-		"item": { "url": "/api/equipment/shield", "name": "Shield"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/battleaxe", "name": "Battleaxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/flail", "name": "Flail"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/glaive", "name": "Glaive"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greataxe", "name": "Greataxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greatsword", "name": "Greatsword"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/halberd", "name": "Halberd"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/lance", "name": "Lance"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/longsword", "name": "Longsword"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/maul", "name": "Maul"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/morningstar", "name": "Morningstar"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/pike", "name": "Pike"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/rapier", "name": "Rapier"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/scimitar", "name": "Scimitar"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/shortsword", "name": "Shortsword"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/trident", "name": "Trident"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/war-pick", "name": "War pick"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/warhammer", "name": "Warhammer"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/whip", "name": "Whip"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/blowgun", "name": "Blowgun"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-hand", "name": "Crossbow, hand"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-heavy", "name": "Crossbow, heavy"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/longbow", "name": "Longbow"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/net", "name": "Net"}, "quantity": 1}]
-	}],
-	"choice_3": [{
-		"choose": 2,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/crossbow-light", "name": "Crossbow, light"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-bolt", "name": "Crossbow bolt"}, "quantity": 20}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/handaxe", "name": "Handaxe"}, "quantity": 2}]
-	}],
-	"choice_4": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/dungeoneers-pack", "name": "Dungeoneer's Pack"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/explorers-pack", "name": "Explorer's Pack"}, "quantity": 1}]
-	}],
-	"choice_5": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/battleaxe", "name": "Battleaxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/flail", "name": "Flail"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/glaive", "name": "Glaive"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greataxe", "name": "Greataxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greatsword", "name": "Greatsword"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/halberd", "name": "Halberd"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/lance", "name": "Lance"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/longsword", "name": "Longsword"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/maul", "name": "Maul"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/morningstar", "name": "Morningstar"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/pike", "name": "Pike"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/rapier", "name": "Rapier"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/scimitar", "name": "Scimitar"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/shortsword", "name": "Shortsword"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/trident", "name": "Trident"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/war-pick", "name": "War pick"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/warhammer", "name": "Warhammer"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/whip", "name": "Whip"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/blowgun", "name": "Blowgun"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-hand", "name": "Crossbow, hand"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-heavy", "name": "Crossbow, heavy"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/longbow", "name": "Longbow"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/net", "name": "Net"}, "quantity": 1}]
-	}],
-	"url": "/api/starting-equipment/5"
-}, {
-	"index": 6,
-	"class": {
-		"url": "/api/classes/monk",
-		"name": "Monk"
+	{
+		"index": 6,
+		"class": {
+			"url": "/api/classes/monk",
+			"name": "LANG-KEY-monk"
+		},
+		"starting_equipment": [
+			{
+				"item": {
+					"url": "/api/equipment/dart",
+					"name": "LANG-KEY-dart"
+				},
+				"quantity": 10
+			}
+		],
+		"choices_to_make": 2,
+		"choice_1": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/shortsword",
+							"name": "LANG-KEY-shortsword"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/club",
+							"name": "LANG-KEY-club"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dagger",
+							"name": "LANG-KEY-dagger"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greatclub",
+							"name": "LANG-KEY-greatclub"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/handaxe",
+							"name": "LANG-KEY-handaxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/javelin",
+							"name": "LANG-KEY-javelin"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/light-hammer",
+							"name": "LANG-KEY-light-hammer"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/mace",
+							"name": "LANG-KEY-mace"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/quarterstaff",
+							"name": "LANG-KEY-quarterstaff"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sickle",
+							"name": "LANG-KEY-sickle"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/spear",
+							"name": "LANG-KEY-spear"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-light",
+							"name": "LANG-KEY-crossbow-light"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dart",
+							"name": "LANG-KEY-dart"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/shortbow",
+							"name": "LANG-KEY-shortbow"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sling",
+							"name": "LANG-KEY-sling"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_2": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/dungeoneers-pack",
+							"name": "LANG-KEY-dungeoneers-pack"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/explorers-pack",
+							"name": "LANG-KEY-explorers-pack"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"url": "/api/starting-equipment/6"
 	},
-	"starting_equipment": [{
-	"item": { "url": "/api/equipment/dart", "name": "Dart"}, "quantity": 10}],
-	"choices_to_make": 2,
-	"choice_1": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/shortsword", "name": "Shortsword"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/club", "name": "Club"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dagger", "name": "Dagger"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greatclub", "name": "Greatclub"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/handaxe", "name": "Handaxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/javelin", "name": "Javelin"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/light-hammer", "name": "Light hammer"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/mace", "name": "Mace"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/quarterstaff", "name": "Quarterstaff"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sickle", "name": "Sickle"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/spear", "name": "Spear"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-light", "name": "Crossbow, light"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dart", "name": "Dart"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/shortbow", "name": "Shortbow"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sling", "name": "Sling"}, "quantity": 1}]
-	}],
-	"choice_2": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/dungeoneers-pack", "name": "Dungeoneer's Pack"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/explorers-pack", "name": "Explorer's Pack"}, "quantity": 1}]
-	}],
-	"url": "/api/starting-equipment/6"
-}, {
-	"index": 7,
-	"class": {
-		"url": "/api/classes/paladin",
-		"name": "Paladin"
+	{
+		"index": 7,
+		"class": {
+			"url": "/api/classes/paladin",
+			"name": "LANG-KEY-paladin"
+		},
+		"starting_equipment": [
+			{
+				"item": {
+					"url": "/api/equipment/chain-mail",
+					"name": "LANG-KEY-chain-mail"
+				},
+				"quantity": 1
+			}
+		],
+		"choices_to_make": 5,
+		"choice_1": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/shield",
+							"name": "LANG-KEY-shield"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/battleaxe",
+							"name": "LANG-KEY-battleaxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/flail",
+							"name": "LANG-KEY-flail"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/glaive",
+							"name": "LANG-KEY-glaive"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greataxe",
+							"name": "LANG-KEY-greataxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greatsword",
+							"name": "LANG-KEY-greatsword"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/halberd",
+							"name": "LANG-KEY-halberd"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/lance",
+							"name": "LANG-KEY-lance"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/longsword",
+							"name": "LANG-KEY-longsword"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/maul",
+							"name": "LANG-KEY-maul"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/morningstar",
+							"name": "LANG-KEY-morningstar"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/pike",
+							"name": "LANG-KEY-pike"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/rapier",
+							"name": "LANG-KEY-rapier"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/scimitar",
+							"name": "LANG-KEY-scimitar"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/shortsword",
+							"name": "LANG-KEY-shortsword"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/trident",
+							"name": "LANG-KEY-trident"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/war-pick",
+							"name": "LANG-KEY-war-pick"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/warhammer",
+							"name": "LANG-KEY-warhammer"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/whip",
+							"name": "LANG-KEY-whip"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/blowgun",
+							"name": "LANG-KEY-blowgun"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-hand",
+							"name": "LANG-KEY-crossbow-hand"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-heavy",
+							"name": "LANG-KEY-crossbow-heavy"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/longbow",
+							"name": "LANG-KEY-longbow"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/net",
+							"name": "LANG-KEY-net"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_2": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/javelin",
+							"name": "LANG-KEY-javelin"
+						},
+						"quantity": 5
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/club",
+							"name": "LANG-KEY-club"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dagger",
+							"name": "LANG-KEY-dagger"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greatclub",
+							"name": "LANG-KEY-greatclub"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/handaxe",
+							"name": "LANG-KEY-handaxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/javelin",
+							"name": "LANG-KEY-javelin"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/light-hammer",
+							"name": "LANG-KEY-light-hammer"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/mace",
+							"name": "LANG-KEY-mace"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/quarterstaff",
+							"name": "LANG-KEY-quarterstaff"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sickle",
+							"name": "LANG-KEY-sickle"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/spear",
+							"name": "LANG-KEY-spear"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-light",
+							"name": "LANG-KEY-crossbow-light"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dart",
+							"name": "LANG-KEY-dart"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/shortbow",
+							"name": "LANG-KEY-shortbow"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sling",
+							"name": "LANG-KEY-sling"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_3": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/priests-pack",
+							"name": "LANG-KEY-priests-pack"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/explorers-pack",
+							"name": "LANG-KEY-explorers-pack"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_4": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/amulet",
+							"name": "LANG-KEY-amulet"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/emblem",
+							"name": "LANG-KEY-emblem"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/reliquary",
+							"name": "LANG-KEY-reliquary"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_5": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/battleaxe",
+							"name": "LANG-KEY-battleaxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/flail",
+							"name": "LANG-KEY-flail"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/glaive",
+							"name": "LANG-KEY-glaive"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greataxe",
+							"name": "LANG-KEY-greataxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greatsword",
+							"name": "LANG-KEY-greatsword"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/halberd",
+							"name": "LANG-KEY-halberd"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/lance",
+							"name": "LANG-KEY-lance"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/longsword",
+							"name": "LANG-KEY-longsword"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/maul",
+							"name": "LANG-KEY-maul"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/morningstar",
+							"name": "LANG-KEY-morningstar"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/pike",
+							"name": "LANG-KEY-pike"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/rapier",
+							"name": "LANG-KEY-rapier"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/scimitar",
+							"name": "LANG-KEY-scimitar"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/shortsword",
+							"name": "LANG-KEY-shortsword"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/trident",
+							"name": "LANG-KEY-trident"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/war-pick",
+							"name": "LANG-KEY-war-pick"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/warhammer",
+							"name": "LANG-KEY-warhammer"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/whip",
+							"name": "LANG-KEY-whip"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/blowgun",
+							"name": "LANG-KEY-blowgun"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-hand",
+							"name": "LANG-KEY-crossbow-hand"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-heavy",
+							"name": "LANG-KEY-crossbow-heavy"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/longbow",
+							"name": "LANG-KEY-longbow"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/net",
+							"name": "LANG-KEY-net"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"url": "/api/starting-equipment/7"
 	},
-	"starting_equipment": [{
-	"item": { "url": "/api/equipment/chain-mail", "name": "Chain Mail"}, "quantity": 1}],
-	"choices_to_make": 5,
-	"choice_1": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-		"item": { "url": "/api/equipment/shield", "name": "Shield"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/battleaxe", "name": "Battleaxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/flail", "name": "Flail"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/glaive", "name": "Glaive"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greataxe", "name": "Greataxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greatsword", "name": "Greatsword"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/halberd", "name": "Halberd"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/lance", "name": "Lance"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/longsword", "name": "Longsword"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/maul", "name": "Maul"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/morningstar", "name": "Morningstar"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/pike", "name": "Pike"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/rapier", "name": "Rapier"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/scimitar", "name": "Scimitar"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/shortsword", "name": "Shortsword"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/trident", "name": "Trident"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/war-pick", "name": "War pick"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/warhammer", "name": "Warhammer"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/whip", "name": "Whip"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/blowgun", "name": "Blowgun"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-hand", "name": "Crossbow, hand"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-heavy", "name": "Crossbow, heavy"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/longbow", "name": "Longbow"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/net", "name": "Net"}, "quantity": 1}]
-	}],
-	"choice_2": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/javelin", "name": "Javelin"}, "quantity": 5}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/club", "name": "Club"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dagger", "name": "Dagger"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greatclub", "name": "Greatclub"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/handaxe", "name": "Handaxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/javelin", "name": "Javelin"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/light-hammer", "name": "Light hammer"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/mace", "name": "Mace"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/quarterstaff", "name": "Quarterstaff"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sickle", "name": "Sickle"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/spear", "name": "Spear"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-light", "name": "Crossbow, light"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dart", "name": "Dart"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/shortbow", "name": "Shortbow"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sling", "name": "Sling"}, "quantity": 1}]
-	}],
-	"choice_3": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/priests-pack", "name": "Priest's Pack"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/explorers-pack", "name": "Explorer's Pack"}, "quantity": 1}]
-	}],
-	"choice_4": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/amulet", "name": "Amulet"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/emblem", "name": "Emblem"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/reliquary", "name": "Reliquary"}, "quantity": 1}]
-	}],
-	"choice_5": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/battleaxe", "name": "Battleaxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/flail", "name": "Flail"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/glaive", "name": "Glaive"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greataxe", "name": "Greataxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greatsword", "name": "Greatsword"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/halberd", "name": "Halberd"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/lance", "name": "Lance"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/longsword", "name": "Longsword"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/maul", "name": "Maul"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/morningstar", "name": "Morningstar"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/pike", "name": "Pike"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/rapier", "name": "Rapier"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/scimitar", "name": "Scimitar"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/shortsword", "name": "Shortsword"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/trident", "name": "Trident"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/war-pick", "name": "War pick"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/warhammer", "name": "Warhammer"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/whip", "name": "Whip"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/blowgun", "name": "Blowgun"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-hand", "name": "Crossbow, hand"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-heavy", "name": "Crossbow, heavy"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/longbow", "name": "Longbow"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/net", "name": "Net"}, "quantity": 1}]
-	}],
-	"url": "/api/starting-equipment/7"
-}, {
-	"index": 8,
-	"class": {
-		"url": "/api/classes/ranger",
-		"name": "Ranger"
+	{
+		"index": 8,
+		"class": {
+			"url": "/api/classes/ranger",
+			"name": "LANG-KEY-ranger"
+		},
+		"starting_equipment": [
+			{
+				"item": {
+					"url": "/api/equipment/longbow",
+					"name": "LANG-KEY-longbow"
+				},
+				"quantity": 1
+			},
+			{
+				"item": {
+					"url": "/api/equipment/arrow",
+					"name": "LANG-KEY-arrow"
+				},
+				"quantity": 20
+			}
+		],
+		"choices_to_make": 3,
+		"choice_1": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/scale-mail",
+							"name": "LANG-KEY-scale-mail"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/leather",
+							"name": "LANG-KEY-leather"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_2": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/shortsword",
+							"name": "LANG-KEY-shortsword"
+						},
+						"quantity": 2
+					}
+				]
+			},
+			{
+				"choose": 2,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/club",
+							"name": "LANG-KEY-club"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dagger",
+							"name": "LANG-KEY-dagger"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greatclub",
+							"name": "LANG-KEY-greatclub"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/handaxe",
+							"name": "LANG-KEY-handaxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/javelin",
+							"name": "LANG-KEY-javelin"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/light-hammer",
+							"name": "LANG-KEY-light-hammer"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/mace",
+							"name": "LANG-KEY-mace"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/quarterstaff",
+							"name": "LANG-KEY-quarterstaff"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sickle",
+							"name": "LANG-KEY-sickle"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/spear",
+							"name": "LANG-KEY-spear"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_3": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/dungeoneers-pack",
+							"name": "LANG-KEY-dungeoneers-pack"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/explorers-pack",
+							"name": "LANG-KEY-explorers-pack"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"url": "/api/starting-equipment/8"
 	},
-	"starting_equipment": [{
-		"item": { "url": "/api/equipment/longbow", "name": "Longbow"}, "quantity": 1}, {
-		"item": { "url": "/api/equipment/arrow", "name": "Arrow"}, "quantity": 20}],
-	"choices_to_make": 3,
-	"choice_1": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/scale-mail", "name": "Scale Mail"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/leather", "name": "Leather"}, "quantity": 1}]
-	}],
-	"choice_2": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/shortsword", "name": "Shortsword"}, "quantity": 2}]
-	}, {
-		"choose": 2,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/club", "name": "Club"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dagger", "name": "Dagger"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greatclub", "name": "Greatclub"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/handaxe", "name": "Handaxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/javelin", "name": "Javelin"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/light-hammer", "name": "Light hammer"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/mace", "name": "Mace"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/quarterstaff", "name": "Quarterstaff"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sickle", "name": "Sickle"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/spear", "name": "Spear"}, "quantity": 1}]
-	}],
-	"choice_3": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/dungeoneers-pack", "name": "Dungeoneer's Pack"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/explorers-pack", "name": "Explorer's Pack"}, "quantity": 1}]
-	}],
-	"url": "/api/starting-equipment/8"
-}, {
-	"index": 9,
-	"class": {
-		"url": "/api/classes/rogue",
-		"name": "Rogue"
+	{
+		"index": 9,
+		"class": {
+			"url": "/api/classes/rogue",
+			"name": "LANG-KEY-rogue"
+		},
+		"starting_equipment": [
+			{
+				"item": {
+					"url": "/api/equipment/leather",
+					"name": "LANG-KEY-leather"
+				},
+				"quantity": 1
+			},
+			{
+				"item": {
+					"url": "/api/equipment/dagger",
+					"name": "LANG-KEY-dagger"
+				},
+				"quantity": 2
+			},
+			{
+				"item": {
+					"url": "/api/equipment/thieves-tools",
+					"name": "LANG-KEY-thieves-tools"
+				},
+				"quantity": 1
+			}
+		],
+		"choices_to_make": 3,
+		"choice_1": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/rapier",
+							"name": "LANG-KEY-rapier"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/shortsword",
+							"name": "LANG-KEY-shortsword"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_2": [
+			{
+				"choose": 2,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/shortbow",
+							"name": "LANG-KEY-shortbow"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/arrow",
+							"name": "LANG-KEY-arrow"
+						},
+						"quantity": 20
+					}
+				]
+			},
+			{
+				"choose": 2,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/shortsword",
+							"name": "LANG-KEY-shortsword"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_3": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/burglars-pack",
+							"name": "LANG-KEY-burglars-pack"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/dungeoneers-pack",
+							"name": "LANG-KEY-dungeoneers-pack"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/explorers-pack",
+							"name": "LANG-KEY-explorers-pack"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"url": "/api/starting-equipment/9"
 	},
-	"starting_equipment": [{
-		"item": { "url": "/api/equipment/leather", "name": "Leather"}, "quantity": 1}, {
-		"item": { "url": "/api/equipment/dagger", "name": "Dagger"}, "quantity": 2}, {
-		"item": { "url": "/api/equipment/thieves-tools", "name": "Thieves' tools"}, "quantity": 1}],
-	"choices_to_make": 3,
-	"choice_1": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/rapier", "name": "Rapier"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/shortsword", "name": "Shortsword"}, "quantity": 1}]
-	}],
-	"choice_2": [{
-		"choose": 2,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/shortbow", "name": "Shortbow"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/arrow", "name": "Arrow"}, "quantity": 20}]
-	}, {
-		"choose": 2,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/shortsword", "name": "Shortsword"}, "quantity": 1}]
-	}],
-	"choice_3": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/burglars-pack", "name": "Burglar's Pack"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/dungeoneers-pack", "name": "Dungeoneer's Pack"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/explorers-pack", "name": "Explorer's Pack"}, "quantity": 1}]
-	}],
-	"url": "/api/starting-equipment/9"
-}, {
-	"index": 10,
-	"class": {
-		"url": "/api/classes/sorcerer",
-		"name": "Sorcerer"
+	{
+		"index": 10,
+		"class": {
+			"url": "/api/classes/sorcerer",
+			"name": "LANG-KEY-sorcerer"
+		},
+		"starting_equipment": [
+			{
+				"item": {
+					"url": "/api/equipment/dagger",
+					"name": "LANG-KEY-dagger"
+				},
+				"quantity": 2
+			}
+		],
+		"choices_to_make": 3,
+		"choice_1": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-light",
+							"name": "LANG-KEY-crossbow-light"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-bolt",
+							"name": "LANG-KEY-crossbow-bolt"
+						},
+						"quantity": 20
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/club",
+							"name": "LANG-KEY-club"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dagger",
+							"name": "LANG-KEY-dagger"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greatclub",
+							"name": "LANG-KEY-greatclub"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/handaxe",
+							"name": "LANG-KEY-handaxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/javelin",
+							"name": "LANG-KEY-javelin"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/light-hammer",
+							"name": "LANG-KEY-light-hammer"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/mace",
+							"name": "LANG-KEY-mace"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/quarterstaff",
+							"name": "LANG-KEY-quarterstaff"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sickle",
+							"name": "LANG-KEY-sickle"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/spear",
+							"name": "LANG-KEY-spear"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-light",
+							"name": "LANG-KEY-crossbow-light"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dart",
+							"name": "LANG-KEY-dart"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/shortbow",
+							"name": "LANG-KEY-shortbow"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sling",
+							"name": "LANG-KEY-sling"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_2": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/component-pouch",
+							"name": "LANG-KEY-component-pouch"
+						},
+						"quantity": 2
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/crystal",
+							"name": "LANG-KEY-crystal"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/orb",
+							"name": "LANG-KEY-orb"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/rod",
+							"name": "LANG-KEY-rod"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/staff",
+							"name": "LANG-KEY-staff"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/wand",
+							"name": "LANG-KEY-wand"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_3": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/dungeoneers-pack",
+							"name": "LANG-KEY-dungeoneers-pack"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/explorers-pack",
+							"name": "LANG-KEY-explorers-pack"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"url": "/api/starting-equipment/10"
 	},
-	"starting_equipment": [{
-	"item": { "url": "/api/equipment/dagger", "name": "Dagger"}, "quantity": 2}],
-	"choices_to_make": 3,
-	"choice_1": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/crossbow-light", "name": "Crossbow, light"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-bolt", "name": "Crossbow bolt"}, "quantity": 20}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/club", "name": "Club"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dagger", "name": "Dagger"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greatclub", "name": "Greatclub"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/handaxe", "name": "Handaxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/javelin", "name": "Javelin"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/light-hammer", "name": "Light hammer"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/mace", "name": "Mace"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/quarterstaff", "name": "Quarterstaff"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sickle", "name": "Sickle"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/spear", "name": "Spear"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-light", "name": "Crossbow, light"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dart", "name": "Dart"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/shortbow", "name": "Shortbow"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sling", "name": "Sling"}, "quantity": 1}]
-	}],
-	"choice_2": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/component-pouch", "name": "Component pouch"}, "quantity": 2}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/crystal", "name": "Crystal"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/orb", "name": "Orb"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/rod", "name": "Rod"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/staff", "name": "Staff"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/wand", "name": "Wand"}, "quantity": 1}]
-	}],
-	"choice_3": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/dungeoneers-pack", "name": "Dungeoneer's Pack"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/explorers-pack", "name": "Explorer's Pack"}, "quantity": 1}]
-	}],
-	"url": "/api/starting-equipment/10"
-}, {
-	"index": 11,
-	"class": {
-		"url": "/api/classes/warlock",
-		"name": "Warlock"
+	{
+		"index": 11,
+		"class": {
+			"url": "/api/classes/warlock",
+			"name": "LANG-KEY-warlock"
+		},
+		"starting_equipment": [
+			{
+				"item": {
+					"url": "/api/equipment/dagger",
+					"name": "LANG-KEY-dagger"
+				},
+				"quantity": 2
+			},
+			{
+				"item": {
+					"url": "/api/equipment/leather",
+					"name": "LANG-KEY-leather"
+				},
+				"quantity": 1
+			}
+		],
+		"choices_to_make": 4,
+		"choice_1": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-light",
+							"name": "LANG-KEY-crossbow-light"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-bolt",
+							"name": "LANG-KEY-crossbow-bolt"
+						},
+						"quantity": 20
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/club",
+							"name": "LANG-KEY-club"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dagger",
+							"name": "LANG-KEY-dagger"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greatclub",
+							"name": "LANG-KEY-greatclub"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/handaxe",
+							"name": "LANG-KEY-handaxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/javelin",
+							"name": "LANG-KEY-javelin"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/light-hammer",
+							"name": "LANG-KEY-light-hammer"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/mace",
+							"name": "LANG-KEY-mace"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/quarterstaff",
+							"name": "LANG-KEY-quarterstaff"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sickle",
+							"name": "LANG-KEY-sickle"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/spear",
+							"name": "LANG-KEY-spear"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-light",
+							"name": "LANG-KEY-crossbow-light"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dart",
+							"name": "LANG-KEY-dart"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/shortbow",
+							"name": "LANG-KEY-shortbow"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sling",
+							"name": "LANG-KEY-sling"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_2": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/component-pouch",
+							"name": "LANG-KEY-component-pouch"
+						},
+						"quantity": 2
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/crystal",
+							"name": "LANG-KEY-crystal"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/orb",
+							"name": "LANG-KEY-orb"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/rod",
+							"name": "LANG-KEY-rod"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/staff",
+							"name": "LANG-KEY-staff"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/wand",
+							"name": "LANG-KEY-wand"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_3": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/scholars-pack",
+							"name": "LANG-KEY-scholars-pack"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/dungeoneers-pack",
+							"name": "LANG-KEY-dungeoneers-pack"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_4": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/club",
+							"name": "LANG-KEY-club"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dagger",
+							"name": "LANG-KEY-dagger"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/greatclub",
+							"name": "LANG-KEY-greatclub"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/handaxe",
+							"name": "LANG-KEY-handaxe"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/javelin",
+							"name": "LANG-KEY-javelin"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/light-hammer",
+							"name": "LANG-KEY-light-hammer"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/mace",
+							"name": "LANG-KEY-mace"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/quarterstaff",
+							"name": "LANG-KEY-quarterstaff"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sickle",
+							"name": "LANG-KEY-sickle"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/spear",
+							"name": "LANG-KEY-spear"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/crossbow-light",
+							"name": "LANG-KEY-crossbow-light"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/dart",
+							"name": "LANG-KEY-dart"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/shortbow",
+							"name": "LANG-KEY-shortbow"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/sling",
+							"name": "LANG-KEY-sling"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"url": "/api/starting-equipment/11"
 	},
-	"starting_equipment": [{
-		"item": { "url": "/api/equipment/dagger", "name": "Dagger"}, "quantity": 2}, {
-		"item": { "url": "/api/equipment/leather", "name": "Leather"}, "quantity": 1}],
-	"choices_to_make": 4,
-	"choice_1": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/crossbow-light", "name": "Crossbow, light"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-bolt", "name": "Crossbow bolt"}, "quantity": 20}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/club", "name": "Club"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dagger", "name": "Dagger"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greatclub", "name": "Greatclub"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/handaxe", "name": "Handaxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/javelin", "name": "Javelin"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/light-hammer", "name": "Light hammer"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/mace", "name": "Mace"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/quarterstaff", "name": "Quarterstaff"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sickle", "name": "Sickle"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/spear", "name": "Spear"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-light", "name": "Crossbow, light"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dart", "name": "Dart"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/shortbow", "name": "Shortbow"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sling", "name": "Sling"}, "quantity": 1}]
-	}],
-	"choice_2": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/component-pouch", "name": "Component pouch"}, "quantity": 2}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/crystal", "name": "Crystal"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/orb", "name": "Orb"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/rod", "name": "Rod"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/staff", "name": "Staff"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/wand", "name": "Wand"}, "quantity": 1}]
-	}],
-	"choice_3": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/scholars-pack", "name": "Scholar's Pack"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/dungeoneers-pack", "name": "Dungeoneer's Pack"}, "quantity": 1}]
-	}],
-	"choice_4": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/club", "name": "Club"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dagger", "name": "Dagger"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/greatclub", "name": "Greatclub"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/handaxe", "name": "Handaxe"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/javelin", "name": "Javelin"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/light-hammer", "name": "Light hammer"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/mace", "name": "Mace"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/quarterstaff", "name": "Quarterstaff"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sickle", "name": "Sickle"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/spear", "name": "Spear"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/crossbow-light", "name": "Crossbow, light"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/dart", "name": "Dart"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/shortbow", "name": "Shortbow"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/sling", "name": "Sling"}, "quantity": 1}]
-	}],
-	"url": "/api/starting-equipment/11"
-}, {
-	"index": 12,
-	"class": {
-		"url": "/api/classes/wizard",
-		"name": "Wizard"
-	},
-	"starting_equipment": [{
-	"item": { "url": "/api/equipment/spellbook", "name": "Spellbook"}, "quantity": 1}],
-	"choices_to_make": 3,
-	"choice_1": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/dagger", "name": "Dagger"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/quarterstaff", "name": "Quarterstaff"}, "quantity": 1}]
-	}],
-	"choice_2": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/component-pouch", "name": "Component pouch"}, "quantity": 2}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/crystal", "name": "Crystal"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/orb", "name": "Orb"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/rod", "name": "Rod"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/staff", "name": "Staff"}, "quantity": 1}, {
-			"item": { "url": "/api/equipment/wand", "name": "Wand"}, "quantity": 1}]
-	}],
-	"choice_3": [{
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/scholars-pack", "name": "Scholar's Pack"}, "quantity": 1}]
-	}, {
-		"choose": 1,
-		"type": "equipment",
-		"from": [{
-			"item": { "url": "/api/equipment/dungeoneers-pack", "name": "Dungeoneer's Pack"}, "quantity": 1}]
-	}],
-	"url": "/api/starting-equipment/12"
-}]
+	{
+		"index": 12,
+		"class": {
+			"url": "/api/classes/wizard",
+			"name": "LANG-KEY-wizard"
+		},
+		"starting_equipment": [
+			{
+				"item": {
+					"url": "/api/equipment/spellbook",
+					"name": "LANG-KEY-spellbook"
+				},
+				"quantity": 1
+			}
+		],
+		"choices_to_make": 3,
+		"choice_1": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/dagger",
+							"name": "LANG-KEY-dagger"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/quarterstaff",
+							"name": "LANG-KEY-quarterstaff"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_2": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/component-pouch",
+							"name": "LANG-KEY-component-pouch"
+						},
+						"quantity": 2
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/crystal",
+							"name": "LANG-KEY-crystal"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/orb",
+							"name": "LANG-KEY-orb"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/rod",
+							"name": "LANG-KEY-rod"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/staff",
+							"name": "LANG-KEY-staff"
+						},
+						"quantity": 1
+					},
+					{
+						"item": {
+							"url": "/api/equipment/wand",
+							"name": "LANG-KEY-wand"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"choice_3": [
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/scholars-pack",
+							"name": "LANG-KEY-scholars-pack"
+						},
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"choose": 1,
+				"type": "equipment",
+				"from": [
+					{
+						"item": {
+							"url": "/api/equipment/dungeoneers-pack",
+							"name": "LANG-KEY-dungeoneers-pack"
+						},
+						"quantity": 1
+					}
+				]
+			}
+		],
+		"url": "/api/starting-equipment/12"
+	}
+]

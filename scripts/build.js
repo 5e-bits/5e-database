@@ -23,8 +23,6 @@ fs.readdir('languages', (err, languageFileNames) => {
 		srcFiles.forEach(srcFileName => {
 			let srcFileData = fs.readFileSync(`src/${srcFileName}`, 'utf8');
 
-			const srcFileDataJSON = JSON.parse(srcFileData);
-
 			Object.entries(languageDataJSON).forEach(entry => {
 				srcFileData = srcFileData.replace(new RegExp(`"${entry[0]}"`, 'g'), `"${entry[1]}"`);
 			});
