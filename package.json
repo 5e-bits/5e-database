@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Database for 5e-srd-api",
   "scripts": {
+    "build": "node ./scripts/build.js",
     "create-lang": "node ./scripts/create-language.js",
     "lint": "eslint . --ext .js,.json",
     "db:refresh": "./scripts/db-refresh.sh"
