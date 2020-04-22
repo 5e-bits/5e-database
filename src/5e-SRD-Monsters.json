@@ -13581,7 +13581,24 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The gargoyle makes two attacks: one with its bite and one with its claws."
+        "desc": "The gargoyle makes two attacks: one with its bite and one with its claws.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Bite",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Claws",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Bite",
@@ -14060,7 +14077,19 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The ape makes two fist attacks."
+        "desc": "The ape makes two fist attacks.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Fist",
+                "count": 2,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Fist",
@@ -14135,7 +14164,24 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The badger makes two attacks: one with its bite and one with its claws."
+        "desc": "The badger makes two attacks: one with its bite and one with its claws.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Bite",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Claws",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Bite",
@@ -14523,7 +14569,24 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The crocodile makes two attacks: one with its bite and one with its tail."
+        "desc": "The crocodile makes two attacks: one with its bite and one with its tail.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Bite",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Tail",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Bite",
@@ -14603,7 +14666,24 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The eagle makes two attacks: one with its beak and one with its talons."
+        "desc": "The eagle makes two attacks: one with its beak and one with its talons.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Beak",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Talons",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Beak",
@@ -15390,7 +15470,24 @@
       },
       {
         "name": "Multiattack",
-        "desc": "The scorpion makes three attacks: two with its claws and one with its sting."
+        "desc": "The scorpion makes three attacks: two with its claws and one with its sting.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Claw",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "name": "Sting",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Sting",
@@ -15736,7 +15833,24 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The vulture makes two attacks: one with its beak and one with its talons."
+        "desc": "The vulture makes two attacks: one with its beak and one with its talons.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Beak",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Talons",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Beak",
@@ -16020,7 +16134,24 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The gibbering mouther makes one bite attack and, if it can, uses its Blinding Spittle."
+        "desc": "The gibbering mouther makes one bite attack and, if it can, uses its Blinding Spittle.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Bites",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Blinding Spittle",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Bites",
@@ -16188,7 +16319,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The glabrezu makes four attacks: two with its pincers and two with its fists. Alternatively, it makes two attacks with its pincers and casts one spell."
+        "desc": "The glabrezu makes four attacks: two with its pincers and two with its fists. Alternatively, it makes two attacks with its pincers and casts one spell.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Pincer",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "name": "Fist",
+                "count": 2,
+                "type": "ranged"
+              }
+            ],
+            [
+              {
+                "name": "Pincer",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "name": "Innate Spellcasting",
+                "count": 1,
+                "type": "magic"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Pincer",
@@ -16299,7 +16459,57 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The gladiator makes three melee attacks or two ranged attacks."
+        "desc": "The gladiator makes three melee attacks or two ranged attacks.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Spear",
+                "count": 3,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Shield Bash",
+                "count": 3,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Spear",
+                "count": 2,
+                "type": "ranged"
+              }
+            ],
+            [
+              {
+                "name": "Spear",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "name": "Shield Bash",
+                "count": 1,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Shield Bash",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "name": "Spear",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Spear",
@@ -17235,7 +17445,26 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The grick makes one attack with its tentacles. If that attack hits, the grick can make one beak attack against the same target."
+        "desc": "The grick makes one attack with its tentacles. If that attack hits, the grick can make one beak attack against the same target.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Tentacles",
+                "count": 1,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Beak",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Tentacles",
@@ -17316,7 +17545,24 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The griffon makes two attacks: one with its beak and one with its claws."
+        "desc": "The griffon makes two attacks: one with its beak and one with its claws.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Beak",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Claws",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Beak",
@@ -17890,7 +18136,19 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The sphinx makes two claw attacks."
+        "desc": "The sphinx makes two claw attacks.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Claw",
+                "count": 2,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Claw",
@@ -17960,7 +18218,19 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack."
+        "desc": "The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Longsword",
+                "count": 2,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Longsword",
@@ -18084,7 +18354,24 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The harpy makes two attacks: one with its claws and one with its club."
+        "desc": "The harpy makes two attacks: one with its claws and one with its club.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Claws",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Club",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Claws",
@@ -18365,7 +18652,24 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The hezrou makes three attacks: one with its bite and two with its claws."
+        "desc": "The hezrou makes three attacks: one with its bite and two with its claws.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Bite",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Claws",
+                "count": 2,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Bite",
@@ -18446,7 +18750,19 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The giant makes two greatclub attacks."
+        "desc": "The giant makes two greatclub attacks.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Greatclub",
+                "count": 2,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Greatclub",
@@ -18526,7 +18842,24 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The hippogriff makes two attacks: one with its beak and one with its claws."
+        "desc": "The hippogriff makes two attacks: one with its beak and one with its claws.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Beak",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Claws",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Beak",
@@ -18788,7 +19121,53 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The devil makes three melee attacks: two with its fork and one with its tail. It can use Hurl Flame in place of any melee attack."
+        "desc": "The devil makes three melee attacks: two with its fork and one with its tail. It can use Hurl Flame in place of any melee attack.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Fork",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "name": "Tail",
+                "count": 1,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Fork",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "name": "Hurl Flame",
+                "count": 1,
+                "type": "ranged"
+              }
+            ],
+            [
+              {
+                "name": "Fork",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Tail",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Hurl Flame",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Fork",
