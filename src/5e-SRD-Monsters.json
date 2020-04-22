@@ -19340,7 +19340,19 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The hydra makes as many bite attacks as it has heads."
+        "desc": "The hydra makes as many bite attacks as it has heads.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Bite",
+                "count": "Number of Heads",
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Bite",
@@ -19495,7 +19507,29 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The devil makes three attacks: one with its bite, one with its claws, and one with its tail."
+        "desc": "The devil makes three attacks: one with its bite, one with its claws, and one with its tail.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Bite",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Claws",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Tail",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Bite",
@@ -19916,7 +19950,19 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The stalker makes two slam attacks."
+        "desc": "The stalker makes two slam attacks.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Slam",
+                "count": 2,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Slam",
@@ -20017,7 +20063,38 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The golem makes two melee attacks."
+        "desc": "The golem makes two melee attacks.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Slam",
+                "count": 2,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Sword",
+                "count": 2,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Slam",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Sword",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Slam",
@@ -20261,7 +20338,19 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The knight makes two melee attacks."
+        "desc": "The knight makes two melee attacks.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Greatsword",
+                "count": 2,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Greatsword",
@@ -20473,7 +20562,50 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The kraken makes three tentacle attacks, each of which it can replace with one use of Fling."
+        "desc": "The kraken makes three tentacle attacks, each of which it can replace with one use of Fling.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Tentacle",
+                "count": 3,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Tentacle",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "name": "Fling",
+                "count": 1,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Tentacle",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Fling",
+                "count": 2,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Fling",
+                "count": 3,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Bite",
@@ -20664,7 +20796,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The lamia makes two attacks: one with its claws and one with its dagger or Intoxicating Touch."
+        "desc": "The lamia makes two attacks: one with its claws and one with its dagger or Intoxicating Touch.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Claws",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Dagger",
+                "count": 1,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Claws",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Intoxicating Touch",
+                "count": 1,
+                "type": "ability"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Claws",
@@ -21314,7 +21475,84 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The lizardfolk makes two melee attacks, each one with a different weapon."
+        "desc": "The lizardfolk makes two melee attacks, each one with a different weapon.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Bite",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Heavy Club",
+                "count": 1,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Bite",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Javelin",
+                "count": 1,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Bite",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Spiked Shield",
+                "count": 1,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Javelin",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Heavy Club",
+                "count": 1,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Spiked Shield",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Javelin",
+                "count": 1,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Spiked Shield",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Heavy Club",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Bite",
@@ -21888,7 +22126,31 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes."
+        "desc": "The manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Bite",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Claw",
+                "count": 2,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Tail Spike",
+                "count": 3,
+                "type": "ranged"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Bite",
@@ -22018,7 +22280,24 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The marilith can make seven attacks: six with its longswords and one with its tail."
+        "desc": "The marilith can make seven attacks: six with its longswords and one with its tail.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Longsword",
+                "count": 6,
+                "type": "melee"
+              },
+              {
+                "name": "Tail",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Longsword",
@@ -22199,7 +22478,31 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The medusa makes either three melee attacks--one with its snake hair and two with its shortsword--or two ranged attacks with its longbow."
+        "desc": "The medusa makes either three melee attacks--one with its snake hair and two with its shortsword--or two ranged attacks with its longbow.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Snake Hair",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Shortsword",
+                "count": 2,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Longbow",
+                "count": 2,
+                "type": "ranged"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Snake Hair",
@@ -22380,7 +22683,48 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The merrow makes two attacks: one with its bite and one with its claws or harpoon."
+        "desc": "The merrow makes two attacks: one with its bite and one with its claws or harpoon.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Bite",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Claws",
+                "count": 1,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Bite",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Harpoon",
+                "count": 1,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Bite",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Harpoon",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Bite",
@@ -22825,7 +23169,24 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The mummy can use its Dreadful Glare and makes one attack with its rotting fist."
+        "desc": "The mummy can use its Dreadful Glare and makes one attack with its rotting fist.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Dreadful Glare",
+                "count": 1,
+                "type": "ability"
+              },
+              {
+                "name": "Rotting Fist",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Rotting Fist",
@@ -23070,7 +23431,24 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The mummy can use its Dreadful Glare and makes one attack with its rotting fist."
+        "desc": "The mummy can use its Dreadful Glare and makes one attack with its rotting fist.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Dreadful Glare",
+                "count": 1,
+                "type": "ability"
+              },
+              {
+                "name": "Rotting Fist",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Rotting Fist",
@@ -23221,7 +23599,29 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The nalfeshnee uses Horror Nimbus if it can.  It then makes three attacks: one with its bite and two with its claws."
+        "desc": "The nalfeshnee uses Horror Nimbus if it can.  It then makes three attacks: one with its bite and two with its claws.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Horror Nimbus",
+                "count": 1,
+                "type": "ability"
+              },
+              {
+                "name": "Bite",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Claw",
+                "count": 2,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Bite",
@@ -24062,7 +24462,38 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The oni makes two attacks, either with its claws or its glaive."
+        "desc": "The oni makes two attacks, either with its claws or its glaive.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Glaive",
+                "count": 2,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Claw",
+                "count": 2,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Glaive",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Claw",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Claw (Oni Form Only)",
@@ -24222,7 +24653,24 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The otyugh makes three attacks: one with its bite and two with its tentacles."
+        "desc": "The otyugh makes three attacks: one with its bite and two with its tentacles.",
+        "options": {
+          "choose": 1,
+          "from": [
+            [
+              {
+                "name": "Bite",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Tentacle",
+                "count": 2,
+                "type": "melee"
+              }
+            ]
+          ]
+        }
       },
       {
         "name": "Bite",
