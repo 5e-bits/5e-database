@@ -27503,6 +27503,13 @@
             [
               {
                 "name": "Slam",
+                "note": "If both slam attacks hit a Medium or smaller target, the target is grappled (escape DC 14), and the shambling mound uses its Engulf on it.",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "name": "Engulf",
+                "note": "If both slam attacks hit a Medium or smaller target, the target is grappled (escape DC 14), and the shambling mound uses its Engulf on it.",
                 "count": 2,
                 "type": "melee"
               }
@@ -30596,6 +30603,7 @@
               },
               {
                 "name": "Swallow",
+                "note": "If the target is grappled",
                 "count": 1,
                 "type": "ability"
               },
@@ -31276,11 +31284,13 @@
             [
               {
                 "name": "Bite",
+                "note": "It can't make both attacks against the same target",
                 "count": 1,
                 "type": "melee"
               },
               {
                 "name": "Tail",
+                "note": "It can't make both attacks against the same target",
                 "count": 1,
                 "type": "melee"
               }
@@ -31884,6 +31894,12 @@
             [
               {
                 "name": "Longsword",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "name": "Shortsword",
+                "note": "If shortsword is drawn",
                 "count": 2,
                 "type": "melee"
               }
@@ -32652,15 +32668,31 @@
           "from": [
             [
               {
-                "name": "Claw (Bear or Hybrid Form Only)",
+                "name": "Claw",
+                "note": "Bear or Hybrid Form Only",
                 "count": 2,
                 "type": "melee"
               }
             ],
             [
               {
-                "name": "Greataxe (Humanoid or Hybrid Form Only)",
+                "name": "Greataxe",
+                "note": "Humanoid or Hybrid Form Only",
                 "count": 2,
+                "type": "melee"
+              }
+            ],
+            [
+              {
+                "name": "Greataxe",
+                "note": "Hybrid Form Only",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "name": "Claw",
+                "note": "Hybrid Form Only",
+                "count": 1,
                 "type": "melee"
               }
             ]
@@ -33973,24 +34005,28 @@
             ],
             [
               {
-                "name": "Bite (While Flying)",
+                "name": "Bite",
+                "note": "If flying",
                 "count": 1,
                 "type": "melee"
               },
               {
-                "name": "Claws (While Flying)",
+                "name": "Claws",
+                "note": "If flying",
                 "count": 1,
                 "type": "melee"
               }
             ],
             [
               {
-                "name": "Stinger (While Flying)",
+                "name": "Stinger",
+                "note": "If flying",
                 "count": 1,
                 "type": "melee"
               },
               {
-                "name": "Claws (While Flying)",
+                "name": "Claws",
+                "note": "If flying",
                 "count": 1,
                 "type": "melee"
               }
