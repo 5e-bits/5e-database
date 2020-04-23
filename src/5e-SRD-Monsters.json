@@ -17454,11 +17454,10 @@
                 "name": "Tentacles",
                 "count": 1,
                 "type": "melee"
-              }
-            ],
-            [
+              },
               {
                 "name": "Beak",
+                "note": "If tentacles attack hits",
                 "count": 1,
                 "type": "melee"
               }
@@ -18226,6 +18225,12 @@
               {
                 "name": "Longsword",
                 "count": 2,
+                "type": "melee"
+              },
+              {
+                "name": "Shortsword",
+                "note": "If shortsword is drawn",
+                "count": 1,
                 "type": "melee"
               }
             ]
@@ -20065,28 +20070,16 @@
         "name": "Multiattack",
         "desc": "The golem makes two melee attacks.",
         "options": {
-          "choose": 1,
+          "choose": 2,
           "from": [
-            [
-              {
-                "name": "Slam",
-                "count": 2,
-                "type": "melee"
-              }
-            ],
-            [
-              {
-                "name": "Sword",
-                "count": 2,
-                "type": "melee"
-              }
-            ],
             [
               {
                 "name": "Slam",
                 "count": 1,
                 "type": "melee"
-              },
+              }
+            ],
+            [
               {
                 "name": "Sword",
                 "count": 1,
@@ -23606,6 +23599,7 @@
             [
               {
                 "name": "Horror Nimbus",
+                "note": "If it can use Horror Nimbus",
                 "count": 1,
                 "type": "ability"
               },
@@ -24476,6 +24470,7 @@
             [
               {
                 "name": "Claw",
+                "note": "If in Oni form",
                 "count": 2,
                 "type": "melee"
               }
@@ -24483,11 +24478,13 @@
             [
               {
                 "name": "Glaive",
+                "note": "If in Oni form",
                 "count": 1,
                 "type": "melee"
               },
               {
                 "name": "Claw",
+                "note": "If in Oni form",
                 "count": 1,
                 "type": "melee"
               }
