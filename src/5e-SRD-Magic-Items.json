@@ -23,7 +23,7 @@
       "Weapon (any ammunition), uncommon (+1), rare (+2), or very rare (+3)",
       "You have a bonus to attack and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hits a target, the ammunition is no longer magical."
     ],
-    "url": "/api/magic-items/"
+    "url": "/api/magic-items/ammunition"
   },
   {
     "index": "amulet-of-health",
@@ -107,6 +107,29 @@
       "| 10 | The rear hatch unseals and opens. |  The rear hatch closes and seals. |"
     ]
   },
+  {
+    "index": "armor",
+    "name": "Armor, +1, +2, or +3",
+    "equipment_category": {
+      "name": "Armor",
+      "url": "/api/equipment-categories/armor"
+    },
+    "desc": [
+      "Armor (light, medium, or heavy), rare (+1), very rare (+2), or legendary (+3)",
+      "You have a bonus to AC while wearing this armor. The bonus is determined by its rarity."
+    ],
+    "url": "/api/magic-items/armor"
+  },
+  {
+    "index": "armor-of-invulnerability",
+    "name": "Armor of Invulnerability",
+    "equipment_category": {
+      "name": "armor",
+      "url": "/api/equipment-categories/armor"
+    },
+    "desc": ["String"],
+    "url": "/api/magic-items/armor-of-invulnerability"
+  }
   {
     "index": "String",
     "name": "String",
