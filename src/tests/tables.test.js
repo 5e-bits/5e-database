@@ -1,12 +1,6 @@
 const fs = require("fs");
 const glob = require("glob");
 
-const abilityScoresText = fs.readFileSync(
-  "src/5e-SRD-Ability-Scores.json",
-  "utf8"
-);
-const abilityScores = JSON.parse(abilityScoresText);
-
 describe("duplicate indices", () => {
   it("should contain unique indices", () => {
     let errors = [];
