@@ -4,12 +4,15 @@ node_js:
 
 branches:
   only:
-  - master
+    - master
 
 jobs:
   include:
     - stage: Test
-      script: npm run lint
+      name: "Lint"
+      script: yarn lint
+    - name: "Test"
+      script: yarn test
     - stage: Deploy
       if: branch = master AND type != pull_request
-      script: npm run db:refresh
+      script: yarn db:refresh
