@@ -16,6 +16,12 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 2,
+    "damage": {
+      "damage_type": {
+        "name": "Acid",
+        "url": "/api/damage-types/acid"
+      }
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -52,6 +58,25 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "damage": {
+      "damage_type": {
+        "name": "Acid",
+        "url": "/api/damage-types/acid"
+      },
+      "damage_at_character_level": {
+        "1": "1d6",
+        "5": "2d6",
+        "11": "3d6",
+        "17": "4d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -91,6 +116,16 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 2,
+    "heal_at_slot_level": {
+      "2": "5",
+      "3": "10",
+      "4": "15",
+      "5": "20",
+      "6": "25",
+      "7": "30",
+      "8": "35",
+      "9": "40"
+    },
     "school": {
       "name": "Abjuration",
       "url": "/api/magic-schools/abjuration"
@@ -129,6 +164,10 @@
     "concentration": false,
     "casting_time": "1 minute",
     "level": 1,
+    "area_of_effect": {
+      "type": "cube",
+      "size": 20
+    },
     "school": {
       "name": "Abjuration",
       "url": "/api/magic-schools/abjuration"
@@ -206,6 +245,13 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -399,6 +445,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 5,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 10
+    },
     "school": {
       "name": "Abjuration",
       "url": "/api/magic-schools/abjuration"
@@ -435,6 +485,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 8,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 10
+    },
     "school": {
       "name": "Abjuration",
       "url": "/api/magic-schools/abjuration"
@@ -473,6 +527,10 @@
     "concentration": false,
     "casting_time": "1 hour",
     "level": 8,
+    "area_of_effect": {
+      "type": "cube",
+      "size": 200
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -506,6 +564,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 4,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 30
+    },
     "school": {
       "name": "Divination",
       "url": "/api/magic-schools/divination"
@@ -611,6 +673,15 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 7,
+    "damage": {
+      "damage_type": {
+        "name": "Force",
+        "url": "/api/damage-types/force"
+      },
+      "damage_at_slot_level": {
+        "7": "3d10"
+      }
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -792,6 +863,13 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 1,
+    "dc": {
+      "dc_type": {
+        "name": "CHA",
+        "url": "/api/ability-scores/cha"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -833,6 +911,13 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 4,
+    "dc": {
+      "dc_type": {
+        "name": "CHA",
+        "url": "/api/ability-scores/cha"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Abjuration",
       "url": "/api/magic-schools/abjuration"
@@ -962,6 +1047,14 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 3,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none",
+      "desc": "On fail, become cursed for the duration of the spell."
+    },
     "school": {
       "name": "Necromancy",
       "url": "/api/magic-schools/necromancy"
@@ -1004,6 +1097,27 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 4,
+    "damage": {
+      "damage_type": {
+        "name": "Bludgeoning",
+        "url": "/api/damage-types/bludgeoning"
+      },
+      "damage_at_slot_level": {
+        "4": "3d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "none",
+      "desc": "A creature restrained by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself."
+    },
+    "area_of_effect": {
+      "type": "cube",
+      "size": 20
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -1031,6 +1145,26 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 6,
+    "damage": {
+      "damage_type": {
+        "name": "Slashing",
+        "url": "/api/damage-types/slashing"
+      },
+      "damage_at_slot_level": {
+        "6": "6d10"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "line",
+      "size": 100
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -1105,6 +1239,27 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 4,
+    "damage": {
+      "damage_type": {
+        "name": "Necrotic",
+        "url": "/api/damage-types/necrotic"
+      },
+      "damage_at_slot_level": {
+        "4": "8d8",
+        "5": "9d8",
+        "6": "10d8",
+        "7": "11d8",
+        "8": "12d8",
+        "9": "13d8"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "half"
+    },
     "school": {
       "name": "Necromancy",
       "url": "/api/magic-schools/necromancy"
@@ -1151,6 +1306,13 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 2,
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Necromancy",
       "url": "/api/magic-schools/necromancy"
@@ -1273,6 +1435,12 @@
     "concentration": true,
     "casting_time": "1 bonus action",
     "level": 2,
+    "damage": {
+      "damage_type": {
+        "name": "Radiant",
+        "url": "/api/damage-types/radiant"
+      }
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -1303,6 +1471,34 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
+    "damage": {
+      "damage_type": {
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "1": "3d6",
+        "2": "4d6",
+        "3": "5d6",
+        "4": "6d6",
+        "5": "7d6",
+        "6": "8d6",
+        "7": "9d6",
+        "8": "10d6",
+        "9": "11d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "cone",
+      "size": 15
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -1347,6 +1543,25 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 3,
+    "damage": {
+      "damage_type": {
+        "name": "Lightning",
+        "url": "/api/damage-types/lightning"
+      },
+      "damage_at_slot_level": {
+        "3": "3d10",
+        "4": "4d10",
+        "5": "5d10",
+        "6": "6d10",
+        "7": "7d10",
+        "8": "8d10",
+        "9": "9d10"
+      }
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 5
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -1383,6 +1598,17 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 2,
+    "dc": {
+      "dc_type": {
+        "name": "CHA",
+        "url": "/api/ability-scores/cha"
+      },
+      "dc_success": "none"
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 20
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -1423,6 +1649,22 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 6,
+    "damage": {
+      "damage_type": {
+        "name": "Lightning",
+        "url": "/api/damage-types/lightning"
+      },
+      "damage_at_slot_level": {
+        "6": "10d8"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -1456,6 +1698,13 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -1505,6 +1754,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "damage": {
+      "damage_type": {
+        "name": "Necrotic",
+        "url": "/api/damage-types/necrotic"
+      },
+      "damage_at_character_level": {
+        "1": "1d8",
+        "5": "2d8",
+        "11": "3d8",
+        "17": "4d8"
+      }
+    },
     "school": {
       "name": "Necromancy",
       "url": "/api/magic-schools/necromancy"
@@ -1548,6 +1809,29 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 6,
+    "damage": {
+      "damage_type": {
+        "name": "Necrotic",
+        "url": "/api/damage-types/necrotic"
+      },
+      "damage_at_slot_level": {
+        "6": "8d6",
+        "7": "10d6",
+        "8": "12d6",
+        "9": "14d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 60
+    },
     "school": {
       "name": "Necromancy",
       "url": "/api/magic-schools/necromancy"
@@ -1661,6 +1945,31 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 5,
+    "damage": {
+      "damage_type": {
+        "name": "Poison",
+        "url": "/api/damage-types/poison"
+      },
+      "damage_at_slot_level": {
+        "5": "5d8",
+        "6": "6d8",
+        "7": "7d8",
+        "8": "8d8",
+        "9": "9d8"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "half",
+      "desc": "Creatures are affected even if they hold their breath or don't need to breathe."
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 20
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -1701,6 +2010,10 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
+    "area_of_effect": {
+      "type": "cone",
+      "size": 15
+    },
     "school": {
       "name": "Illusion",
       "url": "/api/magic-schools/illusion"
@@ -1750,6 +2063,13 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -1911,6 +2231,13 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 4,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -1942,6 +2269,31 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 5,
+    "damage": {
+      "damage_type": {
+        "name": "Cold",
+        "url": "/api/damage-types/cold"
+      },
+      "damage_at_slot_level": {
+        "5": "8d8",
+        "6": "9d8",
+        "7": "10d8",
+        "8": "11d8",
+        "9": "12d8"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "half",
+      "desc": "A creature killed by this spell becomes a frozen statue until it thaws."
+    },
+    "area_of_effect": {
+      "type": "cone",
+      "size": 60
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -1983,6 +2335,17 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 4,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 10
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -2104,6 +2467,10 @@
     "concentration": true,
     "casting_time": "1 minute",
     "level": 5,
+    "area_of_effect": {
+      "type": "cube",
+      "size": 10
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -2257,6 +2624,14 @@
     "concentration": false,
     "casting_time": "1 minute",
     "level": 5,
+    "dc": {
+      "dc_type": {
+        "name": "INT",
+        "url": "/api/ability-scores/int"
+      },
+      "dc_success": "other",
+      "desc": "On a failure, you take 6d6 psychic damage and are insane until you finish a long rest."
+    },
     "school": {
       "name": "Divination",
       "url": "/api/magic-schools/divination"
@@ -2301,6 +2676,14 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 5,
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "other",
+      "desc": "After succeeding on three of these saving throws, the creature recovers from the disease, and the spell ends."
+    },
     "school": {
       "name": "Necromancy",
       "url": "/api/magic-schools/necromancy"
@@ -2409,6 +2792,26 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 4,
+    "damage": {
+      "damage_type": {
+        "name": "Bludgeoning",
+        "url": "/api/damage-types/bludgeoning"
+      },
+      "damage_at_slot_level": {
+        "4": "2d8"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "STR",
+        "url": "/api/ability-scores/str"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "cube",
+      "size": 100
+    },
     "school": {
       "name": "Transmutation",
       "url": "/api/magic-schools/transmutation"
@@ -2610,6 +3013,10 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
+    "area_of_effect": {
+      "type": "cube",
+      "size": 30
+    },
     "school": {
       "name": "Transmutation",
       "url": "/api/magic-schools/transmutation"
@@ -2661,6 +3068,10 @@
     "concentration": false,
     "casting_time": "1 minute",
     "level": 5,
+    "area_of_effect": {
+      "type": "cube",
+      "size": 5
+    },
     "school": {
       "name": "Illusion",
       "url": "/api/magic-schools/illusion"
@@ -2694,6 +3105,17 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
+    "heal_at_slot_level": {
+      "1": "1d8 + MOD",
+      "2": "2d8 + MOD",
+      "3": "3d8 + MOD",
+      "4": "4d8 + MOD",
+      "5": "5d8 + MOD",
+      "6": "6d8 + MOD",
+      "7": "7d8 + MOD",
+      "8": "8d8 + MOD",
+      "9": "9d8 + MOD"
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -2789,6 +3211,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 2,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 15
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -2878,6 +3304,10 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 3,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 60
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -2973,6 +3403,28 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 7,
+    "damage": {
+      "damage_type": {
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "7": "12d6",
+        "8": "13d6",
+        "9": "14d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 20
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -3035,6 +3487,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 1,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 30
+    },
     "school": {
       "name": "Divination",
       "url": "/api/magic-schools/divination"
@@ -3071,6 +3527,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 1,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 30
+    },
     "school": {
       "name": "Divination",
       "url": "/api/magic-schools/divination"
@@ -3128,6 +3588,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 1,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 30
+    },
     "school": {
       "name": "Divination",
       "url": "/api/magic-schools/divination"
@@ -3217,6 +3681,15 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 4,
+    "damage": {
+      "damage_type": {
+        "name": "Force",
+        "url": "/api/damage-types/force"
+      },
+      "damage_at_slot_level": {
+        "4": "4d6"
+      }
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -3303,6 +3776,26 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 6,
+    "damage": {
+      "damage_type": {
+        "name": "Force",
+        "url": "/api/damage-types/force"
+      },
+      "damage_at_slot_level": {
+        "6": "10d6 + 40"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "none"
+    },
+    "area_of_effect": {
+      "type": "cube",
+      "size": 10
+    },
     "school": {
       "name": "Transmutation",
       "url": "/api/magic-schools/transmutation"
@@ -3465,6 +3958,15 @@
     "concentration": true,
     "casting_time": "1 bonus action",
     "level": 1,
+    "damage": {
+      "damage_type": {
+        "name": "Radiant",
+        "url": "/api/damage-types/radiant"
+      },
+      "damage_at_slot_level": {
+        "1": "1d4"
+      }
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -3501,6 +4003,14 @@
     "concentration": false,
     "casting_time": "1 bonus action",
     "level": 7,
+    "dc": {
+      "dc_type": {
+        "name": "CHA",
+        "url": "/api/ability-scores/cha"
+      },
+      "dc_success": "none",
+      "desc": "Every creature that hears you must make a backup Charisma, or she undergoes an effect based on the current value of his life. [50 hp or less: muted for 1 minute] [40 hp or less: deafened and blinded for 10 minutes [30 hp or less: blinded, deafened and dazed for 1 hour] [20 hp or less: killed instantly]"
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -3532,6 +4042,13 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 4,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -3568,6 +4085,14 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 8,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none",
+      "desc": "On failure, the creature is charmed by you for the duration."
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -3612,6 +4137,14 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 5,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "other",
+      "desc": "Each time the target takes damage, it makes a new wisdom saving throw against the spell. If the saving throw succeeds, the spell ends."
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -3651,6 +4184,23 @@
     "concentration": false,
     "casting_time": "1 minute",
     "level": 5,
+    "damage": {
+      "damage_type": {
+        "name": "Psychic",
+        "url": "/api/damage-types/psychic"
+      },
+      "damage_at_slot_level": {
+        "5": "3d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none",
+      "desc": "On a failed save, echoes of the phantasmal monstrosity spawn a nightmare that lasts the duration of the target's sleep and prevents the target from gaining any benefit from that rest."
+    },
     "school": {
       "name": "Illusion",
       "url": "/api/magic-schools/illusion"
@@ -3727,6 +4277,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 8,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 100
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -3753,7 +4307,6 @@
     "name": "Eldritch Blast",
     "desc": [
       "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage. The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam."
-
     ],
     "range": "120 feet",
     "components": ["V", "S"],
@@ -3762,6 +4315,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "damage": {
+      "damage_type": {
+        "name": "Force",
+        "url": "/api/damage-types/force"
+      },
+      "damage_at_character_level": {
+        "1": "1d10",
+        "5": "2d10",
+        "11": "3d10",
+        "17": "4d10"
+      }
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -3858,6 +4423,13 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 2,
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Transmutation",
       "url": "/api/magic-schools/transmutation"
@@ -3895,6 +4467,17 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 1,
+    "dc": {
+      "dc_type": {
+        "name": "STR",
+        "url": "/api/ability-scores/str"
+      },
+      "dc_success": "none"
+    },
+    "area_of_effect": {
+      "type": "cube",
+      "size": 20
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -3926,6 +4509,13 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 2,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -4055,6 +4645,14 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 6,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none",
+      "desc": "On failure, the target can be affected by one of the following effects of your choice for the duration. [Asleep. The target falls unconscious. It wakes up if it takes any damage or if another creature uses its action to shake the sleeper awake.] [Panicked. The target is frightened of you. On each of its turns, the frightened creature must take the Dash action and move away from you by the safest and shortest available route, unless there is nowhere to move. If the target moves to a place at least 60 feet away from you where it can no longer see you, this effect ends.] [Sickened. The target has disadvantage on attack rolls and ability checks. At the end of each of its turns, it can make another wisdom saving throw. If it succeeds, the effect ends.]"
+    },
     "school": {
       "name": "Necromancy",
       "url": "/api/magic-schools/necromancy"
@@ -4122,6 +4720,17 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 1,
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "none"
+    },
+    "area_of_effect": {
+      "type": "cube",
+      "size": 20
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -4156,6 +4765,15 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 4,
+    "damage": {
+      "damage_type": {
+        "name": "Piercing",
+        "url": "/api/damage-types/piercing"
+      },
+      "damage_at_slot_level": {
+        "4": "4d8"
+      }
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -4186,6 +4804,17 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
+    "heal_at_slot_level": {
+      "1": "1d4 + 4",
+      "2": "1d4 + 9",
+      "3": "1d4 + 14",
+      "4": "1d4 + 19",
+      "5": "1d4 + 24",
+      "6": "1d4 + 29",
+      "7": "1d4 + 34",
+      "8": "1d4 + 39",
+      "9": "1d4 + 44"
+    },
     "school": {
       "name": "Necromancy",
       "url": "/api/magic-schools/necromancy"
@@ -4223,6 +4852,18 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 3,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none",
+      "desc": "On fail, A creature drop whatever it is holding and become frightened for the duration."
+    },
+    "area_of_effect": {
+      "type": "cone",
+      "size": 30
+    },
     "school": {
       "name": "Illusion",
       "url": "/api/magic-schools/illusion"
@@ -4310,6 +4951,23 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 8,
+    "damage": {
+      "damage_type": {
+        "name": "Psychic",
+        "url": "/api/damage-types/psychic"
+      },
+      "damage_at_slot_level": {
+        "8": "4d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "INT",
+        "url": "/api/ability-scores/int"
+      },
+      "dc_success": "other",
+      "desc": "The target always takes the damage. On a failed save, the creature's Intelligence and Charisma scores become 1."
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -4489,6 +5147,22 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 7,
+    "damage": {
+      "damage_type": {
+        "name": "Necrotic",
+        "url": "/api/damage-types/necrotic"
+      },
+      "damage_at_slot_level": {
+        "7": "7d8 + 30"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "half"
+    },
     "school": {
       "name": "Necromancy",
       "url": "/api/magic-schools/necromancy"
@@ -4524,6 +5198,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "damage": {
+      "damage_type": {
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      },
+      "damage_at_character_level": {
+        "1": "1d10",
+        "5": "2d10",
+        "11": "3d10",
+        "17": "4d10"
+      }
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -4557,6 +5243,19 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 4,
+    "damage": {
+      "damage_type": {
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "4": "2d8"
+      }
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 5
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -4589,6 +5288,26 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 7,
+    "damage": {
+      "damage_type": {
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "7": "7d10"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "cube",
+      "size": 100
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -4628,6 +5347,32 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 3,
+    "damage": {
+      "damage_type": {
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "3": "8d6",
+        "4": "9d6",
+        "5": "10d6",
+        "6": "11d6",
+        "7": "12d6",
+        "8": "13d6",
+        "9": "14d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 20
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -4673,6 +5418,12 @@
     "concentration": true,
     "casting_time": "1 bonus action",
     "level": 2,
+    "damage": {
+      "damage_type": {
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      }
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -4708,6 +5459,30 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 5,
+    "damage": {
+      "damage_type": {
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "5": "4d6 + 4d6",
+        "6": "4d6 + 5d6",
+        "7": "4d6 + 6d6",
+        "8": "4d6 + 7d6",
+        "9": "4d6 + 8d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "cylinder",
+      "size": 40
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -4749,6 +5524,12 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 2,
+    "damage": {
+      "damage_type": {
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      }
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -4788,6 +5569,14 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 6,
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "none",
+      "desc": "On a failed save, the target is restrained as its flesh begins to harden."
+    },
     "school": {
       "name": "Transmutation",
       "url": "/api/magic-schools/transmutation"
@@ -4898,6 +5687,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 1,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 20
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -4945,6 +5738,10 @@
     "concentration": false,
     "casting_time": "10 minutes",
     "level": 6,
+    "area_of_effect": {
+      "type": "cube",
+      "size": 40000
+    },
     "school": {
       "name": "Abjuration",
       "url": "/api/magic-schools/abjuration"
@@ -4977,6 +5774,10 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 7,
+    "area_of_effect": {
+      "type": "cube",
+      "size": 20
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -5106,6 +5907,26 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 6,
+    "damage": {
+      "damage_type": {
+        "name": "Cold",
+        "url": "/api/damage-types/cold"
+      },
+      "damage_at_slot_level": {
+        "6": "10d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 60
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -5221,6 +6042,13 @@
     "concentration": false,
     "casting_time": "1 minute",
     "level": 5,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -5364,6 +6192,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 6,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 10
+    },
     "school": {
       "name": "Abjuration",
       "url": "/api/magic-schools/abjuration"
@@ -5479,6 +6311,17 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "none"
+    },
+    "area_of_effect": {
+      "type": "cube",
+      "size": 10
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -5589,6 +6432,26 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 4,
+    "damage": {
+      "damage_type": {
+        "name": "Radiant",
+        "url": "/api/damage-types/radiant"
+      },
+      "damage_at_slot_level": {
+        "4": "20"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "cylinder",
+      "size": 10
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -5637,6 +6500,10 @@
     "concentration": false,
     "casting_time": "10 minutes",
     "level": 6,
+    "area_of_effect": {
+      "type": "cube",
+      "size": 2500
+    },
     "school": {
       "name": "Abjuration",
       "url": "/api/magic-schools/abjuration"
@@ -5705,6 +6572,23 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
+    "damage": {
+      "damage_type": {
+        "name": "Radiant",
+        "url": "/api/damage-types/radiant"
+      },
+      "damage_at_slot_level": {
+        "1": "4d6",
+        "2": "5d6",
+        "3": "6d6",
+        "4": "7d6",
+        "5": "8d6",
+        "6": "9d6",
+        "7": "10d6",
+        "8": "11d6",
+        "9": "12d6"
+      }
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -5740,6 +6624,17 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 2,
+    "dc": {
+      "dc_type": {
+        "name": "STR",
+        "url": "/api/ability-scores/str"
+      },
+      "dc_success": "none"
+    },
+    "area_of_effect": {
+      "type": "line",
+      "size": 60
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -5802,6 +6697,10 @@
     "concentration": false,
     "casting_time": "24 hours",
     "level": 5,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 60
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -5835,6 +6734,10 @@
     "concentration": false,
     "casting_time": "10 minutes",
     "level": 4,
+    "area_of_effect": {
+      "type": "cube",
+      "size": 150
+    },
     "school": {
       "name": "Illusion",
       "url": "/api/magic-schools/illusion"
@@ -5878,6 +6781,22 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 6,
+    "damage": {
+      "damage_type": {
+        "name": "Necrotic",
+        "url": "/api/damage-types/necrotic"
+      },
+      "damage_at_slot_level": {
+        "6": "14d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "half"
+    },
     "school": {
       "name": "Necromancy",
       "url": "/api/magic-schools/necromancy"
@@ -5948,6 +6867,12 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 6,
+    "heal_at_slot_level": {
+      "6": "70",
+      "7": "80",
+      "8": "90",
+      "9": "100"
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -5981,6 +6906,17 @@
     "concentration": false,
     "casting_time": "1 bonus action",
     "level": 1,
+    "heal_at_slot_level": {
+      "1": "1d4 + MOD",
+      "2": "2d4 + MOD",
+      "3": "3d4 + MOD",
+      "4": "4d4 + MOD",
+      "5": "5d4 + MOD",
+      "6": "6d4 + MOD",
+      "7": "7d4 + MOD",
+      "8": "8d4 + MOD",
+      "9": "9d4 + MOD"
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -6025,6 +6961,30 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 2,
+    "damage": {
+      "damage_type": {
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "2": "2d8",
+        "3": "3d8",
+        "4": "4d8",
+        "5": "5d8",
+        "6": "6d8",
+        "7": "7d8",
+        "8": "8d8",
+        "9": "9d8"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "other",
+      "desc": "Can choose to not drop the object"
+    },
     "school": {
       "name": "Transmutation",
       "url": "/api/magic-schools/transmutation"
@@ -6060,6 +7020,22 @@
     "concentration": false,
     "casting_time": "1 reaction",
     "level": 1,
+    "damage": {
+      "damage_type": {
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "1": "2d10"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -6155,6 +7131,13 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 1,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -6194,6 +7177,13 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 5,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -6236,6 +7226,13 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 2,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -6292,6 +7289,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 8,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 30
+    },
     "school": {
       "name": "Abjuration",
       "url": "/api/magic-schools/abjuration"
@@ -6353,6 +7354,14 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 3,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none",
+      "desc": "On a failed save, the creature becomes charmed for the duration."
+    },
     "school": {
       "name": "Illusion",
       "url": "/api/magic-schools/illusion"
@@ -6401,6 +7410,31 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 4,
+    "damage": {
+      "damage_type": {
+        "name": "Bludgeoning",
+        "url": "/api/damage-types/bludgeoning"
+      },
+      "damage_at_slot_level": {
+        "4": "2d8 + 4d6",
+        "5": "3d8 + 4d6",
+        "6": "4d8 + 4d6",
+        "7": "5d8 + 4d6",
+        "8": "6d8 + 4d6",
+        "9": "7d8 + 4d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "cylinder",
+      "size": 20
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -6535,6 +7569,14 @@
     "concentration": false,
     "casting_time": "1 minute",
     "level": 9,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none",
+      "desc": "If the creature succeeds, it is immune to this spell if you cast it again"
+    },
     "school": {
       "name": "Abjuration",
       "url": "/api/magic-schools/abjuration"
@@ -6567,6 +7609,26 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 8,
+    "damage": {
+      "damage_type": {
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "8": "10d8"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 20
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -6600,6 +7662,23 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
+    "damage": {
+      "damage_type": {
+        "name": "Necrotic",
+        "url": "/api/damage-types/necrotic"
+      },
+      "damage_at_slot_level": {
+        "1": "3d10",
+        "2": "4d10",
+        "3": "5d10",
+        "4": "6d10",
+        "5": "7d10",
+        "6": "8d10",
+        "7": "9d10",
+        "8": "10d10",
+        "9": "11d10"
+      }
+    },
     "school": {
       "name": "Necromancy",
       "url": "/api/magic-schools/necromancy"
@@ -6636,6 +7715,30 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 5,
+    "damage": {
+      "damage_type": {
+        "name": "Piercing",
+        "url": "/api/damage-types/piercing"
+      },
+      "damage_at_slot_level": {
+        "5": "4d10",
+        "6": "5d10",
+        "7": "6d10",
+        "8": "7d10",
+        "9": "8d10"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 20
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -7004,6 +8107,13 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -7052,6 +8162,32 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 3,
+    "damage": {
+      "damage_type": {
+        "name": "Lightning",
+        "url": "/api/damage-types/lightning"
+      },
+      "damage_at_slot_level": {
+        "3": "8d6",
+        "4": "9d6",
+        "5": "10d6",
+        "6": "11d6",
+        "7": "12d6",
+        "8": "13d6",
+        "9": "14d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "line",
+      "size": 100
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -7425,6 +8561,14 @@
     "concentration": false,
     "casting_time": "1 minute",
     "level": 6,
+    "dc": {
+      "dc_type": {
+        "name": "CHA",
+        "url": "/api/ability-scores/cha"
+      },
+      "dc_success": "other",
+      "desc": "On a failure, your soul moves into the target's body, and the target's soul becomes trapped in the container. On a success, the target resists your efforts to possess it, and you can't attempt to possess it again for 24 hours."
+    },
     "school": {
       "name": "Necromancy",
       "url": "/api/magic-schools/necromancy"
@@ -7454,6 +8598,23 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
+    "damage": {
+      "damage_type": {
+        "name": "Force",
+        "url": "/api/damage-types/force"
+      },
+      "damage_at_slot_level": {
+        "1": "1d4 + 1",
+        "2": "1d4 + 1",
+        "3": "1d4 + 1",
+        "4": "1d4 + 1",
+        "5": "1d4 + 1",
+        "6": "1d4 + 1",
+        "7": "1d4 + 1",
+        "8": "1d4 + 1",
+        "9": "1d4 + 1"
+      }
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -7569,6 +8730,10 @@
     "concentration": false,
     "casting_time": "1 minute",
     "level": 7,
+    "area_of_effect": {
+      "type": "cube",
+      "size": 5
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -7651,6 +8816,17 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 5,
+    "heal_at_slot_level": {
+      "5": "3d8 + MOD",
+      "6": "4d8 + MOD",
+      "7": "5d8 + MOD",
+      "8": "6d8 + MOD",
+      "9": "7d8 + MOD"
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 30
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -7690,6 +8866,9 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 9,
+    "heal_at_slot_level": {
+      "9": "700"
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -7719,6 +8898,15 @@
     "concentration": false,
     "casting_time": "1 bonus action",
     "level": 3,
+    "heal_at_slot_level": {
+      "3": "1d4 + MOD",
+      "4": "2d4 + MOD",
+      "5": "3d4 + MOD",
+      "6": "4d4 + MOD",
+      "7": "5d4 + MOD",
+      "8": "6d4 + MOD",
+      "9": "7d4 + MOD"
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -7757,6 +8945,13 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 6,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -7951,6 +9146,26 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 9,
+    "damage": {
+      "damage_type": {
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "9": "20d6 + 20d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 40
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -8061,6 +9276,10 @@
     "concentration": false,
     "casting_time": "10 minutes",
     "level": 7,
+    "area_of_effect": {
+      "type": "cube",
+      "size": 5280
+    },
     "school": {
       "name": "Illusion",
       "url": "/api/magic-schools/illusion"
@@ -8224,6 +9443,13 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 5,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -8261,6 +9487,33 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 2,
+    "damage": {
+      "damage_type": {
+        "name": "Radiant",
+        "url": "/api/damage-types/radiant"
+      },
+      "damage_at_slot_level": {
+        "2": "2d10",
+        "3": "3d10",
+        "4": "4d10",
+        "5": "5d10",
+        "6": "6d10",
+        "7": "7d10",
+        "8": "8d10",
+        "9": "9d10"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "cylinder",
+      "size": 5
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -8297,6 +9550,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 6,
+    "area_of_effect": {
+      "type": "cone",
+      "size": 40
+    },
     "school": {
       "name": "Transmutation",
       "url": "/api/magic-schools/transmutation"
@@ -8447,6 +9704,22 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 4,
+    "damage": {
+      "damage_type": {
+        "name": "Psychic",
+        "url": "/api/damage-types/psychic"
+      },
+      "damage_at_slot_level": {
+        "4": "4d10"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Illusion",
       "url": "/api/magic-schools/illusion"
@@ -8541,6 +9814,13 @@
     "concentration": false,
     "casting_time": "1 hour",
     "level": 5,
+    "dc": {
+      "dc_type": {
+        "name": "CHA",
+        "url": "/api/ability-scores/cha"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Abjuration",
       "url": "/api/magic-schools/abjuration"
@@ -8582,6 +9862,14 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 7,
+    "dc": {
+      "dc_type": {
+        "name": "CHA",
+        "url": "/api/ability-scores/cha"
+      },
+      "dc_success": "none",
+      "desc": "If the creature fails this save, it is transported to a random location on the plane of existence you specify. A creature so transported must find its own way back to your current plane of existence."
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -8671,6 +9959,25 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "damage": {
+      "damage_type": {
+        "name": "Poison",
+        "url": "/api/damage-types/poison"
+      },
+      "damage_at_character_level": {
+        "1": "1d12",
+        "5": "2d12",
+        "11": "3d12",
+        "17": "4d12"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -8710,6 +10017,13 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 4,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Transmutation",
       "url": "/api/magic-schools/transmutation"
@@ -8828,6 +10142,16 @@
     "concentration": false,
     "casting_time": "10 minutes",
     "level": 2,
+    "heal_at_slot_level": {
+      "2": "2d8 + MOD",
+      "3": "3d8 + MOD",
+      "4": "4d8 + MOD",
+      "5": "5d8 + MOD",
+      "6": "6d8 + MOD",
+      "7": "7d8 + MOD",
+      "8": "8d8 + MOD",
+      "9": "9d8 + MOD"
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -8925,6 +10249,23 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 7,
+    "damage": {
+      "damage_at_slot_level": {
+        "7": "10d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "other",
+      "desc": "For each target, roll a d8 to determine which color ray affects it."
+    },
+    "area_of_effect": {
+      "type": "cone",
+      "size": 60
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -8973,6 +10314,10 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 9,
+    "area_of_effect": {
+      "type": "line",
+      "size": 90
+    },
     "school": {
       "name": "Abjuration",
       "url": "/api/magic-schools/abjuration"
@@ -9011,6 +10356,10 @@
     "concentration": false,
     "casting_time": "10 minutes",
     "level": 4,
+    "area_of_effect": {
+      "type": "cube",
+      "size": 100
+    },
     "school": {
       "name": "Abjuration",
       "url": "/api/magic-schools/abjuration"
@@ -9039,6 +10388,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "damage": {
+      "damage_type": {
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      },
+      "damage_at_character_level": {
+        "1": "1d8",
+        "5": "2d8",
+        "11": "3d8",
+        "17": "4d8"
+      }
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -9074,6 +10435,10 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 6,
+    "area_of_effect": {
+      "type": "cube",
+      "size": 30
+    },
     "school": {
       "name": "Illusion",
       "url": "/api/magic-schools/illusion"
@@ -9401,6 +10766,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "damage": {
+      "damage_type": {
+        "name": "Cold",
+        "url": "/api/damage-types/cold"
+      },
+      "damage_at_character_level": {
+        "1": "1d8",
+        "5": "2d8",
+        "11": "3d8",
+        "17": "4d8"
+      }
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -9438,6 +10815,9 @@
     "concentration": false,
     "casting_time": "1 minute",
     "level": 7,
+    "heal_at_slot_level": {
+      "7": "4d8 + 15"
+    },
     "school": {
       "name": "Transmutation",
       "url": "/api/magic-schools/transmutation"
@@ -9576,6 +10956,13 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 4,
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -9676,6 +11063,18 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 7,
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "other",
+      "desc": "A creature can make a dexterity saving throw to grab onto a fixed object it can reach, thus avoiding the fall."
+    },
+    "area_of_effect": {
+      "type": "cylinder",
+      "size": 50
+    },
     "school": {
       "name": "Transmutation",
       "url": "/api/magic-schools/transmutation"
@@ -9786,6 +11185,25 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "damage": {
+      "damage_type": {
+        "name": "Radiant",
+        "url": "/api/damage-types/radiant"
+      },
+      "damage_at_character_level": {
+        "1": "1d8",
+        "5": "2d8",
+        "11": "3d8",
+        "17": "4d8"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -9858,6 +11276,12 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 2,
+    "damage": {
+      "damage_type": {
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      }
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -9909,6 +11333,13 @@
     "concentration": true,
     "casting_time": "10 minutes",
     "level": 5,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Divination",
       "url": "/api/magic-schools/divination"
@@ -10173,6 +11604,33 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 2,
+    "damage": {
+      "damage_type": {
+        "name": "Thunder",
+        "url": "/api/damage-types/thunder"
+      },
+      "damage_at_slot_level": {
+        "2": "3d8",
+        "3": "4d8",
+        "4": "5d8",
+        "5": "6d8",
+        "6": "7d8",
+        "7": "8d8",
+        "8": "9d8",
+        "9": "10d8"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 10
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -10320,6 +11778,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "damage": {
+      "damage_type": {
+        "name": "Lightning",
+        "url": "/api/damage-types/lightning"
+      },
+      "damage_at_character_level": {
+        "1": "1d8",
+        "5": "2d8",
+        "11": "3d8",
+        "17": "4d8"
+      }
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -10356,6 +11826,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 2,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 20
+    },
     "school": {
       "name": "Illusion",
       "url": "/api/magic-schools/illusion"
@@ -10402,6 +11876,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 1,
+    "area_of_effect": {
+      "type": "cube",
+      "size": 15
+    },
     "school": {
       "name": "Illusion",
       "url": "/api/magic-schools/illusion"
@@ -10477,6 +11955,15 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
+    "damage": {
+      "damage_at_slot_level": {
+        "1": "5d8"
+      }
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 20
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -10519,6 +12006,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 3,
+    "area_of_effect": {
+      "type": "cylinder",
+      "size": 40
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -10566,6 +12057,18 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 3,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none",
+      "desc": "On failed save, the creature is slowed."
+    },
+    "area_of_effect": {
+      "type": "cube",
+      "size": 40
+    },
     "school": {
       "name": "Transmutation",
       "url": "/api/magic-schools/transmutation"
@@ -10711,6 +12214,10 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 3,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 30
+    },
     "school": {
       "name": "Transmutation",
       "url": "/api/magic-schools/transmutation"
@@ -10796,6 +12303,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 2,
+    "area_of_effect": {
+      "type": "cylinder",
+      "size": 20
+    },
     "school": {
       "name": "Transmutation",
       "url": "/api/magic-schools/transmutation"
@@ -10876,6 +12387,22 @@
     "concentration": false,
     "casting_time": "1 bonus action",
     "level": 2,
+    "damage": {
+      "damage_type": {
+        "name": "Force",
+        "url": "/api/damage-types/force"
+      },
+      "damage_at_slot_level": {
+        "2": "1d8 + MOD",
+        "3": "1d8 + MOD",
+        "4": "2d8 + MOD",
+        "5": "2d8 + MOD",
+        "6": "3d8 + MOD",
+        "7": "3d8 + MOD",
+        "8": "4d8 + MOD",
+        "9": "4d8 + MOD"
+      }
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -10914,6 +12441,24 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 3,
+    "damage": {
+      "damage_type": {
+        "name": "Poison",
+        "url": "/api/damage-types/poison"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "none",
+      "desc": "On a failed save, the creature spends its action that turn retching and reeling."
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 20
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -11054,6 +12599,27 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 9,
+    "damage": {
+      "damage_type": {
+        "name": "Thunder",
+        "url": "/api/damage-types/thunder"
+      },
+      "damage_at_slot_level": {
+        "9": "2d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "none",
+      "desc": "On a failed save, a creature takes 2d6 thunder damage and becomes deafened for 5 minutes."
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 360
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -11084,6 +12650,13 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 2,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -11130,6 +12703,27 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 6,
+    "damage": {
+      "damage_type": {
+        "name": "Radiant",
+        "url": "/api/damage-types/radiant"
+      },
+      "damage_at_slot_level": {
+        "6": "6d8"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "half",
+      "desc": "On a failed save, the creature is blinded until your next turn. On a successful save, it isn't blinded by this spell."
+    },
+    "area_of_effect": {
+      "type": "line",
+      "size": 60
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -11167,6 +12761,27 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 8,
+    "damage": {
+      "damage_type": {
+        "name": "Radiant",
+        "url": "/api/damage-types/radiant"
+      },
+      "damage_at_slot_level": {
+        "8": "12d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "half",
+      "desc": "On failure, the creature is also blinded for 1 minute."
+    },
+    "area_of_effect": {
+      "type": "cylinder",
+      "size": 60
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -11222,6 +12837,10 @@
     "concentration": false,
     "casting_time": "1 minute",
     "level": 7,
+    "area_of_effect": {
+      "type": "cube",
+      "size": 10
+    },
     "school": {
       "name": "Abjuration",
       "url": "/api/magic-schools/abjuration"
@@ -11263,6 +12882,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 5,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 30
+    },
     "school": {
       "name": "Transmutation",
       "url": "/api/magic-schools/transmutation"
@@ -11322,6 +12945,10 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 7,
+    "area_of_effect": {
+      "type": "cube",
+      "size": 10
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -11359,6 +12986,10 @@
     "concentration": false,
     "casting_time": "1 minute",
     "level": 5,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 10
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -11435,6 +13066,34 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
+    "damage": {
+      "damage_type": {
+        "name": "Thunder",
+        "url": "/api/damage-types/thunder"
+      },
+      "damage_at_slot_level": {
+        "1": "2d8",
+        "2": "3d8",
+        "3": "4d8",
+        "4": "5d8",
+        "5": "6d8",
+        "6": "7d8",
+        "7": "8d8",
+        "8": "9d8",
+        "9": "10d8"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "cube",
+      "size": 15
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -11512,6 +13171,10 @@
     "concentration": false,
     "casting_time": "1 minute",
     "level": 3,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 10
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -11867,6 +13530,21 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 3,
+    "damage": {
+      "damage_type": {
+        "name": "Necrotic",
+        "url": "/api/damage-types/necrotic"
+      },
+      "damage_at_slot_level": {
+        "3": "3d6",
+        "4": "4d6",
+        "5": "5d6",
+        "6": "6d6",
+        "7": "7d6",
+        "8": "8d6",
+        "9": "9d6"
+      }
+    },
     "school": {
       "name": "Necromancy",
       "url": "/api/magic-schools/necromancy"
@@ -11903,6 +13581,25 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "damage": {
+      "damage_type": {
+        "name": "Psychic",
+        "url": "/api/damage-types/psychic"
+      },
+      "damage_at_character_level": {
+        "1": "1d4",
+        "5": "2d4",
+        "11": "3d4",
+        "17": "4d4"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
@@ -11936,6 +13633,26 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 4,
+    "damage": {
+      "damage_type": {
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "4": "5d8"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "line",
+      "size": 60
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -12009,6 +13726,29 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 6,
+    "damage": {
+      "damage_type": {
+        "name": "Cold",
+        "url": "/api/damage-types/cold"
+      },
+      "damage_at_slot_level": {
+        "6": "10d6",
+        "7": "12d6",
+        "8": "14d6",
+        "9": "16d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 10
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -12086,6 +13826,29 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 6,
+    "damage": {
+      "damage_type": {
+        "name": "Piercing",
+        "url": "/api/damage-types/piercing"
+      },
+      "damage_at_slot_level": {
+        "6": "7d8",
+        "7": "8d8",
+        "8": "9d8",
+        "9": "10d8"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "line",
+      "size": 60
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -12248,6 +14011,10 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 2,
+    "area_of_effect": {
+      "type": "cube",
+      "size": 20
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -12287,6 +14054,17 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 9,
+    "dc": {
+      "dc_type": {
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 30
+    },
     "school": {
       "name": "Illusion",
       "url": "/api/magic-schools/illusion"
@@ -12344,6 +14122,26 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 3,
+    "damage": {
+      "damage_type": {
+        "name": "Bludgeoning",
+        "url": "/api/damage-types/bludgeoning"
+      },
+      "damage_at_slot_level": {
+        "3": "3d8"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "name": "STR",
+        "url": "/api/ability-scores/str"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "line",
+      "size": 50
+    },
     "school": {
       "name": "Evocation",
       "url": "/api/magic-schools/evocation"
@@ -12419,6 +14217,10 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 6,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 5
+    },
     "school": {
       "name": "Conjuration",
       "url": "/api/magic-schools/conjuration"
@@ -12446,6 +14248,10 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 2,
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 15
+    },
     "school": {
       "name": "Enchantment",
       "url": "/api/magic-schools/enchantment"
