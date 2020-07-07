@@ -16,6 +16,7 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 2,
+    "attack_type": "ranged",
     "damage": {
       "damage_type": {
         "name": "Acid",
@@ -673,6 +674,7 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 7,
+    "attack_type": "melee",
     "damage": {
       "damage_type": {
         "name": "Force",
@@ -1754,6 +1756,7 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "attack_type": "ranged",
     "damage": {
       "damage_type": {
         "name": "Necrotic",
@@ -2676,6 +2679,13 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 5,
+    "attack_type": "melee",
+    "damage": {
+      "damage_type": {
+        "name": "Poison",
+        "url": "/api/damage-types/poison"
+      }
+    },
     "dc": {
       "dc_type": {
         "name": "CON",
@@ -3832,6 +3842,14 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 5,
+    "dc": {
+      "dc_type": {
+        "name": "CHA",
+        "url": "/api/ability-scores/cha"
+      },
+      "dc_success": "other",
+      "desc": "The creature must succeed on a charisma saving throw or be sent back to its home plane (if it isn't there already)"
+    },
     "school": {
       "name": "Abjuration",
       "url": "/api/magic-schools/abjuration"
@@ -4315,6 +4333,7 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "attack_type": "ranged",
     "damage": {
       "damage_type": {
         "name": "Force",
@@ -4765,6 +4784,7 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 4,
+    "attack_type": "melee",
     "damage": {
       "damage_type": {
         "name": "Piercing",
@@ -5198,6 +5218,7 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "attack_type": "ranged",
     "damage": {
       "damage_type": {
         "name": "Fire",
@@ -6397,6 +6418,7 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 5,
+    "heal_at_slot_level": [],
     "school": {
       "name": "Abjuration",
       "url": "/api/magic-schools/abjuration"
@@ -6572,6 +6594,7 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
+    "attack_type": "ranged",
     "damage": {
       "damage_type": {
         "name": "Radiant",
@@ -6697,6 +6720,13 @@
     "concentration": false,
     "casting_time": "24 hours",
     "level": 5,
+    "dc": {
+      "dc_type": {
+        "name": "CHA",
+        "url": "/api/ability-scores/cha"
+      },
+      "dc_success": "none"
+    },
     "area_of_effect": {
       "type": "sphere",
       "size": 60
@@ -7662,6 +7692,7 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
+    "attack_type": "melee",
     "damage": {
       "damage_type": {
         "name": "Necrotic",
@@ -8816,6 +8847,7 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 5,
+    "attack_type": "ranged",
     "heal_at_slot_level": {
       "5": "3d8 + MOD",
       "6": "4d8 + MOD",
@@ -9862,6 +9894,7 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 7,
+    "attack_type": "melee",
     "dc": {
       "dc_type": {
         "name": "CHA",
@@ -9959,6 +9992,7 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "attack_type": "ranged",
     "damage": {
       "damage_type": {
         "name": "Poison",
@@ -10388,6 +10422,7 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "attack_type": "ranged",
     "damage": {
       "damage_type": {
         "name": "Fire",
@@ -10730,6 +10765,7 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 2,
+    "attack_type": "ranged",
     "school": {
       "name": "Necromancy",
       "url": "/api/magic-schools/necromancy"
@@ -10766,6 +10802,7 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "attack_type": "ranged",
     "damage": {
       "damage_type": {
         "name": "Cold",
@@ -11185,6 +11222,7 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "attack_type": "ranged",
     "damage": {
       "damage_type": {
         "name": "Radiant",
@@ -11778,6 +11816,7 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "attack_type": "melee",
     "damage": {
       "damage_type": {
         "name": "Lightning",
@@ -12387,6 +12426,7 @@
     "concentration": false,
     "casting_time": "1 bonus action",
     "level": 2,
+    "attack_type": "melee",
     "damage": {
       "damage_type": {
         "name": "Force",
@@ -12918,6 +12958,12 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 5,
+    "damage": {
+      "damage_type": {
+        "name": "Psychic",
+        "url": "/api/damage-types/psychic"
+      }
+    },
     "school": {
       "name": "Divination",
       "url": "/api/magic-schools/divination"
@@ -13530,6 +13576,7 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 3,
+    "attack_type": "melee",
     "damage": {
       "damage_type": {
         "name": "Necrotic",
@@ -13581,6 +13628,7 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
+    "attack_type": "ranged",
     "damage": {
       "damage_type": {
         "name": "Psychic",
