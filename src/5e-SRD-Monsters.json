@@ -20214,9 +20214,22 @@
       {
         "name": "Innate Spellcasting",
         "desc": "The mephit can innately cast fog cloud, requiring no material components. Its innate spellcasting ability is Charisma.",
-        "usage": {
-          "type": "per day",
-          "times": 1
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "/api/ability-scores/cha"
+          },
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Fog Cloud",
+              "url": "/api/spells/fog-cloud",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
         }
       }
     ],
