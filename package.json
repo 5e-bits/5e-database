@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "eslint . --ext .js,.json",
     "test": "jest -c jest.config.js",
-    "db:refresh": "./scripts/db-refresh.sh"
+    "db:refresh": "node scripts/db-refresh.js"
   },
   "repository": {
     "type": "git",
