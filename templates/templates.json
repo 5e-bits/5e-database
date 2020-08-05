@@ -1,0 +1,559 @@
+{
+    "class": {
+        "index": "${class.index}",
+        "name": "${class.name}",
+        "hit_die": 0,
+        "proficiency_choices": [
+            {
+                "choose": 0,
+                "type": "${proficiency.type}",
+                "from": [
+                    {
+                        "url": "/api/proficiencies/${proficiency.index}",
+                        "name": "${proficiency.name}"
+                    }
+                ]
+            }
+        ],
+        "proficiencies": [
+            {
+                "name": "${proficiency.name}",
+                "url": "/api/proficiencies/${proficiency.index}"
+            }
+        ],
+        "saving_throws": [
+            {
+                "name": "${ability.name}",
+                "url": "/api/ability-scores/${ability.index}"
+            }
+        ],
+        "starting_equipment": {
+            "url": "/api/starting-equipment/${starting_equipment.index}",
+            "class": "${class.name}"
+        },
+        "class_levels": {
+            "url": "/api/classes/${class.index}/levels",
+            "class": "${class.name}"
+        },
+        "subclasses": [
+            {
+                "url": "/api/subclasses/${subclass.index}",
+                "name": "${subclass.name}"
+            }
+        ],
+        "spellcasting": {
+            "url": "/api/spellcasting/${class.index}",
+            "class": "${class.name}"
+        },
+        "url": "/api/classes/${class.index}"
+    },
+    "equipment": {
+        "index": "${equipment.index}",
+        "name": "${equipment.name}",
+        "equipment_category": {
+            "name": "${equipment_category.name}",
+            "url": "/api/equipment-categories/${equipment_category.index}"
+        },
+        "weapon_category": "${equipment.weapon_category}",
+        "weapon_range": "${equipment.weapon_range}",
+        "category_range": "${equipment.category_range}",
+        "cost": {
+            "quantity": 0,
+            "unit": "${coin.type}"
+        },
+        "damage": {
+            "damage_dice": "0d0",
+            "damage_type": {
+                "url": "/api/damage-types/${damage_type.index}",
+                "name": "${damage_type.name}"
+            }
+        },
+        "range": {
+            "normal": 0,
+            "long": null
+        },
+        "weight": 0,
+        "properties": [
+            {
+                "url": "/api/weapon-properties/${property.index}",
+                "name": "${property.name}"
+            }
+        ],
+        "url": "/api/equipment/${equipment.index}"
+    },
+    "feature": {
+        "index": "${feature.index}",
+        "class": {
+            "url": "/api/classes/${class.index}",
+            "name": "${class.name}"
+        },
+        "subclass": {
+            "url": "/api/classes/${subclass.index}"
+        },
+        "name": "${feature.name}",
+        "level": 0,
+        "desc": [
+            "${feature.desc}"
+        ],
+        "group": "${feature.group}",
+        "url": "/api/features/${feature.index}"
+    },
+    "language": {
+        "index": "${language.index}",
+        "name": "${language.name}",
+        "type": "${language.type}",
+        "typical_speakers": [
+            "${race.name}"
+        ],
+        "script": "${language.script}",
+        "url": "/api/languages/${language.index}"
+    },
+    "level": {
+        "level": 0,
+        "ability_score_bonuses": 0,
+        "prof_bonus": 0,
+        "feature_choices": [
+            {
+                "name": "${feature.name}",
+                "url": "/api/features/${feature.index}"
+            }
+        ],
+        "features": [
+            {
+                "name": "${feature.name}",
+                "url": "/api/features/${feature.index}"
+            }
+        ],
+        "spellcasting": {
+            "cantrips_known": 0,
+            "spell_slots_level_1": 0,
+            "spell_slots_level_2": 0,
+            "spell_slots_level_3": 0,
+            "spell_slots_level_4": 0,
+            "spell_slots_level_5": 0,
+            "spell_slots_level_6": 0,
+            "spell_slots_level_7": 0,
+            "spell_slots_level_8": 0,
+            "spell_slots_level_9": 0
+        },
+        "class_specific": {
+            "class_specific_countable_property": 0
+        },
+        "index": 0,
+        "class": {
+            "name": "${class.name}",
+            "url": "/api/classes/${class.index}"
+        },
+        "subclass": {
+            "name": "${subclass.name}",
+            "url": "/api/subclasses/${subclass.index}"
+        },
+        "url": "/api/classes/${class.index}/levels/"
+    },
+    "monster": {
+        "index": "${monster.index}",
+        "name": "${monster.name}",
+        "size": "${monster.size}",
+        "type": "${monster.type}",
+        "subtype": null,
+        "alignment": "${monster.alignment}",
+        "armor_class": 0,
+        "hit_points": 0,
+        "hit_dice": "0d0",
+        "speed": {
+            "walk": "0 ft.",
+            "climb": "0 ft.",
+            "fly": "0 ft."
+        },
+        "strength": 0,
+        "dexterity": 0,
+        "constitution": 0,
+        "intelligence": 0,
+        "wisdom": 0,
+        "charisma": 0,
+        "proficiencies": [
+            {
+                "name": "${proficiency.name}",
+                "url": "/api/proficiencies/${proficiency.index}",
+                "value": 0
+            }
+        ],
+        "damage_vulnerabilities": [
+            "${damage_type.name}"
+        ],
+        "damage_resistances": [
+            "${damage_type.name}"
+        ],
+        "damage_immunities": [
+            "${damage_type.name}"
+        ],
+        "condition_immunities": [
+            "${condition.name}"
+        ],
+        "senses": {
+            "passive_perception": 0
+        },
+        "languages": "${language.name}",
+        "challenge_rating": 0,
+        "special_abilities": [
+            {
+                "name": "${special_abilities.name}",
+                "desc": "${special_abiltiies.desc}",
+                "usage": {
+                    "type": "${special_abilities.type}",
+                    "times": 0
+                }
+            }
+        ],
+        "actions": [
+            {
+                "name": "${actions.name}",
+                "desc": "${actions.desc}",
+                "attacks": [
+                    {
+                        "name": "${attacks.name}",
+                        "dc": {
+                            "dc_type": {
+                                "name": "${ability.name}",
+                                "url": "/api/ability-scores/${ability.index}"
+                            },
+                            "dc_value": 0,
+                            "success_type": "none"
+                        },
+                        "damage": [
+                            {
+                                "damage_type": {
+                                    "name": "${damage-type.name}",
+                                    "url": "/api/damage-types/${damage-type.index}"
+                                },
+                                "damage_dice": "0d0"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "legendary_actions": [
+            {
+                "name": "${legendary-actions.name}",
+                "desc": "${legendary-actions.desc}",
+                "dc": {
+                    "dc_type": {
+                        "name": "${ability.name}",
+                        "url": "/api/ability-scores/${ability.index}"
+                    },
+                    "dc_value": 0,
+                    "success_type": "none"
+                },
+                "damage": [
+                    {
+                        "damage_type": {
+                            "name": "${damage_type.name}",
+                            "url": "/api/damage-types/${damage_type.index}"
+                        },
+                        "damage_dice": "0d0+0"
+                    }
+                ]
+            }
+        ],
+        "url": "/api/monsters/${monster.index}"
+    },
+    "proficiency": {
+        "index": "${proficiency.index}",
+        "type": "${proficiency.type}",
+        "name": "${proficiency.name}",
+        "classes": [
+            {
+                "url": "/api/classes/${class.index}",
+                "name": "${class.name}"
+            }
+        ],
+        "races": [
+            {
+                "url": "/api/races/${race.index}",
+                "name": "${race.name}"
+            }
+        ],
+        "url": "/api/proficiencies/${proficiency.index}",
+        "references": [
+            {
+                "url": "/api/equipment-categories/${equipment-category.index}",
+                "type": "${type.name}",
+                "name": "${equipment-category.name}"
+            }
+        ]
+    },
+    "race": {
+        "index": "${race.index}",
+        "name": "${race.name}",
+        "speed": 0,
+        "ability_bonuses": [
+            {
+                "name": "${ability.name}",
+                "url": "/api/ability-scores/${ability.index}",
+                "bonus": 0
+            }
+        ],
+        "ability_bonus_options": {
+            "choose": 0,
+            "type": "ability_bonuses",
+            "from": [
+                {
+                    "name": "${ability.name}",
+                    "url": "/api/ability-scores/${ability.index}",
+                    "bonus": 0
+                }
+            ]
+        },
+        "alignment": "${race.alignment}",
+        "age": "${race.age}",
+        "size": "${race.size}",
+        "size_description": "${race.size_description}",
+        "starting_proficiencies": [
+            {
+                "name": "${proficiency.name}",
+                "url": "/api/proficiencies/${proficiency.index}"
+            }
+        ],
+        "starting_proficiency_options": {
+            "choose": 0,
+            "type": "proficiencies",
+            "from": [
+                {
+                    "url": "/api/proficiencies/${proficiency.index}",
+                    "name": "${proficiency.name}"
+                }
+            ]
+        },
+        "languages": [
+            {
+                "name": "${language.name}",
+                "url": "/api/languages/${language.index}"
+            }
+        ],
+        "language_options": {
+            "choose": 0,
+            "type": "languages",
+            "from": [
+                {
+                    "name": "${language.name}",
+                    "url": "/api/languages/${language.index}"
+                }
+            ]
+        },
+        "language_desc": "${language.language_desc}",
+        "traits": [
+            {
+                "name": "${trait.name}",
+                "url": "/api/traits/${trait.index}"
+            }
+        ],
+        "trait_options": {
+            "choose": 0,
+            "from": [
+                {
+                    "name": "${trait.name}",
+                    "url": "/api/traits/${trait.index}"
+                }
+            ]
+        },
+        "subraces": [
+            {
+                "name": "${subrace.name}",
+                "url": "/api/subraces/${subrace.index}"
+            }
+        ],
+        "url": "/api/races/${race.index}"
+    },
+    "spell": {
+        "index": "${spell.index}",
+        "name": "${spell.name}",
+        "desc": [
+            "${spell.desc}"
+        ],
+        "range": "${spell.range}",
+        "components": [
+            "V",
+            "S",
+            "M"
+        ],
+        "ritual": false,
+        "duration": "Instantaneous",
+        "concentration": false,
+        "casting_time": "1 action",
+        "level": 0,
+        "damage": {
+            "damage_type": {
+                "name": "${damage_type.name}",
+                "url": "/api/damage-types/${damage_type.index}"
+            },
+            "damage_at_character_level": {
+                "1": "0d0"
+            }
+        },
+        "dc": {
+            "dc_type": {
+                "name": "${ability.name}",
+                "url": "/api/ability-scores/${ability.index}"
+            },
+            "dc_success": "none"
+        },
+        "school": {
+            "name": "${school.name}",
+            "url": "/api/magic-schools/${school.index}"
+        },
+        "classes": [
+            {
+                "name": "${class.name}",
+                "url": "/api/classes/${class.index}"
+            }
+        ],
+        "subclasses": [
+            {
+                "name": "",
+                "url": "/api/subclasses/"
+            }
+        ],
+        "url": "/api/spells/${spells.index}"
+    },
+    "starting_equipment": {
+        "index": 0,
+        "class": {
+            "url": "/api/classes/${class.index}",
+            "name": "${class.name}"
+        },
+        "starting_equipment": [
+            {
+                "item": {
+                    "url": "/api/equipment/${item.index}",
+                    "name": "${item.name}"
+                },
+                "quantity": 0
+            }
+        ],
+        "choices_to_make": 0,
+        "choice_1": [
+            {
+                "choose": 0,
+                "type": "equipment",
+                "from": [
+                    {
+                        "item": {
+                            "url": "/api/equipment/${item.index}",
+                            "name": "${item.name}"
+                        },
+                        "quantity": 0
+                    }
+                ]
+            }
+        ],
+        "url": "/api/starting-equipment/${starting-equipment.index}"
+    },
+    "subclass": {
+        "index": "${subclass.index}",
+        "class": {
+            "name": "${class.name}"
+        },
+        "name": "${subclass.name}",
+        "subclass_flavor": "${subclass.subclass_flavor}",
+        "desc": [
+            "${subclass.desc}"
+        ],
+        "features": []
+    },
+    "subrace": {
+        "index": "${subrace.index}",
+        "name": "${subrace.name}",
+        "race": {
+            "url": "/api/races/${race.index}",
+            "name": "${race.name}"
+        },
+        "desc": "${subrace.desc}",
+        "ability_bonuses": [
+            {
+                "name": "${ability.name}",
+                "url": "/api/ability-scores/${ability.index}",
+                "bonus": 0
+            }
+        ],
+        "ability_bonus_options": {
+            "choose": 0,
+            "type": "ability_bonuses",
+            "from": [
+                {
+                    "name": "${ability.name}",
+                    "url": "/api/ability-scores/${ability.index}",
+                    "bonus": 0
+                }
+            ]
+        },
+        "starting_proficiencies": [
+            {
+                "name": "${proficiency.name}",
+                "url": "/api/proficiencies/${proficiency.index}"
+            }
+        ],
+        "starting_proficiency_options": {
+            "choose": 0,
+            "type": "proficiencies",
+            "from": [
+                {
+                    "url": "/api/proficiencies/${proficiency.index}",
+                    "name": "${proficiency.name}"
+                }
+            ]
+        },
+        "languages": [
+            {
+                "name": "${language.name}",
+                "url": "/api/languages/${language.index}"
+            }
+        ],
+        "language_options": {
+            "choose": 0,
+            "type": "languages",
+            "from": [
+                {
+                    "name": "${language.name}",
+                    "url": "/api/languages/${language.index}"
+                }
+            ]
+        },
+        "racial_traits": [
+            {
+                "url": "/api/traits/${trait.index}",
+                "name": "${trait.name}"
+            }
+        ],
+        "racial_trait_options": {
+            "choose": 0,
+            "from": [
+                {
+                    "name": "${trait.name}",
+                    "url": "/api/traits/${trait.index}"
+                }
+            ]
+        },
+        "url": "/api/subraces/${subrace.index}"
+    },
+    "trait": {
+        "index": "${trait.index}",
+        "races": [
+            {
+                "name": "${race.name}",
+                "url": "/api/races/${race.index}"
+            }
+        ],
+        "subraces": [
+            {
+                "name": "${subrace.name}",
+                "url": "/api/subraces/${subrace.index}"
+            }
+        ],
+        "name": "${trait.name}",
+        "desc": [
+            "${trait.desc}"
+        ],
+        "url": "/api/traits/${trait.index}"
+    }
+}
