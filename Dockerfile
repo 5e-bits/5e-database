@@ -15,7 +15,7 @@ COPY . /data/db2
 WORKDIR /data/db2
 
 RUN mongod --fork --logpath /var/log/mongodb.log --dbpath /data/db2 \
-  &&  scripts/db-refresh.sh \
+  &&  scripts/db-refresh.js \
   && mongod --dbpath /data/db2 --shutdown \
   && chown -R mongodb /data/db2
 
