@@ -905,39 +905,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Fire Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 18,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Fire",
-                  "url": "/api/damage-types/fire"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Fire Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "13d6"
-              }
-            ]
-          },
-          {
-            "name": "Sleep Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 18,
+                "success_type": "half"
               },
-              "dc_value": 18,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Fire",
+                    "url": "/api/damage-types/fire"
+                  },
+                  "damage_dice": "13d6"
+                }
+              ]
+            },
+            {
+              "name": "Sleep Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 18,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/adult-brass-dragon"
@@ -1114,39 +1118,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Lightning Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 19,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Lightning",
-                  "url": "/api/damage-types/lightning"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Lightning Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "12d10"
-              }
-            ]
-          },
-          {
-            "name": "Repulsion Breath",
-            "dc": {
-              "dc_type": {
-                "name": "STR",
-                "url": "/api/ability-scores/str"
+                "dc_value": 19,
+                "success_type": "half"
               },
-              "dc_value": 19,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Lightning",
+                    "url": "/api/damage-types/lightning"
+                  },
+                  "damage_dice": "12d10"
+                }
+              ]
+            },
+            {
+              "name": "Repulsion Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "STR",
+                  "url": "/api/ability-scores/str"
+                },
+                "dc_value": 19,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "legendary_actions": [
@@ -1350,39 +1358,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Acid Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 18,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Acid",
-                  "url": "/api/damage-types/acid"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Acid Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "12d8"
-              }
-            ]
-          },
-          {
-            "name": "Slowing Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 18,
+                "success_type": "half"
               },
-              "dc_value": 18,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Acid",
+                    "url": "/api/damage-types/acid"
+                  },
+                  "damage_dice": "12d8"
+                }
+              ]
+            },
+            {
+              "name": "Slowing Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 18,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "legendary_actions": [
@@ -1595,39 +1607,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Fire Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 21,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Fire",
-                  "url": "/api/damage-types/fire"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Fire Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "12d10"
-              }
-            ]
-          },
-          {
-            "name": "Weakening Breath",
-            "dc": {
-              "dc_type": {
-                "name": "STR",
-                "url": "/api/ability-scores/str"
+                "dc_value": 21,
+                "success_type": "half"
               },
-              "dc_value": 21,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Fire",
+                    "url": "/api/damage-types/fire"
+                  },
+                  "damage_dice": "12d10"
+                }
+              ]
+            },
+            {
+              "name": "Weakening Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "STR",
+                  "url": "/api/ability-scores/str"
+                },
+                "dc_value": 21,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "legendary_actions": [
@@ -2351,39 +2367,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Cold Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
-              },
-              "dc_value": 20,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Cold",
-                  "url": "/api/damage-types/cold"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Cold Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
                 },
-                "damage_dice": "13d8"
-              }
-            ]
-          },
-          {
-            "name": "Paralyzing Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 20,
+                "success_type": "half"
               },
-              "dc_value": 20,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Cold",
+                    "url": "/api/damage-types/cold"
+                  },
+                  "damage_dice": "13d8"
+                }
+              ]
+            },
+            {
+              "name": "Paralyzing Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 20,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "legendary_actions": [
@@ -3366,39 +3386,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Fire Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 21,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Bludgeoning",
-                  "url": "/api/damage-types/bludgeoning"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Fire Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "2d6+8"
-              }
-            ]
-          },
-          {
-            "name": "Sleep Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 21,
+                "success_type": "half"
               },
-              "dc_value": 21,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Bludgeoning",
+                    "url": "/api/damage-types/bludgeoning"
+                  },
+                  "damage_dice": "2d6+8"
+                }
+              ]
+            },
+            {
+              "name": "Sleep Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 21,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       },
       {
         "name": "Change Shape",
@@ -3610,39 +3634,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Lightning Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 23,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Lightning",
-                  "url": "/api/damage-types/lightning"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Lightning Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "16d10"
-              }
-            ]
-          },
-          {
-            "name": "Repulsion Breath",
-            "dc": {
-              "dc_type": {
-                "name": "STR",
-                "url": "/api/ability-scores/str"
+                "dc_value": 23,
+                "success_type": "half"
               },
-              "dc_value": 23,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Lightning",
+                    "url": "/api/damage-types/lightning"
+                  },
+                  "damage_dice": "16d10"
+                }
+              ]
+            },
+            {
+              "name": "Repulsion Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "STR",
+                  "url": "/api/ability-scores/str"
+                },
+                "dc_value": 23,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       },
       {
         "name": "Change Shape",
@@ -3850,39 +3878,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Acid Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 22,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Acid",
-                  "url": "/api/damage-types/acid"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Acid Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "14d8"
-              }
-            ]
-          },
-          {
-            "name": "Slowing Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 22,
+                "success_type": "half"
               },
-              "dc_value": 22,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Acid",
+                    "url": "/api/damage-types/acid"
+                  },
+                  "damage_dice": "14d8"
+                }
+              ]
+            },
+            {
+              "name": "Slowing Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 22,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       },
       {
         "name": "Change Shape",
@@ -4099,39 +4131,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Fire Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 24,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Fire",
-                  "url": "/api/damage-types/fire"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Fire Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "13d10"
-              }
-            ]
-          },
-          {
-            "name": "Weakening Breath",
-            "dc": {
-              "dc_type": {
-                "name": "STR",
-                "url": "/api/ability-scores/str"
+                "dc_value": 24,
+                "success_type": "half"
               },
-              "dc_value": 24,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Fire",
+                    "url": "/api/damage-types/fire"
+                  },
+                  "damage_dice": "13d10"
+                }
+              ]
+            },
+            {
+              "name": "Weakening Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "STR",
+                  "url": "/api/ability-scores/str"
+                },
+                "dc_value": 24,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       },
       {
         "name": "Change Shape",
@@ -4811,39 +4847,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Cold Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
-              },
-              "dc_value": 24,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Cold",
-                  "url": "/api/damage-types/cold"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Cold Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
                 },
-                "damage_dice": "15d8"
-              }
-            ]
-          },
-          {
-            "name": "Paralyzing Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 24,
+                "success_type": "half"
               },
-              "dc_value": 24,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Cold",
+                    "url": "/api/damage-types/cold"
+                  },
+                  "damage_dice": "15d8"
+                }
+              ]
+            },
+            {
+              "name": "Paralyzing Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 24,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       },
       {
         "name": "Change Shape",
@@ -8276,39 +8316,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Fire Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 11,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Fire",
-                  "url": "/api/damage-types/fire"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Fire Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "4d6"
-              }
-            ]
-          },
-          {
-            "name": "Sleep Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 11,
+                "success_type": "half"
               },
-              "dc_value": 11,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Fire",
+                    "url": "/api/damage-types/fire"
+                  },
+                  "damage_dice": "4d6"
+                }
+              ]
+            },
+            {
+              "name": "Sleep Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 11,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/brass-dragon-wyrmling"
@@ -8406,39 +8450,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Lightning Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 12,
-              "success_type": "hafl"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Lightning",
-                  "url": "/api/damage-types/lightning"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Lightning Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "3d10"
-              }
-            ]
-          },
-          {
-            "name": "Repulsion Breath",
-            "dc": {
-              "dc_type": {
-                "name": "STR",
-                "url": "/api/ability-scores/str"
+                "dc_value": 12,
+                "success_type": "hafl"
               },
-              "dc_value": 12,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Lightning",
+                    "url": "/api/damage-types/lightning"
+                  },
+                  "damage_dice": "3d10"
+                }
+              ]
+            },
+            {
+              "name": "Repulsion Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "STR",
+                  "url": "/api/ability-scores/str"
+                },
+                "dc_value": 12,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/bronze-dragon-wyrmling"
@@ -10026,39 +10074,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Acid Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 11,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Acid",
-                  "url": "/api/damage-types/acid"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Acid Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "4d8"
-              }
-            ]
-          },
-          {
-            "name": "Slowing Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 11,
+                "success_type": "half"
               },
-              "dc_value": 11,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Acid",
+                    "url": "/api/damage-types/acid"
+                  },
+                  "damage_dice": "4d8"
+                }
+              ]
+            },
+            {
+              "name": "Slowing Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 11,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/copper-dragon-wyrmling"
@@ -17501,39 +17553,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Fire Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 13,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Fire",
-                  "url": "/api/damage-types/fire"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Fire Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "4d10"
-              }
-            ]
-          },
-          {
-            "name": "Weakening Breath",
-            "dc": {
-              "dc_type": {
-                "name": "STR",
-                "url": "/api/ability-scores/str"
+                "dc_value": 13,
+                "success_type": "half"
               },
-              "dc_value": 13,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Fire",
+                    "url": "/api/damage-types/fire"
+                  },
+                  "damage_dice": "4d10"
+                }
+              ]
+            },
+            {
+              "name": "Weakening Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "STR",
+                  "url": "/api/ability-scores/str"
+                },
+                "dc_value": 13,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/gold-dragon-wyrmling"
@@ -28901,39 +28957,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Cold Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
-              },
-              "dc_value": 13,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Cold",
-                  "url": "/api/damage-types/cold"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Cold Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
                 },
-                "damage_dice": "4d8"
-              }
-            ]
-          },
-          {
-            "name": "Paralyzing Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 13,
+                "success_type": "half"
               },
-              "dc_value": 13,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Cold",
+                    "url": "/api/damage-types/cold"
+                  },
+                  "damage_dice": "4d8"
+                }
+              ]
+            },
+            {
+              "name": "Paralyzing Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 13,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/silver-dragon-wyrmling"
@@ -35536,40 +35596,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attack_bonus": 0,
-        "attacks": [
-          {
-            "name": "Fire Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 14,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Fire",
-                  "url": "/api/damage-types/fire"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Fire Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "12d6"
-              }
-            ]
-          },
-          {
-            "name": "Sleep Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 14,
+                "success_type": "half"
               },
-              "dc_value": 14,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Fire",
+                    "url": "/api/damage-types/fire"
+                  },
+                  "damage_dice": "12d6"
+                }
+              ]
+            },
+            {
+              "name": "Sleep Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 14,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/young-brass-dragon"
@@ -35707,40 +35770,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attack_bonus": 0,
-        "attacks": [
-          {
-            "name": "Lightning Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 15,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Lightning",
-                  "url": "/api/damage-types/lightning"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Lightning Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "10d10"
-              }
-            ]
-          },
-          {
-            "name": "Repulsion Breath",
-            "dc": {
-              "dc_type": {
-                "name": "STR",
-                "url": "/api/ability-scores/str"
+                "dc_value": 15,
+                "success_type": "half"
               },
-              "dc_value": 15,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Lightning",
+                    "url": "/api/damage-types/lightning"
+                  },
+                  "damage_dice": "10d10"
+                }
+              ]
+            },
+            {
+              "name": "Repulsion Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "STR",
+                  "url": "/api/ability-scores/str"
+                },
+                "dc_value": 15,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/young-bronze-dragon"
@@ -35872,39 +35938,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Acid Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 14,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Acid",
-                  "url": "/api/damage-types/acid"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Acid Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "9d8"
-              }
-            ]
-          },
-          {
-            "name": "Slowing Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 14,
+                "success_type": "half"
               },
-              "dc_value": 14,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Acid",
+                    "url": "/api/damage-types/acid"
+                  },
+                  "damage_dice": "9d8"
+                }
+              ]
+            },
+            {
+              "name": "Slowing Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 14,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/young-copper-dragon"
@@ -36047,39 +36117,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Fire Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 17,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Fire",
-                  "url": "/api/damage-types/fire"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Fire Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "10d10"
-              }
-            ]
-          },
-          {
-            "name": "Weakening Breath",
-            "dc": {
-              "dc_type": {
-                "name": "STR",
-                "url": "/api/ability-scores/str"
+                "dc_value": 17,
+                "success_type": "half"
               },
-              "dc_value": 17,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Fire",
+                    "url": "/api/damage-types/fire"
+                  },
+                  "damage_dice": "10d10"
+                }
+              ]
+            },
+            {
+              "name": "Weakening Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "STR",
+                  "url": "/api/ability-scores/str"
+                },
+                "dc_value": 17,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/young-gold-dragon"
@@ -36531,39 +36605,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Cold Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
-              },
-              "dc_value": 17,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Cold",
-                  "url": "/api/damage-types/cold"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Cold Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
                 },
-                "damage_dice": "12d8"
-              }
-            ]
-          },
-          {
-            "name": "Paralyzing Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 17,
+                "success_type": "half"
               },
-              "dc_value": 17,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Cold",
+                    "url": "/api/damage-types/cold"
+                  },
+                  "damage_dice": "12d8"
+                }
+              ]
+            },
+            {
+              "name": "Paralyzing Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 17,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/young-silver-dragon"
