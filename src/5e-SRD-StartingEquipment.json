@@ -179,11 +179,12 @@
 		}, {
 			"choose": 1,
 			"type": "equipment",
-			"from": [
-				{ "equipment": { "url": "/api/equipment/amulet", "name": "Amulet" }, "quantity": 1 },
-				{ "equipment": { "url": "/api/equipment/emblem", "name": "Emblem" }, "quantity": 1 },
-				{ "equipment": { "url": "/api/equipment/reliquary", "name": "Reliquary" }, "quantity": 1 }
-			]
+			"from": {
+				"equipment_category": {
+					"name": "Holy Symbols",
+					"url": "/api/equipment-categories/holy-symbols"
+				}
+			}
 		}
 	],
 	"url": "/api/starting-equipment/3"
@@ -237,12 +238,12 @@
 		}, {
 			"choose": 1,
 			"type": "equipment",
-			"from": [
-				{ "equipment": { "url": "/api/equipment/sprig-of-mistletoe", "name": "Sprig of mistletoe" }, "quantity": 1 },
-				{ "equipment": { "url": "/api/equipment/totem", "name": "Totem" }, "quantity": 1 },
-				{ "equipment": { "url": "/api/equipment/wooden-staff", "name": "Wooden staff" }, "quantity": 1 },
-				{ "equipment": { "url": "/api/equipment/yew-wand", "name": "Yew wand" }, "quantity": 1 }
-			]
+			"from": {
+				"equipment_category": {
+					"name": "Druidic Foci",
+					"url": "/api/equipment-categories/druidic-foci"
+				}
+			}
 		}
 	],
 	"url": "/api/starting-equipment/4"
@@ -408,11 +409,12 @@
 		}, {
 			"choose": 1,
 			"type": "equipment",
-			"from": [
-				{ "equipment": { "url": "/api/equipment/amulet", "name": "Amulet" }, "quantity": 1 },
-				{ "equipment": { "url": "/api/equipment/emblem", "name": "Emblem" }, "quantity": 1 },
-				{ "equipment": { "url": "/api/equipment/reliquary", "name": "Reliquary" }, "quantity": 1 }
-			]
+			"from": {
+				"equipment_category": {
+					"name": "Holy Symbols",
+					"url": "/api/equipment-categories/holy-symbols"
+				}
+			}
 		}
 	],
 	"url": "/api/starting-equipment/7"
@@ -543,13 +545,12 @@
 					"equipment_option": {
 						"choose": 1,
 						"type": "equipment",
-						"from": [
-							{ "equipment": { "url": "/api/equipment/crystal", "name": "Crystal" }, "quantity": 1 },
-							{ "equipment": { "url": "/api/equipment/orb", "name": "Orb" }, "quantity": 1 },
-							{ "equipment": { "url": "/api/equipment/rod", "name": "Rod" }, "quantity": 1 },
-							{ "equipment": { "url": "/api/equipment/staff", "name": "Staff" }, "quantity": 1 },
-							{ "equipment": { "url": "/api/equipment/wand", "name": "Wand" }, "quantity": 1 }
-						]
+						"from": {
+							"equipment_category": {
+								"name": "Arcane Foci",
+								"url": "/api/equipment-categories/arcane-foci"
+							}
+						}
 					}
 				}
 			]
@@ -603,13 +604,12 @@
 					"equipment_option": {
 						"choose": 1,
 						"type": "equipment",
-						"from": [
-							{ "equipment": { "url": "/api/equipment/crystal", "name": "Crystal"}, "quantity": 1 },
-							{ "equipment": { "url": "/api/equipment/orb", "name": "Orb"}, "quantity": 1 },
-							{ "equipment": { "url": "/api/equipment/rod", "name": "Rod"}, "quantity": 1 },
-							{ "equipment": { "url": "/api/equipment/staff", "name": "Staff"}, "quantity": 1 },
-							{ "equipment": { "url": "/api/equipment/wand", "name": "Wand"}, "quantity": 1 }
-						]
+						"from": {
+							"equipment_category": {
+								"name": "Arcane foci",
+								"url": "/api/equipment-categories/arcane-foci"
+							}
+						}
 					}
 				}
 			]
@@ -658,13 +658,12 @@
 					"equipment_option": {
 						"choose": 1,
 						"type": "equipment",
-						"from": [
-							{ "equipment": { "url": "/api/equipment/crystal", "name": "Crystal "}, "quantity": 1 },
-							{ "equipment": { "url": "/api/equipment/orb", "name": "Orb" }, "quantity": 1 },
-							{ "equipment": { "url": "/api/equipment/rod", "name": "Rod" }, "quantity": 1 },
-							{ "equipment": { "url": "/api/equipment/staff", "name": "Staff" }, "quantity": 1 },
-							{ "equipment": { "url": "/api/equipment/wand", "name": "Wand" }, "quantity": 1 }
-						]
+						"from": {
+							"equipment_category": {
+								"name": "Arcane Foci",
+								"url": "/api/equipment-categories/arcane-foci"
+							}
+						}
 					}
 				}
 			]
