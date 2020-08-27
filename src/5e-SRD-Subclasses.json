@@ -2,40 +2,39 @@
   {
     "index": "berserker",
     "class": {
-      "url": "/api/classes/barbarian",
-      "name": "Barbarian"
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/classes/barbarian"
     },
     "name": "Berserker",
     "subclass_flavor": "Primal Path",
     "desc": [
       "For some barbarians, rage is a means to an end--that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker's rage, you thrill in the chaos of battle, heedless of your own health or well-being."
     ],
-    "subclass_levels": {
-      "url": "/api/subclasses/berserker/levels"
-    },
+    "subclass_levels": "/api/subclasses/berserker/levels",
     "url": "/api/subclasses/berserker"
   },
   {
     "index": "lore",
     "class": {
-      "url": "/api/classes/bard",
-      "name": "Bard"
+      "index": "bard",
+      "name": "Bard",
+      "url": "/api/classes/bard"
     },
     "name": "Lore",
     "subclass_flavor": "Bard College",
     "desc": [
       "Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales. Whether singing folk ballads in taverns or elaborate compositions in royal courts, these bards use their gifts to hold audiences spellbound. When the applause dies down, the audience members might find themselves questioning everything they held to be true, from their faith in the priesthood of the local temple to their loyalty to the king. The loyalty of these bards lies in the pursuit of beauty and truth, not in fealty to a monarch or following the tenets of a deity. A noble who keeps such a bard as a herald or advisor knows that the bard would rather be honest than politic. The college's members gather in libraries and sometimes in actual colleges, complete with classrooms and dormitories, to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority."
     ],
-    "subclass_levels": {
-      "url": "/api/subclasses/lore/levels"
-    },
+    "subclass_levels": "/api/subclasses/lore/levels",
     "url": "/api/subclasses/lore"
   },
   {
     "index": "life",
     "class": {
-      "url": "/api/classes/cleric",
-      "name": "Cleric"
+      "index": "cleric",
+      "name": "Cleric",
+      "url": "/api/classes/cleric"
     },
     "name": "Life",
     "subclass_flavor": "Divine Domain",
@@ -46,131 +45,148 @@
       {
         "prerequisites": [
           {
-            "name": "Cleric 1",
+            "index": "cleric-1",
             "type": "level",
+            "name": "Cleric 1",
             "url": "/api/classes/cleric/levels/1"
           }
         ],
         "spell": {
-          "url": "/api/spells/bless",
-          "name": "Bless"
+          "index": "bless",
+          "name": "Bless",
+          "url": "/api/spells/bless"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Cleric 1",
+            "index": "cleric-1",
             "type": "level",
+            "name": "Cleric 1",
             "url": "/api/classes/cleric/levels/1"
           }
         ],
         "spell": {
-          "url": "/api/spells/cure-wounds",
-          "name": "Cure Wounds"
+          "index": "cure-wounds",
+          "name": "Cure Wounds",
+          "url": "/api/spells/cure-wounds"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Cleric 3",
+            "index": "cleric-3",
             "type": "level",
+            "name": "Cleric 3",
             "url": "/api/classes/cleric/levels/3"
           }
         ],
         "spell": {
-          "url": "/api/spells/lesser-restoration",
-          "name": "Lesser Restoration"
+          "index": "lesser-restoration",
+          "name": "Lesser Restoration",
+          "url": "/api/spells/lesser-restoration"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Cleric 3",
+            "index": "cleric-3",
             "type": "level",
+            "name": "Cleric 3",
             "url": "/api/classes/cleric/levels/3"
           }
         ],
         "spell": {
-          "url": "/api/spells/spiritual-weapon",
-          "name": "Spiritual Weapon"
+          "index": "spiritual-weapon",
+          "name": "Spiritual Weapon",
+          "url": "/api/spells/spiritual-weapon"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Cleric 5",
+            "index": "cleric-5",
             "type": "level",
+            "name": "Cleric 5",
             "url": "/api/classes/cleric/levels/5"
           }
         ],
         "spell": {
-          "url": "/api/spells/beacon-of-hope",
-          "name": "Beacon of Hope"
+          "index": "beacon-of-hope",
+          "name": "Beacon of Hope",
+          "url": "/api/spells/beacon-of-hope"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Cleric 5",
+            "index": "cleric-5",
             "type": "level",
+            "name": "Cleric 5",
             "url": "/api/classes/cleric/levels/5"
           }
         ],
         "spell": {
-          "url": "/api/spells/revivify",
-          "name": "Revivify"
+          "index": "revivify",
+          "name": "Revivify",
+          "url": "/api/spells/revivify"
         }
       },
       {
         "prerequisites": [
           {
+            "index": "cleric-7",
+            "type": "level",
             "name": "Cleric 7",
-            "type": "level",
             "url": "/api/classes/cleric/levels/7"
           }
         ],
         "spell": {
-          "url": "/api/spells/death-ward",
-          "name": "Death Ward"
+          "index": "death-ward",
+          "name": "Death Ward",
+          "url": "/api/spells/death-ward"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Cleric 9",
+            "index": "cleric-9",
             "type": "level",
+            "name": "Cleric 9",
             "url": "/api/classes/cleric/levels/9"
           }
         ],
         "spell": {
-          "url": "/api/spells/mass-cure-wounds",
-          "name": "Mass Cure Wounds"
+          "index": "mass-cure-wounds",
+          "name": "Mass Cure Wounds",
+          "url": "/api/spells/mass-cure-wounds"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Cleric 9",
+            "index": "cleric-9",
             "type": "level",
+            "name": "Cleric 9",
             "url": "/api/classes/cleric/levels/9"
           }
         ],
         "spell": {
-          "url": "/api/spells/raise-dead",
-          "name": "Raise Dead"
+          "index": "raise-dead",
+          "name": "Raise Dead",
+          "url": "/api/spells/raise-dead"
         }
       }
     ],
-    "subclass_levels": {
-      "url": "/api/subclasses/life/levels"
-    },
+    "subclass_levels": "/api/subclasses/life/levels",
     "url": "/api/subclasses/life"
   },
   {
     "index": "land",
     "class": {
-      "url": "/api/classes/druid",
-      "name": "Druid"
+      "index": "druid",
+      "name": "Druid",
+      "url": "/api/classes/druid"
     },
     "name": "Land",
     "subclass_flavor": "Druid Circle",
@@ -181,1054 +197,1219 @@
       {
         "prerequisites": [
           {
-            "name": "Druid 3",
+            "index": "druid-3",
             "type": "level",
+            "name": "Druid 3",
             "url": "/api/classes/druid/levels/3"
           },
           {
-            "name": "Circle of the Land: Arctic",
+            "index": "circle-of-the-land-arctic",
             "type": "feature",
+            "name": "Circle of the Land: Arctic",
             "url": "/api/features/circle-of-the-land-arctic"
           }
         ],
         "spell": {
-          "url": "/api/spells/hold-person",
-          "name": "Hold Person"
+          "index": "hold-person",
+          "name": "Hold Person",
+          "url": "/api/spells/hold-person"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 3",
+            "index": "druid-3",
             "type": "level",
+            "name": "Druid 3",
             "url": "/api/classes/druid/levels/3"
           },
           {
-            "name": "Circle of the Land: Arctic",
+            "index": "circle-of-the-land-arctic",
             "type": "feature",
+            "name": "Circle of the Land: Arctic",
             "url": "/api/features/circle-of-the-land-arctic"
           }
         ],
         "spell": {
-          "url": "/api/spells/spike-growth",
-          "name": "Spike Growth"
+          "index": "spike-growth",
+          "name": "Spike Growth",
+          "url": "/api/spells/spike-growth"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 5",
+            "index": "druid-5",
             "type": "level",
+            "name": "Druid 5",
             "url": "/api/classes/druid/levels/5"
           },
           {
-            "name": "Circle of the Land: Arctic",
+            "index": "circle-of-the-land-arctic",
             "type": "feature",
+            "name": "Circle of the Land: Arctic",
             "url": "/api/features/circle-of-the-land-arctic"
           }
         ],
         "spell": {
-          "url": "/api/spells/sleet-storm",
-          "name": "Sleet Storm"
+          "index": "sleet-storm",
+          "name": "Sleet Storm",
+          "url": "/api/spells/sleet-storm"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 5",
+            "index": "druid-5",
             "type": "level",
+            "name": "Druid 5",
             "url": "/api/classes/druid/levels/5"
           },
           {
-            "name": "Circle of the Land: Arctic",
+            "index": "circle-of-the-land-arctic",
             "type": "feature",
+            "name": "Circle of the Land: Arctic",
             "url": "/api/features/circle-of-the-land-arctic"
           }
         ],
         "spell": {
-          "url": "/api/spells/slow",
-          "name": "Slow"
+          "index": "slow",
+          "name": "Slow",
+          "url": "/api/spells/slow"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 7",
+            "index": "druid-7",
             "type": "level",
+            "name": "Druid 7",
             "url": "/api/classes/druid/levels/7"
           },
           {
-            "name": "Circle of the Land: Arctic",
+            "index": "circle-of-the-land-arctic",
             "type": "feature",
+            "name": "Circle of the Land: Arctic",
             "url": "/api/features/circle-of-the-land-arctic"
           }
         ],
         "spell": {
-          "url": "/api/spells/freedom-of-movement",
-          "name": "Freedom of Movement"
+          "index": "freedom-of-movement",
+          "name": "Freedom of Movement",
+          "url": "/api/spells/freedom-of-movement"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 7",
+            "index": "druid-7",
             "type": "level",
+            "name": "Druid 7",
             "url": "/api/classes/druid/levels/7"
           },
           {
-            "name": "Circle of the Land: Arctic",
+            "index": "circle-of-the-land-arctic",
             "type": "feature",
+            "name": "Circle of the Land: Arctic",
             "url": "/api/features/circle-of-the-land-arctic"
           }
         ],
         "spell": {
-          "url": "/api/spells/holy-aura",
-          "name": "Holy Aura"
+          "index": "holy-aura",
+          "name": "Holy Aura",
+          "url": "/api/spells/holy-aura"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 9",
+            "index": "druid-9",
             "type": "level",
+            "name": "Druid 9",
             "url": "/api/classes/druid/levels/9"
           },
           {
-            "name": "Circle of the Land: Arctic",
+            "index": "circle-of-the-land-arctic",
             "type": "feature",
+            "name": "Circle of the Land: Arctic",
             "url": "/api/features/circle-of-the-land-arctic"
           }
         ],
         "spell": {
-          "url": "/api/spells/commune",
-          "name": "Commune"
+          "index": "commune",
+          "name": "Commune",
+          "url": "/api/spells/commune"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 9",
+            "index": "druid-9",
             "type": "level",
+            "name": "Druid 9",
             "url": "/api/classes/druid/levels/9"
           },
           {
-            "name": "Circle of the Land: Arctic",
+            "index": "circle-of-the-land-arctic",
             "type": "feature",
+            "name": "Circle of the Land: Arctic",
             "url": "/api/features/circle-of-the-land-arctic"
           }
         ],
         "spell": {
-          "url": "/api/spells/comprehend-languages",
-          "name": "Comprehend Languages"
+          "index": "comprehend-languages",
+          "name": "Comprehend Languages",
+          "url": "/api/spells/comprehend-languages"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 3",
+            "index": "druid-3",
             "type": "level",
+            "name": "Druid 3",
             "url": "/api/classes/druid/levels/3"
           },
           {
-            "name": "Circle of the Land: Coast",
+            "index": "circle-of-the-land-coast",
             "type": "feature",
+            "name": "Circle of the Land: Coast",
             "url": "/api/features/circle-of-the-land-coast"
           }
         ],
         "spell": {
-          "url": "/api/spells/mirror-image",
-          "name": "Mirror Image"
+          "index": "mirror-image",
+          "name": "Mirror Image",
+          "url": "/api/spells/mirror-image"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 3",
+            "index": "druid-3",
             "type": "level",
+            "name": "Druid 3",
             "url": "/api/classes/druid/levels/3"
           },
           {
-            "name": "Circle of the Land: Coast",
+            "index": "circle-of-the-land-coast",
             "type": "feature",
+            "name": "Circle of the Land: Coast",
             "url": "/api/features/circle-of-the-land-coast"
           }
         ],
         "spell": {
-          "url": "/api/spells/misty-step",
-          "name": "Misty Step"
+          "index": "misty-step",
+          "name": "Misty Step",
+          "url": "/api/spells/misty-step"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 5",
+            "index": "druid-5",
             "type": "level",
+            "name": "Druid 5",
             "url": "/api/classes/druid/levels/5"
           },
           {
-            "name": "Circle of the Land: Coast",
+            "index": "circle-of-the-land-coast",
             "type": "feature",
+            "name": "Circle of the Land: Coast",
             "url": "/api/features/circle-of-the-land-coast"
           }
         ],
         "spell": {
-          "url": "/api/spells/water-breathing",
-          "name": "Water Breathing"
+          "index": "water-breathing",
+          "name": "Water Breathing",
+          "url": "/api/spells/water-breathing"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 5",
+            "index": "druid-5",
             "type": "level",
+            "name": "Druid 5",
             "url": "/api/classes/druid/levels/5"
           },
           {
-            "name": "Circle of the Land: Coast",
+            "index": "circle-of-the-land-coast",
             "type": "feature",
+            "name": "Circle of the Land: Coast",
             "url": "/api/features/circle-of-the-land-coast"
           }
         ],
         "spell": {
-          "url": "/api/spells/water-walk",
-          "name": "Water Walk"
+          "index": "water-walk",
+          "name": "Water Walk",
+          "url": "/api/spells/water-walk"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 7",
+            "index": "druid-7",
             "type": "level",
+            "name": "Druid 7",
             "url": "/api/classes/druid/levels/7"
           },
           {
-            "name": "Circle of the Land: Coast",
+            "index": "circle-of-the-land-coast",
             "type": "feature",
+            "name": "Circle of the Land: Coast",
             "url": "/api/features/circle-of-the-land-coast"
           }
         ],
         "spell": {
-          "url": "/api/spells/control-water",
-          "name": "Control Water"
+          "index": "control-water",
+          "name": "Control Water",
+          "url": "/api/spells/control-water"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 7",
+            "index": "druid-7",
             "type": "level",
+            "name": "Druid 7",
             "url": "/api/classes/druid/levels/7"
           },
           {
-            "name": "Circle of the Land: Coast",
+            "index": "circle-of-the-land-coast",
             "type": "feature",
+            "name": "Circle of the Land: Coast",
             "url": "/api/features/circle-of-the-land-coast"
           }
         ],
         "spell": {
-          "url": "/api/spells/freedom-of-movement",
-          "name": "Freedom of Movement"
+          "index": "freedom-of-movement",
+          "name": "Freedom of Movement",
+          "url": "/api/spells/freedom-of-movement"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 9",
+            "index": "druid-9",
             "type": "level",
+            "name": "Druid 9",
             "url": "/api/classes/druid/levels/9"
           },
           {
-            "name": "Circle of the Land: Coast",
+            "index": "circle-of-the-land-coast",
             "type": "feature",
+            "name": "Circle of the Land: Coast",
             "url": "/api/features/circle-of-the-land-coast"
           }
         ],
         "spell": {
-          "url": "/api/spells/conjure-elemental",
-          "name": "Conjure Elemental"
+          "index": "conjure-elemental",
+          "name": "Conjure Elemental",
+          "url": "/api/spells/conjure-elemental"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 9",
+            "index": "druid-9",
             "type": "level",
+            "name": "Druid 9",
             "url": "/api/classes/druid/levels/9"
           },
           {
-            "name": "Circle of the Land: Coast",
+            "index": "circle-of-the-land-coast",
             "type": "feature",
+            "name": "Circle of the Land: Coast",
             "url": "/api/features/circle-of-the-land-coast"
           }
         ],
         "spell": {
-          "url": "/api/spells/scrying",
-          "name": "Scrying"
+          "index": "scrying",
+          "name": "Scrying",
+          "url": "/api/spells/scrying"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 3",
+            "index": "druid-3",
             "type": "level",
+            "name": "Druid 3",
             "url": "/api/classes/druid/levels/3"
           },
           {
-            "name": "Circle of the Land: Desert",
+            "index": "circle-of-the-land-desert",
             "type": "feature",
+            "name": "Circle of the Land: Desert",
             "url": "/api/features/circle-of-the-land-desert"
           }
         ],
         "spell": {
-          "url": "/api/spells/blur",
-          "name": "Blur"
+          "index": "blur",
+          "name": "Blur",
+          "url": "/api/spells/blur"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 3",
+            "index": "druid-3",
             "type": "level",
+            "name": "Druid 3",
             "url": "/api/classes/druid/levels/3"
           },
           {
-            "name": "Circle of the Land: Desert",
+            "index": "circle-of-the-land-desert",
             "type": "feature",
+            "name": "Circle of the Land: Desert",
             "url": "/api/features/circle-of-the-land-desert"
           }
         ],
         "spell": {
-          "url": "/api/spells/silence",
-          "name": "Silence"
+          "index": "silence",
+          "name": "Silence",
+          "url": "/api/spells/silence"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 5",
+            "index": "druid-5",
             "type": "level",
+            "name": "Druid 5",
             "url": "/api/classes/druid/levels/5"
           },
           {
-            "name": "Circle of the Land: Desert",
+            "index": "circle-of-the-land-desert",
             "type": "feature",
+            "name": "Circle of the Land: Desert",
             "url": "/api/features/circle-of-the-land-desert"
           }
         ],
         "spell": {
-          "url": "/api/spells/create-food-and-water",
-          "name": "Create Food and Water"
+          "index": "create-food-and-water",
+          "name": "Create Food and Water",
+          "url": "/api/spells/create-food-and-water"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 5",
+            "index": "druid-5",
             "type": "level",
+            "name": "Druid 5",
             "url": "/api/classes/druid/levels/5"
           },
           {
-            "name": "Circle of the Land: Desert",
+            "index": "circle-of-the-land-desert",
             "type": "feature",
+            "name": "Circle of the Land: Desert",
             "url": "/api/features/circle-of-the-land-desert"
           }
         ],
         "spell": {
-          "url": "/api/spells/protection-from-energy",
-          "name": "Protection From Energy"
+          "index": "protection-from-energy",
+          "name": "Protection From Energy",
+          "url": "/api/spells/protection-from-energy"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 7",
+            "index": "druid-7",
             "type": "level",
+            "name": "Druid 7",
             "url": "/api/classes/druid/levels/7"
           },
           {
-            "name": "Circle of the Land: Desert",
+            "index": "circle-of-the-land-desert",
             "type": "feature",
+            "name": "Circle of the Land: Desert",
             "url": "/api/features/circle-of-the-land-desert"
           }
         ],
         "spell": {
-          "url": "/api/spells/blight",
-          "name": "Blight"
+          "index": "blight",
+          "name": "Blight",
+          "url": "/api/spells/blight"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 7",
+            "index": "druid-7",
             "type": "level",
+            "name": "Druid 7",
             "url": "/api/classes/druid/levels/7"
           },
           {
-            "name": "Circle of the Land: Desert",
+            "index": "circle-of-the-land-desert",
             "type": "feature",
+            "name": "Circle of the Land: Desert",
             "url": "/api/features/circle-of-the-land-desert"
           }
         ],
         "spell": {
-          "url": "/api/spells/hallucinatory-terrain",
-          "name": "Hallucinatory Terrain"
+          "index": "hallucinatory-terrain",
+          "name": "Hallucinatory Terrain",
+          "url": "/api/spells/hallucinatory-terrain"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 9",
+            "index": "druid-9",
             "type": "level",
+            "name": "Druid 9",
             "url": "/api/classes/druid/levels/9"
           },
           {
-            "name": "Circle of the Land: Desert",
+            "index": "circle-of-the-land-desert",
             "type": "feature",
+            "name": "Circle of the Land: Desert",
             "url": "/api/features/circle-of-the-land-desert"
           }
         ],
         "spell": {
-          "url": "/api/spells/insect-plague",
-          "name": "Insect Plague"
+          "index": "insect-plague",
+          "name": "Insect Plague",
+          "url": "/api/spells/insect-plague"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 9",
+            "index": "druid-9",
             "type": "level",
+            "name": "Druid 9",
             "url": "/api/classes/druid/levels/9"
           },
           {
-            "name": "Circle of the Land: Desert",
+            "index": "circle-of-the-land-desert",
             "type": "feature",
+            "name": "Circle of the Land: Desert",
             "url": "/api/features/circle-of-the-land-desert"
           }
         ],
         "spell": {
-          "url": "/api/spells/wall-of-stone",
-          "name": "Wall of Stone"
+          "index": "wall-of-stone",
+          "name": "Wall of Stone",
+          "url": "/api/spells/wall-of-stone"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 3",
+            "index": "druid-3",
             "type": "level",
+            "name": "Druid 3",
             "url": "/api/classes/druid/levels/3"
           },
           {
-            "name": "Circle of the Land: Forest",
+            "index": "circle-of-the-land-forest",
             "type": "feature",
+            "name": "Circle of the Land: Forest",
             "url": "/api/features/circle-of-the-land-forest"
           }
         ],
         "spell": {
-          "url": "/api/spells/barkskin",
-          "name": "Barkskin"
+          "index": "barkskin",
+          "name": "Barkskin",
+          "url": "/api/spells/barkskin"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 3",
+            "index": "druid-3",
             "type": "level",
+            "name": "Druid 3",
             "url": "/api/classes/druid/levels/3"
           },
           {
-            "name": "Circle of the Land: Forest",
+            "index": "circle-of-the-land-forest",
             "type": "feature",
+            "name": "Circle of the Land: Forest",
             "url": "/api/features/circle-of-the-land-forest"
           }
         ],
         "spell": {
-          "url": "/api/spells/spider-climb",
-          "name": "Spider Climb"
+          "index": "spider-climb",
+          "name": "Spider Climb",
+          "url": "/api/spells/spider-climb"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 5",
+            "index": "druid-5",
             "type": "level",
+            "name": "Druid 5",
             "url": "/api/classes/druid/levels/5"
           },
           {
-            "name": "Circle of the Land: Forest",
+            "index": "circle-of-the-land-forest",
             "type": "feature",
+            "name": "Circle of the Land: Forest",
             "url": "/api/features/circle-of-the-land-forest"
           }
         ],
         "spell": {
-          "url": "/api/spells/call-lightning",
-          "name": "Call Lightning"
+          "index": "call-lightning",
+          "name": "Call Lightning",
+          "url": "/api/spells/call-lightning"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 5",
+            "index": "druid-5",
             "type": "level",
+            "name": "Druid 5",
             "url": "/api/classes/druid/levels/5"
           },
           {
-            "name": "Circle of the Land: Forest",
+            "index": "circle-of-the-land-forest",
             "type": "feature",
+            "name": "Circle of the Land: Forest",
             "url": "/api/features/circle-of-the-land-forest"
           }
         ],
         "spell": {
-          "url": "/api/spells/plant-growth",
-          "name": "Plant Growth"
+          "index": "plant-growth",
+          "name": "Plant Growth",
+          "url": "/api/spells/plant-growth"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 7",
+            "index": "druid-7",
             "type": "level",
+            "name": "Druid 7",
             "url": "/api/classes/druid/levels/7"
           },
           {
-            "name": "Circle of the Land: Forest",
+            "index": "circle-of-the-land-forest",
             "type": "feature",
+            "name": "Circle of the Land: Forest",
             "url": "/api/features/circle-of-the-land-forest"
           }
         ],
         "spell": {
-          "url": "/api/spells/divination",
-          "name": "Divination"
+          "index": "divination",
+          "name": "Divination",
+          "url": "/api/spells/divination"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 7",
+            "index": "druid-7",
             "type": "level",
+            "name": "Druid 7",
             "url": "/api/classes/druid/levels/7"
           },
           {
-            "name": "Circle of the Land: Forest",
+            "index": "circle-of-the-land-forest",
             "type": "feature",
+            "name": "Circle of the Land: Forest",
             "url": "/api/features/circle-of-the-land-forest"
           }
         ],
         "spell": {
-          "url": "/api/spells/freedom-of-movement",
-          "name": "Freedom of Movement"
+          "index": "freedom-of-movement",
+          "name": "Freedom of Movement",
+          "url": "/api/spells/freedom-of-movement"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 9",
+            "index": "druid-9",
             "type": "level",
+            "name": "Druid 9",
             "url": "/api/classes/druid/levels/9"
           },
           {
-            "name": "Circle of the Land: Forest",
+            "index": "circle-of-the-land-forest",
             "type": "feature",
+            "name": "Circle of the Land: Forest",
             "url": "/api/features/circle-of-the-land-forest"
           }
         ],
         "spell": {
-          "url": "/api/spells/commune-with-nature",
-          "name": "Commune With Nature"
+          "index": "commune-with-nature",
+          "name": "Commune With Nature",
+          "url": "/api/spells/commune-with-nature"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 9",
+            "index": "druid-9",
             "type": "level",
+            "name": "Druid 9",
             "url": "/api/classes/druid/levels/9"
           },
           {
-            "name": "Circle of the Land: Forest",
+            "index": "circle-of-the-land-forest",
             "type": "feature",
+            "name": "Circle of the Land: Forest",
             "url": "/api/features/circle-of-the-land-forest"
           }
         ],
         "spell": {
-          "url": "/api/spells/tree-stride",
-          "name": "Tree Stride"
+          "index": "tree-stride",
+          "name": "Tree Stride",
+          "url": "/api/spells/tree-stride"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 3",
+            "index": "druid-3",
             "type": "level",
+            "name": "Druid 3",
             "url": "/api/classes/druid/levels/3"
           },
           {
-            "name": "Circle of the Land: Grassland",
+            "index": "circle-of-the-land-grassland",
             "type": "feature",
+            "name": "Circle of the Land: Grassland",
             "url": "/api/features/circle-of-the-land-grassland"
           }
         ],
         "spell": {
-          "url": "/api/spells/invisibility",
-          "name": "Invisibility"
+          "index": "invisibility",
+          "name": "Invisibility",
+          "url": "/api/spells/invisibility"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 3",
+            "index": "druid-3",
             "type": "level",
+            "name": "Druid 3",
             "url": "/api/classes/druid/levels/3"
           },
           {
-            "name": "Circle of the Land: Grassland",
+            "index": "circle-of-the-land-grassland",
             "type": "feature",
+            "name": "Circle of the Land: Grassland",
             "url": "/api/features/circle-of-the-land-grassland"
           }
         ],
         "spell": {
-          "url": "/api/spells/pass-without-trace",
-          "name": "Pass Without Trace"
+          "index": "pass-without-trace",
+          "name": "Pass Without Trace",
+          "url": "/api/spells/pass-without-trace"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 5",
+            "index": "druid-5",
             "type": "level",
+            "name": "Druid 5",
             "url": "/api/classes/druid/levels/5"
           },
           {
-            "name": "Circle of the Land: Grassland",
+            "index": "circle-of-the-land-grassland",
             "type": "feature",
+            "name": "Circle of the Land: Grassland",
             "url": "/api/features/circle-of-the-land-grassland"
           }
         ],
         "spell": {
-          "url": "/api/spells/daylight",
-          "name": "Daylight"
+          "index": "daylight",
+          "name": "Daylight",
+          "url": "/api/spells/daylight"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 5",
+            "index": "druid-5",
             "type": "level",
+            "name": "Druid 5",
             "url": "/api/classes/druid/levels/5"
           },
           {
-            "name": "Circle of the Land: Grassland",
+            "index": "circle-of-the-land-grassland",
             "type": "feature",
+            "name": "Circle of the Land: Grassland",
             "url": "/api/features/circle-of-the-land-grassland"
           }
         ],
         "spell": {
-          "url": "/api/spells/haste",
-          "name": "Haste"
+          "index": "haste",
+          "name": "Haste",
+          "url": "/api/spells/haste"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 7",
+            "index": "druid-7",
             "type": "level",
+            "name": "Druid 7",
             "url": "/api/classes/druid/levels/7"
           },
           {
-            "name": "Circle of the Land: Grassland",
+            "index": "circle-of-the-land-grassland",
             "type": "feature",
+            "name": "Circle of the Land: Grassland",
             "url": "/api/features/circle-of-the-land-grassland"
           }
         ],
         "spell": {
-          "url": "/api/spells/divination",
-          "name": "Divination"
+          "index": "divination",
+          "name": "Divination",
+          "url": "/api/spells/divination"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 7",
+            "index": "druid-7",
             "type": "level",
+            "name": "Druid 7",
             "url": "/api/classes/druid/levels/7"
           },
           {
-            "name": "Circle of the Land: Grassland",
+            "index": "circle-of-the-land-grassland",
             "type": "feature",
+            "name": "Circle of the Land: Grassland",
             "url": "/api/features/circle-of-the-land-grassland"
           }
         ],
         "spell": {
-          "url": "/api/spells/freedom-of-movement",
-          "name": "Freedom of Movement"
+          "index": "freedom-of-movement",
+          "name": "Freedom of Movement",
+          "url": "/api/spells/freedom-of-movement"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 9",
+            "index": "druid-9",
             "type": "level",
+            "name": "Druid 9",
             "url": "/api/classes/druid/levels/9"
           },
           {
-            "name": "Circle of the Land: Grassland",
+            "index": "circle-of-the-land-grassland",
             "type": "feature",
+            "name": "Circle of the Land: Grassland",
             "url": "/api/features/circle-of-the-land-grassland"
           }
         ],
         "spell": {
-          "url": "/api/spells/dream",
-          "name": "Dream"
+          "index": "dream",
+          "name": "Dream",
+          "url": "/api/spells/dream"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 9",
+            "index": "druid-9",
             "type": "level",
+            "name": "Druid 9",
             "url": "/api/classes/druid/levels/9"
           },
           {
-            "name": "Circle of the Land: Grassland",
+            "index": "circle-of-the-land-grassland",
             "type": "feature",
+            "name": "Circle of the Land: Grassland",
             "url": "/api/features/circle-of-the-land-grassland"
           }
         ],
         "spell": {
-          "url": "/api/spells/insect-plague",
-          "name": "Insect Plague"
+          "index": "insect-plague",
+          "name": "Insect Plague",
+          "url": "/api/spells/insect-plague"
         }
       },
       {
         "prerequisites": [
           {
+            "index": "druid-3",
+            "type": "level",
             "name": "Druid 3",
-            "type": "level",
             "url": "/api/classes/druid/levels/3"
           },
           {
-            "name": "Circle of the Land: Mountain",
+            "index": "circle-of-the-land-mountain",
             "type": "feature",
+            "name": "Circle of the Land: Mountain",
             "url": "/api/features/circle-of-the-land-mountain"
           }
         ],
         "spell": {
-          "url": "/api/spells/spider-climb",
-          "name": "Spider Climb"
+          "index": "spider-climb",
+          "name": "Spider Climb",
+          "url": "/api/spells/spider-climb"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 3",
+            "index": "druid-3",
             "type": "level",
+            "name": "Druid 3",
             "url": "/api/classes/druid/levels/3"
           },
           {
-            "name": "Circle of the Land: Mountain",
+            "index": "circle-of-the-land-mountain",
             "type": "feature",
+            "name": "Circle of the Land: Mountain",
             "url": "/api/features/circle-of-the-land-mountain"
           }
         ],
         "spell": {
-          "url": "/api/spells/spike-growth",
-          "name": "Spike Growth"
+          "index": "spike-growth",
+          "name": "Spike Growth",
+          "url": "/api/spells/spike-growth"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 5",
+            "index": "druid-5",
             "type": "level",
+            "name": "Druid 5",
             "url": "/api/classes/druid/levels/5"
           },
           {
-            "name": "Circle of the Land: Mountain",
+            "index": "circle-of-the-land-mountain",
             "type": "feature",
+            "name": "Circle of the Land: Mountain",
             "url": "/api/features/circle-of-the-land-mountain"
           }
         ],
         "spell": {
-          "url": "/api/spells/lightning-bolt",
-          "name": "Lightning Bolt"
+          "index": "lightning-bolt",
+          "name": "Lightning Bolt",
+          "url": "/api/spells/lightning-bolt"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 5",
+            "index": "druid-5",
             "type": "level",
+            "name": "Druid 5",
             "url": "/api/classes/druid/levels/5"
           },
           {
-            "name": "Circle of the Land: Mountain",
+            "index": "circle-of-the-land-mountain",
             "type": "feature",
+            "name": "Circle of the Land: Mountain",
             "url": "/api/features/circle-of-the-land-mountain"
           }
         ],
         "spell": {
-          "url": "/api/spells/meld-into-stone",
-          "name": "Meld Into Stone"
+          "index": "meld-into-stone",
+          "name": "Meld Into Stone",
+          "url": "/api/spells/meld-into-stone"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 7",
+            "index": "druid-7",
             "type": "level",
+            "name": "Druid 7",
             "url": "/api/classes/druid/levels/7"
           },
           {
-            "name": "Circle of the Land: Mountain",
+            "index": "circle-of-the-land-mountain",
             "type": "feature",
+            "name": "Circle of the Land: Mountain",
             "url": "/api/features/circle-of-the-land-mountain"
           }
         ],
         "spell": {
-          "url": "/api/spells/stone-shape",
-          "name": "Stone Shape"
+          "index": "stone-shape",
+          "name": "Stone Shape",
+          "url": "/api/spells/stone-shape"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 7",
+            "index": "druid-7",
             "type": "level",
+            "name": "Druid 7",
             "url": "/api/classes/druid/levels/7"
           },
           {
-            "name": "Circle of the Land: Mountain",
+            "index": "circle-of-the-land-mountain",
             "type": "feature",
+            "name": "Circle of the Land: Mountain",
             "url": "/api/features/circle-of-the-land-mountain"
           }
         ],
         "spell": {
-          "url": "/api/spells/stoneskin",
-          "name": "Stoneskin"
+          "index": "stoneskin",
+          "name": "Stoneskin",
+          "url": "/api/spells/stoneskin"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 9",
+            "index": "druid-9",
             "type": "level",
+            "name": "Druid 9",
             "url": "/api/classes/druid/levels/9"
           },
           {
-            "name": "Circle of the Land: Mountain",
+            "index": "circle-of-the-land-mountain",
             "type": "feature",
+            "name": "Circle of the Land: Mountain",
             "url": "/api/features/circle-of-the-land-mountain"
           }
         ],
         "spell": {
-          "url": "/api/spells/passwall",
-          "name": "Passwall"
+          "index": "passwall",
+          "name": "Passwall",
+          "url": "/api/spells/passwall"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 9",
+            "index": "druid-9",
             "type": "level",
+            "name": "Druid 9",
             "url": "/api/classes/druid/levels/9"
           },
           {
-            "name": "Circle of the Land: Mountain",
+            "index": "circle-of-the-land-mountain",
             "type": "feature",
+            "name": "Circle of the Land: Mountain",
             "url": "/api/features/circle-of-the-land-mountain"
           }
         ],
         "spell": {
-          "url": "/api/spells/wall-of-stone",
-          "name": "Wall of Stone"
+          "index": "wall-of-stone",
+          "name": "Wall of Stone",
+          "url": "/api/spells/wall-of-stone"
         }
       },
       {
         "prerequisites": [
           {
+            "index": "druid-3",
+            "type": "level",
             "name": "Druid 3",
-            "type": "level",
             "url": "/api/classes/druid/levels/3"
           },
           {
-            "name": "Circle of the Land: Swamp",
+            "index": "circle-of-the-land-swamp",
             "type": "feature",
+            "name": "Circle of the Land: Swamp",
             "url": "/api/features/circle-of-the-land-swamp"
           }
         ],
         "spell": {
-          "url": "/api/spells/acid-arrow",
-          "name": "Acid Arrow"
+          "index": "acid-arrow",
+          "name": "Acid Arrow",
+          "url": "/api/spells/acid-arrow"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 3",
+            "index": "druid-3",
             "type": "level",
+            "name": "Druid 3",
             "url": "/api/classes/druid/levels/3"
           },
           {
-            "name": "Circle of the Land: Swamp",
+            "index": "circle-of-the-land-swamp",
             "type": "feature",
+            "name": "Circle of the Land: Swamp",
             "url": "/api/features/circle-of-the-land-swamp"
           }
         ],
         "spell": {
-          "url": "/api/spells/darkness",
-          "name": "Darkness"
+          "index": "darkness",
+          "name": "Darkness",
+          "url": "/api/spells/darkness"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 5",
+            "index": "druid-5",
             "type": "level",
+            "name": "Druid 5",
             "url": "/api/classes/druid/levels/5"
           },
           {
-            "name": "Circle of the Land: Swamp",
+            "index": "circle-of-the-land-swamp",
             "type": "feature",
+            "name": "Circle of the Land: Swamp",
             "url": "/api/features/circle-of-the-land-swamp"
           }
         ],
         "spell": {
-          "url": "/api/spells/water-walk",
-          "name": "Water Walk"
+          "index": "water-walk",
+          "name": "Water Walk",
+          "url": "/api/spells/water-walk"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 5",
+            "index": "druid-5",
             "type": "level",
+            "name": "Druid 5",
             "url": "/api/classes/druid/levels/5"
           },
           {
-            "name": "Circle of the Land: Swamp",
+            "index": "circle-of-the-land-swamp",
             "type": "feature",
+            "name": "Circle of the Land: Swamp",
             "url": "/api/features/circle-of-the-land-swamp"
           }
         ],
         "spell": {
-          "url": "/api/spells/stinking-cloud",
-          "name": "Stinking Cloud"
+          "index": "stinking-cloud",
+          "name": "Stinking Cloud",
+          "url": "/api/spells/stinking-cloud"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 7",
+            "index": "druid-7",
             "type": "level",
+            "name": "Druid 7",
             "url": "/api/classes/druid/levels/7"
           },
           {
-            "name": "Circle of the Land: Swamp",
+            "index": "circle-of-the-land-swamp",
             "type": "feature",
+            "name": "Circle of the Land: Swamp",
             "url": "/api/features/circle-of-the-land-swamp"
           }
         ],
         "spell": {
-          "url": "/api/spells/freedom-of-movement",
-          "name": "Freedom of Movement"
+          "index": "freedom-of-movement",
+          "name": "Freedom of Movement",
+          "url": "/api/spells/freedom-of-movement"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 7",
+            "index": "druid-7",
             "type": "level",
+            "name": "Druid 7",
             "url": "/api/classes/druid/levels/7"
           },
           {
-            "name": "Circle of the Land: Swamp",
+            "index": "circle-of-the-land-swamp",
             "type": "feature",
+            "name": "Circle of the Land: Swamp",
             "url": "/api/features/circle-of-the-land-swamp"
           }
         ],
         "spell": {
-          "url": "/api/spells/locate-creature",
-          "name": "Locate Creature"
+          "index": "locate-creature",
+          "name": "Locate Creature",
+          "url": "/api/spells/locate-creature"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 9",
+            "index": "druid-9",
             "type": "level",
+            "name": "Druid 9",
             "url": "/api/classes/druid/levels/9"
           },
           {
-            "name": "Circle of the Land: Swamp",
+            "index": "circle-of-the-land-swamp",
             "type": "feature",
+            "name": "Circle of the Land: Swamp",
             "url": "/api/features/circle-of-the-land-swamp"
           }
         ],
         "spell": {
-          "url": "/api/spells/insect-plague",
-          "name": "Insect Plague"
+          "index": "insect-plague",
+          "name": "Insect Plague",
+          "url": "/api/spells/insect-plague"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Druid 9",
+            "index": "druid-9",
             "type": "level",
+            "name": "Druid 9",
             "url": "/api/classes/druid/levels/9"
           },
           {
-            "name": "Circle of the Land: Swamp",
+            "index": "circle-of-the-land-swamp",
             "type": "feature",
+            "name": "Circle of the Land: Swamp",
             "url": "/api/features/circle-of-the-land-swamp"
           }
         ],
         "spell": {
-          "url": "/api/spells/scrying",
-          "name": "Scrying"
+          "index": "scrying",
+          "name": "Scrying",
+          "url": "/api/spells/scrying"
         }
       }
     ],
-    "subclass_levels": {
-      "url": "/api/subclasses/land/levels"
-    },
+    "subclass_levels": "/api/subclasses/land/levels",
     "url": "/api/subclasses/land"
   },
   {
     "index": "champion",
     "class": {
-      "url": "/api/classes/fighter",
-      "name": "Fighter"
+      "index": "fighter",
+      "name": "Fighter",
+      "url": "/api/classes/fighter"
     },
     "name": "Champion",
     "subclass_flavor": "Martial Archetype",
     "desc": [
       "The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows."
     ],
-    "subclass_levels": {
-      "url": "/api/subclasses/champion/levels"
-    },
+    "subclass_levels": "/api/subclasses/champion/levels",
     "url": "/api/subclasses/champion"
   },
   {
     "index": "open-hand",
     "class": {
-      "url": "/api/classes/monk",
-      "name": "Monk"
+      "index": "monk",
+      "name": "Monk",
+      "url": "/api/classes/monk"
     },
     "name": "Open Hand",
     "subclass_flavor": "Monastic Tradition",
     "desc": [
       "Monks of the Way of the Open Hand are the ultimate masters of martial arts combat, whether armed or unarmed. They learn techniques to push and trip their opponents, manipulate ki to heal damage to their bodies, and practice advanced meditation that can protect them from harm."
     ],
-    "subclass_levels": {
-      "url": "/api/subclasses/open-hand/levels"
-    },
+    "subclass_levels": "/api/subclasses/open-hand/levels",
     "url": "/api/subclasses/open-hand"
   },
   {
     "index": "devotion",
     "class": {
-      "url": "/api/classes/paladin",
-      "name": "Paladin"
+      "index": "paladin",
+      "name": "Paladin",
+      "url": "/api/classes/paladin"
     },
     "name": "Devotion",
     "subclass_flavor": "Sacred Oath",
@@ -1239,179 +1420,193 @@
       {
         "prerequisites": [
           {
-            "name": "Paladin 3",
+            "index": "paladin-3",
             "type": "level",
+            "name": "Paladin 3",
             "url": "/api/classes/paladin/levels/3"
           }
         ],
         "spell": {
-          "url": "/api/spells/protection-from-evil-and-good",
-          "name": "Protection from Evil and Good"
+          "index": "protection-from-evil-and-good",
+          "name": "Protection from Evil and Good",
+          "url": "/api/spells/protection-from-evil-and-good"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Paladin 3",
+            "index": "paladin-3",
             "type": "level",
+            "name": "Paladin 3",
             "url": "/api/classes/paladin/levels/3"
           }
         ],
         "spell": {
-          "url": "/api/spells/sanctuary",
-          "name": "Sanctuary"
+          "index": "sanctuary",
+          "name": "Sanctuary",
+          "url": "/api/spells/sanctuary"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Paladin 5",
+            "index": "paladin-5",
             "type": "level",
+            "name": "Paladin 5",
             "url": "/api/classes/paladin/levels/5"
           }
         ],
         "spell": {
-          "url": "/api/spells/lesser-restoration",
-          "name": "Lesser Restoration"
+          "index": "lesser-restoration",
+          "name": "Lesser Restoration",
+          "url": "/api/spells/lesser-restoration"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Paladin 5",
+            "index": "paladin-5",
             "type": "level",
+            "name": "Paladin 5",
             "url": "/api/classes/paladin/levels/5"
           }
         ],
         "spell": {
-          "url": "/api/spells/zone-of-truth",
-          "name": "Zone of Truth"
+          "index": "zone-of-truth",
+          "name": "Zone of Truth",
+          "url": "/api/spells/zone-of-truth"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Paladin 9",
+            "index": "paladin-9",
             "type": "level",
+            "name": "Paladin 9",
             "url": "/api/classes/paladin/levels/9"
           }
         ],
         "spell": {
-          "url": "/api/spells/beacon-of-hope",
-          "name": "Beacon of Hope"
+          "index": "beacon-of-hope",
+          "name": "Beacon of Hope",
+          "url": "/api/spells/beacon-of-hope"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Paladin 9",
+            "index": "paladin-9",
             "type": "level",
+            "name": "Paladin 9",
             "url": "/api/classes/paladin/levels/9"
           }
         ],
         "spell": {
-          "url": "/api/spells/dispel-magic",
-          "name": "Dispel Magic"
+          "index": "dispel-magic",
+          "name": "Dispel Magic",
+          "url": "/api/spells/dispel-magic"
         }
       },
       {
         "prerequisites": [
           {
+            "index": "paladin-13",
+            "type": "level",
             "name": "Paladin 13",
-            "type": "level",
             "url": "/api/classes/paladin/levels/13"
           }
         ],
         "spell": {
-          "url": "/api/spells/freedom-of-movement",
-          "name": "Freedom of Movement"
+          "index": "freedom-of-movement",
+          "name": "Freedom of Movement",
+          "url": "/api/spells/freedom-of-movement"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Paladin 17",
+            "index": "paladin-17",
             "type": "level",
+            "name": "Paladin 17",
             "url": "/api/classes/paladin/levels/17"
           }
         ],
         "spell": {
-          "url": "/api/spells/commune",
-          "name": "Commune"
+          "index": "commune",
+          "name": "Commune",
+          "url": "/api/spells/commune"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Paladin 17",
+            "index": "paladin-17",
             "type": "level",
+            "name": "Paladin 17",
             "url": "/api/classes/paladin/levels/17"
           }
         ],
         "spell": {
-          "url": "/api/spells/flame-strike",
-          "name": "Flame Strike"
+          "index": "flame-strike",
+          "name": "Flame Strike",
+          "url": "/api/spells/flame-strike"
         }
       }
     ],
-    "subclass_levels": {
-      "url": "/api/subclasses/devotion/levels"
-    },
+    "subclass_levels": "/api/subclasses/devotion/levels",
     "url": "/api/subclasses/devotion"
   },
   {
     "index": "hunter",
     "class": {
-      "url": "/api/classes/ranger",
-      "name": "Ranger"
+      "index": "ranger",
+      "name": "Ranger",
+      "url": "/api/classes/ranger"
     },
     "name": "Hunter",
     "subclass_flavor": "Ranger Archetype",
     "desc": [
       "Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter's path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons."
     ],
-    "subclass_levels": {
-      "url": "/api/subclasses/hunter/levels"
-    },
+    "subclass_levels": "/api/subclasses/hunter/levels",
     "url": "/api/subclasses/hunter"
   },
   {
     "index": "thief",
     "class": {
-      "url": "/api/classes/rogue",
-      "name": "Rogue"
+      "index": "rogue",
+      "name": "Rogue",
+      "url": "/api/classes/rogue"
     },
     "name": "Thief",
     "subclass_flavor": "Roguish Archetype",
     "desc": [
       "You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using magic items you normally couldn't employ."
     ],
-    "subclass_levels": {
-      "url": "/api/subclasses/thief/levels"
-    },
+    "subclass_levels": "/api/subclasses/thief/levels",
     "url": "/api/subclasses/thief"
   },
   {
     "index": "draconic",
     "class": {
-      "url": "/api/classes/sorcerer",
-      "name": "Sorcerer"
+      "index": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/api/classes/sorcerer"
     },
     "name": "Draconic",
     "subclass_flavor": "Sorcerous Origins",
     "desc": [
       "Your innate magic comes from draconic magic that was mingled with your blood or that of your ancestors. Most often, sorcerers with this origin trace their descent back to a mighty sorcerer of ancient times who made a bargain with a dragon or who might even have claimed a dragon parent. Some of these bloodlines are well established in the world, but most are obscure. Any given sorcerer could be the first of a new bloodline, as a result of a pact or some other exceptional circumstance."
     ],
-    "subclass_levels": {
-      "url": "/api/subclasses/draconic/levels"
-    },
+    "subclass_levels": "/api/subclasses/draconic/levels",
     "url": "/api/subclasses/draconic"
   },
   {
     "index": "fiend",
     "class": {
-      "url": "/api/classes/warlock",
-      "name": "Warlock"
+      "index": "warlock",
+      "name": "Warlock",
+      "url": "/api/classes/warlock"
     },
     "name": "Fiend",
     "subclass_flavor": "Otherworldly Patron",
@@ -1422,153 +1617,170 @@
       {
         "prerequisites": [
           {
-            "name": "Warlock 1",
+            "index": "warlock-1",
             "type": "level",
+            "name": "Warlock 1",
             "url": "/api/classes/warlock/levels/1"
           }
         ],
         "spell": {
-          "url": "/api/spells/burning-hands",
-          "name": "Burning Hands"
+          "index": "burning-hands",
+          "name": "Burning Hands",
+          "url": "/api/spells/burning-hands"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Warlock 1",
+            "index": "warlock-1",
             "type": "level",
+            "name": "Warlock 1",
             "url": "/api/classes/warlock/levels/1"
           }
         ],
         "spell": {
-          "url": "/api/spells/command",
-          "name": "Command"
+          "index": "command",
+          "name": "Command",
+          "url": "/api/spells/command"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Warlock 1",
+            "index": "warlock-1",
             "type": "level",
+            "name": "Warlock 1",
             "url": "/api/classes/warlock/levels/1"
           }
         ],
         "spell": {
-          "url": "/api/spells/blindness-deafness",
-          "name": "Blindness/Deafness"
+          "index": "blindness-deafness",
+          "name": "Blindness/Deafness",
+          "url": "/api/spells/blindness-deafness"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Warlock 1",
+            "index": "warlock-1",
             "type": "level",
+            "name": "Warlock 1",
             "url": "/api/classes/warlock/levels/1"
           }
         ],
         "spell": {
-          "url": "/api/spells/scorching-ray",
-          "name": "Scorching Ray"
+          "index": "scorching-ray",
+          "name": "Scorching Ray",
+          "url": "/api/spells/scorching-ray"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Warlock 1",
+            "index": "warlock-1",
             "type": "level",
+            "name": "Warlock 1",
             "url": "/api/classes/warlock/levels/1"
           }
         ],
         "spell": {
-          "url": "/api/spells/fireball",
-          "name": "Fireball"
+          "index": "fireball",
+          "name": "Fireball",
+          "url": "/api/spells/fireball"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Warlock 1",
+            "index": "warlock-1",
             "type": "level",
+            "name": "Warlock 1",
             "url": "/api/classes/warlock/levels/1"
           }
         ],
         "spell": {
-          "url": "/api/spells/stinking-cloud",
-          "name": "Stinking Cloud"
+          "index": "stinking-cloud",
+          "name": "Stinking Cloud",
+          "url": "/api/spells/stinking-cloud"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Warlock 1",
+            "index": "warlock-1",
             "type": "level",
+            "name": "Warlock 1",
             "url": "/api/classes/warlock/levels/1"
           }
         ],
         "spell": {
-          "url": "/api/spells/fire-shield",
-          "name": "Fire Shield"
+          "index": "fire-shield",
+          "name": "Fire Shield",
+          "url": "/api/spells/fire-shield"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Warlock 1",
+            "index": "warlock-1",
             "type": "level",
+            "name": "Warlock 1",
             "url": "/api/classes/warlock/levels/1"
           }
         ],
         "spell": {
-          "url": "/api/spells/wall-of-fire",
-          "name": "Wall of Fire"
+          "index": "wall-of-fire",
+          "name": "Wall of Fire",
+          "url": "/api/spells/wall-of-fire"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Warlock 1",
+            "index": "warlock-1",
             "type": "level",
+            "name": "Warlock 1",
             "url": "/api/classes/warlock/levels/1"
           }
         ],
         "spell": {
-          "url": "/api/spells/flame-strike",
-          "name": "Flame Strike"
+          "index": "flame-strike",
+          "name": "Flame Strike",
+          "url": "/api/spells/flame-strike"
         }
       },
       {
         "prerequisites": [
           {
-            "name": "Warlock 1",
+            "index": "warlock-1",
             "type": "level",
+            "name": "Warlock 1",
             "url": "/api/classes/warlock/levels/1"
           }
         ],
         "spell": {
-          "url": "/api/spells/hallow",
-          "name": "Hallow"
+          "index": "hallow",
+          "name": "Hallow",
+          "url": "/api/spells/hallow"
         }
       }
     ],
-    "subclass_levels": {
-      "url": "/api/subclasses/fiend/levels"
-    },
+    "subclass_levels": "/api/subclasses/fiend/levels",
     "url": "/api/subclasses/fiend"
   },
   {
     "index": "evocation",
     "class": {
-      "url": "/api/classes/wizard",
-      "name": "Wizard"
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/classes/wizard"
     },
     "name": "Evocation",
     "subclass_flavor": "Arcane Tradition",
     "desc": [
       "You focus your study on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid. Some evokers find employment in military forces, serving as artillery to blast enemy armies from afar. Others use their spectacular power to protect the weak, while some seek their own gain as bandits, adventurers, or aspiring tyrants."
     ],
-    "subclass_levels": {
-      "url": "/api/subclasses/evocation/levels"
-    },
+    "subclass_levels": "/api/subclasses/evocation/levels",
     "url": "/api/subclasses/evocation"
   }
 ]
