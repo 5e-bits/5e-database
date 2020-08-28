@@ -226,11 +226,7 @@
           },
           "dc": 12,
           "modifier": 4,
-          "components_required": [
-            "V",
-            "S",
-            "M"
-          ],
+          "components_required": ["V", "S", "M"],
           "school": "cleric",
           "slots": {
             "1": 3
@@ -343,9 +339,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "acid"
-    ],
+    "damage_immunities": ["acid"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -571,9 +565,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "lightning"
-    ],
+    "damage_immunities": ["lightning"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -805,9 +797,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -915,39 +905,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Fire Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 18,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Fire",
-                  "url": "/api/damage-types/fire"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Fire Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "13d6"
-              }
-            ]
-          },
-          {
-            "name": "Sleep Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 18,
+                "success_type": "half"
               },
-              "dc_value": 18,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Fire",
+                    "url": "/api/damage-types/fire"
+                  },
+                  "damage_dice": "13d6"
+                }
+              ]
+            },
+            {
+              "name": "Sleep Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 18,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/adult-brass-dragon"
@@ -1012,9 +1006,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "lightning"
-    ],
+    "damage_immunities": ["lightning"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -1126,39 +1118,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Lightning Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 19,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Lightning",
-                  "url": "/api/damage-types/lightning"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Lightning Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "12d10"
-              }
-            ]
-          },
-          {
-            "name": "Repulsion Breath",
-            "dc": {
-              "dc_type": {
-                "name": "STR",
-                "url": "/api/ability-scores/str"
+                "dc_value": 19,
+                "success_type": "half"
               },
-              "dc_value": 19,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Lightning",
+                    "url": "/api/damage-types/lightning"
+                  },
+                  "damage_dice": "12d10"
+                }
+              ]
+            },
+            {
+              "name": "Repulsion Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "STR",
+                  "url": "/api/ability-scores/str"
+                },
+                "dc_value": 19,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "legendary_actions": [
@@ -1254,9 +1250,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "acid"
-    ],
+    "damage_immunities": ["acid"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -1364,39 +1358,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Acid Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 18,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Acid",
-                  "url": "/api/damage-types/acid"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Acid Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "12d8"
-              }
-            ]
-          },
-          {
-            "name": "Slowing Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 18,
+                "success_type": "half"
               },
-              "dc_value": 18,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Acid",
+                    "url": "/api/damage-types/acid"
+                  },
+                  "damage_dice": "12d8"
+                }
+              ]
+            },
+            {
+              "name": "Slowing Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 18,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "legendary_actions": [
@@ -1497,9 +1495,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -1611,39 +1607,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Fire Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 21,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Fire",
-                  "url": "/api/damage-types/fire"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Fire Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "12d10"
-              }
-            ]
-          },
-          {
-            "name": "Weakening Breath",
-            "dc": {
-              "dc_type": {
-                "name": "STR",
-                "url": "/api/ability-scores/str"
+                "dc_value": 21,
+                "success_type": "half"
               },
-              "dc_value": 21,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Fire",
+                    "url": "/api/damage-types/fire"
+                  },
+                  "damage_dice": "12d10"
+                }
+              ]
+            },
+            {
+              "name": "Weakening Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "STR",
+                  "url": "/api/ability-scores/str"
+                },
+                "dc_value": 21,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "legendary_actions": [
@@ -1749,9 +1749,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -1982,9 +1980,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -2263,9 +2259,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "cold"
-    ],
+    "damage_immunities": ["cold"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -2373,39 +2367,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Cold Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
-              },
-              "dc_value": 20,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Cold",
-                  "url": "/api/damage-types/cold"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Cold Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
                 },
-                "damage_dice": "13d8"
-              }
-            ]
-          },
-          {
-            "name": "Paralyzing Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 20,
+                "success_type": "half"
               },
-              "dc_value": 20,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Cold",
+                    "url": "/api/damage-types/cold"
+                  },
+                  "damage_dice": "13d8"
+                }
+              ]
+            },
+            {
+              "name": "Paralyzing Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 20,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "legendary_actions": [
@@ -2497,9 +2495,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "cold"
-    ],
+    "damage_immunities": ["cold"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -2697,9 +2693,7 @@
       "thunder",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Exhaustion",
@@ -2844,9 +2838,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "acid"
-    ],
+    "damage_immunities": ["acid"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -3072,9 +3064,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "lightning"
-    ],
+    "damage_immunities": ["lightning"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -3288,9 +3278,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -3398,39 +3386,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Fire Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 21,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Bludgeoning",
-                  "url": "/api/damage-types/bludgeoning"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Fire Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "2d6+8"
-              }
-            ]
-          },
-          {
-            "name": "Sleep Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 21,
+                "success_type": "half"
               },
-              "dc_value": 21,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Bludgeoning",
+                    "url": "/api/damage-types/bludgeoning"
+                  },
+                  "damage_dice": "2d6+8"
+                }
+              ]
+            },
+            {
+              "name": "Sleep Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 21,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       },
       {
         "name": "Change Shape",
@@ -3530,9 +3522,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "lightning"
-    ],
+    "damage_immunities": ["lightning"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -3644,39 +3634,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Lightning Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 23,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Lightning",
-                  "url": "/api/damage-types/lightning"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Lightning Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "16d10"
-              }
-            ]
-          },
-          {
-            "name": "Repulsion Breath",
-            "dc": {
-              "dc_type": {
-                "name": "STR",
-                "url": "/api/ability-scores/str"
+                "dc_value": 23,
+                "success_type": "half"
               },
-              "dc_value": 23,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Lightning",
+                    "url": "/api/damage-types/lightning"
+                  },
+                  "damage_dice": "16d10"
+                }
+              ]
+            },
+            {
+              "name": "Repulsion Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "STR",
+                  "url": "/api/ability-scores/str"
+                },
+                "dc_value": 23,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       },
       {
         "name": "Change Shape",
@@ -3776,9 +3770,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "acid"
-    ],
+    "damage_immunities": ["acid"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -3886,39 +3878,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Acid Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 22,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Acid",
-                  "url": "/api/damage-types/acid"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Acid Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "14d8"
-              }
-            ]
-          },
-          {
-            "name": "Slowing Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 22,
+                "success_type": "half"
               },
-              "dc_value": 22,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Acid",
+                    "url": "/api/damage-types/acid"
+                  },
+                  "damage_dice": "14d8"
+                }
+              ]
+            },
+            {
+              "name": "Slowing Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 22,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       },
       {
         "name": "Change Shape",
@@ -4023,9 +4019,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -4137,39 +4131,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Fire Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 24,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Fire",
-                  "url": "/api/damage-types/fire"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Fire Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "13d10"
-              }
-            ]
-          },
-          {
-            "name": "Weakening Breath",
-            "dc": {
-              "dc_type": {
-                "name": "STR",
-                "url": "/api/ability-scores/str"
+                "dc_value": 24,
+                "success_type": "half"
               },
-              "dc_value": 24,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Fire",
+                    "url": "/api/damage-types/fire"
+                  },
+                  "damage_dice": "13d10"
+                }
+              ]
+            },
+            {
+              "name": "Weakening Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "STR",
+                  "url": "/api/ability-scores/str"
+                },
+                "dc_value": 24,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       },
       {
         "name": "Change Shape",
@@ -4279,9 +4277,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -4512,9 +4508,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -4745,9 +4739,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "cold"
-    ],
+    "damage_immunities": ["cold"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -4855,39 +4847,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Cold Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
-              },
-              "dc_value": 24,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Cold",
-                  "url": "/api/damage-types/cold"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Cold Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
                 },
-                "damage_dice": "15d8"
-              }
-            ]
-          },
-          {
-            "name": "Paralyzing Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 24,
+                "success_type": "half"
               },
-              "dc_value": 24,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Cold",
+                    "url": "/api/damage-types/cold"
+                  },
+                  "damage_dice": "15d8"
+                }
+              ]
+            },
+            {
+              "name": "Paralyzing Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 24,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       },
       {
         "name": "Change Shape",
@@ -4983,9 +4979,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "cold"
-    ],
+    "damage_immunities": ["cold"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "60 ft.",
@@ -5255,10 +5249,7 @@
           },
           "dc": 18,
           "modifier": 10,
-          "components_required": [
-            "V",
-            "S"
-          ],
+          "components_required": ["V", "S"],
           "school": "cleric",
           "slots": {
             "1": 4,
@@ -5470,10 +5461,7 @@
     "proficiencies": [],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "poison",
-      "psychic"
-    ],
+    "damage_immunities": ["poison", "psychic"],
     "condition_immunities": [
       {
         "name": "Blinded",
@@ -5794,11 +5782,7 @@
           },
           "dc": 17,
           "modifier": 9,
-          "components_required": [
-            "V",
-            "S",
-            "M"
-          ],
+          "components_required": ["V", "S", "M"],
           "school": "wizard",
           "slots": {
             "1": 4,
@@ -6028,9 +6012,7 @@
       }
     ],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "poison"
-    ],
+    "damage_resistances": ["poison"],
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
@@ -6150,12 +6132,8 @@
     "wisdom": 10,
     "charisma": 6,
     "proficiencies": [],
-    "damage_vulnerabilities": [
-      "fire"
-    ],
-    "damage_resistances": [
-      "piercing"
-    ],
+    "damage_vulnerabilities": ["fire"],
+    "damage_resistances": ["piercing"],
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
@@ -6207,13 +6185,8 @@
     "wisdom": 10,
     "charisma": 7,
     "proficiencies": [],
-    "damage_vulnerabilities": [
-      "fire"
-    ],
-    "damage_resistances": [
-      "bludgeoning",
-      "piercing"
-    ],
+    "damage_vulnerabilities": ["fire"],
+    "damage_resistances": ["bludgeoning", "piercing"],
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
@@ -6320,10 +6293,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire",
-      "poison"
-    ],
+    "damage_immunities": ["fire", "poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -6549,10 +6519,7 @@
       "lightning",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "fire",
-      "poison"
-    ],
+    "damage_immunities": ["fire", "poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -6931,10 +6898,7 @@
       "cold",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
-    "damage_immunities": [
-      "fire",
-      "poison"
-    ],
+    "damage_immunities": ["fire", "poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -7214,10 +7178,7 @@
       "cold",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
-    "damage_immunities": [
-      "fire",
-      "poison"
-    ],
+    "damage_immunities": ["fire", "poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -7331,9 +7292,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "lightning"
-    ],
+    "damage_immunities": ["lightning"],
     "condition_immunities": [],
     "senses": {
       "darkvision": "90 ft.",
@@ -7637,9 +7596,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "acid"
-    ],
+    "damage_immunities": ["acid"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "10 ft.",
@@ -7728,12 +7685,7 @@
     "proficiencies": [],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "acid",
-      "cold",
-      "lightning",
-      "slashing"
-    ],
+    "damage_immunities": ["acid", "cold", "lightning", "slashing"],
     "condition_immunities": [
       {
         "name": "Blinded",
@@ -8012,9 +7964,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "lightning"
-    ],
+    "damage_immunities": ["lightning"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "10 ft.",
@@ -8122,10 +8072,7 @@
         "desc": "If the boar takes 7 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.",
         "usage": {
           "type": "recharge after rest",
-          "rest_types": [
-            "short",
-            "long"
-          ]
+          "rest_types": ["short", "long"]
         }
       }
     ],
@@ -8199,10 +8146,7 @@
       "cold",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
-    "damage_immunities": [
-      "fire",
-      "poison"
-    ],
+    "damage_immunities": ["fire", "poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -8340,9 +8284,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "10 ft.",
@@ -8374,39 +8316,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Fire Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 11,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Fire",
-                  "url": "/api/damage-types/fire"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Fire Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "4d6"
-              }
-            ]
-          },
-          {
-            "name": "Sleep Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 11,
+                "success_type": "half"
               },
-              "dc_value": 11,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Fire",
+                    "url": "/api/damage-types/fire"
+                  },
+                  "damage_dice": "4d6"
+                }
+              ]
+            },
+            {
+              "name": "Sleep Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 11,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/brass-dragon-wyrmling"
@@ -8466,9 +8412,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "lightning"
-    ],
+    "damage_immunities": ["lightning"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "10 ft.",
@@ -8506,39 +8450,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Lightning Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 12,
-              "success_type": "hafl"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Lightning",
-                  "url": "/api/damage-types/lightning"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Lightning Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "3d10"
-              }
-            ]
-          },
-          {
-            "name": "Repulsion Breath",
-            "dc": {
-              "dc_type": {
-                "name": "STR",
-                "url": "/api/ability-scores/str"
+                "dc_value": 12,
+                "success_type": "hafl"
               },
-              "dc_value": 12,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Lightning",
+                    "url": "/api/damage-types/lightning"
+                  },
+                  "damage_dice": "3d10"
+                }
+              ]
+            },
+            {
+              "name": "Repulsion Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "STR",
+                  "url": "/api/ability-scores/str"
+                },
+                "dc_value": 12,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/bronze-dragon-wyrmling"
@@ -9074,10 +9022,7 @@
       "cold",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
-    "damage_immunities": [
-      "fire",
-      "poison"
-    ],
+    "damage_immunities": ["fire", "poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -9136,10 +9081,7 @@
         "desc": "Up to four chains the devil can see within 60 feet of it magically sprout razor-edged barbs and animate under the devil's control, provided that the chains aren't being worn or carried.\nEach animated chain is an object with AC 20, 20 hit points, resistance to piercing damage, and immunity to psychic and thunder damage. When the devil uses Multiattack on its turn, it can use each animated chain to make one additional chain attack. An animated chain can grapple one creature of its own but can't make attacks while grappling. An animated chain reverts to its inanimate state if reduced to 0 hit points or if the devil is incapacitated or dies.",
         "usage": {
           "type": "recharge after rest",
-          "rest_types": [
-            "short",
-            "long"
-          ]
+          "rest_types": ["short", "long"]
         }
       }
     ],
@@ -9363,9 +9305,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -9691,10 +9631,7 @@
         "desc": "The cloaker magically creates three illusory duplicates of itself if it isn't in bright light. The duplicates move with it and mimic its actions, shifting position so as to make it impossible to track which cloaker is the real one. If the cloaker is ever in an area of bright light, the duplicates disappear.\nWhenever any creature targets the cloaker with an attack or a harmful spell while a duplicate remains, that creature rolls randomly to determine whether it targets the cloaker or one of the duplicates. A creature is unaffected by this magical effect if it can't see or if it relies on senses other than sight.\nA duplicate has the cloaker's AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears.",
         "usage": {
           "type": "recharge after rest",
-          "rest_types": [
-            "short",
-            "long"
-          ]
+          "rest_types": ["short", "long"]
         }
       }
     ],
@@ -10105,9 +10042,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "acid"
-    ],
+    "damage_immunities": ["acid"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "10 ft.",
@@ -10139,39 +10074,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Acid Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 11,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Acid",
-                  "url": "/api/damage-types/acid"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Acid Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "4d8"
-              }
-            ]
-          },
-          {
-            "name": "Slowing Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 11,
+                "success_type": "half"
               },
-              "dc_value": 11,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Acid",
+                    "url": "/api/damage-types/acid"
+                  },
+                  "damage_dice": "4d8"
+                }
+              ]
+            },
+            {
+              "name": "Slowing Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 11,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/copper-dragon-wyrmling"
@@ -10214,9 +10153,7 @@
       }
     ],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "radiant"
-    ],
+    "damage_resistances": ["radiant"],
     "damage_immunities": [
       "psychic",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
@@ -10238,9 +10175,7 @@
             "url": "/api/ability-scores/cha"
           },
           "dc": 14,
-          "components_required": [
-            "V"
-          ],
+          "components_required": ["V"],
           "spells": [
             {
               "name": "Detect Evil and Good",
@@ -10573,11 +10508,7 @@
           },
           "dc": 11,
           "modifier": 3,
-          "components_required": [
-            "V",
-            "S",
-            "M"
-          ],
+          "components_required": ["V", "S", "M"],
           "school": "cleric",
           "slots": {
             "1": 4,
@@ -11143,9 +11074,7 @@
             "url": "/api/ability-scores/cha"
           },
           "dc": 17,
-          "components_required": [
-            "V"
-          ],
+          "components_required": ["V"],
           "spells": [
             {
               "name": "Detect Evil and Good",
@@ -11338,10 +11267,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "lightning",
-      "thunder"
-    ],
+    "damage_immunities": ["lightning", "thunder"],
     "condition_immunities": [],
     "senses": {
       "darkvision": "120 ft.",
@@ -11718,9 +11644,7 @@
       }
     ],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "fire"
-    ],
+    "damage_resistances": ["fire"],
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
@@ -11861,14 +11785,8 @@
     "charisma": 3,
     "proficiencies": [],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "cold",
-      "fire",
-      "lightning"
-    ],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_resistances": ["cold", "fire", "lightning"],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -12345,11 +12263,7 @@
           },
           "dc": 12,
           "modifier": 4,
-          "components_required": [
-            "V",
-            "S",
-            "M"
-          ],
+          "components_required": ["V", "S", "M"],
           "school": "druid",
           "slots": {
             "1": 4,
@@ -12603,9 +12517,7 @@
     "charisma": 9,
     "proficiencies": [],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "poison"
-    ],
+    "damage_resistances": ["poison"],
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
@@ -12630,10 +12542,7 @@
         "desc": "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available.",
         "usage": {
           "type": "recharge after rest",
-          "rest_types": [
-            "short",
-            "long"
-          ]
+          "rest_types": ["short", "long"]
         }
       },
       {
@@ -12669,10 +12578,7 @@
         "desc": "The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it .",
         "usage": {
           "type": "recharge after rest",
-          "rest_types": [
-            "short",
-            "long"
-          ]
+          "rest_types": ["short", "long"]
         }
       }
     ],
@@ -12710,13 +12616,9 @@
         "value": 4
       }
     ],
-    "damage_vulnerabilities": [
-      "fire"
-    ],
+    "damage_vulnerabilities": ["fire"],
     "damage_resistances": [],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -12870,15 +12772,11 @@
     "wisdom": 10,
     "charisma": 5,
     "proficiencies": [],
-    "damage_vulnerabilities": [
-      "thunder"
-    ],
+    "damage_vulnerabilities": ["thunder"],
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Exhaustion",
@@ -12991,9 +12889,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "darkvision": "120 ft.",
@@ -13341,10 +13237,7 @@
       "cold",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
-    "damage_immunities": [
-      "fire",
-      "poison"
-    ],
+    "damage_immunities": ["fire", "poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -13734,10 +13627,7 @@
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "fire",
-      "poison"
-    ],
+    "damage_immunities": ["fire", "poison"],
     "condition_immunities": [
       {
         "name": "Exhaustion",
@@ -13883,9 +13773,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "passive_perception": 16
@@ -14152,10 +14040,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "poison",
-      "psychic"
-    ],
+    "damage_immunities": ["poison", "psychic"],
     "condition_immunities": [
       {
         "name": "Blinded",
@@ -14322,9 +14207,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "cold"
-    ],
+    "damage_immunities": ["cold"],
     "condition_immunities": [],
     "senses": {
       "passive_perception": 13
@@ -14404,9 +14287,7 @@
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine"
     ],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Exhaustion",
@@ -14612,9 +14493,7 @@
     "proficiencies": [],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "necrotic"
-    ],
+    "damage_immunities": ["necrotic"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -14707,11 +14586,7 @@
       "thunder",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "cold",
-      "necrotic",
-      "poison"
-    ],
+    "damage_immunities": ["cold", "necrotic", "poison"],
     "condition_immunities": [
       {
         "name": "Charmed",
@@ -15156,10 +15031,7 @@
         "desc": "If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.",
         "usage": {
           "type": "recharge after rest",
-          "rest_types": [
-            "short",
-            "long"
-          ]
+          "rest_types": ["short", "long"]
         }
       }
     ],
@@ -16002,10 +15874,7 @@
         "desc": "A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.",
         "usage": {
           "type": "recharge after rest",
-          "rest_types": [
-            "short",
-            "long"
-          ]
+          "rest_types": ["short", "long"]
         }
       }
     ],
@@ -17043,9 +16912,7 @@
       "lightning",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -17648,9 +17515,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "10 ft.",
@@ -17688,39 +17553,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Fire Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 13,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Fire",
-                  "url": "/api/damage-types/fire"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Fire Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "4d10"
-              }
-            ]
-          },
-          {
-            "name": "Weakening Breath",
-            "dc": {
-              "dc_type": {
-                "name": "STR",
-                "url": "/api/ability-scores/str"
+                "dc_value": 13,
+                "success_type": "half"
               },
-              "dc_value": 13,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Fire",
+                    "url": "/api/damage-types/fire"
+                  },
+                  "damage_dice": "4d10"
+                }
+              ]
+            },
+            {
+              "name": "Weakening Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "STR",
+                  "url": "/api/ability-scores/str"
+                },
+                "dc_value": 13,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/gold-dragon-wyrmling"
@@ -17849,11 +17718,7 @@
       }
     ],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "acid",
-      "cold",
-      "fire"
-    ],
+    "damage_resistances": ["acid", "cold", "fire"],
     "damage_immunities": [],
     "condition_immunities": [
       {
@@ -17981,9 +17846,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -18581,9 +18444,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Charmed",
@@ -18616,9 +18477,7 @@
           },
           "dc": 16,
           "modifier": 8,
-          "components_required": [
-            "V"
-          ],
+          "components_required": ["V"],
           "school": "cleric",
           "slots": {
             "1": 4,
@@ -18777,9 +18636,7 @@
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "psychic"
-    ],
+    "damage_immunities": ["psychic"],
     "condition_immunities": [
       {
         "name": "Charmed",
@@ -18816,10 +18673,7 @@
           },
           "dc": 16,
           "modifier": 8,
-          "components_required": [
-            "V",
-            "S"
-          ],
+          "components_required": ["V", "S"],
           "school": "wizard",
           "slots": {
             "1": 4,
@@ -18977,9 +18831,7 @@
     "charisma": 10,
     "proficiencies": [],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "fire"
-    ],
+    "damage_resistances": ["fire"],
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
@@ -19271,9 +19123,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "darkvision": "60 ft.",
@@ -19385,9 +19235,7 @@
       "lightning",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -19761,9 +19609,7 @@
     "proficiencies": [],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Charmed",
@@ -19851,10 +19697,7 @@
       "cold",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
-    "damage_immunities": [
-      "fire",
-      "poison"
-    ],
+    "damage_immunities": ["fire", "poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -20230,10 +20073,7 @@
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
-    "damage_immunities": [
-      "fire",
-      "poison"
-    ],
+    "damage_immunities": ["fire", "poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -20386,15 +20226,9 @@
         "value": 3
       }
     ],
-    "damage_vulnerabilities": [
-      "bludgeoning",
-      "fire"
-    ],
+    "damage_vulnerabilities": ["bludgeoning", "fire"],
     "damage_resistances": [],
-    "damage_immunities": [
-      "cold",
-      "poison"
-    ],
+    "damage_immunities": ["cold", "poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -20436,9 +20270,22 @@
       {
         "name": "Innate Spellcasting",
         "desc": "The mephit can innately cast fog cloud, requiring no material components. Its innate spellcasting ability is Charisma.",
-        "usage": {
-          "type": "per day",
-          "times": 1
+        "spellcasting": {
+          "ability": {
+            "name": "CHA",
+            "url": "/api/ability-scores/cha"
+          },
+          "components_required": [],
+          "spells": [
+            {
+              "name": "Fog Cloud",
+              "url": "/api/spells/fog-cloud",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
         }
       }
     ],
@@ -20543,10 +20390,7 @@
       "cold",
       "bludgeoning, piercing, and slashing from nonmagical/nonsilver weapons"
     ],
-    "damage_immunities": [
-      "fire",
-      "poison"
-    ],
+    "damage_immunities": ["fire", "poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -20636,9 +20480,7 @@
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Exhaustion",
@@ -21109,10 +20951,7 @@
         "desc": "For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 ft. of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated.",
         "usage": {
           "type": "recharge after rest",
-          "rest_types": [
-            "short",
-            "long"
-          ]
+          "rest_types": ["short", "long"]
         }
       }
     ],
@@ -21600,13 +21439,8 @@
     "charisma": 3,
     "proficiencies": [],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "cold"
-    ],
-    "damage_immunities": [
-      "fire",
-      "poison"
-    ],
+    "damage_resistances": ["cold"],
+    "damage_immunities": ["fire", "poison"],
     "condition_immunities": [
       {
         "name": "Charmed",
@@ -21712,11 +21546,7 @@
       }
     ],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "cold",
-      "lightning",
-      "necrotic"
-    ],
+    "damage_resistances": ["cold", "lightning", "necrotic"],
     "damage_immunities": [
       "poison",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
@@ -21773,11 +21603,7 @@
           },
           "dc": 20,
           "modifier": 12,
-          "components_required": [
-            "V",
-            "S",
-            "M"
-          ],
+          "components_required": ["V", "S", "M"],
           "school": "wizard",
           "slots": {
             "1": 4,
@@ -22384,11 +22210,7 @@
           },
           "dc": 14,
           "modifier": 6,
-          "components_required": [
-            "V",
-            "S",
-            "M"
-          ],
+          "components_required": ["V", "S", "M"],
           "school": "wizard",
           "slots": {
             "1": 4,
@@ -22527,14 +22349,9 @@
         "value": 3
       }
     ],
-    "damage_vulnerabilities": [
-      "cold"
-    ],
+    "damage_vulnerabilities": ["cold"],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire",
-      "poison"
-    ],
+    "damage_immunities": ["fire", "poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -22660,9 +22477,7 @@
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "darkvision": "60 ft.",
@@ -22941,9 +22756,7 @@
       "lightning",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -23482,9 +23295,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "acid"
-    ],
+    "damage_immunities": ["acid"],
     "condition_immunities": [
       {
         "name": "Prone",
@@ -23656,13 +23467,9 @@
     "wisdom": 8,
     "charisma": 5,
     "proficiencies": [],
-    "damage_vulnerabilities": [
-      "bludgeoning"
-    ],
+    "damage_vulnerabilities": ["bludgeoning"],
     "damage_resistances": [],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Exhaustion",
@@ -23800,16 +23607,11 @@
         "value": 2
       }
     ],
-    "damage_vulnerabilities": [
-      "fire"
-    ],
+    "damage_vulnerabilities": ["fire"],
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "necrotic",
-      "poison"
-    ],
+    "damage_immunities": ["necrotic", "poison"],
     "condition_immunities": [
       {
         "name": "Charmed",
@@ -23947,9 +23749,7 @@
         "value": 5
       }
     ],
-    "damage_vulnerabilities": [
-      "bludgeoning"
-    ],
+    "damage_vulnerabilities": ["bludgeoning"],
     "damage_resistances": [],
     "damage_immunities": [
       "necrotic",
@@ -24004,11 +23804,7 @@
           },
           "dc": 17,
           "modifier": 9,
-          "components_required": [
-            "V",
-            "S",
-            "M"
-          ],
+          "components_required": ["V", "S", "M"],
           "school": "cleric",
           "slots": {
             "1": 4,
@@ -24243,9 +24039,7 @@
       "lightning",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -24545,9 +24339,7 @@
     "proficiencies": [],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "passive_perception": 11
@@ -24684,13 +24476,8 @@
     "charisma": 1,
     "proficiencies": [],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "acid"
-    ],
-    "damage_immunities": [
-      "lightning",
-      "slashing"
-    ],
+    "damage_resistances": ["acid"],
+    "damage_immunities": ["lightning", "slashing"],
     "condition_immunities": [
       {
         "name": "Blinded",
@@ -24840,10 +24627,7 @@
         "desc": "A 5-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.",
         "usage": {
           "type": "recharge after rest",
-          "rest_types": [
-            "short",
-            "long"
-          ]
+          "rest_types": ["short", "long"]
         },
         "attack_bonus": 0
       }
@@ -24940,9 +24724,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -25806,10 +25588,7 @@
       "cold",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
-    "damage_immunities": [
-      "fire",
-      "poison"
-    ],
+    "damage_immunities": ["fire", "poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -26512,11 +26291,7 @@
           },
           "dc": 13,
           "modifier": 5,
-          "components_required": [
-            "V",
-            "S",
-            "M"
-          ],
+          "components_required": ["V", "S", "M"],
           "school": "cleric",
           "slots": {
             "1": 4,
@@ -26824,9 +26599,7 @@
       "lightning",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -27318,9 +27091,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "10 ft.",
@@ -27467,10 +27238,7 @@
     "proficiencies": [],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "cold",
-      "fire"
-    ],
+    "damage_immunities": ["cold", "fire"],
     "condition_immunities": [],
     "senses": {
       "darkvision": "60 ft.",
@@ -27869,10 +27637,7 @@
     "proficiencies": [],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "poison",
-      "psychic"
-    ],
+    "damage_immunities": ["poison", "psychic"],
     "condition_immunities": [
       {
         "name": "Blinded",
@@ -28239,15 +28004,11 @@
     "wisdom": 10,
     "charisma": 12,
     "proficiencies": [],
-    "damage_vulnerabilities": [
-      "cold"
-    ],
+    "damage_vulnerabilities": ["cold"],
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "darkvision": "60 ft.",
@@ -28764,9 +28525,7 @@
         "value": 4
       }
     ],
-    "damage_vulnerabilities": [
-      "radiant"
-    ],
+    "damage_vulnerabilities": ["radiant"],
     "damage_resistances": [
       "acid",
       "cold",
@@ -28775,10 +28534,7 @@
       "thunder",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "necrotic",
-      "poison"
-    ],
+    "damage_immunities": ["necrotic", "poison"],
     "condition_immunities": [
       {
         "name": "Exhaustion",
@@ -28879,13 +28635,8 @@
       }
     ],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "cold",
-      "fire"
-    ],
-    "damage_immunities": [
-      "lightning"
-    ],
+    "damage_resistances": ["cold", "fire"],
+    "damage_immunities": ["lightning"],
     "condition_immunities": [
       {
         "name": "Blinded",
@@ -28979,9 +28730,7 @@
     "proficiencies": [],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Charmed",
@@ -29176,9 +28925,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "cold"
-    ],
+    "damage_immunities": ["cold"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "10 ft.",
@@ -29210,39 +28957,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Cold Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
-              },
-              "dc_value": 13,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Cold",
-                  "url": "/api/damage-types/cold"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Cold Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
                 },
-                "damage_dice": "4d8"
-              }
-            ]
-          },
-          {
-            "name": "Paralyzing Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 13,
+                "success_type": "half"
               },
-              "dc_value": 13,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Cold",
+                    "url": "/api/damage-types/cold"
+                  },
+                  "damage_dice": "4d8"
+                }
+              ]
+            },
+            {
+              "name": "Paralyzing Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 13,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/silver-dragon-wyrmling"
@@ -29267,9 +29018,7 @@
     "wisdom": 8,
     "charisma": 5,
     "proficiencies": [],
-    "damage_vulnerabilities": [
-      "bludgeoning"
-    ],
+    "damage_vulnerabilities": ["bludgeoning"],
     "damage_resistances": [],
     "damage_immunities": [],
     "condition_immunities": [
@@ -29363,10 +29112,7 @@
       "radiant",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "necrotic",
-      "poison"
-    ],
+    "damage_immunities": ["necrotic", "poison"],
     "condition_immunities": [
       {
         "name": "Charmed",
@@ -29625,10 +29371,7 @@
       "thunder",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "necrotic",
-      "poison"
-    ],
+    "damage_immunities": ["necrotic", "poison"],
     "condition_immunities": [
       {
         "name": "Charmed",
@@ -29813,9 +29556,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Charmed",
@@ -29848,9 +29589,7 @@
           },
           "dc": 14,
           "modifier": 6,
-          "components_required": [
-            "V"
-          ],
+          "components_required": ["V"],
           "school": "wizard",
           "slots": {
             "1": 4,
@@ -30177,10 +29916,7 @@
     "proficiencies": [],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire",
-      "poison"
-    ],
+    "damage_immunities": ["fire", "poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -30630,13 +30366,8 @@
       }
     ],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "cold"
-    ],
-    "damage_immunities": [
-      "lightning",
-      "thunder"
-    ],
+    "damage_resistances": ["cold"],
+    "damage_immunities": ["lightning", "thunder"],
     "condition_immunities": [],
     "senses": {
       "passive_perception": 19
@@ -30924,11 +30655,7 @@
     "charisma": 4,
     "proficiencies": [],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "bludgeoning",
-      "piercing",
-      "slashing"
-    ],
+    "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
       {
@@ -31025,11 +30752,7 @@
     "charisma": 1,
     "proficiencies": [],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "bludgeoning",
-      "piercing",
-      "slashing"
-    ],
+    "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
       {
@@ -31117,11 +30840,7 @@
     "charisma": 1,
     "proficiencies": [],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "bludgeoning",
-      "piercing",
-      "slashing"
-    ],
+    "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
       {
@@ -31209,11 +30928,7 @@
     "charisma": 1,
     "proficiencies": [],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "bludgeoning",
-      "piercing",
-      "slashing"
-    ],
+    "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
       {
@@ -31301,11 +31016,7 @@
     "charisma": 3,
     "proficiencies": [],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "bludgeoning",
-      "piercing",
-      "slashing"
-    ],
+    "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
       {
@@ -31393,11 +31104,7 @@
     "charisma": 2,
     "proficiencies": [],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "bludgeoning",
-      "piercing",
-      "slashing"
-    ],
+    "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
       {
@@ -31492,11 +31199,7 @@
     "charisma": 3,
     "proficiencies": [],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "bludgeoning",
-      "piercing",
-      "slashing"
-    ],
+    "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
       {
@@ -31588,11 +31291,7 @@
     "charisma": 6,
     "proficiencies": [],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "bludgeoning",
-      "piercing",
-      "slashing"
-    ],
+    "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
       {
@@ -31679,11 +31378,7 @@
     "charisma": 1,
     "proficiencies": [],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "bludgeoning",
-      "piercing",
-      "slashing"
-    ],
+    "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
       {
@@ -31779,11 +31474,7 @@
     "charisma": 1,
     "proficiencies": [],
     "damage_vulnerabilities": [],
-    "damage_resistances": [
-      "bludgeoning",
-      "piercing",
-      "slashing"
-    ],
+    "damage_resistances": ["bludgeoning", "piercing", "slashing"],
     "damage_immunities": [],
     "condition_immunities": [
       {
@@ -32284,13 +31975,8 @@
     "wisdom": 16,
     "charisma": 12,
     "proficiencies": [],
-    "damage_vulnerabilities": [
-      "fire"
-    ],
-    "damage_resistances": [
-      "bludgeoning",
-      "piercing"
-    ],
+    "damage_vulnerabilities": ["fire"],
+    "damage_resistances": ["bludgeoning", "piercing"],
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
@@ -32712,9 +32398,7 @@
     "proficiencies": [],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Charmed",
@@ -33443,9 +33127,7 @@
       "lightning",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -33690,13 +33372,9 @@
     "wisdom": 8,
     "charisma": 5,
     "proficiencies": [],
-    "damage_vulnerabilities": [
-      "bludgeoning"
-    ],
+    "damage_vulnerabilities": ["bludgeoning"],
     "damage_resistances": [],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Exhaustion",
@@ -33757,9 +33435,7 @@
       "acid",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Exhaustion",
@@ -34141,10 +33817,7 @@
         "desc": "If the wereboar takes 14 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.",
         "usage": {
           "type": "recharge after rest",
-          "rest_types": [
-            "short",
-            "long"
-          ]
+          "rest_types": ["short", "long"]
         },
         "attack_bonus": 0
       }
@@ -34591,9 +34264,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "cold"
-    ],
+    "damage_immunities": ["cold"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "10 ft.",
@@ -34833,10 +34504,7 @@
       "thunder",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
-    "damage_immunities": [
-      "lightning",
-      "poison"
-    ],
+    "damage_immunities": ["lightning", "poison"],
     "condition_immunities": [
       {
         "name": "Exhaustion",
@@ -34954,9 +34622,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "cold"
-    ],
+    "damage_immunities": ["cold"],
     "condition_immunities": [],
     "senses": {
       "passive_perception": 15
@@ -35180,10 +34846,7 @@
       "thunder",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
-    "damage_immunities": [
-      "necrotic",
-      "poison"
-    ],
+    "damage_immunities": ["necrotic", "poison"],
     "condition_immunities": [
       {
         "name": "Charmed",
@@ -35555,9 +35218,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "acid"
-    ],
+    "damage_immunities": ["acid"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "30 ft.",
@@ -35713,9 +35374,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "lightning"
-    ],
+    "damage_immunities": ["lightning"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "30 ft.",
@@ -35870,9 +35529,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "30 ft.",
@@ -35939,40 +35596,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attack_bonus": 0,
-        "attacks": [
-          {
-            "name": "Fire Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 14,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Fire",
-                  "url": "/api/damage-types/fire"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Fire Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "12d6"
-              }
-            ]
-          },
-          {
-            "name": "Sleep Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 14,
+                "success_type": "half"
               },
-              "dc_value": 14,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Fire",
+                    "url": "/api/damage-types/fire"
+                  },
+                  "damage_dice": "12d6"
+                }
+              ]
+            },
+            {
+              "name": "Sleep Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 14,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/young-brass-dragon"
@@ -36037,9 +35697,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "lightning"
-    ],
+    "damage_immunities": ["lightning"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "30 ft.",
@@ -36112,40 +35770,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attack_bonus": 0,
-        "attacks": [
-          {
-            "name": "Lightning Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 15,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Lightning",
-                  "url": "/api/damage-types/lightning"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Lightning Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "10d10"
-              }
-            ]
-          },
-          {
-            "name": "Repulsion Breath",
-            "dc": {
-              "dc_type": {
-                "name": "STR",
-                "url": "/api/ability-scores/str"
+                "dc_value": 15,
+                "success_type": "half"
               },
-              "dc_value": 15,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Lightning",
+                    "url": "/api/damage-types/lightning"
+                  },
+                  "damage_dice": "10d10"
+                }
+              ]
+            },
+            {
+              "name": "Repulsion Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "STR",
+                  "url": "/api/ability-scores/str"
+                },
+                "dc_value": 15,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/young-bronze-dragon"
@@ -36210,9 +35871,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "acid"
-    ],
+    "damage_immunities": ["acid"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "30 ft.",
@@ -36279,39 +35938,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Acid Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 14,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Acid",
-                  "url": "/api/damage-types/acid"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Acid Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "9d8"
-              }
-            ]
-          },
-          {
-            "name": "Slowing Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 14,
+                "success_type": "half"
               },
-              "dc_value": 14,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Acid",
+                    "url": "/api/damage-types/acid"
+                  },
+                  "damage_dice": "9d8"
+                }
+              ]
+            },
+            {
+              "name": "Slowing Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 14,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/young-copper-dragon"
@@ -36381,9 +36044,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "30 ft.",
@@ -36456,39 +36117,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Fire Breath",
-            "dc": {
-              "dc_type": {
-                "name": "DEX",
-                "url": "/api/ability-scores/dex"
-              },
-              "dc_value": 17,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Fire",
-                  "url": "/api/damage-types/fire"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Fire Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "DEX",
+                  "url": "/api/ability-scores/dex"
                 },
-                "damage_dice": "10d10"
-              }
-            ]
-          },
-          {
-            "name": "Weakening Breath",
-            "dc": {
-              "dc_type": {
-                "name": "STR",
-                "url": "/api/ability-scores/str"
+                "dc_value": 17,
+                "success_type": "half"
               },
-              "dc_value": 17,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Fire",
+                    "url": "/api/damage-types/fire"
+                  },
+                  "damage_dice": "10d10"
+                }
+              ]
+            },
+            {
+              "name": "Weakening Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "STR",
+                  "url": "/api/ability-scores/str"
+                },
+                "dc_value": 17,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/young-gold-dragon"
@@ -36553,9 +36218,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "poison"
-    ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "name": "Poisoned",
@@ -36716,9 +36379,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "fire"
-    ],
+    "damage_immunities": ["fire"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "30 ft.",
@@ -36877,9 +36538,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "cold"
-    ],
+    "damage_immunities": ["cold"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "30 ft.",
@@ -36946,39 +36605,43 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attacks": [
-          {
-            "name": "Cold Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
-              },
-              "dc_value": 17,
-              "success_type": "half"
-            },
-            "damage": [
-              {
-                "damage_type": {
-                  "name": "Cold",
-                  "url": "/api/damage-types/cold"
+        "attack_options": {
+          "choose": 1,
+          "type": "attack",
+          "from": [
+            {
+              "name": "Cold Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
                 },
-                "damage_dice": "12d8"
-              }
-            ]
-          },
-          {
-            "name": "Paralyzing Breath",
-            "dc": {
-              "dc_type": {
-                "name": "CON",
-                "url": "/api/ability-scores/con"
+                "dc_value": 17,
+                "success_type": "half"
               },
-              "dc_value": 17,
-              "success_type": "none"
+              "damage": [
+                {
+                  "damage_type": {
+                    "name": "Cold",
+                    "url": "/api/damage-types/cold"
+                  },
+                  "damage_dice": "12d8"
+                }
+              ]
+            },
+            {
+              "name": "Paralyzing Breath",
+              "dc": {
+                "dc_type": {
+                  "name": "CON",
+                  "url": "/api/ability-scores/con"
+                },
+                "dc_value": 17,
+                "success_type": "none"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "url": "/api/monsters/young-silver-dragon"
@@ -37039,9 +36702,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [
-      "cold"
-    ],
+    "damage_immunities": ["cold"],
     "condition_immunities": [],
     "senses": {
       "blindsight": "30 ft.",

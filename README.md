@@ -5,7 +5,12 @@ Holds the database for the D&D 5th Edition API at http://dnd5eapi.co/
 
 Talk to us [on Discord!](https://discord.gg/TQuYTv7)
 
-# How to load
+# How to run
+
+## With Docker
+You should be able to build locally and then run the local Docker image.
+
+## Without Docker
 First you need to make sure you have [MongoDB installed locally.](https://docs.mongodb.com/manual/installation/)
 
 You can load this data locally by running:
