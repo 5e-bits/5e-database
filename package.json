@@ -5,7 +5,8 @@
   "scripts": {
     "lint": "eslint . --ext .js,.json",
     "test": "jest -c jest.config.js",
-    "db:refresh": "node scripts/db-refresh.js"
+    "db:refresh": "node scripts/dbRefresh.js",
+    "cache:flush": "node scripts/cacheFlush.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,8 @@
     "eslint-plugin-json": "^2.1.1",
     "glob": "^7.1.6",
     "jest": "^26.0.1",
-    "node": "^14.4.0"
+    "node": "^14.4.0",
+    "redis": "^3.0.2"
   },
   "dependencies": {}
 }
