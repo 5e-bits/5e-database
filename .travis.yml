@@ -16,3 +16,6 @@ jobs:
     - stage: Deploy
       if: branch = master AND type != pull_request
       script: yarn db:refresh
+    - stage: Cache Flush
+      if: branch = master AND type != pull_request
+      script: yarn cache:flush
