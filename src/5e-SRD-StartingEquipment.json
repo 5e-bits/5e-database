@@ -691,14 +691,29 @@
         "choose": 1,
         "type": "equipment",
         "from": [
-          {
-            "equipment": {
-              "index": "shield",
-              "name": "Shield",
-              "url": "/api/equipment/shield"
+          [
+            {
+              "equipment": {
+                "index": "shield",
+                "name": "Shield",
+                "url": "/api/equipment/shield"
+              },
+              "quantity": 1
             },
-            "quantity": 1
-          },
+            {
+              "equipment_option": {
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "equipment_category": {
+                    "name": "Martial Weapons",
+                    "index": "martial-weapons",
+                    "url": "/api/equipment-categories/martial-weapons"
+                  }
+                }
+              }
+            }
+          ],
           {
             "equipment_option": {
               "choose": 2,
