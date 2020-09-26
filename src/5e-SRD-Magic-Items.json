@@ -13,17 +13,11 @@
     "url": "/api/magic-items/adamantine-armor"
   },
   {
-    "index": "ammunition",
-    "name": "Ammunition, +1, +2, or +3",
-    "equipment_category": {
-      "name": "Weapon",
-      "url": "/api/equipment-categories/weapon"
-    },
-    "desc": [
-      "Weapon (any ammunition), uncommon (+1), rare (+2), or very rare (+3)",
-      "You have a bonus to attack and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hits a target, the ammunition is no longer magical."
-    ],
-    "url": "/api/magic-items/ammunition"
+      "index": "ammunition",
+      "name": "Ammunition, +1, +2, or +3",
+      "equipment_category": {
+        "name": "Ammunition",
+        "url": "/api/equipment-categories/ammunition"
   },
   {
     "index": "amulet-of-health",
@@ -185,20 +179,20 @@
     ],
     "url": "/api/magic-items/arrow-catching-shield"
   },
-  {
-    "index": "arrow-of-slaying",
-    "name": "Arrow of Slaying",
-    "equipment_category": {
-      "name": "Weapon",
-      "url": "/api/equipment-categories/weapon"
-    },
-    "desc": [
-      "Weapon (arrow), very rare",
-      "An arrow of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both arrows of dragon slaying and arrows of blue dragon slaying. If a creature belonging to the type, race, or group associated with an arrow of slaying takes damage from the arrow, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one.",
-      "Once an arrow of slaying deals its extra damage to a creature, it becomes a nonmagical arrow.",
-      "Other types of magic ammunition of this kind exist, such as bolts of slaying meant for a crossbow, though arrows are most common."
-    ],
-    "url": "/api/magic-items/arrow-of-slaying"
+ {
+      "index": "arrow-of-slaying",
+      "name": "Arrow of Slaying",
+      "equipment_category": {
+        "name": "Ammunition",
+        "url": "/api/equipment-categories/ammunition"
+      },
+      "desc": [
+        "Weapon (arrow), very rare",
+        "An arrow of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both arrows of dragon slaying and arrows of blue dragon slaying. If a creature belonging to the type, race, or group associated with an arrow of slaying takes damage from the arrow, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one.",
+        "Once an arrow of slaying deals its extra damage to a creature, it becomes a nonmagical arrow.",
+        "Other types of magic ammunition of this kind exist, such as bolts of slaying meant for a crossbow, though arrows are most common."
+      ],
+      "url": "/api/magic-items/arrow-of-slaying"
   },
   {
     "index": "bag-of-beans",
