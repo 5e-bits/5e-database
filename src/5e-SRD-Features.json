@@ -40,8 +40,7 @@
         "values": [
           {
             "type": "integer",
-            "value": 10,
-            "desc": "Base value for calculation"
+            "value": 10
           },
           {
             "type": "integer",
@@ -72,31 +71,35 @@
       "Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn."
     ],
     "feature_specific": {
-      "advantages": [
+      "action": [
         {
-          "on": [
-            {
-              "action": "attack",
-              "attack_type": "melee",
-              "attack_modifier": "str",
-              "desc": "Advantage applies to melee attacks with STR modifier only"
-            }
-          ],
-          "duration": "2 turns",
-          "prerequisites": [
-            {
-              "type": "integer",
-              "from": "attack",
-              "desc": "Advantage applies to first attack only"
-            }
-          ]
+          "type": "attack",
+          "attack_type": "melee",
+          "attack_modifier": "str",
+          "desc": "Advantage applies to melee attacks with STR modifier only"
         }
       ],
-      "downsides": [
+      "prerequisites": [
+        {
+          "type": "equals",
+          "description": "attack is the first of the turn",
+          "value": {
+            "type": "integer",
+            "value": "turns.attacks_made",
+            "desc": "attacks made so far this turn"
+          },
+          "target": {
+            "type": "integer",
+            "value": 0
+          }
+        }
+      ],
+      "debuffs": [
         {
           "type": "advantage",
           "for": "enemy",
           "on": "attack",
+          "duration": "2 turns",
           "desc": "Attack rolls against you have advantage until the end of your next turn"
         }
       ]
@@ -121,22 +124,35 @@
         {
           "on": [
             {
-              "action": "save",
-              "save_type": "dex"
+              "index": "dex",
+              "name": "DEX",
+              "url": "/api/ability-scores/dex"
             }
           ],
           "prerequisites": [
             {
               "type": "boolean",
-              "from": "incapacitated"
+              "from": {
+                "index": "incapacitated",
+                "name": "Incapacitated",                
+                "url": "/api/conditions/incapacitated"
+              }
             },
             {
               "type": "boolean",
-              "from": "blinded"
+              "from": {
+                "index": "blinded",
+                "name": "Blinded",
+                "url": "/api/conditions/blinded"
+              }
             },
             {
               "type": "boolean",
-              "from": "deafened"
+              "from":  {
+                "index": "deafened",
+                "name": "Deafened",
+                "url": "/api/conditions/deafened"
+              }
             }
           ]
         }
@@ -190,20 +206,22 @@
       "Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion (as described in appendix A)."
     ],
     "feature_specific": {
+      "bonus_action": {
+        "type": "attack",
+        "amount": 1
+      },
       "prerequisites": [
         {
           "type": "boolean",
           "from": "raging"
         }
       ],
-      "bonus_action": {
-        "action": "attack",
-        "amount": 1
-      },
-      "downsides": [
+      "debuffs": [
         {
-          "type": "exhaustion",
-          "exhaustion_levels": 1
+          "index": "exhaustion",
+          "name": "Exhaustion",
+          "url": "/api/conditions/exhaustion",
+          "level": 1
         }
       ]
     },
@@ -237,9 +255,7 @@
     "desc": [
       "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
     ],
-    "feature_specific":{
-      
-    },
+    "feature_specific": {},
     "url": "/api/features/barbarian-extra-attack"
   },
   {
@@ -271,7 +287,7 @@
         "prerequisites": [
           {
             "type": "boolean",
-            "from": "heavy armor"
+            "from": "equipped.armor.heavy"
           }
         ]
       }
@@ -350,8 +366,12 @@
           ],
           "prerequisites": [
             {
-              "from": "incapacitated",
-              "type": "boolean"
+              "type": "boolean",
+              "from":  {
+                "index": "incapacitated",
+                "name": "Incapacitated",
+                "url": "/api/conditions/incapacitated"
+              }
             },
             {
               "from": "raging",
