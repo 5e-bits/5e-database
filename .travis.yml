@@ -19,5 +19,5 @@ jobs:
     - stage: Trigger downstream
       if: branch = master AND type != pull_request
       script: |
-          curl -LO --retry 3 https://raw.githubusercontent.com/plume-lib/trigger-travis/master/trigger-travis.sh
-          sh trigger-travis.sh bagelbits 5e-srd-api $TRAVIS_ACCESS_TOKEN
+        curl -LO --retry 3 https://raw.githubusercontent.com/plume-lib/trigger-travis/master/trigger-travis.sh
+        sh trigger-travis.sh --pro bagelbits 5e-srd-api $TRAVIS_ACCESS_TOKEN
