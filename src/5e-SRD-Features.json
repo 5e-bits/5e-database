@@ -18,7 +18,120 @@
       "Your rage lasts for 1 minute. It ends early if you are knocked Unconscious or if Your Turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on Your Turn as a Bonus Action.",
       "Once you have raged the maximum number of times for your barbarian level, you must finish a Long Rest before you can rage again. You may rage 2 times at 1st level, 3 at 3rd, 4 at 6th, 5 at 12th, and 6 at 17th."
     ],
-    "url": "/api/features/rage"
+    "url": "/api/features/rage",
+    "feature_specific": {
+      "actions": [
+        {
+          "name": "Rage",
+          "action_type": "bonus",
+          "prerequisites": [
+            {
+              "type": "boolean",
+              "from": "equipped.armor.heavy"
+            }
+          ],
+          "effects": [
+            {
+              "duration": "10 turns",
+              "type": "advantage",
+              "on": {
+                "trigger": "check",
+                "target": "any",
+                "where": {
+                  "check_modifier": {
+                    "index": "str",
+                    "name": "STR",
+                    "url": "/api/ability-scores/str"
+                  }
+                }
+              }
+            },
+            {
+              "duration": "10 turns",
+              "type": "advantage",
+              "on": {
+                "trigger": "save",
+                "source": "any",
+                "where": {
+                  "save_modifier": {
+                    "index": "str",
+                    "name": "STR",
+                    "url": "/api/ability-scores/str"
+                  }
+                }
+              }
+            },
+            {
+              "type": "bonus",
+              "duration": "10 turns",
+              "amount": 2,
+              "to": "damage",
+              "on": {
+                "trigger": "attack",
+                "source": "self",
+                "target": "any",
+                "where": {
+                  "attack_modifier": {
+                    "index": "str",
+                    "name": "STR",
+                    "url": "/api/ability-scores/str"
+                  }
+                }
+              }
+            },
+            {
+              "type": "resistance",
+              "duration": "10 turns",
+              "to": "damage",
+              "target": "self",
+              "source": "any",
+              "where": {
+                "damage_type": {
+                  "index": "bludgeoning",
+                  "name": "Bludgeoning",
+                  "url": "/api/damage-types/bludgeoning"
+                }
+              }
+            },
+            {
+              "type": "resistance",
+              "duration": "10 turns",
+              "to": "damage",
+              "target": "self",
+              "source": "any",
+              "where": {
+                "damage_type": {
+                  "index": "piercing",
+                  "name": "Piercing",
+                  "url": "/api/damage-types/piercing"
+                }
+              }
+            },
+            {
+              "type": "resistance",
+              "duration": "10 turns",
+              "to": "damage",
+              "target": "self",
+              "source": "any",
+              "where": {
+                "damage_type": {
+                  "index": "slashing",
+                  "name": "Slashing",
+                  "url": "/api/damage-types/slashing"
+                }
+              }
+            },
+            {
+              "type": "action_restriction",
+              "deny_actions": [
+                "spellcasting"
+              ],
+              "duration": "10 turns"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "index": "barbarian-unarmored-defense",
@@ -33,6 +146,27 @@
     "desc": [
       "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit."
     ],
+    "feature_specific": {
+      "armor_class": {
+        "type": "sum",
+        "values": [
+          {
+            "type": "integer",
+            "value": 10
+          },
+          {
+            "type": "integer",
+            "from": "mod.dex",
+            "desc": "DEX modifier"
+          },
+          {
+            "type": "integer",
+            "from": "mod.con",
+            "desc": "CON modifier"
+          }
+        ]
+      }
+    },
     "url": "/api/features/barbarian-unarmored-defense"
   },
   {
@@ -48,6 +182,60 @@
     "desc": [
       "Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn."
     ],
+    "feature_specific": {
+      "actions": [
+        {
+          "name": "Reckless Attack",
+          "desc": "When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.",
+          "action_type": "attack",
+          "prerequisites": [
+            {
+              "type": "equals",
+              "desc": "attack is the first of the turn",
+              "value": {
+                "type": "integer",
+                "value": "turns.attacks_made",
+                "desc": "attacks made so far this turn"
+              },
+              "target": {
+                "type": "integer",
+                "value": 0
+              }
+            }
+          ],
+          "effects": [
+            {
+              "type": "advantage",
+              "on": {
+                "trigger": "attack",
+                "source": "self",
+                "target": "any",
+                "where": {
+                  "attack_type": "melee",
+                  "attack_modifier": {
+                    "index": "str",
+                    "name": "STR",
+                    "url": "/api/ability-scores/str"
+                  }
+                }
+              },
+              "duration": "1 turns",
+              "desc": "Advantage on melee weapon attack rolls using Strength during this turn"
+            },
+            {
+              "type": "advantage",
+              "on": {
+                "trigger": "attack",
+                "source": "any",
+                "target": "self"
+              },
+              "duration": "2 turns",
+              "desc": "Attack rolls against you have advantage until the end of your next turn"
+            }
+          ]
+        }
+      ]
+    },
     "url": "/api/features/reckless-attack"
   },
   {
@@ -63,6 +251,48 @@
     "desc": [
       "At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be blinded, deafened, or incapacitated."
     ],
+    "feature_specific": {
+      "advantages": [
+        {
+          "on": {
+            "trigger": "save",
+            "where": {
+              "save_modifier": {
+                "index": "dex",
+                "name": "DEX",
+                "url": "/api/ability-scores/dex"
+              }
+            }
+          },
+          "prerequisites": [
+            {
+              "type": "boolean",
+              "from": {
+                "index": "incapacitated",
+                "name": "Incapacitated",
+                "url": "/api/conditions/incapacitated"
+              }
+            },
+            {
+              "type": "boolean",
+              "from": {
+                "index": "blinded",
+                "name": "Blinded",
+                "url": "/api/conditions/blinded"
+              }
+            },
+            {
+              "type": "boolean",
+              "from": {
+                "index": "deafened",
+                "name": "Deafened",
+                "url": "/api/conditions/deafened"
+              }
+            }
+          ]
+        }
+      ]
+    },
     "url": "/api/features/danger-sense"
   },
   {
@@ -78,6 +308,19 @@
     "desc": [
       "At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels."
     ],
+    "feature_specific": {
+      "choice": {
+        "choose": 1,
+        "type": "subclass",
+        "from": [
+          {
+            "index": "berserker",
+            "name": "Berserker",
+            "url": "/api/subclasses/berserker"
+          }
+        ]
+      }
+    },
     "url": "/api/features/primal-path"
   },
   {
@@ -97,6 +340,38 @@
     "desc": [
       "Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion (as described in appendix A)."
     ],
+    "feature_specific": {
+      "actions": [
+        {
+          "name": "Frenzy",
+          "desc": [
+            "You go into a frenzy when you rage. For the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion (as described in appendix PH-A)",
+            " If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion (as described in appendix PH-A)."
+          ],
+          "action_type": "bonus",
+          "effects": [
+            {
+              "type": "bonus_action",
+              "duration": "10 turns",
+              "bonus_action_type": "attack",
+              "where": {
+                "attack_type": "melee"
+              }
+            },
+            {
+              "type": "condition",
+              "duration": "10 turns",
+              "condition_type": {
+                "index": "exhaustion",
+                "name": "Exhaustion",
+                "url": "/api/conditions/exhaustion",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     "url": "/api/features/frenzy"
   },
   {
@@ -127,6 +402,15 @@
     "desc": [
       "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
     ],
+    "feature_specific": {
+      "actions": [
+        {
+          "name": "Double attack",
+          "action_type": "attack",
+          "attack_times": 2
+        }
+      ]
+    },
     "url": "/api/features/barbarian-extra-attack"
   },
   {
@@ -142,6 +426,27 @@
     "desc": [
       "Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor."
     ],
+    "feature_specific": {
+      "speed": {
+        "type": "sum",
+        "values": [
+          {
+            "type": "integer",
+            "from": "base"
+          },
+          {
+            "type": "integer",
+            "value": 10
+          }
+        ],
+        "prerequisites": [
+          {
+            "type": "boolean",
+            "from": "equipped.armor.heavy"
+          }
+        ]
+      }
+    },
     "url": "/api/features/fast-movement"
   },
   {
@@ -161,6 +466,30 @@
     "desc": [
       "Beginning at 6th level, you can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage."
     ],
+    "feature_specific": {
+      "immunities": [
+        {
+          "to": [
+            {
+              "index": "charmed",
+              "name": "Charmed",
+              "url": "/api/conditions/charmed"
+            },
+            {
+              "index": "frightened",
+              "name": "Frightened",
+              "url": "/api/conditions/frightened"
+            }
+          ],
+          "prerequisites": [
+            {
+              "type": "boolean",
+              "from": "raging"
+            }
+          ]
+        }
+      ]
+    },
     "url": "/api/features/mindless-rage"
   },
   {
@@ -177,6 +506,36 @@
       "By 7th level, your instincts are so honed that you have advantage on initiative rolls.",
       "Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn."
     ],
+    "feature_specific": {
+      "advantages": [
+        {
+          "on": [
+            "initiative"
+          ]
+        }
+      ],
+      "immunities": [
+        {
+          "to": [
+            "surprised"
+          ],
+          "prerequisites": [
+            {
+              "type": "boolean",
+              "from": {
+                "index": "incapacitated",
+                "name": "Incapacitated",
+                "url": "/api/conditions/incapacitated"
+              }
+            },
+            {
+              "from": "raging",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
     "url": "/api/features/feral-instinct"
   },
   {
@@ -1421,7 +1780,9 @@
     "subclass": {},
     "name": "Spellcasting: Cleric",
     "level": 1,
-    "desc": ["As a conduit for divine power, you can cast cleric spells."],
+    "desc": [
+      "As a conduit for divine power, you can cast cleric spells."
+    ],
     "reference": "/api/spellcasting/cleric",
     "url": "/api/features/spellcasting-cleric"
   },
@@ -2574,7 +2935,9 @@
     "subclass": {},
     "name": "Fighting Style: Defense",
     "level": 1,
-    "desc": ["While you are wearing armor, you gain a +1 bonus to AC."],
+    "desc": [
+      "While you are wearing armor, you gain a +1 bonus to AC."
+    ],
     "group": "Fighting Style (Fighter)",
     "url": "/api/features/fighter-fighting-style-defense"
   },
@@ -3614,7 +3977,9 @@
     "subclass": {},
     "name": "Fighting Style: Defense",
     "level": 2,
-    "desc": ["While you are wearing armor, you gain a +1 bonus to AC."],
+    "desc": [
+      "While you are wearing armor, you gain a +1 bonus to AC."
+    ],
     "group": "Fighting Style (Paladin)",
     "url": "/api/features/fighting-style-defense"
   },
@@ -3988,7 +4353,9 @@
     "subclass": {},
     "name": "Aura improvements",
     "level": 18,
-    "desc": ["At 18th level, the range of your auras increase to 30 feet."],
+    "desc": [
+      "At 18th level, the range of your auras increase to 30 feet."
+    ],
     "url": "/api/features/aura-improvements"
   },
   {
@@ -4136,7 +4503,9 @@
     "subclass": {},
     "name": "Fighting Style: Defense",
     "level": 2,
-    "desc": ["While you are wearing armor, you gain a +1 bonus to AC."],
+    "desc": [
+      "While you are wearing armor, you gain a +1 bonus to AC."
+    ],
     "group": "Fighting Style (Ranger)",
     "url": "/api/features/ranger-fighting-style-defense"
   },
@@ -4450,7 +4819,9 @@
     },
     "name": "Defensive Tactics: Escape the Horde",
     "level": 7,
-    "desc": ["Opportunity attacks against you are made with disadvantage."],
+    "desc": [
+      "Opportunity attacks against you are made with disadvantage."
+    ],
     "group": "Defensive Tactics",
     "url": "/api/features/defensive-tactics-escape-the-horde"
   },
@@ -4488,7 +4859,9 @@
     },
     "name": "Defensive Tactics: Steel Will",
     "level": 7,
-    "desc": ["You have advantage on saving throws against being frightened."],
+    "desc": [
+      "You have advantage on saving throws against being frightened."
+    ],
     "group": "Defensive Tactics",
     "url": "/api/features/defensive-tactics-steel-will"
   },
@@ -6901,7 +7274,9 @@
     "name": "Eldritch Invocation: Beguiling Influence",
     "level": 2,
     "prerequisites": [],
-    "desc": ["You gain proficiency in the Deception and Persuasion skills."],
+    "desc": [
+      "You gain proficiency in the Deception and Persuasion skills."
+    ],
     "group": "Eldritch Invocations",
     "url": "/api/features/eldritch-invocation-beguiling-influence"
   },
@@ -6978,7 +7353,9 @@
         "spell": "/api/spells/dominate-monster"
       }
     ],
-    "desc": ["When you cast eldritch blast, its range is 300 feet."],
+    "desc": [
+      "When you cast eldritch blast, its range is 300 feet."
+    ],
     "group": "Eldritch Invocations",
     "url": "/api/features/eldritch-invocation-eldritch-spear"
   },
@@ -6993,7 +7370,9 @@
     "name": "Eldritch Invocation: Eyes of the Rune Keeper",
     "level": 2,
     "prerequisites": [],
-    "desc": ["You can read all writing."],
+    "desc": [
+      "You can read all writing."
+    ],
     "group": "Eldritch Invocations",
     "url": "/api/features/eldritch-invocation-eyes-of-the-rune-keeper"
   },
