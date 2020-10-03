@@ -24,7 +24,6 @@
         {
           "name": "Rage",
           "action_type": "bonus",
-          "duration": "10 turns",
           "prerequisites": [
             {
               "type": "boolean",
@@ -33,6 +32,7 @@
           ],
           "effects": [
             {
+              "duration": "10 turns",
               "type": "advantage",
               "on": {
                 "trigger": "check",
@@ -47,6 +47,7 @@
               }
             },
             {
+              "duration": "10 turns",
               "type": "advantage",
               "on": {
                 "trigger": "save",
@@ -62,6 +63,7 @@
             },
             {
               "type": "bonus",
+              "duration": "10 turns",
               "amount": 2,
               "to": "damage",
               "on": {
@@ -79,6 +81,7 @@
             },
             {
               "type": "resistance",
+              "duration": "10 turns",
               "to": "damage",
               "target": "self",
               "source": "any",
@@ -92,6 +95,7 @@
             },
             {
               "type": "resistance",
+              "duration": "10 turns",
               "to": "damage",
               "target": "self",
               "source": "any",
@@ -105,6 +109,7 @@
             },
             {
               "type": "resistance",
+              "duration": "10 turns",
               "to": "damage",
               "target": "self",
               "source": "any",
@@ -117,7 +122,11 @@
               }
             },
             {
-              "spellcasting": false
+              "type": "action_restriction",
+              "deny_actions": [
+                "spellcasting"
+              ],
+              "duration": "10 turns"
             }
           ]
         }
@@ -177,7 +186,7 @@
       "actions": [
         {
           "name": "Reckless Attack",
-          "desc": "When you make your first attack on your turn...",
+          "desc": "When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.",
           "action_type": "attack",
           "prerequisites": [
             {
@@ -335,12 +344,15 @@
       "actions": [
         {
           "name": "Frenzy",
-          "desc": "When you enter rage, you can go into frenzy instead",
+          "desc": [
+            "You go into a frenzy when you rage. For the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion (as described in appendix PH-A)",
+            " If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion (as described in appendix PH-A)."
+          ],
           "action_type": "bonus",
-          "duration": "10 turns",
           "effects": [
             {
               "type": "bonus_action",
+              "duration": "10 turns",
               "bonus_action_type": "attack",
               "where": {
                 "attack_type": "melee"
@@ -348,6 +360,7 @@
             },
             {
               "type": "condition",
+              "duration": "10 turns",
               "condition_type": {
                 "index": "exhaustion",
                 "name": "Exhaustion",
