@@ -19,7 +19,110 @@
       "Once you have raged the maximum number of times for your barbarian level, you must finish a Long Rest before you can rage again. You may rage 2 times at 1st level, 3 at 3rd, 4 at 6th, 5 at 12th, and 6 at 17th."
     ],
     "url": "/api/features/rage",
-    "feature_specific": {}
+    "feature_specific": {
+      "actions": [
+        {
+          "name": "Rage",
+          "action_type": "bonus",
+          "duration": "10 turns",
+          "prerequisites": [
+            {
+              "type": "boolean",
+              "from": "equipped.armor.heavy"
+            }
+          ],
+          "effects": [
+            {
+              "type": "advantage",
+              "on": {
+                "trigger": "check",
+                "target": "any",
+                "where": {
+                  "check_modifier": {
+                    "index": "str",
+                    "name": "STR",
+                    "url": "/api/ability-scores/str"
+                  }
+                }
+              }
+            },
+            {
+              "type": "advantage",
+              "on": {
+                "trigger": "save",
+                "source": "any",
+                "where": {
+                  "save_modifier": {
+                    "index": "str",
+                    "name": "STR",
+                    "url": "/api/ability-scores/str"
+                  }
+                }
+              }
+            },
+            {
+              "type": "bonus",
+              "amount": 2,
+              "to": "damage",
+              "on": {
+                "trigger": "attack",
+                "source": "self",
+                "target": "any",
+                "where": {
+                  "attack_modifier": {
+                    "index": "str",
+                    "name": "STR",
+                    "url": "/api/ability-scores/str"
+                  }
+                }
+              }
+            },
+            {
+              "type": "resistance",
+              "to": "damage",
+              "target": "self",
+              "source": "any",
+              "where": {
+                "damage_type": {
+                  "index": "bludgeoning",
+                  "name": "Bludgeoning",
+                  "url": "/api/damage-types/bludgeoning"
+                }
+              }
+            },
+            {
+              "type": "resistance",
+              "to": "damage",
+              "target": "self",
+              "source": "any",
+              "where": {
+                "damage_type": {
+                  "index": "piercing",
+                  "name": "Piercing",
+                  "url": "/api/damage-types/piercing"
+                }
+              }
+            },
+            {
+              "type": "resistance",
+              "to": "damage",
+              "target": "self",
+              "source": "any",
+              "where": {
+                "damage_type": {
+                  "index": "slashing",
+                  "name": "Slashing",
+                  "url": "/api/damage-types/slashing"
+                }
+              }
+            },
+            {
+              "spellcasting": false
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "index": "barbarian-unarmored-defense",
@@ -71,36 +174,56 @@
       "Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn."
     ],
     "feature_specific": {
-      "action": [
+      "actions": [
         {
-          "type": "attack",
-          "attack_type": "melee",
-          "attack_modifier": "str",
-          "desc": "Advantage applies to melee attacks with STR modifier only"
-        }
-      ],
-      "prerequisites": [
-        {
-          "type": "equals",
-          "description": "attack is the first of the turn",
-          "value": {
-            "type": "integer",
-            "value": "turns.attacks_made",
-            "desc": "attacks made so far this turn"
-          },
-          "target": {
-            "type": "integer",
-            "value": 0
-          }
-        }
-      ],
-      "debuffs": [
-        {
-          "type": "advantage",
-          "for": "enemy",
-          "on": "attack",
-          "duration": "2 turns",
-          "desc": "Attack rolls against you have advantage until the end of your next turn"
+          "name": "Reckless Attack",
+          "desc": "When you make your first attack on your turn...",
+          "action_type": "attack",
+          "prerequisites": [
+            {
+              "type": "equals",
+              "desc": "attack is the first of the turn",
+              "value": {
+                "type": "integer",
+                "value": "turns.attacks_made",
+                "desc": "attacks made so far this turn"
+              },
+              "target": {
+                "type": "integer",
+                "value": 0
+              }
+            }
+          ],
+          "effects": [
+            {
+              "type": "advantage",
+              "on": {
+                "trigger": "attack",
+                "source": "self",
+                "target": "any",
+                "where": {
+                  "attack_type": "melee",
+                  "attack_modifier": {
+                    "index": "str",
+                    "name": "STR",
+                    "url": "/api/ability-scores/str"
+                  }
+                }
+              },
+              "duration": "1 turns",
+              "desc": "Advantage on melee weapon attack rolls using Strength during this turn"
+            },
+            {
+              "type": "advantage",
+              "on": {
+                "trigger": "attack",
+                "source": "any",
+                "target": "self"
+              },
+              "duration": "2 turns",
+              "desc": "Attack rolls against you have advantage until the end of your next turn"
+            }
+          ]
         }
       ]
     },
@@ -122,19 +245,22 @@
     "feature_specific": {
       "advantages": [
         {
-          "on": [
-            {
-              "index": "dex",
-              "name": "DEX",
-              "url": "/api/ability-scores/dex"
+          "on": {
+            "trigger": "save",
+            "where": {
+              "save_modifier": {
+                "index": "dex",
+                "name": "DEX",
+                "url": "/api/ability-scores/dex"
+              }
             }
-          ],
+          },
           "prerequisites": [
             {
               "type": "boolean",
               "from": {
                 "index": "incapacitated",
-                "name": "Incapacitated",                
+                "name": "Incapacitated",
                 "url": "/api/conditions/incapacitated"
               }
             },
@@ -148,7 +274,7 @@
             },
             {
               "type": "boolean",
-              "from":  {
+              "from": {
                 "index": "deafened",
                 "name": "Deafened",
                 "url": "/api/conditions/deafened"
@@ -206,22 +332,30 @@
       "Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion (as described in appendix A)."
     ],
     "feature_specific": {
-      "bonus_action": {
-        "type": "attack",
-        "amount": 1
-      },
-      "prerequisites": [
+      "actions": [
         {
-          "type": "boolean",
-          "from": "raging"
-        }
-      ],
-      "debuffs": [
-        {
-          "index": "exhaustion",
-          "name": "Exhaustion",
-          "url": "/api/conditions/exhaustion",
-          "level": 1
+          "name": "Frenzy",
+          "desc": "When you enter rage, you can go into frenzy instead",
+          "action_type": "bonus",
+          "duration": "10 turns",
+          "effects": [
+            {
+              "type": "bonus_action",
+              "bonus_action_type": "attack",
+              "where": {
+                "attack_type": "melee"
+              }
+            },
+            {
+              "type": "condition",
+              "condition_type": {
+                "index": "exhaustion",
+                "name": "Exhaustion",
+                "url": "/api/conditions/exhaustion",
+                "level": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -255,7 +389,15 @@
     "desc": [
       "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
     ],
-    "feature_specific": {},
+    "feature_specific": {
+      "actions": [
+        {
+          "name": "Double attack",
+          "action_type": "attack",
+          "attack_times": 2
+        }
+      ]
+    },
     "url": "/api/features/barbarian-extra-attack"
   },
   {
@@ -367,7 +509,7 @@
           "prerequisites": [
             {
               "type": "boolean",
-              "from":  {
+              "from": {
                 "index": "incapacitated",
                 "name": "Incapacitated",
                 "url": "/api/conditions/incapacitated"
