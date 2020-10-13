@@ -6850,6 +6850,102 @@
     "url": "/api/monsters/assassin"
   },
   {
+    "index": "avatar-of-death",
+    "name": "Avatar of Death",
+    "size": "Medium",
+    "type": "undead",
+    "subtype": null,
+    "alignment": "neutral evil",
+    "armor_class": 20,
+    "hit_points": "half the hit point maximum of its summoner",
+    "speed": {
+      "walk": "60 ft.",
+      "fly": "60 ft.",
+      "hover": true
+    },
+    "strength": 16,
+    "dexterity": 16,
+    "constitution": 16,
+    "intelligence": 16,
+    "wisdom": 16,
+    "charisma": 16,
+    "damage_vulnerabilities": ["necrotic", "poison"],
+    "condition_immunities": [
+      {
+        "index": "charmed",
+        "name": "Charmed",
+        "url": "/api/conditions/charmed"
+      },
+      {
+        "index": "frightened",
+        "name": "Frightened",
+        "url": "/api/conditions/frightened"
+      },
+      {
+        "index": "paralyzed",
+        "name": "Paralyzed",
+        "url": "/api/conditions/paralyzed"
+      },
+      {
+        "index": "petrified",
+        "name": "Petrified",
+        "url": "/api/conditions/petrified"
+      },
+      {
+        "index": "poisoned",
+        "name": "Poisoned",
+        "url": "/api/conditions/poisoned"
+      },
+      {
+        "index": "unconscious",
+        "name": "Unconscious",
+        "url": "/api/conditions/unconscious"
+      }
+    ],
+    "senses": {
+      "darkvision": "60 ft.",
+      "truesight": "60 ft.",
+      "passive_perception": 13
+    },
+    "languages": "all languages known to its summoner",
+    "challenge_rating": "—",
+    "special_abilities": [
+      {
+        "name": "Incorporeal Movement",
+        "desc": " The avatar can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+      },
+      {
+        "name": "Turning Immunity",
+        "desc": "The avatar is immune to features that turn undead."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Reaping Scythe",
+        "desc": "The avatar sweeps its spectral scythe through a creature within 5 feet of it, dealing 7 (1d8 + 3) slashing damage plus 4 (1d8) necrotic damage.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "slashing",
+              "name": "Slashing",
+              "url": "/api/damage-types/slashing"
+            },
+            "damage_dice": "1d8+3"
+          },
+          {
+            "damage_type": {
+              "index": "necrotic",
+              "name": "Necrotic",
+              "url": "/api/damage-types/necrotic"
+            },
+            "damage_dice": "1d8"
+          }
+        ]
+      }
+    ],
+    "url": "/api/monsters/avatar-of-death"
+  },
+  {
     "index": "awakened-shrub",
     "name": "Awakened Shrub",
     "size": "Small",
@@ -17109,6 +17205,38 @@
       }
     ],
     "url": "/api/monsters/giant-fire-beetle"
+  },
+  {
+    "index": "giant-fly",
+    "name": "Giant Fly",
+    "size": "Large",
+    "type": "beast",
+    "subtype": null,
+    "alignment": "unaligned",
+    "armor_class": 11,
+    "hit_points": 19,
+    "hit_dice": "3d10+3",
+    "speed": {
+      "walk": "30 ft.",
+      "fly": "60 ft."
+    },
+    "strength": 14,
+    "dexterity": 13,
+    "constitution": 13,
+    "intelligence": 2,
+    "wisdom": 10,
+    "charisma": 3,
+    "proficiencies": [],
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": {
+      "darkvision": "60 ft.",
+      "passive_perception": 10
+    },
+    "languages": "",
+    "url": "/api/monsters/giant-fly"
   },
   {
     "index": "giant-frog",
