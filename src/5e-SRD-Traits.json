@@ -3,104 +3,156 @@
     "index": "darkvision",
     "races": [
       {
+        "index": "dwarf",
         "name": "Dwarf",
         "url": "/api/races/dwarf"
       },
       {
+        "index": "elf",
         "name": "Elf",
         "url": "/api/races/elf"
       },
       {
+        "index": "gnome",
         "name": "Gnome",
         "url": "/api/races/gnome"
       },
       {
+        "index": "half-elf",
         "name": "Half-Elf",
         "url": "/api/races/half-elf"
       },
       {
+        "index": "half-orc",
         "name": "Half-Orc",
         "url": "/api/races/half-orc"
-      }
-    ],
-    "subraces": [
-      {
-        "name": "Hill Dwarf",
-        "url": "/api/subraces/hill-dwarf"
       },
       {
-        "name": "High Elf",
-        "url": "/api/subraces/high-elf"
-      },
-      {
-        "name": "Rock Gnome",
-        "url": "/api/subraces/rock-gnome"
+        "index": "tiefling",
+        "name": "Tiefling",
+        "url": "/api/races/tiefling"
       }
     ],
+    "subraces": [],
     "name": "Darkvision",
     "desc": [
       "You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/darkvision"
   },
   {
     "index": "dwarven-resilience",
     "races": [
       {
+        "index": "dwarf",
         "name": "Dwarf",
         "url": "/api/races/dwarf"
       }
     ],
-    "subraces": [
-      {
-        "name": "Hill Dwarf",
-        "url": "/api/subraces/hill-dwarf"
-      }
-    ],
+    "subraces": [],
     "name": "Dwarven Resilience",
     "desc": [
       "You have advantage on saving throws against poison, and you have resistance against poison damage."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/dwarven-resilience"
   },
   {
     "index": "dwarven-combat-training",
     "races": [
       {
+        "index": "dwarf",
         "name": "Dwarf",
         "url": "/api/races/dwarf"
       }
     ],
-    "subraces": [
-      {
-        "name": "Hill Dwarf",
-        "url": "/api/subraces/hill-dwarf"
-      }
-    ],
+    "subraces": [],
     "name": "Dwarven Combat Training",
     "desc": [
       "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer."
     ],
+    "proficiencies": [
+      {
+        "index": "battleaxes",
+        "name": "Battleaxes",
+        "url": "/api/proficiencies/battleaxes"
+      },
+      {
+        "index": "handaxes",
+        "name": "Handaxes",
+        "url": "/api/proficiencies/handaxes"
+      },
+      {
+        "index": "light-hammers",
+        "name": "Light hammers",
+        "url": "/api/proficiencies/light-hammers"
+      },
+      {
+        "index": "warhammers",
+        "name": "Warhammers",
+        "url": "/api/proficiencies/warhammers"
+      }
+    ],
+    "proficiency_choices": {},
     "url": "/api/traits/dwarven-combat-training"
+  },
+  {
+    "index": "tool-proficiency",
+    "races": [
+      {
+        "index": "dwarf",
+        "name": "Dwarf",
+        "url": "/api/races/dwarf"
+      }
+    ],
+    "subraces": [],
+    "name": "Tool Proficiency",
+    "desc": [
+      "You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools."
+    ],
+    "proficiencies": [],
+    "proficiency_choices": {
+      "choose": 1,
+      "type": "proficiencies",
+      "from": [
+        {
+          "index": "smiths-tools",
+          "name": "Smith's tools",
+          "url": "/api/proficiencies/smiths-tools"
+        },
+        {
+          "index": "brewers-supplies",
+          "name": "Brewer's supplies",
+          "url": "/api/proficiencies/brewers-supplies"
+        },
+        {
+          "index": "masons-tools",
+          "name": "Mason's tools",
+          "url": "/api/proficiencies/masons-tools"
+        }
+      ]
+    },
+    "url": "/api/traits/tool-proficiency"
   },
   {
     "index": "stonecunning",
     "races": [
       {
+        "index": "dwarf",
         "name": "Dwarf",
         "url": "/api/races/dwarf"
       }
     ],
-    "subraces": [
-      {
-        "name": "Hill Dwarf",
-        "url": "/api/subraces/hill-dwarf"
-      }
-    ],
+    "subraces": [],
     "name": "Stonecunning",
     "desc": [
       "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/stonecunning"
   },
   {
@@ -108,6 +160,7 @@
     "races": [],
     "subraces": [
       {
+        "index": "hill-dwarf",
         "name": "Hill Dwarf",
         "url": "/api/subraces/hill-dwarf"
       }
@@ -116,80 +169,81 @@
     "desc": [
       "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/dwarven-toughness"
   },
   {
     "index": "keen-senses",
     "races": [
       {
+        "index": "elf",
         "name": "Elf",
         "url": "/api/races/elf"
       }
     ],
-    "subraces": [
+    "subraces": [],
+    "name": "Keen Senses",
+    "desc": [
+      "You have proficiency in the Perception skill."
+    ],
+    "proficiencies": [
       {
-        "name": "High Elf",
-        "url": "/api/subraces/high-elf"
+        "index": "skill-perception",
+        "name": "Skill: Perception",
+        "url": "/api/proficiencies/skill-perception"
       }
     ],
-    "name": "Keen Senses",
-    "desc": ["You have proficiency in the Perception skill."],
+    "proficiency_choices": {},
     "url": "/api/traits/keen-senses"
   },
   {
     "index": "fey-ancestry",
     "races": [
       {
+        "index": "elf",
         "name": "Elf",
         "url": "/api/races/elf"
       },
       {
+        "index": "half-elf",
         "name": "Half-Elf",
         "url": "/api/races/half-elf"
       }
     ],
-    "subraces": [
-      {
-        "name": "High Elf",
-        "url": "/api/subraces/high-elf"
-      }
-    ],
+    "subraces": [],
     "name": "Fey Ancestry",
     "desc": [
       "You have advantage on saving throws against being charmed, and magic cannot put you to sleep."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/fey-ancestry"
   },
   {
     "index": "trance",
     "races": [
       {
+        "index": "elf",
         "name": "Elf",
         "url": "/api/races/elf"
       }
     ],
-    "subraces": [
-      {
-        "name": "High Elf",
-        "url": "/api/subraces/high-elf"
-      }
-    ],
+    "subraces": [],
     "name": "Trance",
     "desc": [
       "Elves do not need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting this way, you gain the same benefit that a human does from 8 hours of sleep."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/trance"
   },
   {
     "index": "elf-weapon-training",
-    "races": [
-      {
-        "name": "Elf",
-        "url": "/api/races/elf"
-      }
-    ],
+    "races": [],
     "subraces": [
       {
+        "index": "high-elf",
         "name": "High Elf",
         "url": "/api/subraces/high-elf"
       }
@@ -198,6 +252,29 @@
     "desc": [
       "You have proficiency with the longsword, shortsword, shortbow, and longbow."
     ],
+    "proficiencies": [
+      {
+        "index": "longswords",
+        "name": "Longswords",
+        "url": "/api/proficiencies/longswords"
+      },
+      {
+        "index": "shortswords",
+        "name": "Shortswords",
+        "url": "/api/proficiencies/shortswords"
+      },
+      {
+        "index": "shortbows",
+        "name": "Shortbows",
+        "url": "/api/proficiencies/shortbows"
+      },
+      {
+        "index": "longbows",
+        "name": "Longbows",
+        "url": "/api/proficiencies/longbows"
+      }
+    ],
+    "proficiency_choices": {},
     "url": "/api/traits/elf-weapon-training"
   },
   {
@@ -205,6 +282,7 @@
     "races": [],
     "subraces": [
       {
+        "index": "high-elf",
         "name": "High Elf",
         "url": "/api/subraces/high-elf"
       }
@@ -213,6 +291,8 @@
     "desc": [
       "You know one cantrip of your choice form the wizard spell list. Intelligence is your spellcasting ability for it."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/high-elf-cantrip"
   },
   {
@@ -220,6 +300,7 @@
     "races": [],
     "subraces": [
       {
+        "index": "high-elf",
         "name": "High Elf",
         "url": "/api/subraces/high-elf"
       }
@@ -228,64 +309,62 @@
     "desc": [
       "You can speak, read, and write one extra language of your choice."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/extra-language"
   },
   {
     "index": "lucky",
     "races": [
       {
+        "index": "halfling",
         "name": "Halfling",
         "url": "/api/races/halfling"
       }
     ],
-    "subraces": [
-      {
-        "name": "Lightfoot Halfling",
-        "url": "/api/subraces/lightfoot-halfling"
-      }
-    ],
+    "subraces": [],
     "name": "Lucky",
     "desc": [
       "When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/lucky"
   },
   {
     "index": "brave",
     "races": [
       {
+        "index": "halfling",
         "name": "Halfling",
         "url": "/api/races/halfling"
       }
     ],
-    "subraces": [
-      {
-        "name": "Lightfoot Halfling",
-        "url": "/api/subraces/lightfoot-halfling"
-      }
-    ],
+    "subraces": [],
     "name": "Brave",
-    "desc": ["You have advantage on saving throw against being frightened."],
+    "desc": [
+      "You have advantage on saving throw against being frightened."
+    ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/brave"
   },
   {
     "index": "halfling-nimbleness",
     "races": [
       {
+        "index": "halfling",
         "name": "Halfling",
         "url": "/api/races/halfling"
       }
     ],
-    "subraces": [
-      {
-        "name": "Lightfoot Halfling",
-        "url": "/api/subraces/lightfoot-halfling"
-      }
-    ],
+    "subraces": [],
     "name": "Halfling Nimbleness",
     "desc": [
       "You can move through the space of any creature that is of a size larger than yours."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/halfling-nimbleness"
   },
   {
@@ -293,6 +372,7 @@
     "races": [],
     "subraces": [
       {
+        "index": "lightfoot-halfling",
         "name": "Lightfoot Halfling",
         "url": "/api/subraces/lightfoot-halfling"
       }
@@ -301,12 +381,15 @@
     "desc": [
       "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/naturally-stealthy"
   },
   {
     "index": "draconic-ancestry",
     "races": [
       {
+        "index": "dragonborn",
         "name": "Dragonborn",
         "url": "/api/races/dragonborn"
       }
@@ -316,12 +399,15 @@
     "desc": [
       "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/draconic-ancestry"
   },
   {
     "index": "breath-weapon",
     "races": [
       {
+        "index": "dragonborn",
         "name": "Dragonborn",
         "url": "/api/races/dragonborn"
       }
@@ -333,12 +419,15 @@
       "When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 2d6 at 6th level, 3d6 at 11th level, and 5d6 at 16th level.",
       "After you use your breath weapon, you cannot use it again until you complete a short or long rest."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/breath-weapon"
   },
   {
     "index": "damage-resistance",
     "races": [
       {
+        "index": "dragonborn",
         "name": "Dragonborn",
         "url": "/api/races/dragonborn"
       }
@@ -348,26 +437,26 @@
     "desc": [
       "You have resistance to the damage type associated with your draconic ancestry."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/damage-resistance"
   },
   {
     "index": "gnome-cunning",
     "races": [
       {
+        "index": "gnome",
         "name": "Gnome",
         "url": "/api/races/gnome"
       }
     ],
-    "subraces": [
-      {
-        "name": "Rock Gnome",
-        "url": "/api/subraces/rock-gnome"
-      }
-    ],
+    "subraces": [],
     "name": "Gnome Cunning",
     "desc": [
       "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/gnome-cunning"
   },
   {
@@ -375,6 +464,7 @@
     "races": [],
     "subraces": [
       {
+        "index": "rock-gnome",
         "name": "Rock Gnome",
         "url": "/api/subraces/rock-gnome"
       }
@@ -383,6 +473,8 @@
     "desc": [
       "Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/artificers-lore"
   },
   {
@@ -390,6 +482,7 @@
     "races": [],
     "subraces": [
       {
+        "index": "rock-gnome",
         "name": "Rock Gnome",
         "url": "/api/subraces/rock-gnome"
       }
@@ -402,38 +495,158 @@
       "Fire Starter: The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.",
       "Music Box: When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed."
     ],
+    "proficiencies": [
+      {
+        "index": "tinkers-tools",
+        "name": "Tinker's tools",
+        "url": "/api/proficiencies/tinkers-tools"
+      }
+    ],
+    "proficiency_choices": {},
     "url": "/api/traits/tinker"
   },
   {
     "index": "skill-versatility",
     "races": [
       {
+        "index": "half-elf",
         "name": "Half-Elf",
         "url": "/api/races/half-elf"
       }
     ],
     "subraces": [],
     "name": "Skill Versatility",
-    "desc": ["You gain proficiency in two skills of your choice."],
+    "desc": [
+      "You gain proficiency in two skills of your choice."
+    ],
+    "proficiencies": [],
+    "proficiency_choices": {
+      "choose": 2,
+      "type": "proficiencies",
+      "from": [
+        {
+          "index": "skill-acrobatics",
+          "name": "Skill: Acrobatics",
+          "url": "/api/proficiencies/skill-acrobatics"
+        },
+        {
+          "index": "skill-animal-handling",
+          "name": "Skill: Animal Handling",
+          "url": "/api/proficiencies/skill-animal-handling"
+        },
+        {
+          "index": "skill-arcana",
+          "name": "Skill: Arcana",
+          "url": "/api/proficiencies/skill-arcana"
+        },
+        {
+          "index": "skill-athletics",
+          "name": "Skill: Athletics",
+          "url": "/api/proficiencies/skill-athletics"
+        },
+        {
+          "index": "skill-deception",
+          "name": "Skill: Deception",
+          "url": "/api/proficiencies/skill-deception"
+        },
+        {
+          "index": "skill-history",
+          "name": "Skill: History",
+          "url": "/api/proficiencies/skill-history"
+        },
+        {
+          "index": "skill-insight",
+          "name": "Skill: Insight",
+          "url": "/api/proficiencies/skill-insight"
+        },
+        {
+          "index": "skill-intimidation",
+          "name": "Skill: Intimidation",
+          "url": "/api/proficiencies/skill-intimidation"
+        },
+        {
+          "index": "skill-investigation",
+          "name": "Skill: Investigation",
+          "url": "/api/proficiencies/skill-investigation"
+        },
+        {
+          "index": "skill-medicine",
+          "name": "Skill: Medicine",
+          "url": "/api/proficiencies/skill-medicine"
+        },
+        {
+          "index": "skill-nature",
+          "name": "Skill: Nature",
+          "url": "/api/proficiencies/skill-nature"
+        },
+        {
+          "index": "skill-perception",
+          "name": "Skill: Perception",
+          "url": "/api/proficiencies/skill-perception"
+        },
+        {
+          "index": "skill-performance",
+          "name": "Skill: Performance",
+          "url": "/api/proficiencies/skill-performance"
+        },
+        {
+          "index": "skill-persuasion",
+          "name": "Skill: Persuasion",
+          "url": "/api/proficiencies/skill-persuasion"
+        },
+        {
+          "index": "skill-religion",
+          "name": "Skill: Religion",
+          "url": "/api/proficiencies/skill-religion"
+        },
+        {
+          "index": "skill-sleight-of-hand",
+          "name": "Skill: Sleight of Hand",
+          "url": "/api/proficiencies/skill-sleight-of-hand"
+        },
+        {
+          "index": "skill-stealth",
+          "name": "Skill: Stealth",
+          "url": "/api/proficiencies/skill-stealth"
+        },
+        {
+          "index": "skill-survival",
+          "name": "Skill: Survival",
+          "url": "/api/proficiencies/skill-survival"
+        }
+      ]
+    },
     "url": "/api/traits/skill-versatility"
   },
   {
     "index": "menacing",
     "races": [
       {
+        "index": "half-orc",
         "name": "Half-Orc",
         "url": "/api/races/half-orc"
       }
     ],
     "subraces": [],
     "name": "Menacing",
-    "desc": ["You gain proficiency in the Intimidation skill."],
+    "desc": [
+      "You gain proficiency in the Intimidation skill."
+    ],
+    "proficiencies": [
+      {
+        "index": "skill-intimidation",
+        "name": "Skill: Intimidation",
+        "url": "/api/proficiencies/skill-intimidation"
+      }
+    ],
+    "proficiency_choices": {},
     "url": "/api/traits/menacing"
   },
   {
     "index": "relentless-endurance",
     "races": [
       {
+        "index": "half-orc",
         "name": "Half-Orc",
         "url": "/api/races/half-orc"
       }
@@ -443,12 +656,15 @@
     "desc": [
       "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. you cannot use this feature again until you finish a long rest."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/relentless-endurance"
   },
   {
     "index": "savage-attacks",
     "races": [
       {
+        "index": "half-orc",
         "name": "Half-Orc",
         "url": "/api/races/half-orc"
       }
@@ -458,25 +674,33 @@
     "desc": [
       "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/savage-attacks"
   },
   {
     "index": "hellish-resistance",
     "races": [
       {
+        "index": "tiefling",
         "name": "Tiefling",
         "url": "/api/races/tiefling"
       }
     ],
     "subraces": [],
     "name": "Hellish Resistance",
-    "desc": ["You have resistance to fire damage."],
+    "desc": [
+      "You have resistance to fire damage."
+    ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/hellish-resistance"
   },
   {
     "index": "infernal-legacy",
     "races": [
       {
+        "index": "tiefling",
         "name": "Tiefling",
         "url": "/api/races/tiefling"
       }
@@ -486,6 +710,8 @@
     "desc": [
       "You know the thaumaturgy cantrip. When you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5h level, you can cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
     ],
+    "proficiencies": [],
+    "proficiency_choices": {},
     "url": "/api/traits/infernal-legacy"
   }
 ]
