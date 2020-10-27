@@ -37790,9 +37790,13 @@
       "necrotic",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
-    "damage_immunities": [],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
+        "index": "exhaustion",
+        "name": "Exhaustion",
+        "url": "/api/conditions/exhaustion"
+      },{
         "index": "poisoned",
         "name": "Poisoned",
         "url": "/api/conditions/poisoned"
