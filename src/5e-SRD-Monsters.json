@@ -21681,7 +21681,7 @@
     "subtype": "devil",
     "alignment": "lawful evil",
     "armor_class": 18,
-    "hit_points": 148,
+    "hit_points": 178,
     "hit_dice": "17d10",
     "speed": {
       "walk": "20 ft.",
@@ -37786,13 +37786,17 @@
       }
     ],
     "damage_vulnerabilities": [],
-    "damage_resistances": [],
-    "damage_immunities": [
+    "damage_resistances": [
       "necrotic",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
+        "index": "exhaustion",
+        "name": "Exhaustion",
+        "url": "/api/conditions/exhaustion"
+      },{
         "index": "poisoned",
         "name": "Poisoned",
         "url": "/api/conditions/poisoned"
