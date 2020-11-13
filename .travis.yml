@@ -4,7 +4,7 @@ node_js:
 
 branches:
   only:
-    - master
+    - main
 
 jobs:
   include:
@@ -14,10 +14,10 @@ jobs:
     - name: "Test"
       script: yarn test
     - stage: Deploy
-      if: branch = master AND type != pull_request
+      if: branch = main AND type != pull_request
       script: yarn db:refresh
     - stage: Trigger downstream
-      if: branch = master AND type != pull_request
+      if: branch = main AND type != pull_request
       script: |
         curl -LO --retry 3 https://raw.githubusercontent.com/plume-lib/trigger-travis/master/trigger-travis.sh
         sh trigger-travis.sh --pro bagelbits 5e-srd-api $TRAVIS_ACCESS_TOKEN
