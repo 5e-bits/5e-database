@@ -20,4 +20,4 @@ jobs:
       if: branch = main AND type != pull_request
       script: |
         curl -LO --retry 3 https://raw.githubusercontent.com/plume-lib/trigger-travis/master/trigger-travis.sh
-        sh trigger-travis.sh --pro bagelbits 5e-srd-api $TRAVIS_ACCESS_TOKEN
+        sh trigger-travis.sh --pro --branch main bagelbits 5e-srd-api $TRAVIS_ACCESS_TOKEN
