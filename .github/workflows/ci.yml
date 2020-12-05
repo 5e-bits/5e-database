@@ -19,6 +19,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 14.x
-    - run: npm install
-    - run: npm lint
-    - run: npm test
+    - run: yarn install
+    - run: yarn lint
+    - run: yarn test
