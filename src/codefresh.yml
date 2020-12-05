@@ -1,0 +1,47 @@
+# More examples of Codefresh YAML can be found at
+# https://codefresh.io/docs/docs/yaml-examples/examples/
+
+version: "1.0"
+# Stages can help you organize your steps in stages
+stages:
+  - "clone"
+  - "build"
+  - "test"
+  - "deploy"
+
+steps:
+  clone:
+    title: "Cloning repository"
+    stage: "clone"
+    type: git-clone
+    repo: "bagelbits/5e-database"
+    # CF_BRANCH value is auto set when pipeline is triggered
+    # Learn more at codefresh.io/docs/docs/codefresh-yaml/variables/
+    revision: "${{CF_BRANCH}}"
+    git: "github"
+
+  build:
+    title: "Building Docker image"
+    stage: "build"
+    type: build
+    image_name: "fuzzylombax/5e-srd-database"
+    working_directory: "${{clone}}"
+    tag: "${{CF_BRANCH}}"
+    dockerfile: "Dockerfile"
+
+  test:
+    stage: "test"
+    type: parallel
+    steps:
+      lint:
+        title: "Running linter"
+        image: ${{build}}
+        working_directory: "/data/db2"
+        commands:
+          - "yarn lint"
+      unit_test:
+        title: "Running tests"
+        image: ${{build}}
+        working_directory: "/data/db2"
+        commands:
+          - "yarn test"
