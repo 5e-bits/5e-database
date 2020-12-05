@@ -24,7 +24,7 @@ jobs:
     - run: yarn test
   deploy:
     name: Deploy
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: test
     if: github.ref == 'refs/heads/main'
     steps:
