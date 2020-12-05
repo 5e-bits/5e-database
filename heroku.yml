@@ -1,0 +1,5 @@
+build:
+  docker:
+    deploy: Dockerfile
+run:
+  deploy: yarn db:refresh

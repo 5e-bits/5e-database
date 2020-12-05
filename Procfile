@@ -1,1 +1,0 @@
-deploy: yarn db:refresh
