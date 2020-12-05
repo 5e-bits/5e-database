@@ -35,4 +35,4 @@ jobs:
           node-version: 12.x
       - env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
-        run: yarn db:refresh
+        run: npm run db:refresh
