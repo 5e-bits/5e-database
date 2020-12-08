@@ -46,5 +46,11 @@ jobs:
     - env:
         MONGODB_URI: ${{ secrets.MONGODB_URI }}
       run: npm run db:refresh
+  trigger_downstream:
+    name: Trigger downstream
+    runs-on: self-hosted
+    needs: deploy
+    if: github.ref == 'refs/heads/main'
+    steps:
     - run: |
         curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/bagelbits/5e-srd-api/dispatches --data '{"event_type": "build_application"}'
