@@ -28,11 +28,23 @@ jobs:
     needs: test
     if: github.ref == 'refs/heads/main'
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.x
-      - env:
-          MONGODB_URI: ${{ secrets.MONGODB_URI }}
-        run: npm run db:refresh
+    - uses: actions/checkout@v2
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - env:
+        MONGODB_URI: ${{ secrets.MONGODB_URI }}
+      run: npm run db:refresh
+  heroku:
+    name: Trigger Heroku Deploy
+    runs-on: ubuntu-latest
+    needs: [test, deploy]
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - uses: actions/checkout@v2
+    - uses: akhileshns/heroku-deploy@v3.6.8
+      with:
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_app_name: "dnd-5e-srd-api"
+        heroku_email: "cdurianward@gmail.com"
