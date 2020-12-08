@@ -36,3 +36,10 @@ jobs:
       - env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
         run: npm run db:refresh
+  heroku:
+    name: Trigger Heroku Deploy
+    runs-on: ubuntu-latest
+    needs: [test, deploy]
+    if: github.ref == 'refs/heads/main'
+    steps:
+    -
