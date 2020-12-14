@@ -1,5 +1,5 @@
 # 5e-database
-![Build Status](https://github.com/bagelbits/5e-database/workflows/5e%20Database%20CI/badge.svg)
+![Build Status](https://github.com/bagelbits/5e-database/workflows/5e%20Database%20CI/badge.svg?branch=main)
 [![Discord](https://img.shields.io/discord/656547667601653787)](https://discord.gg/TQuYTv7)
 
 Holds the database for the D&D 5th Edition API at http://dnd5eapi.co/
