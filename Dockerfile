@@ -11,10 +11,6 @@ RUN mkdir -p /data/db2 \
 RUN apt-get update; apt-get -y install curl
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash
 RUN apt-get install -y nodejs
-RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=DontWarn apt-key add - && \
-  echo "deb http://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
-  apt-get update && \
-  apt-get install --no-install-recommends yarn
 
 ENV MONGODB_URI mongodb://localhost/5e-database
 
@@ -23,7 +19,7 @@ COPY . /data/db2
 WORKDIR /data/db2
 
 RUN mongod --fork --logpath /var/log/mongodb.log --dbpath /data/db2 \
-  && yarn db:refresh \
+  && npm run db:refresh \
   && mongod --dbpath /data/db2 --shutdown \
   && chown -R mongodb /data/db2
 
