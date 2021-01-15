@@ -5,52 +5,52 @@ name: 5e Database CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   lint:
     name: Run linter
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js 14.x
-      uses: actions/setup-node@v1
-      with:
-        node-version: 14.x
-    - run: yarn install
-    - run: yarn lint
+      - uses: actions/checkout@v2
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - run: npm install
+      - run: npm run lint
   test:
     name: Run tests
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js 14.x
-      uses: actions/setup-node@v1
-      with:
-        node-version: 14.x
-    - run: yarn install
-    - run: yarn test
+      - uses: actions/checkout@v2
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - run: npm install
+      - run: npm run test
   deploy:
     name: Deploy
     runs-on: self-hosted
     needs: [test, lint]
     if: github.ref == 'refs/heads/main'
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js 14.x
-      uses: actions/setup-node@v1
-      with:
-        node-version: 14.x
-    - env:
-        MONGODB_URI: ${{ secrets.MONGODB_URI }}
-      run: npm run db:refresh
+      - uses: actions/checkout@v2
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+        run: npm run db:refresh
   trigger_downstream:
     name: Trigger downstream
     runs-on: self-hosted
     needs: deploy
     if: github.ref == 'refs/heads/main'
     steps:
-    - run: |
-        curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/bagelbits/5e-srd-api/dispatches --data '{"event_type": "build_application"}'
+      - run: |
+          curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/bagelbits/5e-srd-api/dispatches --data '{"event_type": "build_application"}'
