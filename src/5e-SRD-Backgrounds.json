@@ -100,7 +100,37 @@
                 }
             ]
         },
-        "starting_equipment": "/api/starting-equipment/acolyte",
+        "starting_equipment": [
+            {
+                "equipment": {
+                    "index": "clothes-common",
+                    "name": "Clothes, common",
+                    "url": "/api/equipment/clothes-common"
+                },
+                "quantity": 1
+            },
+            {
+                "equipment": {
+                    "index": "pouch",
+                    "name": "Pouch",
+                    "url": "/api/equipment/pouch"
+                },
+                "quantity": 1
+            }
+        ],
+        "starting_equipment_options": [
+            {
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                    "equipment_category": {
+                        "index": "holy-symbols",
+                        "name": "Holy Symbols",
+                        "url": "/api/equipment-categories/holy-symbols"
+                    }
+                }
+            }
+        ],
         "feature": {
             "index": "shelter-of-the-faithful",
             "name": "Shelter of the Faithful",
