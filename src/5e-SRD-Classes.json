@@ -155,6 +155,35 @@
       }
     ],
     "class_levels": "/api/classes/barbarian/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "str",
+            "name": "STR",
+            "url": "/api/ability-scores/str"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "shields",
+          "name": "Shields",
+          "url": "/api/proficiencies/shields"
+        },
+        {
+          "index": "simple-weapons",
+          "name": "Simple weapons",
+          "url": "/api/proficiencies/simple-weapons"
+        },
+        {
+          "index": "martial-weapons",
+          "name": "Martial weapons",
+          "url": "/api/proficiencies/martial-weapons"
+        }
+      ]
+    },
     "subclasses": [
       {
         "index": "berserker",
@@ -470,6 +499,179 @@
       }
     ],
     "class_levels": "/api/classes/bard/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/ability-scores/cha"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Light Armor",
+          "url": "/api/proficiencies/light-armor"
+        }
+      ],
+      "proficiency_choices": [
+        {
+          "choose": 1,
+          "type": "proficiencies",
+          "from": [
+            {
+              "index": "skill-acrobatics",
+              "name": "Skill: Acrobatics",
+              "url": "/api/proficiencies/skill-acrobatics"
+            },
+            {
+              "index": "skill-animal-handling",
+              "name": "Skill: Animal Handling",
+              "url": "/api/proficiencies/skill-animal-handling"
+            },
+            {
+              "index": "skill-arcana",
+              "name": "Skill: Arcana",
+              "url": "/api/proficiencies/skill-arcana"
+            },
+            {
+              "index": "skill-athletics",
+              "name": "Skill: Athletics",
+              "url": "/api/proficiencies/skill-athletics"
+            },
+            {
+              "index": "skill-deception",
+              "name": "Skill: Deception",
+              "url": "/api/proficiencies/skill-deception"
+            },
+            {
+              "index": "skill-history",
+              "name": "Skill: History",
+              "url": "/api/proficiencies/skill-history"
+            },
+            {
+              "index": "skill-insight",
+              "name": "Skill: Insight",
+              "url": "/api/proficiencies/skill-insight"
+            },
+            {
+              "index": "skill-intimidation",
+              "name": "Skill: Intimidation",
+              "url": "/api/proficiencies/skill-intimidation"
+            },
+            {
+              "index": "skill-investigation",
+              "name": "Skill: Investigation",
+              "url": "/api/proficiencies/skill-investigation"
+            },
+            {
+              "index": "skill-medicine",
+              "name": "Skill: Medicine",
+              "url": "/api/proficiencies/skill-medicine"
+            },
+            {
+              "index": "skill-nature",
+              "name": "Skill: Nature",
+              "url": "/api/proficiencies/skill-nature"
+            },
+            {
+              "index": "skill-perception",
+              "name": "Skill: Perception",
+              "url": "/api/proficiencies/skill-perception"
+            },
+            {
+              "index": "skill-performance",
+              "name": "Skill: Performance",
+              "url": "/api/proficiencies/skill-performance"
+            },
+            {
+              "index": "skill-persuasion",
+              "name": "Skill: Persuasion",
+              "url": "/api/proficiencies/skill-persuasion"
+            },
+            {
+              "index": "skill-religion",
+              "name": "Skill: Religion",
+              "url": "/api/proficiencies/skill-religion"
+            },
+            {
+              "index": "skill-sleight-of-hand",
+              "name": "Skill: Sleight of Hand",
+              "url": "/api/proficiencies/skill-sleight-of-hand"
+            },
+            {
+              "index": "skill-stealth",
+              "name": "Skill: Stealth",
+              "url": "/api/proficiencies/skill-stealth"
+            },
+            {
+              "index": "skill-survival",
+              "name": "Skill: Survival",
+              "url": "/api/proficiencies/skill-survival"
+            }
+          ]
+        },
+        {
+          "choose": 1,
+          "type": "proficiencies",
+          "from": [
+            {
+              "index": "bagpipes",
+              "name": "Bagpipes",
+              "url": "/api/proficiencies/bagpipes"
+            },
+            {
+              "index": "drum",
+              "name": "Drum",
+              "url": "/api/proficiencies/drum"
+            },
+            {
+              "index": "dulcimer",
+              "name": "Dulcimer",
+              "url": "/api/proficiencies/dulcimer"
+            },
+            {
+              "index": "flute",
+              "name": "Flute",
+              "url": "/api/proficiencies/flute"
+            },
+            {
+              "index": "lute",
+              "name": "Lute",
+              "url": "/api/proficiencies/lute"
+            },
+            {
+              "index": "lyre",
+              "name": "Lyre",
+              "url": "/api/proficiencies/lyre"
+            },
+            {
+              "index": "horn",
+              "name": "Horn",
+              "url": "/api/proficiencies/horn"
+            },
+            {
+              "index": "pan-flute",
+              "name": "Pan flute",
+              "url": "/api/proficiencies/pan-flute"
+            },
+            {
+              "index": "shawm",
+              "name": "Shawm",
+              "url": "/api/proficiencies/shawm"
+            },
+            {
+              "index": "viol",
+              "name": "Viol",
+              "url": "/api/proficiencies/viol"
+            }
+          ]
+        }
+      ]
+    },
     "subclasses": [
       {
         "index": "lore",
@@ -758,6 +960,35 @@
       }
     ],
     "class_levels": "/api/classes/cleric/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/ability-scores/wis"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Light armor",
+          "url": "/api/proficiencies/light-armor"
+        },
+        {
+          "index": "medium-armor",
+          "name": "Medium armor",
+          "url": "/api/proficiencies/medium-armor"
+        },
+        {
+          "index": "shields",
+          "name": "Shields",
+          "url": "/api/proficiencies/shields"
+        }
+      ]
+    },
     "subclasses": [
       {
         "index": "life",
@@ -1035,6 +1266,35 @@
       }
     ],
     "class_levels": "/api/classes/druid/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/ability-scores/wis"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Light armor",
+          "url": "/api/proficiencies/light-armor"
+        },
+        {
+          "index": "medium-armor",
+          "name": "Medium armor",
+          "url": "/api/proficiencies/medium-armor"
+        },
+        {
+          "index": "shields",
+          "name": "Shields",
+          "url": "/api/proficiencies/shields"
+        }
+      ]
+    },
     "subclasses": [
       {
         "index": "land",
@@ -1314,6 +1574,57 @@
       }
     ],
     "class_levels": "/api/classes/fighter/levels",
+    "multi_classing": {
+      "prerequisite_options": {
+        "type": "ability-scores",
+        "choose": 1,
+        "from": [
+          {
+            "ability_score": {
+              "index": "str",
+              "name": "STR",
+              "url": "/api/ability-scores/str"
+            },
+            "minimum_score": 13
+          },
+          {
+            "ability_score": {
+              "index": "dex",
+              "name": "DEX",
+              "url": "/api/ability-scores/dex"
+            },
+            "minimum_score": 13
+          }
+        ]
+      },
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Light armor",
+          "url": "/api/proficiencies/light-armor"
+        },
+        {
+          "index": "medium-armor",
+          "name": "Medium armor",
+          "url": "/api/proficiencies/medium-armor"
+        },
+        {
+          "index": "shields",
+          "name": "Shields",
+          "url": "/api/proficiencies/shields"
+        },
+        {
+          "index": "simple-weapons",
+          "name": "Simple weapons",
+          "url": "/api/proficiencies/simple-weapons"
+        },
+        {
+          "index": "martial-weapons",
+          "name": "Martial weapons",
+          "url": "/api/proficiencies/martial-weapons"
+        }
+      ]
+    },
     "subclasses": [
       {
         "index": "champion",
@@ -1608,6 +1919,38 @@
       }
     ],
     "class_levels": "/api/classes/monk/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/ability-scores/dex"
+          },
+          "minimum_score": 13
+        },
+        {
+          "ability_score": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/ability-scores/wis"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "simple-weapons",
+          "name": "Simple weapons",
+          "url": "/api/proficiencies/simple-weapons"
+        },
+        {
+          "index": "shortswords",
+          "name": "Shortswords",
+          "url": "/api/proficiencies/shortswords"
+        }
+      ]
+    },
     "subclasses": [
       {
         "index": "open-hand",
@@ -1808,6 +2151,53 @@
       }
     ],
     "class_levels": "/api/classes/paladin/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "str",
+            "name": "STR",
+            "url": "/api/ability-scores/str"
+          },
+          "minimum_score": 13
+        },
+        {
+          "ability_score": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/ability-scores/cha"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Light armor",
+          "url": "/api/proficiencies/light-armor"
+        },
+        {
+          "index": "medium-armor",
+          "name": "Medium armor",
+          "url": "/api/proficiencies/medium-armor"
+        },
+        {
+          "index": "shields",
+          "name": "Shields",
+          "url": "/api/proficiencies/shields"
+        },
+        {
+          "index": "simple-weapons",
+          "name": "Simple weapons",
+          "url": "/api/proficiencies/simple-weapons"
+        },
+        {
+          "index": "martial-weapons",
+          "name": "Martial weapons",
+          "url": "/api/proficiencies/martial-weapons"
+        }
+      ]
+    },
     "subclasses": [
       {
         "index": "devotion",
@@ -2032,6 +2422,101 @@
       }
     ],
     "class_levels": "/api/classes/ranger/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/ability-scores/dex"
+          },
+          "minimum_score": 13
+        },
+        {
+          "ability_score": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/ability-scores/wis"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Light armor",
+          "url": "/api/proficiencies/light-armor"
+        },
+        {
+          "index": "medium-armor",
+          "name": "Medium armor",
+          "url": "/api/proficiencies/medium-armor"
+        },
+        {
+          "index": "shields",
+          "name": "Shields",
+          "url": "/api/proficiencies/shields"
+        },
+        {
+          "index": "simple-weapons",
+          "name": "Simple weapons",
+          "url": "/api/proficiencies/simple-weapons"
+        },
+        {
+          "index": "martial-weapons",
+          "name": "Martial weapons",
+          "url": "/api/proficiencies/martial-weapons"
+        }
+      ],
+      "proficiency_choices": [
+        {
+          "choose": 1,
+          "type": "proficiencies",
+          "from": [
+            {
+              "index": "skill-animal-handling",
+              "name": "Skill: Animal Handling",
+              "url": "/api/proficiencies/skill-animal-handling"
+            },
+            {
+              "index": "skill-athletics",
+              "name": "Skill: Athletics",
+              "url": "/api/proficiencies/skill-athletics"
+            },
+            {
+              "index": "skill-insight",
+              "name": "Skill: Insight",
+              "url": "/api/proficiencies/skill-insight"
+            },
+            {
+              "index": "skill-investigation",
+              "name": "Skill: Investigation",
+              "url": "/api/proficiencies/skill-investigation"
+            },
+            {
+              "index": "skill-nature",
+              "name": "Skill: Nature",
+              "url": "/api/proficiencies/skill-nature"
+            },
+            {
+              "index": "skill-perception",
+              "name": "Skill: Perception",
+              "url": "/api/proficiencies/skill-perception"
+            },
+            {
+              "index": "skill-stealth",
+              "name": "Skill: Stealth",
+              "url": "/api/proficiencies/skill-stealth"
+            },
+            {
+              "index": "skill-survival",
+              "name": "Skill: Survival",
+              "url": "/api/proficiencies/skill-survival"
+            }
+          ]
+        }
+      ]
+    },
     "subclasses": [
       {
         "index": "hunter",
@@ -2302,6 +2787,93 @@
       }
     ],
     "class_levels": "/api/classes/rogue/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/ability-scores/dex"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Light armor",
+          "url": "/api/proficiencies/light-armor"
+        },
+        {
+          "index": "thieves-tools",
+          "name": "Thieves' Tools",
+          "url": "/api/proficiencies/thieves-tools"
+        }
+      ],
+      "proficiency_choices": [
+        {
+          "choose": 1,
+          "type": "proficiencies",
+          "from": [
+            {
+              "index": "skill-acrobatics",
+              "name": "Skill: Acrobatics",
+              "url": "/api/proficiencies/skill-acrobatics"
+            },
+            {
+              "index": "skill-athletics",
+              "name": "Skill: Athletics",
+              "url": "/api/proficiencies/skill-athletics"
+            },
+            {
+              "index": "skill-deception",
+              "name": "Skill: Deception",
+              "url": "/api/proficiencies/skill-deception"
+            },
+            {
+              "index": "skill-insight",
+              "name": "Skill: Insight",
+              "url": "/api/proficiencies/skill-insight"
+            },
+            {
+              "index": "skill-intimidation",
+              "name": "Skill: Intimidation",
+              "url": "/api/proficiencies/skill-intimidation"
+            },
+            {
+              "index": "skill-investigation",
+              "name": "Skill: Investigation",
+              "url": "/api/proficiencies/skill-investigation"
+            },
+            {
+              "index": "skill-perception",
+              "name": "Skill: Perception",
+              "url": "/api/proficiencies/skill-perception"
+            },
+            {
+              "index": "skill-performance",
+              "name": "Skill: Performance",
+              "url": "/api/proficiencies/skill-performance"
+            },
+            {
+              "index": "skill-persuasion",
+              "name": "Skill: Persuasion",
+              "url": "/api/proficiencies/skill-persuasion"
+            },
+            {
+              "index": "skill-sleight-of-hand",
+              "name": "Skill: Sleight of Hand",
+              "url": "/api/proficiencies/skill-sleight-of-hand"
+            },
+            {
+              "index": "skill-stealth",
+              "name": "Skill: Stealth",
+              "url": "/api/proficiencies/skill-stealth"
+            }
+          ]
+        }
+      ]
+    },
     "subclasses": [
       {
         "index": "thief",
@@ -2486,6 +3058,19 @@
       }
     ],
     "class_levels": "/api/classes/sorcerer/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/ability-scores/cha"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": []
+    },
     "subclasses": [
       {
         "index": "draconic",
@@ -2728,6 +3313,30 @@
       }
     ],
     "class_levels": "/api/classes/warlock/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/ability-scores/cha"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Light armor",
+          "url": "/api/proficiencies/light-armor"
+        },
+        {
+          "index": "simple-weapons",
+          "name": "Simple weapons",
+          "url": "/api/proficiencies/simple-weapons"
+        }
+      ]
+    },
     "subclasses": [
       {
         "index": "fiend",
@@ -2942,6 +3551,19 @@
       }
     ],
     "class_levels": "/api/classes/wizard/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/ability-scores/int"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": []
+    },
     "subclasses": [
       {
         "index": "evocation",
