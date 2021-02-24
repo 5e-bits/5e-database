@@ -34,9 +34,9 @@ jobs:
       - run: npm run test
   deploy:
     name: Deploy
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     needs: [test, lint]
-    if: github.ref == 'refs/heads/main'
+    # if: github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 14.x
@@ -48,7 +48,7 @@ jobs:
         run: npm run db:refresh
   trigger_downstream:
     name: Trigger downstream
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     needs: deploy
     if: github.ref == 'refs/heads/main'
     steps:
