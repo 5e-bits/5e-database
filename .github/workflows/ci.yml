@@ -55,5 +55,6 @@ jobs:
       - name: Trigger downstream
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
+          repository: 5e-bits/5e-srd-api
           event-type: my-event
