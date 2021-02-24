@@ -36,7 +36,7 @@ jobs:
     name: Deploy
     runs-on: ubuntu-20.04
     needs: [test, lint]
-    if: github.ref == 'refs/heads/main'
+    # if: github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 14.x
@@ -50,7 +50,8 @@ jobs:
     name: Trigger downstream
     runs-on: ubuntu-20.04
     needs: deploy
-    if: github.ref == 'refs/heads/main'
-    steps:
-      - run: |
-          curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/bagelbits/5e-srd-api/dispatches --data '{"event_type": "build_application"}'
+    # if: github.ref == 'refs/heads/main'
+    uses: peter-evans/repository-dispatch@v1
+    with:
+      token: ${{ secrets.PAT_TOKEN }}
+      event-type: build_application
