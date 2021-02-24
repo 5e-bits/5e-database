@@ -51,7 +51,9 @@ jobs:
     runs-on: ubuntu-20.04
     needs: deploy
     # if: github.ref == 'refs/heads/main'
-    uses: peter-evans/repository-dispatch@v1
-    with:
-      token: ${{ secrets.PAT_TOKEN }}
-      event-type: build_application
+    steps:
+      - name: Trigger downstream
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          event-type: my-event
