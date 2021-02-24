@@ -36,7 +36,7 @@ jobs:
     name: Deploy
     runs-on: ubuntu-20.04
     needs: [test, lint]
-    if: github.ref == 'refs/heads/main'
+    # if: github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 14.x
