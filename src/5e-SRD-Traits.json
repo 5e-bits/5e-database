@@ -108,7 +108,7 @@
     "subraces": [],
     "name": "Tool Proficiency",
     "desc": [
-      "You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools."
+      "You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools."
     ],
     "proficiencies": [],
     "proficiency_choices": {
@@ -283,6 +283,74 @@
       "You know one cantrip of your choice form the wizard spell list. Intelligence is your spellcasting ability for it."
     ],
     "proficiencies": [],
+    "trait_specific": {
+      "wizard_cantrip_options": {
+        "choose": 1,
+        "from": [
+          {
+            "index": "light",
+            "name": "Light",
+            "url": "/api/spells/light"
+          },
+          {
+            "index": "mage-hand",
+            "name": "Mage Hand",
+            "url": "/api/spells/mage-hand"
+          },
+          {
+            "index": "mending",
+            "name": "Mending",
+            "url": "/api/spells/mending"
+          },
+          {
+            "index": "message",
+            "name": "Message",
+            "url": "/api/spells/message"
+          },
+          {
+            "index": "minor-illusion",
+            "name": "Minor Illusion",
+            "url": "/api/spells/minor-illusion"
+          },
+          {
+            "index": "acid-splash",
+            "name": "Acid Splash",
+            "url": "/api/spells/acid-splash"
+          },
+          {
+            "index": "prestidigitation",
+            "name": "Prestidigitation",
+            "url": "/api/spells/prestidigitation"
+          },
+          {
+            "index": "ray-of-frost",
+            "name": "Ray of Frost",
+            "url": "/api/spells/ray-of-frost"
+          },
+          {
+            "index": "shocking-grasp",
+            "name": "Shocking Grasp",
+            "url": "/api/spells/shocking-grasp"
+          },
+          {
+            "index": "true-strike",
+            "name": "True Strike",
+            "url": "/api/spells/true-strike"
+          },
+          {
+            "index": "chill-touch",
+            "name": "Chill Touch",
+            "url": "/api/spells/chill-touch"
+          },
+          {
+            "index": "dancing-lights",
+            "name": "Dancing Lights",
+            "url": "/api/spells/dancing-lights"
+          }
+        ],
+        "type": "spell"
+      }
+    },
     "url": "/api/traits/high-elf-cantrip"
   },
   {
@@ -400,7 +468,7 @@
     "name": "Breath Weapon",
     "desc": [
       "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
-      "When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 2d6 at 6th level, 3d6 at 11th level, and 5d6 at 16th level.",
+      "When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.",
       "After you use your breath weapon, you cannot use it again until you complete a short or long rest."
     ],
     "proficiencies": [],
