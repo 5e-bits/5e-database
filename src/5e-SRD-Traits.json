@@ -439,7 +439,7 @@
     "url": "/api/traits/naturally-stealthy"
   },
   {
-    "index": "draconic-ancestry",
+    "index": "choose-draconic-ancestry",
     "races": [
       {
         "index": "dragonborn",
@@ -448,12 +448,405 @@
       }
     ],
     "subraces": [],
-    "name": "Draconic Ancestry",
+    "name": "Choose: Draconic Ancestry",
     "desc": [
       "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
     ],
     "proficiencies": [],
+    "trait_specific": {
+      "subtrait_options": {
+        "choose": 1,
+        "from": [
+          {
+            "index": "draconic-ancestry-black",
+            "name": "Draconic Ancestry (Black)",
+            "url": "/api/traits/draconic-ancestry-black"
+          },
+          {
+            "index": "draconic-ancestry-blue",
+            "name": "Draconic Ancestry (Blue)",
+            "url": "/api/traits/draconic-ancestry-blue"
+          },
+          {
+            "index": "draconic-ancestry-brass",
+            "name": "Draconic Ancestry (Brass)",
+            "url": "/api/traits/draconic-ancestry-brass"
+          },
+          {
+            "index": "draconic-ancestry-bronze",
+            "name": "Draconic Ancestry (Bronze)",
+            "url": "/api/traits/draconic-ancestry-bronze"
+          },
+          {
+            "index": "draconic-ancestry-copper",
+            "name": "Draconic Ancestry (Copper)",
+            "url": "/api/traits/draconic-ancestry-copper"
+          },
+          {
+            "index": "draconic-ancestry-gold",
+            "name": "Draconic Ancestry (Gold)",
+            "url": "/api/traits/draconic-ancestry-gold"
+          },
+          {
+            "index": "draconic-ancestry-green",
+            "name": "Draconic Ancestry (Green)",
+            "url": "/api/traits/draconic-ancestry-green"
+          },
+          {
+            "index": "draconic-ancestry-red",
+            "name": "Draconic Ancestry (Red)",
+            "url": "/api/traits/draconic-ancestry-red"
+          },
+          {
+            "index": "draconic-ancestry-silver",
+            "name": "Draconic Ancestry (Silver)",
+            "url": "/api/traits/draconic-ancestry-silver"
+          },
+          {
+            "index": "draconic-ancestry-white",
+            "name": "Draconic Ancestry (White)",
+            "url": "/api/traits/draconic-ancestry-white"
+          }
+        ],
+        "type": "trait"
+      }
+    },
     "url": "/api/traits/draconic-ancestry"
+  },
+  {
+    "index": "draconic-ancestry-black",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Dragonborn",
+        "url": "/api/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Draconic Ancestry (Black)",
+    "desc": [
+      "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+    ],
+    "parent": {
+      "index": "choose-draconic-ancestry",
+      "name": "Choose: Draconic Ancestry",
+      "url": "/api/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "acid",
+        "name": "Acid",
+        "url": "/api/damage-types/acid"
+      },
+      "save_ability_score": {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      }
+    },
+    "url": "/api/traits/draconic-ancestry-black"
+  },
+  {
+    "index": "draconic-ancestry-blue",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Dragonborn",
+        "url": "/api/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Draconic Ancestry (Blue)",
+    "desc": [
+      "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+    ],
+    "parent": {
+      "index": "choose-draconic-ancestry",
+      "name": "Choose: Draconic Ancestry",
+      "url": "/api/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "lightning",
+        "name": "Lightning",
+        "url": "/api/damage-types/lightning"
+      },
+      "save_ability_score": {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      }
+    },
+    "url": "/api/traits/draconic-ancestry-blue"
+  },
+  {
+    "index": "draconic-ancestry-brass",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Dragonborn",
+        "url": "/api/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Draconic Ancestry (Brass)",
+    "desc": [
+      "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+    ],
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "fire",
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      },
+      "save_ability_score": {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      }
+    },
+    "url": "/api/traits/draconic-ancestry-brass"
+  },
+  {
+    "index": "draconic-ancestry-bronze",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Dragonborn",
+        "url": "/api/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Draconic Ancestry (Bronze)",
+    "desc": [
+      "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+    ],
+    "parent": {
+      "index": "choose-draconic-ancestry",
+      "name": "Choose: Draconic Ancestry",
+      "url": "/api/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "lightning",
+        "name": "Lightning",
+        "url": "/api/damage-types/lightning"
+      },
+      "save_ability_score": {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      }
+    },
+    "url": "/api/traits/draconic-ancestry-bronze"
+  },
+  {
+    "index": "draconic-ancestry-copper",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Dragonborn",
+        "url": "/api/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Draconic Ancestry (Copper)",
+    "desc": [
+      "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+    ],
+    "parent": {
+      "index": "choose-draconic-ancestry",
+      "name": "Choose: Draconic Ancestry",
+      "url": "/api/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "acid",
+        "name": "Acid",
+        "url": "/api/damage-types/acid"
+      },
+      "save_ability_score": {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      }
+    },
+    "url": "/api/traits/draconic-ancestry-copper"
+  },
+  {
+    "index": "draconic-ancestry-gold",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Dragonborn",
+        "url": "/api/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Draconic Ancestry (Gold)",
+    "desc": [
+      "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+    ],
+    "parent": {
+      "index": "choose-draconic-ancestry",
+      "name": "Choose: Draconic Ancestry",
+      "url": "/api/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "fire",
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      },
+      "save_ability_score": {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      }
+    },
+    "url": "/api/traits/draconic-ancestry-gold"
+  },
+  {
+    "index": "draconic-ancestry-green",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Dragonborn",
+        "url": "/api/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Draconic Ancestry (Green)",
+    "desc": [
+      "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+    ],
+    "parent": {
+      "index": "choose-draconic-ancestry",
+      "name": "Choose: Draconic Ancestry",
+      "url": "/api/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "poison",
+        "name": "Poison",
+        "url": "/api/damage-types/poison"
+      },
+      "save_ability_score": {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      }
+    },
+    "url": "/api/traits/draconic-ancestry-green"
+  },
+  {
+    "index": "draconic-ancestry-red",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Dragonborn",
+        "url": "/api/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Draconic Ancestry (Red)",
+    "desc": [
+      "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+    ],
+    "parent": {
+      "index": "choose-draconic-ancestry",
+      "name": "Choose: Draconic Ancestry",
+      "url": "/api/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "fire",
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      },
+      "save_ability_score": {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      }
+    },
+    "url": "/api/traits/draconic-ancestry-red"
+  },
+  {
+    "index": "draconic-ancestry-silver",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Dragonborn",
+        "url": "/api/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Draconic Ancestry (Silver)",
+    "desc": [
+      "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+    ],
+    "parent": {
+      "index": "choose-draconic-ancestry",
+      "name": "Choose: Draconic Ancestry",
+      "url": "/api/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "cold",
+        "name": "Cold",
+        "url": "/api/damage-types/cold"
+      },
+      "save_ability_score": {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      }
+    },
+    "url": "/api/traits/draconic-ancestry-silver"
+  },
+  {
+    "index": "draconic-ancestry-white",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Dragonborn",
+        "url": "/api/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Draconic Ancestry (White)",
+    "desc": [
+      "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+    ],
+    "parent": {
+      "index": "choose-draconic-ancestry",
+      "name": "Choose: Draconic Ancestry",
+      "url": "/api/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "cold",
+        "name": "Cold",
+        "url": "/api/damage-types/cold"
+      },
+      "save_ability_score": {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      }
+    },
+    "url": "/api/traits/draconic-ancestry-white"
   },
   {
     "index": "breath-weapon",
