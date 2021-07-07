@@ -4707,483 +4707,110 @@
       "At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
       "At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit"
     ],
-    "choice": {
-      "choose": 2,
-      "type": "feature",
-      "from": [
-        {
-          "index": "rogue-expertise-acrobatics",
-          "name": "Expertise: Acrobatics",
-          "url": "/api/features/rogue-expertise-acrobatics"
-        },
-        {
-          "index": "rogue-expertise-animal-handling",
-          "name": "Expertise: Animal Handling",
-          "url": "/api/features/rogue-expertise-animal-handling"
-        },
-        {
-          "index": "rogue-expertise-arcana",
-          "name": "Expertise: Arcana",
-          "url": "/api/features/rogue-expertise-arcana"
-        },
-        {
-          "index": "rogue-expertise-athletics",
-          "name": "Expertise: Athletics",
-          "url": "/api/features/rogue-expertise-athletics"
-        },
-        {
-          "index": "rogue-expertise-deception",
-          "name": "Expertise: Deception",
-          "url": "/api/features/rogue-expertise-deception"
-        },
-        {
-          "index": "rogue-expertise-history",
-          "name": "Expertise: History",
-          "url": "/api/features/rogue-expertise-history"
-        },
-        {
-          "index": "rogue-expertise-insight",
-          "name": "Expertise: Insight",
-          "url": "/api/features/rogue-expertise-insight"
-        },
-        {
-          "index": "rogue-expertise-intimidation",
-          "name": "Expertise: Intimidation",
-          "url": "/api/features/rogue-expertise-intimidation"
-        },
-        {
-          "index": "rogue-expertise-investigation",
-          "name": "Expertise: Investigation",
-          "url": "/api/features/rogue-expertise-investigation"
-        },
-        {
-          "index": "rogue-expertise-medicine",
-          "name": "Expertise: Medicine",
-          "url": "/api/features/rogue-expertise-medicine"
-        },
-        {
-          "index": "rogue-expertise-nature",
-          "name": "Expertise: Nature",
-          "url": "/api/features/rogue-expertise-nature"
-        },
-        {
-          "index": "rogue-expertise-perception",
-          "name": "Expertise: Perception",
-          "url": "/api/features/rogue-expertise-perception"
-        },
-        {
-          "index": "rogue-expertise-performance",
-          "name": "Expertise: Performance",
-          "url": "/api/features/rogue-expertise-performance"
-        },
-        {
-          "index": "rogue-expertise-persuasion",
-          "name": "Expertise: Persuasion",
-          "url": "/api/features/rogue-expertise-persuasion"
-        },
-        {
-          "index": "rogue-expertise-religion",
-          "name": "Expertise: Religion",
-          "url": "/api/features/rogue-expertise-religion"
-        },
-        {
-          "index": "rogue-expertise-sleight-of-hand",
-          "name": "Expertise: Sleight of Hand",
-          "url": "/api/features/rogue-expertise-sleight-of-hand"
-        },
-        {
-          "index": "rogue-expertise-stealth",
-          "name": "Expertise: Stealth",
-          "url": "/api/features/rogue-expertise-stealth"
-        },
-        {
-          "index": "rogue-expertise-survival",
-          "name": "Expertise: Survival",
-          "url": "/api/features/rogue-expertise-survival"
-        }
-      ]
+    "feature_specific": {
+      "expertise_options": {
+        "choose": 2,
+        "type": "proficiency",
+        "from": [
+          {
+            "index": "skill-acrobatics",
+            "name": "Skill: Acrobatics",
+            "url": "/api/proficiencies/skill-acrobatics"
+          },
+          {
+            "index": "skill-animal-handling",
+            "name": "Skill: Animal Handling",
+            "url": "/api/proficiencies/skill-animal-handling"
+          },
+          {
+            "index": "skill-arcana",
+            "name": "Skill: Arcana",
+            "url": "/api/proficiencies/skill-arcana"
+          },
+          {
+            "index": "skill-athletics",
+            "name": "Skill: Athletics",
+            "url": "/api/proficiencies/skill-athletics"
+          },
+          {
+            "index": "skill-deception",
+            "name": "Skill: Deception",
+            "url": "/api/proficiencies/skill-deception"
+          },
+          {
+            "index": "skill-history",
+            "name": "Skill: History",
+            "url": "/api/proficiencies/skill-history"
+          },
+          {
+            "index": "skill-insight",
+            "name": "Skill: Insight",
+            "url": "/api/proficiencies/skill-insight"
+          },
+          {
+            "index": "skill-intimidation",
+            "name": "Skill: Intimidation",
+            "url": "/api/proficiencies/skill-intimidation"
+          },
+          {
+            "index": "skill-investigation",
+            "name": "Skill: Investigation",
+            "url": "/api/proficiencies/skill-investigation"
+          },
+          {
+            "index": "skill-medicine",
+            "name": "Skill: Medicine",
+            "url": "/api/proficiencies/skill-medicine"
+          },
+          {
+            "index": "skill-nature",
+            "name": "Skill: Nature",
+            "url": "/api/proficiencies/skill-nature"
+          },
+          {
+            "index": "skill-perception",
+            "name": "Skill: Perception",
+            "url": "/api/proficiencies/skill-perception"
+          },
+          {
+            "index": "skill-performance",
+            "name": "Skill: Performance",
+            "url": "/api/proficiencies/skill-performance"
+          },
+          {
+            "index": "skill-persuasion",
+            "name": "Skill: Persuasion",
+            "url": "/api/proficiencies/skill-persuasion"
+          },
+          {
+            "index": "skill-religion",
+            "name": "Skill: Religion",
+            "url": "/api/proficiencies/skill-religion"
+          },
+          {
+            "index": "skill-sleight-of-hand",
+            "name": "Skill: Sleight of Hand",
+            "url": "/api/proficiencies/skill-sleight-of-hand"
+          },
+          {
+            "index": "skill-stealth",
+            "name": "Skill: Stealth",
+            "url": "/api/proficiencies/skill-stealth"
+          },
+          {
+            "index": "skill-survival",
+            "name": "Skill: Survival",
+            "url": "/api/proficiencies/skill-survival"
+          },
+          {
+            "index": "thieves-tools",
+            "name": "Thieves' Tools",
+            "url": "/api/proficiencies/thieves-tools"
+          }
+        ]
+      }
     },
     "url": "/api/features/rogue-choose-expertise-1"
-  },
-  {
-    "index": "rogue-expertise-acrobatics",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Acrobatics",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-acrobatics"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-acrobatics"
-  },
-  {
-    "index": "rogue-expertise-animal-handling",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Animal Handling",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-animal-handling"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-animal-handling"
-  },
-  {
-    "index": "rogue-expertise-arcana",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Arcana",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-arcana"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-arcana"
-  },
-  {
-    "index": "rogue-expertise-athletics",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Athletics",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-athletics"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-athletics"
-  },
-  {
-    "index": "rogue-expertise-deception",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Deception",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-deception"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-deception"
-  },
-  {
-    "index": "rogue-expertise-history",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: History",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-history"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-history"
-  },
-  {
-    "index": "rogue-expertise-insight",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Insight",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-insight"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-insight"
-  },
-  {
-    "index": "rogue-expertise-intimidation",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Intimidation",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-intimidation"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-intimidation"
-  },
-  {
-    "index": "rogue-expertise-investigation",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Investigation",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-investigation"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-investigation"
-  },
-  {
-    "index": "rogue-expertise-medicine",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Medicine",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-medicine"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-medicine"
-  },
-  {
-    "index": "rogue-expertise-nature",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Nature",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-nature"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-nature"
-  },
-  {
-    "index": "rogue-expertise-perception",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Perception",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-perception"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-perception"
-  },
-  {
-    "index": "rogue-expertise-performance",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Performance",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-performance"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-performance"
-  },
-  {
-    "index": "rogue-expertise-persuasion",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Persuasion",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-persuasion"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-persuasion"
-  },
-  {
-    "index": "rogue-expertise-religion",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Religion",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-religion"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-religion"
-  },
-  {
-    "index": "rogue-expertise-sleight-of-hand",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Sleight of Hand",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-sleight-of-hand"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-sleight-of-hand"
-  },
-  {
-    "index": "rogue-expertise-stealth",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Stealth",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-stealth"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-stealth"
-  },
-  {
-    "index": "rogue-expertise-survival",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Survival",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-survival"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-survival"
-  },
-  {
-    "index": "rogue-expertise-thieves-tools",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Expertise: Thieves' Tools",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/thieves-tools"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Rogue)",
-    "url": "/api/features/rogue-expertise-thieves-tools"
   },
   {
     "index": "sneak-attack",
