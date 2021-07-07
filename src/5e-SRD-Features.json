@@ -4392,21 +4392,23 @@
       "Volley",
       "Whirlwind Attack"
     ],
-    "choice": {
-      "choose": 1,
-      "type": "feature",
-      "from": [
-        {
-          "index": "multiattack-volley",
-          "name": "Multiattack: Volley",
-          "url": "/api/features/multiattack-volley"
-        },
-        {
-          "index": "multiattack-whirlwind-attack",
-          "name": "Multiattack: Whirlwind Attack",
-          "url": "/api/features/multiattack-whirlwind-attack"
-        }
-      ]
+    "feature_specific": {
+      "subfeature_options": {
+        "choose": 1,
+        "type": "feature",
+        "from": [
+          {
+            "index": "multiattack-volley",
+            "name": "Multiattack: Volley",
+            "url": "/api/features/multiattack-volley"
+          },
+          {
+            "index": "multiattack-whirlwind-attack",
+            "name": "Multiattack: Whirlwind Attack",
+            "url": "/api/features/multiattack-whirlwind-attack"
+          }
+        ]
+      }
     },
     "url": "/api/features/choose-multiattack"
   },
@@ -4428,7 +4430,11 @@
     "desc": [
       "You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon's range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target."
     ],
-    "group": "Multiattack",
+    "parent": {
+      "index": "choose-multiattack",
+      "name": "Choose: Multiattack",
+      "url": "/api/features/choose-multiattack"
+    },
     "url": "/api/features/multiattack-volley"
   },
   {
@@ -4449,7 +4455,11 @@
     "desc": [
       "You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target."
     ],
-    "group": "Multiattack",
+    "parent": {
+      "index": "choose-multiattack",
+      "name": "Choose: Multiattack",
+      "url": "/api/features/choose-multiattack"
+    },
     "url": "/api/features/multiattack-whirlwind-attack"
   },
   {
