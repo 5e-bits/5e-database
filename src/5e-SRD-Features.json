@@ -3994,26 +3994,28 @@
       "Giant Killer",
       "Horde Breaker"
     ],
-    "choice": {
-      "choose": 1,
-      "type": "feature",
-      "from": [
-        {
-          "index": "hunters-prey-colossus-slayer",
-          "name": "Hunter's Prey: Colossus Slayer",
-          "url": "/api/features/hunters-prey-colossus-slayer"
-        },
-        {
-          "index": "hunters-prey-giant-killer",
-          "name": "Hunter's Prey: Giant Killer",
-          "url": "/api/features/hunters-prey-giant-killer"
-        },
-        {
-          "index": "hunters-prey-horde-breaker",
-          "name": "Hunter's Prey: Horde Breaker",
-          "url": "/api/features/hunters-prey-horde-breaker"
-        }
-      ]
+    "feature_specific": {
+      "subfeature_options": {
+        "choose": 1,
+        "type": "feature",
+        "from": [
+          {
+            "index": "hunters-prey-colossus-slayer",
+            "name": "Hunter's Prey: Colossus Slayer",
+            "url": "/api/features/hunters-prey-colossus-slayer"
+          },
+          {
+            "index": "hunters-prey-giant-killer",
+            "name": "Hunter's Prey: Giant Killer",
+            "url": "/api/features/hunters-prey-giant-killer"
+          },
+          {
+            "index": "hunters-prey-horde-breaker",
+            "name": "Hunter's Prey: Horde Breaker",
+            "url": "/api/features/hunters-prey-horde-breaker"
+          }
+        ]
+      }
     },
     "url": "/api/features/choose-hunters-prey"
   },
