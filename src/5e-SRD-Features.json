@@ -3832,31 +3832,33 @@
     "desc": [
       "At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again."
     ],
-    "choice": {
-      "choose": 1,
-      "type": "feature",
-      "from": [
-        {
-          "index": "ranger-fighting-style-archery",
-          "name": "Fighting Style: Archery",
-          "url": "/api/features/ranger-fighting-style-archery"
-        },
-        {
-          "index": "ranger-fighting-style-defense",
-          "name": "Fighting Style: Defense",
-          "url": "/api/features/ranger-fighting-style-defense"
-        },
-        {
-          "index": "ranger-fighting-style-dueling",
-          "name": "Fighting Style: Dueling",
-          "url": "/api/features/ranger-fighting-style-dueling"
-        },
-        {
-          "index": "ranger-fighting-style-two-weapon-fighting",
-          "name": "Fighting Style: Two-Weapon Fighting",
-          "url": "/api/features/ranger-fighting-style-two-weapon-fighting"
-        }
-      ]
+    "feature_specific": {
+      "subfeature_options": {
+        "choose": 1,
+        "type": "feature",
+        "from": [
+          {
+            "index": "ranger-fighting-style-archery",
+            "name": "Fighting Style: Archery",
+            "url": "/api/features/ranger-fighting-style-archery"
+          },
+          {
+            "index": "ranger-fighting-style-defense",
+            "name": "Fighting Style: Defense",
+            "url": "/api/features/ranger-fighting-style-defense"
+          },
+          {
+            "index": "ranger-fighting-style-dueling",
+            "name": "Fighting Style: Dueling",
+            "url": "/api/features/ranger-fighting-style-dueling"
+          },
+          {
+            "index": "ranger-fighting-style-two-weapon-fighting",
+            "name": "Fighting Style: Two-Weapon Fighting",
+            "url": "/api/features/ranger-fighting-style-two-weapon-fighting"
+          }
+        ]
+      }
     },
     "url": "/api/features/ranger-choose-fighting-style"
   },
@@ -3873,7 +3875,11 @@
     "desc": [
       "You gain a +2 bonus to attack rolls you make with ranged weapons."
     ],
-    "group": "Fighting Style (Ranger)",
+    "parent": {
+      "index": "ranger-choose-fighting-style",
+      "name": "Choose: Fighting Style",
+      "url": "/api/features/ranger-choose-fighting-style"
+    },
     "url": "/api/features/ranger-fighting-style-archery"
   },
   {
@@ -3889,7 +3895,11 @@
     "desc": [
       "While you are wearing armor, you gain a +1 bonus to AC."
     ],
-    "group": "Fighting Style (Ranger)",
+    "parent": {
+      "index": "ranger-choose-fighting-style",
+      "name": "Choose: Fighting Style",
+      "url": "/api/features/ranger-choose-fighting-style"
+    },
     "url": "/api/features/ranger-fighting-style-defense"
   },
   {
@@ -3905,7 +3915,11 @@
     "desc": [
       "When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon."
     ],
-    "group": "Fighting Style (Ranger)",
+    "parent": {
+      "index": "ranger-choose-fighting-style",
+      "name": "Choose: Fighting Style",
+      "url": "/api/features/ranger-choose-fighting-style"
+    },
     "url": "/api/features/ranger-fighting-style-dueling"
   },
   {
@@ -3921,7 +3935,11 @@
     "desc": [
       "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
     ],
-    "group": "Fighting Style (Ranger)",
+    "parent": {
+      "index": "ranger-choose-fighting-style",
+      "name": "Choose: Fighting Style",
+      "url": "/api/features/ranger-choose-fighting-style"
+    },
     "url": "/api/features/ranger-fighting-style-two-weapon-fighting"
   },
   {
@@ -4017,7 +4035,11 @@
     "desc": [
       "Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. You can deal this extra damage only once per turn."
     ],
-    "group": "Hunter's Prey",
+    "parent": {
+      "index": "choose-hunters-prey",
+      "name": "Choose: Hunter's Prey",
+      "url": "/api/features/choose-hunters-prey"
+    },
     "url": "/api/features/hunters-prey-colossus-slayer"
   },
   {
@@ -4038,7 +4060,11 @@
     "desc": [
       "When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature."
     ],
-    "group": "Hunter's Prey",
+    "parent": {
+      "index": "choose-hunters-prey",
+      "name": "Choose: Hunter's Prey",
+      "url": "/api/features/choose-hunters-prey"
+    },
     "url": "/api/features/hunters-prey-giant-killer"
   },
   {
@@ -4059,7 +4085,11 @@
     "desc": [
       "Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon."
     ],
-    "group": "Hunter's Prey",
+    "parent": {
+      "index": "choose-hunters-prey",
+      "name": "Choose: Hunter's Prey",
+      "url": "/api/features/choose-hunters-prey"
+    },
     "url": "/api/features/hunters-prey-horde-breaker"
   },
   {
