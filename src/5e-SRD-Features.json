@@ -4532,26 +4532,28 @@
       "Stand Against the Tide",
       "Uncanny Dodge"
     ],
-    "choice": {
-      "choose": 1,
-      "type": "feature",
-      "from": [
-        {
-          "index": "superior-hunters-defense-evasion",
-          "name": "Superior Hunter's Defense: Evasion",
-          "url": "/api/features/superior-hunters-defense-evasion"
-        },
-        {
-          "index": "superior-hunters-defense-stand-against-the-tide",
-          "name": "Superior Hunter's Defense: Stand Against the Tide",
-          "url": "/api/features/superior-hunters-defense-stand-against-the-tide"
-        },
-        {
-          "index": "superior-hunters-defense-uncanny-dodge",
-          "name": "Superior Hunter's Defense: Uncanny Dodge",
-          "url": "/api/features/superior-hunters-defense-uncanny-dodge"
-        }
-      ]
+    "feature_specific": {
+      "subfeature_options": {
+        "choose": 1,
+        "type": "feature",
+        "from": [
+          {
+            "index": "superior-hunters-defense-evasion",
+            "name": "Superior Hunter's Defense: Evasion",
+            "url": "/api/features/superior-hunters-defense-evasion"
+          },
+          {
+            "index": "superior-hunters-defense-stand-against-the-tide",
+            "name": "Superior Hunter's Defense: Stand Against the Tide",
+            "url": "/api/features/superior-hunters-defense-stand-against-the-tide"
+          },
+          {
+            "index": "superior-hunters-defense-uncanny-dodge",
+            "name": "Superior Hunter's Defense: Uncanny Dodge",
+            "url": "/api/features/superior-hunters-defense-uncanny-dodge"
+          }
+        ]
+      }
     },
     "url": "/api/features/choose-superior-hunters-defense"
   },
@@ -4573,7 +4575,11 @@
     "desc": [
       "When you are subjected to an effect, such as a red dragon's fiery breath or a lightning bolt spell, that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
     ],
-    "group": "Superior Hunter's Defense",
+    "parent": {
+      "index": "choose-superior-hunters-defense",
+      "name": "Choose: Superior Hunter's Defense",
+      "url": "/api/features/choose-superior-hunters-defense"
+    },
     "url": "/api/features/superior-hunters-defense-evasion"
   },
   {
@@ -4594,7 +4600,11 @@
     "desc": [
       "When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice."
     ],
-    "group": "Superior Hunter's Defense",
+    "parent": {
+      "index": "choose-superior-hunters-defense",
+      "name": "Choose: Superior Hunter's Defense",
+      "url": "/api/features/choose-superior-hunters-defense"
+    },
     "url": "/api/features/superior-hunters-defense-stand-against-the-tide"
   },
   {
@@ -4615,7 +4625,11 @@
     "desc": [
       "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
     ],
-    "group": "Superior Hunter's Defense",
+    "parent": {
+      "index": "choose-superior-hunters-defense",
+      "name": "Choose: Superior Hunter's Defense",
+      "url": "/api/features/choose-superior-hunters-defense"
+    },
     "url": "/api/features/superior-hunters-defense-uncanny-dodge"
   },
   {
