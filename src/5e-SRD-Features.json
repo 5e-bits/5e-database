@@ -1606,46 +1606,48 @@
     "desc": [
       "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
     ],
-    "choice": {
-      "choose": 1,
-      "type": "feature",
-      "from": [
-        {
-          "index": "circle-of-the-land-arctic",
-          "name": "Circle of the Land: Arctic",
-          "url": "/api/features/circle-of-the-land-arctic"
-        },
-        {
-          "index": "circle-of-the-land-coast",
-          "name": "Circle of the Land: Coast",
-          "url": "/api/features/circle-of-the-land-coast"
-        },
-        {
-          "index": "circle-of-the-land-desert",
-          "name": "Circle of the Land: Desert",
-          "url": "/api/features/circle-of-the-land-desert"
-        },
-        {
-          "index": "circle-of-the-land-forest",
-          "name": "Circle of the Land: Forest",
-          "url": "/api/features/circle-of-the-land-forest"
-        },
-        {
-          "index": "circle-of-the-land-grassland",
-          "name": "Circle of the Land: Grassland",
-          "url": "/api/features/circle-of-the-land-grassland"
-        },
-        {
-          "index": "circle-of-the-land-mountain",
-          "name": "Circle of the Land: Mountain",
-          "url": "/api/features/circle-of-the-land-mountain"
-        },
-        {
-          "index": "circle-of-the-land-swamp",
-          "name": "Circle of the Land: Swamp",
-          "url": "/api/features/circle-of-the-land-swamp"
-        }
-      ]
+    "feature_specific": {
+      "subfeature_options": {
+        "choose": 1,
+        "type": "feature",
+        "from": [
+          {
+            "index": "circle-of-the-land-arctic",
+            "name": "Circle of the Land: Arctic",
+            "url": "/api/features/circle-of-the-land-arctic"
+          },
+          {
+            "index": "circle-of-the-land-coast",
+            "name": "Circle of the Land: Coast",
+            "url": "/api/features/circle-of-the-land-coast"
+          },
+          {
+            "index": "circle-of-the-land-desert",
+            "name": "Circle of the Land: Desert",
+            "url": "/api/features/circle-of-the-land-desert"
+          },
+          {
+            "index": "circle-of-the-land-forest",
+            "name": "Circle of the Land: Forest",
+            "url": "/api/features/circle-of-the-land-forest"
+          },
+          {
+            "index": "circle-of-the-land-grassland",
+            "name": "Circle of the Land: Grassland",
+            "url": "/api/features/circle-of-the-land-grassland"
+          },
+          {
+            "index": "circle-of-the-land-mountain",
+            "name": "Circle of the Land: Mountain",
+            "url": "/api/features/circle-of-the-land-mountain"
+          },
+          {
+            "index": "circle-of-the-land-swamp",
+            "name": "Circle of the Land: Swamp",
+            "url": "/api/features/circle-of-the-land-swamp"
+          }
+        ]
+      }
     },
     "url": "/api/features/choose-circle-of-the-land"
   },
@@ -1667,7 +1669,11 @@
     "desc": [
       "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
     ],
-    "group": "Circle of the Land",
+    "parent": {
+      "index": "choose-circle-of-the-land",
+      "name": "Choose: Circle of the Land",
+      "url": "/api/features/choose-circle-of-the-land"
+    },
     "url": "/api/features/circle-of-the-land-arctic"
   },
   {
@@ -1688,7 +1694,11 @@
     "desc": [
       "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
     ],
-    "group": "Circle of the Land",
+    "parent": {
+      "index": "choose-circle-of-the-land",
+      "name": "Choose: Circle of the Land",
+      "url": "/api/features/choose-circle-of-the-land"
+    },
     "url": "/api/features/circle-of-the-land-coast"
   },
   {
@@ -1709,7 +1719,11 @@
     "desc": [
       "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
     ],
-    "group": "Circle of the Land",
+    "parent": {
+      "index": "choose-circle-of-the-land",
+      "name": "Choose: Circle of the Land",
+      "url": "/api/features/choose-circle-of-the-land"
+    },
     "url": "/api/features/circle-of-the-land-desert"
   },
   {
@@ -1730,7 +1744,11 @@
     "desc": [
       "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
     ],
-    "group": "Circle of the Land",
+    "parent": {
+      "index": "choose-circle-of-the-land",
+      "name": "Choose: Circle of the Land",
+      "url": "/api/features/choose-circle-of-the-land"
+    },
     "url": "/api/features/circle-of-the-land-forest"
   },
   {
@@ -1751,7 +1769,11 @@
     "desc": [
       "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
     ],
-    "group": "Circle of the Land",
+    "parent": {
+      "index": "choose-circle-of-the-land",
+      "name": "Choose: Circle of the Land",
+      "url": "/api/features/choose-circle-of-the-land"
+    },
     "url": "/api/features/circle-of-the-land-grassland"
   },
   {
@@ -1772,7 +1794,11 @@
     "desc": [
       "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
     ],
-    "group": "Circle of the Land",
+    "parent": {
+      "index": "choose-circle-of-the-land",
+      "name": "Choose: Circle of the Land",
+      "url": "/api/features/choose-circle-of-the-land"
+    },
     "url": "/api/features/circle-of-the-land-mountain"
   },
   {
@@ -1793,7 +1819,11 @@
     "desc": [
       "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
     ],
-    "group": "Circle of the Land",
+    "parent": {
+      "index": "choose-circle-of-the-land",
+      "name": "Choose: Circle of the Land",
+      "url": "/api/features/choose-circle-of-the-land"
+    },
     "url": "/api/features/circle-of-the-land-swamp"
   },
   {
