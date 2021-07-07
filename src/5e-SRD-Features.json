@@ -4202,26 +4202,28 @@
       "Multiattack Defense",
       "Steel Will"
     ],
-    "choice": {
-      "choose": 1,
-      "type": "feature",
-      "from": [
-        {
-          "index": "defensive-tactics-escape-the-horde",
-          "name": "Defensive Tactics: Escape the Horde",
-          "url": "/api/features/defensive-tactics-escape-the-horde"
-        },
-        {
-          "index": "defensive-tactics-multiattack-defense",
-          "name": "Defensive Tactics: Multiattack Defense",
-          "url": "/api/features/defensive-tactics-multiattack-defense"
-        },
-        {
-          "index": "defensive-tactics-steel-will",
-          "name": "Defensive Tactics: Steel Will",
-          "url": "/api/features/defensive-tactics-steel-will"
-        }
-      ]
+    "feature_specific": {
+      "subfeature_options": {
+        "choose": 1,
+        "type": "feature",
+        "from": [
+          {
+            "index": "defensive-tactics-escape-the-horde",
+            "name": "Defensive Tactics: Escape the Horde",
+            "url": "/api/features/defensive-tactics-escape-the-horde"
+          },
+          {
+            "index": "defensive-tactics-multiattack-defense",
+            "name": "Defensive Tactics: Multiattack Defense",
+            "url": "/api/features/defensive-tactics-multiattack-defense"
+          },
+          {
+            "index": "defensive-tactics-steel-will",
+            "name": "Defensive Tactics: Steel Will",
+            "url": "/api/features/defensive-tactics-steel-will"
+          }
+        ]
+      }
     },
     "url": "/api/features/choose-defensive-tactics"
   },
@@ -4243,7 +4245,11 @@
     "desc": [
       "Opportunity attacks against you are made with disadvantage."
     ],
-    "group": "Defensive Tactics",
+    "parent": {
+      "index": "choose-defensive-tactics",
+      "name": "Choose: Defensive Tactics",
+      "url": "/api/features/choose-defensive-tactics"
+    },
     "url": "/api/features/defensive-tactics-escape-the-horde"
   },
   {
@@ -4264,7 +4270,11 @@
     "desc": [
       "When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn."
     ],
-    "group": "Defensive Tactics",
+    "parent": {
+      "index": "choose-defensive-tactics",
+      "name": "Choose: Defensive Tactics",
+      "url": "/api/features/choose-defensive-tactics"
+    },
     "url": "/api/features/defensive-tactics-multiattack-defense"
   },
   {
@@ -4285,7 +4295,11 @@
     "desc": [
       "You have advantage on saving throws against being frightened."
     ],
-    "group": "Defensive Tactics",
+    "parent": {
+      "index": "choose-defensive-tactics",
+      "name": "Choose: Defensive Tactics",
+      "url": "/api/features/choose-defensive-tactics"
+    },
     "url": "/api/features/defensive-tactics-steel-will"
   },
   {
