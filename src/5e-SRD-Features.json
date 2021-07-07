@@ -5738,51 +5738,53 @@
       "At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.",
       "You can use only one Metamagic option on a spell when you cast it, unless otherwise noted."
     ],
-    "choice": {
-      "choose": 2,
-      "type": "feature",
-      "from": [
-        {
-          "index": "metamagic-careful-spell",
-          "name": "Metamagic: Careful Spell",
-          "url": "/api/features/metamagic-careful-spell"
-        },
-        {
-          "index": "metamagic-distant-spell",
-          "name": "Metamagic: Distant Spell",
-          "url": "/api/features/metamagic-distant-spell"
-        },
-        {
-          "index": "metamagic-empowered-spell",
-          "name": "Metamagic: Empowered Spell",
-          "url": "/api/features/metamagic-empowered-spell"
-        },
-        {
-          "index": "metamagic-extended-spell",
-          "name": "Metamagic: Extended Spell",
-          "url": "/api/features/metamagic-extended-spell"
-        },
-        {
-          "index": "metamagic-heightened-spell",
-          "name": "Metamagic: Heightened Spell",
-          "url": "/api/features/metamagic-heightened-spell"
-        },
-        {
-          "index": "metamagic-quickened-spell",
-          "name": "Metamagic: Quickened Spell",
-          "url": "/api/features/metamagic-quickened-spell"
-        },
-        {
-          "index": "metamagic-subtle-spell",
-          "name": "Metamagic: Subtle Spell",
-          "url": "/api/features/metamagic-subtle-spell"
-        },
-        {
-          "index": "metamagic-twinned-spell",
-          "name": "Metamagic: Twinned Spell",
-          "url": "/api/features/metamagic-twinned-spell"
-        }
-      ]
+    "feature_specific": {
+      "subfeature_options": {
+        "choose": 2,
+        "type": "feature",
+        "from": [
+          {
+            "index": "metamagic-careful-spell",
+            "name": "Metamagic: Careful Spell",
+            "url": "/api/features/metamagic-careful-spell"
+          },
+          {
+            "index": "metamagic-distant-spell",
+            "name": "Metamagic: Distant Spell",
+            "url": "/api/features/metamagic-distant-spell"
+          },
+          {
+            "index": "metamagic-empowered-spell",
+            "name": "Metamagic: Empowered Spell",
+            "url": "/api/features/metamagic-empowered-spell"
+          },
+          {
+            "index": "metamagic-extended-spell",
+            "name": "Metamagic: Extended Spell",
+            "url": "/api/features/metamagic-extended-spell"
+          },
+          {
+            "index": "metamagic-heightened-spell",
+            "name": "Metamagic: Heightened Spell",
+            "url": "/api/features/metamagic-heightened-spell"
+          },
+          {
+            "index": "metamagic-quickened-spell",
+            "name": "Metamagic: Quickened Spell",
+            "url": "/api/features/metamagic-quickened-spell"
+          },
+          {
+            "index": "metamagic-subtle-spell",
+            "name": "Metamagic: Subtle Spell",
+            "url": "/api/features/metamagic-subtle-spell"
+          },
+          {
+            "index": "metamagic-twinned-spell",
+            "name": "Metamagic: Twinned Spell",
+            "url": "/api/features/metamagic-twinned-spell"
+          }
+        ]
+      }
     },
     "url": "/api/features/choose-metamagic"
   },
@@ -5799,7 +5801,11 @@
     "desc": [
       "When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell."
     ],
-    "group": "Metamagic",
+    "parent": {
+      "index": "choose-metamagic",
+      "name": "Choose: Metamagic",
+      "url": "/api/features/choose-metamagic"
+    },
     "url": "/api/features/metamagic-careful-spell"
   },
   {
@@ -5816,7 +5822,11 @@
       "When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.",
       "When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet."
     ],
-    "group": "Metamagic",
+    "parent": {
+      "index": "choose-metamagic",
+      "name": "Choose: Metamagic",
+      "url": "/api/features/choose-metamagic"
+    },
     "url": "/api/features/metamagic-distant-spell"
   },
   {
@@ -5833,7 +5843,11 @@
       "When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.",
       "You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell."
     ],
-    "group": "Metamagic",
+    "parent": {
+      "index": "choose-metamagic",
+      "name": "Choose: Metamagic",
+      "url": "/api/features/choose-metamagic"
+    },
     "url": "/api/features/metamagic-empowered-spell"
   },
   {
@@ -5849,7 +5863,11 @@
     "desc": [
       "When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours."
     ],
-    "group": "Metamagic",
+    "parent": {
+      "index": "choose-metamagic",
+      "name": "Choose: Metamagic",
+      "url": "/api/features/choose-metamagic"
+    },
     "url": "/api/features/metamagic-extended-spell"
   },
   {
@@ -5865,7 +5883,11 @@
     "desc": [
       "When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell."
     ],
-    "group": "Metamagic",
+    "parent": {
+      "index": "choose-metamagic",
+      "name": "Choose: Metamagic",
+      "url": "/api/features/choose-metamagic"
+    },
     "url": "/api/features/metamagic-heightened-spell"
   },
   {
@@ -5881,7 +5903,11 @@
     "desc": [
       "When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting."
     ],
-    "group": "Metamagic",
+    "parent": {
+      "index": "choose-metamagic",
+      "name": "Choose: Metamagic",
+      "url": "/api/features/choose-metamagic"
+    },
     "url": "/api/features/metamagic-quickened-spell"
   },
   {
@@ -5897,7 +5923,11 @@
     "desc": [
       "When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components."
     ],
-    "group": "Metamagic",
+    "parent": {
+      "index": "choose-metamagic",
+      "name": "Choose: Metamagic",
+      "url": "/api/features/choose-metamagic"
+    },
     "url": "/api/features/metamagic-subtle-spell"
   },
   {
