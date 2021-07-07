@@ -522,463 +522,105 @@
     "desc": [
       "At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. At 10th level, you can choose another two skill proficiencies to gain this benefit."
     ],
-    "choice": {
-      "choose": 2,
-      "type": "feature",
-      "from": [
-        {
-          "index": "bard-expertise-acrobatics",
-          "name": "Expertise: Acrobatics",
-          "url": "/api/features/bard-expertise-acrobatics"
-        },
-        {
-          "index": "bard-expertise-animal-handling",
-          "name": "Expertise: Animal Handling",
-          "url": "/api/features/bard-expertise-animal-handling"
-        },
-        {
-          "index": "bard-expertise-arcana",
-          "name": "Expertise: Arcana",
-          "url": "/api/features/bard-expertise-arcana"
-        },
-        {
-          "index": "bard-expertise-athletics",
-          "name": "Expertise: Athletics",
-          "url": "/api/features/bard-expertise-athletics"
-        },
-        {
-          "index": "bard-expertise-deception",
-          "name": "Expertise: Deception",
-          "url": "/api/features/bard-expertise-deception"
-        },
-        {
-          "index": "bard-expertise-history",
-          "name": "Expertise: History",
-          "url": "/api/features/bard-expertise-history"
-        },
-        {
-          "index": "bard-expertise-insight",
-          "name": "Expertise: Insight",
-          "url": "/api/features/bard-expertise-insight"
-        },
-        {
-          "index": "bard-expertise-intimidation",
-          "name": "Expertise: Intimidation",
-          "url": "/api/features/bard-expertise-intimidation"
-        },
-        {
-          "index": "bard-expertise-investigation",
-          "name": "Expertise: Investigation",
-          "url": "/api/features/bard-expertise-investigation"
-        },
-        {
-          "index": "bard-expertise-medicine",
-          "name": "Expertise: Medicine",
-          "url": "/api/features/bard-expertise-medicine"
-        },
-        {
-          "index": "bard-expertise-nature",
-          "name": "Expertise: Nature",
-          "url": "/api/features/bard-expertise-nature"
-        },
-        {
-          "index": "bard-expertise-perception",
-          "name": "Expertise: Perception",
-          "url": "/api/features/bard-expertise-perception"
-        },
-        {
-          "index": "bard-expertise-performance",
-          "name": "Expertise: Performance",
-          "url": "/api/features/bard-expertise-performance"
-        },
-        {
-          "index": "bard-expertise-persuasion",
-          "name": "Expertise: Persuasion",
-          "url": "/api/features/bard-expertise-persuasion"
-        },
-        {
-          "index": "bard-expertise-religion",
-          "name": "Expertise: Religion",
-          "url": "/api/features/bard-expertise-religion"
-        },
-        {
-          "index": "bard-expertise-sleight-of-hand",
-          "name": "Expertise: Sleight of Hand",
-          "url": "/api/features/bard-expertise-sleight-of-hand"
-        },
-        {
-          "index": "bard-expertise-stealth",
-          "name": "Expertise: Stealth",
-          "url": "/api/features/bard-expertise-stealth"
-        },
-        {
-          "index": "bard-expertise-survival",
-          "name": "Expertise: Survival",
-          "url": "/api/features/bard-expertise-survival"
-        }
-      ]
+    "feature_specific": {
+      "expertise_options": {
+        "choose": 2,
+        "type": "skill",
+        "from": [
+          {
+            "index": "acrobatics",
+            "name": "Acrobatics",
+            "url": "/api/skills/acrobatics"
+          },
+          {
+            "index": "animal-handling",
+            "name": "Animal Handling",
+            "url": "/api/skills/animal-handling"
+          },
+          {
+            "index": "arcana",
+            "name": "Arcana",
+            "url": "/api/skills/arcana"
+          },
+          {
+            "index": "athletics",
+            "name": "Athletics",
+            "url": "/api/skills/athletics"
+          },
+          {
+            "index": "deception",
+            "name": "Deception",
+            "url": "/api/skills/deception"
+          },
+          {
+            "index": "history",
+            "name": "History",
+            "url": "/api/skills/history"
+          },
+          {
+            "index": "insight",
+            "name": "Insight",
+            "url": "/api/skills/insight"
+          },
+          {
+            "index": "intimidation",
+            "name": "Intimidation",
+            "url": "/api/skills/intimidation"
+          },
+          {
+            "index": "investigation",
+            "name": "Investigation",
+            "url": "/api/skills/investigation"
+          },
+          {
+            "index": "medicine",
+            "name": "Medicine",
+            "url": "/api/skills/medicine"
+          },
+          {
+            "index": "nature",
+            "name": "Nature",
+            "url": "/api/skills/nature"
+          },
+          {
+            "index": "perception",
+            "name": "Perception",
+            "url": "/api/skills/perception"
+          },
+          {
+            "index": "performance",
+            "name": "Performance",
+            "url": "/api/skills/performance"
+          },
+          {
+            "index": "persuasion",
+            "name": "Persuasion",
+            "url": "/api/skills/persuasion"
+          },
+          {
+            "index": "religion",
+            "name": "Religion",
+            "url": "/api/skills/religion"
+          },
+          {
+            "index": "sleight-of-hand",
+            "name": "Sleight of Hand",
+            "url": "/api/skills/sleight-of-hand"
+          },
+          {
+            "index": "stealth",
+            "name": "Stealth",
+            "url": "/api/skills/stealth"
+          },
+          {
+            "index": "survival",
+            "name": "Survival",
+            "url": "/api/skills/survival"
+          }
+        ]
+      }
     },
     "url": "/api/features/bard-choose-expertise-1"
-  },
-  {
-    "index": "bard-expertise-acrobatics",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: Acrobatics",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-acrobatics"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-acrobatics"
-  },
-  {
-    "index": "bard-expertise-animal-handling",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: Animal Handling",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-animal-handling"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-animal-handling"
-  },
-  {
-    "index": "bard-expertise-arcana",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: Arcana",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-arcana"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-arcana"
-  },
-  {
-    "index": "bard-expertise-athletics",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: Athletics",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-athletics"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-athletics"
-  },
-  {
-    "index": "bard-expertise-deception",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: Deception",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-deception"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-deception"
-  },
-  {
-    "index": "bard-expertise-history",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: History",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-history"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-history"
-  },
-  {
-    "index": "bard-expertise-insight",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: Insight",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-insight"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-insight"
-  },
-  {
-    "index": "bard-expertise-intimidation",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: Intimidation",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-intimidation"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-intimidation"
-  },
-  {
-    "index": "bard-expertise-investigation",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: Investigation",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-investigation"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-investigation"
-  },
-  {
-    "index": "bard-expertise-medicine",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: Medicine",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-medicine"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-medicine"
-  },
-  {
-    "index": "bard-expertise-nature",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: Nature",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-nature"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-nature"
-  },
-  {
-    "index": "bard-expertise-perception",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: Perception",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-perception"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-perception"
-  },
-  {
-    "index": "bard-expertise-performance",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: Performance",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-performance"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-performance"
-  },
-  {
-    "index": "bard-expertise-persuasion",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: Persuasion",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-persuasion"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-persuasion"
-  },
-  {
-    "index": "bard-expertise-religion",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: Religion",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-religion"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-religion"
-  },
-  {
-    "index": "bard-expertise-sleight-of-hand",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: Sleight of Hand",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-sleight-of-hand"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-sleight-of-hand"
-  },
-  {
-    "index": "bard-expertise-stealth",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: Stealth",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-stealth"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-stealth"
-  },
-  {
-    "index": "bard-expertise-survival",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Expertise: Survival",
-    "prerequisites": [
-      {
-        "type": "proficiency",
-        "proficiency": "/api/proficiencies/skill-survival"
-      }
-    ],
-    "desc": [
-      "Your proficiency bonus is doubled for any ability check you make for this skill."
-    ],
-    "group": "Expertise (Bard)",
-    "url": "/api/features/bard-expertise-survival"
   },
   {
     "index": "bard-ability-score-improvement-1",
