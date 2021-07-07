@@ -6288,91 +6288,93 @@
       "At 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.",
       "Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level."
     ],
-    "choice": {
-      "choose": 2,
-      "type": "feature",
-      "from": [
-        {
-          "index": "eldritch-invocation-agonizing-blast",
-          "name": "Eldritch Invocation: Agonizing Blast",
-          "url": "/api/features/eldritch-invocation-agonizing-blast"
-        },
-        {
-          "index": "eldritch-invocation-armor-of-shadows",
-          "name": "Eldritch Invocation: Armor of Shadows",
-          "url": "/api/features/eldritch-invocation-armor-of-shadows"
-        },
-        {
-          "index": "eldritch-invocation-beast-speech",
-          "name": "Eldritch Invocation: Beast Speech",
-          "url": "/api/features/eldritch-invocation-beast-speech"
-        },
-        {
-          "index": "eldritch-invocation-beguiling-influence",
-          "name": "Eldritch Invocation: Beguiling Influence",
-          "url": "/api/features/eldritch-invocation-beguiling-influence"
-        },
-        {
-          "index": "eldritch-invocation-book-of-ancient-secrets",
-          "name": "Eldritch Invocation: Book of Ancient Secrets",
-          "url": "/api/features/eldritch-invocation-book-of-ancient-secrets"
-        },
-        {
-          "index": "eldritch-invocation-devils-sight",
-          "name": "Eldritch Invocation: Devil's Sight",
-          "url": "/api/features/eldritch-invocation-devils-sight"
-        },
-        {
-          "index": "eldritch-invocation-eldritch-sight",
-          "name": "Eldritch Invocation: Eldritch Sight",
-          "url": "/api/features/eldritch-invocation-eldritch-sight"
-        },
-        {
-          "index": "eldritch-invocation-eldritch-spear",
-          "name": "Eldritch Invocation: Eldritch Spear",
-          "url": "/api/features/eldritch-invocation-eldritch-spear"
-        },
-        {
-          "index": "eldritch-invocation-eyes-of-the-rune-keeper",
-          "name": "Eldritch Invocation: Eyes of the Rune Keeper",
-          "url": "/api/features/eldritch-invocation-eyes-of-the-rune-keeper"
-        },
-        {
-          "index": "eldritch-invocation-fiendish-vigor",
-          "name": "Eldritch Invocation: Fiendish Vigor",
-          "url": "/api/features/eldritch-invocation-fiendish-vigor"
-        },
-        {
-          "index": "eldritch-invocation-gaze-of-two-minds",
-          "name": "Eldritch Invocation: Gaze of Two Minds",
-          "url": "/api/features/eldritch-invocation-gaze-of-two-minds"
-        },
-        {
-          "index": "eldritch-invocation-mask-of-many-faces",
-          "name": "Eldritch Invocation: Mask of Many Faces",
-          "url": "/api/features/eldritch-invocation-mask-of-many-faces"
-        },
-        {
-          "index": "eldritch-invocation-misty-visions",
-          "name": "Eldritch Invocation: Misty Visions",
-          "url": "/api/features/eldritch-invocation-misty-visions"
-        },
-        {
-          "index": "eldritch-invocation-repelling-blast",
-          "name": "Eldritch Invocation: Repelling Blast",
-          "url": "/api/features/eldritch-invocation-repelling-blast"
-        },
-        {
-          "index": "eldritch-invocation-thief-of-five-fates",
-          "name": "Eldritch Invocation: Thief of Five Fates",
-          "url": "/api/features/eldritch-invocation-thief-of-five-fates"
-        },
-        {
-          "index": "eldritch-invocation-voice-of-the-chain-master",
-          "name": "Eldritch Invocation: Voice of the Chain Master",
-          "url": "/api/features/eldritch-invocation-voice-of-the-chain-master"
-        }
-      ]
+    "feature_specific": {
+      "subfeature_options": {
+        "choose": 2,
+        "type": "feature",
+        "from": [
+          {
+            "index": "eldritch-invocation-agonizing-blast",
+            "name": "Eldritch Invocation: Agonizing Blast",
+            "url": "/api/features/eldritch-invocation-agonizing-blast"
+          },
+          {
+            "index": "eldritch-invocation-armor-of-shadows",
+            "name": "Eldritch Invocation: Armor of Shadows",
+            "url": "/api/features/eldritch-invocation-armor-of-shadows"
+          },
+          {
+            "index": "eldritch-invocation-beast-speech",
+            "name": "Eldritch Invocation: Beast Speech",
+            "url": "/api/features/eldritch-invocation-beast-speech"
+          },
+          {
+            "index": "eldritch-invocation-beguiling-influence",
+            "name": "Eldritch Invocation: Beguiling Influence",
+            "url": "/api/features/eldritch-invocation-beguiling-influence"
+          },
+          {
+            "index": "eldritch-invocation-book-of-ancient-secrets",
+            "name": "Eldritch Invocation: Book of Ancient Secrets",
+            "url": "/api/features/eldritch-invocation-book-of-ancient-secrets"
+          },
+          {
+            "index": "eldritch-invocation-devils-sight",
+            "name": "Eldritch Invocation: Devil's Sight",
+            "url": "/api/features/eldritch-invocation-devils-sight"
+          },
+          {
+            "index": "eldritch-invocation-eldritch-sight",
+            "name": "Eldritch Invocation: Eldritch Sight",
+            "url": "/api/features/eldritch-invocation-eldritch-sight"
+          },
+          {
+            "index": "eldritch-invocation-eldritch-spear",
+            "name": "Eldritch Invocation: Eldritch Spear",
+            "url": "/api/features/eldritch-invocation-eldritch-spear"
+          },
+          {
+            "index": "eldritch-invocation-eyes-of-the-rune-keeper",
+            "name": "Eldritch Invocation: Eyes of the Rune Keeper",
+            "url": "/api/features/eldritch-invocation-eyes-of-the-rune-keeper"
+          },
+          {
+            "index": "eldritch-invocation-fiendish-vigor",
+            "name": "Eldritch Invocation: Fiendish Vigor",
+            "url": "/api/features/eldritch-invocation-fiendish-vigor"
+          },
+          {
+            "index": "eldritch-invocation-gaze-of-two-minds",
+            "name": "Eldritch Invocation: Gaze of Two Minds",
+            "url": "/api/features/eldritch-invocation-gaze-of-two-minds"
+          },
+          {
+            "index": "eldritch-invocation-mask-of-many-faces",
+            "name": "Eldritch Invocation: Mask of Many Faces",
+            "url": "/api/features/eldritch-invocation-mask-of-many-faces"
+          },
+          {
+            "index": "eldritch-invocation-misty-visions",
+            "name": "Eldritch Invocation: Misty Visions",
+            "url": "/api/features/eldritch-invocation-misty-visions"
+          },
+          {
+            "index": "eldritch-invocation-repelling-blast",
+            "name": "Eldritch Invocation: Repelling Blast",
+            "url": "/api/features/eldritch-invocation-repelling-blast"
+          },
+          {
+            "index": "eldritch-invocation-thief-of-five-fates",
+            "name": "Eldritch Invocation: Thief of Five Fates",
+            "url": "/api/features/eldritch-invocation-thief-of-five-fates"
+          },
+          {
+            "index": "eldritch-invocation-voice-of-the-chain-master",
+            "name": "Eldritch Invocation: Voice of the Chain Master",
+            "url": "/api/features/eldritch-invocation-voice-of-the-chain-master"
+          }
+        ]
+      }
     },
     "url": "/api/features/choose-eldritch-invocations"
   },
@@ -6394,7 +6396,11 @@
     "desc": [
       "When you cast eldritch blast, add your Charisma modifier to the damage it deals on a hit."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-agonizing-blast"
   },
   {
@@ -6410,7 +6416,11 @@
     "desc": [
       "You can cast mage armor on yourself at will, without expending a spell slot or material components."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-armor-of-shadows"
   },
   {
@@ -6426,7 +6436,11 @@
     "desc": [
       "You can cast speak with animals at will, without expending a spell slot."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-beast-speech"
   },
   {
@@ -6442,7 +6456,11 @@
     "desc": [
       "You gain proficiency in the Deception and Persuasion skills."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-beguiling-influence"
   },
   {
@@ -6464,7 +6482,11 @@
       "You can now inscribe magical rituals in your Book of Shadows. Choose two 1st-level spells that have the ritual tag from any class's spell list (the two needn't be from the same list). The spells appear in the book and don't count against the number of spells you know. With your Book of Shadows in hand, you can cast the chosen spells as rituals. You can't cast the spells except as rituals, unless you've learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag.",
       "On your adventures, you can add other ritual spells to your Book of Shadows. When you find such a spell, you can add it to the book if the spell's level is equal to or less than half your warlock level (rounded up) and if you can spare the time to transcribe the spell. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-book-of-ancient-secrets"
   },
   {
@@ -6480,7 +6502,11 @@
     "desc": [
       "You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-devils-sight"
   },
   {
@@ -6496,7 +6522,11 @@
     "desc": [
       "You can cast detect magic at will, without expending a spell slot."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-eldritch-sight"
   },
   {
@@ -6517,7 +6547,11 @@
     "desc": [
       "When you cast eldritch blast, its range is 300 feet."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-eldritch-spear"
   },
   {
@@ -6533,7 +6567,11 @@
     "desc": [
       "You can read all writing."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-eyes-of-the-rune-keeper"
   },
   {
@@ -6549,7 +6587,11 @@
     "desc": [
       "You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-fiendish-vigor"
   },
   {
@@ -6565,7 +6607,11 @@
     "desc": [
       "You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-gaze-of-two-minds"
   },
   {
@@ -6581,7 +6627,11 @@
     "desc": [
       "You can cast disguise self at will, without expending a spell slot."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-mask-of-many-faces"
   },
   {
@@ -6597,7 +6647,11 @@
     "desc": [
       "You can cast silent image at will, without expending a spell slot or material components."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-misty-visions"
   },
   {
@@ -6618,7 +6672,11 @@
     "desc": [
       "When you hit a creature with eldritch blast, you can push the creature up to 10 feet away from you in a straight line."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-repelling-blast"
   },
   {
@@ -6634,7 +6692,11 @@
     "desc": [
       "You can cast bane once using a warlock spell slot. You can't do so again until you finish a long rest."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-thief-of-five-fates"
   },
   {
@@ -6656,7 +6718,11 @@
       "You can communicate telepathically with your familiar and perceive through your familiar's senses as long as you are on the same plane of existence.",
       "Additionally, while perceiving through your familiar's senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-voice-of-the-chain-master"
   },
   {
@@ -6677,7 +6743,11 @@
     "desc": [
       "You can cast slow once using a warlock spell slot. You can't do so again until you finish a long rest."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-mire-the-mind"
   },
   {
@@ -6698,7 +6768,11 @@
     "desc": [
       "When you are in an area of dim light or darkness, you can use your action to become invisible until you move or take an action or a reaction."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-one-with-shadows"
   },
   {
@@ -6719,7 +6793,11 @@
     "desc": [
       "You can cast bestow curse once using a warlock spell slot. You can't do so again until you finish a long rest."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-sign-of-ill-omen"
   },
   {
@@ -6744,7 +6822,11 @@
     "desc": [
       "You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-thirsting-blade"
   },
   {
@@ -6765,7 +6847,11 @@
     "desc": [
       "You can cast compulsion once using a warlock spell slot. You can't do so again until you finish a long rest."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-bewitching-whispers"
   },
   {
@@ -6786,7 +6872,11 @@
     "desc": [
       "You can cast confusion once using a warlock spell slot. You can't do so again until you finish a long rest."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-dreadful-word"
   },
   {
@@ -6807,7 +6897,11 @@
     "desc": [
       "You can cast polymorph once using a warlock spell slot. You can't do so again until you finish a long rest."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-sculptor-of-flesh"
   },
   {
@@ -6828,7 +6922,11 @@
     "desc": [
       "You can cast levitate on yourself at will, without expending a spell slot or material components."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-ascendant-step"
   },
   {
@@ -6849,7 +6947,11 @@
     "desc": [
       "You can cast conjure elemental once using a warlock spell slot. You can't do so again until you finish a long rest."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-minions-of-chaos"
   },
   {
@@ -6870,7 +6972,11 @@
     "desc": [
       "You can cast jump on yourself at will, without expending a spell slot or material components."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-otherworldly-leap"
   },
   {
@@ -6891,7 +6997,11 @@
     "desc": [
       "You can cast speak with dead at will, without expending a spell slot."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-whispers-of-the-grave"
   },
   {
@@ -6916,7 +7026,11 @@
     "desc": [
       "When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum 1)."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-lifedrinker"
   },
   {
@@ -6941,7 +7055,11 @@
     "desc": [
       "You can cast hold monster at will--targeting a celestial, fiend, or elemental--without expending a spell slot or material components. You must finish a long rest before you can use this invocation on the same creature again."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-chains-of-carceri"
   },
   {
@@ -6962,7 +7080,11 @@
     "desc": [
       "You can cast alter self at will, without expending a spell slot."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-master-of-myriad-forms"
   },
   {
@@ -6983,7 +7105,11 @@
     "desc": [
       "You can cast arcane eye at will, without expending a spell slot."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-visions-of-distant-realms"
   },
   {
@@ -7004,7 +7130,11 @@
     "desc": [
       "You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 30 feet of you and within line of sight."
     ],
-    "group": "Eldritch Invocations",
+    "parent": {
+      "index": "choose-eldritch-invocations",
+      "name": "Choose: Eldritch Invocations",
+      "url": "/api/features/choose-eldritch-invocations"
+    },
     "url": "/api/features/eldritch-invocation-witch-sight"
   },
   {
@@ -7020,26 +7150,28 @@
     "desc": [
       "At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice."
     ],
-    "choice": {
-      "choose": 1,
-      "type": "feature",
-      "from": [
-        {
-          "index": "pact-of-the-chain",
-          "name": "Pact of the Chain",
-          "url": "/api/features/pact-of-the-chain"
-        },
-        {
-          "index": "pact-of-the-blade",
-          "name": "Pact of the Blade",
-          "url": "/api/features/pact-of-the-blade"
-        },
-        {
-          "index": "pact-of-the-tome",
-          "name": "Pact of the Tome",
-          "url": "/api/features/pact-of-the-tome"
-        }
-      ]
+    "feature_specific": {
+      "subfeature_options": {
+        "choose": 1,
+        "type": "feature",
+        "from": [
+          {
+            "index": "pact-of-the-chain",
+            "name": "Pact of the Chain",
+            "url": "/api/features/pact-of-the-chain"
+          },
+          {
+            "index": "pact-of-the-blade",
+            "name": "Pact of the Blade",
+            "url": "/api/features/pact-of-the-blade"
+          },
+          {
+            "index": "pact-of-the-tome",
+            "name": "Pact of the Tome",
+            "url": "/api/features/pact-of-the-tome"
+          }
+        ]
+      }
     },
     "url": "/api/features/choose-pact-boon"
   },
@@ -7059,7 +7191,11 @@
       "Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its reaction.",
       "Your familiar is more cunning than a typical familiar. Its default form can be a reflection of your patron, with sprites and pseudodragons tied to the Archfey and imps and quasits tied to the Fiend. Because the Great Old One's nature is inscrutable, any familiar form is suitable for it."
     ],
-    "group": "Warlock Pact",
+    "parent": {
+      "index": "choose-pact-boon",
+      "name": "Choose: Pact Boon",
+      "url": "/api/features/choose-pact-boon"
+    },
     "url": "/api/features/pact-of-the-chain"
   },
   {
@@ -7078,7 +7214,11 @@
       "You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.",
       "If your patron is the Archfey, your weapon might be a slender blade wrapped in leafy vines. If you serve the Fiend, your weapon could be an axe made of black metal and adorned with decorative flames. If your patron is the Great Old One, your weapon might be an ancient-looking spear, with a gemstone embedded in its head, carved to look like a terrible unblinking eye."
     ],
-    "group": "Warlock Pact",
+    "parent": {
+      "index": "choose-pact-boon",
+      "name": "Choose: Pact Boon",
+      "url": "/api/features/choose-pact-boon"
+    },
     "url": "/api/features/pact-of-the-blade"
   },
   {
@@ -7096,7 +7236,11 @@
       "If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.",
       "Your Book of Shadows might be a fine, gilt-edged tome with spells of enchantment and illusion, gifted to you by the lordly Archfey. It could be a weighty tome bound in demon hide studded with iron, holding spells of conjuration and a wealth of forbidden lore about the sinister regions of the cosmos, a gift of the Fiend. Or it could be the tattered diary of a lunatic driven mad by contact with the Great Old One, holding scraps of spells that only your own burgeoning insanity allows you to understand and cast."
     ],
-    "group": "Warlock Pact",
+    "parent": {
+      "index": "choose-pact-boon",
+      "name": "Choose: Pact Boon",
+      "url": "/api/features/choose-pact-boon"
+    },
     "url": "/api/features/pact-of-the-tome"
   },
   {
