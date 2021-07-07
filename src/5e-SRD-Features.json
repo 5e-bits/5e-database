@@ -2196,41 +2196,43 @@
     "desc": [
       "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again."
     ],
-    "choice": {
-      "choose": 1,
-      "type": "feature",
-      "from": [
-        {
-          "index": "fighter-fighting-style-archery",
-          "name": "Fighting Style: Archery",
-          "url": "/api/features/fighter-fighting-style-archery"
-        },
-        {
-          "index": "fighter-fighting-style-defense",
-          "name": "Fighting Style: Defense",
-          "url": "/api/features/fighter-fighting-style-defense"
-        },
-        {
-          "index": "fighter-fighting-style-dueling",
-          "name": "Fighting Style: Dueling",
-          "url": "/api/features/fighter-fighting-style-dueling"
-        },
-        {
-          "index": "fighter-fighting-style-great-weapon-fighting",
-          "name": "Fighting Style: Great Weapon Fighting",
-          "url": "/api/features/fighter-fighting-style-great-weapon-fighting"
-        },
-        {
-          "index": "fighter-fighting-style-protection",
-          "name": "Fighting Style: Protection",
-          "url": "/api/features/fighter-fighting-style-protection"
-        },
-        {
-          "index": "fighter-fighting-style-two-weapon-fighting",
-          "name": "Fighting Style: Two-Weapon Fighting",
-          "url": "/api/features/fighter-fighting-style-two-weapon-fighting"
-        }
-      ]
+    "feature_specific": {
+      "subfeature_options": {
+        "choose": 1,
+        "type": "feature",
+        "from": [
+          {
+            "index": "fighter-fighting-style-archery",
+            "name": "Fighting Style: Archery",
+            "url": "/api/features/fighter-fighting-style-archery"
+          },
+          {
+            "index": "fighter-fighting-style-defense",
+            "name": "Fighting Style: Defense",
+            "url": "/api/features/fighter-fighting-style-defense"
+          },
+          {
+            "index": "fighter-fighting-style-dueling",
+            "name": "Fighting Style: Dueling",
+            "url": "/api/features/fighter-fighting-style-dueling"
+          },
+          {
+            "index": "fighter-fighting-style-great-weapon-fighting",
+            "name": "Fighting Style: Great Weapon Fighting",
+            "url": "/api/features/fighter-fighting-style-great-weapon-fighting"
+          },
+          {
+            "index": "fighter-fighting-style-protection",
+            "name": "Fighting Style: Protection",
+            "url": "/api/features/fighter-fighting-style-protection"
+          },
+          {
+            "index": "fighter-fighting-style-two-weapon-fighting",
+            "name": "Fighting Style: Two-Weapon Fighting",
+            "url": "/api/features/fighter-fighting-style-two-weapon-fighting"
+          }
+        ]
+      }
     },
     "url": "/api/features/fighter-choose-fighting-style"
   },
@@ -2247,7 +2249,11 @@
     "desc": [
       "You gain a +2 bonus to attack rolls you make with ranged weapons."
     ],
-    "group": "Fighting Style (Fighter)",
+    "parent": {
+      "index": "fighter-choose-fighting-style",
+      "name": "Choose: Fighting Style",
+      "url": "/api/features/fighter-choose-fighting-style"
+    },
     "url": "/api/features/fighter-fighting-style-archery"
   },
   {
@@ -2263,7 +2269,11 @@
     "desc": [
       "While you are wearing armor, you gain a +1 bonus to AC."
     ],
-    "group": "Fighting Style (Fighter)",
+    "parent": {
+      "index": "fighter-choose-fighting-style",
+      "name": "Choose: Fighting Style",
+      "url": "/api/features/fighter-choose-fighting-style"
+    },
     "url": "/api/features/fighter-fighting-style-defense"
   },
   {
@@ -2279,7 +2289,11 @@
     "desc": [
       "When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon."
     ],
-    "group": "Fighting Style (Fighter)",
+    "parent": {
+      "index": "fighter-choose-fighting-style",
+      "name": "Choose: Fighting Style",
+      "url": "/api/features/fighter-choose-fighting-style"
+    },
     "url": "/api/features/fighter-fighting-style-dueling"
   },
   {
@@ -2295,7 +2309,11 @@
     "desc": [
       "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit."
     ],
-    "group": "Fighting Style (Fighter)",
+    "parent": {
+      "index": "fighter-choose-fighting-style",
+      "name": "Choose: Fighting Style",
+      "url": "/api/features/fighter-choose-fighting-style"
+    },
     "url": "/api/features/fighter-fighting-style-great-weapon-fighting"
   },
   {
@@ -2311,7 +2329,11 @@
     "desc": [
       "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield."
     ],
-    "group": "Fighting Style (Fighter)",
+    "parent": {
+      "index": "fighter-choose-fighting-style",
+      "name": "Choose: Fighting Style",
+      "url": "/api/features/fighter-choose-fighting-style"
+    },
     "url": "/api/features/fighter-fighting-style-protection"
   },
   {
@@ -2327,7 +2349,11 @@
     "desc": [
       "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
     ],
-    "group": "Fighting Style (Fighter)",
+    "parent": {
+      "index": "fighter-choose-fighting-style",
+      "name": "Choose: Fighting Style",
+      "url": "/api/features/fighter-choose-fighting-style"
+    },
     "url": "/api/features/fighter-fighting-style-two-weapon-fighting"
   },
   {
