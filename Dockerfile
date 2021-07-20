@@ -9,7 +9,7 @@ RUN mkdir -p /data/db2 \
   && chown -R mongodb:mongodb /data/db2
 
 RUN apt-get update; apt-get -y install curl
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash
+RUN curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
 RUN apt-get install -y nodejs
 
 ENV MONGODB_URI mongodb://localhost/5e-database
