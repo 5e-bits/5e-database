@@ -21,7 +21,7 @@ describe("duplicate indices", () => {
   });
 });
 
-describe.skip("broken links", () => {
+describe("broken links", () => {
   it("should not contain broken links", () => {
     let errors = [];
     let files = glob.sync("src/*.json");
