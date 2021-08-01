@@ -22,49 +22,35 @@ describe("duplicate indices", () => {
   });
 });
 
-describe("broken links", () => {
+describe("api references", () => {
   it("should not contain broken links", () => {
     let errors = [];
     let files = glob.sync("src/*.json");
 
     let resources = {};
 
-    const walk_recursive = (resources, file, entry, errors) => {
-      if (entry.hasOwnProperty("url")) {
-        if (resources[entry.url] === undefined) {
-          errors.push(`${file}: URL '${entry.url}' not found.`);
-        } else {
-          if (resources[entry.url].name !== undefined && resources[entry.url].name !== entry.name) {
-            errors.push(`${file}: Name mismatch for reference to '${entry.url}', '${entry.name}' should be '${resources[entry.url].name}'`);
-          }
-
-          if (entry.index !== undefined && resources[entry.url].index !== entry.index) {
-            errors.push(`${file}: Index mismatch for reference to '${entry.url}', '${entry.index}' should be '${resources[entry.url].index}'`);
-          }
-        }
-      }
-
-      for (const property in entry) {
-        if (typeof entry[property] === "object" && entry[property] !== null) {
-          walk_recursive(resources, file, entry[property], errors);
-        }
-      }
-    };
-
     forEachFile((filename, entry) => {
       if (entry.url !== undefined) {
         if (entry.index === undefined) {
-          errors.push(`${filename}: Entity with URL '${entry.url}' should have an index.`);
+          errors.push(`${filename}: Entry with URL '${entry.url}' should have an index.`);
         }
 
         resources[entry.url] = { index: entry.index, name: entry.name };
       }
     });
 
-    forEachFile((filename, entry) => {
-      for (const property in entry) {
-        if (typeof entry[property] === "object" && entry[property] !== null) {
-          walk_recursive(resources, filename, entry[property], errors);
+    forEachFileRecursive((filename, entry) => {
+      if (entry.hasOwnProperty("url")) {
+        if (resources[entry.url] === undefined) {
+          errors.push(`${filename}: URL '${entry.url}' not found.`);
+        } else {
+          if (resources[entry.url].name !== undefined && resources[entry.url].name !== entry.name) {
+            errors.push(`${filename}: Name mismatch for reference to '${entry.url}', '${entry.name}' should be '${resources[entry.url].name}'`);
+          }
+
+          if (entry.index !== undefined && resources[entry.url].index !== entry.index) {
+            errors.push(`${filename}: Index mismatch for reference to '${entry.url}', '${entry.index}' should be '${resources[entry.url].index}'`);
+          }
         }
       }
     });
@@ -73,6 +59,12 @@ describe("broken links", () => {
   });
 });
 
+/**
+ * Calls the callback for top-level objects/arrays in all JSON files.
+ *
+ * @param (function(string, object)) callback Called with filename and each
+ *     top-level entry.
+ */
 const forEachFile = (callback) => {
     let filenames = glob.sync("src/*.json");
 
@@ -81,4 +73,24 @@ const forEachFile = (callback) => {
       const fileJSON = JSON.parse(fileText);
       fileJSON.forEach((entry) => callback(filename, entry));
     }
+};
+
+/**
+ * Calls the callback for all non-top-level objects/arrays in all JSON files.
+ * Does not overlap with entries from forEachFile().
+ *
+ * @param (function(string, object)) callback Called with filename and each
+ *     sub-top-level entry.
+ */
+const forEachFileRecursive = (callback) => {
+  const recurse = (filename, entry) => {
+    for (const property in entry) {
+      if (typeof entry[property] === "object" && entry[property] !== null) {
+        callback(filename, entry[property]);
+        recurse(filename, entry[property]);
+      }
+    }
+  };
+
+  forEachFile(recurse);
 };
