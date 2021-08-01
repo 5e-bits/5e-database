@@ -4,19 +4,20 @@ const glob = require("glob");
 describe("duplicate indices", () => {
   it("should contain unique indices", () => {
     let errors = [];
-    let files = glob.sync("src/*.json");
+    const fileIndices = {};
 
-    for (const file of files) {
-      const fileText = fs.readFileSync(file, "utf8");
-      const fileJSON = JSON.parse(fileText);
-      const indices = new Set();
-      fileJSON.forEach((entry) => {
-        if (indices.has(entry.index)) {
-          errors.push(`${file}: Index '${entry.index}' already exists.`);
-        }
-        indices.add(entry.index);
-      });
-    }
+    forEachFile((filename, entry) => {
+      if (filename in fileIndices === false) {
+        fileIndices[filename] = new Set();
+      }
+
+      if (fileIndices[filename].has(entry.index)) {
+        errors.push(`${filename}: Index '${entry.index}' already exists.`);
+      }
+
+      fileIndices[filename].add(entry.index);
+    });
+
     expect(errors).toEqual([]);
   });
 });
@@ -48,32 +49,34 @@ describe("broken links", () => {
       }
     };
 
-    for (const file of files) {
-      const fileText = fs.readFileSync(file, "utf8");
-      const fileJSON = JSON.parse(fileText);
-      fileJSON.forEach((entry) => {
-        if (entry.url !== undefined) {
-          if (entry.index === undefined) {
-            errors.push(`${file}: Entity with URL '${entry.url}' should have an index.`);
-          }
-
-          resources[entry.url] = { index: entry.index, name: entry.name };
+    forEachFile((filename, entry) => {
+      if (entry.url !== undefined) {
+        if (entry.index === undefined) {
+          errors.push(`${filename}: Entity with URL '${entry.url}' should have an index.`);
         }
-      });
-    }
 
-    for (const file of files) {
-      const fileText = fs.readFileSync(file, "utf8");
-      const fileJSON = JSON.parse(fileText);
-      fileJSON.forEach((entry) => {
-        for (const property in entry) {
-          if (typeof entry[property] === "object") {
-            walk_recursive(resources, file, entry[property], errors);
-          }
+        resources[entry.url] = { index: entry.index, name: entry.name };
+      }
+    });
+
+    forEachFile((filename, entry) => {
+      for (const property in entry) {
+        if (typeof entry[property] === "object") {
+          walk_recursive(resources, filename, entry[property], errors);
         }
-      });
-    }
+      }
+    });
 
     expect(errors).toEqual([]);
   });
 });
+
+const forEachFile = (callback) => {
+    let filenames = glob.sync("src/*.json");
+
+    for (const filename of filenames) {
+      const fileText = fs.readFileSync(filename, "utf8");
+      const fileJSON = JSON.parse(fileText);
+      fileJSON.forEach((entry) => callback(filename, entry));
+    }
+};
