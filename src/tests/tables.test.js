@@ -39,20 +39,22 @@ describe("api references", () => {
       resources[entry.url] = { index: entry.index, name: entry.name };
     });
 
-    forEachFileRecursive((filename, entry) => {
-      if (!entry.hasOwnProperty("url")) return;
+    forEachFile((filename, topLevelEntry) => {
+      recurseIntoObject(topLevelEntry, (subEntry) => {
+        if (!subEntry.hasOwnProperty("url")) return;
 
-      if (resources[entry.url] === undefined) {
-        errors.push(`${filename}: URL '${entry.url}' not found.`);
-      } else {
-        if (resources[entry.url].name !== undefined && resources[entry.url].name !== entry.name) {
-          errors.push(`${filename}: Name mismatch for reference to '${entry.url}', '${entry.name}' should be '${resources[entry.url].name}'`);
-        }
+        if (resources[subEntry.url] === undefined) {
+          errors.push(`${filename}: URL '${subEntry.url}' not found.`);
+        } else {
+          if (resources[subEntry.url].name !== undefined && resources[subEntry.url].name !== subEntry.name) {
+            errors.push(`${filename}: Name mismatch for reference to '${subEntry.url}', '${subEntry.name}' should be '${resources[subEntry.url].name}'`);
+          }
 
-        if (entry.index !== undefined && resources[entry.url].index !== entry.index) {
-          errors.push(`${filename}: Index mismatch for reference to '${entry.url}', '${entry.index}' should be '${resources[entry.url].index}'`);
+          if (subEntry.index !== undefined && resources[subEntry.url].index !== subEntry.index) {
+            errors.push(`${filename}: Index mismatch for reference to '${subEntry.url}', '${subEntry.index}' should be '${resources[subEntry.url].index}'`);
+          }
         }
-      }
+      });
     });
 
     expect(errors).toEqual([]);
@@ -76,21 +78,17 @@ const forEachFile = (callback) => {
 };
 
 /**
- * Calls the callback for all non-top-level objects/arrays in all JSON files.
- * Does not overlap with entries from forEachFile().
+ * Calls the callback recursivelly for all objects/arrays contained in the
+ * passed object.
  *
- * @param (function(string, object)) callback Called with filename and each
- *     sub-top-level entry.
+ * @param (object) object The object to recurse into.
+ * @param (function(object)) callback Called with each sub-top-level entry.
  */
-const forEachFileRecursive = (callback) => {
-  const recurse = (filename, entry) => {
-    for (const property in entry) {
-      if (typeof entry[property] === "object" && entry[property] !== null) {
-        callback(filename, entry[property]);
-        recurse(filename, entry[property]);
-      }
+const recurseIntoObject = (object, callback) => {
+  for (const property in object) {
+    if (typeof object[property] === "object" && object[property] !== null) {
+      callback(object[property]);
+      recurseIntoObject(object[property], callback);
     }
-  };
-
-  forEachFile(recurse);
+  }
 };
