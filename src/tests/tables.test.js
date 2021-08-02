@@ -30,27 +30,27 @@ describe("api references", () => {
     let resources = {};
 
     forEachFile((filename, entry) => {
-      if (entry.url !== undefined) {
-        if (entry.index === undefined) {
-          errors.push(`${filename}: Entry with URL '${entry.url}' should have an index.`);
-        }
+      if (entry.url === undefined) return;
 
-        resources[entry.url] = { index: entry.index, name: entry.name };
+      if (entry.index === undefined) {
+        errors.push(`${filename}: Entry with URL '${entry.url}' should have an index.`);
       }
+
+      resources[entry.url] = { index: entry.index, name: entry.name };
     });
 
     forEachFileRecursive((filename, entry) => {
-      if (entry.hasOwnProperty("url")) {
-        if (resources[entry.url] === undefined) {
-          errors.push(`${filename}: URL '${entry.url}' not found.`);
-        } else {
-          if (resources[entry.url].name !== undefined && resources[entry.url].name !== entry.name) {
-            errors.push(`${filename}: Name mismatch for reference to '${entry.url}', '${entry.name}' should be '${resources[entry.url].name}'`);
-          }
+      if (!entry.hasOwnProperty("url")) return;
 
-          if (entry.index !== undefined && resources[entry.url].index !== entry.index) {
-            errors.push(`${filename}: Index mismatch for reference to '${entry.url}', '${entry.index}' should be '${resources[entry.url].index}'`);
-          }
+      if (resources[entry.url] === undefined) {
+        errors.push(`${filename}: URL '${entry.url}' not found.`);
+      } else {
+        if (resources[entry.url].name !== undefined && resources[entry.url].name !== entry.name) {
+          errors.push(`${filename}: Name mismatch for reference to '${entry.url}', '${entry.name}' should be '${resources[entry.url].name}'`);
+        }
+
+        if (entry.index !== undefined && resources[entry.url].index !== entry.index) {
+          errors.push(`${filename}: Index mismatch for reference to '${entry.url}', '${entry.index}' should be '${resources[entry.url].index}'`);
         }
       }
     });
