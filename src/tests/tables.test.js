@@ -6,7 +6,7 @@ describe("duplicate indices", () => {
     let errors = [];
     const fileIndices = {};
 
-    forEachFile((filename, entry) => {
+    forEachFileEntry((filename, entry) => {
       if (filename in fileIndices === false) {
         fileIndices[filename] = new Set();
       }
@@ -29,7 +29,7 @@ describe("api references", () => {
 
     let resources = {};
 
-    forEachFile((filename, entry) => {
+    forEachFileEntry((filename, entry) => {
       if (entry.url === undefined) return;
 
       if (entry.index === undefined) {
@@ -39,7 +39,7 @@ describe("api references", () => {
       resources[entry.url] = { index: entry.index, name: entry.name };
     });
 
-    forEachFile((filename, topLevelEntry) => {
+    forEachFileEntry((filename, topLevelEntry) => {
       recurseIntoObject(topLevelEntry, (subEntry) => {
         if (!subEntry.hasOwnProperty("url")) return;
 
@@ -67,7 +67,7 @@ describe("api references", () => {
  * @param (function(string, object)) callback Called with filename and each
  *     top-level entry.
  */
-const forEachFile = (callback) => {
+const forEachFileEntry = (callback) => {
     let filenames = glob.sync("src/*.json");
 
     for (const filename of filenames) {
