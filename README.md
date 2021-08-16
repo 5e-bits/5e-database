@@ -27,6 +27,10 @@ If you see anything wrong with the API and not the data, please open an issue or
  * Create a new branch for your work
  * Push up any changes to your branch, and open a pull request. Don't feel it needs to be perfect — incomplete work is totally fine. We'd love to help get it ready for merging.
 
+# Code of Conduct
+
+The Code of Conduct can be found [here.](https://github.com/5e-bits/5e-database/wiki/Code-of-Conduct)
+
 # License
 This project is licensed under the terms of the MIT license. The underlying material
 is released using the [Open Gaming License Version 1.0a](https://www.wizards.com/default.asp?x=d20/oglfaq/20040123f)
