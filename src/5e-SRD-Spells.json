@@ -1590,6 +1590,9 @@
     "desc": [
       "The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it's invisible, and the target sheds dim light in a 5-foot radius and can't become invisible until the spell ends."
     ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd."
+    ],
     "range": "Self",
     "components": ["V"],
     "ritual": false,
@@ -1602,6 +1605,16 @@
         "index": "radiant",
         "name": "Radiant",
         "url": "/api/damage-types/radiant"
+      },
+      "damage_at_slot_level": {
+        "2": "2d6",
+        "3": "3d6",
+        "4": "4d6",
+        "5": "5d6",
+        "6": "6d6",
+        "7": "7d6",
+        "8": "8d6",
+        "9": "9d6"
       }
     },
     "school": {
@@ -2960,13 +2973,6 @@
     "casting_time": "1 action",
     "level": 5,
     "attack_type": "melee",
-    "damage": {
-      "damage_type": {
-        "index": "poison",
-        "name": "Poison",
-        "url": "/api/damage-types/poison"
-      }
-    },
     "dc": {
       "dc_type": {
         "index": "con",
@@ -3193,8 +3199,8 @@
     "desc": [
       "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect."
     ],
-     "higher_level": [
-       "When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used."
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used."
     ],
     "range": "60 feet",
     "components": ["S"],
@@ -6020,6 +6026,12 @@
         "index": "fire",
         "name": "Fire",
         "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "2": "3d6",
+        "4": "4d6",
+        "6": "5d6",
+        "8": "6d6"
       }
     },
     "school": {
@@ -6136,6 +6148,16 @@
         "index": "fire",
         "name": "Fire",
         "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "2": "2d6",
+        "3": "3d6",
+        "4": "4d6",
+        "5": "5d6",
+        "6": "6d6",
+        "7": "7d6",
+        "8": "8d6",
+        "9": "9d6"
       }
     },
     "school": {
@@ -12524,6 +12546,9 @@
         "index": "fire",
         "name": "Fire",
         "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "2": "2d6"
       }
     },
     "school": {
@@ -13810,13 +13835,6 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 3,
-    "damage": {
-      "damage_type": {
-        "index": "poison",
-        "name": "Poison",
-        "url": "/api/damage-types/poison"
-      }
-    },
     "dc": {
       "dc_type": {
         "index": "con",
@@ -14337,13 +14355,6 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 5,
-    "damage": {
-      "damage_type": {
-        "index": "psychic",
-        "name": "Psychic",
-        "url": "/api/damage-types/psychic"
-      }
-    },
     "school": {
       "index": "divination",
       "name": "Divination",
