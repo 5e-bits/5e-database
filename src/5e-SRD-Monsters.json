@@ -3628,7 +3628,16 @@
           "dc_value": 23,
           "success_type": "half"
         },
-        "damage_dice": "16d10"
+        "damage": [
+          {
+            "damage_type": {
+              "index": "lightning",
+              "name": "Lightning",
+              "url": "/api/damage-types/lightning"
+            },
+            "damage_dice": "16d10"
+          }
+        ]
       }
     ],
     "legendary_actions": [
