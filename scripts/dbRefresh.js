@@ -80,12 +80,15 @@ files
 
 // Make collections table
 console.log("creating index table...");
+const filepath = "src/collections.json";
+fs.writeFileSync(filepath, JSON.stringify(collections, null, 2), "utf8");
 const exec_string =
   `mongoimport --uri ${mongodb_uri}` +
   " --collection collections" +
+  ` --file ${filepath}` +
   " --jsonArray" +
-  " --drop" +
-  `${collections}`;
+  " --drop";
+console.log(collections);
 execSync(exec_string, (error, _, stderr) => {
   if (error) {
     console.error(`exec error: ${error}`);
@@ -93,3 +96,4 @@ execSync(exec_string, (error, _, stderr) => {
   }
   console.error(`${stderr}`);
 });
+fs.unlinkSync(filepath);
