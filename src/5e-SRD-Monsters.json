@@ -16155,13 +16155,23 @@
     "charisma": 8,
     "proficiencies": [],
     "damage_vulnerabilities": [],
-    "damage_resistances": [],
-    "damage_immunities": ["necrotic"],
+    "damage_resistances": ["necrotic"],
+    "damage_immunities": ["posion"],
     "condition_immunities": [
       {
         "index": "poisoned",
         "name": "Poisoned",
         "url": "/api/conditions/poisoned"
+      },
+      {
+        "index": "charmed",
+        "name": "Charmed",
+        "url": "/api/conditions/charmed"
+      },
+      {
+        "index": "exhaustion",
+        "name": "Exhaustion",
+        "url": "/api/conditions/exhaustion"
       }
     ],
     "senses": {
@@ -16390,12 +16400,22 @@
     "proficiencies": [],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "index": "poisoned",
         "name": "Poisoned",
         "url": "/api/conditions/poisoned"
+      },
+      {
+        "index": "charmed",
+        "name": "Charmed",
+        "url": "/api/conditions/charmed"
+      },
+      {
+        "index": "exhaustion",
+        "name": "Exhaustion",
+        "url": "/api/conditions/exhaustion"
       }
     ],
     "senses": {
@@ -32000,12 +32020,17 @@
     "proficiencies": [],
     "damage_vulnerabilities": ["bludgeoning"],
     "damage_resistances": [],
-    "damage_immunities": [],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "index": "poisoned",
         "name": "Poisoned",
         "url": "/api/conditions/poisoned"
+      },
+      {
+        "index": "exhaustion",
+        "name": "Exhaustion",
+        "url": "/api/conditions/exhaustion"
       }
     ],
     "senses": {
@@ -41897,7 +41922,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "index": "poisoned",
