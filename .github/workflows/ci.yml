@@ -50,7 +50,6 @@ jobs:
     name: Deploy to Docker Hub
     runs-on: ubuntu-latest
     needs: deploy
-    if: github.ref == 'refs/heads/main'
     steps:
       -
         name: Set up Docker Buildx
