@@ -3628,7 +3628,16 @@
           "dc_value": 23,
           "success_type": "half"
         },
-        "damage_dice": "16d10"
+        "damage": [
+          {
+            "damage_type": {
+              "index": "lightning",
+              "name": "Lightning",
+              "url": "/api/damage-types/lightning"
+            },
+            "damage_dice": "16d10"
+          }
+        ]
       }
     ],
     "legendary_actions": [
@@ -16146,13 +16155,23 @@
     "charisma": 8,
     "proficiencies": [],
     "damage_vulnerabilities": [],
-    "damage_resistances": [],
-    "damage_immunities": ["necrotic"],
+    "damage_resistances": ["necrotic"],
+    "damage_immunities": ["posion"],
     "condition_immunities": [
       {
         "index": "poisoned",
         "name": "Poisoned",
         "url": "/api/conditions/poisoned"
+      },
+      {
+        "index": "charmed",
+        "name": "Charmed",
+        "url": "/api/conditions/charmed"
+      },
+      {
+        "index": "exhaustion",
+        "name": "Exhaustion",
+        "url": "/api/conditions/exhaustion"
       }
     ],
     "senses": {
@@ -16381,12 +16400,22 @@
     "proficiencies": [],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "index": "poisoned",
         "name": "Poisoned",
         "url": "/api/conditions/poisoned"
+      },
+      {
+        "index": "charmed",
+        "name": "Charmed",
+        "url": "/api/conditions/charmed"
+      },
+      {
+        "index": "exhaustion",
+        "name": "Exhaustion",
+        "url": "/api/conditions/exhaustion"
       }
     ],
     "senses": {
@@ -19084,8 +19113,7 @@
     "reactions": [
       {
         "name": "Parry",
-        "desc": "The gladiator adds 3 to its AC against one melee attack that would hit it. To do so, the gladiator must see the attacker and be wielding a melee weapon.",
-        "attack_bonus": 0
+        "desc": "The gladiator adds 3 to its AC against one melee attack that would hit it. To do so, the gladiator must see the attacker and be wielding a melee weapon."
       }
     ],
     "url": "/api/monsters/gladiator"
@@ -23452,7 +23480,26 @@
       {
         "name": "Ink Cloud (Costs 3 Actions)",
         "desc": "While underwater, the kraken expels an ink cloud in a 60-foot radius. The cloud spreads around corners, and that area is heavily obscured to creatures other than the kraken. Each creature other than the kraken that ends its turn there must succeed on a DC 23 Constitution saving throw, taking 16 (3d10) poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the cloud, which otherwise disappears at the end of the kraken's next turn.",
-        "attack_bonus": 0
+        "attack_bonus": 0,
+        "dc": {
+          "dc_type": {
+            "index": "con",
+            "name": "CON",
+            "url": "/api/ability-scores/con"
+          },
+          "dc_value": 23,
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/damage-types/poison"
+            },
+            "damage_dice": "3d10"
+          }
+        ]
       }
     ],
     "url": "/api/monsters/kraken"
@@ -24148,7 +24195,16 @@
       },
       {
         "name": "Pounce",
-        "desc": "If the lion moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the lion can make one bite attack against it as a bonus action."
+        "desc": "If the lion moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the lion can make one bite attack against it as a bonus action.",
+        "dc": {
+          "dc_type": {
+            "index": "str",
+            "name": "STR",
+            "url": "/api/ability-scores/str"
+          },
+          "dc_value": 13,
+          "success_type": "none"
+        }
       },
       {
         "name": "Running Leap",
@@ -27970,7 +28026,16 @@
       },
       {
         "name": "Pounce",
-        "desc": "If the panther moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the panther can make one bite attack against it as a bonus action."
+        "desc": "If the panther moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the panther can make one bite attack against it as a bonus action.",
+        "dc": {
+          "dc_type": {
+            "index": "str",
+            "name": "STR",
+            "url": "/api/ability-scores/str"
+          },
+          "dc_value": 12,
+          "success_type": "none"
+        }
       }
     ],
     "actions": [
@@ -30638,7 +30703,16 @@
       },
       {
         "name": "Pounce",
-        "desc": "If the tiger moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action."
+        "desc": "If the tiger moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.",
+        "dc": {
+          "dc_type": {
+            "index": "str",
+            "name": "STR",
+            "url": "/api/ability-scores/str"
+          },
+          "dc_value": 14,
+          "success_type": "none"
+        }
       }
     ],
     "actions": [
@@ -31946,12 +32020,17 @@
     "proficiencies": [],
     "damage_vulnerabilities": ["bludgeoning"],
     "damage_resistances": [],
-    "damage_immunities": [],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "index": "poisoned",
         "name": "Poisoned",
         "url": "/api/conditions/poisoned"
+      },
+      {
+        "index": "exhaustion",
+        "name": "Exhaustion",
+        "url": "/api/conditions/exhaustion"
       }
     ],
     "senses": {
@@ -35186,7 +35265,16 @@
       },
       {
         "name": "Pounce",
-        "desc": "If the tiger moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action."
+        "desc": "If the tiger moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.",
+        "dc": {
+          "dc_type": {
+            "index": "str",
+            "name": "STR",
+            "url": "/api/ability-scores/str"
+          },
+          "dc_value": 13,
+          "success_type": "none"
+        }
       }
     ],
     "actions": [
@@ -37438,8 +37526,7 @@
         "usage": {
           "type": "recharge after rest",
           "rest_types": ["short", "long"]
-        },
-        "attack_bonus": 0
+        }
       }
     ],
     "actions": [
@@ -37525,8 +37612,7 @@
         "usage": {
           "type": "recharge after rest",
           "rest_types": ["short", "long"]
-        },
-        "attack_bonus": 0
+        }
       }
     ],
     "actions": [
@@ -37632,8 +37718,7 @@
         "usage": {
           "type": "recharge after rest",
           "rest_types": ["short", "long"]
-        },
-        "attack_bonus": 0
+        }
       }
     ],
     "actions": [
@@ -38310,7 +38395,16 @@
       },
       {
         "name": "Pounce",
-        "desc": "If the weretiger moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the weretiger can make one bite attack against it as a bonus action."
+        "desc": "If the weretiger moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the weretiger can make one bite attack against it as a bonus action.",
+        "dc": {
+          "dc_type": {
+            "index": "str",
+            "name": "STR",
+            "url": "/api/ability-scores/str"
+          },
+          "dc_value": 14,
+          "success_type": "none"
+        }
       }
     ],
     "actions": [
@@ -38480,7 +38574,16 @@
       },
       {
         "name": "Pounce",
-        "desc": "If the weretiger moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the weretiger can make one bite attack against it as a bonus action."
+        "desc": "If the weretiger moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the weretiger can make one bite attack against it as a bonus action.",
+        "dc": {
+          "dc_type": {
+            "index": "str",
+            "name": "STR",
+            "url": "/api/ability-scores/str"
+          },
+          "dc_value": 14,
+          "success_type": "none"
+        }
       }
     ],
     "actions": [
@@ -41819,7 +41922,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [],
-    "damage_immunities": [],
+    "damage_immunities": ["poison"],
     "condition_immunities": [
       {
         "index": "poisoned",

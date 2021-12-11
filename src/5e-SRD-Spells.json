@@ -1590,6 +1590,9 @@
     "desc": [
       "The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it's invisible, and the target sheds dim light in a 5-foot radius and can't become invisible until the spell ends."
     ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd."
+    ],
     "range": "Self",
     "components": ["V"],
     "ritual": false,
@@ -1602,6 +1605,16 @@
         "index": "radiant",
         "name": "Radiant",
         "url": "/api/damage-types/radiant"
+      },
+      "damage_at_slot_level": {
+        "2": "2d6",
+        "3": "3d6",
+        "4": "4d6",
+        "5": "5d6",
+        "6": "6d6",
+        "7": "7d6",
+        "8": "8d6",
+        "9": "9d6"
       }
     },
     "school": {
@@ -2960,13 +2973,6 @@
     "casting_time": "1 action",
     "level": 5,
     "attack_type": "melee",
-    "damage": {
-      "damage_type": {
-        "index": "poison",
-        "name": "Poison",
-        "url": "/api/damage-types/poison"
-      }
-    },
     "dc": {
       "dc_type": {
         "index": "con",
@@ -3193,8 +3199,8 @@
     "desc": [
       "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect."
     ],
-     "higher_level": [
-       "When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used."
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used."
     ],
     "range": "60 feet",
     "components": ["S"],
@@ -4026,11 +4032,11 @@
     "index": "detect-thoughts",
     "name": "Detect Thoughts",
     "desc": [
-      "For the duration of the spell, you can read the thoughts of some creatures. While casting the spell and at your action in each round until the spell, you may focus your mind on a creature you can see 30 feet of you. If the chosen creature has an Intelligence of 3 or less, or if she does not speak any language, the creature is not affected.",
-      "You first read the surface thoughts of the creature, which occupies her mind at that moment. In an action, you can direct your attention to the thoughts of another creature or attempt to deepen your reading thoughts of the same creature. If you deepen your reading, the target must make a backup of Wisdom, otherwise you get access to his argument (if any), in his emotional state and thought that concerns his mind on a broader spectrum Such a concern, love or hate. If successful, the spell ends. In all cases, the target is aware that his mind is under your eyes. Unless you are directing your attention to the thoughts of another creature, the target can use his action turn to roll Intelligence opposite your roll Intelligence. If she has the upper hand, the spell ends.",
-      "The questions verbally directed to the target guide the train of thought. This spell is especially effective during an interrogation.",
-      "You can also use this spell to detect the presence of thinking creatures that are invisible to you. When you cast this spell, or in an action for the duration of the spell, you can find thoughts to 30 feet of you. The spell can override most obstacles but it is blocked by 2 feet stone 2 inches of precious metal, or a thin sheet of lead. You can not detect a creature with an Intelligence of 3 or less or speaking any language.",
-      "After detecting the presence of a creature in this way, you can read his thoughts for the rest of the spell's duration as described above, even if you can not see it, but only if it remains in the range of the spell."
+      "For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of 3 or lower or doesn't speak any language, the creature is unaffected.",
+      "You initially learn the surface thoughts of the creature - what is most on its mind in that moment. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's mind. If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends.",
+      "Questions verbally directed at the target creature naturally shape the course of its thoughts, so this spell is particularly effective as part of an interrogation.",
+      "You can also use this spell to detect the presence of thinking creatures you can't see. When you cast the spell or as your action during the duration, you can search for thoughts within 30 feet of you. The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. You can't detect a creature with an Intelligence of 3 or lower or one that doesn't speak any language.",
+      "Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range."
     ],
     "range": "Self",
     "components": ["V", "S", "M"],
@@ -6020,6 +6026,12 @@
         "index": "fire",
         "name": "Fire",
         "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "2": "3d6",
+        "4": "4d6",
+        "6": "5d6",
+        "8": "6d6"
       }
     },
     "school": {
@@ -6136,6 +6148,16 @@
         "index": "fire",
         "name": "Fire",
         "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "2": "2d6",
+        "3": "3d6",
+        "4": "4d6",
+        "5": "5d6",
+        "6": "6d6",
+        "7": "7d6",
+        "8": "8d6",
+        "9": "9d6"
       }
     },
     "school": {
@@ -12524,6 +12546,9 @@
         "index": "fire",
         "name": "Fire",
         "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "2": "2d6"
       }
     },
     "school": {
@@ -13810,13 +13835,6 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 3,
-    "damage": {
-      "damage_type": {
-        "index": "poison",
-        "name": "Poison",
-        "url": "/api/damage-types/poison"
-      }
-    },
     "dc": {
       "dc_type": {
         "index": "con",
@@ -14337,13 +14355,6 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 5,
-    "damage": {
-      "damage_type": {
-        "index": "psychic",
-        "name": "Psychic",
-        "url": "/api/damage-types/psychic"
-      }
-    },
     "school": {
       "index": "divination",
       "name": "Divination",
