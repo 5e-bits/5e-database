@@ -2587,12 +2587,12 @@
     "index": "confusion",
     "name": "Confusion",
     "desc": [
-      "This spell assails and distorts the minds of creatures, generating illusions and causing uncontrolled actions. Each creature in a sphere of 10-foot-radius centered on a point chosen in the range of the spell must make a wisdom saving throw otherwise it will be affected by the spell.",
-      "An affected target can react and it must start at the beginning of 1d10 each of his game rounds to determine its behavior for that round.",
-      "At the end of each turn, an affected creature can make a saving throw of Wisdom. If successful, the effect of the spell ends for this target."
+      "This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.",
+      "An affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.",
+      "At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target."
     ],
     "higher_level": [
-      "When you cast this spell using a level spell slot 5 or more, the radius of the sphere increases by 5 feet for each level of higher spell slot to 4."
+      "When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th."
     ],
     "range": "90 feet",
     "components": ["V", "S", "M"],
@@ -4445,12 +4445,12 @@
     "index": "divine-word",
     "name": "Divine Word",
     "desc": [
-      "You speak a word of God, full of the power that has shaped the world at the dawn of creation. Choose as many creatures as you want from those you see, in the range of the spell. Every creature that hears you must make a backup Charisma, or she undergoes an effect based on the current value of his life.",
-      "- pv or less 50: muted for 1 minute",
-      "- 40 hp or less: deafened and blinded for 10 minutes",
-      "- 30 hp or less: blinded, deafened and dazed for 1 hour",
-      "- 20 hp or less: killed instantly",
-      "Regardless of its points of current life, a celestial, an elementary, a fairy or a fiend who fails his roll is returned to its original plan (if not already) and it can not go back on your plan for 24 hours, regardless of the means, with the exception of the wish spell."
+      "You utter a divine word, imbued with the power that shaped the world at the dawn of creation. Choose any number of creatures you can see within range. Each creature that can hear you must make a Charisma saving throw. On a failed save, a creature suffers an effect based on its current hit points:",
+      "- 50 hit points or fewer: deafened for 1 minute",
+      "- 40 hit points or fewer: deafened and blinded for 10 minutes",
+      "- 30 hit points or fewer: blinded, deafened, and stunned for 1 hour",
+      "- 20 hit points or fewer: killed instantly",
+      "Regardless of its current hit points, a celestial, an elemental, a fey, or a fiend that fails its save is forced back to its plane of origin (if it isn't there already) and can't return to your current plane for 24 hours by any means short of a wish spell."
     ],
     "range": "30 feet",
     "components": ["V"],
@@ -4466,7 +4466,7 @@
         "url": "/api/ability-scores/cha"
       },
       "dc_success": "none",
-      "desc": "Every creature that hears you must make a backup Charisma, or she undergoes an effect based on the current value of his life. [50 hp or less: muted for 1 minute] [40 hp or less: deafened and blinded for 10 minutes [30 hp or less: blinded, deafened and dazed for 1 hour] [20 hp or less: killed instantly]"
+      "desc": "On a failed save, a creature suffers an effect based on its current hit points."
     },
     "school": {
       "index": "evocation",
@@ -15130,11 +15130,11 @@
     "desc": [
       "You create a wall of fire on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts for the duration.",
       "When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 5d8 fire damage, or half as much damage on a successful save.",
-      "One side of the wall, selected by you when you cast this spell, deals 5d8 fire damage to each creature that ends its turn within 10 feet o f that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side o f the wall deals no damage.",
+      "One side of the wall, selected by you when you cast this spell, deals 5d8 fire damage to each creature that ends its turn within 10 feet o f that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side of the wall deals no damage.",
       "The other side of the wall deals no damage."
     ],
     "higher_level": [
-      "When you cast this spell using a level spell slot 5 or more, the damage of the spell increases by 1d8 for each level of higher spell slot to 4."
+      "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th."
     ],
     "range": "120 feet",
     "components": ["V", "S", "M"],
