@@ -1,5 +1,5 @@
-const { execSync } = require("child_process");
-const fs = require("fs");
+import { execSync } from "child_process";
+import { readdirSync, readFileSync, writeFileSync, unlinkSync } from "fs";
 
 // check the environment variable is set
 const mongodb_uri = process.env.MONGODB_URI;
@@ -36,7 +36,7 @@ const regex = new RegExp(json_data_pattern);
 let files = [];
 
 try {
-  files = fs.readdirSync(json_db_dir);
+  files = readdirSync(json_db_dir);
 } catch (e) {
   console.error(e);
   process.exit(1);
@@ -47,12 +47,12 @@ if (files.length === 0) {
   process.exit(1);
 }
 
-collections = [];
+const collections: object[] = [];
 files
   .filter((filename) => regex.test(filename))
   .forEach((filename) => {
     const filepath = `${json_db_dir}/${filename}`;
-    const match = regex.exec(filename);
+    const match = regex.exec(filename)!;
     const data_name = match[1];
     const collection_name = data_name.toLowerCase();
     collections.push({ index: collection_name });
@@ -69,19 +69,13 @@ files
       ` --file ${filepath}` +
       " --jsonArray" +
       " --drop";
-    execSync(exec_string, (error, _, stderr) => {
-      if (error) {
-        console.error(`exec error: ${error}`);
-        return;
-      }
-      console.error(`${stderr}`);
-    });
+    execSync(exec_string);
   });
 
 // Make collections table
 console.log("creating index table...");
 const filepath = "src/collections.json";
-fs.writeFileSync(filepath, JSON.stringify(collections, null, 2), "utf8");
+writeFileSync(filepath, JSON.stringify(collections, null, 2), "utf8");
 const exec_string =
   `mongoimport --uri ${mongodb_uri}` +
   " --collection collections" +
@@ -89,11 +83,5 @@ const exec_string =
   " --jsonArray" +
   " --drop";
 console.log(collections);
-execSync(exec_string, (error, _, stderr) => {
-  if (error) {
-    console.error(`exec error: ${error}`);
-    return;
-  }
-  console.error(`${stderr}`);
-});
-fs.unlinkSync(filepath);
+execSync(exec_string);
+unlinkSync(filepath);
