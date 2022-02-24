@@ -5,7 +5,8 @@
   "scripts": {
     "lint": "eslint . --ext .js,.json",
     "test": "jest -c jest.config.js",
-    "db:refresh": "node scripts/dbRefresh.js"
+    "build:ts": "tsc --project scripts",
+    "db:refresh": "npm run build:ts && node scripts/built/dbRefresh.js"
   },
   "repository": {
     "type": "git",
@@ -18,12 +19,15 @@
   },
   "homepage": "https://github.com/bagelbits/5e-database#readme",
   "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
     "eslint": "^6.8.0",
     "eslint-plugin-json": "^2.1.1",
     "glob": "^7.1.6",
     "jest": "^26.0.1",
     "node": "^14.4.0",
-    "redis": "^3.1.1"
-  },
-  "dependencies": {}
+    "redis": "^3.1.1",
+    "typescript": "^4.5.5"
+  }
 }
