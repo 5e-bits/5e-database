@@ -30,7 +30,7 @@ try {
 
 const json_db_dir = "src";
 const json_db_collection_prefix = "5e-SRD-";
-const json_data_pattern = `\\b${json_db_collection_prefix}(.+)\.json\\b`;
+const json_data_pattern = `\\b${json_db_collection_prefix}(.+)\\.json\\b`;
 
 const regex = new RegExp(json_data_pattern);
 let files = [];
