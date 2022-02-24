@@ -5,7 +5,9 @@
   "scripts": {
     "lint": "eslint . --ext .js,.json",
     "test": "jest -c jest.config.js",
-    "db:refresh": "node scripts/dbRefresh.js"
+    "db:refresh": "node scripts/dbRefresh.js",
+    "create-source-locale": "node ./multilingual-support/createSourceLocale.js",
+    "populate-templates": "node ./multilingual-support/populateTemplates.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,8 @@
     "eslint-plugin-json": "^2.1.1",
     "glob": "^7.1.6",
     "jest": "^26.0.1",
+    "liquidjs": "^9.34.0",
+    "lodash": "^4.17.21",
     "node": "^14.4.0",
     "redis": "^3.1.1"
   },
