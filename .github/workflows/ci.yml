@@ -43,9 +43,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
-      - env:
+      - name: Refresh DB contents
+        env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
-        run: npm run db:refresh
+        run: |
+          npm install
+          npm run db:refresh
   dockerhub:
     name: Deploy to Docker Hub
     runs-on: ubuntu-latest
