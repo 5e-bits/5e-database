@@ -21,7 +21,7 @@ ENV MONGODB_URI mongodb://localhost/5e-database
 
 ## Add code
 WORKDIR /data/db2
-COPY --chown=mongodb:mongodb package.json /data/db2/
+COPY --chown=mongodb:mongodb package.json package-lock.json /data/db2/
 RUN npm install
 COPY --chown=mongodb:mongodb . /data/db2/
 
