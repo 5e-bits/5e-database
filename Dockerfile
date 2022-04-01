@@ -21,9 +21,10 @@ ENV MONGODB_URI mongodb://localhost/5e-database
 
 ## Add code
 WORKDIR /data/db2
-COPY . /data/db2
-
+COPY --chown=mongodb:mongodb package.json /data/db2/
 RUN npm install
+COPY --chown=mongodb:mongodb . /data/db2/
+
 
 RUN mongod --fork --logpath /var/log/mongodb.log --dbpath /data/db2 \
   && npm run db:refresh \
