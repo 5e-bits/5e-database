@@ -12,4 +12,6 @@ exports.readFile = async filePath => {
   }
 }
 
-exports.setAsync = (context, property, pendingValue) => pendingValue.then(value => context[property] = value)
+exports.setAsync = (context, property, pendingValue, localeKey = null) => {
+  return pendingValue.then(value => context[property] = localeKey ? { [localeKey]: value } : value)
+}

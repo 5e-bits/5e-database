@@ -290,7 +290,7 @@ const outputSourceLocale = (localeData) => {
   const localeOutput = JSON.stringify(localeData, null, 2)
 
   // write translations data to source locale file
-  fs.writeFile('multilingual-support/source-locale.json', localeOutput, 'utf8', e => e ? console.error(e) : null)
+  fs.writeFile('multilingual-support/locales/en_us.json', localeOutput, 'utf8', e => e ? console.error(e) : null)
 }
 
 // get all files in source folder
