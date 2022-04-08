@@ -57,29 +57,27 @@ jobs:
   github-release:
     name: Github Release
     runs-on: ubuntu-latest
-    needs: [test, lint, deploy]
+    needs: [deploy]
     if: github.event_name != 'pull_request'
+    outputs:
+      new_release_published: ${{ steps.semantic.outputs.steps.semantic.outputs.new_release_published}}
+      version: ${{ steps.semantic.outputs.new_release_version }}
     steps:
-      - name: Checkout
+      - name: Checkout latest code
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 'lts/*'
-      - name: Install dependencies
-        run: npm install
-      - name: Release
+      - name: Semantic Release
+        id: semantic
+        uses: cycjimmy/semantic-release-action@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
 
   container-release:
     name: Container Release
     runs-on: ubuntu-latest
-    needs: [test, lint, deploy, github-release]
-    if: github.event_name != 'pull_request'
+    needs: [github-release]
+    if: ${{needs.github-release.outputs.new_release_published}} == 'true'
     env:
       REGISTRY: ghcr.io
       IMAGE_NAME: ${{ github.repository }}
@@ -89,32 +87,20 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
       - name: Log in to the Container registry
         uses: docker/login-action@v1
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Extract metadata (tags, labels) for Docker
-        id: meta
-        uses: docker/metadata-action@v3
-        with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          tags: |
-            type=ref,event=branch
-            type=ref,event=pr
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ needs.github-release.outputs.version }},${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          labels:
+            version=${{ needs.github-release.outputs.version }}
 
   trigger_downstream:
     name: Trigger downstream
