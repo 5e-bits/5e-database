@@ -17,7 +17,7 @@ const isLikelyAReference = (data) => {
   ) || (
     dataKeys.length === 4
 			&& dataKeys.sort().toString() == ['index', 'name', 'type', 'url'].sort().toString()
-			&& data.type === 'level'
+			&& ['level', 'feature'].includes(data.type)
   )
 }
 
@@ -319,7 +319,7 @@ fs.readdir('src', (error, fileNames) => {
     common: {
       delimiters: {
         and: ' and ',
-        andWithOxfordComma: ', and ',
+        and_with_oxford_comma: ', and ',
       }
     },
   }

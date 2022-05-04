@@ -28,7 +28,7 @@ Array.prototype.makeCommaSeparatedString = function(useOxfordComma) {
   const conjunction = this.length <= 1 
     ? '' 
     : useOxfordComma && this.length > 2 
-      ? '{{ common.delimiters.andWithOxfordComma }}' 
+      ? '{{ common.delimiters.and_with_oxford_comma }}' 
       : '{{ common.delimiters.and }}'
 
   return [listStart, listEnd].join(conjunction)
