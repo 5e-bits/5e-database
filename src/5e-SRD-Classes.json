@@ -5,40 +5,62 @@
     "hit_die": 12,
     "proficiency_choices": [
       {
+        "desc": "Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival",
         "choose": 2,
         "type": "proficiencies",
-        "from": [
-          {
-            "index": "skill-animal-handling",
-            "name": "Skill: Animal Handling",
-            "url": "/api/proficiencies/skill-animal-handling"
-          },
-          {
-            "index": "skill-athletics",
-            "name": "Skill: Athletics",
-            "url": "/api/proficiencies/skill-athletics"
-          },
-          {
-            "index": "skill-intimidation",
-            "name": "Skill: Intimidation",
-            "url": "/api/proficiencies/skill-intimidation"
-          },
-          {
-            "index": "skill-nature",
-            "name": "Skill: Nature",
-            "url": "/api/proficiencies/skill-nature"
-          },
-          {
-            "index": "skill-perception",
-            "name": "Skill: Perception",
-            "url": "/api/proficiencies/skill-perception"
-          },
-          {
-            "index": "skill-survival",
-            "name": "Skill: Survival",
-            "url": "/api/proficiencies/skill-survival"
-          }
-        ]
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-animal-handling",
+                "name": "Skill: Animal Handling",
+                "url": "/api/proficiencies/skill-animal-handling"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-athletics",
+                "name": "Skill: Athletics",
+                "url": "/api/proficiencies/skill-athletics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-intimidation",
+                "name": "Skill: Intimidation",
+                "url": "/api/proficiencies/skill-intimidation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-nature",
+                "name": "Skill: Nature",
+                "url": "/api/proficiencies/skill-nature"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-perception",
+                "name": "Skill: Perception",
+                "url": "/api/proficiencies/skill-perception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-survival",
+                "name": "Skill: Survival",
+                "url": "/api/proficiencies/skill-survival"
+              }
+            }
+          ]
+        }
       }
     ],
     "proficiencies": [
@@ -100,49 +122,61 @@
     ],
     "starting_equipment_options": [
       {
+        "desc": "(a) a greataxe or (b) any martial melee weapon",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "greataxe",
-              "name": "Greataxe",
-              "url": "/api/equipment/greataxe"
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "greataxe",
+                "name": "Greataxe",
+                "url": "/api/equipment/greataxe"
+              }
             },
-            "quantity": 1
-          },
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "martial-melee-weapons",
-                  "name": "Martial Melee Weapons",
-                  "url": "/api/equipment-categories/martial-melee-weapons"
+            {
+              "option_type": "choice",
+              "choice": {
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "martial-melee-weapons",
+                    "name": "Martial Melee Weapons",
+                    "url": "/api/equipment-categories/martial-melee-weapons"
+                  }
                 }
               }
             }
-          }
-        ]
+          ]
+        }
       },
       {
+        "desc": "(a) two handaxes or (b) any simple weapon",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "handaxe",
-              "name": "Handaxe",
-              "url": "/api/equipment/handaxe"
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 2,
+              "of": {
+                "index": "handaxe",
+                "name": "Handaxe",
+                "url": "/api/equipment/handaxe"
+              }
             },
-            "quantity": 2
-          },
-          {
-            "equipment_option": {
+            {
+              "option_type": "choice",
               "choose": 1,
               "type": "equipment",
               "from": {
+                "option_set_type": "equipment_category",
                 "equipment_category": {
                   "index": "simple-weapons",
                   "name": "Simple Weapons",
@@ -150,8 +184,8 @@
                 }
               }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "class_levels": "/api/classes/barbarian/levels",
@@ -199,156 +233,248 @@
     "hit_die": 8,
     "proficiency_choices": [
       {
+        "desc": "Choose any three",
         "choose": 3,
         "type": "proficiencies",
-        "from": [
-          {
-            "index": "skill-acrobatics",
-            "name": "Skill: Acrobatics",
-            "url": "/api/proficiencies/skill-acrobatics"
-          },
-          {
-            "index": "skill-animal-handling",
-            "name": "Skill: Animal Handling",
-            "url": "/api/proficiencies/skill-animal-handling"
-          },
-          {
-            "index": "skill-arcana",
-            "name": "Skill: Arcana",
-            "url": "/api/proficiencies/skill-arcana"
-          },
-          {
-            "index": "skill-athletics",
-            "name": "Skill: Athletics",
-            "url": "/api/proficiencies/skill-athletics"
-          },
-          {
-            "index": "skill-deception",
-            "name": "Skill: Deception",
-            "url": "/api/proficiencies/skill-deception"
-          },
-          {
-            "index": "skill-history",
-            "name": "Skill: History",
-            "url": "/api/proficiencies/skill-history"
-          },
-          {
-            "index": "skill-insight",
-            "name": "Skill: Insight",
-            "url": "/api/proficiencies/skill-insight"
-          },
-          {
-            "index": "skill-intimidation",
-            "name": "Skill: Intimidation",
-            "url": "/api/proficiencies/skill-intimidation"
-          },
-          {
-            "index": "skill-investigation",
-            "name": "Skill: Investigation",
-            "url": "/api/proficiencies/skill-investigation"
-          },
-          {
-            "index": "skill-medicine",
-            "name": "Skill: Medicine",
-            "url": "/api/proficiencies/skill-medicine"
-          },
-          {
-            "index": "skill-nature",
-            "name": "Skill: Nature",
-            "url": "/api/proficiencies/skill-nature"
-          },
-          {
-            "index": "skill-perception",
-            "name": "Skill: Perception",
-            "url": "/api/proficiencies/skill-perception"
-          },
-          {
-            "index": "skill-performance",
-            "name": "Skill: Performance",
-            "url": "/api/proficiencies/skill-performance"
-          },
-          {
-            "index": "skill-persuasion",
-            "name": "Skill: Persuasion",
-            "url": "/api/proficiencies/skill-persuasion"
-          },
-          {
-            "index": "skill-religion",
-            "name": "Skill: Religion",
-            "url": "/api/proficiencies/skill-religion"
-          },
-          {
-            "index": "skill-sleight-of-hand",
-            "name": "Skill: Sleight of Hand",
-            "url": "/api/proficiencies/skill-sleight-of-hand"
-          },
-          {
-            "index": "skill-stealth",
-            "name": "Skill: Stealth",
-            "url": "/api/proficiencies/skill-stealth"
-          },
-          {
-            "index": "skill-survival",
-            "name": "Skill: Survival",
-            "url": "/api/proficiencies/skill-survival"
-          }
-        ]
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-acrobatics",
+                "name": "Skill: Acrobatics",
+                "url": "/api/proficiencies/skill-acrobatics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-animal-handling",
+                "name": "Skill: Animal Handling",
+                "url": "/api/proficiencies/skill-animal-handling"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-arcana",
+                "name": "Skill: Arcana",
+                "url": "/api/proficiencies/skill-arcana"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-athletics",
+                "name": "Skill: Athletics",
+                "url": "/api/proficiencies/skill-athletics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-deception",
+                "name": "Skill: Deception",
+                "url": "/api/proficiencies/skill-deception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-history",
+                "name": "Skill: History",
+                "url": "/api/proficiencies/skill-history"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Skill: Insight",
+                "url": "/api/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-intimidation",
+                "name": "Skill: Intimidation",
+                "url": "/api/proficiencies/skill-intimidation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-investigation",
+                "name": "Skill: Investigation",
+                "url": "/api/proficiencies/skill-investigation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-medicine",
+                "name": "Skill: Medicine",
+                "url": "/api/proficiencies/skill-medicine"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-nature",
+                "name": "Skill: Nature",
+                "url": "/api/proficiencies/skill-nature"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-perception",
+                "name": "Skill: Perception",
+                "url": "/api/proficiencies/skill-perception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-performance",
+                "name": "Skill: Performance",
+                "url": "/api/proficiencies/skill-performance"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-persuasion",
+                "name": "Skill: Persuasion",
+                "url": "/api/proficiencies/skill-persuasion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Skill: Religion",
+                "url": "/api/proficiencies/skill-religion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-sleight-of-hand",
+                "name": "Skill: Sleight of Hand",
+                "url": "/api/proficiencies/skill-sleight-of-hand"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-stealth",
+                "name": "Skill: Stealth",
+                "url": "/api/proficiencies/skill-stealth"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-survival",
+                "name": "Skill: Survival",
+                "url": "/api/proficiencies/skill-survival"
+              }
+            }
+          ]
+        }
       },
       {
+        "desc": "Three musical instruments of your choice",
         "choose": 3,
         "type": "proficiencies",
-        "from": [
-          {
-            "index": "bagpipes",
-            "name": "Bagpipes",
-            "url": "/api/proficiencies/bagpipes"
-          },
-          {
-            "index": "drum",
-            "name": "Drum",
-            "url": "/api/proficiencies/drum"
-          },
-          {
-            "index": "dulcimer",
-            "name": "Dulcimer",
-            "url": "/api/proficiencies/dulcimer"
-          },
-          {
-            "index": "flute",
-            "name": "Flute",
-            "url": "/api/proficiencies/flute"
-          },
-          {
-            "index": "lute",
-            "name": "Lute",
-            "url": "/api/proficiencies/lute"
-          },
-          {
-            "index": "lyre",
-            "name": "Lyre",
-            "url": "/api/proficiencies/lyre"
-          },
-          {
-            "index": "horn",
-            "name": "Horn",
-            "url": "/api/proficiencies/horn"
-          },
-          {
-            "index": "pan-flute",
-            "name": "Pan flute",
-            "url": "/api/proficiencies/pan-flute"
-          },
-          {
-            "index": "shawm",
-            "name": "Shawm",
-            "url": "/api/proficiencies/shawm"
-          },
-          {
-            "index": "viol",
-            "name": "Viol",
-            "url": "/api/proficiencies/viol"
-          }
-        ]
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "bagpipes",
+                "name": "Bagpipes",
+                "url": "/api/proficiencies/bagpipes"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "drum",
+                "name": "Drum",
+                "url": "/api/proficiencies/drum"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "dulcimer",
+                "name": "Dulcimer",
+                "url": "/api/proficiencies/dulcimer"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "flute",
+                "name": "Flute",
+                "url": "/api/proficiencies/flute"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "lute",
+                "name": "Lute",
+                "url": "/api/proficiencies/lute"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "lyre",
+                "name": "Lyre",
+                "url": "/api/proficiencies/lyre"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "horn",
+                "name": "Horn",
+                "url": "/api/proficiencies/horn"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "pan-flute",
+                "name": "Pan flute",
+                "url": "/api/proficiencies/pan-flute"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "shawm",
+                "name": "Shawm",
+                "url": "/api/proficiencies/shawm"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "viol",
+                "name": "Viol",
+                "url": "/api/proficiencies/viol"
+              }
+            }
+          ]
+        }
       }
     ],
     "proficiencies": [
@@ -415,88 +541,109 @@
     ],
     "starting_equipment_options": [
       {
+        "desc": "(a) a rapier, (b) a longsword, or (c) any simple weapon",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "rapier",
-              "name": "Rapier",
-              "url": "/api/equipment/rapier"
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "rapier",
+                "name": "Rapier",
+                "url": "/api/equipment/rapier"
+              }
             },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "longsword",
-              "name": "Longsword",
-              "url": "/api/equipment/longsword"
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "longsword",
+                "name": "Longsword",
+                "url": "/api/equipment/longsword"
+              }
             },
-            "quantity": 1
-          },
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "simple-weapons",
-                  "name": "Simple Weapons",
-                  "url": "/api/equipment-categories/simple-weapons"
+            {
+              "option_type": "choice",
+              "choice": {
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Simple Weapons",
+                    "url": "/api/equipment-categories/simple-weapons"
+                  }
                 }
               }
             }
-          }
-        ]
+          ]
+        }
       },
       {
+        "desc": "(a) a diplomat’s pack or (b) an entertainer’s pack",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "diplomats-pack",
-              "name": "Diplomat's Pack",
-              "url": "/api/equipment/diplomats-pack"
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "diplomats-pack",
+                "name": "Diplomat's Pack",
+                "url": "/api/equipment/diplomats-pack"
+              }
             },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "entertainers-pack",
-              "name": "Entertainer's Pack",
-              "url": "/api/equipment/entertainers-pack"
-            },
-            "quantity": 1
-          }
-        ]
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "entertainers-pack",
+                "name": "Entertainer's Pack",
+                "url": "/api/equipment/entertainers-pack"
+              }
+            }
+          ]
+        }
       },
       {
+        "desc": "(a) a lute or (b) any other musical instrument",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "lute",
-              "name": "Lute",
-              "url": "/api/equipment/lute"
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "lute",
+                "name": "Lute",
+                "url": "/api/equipment/lute"
+              }
             },
-            "quantity": 1
-          },
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "musical-instruments",
-                  "name": "Musical Instruments",
-                  "url": "/api/equipment-categories/musical-instruments"
+            {
+              "option_type": "choice",
+              "choice": {
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "musical-instruments",
+                    "name": "Musical Instruments",
+                    "url": "/api/equipment-categories/musical-instruments"
+                  }
                 }
               }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "class_levels": "/api/classes/bard/levels",
@@ -520,156 +667,248 @@
       ],
       "proficiency_choices": [
         {
+          "desc": "skill",
           "choose": 1,
           "type": "proficiencies",
-          "from": [
-            {
-              "index": "skill-acrobatics",
-              "name": "Skill: Acrobatics",
-              "url": "/api/proficiencies/skill-acrobatics"
-            },
-            {
-              "index": "skill-animal-handling",
-              "name": "Skill: Animal Handling",
-              "url": "/api/proficiencies/skill-animal-handling"
-            },
-            {
-              "index": "skill-arcana",
-              "name": "Skill: Arcana",
-              "url": "/api/proficiencies/skill-arcana"
-            },
-            {
-              "index": "skill-athletics",
-              "name": "Skill: Athletics",
-              "url": "/api/proficiencies/skill-athletics"
-            },
-            {
-              "index": "skill-deception",
-              "name": "Skill: Deception",
-              "url": "/api/proficiencies/skill-deception"
-            },
-            {
-              "index": "skill-history",
-              "name": "Skill: History",
-              "url": "/api/proficiencies/skill-history"
-            },
-            {
-              "index": "skill-insight",
-              "name": "Skill: Insight",
-              "url": "/api/proficiencies/skill-insight"
-            },
-            {
-              "index": "skill-intimidation",
-              "name": "Skill: Intimidation",
-              "url": "/api/proficiencies/skill-intimidation"
-            },
-            {
-              "index": "skill-investigation",
-              "name": "Skill: Investigation",
-              "url": "/api/proficiencies/skill-investigation"
-            },
-            {
-              "index": "skill-medicine",
-              "name": "Skill: Medicine",
-              "url": "/api/proficiencies/skill-medicine"
-            },
-            {
-              "index": "skill-nature",
-              "name": "Skill: Nature",
-              "url": "/api/proficiencies/skill-nature"
-            },
-            {
-              "index": "skill-perception",
-              "name": "Skill: Perception",
-              "url": "/api/proficiencies/skill-perception"
-            },
-            {
-              "index": "skill-performance",
-              "name": "Skill: Performance",
-              "url": "/api/proficiencies/skill-performance"
-            },
-            {
-              "index": "skill-persuasion",
-              "name": "Skill: Persuasion",
-              "url": "/api/proficiencies/skill-persuasion"
-            },
-            {
-              "index": "skill-religion",
-              "name": "Skill: Religion",
-              "url": "/api/proficiencies/skill-religion"
-            },
-            {
-              "index": "skill-sleight-of-hand",
-              "name": "Skill: Sleight of Hand",
-              "url": "/api/proficiencies/skill-sleight-of-hand"
-            },
-            {
-              "index": "skill-stealth",
-              "name": "Skill: Stealth",
-              "url": "/api/proficiencies/skill-stealth"
-            },
-            {
-              "index": "skill-survival",
-              "name": "Skill: Survival",
-              "url": "/api/proficiencies/skill-survival"
-            }
-          ]
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-acrobatics",
+                  "name": "Skill: Acrobatics",
+                  "url": "/api/proficiencies/skill-acrobatics"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-animal-handling",
+                  "name": "Skill: Animal Handling",
+                  "url": "/api/proficiencies/skill-animal-handling"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-arcana",
+                  "name": "Skill: Arcana",
+                  "url": "/api/proficiencies/skill-arcana"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-athletics",
+                  "name": "Skill: Athletics",
+                  "url": "/api/proficiencies/skill-athletics"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-deception",
+                  "name": "Skill: Deception",
+                  "url": "/api/proficiencies/skill-deception"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-history",
+                  "name": "Skill: History",
+                  "url": "/api/proficiencies/skill-history"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-insight",
+                  "name": "Skill: Insight",
+                  "url": "/api/proficiencies/skill-insight"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-intimidation",
+                  "name": "Skill: Intimidation",
+                  "url": "/api/proficiencies/skill-intimidation"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-investigation",
+                  "name": "Skill: Investigation",
+                  "url": "/api/proficiencies/skill-investigation"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-medicine",
+                  "name": "Skill: Medicine",
+                  "url": "/api/proficiencies/skill-medicine"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-nature",
+                  "name": "Skill: Nature",
+                  "url": "/api/proficiencies/skill-nature"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-perception",
+                  "name": "Skill: Perception",
+                  "url": "/api/proficiencies/skill-perception"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-performance",
+                  "name": "Skill: Performance",
+                  "url": "/api/proficiencies/skill-performance"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-persuasion",
+                  "name": "Skill: Persuasion",
+                  "url": "/api/proficiencies/skill-persuasion"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-religion",
+                  "name": "Skill: Religion",
+                  "url": "/api/proficiencies/skill-religion"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-sleight-of-hand",
+                  "name": "Skill: Sleight of Hand",
+                  "url": "/api/proficiencies/skill-sleight-of-hand"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-stealth",
+                  "name": "Skill: Stealth",
+                  "url": "/api/proficiencies/skill-stealth"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-survival",
+                  "name": "Skill: Survival",
+                  "url": "/api/proficiencies/skill-survival"
+                }
+              }
+            ]
+          }
         },
         {
+          "desc": "musical instrument",
           "choose": 1,
           "type": "proficiencies",
-          "from": [
-            {
-              "index": "bagpipes",
-              "name": "Bagpipes",
-              "url": "/api/proficiencies/bagpipes"
-            },
-            {
-              "index": "drum",
-              "name": "Drum",
-              "url": "/api/proficiencies/drum"
-            },
-            {
-              "index": "dulcimer",
-              "name": "Dulcimer",
-              "url": "/api/proficiencies/dulcimer"
-            },
-            {
-              "index": "flute",
-              "name": "Flute",
-              "url": "/api/proficiencies/flute"
-            },
-            {
-              "index": "lute",
-              "name": "Lute",
-              "url": "/api/proficiencies/lute"
-            },
-            {
-              "index": "lyre",
-              "name": "Lyre",
-              "url": "/api/proficiencies/lyre"
-            },
-            {
-              "index": "horn",
-              "name": "Horn",
-              "url": "/api/proficiencies/horn"
-            },
-            {
-              "index": "pan-flute",
-              "name": "Pan flute",
-              "url": "/api/proficiencies/pan-flute"
-            },
-            {
-              "index": "shawm",
-              "name": "Shawm",
-              "url": "/api/proficiencies/shawm"
-            },
-            {
-              "index": "viol",
-              "name": "Viol",
-              "url": "/api/proficiencies/viol"
-            }
-          ]
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "bagpipes",
+                  "name": "Bagpipes",
+                  "url": "/api/proficiencies/bagpipes"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "drum",
+                  "name": "Drum",
+                  "url": "/api/proficiencies/drum"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "dulcimer",
+                  "name": "Dulcimer",
+                  "url": "/api/proficiencies/dulcimer"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "flute",
+                  "name": "Flute",
+                  "url": "/api/proficiencies/flute"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "lute",
+                  "name": "Lute",
+                  "url": "/api/proficiencies/lute"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "lyre",
+                  "name": "Lyre",
+                  "url": "/api/proficiencies/lyre"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "horn",
+                  "name": "Horn",
+                  "url": "/api/proficiencies/horn"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "pan-flute",
+                  "name": "Pan flute",
+                  "url": "/api/proficiencies/pan-flute"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "shawm",
+                  "name": "Shawm",
+                  "url": "/api/proficiencies/shawm"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "viol",
+                  "name": "Viol",
+                  "url": "/api/proficiencies/viol"
+                }
+              }
+            ]
+          }
         }
       ]
     },
@@ -741,35 +980,54 @@
     "hit_die": 8,
     "proficiency_choices": [
       {
+        "desc": "Choose two from History, Insight, Medicine, Persuasion, and Religion",
         "choose": 2,
         "type": "proficiencies",
-        "from": [
-          {
-            "index": "skill-history",
-            "name": "Skill: History",
-            "url": "/api/proficiencies/skill-history"
-          },
-          {
-            "index": "skill-insight",
-            "name": "Skill: Insight",
-            "url": "/api/proficiencies/skill-insight"
-          },
-          {
-            "index": "skill-medicine",
-            "name": "Skill: Medicine",
-            "url": "/api/proficiencies/skill-medicine"
-          },
-          {
-            "index": "skill-persuasion",
-            "name": "Skill: Persuasion",
-            "url": "/api/proficiencies/skill-persuasion"
-          },
-          {
-            "index": "skill-religion",
-            "name": "Skill: Religion",
-            "url": "/api/proficiencies/skill-religion"
-          }
-        ]
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-history",
+                "name": "Skill: History",
+                "url": "/api/proficiencies/skill-history"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Skill: Insight",
+                "url": "/api/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-medicine",
+                "name": "Skill: Medicine",
+                "url": "/api/proficiencies/skill-medicine"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-persuasion",
+                "name": "Skill: Persuasion",
+                "url": "/api/proficiencies/skill-persuasion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Skill: Religion",
+                "url": "/api/proficiencies/skill-religion"
+              }
+            }
+          ]
+        }
       }
     ],
     "proficiencies": [
@@ -818,140 +1076,172 @@
     ],
     "starting_equipment_options": [
       {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "mace",
-              "name": "Mace",
-              "url": "/api/equipment/mace"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "warhammer",
-              "name": "Warhammer",
-              "url": "/api/equipment/warhammer"
-            },
-            "quantity": 1,
-            "prerequisites": [
-              {
-                "type": "proficiency",
-                "proficiency": {
-                  "index": "warhammers",
-                  "name": "Warhammers",
-                  "url": "/api/proficiencies/warhammers"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "scale-mail",
-              "name": "Scale Mail",
-              "url": "/api/equipment/scale-mail"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "leather-armor",
-              "name": "Leather Armor",
-              "url": "/api/equipment/leather-armor"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "chain-mail",
-              "name": "Chain Mail",
-              "url": "/api/equipment/chain-mail"
-            },
-            "quantity": 1,
-            "prerequisites": [
-              {
-                "type": "proficiency",
-                "proficiency": {
-                  "index": "chain-mail",
-                  "name": "Chain Mail",
-                  "url": "/api/proficiencies/chain-mail"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          [
-            {
-              "equipment": {
-                "index": "crossbow-light",
-                "name": "Crossbow, light",
-                "url": "/api/equipment/crossbow-light"
-              },
-              "quantity": 1
-            },
-            {
-              "equipment": {
-                "index": "crossbow-bolt",
-                "name": "Crossbow bolt",
-                "url": "/api/equipment/crossbow-bolt"
-              },
-              "quantity": 20
-            }
-          ],
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "simple-weapons",
-                  "name": "Simple Weapons",
-                  "url": "/api/equipment-categories/simple-weapons"
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "priests-pack",
-              "name": "Priest's Pack",
-              "url": "/api/equipment/priests-pack"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "explorers-pack",
-              "name": "Explorer's Pack",
-              "url": "/api/equipment/explorers-pack"
-            },
-            "quantity": 1
-          }
-        ]
-      },
-      {
+        "desc": "(a) a mace or (b) a warhammer (if proficient)",
         "choose": 1,
         "type": "equipment",
         "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "mace",
+                "name": "Mace",
+                "url": "/api/equipment/mace"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "warhammer",
+                "name": "Warhammer",
+                "url": "/api/equipment/warhammer"
+              },
+              "prerequisites": [
+                {
+                  "type": "proficiency",
+                  "proficiency": {
+                    "index": "warhammers",
+                    "name": "Warhammers",
+                    "url": "/api/proficiencies/warhammers"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) scale mail, (b) leather armor, or (c) chain mail (if proficient)",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "scale-mail",
+                "name": "Scale Mail",
+                "url": "/api/equipment/scale-mail"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "leather-armor",
+                "name": "Leather Armor",
+                "url": "/api/equipment/leather-armor"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "chain-mail",
+                "name": "Chain Mail",
+                "url": "/api/equipment/chain-mail"
+              },
+              "prerequisites": [
+                {
+                  "type": "proficiency",
+                  "proficiency": {
+                    "index": "chain-mail",
+                    "name": "Chain Mail",
+                    "url": "/api/proficiencies/chain-mail"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a light crossbow and 20 bolts or (b) any simple weapon",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "crossbow-light",
+                    "name": "Crossbow, light",
+                    "url": "/api/equipment/crossbow-light"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "crossbow-bolt",
+                    "name": "Crossbow bolt",
+                    "url": "/api/equipment/crossbow-bolt"
+                  }
+                }
+              ]
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Simple Weapons",
+                    "url": "/api/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a priest’s pack or (b) an explorer’s pack",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "priests-pack",
+                "name": "Priest's Pack",
+                "url": "/api/equipment/priests-pack"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "explorers-pack",
+                "name": "Explorer's Pack",
+                "url": "/api/equipment/explorers-pack"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "holy symbol",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "equipment_category",
           "equipment_category": {
             "index": "holy-symbols",
             "name": "Holy Symbols",
@@ -1051,50 +1341,78 @@
     "hit_die": 8,
     "proficiency_choices": [
       {
+        "desc": "Choose two from Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, and Survival",
         "choose": 2,
         "type": "proficiencies",
-        "from": [
-          {
-            "index": "skill-animal-handling",
-            "name": "Skill: Animal Handling",
-            "url": "/api/proficiencies/skill-animal-handling"
-          },
-          {
-            "index": "skill-arcana",
-            "name": "Skill: Arcana",
-            "url": "/api/proficiencies/skill-arcana"
-          },
-          {
-            "index": "skill-insight",
-            "name": "Skill: Insight",
-            "url": "/api/proficiencies/skill-insight"
-          },
-          {
-            "index": "skill-medicine",
-            "name": "Skill: Medicine",
-            "url": "/api/proficiencies/skill-medicine"
-          },
-          {
-            "index": "skill-nature",
-            "name": "Skill: Nature",
-            "url": "/api/proficiencies/skill-nature"
-          },
-          {
-            "index": "skill-perception",
-            "name": "Skill: Perception",
-            "url": "/api/proficiencies/skill-perception"
-          },
-          {
-            "index": "skill-religion",
-            "name": "Skill: Religion",
-            "url": "/api/proficiencies/skill-religion"
-          },
-          {
-            "index": "skill-survival",
-            "name": "Skill: Survival",
-            "url": "/api/proficiencies/skill-survival"
-          }
-        ]
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-arcana",
+                "name": "Skill: Arcana",
+                "url": "/api/proficiencies/skill-arcana"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-animal-handling",
+                "name": "Skill: Animal Handling",
+                "url": "/api/proficiencies/skill-animal-handling"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Skill: Insight",
+                "url": "/api/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-medicine",
+                "name": "Skill: Medicine",
+                "url": "/api/proficiencies/skill-medicine"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-nature",
+                "name": "Skill: Nature",
+                "url": "/api/proficiencies/skill-nature"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-perception",
+                "name": "Skill: Perception",
+                "url": "/api/proficiencies/skill-perception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Skill: Religion",
+                "url": "/api/proficiencies/skill-religion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-survival",
+                "name": "Skill: Survival",
+                "url": "/api/proficiencies/skill-survival"
+              }
+            }
+          ]
+        }
       }
     ],
     "proficiencies": [
@@ -1201,63 +1519,79 @@
     ],
     "starting_equipment_options": [
       {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "shield",
-              "name": "Shield",
-              "url": "/api/equipment/shield"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "simple-weapons",
-                  "name": "Simple Weapons",
-                  "url": "/api/equipment-categories/simple-weapons"
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "scimitar",
-              "name": "Scimitar",
-              "url": "/api/equipment/scimitar"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "simple-weapons",
-                  "name": "Simple Weapons",
-                  "url": "/api/equipment-categories/simple-weapons"
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
+        "desc": "(a) a wooden shield or (b) any simple weapon",
         "choose": 1,
         "type": "equipment",
         "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "shield",
+                "name": "Shield",
+                "url": "/api/equipment/shield"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Simple Weapons",
+                    "url": "/api/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a scimitar or (b) any simple melee weapon",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "scimitar",
+                "name": "Scimitar",
+                "url": "/api/equipment/scimitar"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Simple Weapons",
+                    "url": "/api/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "druidic focus",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "equipment_category",
           "equipment_category": {
             "index": "druidic-foci",
             "name": "Druidic Foci",
@@ -1357,50 +1691,78 @@
     "hit_die": 10,
     "proficiency_choices": [
       {
+        "desc": "Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival",
         "choose": 2,
         "type": "proficiencies",
-        "from": [
-          {
-            "index": "skill-acrobatics",
-            "name": "Skill: Acrobatics",
-            "url": "/api/proficiencies/skill-acrobatics"
-          },
-          {
-            "index": "skill-animal-handling",
-            "name": "Skill: Animal Handling",
-            "url": "/api/proficiencies/skill-animal-handling"
-          },
-          {
-            "index": "skill-athletics",
-            "name": "Skill: Athletics",
-            "url": "/api/proficiencies/skill-athletics"
-          },
-          {
-            "index": "skill-history",
-            "name": "Skill: History",
-            "url": "/api/proficiencies/skill-history"
-          },
-          {
-            "index": "skill-insight",
-            "name": "Skill: Insight",
-            "url": "/api/proficiencies/skill-insight"
-          },
-          {
-            "index": "skill-intimidation",
-            "name": "Skill: Intimidation",
-            "url": "/api/proficiencies/skill-intimidation"
-          },
-          {
-            "index": "skill-perception",
-            "name": "Skill: Perception",
-            "url": "/api/proficiencies/skill-perception"
-          },
-          {
-            "index": "skill-survival",
-            "name": "Skill: Survival",
-            "url": "/api/proficiencies/skill-survival"
-          }
-        ]
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-acrobatics",
+                "name": "Skill: Acrobatics",
+                "url": "/api/proficiencies/skill-acrobatics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-animal-handling",
+                "name": "Skill: Animal Handling",
+                "url": "/api/proficiencies/skill-animal-handling"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-athletics",
+                "name": "Skill: Athletics",
+                "url": "/api/proficiencies/skill-athletics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-history",
+                "name": "Skill: History",
+                "url": "/api/proficiencies/skill-history"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Skill: Insight",
+                "url": "/api/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-intimidation",
+                "name": "Skill: Intimidation",
+                "url": "/api/proficiencies/skill-intimidation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-perception",
+                "name": "Skill: Perception",
+                "url": "/api/proficiencies/skill-perception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-survival",
+                "name": "Skill: Survival",
+                "url": "/api/proficiencies/skill-survival"
+              }
+            }
+          ]
+        }
       }
     ],
     "proficiencies": [
@@ -1440,63 +1802,99 @@
     "starting_equipment": [],
     "starting_equipment_options": [
       {
+        "desc": "(a) chain mail or (b) leather armor, longbow, and 20 arrows",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "chain-mail",
-              "name": "Chain Mail",
-              "url": "/api/equipment/chain-mail"
-            },
-            "quantity": 1
-          },
-          [
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
             {
-              "equipment": {
-                "index": "leather-armor",
-                "name": "Leather Armor",
-                "url": "/api/equipment/leather-armor"
-              },
-              "quantity": 1
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "chain-mail",
+                "name": "Chain Mail",
+                "url": "/api/equipment/chain-mail"
+              }
             },
             {
-              "equipment": {
-                "index": "longbow",
-                "name": "Longbow",
-                "url": "/api/equipment/longbow"
-              },
-              "quantity": 1
-            },
-            {
-              "equipment": {
-                "index": "arrow",
-                "name": "Arrow",
-                "url": "/api/equipment/arrow"
-              },
-              "quantity": 20
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "leather-armor",
+                    "name": "Leather Armor",
+                    "url": "/api/equipment/leather-armor"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "longbow",
+                    "name": "Longbow",
+                    "url": "/api/equipment/longbow"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "arrow",
+                    "name": "Arrow",
+                    "url": "/api/equipment/arrow"
+                  }
+                }
+              ]
             }
           ]
-        ]
+        }
       },
       {
+        "desc": "(a) a martial weapon and a shield or (b) two martial weapons",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          [
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
             {
-              "equipment": {
-                "index": "shield",
-                "name": "Shield",
-                "url": "/api/equipment/shield"
-              },
-              "quantity": 1
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "choice",
+                  "choice": {
+                    "choose": 1,
+                    "type": "equipment",
+                    "from": {
+                      "option_set_type": "equipment_category",
+                      "equipment_category": {
+                        "index": "martial-weapons",
+                        "name": "Martial Weapons",
+                        "url": "/api/equipment-categories/martial-weapons"
+                      }
+                    }
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "shield",
+                    "name": "Shield",
+                    "url": "/api/equipment/shield"
+                  }
+                }
+              ]
             },
             {
-              "equipment_option": {
-                "choose": 1,
+              "option_type": "choice",
+              "choice": {
+                "choose": 2,
                 "type": "equipment",
                 "from": {
+                  "option_set_type": "equipment_category",
                   "equipment_category": {
                     "index": "martial-weapons",
                     "name": "Martial Weapons",
@@ -1505,75 +1903,78 @@
                 }
               }
             }
-          ],
-          {
-            "equipment_option": {
-              "choose": 2,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "martial-weapons",
-                  "name": "Martial Weapons",
-                  "url": "/api/equipment-categories/martial-weapons"
+          ]
+        }
+      },
+      {
+        "desc": "(a) a light crossbow and 20 bolts or (b) two handaxes",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "crossbow-light",
+                    "name": "Crossbow, light",
+                    "url": "/api/equipment/crossbow-light"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "crossbow-bolt",
+                    "name": "Crossbow bolt",
+                    "url": "/api/equipment/crossbow-bolt"
+                  }
                 }
+              ]
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 2,
+              "of": {
+                "index": "handaxe",
+                "name": "Handaxe",
+                "url": "/api/equipment/handaxe"
               }
             }
-          }
-        ]
+          ]
+        }
       },
       {
+        "desc": "(a) a dungeoneer’s pack or (b) an explorer’s pack",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "handaxe",
-              "name": "Handaxe",
-              "url": "/api/equipment/handaxe"
-            },
-            "quantity": 2
-          },
-          [
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
             {
-              "equipment": {
-                "index": "crossbow-light",
-                "name": "Crossbow, light",
-                "url": "/api/equipment/crossbow-light"
-              },
-              "quantity": 1
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneers-pack",
+                "name": "Dungeoneer's Pack",
+                "url": "/api/equipment/dungeoneers-pack"
+              }
             },
             {
-              "equipment": {
-                "index": "crossbow-bolt",
-                "name": "Crossbow bolt",
-                "url": "/api/equipment/crossbow-bolt"
-              },
-              "quantity": 20
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "explorers-pack",
+                "name": "Explorer's Pack",
+                "url": "/api/equipment/explorers-pack"
+              }
             }
           ]
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "dungeoneers-pack",
-              "name": "Dungeoneer's Pack",
-              "url": "/api/equipment/dungeoneers-pack"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "explorers-pack",
-              "name": "Explorer's Pack",
-              "url": "/api/equipment/explorers-pack"
-            },
-            "quantity": 1
-          }
-        ]
+        }
       }
     ],
     "class_levels": "/api/classes/fighter/levels",
@@ -1581,24 +1982,29 @@
       "prerequisite_options": {
         "type": "ability-scores",
         "choose": 1,
-        "from": [
-          {
-            "ability_score": {
-              "index": "str",
-              "name": "STR",
-              "url": "/api/ability-scores/str"
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "score_prerequisite",
+              "ability_score": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "minimum_score": 13
             },
-            "minimum_score": 13
-          },
-          {
-            "ability_score": {
-              "index": "dex",
-              "name": "DEX",
-              "url": "/api/ability-scores/dex"
-            },
-            "minimum_score": 13
-          }
-        ]
+            {
+              "option_type": "score_prerequisite",
+              "ability_score": {
+                "index": "dex",
+                "name": "DEX",
+                "url": "/api/ability-scores/dex"
+              },
+              "minimum_score": 13
+            }
+          ]
+        }
       },
       "proficiencies": [
         {
@@ -1643,197 +2049,328 @@
     "hit_die": 8,
     "proficiency_choices": [
       {
-        "choose": 1,
+        "desc": "Choose one type of artisan’s tools or one musical instrument",
         "type": "proficiencies",
-        "from": [
-          {
-            "index": "alchemists-supplies",
-            "name": "Alchemist's Supplies",
-            "url": "/api/proficiencies/alchemists-supplies"
-          },
-          {
-            "index": "brewers-supplies",
-            "name": "Brewer's Supplies",
-            "url": "/api/proficiencies/brewers-supplies"
-          },
-          {
-            "index": "calligraphers-supplies",
-            "name": "Calligrapher's Supplies",
-            "url": "/api/proficiencies/calligraphers-supplies"
-          },
-          {
-            "index": "carpenters-tools",
-            "name": "Carpenter's Tools",
-            "url": "/api/proficiencies/carpenters-tools"
-          },
-          {
-            "index": "cartographers-tools",
-            "name": "Cartographer's Tools",
-            "url": "/api/proficiencies/cartographers-tools"
-          },
-          {
-            "index": "cobblers-tools",
-            "name": "Cobbler's Tools",
-            "url": "/api/proficiencies/cobblers-tools"
-          },
-          {
-            "index": "cooks-utensils",
-            "name": "Cook's utensils",
-            "url": "/api/proficiencies/cooks-utensils"
-          },
-          {
-            "index": "glassblowers-tools",
-            "name": "Glassblower's Tools",
-            "url": "/api/proficiencies/glassblowers-tools"
-          },
-          {
-            "index": "jewelers-tools",
-            "name": "Jeweler's Tools",
-            "url": "/api/proficiencies/jewelers-tools"
-          },
-          {
-            "index": "leatherworkers-tools",
-            "name": "Leatherworker's Tools",
-            "url": "/api/proficiencies/leatherworkers-tools"
-          },
-          {
-            "index": "masons-tools",
-            "name": "Mason's Tools",
-            "url": "/api/proficiencies/masons-tools"
-          },
-          {
-            "index": "painters-supplies",
-            "name": "Painter's Supplies",
-            "url": "/api/proficiencies/painters-supplies"
-          },
-          {
-            "index": "potters-tools",
-            "name": "Potter's Tools",
-            "url": "/api/proficiencies/potters-tools"
-          },
-          {
-            "index": "smiths-tools",
-            "name": "Smith's Tools",
-            "url": "/api/proficiencies/smiths-tools"
-          },
-          {
-            "index": "tinkers-tools",
-            "name": "Tinker's Tools",
-            "url": "/api/proficiencies/tinkers-tools"
-          },
-          {
-            "index": "weavers-tools",
-            "name": "Weaver's Tools",
-            "url": "/api/proficiencies/weavers-tools"
-          },
-          {
-            "index": "woodcarvers-tools",
-            "name": "Woodcarver's Tools",
-            "url": "/api/proficiencies/woodcarvers-tools"
-          },
-          {
-            "index": "disguise-kit",
-            "name": "Disguise Kit",
-            "url": "/api/proficiencies/disguise-kit"
-          },
-          {
-            "index": "forgery-kit",
-            "name": "Forgery Kit",
-            "url": "/api/proficiencies/forgery-kit"
-          }
-        ]
+        "choose": 1,
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "choice",
+              "choice": {
+                "type": "proficiencies",
+                "choose": 1,
+                "from": {
+                  "option_set_type": "options_array",
+                  "options": [
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "alchemists-supplies",
+                        "name": "Alchemist's Supplies",
+                        "url": "/api/proficiencies/alchemists-supplies"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "brewers-supplies",
+                        "name": "Brewer's Supplies",
+                        "url": "/api/proficiencies/brewers-supplies"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "calligraphers-supplies",
+                        "name": "Calligrapher's Supplies",
+                        "url": "/api/proficiencies/calligraphers-supplies"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "carpenters-tools",
+                        "name": "Carpenter's Tools",
+                        "url": "/api/proficiencies/carpenters-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "cartographers-tools",
+                        "name": "Cartographer's Tools",
+                        "url": "/api/proficiencies/cartographers-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "cobblers-tools",
+                        "name": "Cobbler's Tools",
+                        "url": "/api/proficiencies/cobblers-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "cooks-utensils",
+                        "name": "Cook's utensils",
+                        "url": "/api/proficiencies/cooks-utensils"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "glassblowers-tools",
+                        "name": "Glassblower's Tools",
+                        "url": "/api/proficiencies/glassblowers-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "jewelers-tools",
+                        "name": "Jeweler's Tools",
+                        "url": "/api/proficiencies/jewelers-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "leatherworkers-tools",
+                        "name": "Leatherworker's Tools",
+                        "url": "/api/proficiencies/leatherworkers-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "masons-tools",
+                        "name": "Mason's Tools",
+                        "url": "/api/proficiencies/masons-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "painters-supplies",
+                        "name": "Painter's Supplies",
+                        "url": "/api/proficiencies/painters-supplies"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "potters-tools",
+                        "name": "Potter's Tools",
+                        "url": "/api/proficiencies/potters-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "smiths-tools",
+                        "name": "Smith's Tools",
+                        "url": "/api/proficiencies/smiths-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "tinkers-tools",
+                        "name": "Tinker's Tools",
+                        "url": "/api/proficiencies/tinkers-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "weavers-tools",
+                        "name": "Weaver's Tools",
+                        "url": "/api/proficiencies/weavers-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "woodcarvers-tools",
+                        "name": "Woodcarver's Tools",
+                        "url": "/api/proficiencies/woodcarvers-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "disguise-kit",
+                        "name": "Disguise Kit",
+                        "url": "/api/proficiencies/disguise-kit"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "forgery-kit",
+                        "name": "Forgery Kit",
+                        "url": "/api/proficiencies/forgery-kit"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "type": "proficiencies",
+                "choose": 1,
+                "from": {
+                  "option_set_type": "options_array",
+                  "options": [
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "bagpipes",
+                        "name": "Bagpipes",
+                        "url": "/api/proficiencies/bagpipes"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "drum",
+                        "name": "Drum",
+                        "url": "/api/proficiencies/drum"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "dulcimer",
+                        "name": "Dulcimer",
+                        "url": "/api/proficiencies/dulcimer"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "flute",
+                        "name": "Flute",
+                        "url": "/api/proficiencies/flute"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "lute",
+                        "name": "Lute",
+                        "url": "/api/proficiencies/lute"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "lyre",
+                        "name": "Lyre",
+                        "url": "/api/proficiencies/lyre"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "horn",
+                        "name": "Horn",
+                        "url": "/api/proficiencies/horn"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "pan-flute",
+                        "name": "Pan flute",
+                        "url": "/api/proficiencies/pan-flute"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "shawm",
+                        "name": "Shawm",
+                        "url": "/api/proficiencies/shawm"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "viol",
+                        "name": "Viol",
+                        "url": "/api/proficiencies/viol"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
       },
       {
-        "choose": 1,
-        "type": "proficiencies",
-        "from": [
-          {
-            "index": "bagpipes",
-            "name": "Bagpipes",
-            "url": "/api/proficiencies/bagpipes"
-          },
-          {
-            "index": "drum",
-            "name": "Drum",
-            "url": "/api/proficiencies/drum"
-          },
-          {
-            "index": "dulcimer",
-            "name": "Dulcimer",
-            "url": "/api/proficiencies/dulcimer"
-          },
-          {
-            "index": "flute",
-            "name": "Flute",
-            "url": "/api/proficiencies/flute"
-          },
-          {
-            "index": "lute",
-            "name": "Lute",
-            "url": "/api/proficiencies/lute"
-          },
-          {
-            "index": "lyre",
-            "name": "Lyre",
-            "url": "/api/proficiencies/lyre"
-          },
-          {
-            "index": "horn",
-            "name": "Horn",
-            "url": "/api/proficiencies/horn"
-          },
-          {
-            "index": "pan-flute",
-            "name": "Pan flute",
-            "url": "/api/proficiencies/pan-flute"
-          },
-          {
-            "index": "shawm",
-            "name": "Shawm",
-            "url": "/api/proficiencies/shawm"
-          },
-          {
-            "index": "viol",
-            "name": "Viol",
-            "url": "/api/proficiencies/viol"
-          }
-        ]
-      },
-      {
+        "desc": "Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth",
         "choose": 2,
         "type": "proficiencies",
-        "from": [
-          {
-            "index": "skill-acrobatics",
-            "name": "Skill: Acrobatics",
-            "url": "/api/proficiencies/skill-acrobatics"
-          },
-          {
-            "index": "skill-athletics",
-            "name": "Skill: Athletics",
-            "url": "/api/proficiencies/skill-athletics"
-          },
-          {
-            "index": "skill-history",
-            "name": "Skill: History",
-            "url": "/api/proficiencies/skill-history"
-          },
-          {
-            "index": "skill-insight",
-            "name": "Skill: Insight",
-            "url": "/api/proficiencies/skill-insight"
-          },
-          {
-            "index": "skill-religion",
-            "name": "Skill: Religion",
-            "url": "/api/proficiencies/skill-religion"
-          },
-          {
-            "index": "skill-stealth",
-            "name": "Skill: Stealth",
-            "url": "/api/proficiencies/skill-stealth"
-          }
-        ]
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-acrobatics",
+                "name": "Skill: Acrobatics",
+                "url": "/api/proficiencies/skill-acrobatics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-athletics",
+                "name": "Skill: Athletics",
+                "url": "/api/proficiencies/skill-athletics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-history",
+                "name": "Skill: History",
+                "url": "/api/proficiencies/skill-history"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Skill: Insight",
+                "url": "/api/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Skill: Religion",
+                "url": "/api/proficiencies/skill-religion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-stealth",
+                "name": "Skill: Stealth",
+                "url": "/api/proficiencies/skill-stealth"
+              }
+            }
+          ]
+        }
       }
     ],
     "proficiencies": [
@@ -1872,53 +2409,66 @@
     ],
     "starting_equipment_options": [
       {
+        "desc": "(a) a shortsword or (b) any simple weapon",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "shortsword",
-              "name": "Shortsword",
-              "url": "/api/equipment/shortsword"
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "shortsword",
+                "name": "Shortsword",
+                "url": "/api/equipment/shortsword"
+              }
             },
-            "quantity": 1
-          },
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "simple-weapons",
-                  "name": "Simple Weapons",
-                  "url": "/api/equipment-categories/simple-weapons"
+            {
+              "option_type": "choice",
+              "choice": {
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Simple Weapons",
+                    "url": "/api/equipment-categories/simple-weapons"
+                  }
                 }
               }
             }
-          }
-        ]
+          ]
+        }
       },
       {
+        "desc": "(a) a dungeoneer’s pack or (b) an explorer’s pack",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "dungeoneers-pack",
-              "name": "Dungeoneer's Pack",
-              "url": "/api/equipment/dungeoneers-pack"
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneers-pack",
+                "name": "Dungeoneer's Pack",
+                "url": "/api/equipment/dungeoneers-pack"
+              }
             },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "explorers-pack",
-              "name": "Explorer's Pack",
-              "url": "/api/equipment/explorers-pack"
-            },
-            "quantity": 1
-          }
-        ]
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "explorers-pack",
+                "name": "Explorer's Pack",
+                "url": "/api/equipment/explorers-pack"
+              }
+            }
+          ]
+        }
       }
     ],
     "class_levels": "/api/classes/monk/levels",
@@ -1969,40 +2519,62 @@
     "hit_die": 10,
     "proficiency_choices": [
       {
+        "desc": "Choose two from Athletics, Insight, Intimidation, Medicine, Persuasion, and Religion",
         "choose": 2,
         "type": "proficiencies",
-        "from": [
-          {
-            "index": "skill-athletics",
-            "name": "Skill: Athletics",
-            "url": "/api/proficiencies/skill-athletics"
-          },
-          {
-            "index": "skill-insight",
-            "name": "Skill: Insight",
-            "url": "/api/proficiencies/skill-insight"
-          },
-          {
-            "index": "skill-intimidation",
-            "name": "Skill: Intimidation",
-            "url": "/api/proficiencies/skill-intimidation"
-          },
-          {
-            "index": "skill-medicine",
-            "name": "Skill: Medicine",
-            "url": "/api/proficiencies/skill-medicine"
-          },
-          {
-            "index": "skill-persuasion",
-            "name": "Skill: Persuasion",
-            "url": "/api/proficiencies/skill-persuasion"
-          },
-          {
-            "index": "skill-religion",
-            "name": "Skill: Religion",
-            "url": "/api/proficiencies/skill-religion"
-          }
-        ]
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-athletics",
+                "name": "Skill: Athletics",
+                "url": "/api/proficiencies/skill-athletics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Skill: Insight",
+                "url": "/api/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-intimidation",
+                "name": "Skill: Intimidation",
+                "url": "/api/proficiencies/skill-intimidation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-medicine",
+                "name": "Skill: Medicine",
+                "url": "/api/proficiencies/skill-medicine"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-persuasion",
+                "name": "Skill: Persuasion",
+                "url": "/api/proficiencies/skill-persuasion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Skill: Religion",
+                "url": "/api/proficiencies/skill-religion"
+              }
+            }
+          ]
+        }
       }
     ],
     "proficiencies": [
@@ -2051,100 +2623,127 @@
     ],
     "starting_equipment_options": [
       {
+        "desc": "(a) a martial weapon and a shield or (b) two martial weapons",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          [
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
             {
-              "equipment": {
-                "index": "shield",
-                "name": "Shield",
-                "url": "/api/equipment/shield"
-              },
-              "quantity": 1
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "choice",
+                  "choice": {
+                    "choose": 1,
+                    "type": "equipment",
+                    "from": {
+                      "option_set_type": "equipment_category",
+                      "equipment_category": {
+                        "name": "Martial Weapons",
+                        "index": "martial-weapons",
+                        "url": "/api/equipment-categories/martial-weapons"
+                      }
+                    }
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "shield",
+                    "name": "Shield",
+                    "url": "/api/equipment/shield"
+                  }
+                }
+              ]
             },
             {
-              "equipment_option": {
-                "choose": 1,
+              "option_type": "choice",
+              "choice": {
+                "choose": 2,
                 "type": "equipment",
                 "from": {
+                  "option_set_type": "equipment_category",
                   "equipment_category": {
-                    "name": "Martial Weapons",
                     "index": "martial-weapons",
+                    "name": "Martial Weapons",
                     "url": "/api/equipment-categories/martial-weapons"
                   }
                 }
               }
             }
-          ],
-          {
-            "equipment_option": {
-              "choose": 2,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "martial-weapons",
-                  "name": "Martial Weapons",
-                  "url": "/api/equipment-categories/martial-weapons"
-                }
-              }
-            }
-          }
-        ]
+          ]
+        }
       },
       {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "javelin",
-              "name": "Javelin",
-              "url": "/api/equipment/javelin"
-            },
-            "quantity": 5
-          },
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "simple-weapons",
-                  "name": "Simple Weapons",
-                  "url": "/api/equipment-categories/simple-weapons"
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "priests-pack",
-              "name": "Priest's Pack",
-              "url": "/api/equipment/priests-pack"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "explorers-pack",
-              "name": "Explorer's Pack",
-              "url": "/api/equipment/explorers-pack"
-            },
-            "quantity": 1
-          }
-        ]
-      },
-      {
+        "desc": "(a) five javelins or (b) any simple melee weapon",
         "choose": 1,
         "type": "equipment",
         "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 5,
+              "of": {
+                "index": "javelin",
+                "name": "Javelin",
+                "url": "/api/equipment/javelin"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Simple Weapons",
+                    "url": "/api/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a priest’s pack or (b) an explorer’s pack",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "priests-pack",
+                "name": "Priest's Pack",
+                "url": "/api/equipment/priests-pack"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "explorers-pack",
+                "name": "Explorer's Pack",
+                "url": "/api/equipment/explorers-pack"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "holy symbol",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "equipment_category",
           "equipment_category": {
             "index": "holy-symbols",
             "name": "Holy Symbols",
@@ -2250,50 +2849,78 @@
     "hit_die": 10,
     "proficiency_choices": [
       {
+        "desc": "Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival",
         "choose": 3,
         "type": "proficiencies",
-        "from": [
-          {
-            "index": "skill-animal-handling",
-            "name": "Skill: Animal Handling",
-            "url": "/api/proficiencies/skill-animal-handling"
-          },
-          {
-            "index": "skill-athletics",
-            "name": "Skill: Athletics",
-            "url": "/api/proficiencies/skill-athletics"
-          },
-          {
-            "index": "skill-insight",
-            "name": "Skill: Insight",
-            "url": "/api/proficiencies/skill-insight"
-          },
-          {
-            "index": "skill-investigation",
-            "name": "Skill: Investigation",
-            "url": "/api/proficiencies/skill-investigation"
-          },
-          {
-            "index": "skill-nature",
-            "name": "Skill: Nature",
-            "url": "/api/proficiencies/skill-nature"
-          },
-          {
-            "index": "skill-perception",
-            "name": "Skill: Perception",
-            "url": "/api/proficiencies/skill-perception"
-          },
-          {
-            "index": "skill-stealth",
-            "name": "Skill: Stealth",
-            "url": "/api/proficiencies/skill-stealth"
-          },
-          {
-            "index": "skill-survival",
-            "name": "Skill: Survival",
-            "url": "/api/proficiencies/skill-survival"
-          }
-        ]
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-animal-handling",
+                "name": "Skill: Animal Handling",
+                "url": "/api/proficiencies/skill-animal-handling"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-athletics",
+                "name": "Skill: Athletics",
+                "url": "/api/proficiencies/skill-athletics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Skill: Insight",
+                "url": "/api/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-investigation",
+                "name": "Skill: Investigation",
+                "url": "/api/proficiencies/skill-investigation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-nature",
+                "name": "Skill: Nature",
+                "url": "/api/proficiencies/skill-nature"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-perception",
+                "name": "Skill: Perception",
+                "url": "/api/proficiencies/skill-perception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-stealth",
+                "name": "Skill: Stealth",
+                "url": "/api/proficiencies/skill-stealth"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-survival",
+                "name": "Skill: Survival",
+                "url": "/api/proficiencies/skill-survival"
+              }
+            }
+          ]
+        }
       }
     ],
     "proficiencies": [
@@ -2355,75 +2982,94 @@
     ],
     "starting_equipment_options": [
       {
+        "desc": "(a) scale mail or (b) leather armor",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "scale-mail",
-              "name": "Scale Mail",
-              "url": "/api/equipment/scale-mail"
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "scale-mail",
+                "name": "Scale Mail",
+                "url": "/api/equipment/scale-mail"
+              }
             },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "leather-armor",
-              "name": "Leather Armor",
-              "url": "/api/equipment/leather-armor"
-            },
-            "quantity": 1
-          }
-        ]
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "leather-armor",
+                "name": "Leather Armor",
+                "url": "/api/equipment/leather-armor"
+              }
+            }
+          ]
+        }
       },
       {
+        "desc": "(a) two shortswords or (b) two simple melee weapons",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "shortsword",
-              "name": "Shortsword",
-              "url": "/api/equipment/shortsword"
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 2,
+              "of": {
+                "index": "shortsword",
+                "name": "Shortsword",
+                "url": "/api/equipment/shortsword"
+              }
             },
-            "quantity": 2
-          },
-          {
-            "equipment_option": {
-              "choose": 2,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "simple-melee-weapons",
-                  "name": "Simple Melee Weapons",
-                  "url": "/api/equipment-categories/simple-melee-weapons"
+            {
+              "option_type": "choice",
+              "choice": {
+                "choose": 2,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-melee-weapons",
+                    "name": "Simple Melee Weapons",
+                    "url": "/api/equipment-categories/simple-melee-weapons"
+                  }
                 }
               }
             }
-          }
-        ]
+          ]
+        }
       },
       {
+        "desc": "(a) a dungeoneer’s pack or (b) an explorer’s pack",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "dungeoneers-pack",
-              "name": "Dungeoneer's Pack",
-              "url": "/api/equipment/dungeoneers-pack"
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneers-pack",
+                "name": "Dungeoneer's Pack",
+                "url": "/api/equipment/dungeoneers-pack"
+              }
             },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "explorers-pack",
-              "name": "Explorer's Pack",
-              "url": "/api/equipment/explorers-pack"
-            },
-            "quantity": 1
-          }
-        ]
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "explorers-pack",
+                "name": "Explorer's Pack",
+                "url": "/api/equipment/explorers-pack"
+              }
+            }
+          ]
+        }
       }
     ],
     "class_levels": "/api/classes/ranger/levels",
@@ -2477,48 +3123,75 @@
         {
           "choose": 1,
           "type": "proficiencies",
-          "from": [
-            {
-              "index": "skill-animal-handling",
-              "name": "Skill: Animal Handling",
-              "url": "/api/proficiencies/skill-animal-handling"
-            },
-            {
-              "index": "skill-athletics",
-              "name": "Skill: Athletics",
-              "url": "/api/proficiencies/skill-athletics"
-            },
-            {
-              "index": "skill-insight",
-              "name": "Skill: Insight",
-              "url": "/api/proficiencies/skill-insight"
-            },
-            {
-              "index": "skill-investigation",
-              "name": "Skill: Investigation",
-              "url": "/api/proficiencies/skill-investigation"
-            },
-            {
-              "index": "skill-nature",
-              "name": "Skill: Nature",
-              "url": "/api/proficiencies/skill-nature"
-            },
-            {
-              "index": "skill-perception",
-              "name": "Skill: Perception",
-              "url": "/api/proficiencies/skill-perception"
-            },
-            {
-              "index": "skill-stealth",
-              "name": "Skill: Stealth",
-              "url": "/api/proficiencies/skill-stealth"
-            },
-            {
-              "index": "skill-survival",
-              "name": "Skill: Survival",
-              "url": "/api/proficiencies/skill-survival"
-            }
-          ]
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-animal-handling",
+                  "name": "Skill: Animal Handling",
+                  "url": "/api/proficiencies/skill-animal-handling"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-athletics",
+                  "name": "Skill: Athletics",
+                  "url": "/api/proficiencies/skill-athletics"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-insight",
+                  "name": "Skill: Insight",
+                  "url": "/api/proficiencies/skill-insight"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-investigation",
+                  "name": "Skill: Investigation",
+                  "url": "/api/proficiencies/skill-investigation"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-nature",
+                  "name": "Skill: Nature",
+                  "url": "/api/proficiencies/skill-nature"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-perception",
+                  "name": "Skill: Perception",
+                  "url": "/api/proficiencies/skill-perception"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-stealth",
+                  "name": "Skill: Stealth",
+                  "url": "/api/proficiencies/skill-stealth"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-survival",
+                  "name": "Skill: Survival",
+                  "url": "/api/proficiencies/skill-survival"
+                }
+              }
+            ]
+          }
         }
       ]
     },
@@ -2571,65 +3244,102 @@
     "hit_die": 8,
     "proficiency_choices": [
       {
+        "desc": "Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth",
         "choose": 4,
         "type": "proficiencies",
-        "from": [
-          {
-            "index": "skill-acrobatics",
-            "name": "Skill: Acrobatics",
-            "url": "/api/proficiencies/skill-acrobatics"
-          },
-          {
-            "index": "skill-athletics",
-            "name": "Skill: Athletics",
-            "url": "/api/proficiencies/skill-athletics"
-          },
-          {
-            "index": "skill-deception",
-            "name": "Skill: Deception",
-            "url": "/api/proficiencies/skill-deception"
-          },
-          {
-            "index": "skill-insight",
-            "name": "Skill: Insight",
-            "url": "/api/proficiencies/skill-insight"
-          },
-          {
-            "index": "skill-intimidation",
-            "name": "Skill: Intimidation",
-            "url": "/api/proficiencies/skill-intimidation"
-          },
-          {
-            "index": "skill-investigation",
-            "name": "Skill: Investigation",
-            "url": "/api/proficiencies/skill-investigation"
-          },
-          {
-            "index": "skill-perception",
-            "name": "Skill: Perception",
-            "url": "/api/proficiencies/skill-perception"
-          },
-          {
-            "index": "skill-performance",
-            "name": "Skill: Performance",
-            "url": "/api/proficiencies/skill-performance"
-          },
-          {
-            "index": "skill-persuasion",
-            "name": "Skill: Persuasion",
-            "url": "/api/proficiencies/skill-persuasion"
-          },
-          {
-            "index": "skill-sleight-of-hand",
-            "name": "Skill: Sleight of Hand",
-            "url": "/api/proficiencies/skill-sleight-of-hand"
-          },
-          {
-            "index": "skill-stealth",
-            "name": "Skill: Stealth",
-            "url": "/api/proficiencies/skill-stealth"
-          }
-        ]
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-acrobatics",
+                "name": "Skill: Acrobatics",
+                "url": "/api/proficiencies/skill-acrobatics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-athletics",
+                "name": "Skill: Athletics",
+                "url": "/api/proficiencies/skill-athletics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-deception",
+                "name": "Skill: Deception",
+                "url": "/api/proficiencies/skill-deception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Skill: Insight",
+                "url": "/api/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-intimidation",
+                "name": "Skill: Intimidation",
+                "url": "/api/proficiencies/skill-intimidation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-investigation",
+                "name": "Skill: Investigation",
+                "url": "/api/proficiencies/skill-investigation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-perception",
+                "name": "Skill: Perception",
+                "url": "/api/proficiencies/skill-perception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-performance",
+                "name": "Skill: Performance",
+                "url": "/api/proficiencies/skill-performance"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-persuasion",
+                "name": "Skill: Persuasion",
+                "url": "/api/proficiencies/skill-persuasion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-sleight-of-hand",
+                "name": "Skill: Sleight of Hand",
+                "url": "/api/proficiencies/skill-sleight-of-hand"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-stealth",
+                "name": "Skill: Stealth",
+                "url": "/api/proficiencies/skill-stealth"
+              }
+            }
+          ]
+        }
       }
     ],
     "proficiencies": [
@@ -2709,88 +3419,111 @@
     ],
     "starting_equipment_options": [
       {
+        "desc": "(a) a rapier or (b) a shortsword",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "rapier",
-              "name": "Rapier",
-              "url": "/api/equipment/rapier"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "shortsword",
-              "name": "Shortsword",
-              "url": "/api/equipment/shortsword"
-            },
-            "quantity": 1
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "shortsword",
-              "name": "Shortsword",
-              "url": "/api/equipment/shortsword"
-            },
-            "quantity": 1
-          },
-          [
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
             {
-              "equipment": {
-                "index": "shortbow",
-                "name": "Shortbow",
-                "url": "/api/equipment/shortbow"
-              },
-              "quantity": 1
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "rapier",
+                "name": "Rapier",
+                "url": "/api/equipment/rapier"
+              }
             },
             {
-              "equipment": {
-                "index": "arrow",
-                "name": "Arrow",
-                "url": "/api/equipment/arrow"
-              },
-              "quantity": 20
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "shortsword",
+                "name": "Shortsword",
+                "url": "/api/equipment/shortsword"
+              }
             }
           ]
-        ]
+        }
       },
       {
+        "desc": "(a) a shortbow and quiver of 20 arrows or (b) a shortsword",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "burglars-pack",
-              "name": "Burglar's Pack",
-              "url": "/api/equipment/burglars-pack"
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "shortbow",
+                    "name": "Shortbow",
+                    "url": "/api/equipment/shortbow"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "arrow",
+                    "name": "Arrow",
+                    "url": "/api/equipment/arrow"
+                  }
+                }
+              ]
             },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "dungeoneers-pack",
-              "name": "Dungeoneer's Pack",
-              "url": "/api/equipment/dungeoneers-pack"
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "shortsword",
+                "name": "Shortsword",
+                "url": "/api/equipment/shortsword"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a burglar’s pack, (b) a dungeoneer’s pack, or (c) an explorer’s pack",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "burglars-pack",
+                "name": "Burglar's Pack",
+                "url": "/api/equipment/burglars-pack"
+              }
             },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "explorers-pack",
-              "name": "Explorer's Pack",
-              "url": "/api/equipment/explorers-pack"
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneers-pack",
+                "name": "Dungeoneer's Pack",
+                "url": "/api/equipment/dungeoneers-pack"
+              }
             },
-            "quantity": 1
-          }
-        ]
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "explorers-pack",
+                "name": "Explorer's Pack",
+                "url": "/api/equipment/explorers-pack"
+              }
+            }
+          ]
+        }
       }
     ],
     "class_levels": "/api/classes/rogue/levels",
@@ -2821,63 +3554,99 @@
         {
           "choose": 1,
           "type": "proficiencies",
-          "from": [
-            {
-              "index": "skill-acrobatics",
-              "name": "Skill: Acrobatics",
-              "url": "/api/proficiencies/skill-acrobatics"
-            },
-            {
-              "index": "skill-athletics",
-              "name": "Skill: Athletics",
-              "url": "/api/proficiencies/skill-athletics"
-            },
-            {
-              "index": "skill-deception",
-              "name": "Skill: Deception",
-              "url": "/api/proficiencies/skill-deception"
-            },
-            {
-              "index": "skill-insight",
-              "name": "Skill: Insight",
-              "url": "/api/proficiencies/skill-insight"
-            },
-            {
-              "index": "skill-intimidation",
-              "name": "Skill: Intimidation",
-              "url": "/api/proficiencies/skill-intimidation"
-            },
-            {
-              "index": "skill-investigation",
-              "name": "Skill: Investigation",
-              "url": "/api/proficiencies/skill-investigation"
-            },
-            {
-              "index": "skill-perception",
-              "name": "Skill: Perception",
-              "url": "/api/proficiencies/skill-perception"
-            },
-            {
-              "index": "skill-performance",
-              "name": "Skill: Performance",
-              "url": "/api/proficiencies/skill-performance"
-            },
-            {
-              "index": "skill-persuasion",
-              "name": "Skill: Persuasion",
-              "url": "/api/proficiencies/skill-persuasion"
-            },
-            {
-              "index": "skill-sleight-of-hand",
-              "name": "Skill: Sleight of Hand",
-              "url": "/api/proficiencies/skill-sleight-of-hand"
-            },
-            {
-              "index": "skill-stealth",
-              "name": "Skill: Stealth",
-              "url": "/api/proficiencies/skill-stealth"
-            }
-          ]
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-acrobatics",
+                  "name": "Skill: Acrobatics",
+                  "url": "/api/proficiencies/skill-acrobatics"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-athletics",
+                  "name": "Skill: Athletics",
+                  "url": "/api/proficiencies/skill-athletics"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-deception",
+                  "name": "Skill: Deception",
+                  "url": "/api/proficiencies/skill-deception"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-insight",
+                  "name": "Skill: Insight",
+                  "url": "/api/proficiencies/skill-insight"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-intimidation",
+                  "name": "Skill: Intimidation",
+                  "url": "/api/proficiencies/skill-intimidation"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-investigation",
+                  "name": "Skill: Investigation",
+                  "url": "/api/proficiencies/skill-investigation"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-perception",
+                  "name": "Skill: Perception",
+                  "url": "/api/proficiencies/skill-perception"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-performance",
+                  "name": "Skill: Performance",
+                  "url": "/api/proficiencies/skill-performance"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-persuasion",
+                  "name": "Skill: Persuasion",
+                  "url": "/api/proficiencies/skill-persuasion"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-sleight-of-hand",
+                  "name": "Skill: Sleight of Hand",
+                  "url": "/api/proficiencies/skill-sleight-of-hand"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-stealth",
+                  "name": "Skill: Stealth",
+                  "url": "/api/proficiencies/skill-stealth"
+                }
+              }
+            ]
+          }
         }
       ]
     },
@@ -2896,40 +3665,62 @@
     "hit_die": 6,
     "proficiency_choices": [
       {
+        "desc": "Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion",
         "choose": 2,
         "type": "proficiencies",
-        "from": [
-          {
-            "index": "skill-arcana",
-            "name": "Skill: Arcana",
-            "url": "/api/proficiencies/skill-arcana"
-          },
-          {
-            "index": "skill-deception",
-            "name": "Skill: Deception",
-            "url": "/api/proficiencies/skill-deception"
-          },
-          {
-            "index": "skill-insight",
-            "name": "Skill: Insight",
-            "url": "/api/proficiencies/skill-insight"
-          },
-          {
-            "index": "skill-intimidation",
-            "name": "Skill: Intimidation",
-            "url": "/api/proficiencies/skill-intimidation"
-          },
-          {
-            "index": "skill-persuasion",
-            "name": "Skill: Persuasion",
-            "url": "/api/proficiencies/skill-persuasion"
-          },
-          {
-            "index": "skill-religion",
-            "name": "Skill: Religion",
-            "url": "/api/proficiencies/skill-religion"
-          }
-        ]
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-arcana",
+                "name": "Skill: Arcana",
+                "url": "/api/proficiencies/skill-arcana"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-deception",
+                "name": "Skill: Deception",
+                "url": "/api/proficiencies/skill-deception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Skill: Insight",
+                "url": "/api/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-intimidation",
+                "name": "Skill: Intimidation",
+                "url": "/api/proficiencies/skill-intimidation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-persuasion",
+                "name": "Skill: Persuasion",
+                "url": "/api/proficiencies/skill-persuasion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Skill: Religion",
+                "url": "/api/proficiencies/skill-religion"
+              }
+            }
+          ]
+        }
       }
     ],
     "proficiencies": [
@@ -2937,11 +3728,6 @@
         "index": "daggers",
         "name": "Daggers",
         "url": "/api/proficiencies/daggers"
-      },
-      {
-        "index": "quarterstaffs",
-        "name": "Quarterstaffs",
-        "url": "/api/proficiencies/quarterstaffs"
       },
       {
         "index": "darts",
@@ -2952,6 +3738,16 @@
         "index": "slings",
         "name": "Slings",
         "url": "/api/proficiencies/slings"
+      },
+      {
+        "index": "quarterstaffs",
+        "name": "Quarterstaffs",
+        "url": "/api/proficiencies/quarterstaffs"
+      },
+      {
+        "index": "crossbows-light",
+        "name": "Crossbows, light",
+        "url": "/api/proficiencies/crossbows-light"
       }
     ],
     "saving_throws": [
@@ -2978,90 +3774,114 @@
     ],
     "starting_equipment_options": [
       {
+        "desc": "(a) a light crossbow and 20 bolts or (b) any simple weapon",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          [
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
             {
-              "equipment": {
-                "index": "crossbow-light",
-                "name": "Crossbow, light",
-                "url": "/api/equipment/crossbow-light"
-              },
-              "quantity": 1
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "crossbow-light",
+                    "name": "Crossbow, light",
+                    "url": "/api/equipment/crossbow-light"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "crossbow-bolt",
+                    "name": "Crossbow bolt",
+                    "url": "/api/equipment/crossbow-bolt"
+                  }
+                }
+              ]
             },
             {
-              "equipment": {
-                "index": "crossbow-bolt",
-                "name": "Crossbow bolt",
-                "url": "/api/equipment/crossbow-bolt"
-              },
-              "quantity": 20
-            }
-          ],
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "simple-weapons",
-                  "name": "Simple Weapons",
-                  "url": "/api/equipment-categories/simple-weapons"
+              "option_type": "choice",
+              "choice": {
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Simple Weapons",
+                    "url": "/api/equipment-categories/simple-weapons"
+                  }
                 }
               }
             }
-          }
-        ]
+          ]
+        }
       },
       {
+        "desc": "(a) a component pouch or (b) an arcane focus",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "component-pouch",
-              "name": "Component pouch",
-              "url": "/api/equipment/component-pouch"
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "component-pouch",
+                "name": "Component pouch",
+                "url": "/api/equipment/component-pouch"
+              }
             },
-            "quantity": 1
-          },
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "arcane-foci",
-                  "name": "Arcane Foci",
-                  "url": "/api/equipment-categories/arcane-foci"
+            {
+              "option_type": "choice",
+              "choice": {
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "arcane-foci",
+                    "name": "Arcane Foci",
+                    "url": "/api/equipment-categories/arcane-foci"
+                  }
                 }
               }
             }
-          }
-        ]
+          ]
+        }
       },
       {
+        "desc": "(a) a dungeoneer’s pack or (b) an explorer’s pack",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "dungeoneers-pack",
-              "name": "Dungeoneer's Pack",
-              "url": "/api/equipment/dungeoneers-pack"
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneers-pack",
+                "name": "Dungeoneer's Pack",
+                "url": "/api/equipment/dungeoneers-pack"
+              }
             },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "explorers-pack",
-              "name": "Explorer's Pack",
-              "url": "/api/equipment/explorers-pack"
-            },
-            "quantity": 1
-          }
-        ]
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "explorers-pack",
+                "name": "Explorer's Pack",
+                "url": "/api/equipment/explorers-pack"
+              }
+            }
+          ]
+        }
       }
     ],
     "class_levels": "/api/classes/sorcerer/levels",
@@ -3139,45 +3959,70 @@
     "hit_die": 8,
     "proficiency_choices": [
       {
+        "desc": "Choose two skills from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion",
         "choose": 2,
         "type": "proficiencies",
-        "from": [
-          {
-            "index": "skill-arcana",
-            "name": "Skill: Arcana",
-            "url": "/api/proficiencies/skill-arcana"
-          },
-          {
-            "index": "skill-deception",
-            "name": "Skill: Deception",
-            "url": "/api/proficiencies/skill-deception"
-          },
-          {
-            "index": "skill-history",
-            "name": "Skill: History",
-            "url": "/api/proficiencies/skill-history"
-          },
-          {
-            "index": "skill-intimidation",
-            "name": "Skill: Intimidation",
-            "url": "/api/proficiencies/skill-intimidation"
-          },
-          {
-            "index": "skill-investigation",
-            "name": "Skill: Investigation",
-            "url": "/api/proficiencies/skill-investigation"
-          },
-          {
-            "index": "skill-nature",
-            "name": "Skill: Nature",
-            "url": "/api/proficiencies/skill-nature"
-          },
-          {
-            "index": "skill-religion",
-            "name": "Skill: Religion",
-            "url": "/api/proficiencies/skill-religion"
-          }
-        ]
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-arcana",
+                "name": "Skill: Arcana",
+                "url": "/api/proficiencies/skill-arcana"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-deception",
+                "name": "Skill: Deception",
+                "url": "/api/proficiencies/skill-deception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-history",
+                "name": "Skill: History",
+                "url": "/api/proficiencies/skill-history"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-intimidation",
+                "name": "Skill: Intimidation",
+                "url": "/api/proficiencies/skill-intimidation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-investigation",
+                "name": "Skill: Investigation",
+                "url": "/api/proficiencies/skill-investigation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-nature",
+                "name": "Skill: Nature",
+                "url": "/api/proficiencies/skill-nature"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Skill: Religion",
+                "url": "/api/proficiencies/skill-religion"
+              }
+            }
+          ]
+        }
       }
     ],
     "proficiencies": [
@@ -3224,95 +4069,121 @@
     ],
     "starting_equipment_options": [
       {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          [
-            {
-              "equipment": {
-                "index": "crossbow-light",
-                "name": "Crossbow, light",
-                "url": "/api/equipment/crossbow-light"
-              },
-              "quantity": 1
-            },
-            {
-              "equipment": {
-                "index": "crossbow-bolt",
-                "name": "Crossbow bolt",
-                "url": "/api/equipment/crossbow-bolt"
-              },
-              "quantity": 20
-            }
-          ],
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "simple-weapons",
-                  "name": "Simple Weapons",
-                  "url": "/api/equipment-categories/simple-weapons"
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "component-pouch",
-              "name": "Component pouch",
-              "url": "/api/equipment/component-pouch"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "arcane-foci",
-                  "name": "Arcane Foci",
-                  "url": "/api/equipment-categories/arcane-foci"
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "scholars-pack",
-              "name": "Scholar's Pack",
-              "url": "/api/equipment/scholars-pack"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "dungeoneers-pack",
-              "name": "Dungeoneer's Pack",
-              "url": "/api/equipment/dungeoneers-pack"
-            },
-            "quantity": 1
-          }
-        ]
-      },
-      {
+        "desc": "(a) a light crossbow and 20 bolts or (b) any simple weapon",
         "choose": 1,
         "type": "equipment",
         "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "crossbow-light",
+                    "name": "Crossbow, light",
+                    "url": "/api/equipment/crossbow-light"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "crossbow-bolt",
+                    "name": "Crossbow bolt",
+                    "url": "/api/equipment/crossbow-bolt"
+                  }
+                }
+              ]
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Simple Weapons",
+                    "url": "/api/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a component pouch or (b) an arcane focus",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "component-pouch",
+                "name": "Component pouch",
+                "url": "/api/equipment/component-pouch"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "arcane-foci",
+                    "name": "Arcane Foci",
+                    "url": "/api/equipment-categories/arcane-foci"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a scholar’s pack or (b) a dungeoneer’s pack",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "scholars-pack",
+                "name": "Scholar's Pack",
+                "url": "/api/equipment/scholars-pack"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneers-pack",
+                "name": "Dungeoneer's Pack",
+                "url": "/api/equipment/dungeoneers-pack"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "simple weapon",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "equipment_category",
           "equipment_category": {
             "index": "simple-weapons",
             "name": "Simple Weapons",
@@ -3408,40 +4279,62 @@
     "hit_die": 6,
     "proficiency_choices": [
       {
+        "desc": "Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion",
         "choose": 2,
         "type": "proficiencies",
-        "from": [
-          {
-            "index": "skill-arcana",
-            "name": "Skill: Arcana",
-            "url": "/api/proficiencies/skill-arcana"
-          },
-          {
-            "index": "skill-history",
-            "name": "Skill: History",
-            "url": "/api/proficiencies/skill-history"
-          },
-          {
-            "index": "skill-insight",
-            "name": "Skill: Insight",
-            "url": "/api/proficiencies/skill-insight"
-          },
-          {
-            "index": "skill-investigation",
-            "name": "Skill: Investigation",
-            "url": "/api/proficiencies/skill-investigation"
-          },
-          {
-            "index": "skill-medicine",
-            "name": "Skill: Medicine",
-            "url": "/api/proficiencies/skill-medicine"
-          },
-          {
-            "index": "skill-religion",
-            "name": "Skill: Religion",
-            "url": "/api/proficiencies/skill-religion"
-          }
-        ]
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-arcana",
+                "name": "Skill: Arcana",
+                "url": "/api/proficiencies/skill-arcana"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-history",
+                "name": "Skill: History",
+                "url": "/api/proficiencies/skill-history"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Skill: Insight",
+                "url": "/api/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-investigation",
+                "name": "Skill: Investigation",
+                "url": "/api/proficiencies/skill-investigation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-medicine",
+                "name": "Skill: Medicine",
+                "url": "/api/proficiencies/skill-medicine"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Skill: Religion",
+                "url": "/api/proficiencies/skill-religion"
+              }
+            }
+          ]
+        }
       }
     ],
     "proficiencies": [
@@ -3449,11 +4342,6 @@
         "index": "daggers",
         "name": "Daggers",
         "url": "/api/proficiencies/daggers"
-      },
-      {
-        "index": "quarterstaffs",
-        "name": "Quarterstaffs",
-        "url": "/api/proficiencies/quarterstaffs"
       },
       {
         "index": "darts",
@@ -3464,6 +4352,16 @@
         "index": "slings",
         "name": "Slings",
         "url": "/api/proficiencies/slings"
+      },
+      {
+        "index": "quarterstaffs",
+        "name": "Quarterstaffs",
+        "url": "/api/proficiencies/quarterstaffs"
+      },
+      {
+        "index": "crossbows-light",
+        "name": "Crossbows, light",
+        "url": "/api/proficiencies/crossbows-light"
       }
     ],
     "saving_throws": [
@@ -3490,75 +4388,94 @@
     ],
     "starting_equipment_options": [
       {
+        "desc": "(a) a quarterstaff or (b) a dagger",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "dagger",
-              "name": "Dagger",
-              "url": "/api/equipment/dagger"
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "quarterstaff",
+                "name": "Quarterstaff",
+                "url": "/api/equipment/quarterstaff"
+              }
             },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "quarterstaff",
-              "name": "Quarterstaff",
-              "url": "/api/equipment/quarterstaff"
-            },
-            "quantity": 1
-          }
-        ]
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dagger",
+                "name": "Dagger",
+                "url": "/api/equipment/dagger"
+              }
+            }
+          ]
+        }
       },
       {
+        "desc": "(a) a component pouch or (b) an arcane focus",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "component-pouch",
-              "name": "Component pouch",
-              "url": "/api/equipment/component-pouch"
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "component-pouch",
+                "name": "Component pouch",
+                "url": "/api/equipment/component-pouch"
+              }
             },
-            "quantity": 1
-          },
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "arcane-foci",
-                  "name": "Arcane Foci",
-                  "url": "/api/equipment-categories/arcane-foci"
+            {
+              "option_type": "choice",
+              "choice": {
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "arcane-foci",
+                    "name": "Arcane Foci",
+                    "url": "/api/equipment-categories/arcane-foci"
+                  }
                 }
               }
             }
-          }
-        ]
+          ]
+        }
       },
       {
+        "desc": "(a) a scholar’s pack or (b) an explorer’s pack",
         "choose": 1,
         "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "scholars-pack",
-              "name": "Scholar's Pack",
-              "url": "/api/equipment/scholars-pack"
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "scholars-pack",
+                "name": "Scholar's Pack",
+                "url": "/api/equipment/scholars-pack"
+              }
             },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "dungeoneers-pack",
-              "name": "Dungeoneer's Pack",
-              "url": "/api/equipment/dungeoneers-pack"
-            },
-            "quantity": 1
-          }
-        ]
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "explorers-pack",
+                "name": "Explorer's Pack",
+                "url": "/api/equipment/explorers-pack"
+              }
+            }
+          ]
+        }
       }
     ],
     "class_levels": "/api/classes/wizard/levels",
