@@ -40,25 +40,38 @@
       }
     ],
     "starting_proficiency_options": {
+      "desc": "You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools.",
       "choose": 1,
       "type": "proficiencies",
-      "from": [
-        {
-          "index": "smiths-tools",
-          "name": "Smith's Tools",
-          "url": "/api/proficiencies/smiths-tools"
-        },
-        {
-          "index": "brewers-supplies",
-          "name": "Brewer's Supplies",
-          "url": "/api/proficiencies/brewers-supplies"
-        },
-        {
-          "index": "masons-tools",
-          "name": "Mason's Tools",
-          "url": "/api/proficiencies/masons-tools"
-        }
-      ]
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "smiths-tools",
+              "name": "Smith's Tools",
+              "url": "/api/proficiencies/smiths-tools"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "brewers-supplies",
+              "name": "Brewer's Supplies",
+              "url": "/api/proficiencies/brewers-supplies"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "masons-tools",
+              "name": "Mason's Tools",
+              "url": "/api/proficiencies/masons-tools"
+            }
+          }
+        ]
+      }
     },
     "languages": [
       {
@@ -162,6 +175,11 @@
         "index": "trance",
         "name": "Trance",
         "url": "/api/traits/trance"
+      },
+      {
+        "index": "keen-senses",
+        "name": "Keen Senses",
+        "url": "/api/traits/keen-senses"
       }
     ],
     "subraces": [
@@ -300,83 +318,131 @@
     "language_options": {
       "choose": 1,
       "type": "languages",
-      "from": [
-        {
-          "index": "dwarvish",
-          "name": "Dwarvish",
-          "url": "/api/languages/dwarvish"
-        },
-        {
-          "index": "elvish",
-          "name": "Elvish",
-          "url": "/api/languages/elvish"
-        },
-        {
-          "index": "giant",
-          "name": "Giant",
-          "url": "/api/languages/giant"
-        },
-        {
-          "index": "gnomish",
-          "name": "Gnomish",
-          "url": "/api/languages/gnomish"
-        },
-        {
-          "index": "goblin",
-          "name": "Goblin",
-          "url": "/api/languages/goblin"
-        },
-        {
-          "index": "halfling",
-          "name": "Halfling",
-          "url": "/api/languages/halfling"
-        },
-        {
-          "index": "orc",
-          "name": "Orc",
-          "url": "/api/languages/orc"
-        },
-        {
-          "index": "abyssal",
-          "name": "Abyssal",
-          "url": "/api/languages/abyssal"
-        },
-        {
-          "index": "celestial",
-          "name": "Celestial",
-          "url": "/api/languages/celestial"
-        },
-        {
-          "index": "draconic",
-          "name": "Draconic",
-          "url": "/api/languages/draconic"
-        },
-        {
-          "index": "deep-speech",
-          "name": "Deep Speech",
-          "url": "/api/languages/deep-speech"
-        },
-        {
-          "index": "infernal",
-          "name": "Infernal",
-          "url": "/api/languages/infernal"
-        },
-        {
-          "index": "primordial",
-          "name": "Primordial",
-          "url": "/api/languages/primordial"
-        },
-        {
-          "index": "sylvan",
-          "name": "Sylvan",
-          "url": "/api/languages/sylvan"
-        },
-        {
-          "index": "undercommon",
-          "name": "Undercommon",
-          "url": "/api/languages/undercommon"
-        }
-      ]
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "dwarvish",
+              "name": "Dwarvish",
+              "url": "/api/languages/dwarvish"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "elvish",
+              "name": "Elvish",
+              "url": "/api/languages/elvish"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "giant",
+              "name": "Giant",
+              "url": "/api/languages/giant"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "gnomish",
+              "name": "Gnomish",
+              "url": "/api/languages/gnomish"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "goblin",
+              "name": "Goblin",
+              "url": "/api/languages/goblin"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "halfling",
+              "name": "Halfling",
+              "url": "/api/languages/halfling"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "orc",
+              "name": "Orc",
+              "url": "/api/languages/orc"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "abyssal",
+              "name": "Abyssal",
+              "url": "/api/languages/abyssal"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "celestial",
+              "name": "Celestial",
+              "url": "/api/languages/celestial"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "draconic",
+              "name": "Draconic",
+              "url": "/api/languages/draconic"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "deep-speech",
+              "name": "Deep Speech",
+              "url": "/api/languages/deep-speech"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "infernal",
+              "name": "Infernal",
+              "url": "/api/languages/infernal"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "primordial",
+              "name": "Primordial",
+              "url": "/api/languages/primordial"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "sylvan",
+              "name": "Sylvan",
+              "url": "/api/languages/sylvan"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "undercommon",
+              "name": "Undercommon",
+              "url": "/api/languages/undercommon"
+            }
+          }
+        ]
+      }
     },
     "language_desc": "You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.",
     "traits": [],
@@ -513,48 +579,56 @@
     "ability_bonus_options": {
       "choose": 2,
       "type": "ability_bonuses",
-      "from": [
-        {
-          "ability_score": {
-            "index": "str",
-            "name": "STR",
-            "url": "/api/ability-scores/str"
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ability_bonus",
+            "ability_score": {
+              "index": "str",
+              "name": "STR",
+              "url": "/api/ability-scores/str"
+            },
+            "bonus": 1
           },
-          "bonus": 1
-        },
-        {
-          "ability_score": {
-            "index": "dex",
-            "name": "DEX",
-            "url": "/api/ability-scores/dex"
+          {
+            "option_type": "ability_bonus",
+            "ability_score": {
+              "index": "dex",
+              "name": "DEX",
+              "url": "/api/ability-scores/dex"
+            },
+            "bonus": 1
           },
-          "bonus": 1
-        },
-        {
-          "ability_score": {
-            "index": "con",
-            "name": "CON",
-            "url": "/api/ability-scores/con"
+          {
+            "option_type": "ability_bonus",
+            "ability_score": {
+              "index": "con",
+              "name": "CON",
+              "url": "/api/ability-scores/con"
+            },
+            "bonus": 1
           },
-          "bonus": 1
-        },
-        {
-          "ability_score": {
-            "index": "int",
-            "name": "INT",
-            "url": "/api/ability-scores/int"
+          {
+            "option_type": "ability_bonus",
+            "ability_score": {
+              "index": "int",
+              "name": "INT",
+              "url": "/api/ability-scores/int"
+            },
+            "bonus": 1
           },
-          "bonus": 1
-        },
-        {
-          "ability_score": {
-            "index": "wis",
-            "name": "WIS",
-            "url": "/api/ability-scores/wis"
-          },
-          "bonus": 1
-        }
-      ]
+          {
+            "option_type": "ability_bonus",
+            "ability_score": {
+              "index": "wis",
+              "name": "WIS",
+              "url": "/api/ability-scores/wis"
+            },
+            "bonus": 1
+          }
+        ]
+      }
     },
     "alignment": "Half-elves share the chaotic bent of their elven heritage. They value both personal freedom and creative expression, demonstrating neither love of leaders nor desire for followers. They chafe at rules, resent others' demands, and sometimes prove unreliable, or at least unpredictable.",
     "age": "Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years.",
@@ -564,98 +638,155 @@
     "starting_proficiency_options": {
       "choose": 2,
       "type": "proficiencies",
-      "from": [
-        {
-          "index": "skill-acrobatics",
-          "name": "Skill: Acrobatics",
-          "url": "/api/proficiencies/skill-acrobatics"
-        },
-        {
-          "index": "skill-animal-handling",
-          "name": "Skill: Animal Handling",
-          "url": "/api/proficiencies/skill-animal-handling"
-        },
-        {
-          "index": "skill-arcana",
-          "name": "Skill: Arcana",
-          "url": "/api/proficiencies/skill-arcana"
-        },
-        {
-          "index": "skill-athletics",
-          "name": "Skill: Athletics",
-          "url": "/api/proficiencies/skill-athletics"
-        },
-        {
-          "index": "skill-deception",
-          "name": "Skill: Deception",
-          "url": "/api/proficiencies/skill-deception"
-        },
-        {
-          "index": "skill-history",
-          "name": "Skill: History",
-          "url": "/api/proficiencies/skill-history"
-        },
-        {
-          "index": "skill-insight",
-          "name": "Skill: Insight",
-          "url": "/api/proficiencies/skill-insight"
-        },
-        {
-          "index": "skill-intimidation",
-          "name": "Skill: Intimidation",
-          "url": "/api/proficiencies/skill-intimidation"
-        },
-        {
-          "index": "skill-investigation",
-          "name": "Skill: Investigation",
-          "url": "/api/proficiencies/skill-investigation"
-        },
-        {
-          "index": "skill-medicine",
-          "name": "Skill: Medicine",
-          "url": "/api/proficiencies/skill-medicine"
-        },
-        {
-          "index": "skill-nature",
-          "name": "Skill: Nature",
-          "url": "/api/proficiencies/skill-nature"
-        },
-        {
-          "index": "skill-perception",
-          "name": "Skill: Perception",
-          "url": "/api/proficiencies/skill-perception"
-        },
-        {
-          "index": "skill-performance",
-          "name": "Skill: Performance",
-          "url": "/api/proficiencies/skill-performance"
-        },
-        {
-          "index": "skill-persuasion",
-          "name": "Skill: Persuasion",
-          "url": "/api/proficiencies/skill-persuasion"
-        },
-        {
-          "index": "skill-religion",
-          "name": "Skill: Religion",
-          "url": "/api/proficiencies/skill-religion"
-        },
-        {
-          "index": "skill-sleight-of-hand",
-          "name": "Skill: Sleight of Hand",
-          "url": "/api/proficiencies/skill-sleight-of-hand"
-        },
-        {
-          "index": "skill-stealth",
-          "name": "Skill: Stealth",
-          "url": "/api/proficiencies/skill-stealth"
-        },
-        {
-          "index": "skill-survival",
-          "name": "Skill: Survival",
-          "url": "/api/proficiencies/skill-survival"
-        }
-      ]
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-acrobatics",
+              "name": "Skill: Acrobatics",
+              "url": "/api/proficiencies/skill-acrobatics"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-animal-handling",
+              "name": "Skill: Animal Handling",
+              "url": "/api/proficiencies/skill-animal-handling"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-arcana",
+              "name": "Skill: Arcana",
+              "url": "/api/proficiencies/skill-arcana"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-athletics",
+              "name": "Skill: Athletics",
+              "url": "/api/proficiencies/skill-athletics"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-deception",
+              "name": "Skill: Deception",
+              "url": "/api/proficiencies/skill-deception"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-history",
+              "name": "Skill: History",
+              "url": "/api/proficiencies/skill-history"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-insight",
+              "name": "Skill: Insight",
+              "url": "/api/proficiencies/skill-insight"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-intimidation",
+              "name": "Skill: Intimidation",
+              "url": "/api/proficiencies/skill-intimidation"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-investigation",
+              "name": "Skill: Investigation",
+              "url": "/api/proficiencies/skill-investigation"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-medicine",
+              "name": "Skill: Medicine",
+              "url": "/api/proficiencies/skill-medicine"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-nature",
+              "name": "Skill: Nature",
+              "url": "/api/proficiencies/skill-nature"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-perception",
+              "name": "Skill: Perception",
+              "url": "/api/proficiencies/skill-perception"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-performance",
+              "name": "Skill: Performance",
+              "url": "/api/proficiencies/skill-performance"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-persuasion",
+              "name": "Skill: Persuasion",
+              "url": "/api/proficiencies/skill-persuasion"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-religion",
+              "name": "Skill: Religion",
+              "url": "/api/proficiencies/skill-religion"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-sleight-of-hand",
+              "name": "Skill: Sleight of Hand",
+              "url": "/api/proficiencies/skill-sleight-of-hand"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-stealth",
+              "name": "Skill: Stealth",
+              "url": "/api/proficiencies/skill-stealth"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-survival",
+              "name": "Skill: Survival",
+              "url": "/api/proficiencies/skill-survival"
+            }
+          }
+        ]
+      }
     },
     "languages": [
       {
@@ -672,78 +803,123 @@
     "language_options": {
       "choose": 1,
       "type": "languages",
-      "from": [
-        {
-          "index": "dwarvish",
-          "name": "Dwarvish",
-          "url": "/api/languages/dwarvish"
-        },
-        {
-          "index": "giant",
-          "name": "Giant",
-          "url": "/api/languages/giant"
-        },
-        {
-          "index": "gnomish",
-          "name": "Gnomish",
-          "url": "/api/languages/gnomish"
-        },
-        {
-          "index": "goblin",
-          "name": "Goblin",
-          "url": "/api/languages/goblin"
-        },
-        {
-          "index": "halfling",
-          "name": "Halfling",
-          "url": "/api/languages/halfling"
-        },
-        {
-          "index": "orc",
-          "name": "Orc",
-          "url": "/api/languages/orc"
-        },
-        {
-          "index": "abyssal",
-          "name": "Abyssal",
-          "url": "/api/languages/abyssal"
-        },
-        {
-          "index": "celestial",
-          "name": "Celestial",
-          "url": "/api/languages/celestial"
-        },
-        {
-          "index": "draconic",
-          "name": "Draconic",
-          "url": "/api/languages/draconic"
-        },
-        {
-          "index": "deep-speech",
-          "name": "Deep Speech",
-          "url": "/api/languages/deep-speech"
-        },
-        {
-          "index": "infernal",
-          "name": "Infernal",
-          "url": "/api/languages/infernal"
-        },
-        {
-          "index": "primordial",
-          "name": "Primordial",
-          "url": "/api/languages/primordial"
-        },
-        {
-          "index": "sylvan",
-          "name": "Sylvan",
-          "url": "/api/languages/sylvan"
-        },
-        {
-          "index": "undercommon",
-          "name": "Undercommon",
-          "url": "/api/languages/undercommon"
-        }
-      ]
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "dwarvish",
+              "name": "Dwarvish",
+              "url": "/api/languages/dwarvish"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "giant",
+              "name": "Giant",
+              "url": "/api/languages/giant"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "gnomish",
+              "name": "Gnomish",
+              "url": "/api/languages/gnomish"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "goblin",
+              "name": "Goblin",
+              "url": "/api/languages/goblin"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "halfling",
+              "name": "Halfling",
+              "url": "/api/languages/halfling"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "orc",
+              "name": "Orc",
+              "url": "/api/languages/orc"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "abyssal",
+              "name": "Abyssal",
+              "url": "/api/languages/abyssal"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "celestial",
+              "name": "Celestial",
+              "url": "/api/languages/celestial"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "draconic",
+              "name": "Draconic",
+              "url": "/api/languages/draconic"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "deep-speech",
+              "name": "Deep Speech",
+              "url": "/api/languages/deep-speech"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "infernal",
+              "name": "Infernal",
+              "url": "/api/languages/infernal"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "primordial",
+              "name": "Primordial",
+              "url": "/api/languages/primordial"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "sylvan",
+              "name": "Sylvan",
+              "url": "/api/languages/sylvan"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "undercommon",
+              "name": "Undercommon",
+              "url": "/api/languages/undercommon"
+            }
+          }
+        ]
+      }
     },
     "language_desc": "You can speak, read, and write Common, Elvish, and one extra language of your choice.",
     "traits": [
@@ -827,6 +1003,11 @@
         "index": "relentless-endurance",
         "name": "Relentless Endurance",
         "url": "/api/traits/relentless-endurance"
+      },
+      {
+        "index": "menacing",
+        "name": "Menacing",
+        "url": "/api/traits/menacing"
       }
     ],
     "subraces": [],
