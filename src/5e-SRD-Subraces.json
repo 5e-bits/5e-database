@@ -73,78 +73,10 @@
     "languages": [],
     "language_options": {
       "choose": 1,
-      "from": [
-        {
-          "index": "dwarvish",
-          "name": "Dwarvish",
-          "url": "/api/languages/dwarvish"
-        },
-        {
-          "index": "giant",
-          "name": "Giant",
-          "url": "/api/languages/giant"
-        },
-        {
-          "index": "gnomish",
-          "name": "Gnomish",
-          "url": "/api/languages/gnomish"
-        },
-        {
-          "index": "goblin",
-          "name": "Goblin",
-          "url": "/api/languages/goblin"
-        },
-        {
-          "index": "halfling",
-          "name": "Halfling",
-          "url": "/api/languages/halfling"
-        },
-        {
-          "index": "orc",
-          "name": "Orc",
-          "url": "/api/languages/orc"
-        },
-        {
-          "index": "abyssal",
-          "name": "Abyssal",
-          "url": "/api/languages/abyssal"
-        },
-        {
-          "index": "celestial",
-          "name": "Celestial",
-          "url": "/api/languages/celestial"
-        },
-        {
-          "index": "draconic",
-          "name": "Draconic",
-          "url": "/api/languages/draconic"
-        },
-        {
-          "index": "deep-speech",
-          "name": "Deep Speech",
-          "url": "/api/languages/deep-speech"
-        },
-        {
-          "index": "infernal",
-          "name": "Infernal",
-          "url": "/api/languages/infernal"
-        },
-        {
-          "index": "primordial",
-          "name": "Primordial",
-          "url": "/api/languages/primordial"
-        },
-        {
-          "index": "sylvan",
-          "name": "Sylvan",
-          "url": "/api/languages/sylvan"
-        },
-        {
-          "index": "undercommon",
-          "name": "Undercommon",
-          "url": "/api/languages/undercommon"
-        }
-      ],
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      },
       "type": "language"
     },
     "racial_traits": [
