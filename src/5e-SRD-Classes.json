@@ -140,6 +140,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "any martial melee weapon",
                 "choose": 1,
                 "type": "equipment",
                 "from": {
@@ -173,14 +174,17 @@
             },
             {
               "option_type": "choice",
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "option_set_type": "equipment_category",
-                "equipment_category": {
-                  "index": "simple-weapons",
-                  "name": "Simple Weapons",
-                  "url": "/api/equipment-categories/simple-weapons"
+              "choice": {
+                "desc": "any simple weapon",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Simple Weapons",
+                    "url": "/api/equipment-categories/simple-weapons"
+                  }
                 }
               }
             }
@@ -568,6 +572,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "any simple weapon",
                 "choose": 1,
                 "type": "equipment",
                 "from": {
@@ -630,6 +635,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "any other musical instrument",
                 "choose": 1,
                 "type": "equipment",
                 "from": {
@@ -1193,6 +1199,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "any simple weapon",
                 "choose": 1,
                 "type": "equipment",
                 "from": {
@@ -1537,6 +1544,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "any simple weapon",
                 "choose": 1,
                 "type": "equipment",
                 "from": {
@@ -1571,14 +1579,15 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "any simple melee weapon",
                 "choose": 1,
                 "type": "equipment",
                 "from": {
                   "option_set_type": "equipment_category",
                   "equipment_category": {
-                    "index": "simple-weapons",
-                    "name": "Simple Weapons",
-                    "url": "/api/equipment-categories/simple-weapons"
+                    "index": "simple-melee-weapons",
+                    "name": "Simple Melee Weapons",
+                    "url": "/api/equipment-categories/simple-melee-weapons"
                   }
                 }
               }
@@ -1865,6 +1874,7 @@
                 {
                   "option_type": "choice",
                   "choice": {
+                    "desc": "a martial weapon",
                     "choose": 1,
                     "type": "equipment",
                     "from": {
@@ -1891,6 +1901,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "two martial weapons",
                 "choose": 2,
                 "type": "equipment",
                 "from": {
@@ -2058,6 +2069,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "artisan's tools",
                 "type": "proficiencies",
                 "choose": 1,
                 "from": {
@@ -2222,6 +2234,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "musical instrument",
                 "type": "proficiencies",
                 "choose": 1,
                 "from": {
@@ -2427,6 +2440,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "any simple weapon",
                 "choose": 1,
                 "type": "equipment",
                 "from": {
@@ -2635,6 +2649,7 @@
                 {
                   "option_type": "choice",
                   "choice": {
+                    "desc": "a martial weapon",
                     "choose": 1,
                     "type": "equipment",
                     "from": {
@@ -2661,6 +2676,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "two martial weapons",
                 "choose": 2,
                 "type": "equipment",
                 "from": {
@@ -2695,6 +2711,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "any simple weapon",
                 "choose": 1,
                 "type": "equipment",
                 "from": {
@@ -3028,6 +3045,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "two simple melee weapons",
                 "choose": 2,
                 "type": "equipment",
                 "from": {
@@ -3806,6 +3824,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "any simple weapon",
                 "choose": 1,
                 "type": "equipment",
                 "from": {
@@ -3840,6 +3859,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "arcane focus",
                 "choose": 1,
                 "type": "equipment",
                 "from": {
@@ -4101,6 +4121,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "any simple weapon",
                 "choose": 1,
                 "type": "equipment",
                 "from": {
@@ -4135,6 +4156,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "arcane focus",
                 "choose": 1,
                 "type": "equipment",
                 "from": {
@@ -4179,7 +4201,7 @@
         }
       },
       {
-        "desc": "simple weapon",
+        "desc": "any simple weapon",
         "choose": 1,
         "type": "equipment",
         "from": {
@@ -4434,6 +4456,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "desc": "arcane focus",
                 "choose": 1,
                 "type": "equipment",
                 "from": {
