@@ -2060,6 +2060,64 @@
     "hit_die": 8,
     "proficiency_choices": [
       {
+        "desc": "Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-acrobatics",
+                "name": "Skill: Acrobatics",
+                "url": "/api/proficiencies/skill-acrobatics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-athletics",
+                "name": "Skill: Athletics",
+                "url": "/api/proficiencies/skill-athletics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-history",
+                "name": "Skill: History",
+                "url": "/api/proficiencies/skill-history"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Skill: Insight",
+                "url": "/api/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Skill: Religion",
+                "url": "/api/proficiencies/skill-religion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-stealth",
+                "name": "Skill: Stealth",
+                "url": "/api/proficiencies/skill-stealth"
+              }
+            }
+          ]
+        }
+      },
+      {
         "desc": "Choose one type of artisan’s tools or one musical instrument",
         "type": "proficiencies",
         "choose": 1,
@@ -2322,64 +2380,6 @@
                     }
                   ]
                 }
-              }
-            }
-          ]
-        }
-      },
-      {
-        "desc": "Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth",
-        "choose": 2,
-        "type": "proficiencies",
-        "from": {
-          "option_set_type": "options_array",
-          "options": [
-            {
-              "option_type": "reference",
-              "item": {
-                "index": "skill-acrobatics",
-                "name": "Skill: Acrobatics",
-                "url": "/api/proficiencies/skill-acrobatics"
-              }
-            },
-            {
-              "option_type": "reference",
-              "item": {
-                "index": "skill-athletics",
-                "name": "Skill: Athletics",
-                "url": "/api/proficiencies/skill-athletics"
-              }
-            },
-            {
-              "option_type": "reference",
-              "item": {
-                "index": "skill-history",
-                "name": "Skill: History",
-                "url": "/api/proficiencies/skill-history"
-              }
-            },
-            {
-              "option_type": "reference",
-              "item": {
-                "index": "skill-insight",
-                "name": "Skill: Insight",
-                "url": "/api/proficiencies/skill-insight"
-              }
-            },
-            {
-              "option_type": "reference",
-              "item": {
-                "index": "skill-religion",
-                "name": "Skill: Religion",
-                "url": "/api/proficiencies/skill-religion"
-              }
-            },
-            {
-              "option_type": "reference",
-              "item": {
-                "index": "skill-stealth",
-                "name": "Skill: Stealth",
-                "url": "/api/proficiencies/skill-stealth"
               }
             }
           ]
