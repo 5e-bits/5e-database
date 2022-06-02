@@ -97,22 +97,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The aboleth makes three tentacle attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Tentacle",
-                "count": 3,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Tentacle",
+            "count": 3,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Tentacle",
@@ -424,39 +417,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -683,39 +662,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -958,39 +923,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -1247,39 +1198,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -1532,39 +1469,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -1829,39 +1752,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -2140,39 +2049,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -2399,39 +2294,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -2725,39 +2606,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -3007,39 +2874,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -3256,22 +3109,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The elemental makes two slam attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Slam",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Slam",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Slam",
@@ -3399,39 +3245,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -3648,39 +3480,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -3923,39 +3741,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -4216,39 +4020,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -4505,39 +4295,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -4806,39 +4582,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -5121,39 +4883,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -5380,39 +5128,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -5654,39 +5388,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -5940,39 +5660,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Frightful Presence",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Frightful Presence",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -6320,22 +6026,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The sphinx makes two claw attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Claw",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Claw",
@@ -6509,22 +6208,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The armor makes two melee attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Slam",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Slam",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Slam",
@@ -6676,22 +6368,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The ape makes two fist attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Fist",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Fist",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Fist",
@@ -7086,22 +6771,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The assassin makes two shortsword attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Shortsword",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Shortsword",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Shortsword",
@@ -7667,33 +7345,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The balor makes two attacks: one with its longsword and one with its whip.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Longsword",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Whip",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Longsword",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Whip",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Longsword",
@@ -7894,8 +7559,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -8092,8 +7758,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The devil makes three melee attacks: one with its tail and two with its claws. Alternatively, it can use Hurl Flame twice.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -8388,33 +8055,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The devil makes two attacks: one with its beard and one with its glaive.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Beard",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Glaive",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Beard",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Glaive",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Beard",
@@ -8500,33 +8154,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The behir makes two attacks: one with its bite and one to constrict.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Constrict",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Constrict",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -8705,33 +8346,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The bear makes two attacks: one with its bite and one with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claws",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claws",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -9480,33 +9108,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The devil makes three attacks: two with its claws and one with its sting.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Sting",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
+          },
+          {
+            "action_name": "Sting",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Claw",
@@ -9913,33 +9528,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The bear makes two attacks: one with its bite and one with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claws",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Claws",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -10329,8 +9931,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The centaur makes two attacks: one with its pike and one with its hooves or two with its longbow.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -10489,22 +10092,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The devil makes two attacks with its chains.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Chain",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Chain",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Chain",
@@ -10590,8 +10186,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The chimera makes three attacks: one with its bite, one with its horns, and one with its claws. When its fire breath is available, it can use the breath in place of its bite or horns.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -10805,8 +10402,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The chuul makes two pincer attacks. If the chuul is grappling a creature, the chuul can also use its tentacles once.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -10961,22 +10559,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The golem makes two slam attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Slam",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Slam",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Slam",
@@ -11062,33 +10653,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The cloaker makes two attacks: one with its bite and one with its tail.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Tail",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Tail",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -11315,22 +10893,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The giant makes two morningstar attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Morningstar",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Morningstar",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Morningstar",
@@ -12175,22 +11746,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The fanatic makes two melee attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Dagger",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Dagger",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Dagger",
@@ -12415,22 +11979,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dog makes two bite attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Bite",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -12786,22 +12343,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The deva makes two melee attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Mace",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Mace",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Mace",
@@ -13108,22 +12658,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The djinni makes three scimitar attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Scimitar",
-                "count": 3,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Scimitar",
+            "count": 3,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Scimitar",
@@ -13254,22 +12797,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The doppelganger makes two melee attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Slam",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Slam",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Slam",
@@ -13406,8 +12942,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The dragon turtle makes three attacks: one with its bite and two with its claws. It can make one tail attack in place of its two claw attacks.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -13567,33 +13104,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dretch makes two attacks: one with its bite and one with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claws",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claws",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -13755,8 +13279,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The drider makes three attacks, either with its longsword or its longbow. It can replace one of those attacks with a bite attack.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -14727,22 +14252,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The elemental makes two slam attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Slam",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Slam",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Slam",
@@ -14928,8 +14446,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The efreeti makes two scimitar attacks or uses its Hurl Flame twice.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -15217,8 +14736,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The erinyes makes three attacks",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -15423,33 +14943,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The ettercap makes two attacks: one with its bite and one with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claws",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claws",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -15569,33 +15076,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The ettin makes two attacks: one with its battleaxe and one with its morningstar.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Battleaxe",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Morningstar",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Battleaxe",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Morningstar",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Battleaxe",
@@ -15730,22 +15224,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The elemental makes two touch attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Touch",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Touch",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Touch",
@@ -15838,22 +15325,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The giant makes two greatsword attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Greatsword",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Greatsword",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Greatsword",
@@ -15982,22 +15462,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The golem makes two slam attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Slam",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Slam",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Slam",
@@ -16321,22 +15794,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The giant makes two greataxe attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Greataxe",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Greataxe",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Greataxe",
@@ -16429,33 +15895,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The gargoyle makes two attacks: one with its bite and one with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claws",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claws",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -16975,22 +16428,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The ape makes two fist attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Fist",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Fist",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Fist",
@@ -17065,33 +16511,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The badger makes two attacks: one with its bite and one with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claws",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claws",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -17485,33 +16918,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The crocodile makes two attacks: one with its bite and one with its tail.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Tail",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Tail",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -17594,33 +17014,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The eagle makes two attacks: one with its beak and one with its talons.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Beak",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Talons",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Beak",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Talons",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Beak",
@@ -18431,33 +17838,20 @@
       },
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The scorpion makes three attacks: two with its claws and one with its sting.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Sting",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
+          },
+          {
+            "action_name": "Sting",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Sting",
@@ -18812,33 +18206,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The vulture makes two attacks: one with its beak and one with its talons.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Beak",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Talons",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Beak",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Talons",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Beak",
@@ -19136,33 +18517,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The gibbering mouther makes one bite attack and, if it can, uses its Blinding Spittle.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bites",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Blinding Spittle",
-                    "count": 1,
-                    "type": "ranged"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bites",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Blinding Spittle",
+            "count": 1,
+            "type": "ranged"
           }
-        }
+        ]
       },
       {
         "name": "Bites",
@@ -19350,8 +18718,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The glabrezu makes four attacks: two with its pincers and two with its fists. Alternatively, it makes two attacks with its pincers and casts one spell.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -19520,8 +18889,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The gladiator makes three melee attacks or two ranged attacks.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -20594,33 +19964,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The grick makes one attack with its tentacles. If that attack hits, the grick can make one beak attack against the same target.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Tentacles",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Beak",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Tentacles",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Beak",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Tentacles",
@@ -20704,33 +20061,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The griffon makes two attacks: one with its beak and one with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Beak",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claws",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Beak",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claws",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Beak",
@@ -21350,22 +20694,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The sphinx makes two claw attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Claw",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Claw",
@@ -21434,33 +20771,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Longsword",
-                    "count": 2,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Shortsword",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Longsword",
+            "count": 2,
+            "type": "melee"
+          },
+          {
+            "action_name": "Shortsword",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Longsword",
@@ -21592,33 +20916,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The harpy makes two attacks: one with its claws and one with its club.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Claws",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Club",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Claws",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Club",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Claws",
@@ -21914,33 +21225,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The hezrou makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claws",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claws",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -22024,22 +21322,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The giant makes two greatclub attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Greatclub",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Greatclub",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Greatclub",
@@ -22122,33 +21413,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The hippogriff makes two attacks: one with its beak and one with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Beak",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claws",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Beak",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claws",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Beak",
@@ -22429,8 +21707,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The devil makes three melee attacks: two with its fork and one with its tail. It can use Hurl Flame in place of any melee attack.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -22674,22 +21953,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The hydra makes as many bite attacks as it has heads.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Bite",
-                "count": "Number of Heads",
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": "Number of Heads",
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -22858,39 +22130,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The devil makes three attacks: one with its bite, one with its claws, and one with its tail.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claws",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Tail",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claws",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Tail",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -23352,22 +22610,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The stalker makes two slam attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Slam",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Slam",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Slam",
@@ -23474,8 +22725,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The golem makes two melee attacks.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -23770,22 +23022,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The knight makes two melee attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Greatsword",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Greatsword",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Greatsword",
@@ -24013,8 +23258,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The kraken makes three tentacle attacks, each of which it can replace with one use of Fling.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -24295,8 +23541,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The lamia makes two attacks: one with its claws and one with its dagger or Intoxicating Touch.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -25033,8 +24280,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The lizardfolk makes two melee attacks, each one with a different weapon.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -25744,8 +24992,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -25918,33 +25167,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The marilith can make seven attacks: six with its longswords and one with its tail.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Longsword",
-                    "count": 6,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Tail",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Longsword",
+            "count": 6,
+            "type": "melee"
+          },
+          {
+            "action_name": "Tail",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Longsword",
@@ -26141,8 +25377,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The medusa makes either three melee attacks--one with its snake hair and two with its shortsword--or two ranged attacks with its longbow.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -26365,8 +25602,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The merrow makes two attacks: one with its bite and one with its claws or harpoon.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -26877,33 +26115,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The mummy can use its Dreadful Glare and makes one attack with its rotting fist.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Dreadful Glare",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Rotting Fist",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Dreadful Glare",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Rotting Fist",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Rotting Fist",
@@ -27167,33 +26392,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The mummy can use its Dreadful Glare and makes one attack with its rotting fist.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Dreadful Glare",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Rotting Fist",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Dreadful Glare",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Rotting Fist",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Rotting Fist",
@@ -27359,39 +26571,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The nalfeshnee uses Horror Nimbus if it can. It then makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Horror Nimbus",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Horror Nimbus",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -28282,8 +27480,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The oni makes two attacks, either with its claws or its glaive.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -28489,33 +27688,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The otyugh makes three attacks: one with its bite and two with its tentacles.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Tentacle",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Tentacle",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -28696,33 +27882,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The owlbear makes two attacks: one with its beak and one with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Beak",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claws",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Beak",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claws",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Beak",
@@ -29153,45 +28326,30 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The pit fiend makes four attacks: one with its bite, one with its claw, one with its mace, and one with its tail.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Mace",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Tail",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Mace",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Tail",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -29451,22 +28609,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The planetar makes two melee attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Greatsword",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Greatsword",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Greatsword",
@@ -29672,33 +28823,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The bear makes two attacks: one with its bite and one with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claws",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claws",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -30093,33 +29231,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The worm makes two attacks: one with its bite and one with its stinger.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Tail Stinger",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Tail Stinger",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -30507,22 +29632,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The rakshasa makes two claw attacks",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Claw",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Claw",
@@ -31127,33 +30245,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The roc makes two attacks: one with its beak and one with its talons.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Beak",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Talons",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Beak",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Talons",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Beak",
@@ -31253,39 +30358,25 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The roper makes four attacks with its tendrils, uses Reel, and makes one attack with its bite.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Tendril",
-                    "count": 4,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Reel",
-                    "count": 1,
-                    "type": "ability"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Tendril",
+            "count": 4,
+            "type": "melee"
+          },
+          {
+            "action_name": "Reel",
+            "count": 1,
+            "type": "ability"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -31623,8 +30714,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The sahuagin makes two melee attacks: one with its bite and one with its claws or spear.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -31792,33 +30884,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The salamander makes two attacks: one with its spear and one with its tail.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Spear",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Tail",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Spear",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Tail",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Spear",
@@ -32124,8 +31203,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The scout makes two melee attacks or two ranged attacks.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -32479,33 +31559,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The shambling mound makes two slam attacks. If both attacks hit a Medium or smaller target, the target is grappled (escape DC 14), and the shambling mound uses its Engulf on it.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Slam",
-                    "count": 2,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Engulf",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Slam",
+            "count": 2,
+            "type": "melee"
+          },
+          {
+            "action_name": "Engulf",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Slam",
@@ -32603,22 +31670,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The guardian makes two fist attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Fist",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Fist",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Fist",
@@ -33115,22 +32175,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The solar makes two greatsword attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Greatsword",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Greatsword",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Greatsword",
@@ -33809,22 +32862,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The spy makes two melee attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Shortsword",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Shortsword",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Shortsword",
@@ -34133,22 +33179,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The giant makes two greatclub attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Greatclub",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Greatclub",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Greatclub",
@@ -34271,22 +33310,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The golem makes two slam attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Slam",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Slam",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Slam",
@@ -34493,22 +33525,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The giant makes two greatsword attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Greatsword",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Greatsword",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Greatsword",
@@ -35813,8 +34838,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The tarrasque can use its Frightful Presence. It then makes five attacks: one with its bite, two with its claws, one with its horns, and one with its tail. It can use its Swallow instead of its bite.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -36037,22 +35063,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The thug makes two melee attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Mace",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Mace",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Mace",
@@ -36229,22 +35248,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The treant makes two slam attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Slam",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Slam",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Slam",
@@ -36488,33 +35500,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The troll makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -36590,33 +35589,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The tyrannosaurus makes two attacks: one with its bite and one with its tail. It can't make both attacks against the same target.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Tail",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Tail",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -36780,33 +35766,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The unicorn makes two attacks: one with its hooves and one with its horn.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Hooves",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Horn",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Hooves",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Horn",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Hooves",
@@ -36979,7 +35952,40 @@
     "actions": [
       {
         "name": "Multiattack (Vampire Form Only)",
-        "desc": "The vampire makes two attacks, only one of which can be a bite attack."
+        "multiattack_type": "action_options",
+        "desc": "The vampire makes two attacks, only one of which can be a bite attack.",
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "multiple",
+                "items": [
+                  {
+                    "option_type": "action",
+                    "action_name": "Unarmed Strike (Vampire Form Only)",
+                    "count": 1,
+                    "type": "melee"
+                  },
+                  {
+                    "option_type": "action",
+                    "action_name": "Bite (Bat or Vampire Form Only)",
+                    "count": 1,
+                    "type": "melee"
+                  }
+                ]
+              },
+              {
+                "option_type": "action",
+                "action_name": "Unarmed Strike (Vampire Form Only)",
+                "count": 2,
+                "type": "melee"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Unarmed Strike (Vampire Form Only)",
@@ -37143,8 +36149,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The vampire makes two attacks, only one of which can be a bite attack.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -37268,33 +36275,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Longsword",
-                    "count": 2,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Shortsword",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Longsword",
+            "count": 2,
+            "type": "melee"
+          },
+          {
+            "action_name": "Shortsword",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Longsword",
@@ -37420,22 +36414,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The fungus makes 1d4 Rotting Touch attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Rotting Touch",
-                "count": "1d4",
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Rotting Touch",
+            "count": "1d4",
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Rotting Touch",
@@ -37532,33 +36519,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The vrock makes two attacks: one with its beak and one with its talons.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Beak",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Talons",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Beak",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Talons",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Beak",
@@ -37901,22 +36875,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The elemental makes two slam attacks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Slam",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Slam",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Slam",
@@ -38102,22 +37069,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "In bear form, the werebear makes two claw attacks. In humanoid form, it makes two greataxe attacks. In hybrid form, it can attack like a bear or a humanoid.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Claw",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -38218,22 +37178,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "In bear form, the werebear makes two claw attacks. In humanoid form, it makes two greataxe attacks. In hybrid form, it can attack like a bear or a humanoid.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Greataxe",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Greataxe",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Greataxe",
@@ -38320,8 +37273,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "In bear form, the werebear makes two claw attacks. In humanoid form, it makes two greataxe attacks. In hybrid form, it can attack like a bear or a humanoid.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -38568,22 +37522,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The wereboar makes two attacks, only one of which can be with its tusks.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Maul",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Maul",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Maul",
@@ -38677,8 +37624,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The wereboar makes two attacks, only one of which can be with its tusks.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -38818,8 +37766,9 @@
     "actions": [
       {
         "name": "Multiattack (Humanoid or Hybrid Form Only)",
+        "multiattack_type": "action_options",
         "desc": "The wererat makes two attacks, only one of which can be a bite.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -38965,8 +37914,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The wererat makes two attacks, only one of which can be a bite.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -39253,8 +38203,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "In humanoid form, the weretiger makes two scimitar attacks or two longbow attacks. In hybrid form, it can attack like a humanoid or make two claw attacks.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -39397,8 +38348,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "In humanoid form, the weretiger makes two scimitar attacks or two longbow attacks. In hybrid form, it can attack like a humanoid or make two claw attacks.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -39674,22 +38626,15 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The werewolf makes two attacks: two with its spear (humanoid form) or one with its bite and one with its claws (hybrid form).",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "action",
-                "action_name": "Spear",
-                "count": 2,
-                "type": "melee"
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Spear",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Spear",
@@ -39796,33 +38741,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The werewolf makes two attacks: two with its spear (humanoid form) or one with its bite and one with its claws (hybrid form).",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claws",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claws",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -40147,8 +39079,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The wight makes two longsword attacks or two longbow attacks. It can use its Life Drain in place of one longsword attack.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -40783,8 +39716,9 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "action_options",
         "desc": "The wyvern makes two attacks: one with its bite and one with its stinger. While flying, it can use its claws in place of one other attack.",
-        "options": {
+        "action_options": {
           "choose": 1,
           "type": "action",
           "from": {
@@ -40961,33 +39895,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The xorn makes three claw attacks and one bite attack.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 3,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 3,
+            "type": "melee"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -41113,33 +40034,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -41295,33 +40203,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -41485,33 +40380,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -41699,33 +40581,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -41907,33 +40776,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -42129,33 +40985,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -42349,33 +41192,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -42531,33 +41361,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -42728,33 +41545,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
@@ -42935,33 +41739,20 @@
     "actions": [
       {
         "name": "Multiattack",
+        "multiattack_type": "actions",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
-        "options": {
-          "choose": 1,
-          "type": "action",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "action",
-                    "action_name": "Bite",
-                    "count": 1,
-                    "type": "melee"
-                  },
-                  {
-                    "option_type": "action",
-                    "action_name": "Claw",
-                    "count": 2,
-                    "type": "melee"
-                  }
-                ]
-              }
-            ]
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
           }
-        }
+        ]
       },
       {
         "name": "Bite",
