@@ -7467,14 +7467,6 @@
       {
         "name": "Teleport",
         "desc": "The balor magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
-      },
-      {
-        "name": "Variant: Summon Demon",
-        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA balor has a 50 percent chance of summoning 1d8 vrocks, 1d6 hezrous, 1d4 glabrezus, 1d3 nalfeshnees, 1d2 mariliths, or one goristro.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
-        "usage": {
-          "type": "per day",
-          "times": 1
-        }
       }
     ],
     "url": "/api/monsters/balor"
@@ -12689,10 +12681,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "Variant: Genie Powers",
-        "desc": "Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality.\n\nDisguises.\nSome genies can veil themselves in illusion to pass as other similarly shaped creatures. Such genies can innately cast the disguise self spell at will, often with a longer duration than is normal for that spell. Mightier genies can cast the true polymorph spell one to three times per day, possibly with a longer duration than normal. Such genies can change only their own shape, but a rare few can use the spell on other creatures and objects as well.\nWishes.\nThe genie power to grant wishes is legendary among mortals. Only the most potent genies, such as those among the nobility, can do so. A particular genie that has this power can grant one to three wishes to a creature that isn't a genie. Once a genie has granted its limit of wishes, it can't grant wishes again for some amount of time (usually 1 year). and cosmic law dictates that the same genie can expend its limit of wishes on a specific creature only once in that creature's existence.\nTo be granted a wish, a creature within 60 feet of the genie states a desired effect to it. The genie can then cast the wish spell on the creature's behalf to bring about the effect. Depending on the genie's nature, the genie might try to pervert the intent of the wish by exploiting the wish's poor wording. The perversion of the wording is usually crafted to be to the genie's benefit."
       }
     ],
     "actions": [
@@ -14098,14 +14086,6 @@
           "dc_value": 10,
           "success_type": "none"
         }
-      },
-      {
-        "name": "Variant: Summon Mephits",
-        "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
-        "usage": {
-          "type": "per day",
-          "times": 1
-        }
       }
     ],
     "url": "/api/monsters/dust-mephit"
@@ -14436,10 +14416,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "Variant: Genie Powers",
-        "desc": "Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality.\n\nDisguises.\nSome genies can veil themselves in illusion to pass as other similarly shaped creatures. Such genies can innately cast the disguise self spell at will, often with a longer duration than is normal for that spell. Mightier genies can cast the true polymorph spell one to three times per day, possibly with a longer duration than normal. Such genies can change only their own shape, but a rare few can use the spell on other creatures and objects as well.\nWishes.\nThe genie power to grant wishes is legendary among mortals. Only the most potent genies, such as those among the nobility, can do so. A particular genie that has this power can grant one to three wishes to a creature that isn't a genie. Once a genie has granted its limit of wishes, it can't grant wishes again for some amount of time (usually 1 year). and cosmic law dictates that the same genie can expend its limit of wishes on a specific creature only once in that creature's existence.\nTo be granted a wish, a creature within 60 feet of the genie states a desired effect to it. The genie can then cast the wish spell on the creature's behalf to bring about the effect. Depending on the genie's nature, the genie might try to pervert the intent of the wish by exploiting the wish's poor wording. The perversion of the wording is usually crafted to be to the genie's benefit."
       }
     ],
     "actions": [
@@ -14749,13 +14725,6 @@
                 "count": 1,
                 "type": "ranged"
               }
-            ],
-            [
-              {
-                "name": "Variant: Rope of Entanglement",
-                "count": 2,
-                "type": "ability"
-              }
             ]
           ]
         }
@@ -14819,10 +14788,6 @@
             "damage_dice": "3d8"
           }
         ]
-      },
-      {
-        "name": "Variant: Rope of Entanglement",
-        "desc": "Some erinyes carry a rope of entanglement (detailed in the Dungeon Master's Guide). When such an erinyes uses its Multiattack, the erinyes can use the rope in place of two of the attacks."
       }
     ],
     "reactions": [
@@ -14972,21 +14937,6 @@
           "min_value": 5
         },
         "attack_bonus": 4
-      },
-      {
-        "name": "Variant: Web Garrote",
-        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one Medium or Small creature against which the ettercap has advantage on the attack roll. Hit: 4 (1d4 + 2) bludgeoning damage, and the target is grappled (escape DC 12). Until this grapple ends, the target can't breathe, and the ettercap has advantage on attack rolls against it.",
-        "attack_bonus": 4,
-        "damage": [
-          {
-            "damage_type": {
-              "index": "bludgeoning",
-              "name": "Bludgeoning",
-              "url": "/api/damage-types/bludgeoning"
-            },
-            "damage_dice": "1d4+2"
-          }
-        ]
       }
     ],
     "url": "/api/monsters/ettercap"
@@ -17435,16 +17385,6 @@
     "languages": "",
     "challenge_rating": 0.25,
     "xp": 50,
-    "special_abilities": [
-      {
-        "name": "Variant: Hold Breath",
-        "desc": "The lizard can hold its breath for 15 minutes. (A lizard that has this trait also has a swimming speed of 30 feet.)"
-      },
-      {
-        "name": "Variant: Spider Climb",
-        "desc": "The lizard can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
-      }
-    ],
     "actions": [
       {
         "name": "Bite",
@@ -18797,14 +18737,6 @@
             "damage_dice": "2d4+2"
           }
         ]
-      },
-      {
-        "name": "Variant: Summon Demon",
-        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA glabrezu has a 30 percent chance of summoning 1d3 vrocks, 1d2 hezrous, or one glabrezu.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
-        "usage": {
-          "type": "per day",
-          "times": 1
-        }
       }
     ],
     "url": "/api/monsters/glabrezu"
@@ -21254,14 +21186,6 @@
             "damage_dice": "2d6+4"
           }
         ]
-      },
-      {
-        "name": "Variant: Summon Demon",
-        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA hezrou has a 30 percent chance of summoning 2d6 dretches or one hezrou.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
-        "usage": {
-          "type": "per day",
-          "times": 1
-        }
       }
     ],
     "url": "/api/monsters/hezrou"
@@ -22351,14 +22275,6 @@
             "damage_dice": "2d4"
           }
         ]
-      },
-      {
-        "name": "Variant: Summon Mephits",
-        "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
-        "usage": {
-          "type": "per day",
-          "times": 1
-        }
       }
     ],
     "url": "/api/monsters/ice-mephit"
@@ -22449,10 +22365,6 @@
       {
         "name": "Magic Resistance",
         "desc": "The imp has advantage on saving throws against spells and other magical effects."
-      },
-      {
-        "name": "Variant: Familiar",
-        "desc": "The imp can serve another creature as a familiar, forming a telepathic bond with its willing master. While the two are bonded, the master can sense what the quasit senses as long as they are within 1 mile of each other. While the imp is within 10 feet of its master, the master shares the quasit's Magic Resistance trait. At any time and for any reason, the imp can end its service as a familiar, ending the telepathic bond."
       }
     ],
     "actions": [
@@ -24697,14 +24609,6 @@
             "damage_dice": "2d6"
           }
         ]
-      },
-      {
-        "name": "Variant: Summon Mephits",
-        "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
-        "usage": {
-          "type": "per day",
-          "times": 1
-        }
       }
     ],
     "url": "/api/monsters/magma-mephit"
@@ -25116,14 +25020,6 @@
       {
         "name": "Teleport",
         "desc": "The marilith magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
-      },
-      {
-        "name": "Variant: Summon Demon",
-        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA marilith has a 50 percent chance of summoning 1d6 vrocks, 1d4 hezrous, 1d3 glabrezus, 1d2 nalfeshnees, or one marilith.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
-        "usage": {
-          "type": "per day",
-          "times": 1
-        }
       }
     ],
     "reactions": [
@@ -26520,14 +26416,6 @@
       {
         "name": "Teleport",
         "desc": "The nalfeshnee magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
-      },
-      {
-        "name": "Variant: Summon Demon",
-        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA nalfeshnee has a 50 percent chance of summoning 1d4 vrocks, 1d3 hezrous, 1d2 glabrezus, or one nalfeshnee.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
-        "usage": {
-          "type": "per day",
-          "times": 1
-        }
       }
     ],
     "url": "/api/monsters/nalfeshnee"
@@ -29024,10 +28912,6 @@
       {
         "name": "Limited Telepathy",
         "desc": "The pseudodragon can magically communicate simple ideas, emotions, and images telepathically with any creature within 100 ft. of it that can understand a language."
-      },
-      {
-        "name": "Variant: Familiar",
-        "desc": "The pseudodragon can serve another creature as a familiar, forming a magic, telepathic bond with that willing companion. While the two are bonded, the companion can sense what the pseudodragon senses as long as they are within 1 mile of each other. While the pseudodragon is within 10 feet of its companion, the companion shares the pseudodragon's Magic Resistance trait. At any time and for any reason, the pseudodragon can end its service as a familiar, ending the telepathic bond."
       }
     ],
     "actions": [
@@ -29233,10 +29117,6 @@
       {
         "name": "Magic Resistance",
         "desc": "The quasit has advantage on saving throws against spells and other magical effects."
-      },
-      {
-        "name": "Variant: Familiar",
-        "desc": "The quasit can serve another creature as a familiar, forming a telepathic bond with its willing master. While the two are bonded, the master can sense what the quasit senses as long as they are within 1 mile of each other. While the quasit is within 10 feet of its master, the master shares the quasit's Magic Resistance trait. At any time and for any reason, the quasit can end its service as a familiar, ending the telepathic bond."
       }
     ],
     "actions": [
@@ -30956,10 +30836,6 @@
             "damage_dice": "1d6+3"
           }
         ]
-      },
-      {
-        "name": "Variant: Panpipes",
-        "desc": "Gentle Lullaby. The creature falls asleep and is unconscious for 1 minute. The effect ends if the creature takes damage or if someone takes an action to shake the creature awake."
       }
     ],
     "url": "/api/monsters/satyr"
@@ -32929,14 +32805,6 @@
             "damage_dice": "1d8"
           }
         ]
-      },
-      {
-        "name": "Variant: Summon Mephits",
-        "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
-        "usage": {
-          "type": "per day",
-          "times": 1
-        }
       }
     ],
     "url": "/api/monsters/steam-mephit"
@@ -35375,10 +35243,6 @@
       {
         "name": "Regeneration",
         "desc": "The troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate."
-      },
-      {
-        "name": "Variant: Loathsome Limbs",
-        "desc": "Whenever the troll takes at least 15 slashing damage at one time, roll a d20 to determine what else happens to it:\n1-10: Nothing else happens.\n11-14: One leg is severed from the troll if it has any legs left.\n15- 18: One arm is severed from the troll if it has any arms left.\n19-20: The troll is decapitated, but the troll dies only if it can't regenerate. If it dies, so does the severed head.\nIf the troll finishes a short or long rest without reattaching a severed limb or head, the part regrows. At that point, the severed part dies. Until then, a severed part acts on the troll's initiative and has its own action and movement. A severed part has AC 13, 10 hit points, and the troll's Regeneration trait.\nA severed leg is unable to attack and has a speed of 5 feet.\nA severed arm has a speed of 5 feet and can make one claw attack on its turn, with disadvantage on the attack roll unless the troll can see the arm and its target. Each time the troll loses an arm, it loses a claw attack.\nIf its head is severed, the troll loses its bite attack and its body is blinded unless the head can see it. The severed head has a speed of 0 feet and the troll's Keen Smell trait. It can make a bite attack but only against a target in its space.\nThe troll's speed is halved if it's missing a leg. If it loses both legs, it falls prone. If it has both arms, it can crawl. With only one arm, it can still crawl, but its speed is halved. With no arms or legs, its speed is 0, and it can't benefit from bonuses to speed."
       }
     ],
     "actions": [
@@ -36786,14 +36650,6 @@
           },
           "dc_value": 14,
           "success_type": "none"
-        }
-      },
-      {
-        "name": "Variant: Summon Demon",
-        "desc": "The demon chooses what to summon and attempts a magical summoning.\nA vrock has a 30 percent chance of summoning 2d4 dretches or one vrock.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
-        "usage": {
-          "type": "per day",
-          "times": 1
         }
       }
     ],
