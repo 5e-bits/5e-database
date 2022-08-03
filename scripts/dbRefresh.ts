@@ -1,5 +1,6 @@
+import { readdirSync, unlinkSync, writeFileSync } from "fs";
+
 import { execSync } from "child_process";
-import { readdirSync, readFileSync, writeFileSync, unlinkSync } from "fs";
 
 // check the environment variable is set
 const mongodb_uri = process.env.MONGODB_URI;
