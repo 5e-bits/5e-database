@@ -2411,7 +2411,7 @@
   },
   {
     "index": "compelled-duel",
-    "name": "Compelled-duel",
+    "name": "Compelled Duel",
     "desc": [
       "You attempt to compel a creature into a duel. One creature that you can see within range must make a Wisdom saving throw. On a failed save, the creature is drawn to you, compelled by your divine demand. For the duration, it has disadvantage on attack rolls against creatures other than you, and must make a Wisdom saving throw each time it attempts to move to a space that is more than 30 feet away from you; if it succeeds on this saving throw, this spell doesn’t restrict the target’s movement for that turn.",
       "The spell ends if you attack any other creature, if you cast a spell that targets a hostile creature other than the target, if a creature friendly to you damages the target or casts a harmful spell on it, or if you end your turn more than 30 feet away from the target."
@@ -12631,6 +12631,55 @@
       }
     ],
     "url": "/api/spells/scrying"
+  },
+  {
+    "index": "searing-smite",
+    "name": "Searing Smite",
+    "desc": [
+      "The next time you hit a creature with a melee weapon attack during the spell’s duration, your weapon flares with white-hot intensity, and the attack deals an extra 1d6 fire damage to the target and causes the target to ignite in flames. At the start of each of its turns until the spell ends, the target must make a Constitution saving throw. On a failed save, it takes 1d6 fire damage. On a successful save, the spell ends. If the target or a creature within 5 feet of it uses an action to put out the flames, or if some other effect douses the flames (such as the target being submerged in water), the spell ends."
+    ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the initial extra damage dealt by the attack increases by 1d6 for each slot level above 1st."
+    ],
+    "range": "Self",
+    "components": ["V"],
+    "ritual": false,
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "casting_time": "1 bonus action",
+    "level": 1,
+    "damage": {
+      "damage_type": {
+        "index": "fire",
+        "name": "Fire",
+        "url": "/api/damage-types/fire"
+      },
+      "damage_at_slot_level": {
+        "1": "1d6",
+        "2": "2d6",
+        "3": "3d6",
+        "4": "4d6",
+        "5": "5d6",
+        "6": "6d6",
+        "7": "7d6",
+        "8": "8d6",
+        "9": "9d6"
+      }
+    },
+    "school": {
+      "index": "evocation",
+      "name": "Evocation",
+      "url": "/api/magic-schools/evocation"
+    },
+    "classes": [
+      {
+        "index": "paladin",
+        "name": "Paladin",
+        "url": "/api/classes/paladin"
+      }
+    ],
+    "subclasses": [],
+    "url": "/api/spells/searing-smite"
   },
   {
     "index": "secret-chest",
