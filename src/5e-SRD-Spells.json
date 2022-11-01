@@ -14547,6 +14547,44 @@
     "url": "/api/spells/thaumaturgy"
   },
   {
+    "index": "thunderous-smite",
+    "name": "Thunderous Smite",
+    "desc": [
+      "The first time you hit with a melee weapon attack during this spell’s duration, your weapon rings with thunder that is audible within 300 feet of you, and the attack deals an extra 2d6 thunder damage to the target. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and knocked prone."
+    ],
+    "range": "Self",
+    "components": ["V"],
+    "ritual": false,
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "casting_time": "1 bonus action",
+    "level": 1,
+    "damage": {
+      "damage_type": {
+        "index": "thunder",
+        "name": "Thunder",
+        "url": "/api/damage-types/thunder"
+      },
+      "damage_at_slot_level": {
+        "1": "2d6"
+      }
+    },
+    "school": {
+      "index": "evocation",
+      "name": "Evocation",
+      "url": "/api/magic-schools/evocation"
+    },
+    "classes": [
+      {
+        "index": "paladin",
+        "name": "Paladin",
+        "url": "/api/classes/paladin"
+      }
+    ],
+    "subclasses": [],
+    "url": "/api/spells/thunderous-smite"
+  },
+  {
     "index": "thunderwave",
     "name": "Thunderwave",
     "desc": [
@@ -15849,6 +15887,52 @@
     ],
     "subclasses": [],
     "url": "/api/spells/word-of-recall"
+  },
+  {
+    "index": "wrathful-smite",
+    "name": "Wrathful Smite",
+    "desc": [
+      "The next time you hit with a melee weapon attack during this spell’s duration, your attack deals an extra 1d6 psychic damage. Additionally, if the target is a creature, it must make a Wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell."
+    ],
+    "range": "Self",
+    "components": ["V"],
+    "ritual": false,
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "casting_time": "1 bonus action",
+    "level": 1,
+    "damage": {
+      "damage_type": {
+        "index": "psychic",
+        "name": "Psychic",
+        "url": "/api/damage-types/psychic"
+      },
+      "damage_at_slot_level": {
+        "1": "1d6"
+      }
+    },
+    "dc": {
+      "dc_type": {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
+    "school": {
+      "index": "evocation",
+      "name": "Evocation",
+      "url": "/api/magic-schools/evocation"
+    },
+    "classes": [
+      {
+        "index": "paladin",
+        "name": "Paladin",
+        "url": "/api/classes/paladin"
+      }
+    ],
+    "subclasses": [],
+    "url": "/api/spells/wrathful-smite"
   },
   {
     "index": "zone-of-truth",
