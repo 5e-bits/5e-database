@@ -2410,6 +2410,35 @@
     "url": "/api/spells/commune-with-nature"
   },
   {
+    "index": "compelled-duel",
+    "name": "Compelled-duel",
+    "desc": [
+      "You attempt to compel a creature into a duel. One creature that you can see within range must make a Wisdom saving throw. On a failed save, the creature is drawn to you, compelled by your divine demand. For the duration, it has disadvantage on attack rolls against creatures other than you, and must make a Wisdom saving throw each time it attempts to move to a space that is more than 30 feet away from you; if it succeeds on this saving throw, this spell doesn’t restrict the target’s movement for that turn.",
+      "The spell ends if you attack any other creature, if you cast a spell that targets a hostile creature other than the target, if a creature friendly to you damages the target or casts a harmful spell on it, or if you end your turn more than 30 feet away from the target."
+    ],
+    "range": "30 feet",
+    "components": ["V"],
+    "ritual": false,
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "casting_time": "1 bonus action",
+    "level": 1,
+    "school": {
+      "index": "enchantment",
+      "name": "Enchantment",
+      "url": "/api/magic-schools/enchantment"
+    },
+    "classes": [
+      {
+        "index": "paladin",
+        "name": "Paladin",
+        "url": "/api/classes/paladin"
+      }
+    ],
+    "subclasses": [],
+    "url": "/api/spells/compelled-duel"
+  },
+  {
     "index": "comprehend-languages",
     "name": "Comprehend Languages",
     "desc": [
