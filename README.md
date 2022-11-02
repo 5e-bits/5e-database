@@ -19,7 +19,7 @@ You should be able to build locally and then run the local Docker image. This ca
 docker run ghcr.io/5e-bits/5e-database:latest
 ```
 
-1. If you're running an M1 or you want to test changes that you've made to the Database:
+2. If you're running an M1 or you want to test changes that you've made to the Database:
 
 ```bash
 docker build -t 5e-database .
