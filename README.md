@@ -61,3 +61,9 @@ The Code of Conduct can be found [here.](https://github.com/5e-bits/5e-database/
 
 This project is licensed under the terms of the MIT license. The underlying material
 is released using the [Open Gaming License Version 1.0a](https://www.wizards.com/default.asp?x=d20/oglfaq/20040123f)
+
+## Contributors
+
+<a href="https://github.com/5e-bits/5e-database/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=5e-bits/5e-database" />
+</a>
