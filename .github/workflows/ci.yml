@@ -14,7 +14,7 @@ on:
 jobs:
   lint:
     name: Run linter
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 14.x
@@ -26,7 +26,7 @@ jobs:
 
   test:
     name: Run tests
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 14.x
@@ -38,7 +38,7 @@ jobs:
 
   deploy:
     name: Deploy
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: [test, lint]
     if: ${{ github.event_name != 'pull_request' && github.repository == '5e-bits/5e-database' }}
     steps:
@@ -56,7 +56,7 @@ jobs:
 
   github-release:
     name: Github Release
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: [deploy]
     if: ${{ github.event_name != 'pull_request' && github.repository == '5e-bits/5e-database' }}
     outputs:
@@ -75,7 +75,7 @@ jobs:
 
   container-release:
     name: Container Release
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: [github-release]
     if: ${{ needs.github-release.outputs.new_release_published == 'true' && github.repository == '5e-bits/5e-database' }}
     env:
