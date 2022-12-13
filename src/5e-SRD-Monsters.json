@@ -5,7 +5,12 @@
     "size": "Large",
     "type": "aberration",
     "alignment": "lawful evil",
-    "armor_class": 17,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 17
+      }
+    ],
     "hit_points": 135,
     "hit_dice": "18d10",
     "hit_points_roll": "18d10+36",
@@ -333,7 +338,12 @@
     "size": "Huge",
     "type": "dragon",
     "alignment": "chaotic evil",
-    "armor_class": 19,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 19
+      }
+    ],
     "hit_points": 195,
     "hit_dice": "17d12",
     "hit_points_roll": "17d12+85",
@@ -3144,7 +3154,12 @@
     "size": "Gargantuan",
     "type": "dragon",
     "alignment": "chaotic evil",
-    "armor_class": 22,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 22
+      }
+    ],
     "hit_points": 367,
     "hit_dice": "21d20",
     "hit_points_roll": "21d20+147",
@@ -6167,7 +6182,12 @@
     "size": "Medium",
     "type": "construct",
     "alignment": "unaligned",
-    "armor_class": 18,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 18
+      }
+    ],
     "hit_points": 33,
     "hit_dice": "6d8",
     "hit_points_roll": "6d8+6",
@@ -6284,7 +6304,21 @@
     "size": "Large",
     "type": "monstrosity",
     "alignment": "unaligned",
-    "armor_class": 14,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 14
+      },
+      {
+        "type": "condition",
+        "value": 11,
+        "condition": {
+          "index": "prone",
+          "name": "Prone",
+          "url": "/api/conditions/prone"
+        }
+      }
+    ],
     "hit_points": 39,
     "hit_dice": "6d10",
     "hit_points_roll": "6d10+6",
@@ -7086,7 +7120,21 @@
     "size": "Medium",
     "type": "elemental",
     "alignment": "lawful neutral",
-    "armor_class": 17,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 15
+      },
+      {
+        "type": "armor",
+        "value": 17,
+        "armor": [{
+          "index": "shield",
+          "name": "Shield",
+          "url": "/api/equipment/shield"
+        }]
+      }
+    ],
     "hit_points": 39,
     "hit_dice": "6d8",
     "hit_points_roll": "6d8+12",
@@ -7309,7 +7357,12 @@
     "type": "fiend",
     "subtype": "demon",
     "alignment": "chaotic evil",
-    "armor_class": 19,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 19
+      }
+    ],
     "hit_points": 262,
     "hit_dice": "21d12",
     "hit_points_roll": "21d12+126",
@@ -7722,7 +7775,12 @@
     "type": "fiend",
     "subtype": "devil",
     "alignment": "lawful evil",
-    "armor_class": 15,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 15
+      }
+    ],
     "hit_points": 110,
     "hit_dice": "13d8",
     "hit_points_roll": "13d8+52",
@@ -7933,7 +7991,12 @@
     "size": "Medium",
     "type": "monstrosity",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 12
+      }
+    ],
     "hit_points": 52,
     "hit_dice": "8d8",
     "hit_points_roll": "8d8+16",
@@ -8068,7 +8131,12 @@
     "type": "fiend",
     "subtype": "devil",
     "alignment": "lawful evil",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 13
+      }
+    ],
     "hit_points": 52,
     "hit_dice": "8d8",
     "hit_points_roll": "8d8+16",
@@ -8201,7 +8269,12 @@
     "size": "Huge",
     "type": "monstrosity",
     "alignment": "neutral evil",
-    "armor_class": 17,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 17
+      }
+    ],
     "hit_points": 168,
     "hit_dice": "16d12",
     "hit_points_roll": "16d12+64",
@@ -8497,7 +8570,12 @@
     "size": "Medium",
     "type": "dragon",
     "alignment": "chaotic evil",
-    "armor_class": 17,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 17
+      }
+    ],
     "hit_points": 33,
     "hit_dice": "6d8",
     "hit_points_roll": "6d8+6",
@@ -9138,7 +9216,12 @@
     "type": "fiend",
     "subtype": "devil",
     "alignment": "lawful evil",
-    "armor_class": 19,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 19
+      }
+    ],
     "hit_points": 142,
     "hit_dice": "15d10",
     "hit_points_roll": "15d10+60",
@@ -9712,7 +9795,21 @@
     "type": "humanoid",
     "subtype": "goblinoid",
     "alignment": "chaotic evil",
-    "armor_class": 16,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 16,
+        "armor": [{
+          "index": "shield",
+          "name": "Shield",
+          "url": "/api/equipment/shield"
+        }, {
+          "index": "hide-armor",
+          "name": "Hide Armor",
+          "url": "/api/equipment/hide-armor"
+        }]
+      }
+    ],
     "hit_points": 27,
     "hit_dice": "5d8",
     "hit_points_roll": "5d8+5",
@@ -9804,7 +9901,12 @@
     "size": "Large",
     "type": "monstrosity",
     "alignment": "unaligned",
-    "armor_class": 17,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 17
+      }
+    ],
     "hit_points": 94,
     "hit_dice": "9d10",
     "hit_points_roll": "9d10+45",
@@ -9997,7 +10099,12 @@
     "size": "Large",
     "type": "monstrosity",
     "alignment": "neutral good",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 12
+      }
+    ],
     "hit_points": 45,
     "hit_dice": "6d10",
     "hit_points_roll": "6d10+12",
@@ -10155,7 +10262,12 @@
     "type": "fiend",
     "subtype": "devil",
     "alignment": "lawful evil",
-    "armor_class": 16,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 16
+      }
+    ],
     "hit_points": 85,
     "hit_dice": "10d8",
     "hit_points_roll": "10d8+40",
@@ -10290,7 +10402,12 @@
     "size": "Large",
     "type": "monstrosity",
     "alignment": "chaotic evil",
-    "armor_class": 14,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 14
+      }
+    ],
     "hit_points": 114,
     "hit_dice": "12d10",
     "hit_points_roll": "12d10+48",
@@ -10491,7 +10608,12 @@
     "size": "Large",
     "type": "aberration",
     "alignment": "chaotic evil",
-    "armor_class": 16,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 16
+      }
+    ],
     "hit_points": 93,
     "hit_dice": "11d10",
     "hit_points_roll": "11d10+33",
@@ -10748,7 +10870,12 @@
     "size": "Large",
     "type": "aberration",
     "alignment": "chaotic neutral",
-    "armor_class": 14,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 14
+      }
+    ],
     "hit_points": 78,
     "hit_dice": "12d10",
     "hit_points_roll": "12d10+12",
@@ -11096,7 +11223,12 @@
     "size": "Small",
     "type": "monstrosity",
     "alignment": "unaligned",
-    "armor_class": 11,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 11
+      }
+    ],
     "hit_points": 27,
     "hit_dice": "6d6",
     "hit_points_roll": "6d6+6",
@@ -11422,7 +11554,12 @@
     "size": "Medium",
     "type": "celestial",
     "alignment": "lawful good",
-    "armor_class": 19,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 19
+      }
+    ],
     "hit_points": 97,
     "hit_dice": "13d8",
     "hit_points_roll": "13d8+39",
@@ -12029,7 +12166,12 @@
     "size": "Small",
     "type": "monstrosity",
     "alignment": "unaligned",
-    "armor_class": 11,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 11
+      }
+    ],
     "hit_points": 22,
     "hit_dice": "5d6",
     "hit_points_roll": "5d6+5",
@@ -12397,7 +12539,12 @@
     "size": "Medium",
     "type": "celestial",
     "alignment": "lawful good",
-    "armor_class": 17,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 17
+      }
+    ],
     "hit_points": 136,
     "hit_dice": "16d8",
     "hit_points_roll": "16d8+64",
@@ -12925,7 +13072,12 @@
     "type": "monstrosity",
     "subtype": "shapechanger",
     "alignment": "unaligned",
-    "armor_class": 14,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 14
+      }
+    ],
     "hit_points": 52,
     "hit_dice": "8d8",
     "hit_points_roll": "8d8+16",
@@ -13268,7 +13420,12 @@
     "type": "fiend",
     "subtype": "demon",
     "alignment": "chaotic evil",
-    "armor_class": 11,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 11
+      }
+    ],
     "hit_points": 18,
     "hit_dice": "4d6",
     "hit_points_roll": "4d6+4",
@@ -14899,7 +15056,19 @@
     "type": "fiend",
     "subtype": "devil",
     "alignment": "lawful evil",
-    "armor_class": 18,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 18,
+        "armor": [
+          {
+            "index": "plate",
+            "name": "plate",
+            "url": "/api/equipment/plate"
+          }
+        ]
+      }
+    ],
     "hit_points": 153,
     "hit_dice": "18d8",
     "hit_points_roll": "18d8+72",
@@ -15805,7 +15974,12 @@
     "size": "Small",
     "type": "construct",
     "alignment": "unaligned",
-    "armor_class": 17,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 17
+      }
+    ],
     "hit_points": 17,
     "hit_dice": "5d6",
     "hit_points_roll": "5d6",
@@ -18890,7 +19064,12 @@
     "type": "fiend",
     "subtype": "demon",
     "alignment": "chaotic evil",
-    "armor_class": 17,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 17
+      }
+    ],
     "hit_points": 157,
     "hit_dice": "15d10",
     "hit_points_roll": "15d10+75",
@@ -21502,7 +21681,12 @@
     "type": "fiend",
     "subtype": "demon",
     "alignment": "chaotic evil",
-    "armor_class": 16,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 16
+      }
+    ],
     "hit_points": 136,
     "hit_dice": "13d10",
     "hit_points_roll": "13d10+65",
@@ -21987,7 +22171,12 @@
     "type": "fiend",
     "subtype": "devil",
     "alignment": "lawful evil",
-    "armor_class": 18,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 18
+      }
+    ],
     "hit_points": 178,
     "hit_dice": "17d10",
     "hit_points_roll": "17d10+85",
@@ -22419,7 +22608,12 @@
     "type": "fiend",
     "subtype": "devil",
     "alignment": "lawful evil",
-    "armor_class": 18,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 18
+      }
+    ],
     "hit_points": 180,
     "hit_dice": "19d10",
     "hit_points_roll": "19d10+76",
@@ -22771,7 +22965,12 @@
     "type": "fiend",
     "subtype": "devil",
     "alignment": "lawful evil",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 13
+      }
+    ],
     "hit_points": 10,
     "hit_dice": "3d4",
     "hit_points_roll": "3d4+3",
@@ -24030,7 +24229,12 @@
     "type": "fiend",
     "subtype": "devil",
     "alignment": "lawful evil",
-    "armor_class": 7,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 7
+      }
+    ],
     "hit_points": 13,
     "hit_dice": "3d8",
     "hit_points_roll": "3d8",
@@ -25512,7 +25716,12 @@
     "type": "fiend",
     "subtype": "demon",
     "alignment": "chaotic evil",
-    "armor_class": 18,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 18
+      }
+    ],
     "hit_points": 189,
     "hit_dice": "18d10",
     "hit_points_roll": "18d10+90",
@@ -26947,7 +27156,12 @@
     "type": "fiend",
     "subtype": "demon",
     "alignment": "chaotic evil",
-    "armor_class": 18,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 18
+      }
+    ],
     "hit_points": 184,
     "hit_dice": "16d10",
     "hit_points_roll": "16d10+96",
@@ -28676,7 +28890,12 @@
     "type": "fiend",
     "subtype": "devil",
     "alignment": "lawful evil",
-    "armor_class": 19,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 19
+      }
+    ],
     "hit_points": 300,
     "hit_dice": "24d10",
     "hit_points_roll": "24d10+168",
@@ -28911,7 +29130,12 @@
     "size": "Large",
     "type": "celestial",
     "alignment": "lawful good",
-    "armor_class": 19,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 19
+      }
+    ],
     "hit_points": 200,
     "hit_dice": "16d10",
     "hit_points_roll": "16d10+112",
@@ -29154,7 +29378,12 @@
     "size": "Large",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 13
+      }
+    ],
     "hit_points": 68,
     "hit_dice": "8d10",
     "hit_points_roll": "8d10+24",
@@ -29789,7 +30018,12 @@
     "type": "fiend",
     "subtype": "demon",
     "alignment": "chaotic evil",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 13
+      }
+    ],
     "hit_points": 7,
     "hit_dice": "3d4",
     "hit_points_roll": "3d4",
@@ -30934,7 +31168,12 @@
     "size": "Large",
     "type": "construct",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 12
+      }
+    ],
     "hit_points": 33,
     "hit_dice": "6d10",
     "hit_points_roll": "6d10",
@@ -32560,7 +32799,12 @@
     "size": "Large",
     "type": "celestial",
     "alignment": "lawful good",
-    "armor_class": 21,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 21
+      }
+    ],
     "hit_points": 243,
     "hit_dice": "18d10",
     "hit_points_roll": "18d10+144",
@@ -36036,7 +36280,12 @@
     "size": "Huge",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 13
+      }
+    ],
     "hit_points": 95,
     "hit_dice": "10d12",
     "hit_points_roll": "10d12+30",
@@ -36207,7 +36456,12 @@
     "size": "Huge",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 13
+      }
+    ],
     "hit_points": 136,
     "hit_dice": "13d12",
     "hit_points_roll": "13d12+52",
@@ -37445,7 +37699,12 @@
     "type": "fiend",
     "subtype": "demon",
     "alignment": "chaotic evil",
-    "armor_class": 15,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 15
+      }
+    ],
     "hit_points": 104,
     "hit_dice": "11d10",
     "hit_points_roll": "11d10+44",
@@ -41008,7 +41267,12 @@
     "size": "Large",
     "type": "dragon",
     "alignment": "chaotic evil",
-    "armor_class": 18,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 18
+      }
+    ],
     "hit_points": 127,
     "hit_dice": "15d10",
     "hit_points_roll": "15d10+45",
