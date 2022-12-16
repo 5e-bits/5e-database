@@ -214,7 +214,12 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any alignment",
-    "armor_class": 10,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 10
+      }
+    ],
     "hit_points": 9,
     "hit_dice": "2d8",
     "hit_points_roll": "2d8",
@@ -6604,7 +6609,20 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any alignment",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 12
+      }, {
+        "type": "spell",
+        "value": 15,
+        "spell": {
+          "index": "mage-armor",
+          "name": "Mage Armor",
+          "url": "/api/spells/mage-armor"
+        }
+      }
+    ],
     "hit_points": 99,
     "hit_dice": "18d8",
     "hit_points_roll": "18d8+18",
@@ -6875,7 +6893,17 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any non-good alignment",
-    "armor_class": 15,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 15,
+        "armor": [{
+          "index": "studded-leather-armor",
+          "name": "Studded Leather Armor",
+          "url": "/api/equipment/studded-leather-armor"
+        }]
+      }
+    ],
     "hit_points": 78,
     "hit_dice": "12d8",
     "hit_points_roll": "12d8+24",
@@ -7690,7 +7718,17 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any non-lawful alignment",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 12,
+        "armor": [{
+          "index": "leather-armor",
+          "name": "Leather Armor",
+          "url": "/api/equipment/leather-armor"
+        }]
+      }
+    ],
     "hit_points": 11,
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
@@ -7756,7 +7794,17 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any non-lawful alignment",
-    "armor_class": 15,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 15,
+        "armor": [{
+          "index": "studded-leather-armor",
+          "name": "Studded Leather Armor",
+          "url": "/api/equipment/studded-leather-armor"
+        }]
+      }
+    ],
     "hit_points": 65,
     "hit_dice": "10d8",
     "hit_points_roll": "10d8+20",
@@ -8562,7 +8610,17 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any chaotic alignment",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 13,
+        "armor": [{
+          "index": "hide-armor",
+          "name": "Hide Armor",
+          "url": "/api/equipment/hide-armor"
+        }]
+      }
+    ],
     "hit_points": 67,
     "hit_dice": "9d8",
     "hit_points_roll": "9d8+27",
@@ -11481,7 +11539,12 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any alignment",
-    "armor_class": 10,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 10
+      }
+    ],
     "hit_points": 4,
     "hit_dice": "1d8",
     "hit_points_roll": "1d8",
@@ -12154,7 +12217,17 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any non-good alignment",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 13,
+        "armor": [{
+          "index": "leather-armor",
+          "name": "Leather Armor",
+          "url": "/api/equipment/leather-armor"
+        }]
+      }
+    ],
     "hit_points": 22,
     "hit_dice": "6d8",
     "hit_points_roll": "6d8-5",
@@ -12314,7 +12387,17 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any non-good alignment",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 12,
+        "armor": [{
+          "index": "leather-armor",
+          "name": "Leather Armor",
+          "url": "/api/equipment/leather-armor"
+        }]
+      }
+    ],
     "hit_points": 9,
     "hit_dice": "2d8",
     "hit_points_roll": "2d8",
@@ -14208,7 +14291,20 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any alignment",
-    "armor_class": 11,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 11
+      }, {
+        "type": "spell",
+        "value": 16,
+        "spell": {
+          "index": "barkskin",
+          "name": "Barkskin",
+          "url": "/api/spells/barkskin"
+        }
+      }
+    ],
     "hit_points": 27,
     "hit_dice": "5d8",
     "hit_points_roll": "5d8+5",
@@ -19863,7 +19959,21 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any alignment",
-    "armor_class": 16,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 16,
+        "armor": [{
+          "index": "studded-leather-armor",
+          "name": "Studded Leather Armor",
+          "url": "/api/equipment/studded-leather-armor"
+        }, {
+          "index": "shield",
+          "name": "Shield",
+          "url": "/api/equipment/shield"
+        }]
+      }
+    ],
     "hit_points": 112,
     "hit_dice": "15d8",
     "hit_points_roll": "15d8+45",
@@ -21371,7 +21481,21 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any alignment",
-    "armor_class": 16,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 16,
+        "armor": [{
+          "index": "chain-shirt",
+          "name": "Chain Shirt",
+          "url": "/api/equipment/chain-shirt"
+        }, {
+          "index": "shield",
+          "name": "Shield",
+          "url": "/api/equipment/shield"
+        }]
+      }
+    ],
     "hit_points": 11,
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
@@ -22167,7 +22291,12 @@
     "size": "Tiny",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 13
+      }
+    ],
     "hit_points": 1,
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
@@ -23077,7 +23206,12 @@
     "size": "Large",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 12
+      }
+    ],
     "hit_points": 45,
     "hit_dice": "6d10",
     "hit_points_roll": "6d10+12",
@@ -23241,7 +23375,12 @@
     "size": "Medium",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 11,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 11
+      }
+    ],
     "hit_points": 5,
     "hit_dice": "1d8",
     "hit_points_roll": "1d8+1",
@@ -24123,7 +24262,12 @@
     "size": "Small",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 12
+      }
+    ],
     "hit_points": 3,
     "hit_dice": "1d6",
     "hit_points_roll": "1d6",
@@ -24191,7 +24335,12 @@
     "size": "Huge",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 12
+      }
+    ],
     "hit_points": 90,
     "hit_dice": "12d12",
     "hit_points_roll": "12d12+12",
@@ -24266,7 +24415,17 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any alignment",
-    "armor_class": 18,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 18,
+        "armor": [{
+          "index": "plate-armor",
+          "name": "Plate Armor",
+          "url": "/api/equipment/plate-armor"
+        }]
+      }
+    ],
     "hit_points": 52,
     "hit_dice": "8d8",
     "hit_points_roll": "8d8+16",
@@ -25415,7 +25574,12 @@
     "size": "Large",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 12
+      }
+    ],
     "hit_points": 26,
     "hit_dice": "4d10",
     "hit_points_roll": "4d10+4",
@@ -25523,7 +25687,12 @@
     "size": "Tiny",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 10,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 10
+      }
+    ],
     "hit_points": 2,
     "hit_dice": "1d4",
     "hit_points_roll": "1d4",
@@ -25833,7 +26002,20 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any alignment",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 12
+      }, {
+        "type": "spell",
+        "value": 15,
+        "spell": {
+          "index": "mage-armor",
+          "name": "Mage Armor",
+          "url": "/api/spells/mage-armor"
+        }
+      }
+    ],
     "hit_points": 40,
     "hit_dice": "9d8",
     "hit_points_roll": "9d8",
@@ -26278,7 +26460,12 @@
     "size": "Huge",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 13
+      }
+    ],
     "hit_points": 126,
     "hit_dice": "11d12",
     "hit_points_roll": "11d12+55",
@@ -26636,7 +26823,12 @@
     "size": "Medium",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 12
+      }
+    ],
     "hit_points": 5,
     "hit_dice": "1d8",
     "hit_points_roll": "1d8+1",
@@ -27434,7 +27626,12 @@
     "size": "Medium",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 10,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 10
+      }
+    ],
     "hit_points": 11,
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
@@ -28393,7 +28590,17 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any alignment",
-    "armor_class": 15,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 15,
+        "armor": [{
+          "index": "breastplate",
+          "name": "Breastplate",
+          "url": "/api/equipment/breastplate"
+        }]
+      }
+    ],
     "hit_points": 9,
     "hit_dice": "2d8",
     "hit_points_roll": "2d8",
@@ -28589,7 +28796,12 @@
     "size": "Small",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 12
+      }
+    ],
     "hit_points": 3,
     "hit_dice": "1d6",
     "hit_points_roll": "1d6",
@@ -29312,7 +29524,12 @@
     "size": "Tiny",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 11,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 11
+      }
+    ],
     "hit_points": 1,
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
@@ -29492,7 +29709,12 @@
     "size": "Medium",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 12
+      }
+    ],
     "hit_points": 13,
     "hit_dice": "3d8",
     "hit_points_roll": "3d8",
@@ -29682,7 +29904,12 @@
     "size": "Large",
     "type": "monstrosity",
     "alignment": "unaligned",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 13
+      }
+    ],
     "hit_points": 32,
     "hit_dice": "5d10",
     "hit_points_roll": "5d10+5",
@@ -30323,7 +30550,12 @@
     "size": "Tiny",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 13
+      }
+    ],
     "hit_points": 2,
     "hit_dice": "1d4",
     "hit_points_roll": "1d4",
@@ -30374,7 +30606,12 @@
     "size": "Large",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 12
+      }
+    ],
     "hit_points": 42,
     "hit_dice": "5d10",
     "hit_points_roll": "5d10+15",
@@ -30471,7 +30708,12 @@
     "size": "Medium",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 10,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 10
+      }
+    ],
     "hit_points": 11,
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
@@ -30522,7 +30764,17 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any alignment",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 13,
+        "armor": [{
+          "index": "chain-shirt",
+          "name": "Chain Shirt",
+          "url": "/api/equipment/chain-shirt"
+        }]
+      }
+    ],
     "hit_points": 27,
     "hit_dice": "5d8",
     "hit_points_roll": "5d8+5",
@@ -31004,7 +31256,12 @@
     "size": "Tiny",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 13
+      }
+    ],
     "hit_points": 1,
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
@@ -31290,7 +31547,12 @@
     "size": "Tiny",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 10,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 10
+      }
+    ],
     "hit_points": 1,
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
@@ -31346,7 +31608,12 @@
     "size": "Tiny",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 12
+      }
+    ],
     "hit_points": 1,
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
@@ -31557,7 +31824,12 @@
     "size": "Medium",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 12
+      }
+    ],
     "hit_points": 22,
     "hit_dice": "4d8",
     "hit_points_roll": "4d8+4",
@@ -31714,7 +31986,12 @@
     "size": "Large",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 11,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 11
+      }
+    ],
     "hit_points": 45,
     "hit_dice": "6d10",
     "hit_points_roll": "6d10+12",
@@ -31769,7 +32046,12 @@
     "size": "Large",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 10,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 10
+      }
+    ],
     "hit_points": 13,
     "hit_dice": "2d10",
     "hit_points_roll": "2d10+2",
@@ -32237,7 +32519,12 @@
     "size": "Large",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 12
+      }
+    ],
     "hit_points": 52,
     "hit_dice": "7d10",
     "hit_points_roll": "7d10+14",
@@ -32666,7 +32953,17 @@
     "size": "Medium",
     "type": "fey",
     "alignment": "chaotic neutral",
-    "armor_class": 14,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 14,
+        "armor": [{
+          "index": "leather-armor",
+          "name": "Leather Armor",
+          "url": "/api/equipment/leather-armor"
+        }]
+      }
+    ],
     "hit_points": 31,
     "hit_dice": "7d8",
     "hit_points_roll": "7d8",
@@ -32776,7 +33073,12 @@
     "size": "Tiny",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 11,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 11
+      }
+    ],
     "hit_points": 1,
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
@@ -32828,7 +33130,17 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any alignment",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 13,
+        "armor": [{
+          "index": "leather-armor",
+          "name": "Leather Armor",
+          "url": "/api/equipment/leather-armor"
+        }]
+      }
+    ],
     "hit_points": 16,
     "hit_dice": "3d8",
     "hit_points_roll": "3d8+3",
@@ -33040,7 +33352,12 @@
     "size": "Tiny",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 11,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 11
+      }
+    ],
     "hit_points": 1,
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
@@ -34190,7 +34507,12 @@
     "size": "Tiny",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 12
+      }
+    ],
     "hit_points": 1,
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
@@ -34465,7 +34787,7 @@
     "alignment": "neutral good",
     "armor_class": [
       {
-        "type": "armo",
+        "type": "armor",
         "value": 15,
         "armor": [{
           "index": "leather-armor",
@@ -34574,7 +34896,12 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any alignment",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 12
+      }
+    ],
     "hit_points": 27,
     "hit_dice": "6d8",
     "hit_points_roll": "6d8",
@@ -35589,7 +35916,12 @@
     "size": "Medium",
     "type": "swarm of Tiny beasts",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 12
+      }
+    ],
     "hit_points": 22,
     "hit_dice": "5d8",
     "hit_points_roll": "5d8",
@@ -35699,7 +36031,12 @@
     "size": "Medium",
     "type": "swarm of Tiny beasts",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 12
+      }
+    ],
     "hit_points": 22,
     "hit_dice": "5d8",
     "hit_points_roll": "5d8",
@@ -35802,7 +36139,12 @@
     "size": "Medium",
     "type": "swarm of Tiny beasts",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 12
+      }
+    ],
     "hit_points": 22,
     "hit_dice": "5d8",
     "hit_points_roll": "5d8",
@@ -35904,7 +36246,12 @@
     "size": "Medium",
     "type": "swarm of Tiny beasts",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 12
+      }
+    ],
     "hit_points": 22,
     "hit_dice": "5d8",
     "hit_points_roll": "5d8",
@@ -36006,7 +36353,12 @@
     "size": "Medium",
     "type": "swarm of Tiny beasts",
     "alignment": "unaligned",
-    "armor_class": 14,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 14
+      }
+    ],
     "hit_points": 36,
     "hit_dice": "8d8",
     "hit_points_roll": "8d8",
@@ -36108,7 +36460,12 @@
     "size": "Medium",
     "type": "swarm of Tiny beasts",
     "alignment": "unaligned",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 13
+      }
+    ],
     "hit_points": 28,
     "hit_dice": "8d8",
     "hit_points_roll": "8d8-8",
@@ -36218,7 +36575,12 @@
     "size": "Medium",
     "type": "swarm of Tiny beasts",
     "alignment": "unaligned",
-    "armor_class": 10,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 10
+      }
+    ],
     "hit_points": 24,
     "hit_dice": "7d8",
     "hit_points_roll": "7d8-7",
@@ -36323,7 +36685,12 @@
     "size": "Medium",
     "type": "swarm of Tiny beasts",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 12
+      }
+    ],
     "hit_points": 24,
     "hit_dice": "7d8",
     "hit_points_roll": "7d8-7",
@@ -36424,7 +36791,12 @@
     "size": "Medium",
     "type": "swarm of Tiny beasts",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 12
+      }
+    ],
     "hit_points": 22,
     "hit_dice": "5d8",
     "hit_points_roll": "5d8",
@@ -36533,7 +36905,12 @@
     "size": "Medium",
     "type": "swarm of Tiny beasts",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 12
+      }
+    ],
     "hit_points": 22,
     "hit_dice": "5d8",
     "hit_points_roll": "5d8",
@@ -36926,7 +37303,17 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any non-good alignment",
-    "armor_class": 11,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 11,
+        "armor": [{
+          "index": "leather-armor",
+          "name": "Leather Armor",
+          "url": "/api/equipment/leather-armor"
+        }]
+      }
+    ],
     "hit_points": 32,
     "hit_dice": "5d8",
     "hit_points_roll": "5d8+10",
@@ -37017,7 +37404,12 @@
     "size": "Large",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 12
+      }
+    ],
     "hit_points": 37,
     "hit_dice": "5d10",
     "hit_points_roll": "5d10+10",
@@ -37224,7 +37616,17 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any alignment",
-    "armor_class": 12,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 12,
+        "armor": [{
+          "index": "hide-armor",
+          "name": "Hide Armor",
+          "url": "/api/equipment/hide-armor"
+        }]
+      }
+    ],
     "hit_points": 11,
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
@@ -38530,7 +38932,17 @@
     "type": "humanoid",
     "subtype": "any race",
     "alignment": "any alignment",
-    "armor_class": 17,
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 17,
+        "armor": [{
+          "index": "splint-armor",
+          "name": "Splint Armor",
+          "url": "/api/equipment/splint-armor"
+        }]
+      }
+    ],
     "hit_points": 58,
     "hit_dice": "9d8",
     "hit_points_roll": "9d8+18",
@@ -38916,7 +39328,12 @@
     "size": "Medium",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 10,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 10
+      }
+    ],
     "hit_points": 5,
     "hit_dice": "1d8",
     "hit_points_roll": "1d8+1",
@@ -38985,7 +39402,12 @@
     "size": "Large",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 11,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 11
+      }
+    ],
     "hit_points": 19,
     "hit_dice": "3d10",
     "hit_points_roll": "3d10+3",
@@ -39265,7 +39687,12 @@
     "size": "Tiny",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "dex",
+        "value": 13
+      }
+    ],
     "hit_points": 1,
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
@@ -41782,7 +42209,12 @@
     "size": "Large",
     "type": "monstrosity",
     "alignment": "neutral evil",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 13
+      }
+    ],
     "hit_points": 75,
     "hit_dice": "10d10",
     "hit_points_roll": "10d10+20",
@@ -41893,7 +42325,12 @@
     "size": "Medium",
     "type": "beast",
     "alignment": "unaligned",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 13
+      }
+    ],
     "hit_points": 11,
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
@@ -41971,7 +42408,12 @@
     "size": "Large",
     "type": "monstrosity",
     "alignment": "neutral evil",
-    "armor_class": 13,
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 13
+      }
+    ],
     "hit_points": 26,
     "hit_dice": "4d10",
     "hit_points_roll": "4d10+4",
