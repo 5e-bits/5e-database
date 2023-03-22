@@ -242,6 +242,188 @@
     "url": "/api/subraces/high-elf"
   },
   {
+    "index": "wood-elf",
+    "name": "Wood Elf",
+    "race": {
+      "index": "elf",
+      "name": "Elf",
+      "url": "/api/races/elf"
+    },
+    "desc": "As a wood elf, you have keen sense and intuition, and your fleet feet carry you quickly and stealthily through your native forests.",
+    "ability_bonuses": [
+      {
+        "ability_score": {
+          "index": "wis",
+          "name": "WIS",
+          "url": "/api/ability-scores/wis"
+        },
+        "bonus": 1
+      }
+    ],
+    "starting_proficiencies": [
+      {
+        "index": "longswords",
+        "name": "Longswords",
+        "url": "/api/proficiencies/longswords"
+      },
+      {
+        "index": "shortswords",
+        "name": "Shortswords",
+        "url": "/api/proficiencies/shortswords"
+      },
+      {
+        "index": "shortbows",
+        "name": "Shortbows",
+        "url": "/api/proficiencies/shortbows"
+      },
+      {
+        "index": "longbows",
+        "name": "Longbows",
+        "url": "/api/proficiencies/longbows"
+      }
+    ],
+    "languages": [],
+    "language_options": {
+      "choose": 1,
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "dwarvish",
+              "name": "Dwarvish",
+              "url": "/api/languages/dwarvish"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "giant",
+              "name": "Giant",
+              "url": "/api/languages/giant"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "gnomish",
+              "name": "Gnomish",
+              "url": "/api/languages/gnomish"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "goblin",
+              "name": "Goblin",
+              "url": "/api/languages/goblin"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "halfling",
+              "name": "Halfling",
+              "url": "/api/languages/halfling"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "orc",
+              "name": "Orc",
+              "url": "/api/languages/orc"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "abyssal",
+              "name": "Abyssal",
+              "url": "/api/languages/abyssal"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "celestial",
+              "name": "Celestial",
+              "url": "/api/languages/celestial"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "draconic",
+              "name": "Draconic",
+              "url": "/api/languages/draconic"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "deep-speech",
+              "name": "Deep Speech",
+              "url": "/api/languages/deep-speech"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "infernal",
+              "name": "Infernal",
+              "url": "/api/languages/infernal"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "primordial",
+              "name": "Primordial",
+              "url": "/api/languages/primordial"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "sylvan",
+              "name": "Sylvan",
+              "url": "/api/languages/sylvan"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "undercommon",
+              "name": "Undercommon",
+              "url": "/api/languages/undercommon"
+            }
+          }
+        ]
+      },
+      "type": "language"
+    },
+    "racial_traits": [
+      {
+        "index": "elf-weapon-training",
+        "name": "Elf Weapon Training",
+        "url": "/api/traits/elf-weapon-training"
+      },
+      {
+        "index": "fleet-of-foot",
+        "name": "Fleet of Foot",
+        "url": "/api/traits/fleet-of-foot"
+      },
+      {
+        "index": "mask-of-wild",
+        "name": "Mask of the Wild",
+        "url": "/api/traits/mask-of-wild"
+      }
+    ],
+    "url": "/api/subraces/wood-elf"
+  },
+  {
     "index": "lightfoot-halfling",
     "name": "Lightfoot Halfling",
     "race": {
