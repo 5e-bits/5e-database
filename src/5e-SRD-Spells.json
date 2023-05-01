@@ -15815,5 +15815,254 @@
       }
     ],
     "url": "/api/spells/zone-of-truth"
+  },
+  {
+    "index": "friends",
+    "name": "Friends",
+    "desc": [
+      "For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM's discretion), depending on the nature of your interaction with it."
+    ],
+    "range": "Self",
+    "components": ["S", "M"],
+    "ritual": false,
+    "duration": "1 minute",
+    "concentration": true,
+    "casting_time": "1 action",
+    "level": 0,
+    "school": {
+      "index": "enchantment",
+      "name": "Enchantment",
+      "url": "/api/magic-schools/enchantment"
+    },
+    "classes": [
+      {
+        "index": "bard",
+        "name": "Bard",
+        "url": "/api/classes/bard"
+      },
+      {
+        "index": "sorcerer",
+        "name": "Sorcerer",
+        "url": "/api/classes/sorcerer"
+      },
+      {
+        "index": "warlock",
+        "name": "Warlock",
+        "url": "/api/classes/warlock"
+      },
+      {
+        "index": "wizard",
+        "name": "Wizard",
+        "url": "/api/classes/wizard"
+      }
+    ],
+    "subclasses": [],
+    "url": "/api/spells/friends"
+  },
+  {
+    "index": "toll-the-dead",
+    "name": "Toll the Dead",
+    "desc": [
+      "You point at one creature you can see within range, and the sound of a dolorous bell fills the air around it for a moment. The target must succeed on a Wisdom saving throw or take 1d8 necrotic damage. If the target is missing any of its hit points, it instead takes 1d12 necrotic damage."
+    ],
+    "higher_level": [
+      "The spell’s damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12)."
+    ],
+    "range": "60 feet",
+    "components": ["V", "S"],
+    "ritual": false,
+    "duration": "Instantaneous",
+    "concentration": false,
+    "casting_time": "1 action",
+    "level": 0,
+    "school": {
+      "index": "necromancy",
+      "name": "Necromancy",
+      "url": "/api/magic-schools/necromancy"
+    },
+    "classes": [
+      {
+        "index": "cleric",
+        "name": "Cleric",
+        "url": "/api/classes/cleric"
+      },
+      {
+        "index": "warlock",
+        "name": "Warlock",
+        "url": "/api/classes/warlock"
+      },
+      {
+        "index": "wizard",
+        "name": "Wizard",
+        "url": "/api/classes/wizard"
+      }
+    ],
+    "subclasses": [],
+    "url": "/api/spells/toll-the-dead"
+  },
+  {
+    "index": "blade-ward",
+    "name": "Blade Ward",
+    "desc": [
+      "You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks."
+    ],
+    "range": "Self",
+    "components": ["V", "S"],
+    "ritual": false,
+    "duration": "1 round",
+    "concentration": false,
+    "casting_time": "1 action",
+    "level": 0,
+    "school": {
+      "index": "abjuration",
+      "name": "Abjuration",
+      "url": "/api/magic-schools/abjuration"
+    },
+    "classes": [
+      {
+        "index": "bard",
+        "name": "Bard",
+        "url": "/api/classes/bard"
+      },
+      {
+        "index": "sorcerer",
+        "name": "Sorcerer",
+        "url": "/api/classes/sorcerer"
+      },
+      {
+        "index": "warlock",
+        "name": "Warlock",
+        "url": "/api/classes/warlock"
+      },
+      {
+        "index": "wizard",
+        "name": "Wizard",
+        "url": "/api/classes/wizard"
+      }
+    ],
+    "subclasses": [],
+    "url": "/api/spells/blade-ward"
+  },
+  {
+    "index": "dissonant-whispers",
+    "name": "Dissonant Whispers",
+    "desc": [
+      "You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a Wisdom saving throw. On a failed save, it takes 3d6 psychic damage and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn’t move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn’t have to move away. A deafened creature automatically succeeds on the save."
+    ],
+    "higher_level":[
+      "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
+    ],
+    "range": "60 feet",
+    "components": ["V"],
+    "ritual": false,
+    "duration": "Instantaneous",
+    "concentration": false,
+    "casting_time": "1 action",
+    "level": 1,
+    "school": {
+      "index": "enchantment",
+      "name": "Enchantment",
+      "url": "/api/magic-schools/enchantment"
+    },
+    "classes": [
+      {
+        "index": "bard",
+        "name": "Bard",
+        "url": "/api/classes/bard"
+      }
+    ],
+    "subclasses": [],
+    "url": "/api/spells/dissonant-whispers"
+  },
+  {
+    "index": "cloud-of-daggers",
+    "name": "Cloud of Daggers",
+    "desc": [
+      "You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes 4d4 slashing damage when it enters the spell’s area for the first time on a turn or starts its turn there."
+    ],
+    "higher_level":[
+      "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 2d4 for each slot level above 2nd."
+    ],
+    "range": "60 feet",
+    "components": ["V","S", "M"],
+    "ritual": false,
+    "duration": "1 minute",
+    "concentration": true,
+    "casting_time": "1 action",
+    "level": 2,
+    "school": {
+      "index": "conjuration",
+      "name": "Conjuration",
+      "url": "/api/magic-schools/conjuration"
+    },
+    "classes": [
+      {
+        "index": "bard",
+        "name": "Bard",
+        "url": "/api/classes/bard"
+      },
+      {
+        "index": "sorcerer",
+        "name": "Sorcerer",
+        "url": "/api/classes/sorcerer"
+      },
+      {
+        "index": "warlock",
+        "name": "Warlock",
+        "url": "/api/classes/warlock"
+      },
+      {
+        "index": "wizard",
+        "name": "Wizard",
+        "url": "/api/classes/wizard"
+      }
+    ],
+    "subclasses": [],
+    "url": "/api/spells/cloud-of-daggers"
+  },
+  {
+    "index": "crown-of-madness",
+    "name": "Crown of Madness",
+    "desc": [
+      "One humanoid of your choice that you can see within range must succeed on a Wisdom saving throw or become charmed by you for the duration. While the target is charmed in this way, a twisted crown of jagged iron appears on its head, and a madness glows in its eyes.",
+      "The charmed target must use its action before moving on each of its turns to make a melee attack against a creature other than itself that you mentally choose. The target can act normally on its turn if you choose no creature or if none are within its reach.",
+      "On your subsequent turns, you must use your action to maintain control over the target, or the spell ends. Also, the target can make a Wisdom saving throw at the end of each of its turns. On a success, the spell ends."
+    ],
+    "range": "120 feet",
+    "components": ["V", "S"],
+    "ritual": false,
+    "duration": "1 minute",
+    "concentration": true,
+    "casting_time": "1 action",
+    "level": 2,
+    "school": {
+      "index": "enchantment",
+      "name": "Enchantment",
+      "url": "/api/magic-schools/enchantment"
+    },
+    "classes": [
+      {
+        "index": "bard",
+        "name": "Bard",
+        "url": "/api/classes/bard"
+      },
+      {
+        "index": "sorcerer",
+        "name": "Sorcerer",
+        "url": "/api/classes/sorcerer"
+      },
+      {
+        "index": "warlock",
+        "name": "Warlock",
+        "url": "/api/classes/warlock"
+      },
+      {
+        "index": "wizard",
+        "name": "Wizard",
+        "url": "/api/classes/wizard"
+      }
+    ],
+    "subclasses": [],
+    "url": "/api/spells/crown-of-madness"
   }
 ]
