@@ -7772,6 +7772,9 @@
     "desc": [
       "You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one."
     ],
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st."
+    ],
     "range": "60 feet",
     "components": ["V", "S"],
     "ritual": false,
@@ -7786,7 +7789,15 @@
         "url": "/api/damage-types/fire"
       },
       "damage_at_slot_level": {
-        "1": "2d10"
+        "1": "2d10",
+        "2": "3d10",
+        "3": "4d10",
+        "4": "5d10",
+        "5": "6d10",
+        "6": "7d10",
+        "7": "8d10",
+        "8": "9d10",
+        "9": "10d10"
       }
     },
     "dc": {
