@@ -101,6 +101,156 @@
     "url": "/api/features/frenzy"
   },
   {
+    "index": "spirit-seeker",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/classes/barbarian"
+    },
+    "subclass": {
+      "index": "totem-warrior",
+      "name": "Totem Warrior",
+      "url": "/api/subclasses/totem-warrior"
+    },
+    "name": "Spirit Seeker",
+    "level": 3,
+    "prerequisites": [],
+    "desc": [
+      "At 3rd level, you gain the ability to cast the Beast Sense and Speak with Animals spells, but only as rituals."
+    ],
+    "url": "/api/features/spirit-seeker"
+  },
+  {
+    "index": "totem-spirit",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/classes/barbarian"
+    },
+    "subclass": {
+      "index": "totem-warrior",
+      "name": "Totem Warrior",
+      "url": "/api/subclasses/totem-warrior"
+    },
+    "name": "Totem Spirit",
+    "level": 3,
+    "prerequisites": [],
+    "desc": [
+      "At 3rd level, when you adopt this path, you choose a totem spirit and gain its feature. You must m ake or acquire a physical totem object- an amulet or similar adornment—that incorporates fur or feathers, claws, teeth, or bones of the totem animal. At your option, you also gain minor physical attributes that are reminiscent of your totem spirit. For example, if you have a bear totem spirit, you might be unusually hairy and thickskinned, or if your totem is the eagle, your eyes turn bright yellow. Your totem animal might be an animal related to those listed here but m ore appropriate to your homeland. For example, you could choose a hawk or vulture in place o f an eagle."
+    ],
+    "feature_specific": {
+      "subfeature_options": {
+        "choose": 1,
+        "type": "feature",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "totem-spirit-bear",
+                "name": "Totem Spirit: Bear",
+                "url": "/api/features/totem-spirit-bear"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "totem-spirit-eagle",
+                "name": "Totem Spirit: Eagle",
+                "url": "/api/features/totem-spirit-eagle"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "totem-spirit-wolf",
+                "name": "Totem Spirit: Wolf",
+                "url": "/api/features/totem-spirit-wolf"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "url": "/api/features/totem-spirit"
+  },
+  {
+    "index": "totem-spirit-bear",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/classes/barbarian"
+    },
+    "subclass": {
+      "index": "totem-warrior",
+      "name": "Totem Warrior",
+      "url": "/api/subclasses/totem-warrior"
+    },
+    "name": "Totem Spirit: Bear",
+    "level": 3,
+    "prerequisites": [],
+    "desc": [
+      "While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment."
+    ],
+    "parent": {
+      "index": "totem-spirit",
+      "name": "Totem Spirit",
+      "url": "/api/features/totem-spirit"
+    },
+    "url": "/api/features/totem-spirit-bear"
+  },
+  {
+    "index": "totem-spirit-eagle",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/classes/barbarian"
+    },
+    "subclass": {
+      "index": "totem-warrior",
+      "name": "Totem Warrior",
+      "url": "/api/subclasses/totem-warrior"
+    },
+    "name": "Totem Spirit: Eagle",
+    "level": 3,
+    "prerequisites": [],
+    "desc": [
+      "While you're raging and aren’t wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the Dash action as a bonus action on your turn. The spirit of the eagle makes you into a predator w ho can weave through the fray with ease."
+    ],
+    "parent": {
+      "index": "totem-spirit",
+      "name": "Totem Spirit",
+      "url": "/api/features/totem-spirit"
+    },
+    "url": "/api/features/totem-spirit-eagle"
+  },
+  {
+    "index": "totem-spirit-wolf",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/classes/barbarian"
+    },
+    "subclass": {
+      "index": "totem-warrior",
+      "name": "Totem Warrior",
+      "url": "/api/subclasses/totem-warrior"
+    },
+    "name": "Totem Spirit: Wolf",
+    "level": 3,
+    "prerequisites": [],
+    "desc": [
+      "While you're raging, your friends have advantage on melee attack rolls against any creature within 5 feet of you that is hostile to you. The spirit of the wolf makes you a leader of hunters."
+    ],
+    "parent": {
+      "index": "totem-spirit",
+      "name": "Totem Spirit",
+      "url": "/api/features/totem-spirit"
+    },
+    "url": "/api/features/totem-spirit-wolf"
+  },
+  {
     "index": "barbarian-ability-score-improvement-1",
     "class": {
       "index": "barbarian",
@@ -164,6 +314,136 @@
       "Beginning at 6th level, you can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage."
     ],
     "url": "/api/features/mindless-rage"
+  },
+  {
+    "index": "aspect-of-the-beast",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/classes/barbarian"
+    },
+    "subclass": {
+      "index": "totem-warrior",
+      "name": "Totem Warrior",
+      "url": "/api/subclasses/totem-warrior"
+    },
+    "name": "Aspect of the Beast",
+    "level": 6,
+    "prerequisites": [],
+    "desc": [
+      "At 6th level, you gain a magical benefit based on the totem animal of your choice. You can choose the same animal you selected at 3rd level or a different one."
+    ],
+    "feature_specific": {
+      "subfeature_options": {
+        "choose": 1,
+        "type": "feature",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "aspect-of-the-beast-bear",
+                "name": "Aspect of the Beast: Bear",
+                "url": "/api/features/aspect-of-the-beast-bear"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "aspect-of-the-beast-eagle",
+                "name": "Aspect of the Beast: Eagle",
+                "url": "/api/features/aspect-of-the-beast-eagle"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "aspect-of-the-beast-wolf",
+                "name": "Aspect of the Beast: Wolf",
+                "url": "/api/features/aspect-of-the-beast-wolf"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "url": "/api/features/aspect-of-the-beast"
+  },
+  {
+    "index": "aspect-of-the-beast-bear",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/classes/barbarian"
+    },
+    "subclass": {
+      "index": "totem-warrior",
+      "name": "Totem Warrior",
+      "url": "/api/subclasses/totem-warrior"
+    },
+    "name": "Aspect of the Beast: Bear",
+    "level": 6,
+    "prerequisites": [],
+    "desc": [
+      "You gain the might of a bear. Your carrying capacity (including maximum load and maximum lift) is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects."
+    ],
+    "parent": {
+      "index": "aspect-of-the-beast",
+      "name": "Aspect of the Beast",
+      "url": "/api/features/aspect-of-the-beast"
+    },
+    "url": "/api/features/aspect-of-the-beast-bear"
+  },
+  {
+    "index": "aspect-of-the-beast-eagle",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/classes/barbarian"
+    },
+    "subclass": {
+      "index": "totem-warrior",
+      "name": "Totem Warrior",
+      "url": "/api/subclasses/totem-warrior"
+    },
+    "name": "Aspect of the Beast: Eagle",
+    "level": 6,
+    "prerequisites": [],
+    "desc": [
+      "You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you. Additionally, dim light doesn't impose disadvantage on your Wisdom (Perception) checks."
+    ],
+    "parent": {
+      "index": "aspect-of-the-beast",
+      "name": "Aspect of the Beast",
+      "url": "/api/features/aspect-of-the-beast"
+    },
+    "url": "/api/features/aspect-of-the-beast-eagle"
+  },
+  {
+    "index": "aspect-of-the-beast-wolf",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/classes/barbarian"
+    },
+    "subclass": {
+      "index": "totem-warrior",
+      "name": "Totem Warrior",
+      "url": "/api/subclasses/totem-warrior"
+    },
+    "name": "Aspect of the Beast: Wolf",
+    "level": 6,
+    "prerequisites": [],
+    "desc": [
+      "You gain the hunting sensibilities of a wolf. You can track other creatures while traveling at a fast pace, and you can move stealthily while traveling at a normal pace."
+    ],
+    "parent": {
+      "index": "aspect-of-the-beast",
+      "name": "Aspect of the Beast",
+      "url": "/api/features/aspect-of-the-beast"
+    },
+    "url": "/api/features/aspect-of-the-beast-wolf"
   },
   {
     "index": "feral-instinct",
@@ -233,6 +513,26 @@
     "url": "/api/features/intimidating-presence"
   },
   {
+    "index": "spirit-walker",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/classes/barbarian"
+    },
+    "subclass": {
+      "index": "totem-warrior",
+      "name": "Totem Warrior",
+      "url": "/api/subclasses/totem-warrior"
+    },
+    "name": "Spirit Walker",
+    "level": 10,
+    "prerequisites": [],
+    "desc": [
+      "At 10th level, you can cast the commune with nature spell, but only as a ritual. When you do so, a spiritual version of one of the animals you chose for Totem Spirit or Aspect of the Beast appears to you to convey the information you seek."
+    ],
+    "url": "/api/features/spirit-walker"
+  },
+  {
     "index": "relentless-rage",
     "class": {
       "index": "barbarian",
@@ -297,6 +597,136 @@
       "Starting at 14th level, when you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon Attack against that creature."
     ],
     "url": "/api/features/retaliation"
+  },
+  {
+    "index": "totemic-attunement",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/classes/barbarian"
+    },
+    "subclass": {
+      "index": "totem-warrior",
+      "name": "Totem Warrior",
+      "url": "/api/subclasses/totem-warrior"
+    },
+    "name": "Totemic Attunement",
+    "level": 14,
+    "prerequisites": [],
+    "desc": [
+      "At 14th level, you gain a magical benefit based on a totem animal of your choice. You can choose the same animal you selected previously or a different one."
+    ],
+    "feature_specific": {
+      "subfeature_options": {
+        "choose": 1,
+        "type": "feature",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "totemic-attunement-bear",
+                "name": "Totemic Attunement: Bear",
+                "url": "/api/features/totemic-attunement-bear"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "totemic-attunement-eagle",
+                "name": "Totemic Attunement: Eagle",
+                "url": "/api/features/totemic-attunement-eagle"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "totemic-attunement-wolf",
+                "name": "Totemic Attunement: Wolf",
+                "url": "/api/features/totemic-attunement-wolf"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "url": "/api/features/totemic-attunement"
+  },
+  {
+    "index": "totemic-attunement-bear",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/classes/barbarian"
+    },
+    "subclass": {
+      "index": "totem-warrior",
+      "name": "Totem Warrior",
+      "url": "/api/subclasses/totem-warrior"
+    },
+    "name": "Totemic Attunement: Bear",
+    "level": 14,
+    "prerequisites": [],
+    "desc": [
+      "While you’re raging, any creature within 5 feet of you that’s hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature. An enemy is immune to this effect if it can’t see or hear you or if it can’t be frightened."
+    ],
+    "parent": {
+      "index": "totemic-attunement",
+      "name": "Totemic Attunement",
+      "url": "/api/features/totemic-attunement"
+    },
+    "url": "/api/features/totemic-attunement-bear"
+  },
+  {
+    "index": "totemic-attunement-eagle",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/classes/barbarian"
+    },
+    "subclass": {
+      "index": "totem-warrior",
+      "name": "Totem Warrior",
+      "url": "/api/subclasses/totem-warrior"
+    },
+    "name": "Totemic Attunement: Eagle",
+    "level": 14,
+    "prerequisites": [],
+    "desc": [
+      "While raging, you have a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft."
+    ],
+    "parent": {
+      "index": "totemic-attunement",
+      "name": "Totemic Attunement",
+      "url": "/api/features/totemic-attunement"
+    },
+    "url": "/api/features/totemic-attunement-eagle"
+  },
+  {
+    "index": "totemic-attunement-wolf",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/classes/barbarian"
+    },
+    "subclass": {
+      "index": "totem-warrior",
+      "name": "Totem Warrior",
+      "url": "/api/subclasses/totem-warrior"
+    },
+    "name": "Totemic Attunement: Wolf",
+    "level": 14,
+    "prerequisites": [],
+    "desc": [
+      "While you’re raging, you can use a bonus action on your turn to knock a Large or sm aller creature prone when you hit it with melee weapon attack."
+    ],
+    "parent": {
+      "index": "totemic-attunement",
+      "name": "Totemic Attunement",
+      "url": "/api/features/totemic-attunement"
+    },
+    "url": "/api/features/totemic-attunement-wolf"
   },
   {
     "index": "persistent-rage",
