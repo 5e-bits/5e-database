@@ -2,6 +2,9 @@
   "name": "5e-database",
   "version": "1.0.0",
   "description": "Database for 5e-srd-api",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "lint": "eslint . --ext .js,.json",
     "test": "jest -c jest.config.js",
@@ -20,14 +23,13 @@
   "homepage": "https://github.com/bagelbits/5e-database#readme",
   "devDependencies": {
     "@semantic-release/github": "^8.0.2",
-    "@types/node": "^17.0.21",
+    "@types/node": "^17.0.45",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
     "eslint": "^6.8.0",
     "eslint-plugin-json": "^2.1.1",
     "glob": "^7.1.6",
     "jest": "^26.0.1",
-    "node": "^14.4.0",
     "redis": "^3.1.1",
     "semantic-release": "^21.0.1",
     "typescript": "^4.5.5"

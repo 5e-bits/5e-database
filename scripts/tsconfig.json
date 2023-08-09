@@ -6,8 +6,7 @@
     "noEmitOnError": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "typeRoots": ["node_modules/@types"],  // "typeRoots": [] -> won't work
-    "types": ["node"]                      // "types": [] -> won't work
+    "skipLibCheck": true
   },
   "include": ["./**/*"]
 }
