@@ -16,11 +16,11 @@ jobs:
     name: Run linter
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
         with:
-          node-version: 14.x
+          node-version: 18.x
       - run: npm install
       - run: npm run lint
 
@@ -28,11 +28,11 @@ jobs:
     name: Run tests
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
         with:
-          node-version: 14.x
+          node-version: 18.x
       - run: npm install
       - run: npm run test
 
@@ -42,11 +42,11 @@ jobs:
     needs: [test, lint]
     if: ${{ github.event_name != 'pull_request' && github.repository == '5e-bits/5e-database' }}
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
         with:
-          node-version: 14.x
+          node-version: 18.x
       - name: Refresh DB contents
         env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
@@ -64,7 +64,7 @@ jobs:
       version: ${{ steps.semantic.outputs.new_release_version }}
     steps:
       - name: Checkout latest code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Semantic Release
@@ -86,15 +86,15 @@ jobs:
       packages: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Log in to the Container registry
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and push Docker image
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v3
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
