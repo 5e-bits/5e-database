@@ -1,5 +1,198 @@
 [
   {
+    "index": "actor",
+    "name": "Actor",
+    "prerequisites": [],
+    "desc": [
+      "Skilled at mimicry and dramatics, you gain the following benefits:",
+      "- Increase your Charisma score by 1, to a maximum of 20.",
+      "- You have an advantage on Charisma (Deception) and Charisma (Performance) checks when trying to pass yourself off as a different person.",
+      "- You can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A successful Wisdom (Insight) check contested by your Charisma (Deception) check allows a listener to determine that the effect is faked."
+    ],
+    "url": "/api/feats/actor"
+  },
+  {
+    "index": "alert",
+    "name": "Alert",
+    "prerequisites": [],
+    "desc": [
+      "Always on the lookout for danger, you gain the following benefits:",
+      "- You can't be surprised while you are conscious.",
+      "- You gain a +5 bonus to initiative.",
+      "- Other creatures don't gain advantage on attack rolls against you as a result of being unseen by you."
+    ],
+    "url": "/api/feats/alert"
+  },
+  {
+    "index": "artificer-initiate",
+    "name": "Artificer Initiate",
+    "prerequisites": [],
+    "desc": [
+      "You’ve learned some of an artificer’s inventiveness:",
+      "- You learn one cantrip of your choice from the Artificer spell list, and you learn one 1st-level spell of your choice from that list. Intelligence is your spellcasting ability for these spells.",
+      "- You can cast this feat's 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have.",
+      "- You gain proficiency with one type of artisan's tools of your choice, and you can use that type of tool as a spellcasting focus for any spell you cast that uses Intelligence as its spellcasting ability."
+    ],
+    "url": "/api/feats/artificer-initiate"
+  },
+  {
+    "index": "athlete",
+    "name": "Athlete",
+    "prerequisites": [],
+    "desc": [
+      "You have undergone extensive physical training to gain the following benefits:",
+      "- Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+      "- When you are prone, standing up uses only 5 feet of your movement.",
+      "- Climbing doesn't cost you extra movement.",
+      "- You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet."
+    ],
+    "url": "/api/feats/artificer-initiate"
+  },
+  {
+    "index": "charger",
+    "name": "Charger",
+    "prerequisites": [],
+    "desc": [
+      "When you use your action to Dash, you can use a bonus action to make one melee weapon attack or to shove a creature. If you move at least 10 feet in a straight line immediately before taking this bonus action, you either gain a +5 bonus to the attack’s damage roll (if you chose to make a melee attack and hit) or push the target up to 10 feet away from you (if you chose to shove and you succeed)."
+    ],
+    "url": "/api/feats/charger"
+  },
+  {
+    "index": "chef",
+    "name": "Chef",
+    "prerequisites": [],
+    "desc": [
+      "Time and effort spent mastering the culinary arts has paid off. You gain the following benefits:Time and effort spent mastering the culinary arts has paid off. You gain the following benefits:",
+      "- Increase your Constitution or Wisdom score by 1, to a maximum of 20.",
+      "- You gain proficiency with cook’s utensils if you don’t already have it.",
+      "- As part of a short rest, you can cook special food, provided you have ingredients and cook's utensils on hand. You can prepare enough of this food for a number of creatures equal to 4 + your proficiency bonus. At the end of the short rest, any creature who eats the food and spends one or more Hit Dice to regain hit points regains an extra 1d8 hit points.",
+      "- With one hour of work or when you finish a long rest, you can cook a number of treats equal to your proficiency bonus. These special treats last 8 hours after being made. A creature can use a bonus action to eat one of those treats to gain temporary hit points equal to your proficiency bonus."
+    ],
+    "url": "/api/feats/chef"
+  },
+  {
+    "index": "crossbow-expert",
+    "name": "Crossbow Expert",
+    "prerequisites": [],
+    "desc": [
+      "Thanks to extensive practice with the crossbow, you gain the following benefits:",
+      "- You ignore the loading quality of crossbows with which you are proficient.",
+      "- Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls.",
+      "- When you use the Attack action and attack with a one handed weapon, you can use a bonus action to attack with a hand crossbow you are holding."
+    ],
+    "url": "/api/feats/crossbow-expert"
+  },
+  {
+    "index": "crusher",
+    "name": "Crusher",
+    "prerequisites": [],
+    "desc": [
+      "You are practiced in the art of crushing your enemies, granting you the following benefits:",
+      "- Increase your Strength or Constitution by 1, to a maximum of 20.",
+      "- Once per turn, when you hit a creature with an attack that deals bludgeoning damage, you can move it 5 feet to an unoccupied space, provided the target is no more than one size larger than you.",
+      "- When you score a critical hit that deals bludgeoning damage to a creature, attack rolls against that creature are made with advantage until the start of your next turn."
+    ],
+    "url": "/api/feats/crusher"
+  },
+  {
+    "index": "defensive-duelist",
+    "name": "Defensive Duelist",
+    "prerequisites": [
+      {
+        "ability_score": {
+          "index": "dex",
+          "name": "DEX",
+          "url": "/api/ability-scores/dex"
+        },
+        "minimum_score": 13
+      }
+    ],
+    "desc": [
+      "When you are wielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you."
+    ],
+    "url": "/api/feats/defensive-duelist"
+  },
+  {
+    "index": "dual-wielder",
+    "name": "Dual Wielder",
+    "prerequisites": [],
+    "desc": [
+      "You master fighting with two weapons, gaining the following benefits:",
+      "- You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.",
+      "- You can use two-weapon fighting even when the one handed melee weapons you are wielding aren't light.",
+      "- You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one."
+    ],
+    "url": "/api/feats/dual-wielder"
+  },
+  {
+    "index": "dungeon-delver",
+    "name": "Dungeon Delver",
+    "prerequisites": [],
+    "desc": [
+      "Alert to the hidden traps and secret doors found in many dungeons, you gain the following benefits:",
+      "- You have advantage on Wisdom (Perception) and Intelligence (Investigation) checks made to detect the presence of secret doors.",
+      "- You have advantage on saving throws made to avoid or resist traps.",
+      "- You have resistance to the damage dealt by traps.",
+      "- Travelling at a fast pace doesn't impose the normal -5 penalty on your passive Wisdom (Perception) score."
+    ],
+    "url": "/api/feats/dungeon-delver"
+  },
+  {
+    "index": "durable",
+    "name": "Durable",
+    "prerequisites": [],
+    "desc": [
+      "Hardy and resilient, you gain the following benefits:",
+      "- Increase your Constitution score by 1, to a maximum of 20.",
+      "- When you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll equals twice your Constitution modifier (minimum of 2)."
+    ],
+    "url": "/api/feats/durable"
+  },
+  {
+    "index": "fey-touched",
+    "name": "Fey Touched",
+    "prerequisites": [],
+    "desc": [
+      "Your exposure to the Feywild's magic has changed you, granting you the following benefits:",
+      "- Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.",
+      "- You learn the Misty Step spell and one 1st-level spell of your choice. The 1st-level spell must be from the Divination or Enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+    ],
+    "url": "/api/feats/fey-touched"
+  },
+  {
+    "index": "gift-of-the-chromatic-dragon",
+    "name": "Gift of the Chromatic Dragon",
+    "prerequisites": [],
+    "desc": [
+      "You’ve manifested some of the power of chromatic dragons, granting you the following benefits:",
+      "- Chromatic Infusion. As a bonus action, you can touch a simple or martial weapon and infuse it with one of the following damage types: acid, cold, fire, lightning, or poison. For the next minute, the weapon deals an extra 1d4 damage of the chosen type when it hits. After you use this bonus action, you can’t do so again until you finish a long rest.",
+      "- Reactive Resistance. When you take acid, cold, fire, lightning, or poison damage, you can use your reaction to give yourself resistance to that instance of damage. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+    ],
+    "url": "/api/feats/gift-of-the-chromatic-dragon"
+  },
+  {
+    "index": "gift-of-the-gem-dragon",
+    "name": "Gift of the Gem Dragon",
+    "prerequisites": [],
+    "desc": [
+      "You’ve manifested some of the power of gem dragons, granting you the following benefits:",
+      "- Ability Score Increase. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.",
+      "- Telekinetic Reprisal. When you take damage from a creature that is within 10 feet of you, you can use your reaction to emanate telekinetic energy. The creature that dealt damage to you must make a Strength saving throw (DC equals 8 + your proficiency bonus + the ability modifier of the score increased by this feat). On a failed save, the creature takes 2d8 force damage and is pushed up to 10 feet away from you. On a successful save, the creature takes half as much damage and isn’t pushed. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+    ],
+    "url": "/api/feats/gift-of-the-gem-dragon"
+  },
+  {
+    "index": "gift-of-the-metalic-dragon",
+    "name": "Gift of the Metalic Dragon",
+    "prerequisites": [],
+    "desc": [
+      "You’ve manifested some of the power of metallic dragons, granting you the following benefits:",
+      "- Draconic Healing. You learn the Cure Wounds spell. You can cast this spell without expending a spell slot. Once you cast this spell in this way, you can’t do so again until you finish a long rest. You can also cast this spell using spell slots you have. The spell’s spellcasting ability is Intelligence, Wisdom, or Charisma when you cast it with this feat (choose when you gain the feat).",
+      "- Protective Wings. You can manifest protective wings that can shield you or others. When you or another creature you can see within 5 feet of you is hit by an attack roll, you can use your reaction to manifest spectral wings from your back for a moment. You grant a bonus to the target’s AC equal to your proficiency bonus against that attack roll, potentially causing it to miss. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+    ],
+    "url": "/api/feats/gift-of-the-metalic-dragon"
+  },
+  {
     "index": "grappler",
     "name": "Grappler",
     "prerequisites": [
@@ -18,5 +211,390 @@
       "- You can use your action to try to pin a creature Grappled by you. To do so, make another grapple check. If you succeed, you and the creature are both Restrained until the grapple ends."
     ],
     "url": "/api/feats/grappler"
+  },
+  {
+    "index": "great-weapon-master",
+    "name": "Great Weapon Master",
+    "prerequisites": [],
+    "desc": [
+      "You've learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:",
+      "- On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.",
+      "- Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage."
+    ],
+    "url": "/api/feats/great-weapon-master"
+  },
+  {
+    "index": "gunner",
+    "name": "Gunner",
+    "prerequisites": [],
+    "desc": [
+      "You have a quick hand and keen eye when employing firearms, granting you the following benefits:",
+      "- Increase your Dexterity score by 1, to a maximum of 20.",
+      "- You gain proficiency with firearms (see “Firearms” in the Dungeon Master’s Guide).",
+      "- You ignore the loading property of firearms.",
+      "- Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls."
+    ],
+    "url": "/api/feats/gunner"
+  },
+  {
+    "index": "healer",
+    "name": "Healer",
+    "prerequisites": [],
+    "desc": [
+      "You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:",
+      "- When you use a healer's kit to stabilize a dying creature, that creature also regains 1 hit point.",
+      "- As an action. you can spend one use of a healer's kit to tend to a creature and restore 1d6 + 4 hit points to it, plus additional hit points equal to the creature's maximum number of Hit Dice. The creature can't regain hit points from this feat again until it finishes a short or long rest."
+    ],
+    "url": "/api/feats/healer"
+  },
+  {
+    "index": "inspiring-leader",
+    "name": "Inspiring Leader",
+    "prerequisites": [
+      {
+        "ability_score": {
+          "index": "cha",
+          "name": "CHA",
+          "url": "/api/ability-scores/cha"
+        },
+        "minimum_score": 13
+      }
+    ],
+    "desc": [
+      "You can spend 10 minutes inspiring your companions, shoring up their resolve to fight. When you do so, choose up to six friendly creatures (which can include yourself) within 30 feet of you who can see or hear you and who can understand you. Each creature can gain temporary hit points equal to your level + your Charisma modifier. A creature can't gain temporary hit points from this feat again until it has finished a short or long rest."
+    ],
+    "url": "/api/feats/inspiring-leader"
+  },
+  {
+    "index": "keen-mind",
+    "name": "Keen Mind",
+    "prerequisites": [],
+    "desc": [
+      "You have a mind that can track time, direction, and detail with uncanny precision. You gain the following benefits.",
+      "- Increase your Intelligence score by 1, to a maximum of 20.",
+      "- You always know which way is north.",
+      "- You always know the number of hours left before the next sunrise or sunset.",
+      "- You can accurately recall anything you have seen or heard within the past month."
+    ],
+    "url": "/api/feats/keen-mind"
+  },
+  {
+    "index": "lightly-armored",
+    "name": "Lightly Armored",
+    "prerequisites": [],
+    "desc": [
+      "You have trained to master the use of light armor, gaining the following benefits.",
+      "- Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+      "- You gain proficiency with light armor."
+    ],
+    "url": "/api/feats/lightly-armored"
+  },
+  {
+    "index": "linguist",
+    "name": "Linguist",
+    "prerequisites": [],
+    "desc": [
+      "You have studied languages and codes, gaining the following benefits:",
+      "- Increase your Intelligence score by 1, to a maximum of 20.",
+      "- You learn three languages of your choice.",
+      "- You can ably create written ciphers. Others can't decipher a code you create unless you teach them, they succeed on an Intelligence check (DC equal to your Intelligence score + your proficiency bonus), or they use magic to decipher it."
+    ],
+    "url": "/api/feats/linguist"
+  },
+  {
+    "index": "lucky",
+    "name": "Lucky",
+    "prerequisites": [],
+    "desc": [
+      "You have inexplicable luck that seems to kick in at just the right moment.",
+      "You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional d20. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the d20s is used for the attack roll, ability check, or saving throw.",
+      "You can also spend one luck point when an attack roll is made against you. Roll a d20 and then choose whether the attack uses the attacker's roll or yours.",
+      "If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled.",
+      "You regain your expended luck points when you finish a long rest."
+    ],
+    "url": "/api/feats/lucky"
+  },
+  {
+    "index": "mage-slayer",
+    "name": "Mage Slayer",
+    "prerequisites": [],
+    "desc": [
+      "You have practiced techniques in melee combat against spellcasters, gaining the following benefits.",
+      "- When a creature within 5 feet of you casts a spell, you can use your reaction to make a melee weapon attack against that creature.",
+      "- When you damage a creature that is concentrating on a spell, that creature has disadvantage on the saving throw it makes to maintain its concentration.",
+      "- You have advantage on saving throws against spells cast by creatures within 5 feet of you."
+    ],
+    "url": "/api/feats/mage-slayer"
+  },
+  {
+    "index": "magic-initiate",
+    "name": "Magic Initiate",
+    "prerequisites": [],
+    "desc": [
+      "Choose a class: bard, cleric, druid, sorcerer, warlock, or wizard. You learn two cantrips of your choice from that class's spell list.",
+      "In addition, choose one 1st-level spell to learn from that same list. Using this feat, you can cast the spell once at its lowest level, and you must finish a long rest before you can cast it in this way again.",
+      "Your spellcasting ability for these spells depends on the class you chose: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid; or Intelligence for wizard."
+    ],
+    "url": "/api/feats/magic-initiate"
+  },
+  {
+    "index": "martial-adept",
+    "name": "Martial Adept",
+    "prerequisites": [],
+    "desc": [
+      "You have martial training that allows you to perform special combat maneuvers. You gain the following benefits.",
+      "You learn two maneuvers of your choice from among those available to the Battle Master archetype in the fighter class. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
+      "You gain one superiority die, which is a d6 (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest."
+    ],
+    "url": "/api/feats/martial-adept"
+  },
+  {
+    "index": "mobile",
+    "name": "Mobile",
+    "prerequisites": [],
+    "desc": [
+      "You are exceptionally speedy and agile. You gain the following benefits:",
+      "- Your speed increases by 10 feet.",
+      "- When you use the Dash action, difficult terrain doesn't cost you extra movement on that turn.",
+      "- When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not."
+    ],
+    "url": "/api/feats/mobile"
+  },
+  {
+    "index": "mounted-combatant",
+    "name": "Mounted Combatant",
+    "prerequisites": [],
+    "desc": [
+      "You are a dangerous foe to face while mounted. While you are mounted and aren't incapacitated, you gain the following benefits:",
+      "- You have advantage on melee attack rolls against any unmounted creature that is smaller than your mount.",
+      "- You can force an attack targeted at your mount to target you instead.",
+      "- If your mount is subjected to an effect that allows it to make Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+    ],
+    "url": "/api/feats/mounted-combatant"
+  },
+  {
+    "index": "observant",
+    "name": "Observant",
+    "prerequisites": [],
+    "desc": [
+      "Quick to notice details of your environment, you gain the following benefits:",
+      "- Increase your Intelligence or Wisdom score by 1, to a maximum of 20.",
+      "- If you can see a creature's mouth while it is speaking a language you understand, you can interpret what it's saying by reading its lips.",
+      "- You have a +5 bonus to your passive Wisdom (Perception) and passive Intelligence (Investigation) scores."
+    ],
+    "url": "/api/feats/observant"
+  },
+  {
+    "index": "piercer",
+    "name": "Piercer",
+    "prerequisites": [],
+    "desc": [
+      "You have achieved a penetrating precision in combat, granting you the following benefits:",
+      "- Increase your Strength or Dexterity by 1, to a maximum of 20.",
+      "- Once per turn, when you hit a creature with an attack that deals piercing damage, you can re-roll one of the attack’s damage dice, and you must use the new roll.",
+      "- When you score a critical hit that deals piercing damage to a creature, you can roll one additional damage die when determining the extra piercing damage the target takes."
+    ],
+    "url": "/api/feats/piercer"
+  },
+  {
+    "index": "poisoner",
+    "name": "Poisoner",
+    "prerequisites": [],
+    "desc": [
+      "You can prepare and deliver deadly poisons, gaining the following benefits:",
+      "- When you make a damage roll, you ignore resistance to poison damage.",
+      "- You can coat a weapon in poison as a bonus action, instead of an action.",
+      "- You gain proficiency with the poisoner's kit if you don't already have it. With one hour of work using a poisoner's kit and expending 50 gp worth of materials, you can create a number of doses of potent poison equal to your proficiency bonus. Once applied to a weapon or piece of ammunition, the poison retains its potency for 1 minute or until you hit with the weapon or ammunition. When a creature takes damage from the coated weapon or ammunition, that creature must succeed on a DC 14 Constitution saving throw or take 2d8 poison damage and become poisoned until the end of your next turn."
+    ],
+    "url": "/api/feats/poisoner"
+  },
+  {
+    "index": "polearm-master",
+    "name": "Polearm Master",
+    "prerequisites": [],
+    "desc": [
+      "You gain the following benefits:",
+      "- When you take the Attack action and attack with only a glaive, halberd, quarterstaff, or spear, you can use a bonus action to make a melee attack with the opposite end of the weapon. This attack uses the same ability modifier as the primary attack. The weapon's damage die for this attack is a d4, and it deals bludgeoning damage.",
+      "- While you are wielding a glaive, halberd, pike, quarterstaff, or spear, other creatures provoke an opportunity attack from you when they enter the reach you have with that weapon."
+    ],
+    "url": "/api/feats/polearm-master"
+  },
+  {
+    "index": "resilient",
+    "name": "Resilient",
+    "prerequisites": [],
+    "desc": [
+      "Choose one ability score. You gain the following benefits:",
+      "- Increase the chosen ability score by 1, to a maximum of 20.",
+      "- You gain proficiency in saving throws using the chosen ability."
+    ],
+    "url": "/api/feats/resilient"
+  },
+  {
+    "index": "savage-attacker",
+    "name": "Savage Attacker",
+    "prerequisites": [],
+    "desc": [
+      "Once per turn when you roll damage for a melee weapon attack, you can reroll the weapon's damage dice and use either total."
+    ],
+    "url": "/api/feats/savage-attacker"
+  },
+  {
+    "index": "sentinel",
+    "name": "Sentinel",
+    "prerequisites": [],
+    "desc": [
+      "You have mastered techniques to take advantage of every drop in any enemy's guard, gaining the following benefits.",
+      "- When you hit a creature with an opportunity attack, the creature's speed becomes 0 for the rest of the turn.",
+      "- Creatures provoke opportunity attacks from you even if they take the Disengage action before leaving your reach.",
+      "- When a creature within 5 feet of you makes an attack against a target other than you (and that target doesn't have this feat), you can use your reaction to make a melee weapon attack against the attacking creature."
+    ],
+    "url": "/api/feats/sentinel"
+  },
+  {
+    "index": "shadow-touched",
+    "name": "Shadow Touched",
+    "prerequisites": [],
+    "desc": [
+      "Your exposure to the Shadowfell's magic has changed you, granting you the following benefits:",
+      "- Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.",
+      "You learn the Invisibility spell and one 1st-level spell of your choice. The 1st-level spell must be from the Illusion or Necromancy school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+    ],
+    "url": "/api/feats/shadow-touched"
+  },
+  {
+    "index": "sharpshooter",
+    "name": "Sharpshooter",
+    "prerequisites": [],
+    "desc": [
+      "You have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits:",
+      "- Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.",
+      "- Your ranged weapon attacks ignore half and three-quarters cover.",
+      "- Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If that attack hits, you add +10 to the attack's damage."
+    ],
+    "url": "/api/feats/sharpshooter"
+  },
+  {
+    "index": "shield-master",
+    "name": "Shield Master",
+    "prerequisites": [],
+    "desc": [
+      "You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield:",
+      "- If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5 feet of you with your shield.",
+      "- If you aren't incapacitated, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you.",
+      "- If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect."
+    ],
+    "url": "/api/feats/shield-master"
+  },
+  {
+    "index": "skill-expert",
+    "name": "Skill Expert",
+    "prerequisites": [],
+    "desc": [
+      "You have honed your proficiency with particular skills, granting you the following benefits:",
+      "- Increase one ability score of your choice by 1, to a maximum of 20.",
+      "- You gain proficiency in one skill of your choice.",
+      "- Choose one skill in which you have proficiency. You gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make with it. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus."
+    ],
+    "url": "/api/feats/skill-expert"
+  },
+  {
+    "index": "skilled",
+    "name": "Skilled",
+    "prerequisites": [],
+    "desc": [
+      "You gain proficiency in any combination of three skills or tools of your choice."
+    ],
+    "url": "/api/feats/skilled"
+  },
+  {
+    "index": "skulker",
+    "name": "Skuler",
+    "prerequisites": [
+      {
+        "ability_score": {
+          "index": "dex",
+          "name": "DEX",
+          "url": "/api/ability-scores/dex"
+        },
+        "minimum_score": 13
+      }
+    ],
+    "desc": [
+      "You are an expert at slinking through shadows. You gain the following benefits:",
+      "- You can try to hide when you are lightly obscured from the creature from which you are hiding.",
+      "- When you are hidden from a creature and miss it with a ranged weapon attack, making the attack doesn't reveal your position.",
+      "- Dim light doesn't impose disadvantage on your Wisdom (Perception) checks relying on sight."
+    ],
+    "url": "/api/feats/skuler"
+  },
+  {
+    "index": "slasher",
+    "name": "Slasher",
+    "prerequisites": [],
+    "desc": [
+      "You've learned where to cut to have the greatest results, granting you the following benefits:",
+      "- Increase your Strength or Dexterity by 1, to a maximum of 20.",
+      "- Once per turn when you hit a creature with an attack that deals slashing damage, you can reduce the speed of the target by 10 feet until the start of your next turn.",
+      "- When you score a critical hit that deals slashing damage to a creature, you grievously wound it. Until the start of your next turn, the target has disadvantage on all attack rolls."
+    ],
+    "url": "/api/feats/slasher"
+  },
+  {
+    "index": "tavern-brawler",
+    "name": "Tavern Brawler",
+    "prerequisites": [],
+    "desc": [
+      "Accustomed to the rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:",
+      "- Increase your Strength or Consititution score by 1, to a maximum of 20.",
+      "- You are proficient with improvised weapons.",
+      "- Your unarmed strike uses a d4 for damage.",
+      "- When you hit a creature with an unarmed strike or an improvised weapon on your turn, you can use a bonus action to attempt to grapple the target."
+    ],
+    "url": "/api/feats/tavern-brawler"
+  },
+  {
+    "index": "telekinetic",
+    "name": "Telekinetic",
+    "prerequisites": [],
+    "desc": [
+      "You learn to move things with your mind, granting you the following benefits:",
+      "- Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.",
+      "- You learn the mage hand cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand invisible. If you already know this spell, its range increases by 30 feet when you cast it. Its spellcasting ability is the ability increased by this feat.",
+      "- As a bonus action, you can try to telekinetically shove one creature you can see within 30 feet of you. When you do so, the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + the ability modifier of the score increased by this feat) or be moved 5 feet toward or away from you. A creature can willingly fail this save."
+    ],
+    "url": "/api/feats/telekinetic"
+  },
+  {
+    "index": "telepathic",
+    "name": "Telepathic",
+    "prerequisites": [],
+    "desc": [
+      "You awaken the ability to mentally connect with others, granting you the following benefits:",
+      "- Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.",
+      "- You can speak telepathically to any creature you can see within 60 feet of you. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature the ability to respond to you telepathically.",
+      "- You can cast the Detect Thoughts spell, requiring no spell slot or components, and you must finish a long rest before you can cast it this way again. Your spellcasting ability for the spell is the ability increased by this feat. If you have spell slots of 2nd level or higher, you can cast this spell with them."
+    ],
+    "url": "/api/feats/telepathic"
+  },
+  {
+    "index": "tough",
+    "name": "Tough",
+    "prerequisites": [],
+    "desc": [
+      "Your hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points."
+    ],
+    "url": "/api/feats/tough"
+  },
+  {
+    "index": "weapon-master",
+    "name": "Weapon Master",
+    "prerequisites": [],
+    "desc": [
+      "You have practiced extensively with a variety of weapons, gaining the following benefits:",
+      "- Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+      "- You gain proficiency with four weapons of your choice. Each one must be a simple or a martial weapon."
+    ],
+    "url": "/api/feats/weapon-master"
   }
 ]
