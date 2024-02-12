@@ -109,7 +109,7 @@ jobs:
     if: ${{ github.ref == 'refs/heads/main' && github.repository == '5e-bits/5e-database' }}
     steps:
       - name: Trigger downstream
-        uses: peter-evans/repository-dispatch@v1
+        uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.PAT_TOKEN }}
           repository: 5e-bits/5e-srd-api
