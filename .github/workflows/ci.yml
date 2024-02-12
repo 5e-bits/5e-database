@@ -7,7 +7,7 @@ on:
   push:
     branches: [main]
     tags:
-      - 'v*'
+      - "v*"
   pull_request:
     branches: [main]
 
@@ -71,7 +71,7 @@ jobs:
         id: semantic
         uses: cycjimmy/semantic-release-action@v4
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
 
   container-release:
     name: Container Release
@@ -99,8 +99,7 @@ jobs:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ needs.github-release.outputs.version }},${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-          labels:
-            version=${{ needs.github-release.outputs.version }}
+          labels: version=${{ needs.github-release.outputs.version }}
 
   trigger_downstream:
     name: Trigger downstream
