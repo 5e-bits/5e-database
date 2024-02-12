@@ -17,10 +17,10 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v4
-      - name: Use Node.js 18.x
+      - name: Use Node.js 20.x
         uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 20.x
       - run: npm install
       - run: npm run lint
 
@@ -29,10 +29,10 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v4
-      - name: Use Node.js 18.x
+      - name: Use Node.js 20.x
         uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 20.x
       - run: npm install
       - run: npm run test
 
@@ -43,10 +43,10 @@ jobs:
     if: ${{ github.event_name != 'pull_request' && github.repository == '5e-bits/5e-database' }}
     steps:
       - uses: actions/checkout@v4
-      - name: Use Node.js 18.x
+      - name: Use Node.js 20.x
         uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 20.x
       - name: Refresh DB contents
         env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
