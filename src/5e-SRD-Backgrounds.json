@@ -3257,14 +3257,1661 @@
       }
     },
     "url": "/api/backgrounds/city-watch"
+  },
+  {
+    "index": "clan-crafter",
+    "name": "Clan Crafter",
+    "starting_proficiencies": [
+      {
+        "index": "skill-history",
+        "name": "Skill: History",
+        "url": "/api/proficiencies/skill-history"
+      },
+      {
+        "index": "skill-insight",
+        "name": "Skill: Insight",
+        "url": "/api/proficiencies/skill-insight"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/proficiencies/artisans-tools"
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      },
+      "default": "Dwarvish"
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "artisans-tools",
+          "name": "Set of Artisan's Tools",
+          "url": "/api/equipment/artisans-tools"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "makers-mark-chisel",
+          "name": "Maker's Mark Chisel",
+          "url": "/api/equipment/makers-mark-chisel"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "travelers-clothes",
+          "name": "Traveler's Clothes",
+          "url": "/api/equipment/travelers-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/equipment/pouch"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "gem",
+          "name": "Gem worth 10 gp",
+          "url": "/api/equipment/gem"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "5 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Respect of the Stout Folk",
+      "desc": [
+        "As well respected as clan crafters are among outsiders, no one esteems them quite so highly as dwarves do. You always have free room and board in any place where shield dwarves or gold dwarves dwell, and the individuals in such a settlement might vie among themselves to determine who can offer you (and possibly your companions) the finest accommodations and assistance."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I believe that anything worth doing is worth doing right. I can't help it—I'm a perfectionist."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a snob who looks down on those who can't appreciate fine art."
+          },
+          {
+            "option_type": "string",
+            "string": "I always want to know how things work and what makes people tick."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm full of witty aphorisms and have a proverb for every occasion."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm rude to people who lack my commitment to hard work and fair play."
+          },
+          {
+            "option_type": "string",
+            "string": "I like to talk at length about my profession."
+          },
+          {
+            "option_type": "string",
+            "string": "I don't part with my money easily and will haggle tirelessly to get the best deal possible."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm well known for my work, and I want to make sure everyone appreciates it. I'm always taken aback when people haven't heard of me."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Community. It is the duty of all civilized people to strengthen the bonds of community and the security of civilization.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful",
+                "url": "/api/alignments/lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Generosity. My talents were given to me so that I could use them to benefit the world.",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good",
+                "url": "/api/alignments/good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Freedom. Everyone should be free to pursue his or her own livelihood.",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic",
+                "url": "/api/alignments/chaotic"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Greed. I'm only in it for the money.",
+            "alignments": [
+              {
+                "index": "evil",
+                "name": "Evil",
+                "url": "/api/alignments/evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "People. I'm committed to the people I care about, not to ideals.",
+            "alignments": [
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/alignments/neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Aspiration. I work hard to be the best there is at my craft.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any",
+                "url": "/api/alignments/any"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "The workshop where I learned my trade is the most important place in the world to me."
+          },
+          {
+            "option_type": "string",
+            "string": "I created a great work for someone, and then found them unworthy to receive it. I'm still looking for someone worthy."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe my guild a great debt for forging me into the person I am today."
+          },
+          {
+            "option_type": "string",
+            "string": "I pursue wealth to secure someone's love."
+          },
+          {
+            "option_type": "string",
+            "string": "One day I will return to my guild and prove that I am the greatest artisan of them all."
+          },
+          {
+            "option_type": "string",
+            "string": "I will get revenge on the evil forces that destroyed my place of business and ruined my livelihood."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'll do anything to get my hands on something rare or priceless."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm quick to assume that someone is trying to cheat me."
+          },
+          {
+            "option_type": "string",
+            "string": "No one must ever learn that I once stole money from guild coffers."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm never satisfied with what I have—I always want more."
+          },
+          {
+            "option_type": "string",
+            "string": "I would kill to acquire a noble title."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I'm surrounded by rivals."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/clan-crafter"
+  },
+  {
+    "index": "cloistered-scholar",
+    "name": "Cloistered Scholar",
+    "starting_proficiencies": [
+      {
+        "index": "skill-history",
+        "name": "Skill: History",
+        "url": "/api/proficiencies/skill-history"
+      }
+    ],
+    "proficiency_options": {
+      "choose": 1,
+      "type": "proficiencies",
+      "from": [
+        {
+          "index": "skill-arcana",
+          "name": "Skill: Arcana",
+          "url": "/api/proficiencies/skill-arcana"
+        },
+        {
+          "index": "skill-nature",
+          "name": "Skill: Nature",
+          "url": "/api/proficiencies/skill-nature"
+        },
+        {
+          "index": "skill-religion",
+          "name": "Skill: Religion",
+          "url": "/api/proficiencies/skill-religion"
+        }
+      ]
+    },
+    "language_options": {
+      "choose": 2,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "scholars-robes",
+          "name": "Scholar's Robes",
+          "url": "/api/equipment/scholars-robes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "writing-kit",
+          "name": "Writing Kit",
+          "url": "/api/equipment/writing-kit"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "borrowed-book",
+          "name": "Borrowed Book (subject of current study)",
+          "url": "/api/equipment/borrowed-book"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "10 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Library Access",
+      "desc": [
+        "Though others must often endure extensive interviews and significant fees to gain access to even the most common archives in your library, you have free and easy access to the majority of the library, though it might also have repositories of lore that are too valuable, magical, or secret to permit anyone immediate access.",
+        "You have a working knowledge of your cloister's personnel and bureaucracy, and you know how to navigate those connections with some ease.",
+        "Additionally, you are likely to gain preferential treatment at other libraries across the Realms, as professional courtesy to a fellow scholar."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I use polysyllabic words that convey the impression of great erudition."
+          },
+          {
+            "option_type": "string",
+            "string": "I've read every book in the world's greatest libraries—or I like to boast that I have."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm used to helping out those who aren't as smart as I am, and I patiently explain anything and everything to others."
+          },
+          {
+            "option_type": "string",
+            "string": "There's nothing I like more than a good mystery."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm willing to listen to every side of an argument before I make my own judgment."
+          },
+          {
+            "option_type": "string",
+            "string": "I...speak...slowly...when talking...to idiots...which...almost...everyone...is...compared...to me."
+          },
+          {
+            "option_type": "string",
+            "string": "I am horribly, horribly awkward in social situations."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm convinced that people are always trying to steal my secrets."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Knowledge. The path to power and self-improvement is through knowledge.",
+            "alignments": [
+              {
+                "index": "neutral",
+                "name": "Neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Beauty. What is beautiful points us beyond itself toward what is true.",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Logic. Emotions must not cloud our logical thinking.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "No Limits. Nothing should fetter the infinite possibility inherent in all existence.",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Power. Knowledge is the path to power and domination.",
+            "alignments": [
+              {
+                "index": "evil",
+                "name": "Evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Self-Improvement. The goal of a life of study is the betterment of oneself.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "It is my duty to protect my students."
+          },
+          {
+            "option_type": "string",
+            "string": "I have an ancient text that holds terrible secrets that must not fall into the wrong hands."
+          },
+          {
+            "option_type": "string",
+            "string": "I work to preserve a library, university, scriptorium, or monastery."
+          },
+          {
+            "option_type": "string",
+            "string": "My life's work is a series of tomes related to a specific field of lore."
+          },
+          {
+            "option_type": "string",
+            "string": "I've been searching my whole life for the answer to a certain question."
+          },
+          {
+            "option_type": "string",
+            "string": "I sold my soul for knowledge. I hope to do great deeds and win it back."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I am easily distracted by the promise of information."
+          },
+          {
+            "option_type": "string",
+            "string": "Most people scream and run when they see a demon. I stop and take notes on its anatomy."
+          },
+          {
+            "option_type": "string",
+            "string": "Unlocking an ancient mystery is worth the price of a civilization."
+          },
+          {
+            "option_type": "string",
+            "string": "I overlook obvious solutions in favor of complicated ones."
+          },
+          {
+            "option_type": "string",
+            "string": "I speak without really thinking through my words, invariably insulting others."
+          },
+          {
+            "option_type": "string",
+            "string": "I can't keep a secret to save my life, or anyone else's."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/cloistered-scholar"
+  },
+  {
+    "index": "courtier",
+    "name": "Courtier",
+    "starting_proficiencies": [
+      {
+        "index": "skill-insight",
+        "name": "Skill: Insight",
+        "url": "/api/proficiencies/skill-insight"
+      },
+      {
+        "index": "skill-persuasion",
+        "name": "Skill: Persuasion",
+        "url": "/api/proficiencies/skill-persuasion"
+      }
+    ],
+    "language_options": {
+      "choose": 2,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "fine-clothes",
+          "name": "Set of Fine Clothes",
+          "url": "/api/equipment/fine-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "5 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Court Functionary",
+      "desc": [
+        "Your knowledge of how bureaucracies function lets you gain access to the records and inner workings of any noble court or government you encounter. You know who the movers and shakers are, whom to go to for the favors you seek, and what the current intrigues of interest in the group are."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I believe that anything worth doing is worth doing right. I can't help it—I'm a perfectionist."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a snob who looks down on those who can't appreciate fine art."
+          },
+          {
+            "option_type": "string",
+            "string": "I always want to know how things work and what makes people tick."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm full of witty aphorisms and have a proverb for every occasion."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm rude to people who lack my commitment to hard work and fair play."
+          },
+          {
+            "option_type": "string",
+            "string": "I like to talk at length about my profession."
+          },
+          {
+            "option_type": "string",
+            "string": "I don't part with my money easily and will haggle tirelessly to get the best deal possible."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm well known for my work, and I want to make sure everyone appreciates it. I'm always taken aback when people haven't heard of me."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Community. It is the duty of all civilized people to strengthen the bonds of community and the security of civilization.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Generosity. My talents were given to me so that I could use them to benefit the world.",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Freedom. Everyone should be free to pursue his or her own livelihood.",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Greed. I'm only in it for the money.",
+            "alignments": [
+              {
+                "index": "evil",
+                "name": "Evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "People. I'm committed to the people I care about, not to ideals.",
+            "alignments": [
+              {
+                "index": "neutral",
+                "name": "Neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Aspiration. I work hard to be the best there is at my craft.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "The workshop where I learned my trade is the most important place in the world to me."
+          },
+          {
+            "option_type": "string",
+            "string": "I created a great work for someone, and then found them unworthy to receive it. I'm still looking for someone worthy."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe my guild a great debt for forging me into the person I am today."
+          },
+          {
+            "option_type": "string",
+            "string": "I pursue wealth to secure someone's love."
+          },
+          {
+            "option_type": "string",
+            "string": "One day I will return to my guild and prove that I am the greatest artisan of them all."
+          },
+          {
+            "option_type": "string",
+            "string": "I will get revenge on the evil forces that destroyed my place of business and ruined my livelihood."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'll do anything to get my hands on something rare or priceless."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm quick to assume that someone is trying to cheat me."
+          },
+          {
+            "option_type": "string",
+            "string": "No one must ever learn that I once stole money from guild coffers."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm never satisfied with what I have—I always want more."
+          },
+          {
+            "option_type": "string",
+            "string": "I would kill to acquire a noble title."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I'm surrounded by rivals."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/courtier"
+  },
+  {
+    "index": "criminal",
+    "name": "Criminal",
+    "starting_proficiencies": [
+      {
+        "index": "skill-deception",
+        "name": "Skill: Deception",
+        "url": "/api/proficiencies/skill-deception"
+      },
+      {
+        "index": "skill-stealth",
+        "name": "Skill: Stealth",
+        "url": "/api/proficiencies/skill-stealth"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "choose": 1,
+        "type": "tools",
+        "from": [
+          {
+            "index": "gaming-set",
+            "name": "One type of gaming set",
+            "url": "/api/proficiencies/gaming-set"
+          },
+          {
+            "index": "thieves-tools",
+            "name": "Thieves' Tools",
+            "url": "/api/proficiencies/thieves-tools"
+          }
+        ]
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "crowbar",
+          "name": "Crowbar",
+          "url": "/api/equipment/crowbar"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "dark-common-clothes",
+          "name": "Set of dark common clothes including a hood",
+          "url": "/api/equipment/dark-common-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Belt Pouch",
+          "url": "/api/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "15 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Criminal Contact",
+      "desc": [
+        "You have a reliable and trustworthy contact who acts as your liaison to a network of other criminals. You know how to get messages to and from your contact, even over great distances; specifically, you know the local messengers, corrupt caravan masters, and seedy sailors who can deliver messages for you."
+      ]
+    },
+    "specialty": {
+      "name": "Criminal Specialty",
+      "desc": [
+        "There are many kinds of criminals, and within a thieves' guild or similar criminal organization, individual members have particular specialties. Even criminals who operate outside of such organizations have strong preferences for certain kinds of crimes over others. Choose the role you played in your criminal life, or roll on the table below."
+      ],
+      "options": [
+        {
+          "option_type": "string",
+          "string": "Blackmailer"
+        },
+        {
+          "option_type": "string",
+          "string": "Burglar"
+        },
+        {
+          "option_type": "string",
+          "string": "Enforcer"
+        },
+        {
+          "option_type": "string",
+          "string": "Fence"
+        },
+        {
+          "option_type": "string",
+          "string": "Highway robber"
+        },
+        {
+          "option_type": "string",
+          "string": "Hired killer"
+        },
+        {
+          "option_type": "string",
+          "string": "Pickpocket"
+        },
+        {
+          "option_type": "string",
+          "string": "Smuggler"
+        }
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I always have a plan for what to do when things go wrong."
+          },
+          {
+            "option_type": "string",
+            "string": "I am always calm, no matter what the situation. I never raise my voice or let my emotions control me."
+          },
+          {
+            "option_type": "string",
+            "string": "The first thing I do in a new place is note the locations of everything valuable—or where such things could be hidden."
+          },
+          {
+            "option_type": "string",
+            "string": "I would rather make a new friend than a new enemy."
+          },
+          {
+            "option_type": "string",
+            "string": "I am incredibly slow to trust. Those who seem the fairest often have the most to hide."
+          },
+          {
+            "option_type": "string",
+            "string": "I don’t pay attention to the risks in a situation. Never tell me the odds."
+          },
+          {
+            "option_type": "string",
+            "string": "The best way to get me to do something is to tell me I can’t do it."
+          },
+          {
+            "option_type": "string",
+            "string": "I blow up at the slightest insult."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Honor. I don’t steal from others in the trade.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Freedom. Chains are meant to be broken, as are those who would forge them.",
+            "alignment": "Chaotic"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Charity. I steal from the wealthy so that I can help people in need.",
+            "alignment": "Good"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Greed. I will do whatever it takes to become wealthy.",
+            "alignment": "Evil"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "People. I’m loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care.",
+            "alignment": "Neutral"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Redemption. There’s a spark of good in everyone.",
+            "alignment": "Good"
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I’m trying to pay off an old debt I owe to a generous benefactor."
+          },
+          {
+            "option_type": "string",
+            "string": "My ill-gotten gains go to support my family."
+          },
+          {
+            "option_type": "string",
+            "string": "Something important was taken from me, and I aim to steal it back."
+          },
+          {
+            "option_type": "string",
+            "string": "I will become the greatest thief that ever lived."
+          },
+          {
+            "option_type": "string",
+            "string": "I’m guilty of a terrible crime. I hope I can redeem myself for it."
+          },
+          {
+            "option_type": "string",
+            "string": "Someone I loved died because of a mistake I made. That will never happen again."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "When I see something valuable, I can’t think about anything but how to steal it."
+          },
+          {
+            "option_type": "string",
+            "string": "When faced with a choice between money and my friends, I usually choose the money."
+          },
+          {
+            "option_type": "string",
+            "string": "If there’s a plan, I’ll forget it. If I don’t forget it, I’ll ignore it."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a 'tell' that reveals when I’m lying."
+          },
+          {
+            "option_type": "string",
+            "string": "I turn tail and run when things look bad."
+          },
+          {
+            "option_type": "string",
+            "string": "An innocent person is in prison for a crime that I committed. I’m okay with that."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/criminal"
+  },
+  {
+    "index": "baldurs-gate-criminal",
+    "name": "Baldur's Gate Criminal",
+    "starting_proficiencies": [
+      {
+        "index": "skill-deception",
+        "name": "Skill: Deception",
+        "url": "/api/proficiencies/skill-deception"
+      },
+      {
+        "index": "skill-stealth",
+        "name": "Skill: Stealth",
+        "url": "/api/proficiencies/skill-stealth"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "choose": 1,
+        "type": "tools",
+        "from": [
+          {
+            "index": "gaming-set",
+            "name": "One type of gaming set",
+            "url": "/api/proficiencies/gaming-set"
+          },
+          {
+            "index": "thieves-tools",
+            "name": "Thieves' Tools",
+            "url": "/api/proficiencies/thieves-tools"
+          }
+        ]
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "crowbar",
+          "name": "Crowbar",
+          "url": "/api/equipment/crowbar"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "dark-common-clothes",
+          "name": "Set of dark common clothes including a hood",
+          "url": "/api/equipment/dark-common-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Belt Pouch",
+          "url": "/api/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "15 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Criminal Contact",
+      "desc": [
+        "You have a reliable and trustworthy contact who acts as your liaison to a network of other criminals. You know how to get messages to and from your contact, even over great distances; specifically, you know the local messengers, corrupt caravan masters, and seedy sailors who can deliver messages for you."
+      ]
+    },
+    "baldurs_gate_feature": {
+      "name": "Criminal Connections",
+      "desc": [
+        "In Baldur's Gate, crime is just another business. As a result, you can arrange a meeting with a low-ranking operative of nearly any business, patriar family, crew, government institution, or—certainly—the Guild. This operative will hear you out and, at their discretion, take your information or request up their chain of command. These meetings almost always occur in shady venues."
+      ]
+    },
+    "criminal_origins": {
+      "name": "Criminal Origins",
+      "desc": [
+        "Criminals are pervasive in Baldur's Gate. If you wish, you may roll on the Criminal Origins table for an event that began your life of crime."
+      ],
+      "options": [
+        {
+          "option_type": "string",
+          "string": "You crippled a Guild kingpin's cousin without realizing the connection. You got the Guild to back off demands for your death by offering to make amends by working for the criminals, but even so the kingpin still plots a personal revenge."
+        },
+        {
+          "option_type": "string",
+          "string": "The Guild took over your family business, ran it into the ground, and burned the building for insurance money. You were driven into crime yourself, but you'll never work for the Guild. You take special joy in hitting its targets first, tipping off its con victims and otherwise frustrating its schemes."
+        },
+        {
+          "option_type": "string",
+          "string": "It's always been about money. You're not paid what you're worth, working for someone who has more than they deserve. But the Guild offered you a way to fix that. You keep doing what you've always done—guard work, dock labor, business accounting—but what you learn you pass on to the Guild."
+        },
+        {
+          "option_type": "string",
+          "string": "The inequality of Baldur's Gate has driven you to take matters into your own hands. You steal from patriars and rich Lower City residents, funneling the money through charitable fronts to help the needy."
+        },
+        {
+          "option_type": "string",
+          "string": "You got into crime as a bored patriar looking for excitement. Your family has no idea of your activities, and neither does the Guild. If either of them ever finds out, your life as you know it will be over."
+        },
+        {
+          "option_type": "string",
+          "string": "A close friend or relative joined the Guild and vanished mysteriously. You've worked your way into the lower ranks hoping to find out what happened to them."
+        },
+        {
+          "option_type": "string",
+          "string": "You've always wanted to be a member of the Guild. As a child, you looked up to the Guild members' swagger, their flashy dress, and their competence, which all marked them as different from the other adults you knew. As soon as you could, you joined the organization."
+        },
+        {
+          "option_type": "string",
+          "string": "To you, this is just a way to earn a living. You go to work, do what needs to be done, and get paid. Anyone who pursues crime for thrill-seeking, to strike back at unjust authorities, or anything else are amateurs, and they're liable to get you arrested or killed with their idiocy."
+        }
+      ]
+    },
+    "specialty": {
+      "name": "Specialty",
+      "desc": [
+        "There are many kinds of criminals, and within a thieves' guild or similar criminal organization, individual members have particular specialties. Even criminals who operate outside of such organizations have strong preferences for certain kinds of crimes over others. Choose the role you played in your criminal life, or roll on the table below."
+      ],
+      "options": [
+        {
+          "option_type": "string",
+          "string": "Blackmailer"
+        },
+        {
+          "option_type": "string",
+          "string": "Burglar"
+        },
+        {
+          "option_type": "string",
+          "string": "Enforcer"
+        },
+        {
+          "option_type": "string",
+          "string": "Fence"
+        },
+        {
+          "option_type": "string",
+          "string": "Highway robber"
+        },
+        {
+          "option_type": "string",
+          "string": "Hired killer"
+        },
+        {
+          "option_type": "string",
+          "string": "Pickpocket"
+        },
+        {
+          "option_type": "string",
+          "string": "Smuggler"
+        }
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I always have a plan for when things go wrong."
+          },
+          {
+            "option_type": "string",
+            "string": "I am always calm, no matter what the situation. I never raise my voice or let my emotions control me."
+          },
+          {
+            "option_type": "string",
+            "string": "The first thing I do in a new place is note the locations of everything valuable—or where such things could be hidden."
+          },
+          {
+            "option_type": "string",
+            "string": "I would rather make a new friend than a new enemy."
+          },
+          {
+            "option_type": "string",
+            "string": "I am incredibly slow to trust. Those who seem the fairest often have the most to hide."
+          },
+          {
+            "option_type": "string",
+            "string": "I don't pay attention to the risks in a situation. Never tell me the odds."
+          },
+          {
+            "option_type": "string",
+            "string": "The best way to get me to do something is to tell me I can't do it."
+          },
+          {
+            "option_type": "string",
+            "string": "I blow up at the slightest insult."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Honor. I don't steal from others in the trade.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Freedom. Chains are meant to be broken, as are those who would forge them.",
+            "alignment": "Chaotic"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Charity. I steal from the wealthy so that I can help people in need.",
+            "alignment": "Good"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Greed. I will do whatever it takes to become wealthy.",
+            "alignment": "Evil"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "People. I'm loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care.",
+            "alignment": "Neutral"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Redemption. There's a spark of good in everyone.",
+            "alignment": "Good"
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'm trying to pay off an old debt I owe to a generous benefactor."
+          },
+          {
+            "option_type": "string",
+            "string": "My ill-gotten gains go to support my family."
+          },
+          {
+            "option_type": "string",
+            "string": "Something important was taken from me, and I aim to steal it back."
+          },
+          {
+            "option_type": "string",
+            "string": "I will become the greatest thief that ever lived."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm guilty of a terrible crime. I hope I can redeem myself for it."
+          },
+          {
+            "option_type": "string",
+            "string": "Someone I loved died because of a mistake I made. That will never happen again."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "When I see something valuable, I can't think about anything but how to steal it."
+          },
+          {
+            "option_type": "string",
+            "string": "When faced with a choice between money and my friends, I usually choose the money."
+          },
+          {
+            "option_type": "string",
+            "string": "If there's a plan, I'll forget it. If I don't forget it, I'll ignore it."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a 'tell' that reveals when I'm lying."
+          },
+          {
+            "option_type": "string",
+            "string": "I turn tail and run when things look bad."
+          },
+          {
+            "option_type": "string",
+            "string": "An innocent person is in prison for a crime that I committed. I'm okay with that."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/baldurs-gate-criminal"
+  },
+  {
+    "index": "criminal-spy",
+    "name": "Criminal / Spy",
+    "starting_proficiencies": [
+      {
+        "index": "skill-deception",
+        "name": "Skill: Deception",
+        "url": "/api/proficiencies/skill-deception"
+      },
+      {
+        "index": "skill-stealth",
+        "name": "Skill: Stealth",
+        "url": "/api/proficiencies/skill-stealth"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "choose": 1,
+        "type": "tools",
+        "from": [
+          {
+            "index": "gaming-set",
+            "name": "Gaming Set",
+            "url": "/api/proficiencies/gaming-set"
+          },
+          {
+            "index": "thieves-tools",
+            "name": "Thieves' Tools",
+            "url": "/api/proficiencies/thieves-tools"
+          }
+        ]
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "crowbar",
+          "name": "Crowbar",
+          "url": "/api/equipment/crowbar"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "common-clothes",
+          "name": "Set of Dark Common Clothes (including a hood)",
+          "url": "/api/equipment/common-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "15 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Criminal Contact",
+      "desc": [
+        "You have a reliable and trustworthy contact who acts as your liaison to a network of other criminals. You know how to get messages to and from your contact, even over great distances; specifically, you know the local messengers, corrupt caravan masters, and seedy sailors who can deliver messages for you."
+      ]
+    },
+    "specialty": {
+      "name": "Criminal Specialty",
+      "desc": [
+        "There are many kinds of criminals, and within a thieves' guild or similar criminal organization, individual members have particular specialties. Choose the role you played in your criminal life, or roll on the table below."
+      ],
+      "options": [
+        "Blackmailer",
+        "Burglar",
+        "Enforcer",
+        "Fence",
+        "Highway robber",
+        "Hired killer",
+        "Pickpocket",
+        "Smuggler"
+      ]
+    },
+    "variant": {
+      "name": "Spy",
+      "desc": [
+        "Although your capabilities are not much different from those of a burglar or smuggler, you learned and practiced them in a very different context: as an espionage agent. You might have been an officially sanctioned agent of the crown, or perhaps you sold the secrets you uncovered to the highest bidder."
+      ],
+      "feature": {
+        "name": "Spy Contact",
+        "desc": [
+          "You have a reliable and trustworthy contact who acts as your liaison to a network of other spies. You know how to get messages to and from your contact, even over great distances; specifically, you know the local messengers, corrupt caravan masters, and seedy sailors who can deliver messages for you."
+        ]
+      }
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I always have a plan for what to do when things go wrong."
+          },
+          {
+            "option_type": "string",
+            "string": "I am always calm, no matter what the situation. I never raise my voice or let my emotions control me."
+          },
+          {
+            "option_type": "string",
+            "string": "The first thing I do in a new place is note the locations of everything valuable—or where such things could be hidden."
+          },
+          {
+            "option_type": "string",
+            "string": "I would rather make a new friend than a new enemy."
+          },
+          {
+            "option_type": "string",
+            "string": "I am incredibly slow to trust. Those who seem the fairest often have the most to hide."
+          },
+          {
+            "option_type": "string",
+            "string": "I don't pay attention to the risks in a situation. Never tell me the odds."
+          },
+          {
+            "option_type": "string",
+            "string": "The best way to get me to do something is to tell me I can’t do it."
+          },
+          {
+            "option_type": "string",
+            "string": "I blow up at the slightest insult."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Honor. I don't steal from others in the trade. (Lawful)",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Freedom. Chains are meant to be broken, as are those who would forge them. (Chaotic)",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Charity. I steal from the wealthy so that I can help people in need. (Good)",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Greed. I will do whatever it takes to become wealthy. (Evil)",
+            "alignments": [
+              {
+                "index": "evil",
+                "name": "Evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "People. I'm loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care. (Neutral)",
+            "alignments": [
+              {
+                "index": "neutral",
+                "name": "Neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Redemption. There's a spark of good in everyone. (Good)",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'm trying to pay off an old debt I owe to a generous benefactor."
+          },
+          {
+            "option_type": "string",
+            "string": "My ill-gotten gains go to support my family."
+          },
+          {
+            "option_type": "string",
+            "string": "Something important was taken from me, and I aim to steal it back."
+          },
+          {
+            "option_type": "string",
+            "string": "I will become the greatest thief that ever lived."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm guilty of a terrible crime. I hope I can redeem myself for it."
+          },
+          {
+            "option_type": "string",
+            "string": "Someone I loved died because of a mistake I made. That will never happen again."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "When I see something valuable, I can't think about anything but how to steal it."
+          },
+          {
+            "option_type": "string",
+            "string": "When faced with a choice between money and my friends, I usually choose the money."
+          },
+          {
+            "option_type": "string",
+            "string": "If there's a plan, I'll forget it. If I don't forget it, I'll ignore it."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a 'tell' that reveals when I'm lying."
+          },
+          {
+            "option_type": "string",
+            "string": "I turn tail and run when things look bad."
+          },
+          {
+            "option_type": "string",
+            "string": "An innocent person is in prison for a crime that I committed. I'm okay with that."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/criminal-spy"
   }
-  
-  
-  
-  
-  
-  
-  
   
 
 ]
