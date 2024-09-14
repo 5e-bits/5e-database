@@ -358,7 +358,7 @@
         "name": "Skill: Religion",
         "url": "/api/proficiencies/skill-religion"
       }
-    ],
+    ],    
     "language_options": {
       "choose": 2,
       "type": "languages",
@@ -1292,10 +1292,6 @@
       "Dexterity",
       "Intelligence"
     ],
-    "feat": {
-      "name": "Crafter",
-      "url": "/api/feats/crafter"
-    },
     "starting_proficiencies": [
       {
         "index": "skill-investigation",
@@ -1306,13 +1302,6 @@
         "index": "skill-persuasion",
         "name": "Skill: Persuasion",
         "url": "/api/proficiencies/skill-persuasion"
-      }
-    ],
-    "tool_proficiencies": [
-      {
-        "index": "artisans-tools",
-        "name": "Artisan's Tools",
-        "url": "/api/proficiencies/artisans-tools"
       }
     ],
     "starting_equipment_options": [
@@ -1329,100 +1318,22 @@
         ]
       }
     ],
+    "tool_proficiencies": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/proficiencies/artisans-tools"
+      }
+    ],
     "feature": {
       "name": "Craft Expertise",
       "desc": [
         "As an artisan, you gain proficiency with three extra sets of Artisan’s Tools, a 20% discount on any non-magical item you buy, and the ability to craft certain bits of equipment during a D&D long rest."
       ]
     },
-    "guild_business": {
-      "choose": 1,
-      "type": "guild_business",
-      "from": {
-        "option_set_type": "options_array",
-        "options": [
-          {
-            "option_type": "string",
-            "string": "Alchemists and apothecaries"
-          },
-          {
-            "option_type": "string",
-            "string": "Armorers, locksmiths, and finesmiths"
-          },
-          {
-            "option_type": "string",
-            "string": "Brewers, distillers, and vintners"
-          },
-          {
-            "option_type": "string",
-            "string": "Calligraphers, scribes, and scriveners"
-          },
-          {
-            "option_type": "string",
-            "string": "Carpenters, roofers, and plasterers"
-          },
-          {
-            "option_type": "string",
-            "string": "Cartographers, surveyors, and chart-makers"
-          },
-          {
-            "option_type": "string",
-            "string": "Cobblers and shoemakers"
-          },
-          {
-            "option_type": "string",
-            "string": "Cooks and bakers"
-          },
-          {
-            "option_type": "string",
-            "string": "Glassblowers and glaziers"
-          },
-          {
-            "option_type": "string",
-            "string": "Jewelers and gemcutters"
-          },
-          {
-            "option_type": "string",
-            "string": "Leatherworkers, skinners, and tanners"
-          },
-          {
-            "option_type": "string",
-            "string": "Masons and stonecutters"
-          },
-          {
-            "option_type": "string",
-            "string": "Painters, limners, and sign-makers"
-          },
-          {
-            "option_type": "string",
-            "string": "Potters and tile-makers"
-          },
-          {
-            "option_type": "string",
-            "string": "Shipwrights and sail-makers"
-          },
-          {
-            "option_type": "string",
-            "string": "Smiths and metal-forgers"
-          },
-          {
-            "option_type": "string",
-            "string": "Tinkers, pewterers, and casters"
-          },
-          {
-            "option_type": "string",
-            "string": "Wagon-makers and wheelwrights"
-          },
-          {
-            "option_type": "string",
-            "string": "Weavers and dyers"
-          },
-          {
-            "option_type": "string",
-            "string": "Woodcarvers, coopers, and bowyers"
-          }
-        ]
-      }
+    "feat": {
+      "name": "Crafter",
+      "url": "/api/feats/crafter"
     },
     "personality_traits": {
       "choose": 2,
@@ -2413,10 +2324,6 @@
       "Constitution",
       "Charisma"
     ],
-    "feat": {
-      "name": "Skilled",
-      "url": "/api/feats/skilled"
-    },
     "starting_proficiencies": [
       {
         "index": "skill-deception",
@@ -2467,6 +2374,10 @@
         "You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona.",
         "Additionally, you can forge documents including official papers and personal letters, as long as you have seen an example of the kind of document or the handwriting you are trying to copy."
       ]
+    },
+    "feat": {
+      "name": "Skilled",
+      "url": "/api/feats/skilled"
     },
     "special": {
       "name": "Favorite Schemes",
@@ -4050,11 +3961,16 @@
   {
     "index": "criminal",
     "name": "Criminal",
+    "ability_scores": [
+      "Dexterity",
+      "Constitution",
+      "Intelligence"
+    ],
     "starting_proficiencies": [
       {
-        "index": "skill-deception",
-        "name": "Skill: Deception",
-        "url": "/api/proficiencies/skill-deception"
+        "index": "skill-sleight-of-hand",
+        "name": "Skill: Sleight of Hand",
+        "url": "/api/proficiencies/skill-sleight-of-hand"
       },
       {
         "index": "skill-stealth",
@@ -4067,11 +3983,6 @@
         "choose": 1,
         "type": "tools",
         "from": [
-          {
-            "index": "gaming-set",
-            "name": "One type of gaming set",
-            "url": "/api/proficiencies/gaming-set"
-          },
           {
             "index": "thieves-tools",
             "name": "Thieves' Tools",
@@ -4126,6 +4037,10 @@
         "You have a reliable and trustworthy contact who acts as your liaison to a network of other criminals. You know how to get messages to and from your contact, even over great distances; specifically, you know the local messengers, corrupt caravan masters, and seedy sailors who can deliver messages for you."
       ]
     },
+    "feat": {
+      "name": "Alert",
+      "url": "/api/feats/alert"
+    },
     "specialty": {
       "name": "Criminal Specialty",
       "desc": [
@@ -4165,7 +4080,7 @@
           "string": "Smuggler"
         }
       ]
-    },
+    },    
     "personality_traits": {
       "choose": 2,
       "type": "personality_traits",
@@ -4707,20 +4622,47 @@
       ]
     },
     "specialty": {
-      "name": "Criminal Specialty",
-      "desc": [
-        "There are many kinds of criminals, and within a thieves' guild or similar criminal organization, individual members have particular specialties. Choose the role you played in your criminal life, or roll on the table below."
-      ],
+    "name": "Criminal Specialty",
+    "desc": [
+      "There are many kinds of criminals, and within a thieves' guild or similar criminal organization, individual members have particular specialties. Choose the role you played in your criminal life, or roll on the table below."
+    ],
+    "options": {
+      "option_set_type": "options_array",
       "options": [
-        "Blackmailer",
-        "Burglar",
-        "Enforcer",
-        "Fence",
-        "Highway robber",
-        "Hired killer",
-        "Pickpocket",
-        "Smuggler"
+        {
+          "option_type": "string",
+          "string": "Blackmailer"
+        },
+        {
+          "option_type": "string",
+          "string": "Burglar"
+        },
+        {
+          "option_type": "string",
+          "string": "Enforcer"
+        },
+        {
+          "option_type": "string",
+          "string": "Fence"
+        },
+        {
+          "option_type": "string",
+          "string": "Highway robber"
+        },
+        {
+          "option_type": "string",
+          "string": "Hired killer"
+        },
+        {
+          "option_type": "string",
+          "string": "Pickpocket"
+        },
+        {
+          "option_type": "string",
+          "string": "Smuggler"
+        }
       ]
+    }
     },
     "variant": {
       "name": "Spy",
@@ -5195,7 +5137,11 @@
   {
     "index": "entertainer",
     "name": "Entertainer",
-    "ability_scores": ["Strength", "Dexterity", "Charisma"],
+    "ability_scores": [
+      "Strength", 
+      "Dexterity", 
+      "Charisma"
+    ],
     "starting_proficiencies": [
       {
         "index": "skill-acrobatics",
@@ -5208,12 +5154,7 @@
         "url": "/api/proficiencies/skill-performance"
       }
     ],
-    "tool_proficiencies": [
-      {
-        "index": "disguise-kit",
-        "name": "Disguise Kit",
-        "url": "/api/proficiencies/disguise-kit"
-      },
+    "tool_proficiencies": [      
       {
         "choose": 1,
         "type": "tools",
@@ -5468,7 +5409,1347 @@
       }
     },
     "url": "/api/backgrounds/entertainer"
+  },
+  {
+    "index": "baldurs-gate-entertainer",
+    "name": "Baldur's Gate Entertainer",
+    "starting_proficiencies": [
+      {
+        "index": "skill-acrobatics",
+        "name": "Skill: Acrobatics",
+        "url": "/api/proficiencies/skill-acrobatics"
+      },
+      {
+        "index": "skill-performance",
+        "name": "Skill: Performance",
+        "url": "/api/proficiencies/skill-performance"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "index": "disguise-kit",
+        "name": "Disguise Kit",
+        "url": "/api/proficiencies/disguise-kit"
+      },
+      {
+        "choose": 1,
+        "type": "tools",
+        "from": [
+          {
+            "index": "musical-instrument",
+            "name": "Musical Instrument",
+            "url": "/api/proficiencies/musical-instrument"
+          }
+        ]
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "musical-instrument",
+          "name": "Musical Instrument (one of your choice)",
+          "url": "/api/equipment/musical-instrument"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "costume-clothes",
+          "name": "Costume Clothes",
+          "url": "/api/equipment/costume-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "belt-pouch",
+          "name": "Belt Pouch",
+          "url": "/api/equipment/belt-pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "15 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "By Popular Demand",
+      "desc": [
+        "You can always find a place to perform, usually in an inn or tavern but possibly with a circus, at a theater, or even in a noble's court. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of the establishment), as long as you perform each night.",
+        "In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you."
+      ]
+    },
+    "baldurs_gate_feature": {
+      "name": "Backstage Pass",
+      "desc": [
+        "The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate—though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.",
+        "You've learned that most of the real business of entertainment (or any other venture) happens behind the scenes. After a successful performance, you may meet an enthusiastic member of the crowd—someone of an occupation or social class that frequents the establishment. This contact is delighted to talk with you and to listen."
+      ]
+    },
+    "specialty": {
+      "name": "Specialty",
+      "desc": [
+        "A good entertainer is versatile, spicing up every performance with a variety of different routines. Choose one to three routines or roll on the table below to define your expertise as an entertainer."
+      ],
+      "options": [
+        {
+          "option_type": "string",
+          "string": "Actor"
+        },
+        {
+          "option_type": "string",
+          "string": "Dancer"
+        },
+        {
+          "option_type": "string",
+          "string": "Fire-eater"
+        },
+        {
+          "option_type": "string",
+          "string": "Jester"
+        },
+        {
+          "option_type": "string",
+          "string": "Juggler"
+        },
+        {
+          "option_type": "string",
+          "string": "Instrumentalist"
+        },
+        {
+          "option_type": "string",
+          "string": "Poet"
+        },
+        {
+          "option_type": "string",
+          "string": "Singer"
+        },
+        {
+          "option_type": "string",
+          "string": "Storyteller"
+        },
+        {
+          "option_type": "string",
+          "string": "Tumbler"
+        }
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I know a story relevant to almost every situation."
+          },
+          {
+            "option_type": "string",
+            "string": "Whenever I come to a new place, I collect local rumors and spread gossip."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a hopeless romantic, always searching for that 'special someone'."
+          },
+          {
+            "option_type": "string",
+            "string": "Nobody stays angry at me or around me for long, since I can defuse any amount of tension."
+          },
+          {
+            "option_type": "string",
+            "string": "I love a good insult, even one directed at me."
+          },
+          {
+            "option_type": "string",
+            "string": "I get bitter if I'm not the center of attention."
+          },
+          {
+            "option_type": "string",
+            "string": "I'll settle for nothing less than perfection."
+          },
+          {
+            "option_type": "string",
+            "string": "I change my mood or my mind as quickly as I change key in a song."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Beauty. When I perform, I make the world better than it was.",
+            "alignment": "Good"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Tradition. The stories, legends, and songs of the past must never be forgotten, for they teach us who we are.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Creativity. The world is in need of new ideas and bold action.",
+            "alignment": "Chaotic"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Greed. I'm only in it for the money and fame.",
+            "alignment": "Evil"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "People. I like seeing the smiles on people's faces when I perform. That's all that matters.",
+            "alignment": "Neutral"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Honesty. Art should reflect the soul; it should come from within and reveal who we really are.",
+            "alignment": "Any"
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "My instrument is my most treasured possession, and it reminds me of someone I love."
+          },
+          {
+            "option_type": "string",
+            "string": "Someone stole my precious instrument, and someday I'll get it back."
+          },
+          {
+            "option_type": "string",
+            "string": "I want to be famous, whatever it takes."
+          },
+          {
+            "option_type": "string",
+            "string": "I idolize a hero of the old tales and measure my deeds against that person's."
+          },
+          {
+            "option_type": "string",
+            "string": "I will do anything to prove myself superior to my hated rival."
+          },
+          {
+            "option_type": "string",
+            "string": "I would do anything for the other members of my old troupe."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'll do anything to win fame and renown."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a sucker for a pretty face."
+          },
+          {
+            "option_type": "string",
+            "string": "A scandal prevents me from ever going home again. That kind of trouble seems to follow me around."
+          },
+          {
+            "option_type": "string",
+            "string": "I once satirized a noble who still wants my head. It was a mistake that I will likely repeat."
+          },
+          {
+            "option_type": "string",
+            "string": "I have trouble keeping my true feelings hidden. My sharp tongue lands me in trouble."
+          },
+          {
+            "option_type": "string",
+            "string": "Despite my best efforts, I am unreliable to my friends."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/baldurs-gate-entertainer"
+  },
+  {
+    "index": "faceless",
+    "name": "Faceless",
+    "starting_proficiencies": [
+      {
+        "index": "skill-deception",
+        "name": "Skill: Deception",
+        "url": "/api/proficiencies/skill-deception"
+      },
+      {
+        "index": "skill-intimidation",
+        "name": "Skill: Intimidation",
+        "url": "/api/proficiencies/skill-intimidation"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "index": "disguise-kit",
+        "name": "Disguise Kit",
+        "url": "/api/proficiencies/disguise-kit"
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "disguise-kit",
+          "name": "Disguise Kit",
+          "url": "/api/equipment/disguise-kit"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "costume",
+          "name": "Costume",
+          "url": "/api/equipment/costume"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "10 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Dual Personalities",
+      "desc": [
+        "Most of your fellow adventurers and the world know you as your persona. Those who seek to learn more about you—your weaknesses, your origins, your purpose—find themselves stymied by your disguise.",
+        "Upon donning a disguise and behaving as your persona, you are unidentifiable as your true self. By removing your disguise and revealing your true face, you are no longer identifiable as your persona. This allows you to change appearances between your two personalities as often as you wish, using one to hide the other or serve as convenient camouflage.",
+        "However, should someone realize the connection between your persona and your true self, your deception might lose its effectiveness."
+      ]
+    },
+    "faceless_persona": {
+      "name": "Faceless Persona",
+      "desc": [
+        "A faceless character adventures behind the mask of a public persona. This persona is as natural to them as their hidden, true face, but it disguises their identity."
+      ],
+      "options": [
+        {
+          "option_type": "string",
+          "string": "A flamboyant spy or brigand"
+        },
+        {
+          "option_type": "string",
+          "string": "The incarnation of a nation or people"
+        },
+        {
+          "option_type": "string",
+          "string": "A scoundrel with a masked guise"
+        },
+        {
+          "option_type": "string",
+          "string": "A vengeful spirit"
+        },
+        {
+          "option_type": "string",
+          "string": "The manifestation of a deity or your faith"
+        },
+        {
+          "option_type": "string",
+          "string": "One whose beauty is greatly accented using makeup"
+        },
+        {
+          "option_type": "string",
+          "string": "An impersonation of another hero"
+        },
+        {
+          "option_type": "string",
+          "string": "The embodiment of a school of magic"
+        },
+        {
+          "option_type": "string",
+          "string": "A warrior with distinctive armor"
+        },
+        {
+          "option_type": "string",
+          "string": "A disguise with animalistic or monstrous characteristics, meant to inspire fear"
+        }
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'm earnest and uncommonly direct."
+          },
+          {
+            "option_type": "string",
+            "string": "I strive to have no personality—it's easier to forget what's hardly there."
+          },
+          {
+            "option_type": "string",
+            "string": "I treasure a memento of the person or instance that set me upon my path."
+          },
+          {
+            "option_type": "string",
+            "string": "I sleep just as much as I need to and on an unusual schedule."
+          },
+          {
+            "option_type": "string",
+            "string": "I think far ahead, a detachedness often mistaken for daydreaming."
+          },
+          {
+            "option_type": "string",
+            "string": "I cultivate a single obscure hobby or study and eagerly discuss it at length."
+          },
+          {
+            "option_type": "string",
+            "string": "I am ever learning how to be among others—when to stay quiet, when to laugh."
+          },
+          {
+            "option_type": "string",
+            "string": "I behave like an extreme opposite of my persona."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Justice. Place in society shouldn't determine one's access to what is right.",
+            "alignment": "Good"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Security. Doing what must be done can't bring the innocent to harm.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Confusion. Deception is a weapon. Strike from where your foes won't expect.",
+            "alignment": "Chaotic"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Infamy. My name will be a malediction, a curse that fulfills my will.",
+            "alignment": "Evil"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Incorruptibility. Be a symbol, and leave your flawed being behind.",
+            "alignment": "Any"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Anonymity. It's my deeds that should be remembered, not their instrument.",
+            "alignment": "Any"
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I do everything for my family. My first thought is keeping them safe."
+          },
+          {
+            "option_type": "string",
+            "string": "What I do, I do for the world. The people don't realize how much they need me."
+          },
+          {
+            "option_type": "string",
+            "string": "I've seen too many in need. I must not fail them as everyone else has."
+          },
+          {
+            "option_type": "string",
+            "string": "I stand in opposition, lest the wicked go unopposed."
+          },
+          {
+            "option_type": "string",
+            "string": "I am exceptional. I do this because no one else can, and no one can stop me."
+          },
+          {
+            "option_type": "string",
+            "string": "I do everything for those who were taken from me."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I am callous about death. It comes to us all eventually."
+          },
+          {
+            "option_type": "string",
+            "string": "I never make eye contact or hold it unflinchingly."
+          },
+          {
+            "option_type": "string",
+            "string": "I have no sense of humor. Laughing is uncomfortable and embarrassing."
+          },
+          {
+            "option_type": "string",
+            "string": "I overexert myself, sometimes needing to recuperate for a day or more."
+          },
+          {
+            "option_type": "string",
+            "string": "I think far ahead, a detachedness often mistaken for daydreaming."
+          },
+          {
+            "option_type": "string",
+            "string": "I see morality entirely in black and white."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/faceless"
+  },
+  {
+    "index": "faction-agent",
+    "name": "Faction Agent",
+    "starting_proficiencies": [
+      {
+        "index": "skill-insight",
+        "name": "Skill: Insight",
+        "url": "/api/proficiencies/skill-insight"
+      },
+      {
+        "choose": 1,
+        "type": "skills",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "skill",
+              "index": "skill-arcana",
+              "name": "Skill: Arcana",
+              "url": "/api/proficiencies/skill-arcana"
+            },
+            {
+              "option_type": "skill",
+              "index": "skill-history",
+              "name": "Skill: History",
+              "url": "/api/proficiencies/skill-history"
+            },
+            {
+              "option_type": "skill",
+              "index": "skill-investigation",
+              "name": "Skill: Investigation",
+              "url": "/api/proficiencies/skill-investigation"
+            },
+            {
+              "option_type": "skill",
+              "index": "skill-nature",
+              "name": "Skill: Nature",
+              "url": "/api/proficiencies/skill-nature"
+            },
+            {
+              "option_type": "skill",
+              "index": "skill-religion",
+              "name": "Skill: Religion",
+              "url": "/api/proficiencies/skill-religion"
+            },
+            {
+              "option_type": "skill",
+              "index": "skill-animal-handling",
+              "name": "Skill: Animal Handling",
+              "url": "/api/proficiencies/skill-animal-handling"
+            },
+            {
+              "option_type": "skill",
+              "index": "skill-medicine",
+              "name": "Skill: Medicine",
+              "url": "/api/proficiencies/skill-medicine"
+            },
+            {
+              "option_type": "skill",
+              "index": "skill-perception",
+              "name": "Skill: Perception",
+              "url": "/api/proficiencies/skill-perception"
+            },
+            {
+              "option_type": "skill",
+              "index": "skill-survival",
+              "name": "Skill: Survival",
+              "url": "/api/proficiencies/skill-survival"
+            },
+            {
+              "option_type": "skill",
+              "index": "skill-deception",
+              "name": "Skill: Deception",
+              "url": "/api/proficiencies/skill-deception"
+            },
+            {
+              "option_type": "skill",
+              "index": "skill-intimidation",
+              "name": "Skill: Intimidation",
+              "url": "/api/proficiencies/skill-intimidation"
+            },
+            {
+              "option_type": "skill",
+              "index": "skill-performance",
+              "name": "Skill: Performance",
+              "url": "/api/proficiencies/skill-performance"
+            },
+            {
+              "option_type": "skill",
+              "index": "skill-persuasion",
+              "name": "Skill: Persuasion",
+              "url": "/api/proficiencies/skill-persuasion"
+            }
+          ]
+        }
+      }
+    ],
+    "language_options": {
+      "choose": 2,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "faction-badge",
+          "name": "Badge or Emblem of your Faction",
+          "url": "/api/equipment/faction-badge"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "faction-text",
+          "name": "Seminal Faction Text (or Code-book for a Covert Faction)",
+          "url": "/api/equipment/faction-text"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "common-clothes",
+          "name": "Set of Common Clothes",
+          "url": "/api/equipment/common-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "15 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Safe Haven",
+      "desc": [
+        "As a faction agent, you have access to a secret network of supporters and operatives who can provide assistance on your adventures.",
+        "You know a set of secret signs and passwords you can use to identify such operatives, who can provide you with access to a hidden safe house, free room and board, or assistance in finding information.",
+        "These agents never risk their lives for you or risk revealing their true identities."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I idolize a particular hero of my faction, and constantly refer to that person's deeds and example."
+          },
+          {
+            "option_type": "string",
+            "string": "I can find common ground between the fiercest enemies, empathizing with them and always working toward peace."
+          },
+          {
+            "option_type": "string",
+            "string": "I see signs of my faction's influence in every event and action. The world is our canvas."
+          },
+          {
+            "option_type": "string",
+            "string": "Nothing can shake my optimistic attitude."
+          },
+          {
+            "option_type": "string",
+            "string": "I quote (or misquote) faction texts and proverbs in almost every situation."
+          },
+          {
+            "option_type": "string",
+            "string": "I am tolerant (or intolerant) of other factions and respect (or condemn) their beliefs."
+          },
+          {
+            "option_type": "string",
+            "string": "I've enjoyed fine food, drink, and high society among my faction's elite. Rough living grates on me."
+          },
+          {
+            "option_type": "string",
+            "string": "I've spent so long in the faction that I have little practical experience dealing with people outside of it."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Tradition. The ancient traditions of my faction must be preserved and upheld.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Charity. I always try to help those in need, no matter what the personal cost.",
+            "alignment": "Good"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Change. We must help bring about the changes my faction is working toward.",
+            "alignment": "Chaotic"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Power. I hope to one day rise to the top of my faction's hierarchy.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Faith. I trust that my faction will guide my actions.",
+            "alignment": "Any"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Aspiration. I seek to prove myself worthy of my faction's favor.",
+            "alignment": "Any"
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I would die to recover an ancient relic of my faction that was lost long ago."
+          },
+          {
+            "option_type": "string",
+            "string": "I will someday get revenge on the corrupt officials who betrayed my faction."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe my life to a member of my faction who took me in when I was lost."
+          },
+          {
+            "option_type": "string",
+            "string": "Everything I do is for the good of my faction."
+          },
+          {
+            "option_type": "string",
+            "string": "I will do anything to protect the headquarters of my faction."
+          },
+          {
+            "option_type": "string",
+            "string": "I seek to preserve a sacred text that my faction holds dear."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I judge others harshly, and myself even more severely."
+          },
+          {
+            "option_type": "string",
+            "string": "I put too much trust in those who wield power within my faction's hierarchy."
+          },
+          {
+            "option_type": "string",
+            "string": "My loyalty to my faction sometimes blinds me to my own shortcomings."
+          },
+          {
+            "option_type": "string",
+            "string": "I am inflexible in my thinking."
+          },
+          {
+            "option_type": "string",
+            "string": "I am suspicious of strangers and expect the worst of them."
+          },
+          {
+            "option_type": "string",
+            "string": "Once I pick a goal, I become obsessed with it to the detriment of everything else in my life."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/faction-agent"
+  },
+  {
+    "index": "failed-merchant",
+    "name": "Failed Merchant",
+    "starting_proficiencies": [
+      {
+        "index": "skill-investigation",
+        "name": "Skill: Investigation",
+        "url": "/api/proficiencies/skill-investigation"
+      },
+      {
+        "index": "skill-persuasion",
+        "name": "Skill: Persuasion",
+        "url": "/api/proficiencies/skill-persuasion"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "choose": 1,
+        "type": "tools",
+        "from": {
+          "option_set_type": "resource_list",
+          "resource_list_url": "/api/proficiencies/artisans-tools"
+        }
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "artisans-tools",
+          "name": "Artisan's Tools (one of your choice)",
+          "url": "/api/equipment/artisans-tools"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "merchants-scale",
+          "name": "Merchant's Scale",
+          "url": "/api/equipment/merchants-scale"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "fine-clothes",
+          "name": "Set of Fine Clothes",
+          "url": "/api/equipment/fine-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Belt Pouch",
+          "url": "/api/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "10 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Supply Chain",
+      "desc": [
+        "From your time as a merchant, you retain connections with wholesalers, suppliers, and other merchants and entrepreneurs. You can call upon these connections when looking for items or information."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I didn't have the cutthroat attitude necessary to succeed. I won't make that mistake again."
+          },
+          {
+            "option_type": "string",
+            "string": "Even my competitors said I was affable and talented. Those traits should serve me well."
+          },
+          {
+            "option_type": "string",
+            "string": "To prosper, you have to be in control."
+          },
+          {
+            "option_type": "string",
+            "string": "The customer is always right."
+          },
+          {
+            "option_type": "string",
+            "string": "I was cutting corners and breaking deals to maximize profit. That's why I failed."
+          },
+          {
+            "option_type": "string",
+            "string": "When I get an idea, I am single-minded in its execution—even if it's a terrible idea."
+          },
+          {
+            "option_type": "string",
+            "string": "If I can be everyone's friend, I'll always have support."
+          },
+          {
+            "option_type": "string",
+            "string": "My heart wasn't in being a merchant, so I failed. I'm not all that keen on adventuring either, but I need the money."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Survival. Where there's life, there's hope. If I remain alive and flexible, I can succeed.",
+            "alignment": "Any"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Generosity. People helped me when I was down. Now that I'm back on my feet, I'll pay it forward.",
+            "alignment": "Good"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Excitement. Caution got me nowhere in my previous business. I'm not going to let it hold me back now.",
+            "alignment": "Chaotic"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Wealth. With enough coin, I can buy comfort, power, knowledge, and even eternal life. Nothing will stand between me and money.",
+            "alignment": "Evil"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Stability. The mercantile trade was too chaotic for me. I need a nice stable profession, like adventuring.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Redemption. Too many people consider me a failure. So I need to prove them wrong.",
+            "alignment": "Any"
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "My family means everything to me. I failed them before, and I must not do so again."
+          },
+          {
+            "option_type": "string",
+            "string": "My church provides a connection to my god, so I must ensure that it is protected and funded."
+          },
+          {
+            "option_type": "string",
+            "string": "My former business partner fell ill, and then our business failed. Part of my new venture involves earning enough to take care of their family."
+          },
+          {
+            "option_type": "string",
+            "string": "If I take care of my possessions, they'll take care of me. People come and go, but a weapon or a wand is something you can always rely on."
+          },
+          {
+            "option_type": "string",
+            "string": "Although my business failed, the people of my community were kind to me. I'll do everything in my power to protect them."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe a dangerous person a lot of money. As long as they're happy, they let my debt rest unpaid."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Why spend gold here when you can buy the same thing for copper in the next town?"
+          },
+          {
+            "option_type": "string",
+            "string": "I must have the best of everything. Like, right now."
+          },
+          {
+            "option_type": "string",
+            "string": "You haven't heard of me? I'm sure that's because of your ignorance and low breeding."
+          },
+          {
+            "option_type": "string",
+            "string": "I failed, but I'm awesome. So when anyone else is successful, it must be because of nepotism, dishonesty, or dumb luck."
+          },
+          {
+            "option_type": "string",
+            "string": "I find that most people are trustworthy. Hey, where's my belt pouch?"
+          },
+          {
+            "option_type": "string",
+            "string": "Nothing gets between me and danger except my fellow adventurers. So I'll be sure to put them there."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/failed-merchant"
+  },
+  {
+    "index": "far-traveler",
+    "name": "Far Traveler",
+    "starting_proficiencies": [
+      {
+        "index": "skill-insight",
+        "name": "Skill: Insight",
+        "url": "/api/proficiencies/skill-insight"
+      },
+      {
+        "index": "skill-perception",
+        "name": "Skill: Perception",
+        "url": "/api/proficiencies/skill-perception"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "choose": 1,
+        "type": "tools",
+        "from": {
+          "option_set_type": "resource_list",
+          "resource_list_url": "/api/proficiencies/musical-instruments-or-gaming-sets"
+        }
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "travelers-clothes",
+          "name": "Traveler's Clothes",
+          "url": "/api/equipment/travelers-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "musical-instrument-or-gaming-set",
+          "name": "Musical Instrument or Gaming Set (one of your choice)",
+          "url": "/api/equipment/musical-instruments-or-gaming-sets"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "poorly-wrought-maps",
+          "name": "Poorly Wrought Maps from Homeland",
+          "url": "/api/equipment/poorly-wrought-maps"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "jewelry",
+          "name": "Small Piece of Jewelry Worth 10 GP",
+          "url": "/api/equipment/jewelry"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "5 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "All Eyes on You",
+      "desc": [
+        "Your accent, mannerisms, figures of speech, and perhaps even your appearance all mark you as foreign. Curious glances are directed your way wherever you go, which can be a nuisance, but you also gain the friendly interest of scholars and others intrigued by far-off lands, to say nothing of everyday folk who are eager to hear stories of your homeland.",
+        "You can parley this attention into access to people and places you might not otherwise have, for you and your traveling companions. Noble lords, scholars, and merchant princes, to name a few, might be interested in hearing about your distant homeland and people."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I have different assumptions from those around me concerning personal space, blithely invading others' space in innocence, or reacting to ignorant invasion of my own."
+          },
+          {
+            "option_type": "string",
+            "string": "I have my own ideas about what is and is not food, and I find the eating habits of those around me fascinating, confusing, or revolting."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a strong code of honor or sense of propriety that others don't comprehend."
+          },
+          {
+            "option_type": "string",
+            "string": "I express affection or contempt in ways that are unfamiliar to others."
+          },
+          {
+            "option_type": "string",
+            "string": "I honor my deities through practices that are foreign to this land."
+          },
+          {
+            "option_type": "string",
+            "string": "I begin or end my day with small traditional rituals that are unfamiliar to those around me."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Open. I have much to learn from the kindly folk I meet along my way.",
+            "alignment": "Good"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Reserved. As someone new to these strange lands, I am cautious and respectful in my dealings.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Adventure. I'm far from home, and everything is strange and wonderful!",
+            "alignment": "Chaotic"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Cunning. Though I may not know their ways, neither do they know mine, which can be to my advantage.",
+            "alignment": "Evil"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Inquisitive. Everything is new, but I have a thirst to learn.",
+            "alignment": "Neutral"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Suspicious. I must be careful, for I have no way of telling friend from foe here.",
+            "alignment": "Any"
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "So long as I have this token from my homeland, I can face any adversity in this strange land."
+          },
+          {
+            "option_type": "string",
+            "string": "The gods of my people are a comfort to me so far away from home."
+          },
+          {
+            "option_type": "string",
+            "string": "I hold no greater cause than my service to my people."
+          },
+          {
+            "option_type": "string",
+            "string": "My freedom is my most precious possession. I'll never let anyone take it from me again."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm fascinated by the beauty and wonder of this new land."
+          },
+          {
+            "option_type": "string",
+            "string": "Though I had no choice, I lament having to leave my loved one(s) behind. I hope to see them again one day."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I am secretly (or not so secretly) convinced of the superiority of my own culture over that of this foreign land."
+          },
+          {
+            "option_type": "string",
+            "string": "I pretend not to understand the local language in order to avoid interactions I would rather not have."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a weakness for the new intoxicants and other pleasures of this land."
+          },
+          {
+            "option_type": "string",
+            "string": "I don't take kindly to some of the actions and motivations of the people of this land, because these folks are different from me."
+          },
+          {
+            "option_type": "string",
+            "string": "I consider the adherents of other gods to be deluded innocents at best, or ignorant fools at worst."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a weakness for the exotic beauty of the people of these lands."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/far-traveler"
   }
+  
+  
+  
   
 
 ]
