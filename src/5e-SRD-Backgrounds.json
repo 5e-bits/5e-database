@@ -4911,6 +4911,563 @@
       }
     },
     "url": "/api/backgrounds/criminal-spy"
+  },
+  {
+    "index": "dimir-operative",
+    "name": "Dimir Operative",
+    "starting_proficiencies": [
+      {
+        "index": "skill-deception",
+        "name": "Skill: Deception",
+        "url": "/api/proficiencies/skill-deception"
+      },
+      {
+        "index": "skill-stealth",
+        "name": "Skill: Stealth",
+        "url": "/api/proficiencies/skill-stealth"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "index": "disguise-kit",
+        "name": "Disguise Kit",
+        "url": "/api/proficiencies/disguise-kit"
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "dimir-insignia",
+          "name": "Dimir Insignia",
+          "url": "/api/equipment/dimir-insignia"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "knife",
+          "name": "Small Knife",
+          "url": "/api/equipment/knife"
+        },
+        "quantity": 3
+      },
+      {
+        "equipment": {
+          "index": "dark-common-clothes",
+          "name": "Set of Dark-Colored Common Clothes",
+          "url": "/api/equipment/dark-common-clothes"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "Starting equipment of the background for your secondary guild"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "False Identity",
+      "desc": [
+        "You have more than one identity. The one you wear most of the time makes you appear to be a member of a guild other than House Dimir. You have documentation, established acquaintances, and disguises that allow you to assume that persona and fit into the secondary guild.",
+        "Whenever you choose, you can drop this identity and blend into the guildless masses of the city."
+      ]
+    },
+    "reason_for_infiltration": {
+      "name": "Reason for Infiltration",
+      "desc": [
+        "Consider why you're embedded in the secondary guild. Create a story with your DM, inspired by rolling on the following table or choosing a reason that suits you."
+      ],
+      "options": [
+        {
+          "option_type": "string",
+          "string": "My parents belong to this guild, and I let them think I'm following in their footsteps."
+        },
+        {
+          "option_type": "string",
+          "string": "I've been assigned to track this guild's activities."
+        },
+        {
+          "option_type": "string",
+          "string": "I've been assigned to get close to an individual in this guild and learn their secrets."
+        },
+        {
+          "option_type": "string",
+          "string": "I've been assigned to recruit a new Dimir spy from the ranks of this guild."
+        },
+        {
+          "option_type": "string",
+          "string": "I was a member of this guild before the Dimir recruited me."
+        },
+        {
+          "option_type": "string",
+          "string": "I don't like what this guild stands for and want to destroy it from within."
+        },
+        {
+          "option_type": "string",
+          "string": "I secretly wish I could leave the Dimir and join this guild, but there is no escaping the Dimir."
+        },
+        {
+          "option_type": "string",
+          "string": "I chose this guild at random or on a lark."
+        }
+      ]
+    },
+    "dimir_guild_spells": {
+      "name": "Dimir Guild Spells",
+      "prerequisite": "Spellcasting or Pact Magic class feature",
+      "desc": [
+        "For you, the spells on the Dimir Guild Spells table are added to the spell list of your spellcasting class. (If you are a multiclass character with multiple spell lists, these spells are added to all of them.)"
+      ],
+      "spells": {
+        "cantrip": ["encode thoughts", "mage hand"],
+        "1st": ["disguise self", "sleep"],
+        "2nd": ["detect thoughts", "pass without trace"],
+        "3rd": ["gaseous form", "meld into stone", "nondetection"],
+        "4th": ["arcane eye", "freedom of movement"],
+        "5th": ["modify memory"]
+      }
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'm good at hiding my true thoughts and feelings."
+          },
+          {
+            "option_type": "string",
+            "string": "When I'm in doubt about revealing something, I assume it's a secret, and I don't share it."
+          },
+          {
+            "option_type": "string",
+            "string": "I like to sound mysterious, because wisdom hidden grows deeper with time."
+          },
+          {
+            "option_type": "string",
+            "string": "I have no patience with people who get in my way."
+          },
+          {
+            "option_type": "string",
+            "string": "I love hearing about other people's nightmares."
+          },
+          {
+            "option_type": "string",
+            "string": "Combat is meant to be quick, clean, and one-sided."
+          },
+          {
+            "option_type": "string",
+            "string": "I like to stick to the shadows."
+          },
+          {
+            "option_type": "string",
+            "string": "I never show my anger. I just plot my revenge."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Guild. My true guild is all that really matters.",
+            "alignment": "Any"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Control. I like pulling the strings.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Secrets. I collect secrets and never reveal them.",
+            "alignment": "Any"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Knowledge. I want to know as much as I can about this city and how it works.",
+            "alignment": "Any"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Independence. I value the freedom to pursue my own goals without interference.",
+            "alignment": "Chaotic"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Nihilism. I don't believe in anything, and anyone who does is a fool.",
+            "alignment": "Neutral"
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I discovered a secret I can't let anyone else uncover—including my guild superiors."
+          },
+          {
+            "option_type": "string",
+            "string": "I formed a close friendship or romance with someone in the guild I'm infiltrating."
+          },
+          {
+            "option_type": "string",
+            "string": "The Dimir agent who recruited me was unmasked and killed. My revenge on the killers will be thorough and painful."
+          },
+          {
+            "option_type": "string",
+            "string": "I spend as much time as I can in the Ismeri Library because I'm certain an information hub operates behind its facade. I want its secrets!"
+          },
+          {
+            "option_type": "string",
+            "string": "I'm utterly loyal to my superior in the guild, more than to the guild or its guildmaster."
+          },
+          {
+            "option_type": "string",
+            "string": "Someone has discovered my true identity."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I like secrets so much that I'm reluctant to share details of a plan even with those who need to know."
+          },
+          {
+            "option_type": "string",
+            "string": "I would let my friends die rather than reveal my true identity."
+          },
+          {
+            "option_type": "string",
+            "string": "I have trouble trusting anyone but myself."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a particular vice that puts all my secrets at risk if I'm not careful."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm pretty sure I've done something horrible that I can't remember because of the guild's mind magic."
+          },
+          {
+            "option_type": "string",
+            "string": "I put too much trust in the people who give me orders."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/dimir-operative"
+  },
+  {
+    "index": "entertainer",
+    "name": "Entertainer",
+    "ability_scores": ["Strength", "Dexterity", "Charisma"],
+    "starting_proficiencies": [
+      {
+        "index": "skill-acrobatics",
+        "name": "Skill: Acrobatics",
+        "url": "/api/proficiencies/skill-acrobatics"
+      },
+      {
+        "index": "skill-performance",
+        "name": "Skill: Performance",
+        "url": "/api/proficiencies/skill-performance"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "index": "disguise-kit",
+        "name": "Disguise Kit",
+        "url": "/api/proficiencies/disguise-kit"
+      },
+      {
+        "choose": 1,
+        "type": "tools",
+        "from": [
+          {
+            "index": "musical-instrument",
+            "name": "Musical Instrument",
+            "url": "/api/proficiencies/musical-instrument"
+          }
+        ]
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "musical-instrument",
+          "name": "Musical Instrument (one of your choice)",
+          "url": "/api/equipment/musical-instrument"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "costume-clothes",
+          "name": "Costume Clothes",
+          "url": "/api/equipment/costume-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "belt-pouch",
+          "name": "Belt Pouch",
+          "url": "/api/equipment/belt-pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "15 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "By Popular Demand",
+      "desc": [
+        "You can always find a place to perform, usually in an inn or tavern but possibly with a circus, at a theater, or even in a noble's court. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of the establishment), as long as you perform each night.",
+        "In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you."
+      ]
+    },
+    "specialty": {
+      "name": "Specialty",
+      "desc": [
+        "A good entertainer is versatile, spicing up every performance with a variety of different routines. Choose one to three routines or roll on the table below to define your expertise as an entertainer."
+      ],
+      "options": [
+        {
+          "option_type": "string",
+          "string": "Actor"
+        },
+        {
+          "option_type": "string",
+          "string": "Dancer"
+        },
+        {
+          "option_type": "string",
+          "string": "Fire-eater"
+        },
+        {
+          "option_type": "string",
+          "string": "Jester"
+        },
+        {
+          "option_type": "string",
+          "string": "Juggler"
+        },
+        {
+          "option_type": "string",
+          "string": "Instrumentalist"
+        },
+        {
+          "option_type": "string",
+          "string": "Poet"
+        },
+        {
+          "option_type": "string",
+          "string": "Singer"
+        },
+        {
+          "option_type": "string",
+          "string": "Storyteller"
+        },
+        {
+          "option_type": "string",
+          "string": "Tumbler"
+        }
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I know a story relevant to almost every situation."
+          },
+          {
+            "option_type": "string",
+            "string": "Whenever I come to a new place, I collect local rumors and spread gossip."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a hopeless romantic, always searching for that 'special someone'."
+          },
+          {
+            "option_type": "string",
+            "string": "Nobody stays angry at me or around me for long, since I can defuse any amount of tension."
+          },
+          {
+            "option_type": "string",
+            "string": "I love a good insult, even one directed at me."
+          },
+          {
+            "option_type": "string",
+            "string": "I get bitter if I'm not the center of attention."
+          },
+          {
+            "option_type": "string",
+            "string": "I'll settle for nothing less than perfection."
+          },
+          {
+            "option_type": "string",
+            "string": "I change my mood or my mind as quickly as I change key in a song."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Beauty. When I perform, I make the world better than it was.",
+            "alignment": "Good"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Tradition. The stories, legends, and songs of the past must never be forgotten, for they teach us who we are.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Creativity. The world is in need of new ideas and bold action.",
+            "alignment": "Chaotic"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Greed. I'm only in it for the money and fame.",
+            "alignment": "Evil"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "People. I like seeing the smiles on people's faces when I perform. That's all that matters.",
+            "alignment": "Neutral"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Honesty. Art should reflect the soul; it should come from within and reveal who we really are.",
+            "alignment": "Any"
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "My instrument is my most treasured possession, and it reminds me of someone I love."
+          },
+          {
+            "option_type": "string",
+            "string": "Someone stole my precious instrument, and someday I'll get it back."
+          },
+          {
+            "option_type": "string",
+            "string": "I want to be famous, whatever it takes."
+          },
+          {
+            "option_type": "string",
+            "string": "I idolize a hero of the old tales and measure my deeds against that person's."
+          },
+          {
+            "option_type": "string",
+            "string": "I will do anything to prove myself superior to my hated rival."
+          },
+          {
+            "option_type": "string",
+            "string": "I would do anything for the other members of my old troupe."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'll do anything to win fame and renown."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a sucker for a pretty face."
+          },
+          {
+            "option_type": "string",
+            "string": "A scandal prevents me from ever going home again. That kind of trouble seems to follow me around."
+          },
+          {
+            "option_type": "string",
+            "string": "I once satirized a noble who still wants my head. It was a mistake that I will likely repeat."
+          },
+          {
+            "option_type": "string",
+            "string": "I have trouble keeping my true feelings hidden. My sharp tongue lands me in trouble."
+          },
+          {
+            "option_type": "string",
+            "string": "Despite my best efforts, I am unreliable to my friends."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/entertainer"
   }
   
 
