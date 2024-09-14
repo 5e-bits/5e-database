@@ -10817,7 +10817,1575 @@
       }
     },
     "url": "/api/backgrounds/variant-guild-artisan-guild-merchant"
+  },
+  {
+    "index": "haunted-one",
+    "name": "Haunted One",
+    "description": "You are haunted by something so terrible that you dare not speak of it. You’ve tried to bury it and run away from it, to no avail. Whatever this thing is that haunts you can’t be slain with a sword or banished with a spell. It might come to you as a shadow on the wall, a bloodcurdling nightmare, a memory that refuses to die, or a demonic whisper in the dark. The burden has taken its toll, isolating you from most people and making you question your sanity. You must find a way to overcome it before it destroys you.",
+    "skill_proficiencies_options": {
+      "choose": 2,
+      "type": "skills",
+      "from": [
+        {
+          "index": "arcana",
+          "name": "Arcana",
+          "url": "/api/proficiencies/skill-arcana"
+        },
+        {
+          "index": "investigation",
+          "name": "Investigation",
+          "url": "/api/proficiencies/skill-investigation"
+        },
+        {
+          "index": "religion",
+          "name": "Religion",
+          "url": "/api/proficiencies/skill-religion"
+        },
+        {
+          "index": "survival",
+          "name": "Survival",
+          "url": "/api/proficiencies/skill-survival"
+        }
+      ]
+    },
+    "language_options": {
+      "choose": 2,
+      "type": "languages",
+      "from": [
+        {
+          "index": "abyssal",
+          "name": "Abyssal",
+          "url": "/api/languages/abyssal"
+        },
+        {
+          "index": "celestial",
+          "name": "Celestial",
+          "url": "/api/languages/celestial"
+        },
+        {
+          "index": "deep-speech",
+          "name": "Deep Speech",
+          "url": "/api/languages/deep-speech"
+        },
+        {
+          "index": "draconic",
+          "name": "Draconic",
+          "url": "/api/languages/draconic"
+        },
+        {
+          "index": "infernal",
+          "name": "Infernal",
+          "url": "/api/languages/infernal"
+        },
+        {
+          "index": "primordial",
+          "name": "Primordial",
+          "url": "/api/languages/primordial"
+        },
+        {
+          "index": "sylvan",
+          "name": "Sylvan",
+          "url": "/api/languages/sylvan"
+        },
+        {
+          "index": "undercommon",
+          "name": "Undercommon",
+          "url": "/api/languages/undercommon"
+        }
+      ]
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "monster-hunters-pack",
+          "name": "Monster Hunter's Pack",
+          "url": "/api/equipment/monster-hunters-pack"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment_option_set": {
+          "option_type": "group",
+          "desc": "One trinket of special significance (choose one or roll on the Horror Trinkets table)"
+        }
+      },
+      {
+        "equipment": {
+          "index": "common-clothes",
+          "name": "Common Clothes",
+          "url": "/api/equipment/common-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "sp",
+          "name": "Silver Piece",
+          "url": "/api/equipment/currency/sp"
+        },
+        "quantity": 1
+      }
+    ],
+    "feature": {
+      "name": "Heart of Darkness",
+      "desc": [
+        "Those who look into your eyes can see that you have faced unimaginable horror and that you are no stranger to darkness. Though they might fear you, commoners will extend you every courtesy and do their utmost to help you. Unless you have shown yourself to be a danger to them, they will even take up arms to fight alongside you, should you find yourself facing an enemy alone."
+      ]
+    },
+    "harrowing_event_options": {
+      "choose": 1,
+      "type": "harrowing_event",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "A monster that slaughtered dozens of innocent people spared your life, and you don’t know why."
+          },
+          {
+            "option_type": "string",
+            "string": "You were born under a dark star. You can feel it watching you, coldly and distantly. Sometimes it beckons you in the dead of night."
+          },
+          {
+            "option_type": "string",
+            "string": "An apparition that has haunted your family for generations now haunts you. You don’t know what it wants, and it won’t leave you alone."
+          },
+          {
+            "option_type": "string",
+            "string": "Your family has a history of practicing the dark arts. You dabbled once and felt something horrible clutch at your soul, whereupon you fled in terror."
+          },
+          {
+            "option_type": "string",
+            "string": "An oni took your sibling one cold, dark night, and you were unable to stop it."
+          },
+          {
+            "option_type": "string",
+            "string": "You were cursed with lycanthropy and later cured. You are now haunted by the innocents you slaughtered."
+          },
+          {
+            "option_type": "string",
+            "string": "A hag kidnapped and raised you. You escaped, but the hag still has a magical hold over you and fills your mind with evil thoughts."
+          },
+          {
+            "option_type": "string",
+            "string": "You opened an eldritch tome and saw things unfit for a sane mind. You burned the book, but its words and images are burned into your psyche."
+          },
+          {
+            "option_type": "string",
+            "string": "A fiend possessed you as a child. You were locked away but escaped. The fiend is still inside you, but now you try to keep it locked away."
+          },
+          {
+            "option_type": "string",
+            "string": "You did terrible things to avenge the murder of someone you loved. You became a monster, and it haunts your waking dreams."
+          }
+        ]
+      }
+    },
+    "personality_traits": {
+      "choose": 1,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I don’t run from evil. Evil runs from me."
+          },
+          {
+            "option_type": "string",
+            "string": "I like to read and memorize poetry. It keeps me calm and brings me fleeting moments of happiness."
+          },
+          {
+            "option_type": "string",
+            "string": "I spend money freely and live life to the fullest, knowing that tomorrow I might die."
+          },
+          {
+            "option_type": "string",
+            "string": "I live for the thrill of the hunt."
+          },
+          {
+            "option_type": "string",
+            "string": "I don’t talk about the thing that torments me. I’d rather not burden others with my curse."
+          },
+          {
+            "option_type": "string",
+            "string": "I expect danger around every corner."
+          },
+          {
+            "option_type": "string",
+            "string": "I refuse to become a victim, and I will not allow others to be victimized."
+          },
+          {
+            "option_type": "string",
+            "string": "I put no trust in divine beings."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "I try to help those in need, no matter what the personal cost.",
+            "alignment": "Good"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "I’ll stop the spirits that haunt me or die trying.",
+            "alignment": "Any"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "I kill monsters to make the world a safer place, and to exorcise my own demons.",
+            "alignment": "Good"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "I have a dark calling that puts me above the law.",
+            "alignment": "Chaotic"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "I like to know my enemy’s capabilities and weaknesses before rushing into battle.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "I’m a monster that destroys other monsters, and anything else that gets in my way.",
+            "alignment": "Evil"
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I keep my thoughts and discoveries in a journal. My journal is my legacy."
+          },
+          {
+            "option_type": "string",
+            "string": "I would sacrifice my life and my soul to protect the innocent."
+          },
+          {
+            "option_type": "string",
+            "string": "My torment drove away the person I love. I strive to win back the love I’ve lost."
+          },
+          {
+            "option_type": "string",
+            "string": "A terrible guilt consumes me. I hope that I can find redemption through my actions."
+          },
+          {
+            "option_type": "string",
+            "string": "There’s evil in me, I can feel it. It must never be set free."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a child to protect. I must make the world a safer place for him (or her)."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I have certain rituals that I must follow every day. I can never break them."
+          },
+          {
+            "option_type": "string",
+            "string": "I assume the worst in people."
+          },
+          {
+            "option_type": "string",
+            "string": "I feel no compassion for the dead. They’re the lucky ones."
+          },
+          {
+            "option_type": "string",
+            "string": "I have an addiction."
+          },
+          {
+            "option_type": "string",
+            "string": "I am a purveyor of doom and gloom who lives in a world without hope."
+          },
+          {
+            "option_type": "string",
+            "string": "I talk to spirits that no one else can see."
+          }
+        ]
+      }
+    },   
+    "haunted_one_trinkets": {
+      "trinkets": {
+        "choose": 1,
+        "type": "trinket",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "string",
+              "string": "A picture you drew as a child of your imaginary friend"
+            },
+            {
+              "option_type": "string",
+              "string": "A lock that opens when blood is dripped in its keyhole"
+            },
+            {
+              "option_type": "string",
+              "string": "Clothes stolen from a scarecrow"
+            },
+            {
+              "option_type": "string",
+              "string": "A spinning top carved with four faces: happy, sad, wrathful, and dead"
+            },
+            {
+              "option_type": "string",
+              "string": "The necklace of a sibling who died on the day you were born"
+            },
+            {
+              "option_type": "string",
+              "string": "A wig from someone executed by beheading"
+            },
+            {
+              "option_type": "string",
+              "string": "The unopened letter to you from your dying father"
+            },
+            {
+              "option_type": "string",
+              "string": "A pocket watch that runs backward for an hour every midnight"
+            },
+            {
+              "option_type": "string",
+              "string": "A winter coat stolen from a dying soldier"
+            },
+            {
+              "option_type": "string",
+              "string": "A bottle of invisible ink that can only be read at sunset"
+            },
+            {
+              "option_type": "string",
+              "string": "A wineskin that refills when interred with a dead person for a night"
+            },
+            {
+              "option_type": "string",
+              "string": "A set of silverware used by a king for his last meal"
+            },
+            {
+              "option_type": "string",
+              "string": "A spyglass that always shows the world suffering a terrible storm"
+            },
+            {
+              "option_type": "string",
+              "string": "A cameo with the profile’s face scratched away"
+            },
+            {
+              "option_type": "string",
+              "string": "A lantern with a black candle that never runs out and that burns with green flame"
+            },
+            {
+              "option_type": "string",
+              "string": "A teacup from a child’s tea set, stained with blood"
+            },
+            {
+              "option_type": "string",
+              "string": "A little black book that records your dreams, and yours alone, when you sleep"
+            },
+            {
+              "option_type": "string",
+              "string": "A necklace formed of the interlinked holy symbols of a dozen deities"
+            },
+            {
+              "option_type": "string",
+              "string": "A noose that feels heavier than it should"
+            },
+            {
+              "option_type": "string",
+              "string": "A birdcage into which small birds fly but once inside never eat or leave"
+            },
+            {
+              "option_type": "string",
+              "string": "A lepidopterist’s box filled with dead moths with skull-like patterns on their wings"
+            },
+            {
+              "option_type": "string",
+              "string": "A jar of pickled ghouls’ tongues"
+            },
+            {
+              "option_type": "string",
+              "string": "The wooden hand of a notorious pirate"
+            },
+            {
+              "option_type": "string",
+              "string": "An urn with the ashes of a dead relative"
+            },
+            {
+              "option_type": "string",
+              "string": "A hand mirror backed with a bronze depiction of a medusa"
+            },
+            {
+              "option_type": "string",
+              "string": "Pallid leather gloves crafted with ivory fingernails"
+            },
+            {
+              "option_type": "string",
+              "string": "Dice made from the knuckles of a notorious charlatan"
+            },
+            {
+              "option_type": "string",
+              "string": "A ring of keys for forgotten locks"
+            },
+            {
+              "option_type": "string",
+              "string": "Nails from the coffin of a murderer"
+            },
+            {
+              "option_type": "string",
+              "string": "A key to the family crypt"
+            },
+            {
+              "option_type": "string",
+              "string": "A bouquet of funerary flowers that always looks and smells fresh"
+            },
+            {
+              "option_type": "string",
+              "string": "A switch used to discipline you as a child"
+            },
+            {
+              "option_type": "string",
+              "string": "A music box that plays by itself whenever someone holding it dances"
+            },
+            {
+              "option_type": "string",
+              "string": "A walking cane with an iron ferrule that strikes sparks on stone"
+            },
+            {
+              "option_type": "string",
+              "string": "A flag from a ship lost at sea"
+            },
+            {
+              "option_type": "string",
+              "string": "A porcelain doll’s head that always seems to be looking at you"
+            },
+            {
+              "option_type": "string",
+              "string": "A wolf’s head wrought in silver that is also a whistle"
+            },
+            {
+              "option_type": "string",
+              "string": "A small mirror that shows a much older version of the viewer"
+            },
+            {
+              "option_type": "string",
+              "string": "A small, worn book of children’s nursery rhymes"
+            },
+            {
+              "option_type": "string",
+              "string": "A mummified raven claw"
+            },
+            {
+              "option_type": "string",
+              "string": "A broken pendant of a silver dragon that’s always cold to the touch"
+            },
+            {
+              "option_type": "string",
+              "string": "A small locked box that quietly hums a lovely melody at night, but you always forget it in the morning"
+            },
+            {
+              "option_type": "string",
+              "string": "An inkwell that makes one a little nauseous when staring at it"
+            },
+            {
+              "option_type": "string",
+              "string": "An old doll made from a dark, dense wood and missing a hand and a foot"
+            },
+            {
+              "option_type": "string",
+              "string": "A black executioner’s hood"
+            },
+            {
+              "option_type": "string",
+              "string": "A pouch made of flesh, with a sinew drawstring"
+            },
+            {
+              "option_type": "string",
+              "string": "A tiny spool of black thread that never runs out"
+            },
+            {
+              "option_type": "string",
+              "string": "A tiny clockwork figurine of a dancer that’s missing a gear and doesn’t work"
+            },
+            {
+              "option_type": "string",
+              "string": "A black wooden pipe that creates puffs of smoke that look like skulls"
+            },
+            {
+              "option_type": "string",
+              "string": "A vial of perfume, the scent of which only certain creatures can detect"
+            },
+            {
+              "option_type": "string",
+              "string": "A stone that emits a single endless sigh"
+            },
+            {
+              "option_type": "string",
+              "string": "A rag doll with two red dots on its neck"
+            },
+            {
+              "option_type": "string",
+              "string": "A spring-loaded toy with a missing crank"
+            },
+            {
+              "option_type": "string",
+              "string": "A mason jar containing a harmless but agitated, animate ooze"
+            },
+            {
+              "option_type": "string",
+              "string": "A black wooden die with 1’s on all the faces"
+            },
+            {
+              "option_type": "string",
+              "string": "A child’s portrait with 'born' written on the back, along with next year’s date"
+            },
+            {
+              "option_type": "string",
+              "string": "A dagger-sized shark tooth"
+            },
+            {
+              "option_type": "string",
+              "string": "A finger that’s taken root in a small pot"
+            },
+            {
+              "option_type": "string",
+              "string": "A toolbox containing the remains of a dangerous but broken clockwork arachnid"
+            },
+            {
+              "option_type": "string",
+              "string": "A pitcher-sized, opalescent snail shell that occasionally, inexplicably shudders or tips over"
+            },
+            {
+              "option_type": "string",
+              "string": "The logbook of an ice-breaking ship called The Haifisch"
+            },
+            {
+              "option_type": "string",
+              "string": "A small portrait of you as a child, alongside your identically dressed twin"
+            },
+            {
+              "option_type": "string",
+              "string": "A silver pocket watch with thirteen hours marked on the face"
+            },
+            {
+              "option_type": "string",
+              "string": "A woodcut of a wolf devouring its own hind leg"
+            },
+            {
+              "option_type": "string",
+              "string": "A planchette etched with raven skulls"
+            },
+            {
+              "option_type": "string",
+              "string": "A moist coral figurine of a lamprey with arms, legs, and a bipedal stance"
+            },
+            {
+              "option_type": "string",
+              "string": "A bronze fingertrap sculpted with roaring tigers"
+            },
+            {
+              "option_type": "string",
+              "string": "A pearl necklace that turns red under the full moon"
+            },
+            {
+              "option_type": "string",
+              "string": "A fossil of a fish with humanoid features"
+            },
+            {
+              "option_type": "string",
+              "string": "A plague doctor’s mask"
+            },
+            {
+              "option_type": "string",
+              "string": "A paper talisman with smudged ink"
+            },
+            {
+              "option_type": "string",
+              "string": "A locket containing the smeared image of an eyeless figure"
+            },
+            {
+              "option_type": "string",
+              "string": "A canopic jar with a lid sculpted like a goat"
+            },
+            {
+              "option_type": "string",
+              "string": "A jack-o’-lantern made from a small, pale gourd"
+            },
+            {
+              "option_type": "string",
+              "string": "A single high-heeled, iron shoe"
+            },
+            {
+              "option_type": "string",
+              "string": "A candle made from a severed hand"
+            },
+            {
+              "option_type": "string",
+              "string": "A clockwork device that beats like a heart"
+            },
+            {
+              "option_type": "string",
+              "string": "A blank masquerade mask"
+            },
+            {
+              "option_type": "string",
+              "string": "A glass eye with a live worm inside"
+            },
+            {
+              "option_type": "string",
+              "string": "A sheet with two eyeholes cut in it"
+            },
+            {
+              "option_type": "string",
+              "string": "The deed to someplace called Tergeron Manor"
+            },
+            {
+              "option_type": "string",
+              "string": "An ornate, wax-sealed crimson envelope that resists all attempts to open it"
+            },
+            {
+              "option_type": "string",
+              "string": "A mourning veil trimmed in black lace"
+            },
+            {
+              "option_type": "string",
+              "string": "A straitjacket covered in charcoal runes"
+            },
+            {
+              "option_type": "string",
+              "string": "A tattered, burlap mask with a crooked smile painted on it"
+            },
+            {
+              "option_type": "string",
+              "string": "A green ribbon designed to be worn as a choker"
+            },
+            {
+              "option_type": "string",
+              "string": "Dentures with mismatched, sharpened teeth"
+            },
+            {
+              "option_type": "string",
+              "string": "A warm, fist-sized egg case"
+            },
+            {
+              "option_type": "string",
+              "string": "A copper ring with 'mine' engraved on the inside"
+            },
+            {
+              "option_type": "string",
+              "string": "A glass ampoule containing a neon green fluid"
+            },
+            {
+              "option_type": "string",
+              "string": "An eye patch embroidered with a holy symbol"
+            },
+            {
+              "option_type": "string",
+              "string": "A severed big toe with a nail that continues to grow"
+            },
+            {
+              "option_type": "string",
+              "string": "A journal that has been heavily redacted"
+            },
+            {
+              "option_type": "string",
+              "string": "A glove with a mouth-like design stitched on the palm"
+            },
+            {
+              "option_type": "string",
+              "string": "An ornate but empty reliquary made of silver and fractured glass"
+            },
+            {
+              "option_type": "string",
+              "string": "A ceramic figure of a cat with too many eyes"
+            },
+            {
+              "option_type": "string",
+              "string": "A crumpled paper ticket bearing the words 'admit none'"
+            },
+            {
+              "option_type": "string",
+              "string": "An electrum coin with your face on one side"
+            },
+            {
+              "option_type": "string",
+              "string": "A shrunken gremishka head that twitches when anyone casts magic nearby"
+            },
+            {
+              "option_type": "string",
+              "string": "A sunburst amulet with a red stone at the center"
+            }
+          ]
+        }
+      }      
+    },    
+    "url": "/api/backgrounds/haunted-one"  
+  },
+  {
+    "index": "hermit",
+    "name": "Hermit",
+    "description": "You spent your early years secluded in a hut or monastery located well beyond the outskirts of the nearest settlement. In those days, your only companions were the creatures of the forest and those who would occasionally visit to bring news of the outside world and supplies. The solitude allowed you to spend many hours pondering the mysteries of creation.",
+    "feat": {
+      "name": "Healer",
+      "url": "/api/feats/healer"
+    },
+    "skill_proficiencies": [
+      {
+        "index": "skill-medicine",
+        "name": "Skill: Medicine",
+        "url": "/api/proficiencies/skill-medicine"
+      },
+      {
+        "index": "skill-religion",
+        "name": "Skill: Religion",
+        "url": "/api/proficiencies/skill-religion"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "index": "herbalism-kit",
+        "name": "Herbalism Kit",
+        "url": "/api/tools/herbalism-kit"
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "option_type": "group",
+            "desc": "(A) Quarterstaff, Herbalism Kit, Bedroll, Book (philosophy), Lamp, Oil (3 flasks), Traveler's Clothes, 16 GP",
+            "items": [
+              {
+                "equipment": {
+                  "index": "quarterstaff",
+                  "name": "Quarterstaff",
+                  "url": "/api/equipment/quarterstaff"
+                },
+                "quantity": 1
+              },
+              {
+                "equipment": {
+                  "index": "herbalism-kit",
+                  "name": "Herbalism Kit",
+                  "url": "/api/equipment/herbalism-kit"
+                },
+                "quantity": 1
+              },
+              {
+                "equipment": {
+                  "index": "bedroll",
+                  "name": "Bedroll",
+                  "url": "/api/equipment/bedroll"
+                },
+                "quantity": 1
+              },
+              {
+                "equipment": {
+                  "index": "book-philosophy",
+                  "name": "Book (philosophy)",
+                  "url": "/api/equipment/book"
+                },
+                "quantity": 1
+              },
+              {
+                "equipment": {
+                  "index": "lamp",
+                  "name": "Lamp",
+                  "url": "/api/equipment/lamp"
+                },
+                "quantity": 1
+              },
+              {
+                "equipment": {
+                  "index": "oil-flask",
+                  "name": "Oil (flask)",
+                  "url": "/api/equipment/oil-flask"
+                },
+                "quantity": 3
+              },
+              {
+                "equipment": {
+                  "index": "travelers-clothes",
+                  "name": "Traveler's Clothes",
+                  "url": "/api/equipment/travelers-clothes"
+                },
+                "quantity": 1
+              },
+              {
+                "equipment": {
+                  "index": "gold-pieces",
+                  "name": "Gold Pieces",
+                  "url": "/api/currency/gp"
+                },
+                "quantity": 16
+              }
+            ]
+          },
+          {
+            "option_type": "string",
+            "string": "(B) 50 GP",
+            "items": [
+              {
+                "equipment": {
+                  "index": "gold-pieces",
+                  "name": "Gold Pieces",
+                  "url": "/api/currency/gp"
+                },
+                "quantity": 50
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Heart of Darkness",
+      "desc": [
+        "Those who look into your eyes can see that you have faced unimaginable horror and that you are no stranger to darkness. Though they might fear you, commoners will extend you every courtesy and do their utmost to help you. Unless you have shown yourself to be a danger to them, they will even take up arms to fight alongside you, should you find yourself facing an enemy alone."
+      ]
+    },
+    "personality_traits": {
+      "choose": 1,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I am utterly serene, even in the face of disaster."
+          },
+          {
+            "option_type": "string",
+            "string": "I’m oblivious to etiquette and social expectations."
+          },
+          {
+            "option_type": "string",
+            "string": "I connect everything that happens to me to a grand, cosmic plan."
+          },
+          {
+            "option_type": "string",
+            "string": "I often get lost in my own thoughts and contemplation, becoming oblivious to my surroundings."
+          },
+          {
+            "option_type": "string",
+            "string": "I am working on a grand philosophical theory and love sharing my ideas."
+          },
+          {
+            "option_type": "string",
+            "string": "I’ve spent so long in the temple that I have little practical experience dealing with people in the outside world."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Greater Good. My gifts are meant to be shared with all, not used for my own benefit.",
+            "alignment": "Good"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Logic. Emotions must not cloud our sense of what is right and true, or our logical thinking.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Free Thinking. Inquiry and curiosity are the pillars of progress.",
+            "alignment": "Chaotic"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Power. Solitude and contemplation are paths toward mystical or magical power.",
+            "alignment": "Evil"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Live and Let Live. Meddling in the affairs of others only causes trouble.",
+            "alignment": "Neutral"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Self-Knowledge. If you know yourself, there’s nothing left to know.",
+            "alignment": "Any"
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I’m still seeking the enlightenment I pursued in my seclusion, and it still eludes me."
+          },
+          {
+            "option_type": "string",
+            "string": "I entered seclusion to hide from the ones who might still be hunting me. I must someday confront them."
+          },
+          {
+            "option_type": "string",
+            "string": "I’m dedicated to fulfilling a spiritual obligation that has bound me for life."
+          },
+          {
+            "option_type": "string",
+            "string": "I joined the world to spread the message of peace, salvation, and harmony."
+          },
+          {
+            "option_type": "string",
+            "string": "My isolation gave me insight into a great evil that only I can destroy."
+          },
+          {
+            "option_type": "string",
+            "string": "I will someday get revenge on the corrupt temple hierarchy who branded me a heretic."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Now that I’ve returned to the world, I enjoy its delights a little too much."
+          },
+          {
+            "option_type": "string",
+            "string": "I harbor dark, bloodthirsty thoughts that my isolation and meditation failed to quell."
+          },
+          {
+            "option_type": "string",
+            "string": "I am dogmatic in my thoughts and philosophy."
+          },
+          {
+            "option_type": "string",
+            "string": "I let my need to win arguments overshadow friendships and harmony."
+          },
+          {
+            "option_type": "string",
+            "string": "I’d risk too much to uncover a lost bit of knowledge."
+          },
+          {
+            "option_type": "string",
+            "string": "I like keeping secrets and won’t share them with anyone."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/hermit"
+  },
+  {
+    "index": "hermit-old",
+    "name": "Hermit",
+    "description": "You spent your early years secluded in a hut or monastery located well beyond the outskirts of the nearest settlement. In those days, your only companions were the creatures of the forest and those who would occasionally visit to bring news of the outside world and supplies. The solitude allowed you to spend many hours pondering the mysteries of creation.",
+    "skill_proficiencies": [
+      {
+        "index": "skill-medicine",
+        "name": "Skill: Medicine",
+        "url": "/api/proficiencies/skill-medicine"
+      },
+      {
+        "index": "skill-religion",
+        "name": "Skill: Religion",
+        "url": "/api/proficiencies/skill-religion"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "index": "herbalism-kit",
+        "name": "Herbalism Kit",
+        "url": "/api/tools/herbalism-kit"
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "scroll-case",
+          "name": "Scroll Case stuffed full of notes",
+          "url": "/api/equipment/scroll-case"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "winter-blanket",
+          "name": "Winter Blanket",
+          "url": "/api/equipment/winter-blanket"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "common-clothes",
+          "name": "Set of Common Clothes",
+          "url": "/api/equipment/common-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "herbalism-kit",
+          "name": "Herbalism Kit",
+          "url": "/api/equipment/herbalism-kit"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "gold-pieces",
+          "name": "Gold Pieces",
+          "url": "/api/currency/gp"
+        },
+        "quantity": 5
+      }
+    ],
+    "feature": {
+      "name": "Discovery",
+      "desc": [
+        "The quiet seclusion of your extended hermitage gave you access to a unique and powerful discovery. The exact nature of this revelation depends on the nature of your seclusion. It might be a great truth about the cosmos, the deities, the powerful beings of the outer planes, or the forces of nature. It could be a site that no one else has ever seen. You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history. It might be information that would be damaging to the people who consigned you to exile, and hence the reason for your return to society.",
+        "Work with your DM to determine the details of your discovery and its impact on the campaign."
+      ]
+    },
+    "specialty": {
+      "choose": 1,
+      "type": "life_of_seclusion",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I was searching for spiritual enlightenment."
+          },
+          {
+            "option_type": "string",
+            "string": "I was partaking of communal living in accordance with the dictates of a religious order."
+          },
+          {
+            "option_type": "string",
+            "string": "I was exiled for a crime I didn't commit."
+          },
+          {
+            "option_type": "string",
+            "string": "I retreated from society after a life-altering event."
+          },
+          {
+            "option_type": "string",
+            "string": "I needed a quiet place to work on my art, literature, music, or manifesto."
+          },
+          {
+            "option_type": "string",
+            "string": "I needed to commune with nature, far from civilization."
+          },
+          {
+            "option_type": "string",
+            "string": "I was the caretaker of an ancient ruin or relic."
+          },
+          {
+            "option_type": "string",
+            "string": "I was a pilgrim in search of a person, place, or relic of spiritual significance."
+          }
+        ]
+      }
+    },
+    "personality_traits": {
+      "choose": 1,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I've been isolated for so long that I rarely speak, preferring gestures and the occasional grunt."
+          },
+          {
+            "option_type": "string",
+            "string": "I am utterly serene, even in the face of disaster."
+          },
+          {
+            "option_type": "string",
+            "string": "The leader of my community had something wise to say on every topic, and I am eager to share that wisdom."
+          },
+          {
+            "option_type": "string",
+            "string": "I feel tremendous empathy for all who suffer."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm oblivious to etiquette and social expectations."
+          },
+          {
+            "option_type": "string",
+            "string": "I connect everything that happens to me to a grand, cosmic plan."
+          },
+          {
+            "option_type": "string",
+            "string": "I often get lost in my own thoughts and contemplation, becoming oblivious to my surroundings."
+          },
+          {
+            "option_type": "string",
+            "string": "I am working on a grand philosophical theory and love sharing my ideas."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Greater Good. My gifts are meant to be shared with all, not used for my own benefit.",
+            "alignment": "Good"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Logic. Emotions must not cloud our sense of what is right and true, or our logical thinking.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Free Thinking. Inquiry and curiosity are the pillars of progress.",
+            "alignment": "Chaotic"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Power. Solitude and contemplation are paths toward mystical or magical power.",
+            "alignment": "Evil"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Live and Let Live. Meddling in the affairs of others only causes trouble.",
+            "alignment": "Neutral"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Self-Knowledge. If you know yourself, there's nothing left to know.",
+            "alignment": "Any"
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Nothing is more important than the other members of my hermitage, order, or association."
+          },
+          {
+            "option_type": "string",
+            "string": "I entered seclusion to hide from the ones who might still be hunting me. I must someday confront them."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm still seeking the enlightenment I pursued in my seclusion, and it still eludes me."
+          },
+          {
+            "option_type": "string",
+            "string": "I entered seclusion because I loved someone I could not have."
+          },
+          {
+            "option_type": "string",
+            "string": "Should my discovery come to light, it could bring ruin to the world."
+          },
+          {
+            "option_type": "string",
+            "string": "My isolation gave me great insight into a great evil that only I can destroy."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Now that I've returned to the world, I enjoy its delights a little too much."
+          },
+          {
+            "option_type": "string",
+            "string": "I harbor dark, bloodthirsty thoughts that my isolation and meditation failed to quell."
+          },
+          {
+            "option_type": "string",
+            "string": "I am dogmatic in my thoughts and philosophy."
+          },
+          {
+            "option_type": "string",
+            "string": "I let my need to win arguments overshadow friendships and harmony."
+          },
+          {
+            "option_type": "string",
+            "string": "I'd risk too much to uncover a lost bit of knowledge."
+          },
+          {
+            "option_type": "string",
+            "string": "I like keeping secrets and won't share them with anyone."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/hermit"
+  },
+  {
+    "index": "baldurs-gate-hermit",
+    "name": "Baldur's Gate Hermit",
+    "description": "You spent your early years secluded in a hut or monastery located well beyond the outskirts of the nearest settlement. In those days, your only companions were the creatures of the forest and those who would occasionally visit to bring news of the outside world and supplies. The solitude allowed you to spend many hours pondering the mysteries of creation.",
+    "skill_proficiencies": [
+      {
+        "index": "skill-medicine",
+        "name": "Skill: Medicine",
+        "url": "/api/proficiencies/skill-medicine"
+      },
+      {
+        "index": "skill-religion",
+        "name": "Skill: Religion",
+        "url": "/api/proficiencies/skill-religion"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "index": "herbalism-kit",
+        "name": "Herbalism Kit",
+        "url": "/api/tools/herbalism-kit"
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "scroll-case",
+          "name": "Scroll Case stuffed full of notes",
+          "url": "/api/equipment/scroll-case"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "winter-blanket",
+          "name": "Winter Blanket",
+          "url": "/api/equipment/winter-blanket"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "common-clothes",
+          "name": "Set of Common Clothes",
+          "url": "/api/equipment/common-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "herbalism-kit",
+          "name": "Herbalism Kit",
+          "url": "/api/equipment/herbalism-kit"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "gold-pieces",
+          "name": "Gold Pieces",
+          "url": "/api/currency/gp"
+        },
+        "quantity": 5
+      }
+    ],
+    "feature": {
+      "name": "Discovery",
+      "desc": [
+        "The quiet seclusion of your extended hermitage gave you access to a unique and powerful discovery. The exact nature of this revelation depends on the nature of your seclusion. It might be a great truth about the cosmos, the deities, the powerful beings of the outer planes, or the forces of nature. It could be a site that no one else has ever seen. You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history. It might be information that would be damaging to the people who consigned you to exile, and hence the reason for your return to society.",
+        "Work with your DM to determine the details of your discovery and its impact on the campaign."
+      ]
+    },
+    "baldurs_gate_feature": {
+      "name": "The Real City",
+      "desc": [
+        "The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate—though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.",
+        "You know the Baldur's Gate most Baldurians ignore, the dog-eat-dog world of the homeless and unfortunate. You know where to go in the Lower City and Outer City for anonymity. In these slums and alley camps, you can get a damp bed and a bad meal, but also a degree of privacy and no questions asked. Living here isn't comfortable, but it's unlikely anyone will find you—and you can stay as long as you want."
+      ]
+    },
+    "specialty": {
+      "choose": 1,
+      "type": "life_of_seclusion",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I was searching for spiritual enlightenment."
+          },
+          {
+            "option_type": "string",
+            "string": "I was partaking of communal living in accordance with the dictates of a religious order."
+          },
+          {
+            "option_type": "string",
+            "string": "I was exiled for a crime I didn't commit."
+          },
+          {
+            "option_type": "string",
+            "string": "I retreated from society after a life-altering event."
+          },
+          {
+            "option_type": "string",
+            "string": "I needed a quiet place to work on my art, literature, music, or manifesto."
+          },
+          {
+            "option_type": "string",
+            "string": "I needed to commune with nature, far from civilization."
+          },
+          {
+            "option_type": "string",
+            "string": "I was the caretaker of an ancient ruin or relic."
+          },
+          {
+            "option_type": "string",
+            "string": "I was a pilgrim in search of a person, place, or relic of spiritual significance."
+          }
+        ]
+      }
+    },
+    "hermit_origins": {
+      "choose": 1,
+      "type": "origin",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "You led an ill-fated expedition into the Riverveins. Your friends were swept away by flooding, and you've never been able to shake the guilt of causing their deaths over a frivolous lark. You've maintained a solitary vigil outside the cavern entrance ever since."
+          },
+          {
+            "option_type": "string",
+            "string": "You crossed the Guild in a bad way. Fortunately, its members think you're dead. Less fortunately, maintaining that deception might require you to stay in hiding until you actually are."
+          },
+          {
+            "option_type": "string",
+            "string": "You study the puzzles of mortal natures. You've seen followers of evil deities perform miracles for the helpless at Twin Songs, and you've seen patriars who worship good deities turn their backs on the poor daily. Bearing witness to such things, and meditating on their contradictions, fills your hours."
+          },
+          {
+            "option_type": "string",
+            "string": "You tend to some part of the city's forgotten history: the unmarked graves in Cliffside Cemetery, the crumbling remains of dead patriar families' manors, or a collection of religious texts stuffed into an attic and forgotten when a believer's patron deity died. In this solitary work, you've learned secrets no one else knows."
+          },
+          {
+            "option_type": "string",
+            "string": "You killed a patriar's scion in an illegal duel. The family swore revenge, and you fled to the slums rather than risk bringing their wrath down on your kin."
+          },
+          {
+            "option_type": "string",
+            "string": "You aren't originally from Baldur's Gate. You came here seeking something else, only to learn that the quest that drove you had become impossible to fulfill—its object was destroyed or its purpose was negated by some superseding event. Suddenly directionless and unable to return to your homeland, you have lingered, adrift, in this wretched city."
+          }
+        ]
+      }
+    },
+    "personality_traits": {
+      "choose": 1,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I've been isolated for so long that I rarely speak, preferring gestures and the occasional grunt."
+          },
+          {
+            "option_type": "string",
+            "string": "I am utterly serene, even in the face of disaster."
+          },
+          {
+            "option_type": "string",
+            "string": "The leader of my community had something wise to say on every topic, and I am eager to share that wisdom."
+          },
+          {
+            "option_type": "string",
+            "string": "I feel tremendous empathy for all who suffer."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm oblivious to etiquette and social expectations."
+          },
+          {
+            "option_type": "string",
+            "string": "I connect everything that happens to me to a grand, cosmic plan."
+          },
+          {
+            "option_type": "string",
+            "string": "I often get lost in my own thoughts and contemplation, becoming oblivious to my surroundings."
+          },
+          {
+            "option_type": "string",
+            "string": "I am working on a grand philosophical theory and love sharing my ideas."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Greater Good. My gifts are meant to be shared with all, not used for my own benefit.",
+            "alignment": "Good"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Logic. Emotions must not cloud our sense of what is right and true, or our logical thinking.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Free Thinking. Inquiry and curiosity are the pillars of progress.",
+            "alignment": "Chaotic"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Power. Solitude and contemplation are paths toward mystical or magical power.",
+            "alignment": "Evil"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Live and Let Live. Meddling in the affairs of others only causes trouble.",
+            "alignment": "Neutral"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Self-Knowledge. If you know yourself, there's nothing left to know.",
+            "alignment": "Any"
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Nothing is more important than the other members of my hermitage, order, or association."
+          },
+          {
+            "option_type": "string",
+            "string": "I entered seclusion to hide from the ones who might still be hunting me. I must someday confront them."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm still seeking the enlightenment I pursued in my seclusion, and it still eludes me."
+          },
+          {
+            "option_type": "string",
+            "string": "I entered seclusion because I loved someone I could not have."
+          },
+          {
+            "option_type": "string",
+            "string": "Should my discovery come to light, it could bring ruin to the world."
+          },
+          {
+            "option_type": "string",
+            "string": "My isolation gave me great insight into a great evil that only I can destroy."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Now that I've returned to the world, I enjoy its delights a little too much."
+          },
+          {
+            "option_type": "string",
+            "string": "I harbor dark, bloodthirsty thoughts that my isolation and meditation failed to quell."
+          },
+          {
+            "option_type": "string",
+            "string": "I am dogmatic in my thoughts and philosophy."
+          },
+          {
+            "option_type": "string",
+            "string": "I let my need to win arguments overshadow friendships and harmony."
+          },
+          {
+            "option_type": "string",
+            "string": "I'd risk too much to uncover a lost bit of knowledge."
+          },
+          {
+            "option_type": "string",
+            "string": "I like keeping secrets and won't share them with anyone."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/baldurs-gate-hermit"
   }
+  
+  
+  
   
   
   
