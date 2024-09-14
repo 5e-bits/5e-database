@@ -8132,7 +8132,2698 @@
       }
     },
     "url": "/api/backgrounds/gambler"
+  },
+  {
+    "index": "gate-warden",
+    "name": "Gate Warden",
+    "prerequisite": "Planescape Campaign",
+    "skill_proficiencies": ["Persuasion", "Survival"],
+    "languages": {
+      "choose": 2,
+      "type": "languages",
+      "options": ["Abyssal", "Celestial", "Infernal"]
+    },
+    "equipment": [
+      {
+        "item": "A ring of keys to unknown locks"
+      },
+      {
+        "item": "A blank book"
+      },
+      {
+        "item": "An ink pen or quill"
+      },
+      {
+        "item": "A bottle of black ink"
+      },
+      {
+        "item": "A set of traveler's clothes"
+      },
+      {
+        "item": "A pouch containing 10 gp"
+      }
+    ],
+    "features": [
+      {
+        "name": "Planar Infusion",
+        "desc": [
+          "Living in a gate-town or a similar location steeped you in planar energy. You gain the Scion of the Outer Planes feat.",
+          "In addition, you know where to find free, modest lodging and food in the community you grew up in."
+        ]
+      }
+    ],
+    "personality_traits": {
+      "choose": 1,
+      "type": "personality_traits",
+      "options": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Strange events and otherworldly creatures don't faze me."
+          },
+          {
+            "option_type": "string",
+            "string": "I think in terms of exchange: something for something, nothing for nothing."
+          },
+          {
+            "option_type": "string",
+            "string": "I speak with an unusual cadence."
+          },
+          {
+            "option_type": "string",
+            "string": "I pepper my speech with words or curses borrowed from planar languages."
+          },
+          {
+            "option_type": "string",
+            "string": "I've seen enough to know that you can't take anyone at face value, so I scrutinize everyone."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a superstitious habit I picked up from my gate-town, such as touching iron when I'm nervous or arranging objects in a specific order."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/gate-warden"
+  },
+  {
+    "index": "giant-foundling",
+    "name": "Giant Foundling",
+    "starting_proficiencies": [
+      {
+        "index": "skill-intimidation",
+        "name": "Skill: Intimidation",
+        "url": "/api/proficiencies/skill-intimidation"
+      },
+      {
+        "index": "skill-survival",
+        "name": "Skill: Survival",
+        "url": "/api/proficiencies/skill-survival"
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Giant"
+          },
+          {
+            "option_type": "resource_list",
+            "resource_list_url": "/api/languages"
+          }
+        ]
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "backpack",
+          "name": "Backpack",
+          "url": "/api/equipment/backpack"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "travelers-clothes",
+          "name": "Traveler's Clothes",
+          "url": "/api/equipment/travelers-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "small-stone",
+          "name": "Small Stone or Sprig",
+          "url": "/api/equipment/small-stone"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "10 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Strike of the Giants",
+      "desc": [
+        "You gain the Strike of the Giants feat."
+      ]
+    },
+    "foundling_origin_table": {
+      "choose": 1,
+      "type": "origin",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "You were found as a baby by a family of nomadic giants who raised you as one of their own."
+          },
+          {
+            "option_type": "string",
+            "string": "A family of stone giants rescued you when you fell into a mountain chasm, and you have lived with them underground ever since."
+          },
+          {
+            "option_type": "string",
+            "string": "You were lost or abandoned as a child in a jungle that teemed with ravenous dinosaurs. There, you found an equally lost frost giant; together, you survived."
+          },
+          {
+            "option_type": "string",
+            "string": "Your farm was crushed and your family killed in a battle between warring groups of giants. Racked with guilt over the destruction, a sympathetic giant soldier promised to care for you."
+          },
+          {
+            "option_type": "string",
+            "string": "After you had a series of strange dreams as a child, your superstitious parents sent you to study with a powerful but aloof storm giant oracle."
+          },
+          {
+            "option_type": "string",
+            "string": "While playing hide-and-seek with your friends, you stumbled into the castle of a cloud giant, who immediately adopted you."
+          }
+        ]
+      }
+    },
+    "personality_traits": {
+      "choose": 1,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "What I lack in stature compared to giants, I make up for with sheer spite."
+          },
+          {
+            "option_type": "string",
+            "string": "I insist on being taken seriously as a full-grown adult. Nobody talks down to me!"
+          },
+          {
+            "option_type": "string",
+            "string": "Crowded spaces make me uncomfortable. I'd much rather be in an open field than a bustling tavern."
+          },
+          {
+            "option_type": "string",
+            "string": "I embrace my shorter stature. It helps me stay unnoticed—and underestimated."
+          },
+          {
+            "option_type": "string",
+            "string": "Every avalanche begins as a single pebble."
+          },
+          {
+            "option_type": "string",
+            "string": "The world always feels too big, and I'm afraid I'll never find my place in it."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/giant-foundling"
+  },
+  {
+    "index": "gladiator",
+    "name": "Gladiator",
+    "starting_proficiencies": [
+      {
+        "index": "skill-acrobatics",
+        "name": "Skill: Acrobatics",
+        "url": "/api/proficiencies/skill-acrobatics"
+      },
+      {
+        "index": "skill-performance",
+        "name": "Skill: Performance",
+        "url": "/api/proficiencies/skill-performance"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "index": "disguise-kit",
+        "name": "Disguise Kit",
+        "url": "/api/proficiencies/disguise-kit"
+      },
+      {
+        "index": "musical-instrument",
+        "name": "Musical Instrument",
+        "url": "/api/proficiencies/musical-instrument"
+      }
+    ],
+    "languages": [],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "musical-instrument",
+          "name": "Musical Instrument (one of your choice)",
+          "url": "/api/equipment/musical-instrument"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "admirer-favor",
+          "name": "The favor of an admirer (love letter, lock of hair, or trinket)",
+          "url": "/api/equipment/admirer-favor"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "costume",
+          "name": "Costume",
+          "url": "/api/equipment/costume"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "belt-pouch",
+          "name": "Belt Pouch",
+          "url": "/api/equipment/belt-pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "15 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "By Popular Demand",
+      "desc": [
+        "You can always find a place to perform, usually in an inn or tavern but possibly with a circus, at a theater, or even in a noble's court. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of the establishment), as long as you perform each night. In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you."
+      ]
+    },
+    "entertainer_routines": {
+      "choose": 1,
+      "type": "routines",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Actor"
+          },
+          {
+            "option_type": "string",
+            "string": "Dancer"
+          },
+          {
+            "option_type": "string",
+            "string": "Fire-eater"
+          },
+          {
+            "option_type": "string",
+            "string": "Jester"
+          },
+          {
+            "option_type": "string",
+            "string": "Juggler"
+          },
+          {
+            "option_type": "string",
+            "string": "Instrumentalist"
+          },
+          {
+            "option_type": "string",
+            "string": "Poet"
+          },
+          {
+            "option_type": "string",
+            "string": "Singer"
+          },
+          {
+            "option_type": "string",
+            "string": "Storyteller"
+          },
+          {
+            "option_type": "string",
+            "string": "Tumbler"
+          }
+        ]
+      }
+    },
+    "personality_traits": {
+      "choose": 1,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I know a story relevant to almost every situation."
+          },
+          {
+            "option_type": "string",
+            "string": "Whenever I come to a new place, I collect local rumors and spread gossip."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a hopeless romantic, always searching for that 'special someone.'"
+          },
+          {
+            "option_type": "string",
+            "string": "Nobody stays angry at me or around me for long, since I can defuse any amount of tension."
+          },
+          {
+            "option_type": "string",
+            "string": "I love a good insult, even one directed at me."
+          },
+          {
+            "option_type": "string",
+            "string": "I get bitter if I'm not the center of attention."
+          },
+          {
+            "option_type": "string",
+            "string": "I'll settle for nothing less than perfection."
+          },
+          {
+            "option_type": "string",
+            "string": "I change my mood or my mind as quickly as I change key in a song."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Beauty. When I perform, I make the world better than it was.",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good",
+                "url": "/api/alignments/good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Tradition. The stories, legends, and songs of the past must never be forgotten, for they teach us who we are.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful",
+                "url": "/api/alignments/lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Creativity. The world is in need of new ideas and bold action.",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic",
+                "url": "/api/alignments/chaotic"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Greed. I'm only in it for the money and fame.",
+            "alignments": [
+              {
+                "index": "evil",
+                "name": "Evil",
+                "url": "/api/alignments/evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "People. I like seeing the smiles on people's faces when I perform. That's all that matters.",
+            "alignments": [
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/alignments/neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Honesty. Art should reflect the soul; it should come from within and reveal who we really are.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "My instrument is my most treasured possession, and it reminds me of someone I love."
+          },
+          {
+            "option_type": "string",
+            "string": "Someone stole my precious instrument, and someday I'll get it back."
+          },
+          {
+            "option_type": "string",
+            "string": "I want to be famous, whatever it takes."
+          },
+          {
+            "option_type": "string",
+            "string": "I idolize a hero of the old tales and measure my deeds against that person's."
+          },
+          {
+            "option_type": "string",
+            "string": "I will do anything to prove myself superior to my hated rival."
+          },
+          {
+            "option_type": "string",
+            "string": "I would do anything for the other members of my old troupe."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'll do anything to win fame and renown."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a sucker for a pretty face."
+          },
+          {
+            "option_type": "string",
+            "string": "A scandal prevents me from ever going home again. That kind of trouble seems to follow me around."
+          },
+          {
+            "option_type": "string",
+            "string": "I once satirized a noble who still wants my head. It was a mistake that I will likely repeat."
+          },
+          {
+            "option_type": "string",
+            "string": "I have trouble keeping my true feelings hidden. My sharp tongue lands me in trouble."
+          },
+          {
+            "option_type": "string",
+            "string": "Despite my best efforts, I am unreliable to my friends."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/gladiator"
+  },
+  {
+    "index": "golgari-agent",
+    "name": "Golgari Agent",
+    "starting_proficiencies": [
+      {
+        "index": "skill-nature",
+        "name": "Skill: Nature",
+        "url": "/api/proficiencies/skill-nature"
+      },
+      {
+        "index": "skill-survival",
+        "name": "Skill: Survival",
+        "url": "/api/proficiencies/skill-survival"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "index": "poisoners-kit",
+        "name": "Poisoner's Kit",
+        "url": "/api/proficiencies/poisoners-kit"
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Elvish"
+          },
+          {
+            "option_type": "string",
+            "string": "Giant"
+          },
+          {
+            "option_type": "string",
+            "string": "Kraul"
+          }
+        ]
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "golgari-insignia",
+          "name": "Golgari Insignia",
+          "url": "/api/equipment/golgari-insignia"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "poisoners-kit",
+          "name": "Poisoner's Kit",
+          "url": "/api/equipment/poisoners-kit"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pet-beetle-spider",
+          "name": "Pet Beetle or Spider",
+          "url": "/api/equipment/pet-beetle-spider"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "common-clothes",
+          "name": "Common Clothes",
+          "url": "/api/equipment/common-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "belt-pouch",
+          "name": "Belt Pouch",
+          "url": "/api/equipment/belt-pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "10 GP worth of mixed coins"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Undercity Paths",
+      "desc": [
+        "You know hidden, underground pathways that you can use to bypass crowds, obstacles, and observation as you move through the city. When you aren't in combat, you and companions you lead can travel between any two locations in the city twice as fast as your speed would normally allow. The paths of the undercity are haunted by dangers that rarely brave the light of the surface world, so your journey isn't guaranteed to be safe."
+      ]
+    },
+    "golgari_guild_spells": {
+      "prerequisite": "Spellcasting or Pact Magic class feature",
+      "spells_by_level": [
+        {
+          "level": "Cantrip",
+          "spells": ["dancing lights", "spare the dying"]
+        },
+        {
+          "level": "1st",
+          "spells": ["entangle", "ray of sickness"]
+        },
+        {
+          "level": "2nd",
+          "spells": ["protection from poison", "ray of enfeeblement", "spider climb"]
+        },
+        {
+          "level": "3rd",
+          "spells": ["animate dead", "plant growth"]
+        },
+        {
+          "level": "4th",
+          "spells": ["giant insect", "grasping vine"]
+        },
+        {
+          "level": "5th",
+          "spells": ["cloudkill", "insect plague"]
+        }
+      ],
+      "flavor_text": "Golgari magic is often accompanied by a sickly green glow and a rotting stench."
+    },
+    "personality_traits": {
+      "choose": 1,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Remember, I could kill you in your sleep. Or put centipedes in your bedroll."
+          },
+          {
+            "option_type": "string",
+            "string": "I like to remind people of their inevitable demise."
+          },
+          {
+            "option_type": "string",
+            "string": "Sometimes I give voice to the whispers of the rot, which I hear but no one else does."
+          },
+          {
+            "option_type": "string",
+            "string": "I do my best to discourage anyone from approaching or talking to me."
+          },
+          {
+            "option_type": "string",
+            "string": "I have accepted my death. Hence, I don't fear it."
+          },
+          {
+            "option_type": "string",
+            "string": "Like roots growing through stone, I am relentless and determined in my action."
+          },
+          {
+            "option_type": "string",
+            "string": "I put my knowledge of anatomy to use by narrating the injuries my enemies suffer in grisly detail."
+          },
+          {
+            "option_type": "string",
+            "string": "Like a wild animal, I lash out viciously when I'm provoked—and I'm easily provoked."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Guild. My guild is all that really matters.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Stoicism. All of us are part of the cyclical march of nature, which will continue with or without us.",
+            "alignments": [
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/alignments/neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Nature. The natural world is more important than the edifices of the city and civilization.",
+            "alignments": [
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/alignments/neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Interdependence. We are all part of nature's web.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful",
+                "url": "/api/alignments/lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Ambition. The time of Golgari ascendance is at hand, and I intend to have a prominent place in the new world order.",
+            "alignments": [
+              {
+                "index": "evil",
+                "name": "Evil",
+                "url": "/api/alignments/evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Live and Let Live. Meddling in the affairs of other guilds is a great way to get squashed like a bug.",
+            "alignments": [
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/alignments/neutral"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I cherish the finger of a family member who was petrified by a medusa."
+          },
+          {
+            "option_type": "string",
+            "string": "I have an identical twin who is as different from me as any person could be."
+          },
+          {
+            "option_type": "string",
+            "string": "I want to lead one faction of the guild to a new position of dominance."
+          },
+          {
+            "option_type": "string",
+            "string": "I love spending time in the moss-covered building where I took part in my first reclamation mission."
+          },
+          {
+            "option_type": "string",
+            "string": "I found something in the sewer that must never come to light."
+          },
+          {
+            "option_type": "string",
+            "string": "I am forever grateful to the reclaimer who found me floating facedown in the sewer, moments from death."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Death comes for us all, so you can't expect me to take care of someone who can't fight it off."
+          },
+          {
+            "option_type": "string",
+            "string": "I assume that anyone outside the Golgari looks down on me."
+          },
+          {
+            "option_type": "string",
+            "string": "I feel a need for revenge against those who enjoy the privilege of living above ground."
+          },
+          {
+            "option_type": "string",
+            "string": "I don't bother to couch my opinions in flattering words."
+          },
+          {
+            "option_type": "string",
+            "string": "I can't help but pocket any trinket or coin I come across, no matter how worthless."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm convinced that I'm better and stronger than members of other guilds, isolated as they are from the realities of life and death."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/golgari-agent"
+  },
+  {
+    "index": "gruul-anarch",
+    "name": "Gruul Anarch",
+    "starting_proficiencies": [
+      {
+        "index": "skill-animal-handling",
+        "name": "Skill: Animal Handling",
+        "url": "/api/proficiencies/skill-animal-handling"
+      },
+      {
+        "index": "skill-athletics",
+        "name": "Skill: Athletics",
+        "url": "/api/proficiencies/skill-athletics"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "index": "herbalism-kit",
+        "name": "Herbalism Kit",
+        "url": "/api/proficiencies/herbalism-kit"
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Draconic"
+          },
+          {
+            "option_type": "string",
+            "string": "Giant"
+          },
+          {
+            "option_type": "string",
+            "string": "Goblin"
+          },
+          {
+            "option_type": "string",
+            "string": "Sylvan"
+          }
+        ]
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "gruul-insignia",
+          "name": "Gruul Insignia",
+          "url": "/api/equipment/gruul-insignia"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "hunting-trap",
+          "name": "Hunting Trap",
+          "url": "/api/equipment/hunting-trap"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "herbalism-kit",
+          "name": "Herbalism Kit",
+          "url": "/api/equipment/herbalism-kit"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "boar-skull",
+          "name": "Skull of a Boar",
+          "url": "/api/equipment/boar-skull"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "beast-hide-cloak",
+          "name": "Beast-hide Cloak",
+          "url": "/api/equipment/beast-hide-cloak"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "travelers-clothes",
+          "name": "Traveler's Clothes",
+          "url": "/api/equipment/travelers-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "belt-pouch",
+          "name": "Belt Pouch",
+          "url": "/api/equipment/belt-pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "10 GP (Azorius 1-zino coins)"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Rubblebelt Refuge",
+      "desc": [
+        "You are intimately familiar with areas of the city that most people shun: ruined neighborhoods where wurms rampaged, overgrown parks that no hand has tended in decades, and the vast, sprawling rubblebelts of broken terrain that civilized folk have long abandoned. You can find a suitable place for you and your allies to hide or rest in these areas. In addition, you can find food and fresh water in these areas for yourself and up to five other people each day."
+      ]
+    },
+    "gruul_guild_spells": {
+      "prerequisite": "Spellcasting or Pact Magic class feature",
+      "spells_by_level": [
+        {
+          "level": "Cantrip",
+          "spells": ["fire bolt", "produce flame"]
+        },
+        {
+          "level": "1st",
+          "spells": ["compelled duel", "speak with animals", "thunderwave"]
+        },
+        {
+          "level": "2nd",
+          "spells": ["beast sense", "shatter"]
+        },
+        {
+          "level": "3rd",
+          "spells": ["conjure animals", "conjure barrage"]
+        },
+        {
+          "level": "4th",
+          "spells": ["dominate beast", "stoneskin"]
+        },
+        {
+          "level": "5th",
+          "spells": ["destructive wave"]
+        }
+      ],
+      "flavor_text": "Fueled by the fire of rage burning in your heart, your magic is almost always accompanied by fiery effects, such as flames smoldering behind your eyes or dancing over your hands."
+    },
+    "personality_traits": {
+      "choose": 1,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Unlike people, the beasts of the wild are friends who won't stab me in the back."
+          },
+          {
+            "option_type": "string",
+            "string": "Go ahead and insult me—I dare you."
+          },
+          {
+            "option_type": "string",
+            "string": "I scorn those who can't survive away from the comforts of the city."
+          },
+          {
+            "option_type": "string",
+            "string": "Don't tell me I'm not allowed to do something."
+          },
+          {
+            "option_type": "string",
+            "string": "Laws are for people who are afraid to face their inner beasts."
+          },
+          {
+            "option_type": "string",
+            "string": "I smear the blood of my enemies over my skin."
+          },
+          {
+            "option_type": "string",
+            "string": "I was, in fact, raised by maaka."
+          },
+          {
+            "option_type": "string",
+            "string": "HarrRRAAGGHH! [I rarely form a coherent sentence and prefer to express myself by breaking things.]"
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Clan. My clan is all that really matters.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Anarchy. No person or law or custom can tell another what to do.",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic",
+                "url": "/api/alignments/chaotic"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Nature. We weren't born tame or domesticated, so we shouldn't have to live that way.",
+            "alignments": [
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/alignments/neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Might. The strongest are meant to dominate the weak.",
+            "alignments": [
+              {
+                "index": "evil",
+                "name": "Evil",
+                "url": "/api/alignments/evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Rage. AAAAAARRRRggggh! [To live is to feel and express the rage burning in your belly.]",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic",
+                "url": "/api/alignments/chaotic"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Tradition. The Old Ways must be preserved and upheld.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I am determined that one day I will lead my clan—or a new one."
+          },
+          {
+            "option_type": "string",
+            "string": "I would give my life for my clan chieftain."
+          },
+          {
+            "option_type": "string",
+            "string": "The chieftain of another clan has a grudge against me."
+          },
+          {
+            "option_type": "string",
+            "string": "I am devoted to a sacred site in the midst of the rubblebelt."
+          },
+          {
+            "option_type": "string",
+            "string": "My weapon is made from the first raktusk I ever hunted."
+          },
+          {
+            "option_type": "string",
+            "string": "GrrrRRAAAAGGHH! [I will do anything to prove myself greater than my siblings or ancestors.]"
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "If you question my courage, I will never back down."
+          },
+          {
+            "option_type": "string",
+            "string": "HrrrGGGAAAARRuuuh! [My anger in battle led to the death of a loved one.]"
+          },
+          {
+            "option_type": "string",
+            "string": "I'm as stubborn as a batterboar."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm so convinced of my superiority over soft, civilized people that I'll take great risks to prove it."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm easily manipulated by people I find attractive."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm not actually all that angry."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/gruul-anarch"
+  },
+  {
+    "index": "guard",
+    "name": "Guard",
+    "ability_scores": ["Strength", "Intelligence", "Wisdom"],    
+    "starting_proficiencies": [
+      {
+        "index": "skill-athletics",
+        "name": "Skill: Athletics",
+        "url": "/api/proficiencies/skill-athletics"
+      },
+      {
+        "index": "skill-perception",
+        "name": "Skill: Perception",
+        "url": "/api/proficiencies/skill-perception"
+      }
+    ],
+    "tool_proficiency_options": {
+      "choose": 1,
+      "type": "tools",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "resource_list",
+            "resource_list_url": "/api/tools/gaming-sets"
+          }
+        ]
+      }
+    },
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "group",
+              "desc": "A: Spear, Light Crossbow, 20 Bolts, Gaming Set, Hooded Lantern, Manacles, Quiver, Traveler's Clothes, 12 GP"
+            }
+          },
+          {
+            "equipment_option_set": {
+              "option_type": "group",
+              "desc": "B: 50 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Steadfast",
+      "desc": [
+        "You are used to spending long periods of time waiting but being on high alert the entire time. During a long rest you can perform light activities such as reading, talking, eating, or standing watch for 4 hours instead of the maximum of 2 hours."
+      ]
+    },
+    "feat": "Alert",
+    "personality_traits": {
+      "choose": 1,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I have given names to my weapons and I talk to them."
+          },
+          {
+            "option_type": "string",
+            "string": "I am very good at waiting. Patience is a virtue I have conquered."
+          },
+          {
+            "option_type": "string",
+            "string": "I am awkward and uncomfortable around people I am attracted to."
+          },
+          {
+            "option_type": "string",
+            "string": "I do not lie and hate being lied to."
+          },
+          {
+            "option_type": "string",
+            "string": "I am good at taking orders."
+          },
+          {
+            "option_type": "string",
+            "string": "I never panic in a crisis situation."
+          },
+          {
+            "option_type": "string",
+            "string": "When there is not much going on, I like to eat. My gut would indicate, maybe I like it a bit too much."
+          },
+          {
+            "option_type": "string",
+            "string": "I like to know the names of everyone around me."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Aloof. I try not to get close to those I protect, it makes my job more difficult.",
+            "alignments": [
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/alignments/neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Self-Sacrifice. My job is to save the lives of other people, even at the expense of my own.",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good",
+                "url": "/api/alignments/good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Spontaneity. Try to keep them guessing. If the enemy doesn't know what defenses I've planned then they can't prepare for them.",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic",
+                "url": "/api/alignments/chaotic"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Diligent. I'm getting paid to do a job, I'll see it to its completion.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful",
+                "url": "/api/alignments/lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Sadist. I like to hurt people and being a guard makes it legal.",
+            "alignments": [
+              {
+                "index": "evil",
+                "name": "Evil",
+                "url": "/api/alignments/evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Meaningful. It may not be glamorous but what I do is of value.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I once saved the life of an important noble. I keep a medallion he gave me as a reward."
+          },
+          {
+            "option_type": "string",
+            "string": "During one of my stints as a security guard I found a stray cat. It still travels with me."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm not an alcoholic, but I perform better after having a drink."
+          },
+          {
+            "option_type": "string",
+            "string": "I work better as part of a team; we can watch each other's backs."
+          },
+          {
+            "option_type": "string",
+            "string": "After 6 months guarding a caravan the boss stiffed us on our wages and left us out in the middle of nowhere. I want my pay."
+          },
+          {
+            "option_type": "string",
+            "string": "Some day I'll be the leader of my own mercenary company."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Someone I was hired to bodyguard died under my watch. The family still blames me. Even worse, I blame myself."
+          },
+          {
+            "option_type": "string",
+            "string": "I am suspicious of everyone. It is very hard for me to trust anyone."
+          },
+          {
+            "option_type": "string",
+            "string": "Once I am on a job nothing will dissuade me from completing it."
+          },
+          {
+            "option_type": "string",
+            "string": "I was once a soldier but left under a cloud."
+          },
+          {
+            "option_type": "string",
+            "string": "I hate organized crime and will do anything to crush it wherever I find it."
+          },
+          {
+            "option_type": "string",
+            "string": "I was tasked to protect an artifact from a cult. I failed and my goal is to recover it one day."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/guard"
+  },
+  {
+    "index": "guide",
+    "name": "Guide",
+    "ability_scores": ["Dexterity", "Constitution", "Wisdom"],
+    "feat": "Magic Initiate (Druid)",
+    "starting_proficiencies": [
+      {
+        "index": "skill-stealth",
+        "name": "Skill: Stealth",
+        "url": "/api/proficiencies/skill-stealth"
+      },
+      {
+        "index": "skill-survival",
+        "name": "Skill: Survival",
+        "url": "/api/proficiencies/skill-survival"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "index": "cartographers-tools",
+        "name": "Cartographer's Tools",
+        "url": "/api/proficiencies/cartographers-tools"
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "group",
+              "desc": "A: Shortbow, 20 Arrows, Cartographer's Tools, Bedroll, Quiver, Tent, Traveler's Clothes, 3 GP"
+            }
+          },
+          {
+            "equipment_option_set": {
+              "option_type": "group",
+              "desc": "B: 50 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Outdoor Survival",
+      "desc": [
+        "You came of age outdoors, far from settled lands. Your home was anywhere you chose to spread your bedroll. There are wonders in the wilderness—strange monsters, pristine forests and streams, overgrown ruins of great halls once trod by giants—and you learned to fend for yourself as you explored them. From time to time, you guided friendly nature priests who instructed you in the fundamentals of channeling the magic of the wild."
+      ]
+    },
+    "personality_traits": {
+      "choose": 1,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I have an appreciation for the beauty of the wilderness that most people don't understand."
+          },
+          {
+            "option_type": "string",
+            "string": "I tend to avoid cities and large crowds whenever possible."
+          },
+          {
+            "option_type": "string",
+            "string": "I feel more at ease sleeping under the stars than under a roof."
+          },
+          {
+            "option_type": "string",
+            "string": "I take pride in my ability to navigate even the most treacherous terrains."
+          },
+          {
+            "option_type": "string",
+            "string": "I am fiercely protective of nature and will go to great lengths to preserve it."
+          },
+          {
+            "option_type": "string",
+            "string": "I often speak to animals as if they understand me."
+          },
+          {
+            "option_type": "string",
+            "string": "I have an innate sense of direction that rarely fails me."
+          },
+          {
+            "option_type": "string",
+            "string": "I am always looking for signs of danger in my surroundings."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Freedom. The wilds represent true freedom, and I strive to protect that freedom. (Chaotic)",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic",
+                "url": "/api/alignments/chaotic"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Balance. Nature must be preserved, and so must the balance between civilization and wilderness. (Neutral)",
+            "alignments": [
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/alignments/neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Guidance. I use my knowledge of the wilds to help others find their way. (Good)",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good",
+                "url": "/api/alignments/good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Survival. The world is harsh, and only those who adapt will survive. (Any)",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Protection. It is my duty to protect the wilderness from those who seek to exploit it. (Lawful)",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful",
+                "url": "/api/alignments/lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Self-Reliance. I don't need anyone's help; I can survive on my own. (Neutral)",
+            "alignments": [
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/alignments/neutral"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I have a deep connection to a particular forest where I grew up."
+          },
+          {
+            "option_type": "string",
+            "string": "I am searching for a lost ruin deep in the wilderness that holds great personal significance."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe my life to a druid who found me when I was lost in the wilds."
+          },
+          {
+            "option_type": "string",
+            "string": "I carry a map that was given to me by a friend, showing a hidden path through dangerous terrain."
+          },
+          {
+            "option_type": "string",
+            "string": "I once made a promise to a dying ranger to protect the wilderness from harm."
+          },
+          {
+            "option_type": "string",
+            "string": "I travel with a trusted animal companion that has been with me for many years."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I trust animals more than people and often struggle to form lasting human relationships."
+          },
+          {
+            "option_type": "string",
+            "string": "I can be reckless in my desire to explore unknown territories."
+          },
+          {
+            "option_type": "string",
+            "string": "I am overly protective of the wilderness, often to the point of hostility."
+          },
+          {
+            "option_type": "string",
+            "string": "I have little patience for city dwellers who do not understand the ways of the wild."
+          },
+          {
+            "option_type": "string",
+            "string": "I am reluctant to ask for help, even when I desperately need it."
+          },
+          {
+            "option_type": "string",
+            "string": "I am haunted by memories of a dangerous encounter in the wild that left me scarred."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/guide"
+  },
+  {
+    "index": "baldurs-gate-guild-artisan",
+    "name": "Baldur's Gate Guild Artisan",
+    "starting_proficiencies": [
+      {
+        "index": "skill-insight",
+        "name": "Skill: Insight",
+        "url": "/api/proficiencies/skill-insight"
+      },
+      {
+        "index": "skill-persuasion",
+        "name": "Skill: Persuasion",
+        "url": "/api/proficiencies/skill-persuasion"
+      }
+    ],
+    "tool_proficiency_options": {
+      "choose": 1,
+      "type": "tool",
+      "from": [
+        {
+          "index": "artisans-tools",
+          "name": "Artisan's Tools",
+          "url": "/api/tools/artisans-tools"
+        }
+      ]
+    },
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "artisans-tools",
+          "name": "Artisan's Tools (one of your choice)",
+          "url": "/api/equipment/artisans-tools"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "letter-of-introduction",
+          "name": "Letter of Introduction from your Guild",
+          "url": "/api/equipment/letter-of-introduction"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "travelers-clothes",
+          "name": "Traveler's Clothes",
+          "url": "/api/equipment/travelers-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "belt-pouch",
+          "name": "Belt Pouch",
+          "url": "/api/equipment/belt-pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "15 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Guild Membership",
+      "desc": [
+        "As an established and respected member of a guild, you can rely on certain benefits that membership provides. Your fellow guild members will provide you with lodging and food if necessary, and pay for your funeral if needed. In some cities and towns, a guildhall offers a central place to meet other members of your profession, which can be a good place to meet potential patrons, allies, or hirelings.",
+        "Guilds often wield tremendous political power. If you are accused of a crime, your guild will support you if a good case can be made for your innocence or the crime is justifiable. You can also gain access to powerful political figures through the guild, if you are a member in good standing. Such connections might require the donation of money or magic items to the guild's coffers.",
+        "You must pay dues of 5 gp per month to the guild. If you miss payments, you must make up back dues to remain in the guild's good graces."
+      ]
+    },
+    "baldurs_gate_feature": {
+      "name": "Professional Courtesy",
+      "desc": [
+        "The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate—though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.",
+        "You're familiar with the city's crews, their territories, and inter-crew politics. Choose one of the three districts of Baldur's Gate: the Upper City, the Lower City, or the Outer City. This is the district where you conduct most of your business. Whenever you need information about something in one of that district's neighborhoods, you can seek out crew members in that area and learn the local gossip. You can also gain unimpeded entry to nearly any bank, guild hall, place of business, workhouse, or crew meeting place in your district."
+      ]
+    },
+    "specialty": {
+      "choose": 1,
+      "type": "guild_business",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Alchemists and apothecaries"
+          },
+          {
+            "option_type": "string",
+            "string": "Armorers, locksmiths, and finesmiths"
+          },
+          {
+            "option_type": "string",
+            "string": "Brewers, distillers, and vintners"
+          },
+          {
+            "option_type": "string",
+            "string": "Calligraphers, scribes, and scriveners"
+          },
+          {
+            "option_type": "string",
+            "string": "Carpenters, roofers, and plasterers"
+          },
+          {
+            "option_type": "string",
+            "string": "Cartographers, surveyors, and chart-makers"
+          },
+          {
+            "option_type": "string",
+            "string": "Cobblers and shoemakers"
+          },
+          {
+            "option_type": "string",
+            "string": "Cooks and bakers"
+          },
+          {
+            "option_type": "string",
+            "string": "Glassblowers and glaziers"
+          },
+          {
+            "option_type": "string",
+            "string": "Jewelers and gemcutters"
+          },
+          {
+            "option_type": "string",
+            "string": "Leatherworkers, skinners, and tanners"
+          },
+          {
+            "option_type": "string",
+            "string": "Masons and stonecutters"
+          },
+          {
+            "option_type": "string",
+            "string": "Painters, limners, and sign-makers"
+          },
+          {
+            "option_type": "string",
+            "string": "Potters and tile-makers"
+          },
+          {
+            "option_type": "string",
+            "string": "Shipwrights and sail-makers"
+          },
+          {
+            "option_type": "string",
+            "string": "Smiths and metal-forgers"
+          },
+          {
+            "option_type": "string",
+            "string": "Tinkers, pewterers, and casters"
+          },
+          {
+            "option_type": "string",
+            "string": "Wagon-makers and wheelwrights"
+          },
+          {
+            "option_type": "string",
+            "string": "Weavers and dyers"
+          },
+          {
+            "option_type": "string",
+            "string": "Woodcarvers, coopers, and bowyers"
+          }
+        ]
+      }
+    },
+    "personality_traits": {
+      "choose": 1,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I believe that anything worth doing is worth doing right. I can't help it—I'm a perfectionist."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a snob who looks down on those who can't appreciate fine art."
+          },
+          {
+            "option_type": "string",
+            "string": "I always want to know how things work and what makes people tick."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm full of witty aphorisms and have a proverb for every occasion."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm rude to people who lack my commitment to hard work and fair play."
+          },
+          {
+            "option_type": "string",
+            "string": "I like to talk at length about my profession."
+          },
+          {
+            "option_type": "string",
+            "string": "I don't part with my money easily and will haggle tirelessly to get the best deal possible."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm well known for my work, and I want to make sure everyone appreciates it. I'm always taken aback when people haven't heard of me."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Community. It is the duty of all civilized people to strengthen the bonds of community and the security of civilization.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Generosity. My talents were given to me so that I could use them to benefit the world.",
+            "alignment": "Good"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Freedom. Everyone should be free to pursue his or her own livelihood.",
+            "alignment": "Chaotic"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Greed. I'm only in it for the money.",
+            "alignment": "Evil"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "People. I'm committed to the people I care about, not to ideals.",
+            "alignment": "Neutral"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Aspiration. I work hard to be the best there is at my craft.",
+            "alignment": "Any"
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "The workshop where I learned my trade is the most important place in the world to me."
+          },
+          {
+            "option_type": "string",
+            "string": "I created a great work for someone, and then found them unworthy to receive it. I'm still looking for someone worthy."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe my guild a great debt for forging me into the person I am today."
+          },
+          {
+            "option_type": "string",
+            "string": "I pursue wealth to secure someone's love."
+          },
+          {
+            "option_type": "string",
+            "string": "One day I will return to my guild and prove that I am the greatest artisan of them all."
+          },
+          {
+            "option_type": "string",
+            "string": "I will get revenge on the evil forces that destroyed my place of business and ruined my livelihood."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'll do anything to get my hands on something rare or priceless."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm quick to assume that someone is trying to cheat me."
+          },
+          {
+            "option_type": "string",
+            "string": "No one must ever learn that I once stole money from guild coffers."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm never satisfied with what I have—I always want more."
+          },
+          {
+            "option_type": "string",
+            "string": "I would kill to acquire a noble title."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I'm surrounded by rivals."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/baldurs-gate-guild-artisan"
+  },
+  {
+    "index": "guild-artisan",
+    "name": "Guild Artisan",
+    "starting_proficiencies": [
+      {
+        "index": "skill-insight",
+        "name": "Skill: Insight",
+        "url": "/api/proficiencies/skill-insight"
+      },
+      {
+        "index": "skill-persuasion",
+        "name": "Skill: Persuasion",
+        "url": "/api/proficiencies/skill-persuasion"
+      }
+    ],
+    "tool_proficiency_options": {
+      "choose": 1,
+      "type": "tool",
+      "from": [
+        {
+          "index": "artisans-tools",
+          "name": "Artisan's Tools",
+          "url": "/api/tools/artisans-tools"
+        }
+      ]
+    },
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "artisans-tools",
+          "name": "Artisan's Tools (one of your choice)",
+          "url": "/api/equipment/artisans-tools"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "letter-of-introduction",
+          "name": "Letter of Introduction from your Guild",
+          "url": "/api/equipment/letter-of-introduction"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "travelers-clothes",
+          "name": "Traveler's Clothes",
+          "url": "/api/equipment/travelers-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "belt-pouch",
+          "name": "Belt Pouch",
+          "url": "/api/equipment/belt-pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "15 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Guild Membership",
+      "desc": [
+        "As an established and respected member of a guild, you can rely on certain benefits that membership provides. Your fellow guild members will provide you with lodging and food if necessary, and pay for your funeral if needed. In some cities and towns, a guildhall offers a central place to meet other members of your profession, which can be a good place to meet potential patrons, allies, or hirelings.",
+        "Guilds often wield tremendous political power. If you are accused of a crime, your guild will support you if a good case can be made for your innocence or the crime is justifiable. You can also gain access to powerful political figures through the guild, if you are a member in good standing. Such connections might require the donation of money or magic items to the guild's coffers.",
+        "You must pay dues of 5 gp per month to the guild. If you miss payments, you must make up back dues to remain in the guild's good graces."
+      ]
+    },
+    "specialty": {
+      "choose": 1,
+      "type": "guild_business",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Alchemists and apothecaries"
+          },
+          {
+            "option_type": "string",
+            "string": "Armorers, locksmiths, and finesmiths"
+          },
+          {
+            "option_type": "string",
+            "string": "Brewers, distillers, and vintners"
+          },
+          {
+            "option_type": "string",
+            "string": "Calligraphers, scribes, and scriveners"
+          },
+          {
+            "option_type": "string",
+            "string": "Carpenters, roofers, and plasterers"
+          },
+          {
+            "option_type": "string",
+            "string": "Cartographers, surveyors, and chart-makers"
+          },
+          {
+            "option_type": "string",
+            "string": "Cobblers and shoemakers"
+          },
+          {
+            "option_type": "string",
+            "string": "Cooks and bakers"
+          },
+          {
+            "option_type": "string",
+            "string": "Glassblowers and glaziers"
+          },
+          {
+            "option_type": "string",
+            "string": "Jewelers and gemcutters"
+          },
+          {
+            "option_type": "string",
+            "string": "Leatherworkers, skinners, and tanners"
+          },
+          {
+            "option_type": "string",
+            "string": "Masons and stonecutters"
+          },
+          {
+            "option_type": "string",
+            "string": "Painters, limners, and sign-makers"
+          },
+          {
+            "option_type": "string",
+            "string": "Potters and tile-makers"
+          },
+          {
+            "option_type": "string",
+            "string": "Shipwrights and sail-makers"
+          },
+          {
+            "option_type": "string",
+            "string": "Smiths and metal-forgers"
+          },
+          {
+            "option_type": "string",
+            "string": "Tinkers, pewterers, and casters"
+          },
+          {
+            "option_type": "string",
+            "string": "Wagon-makers and wheelwrights"
+          },
+          {
+            "option_type": "string",
+            "string": "Weavers and dyers"
+          },
+          {
+            "option_type": "string",
+            "string": "Woodcarvers, coopers, and bowyers"
+          }
+        ]
+      }
+    },
+    "personality_traits": {
+      "choose": 1,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I believe that anything worth doing is worth doing right. I can't help it—I'm a perfectionist."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a snob who looks down on those who can't appreciate fine art."
+          },
+          {
+            "option_type": "string",
+            "string": "I always want to know how things work and what makes people tick."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm full of witty aphorisms and have a proverb for every occasion."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm rude to people who lack my commitment to hard work and fair play."
+          },
+          {
+            "option_type": "string",
+            "string": "I like to talk at length about my profession."
+          },
+          {
+            "option_type": "string",
+            "string": "I don't part with my money easily and will haggle tirelessly to get the best deal possible."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm well known for my work, and I want to make sure everyone appreciates it. I'm always taken aback when people haven't heard of me."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Community. It is the duty of all civilized people to strengthen the bonds of community and the security of civilization.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Generosity. My talents were given to me so that I could use them to benefit the world.",
+            "alignment": "Good"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Freedom. Everyone should be free to pursue his or her own livelihood.",
+            "alignment": "Chaotic"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Greed. I'm only in it for the money.",
+            "alignment": "Evil"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "People. I'm committed to the people I care about, not to ideals.",
+            "alignment": "Neutral"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Aspiration. I work hard to be the best there is at my craft.",
+            "alignment": "Any"
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "The workshop where I learned my trade is the most important place in the world to me."
+          },
+          {
+            "option_type": "string",
+            "string": "I created a great work for someone, and then found them unworthy to receive it. I'm still looking for someone worthy."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe my guild a great debt for forging me into the person I am today."
+          },
+          {
+            "option_type": "string",
+            "string": "I pursue wealth to secure someone's love."
+          },
+          {
+            "option_type": "string",
+            "string": "One day I will return to my guild and prove that I am the greatest artisan of them all."
+          },
+          {
+            "option_type": "string",
+            "string": "I will get revenge on the evil forces that destroyed my place of business and ruined my livelihood."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'll do anything to get my hands on something rare or priceless."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm quick to assume that someone is trying to cheat me."
+          },
+          {
+            "option_type": "string",
+            "string": "No one must ever learn that I once stole money from guild coffers."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm never satisfied with what I have—I always want more."
+          },
+          {
+            "option_type": "string",
+            "string": "I would kill to acquire a noble title."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I'm surrounded by rivals."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/guild-artisan"
+  },
+  {
+    "index": "variant-guild-artisan-guild-merchant",
+    "name": "Variant Guild Artisan (Guild Merchant)",
+    "starting_proficiencies": [
+      {
+        "index": "skill-insight",
+        "name": "Skill: Insight",
+        "url": "/api/proficiencies/skill-insight"
+      },
+      {
+        "index": "skill-persuasion",
+        "name": "Skill: Persuasion",
+        "url": "/api/proficiencies/skill-persuasion"
+      }
+    ],
+    "tool_proficiency_options": {
+      "choose": 1,
+      "type": "tool_or_language",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "tool",
+            "index": "artisans-tools",
+            "name": "Artisan's Tools",
+            "url": "/api/tools/artisans-tools"
+          },
+          {
+            "option_type": "tool",
+            "index": "navigators-tools",
+            "name": "Navigator's Tools",
+            "url": "/api/tools/navigators-tools"
+          },
+          {
+            "option_type": "language",
+            "index": "additional-language",
+            "name": "Additional Language",
+            "url": "/api/languages"
+          }
+        ]
+      }
+    },
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "group",
+              "desc": "A set of artisan's tools (one of your choice)"
+            }
+          },
+          {
+            "equipment_option_set": {
+              "option_type": "group",
+              "desc": "A mule and a cart"
+            }
+          }
+        ]
+      },
+      {
+        "equipment_option_set": {
+          "equipment": {
+            "index": "letter-of-introduction",
+            "name": "Letter of Introduction from your Guild",
+            "url": "/api/equipment/letter-of-introduction"
+          },
+          "quantity": 1
+        }
+      },
+      {
+        "equipment_option_set": {
+          "equipment": {
+            "index": "travelers-clothes",
+            "name": "Traveler's Clothes",
+            "url": "/api/equipment/travelers-clothes"
+          },
+          "quantity": 1
+        }
+      },
+      {
+        "equipment_option_set": {
+          "equipment": {
+            "index": "belt-pouch",
+            "name": "Belt Pouch",
+            "url": "/api/equipment/belt-pouch"
+          },
+          "quantity": 1
+        }
+      },
+      {
+        "choose": 1,
+        "type": "currency",
+        "from": [
+          {
+            "option_type": "string",
+            "string": "15 GP"
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Guild Membership",
+      "desc": [
+        "As an established and respected member of a guild, you can rely on certain benefits that membership provides. Your fellow guild members will provide you with lodging and food if necessary, and pay for your funeral if needed. In some cities and towns, a guildhall offers a central place to meet other members of your profession, which can be a good place to meet potential patrons, allies, or hirelings.",
+        "Guilds often wield tremendous political power. If you are accused of a crime, your guild will support you if a good case can be made for your innocence or the crime is justifiable. You can also gain access to powerful political figures through the guild, if you are a member in good standing. Such connections might require the donation of money or magic items to the guild's coffers.",
+        "You must pay dues of 5 gp per month to the guild. If you miss payments, you must make up back dues to remain in the guild's good graces."
+      ]
+    },
+    "specialty": {
+      "choose": 1,
+      "type": "guild_business",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Alchemists and apothecaries"
+          },
+          {
+            "option_type": "string",
+            "string": "Armorers, locksmiths, and finesmiths"
+          },
+          {
+            "option_type": "string",
+            "string": "Brewers, distillers, and vintners"
+          },
+          {
+            "option_type": "string",
+            "string": "Calligraphers, scribes, and scriveners"
+          },
+          {
+            "option_type": "string",
+            "string": "Carpenters, roofers, and plasterers"
+          },
+          {
+            "option_type": "string",
+            "string": "Cartographers, surveyors, and chart-makers"
+          },
+          {
+            "option_type": "string",
+            "string": "Cobblers and shoemakers"
+          },
+          {
+            "option_type": "string",
+            "string": "Cooks and bakers"
+          },
+          {
+            "option_type": "string",
+            "string": "Glassblowers and glaziers"
+          },
+          {
+            "option_type": "string",
+            "string": "Jewelers and gemcutters"
+          },
+          {
+            "option_type": "string",
+            "string": "Leatherworkers, skinners, and tanners"
+          },
+          {
+            "option_type": "string",
+            "string": "Masons and stonecutters"
+          },
+          {
+            "option_type": "string",
+            "string": "Painters, limners, and sign-makers"
+          },
+          {
+            "option_type": "string",
+            "string": "Potters and tile-makers"
+          },
+          {
+            "option_type": "string",
+            "string": "Shipwrights and sail-makers"
+          },
+          {
+            "option_type": "string",
+            "string": "Smiths and metal-forgers"
+          },
+          {
+            "option_type": "string",
+            "string": "Tinkers, pewterers, and casters"
+          },
+          {
+            "option_type": "string",
+            "string": "Wagon-makers and wheelwrights"
+          },
+          {
+            "option_type": "string",
+            "string": "Weavers and dyers"
+          },
+          {
+            "option_type": "string",
+            "string": "Woodcarvers, coopers, and bowyers"
+          }
+        ]
+      }
+    },
+    "personality_traits": {
+      "choose": 1,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I believe that anything worth doing is worth doing right. I can't help it—I'm a perfectionist."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a snob who looks down on those who can't appreciate fine art."
+          },
+          {
+            "option_type": "string",
+            "string": "I always want to know how things work and what makes people tick."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm full of witty aphorisms and have a proverb for every occasion."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm rude to people who lack my commitment to hard work and fair play."
+          },
+          {
+            "option_type": "string",
+            "string": "I like to talk at length about my profession."
+          },
+          {
+            "option_type": "string",
+            "string": "I don't part with my money easily and will haggle tirelessly to get the best deal possible."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm well known for my work, and I want to make sure everyone appreciates it. I'm always taken aback when people haven't heard of me."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Community. It is the duty of all civilized people to strengthen the bonds of community and the security of civilization.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Generosity. My talents were given to me so that I could use them to benefit the world.",
+            "alignment": "Good"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Freedom. Everyone should be free to pursue his or her own livelihood.",
+            "alignment": "Chaotic"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Greed. I'm only in it for the money.",
+            "alignment": "Evil"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "People. I'm committed to the people I care about, not to ideals.",
+            "alignment": "Neutral"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Aspiration. I work hard to be the best there is at my craft.",
+            "alignment": "Any"
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "The workshop where I learned my trade is the most important place in the world to me."
+          },
+          {
+            "option_type": "string",
+            "string": "I created a great work for someone, and then found them unworthy to receive it. I'm still looking for someone worthy."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe my guild a great debt for forging me into the person I am today."
+          },
+          {
+            "option_type": "string",
+            "string": "I pursue wealth to secure someone's love."
+          },
+          {
+            "option_type": "string",
+            "string": "One day I will return to my guild and prove that I am the greatest artisan of them all."
+          },
+          {
+            "option_type": "string",
+            "string": "I will get revenge on the evil forces that destroyed my place of business and ruined my livelihood."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'll do anything to get my hands on something rare or priceless."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm quick to assume that someone is trying to cheat me."
+          },
+          {
+            "option_type": "string",
+            "string": "No one must ever learn that I once stole money from guild coffers."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm never satisfied with what I have—I always want more."
+          },
+          {
+            "option_type": "string",
+            "string": "I would kill to acquire a noble title."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I'm surrounded by rivals."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/variant-guild-artisan-guild-merchant"
   }
+  
+  
+  
+  
+  
+  
   
   
   
