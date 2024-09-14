@@ -1,716 +1,1953 @@
-{
-  "index": "acolyte",
-  "name": "Acolyte",
-  "ability_scores": [
-    "Intelligence",
-    "Wisdom",
-    "Charisma"
-  ],
-  "starting_proficiencies": [
-    {
-      "index": "skill-insight",
-      "name": "Skill: Insight",
-      "url": "/api/proficiencies/skill-insight"
+[
+  {
+    "index": "acolyte",
+    "name": "Acolyte",
+    "ability_scores": [
+      "Intelligence",
+      "Wisdom",
+      "Charisma"
+    ],
+    "starting_proficiencies": [
+      {
+        "index": "skill-insight",
+        "name": "Skill: Insight",
+        "url": "/api/proficiencies/skill-insight"
+      },
+      {
+        "index": "skill-religion",
+        "name": "Skill: Religion",
+        "url": "/api/proficiencies/skill-religion"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "index": "tool-calligrapher-supplies",
+        "name": "Tool: Calligrapher's Supplies",
+        "url": "/api/proficiencies/tool-calligrapher-supplies"
+      }
+    ],
+    "language_options": {
+      "choose": 2,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
     },
-    {
-      "index": "skill-religion",
-      "name": "Skill: Religion",
-      "url": "/api/proficiencies/skill-religion"
-    }
-  ],
-  "tool_proficiencies": [
-    {
-      "index": "tool-calligrapher-supplies",
-      "name": "Tool: Calligrapher's Supplies",
-      "url": "/api/proficiencies/tool-calligrapher-supplies"
-    }
-  ],
-  "language_options": {
-    "choose": 2,
-    "type": "languages",
-    "from": {
-      "option_set_type": "resource_list",
-      "resource_list_url": "/api/languages"
-    }
-  },
-  "starting_equipment_options": [
-    {
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "A: Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP"
+            }
+          },
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "B: 50 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Shelter of the Faithful",
+      "desc": [
+        "As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.",
+        "You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple."
+      ]
+    },
+    "feat": {
+      "name": "Magic Initiate (Cleric)",
+      "url": "/api/feats/magic-initiate-cleric"
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I idolize a particular hero of my faith, and constantly refer to that person's deeds and example."
+          },
+          {
+            "option_type": "string",
+            "string": "I can find common ground between the fiercest enemies, empathizing with them and always working toward peace."
+          },
+          {
+            "option_type": "string",
+            "string": "I see omens in every event and action. The gods try to speak to us, we just need to listen."
+          },
+          {
+            "option_type": "string",
+            "string": "Nothing can shake my optimistic attitude."
+          },
+          {
+            "option_type": "string",
+            "string": "I quote (or misquote) sacred texts and proverbs in almost every situation."
+          },
+          {
+            "option_type": "string",
+            "string": "I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods."
+          },
+          {
+            "option_type": "string",
+            "string": "I've enjoyed fine food, drink, and high society among my temple's elite. Rough living grates on me."
+          },
+          {
+            "option_type": "string",
+            "string": "I've spent so long in the temple that I have little practical experience dealing with people in the outside world."
+          }
+        ]
+      }
+    },
+    "ideals": {
       "choose": 1,
-      "type": "equipment",
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Charity. I always try to help those in need, no matter what the personal cost.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/alignments/chaotic-good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Change. We must help bring about the changes the gods are constantly working in the world.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Power. I hope to one day rise to the top of my faith's religious hierarchy.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Faith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Aspiration. I seek to prove myself worthy of my god's favor by matching my actions against his or her teachings.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/alignments/chaotic-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/alignments/chaotic-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/alignments/chaotic-evil"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I would die to recover an ancient relic of my faith that was lost long ago."
+          },
+          {
+            "option_type": "string",
+            "string": "I will someday get revenge on the corrupt temple hierarchy who branded me a heretic."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe my life to the priest who took me in when my parents died."
+          },
+          {
+            "option_type": "string",
+            "string": "Everything I do is for the common people."
+          },
+          {
+            "option_type": "string",
+            "string": "I will do anything to protect the temple where I served."
+          },
+          {
+            "option_type": "string",
+            "string": "I seek to preserve a sacred text that my enemies consider heretical and seek to destroy."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I judge others harshly, and myself even more severely."
+          },
+          {
+            "option_type": "string",
+            "string": "I put too much trust in those who wield power within my temple's hierarchy."
+          },
+          {
+            "option_type": "string",
+            "string": "My piety sometimes leads me to blindly trust those that profess faith in my god."
+          },
+          {
+            "option_type": "string",
+            "string": "I am inflexible in my thinking."
+          },
+          {
+            "option_type": "string",
+            "string": "I am suspicious of strangers and expect the worst of them."
+          },
+          {
+            "option_type": "string",
+            "string": "Once I pick a goal, I become obsessed with it to the detriment of everything else in my life."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/acolyte"
+  },
+  {
+    "index": "acolyte-baldurs-gate",
+    "name": "Acolyte (Baldur's Gate)",
+    "source": "BGDIA",
+    "page": 202,
+    "starting_proficiencies": [
+      {
+        "index": "skill-insight",
+        "name": "Skill: Insight",
+        "url": "/api/proficiencies/skill-insight"
+      },
+      {
+        "index": "skill-religion",
+        "name": "Skill: Religion",
+        "url": "/api/proficiencies/skill-religion"
+      }
+    ],
+    "language_options": {
+      "choose": 2,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "holy-symbol",
+          "name": "Holy Symbol",
+          "url": "/api/equipment/holy-symbol"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "prayer-book",
+          "name": "Prayer Book",
+          "url": "/api/equipment/prayer-book"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "incense",
+          "name": "Incense (5 sticks)",
+          "url": "/api/equipment/incense"
+        },
+        "quantity": 5
+      },
+      {
+        "equipment": {
+          "index": "vestments",
+          "name": "Vestments",
+          "url": "/api/equipment/vestments"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "clothes-common",
+          "name": "Clothes, common",
+          "url": "/api/equipment/clothes-common"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "belt-pouch",
+          "name": "Belt Pouch",
+          "url": "/api/equipment/belt-pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "15 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Shelter of the Faithful",
+      "desc": [
+        "As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.",
+        "You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple."
+      ]
+    },
+    "additional_feature": {
+      "name": "Religious Community",
+      "desc": [
+        "You're tightly connected with the religious community of Baldur's Gate. You know if a deity has a following in the city and any places that faith openly congregates and the neighborhoods those faithful typically inhabit. While this isn't remarkable for most of the city's larger faiths, keeping track of the hundreds of religions newcomers bring with them is no mean feat."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I idolize a particular hero of my faith, and constantly refer to that person's deeds and example."
+          },
+          {
+            "option_type": "string",
+            "string": "I can find common ground between the fiercest enemies, empathizing with them and always working toward peace."
+          },
+          {
+            "option_type": "string",
+            "string": "I see omens in every event and action. The gods try to speak to us, we just need to listen."
+          },
+          {
+            "option_type": "string",
+            "string": "Nothing can shake my optimistic attitude."
+          },
+          {
+            "option_type": "string",
+            "string": "I quote (or misquote) sacred texts and proverbs in almost every situation."
+          },
+          {
+            "option_type": "string",
+            "string": "I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods."
+          },
+          {
+            "option_type": "string",
+            "string": "I've enjoyed fine food, drink, and high society among my temple's elite. Rough living grates on me."
+          },
+          {
+            "option_type": "string",
+            "string": "I've spent so long in the temple that I have little practical experience dealing with people in the outside world."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Charity. I always try to help those in need, no matter what the personal cost.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/alignments/chaotic-good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Change. We must help bring about the changes the gods are constantly working in the world.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Power. I hope to one day rise to the top of my faith's religious hierarchy.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Faith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Aspiration. I seek to prove myself worthy of my god's favor by matching my actions against his or her teachings.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/alignments/chaotic-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/alignments/chaotic-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/alignments/chaotic-evil"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I would die to recover an ancient relic of my faith that was lost long ago."
+          },
+          {
+            "option_type": "string",
+            "string": "I will someday get revenge on the corrupt temple hierarchy who branded me a heretic."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe my life to the priest who took me in when my parents died."
+          },
+          {
+            "option_type": "string",
+            "string": "Everything I do is for the common people."
+          },
+          {
+            "option_type": "string",
+            "string": "I will do anything to protect the temple where I served."
+          },
+          {
+            "option_type": "string",
+            "string": "I seek to preserve a sacred text that my enemies consider heretical and seek to destroy."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I judge others harshly, and myself even more severely."
+          },
+          {
+            "option_type": "string",
+            "string": "I put too much trust in those who wield power within my temple's hierarchy."
+          },
+          {
+            "option_type": "string",
+            "string": "My piety sometimes leads me to blindly trust those that profess faith in my god."
+          },
+          {
+            "option_type": "string",
+            "string": "I am inflexible in my thinking."
+          },
+          {
+            "option_type": "string",
+            "string": "I am suspicious of strangers and expect the worst of them."
+          },
+          {
+            "option_type": "string",
+            "string": "Once I pick a goal, I become obsessed with it to the detriment of everything else in my life."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/acolyte-baldurs-gate"
+  },
+  {
+    "index": "anthropologist",
+    "name": "Anthropologist",
+    "source": "ToA",
+    "page": 191,
+    "starting_proficiencies": [
+      {
+        "index": "skill-insight",
+        "name": "Skill: Insight",
+        "url": "/api/proficiencies/skill-insight"
+      },
+      {
+        "index": "skill-religion",
+        "name": "Skill: Religion",
+        "url": "/api/proficiencies/skill-religion"
+      }
+    ],
+    "language_options": {
+      "choose": 2,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "leather-bound-diary",
+          "name": "Leather-bound Diary",
+          "url": "/api/equipment/leather-bound-diary"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "ink-bottle",
+          "name": "Bottle of Ink",
+          "url": "/api/equipment/ink-bottle"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "ink-pen",
+          "name": "Ink Pen",
+          "url": "/api/equipment/ink-pen"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "travelers-clothes",
+          "name": "Traveler's Clothes",
+          "url": "/api/equipment/travelers-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "special-trinket",
+          "name": "Trinket of Special Significance",
+          "url": "/api/equipment/special-trinket"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "belt-pouch",
+          "name": "Pouch",
+          "url": "/api/equipment/belt-pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "10 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Adept Linguist",
+      "desc": [
+        "You can communicate with humanoids who don't speak any language you know. You must observe the humanoids interacting with one another for at least 1 day, after which you learn a handful of important words, expressions, and gestures - enough to communicate on a rudimentary level."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I prefer the company of those who aren't like me, including people of other races."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a stickler when it comes to observing proper etiquette and local customs."
+          },
+          {
+            "option_type": "string",
+            "string": "I would rather observe than meddle."
+          },
+          {
+            "option_type": "string",
+            "string": "By living among violent people, I have become desensitized to violence."
+          },
+          {
+            "option_type": "string",
+            "string": "I would risk life and limb to discover a new culture or unravel the secrets of a dead one."
+          },
+          {
+            "option_type": "string",
+            "string": "When I arrive at a new settlement for the first time, I must learn all its customs."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Discovery. I want to be the first person to discover a lost culture.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Distance. One must not interfere with the affairs of another culture - even one in need of aid.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Knowledge. By understanding other races and cultures, we learn to understand ourselves.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Power. Common people crave strong leadership, and I do my utmost to provide it.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Protection. I must do everything possible to save a society facing extinction.",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Indifferent. Life is cruel. What's the point in saving people if they're going to die anyway?",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "My mentor gave me a journal filled with lore and wisdom. Losing it would devastate me."
+          },
+          {
+            "option_type": "string",
+            "string": "Having lived among the people of a primeval tribe or clan, I long to return and see how they are faring."
+          },
+          {
+            "option_type": "string",
+            "string": "Years ago, tragedy struck the members of an isolated society I befriended, and I will honor them."
+          },
+          {
+            "option_type": "string",
+            "string": "I want to learn more about a particular humanoid culture that fascinates me."
+          },
+          {
+            "option_type": "string",
+            "string": "I seek to avenge a clan, tribe, kingdom, or empire that was wiped out."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a trinket that I believe is the key to finding a long-lost society."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Boats make me seasick."
+          },
+          {
+            "option_type": "string",
+            "string": "I talk to myself, and I don't make friends easily."
+          },
+          {
+            "option_type": "string",
+            "string": "I believe that I'm intellectually superior to people from other cultures and have much to teach them."
+          },
+          {
+            "option_type": "string",
+            "string": "I've picked up some unpleasant habits living among goblins, lizardfolk, or orcs."
+          },
+          {
+            "option_type": "string",
+            "string": "I complain about everything."
+          },
+          {
+            "option_type": "string",
+            "string": "I wear a tribal mask and never take it off."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/anthropologist"
+  },
+  {
+    "index": "archaeologist",
+    "name": "Archaeologist",
+    "source": "ToA",
+    "page": 192,
+    "starting_proficiencies": [
+      {
+        "index": "skill-history",
+        "name": "Skill: History",
+        "url": "/api/proficiencies/skill-history"
+      },
+      {
+        "index": "skill-survival",
+        "name": "Skill: Survival",
+        "url": "/api/proficiencies/skill-survival"
+      }
+    ],
+    "tool_proficiencies": {
+      "choose": 1,
+      "type": "tools",
       "from": [
         {
-          "equipment_option_set": {
-            "option_type": "string",
-            "string": "A: Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP"
-          }
+          "index": "cartographers-tools",
+          "name": "Cartographer's Tools",
+          "url": "/api/proficiencies/cartographers-tools"
         },
         {
-          "equipment_option_set": {
-            "option_type": "string",
-            "string": "B: 50 GP"
-          }
+          "index": "navigators-tools",
+          "name": "Navigator's Tools",
+          "url": "/api/proficiencies/navigators-tools"
         }
       ]
-    }
-  ],
-  "feature": {
-    "name": "Shelter of the Faithful",
-    "desc": [
-      "As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.",
-      "You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple."
-    ]
-  },
-  "feat": {
-    "name": "Magic Initiate (Cleric)",
-    "url": "/api/feats/magic-initiate-cleric"
-  },
-  "personality_traits": {
-    "choose": 2,
-    "type": "personality_traits",
-    "from": {
-      "option_set_type": "options_array",
-      "options": [
-        {
-          "option_type": "string",
-          "string": "I idolize a particular hero of my faith, and constantly refer to that person's deeds and example."
-        },
-        {
-          "option_type": "string",
-          "string": "I can find common ground between the fiercest enemies, empathizing with them and always working toward peace."
-        },
-        {
-          "option_type": "string",
-          "string": "I see omens in every event and action. The gods try to speak to us, we just need to listen."
-        },
-        {
-          "option_type": "string",
-          "string": "Nothing can shake my optimistic attitude."
-        },
-        {
-          "option_type": "string",
-          "string": "I quote (or misquote) sacred texts and proverbs in almost every situation."
-        },
-        {
-          "option_type": "string",
-          "string": "I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods."
-        },
-        {
-          "option_type": "string",
-          "string": "I've enjoyed fine food, drink, and high society among my temple's elite. Rough living grates on me."
-        },
-        {
-          "option_type": "string",
-          "string": "I've spent so long in the temple that I have little practical experience dealing with people in the outside world."
-        }
-      ]
-    }
-  },
-  "ideals": {
-    "choose": 1,
-    "type": "ideals",
-    "from": {
-      "option_set_type": "options_array",
-      "options": [
-        {
-          "option_type": "ideal",
-          "desc": "Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld.",
-          "alignments": [
-            {
-              "index": "lawful-good",
-              "name": "Lawful Good",
-              "url": "/api/alignments/lawful-good"
-            },
-            {
-              "index": "lawful-neutral",
-              "name": "Lawful Neutral",
-              "url": "/api/alignments/lawful-neutral"
-            },
-            {
-              "index": "lawful-evil",
-              "name": "Lawful Evil",
-              "url": "/api/alignments/lawful-evil"
-            }
-          ]
-        },
-        {
-          "option_type": "ideal",
-          "desc": "Charity. I always try to help those in need, no matter what the personal cost.",
-          "alignments": [
-            {
-              "index": "lawful-good",
-              "name": "Lawful Good",
-              "url": "/api/alignments/lawful-good"
-            },
-            {
-              "index": "neutral-good",
-              "name": "Neutral Good",
-              "url": "/api/alignments/neutral-good"
-            },
-            {
-              "index": "chaotic-good",
-              "name": "Chaotic Good",
-              "url": "/api/alignments/chaotic-good"
-            }
-          ]
-        },
-        {
-          "option_type": "ideal",
-          "desc": "Change. We must help bring about the changes the gods are constantly working in the world.",
-          "alignments": [
-            {
-              "index": "chaotic-good",
-              "name": "Chaotic Good",
-              "url": "/api/alignments/chaotic-good"
-            },
-            {
-              "index": "chaotic-neutral",
-              "name": "Chaotic Neutral",
-              "url": "/api/alignments/chaotic-neutral"
-            },
-            {
-              "index": "chaotic-evil",
-              "name": "Chaotic Evil",
-              "url": "/api/alignments/chaotic-evil"
-            }
-          ]
-        },
-        {
-          "option_type": "ideal",
-          "desc": "Power. I hope to one day rise to the top of my faith's religious hierarchy.",
-          "alignments": [
-            {
-              "index": "lawful-good",
-              "name": "Lawful Good",
-              "url": "/api/alignments/lawful-good"
-            },
-            {
-              "index": "lawful-neutral",
-              "name": "Lawful Neutral",
-              "url": "/api/alignments/lawful-neutral"
-            },
-            {
-              "index": "lawful-evil",
-              "name": "Lawful Evil",
-              "url": "/api/alignments/lawful-evil"
-            }
-          ]
-        },
-        {
-          "option_type": "ideal",
-          "desc": "Faith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well.",
-          "alignments": [
-            {
-              "index": "lawful-good",
-              "name": "Lawful Good",
-              "url": "/api/alignments/lawful-good"
-            },
-            {
-              "index": "lawful-neutral",
-              "name": "Lawful Neutral",
-              "url": "/api/alignments/lawful-neutral"
-            },
-            {
-              "index": "lawful-evil",
-              "name": "Lawful Evil",
-              "url": "/api/alignments/lawful-evil"
-            }
-          ]
-        },
-        {
-          "option_type": "ideal",
-          "desc": "Aspiration. I seek to prove myself worthy of my god's favor by matching my actions against his or her teachings.",
-          "alignments": [
-            {
-              "index": "lawful-good",
-              "name": "Lawful Good",
-              "url": "/api/alignments/lawful-good"
-            },
-            {
-              "index": "neutral-good",
-              "name": "Neutral Good",
-              "url": "/api/alignments/neutral-good"
-            },
-            {
-              "index": "chaotic-good",
-              "name": "Chaotic Good",
-              "url": "/api/alignments/chaotic-good"
-            },
-            {
-              "index": "lawful-neutral",
-              "name": "Lawful Neutral",
-              "url": "/api/alignments/lawful-neutral"
-            },
-            {
-              "index": "neutral",
-              "name": "Neutral",
-              "url": "/api/alignments/neutral"
-            },
-            {
-              "index": "chaotic-neutral",
-              "name": "Chaotic Neutral",
-              "url": "/api/alignments/chaotic-neutral"
-            },
-            {
-              "index": "lawful-evil",
-              "name": "Lawful Evil",
-              "url": "/api/alignments/lawful-evil"
-            },
-            {
-              "index": "neutral-evil",
-              "name": "Neutral Evil",
-              "url": "/api/alignments/neutral-evil"
-            },
-            {
-              "index": "chaotic-evil",
-              "name": "Chaotic Evil",
-              "url": "/api/alignments/chaotic-evil"
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "bonds": {
-    "choose": 1,
-    "type": "bonds",
-    "from": {
-      "option_set_type": "options_array",
-      "options": [
-        {
-          "option_type": "string",
-          "string": "I would die to recover an ancient relic of my faith that was lost long ago."
-        },
-        {
-          "option_type": "string",
-          "string": "I will someday get revenge on the corrupt temple hierarchy who branded me a heretic."
-        },
-        {
-          "option_type": "string",
-          "string": "I owe my life to the priest who took me in when my parents died."
-        },
-        {
-          "option_type": "string",
-          "string": "Everything I do is for the common people."
-        },
-        {
-          "option_type": "string",
-          "string": "I will do anything to protect the temple where I served."
-        },
-        {
-          "option_type": "string",
-          "string": "I seek to preserve a sacred text that my enemies consider heretical and seek to destroy."
-        }
-      ]
-    }
-  },
-  "flaws": {
-    "choose": 1,
-    "type": "flaws",
-    "from": {
-      "option_set_type": "options_array",
-      "options": [
-        {
-          "option_type": "string",
-          "string": "I judge others harshly, and myself even more severely."
-        },
-        {
-          "option_type": "string",
-          "string": "I put too much trust in those who wield power within my temple's hierarchy."
-        },
-        {
-          "option_type": "string",
-          "string": "My piety sometimes leads me to blindly trust those that profess faith in my god."
-        },
-        {
-          "option_type": "string",
-          "string": "I am inflexible in my thinking."
-        },
-        {
-          "option_type": "string",
-          "string": "I am suspicious of strangers and expect the worst of them."
-        },
-        {
-          "option_type": "string",
-          "string": "Once I pick a goal, I become obsessed with it to the detriment of everything else in my life."
-        }
-      ]
-    }
-  },
-  "url": "/api/backgrounds/acolyte"
-}
-{
-  "index": "acolyte-baldurs-gate",
-  "name": "Acolyte (Baldur's Gate)",
-  "source": "BGDIA",
-  "page": 202,
-  "starting_proficiencies": [
-    {
-      "index": "skill-insight",
-      "name": "Skill: Insight",
-      "url": "/api/proficiencies/skill-insight"
     },
-    {
-      "index": "skill-religion",
-      "name": "Skill: Religion",
-      "url": "/api/proficiencies/skill-religion"
-    }
-  ],
-  "language_options": {
-    "choose": 2,
-    "type": "languages",
-    "from": {
-      "option_set_type": "resource_list",
-      "resource_list_url": "/api/languages"
-    }
-  },
-  "starting_equipment": [
-    {
-      "equipment": {
-        "index": "holy-symbol",
-        "name": "Holy Symbol",
-        "url": "/api/equipment/holy-symbol"
-      },
-      "quantity": 1
-    },
-    {
-      "equipment": {
-        "index": "prayer-book",
-        "name": "Prayer Book",
-        "url": "/api/equipment/prayer-book"
-      },
-      "quantity": 1
-    },
-    {
-      "equipment": {
-        "index": "incense",
-        "name": "Incense (5 sticks)",
-        "url": "/api/equipment/incense"
-      },
-      "quantity": 5
-    },
-    {
-      "equipment": {
-        "index": "vestments",
-        "name": "Vestments",
-        "url": "/api/equipment/vestments"
-      },
-      "quantity": 1
-    },
-    {
-      "equipment": {
-        "index": "clothes-common",
-        "name": "Clothes, common",
-        "url": "/api/equipment/clothes-common"
-      },
-      "quantity": 1
-    },
-    {
-      "equipment": {
-        "index": "belt-pouch",
-        "name": "Belt Pouch",
-        "url": "/api/equipment/belt-pouch"
-      },
-      "quantity": 1
-    }
-  ],
-  "starting_equipment_options": [
-    {
+    "language_options": {
       "choose": 1,
-      "type": "equipment",
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "wooden-case",
+          "name": "Wooden Case (map to a ruin or dungeon)",
+          "url": "/api/equipment/wooden-case"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "bullseye-lantern",
+          "name": "Bullseye Lantern",
+          "url": "/api/equipment/bullseye-lantern"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "miners-pick",
+          "name": "Miner's Pick",
+          "url": "/api/equipment/miners-pick"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "travelers-clothes",
+          "name": "Traveler's Clothes",
+          "url": "/api/equipment/travelers-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "shovel",
+          "name": "Shovel",
+          "url": "/api/equipment/shovel"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "two-person-tent",
+          "name": "Two-Person Tent",
+          "url": "/api/equipment/two-person-tent"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "special-trinket",
+          "name": "Trinket (recovered from a dig site)",
+          "url": "/api/equipment/special-trinket"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "belt-pouch",
+          "name": "Pouch",
+          "url": "/api/equipment/belt-pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "25 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Historical Knowledge",
+      "desc": [
+        "When you enter a ruin or dungeon, you can correctly ascertain its original purpose and determine its builders, whether those were dwarves, elves, humans, yuan-ti, or some other known race. In addition, you can determine the monetary value of art objects more than a century old."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I love a good puzzle or mystery."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a pack rat who never throws anything away."
+          },
+          {
+            "option_type": "string",
+            "string": "Fame is more important to me than money."
+          },
+          {
+            "option_type": "string",
+            "string": "I have no qualms about stealing from the dead."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm happier in a dusty old tomb than I am in the centers of civilization."
+          },
+          {
+            "option_type": "string",
+            "string": "Traps don't make me nervous. Idiots who trigger traps make me nervous."
+          },
+          {
+            "option_type": "string",
+            "string": "I might fail, but I will never give up."
+          },
+          {
+            "option_type": "string",
+            "string": "You might think I'm a scholar, but I love a good brawl. These fists were made for punching."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Preservation. That artifact belongs in a museum.",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Greed. I won't risk my life for nothing. I expect some kind of payment.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Death Wish. Nothing is more exhilarating than a narrow escape from the jaws of death.",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Dignity. The dead and their belongings deserve to be treated with respect.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Immortality. All of my exploring is part of a plan to find the secret of everlasting life.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Danger. With every great discovery comes grave danger. The two walk hand in hand.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Ever since I was a child, I've heard stories about a lost city. I aim to find it, learn its secrets, and earn my place in the history books."
+          },
+          {
+            "option_type": "string",
+            "string": "I want to find my mentor, who disappeared on an expedition some time ago."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a friendly rival. Only one of us can be the best, and I aim to prove it's me."
+          },
+          {
+            "option_type": "string",
+            "string": "I won't sell an art object or other treasure that has historical significance or is one of a kind."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm secretly in love with the wealthy patron who sponsors my archaeological exploits."
+          },
+          {
+            "option_type": "string",
+            "string": "I hope to bring prestige to a library, a museum, or a university."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I have a secret fear of some common wild animal - and in my work, I see them everywhere."
+          },
+          {
+            "option_type": "string",
+            "string": "I can't leave a room without searching it for secret doors."
+          },
+          {
+            "option_type": "string",
+            "string": "When I'm not exploring dungeons or ruins, I get jittery and impatient."
+          },
+          {
+            "option_type": "string",
+            "string": "I have no time for friends or family. I spend every waking moment thinking about and preparing for my next expedition."
+          },
+          {
+            "option_type": "string",
+            "string": "When given the choice of going left or right, I always go left."
+          },
+          {
+            "option_type": "string",
+            "string": "I can't sleep except in total darkness."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/archaeologist"
+  },
+  {
+    "index": "artisan",
+    "name": "Artisan",
+    "source": "2024",
+    "ability_scores": [
+      "Strength",
+      "Dexterity",
+      "Intelligence"
+    ],
+    "feat": {
+      "name": "Crafter",
+      "url": "/api/feats/crafter"
+    },
+    "starting_proficiencies": [
+      {
+        "index": "skill-investigation",
+        "name": "Skill: Investigation",
+        "url": "/api/proficiencies/skill-investigation"
+      },
+      {
+        "index": "skill-persuasion",
+        "name": "Skill: Persuasion",
+        "url": "/api/proficiencies/skill-persuasion"
+      }
+    ],
+    "tool_proficiencies": {
+      "choose": 1,
+      "type": "tools",
       "from": [
         {
-          "equipment_option_set": {
-            "option_type": "string",
-            "string": "15 GP"
+          "index": "artisans-tools",
+          "name": "Artisan's Tools",
+          "url": "/api/proficiencies/artisans-tools"
+        }
+      ]
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "artisans-tools",
+          "name": "Artisan's Tools",
+          "url": "/api/equipment/artisans-tools"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment_option_set": {
+          "option_type": "string",
+          "string": "32 GP"
+        }
+      },
+      {
+        "equipment": {
+          "index": "travelers-clothes",
+          "name": "Traveler's Clothes",
+          "url": "/api/equipment/travelers-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/equipment/pouch"
+        },
+        "quantity": 2
+      }
+    ],
+    "feature": {
+      "name": "Craft Expertise",
+      "desc": [
+        "As an artisan, you gain proficiency with three extra sets of Artisan’s Tools, a 20% discount on any non-magical item you buy, and the ability to craft certain bits of equipment during a D&D long rest."
+      ]
+    },
+    "guild_business": {
+      "choose": 1,
+      "type": "guild_business",
+      "from": [
+        "Alchemists and apothecaries",
+        "Armorers, locksmiths, and finesmiths",
+        "Brewers, distillers, and vintners",
+        "Calligraphers, scribes, and scriveners",
+        "Carpenters, roofers, and plasterers",
+        "Cartographers, surveyors, and chart-makers",
+        "Cobblers and shoemakers",
+        "Cooks and bakers",
+        "Glassblowers and glaziers",
+        "Jewelers and gemcutters",
+        "Leatherworkers, skinners, and tanners",
+        "Masons and stonecutters",
+        "Painters, limners, and sign-makers",
+        "Potters and tile-makers",
+        "Shipwrights and sail-makers",
+        "Smiths and metal-forgers",
+        "Tinkers, pewterers, and casters",
+        "Wagon-makers and wheelwrights",
+        "Weavers and dyers",
+        "Woodcarvers, coopers, and bowyers"
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": [
+        "I believe that anything worth doing is worth doing right. I can't help it—I'm a perfectionist.",
+        "I'm a snob who looks down on those who can't appreciate fine art.",
+        "I always want to know how things work and what makes people tick.",
+        "I'm full of witty aphorisms and have a proverb for every occasion.",
+        "I'm rude to people who lack my commitment to hard work and fair play.",
+        "I like to talk at length about my profession.",
+        "I don't part with my money easily and will haggle tirelessly to get the best deal possible.",
+        "I'm well known for my work, and I want to make sure everyone appreciates it. I'm always taken aback when people haven't heard of me."
+      ]
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": [
+        {
+          "desc": "Community. It is the duty of all civilized people to strengthen the bonds of community and the security of civilization.",
+          "alignment": "Lawful"
+        },
+        {
+          "desc": "Generosity. My talents were given to me so that I could use them to benefit the world.",
+          "alignment": "Good"
+        },
+        {
+          "desc": "Freedom. Everyone should be free to pursue his or her own livelihood.",
+          "alignment": "Chaotic"
+        },
+        {
+          "desc": "Greed. I'm only in it for the money.",
+          "alignment": "Evil"
+        },
+        {
+          "desc": "People. I'm committed to the people I care about, not to ideals.",
+          "alignment": "Neutral"
+        },
+        {
+          "desc": "Aspiration. I work hard to be the best there is at my craft.",
+          "alignment": "Any"
+        }
+      ]
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": [
+        "The workshop where I learned my trade is the most important place in the world to me.",
+        "I created a great work for someone, and then found them unworthy to receive it. I'm still looking for someone worthy.",
+        "I owe my guild a great debt for forging me into the person I am today.",
+        "I pursue wealth to secure someone's love.",
+        "One day I will return to my guild and prove that I am the greatest artisan of them all.",
+        "I will get revenge on the evil forces that destroyed my place of business and ruined my livelihood."
+      ]
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": [
+        "I'll do anything to get my hands on something rare or priceless.",
+        "I'm quick to assume that someone is trying to cheat me.",
+        "No one must ever learn that I once stole money from guild coffers.",
+        "I'm never satisfied with what I have—I always want more.",
+        "I would kill to acquire a noble title.",
+        "I'm horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I'm surrounded by rivals."
+      ]
+    },
+    "url": "/api/backgrounds/artisan"
+  },
+  {
+    "index": "astral-drifter",
+    "name": "Astral Drifter",
+    "source": "AAG",
+    "page": 7,
+    "starting_proficiencies": [
+      {
+        "index": "skill-insight",
+        "name": "Skill: Insight",
+        "url": "/api/proficiencies/skill-insight"
+      },
+      {
+        "index": "skill-religion",
+        "name": "Skill: Religion",
+        "url": "/api/proficiencies/skill-religion"
+      }
+    ],
+    "language_options": {
+      "choose": 2,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      },
+      "recommendations": [
+        "Celestial",
+        "Gith"
+      ]
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "travelers-clothes",
+          "name": "Traveler's Clothes",
+          "url": "/api/equipment/travelers-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "diary",
+          "name": "Diary",
+          "url": "/api/equipment/diary"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "ink-pen",
+          "name": "Ink Pen",
+          "url": "/api/equipment/ink-pen"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "ink-bottle",
+          "name": "Bottle of Ink",
+          "url": "/api/equipment/ink-bottle"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "10 GP"
+            }
           }
-        }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Divine Contact",
+      "desc": [
+        "You gain the Magic Initiate feat from the Player's Handbook and must choose cleric for the feat.",
+        "In the Astral Sea, you crossed paths with a wandering deity. The encounter was brief and nonviolent, yet it made a lasting impression on you. This deity saw fit to share one secret or obscure bit of cosmic lore with you. Work with your DM to determine the details of this knowledge and its impact on the campaign."
       ]
-    }
-  ],
-  "feature": {
-    "name": "Shelter of the Faithful",
-    "desc": [
-      "As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.",
-      "You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple."
-    ]
-  },
-  "additional_feature": {
-    "name": "Religious Community",
-    "desc": [
-      "You're tightly connected with the religious community of Baldur's Gate. You know if a deity has a following in the city and any places that faith openly congregates and the neighborhoods those faithful typically inhabit. While this isn't remarkable for most of the city's larger faiths, keeping track of the hundreds of religions newcomers bring with them is no mean feat."
-    ]
-  },
-  "personality_traits": {
-    "choose": 2,
-    "type": "personality_traits",
-    "from": {
-      "option_set_type": "options_array",
+    },
+    "special": {
+      "name": "Longevity",
+      "desc": [
+        "You are 20d6 years older than you look, because you have spent that much time in the Astral Sea without aging."
+      ]
+    },
+    "divine_contact_table": {
+      "choose": 1,
+      "type": "divine_contact",
+      "from": [
+        "Corellon, god of art and magic (chaotic good)",
+        "Tymora, god of good fortune (chaotic good)",
+        "Fharlanghn, god of horizons and travel (neutral good)",
+        "Istus, god of fate and destiny (neutral)",
+        "Nuada, god of war and warriors (neutral)",
+        "Zivilyn, god of wisdom (neutral)",
+        "Arawn, god of life and death (neutral evil)",
+        "Hecate, god of magic and moons (chaotic evil)",
+        "Celestian, god of stars and wanderers (neutral)",
+        "Ptah, god of knowledge and secrets (lawful neutral)"
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": []
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": []
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": []
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": []
+    },
+    "url": "/api/backgrounds/astral-drifter"
+  },  
+  {
+    "index": "athlete",
+    "name": "Athlete",
+    "source": "MOT",
+    "page": 31,
+    "starting_proficiencies": [
+      {
+        "index": "skill-acrobatics",
+        "name": "Skill: Acrobatics",
+        "url": "/api/proficiencies/skill-acrobatics"
+      },
+      {
+        "index": "skill-athletics",
+        "name": "Skill: Athletics",
+        "url": "/api/proficiencies/skill-athletics"
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "tool_proficiencies": [
+      {
+        "index": "vehicles-land",
+        "name": "Vehicles (land)",
+        "url": "/api/proficiencies/vehicles-land"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "bronze-discus",
+          "name": "Bronze Discus or Leather Ball",
+          "url": "/api/equipment/bronze-discus"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "lucky-charm",
+          "name": "Lucky Charm or Past Trophy",
+          "url": "/api/equipment/lucky-charm"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "travelers-clothes",
+          "name": "Traveler's Clothes",
+          "url": "/api/equipment/travelers-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "10 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Echoes of Victory",
+      "desc": [
+        "You have attracted admiration among spectators, fellow athletes, and trainers in the region that hosted your past athletic victories. When visiting any settlement within 100 miles of where you grew up, there is a 50 percent chance you can find someone there who admires you and is willing to provide information or temporary shelter.",
+        "Between adventures, you might compete in athletic events sufficient enough to maintain a comfortable lifestyle, as per the 'Practicing a Profession' downtime activity in chapter 8 of the Player's Handbook."
+      ]
+    },
+    "special": {
+      "name": "Favored Event",
+      "desc": [
+        "While many athletes practice various games and events, most excel at a single form of competition. Roll or choose from the options in the Favored Event table to determine the athletic event in which you excel."
+      ],
       "options": [
+        "Marathon",
+        "Long-distance running",
+        "Wrestling",
+        "Boxing",
+        "Chariot or horse race",
+        "Pankration (mixed unarmed combat)",
+        "Hoplite race (racing in full armor with a unit)",
+        "Pentathlon (running, long jump, discus, javelin, wrestling)"
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": [
+        "I feel most at peace during physical exertion, be it exercise or battle.",
+        "I don't like to sit idle.",
+        "I have a daily exercise routine that I refuse to break.",
+        "Obstacles exist to be overcome.",
+        "When I see others struggling, I offer to help.",
+        "I love to trade banter and gibes.",
+        "Anything worth doing is worth doing best.",
+        "I get irritated if people praise someone else and not me."
+      ]
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": [
         {
-          "option_type": "string",
-          "string": "I idolize a particular hero of my faith, and constantly refer to that person's deeds and example."
+          "desc": "Competition. I strive to test myself in all things.",
+          "alignment": "Chaotic"
         },
         {
-          "option_type": "string",
-          "string": "I can find common ground between the fiercest enemies, empathizing with them and always working toward peace."
+          "desc": "Triumph. The best part of winning is seeing my rivals brought low.",
+          "alignment": "Evil"
         },
         {
-          "option_type": "string",
-          "string": "I see omens in every event and action. The gods try to speak to us, we just need to listen."
+          "desc": "Camaraderie. The strongest bonds are forged through struggle.",
+          "alignment": "Good"
         },
         {
-          "option_type": "string",
-          "string": "Nothing can shake my optimistic attitude."
+          "desc": "People. I strive to inspire my spectators.",
+          "alignment": "Neutral"
         },
         {
-          "option_type": "string",
-          "string": "I quote (or misquote) sacred texts and proverbs in almost every situation."
+          "desc": "Tradition. Every game has rules, and the playing field must be level.",
+          "alignment": "Lawful"
         },
         {
-          "option_type": "string",
-          "string": "I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods."
-        },
-        {
-          "option_type": "string",
-          "string": "I've enjoyed fine food, drink, and high society among my temple's elite. Rough living grates on me."
-        },
-        {
-          "option_type": "string",
-          "string": "I've spent so long in the temple that I have little practical experience dealing with people in the outside world."
+          "desc": "Growth. Lessons hide in victory and defeat.",
+          "alignment": "Any"
         }
       ]
-    }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": [
+        "My teammates are my family.",
+        "I will overcome a rival and prove myself their better.",
+        "My mistake got someone hurt. I'll never make that mistake again.",
+        "I will be the best for the honor and glory of my home.",
+        "The person who trained me is the most important person in my world.",
+        "I strive to live up to a specific hero's example."
+      ]
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": [
+        "I indulge in a habit that threatens my reputation or my health.",
+        "I'll do absolutely anything to win.",
+        "I ignore anyone who doesn't compete and anyone who loses to me.",
+        "I have lingering pain from old injuries.",
+        "Any defeat or failure on my part is because my opponent cheated.",
+        "I must be the captain of any group I join."
+      ]
+    },
+    "url": "/api/backgrounds/athlete"
   },
-  "ideals": {
-    "choose": 1,
-    "type": "ideals",
-    "from": {
-      "option_set_type": "options_array",
-      "options": [
-        {
-          "option_type": "ideal",
-          "desc": "Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld.",
-          "alignments": [
-            {
-              "index": "lawful-good",
-              "name": "Lawful Good",
-              "url": "/api/alignments/lawful-good"
-            },
-            {
-              "index": "lawful-neutral",
-              "name": "Lawful Neutral",
-              "url": "/api/alignments/lawful-neutral"
-            },
-            {
-              "index": "lawful-evil",
-              "name": "Lawful Evil",
-              "url": "/api/alignments/lawful-evil"
+  {
+    "index": "azorius-functionary",
+    "name": "Azorius Functionary",
+    "source": "GGR",
+    "page": 33,
+    "starting_proficiencies": [
+      {
+        "index": "skill-insight",
+        "name": "Skill: Insight",
+        "url": "/api/proficiencies/skill-insight"
+      },
+      {
+        "index": "skill-intimidation",
+        "name": "Skill: Intimidation",
+        "url": "/api/proficiencies/skill-intimidation"
+      }
+    ],
+    "language_options": {
+      "choose": 2,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "azorius-insignia",
+          "name": "Azorius Insignia",
+          "url": "/api/equipment/azorius-insignia"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "scroll-law-text",
+          "name": "Scroll (text of a law important to you)",
+          "url": "/api/equipment/scroll-law-text"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "ink-bottle",
+          "name": "Bottle of Blue Ink",
+          "url": "/api/equipment/ink-bottle"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pen",
+          "name": "Pen",
+          "url": "/api/equipment/pen"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "fine-clothes",
+          "name": "Set of Fine Clothes",
+          "url": "/api/equipment/fine-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch (Azorius-minted 1-zino coins)",
+          "url": "/api/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "10 GP"
             }
-          ]
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Legal Authority",
+      "desc": [
+        "You have the authority to enforce the laws of Ravnica, and that status inspires a certain amount of respect and even fear in the populace. People mind their manners in your presence and avoid drawing your attention; they assume you have the right to be wherever you are. Showing your Azorius insignia gets you an audience with anyone you want to talk to (though it might cause more problems than it solves when you're dealing with incorrigible lawbreakers). If you abuse this privilege, though, you can get in serious trouble with your superiors and even be stripped of your position."
+      ]
+    },
+    "special": {
+      "name": "Azorius Guild Spells",
+      "desc": [
+        "Prerequisite: Spellcasting or Pact Magic class feature.",
+        "For you, the spells on the Azorius Guild Spells table are added to the spell list of your spellcasting class. (If you are a multiclass character with multiple spell lists, these spells are added to all of them.)",
+        "Your magic often takes the form of blue or golden runes floating and glowing in the air in circular patterns or of shimmering azure barriers of magical energy. If you cast ensnaring strike, for example, the vines created by the spell might appear as rune-inscribed glowing bands that wrap around the target and hold it in place."
+      ],
+      "spells": {
+        "cantrip": ["friends", "message"],
+        "1st": ["command", "ensnaring strike"],
+        "2nd": ["arcane lock", "calm emotions", "hold person"],
+        "3rd": ["clairvoyance", "counterspell"],
+        "4th": ["compulsion", "divination"],
+        "5th": ["dominate person"]
+      }
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": [
+        "I try never to let my judgment become clouded by emotion.",
+        "I have infinite patience with the dolts and boors I'm forced to deal with every day.",
+        "When I give an order, I expect it to be obeyed.",
+        "I just want things the way I like them: neat, orderly, and clean.",
+        "No wrongdoing can escape my watchful gaze.",
+        "I always say exactly what I mean, no matter how many words it takes to communicate the particular nuance I am attempting to convey.",
+        "I'm very literal and don't appreciate metaphor or sarcasm.",
+        "I never change my mind once it's made up."
+      ]
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": [
+        {
+          "desc": "Guild. My guild is all that really matters.",
+          "alignment": "Any"
         },
         {
-          "option_type": "ideal",
-          "desc": "Charity. I always try to help those in need, no matter what the personal cost.",
-          "alignments": [
-            {
-              "index": "lawful-good",
-              "name": "Lawful Good",
-              "url": "/api/alignments/lawful-good"
-            },
-            {
-              "index": "neutral-good",
-              "name": "Neutral Good",
-              "url": "/api/alignments/neutral-good"
-            },
-            {
-              "index": "chaotic-good",
-              "name": "Chaotic Good",
-              "url": "/api/alignments/chaotic-good"
-            }
-          ]
+          "desc": "Order. The law is meant to ensure that the gears of society turn smoothly and quietly.",
+          "alignment": "Lawful"
         },
         {
-          "option_type": "ideal",
-          "desc": "Change. We must help bring about the changes the gods are constantly working in the world.",
-          "alignments": [
-            {
-              "index": "chaotic-good",
-              "name": "Chaotic Good",
-              "url": "/api/alignments/chaotic-good"
-            },
-            {
-              "index": "chaotic-neutral",
-              "name": "Chaotic Neutral",
-              "url": "/api/alignments/chaotic-neutral"
-            },
-            {
-              "index": "chaotic-evil",
-              "name": "Chaotic Evil",
-              "url": "/api/alignments/chaotic-evil"
-            }
-          ]
+          "desc": "Peace. The ultimate object of the law is to remove violence from society.",
+          "alignment": "Good"
         },
         {
-          "option_type": "ideal",
-          "desc": "Power. I hope to one day rise to the top of my faith's religious hierarchy.",
-          "alignments": [
-            {
-              "index": "lawful-good",
-              "name": "Lawful Good",
-              "url": "/api/alignments/lawful-good"
-            },
-            {
-              "index": "lawful-neutral",
-              "name": "Lawful Neutral",
-              "url": "/api/alignments/lawful-neutral"
-            },
-            {
-              "index": "lawful-evil",
-              "name": "Lawful Evil",
-              "url": "/api/alignments/lawful-evil"
-            }
-          ]
+          "desc": "Compliance. Coercion is a fine way of ensuring that the laws are obeyed.",
+          "alignment": "Lawful"
         },
         {
-          "option_type": "ideal",
-          "desc": "Faith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well.",
-          "alignments": [
-            {
-              "index": "lawful-good",
-              "name": "Lawful Good",
-              "url": "/api/alignments/lawful-good"
-            },
-            {
-              "index": "lawful-neutral",
-              "name": "Lawful Neutral",
-              "url": "/api/alignments/lawful-neutral"
-            },
-            {
-              "index": "lawful-evil",
-              "name": "Lawful Evil",
-              "url": "/api/alignments/lawful-evil"
-            }
-          ]
+          "desc": "Legislation. The law embodies excellence in its precision and detail.",
+          "alignment": "Lawful"
         },
         {
-          "option_type": "ideal",
-          "desc": "Aspiration. I seek to prove myself worthy of my god's favor by matching my actions against his or her teachings.",
-          "alignments": [
-            {
-              "index": "lawful-good",
-              "name": "Lawful Good",
-              "url": "/api/alignments/lawful-good"
-            },
-            {
-              "index": "neutral-good",
-              "name": "Neutral Good",
-              "url": "/api/alignments/neutral-good"
-            },
-            {
-              "index": "chaotic-good",
-              "name": "Chaotic Good",
-              "url": "/api/alignments/chaotic-good"
-            },
-            {
-              "index": "lawful-neutral",
-              "name": "Lawful Neutral",
-              "url": "/api/alignments/lawful-neutral"
-            },
-            {
-              "index": "neutral",
-              "name": "Neutral",
-              "url": "/api/alignments/neutral"
-            },
-            {
-              "index": "chaotic-neutral",
-              "name": "Chaotic Neutral",
-              "url": "/api/alignments/chaotic-neutral"
-            },
-            {
-              "index": "lawful-evil",
-              "name": "Lawful Evil",
-              "url": "/api/alignments/lawful-evil"
-            },
-            {
-              "index": "neutral-evil",
-              "name": "Neutral Evil",
-              "url": "/api/alignments/neutral-evil"
-            },
-            {
-              "index": "chaotic-evil",
-              "name": "Chaotic Evil",
-              "url": "/api/alignments/chaotic-evil"
-            }
-          ]
+          "desc": "Punishment. A public display of consequences is an excellent deterrent for other criminals.",
+          "alignment": "Evil"
         }
       ]
-    }
-  },
-  "bonds": {
-    "choose": 1,
-    "type": "bonds",
-    "from": {
-      "option_set_type": "options_array",
-      "options": [
-        {
-          "option_type": "string",
-          "string": "I would die to recover an ancient relic of my faith that was lost long ago."
-        },
-        {
-          "option_type": "string",
-          "string": "I will someday get revenge on the corrupt temple hierarchy who branded me a heretic."
-        },
-        {
-          "option_type": "string",
-          "string": "I owe my life to the priest who took me in when my parents died."
-        },
-        {
-          "option_type": "string",
-          "string": "Everything I do is for the common people."
-        },
-        {
-          "option_type": "string",
-          "string": "I will do anything to protect the temple where I served."
-        },
-        {
-          "option_type": "string",
-          "string": "I seek to preserve a sacred text that my enemies consider heretical and seek to destroy."
-        }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": [
+        "I am beholden to an Azorius arrester who captured the criminal who killed my parents, saving me from the same fate.",
+        "I hope one day to write the laws, not just enforce them.",
+        "I tried and failed to prevent a murder, and I have sworn to find and arrest the perpetrator.",
+        "I successfully prevented a murder, and the would-be perpetrator wants me dead.",
+        "One of my parents was prominent in the guild, and I resent constantly being compared to that standard.",
+        "I've modeled my career after a highly respected lawmage or arrester, but I fear that my role model might be involved in something illegal."
       ]
-    }
-  },
-  "flaws": {
-    "choose": 1,
-    "type": "flaws",
-    "from": {
-      "option_set_type": "options_array",
-      "options": [
-        {
-          "option_type": "string",
-          "string": "I judge others harshly, and myself even more severely."
-        },
-        {
-          "option_type": "string",
-          "string": "I put too much trust in those who wield power within my temple's hierarchy."
-        },
-        {
-          "option_type": "string",
-          "string": "My piety sometimes leads me to blindly trust those that profess faith in my god."
-        },
-        {
-          "option_type": "string",
-          "string": "I am inflexible in my thinking."
-        },
-        {
-          "option_type": "string",
-          "string": "I am suspicious of strangers and expect the worst of them."
-        },
-        {
-          "option_type": "string",
-          "string": "Once I pick a goal, I become obsessed with it to the detriment of everything else in my life."
-        }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": [
+        "I'm unable to distinguish between the letter and the spirit of the law.",
+        "I seem like a harsh judge to others, but I judge myself most harshly of all.",
+        "I have a secret, illegal vice.",
+        "I was traumatized by witnessing a crime as a child.",
+        "I'm incapable of deception.",
+        "I wish I had joined the Boros, but I fear they'd never accept me."
       ]
-    }
-  },
-  "url": "/api/backgrounds/acolyte-baldurs-gate"
-}
+    },
+    "url": "/api/backgrounds/azorius-functionary"
+  }
+  
+  
+  
+  
+
+]
