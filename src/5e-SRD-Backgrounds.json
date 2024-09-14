@@ -6746,7 +6746,248 @@
       }
     },
     "url": "/api/backgrounds/far-traveler"
+  },
+  {
+    "index": "farmer",
+    "name": "Farmer",
+    "ability_scores": [
+      "Strength",
+      "Constitution",
+      "Wisdom"
+    ],
+    "feat": {
+      "name": "Tough",
+      "url": "/api/feats/tough"
+    },
+    "skill_proficiencies": [
+      {
+        "index": "skill-animal-handling",
+        "name": "Animal Handling",
+        "url": "/api/proficiencies/skill-animal-handling"
+      },
+      {
+        "index": "skill-nature",
+        "name": "Nature",
+        "url": "/api/proficiencies/skill-nature"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "index": "carpenters-tools",
+        "name": "Carpenter's Tools",
+        "url": "/api/proficiencies/carpenters-tools"
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "(A) Sickle, Carpenter's Tools, Healer's Kit, Iron Pot, Shovel, Traveler's Clothes, 30 GP"
+            }
+          },
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "(B) 50 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Of the Land",
+      "desc": [
+        "You lack the formal education of the higher classes, but for how little you may know there is a great deal that you understand. You have a practical, working knowledge of astrology and meteorology, and can easily track the time and date as well as predict the weather within a few hours, or days if you're lucky. You understand the 'secrets of life'; the needs of life (water, light, air, salt, etc.), the patterns of physical inheritance, and the connections between different plants and animals."
+      ]
+    },
+    "specialty": {
+      "name": "Farm Specialization",
+      "desc": [
+        "Not every farm is alike; there are a vast range of goods produced by farmers of different sorts, and nearly all farms focus on just one product or a limited group of products. Choose the role you played in your farming life, or roll on the table below."
+      ],
+      "options": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Rancher. You raised animals for slaughter most likely for food, but also for leather, furs, and other useful materials."
+          },
+          {
+            "option_type": "string",
+            "string": "Grazier. You harvested goods produced by animals such as milk, eggs, feathers, or wool."
+          },
+          {
+            "option_type": "string",
+            "string": "Stockman. You bred animals to sell for work or as pets such as guard dogs, racing horses, and griffons."
+          },
+          {
+            "option_type": "string",
+            "string": "Peasant. You harvested edible or useful plants such as wheat, corn crops, or apples at an orchard."
+          },
+          {
+            "option_type": "string",
+            "string": "Forester. You grew trees for ornament or construction such as trees grown for bow staves, boat masts, or buildings."
+          },
+          {
+            "option_type": "string",
+            "string": "Silk. You raised silk worms or another exotic animal, and harvested their silk."
+          }
+        ]
+      }
+    },
+    "personality_traits": {
+    "choose": 2,
+    "type": "personality_traits",
+    "from": {
+      "option_set_type": "options_array",
+      "options": [
+        {
+          "option_type": "string",
+          "string": "I'm always early to bed and early to rise."
+        },
+        {
+          "option_type": "string",
+          "string": "I keep my gear and supplies in careful check."
+        },
+        {
+          "option_type": "string",
+          "string": "I speak with a distinctive drawl or accent common to my class."
+        },
+        {
+          "option_type": "string",
+          "string": "I always save up as much as I can, spending and consuming only what I must."
+        },
+        {
+          "option_type": "string",
+          "string": "When work needs doing, I do the work."
+        },
+        {
+          "option_type": "string",
+          "string": "I keep constant track of the sun, moon, stars, seasons, and weather."
+        },
+        {
+          "option_type": "string",
+          "string": "I like to sleep in the sun when I can."
+        },
+        {
+          "option_type": "string",
+          "string": "I'm always chewing on a sprig of grass, a toothpick, tobacco, seeds, or preserved meat."
+        }
+      ]
+    }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Fill the Need. There are a lot of hungry mouths in the world, with enough hands the world can feed them all.",
+            "alignment": "Good"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "It's a Living. I do what I'm good at because what I'm good at is good for me.",
+            "alignment": "Neutral"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Brutal Practicality. Bury a fish or bury a man, just get the job done.",
+            "alignment": "Evil"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Hard Work. A labor of love is a purpose and meaning.",
+            "alignment": "Lawful"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "A Simple Way of Life. If it ain't broke, don't fix it!",
+            "alignment": "Neutral"
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Amusement. Playing a hand in the growth and development of things delights me.",
+            "alignment": "Chaotic"
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I want to find that special someone and raise a home full of children."
+          },
+          {
+            "option_type": "string",
+            "string": "I'll never forget the family farm I grew up on."
+          },
+          {
+            "option_type": "string",
+            "string": "Someday, I'll be the lord of my own land."
+          },
+          {
+            "option_type": "string",
+            "string": "I want to become the biggest or best example of my profession to prove that I am the best!"
+          },
+          {
+            "option_type": "string",
+            "string": "My son was sent to war and never returned. I must find him!"
+          },
+          {
+            "option_type": "string",
+            "string": "I am out to start a homestead of my own in an unexplored fringe territory."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I can be lazy and sleepy, sneaking off to take naps when work can wait."
+          },
+          {
+            "option_type": "string",
+            "string": "I am absurdly isolated, innocent, or pious."
+          },
+          {
+            "option_type": "string",
+            "string": "I believe in and obey my nation's nobility blindly."
+          },
+          {
+            "option_type": "string",
+            "string": "I abandoned my home to avoid taxation, conscription, or court and cannot return."
+          },
+          {
+            "option_type": "string",
+            "string": "I am not used to being wealthy and tend to overindulge."
+          },
+          {
+            "option_type": "string",
+            "string": "I show off to attractive people too much."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/farmer"
   }
+  
   
   
   
