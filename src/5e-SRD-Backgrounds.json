@@ -342,8 +342,11 @@
   {
     "index": "acolyte-baldurs-gate",
     "name": "Acolyte (Baldur's Gate)",
-    "source": "BGDIA",
-    "page": 202,
+    "ability_scores": [
+      "Intelligence",
+      "Wisdom",
+      "Charisma"
+    ],
     "starting_proficiencies": [
       {
         "index": "skill-insight",
@@ -718,8 +721,6 @@
   {
     "index": "anthropologist",
     "name": "Anthropologist",
-    "source": "ToA",
-    "page": 191,
     "starting_proficiencies": [
       {
         "index": "skill-insight",
@@ -983,8 +984,6 @@
   {
     "index": "archaeologist",
     "name": "Archaeologist",
-    "source": "ToA",
-    "page": 192,
     "starting_proficiencies": [
       {
         "index": "skill-history",
@@ -1288,7 +1287,6 @@
   {
     "index": "artisan",
     "name": "Artisan",
-    "source": "2024",
     "ability_scores": [
       "Strength",
       "Dexterity",
@@ -1310,47 +1308,25 @@
         "url": "/api/proficiencies/skill-persuasion"
       }
     ],
-    "tool_proficiencies": {
-      "choose": 1,
-      "type": "tools",
-      "from": [
-        {
-          "index": "artisans-tools",
-          "name": "Artisan's Tools",
-          "url": "/api/proficiencies/artisans-tools"
-        }
-      ]
-    },
-    "starting_equipment": [
+    "tool_proficiencies": [
       {
-        "equipment": {
-          "index": "artisans-tools",
-          "name": "Artisan's Tools",
-          "url": "/api/equipment/artisans-tools"
-        },
-        "quantity": 1
-      },
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/proficiencies/artisans-tools"
+      }
+    ],
+    "starting_equipment_options": [
       {
-        "equipment_option_set": {
-          "option_type": "string",
-          "string": "32 GP"
-        }
-      },
-      {
-        "equipment": {
-          "index": "travelers-clothes",
-          "name": "Traveler's Clothes",
-          "url": "/api/equipment/travelers-clothes"
-        },
-        "quantity": 1
-      },
-      {
-        "equipment": {
-          "index": "pouch",
-          "name": "Pouch",
-          "url": "/api/equipment/pouch"
-        },
-        "quantity": 2
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "Artisan's Tools, Traveler's Clothes, 32 GP, 2 Pouches"
+            }
+          }
+        ]
       }
     ],
     "feature": {
@@ -1362,104 +1338,279 @@
     "guild_business": {
       "choose": 1,
       "type": "guild_business",
-      "from": [
-        "Alchemists and apothecaries",
-        "Armorers, locksmiths, and finesmiths",
-        "Brewers, distillers, and vintners",
-        "Calligraphers, scribes, and scriveners",
-        "Carpenters, roofers, and plasterers",
-        "Cartographers, surveyors, and chart-makers",
-        "Cobblers and shoemakers",
-        "Cooks and bakers",
-        "Glassblowers and glaziers",
-        "Jewelers and gemcutters",
-        "Leatherworkers, skinners, and tanners",
-        "Masons and stonecutters",
-        "Painters, limners, and sign-makers",
-        "Potters and tile-makers",
-        "Shipwrights and sail-makers",
-        "Smiths and metal-forgers",
-        "Tinkers, pewterers, and casters",
-        "Wagon-makers and wheelwrights",
-        "Weavers and dyers",
-        "Woodcarvers, coopers, and bowyers"
-      ]
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Alchemists and apothecaries"
+          },
+          {
+            "option_type": "string",
+            "string": "Armorers, locksmiths, and finesmiths"
+          },
+          {
+            "option_type": "string",
+            "string": "Brewers, distillers, and vintners"
+          },
+          {
+            "option_type": "string",
+            "string": "Calligraphers, scribes, and scriveners"
+          },
+          {
+            "option_type": "string",
+            "string": "Carpenters, roofers, and plasterers"
+          },
+          {
+            "option_type": "string",
+            "string": "Cartographers, surveyors, and chart-makers"
+          },
+          {
+            "option_type": "string",
+            "string": "Cobblers and shoemakers"
+          },
+          {
+            "option_type": "string",
+            "string": "Cooks and bakers"
+          },
+          {
+            "option_type": "string",
+            "string": "Glassblowers and glaziers"
+          },
+          {
+            "option_type": "string",
+            "string": "Jewelers and gemcutters"
+          },
+          {
+            "option_type": "string",
+            "string": "Leatherworkers, skinners, and tanners"
+          },
+          {
+            "option_type": "string",
+            "string": "Masons and stonecutters"
+          },
+          {
+            "option_type": "string",
+            "string": "Painters, limners, and sign-makers"
+          },
+          {
+            "option_type": "string",
+            "string": "Potters and tile-makers"
+          },
+          {
+            "option_type": "string",
+            "string": "Shipwrights and sail-makers"
+          },
+          {
+            "option_type": "string",
+            "string": "Smiths and metal-forgers"
+          },
+          {
+            "option_type": "string",
+            "string": "Tinkers, pewterers, and casters"
+          },
+          {
+            "option_type": "string",
+            "string": "Wagon-makers and wheelwrights"
+          },
+          {
+            "option_type": "string",
+            "string": "Weavers and dyers"
+          },
+          {
+            "option_type": "string",
+            "string": "Woodcarvers, coopers, and bowyers"
+          }
+        ]
+      }
     },
     "personality_traits": {
       "choose": 2,
       "type": "personality_traits",
-      "from": [
-        "I believe that anything worth doing is worth doing right. I can't help it—I'm a perfectionist.",
-        "I'm a snob who looks down on those who can't appreciate fine art.",
-        "I always want to know how things work and what makes people tick.",
-        "I'm full of witty aphorisms and have a proverb for every occasion.",
-        "I'm rude to people who lack my commitment to hard work and fair play.",
-        "I like to talk at length about my profession.",
-        "I don't part with my money easily and will haggle tirelessly to get the best deal possible.",
-        "I'm well known for my work, and I want to make sure everyone appreciates it. I'm always taken aback when people haven't heard of me."
-      ]
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I believe that anything worth doing is worth doing right. I can't help it—I'm a perfectionist."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a snob who looks down on those who can't appreciate fine art."
+          },
+          {
+            "option_type": "string",
+            "string": "I always want to know how things work and what makes people tick."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm full of witty aphorisms and have a proverb for every occasion."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm rude to people who lack my commitment to hard work and fair play."
+          },
+          {
+            "option_type": "string",
+            "string": "I like to talk at length about my profession."
+          },
+          {
+            "option_type": "string",
+            "string": "I don't part with my money easily and will haggle tirelessly to get the best deal possible."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm well known for my work, and I want to make sure everyone appreciates it. I'm always taken aback when people haven't heard of me."
+          }
+        ]
+      }
     },
     "ideals": {
       "choose": 1,
       "type": "ideals",
-      "from": [
-        {
-          "desc": "Community. It is the duty of all civilized people to strengthen the bonds of community and the security of civilization.",
-          "alignment": "Lawful"
-        },
-        {
-          "desc": "Generosity. My talents were given to me so that I could use them to benefit the world.",
-          "alignment": "Good"
-        },
-        {
-          "desc": "Freedom. Everyone should be free to pursue his or her own livelihood.",
-          "alignment": "Chaotic"
-        },
-        {
-          "desc": "Greed. I'm only in it for the money.",
-          "alignment": "Evil"
-        },
-        {
-          "desc": "People. I'm committed to the people I care about, not to ideals.",
-          "alignment": "Neutral"
-        },
-        {
-          "desc": "Aspiration. I work hard to be the best there is at my craft.",
-          "alignment": "Any"
-        }
-      ]
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Community. It is the duty of all civilized people to strengthen the bonds of community and the security of civilization.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful",
+                "url": "/api/alignments/lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Generosity. My talents were given to me so that I could use them to benefit the world.",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good",
+                "url": "/api/alignments/good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Freedom. Everyone should be free to pursue his or her own livelihood.",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic",
+                "url": "/api/alignments/chaotic"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Greed. I'm only in it for the money.",
+            "alignments": [
+              {
+                "index": "evil",
+                "name": "Evil",
+                "url": "/api/alignments/evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "People. I'm committed to the people I care about, not to ideals.",
+            "alignments": [
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/alignments/neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Aspiration. I work hard to be the best there is at my craft.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any",
+                "url": "/api/alignments/any"
+              }
+            ]
+          }
+        ]
+      }
     },
     "bonds": {
       "choose": 1,
       "type": "bonds",
-      "from": [
-        "The workshop where I learned my trade is the most important place in the world to me.",
-        "I created a great work for someone, and then found them unworthy to receive it. I'm still looking for someone worthy.",
-        "I owe my guild a great debt for forging me into the person I am today.",
-        "I pursue wealth to secure someone's love.",
-        "One day I will return to my guild and prove that I am the greatest artisan of them all.",
-        "I will get revenge on the evil forces that destroyed my place of business and ruined my livelihood."
-      ]
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "The workshop where I learned my trade is the most important place in the world to me."
+          },
+          {
+            "option_type": "string",
+            "string": "I created a great work for someone, and then found them unworthy to receive it. I'm still looking for someone worthy."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe my guild a great debt for forging me into the person I am today."
+          },
+          {
+            "option_type": "string",
+            "string": "I pursue wealth to secure someone's love."
+          },
+          {
+            "option_type": "string",
+            "string": "One day I will return to my guild and prove that I am the greatest artisan of them all."
+          },
+          {
+            "option_type": "string",
+            "string": "I will get revenge on the evil forces that destroyed my place of business and ruined my livelihood."
+          }
+        ]
+      }
     },
     "flaws": {
       "choose": 1,
       "type": "flaws",
-      "from": [
-        "I'll do anything to get my hands on something rare or priceless.",
-        "I'm quick to assume that someone is trying to cheat me.",
-        "No one must ever learn that I once stole money from guild coffers.",
-        "I'm never satisfied with what I have—I always want more.",
-        "I would kill to acquire a noble title.",
-        "I'm horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I'm surrounded by rivals."
-      ]
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'll do anything to get my hands on something rare or priceless."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm quick to assume that someone is trying to cheat me."
+          },
+          {
+            "option_type": "string",
+            "string": "No one must ever learn that I once stole money from guild coffers."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm never satisfied with what I have—I always want more."
+          },
+          {
+            "option_type": "string",
+            "string": "I would kill to acquire a noble title."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I'm surrounded by rivals."
+          }
+        ]
+      }
     },
     "url": "/api/backgrounds/artisan"
-  },
+  },  
   {
     "index": "astral-drifter",
     "name": "Astral Drifter",
-    "source": "AAG",
-    "page": 7,
     "starting_proficiencies": [
       {
         "index": "skill-insight",
@@ -1556,46 +1707,120 @@
     "divine_contact_table": {
       "choose": 1,
       "type": "divine_contact",
-      "from": [
-        "Corellon, god of art and magic (chaotic good)",
-        "Tymora, god of good fortune (chaotic good)",
-        "Fharlanghn, god of horizons and travel (neutral good)",
-        "Istus, god of fate and destiny (neutral)",
-        "Nuada, god of war and warriors (neutral)",
-        "Zivilyn, god of wisdom (neutral)",
-        "Arawn, god of life and death (neutral evil)",
-        "Hecate, god of magic and moons (chaotic evil)",
-        "Celestian, god of stars and wanderers (neutral)",
-        "Ptah, god of knowledge and secrets (lawful neutral)"
-      ]
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Corellon, god of art and magic (chaotic good)"
+          },
+          {
+            "option_type": "string",
+            "string": "Tymora, god of good fortune (chaotic good)"
+          },
+          {
+            "option_type": "string",
+            "string": "Fharlanghn, god of horizons and travel (neutral good)"
+          },
+          {
+            "option_type": "string",
+            "string": "Istus, god of fate and destiny (neutral)"
+          },
+          {
+            "option_type": "string",
+            "string": "Nuada, god of war and warriors (neutral)"
+          },
+          {
+            "option_type": "string",
+            "string": "Zivilyn, god of wisdom (neutral)"
+          },
+          {
+            "option_type": "string",
+            "string": "Arawn, god of life and death (neutral evil)"
+          },
+          {
+            "option_type": "string",
+            "string": "Hecate, god of magic and moons (chaotic evil)"
+          },
+          {
+            "option_type": "string",
+            "string": "Celestian, god of stars and wanderers (neutral)"
+          },
+          {
+            "option_type": "string",
+            "string": "Ptah, god of knowledge and secrets (lawful neutral)"
+          }
+        ]
+      }
     },
     "personality_traits": {
       "choose": 2,
       "type": "personality_traits",
-      "from": []
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I feel most at peace while drifting among the stars."
+          },
+          {
+            "option_type": "string",
+            "string": "I am calm and collected, for I have seen what lies beyond time."
+          }
+        ]
+      }
     },
     "ideals": {
       "choose": 1,
       "type": "ideals",
-      "from": []
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Knowledge. The secrets of the cosmos must be uncovered.",
+            "alignments": [
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/alignments/neutral"
+              }
+            ]
+          }
+        ]
+      }
     },
     "bonds": {
       "choose": 1,
       "type": "bonds",
-      "from": []
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I once received a cosmic vision, and I seek to understand its meaning."
+          }
+        ]
+      }
     },
     "flaws": {
       "choose": 1,
       "type": "flaws",
-      "from": []
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I am disconnected from the world around me, often lost in contemplation."
+          }
+        ]
+      }
     },
     "url": "/api/backgrounds/astral-drifter"
   },  
   {
     "index": "athlete",
     "name": "Athlete",
-    "source": "MOT",
-    "page": 31,
     "starting_proficiencies": [
       {
         "index": "skill-acrobatics",
@@ -1623,28 +1848,1199 @@
         "url": "/api/proficiencies/vehicles-land"
       }
     ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "Bronze Discus or Leather Ball, Lucky Charm or Past Trophy, Traveler's Clothes, 10 GP, Pouch"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Echoes of Victory",
+      "desc": [
+        "You have attracted admiration among spectators, fellow athletes, and trainers in the region that hosted your past athletic victories. When visiting any settlement within 100 miles of where you grew up, there is a 50 percent chance you can find someone there who admires you and is willing to provide information or temporary shelter.",
+        "Between adventures, you might compete in athletic events sufficient enough to maintain a comfortable lifestyle, as per the 'Practicing a Profession' downtime activity in chapter 8 of the Player's Handbook."
+      ]
+    },
+    "special": {
+      "name": "Favored Event",
+      "desc": [
+        "While many athletes practice various games and events, most excel at a single form of competition. Roll or choose from the options in the Favored Event table to determine the athletic event in which you excel."
+      ],
+      "options": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Marathon"
+          },
+          {
+            "option_type": "string",
+            "string": "Long-distance running"
+          },
+          {
+            "option_type": "string",
+            "string": "Wrestling"
+          },
+          {
+            "option_type": "string",
+            "string": "Boxing"
+          },
+          {
+            "option_type": "string",
+            "string": "Chariot or horse race"
+          },
+          {
+            "option_type": "string",
+            "string": "Pankration (mixed unarmed combat)"
+          },
+          {
+            "option_type": "string",
+            "string": "Hoplite race (racing in full armor with a unit)"
+          },
+          {
+            "option_type": "string",
+            "string": "Pentathlon (running, long jump, discus, javelin, wrestling)"
+          }
+        ]
+      }
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I feel most at peace during physical exertion, be it exercise or battle."
+          },
+          {
+            "option_type": "string",
+            "string": "I don't like to sit idle."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a daily exercise routine that I refuse to break."
+          },
+          {
+            "option_type": "string",
+            "string": "Obstacles exist to be overcome."
+          },
+          {
+            "option_type": "string",
+            "string": "When I see others struggling, I offer to help."
+          },
+          {
+            "option_type": "string",
+            "string": "I love to trade banter and gibes."
+          },
+          {
+            "option_type": "string",
+            "string": "Anything worth doing is worth doing best."
+          },
+          {
+            "option_type": "string",
+            "string": "I get irritated if people praise someone else and not me."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Competition. I strive to test myself in all things.",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic",
+                "url": "/api/alignments/chaotic"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Triumph. The best part of winning is seeing my rivals brought low.",
+            "alignments": [
+              {
+                "index": "evil",
+                "name": "Evil",
+                "url": "/api/alignments/evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Camaraderie. The strongest bonds are forged through struggle.",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good",
+                "url": "/api/alignments/good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "People. I strive to inspire my spectators.",
+            "alignments": [
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/alignments/neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Tradition. Every game has rules, and the playing field must be level.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful",
+                "url": "/api/alignments/lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Growth. Lessons hide in victory and defeat.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any",
+                "url": "/api/alignments/any"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "My teammates are my family."
+          },
+          {
+            "option_type": "string",
+            "string": "I will overcome a rival and prove myself their better."
+          },
+          {
+            "option_type": "string",
+            "string": "My mistake got someone hurt. I'll never make that mistake again."
+          },
+          {
+            "option_type": "string",
+            "string": "I will be the best for the honor and glory of my home."
+          },
+          {
+            "option_type": "string",
+            "string": "The person who trained me is the most important person in my world."
+          },
+          {
+            "option_type": "string",
+            "string": "I strive to live up to a specific hero's example."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I indulge in a habit that threatens my reputation or my health."
+          },
+          {
+            "option_type": "string",
+            "string": "I'll do absolutely anything to win."
+          },
+          {
+            "option_type": "string",
+            "string": "I ignore anyone who doesn't compete and anyone who loses to me."
+          },
+          {
+            "option_type": "string",
+            "string": "I have lingering pain from old injuries."
+          },
+          {
+            "option_type": "string",
+            "string": "Any defeat or failure on my part is because my opponent cheated."
+          },
+          {
+            "option_type": "string",
+            "string": "I must be the captain of any group I join."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/athlete"
+  },
+  {
+    "index": "azorius-functionary",
+    "name": "Azorius Functionary",
+    "starting_proficiencies": [
+      {
+        "index": "skill-insight",
+        "name": "Skill: Insight",
+        "url": "/api/proficiencies/skill-insight"
+      },
+      {
+        "index": "skill-intimidation",
+        "name": "Skill: Intimidation",
+        "url": "/api/proficiencies/skill-intimidation"
+      }
+    ],
+    "language_options": {
+      "choose": 2,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "Azorius Insignia, Scroll (text of a law important to you), Bottle of Blue Ink, Pen, Set of Fine Clothes, Pouch (Azorius-minted 1-zino coins), 10 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "Legal Authority",
+      "desc": [
+        "You have the authority to enforce the laws of Ravnica, and that status inspires a certain amount of respect and even fear in the populace. People mind their manners in your presence and avoid drawing your attention; they assume you have the right to be wherever you are. Showing your Azorius insignia gets you an audience with anyone you want to talk to (though it might cause more problems than it solves when you're dealing with incorrigible lawbreakers). If you abuse this privilege, though, you can get in serious trouble with your superiors and even be stripped of your position."
+      ]
+    },
+    "special": {
+      "name": "Azorius Guild Spells",
+      "desc": [
+        "Prerequisite: Spellcasting or Pact Magic class feature.",
+        "For you, the spells on the Azorius Guild Spells table are added to the spell list of your spellcasting class. (If you are a multiclass character with multiple spell lists, these spells are added to all of them.)",
+        "Your magic often takes the form of blue or golden runes floating and glowing in the air in circular patterns or of shimmering azure barriers of magical energy. If you cast ensnaring strike, for example, the vines created by the spell might appear as rune-inscribed glowing bands that wrap around the target and hold it in place."
+      ],
+      "spells": {
+        "cantrip": [
+          {
+            "index": "friends",
+            "name": "Friends",
+            "url": "/api/spells/friends"
+          },
+          {
+            "index": "message",
+            "name": "Message",
+            "url": "/api/spells/message"
+          }
+        ],
+        "1st": [
+          {
+            "index": "command",
+            "name": "Command",
+            "url": "/api/spells/command"
+          },
+          {
+            "index": "ensnaring-strike",
+            "name": "Ensnaring Strike",
+            "url": "/api/spells/ensnaring-strike"
+          }
+        ],
+        "2nd": [
+          {
+            "index": "arcane-lock",
+            "name": "Arcane Lock",
+            "url": "/api/spells/arcane-lock"
+          },
+          {
+            "index": "calm-emotions",
+            "name": "Calm Emotions",
+            "url": "/api/spells/calm-emotions"
+          },
+          {
+            "index": "hold-person",
+            "name": "Hold Person",
+            "url": "/api/spells/hold-person"
+          }
+        ],
+        "3rd": [
+          {
+            "index": "clairvoyance",
+            "name": "Clairvoyance",
+            "url": "/api/spells/clairvoyance"
+          },
+          {
+            "index": "counterspell",
+            "name": "Counterspell",
+            "url": "/api/spells/counterspell"
+          }
+        ],
+        "4th": [
+          {
+            "index": "compulsion",
+            "name": "Compulsion",
+            "url": "/api/spells/compulsion"
+          },
+          {
+            "index": "divination",
+            "name": "Divination",
+            "url": "/api/spells/divination"
+          }
+        ],
+        "5th": [
+          {
+            "index": "dominate-person",
+            "name": "Dominate Person",
+            "url": "/api/spells/dominate-person"
+          }
+        ]
+      }
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I try never to let my judgment become clouded by emotion."
+          },
+          {
+            "option_type": "string",
+            "string": "I have infinite patience with the dolts and boors I'm forced to deal with every day."
+          },
+          {
+            "option_type": "string",
+            "string": "When I give an order, I expect it to be obeyed."
+          },
+          {
+            "option_type": "string",
+            "string": "I just want things the way I like them: neat, orderly, and clean."
+          },
+          {
+            "option_type": "string",
+            "string": "No wrongdoing can escape my watchful gaze."
+          },
+          {
+            "option_type": "string",
+            "string": "I always say exactly what I mean, no matter how many words it takes to communicate the particular nuance I am attempting to convey."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm very literal and don't appreciate metaphor or sarcasm."
+          },
+          {
+            "option_type": "string",
+            "string": "I never change my mind once it's made up."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Guild. My guild is all that really matters.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any",
+                "url": "/api/alignments/any"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Order. The law is meant to ensure that the gears of society turn smoothly and quietly.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful",
+                "url": "/api/alignments/lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Peace. The ultimate object of the law is to remove violence from society.",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good",
+                "url": "/api/alignments/good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Compliance. Coercion is a fine way of ensuring that the laws are obeyed.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful",
+                "url": "/api/alignments/lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Legislation. The law embodies excellence in its precision and detail.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful",
+                "url": "/api/alignments/lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Punishment. A public display of consequences is an excellent deterrent for other criminals.",
+            "alignments": [
+              {
+                "index": "evil",
+                "name": "Evil",
+                "url": "/api/alignments/evil"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I am beholden to an Azorius arrester who captured the criminal who killed my parents, saving me from the same fate."
+          },
+          {
+            "option_type": "string",
+            "string": "I hope one day to write the laws, not just enforce them."
+          },
+          {
+            "option_type": "string",
+            "string": "I tried and failed to prevent a murder, and I have sworn to find and arrest the perpetrator."
+          },
+          {
+            "option_type": "string",
+            "string": "I successfully prevented a murder, and the would-be perpetrator wants me dead."
+          },
+          {
+            "option_type": "string",
+            "string": "One of my parents was prominent in the guild, and I resent constantly being compared to that standard."
+          },
+          {
+            "option_type": "string",
+            "string": "I've modeled my career after a highly respected lawmage or arrester, but I fear that my role model might be involved in something illegal."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'm unable to distinguish between the letter and the spirit of the law."
+          },
+          {
+            "option_type": "string",
+            "string": "I seem like a harsh judge to others, but I judge myself most harshly of all."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a secret, illegal vice."
+          },
+          {
+            "option_type": "string",
+            "string": "I was traumatized by witnessing a crime as a child."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm incapable of deception."
+          },
+          {
+            "option_type": "string",
+            "string": "I wish I had joined the Boros, but I fear they'd never accept me."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/azorius-functionary"
+  },
+  {
+    "index": "charlatan",
+    "name": "Charlatan",
+    "ability_scores": [
+      "Dexterity",
+      "Constitution",
+      "Charisma"
+    ],
+    "feat": {
+      "name": "Skilled",
+      "url": "/api/feats/skilled"
+    },
+    "starting_proficiencies": [
+      {
+        "index": "skill-deception",
+        "name": "Skill: Deception",
+        "url": "/api/proficiencies/skill-deception"
+      },
+      {
+        "index": "skill-sleight-of-hand",
+        "name": "Skill: Sleight of Hand",
+        "url": "/api/proficiencies/skill-sleight-of-hand"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "index": "forgery-kit",
+        "name": "Forgery Kit",
+        "url": "/api/proficiencies/forgery-kit"
+      },
+      {
+        "index": "disguise-kit",
+        "name": "Disguise Kit",
+        "url": "/api/proficiencies/disguise-kit"
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "(A) Forgery Kit, Costume, Fine Clothes, 15 GP"
+            }
+          },
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "(B) 50 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "False Identity",
+      "desc": [
+        "You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona.",
+        "Additionally, you can forge documents including official papers and personal letters, as long as you have seen an example of the kind of document or the handwriting you are trying to copy."
+      ]
+    },
+    "special": {
+      "name": "Favorite Schemes",
+      "desc": [
+        "Every charlatan has an angle they use in preference to other schemes. Choose a favorite scam or roll on the table below."
+      ],
+      "options": [
+        {
+          "option_type": "string",
+          "string": "I cheat at games of chance."
+        },
+        {
+          "option_type": "string",
+          "string": "I shave coins or forge documents."
+        },
+        {
+          "option_type": "string",
+          "string": "I insinuate myself into people's lives to prey on their weakness and secure their fortunes."
+        },
+        {
+          "option_type": "string",
+          "string": "I put on new identities like clothes."
+        },
+        {
+          "option_type": "string",
+          "string": "I run sleight-of-hand cons on street corners."
+        },
+        {
+          "option_type": "string",
+          "string": "I convince people that worthless junk is worth their hard-earned money."
+        }
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I fall in and out of love easily, and am always pursuing someone."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a joke for every occasion, especially occasions where humor is inappropriate."
+          },
+          {
+            "option_type": "string",
+            "string": "Flattery is my preferred trick for getting what I want."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a born gambler who can't resist taking a risk for a potential payoff."
+          },
+          {
+            "option_type": "string",
+            "string": "I lie about almost everything, even when there's no reason to."
+          },
+          {
+            "option_type": "string",
+            "string": "Sarcasm and insults are my weapons of choice."
+          },
+          {
+            "option_type": "string",
+            "string": "I keep multiple holy symbols on me and invoke whatever deity might come in useful at any given moment."
+          },
+          {
+            "option_type": "string",
+            "string": "I pocket anything I see that might have some value."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Independence. I am a free spirit—no one tells me what to do.",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic",
+                "url": "/api/alignments/chaotic"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Fairness. I never target people who can't afford to lose a few coins.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful",
+                "url": "/api/alignments/lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Charity. I distribute the money I acquire to the people who really need it.",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good",
+                "url": "/api/alignments/good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Creativity. I never run the same con twice.",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic",
+                "url": "/api/alignments/chaotic"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Friendship. Material goods come and go. Bonds of friendship last forever.",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good",
+                "url": "/api/alignments/good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Aspiration. I'm determined to make something of myself.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any",
+                "url": "/api/alignments/any"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I fleeced the wrong person and must work to ensure that this individual never crosses paths with me or those I care about."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe everything to my mentor—a horrible person who's probably rotting in jail somewhere."
+          },
+          {
+            "option_type": "string",
+            "string": "Somewhere out there, I have a child who doesn't know me. I'm making the world better for him or her."
+          },
+          {
+            "option_type": "string",
+            "string": "I come from a noble family, and one day I'll reclaim my lands and title from those who stole them from me."
+          },
+          {
+            "option_type": "string",
+            "string": "A powerful person killed someone I love. Some day soon, I'll have my revenge."
+          },
+          {
+            "option_type": "string",
+            "string": "I swindled and ruined a person who didn't deserve it. I seek to atone for my misdeeds but might never be able to forgive myself."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I can't resist a pretty face."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm always in debt. I spend my ill-gotten gains on decadent luxuries faster than I bring them in."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm convinced that no one could ever fool me the way I fool others."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm too greedy for my own good. I can't resist taking a risk if there's money involved."
+          },
+          {
+            "option_type": "string",
+            "string": "I can't resist swindling people who are more powerful than me."
+          },
+          {
+            "option_type": "string",
+            "string": "I hate to admit it and will hate myself for it, but I'll run and preserve my own hide if the going gets tough."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/charlatan"
+  },
+  {
+    "index": "charlatan-baldurs-gate",
+    "name": "Charlatan (Baldur's Gate)",
+    "starting_proficiencies": [
+      {
+        "index": "skill-deception",
+        "name": "Skill: Deception",
+        "url": "/api/proficiencies/skill-deception"
+      },
+      {
+        "index": "skill-sleight-of-hand",
+        "name": "Skill: Sleight of Hand",
+        "url": "/api/proficiencies/skill-sleight-of-hand"
+      }
+    ],
+    "tool_proficiencies": [
+      {
+        "index": "disguise-kit",
+        "name": "Disguise Kit",
+        "url": "/api/proficiencies/disguise-kit"
+      },
+      {
+        "index": "forgery-kit",
+        "name": "Forgery Kit",
+        "url": "/api/proficiencies/forgery-kit"
+      }
+    ],
     "starting_equipment": [
       {
         "equipment": {
-          "index": "bronze-discus",
-          "name": "Bronze Discus or Leather Ball",
-          "url": "/api/equipment/bronze-discus"
+          "index": "fine-clothes",
+          "name": "Set of Fine Clothes",
+          "url": "/api/equipment/fine-clothes"
         },
         "quantity": 1
       },
       {
         "equipment": {
-          "index": "lucky-charm",
-          "name": "Lucky Charm or Past Trophy",
-          "url": "/api/equipment/lucky-charm"
+          "index": "disguise-kit",
+          "name": "Disguise Kit",
+          "url": "/api/equipment/disguise-kit"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment_option_set": {
+          "option_type": "string",
+          "string": "Tools of the con of your choice (ten stoppered bottles filled with colored liquid, a set of weighted dice, a deck of marked cards, or a signet ring of an imaginary duke)"
+        }
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Belt Pouch",
+          "url": "/api/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_option_set": {
+              "option_type": "string",
+              "string": "15 GP"
+            }
+          }
+        ]
+      }
+    ],
+    "feature": {
+      "name": "False Identity",
+      "desc": [
+        "You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona.",
+        "Additionally, you can forge documents including official papers and personal letters, as long as you have seen an example of the kind of document or the handwriting you are trying to copy."
+      ]
+    },
+    "baldurs_gate_feature": {
+      "name": "Long-Lost Heir",
+      "desc": [
+        "The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate—though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.",
+        "You're well-versed in the mannerisms and idiosyncrasies of Baldurian patriars and other nobles, imitating them smoothly enough to convince even the snootiest family heads of your authenticity. You're skilled at posing as the long-lost heir to some imaginary or extinguished patriar lineage.",
+        "Because of your skill in passing yourself off as a patriar, you have a Watch token that allows you alone into the Upper City of Baldur's Gate. You might be able to bluff others through with you, or even convince members of the Watch that you're a patriar. However, any true test of your authenticity is likely to reveal your deception."
+      ]
+    },
+    "special": {
+      "name": "Favorite Schemes",
+      "desc": [
+        "Every charlatan has an angle they use in preference to other schemes. Choose a favorite scam or roll on the table below."
+      ],
+      "options": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I cheat at games of chance."
+          },
+          {
+            "option_type": "string",
+            "string": "I shave coins or forge documents."
+          },
+          {
+            "option_type": "string",
+            "string": "I insinuate myself into people's lives to prey on their weakness and secure their fortunes."
+          },
+          {
+            "option_type": "string",
+            "string": "I put on new identities like clothes."
+          },
+          {
+            "option_type": "string",
+            "string": "I run sleight-of-hand cons on street corners."
+          },
+          {
+            "option_type": "string",
+            "string": "I convince people that worthless junk is worth their hard-earned money."
+          }
+        ]
+      }
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I fall in and out of love easily, and am always pursuing someone."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a joke for every occasion, especially occasions where humor is inappropriate."
+          },
+          {
+            "option_type": "string",
+            "string": "Flattery is my preferred trick for getting what I want."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a born gambler who can't resist taking a risk for a potential payoff."
+          },
+          {
+            "option_type": "string",
+            "string": "I lie about almost everything, even when there's no reason to."
+          },
+          {
+            "option_type": "string",
+            "string": "Sarcasm and insults are my weapons of choice."
+          },
+          {
+            "option_type": "string",
+            "string": "I keep multiple holy symbols on me and invoke whatever deity might come in useful at any given moment."
+          },
+          {
+            "option_type": "string",
+            "string": "I pocket anything I see that might have some value."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Independence. I am a free spirit—no one tells me what to do.",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic",
+                "url": "/api/alignments/chaotic"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Fairness. I never target people who can't afford to lose a few coins.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful",
+                "url": "/api/alignments/lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Charity. I distribute the money I acquire to the people who really need it.",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good",
+                "url": "/api/alignments/good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Creativity. I never run the same con twice.",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic",
+                "url": "/api/alignments/chaotic"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Friendship. Material goods come and go. Bonds of friendship last forever.",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good",
+                "url": "/api/alignments/good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Aspiration. I'm determined to make something of myself.",
+            "alignments": [
+              {
+                "index": "any",
+                "name": "Any",
+                "url": "/api/alignments/any"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I fleeced the wrong person and must work to ensure that this individual never crosses paths with me or those I care about."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe everything to my mentor—a horrible person who's probably rotting in jail somewhere."
+          },
+          {
+            "option_type": "string",
+            "string": "Somewhere out there, I have a child who doesn't know me. I'm making the world better for him or her."
+          },
+          {
+            "option_type": "string",
+            "string": "I come from a noble family, and one day I'll reclaim my lands and title from those who stole them from me."
+          },
+          {
+            "option_type": "string",
+            "string": "A powerful person killed someone I love. Some day soon, I'll have my revenge."
+          },
+          {
+            "option_type": "string",
+            "string": "I swindled and ruined a person who didn't deserve it. I seek to atone for my misdeeds but might never be able to forgive myself."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I can't resist a pretty face."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm always in debt. I spend my ill-gotten gains on decadent luxuries faster than I bring them in."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm convinced that no one could ever fool me the way I fool others."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm too greedy for my own good. I can't resist taking a risk if there's money involved."
+          },
+          {
+            "option_type": "string",
+            "string": "I can't resist swindling people who are more powerful than me."
+          },
+          {
+            "option_type": "string",
+            "string": "I hate to admit it and will hate myself for it, but I'll run and preserve my own hide if the going gets tough."
+          }
+        ]
+      }
+    },
+    "url": "/api/backgrounds/charlatan-baldurs-gate"
+  },
+  {
+    "index": "city-watch-investigator",
+    "name": "City Watch (Investigator)",
+    "starting_proficiencies": [
+      {
+        "index": "skill-athletics",
+        "name": "Skill: Athletics",
+        "url": "/api/proficiencies/skill-athletics"
+      },
+      {
+        "index": "skill-insight",
+        "name": "Skill: Insight",
+        "url": "/api/proficiencies/skill-insight"
+      },
+      {
+        "index": "skill-investigation",
+        "name": "Skill: Investigation",
+        "url": "/api/proficiencies/skill-investigation"
+      }
+    ],
+    "language_options": {
+      "choose": 2,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "uniform",
+          "name": "Uniform (indicative of your rank and unit)",
+          "url": "/api/equipment/uniform"
         },
         "quantity": 1
       },
       {
         "equipment": {
-          "index": "travelers-clothes",
-          "name": "Traveler's Clothes",
-          "url": "/api/equipment/travelers-clothes"
+          "index": "horn",
+          "name": "Horn (to summon help)",
+          "url": "/api/equipment/horn"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "manacles",
+          "name": "Set of Manacles",
+          "url": "/api/equipment/manacles"
         },
         "quantity": 1
       },
@@ -1672,279 +3068,200 @@
       }
     ],
     "feature": {
-      "name": "Echoes of Victory",
+      "name": "Watcher's Eye",
       "desc": [
-        "You have attracted admiration among spectators, fellow athletes, and trainers in the region that hosted your past athletic victories. When visiting any settlement within 100 miles of where you grew up, there is a 50 percent chance you can find someone there who admires you and is willing to provide information or temporary shelter.",
-        "Between adventures, you might compete in athletic events sufficient enough to maintain a comfortable lifestyle, as per the 'Practicing a Profession' downtime activity in chapter 8 of the Player's Handbook."
-      ]
-    },
-    "special": {
-      "name": "Favored Event",
-      "desc": [
-        "While many athletes practice various games and events, most excel at a single form of competition. Roll or choose from the options in the Favored Event table to determine the athletic event in which you excel."
-      ],
-      "options": [
-        "Marathon",
-        "Long-distance running",
-        "Wrestling",
-        "Boxing",
-        "Chariot or horse race",
-        "Pankration (mixed unarmed combat)",
-        "Hoplite race (racing in full armor with a unit)",
-        "Pentathlon (running, long jump, discus, javelin, wrestling)"
+        "Your experience in enforcing the law, and dealing with lawbreakers, gives you a feel for local laws and criminals.",
+        "You can easily find the local outpost of the watch or a similar organization, and just as easily pick out the dens of criminal activity in a community, although you're more likely to be welcome in the former locations rather than the latter."
       ]
     },
     "personality_traits": {
       "choose": 2,
       "type": "personality_traits",
-      "from": [
-        "I feel most at peace during physical exertion, be it exercise or battle.",
-        "I don't like to sit idle.",
-        "I have a daily exercise routine that I refuse to break.",
-        "Obstacles exist to be overcome.",
-        "When I see others struggling, I offer to help.",
-        "I love to trade banter and gibes.",
-        "Anything worth doing is worth doing best.",
-        "I get irritated if people praise someone else and not me."
-      ]
-    },
-    "ideals": {
-      "choose": 1,
-      "type": "ideals",
-      "from": [
-        {
-          "desc": "Competition. I strive to test myself in all things.",
-          "alignment": "Chaotic"
-        },
-        {
-          "desc": "Triumph. The best part of winning is seeing my rivals brought low.",
-          "alignment": "Evil"
-        },
-        {
-          "desc": "Camaraderie. The strongest bonds are forged through struggle.",
-          "alignment": "Good"
-        },
-        {
-          "desc": "People. I strive to inspire my spectators.",
-          "alignment": "Neutral"
-        },
-        {
-          "desc": "Tradition. Every game has rules, and the playing field must be level.",
-          "alignment": "Lawful"
-        },
-        {
-          "desc": "Growth. Lessons hide in victory and defeat.",
-          "alignment": "Any"
-        }
-      ]
-    },
-    "bonds": {
-      "choose": 1,
-      "type": "bonds",
-      "from": [
-        "My teammates are my family.",
-        "I will overcome a rival and prove myself their better.",
-        "My mistake got someone hurt. I'll never make that mistake again.",
-        "I will be the best for the honor and glory of my home.",
-        "The person who trained me is the most important person in my world.",
-        "I strive to live up to a specific hero's example."
-      ]
-    },
-    "flaws": {
-      "choose": 1,
-      "type": "flaws",
-      "from": [
-        "I indulge in a habit that threatens my reputation or my health.",
-        "I'll do absolutely anything to win.",
-        "I ignore anyone who doesn't compete and anyone who loses to me.",
-        "I have lingering pain from old injuries.",
-        "Any defeat or failure on my part is because my opponent cheated.",
-        "I must be the captain of any group I join."
-      ]
-    },
-    "url": "/api/backgrounds/athlete"
-  },
-  {
-    "index": "azorius-functionary",
-    "name": "Azorius Functionary",
-    "source": "GGR",
-    "page": 33,
-    "starting_proficiencies": [
-      {
-        "index": "skill-insight",
-        "name": "Skill: Insight",
-        "url": "/api/proficiencies/skill-insight"
-      },
-      {
-        "index": "skill-intimidation",
-        "name": "Skill: Intimidation",
-        "url": "/api/proficiencies/skill-intimidation"
-      }
-    ],
-    "language_options": {
-      "choose": 2,
-      "type": "languages",
       "from": {
-        "option_set_type": "resource_list",
-        "resource_list_url": "/api/languages"
-      }
-    },
-    "starting_equipment": [
-      {
-        "equipment": {
-          "index": "azorius-insignia",
-          "name": "Azorius Insignia",
-          "url": "/api/equipment/azorius-insignia"
-        },
-        "quantity": 1
-      },
-      {
-        "equipment": {
-          "index": "scroll-law-text",
-          "name": "Scroll (text of a law important to you)",
-          "url": "/api/equipment/scroll-law-text"
-        },
-        "quantity": 1
-      },
-      {
-        "equipment": {
-          "index": "ink-bottle",
-          "name": "Bottle of Blue Ink",
-          "url": "/api/equipment/ink-bottle"
-        },
-        "quantity": 1
-      },
-      {
-        "equipment": {
-          "index": "pen",
-          "name": "Pen",
-          "url": "/api/equipment/pen"
-        },
-        "quantity": 1
-      },
-      {
-        "equipment": {
-          "index": "fine-clothes",
-          "name": "Set of Fine Clothes",
-          "url": "/api/equipment/fine-clothes"
-        },
-        "quantity": 1
-      },
-      {
-        "equipment": {
-          "index": "pouch",
-          "name": "Pouch (Azorius-minted 1-zino coins)",
-          "url": "/api/equipment/pouch"
-        },
-        "quantity": 1
-      }
-    ],
-    "starting_equipment_options": [
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
+        "option_set_type": "options_array",
+        "options": [
           {
-            "equipment_option_set": {
-              "option_type": "string",
-              "string": "10 GP"
-            }
+            "option_type": "string",
+            "string": "I’m always polite and respectful."
+          },
+          {
+            "option_type": "string",
+            "string": "I’m haunted by memories of past crimes and wrongdoings I couldn’t prevent."
+          },
+          {
+            "option_type": "string",
+            "string": "I face problems head-on. A simple, direct solution is the best path to success."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a strong sense of fair play and always try to find the most equitable solution to arguments."
+          },
+          {
+            "option_type": "string",
+            "string": "I’m confident in my abilities as an enforcer of the law."
+          },
+          {
+            "option_type": "string",
+            "string": "I’m always on the lookout for criminal activity or suspicious behavior."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a strict code of conduct and never bend the rules."
+          },
+          {
+            "option_type": "string",
+            "string": "I believe in justice and will do everything in my power to maintain peace."
           }
         ]
       }
-    ],
-    "feature": {
-      "name": "Legal Authority",
-      "desc": [
-        "You have the authority to enforce the laws of Ravnica, and that status inspires a certain amount of respect and even fear in the populace. People mind their manners in your presence and avoid drawing your attention; they assume you have the right to be wherever you are. Showing your Azorius insignia gets you an audience with anyone you want to talk to (though it might cause more problems than it solves when you're dealing with incorrigible lawbreakers). If you abuse this privilege, though, you can get in serious trouble with your superiors and even be stripped of your position."
-      ]
-    },
-    "special": {
-      "name": "Azorius Guild Spells",
-      "desc": [
-        "Prerequisite: Spellcasting or Pact Magic class feature.",
-        "For you, the spells on the Azorius Guild Spells table are added to the spell list of your spellcasting class. (If you are a multiclass character with multiple spell lists, these spells are added to all of them.)",
-        "Your magic often takes the form of blue or golden runes floating and glowing in the air in circular patterns or of shimmering azure barriers of magical energy. If you cast ensnaring strike, for example, the vines created by the spell might appear as rune-inscribed glowing bands that wrap around the target and hold it in place."
-      ],
-      "spells": {
-        "cantrip": ["friends", "message"],
-        "1st": ["command", "ensnaring strike"],
-        "2nd": ["arcane lock", "calm emotions", "hold person"],
-        "3rd": ["clairvoyance", "counterspell"],
-        "4th": ["compulsion", "divination"],
-        "5th": ["dominate person"]
-      }
-    },
-    "personality_traits": {
-      "choose": 2,
-      "type": "personality_traits",
-      "from": [
-        "I try never to let my judgment become clouded by emotion.",
-        "I have infinite patience with the dolts and boors I'm forced to deal with every day.",
-        "When I give an order, I expect it to be obeyed.",
-        "I just want things the way I like them: neat, orderly, and clean.",
-        "No wrongdoing can escape my watchful gaze.",
-        "I always say exactly what I mean, no matter how many words it takes to communicate the particular nuance I am attempting to convey.",
-        "I'm very literal and don't appreciate metaphor or sarcasm.",
-        "I never change my mind once it's made up."
-      ]
     },
     "ideals": {
       "choose": 1,
       "type": "ideals",
-      "from": [
-        {
-          "desc": "Guild. My guild is all that really matters.",
-          "alignment": "Any"
-        },
-        {
-          "desc": "Order. The law is meant to ensure that the gears of society turn smoothly and quietly.",
-          "alignment": "Lawful"
-        },
-        {
-          "desc": "Peace. The ultimate object of the law is to remove violence from society.",
-          "alignment": "Good"
-        },
-        {
-          "desc": "Compliance. Coercion is a fine way of ensuring that the laws are obeyed.",
-          "alignment": "Lawful"
-        },
-        {
-          "desc": "Legislation. The law embodies excellence in its precision and detail.",
-          "alignment": "Lawful"
-        },
-        {
-          "desc": "Punishment. A public display of consequences is an excellent deterrent for other criminals.",
-          "alignment": "Evil"
-        }
-      ]
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Peace. The law exists to maintain peace and order in the community.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful",
+                "url": "/api/alignments/lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Justice. Those who break the law deserve to face the consequences.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful",
+                "url": "/api/alignments/lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Honor. I believe in fairness and the equal application of the law to all.",
+            "alignments": [
+              {
+                "index": "good",
+                "name": "Good",
+                "url": "/api/alignments/good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Vigilance. I must remain ever alert to protect my community from threats.",
+            "alignments": [
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/alignments/neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Duty. It’s my duty to protect and serve my fellow citizens.",
+            "alignments": [
+              {
+                "index": "lawful",
+                "name": "Lawful",
+                "url": "/api/alignments/lawful"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Freedom. People should be free to live their lives without fear of crime.",
+            "alignments": [
+              {
+                "index": "chaotic",
+                "name": "Chaotic",
+                "url": "/api/alignments/chaotic"
+              }
+            ]
+          }
+        ]
+      }
     },
     "bonds": {
       "choose": 1,
       "type": "bonds",
-      "from": [
-        "I am beholden to an Azorius arrester who captured the criminal who killed my parents, saving me from the same fate.",
-        "I hope one day to write the laws, not just enforce them.",
-        "I tried and failed to prevent a murder, and I have sworn to find and arrest the perpetrator.",
-        "I successfully prevented a murder, and the would-be perpetrator wants me dead.",
-        "One of my parents was prominent in the guild, and I resent constantly being compared to that standard.",
-        "I've modeled my career after a highly respected lawmage or arrester, but I fear that my role model might be involved in something illegal."
-      ]
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I’m committed to my comrades in the watch; they’re like family to me."
+          },
+          {
+            "option_type": "string",
+            "string": "My city or town is my home, and I’ll do whatever it takes to defend it."
+          },
+          {
+            "option_type": "string",
+            "string": "I swore an oath to uphold the law, and I intend to keep it."
+          },
+          {
+            "option_type": "string",
+            "string": "There’s a criminal I once apprehended who escaped; I must bring them to justice."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe my life to a fellow watch member who saved me during a dangerous encounter."
+          },
+          {
+            "option_type": "string",
+            "string": "I’m driven to protect the innocent and bring peace to my community."
+          }
+        ]
+      }
     },
     "flaws": {
       "choose": 1,
       "type": "flaws",
-      "from": [
-        "I'm unable to distinguish between the letter and the spirit of the law.",
-        "I seem like a harsh judge to others, but I judge myself most harshly of all.",
-        "I have a secret, illegal vice.",
-        "I was traumatized by witnessing a crime as a child.",
-        "I'm incapable of deception.",
-        "I wish I had joined the Boros, but I fear they'd never accept me."
-      ]
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I follow orders, even if I think they’re morally wrong."
+          },
+          {
+            "option_type": "string",
+            "string": "I’m stubborn and refuse to back down in a dispute."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a reputation for being overly harsh when dealing with lawbreakers."
+          },
+          {
+            "option_type": "string",
+            "string": "I’m quick to assume the worst in people and often suspect them of wrongdoing."
+          },
+          {
+            "option_type": "string",
+            "string": "I’m inflexible in my views and have trouble understanding different perspectives."
+          },
+          {
+            "option_type": "string",
+            "string": "I sometimes take the law into my own hands, bending the rules to achieve justice."
+          }
+        ]
+      }
     },
-    "url": "/api/backgrounds/azorius-functionary"
+    "url": "/api/backgrounds/city-watch"
   }
+  
+  
+  
+  
   
   
   
