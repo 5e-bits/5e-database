@@ -25,8 +25,6 @@ describe("duplicate indices", () => {
 describe("api references", () => {
   it("should not contain broken links", () => {
     let errors = [];
-    let files = glob.sync("src/*.json");
-
     let resources = {};
 
     forEachFileEntry((filename, entry) => {
@@ -41,7 +39,7 @@ describe("api references", () => {
 
     forEachFileEntry((filename, topLevelEntry) => {
       recurseIntoObject(topLevelEntry, (subEntry) => {
-        if (!subEntry.hasOwnProperty("url")) return;
+        if (!subEntry.hasOwnProperty("url")) return; // eslint-disable-line no-prototype-builtins
 
         if (resources[subEntry.url] === undefined) {
           errors.push(`${filename}: URL '${subEntry.url}' not found.`);
