@@ -1,8 +1,8 @@
-const fs = require("fs");
-const glob = require("glob");
+const fs = require('fs');
+const glob = require('glob');
 
-describe("duplicate indices", () => {
-  it("should contain unique indices", () => {
+describe('duplicate indices', () => {
+  it('should contain unique indices', () => {
     let errors = [];
     const fileIndices = {};
 
@@ -22,8 +22,8 @@ describe("duplicate indices", () => {
   });
 });
 
-describe("api references", () => {
-  it("should not contain broken links", () => {
+describe('api references', () => {
+  it('should not contain broken links', () => {
     let errors = [];
     let resources = {};
 
@@ -39,17 +39,24 @@ describe("api references", () => {
 
     forEachFileEntry((filename, topLevelEntry) => {
       recurseIntoObject(topLevelEntry, (subEntry) => {
-        if (!subEntry.hasOwnProperty("url")) return; // eslint-disable-line no-prototype-builtins
+        if (!subEntry.hasOwnProperty('url')) return; // eslint-disable-line no-prototype-builtins
 
         if (resources[subEntry.url] === undefined) {
           errors.push(`${filename}: URL '${subEntry.url}' not found.`);
         } else {
-          if (resources[subEntry.url].name !== undefined && resources[subEntry.url].name !== subEntry.name) {
-            errors.push(`${filename}: Name mismatch for reference to '${subEntry.url}', '${subEntry.name}' should be '${resources[subEntry.url].name}'`);
+          if (
+            resources[subEntry.url].name !== undefined &&
+            resources[subEntry.url].name !== subEntry.name
+          ) {
+            errors.push(
+              `${filename}: Name mismatch for reference to '${subEntry.url}', '${subEntry.name}' should be '${resources[subEntry.url].name}'`
+            );
           }
 
           if (subEntry.index !== undefined && resources[subEntry.url].index !== subEntry.index) {
-            errors.push(`${filename}: Index mismatch for reference to '${subEntry.url}', '${subEntry.index}' should be '${resources[subEntry.url].index}'`);
+            errors.push(
+              `${filename}: Index mismatch for reference to '${subEntry.url}', '${subEntry.index}' should be '${resources[subEntry.url].index}'`
+            );
           }
         }
       });
@@ -66,13 +73,13 @@ describe("api references", () => {
  *     top-level entry.
  */
 const forEachFileEntry = (callback) => {
-    let filenames = glob.sync("src/*.json");
+  let filenames = glob.sync('src/2014/*.json');
 
-    for (const filename of filenames) {
-      const fileText = fs.readFileSync(filename, "utf8");
-      const fileJSON = JSON.parse(fileText);
-      fileJSON.forEach((entry) => callback(filename, entry));
-    }
+  for (const filename of filenames) {
+    const fileText = fs.readFileSync(filename, 'utf8');
+    const fileJSON = JSON.parse(fileText);
+    fileJSON.forEach((entry) => callback(filename, entry));
+  }
 };
 
 /**
@@ -84,7 +91,7 @@ const forEachFileEntry = (callback) => {
  */
 const recurseIntoObject = (object, callback) => {
   for (const property in object) {
-    if (typeof object[property] === "object" && object[property] !== null) {
+    if (typeof object[property] === 'object' && object[property] !== null) {
       callback(object[property]);
       recurseIntoObject(object[property], callback);
     }
