@@ -1,6 +1,6 @@
 # 5e-database
 
-![Build Status](https://github.com/bagelbits/5e-database/workflows/5e%20Database%20CI/badge.svg?branch=main)
+![Build Status](https://github.com/5e-bits/5e-database/workflows/5e%20Database%20CI/badge.svg?branch=main)
 [![Discord](https://img.shields.io/discord/656547667601653787)](https://discord.gg/TQuYTv7)
 
 Holds the database for the D&D 5th Edition API at http://dnd5eapi.co/
@@ -38,7 +38,7 @@ MONGODB_URI=mongodb://localhost/5e-database npm run db:refresh
 
 ## API Issues
 
-If you see anything wrong with the API and not the data, please open an issue or PR over [here](https://github.com/bagelbits/5e-srd-api).
+If you see anything wrong with the API and not the data, please open an issue or PR over [here](https://github.com/5e-bits/5e-srd-api).
 
 ## Contributing
 
