@@ -55,7 +55,7 @@ const uploadTablesFromFolder = (jsonDbDir: string, collectionPrefix = '') => {
       const match = regex.exec(filename)!;
       const dataName = match[1];
       const collectionName = `${collectionPrefix}${dataName.toLowerCase()}`;
-      collections.push({ index: collectionName });
+      collections.push({ index: dataName.toLowerCase() });
       // example:
       // mongoimport --uri mongodb://localhost/5e-database
       //             --collection ability-scores
