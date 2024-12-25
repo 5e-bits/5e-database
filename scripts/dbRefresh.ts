@@ -71,23 +71,25 @@ const uploadTablesFromFolder = (jsonDbDir: string, collectionPrefix = '') => {
         ' --drop';
       execSync(exec_string);
     });
-  return collections;
+
+  // Make collections table
+  console.log('creating index table...');
+  const filepath = 'src/collections.json';
+  writeFileSync(filepath, JSON.stringify(collections, null, 2), 'utf8');
+  const exec_string =
+    `mongoimport --uri ${mongodbUri}` +
+    ` --collection  ${collectionPrefix}collections` +
+    ` --file ${filepath}` +
+    ' --jsonArray' +
+    ' --drop';
+  console.log(collections);
+  execSync(exec_string);
+  unlinkSync(filepath);
 };
 
 console.log('uploading 2014 tables...');
-const collections: object[] = [];
-collections.push(...uploadTablesFromFolder('src/2014', '2014-'));
+uploadTablesFromFolder('src/2014', '2014-');
 
-// Make collections table
-console.log('creating index table...');
-const filepath = 'src/collections.json';
-writeFileSync(filepath, JSON.stringify(collections, null, 2), 'utf8');
-const exec_string =
-  `mongoimport --uri ${mongodbUri}` +
-  ' --collection collections' +
-  ` --file ${filepath}` +
-  ' --jsonArray' +
-  ' --drop';
-console.log(collections);
-execSync(exec_string);
-unlinkSync(filepath);
+// TODO: DEPRECATED
+console.log('uploading original tables...');
+uploadTablesFromFolder('src/2014');
