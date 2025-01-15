@@ -1,4 +1,4 @@
-import { readdirSync, unlinkSync, writeFileSync } from 'fs';
+import { readdirSync, readFileSync, unlinkSync, writeFileSync } from 'fs';
 
 import { execSync } from 'child_process';
 
@@ -63,13 +63,30 @@ const uploadTablesFromFolder = (jsonDbDir: string, collectionPrefix = '') => {
       //             --jsonArray
       //             --drop
       console.log(`importing ${dataName}...`);
+
+      // Read the JSON file
+      const data = JSON.parse(readFileSync(filepath, 'utf8'));
+
+      // Add updated_at field to each record
+      const updatedData = data.map((record: any) => ({
+        ...record,
+        updated_at: new Date().toISOString(),
+      }));
+
+      // Write the modified data to a temporary file
+      const tempFilepath = `${jsonDbDir}/temp-${filename}`;
+      writeFileSync(tempFilepath, JSON.stringify(updatedData, null, 2), 'utf8');
+
       const exec_string =
         `mongoimport --uri ${mongodbUri}` +
         ` --collection ${collectionName}` +
-        ` --file ${filepath}` +
+        ` --file ${tempFilepath}` +
         ' --jsonArray' +
         ' --drop';
       execSync(exec_string);
+
+      // Remove the temporary file
+      unlinkSync(tempFilepath);
     });
 
   // Make collections table
