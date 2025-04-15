@@ -16,4 +16,4 @@
 
 ## Here's a fun image for your troubles
 
-![random photo - update me](https://picsum.photos/200)
+\<Add a fun image here\>
