@@ -12,7 +12,7 @@ RUN apt-get update \
   && apt-get -y install curl \
   && apt-get clean \
   && rm -rf /var/apt/lists/*
-RUN curl -fsSL https://deb.nodesource.com/setup_23.x | bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
 RUN apt-get install -y nodejs \
   && apt-get clean \
   && rm -rf /var/apt/lists/*
