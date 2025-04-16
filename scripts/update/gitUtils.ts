@@ -1,4 +1,4 @@
-import { execSync } from 'child_process';
+import { execSync, spawn } from 'child_process';
 
 // Define a type for the file status and path
 export type ChangedFile = {
@@ -112,26 +112,44 @@ export function getChangedJsonFilesWithStatus(): ChangedFile[] {
 
 /**
  * Fetches JSON content string of a file from the previous commit (HEAD~1).
+ * Uses spawn to stream output, avoiding buffer limits.
  * @param gitPath The path used in the git command (could be old path for renames).
  * @returns A promise resolving to the raw string content, or an empty string on error.
  */
 export async function getOldFileContent(gitPath: string): Promise<string> {
-  let oldFileContent = '';
-  try {
-    oldFileContent = execSync(`git show HEAD~1:"${gitPath}"`, { encoding: 'utf8' });
-  } catch (err) {
-    // Handle errors specific to git show (like file not found in history)
-    if (err instanceof Error && err.message?.includes('exists on disk, but not in')) {
-      // Expected errors if file was new or unparseable in previous commit
-      console.warn(
-        `Could not get or parse previous version (HEAD~1:${gitPath}). Assuming all current records are new/modified.`
-      );
-    } else {
-      console.error(`Unexpected error fetching previous version (HEAD~1:${gitPath}):`, err);
-      // Depending on policy, might want to re-throw here
-    }
-    return ''; // Return empty string if content can't be fetched
-  }
-  // Return the raw content
-  return oldFileContent;
+  return new Promise((resolve, reject) => {
+    const gitShow = spawn('git', ['show', `HEAD~1:"${gitPath}"`]);
+    let oldFileContent = '';
+    let errorOutput = '';
+
+    gitShow.stdout.on('data', (data) => {
+      oldFileContent += data.toString();
+    });
+
+    gitShow.stderr.on('data', (data) => {
+      errorOutput += data.toString();
+    });
+
+    gitShow.on('error', (err) => {
+      // Handle errors spawning the process itself
+      console.error(`Error spawning git show for HEAD~1:${gitPath}:`, err);
+      resolve(''); // Resolve with empty string on spawn error
+    });
+
+    gitShow.on('close', (code) => {
+      if (code === 0) {
+        resolve(oldFileContent);
+      } else {
+        // Handle errors reported by git show (like file not found)
+        if (errorOutput.includes('exists on disk, but not in')) {
+          console.warn(`Previous version not found in git history (HEAD~1:${gitPath}).`);
+        } else {
+          console.error(
+            `Error running git show for HEAD~1:${gitPath} (code ${code}): ${errorOutput}`
+          );
+        }
+        resolve(''); // Resolve with empty string if git show fails
+      }
+    });
+  });
 }
