@@ -1,14 +1,143 @@
 import { readdirSync, readFileSync } from 'fs';
 import { MongoClient, Collection, Db } from 'mongodb'; // Import MongoClient and types
-// Import utilities
-import { checkMongoUri, getCollectionNameFromJsonFile } from './dbUtils';
+// Import utilities and constants
+import {
+  checkMongoUri,
+  getCollectionNameFromJsonFile,
+  SRD_PREFIX,
+  INDEX_COLLECTION_SUFFIX,
+} from './dbUtils';
 
 // check the environment variable is set
 const mongodbUri = checkMongoUri('db:refresh');
 
+// Define type for index collection entries
+interface IndexEntry {
+  index: string;
+}
+
+/**
+ * Processes a single JSON file for database refresh.
+ * Reads, parses, adds updated_at, drops the collection, and inserts new data.
+ * @param db The MongoDB database instance.
+ * @param filepath Full path to the JSON file.
+ * @param collectionPrefix The prefix for the collection name (e.g., '2014-').
+ * @returns The base index name (without prefix) if successful, otherwise null.
+ */
+async function _processFileForRefresh(
+  db: Db,
+  filepath: string,
+  collectionPrefix: string
+): Promise<string | null> {
+  const collectionName = getCollectionNameFromJsonFile(filepath);
+
+  if (!collectionName) {
+    console.warn(`Could not determine collection name for ${filepath}. Skipping.`);
+    return null; // Indicate failure/skip
+  }
+
+  // Determine the base name for the index table entry
+  let indexName = collectionName;
+  if (collectionPrefix && collectionName.startsWith(collectionPrefix)) {
+    indexName = collectionName.substring(collectionPrefix.length);
+  }
+
+  console.log(`Refreshing collection '${collectionName}' from ${filepath}...`);
+
+  let data: any;
+  try {
+    data = JSON.parse(readFileSync(filepath, 'utf8'));
+  } catch (err) {
+    console.error(`  Error parsing JSON from ${filepath}:`, err);
+    return null; // Indicate failure
+  }
+
+  const updatedData = Array.isArray(data)
+    ? data.map((record: any) => ({ ...record, updated_at: new Date().toISOString() }))
+    : [];
+
+  if (updatedData.length === 0) {
+    console.log(`  Skipping collection '${collectionName}' as no data was found or parsed.`);
+    // Still return indexName, as the file exists but might be empty
+    return indexName;
+  }
+
+  const collection: Collection = db.collection(collectionName);
+
+  // Drop the existing collection
+  try {
+    await collection.drop();
+    console.log(`  Dropped existing collection '${collectionName}'.`);
+  } catch (err) {
+    if (err.codeName !== 'NamespaceNotFound') {
+      console.error(`  Error dropping collection '${collectionName}':`, err);
+      // Decide if we should stop the whole process - maybe throw here?
+      return null; // Indicate failure
+    }
+  }
+
+  // Insert the new data
+  try {
+    const insertResult = await collection.insertMany(updatedData);
+    console.log(`  Inserted ${insertResult.insertedCount} documents into '${collectionName}'.`);
+  } catch (err) {
+    console.error(`  Error inserting documents into '${collectionName}':`, err);
+    // Decide if we should stop the whole process - maybe throw here?
+    return null; // Indicate failure
+  }
+
+  return indexName; // Return the base name for the index
+}
+
+/**
+ * Refreshes the index collection (e.g., '2014-collections') based on processed files.
+ * @param db The MongoDB database instance.
+ * @param collectionPrefix The prefix for the collection name (e.g., '2014-').
+ * @param collections Array of IndexEntry objects.
+ */
+async function _refreshIndexCollection(
+  db: Db,
+  collectionPrefix: string,
+  collections: IndexEntry[]
+): Promise<void> {
+  console.log('\nRefreshing index table...');
+  const collectionsCollectionName = `${collectionPrefix}${INDEX_COLLECTION_SUFFIX}`;
+  const collectionsCollection: Collection = db.collection(collectionsCollectionName);
+
+  // Drop existing collections table
+  try {
+    await collectionsCollection.drop();
+    console.log(`  Dropped existing collection '${collectionsCollectionName}'.`);
+  } catch (err) {
+    if (err.codeName !== 'NamespaceNotFound') {
+      console.error(`  Error dropping collection '${collectionsCollectionName}':`, err);
+      throw err; // Throw if dropping index fails unexpectedly
+    }
+  }
+
+  // Insert new collections index
+  if (collections.length > 0) {
+    try {
+      // No cast needed now, insertMany accepts compatible objects
+      const insertResult = await collectionsCollection.insertMany(collections);
+      console.log(
+        `  Inserted ${insertResult.insertedCount} documents into '${collectionsCollectionName}'.`
+      );
+      console.log(collections);
+    } catch (err) {
+      console.error(`  Error inserting documents into '${collectionsCollectionName}':`, err);
+      throw err; // Throw if inserting index fails
+    }
+  } else {
+    console.log(
+      `  Skipping creation of collection '${collectionsCollectionName}' as no collections were processed.`
+    );
+  }
+}
+
 // Make the function async to use await
 const uploadTablesFromFolder = async (db: Db, jsonDbDir: string, collectionPrefix = '') => {
-  const collections: object[] = [];
+  const collectionIndexEntries: IndexEntry[] = []; // Use IndexEntry[] type
   let files = [];
 
   try {
@@ -26,106 +155,25 @@ const uploadTablesFromFolder = async (db: Db, jsonDbDir: string, collectionPrefi
   // Use a for...of loop to allow async/await inside
   for (const filename of files) {
     // Basic filter
-    if (!filename.includes('5e-SRD-') || !filename.endsWith('.json')) {
+    if (!filename.includes(SRD_PREFIX) || !filename.endsWith('.json')) {
       continue;
     }
 
     const filepath = `${jsonDbDir}/${filename}`;
-    // Use utility to get collection name based on the full path
-    const collectionName = getCollectionNameFromJsonFile(filepath);
-
-    if (!collectionName) {
-      console.warn(`Could not determine collection name for ${filepath}. Skipping.`);
-      continue; // Skip this file
-    }
-
-    // Determine the base name (without the directory prefix) for the index table entry.
-    // If a collectionPrefix is provided and the collectionName starts with it,
-    // remove the prefix to get the base name. Otherwise, use the full collectionName.
-    let indexName = collectionName;
-    if (collectionPrefix && collectionName.startsWith(collectionPrefix)) {
-      indexName = collectionName.substring(collectionPrefix.length);
-    }
-
-    // Store the determined index name (without prefix) for the collections index table.
-    collections.push({ index: indexName });
-
-    console.log(`Refreshing collection '${collectionName}' from ${filepath}...`);
-
-    // Read the JSON file
-    const data = JSON.parse(readFileSync(filepath, 'utf8'));
-
-    // Add updated_at field to each record
-    const updatedData = Array.isArray(data)
-      ? data.map((record: any) => ({
-          ...record,
-          updated_at: new Date().toISOString(),
-        }))
-      : []; // Ensure updatedData is an array
-
-    if (updatedData.length > 0) {
-      const collection: Collection = db.collection(collectionName);
-
-      // Drop the existing collection
-      try {
-        await collection.drop();
-        console.log(`  Dropped existing collection '${collectionName}'.`);
-      } catch (err: any) {
-        // Ignore error if collection didn't exist (codeName: NamespaceNotFound)
-        if (err.codeName !== 'NamespaceNotFound') {
-          console.error(`  Error dropping collection '${collectionName}':`, err);
-          throw err; // Re-throw other errors
-        }
-      }
-
-      // Insert the new data
-      try {
-        const insertResult = await collection.insertMany(updatedData);
-        console.log(`  Inserted ${insertResult.insertedCount} documents into '${collectionName}'.`);
-      } catch (err) {
-        console.error(`  Error inserting documents into '${collectionName}':`, err);
-        throw err; // Stop the process if insert fails
-      }
+    // Call the helper function to process the file
+    const indexName = await _processFileForRefresh(db, filepath, collectionPrefix);
+    if (indexName !== null) {
+      // If processing was successful (even if file was empty), add index name
+      collectionIndexEntries.push({ index: indexName });
     } else {
-      console.log(
-        `  Skipping collection '${collectionName}' as no data was found or parsed from ${filepath}.`
-      );
+      // Log or handle the case where processing a file failed critically
+      // For now, we assume errors are logged within the helper and we continue
+      console.warn(`Critical error processing ${filepath}, it will not be included in the index.`);
     }
   }
 
   // Make collections table
-  console.log('creating index table...');
-  const collectionsCollectionName = `${collectionPrefix}collections`;
-  const collectionsCollection: Collection = db.collection(collectionsCollectionName);
-
-  // Drop existing collections table
-  try {
-    await collectionsCollection.drop();
-    console.log(`  Dropped existing collection '${collectionsCollectionName}'.`);
-  } catch (err: any) {
-    if (err.codeName !== 'NamespaceNotFound') {
-      console.error(`  Error dropping collection '${collectionsCollectionName}':`, err);
-      throw err;
-    }
-  }
-
-  // Insert new collections index
-  if (collections.length > 0) {
-    try {
-      const insertResult = await collectionsCollection.insertMany(collections);
-      console.log(
-        `  Inserted ${insertResult.insertedCount} documents into '${collectionsCollectionName}'.`
-      );
-      console.log(collections);
-    } catch (err) {
-      console.error(`  Error inserting documents into '${collectionsCollectionName}':`, err);
-      throw err;
-    }
-  } else {
-    console.log(
-      `  Skipping collection '${collectionsCollectionName}' as no collections were processed.`
-    );
-  }
+  await _refreshIndexCollection(db, collectionPrefix, collectionIndexEntries);
 };
 
 // Main execution function

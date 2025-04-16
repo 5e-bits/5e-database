@@ -1,5 +1,9 @@
 import { execSync } from 'child_process';
 
+// --- Constants ---
+export const SRD_PREFIX = '5e-SRD-';
+export const INDEX_COLLECTION_SUFFIX = 'collections';
+
 /**
  * Checks if the MONGODB_URI environment variable is set. If not, prints an error
  * message specific to the script being run and exits the process.
@@ -48,7 +52,7 @@ export function getCollectionNameFromJsonFile(filepath: string): string | null {
   }
 
   // Extract data name from filename
-  const jsonDbCollectionPrefix = '5e-SRD-';
+  const jsonDbCollectionPrefix = SRD_PREFIX;
   const jsonDataPattern = `\\b${jsonDbCollectionPrefix}(.+)\\.json\\b`;
   const regex = new RegExp(jsonDataPattern);
   const match = regex.exec(filename);
