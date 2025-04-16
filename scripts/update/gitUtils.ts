@@ -118,7 +118,7 @@ export function getChangedJsonFilesWithStatus(): ChangedFile[] {
  */
 export async function getOldFileContent(gitPath: string): Promise<string> {
   return new Promise((resolve, reject) => {
-    const gitShow = spawn('git', ['show', `HEAD~1:"${gitPath}"`]);
+    const gitShow = spawn('git', ['show', `HEAD~1:${gitPath}`]);
     let oldFileContent = '';
     let errorOutput = '';
 
