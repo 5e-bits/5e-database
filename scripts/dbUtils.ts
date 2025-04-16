@@ -67,6 +67,54 @@ export function getCollectionNameFromJsonFile(filepath: string): string | null {
 }
 
 /**
+ * Determines the collection prefix based on the directory structure.
+ * e.g., 'src/2014/file.json' -> '2014-'
+ *       'src/file.json' -> ''
+ * @param filepath Path to the file.
+ * @returns The prefix string (e.g., '2014-') or an empty string.
+ */
+export function getCollectionPrefix(filepath: string): string {
+  const parts = filepath.split('/');
+  // Needs at least 3 parts: 'src', 'subdir', 'filename.json' for a prefix
+  if (parts.length >= 3) {
+    const parentDir = parts[parts.length - 2]; // Directory containing the file
+    if (parentDir && parentDir !== 'src') {
+      // Allow any directory under src that isn't src itself to be a prefix
+      return parentDir.toLowerCase() + '-';
+    }
+  }
+  return ''; // No prefix if directly in 'src' or structure is unexpected
+}
+
+/**
+ * Extracts the base index name from a JSON filename.
+ * Assumes a pattern like '5e-SRD-IndexName.json'.
+ * @param filename The filename (e.g., '5e-SRD-Ability-Scores.json').
+ * @returns The base index name (e.g., 'ability-scores') or null if the pattern doesn't match.
+ */
+export function getIndexName(filename: string): string | null {
+  const jsonDbCollectionPrefix = SRD_PREFIX;
+  const jsonDataPattern = `\\b${jsonDbCollectionPrefix}(.+)\\.json\\b`;
+  const regex = new RegExp(jsonDataPattern);
+  const match = regex.exec(filename);
+
+  if (!match) return null;
+
+  const dataName = match[1];
+  // Convert to lowercase and replace spaces/underscores with hyphens
+  return dataName.toLowerCase().replace(/[\s_]+/g, '-');
+}
+
+/**
+ * Constructs the full name for the index collection based on a prefix.
+ * @param prefix The collection prefix (e.g., '2014-').
+ * @returns The full index collection name (e.g., '2014-collections').
+ */
+export function getIndexCollectionName(prefix: string): string {
+  return `${prefix}${INDEX_COLLECTION_SUFFIX}`;
+}
+
+/**
  * Checks if a command-line tool exists and is executable.
  * @param command The command to check (e.g., 'mongoimport', 'git').
  * @param versionFlag The flag to get the version (e.g., '--version').

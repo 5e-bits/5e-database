@@ -1,7 +1,12 @@
 import { readFileSync } from 'fs';
 import { MongoClient, AnyBulkWriteOperation, Document, Db } from 'mongodb';
 import { diff } from 'deep-diff';
-import { getCollectionNameFromJsonFile } from '../dbUtils'; // Import from parent dir
+import {
+  getCollectionNameFromJsonFile,
+  getCollectionPrefix,
+  getIndexName,
+  getIndexCollectionName,
+} from '../dbUtils'; // Import from parent dir
 import { getOldFileContent, ChangedFile } from './gitUtils'; // Import from sibling
 
 // --- Constants for MongoDB Operations ---
@@ -145,48 +150,221 @@ async function executeBulkWrite(
 }
 
 /**
- * Processes a single JSON file update based on its status (Added, Modified, Renamed).
- * Orchestrates reading files, calculating diffs, and executing DB operations.
+ * Helper function to update the corresponding index collection.
+ * Performs an upsert for additions/renames and a delete for deletions/renames.
+ * @param db MongoDB Db instance.
+ * @param filepath Path of the file being processed (used to derive index details).
+ * @param operationType 'upsert' or 'delete'.
+ */
+async function updateIndexCollection(
+  db: Db,
+  filepath: string,
+  operationType: 'upsert' | 'delete'
+): Promise<void> {
+  const filename = filepath.split('/').pop();
+
+  if (!filename) {
+    console.warn(`Could not extract filename from ${filepath}. Skipping index update.`);
+    return;
+  }
+
+  const indexName = getIndexName(filename);
+  if (!indexName) {
+    // This is expected for files not matching the SRD pattern, like the index collection itself.
+    return;
+  }
+
+  const collectionPrefix = getCollectionPrefix(filepath);
+  const indexCollectionName = getIndexCollectionName(collectionPrefix);
+  const indexCollection = db.collection(indexCollectionName);
+
+  try {
+    if (operationType === 'upsert') {
+      console.log(`Upserting index '${indexName}' into collection '${indexCollectionName}'...`);
+      await indexCollection.updateOne(
+        { index: indexName },
+        { $set: { index: indexName } }, // Simple doc, just the index name
+        { upsert: true }
+      );
+    } else if (operationType === 'delete') {
+      console.log(`Deleting index '${indexName}' from collection '${indexCollectionName}'...`);
+      await indexCollection.deleteOne({ index: indexName });
+    }
+  } catch (error) {
+    console.error(
+      `Error performing ${operationType} for index '${indexName}' in collection '${indexCollectionName}':`,
+      error
+    );
+  }
+}
+
+// --- Status-Specific Handlers ---
+
+/**
+ * Handles processing for a newly added file.
+ * Creates the collection, inserts data, and updates the index collection.
+ */
+async function _handleFileAdded(db: Db, filepath: string): Promise<void> {
+  const collectionName = getCollectionNameFromJsonFile(filepath);
+  if (!collectionName) {
+    console.warn(`Could not determine collection name for added file ${filepath}. Skipping.`);
+    // Even if data processing is skipped, try to update index in case it matches pattern
+    await updateIndexCollection(db, filepath, 'upsert');
+    return;
+  }
+  console.log(`\nProcessing Added file ${filepath} for collection '${collectionName}'...`);
+
+  const currentData = await readFileContent(filepath);
+  // For added files, oldData is empty
+  const { operations, skippedRecords } = calculateBulkOperations([], currentData, filepath);
+  await executeBulkWrite(db, collectionName, operations);
+
+  if (skippedRecords > 0) {
+    console.warn(`Skipped ${skippedRecords} records in ${filepath} due to missing 'index' field.`);
+  }
+
+  // Update index collection
+  await updateIndexCollection(db, filepath, 'upsert');
+}
+
+/**
+ * Handles processing for a modified file.
+ * Calculates diff and applies updates/deletes to the existing collection.
+ */
+async function _handleFileModified(db: Db, filepath: string): Promise<void> {
+  const collectionName = getCollectionNameFromJsonFile(filepath);
+  if (!collectionName) {
+    console.warn(`Could not determine collection name for modified file ${filepath}. Skipping.`);
+    return;
+  }
+  console.log(`\nProcessing Modified file ${filepath} for collection '${collectionName}'...`);
+
+  const currentData = await readFileContent(filepath);
+  const oldFileContentString = await getOldFileContent(filepath);
+  const oldData = parseJsonArrayContent(oldFileContentString, `HEAD~1:${filepath}`);
+
+  const { operations, skippedRecords } = calculateBulkOperations(oldData, currentData, filepath);
+  await executeBulkWrite(db, collectionName, operations);
+
+  if (skippedRecords > 0) {
+    console.warn(`Skipped ${skippedRecords} records in ${filepath} due to missing 'index' field.`);
+  }
+  // No index update needed for modification
+}
+
+/**
+ * Handles processing for a renamed file.
+ * Updates data in the new collection, drops the old collection if name changed,
+ * deletes the old index entry, and upserts the new index entry.
+ */
+async function _handleFileRenamed(db: Db, filepath: string, oldFilepath: string): Promise<void> {
+  const collectionName = getCollectionNameFromJsonFile(filepath);
+  const oldCollectionName = getCollectionNameFromJsonFile(oldFilepath);
+
+  console.log(
+    `\nProcessing Renamed file ${oldFilepath} -> ${filepath} ` +
+      `(Collections: ${oldCollectionName || 'N/A'} -> ${collectionName || 'N/A'})...`
+  );
+
+  // 1. Update data in the *new* collection (if applicable)
+  if (collectionName) {
+    const currentData = await readFileContent(filepath);
+    const oldFileContentString = await getOldFileContent(oldFilepath); // Get content from OLD git path
+    const oldData = parseJsonArrayContent(oldFileContentString, `HEAD~1:${oldFilepath}`);
+
+    const { operations, skippedRecords } = calculateBulkOperations(oldData, currentData, filepath);
+    await executeBulkWrite(db, collectionName, operations);
+
+    if (skippedRecords > 0) {
+      console.warn(
+        `Skipped ${skippedRecords} records in ${filepath} due to missing 'index' field.`
+      );
+    }
+  } else {
+    console.warn(`Could not determine new collection name for ${filepath}. Skipping data update.`);
+  }
+
+  // 2. Drop the *old* collection if its name was valid and different from the new one
+  if (oldCollectionName && oldCollectionName !== collectionName) {
+    console.log(`Dropping old collection '${oldCollectionName}' due to rename...`);
+    try {
+      await db.collection(oldCollectionName).drop();
+      console.log(`Dropped old collection '${oldCollectionName}'.`);
+    } catch (err) {
+      if (err.codeName !== 'NamespaceNotFound') {
+        console.error(`Error dropping old collection '${oldCollectionName}' during rename:`, err);
+      }
+    }
+  }
+
+  // 3. Update index collections (delete old, upsert new)
+  // First delete the old index entry using the old path
+  await updateIndexCollection(db, oldFilepath, 'delete');
+  // Then upsert the new index entry using the new path
+  await updateIndexCollection(db, filepath, 'upsert');
+}
+
+/**
+ * Handles processing for a deleted file.
+ * Drops the corresponding data collection and deletes the index entry.
+ */
+async function _handleFileDeleted(db: Db, filepath: string): Promise<void> {
+  const collectionName = getCollectionNameFromJsonFile(filepath); // Get name from the path that was deleted
+  console.log(`\nProcessing Deletion for ${filepath} (Collection: ${collectionName || 'N/A'})...`);
+
+  // 1. Drop the data collection (if applicable)
+  if (collectionName) {
+    try {
+      await db.collection(collectionName).drop();
+      console.log(`Dropped collection '${collectionName}' due to file deletion.`);
+    } catch (err) {
+      if (err.codeName !== 'NamespaceNotFound') {
+        console.error(`Error dropping collection '${collectionName}' for deleted file:`, err);
+      } else {
+        console.log(`Collection '${collectionName}' not found, likely already dropped.`);
+      }
+    }
+  } else {
+    console.warn(
+      `Could not determine collection name for deleted file ${filepath}. Cannot drop collection.`
+    );
+  }
+
+  // 2. Update index collection
+  await updateIndexCollection(db, filepath, 'delete');
+}
+
+// --- Main Processor Function ---
+
+/**
+ * Processes a single JSON file update based on its status (Added, Modified, Renamed, Deleted).
+ * Dispatches the file information to the appropriate handler function.
  * @param db The MongoDB database instance.
  * @param file The ChangedFile object containing status and path.
  */
 export async function processFileUpdate(db: Db, file: ChangedFile): Promise<void> {
   const { status, filepath, oldFilepath } = file;
 
-  if (status !== 'A' && status !== 'M' && status !== 'R') {
-    console.log(`\nSkipping file ${filepath} with status ${status}.`);
-    return;
-  }
-
-  const collectionName = getCollectionNameFromJsonFile(filepath);
-  if (!collectionName) {
-    console.warn(`Could not determine collection name for ${filepath}. Skipping.`);
-    return;
-  }
-
-  console.log(`\nProcessing ${filepath} (Status: ${status}) for collection '${collectionName}'...`);
-
-  // Get current content
-  const currentData = await readFileContent(filepath);
-  // readFileContent handles its own errors and returns [] if failed
-
-  // Get old content if file was modified or renamed
-  let oldData: any[] = [];
-  if (status === 'M' || status === 'R') {
-    const gitPath = status === 'R' && oldFilepath ? oldFilepath : filepath;
-    // Fetch raw string content from git
-    const oldFileContentString = await getOldFileContent(gitPath);
-    // Parse the raw string using the dedicated parser
-    oldData = parseJsonArrayContent(oldFileContentString, `HEAD~1:${gitPath}`);
-  }
-
-  // Calculate operations based on diff
-  const { operations, skippedRecords } = calculateBulkOperations(oldData, currentData, filepath);
-
-  // Execute the bulk write
-  await executeBulkWrite(db, collectionName, operations);
-
-  if (skippedRecords > 0) {
-    console.warn(`Skipped ${skippedRecords} records in ${filepath} due to missing 'index' field.`);
+  switch (status) {
+    case 'A':
+      await _handleFileAdded(db, filepath);
+      break;
+    case 'M':
+      await _handleFileModified(db, filepath);
+      break;
+    case 'R':
+      if (!oldFilepath) {
+        console.error(
+          `Error: Renamed file status 'R' requires 'oldFilepath' for ${filepath}. Skipping.`
+        );
+        return;
+      }
+      await _handleFileRenamed(db, filepath, oldFilepath);
+      break;
+    case 'D':
+      await _handleFileDeleted(db, filepath);
+      break;
+    default:
+      console.log(`\nSkipping file ${filepath} with unhandled status ${status}.`);
   }
 }

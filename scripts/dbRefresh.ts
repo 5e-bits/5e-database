@@ -4,8 +4,9 @@ import { MongoClient, Collection, Db } from 'mongodb'; // Import MongoClient and
 import {
   checkMongoUri,
   getCollectionNameFromJsonFile,
+  getIndexName,
+  getIndexCollectionName,
   SRD_PREFIX,
-  INDEX_COLLECTION_SUFFIX,
 } from './dbUtils';
 
 // check the environment variable is set
@@ -30,16 +31,23 @@ async function _processFileForRefresh(
   collectionPrefix: string
 ): Promise<string | null> {
   const collectionName = getCollectionNameFromJsonFile(filepath);
+  const filename = filepath.split('/').pop();
 
-  if (!collectionName) {
-    console.warn(`Could not determine collection name for ${filepath}. Skipping.`);
+  if (!collectionName || !filename) {
+    console.warn(`Could not determine collection or filename for ${filepath}. Skipping.`);
     return null; // Indicate failure/skip
   }
 
-  // Determine the base name for the index table entry
-  let indexName = collectionName;
-  if (collectionPrefix && collectionName.startsWith(collectionPrefix)) {
-    indexName = collectionName.substring(collectionPrefix.length);
+  // Determine the base name for the index table entry using the new util
+  const indexName = getIndexName(filename);
+  if (indexName === null) {
+    // This *shouldn't* happen if getCollectionNameFromJsonFile succeeded and the file has SRD_PREFIX,
+    // but handle defensively.
+    console.warn(`Could not extract index name from filename ${filename}. Skipping index entry.`);
+    // We might still want to process the data, but won't add to index.
+    // Decide if we should return null or proceed without adding to index.
+    // For now, let's return null as index entry is the main goal here for the caller.
+    return null;
   }
 
   console.log(`Refreshing collection '${collectionName}' from ${filepath}...`);
@@ -101,7 +109,7 @@ async function _refreshIndexCollection(
   collections: IndexEntry[]
 ): Promise<void> {
   console.log('\nRefreshing index table...');
-  const collectionsCollectionName = `${collectionPrefix}${INDEX_COLLECTION_SUFFIX}`;
+  const collectionsCollectionName = getIndexCollectionName(collectionPrefix);
   const collectionsCollection: Collection = db.collection(collectionsCollectionName);
 
   // Drop existing collections table
