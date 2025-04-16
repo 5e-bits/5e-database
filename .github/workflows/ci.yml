@@ -52,7 +52,7 @@ jobs:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
         run: |
           npm install
-          npm run db:refresh
+          npm run db:update
 
   github-release:
     name: Github Release

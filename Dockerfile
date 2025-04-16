@@ -25,6 +25,8 @@ COPY --chown=mongodb:mongodb package.json package-lock.json /data/db2/
 RUN npm install
 COPY --chown=mongodb:mongodb . /data/db2/
 
+# Compile TypeScript scripts before running them
+RUN npm run build:ts
 
 RUN mongod --fork --logpath /var/log/mongodb.log --dbpath /data/db2 \
   && npm run db:refresh \
