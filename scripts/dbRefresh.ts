@@ -123,7 +123,6 @@ async function _refreshIndexCollection(
       console.log(
         `  Inserted ${insertResult.insertedCount} documents into '${collectionsCollectionName}'.`
       );
-      console.log(collections);
     } catch (err) {
       console.error(`  Error inserting documents into '${collectionsCollectionName}':`, err);
       throw err; // Throw if inserting index fails
