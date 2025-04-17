@@ -2,9 +2,11 @@
   "compilerOptions": {
     "outDir": "./built",
     "allowJs": true,
-    "target": "es5",
+    "target": "es2015",
     "noEmitOnError": true,
     "noImplicitAny": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
     "strictNullChecks": true,
     "skipLibCheck": true
   },

@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "Database for 5e-srd-api",
   "engines": {
-    "node": "23.x"
+    "node": "22.x"
   },
   "scripts": {
     "lint": "eslint . --config eslint.config.mjs",
     "test": "jest -c jest.config.js",
     "build:ts": "tsc --project scripts",
-    "db:refresh": "npm run build:ts && node scripts/built/dbRefresh.js"
+    "db:refresh": "npm run build:ts && node scripts/built/dbRefresh.js",
+    "db:update": "npm run build:ts && node scripts/built/dbUpdate.js"
   },
   "repository": {
     "type": "git",
@@ -23,12 +24,16 @@
   "homepage": "https://github.com/5e-bits/5e-database#readme",
   "devDependencies": {
     "@semantic-release/github": "^11.0.1",
+    "@types/deep-diff": "^1.0.5",
+    "@types/mongodb": "^4.0.6",
     "@types/node": "^22.14.1",
+    "deep-diff": "^1.0.2",
     "eslint": "^9.24.0",
     "eslint-plugin-jest": "^28.11.0",
     "eslint-plugin-json": "^4.0.1",
     "glob": "^11.0.1",
     "jest": "^29.7.0",
+    "mongodb": "^6.15.0",
     "redis": "^4.7.0",
     "semantic-release": "^24.2.3",
     "typescript": "^5.8.3"

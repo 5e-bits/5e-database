@@ -12,7 +12,7 @@ RUN apt-get update \
   && apt-get -y install curl \
   && apt-get clean \
   && rm -rf /var/apt/lists/*
-RUN curl -fsSL https://deb.nodesource.com/setup_23.x | bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
 RUN apt-get install -y nodejs \
   && apt-get clean \
   && rm -rf /var/apt/lists/*
@@ -25,6 +25,8 @@ COPY --chown=mongodb:mongodb package.json package-lock.json /data/db2/
 RUN npm install
 COPY --chown=mongodb:mongodb . /data/db2/
 
+# Compile TypeScript scripts before running them
+RUN npm run build:ts
 
 RUN mongod --fork --logpath /var/log/mongodb.log --dbpath /data/db2 \
   && npm run db:refresh \

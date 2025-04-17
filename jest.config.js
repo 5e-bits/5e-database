@@ -1,4 +1,4 @@
 module.exports = {
-  testRegex: "test\\.js$",
-  coveragePathIgnorePatterns: ["/node_modules/"],
+  testRegex: 'test\\.js$',
+  coveragePathIgnorePatterns: ['/node_modules/'],
 };
