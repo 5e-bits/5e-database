@@ -73,7 +73,7 @@ describe('api references', () => {
  *     top-level entry.
  */
 const forEachFileEntry = (callback) => {
-  let filenames = glob.sync('src/2014/*.json');
+  let filenames = glob.sync('src/2024/*.json');
 
   for (const filename of filenames) {
     const fileText = fs.readFileSync(filename, 'utf8');
