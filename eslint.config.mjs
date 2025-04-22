@@ -1,7 +1,7 @@
 // @ts-check
 
 import eslint from '@eslint/js';
-import eslintPluginJest from 'eslint-plugin-jest';
+import eslintPluginVitest from 'eslint-plugin-vitest';
 import json from 'eslint-plugin-json';
 import globals from 'globals';
 
@@ -16,7 +16,6 @@ export default [
     languageOptions: {
       globals: {
         ...globals.node,
-        ...globals.jest,
       },
     },
     rules: {
@@ -26,10 +25,15 @@ export default [
     },
   },
   {
-    name: 'jest/recommended',
+    name: 'vitest/recommended',
     files: ['**/*.test.{js,ts}'],
     ignores: ['**/*.json'],
-    ...eslintPluginJest.configs['flat/recommended'],
+    ...eslintPluginVitest.configs['flat/recommended'],
+    languageOptions: {
+      globals: {
+        ...eslintPluginVitest.environments.env.globals,
+      },
+    },
   },
   {
     name: 'json/recommended-with-comments',
