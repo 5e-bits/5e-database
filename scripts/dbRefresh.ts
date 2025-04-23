@@ -194,6 +194,9 @@ async function main() {
     console.log('\nUploading 2014 tables...');
     await uploadTablesFromFolder(db, 'src/2014', '2014-');
 
+    console.log('\nUploading 2024 tables...');
+    await uploadTablesFromFolder(db, 'src/2024', '2024-');
+
     // Add calls for other directories if needed, e.g.:
     // console.log('\nUploading root src tables...');
     // await uploadTablesFromFolder(db, 'src/');
