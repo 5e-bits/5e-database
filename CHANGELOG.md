@@ -1,0 +1,12 @@
+# [3.17.0](https://github.com/5e-bits/5e-database/compare/v3.16.0...v3.17.0) (2025-04-25)
+
+
+### Bug Fixes
+
+* **npm:** Set to private so we don't publish to npm ([08e582a](https://github.com/5e-bits/5e-database/commit/08e582a848e89c7cd79bd1373332d427c4413663))
+* **npm:** Update npm lockfile ([9fdcf7d](https://github.com/5e-bits/5e-database/commit/9fdcf7dd941856bfe042972598317573e7a8bcb9))
+
+
+### Features
+
+* **release:** Now create CHANGELOG.md and npm version bump with semantic release ([935a3c6](https://github.com/5e-bits/5e-database/commit/935a3c6dce3b7197b563b8f0be279670ba0f4076))
