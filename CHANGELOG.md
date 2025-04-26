@@ -1,3 +1,10 @@
+# [3.18.0](https://github.com/5e-bits/5e-database/compare/v3.17.0...v3.18.0) (2025-04-26)
+
+
+### Features
+
+* **images:** Cultist to Druid ([92d2db9](https://github.com/5e-bits/5e-database/commit/92d2db94de4a4fae89a8aa99804759c0487bcd54))
+
 # [3.17.0](https://github.com/5e-bits/5e-database/compare/v3.16.0...v3.17.0) (2025-04-25)
 
 
