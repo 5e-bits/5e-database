@@ -1,3 +1,10 @@
+## [3.19.1](https://github.com/5e-bits/5e-database/compare/v3.19.0...v3.19.1) (2025-04-27)
+
+
+### Bug Fixes
+
+* **images:** Add image for Grick ([cf5105d](https://github.com/5e-bits/5e-database/commit/cf5105d99637a0e89480b7bca8a6d08e934bd2bf))
+
 # [3.19.0](https://github.com/5e-bits/5e-database/compare/v3.18.0...v3.19.0) (2025-04-27)
 
 
