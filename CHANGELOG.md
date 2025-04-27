@@ -1,3 +1,10 @@
+## [3.19.2](https://github.com/5e-bits/5e-database/compare/v3.19.1...v3.19.2) (2025-04-27)
+
+
+### Bug Fixes
+
+* **monsters:** white spaces, OCR, etc. ([#816](https://github.com/5e-bits/5e-database/issues/816)) ([30913dd](https://github.com/5e-bits/5e-database/commit/30913dd4d4295f3017a148d3f9c3cb6ae2b49a9b))
+
 ## [3.19.1](https://github.com/5e-bits/5e-database/compare/v3.19.0...v3.19.1) (2025-04-27)
 
 
