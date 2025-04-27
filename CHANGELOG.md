@@ -1,3 +1,10 @@
+# [3.20.0](https://github.com/5e-bits/5e-database/compare/v3.19.2...v3.20.0) (2025-04-27)
+
+
+### Features
+
+* **release:** Remove PAT dependency ([#818](https://github.com/5e-bits/5e-database/issues/818)) ([aefc47e](https://github.com/5e-bits/5e-database/commit/aefc47eb420b58a3b746d68148a5ce93073cf627))
+
 ## [3.19.2](https://github.com/5e-bits/5e-database/compare/v3.19.1...v3.19.2) (2025-04-27)
 
 
