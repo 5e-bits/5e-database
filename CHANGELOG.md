@@ -1,3 +1,10 @@
+# [3.22.0](https://github.com/5e-bits/5e-database/compare/v3.21.0...v3.22.0) (2025-04-27)
+
+
+### Features
+
+* **images:** All remaining monster images ([4805d07](https://github.com/5e-bits/5e-database/commit/4805d07e433cd2fa4be82990bfe434ef40843086))
+
 # [3.21.0](https://github.com/5e-bits/5e-database/compare/v3.20.0...v3.21.0) (2025-04-27)
 
 
