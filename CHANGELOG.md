@@ -1,3 +1,11 @@
+# [3.19.0](https://github.com/5e-bits/5e-database/compare/v3.18.0...v3.19.0) (2025-04-27)
+
+
+### Features
+
+* **images:** Duergar to Ghost ([2460333](https://github.com/5e-bits/5e-database/commit/24603330712099ea478a61c9924a262d43a06fb2))
+* **images:** Ghoul to Hell Hound ([7061e7f](https://github.com/5e-bits/5e-database/commit/7061e7f0237527de06c46426ab965595faa75fdf))
+
 # [3.18.0](https://github.com/5e-bits/5e-database/compare/v3.17.0...v3.18.0) (2025-04-26)
 
 
