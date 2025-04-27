@@ -1,3 +1,10 @@
+# [3.21.0](https://github.com/5e-bits/5e-database/compare/v3.20.0...v3.21.0) (2025-04-27)
+
+
+### Features
+
+* **images:** Hezrou to Manticore, Warhorse Skeleton, and Werebear to White Dragon Wyrmling ([3f54cae](https://github.com/5e-bits/5e-database/commit/3f54caeacceeb38b351424cbc7f6653b926c6ae4))
+
 # [3.20.0](https://github.com/5e-bits/5e-database/compare/v3.19.2...v3.20.0) (2025-04-27)
 
 
