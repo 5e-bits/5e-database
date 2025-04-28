@@ -1,3 +1,10 @@
+# [3.23.0](https://github.com/5e-bits/5e-database/compare/v3.22.0...v3.23.0) (2025-04-28)
+
+
+### Features
+
+* **magic-items:** Images for Boots of striding and sprinting to Deck of Illusions ([46155eb](https://github.com/5e-bits/5e-database/commit/46155ebea6594ef9864dfd329bb45b63668b4c8e))
+
 # [3.22.0](https://github.com/5e-bits/5e-database/compare/v3.21.0...v3.22.0) (2025-04-27)
 
 
