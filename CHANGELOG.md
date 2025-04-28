@@ -1,3 +1,10 @@
+# [3.24.0](https://github.com/5e-bits/5e-database/compare/v3.23.0...v3.24.0) (2025-04-28)
+
+
+### Features
+
+* **magic-items:** Images for Deck of Many Things to Elemental Gems ([1936368](https://github.com/5e-bits/5e-database/commit/19363688c37cff32175f8784a54bbcf3182924ed))
+
 # [3.23.0](https://github.com/5e-bits/5e-database/compare/v3.22.0...v3.23.0) (2025-04-28)
 
 
