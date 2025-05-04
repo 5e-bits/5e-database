@@ -1,3 +1,10 @@
+# [3.25.0](https://github.com/5e-bits/5e-database/compare/v3.24.0...v3.25.0) (2025-05-04)
+
+
+### Features
+
+* **images:** Redirect image urls to new image urls ([#826](https://github.com/5e-bits/5e-database/issues/826)) ([be7e6aa](https://github.com/5e-bits/5e-database/commit/be7e6aad5c66e588af81730ead77480b0925720b))
+
 # [3.24.0](https://github.com/5e-bits/5e-database/compare/v3.23.0...v3.24.0) (2025-04-28)
 
 
