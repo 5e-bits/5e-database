@@ -1,3 +1,10 @@
+## [3.25.1](https://github.com/5e-bits/5e-database/compare/v3.25.0...v3.25.1) (2025-05-16)
+
+
+### Bug Fixes
+
+* Add subclass improvements to level features ([#836](https://github.com/5e-bits/5e-database/issues/836)) ([0907a8a](https://github.com/5e-bits/5e-database/commit/0907a8a18d7d92b8ba91d23e0c076d0598caebc8))
+
 # [3.25.0](https://github.com/5e-bits/5e-database/compare/v3.24.0...v3.25.0) (2025-05-04)
 
 
