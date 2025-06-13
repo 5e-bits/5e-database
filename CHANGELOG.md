@@ -1,3 +1,10 @@
+# [3.26.0](https://github.com/5e-bits/5e-database/compare/v3.25.1...v3.26.0) (2025-06-13)
+
+
+### Features
+
+* **2024:** Add a bunch of easy tables to 2024 ([#856](https://github.com/5e-bits/5e-database/issues/856)) ([40ec703](https://github.com/5e-bits/5e-database/commit/40ec703049aadb25607e44843c9afcafd5ce1b86))
+
 ## [3.25.1](https://github.com/5e-bits/5e-database/compare/v3.25.0...v3.25.1) (2025-05-16)
 
 
