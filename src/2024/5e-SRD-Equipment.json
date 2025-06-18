@@ -1,5 +1,114 @@
 [
   {
+    "index": "arrows",
+    "name": "Arrows",
+    "equipment_categories": [
+      {
+        "index": "ammunition",
+        "name": "Ammunition",
+        "url": "/api/2024/equipment-categories/ammunition"
+      }
+    ],
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    },
+    "quantity": 20,
+    "storage": {
+      "index": "quiver",
+      "name": "Quiver",
+      "url": "/api/2024/equipment/quiver"
+    },
+    "weight": 1,
+    "url": "/api/2024/equipment/arrows"
+  },
+  {
+    "index": "bolts",
+    "name": "Bolts",
+    "equipment_categories": [
+      {
+        "index": "ammunition",
+        "name": "Ammunition",
+        "url": "/api/2024/equipment-categories/ammunition"
+      }
+    ],
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    },
+    "quantity": 20,
+    "storage": {
+      "index": "case-crossbow-bolt",
+      "name": "Case, Crossbow Bolt",
+      "url": "/api/2024/equipment/case-crossbow-bolt"
+    },
+    "weight": 1.5,
+    "url": "/api/2024/equipment/bolts"
+  },
+  {
+    "index": "bullets-firearm",
+    "name": "Bullets, Firearm",
+    "equipment_categories": [
+      {
+        "index": "ammunition",
+        "name": "Ammunition",
+        "url": "/api/2024/equipment-categories/ammunition"
+      }
+    ],
+    "cost": {
+      "quantity": 3,
+      "unit": "gp"
+    },
+    "quantity": 10,
+    "storage": {
+      "index": "pouch",
+      "name": "Pouch",
+      "url": "/api/2024/equipment/pouch"
+    },
+    "weight": 2,
+    "url": "/api/2024/equipment/bullets-firearm"
+  },
+  {
+    "index": "bullets-sling",
+    "name": "Bullets, Sling",
+    "equipment_categories": [
+      {
+        "index": "ammunition",
+        "name": "Ammunition",
+        "url": "/api/2024/equipment-categories/ammunition"
+      }
+    ],
+    "cost": {
+      "quantity": 4,
+      "unit": "cp"
+    },
+    "quantity": 20,
+    "storage": {
+      "index": "pouch",
+      "name": "Pouch",
+      "url": "/api/2024/equipment/pouch"
+    },
+    "weight": 1.5,
+    "url": "/api/2024/equipment/bullets-sling"
+  },
+  {
+    "index": "case-crossbow-bolt",
+    "name": "Case, Crossbow Bolt",
+    "equipment_categories": [
+      {
+        "index": "adventuring-gear",
+        "name": "Adventuring Gear",
+        "url": "/api/2024/equipment-categories/adventuring-gear"
+      }
+    ],
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    },
+    "weight": 1,
+    "url": "/api/2024/equipment/case-crossbow-bolt"
+  },
+  {
     "index": "club",
     "name": "Club",
     "equipment_categories": [
@@ -122,6 +231,56 @@
     },
     "weight": 1,
     "url": "/api/2024/equipment/dagger"
+  },
+  {
+    "index": "dart",
+    "name": "Dart",
+    "equipment_categories": [
+      {
+        "index": "ranged-weapons",
+        "name": "Ranged Weapons",
+        "url": "/api/2024/equipment-categories/ranged-weapons"
+      }
+    ],
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    },
+    "damage": {
+      "damage_dice": "1d4",
+      "damage_type": {
+        "index": "piercing",
+        "name": "Piercing",
+        "url": "/api/2024/damage-types/piercing"
+      }
+    },
+    "range": {
+      "normal": 20,
+      "long": 60
+    },
+    "weight": 0.25,
+    "properties": [
+      {
+        "index": "finesse",
+        "name": "Finesse",
+        "url": "/api/2024/weapon-properties/finesse"
+      },
+      {
+        "index": "thrown",
+        "name": "Thrown",
+        "url": "/api/2024/weapon-properties/thrown"
+      }
+    ],
+    "mastery": {
+      "index": "vex",
+      "name": "Vex",
+      "url": "/api/2024/weapon-mastery-properties/vex"
+    },
+    "throw_range": {
+      "normal": 20,
+      "long": 60
+    },
+    "url": "/api/2024/equipment/dart"
   },
   {
     "index": "greatclub",
@@ -302,6 +461,77 @@
     "url": "/api/2024/equipment/javelin"
   },
   {
+    "index": "light-crossbow",
+    "name": "Light Crossbow",
+    "equipment_categories": [
+      {
+        "index": "ranged-weapons",
+        "name": "Ranged Weapons",
+        "url": "/api/2024/equipment-categories/ranged-weapons"
+      },
+      {
+        "index": "simple-ranged-weapons",
+        "name": "Simple Ranged Weapons",
+        "url": "/api/2024/equipment-categories/simple-ranged-weapons"
+      },
+      {
+        "index": "simple-weapons",
+        "name": "Simple Weapons",
+        "url": "/api/2024/equipment-categories/simple-weapons"
+      },
+      {
+        "index": "weapons",
+        "name": "Weapons",
+        "url": "/api/2024/equipment-categories/weapons"
+      }
+    ],
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    },
+    "damage": {
+      "damage_dice": "1d8",
+      "damage_type": {
+        "index": "piercing",
+        "name": "Piercing",
+        "url": "/api/2024/damage-types/piercing"
+      }
+    },
+    "range": {
+      "normal": 80,
+      "long": 320
+    },
+    "weight": 5,
+    "properties": [
+      {
+        "index": "ammunition",
+        "name": "Ammunition",
+        "url": "/api/2024/weapon-properties/ammunition"
+      },
+      {
+        "index": "loading",
+        "name": "Loading",
+        "url": "/api/2024/weapon-properties/loading"
+      },
+      {
+        "index": "two-handed",
+        "name": "Two-Handed",
+        "url": "/api/2024/weapon-properties/two-handed"
+      }
+    ],
+    "ammunition": {
+      "index": "bolts",
+      "name": "Bolts",
+      "url": "/api/2024/equipment/bolts"
+    },
+    "mastery": {
+      "index": "slow",
+      "name": "Slow",
+      "url": "/api/2024/weapon-mastery-properties/slow"
+    },
+    "url": "/api/2024/equipment/light-crossbow"
+  },
+  {
     "index": "light-hammer",
     "name": "Light Hammer",
     "equipment_categories": [
@@ -415,6 +645,46 @@
     "url": "/api/2024/equipment/mace"
   },
   {
+    "index": "needles",
+    "name": "Needles",
+    "equipment_categories": [
+      {
+        "index": "ammunition",
+        "name": "Ammunition",
+        "url": "/api/2024/equipment-categories/ammunition"
+      }
+    ],
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    },
+    "quantity": 50,
+    "storage": {
+      "index": "pouch",
+      "name": "Pouch",
+      "url": "/api/2024/equipment/pouch"
+    },
+    "weight": 1,
+    "url": "/api/2024/equipment/needles"
+  },
+  {
+    "index": "pouch",
+    "name": "Pouch",
+    "equipment_categories": [
+      {
+        "index": "adventuring-gear",
+        "name": "Adventuring Gear",
+        "url": "/api/2024/equipment-categories/adventuring-gear"
+      }
+    ],
+    "cost": {
+      "quantity": 5,
+      "unit": "sp"
+    },
+    "weight": 1,
+    "url": "/api/2024/equipment/pouch"
+  },
+  {
     "index": "quarterstaff",
     "name": "Quarterstaff",
     "equipment_categories": [
@@ -478,6 +748,89 @@
     "url": "/api/2024/equipment/quarterstaff"
   },
   {
+    "index": "quiver",
+    "name": "Quiver",
+    "equipment_categories": [
+      {
+        "index": "adventuring-gear",
+        "name": "Adventuring Gear",
+        "url": "/api/2024/equipment-categories/adventuring-gear"
+      }
+    ],
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    },
+    "weight": 1,
+    "url": "/api/2024/equipment/quiver"
+  },
+  {
+    "index": "shortbow",
+    "name": "Shortbow",
+    "equipment_categories": [
+      {
+        "index": "ranged-weapons",
+        "name": "Ranged Weapons",
+        "url": "/api/2024/equipment-categories/ranged-weapons"
+      },
+      {
+        "index": "simple-ranged-weapons",
+        "name": "Simple Ranged Weapons",
+        "url": "/api/2024/equipment-categories/simple-ranged-weapons"
+      },
+      {
+        "index": "simple-weapons",
+        "name": "Simple Weapons",
+        "url": "/api/2024/equipment-categories/simple-weapons"
+      },
+      {
+        "index": "weapons",
+        "name": "Weapons",
+        "url": "/api/2024/equipment-categories/weapons"
+      }
+    ],
+    "ammunition": {
+      "index": "arrows",
+      "name": "Arrows",
+      "url": "/api/2024/equipment/arrows"
+    },
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    },
+    "damage": {
+      "damage_dice": "1d6",
+      "damage_type": {
+        "index": "piercing",
+        "name": "Piercing",
+        "url": "/api/2024/damage-types/piercing"
+      }
+    },
+    "range": {
+      "normal": 80,
+      "long": 320
+    },
+    "properties": [
+      {
+        "index": "ammunition",
+        "name": "Ammunition",
+        "url": "/api/2024/weapon-properties/ammunition"
+      },
+      {
+        "index": "two-handed",
+        "name": "Two-Handed",
+        "url": "/api/2024/weapon-properties/two-handed"
+      }
+    ],
+    "mastery": {
+      "index": "vex",
+      "name": "Vex",
+      "url": "/api/2024/weapon-mastery-properties/vex"
+    },
+    "weight": 2,
+    "url": "/api/2024/equipment/shortbow"
+  },
+  {
     "index": "sickle",
     "name": "Sickle",
     "equipment_categories": [
@@ -531,6 +884,67 @@
       "url": "/api/2024/weapon-mastery-properties/nick"
     },
     "url": "/api/2024/equipment/sickle"
+  },
+  {
+    "index": "sling",
+    "name": "Sling",
+    "equipment_categories": [
+      {
+        "index": "ranged-weapons",
+        "name": "Ranged Weapons",
+        "url": "/api/2024/equipment-categories/ranged-weapons"
+      },
+      {
+        "index": "simple-ranged-weapons",
+        "name": "Simple Ranged Weapons",
+        "url": "/api/2024/equipment-categories/simple-ranged-weapons"
+      },
+      {
+        "index": "simple-weapons",
+        "name": "Simple Weapons",
+        "url": "/api/2024/equipment-categories/simple-weapons"
+      },
+      {
+        "index": "weapons",
+        "name": "Weapons",
+        "url": "/api/2024/equipment-categories/weapons"
+      }
+    ],
+    "ammunition": {
+      "index": "bullets-sling",
+      "name": "Bullets, Sling",
+      "url": "/api/2024/equipment/bullets-sling"
+    },
+    "cost": {
+      "quantity": 1,
+      "unit": "sp"
+    },
+    "damage": {
+      "damage_dice": "1d4",
+      "damage_type": {
+        "index": "piercing",
+        "name": "Piercing",
+        "url": "/api/2024/damage-types/piercing"
+      }
+    },
+    "range": {
+      "normal": 30,
+      "long": 120
+    },
+    "weight": 0,
+    "properties": [
+      {
+        "index": "ammunition",
+        "name": "Ammunition",
+        "url": "/api/2024/weapon-properties/ammunition"
+      }
+    ],
+    "mastery": {
+      "index": "slow",
+      "name": "Slow",
+      "url": "/api/2024/weapon-mastery-properties/slow"
+    },
+    "url": "/api/2024/equipment/sling"
   },
   {
     "index": "spear",
