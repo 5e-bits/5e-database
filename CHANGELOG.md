@@ -1,3 +1,10 @@
+## [3.26.1](https://github.com/5e-bits/5e-database/compare/v3.26.0...v3.26.1) (2025-06-30)
+
+
+### Bug Fixes
+
+* **trident:** change damage type to piercing ([#865](https://github.com/5e-bits/5e-database/issues/865)) ([84c2fe6](https://github.com/5e-bits/5e-database/commit/84c2fe653ecbfd9e51fb2755b922d17ce412889c))
+
 # [3.26.0](https://github.com/5e-bits/5e-database/compare/v3.25.1...v3.26.0) (2025-06-13)
 
 
