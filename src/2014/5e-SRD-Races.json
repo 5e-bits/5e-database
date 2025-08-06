@@ -17,62 +17,6 @@
     "age": "Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years.",
     "size": "Medium",
     "size_description": "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium.",
-    "starting_proficiencies": [
-      {
-        "index": "battleaxes",
-        "name": "Battleaxes",
-        "url": "/api/2014/proficiencies/battleaxes"
-      },
-      {
-        "index": "handaxes",
-        "name": "Handaxes",
-        "url": "/api/2014/proficiencies/handaxes"
-      },
-      {
-        "index": "light-hammers",
-        "name": "Light hammers",
-        "url": "/api/2014/proficiencies/light-hammers"
-      },
-      {
-        "index": "warhammers",
-        "name": "Warhammers",
-        "url": "/api/2014/proficiencies/warhammers"
-      }
-    ],
-    "starting_proficiency_options": {
-      "desc": "You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools.",
-      "choose": 1,
-      "type": "proficiencies",
-      "from": {
-        "option_set_type": "options_array",
-        "options": [
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "smiths-tools",
-              "name": "Smith's Tools",
-              "url": "/api/2014/proficiencies/smiths-tools"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "brewers-supplies",
-              "name": "Brewer's Supplies",
-              "url": "/api/2014/proficiencies/brewers-supplies"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "masons-tools",
-              "name": "Mason's Tools",
-              "url": "/api/2014/proficiencies/masons-tools"
-            }
-          }
-        ]
-      }
-    },
     "languages": [
       {
         "index": "common",
@@ -140,13 +84,6 @@
     "alignment": "Elves love freedom, variety, and self-expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others' freedom as well as their own, and they are more often good than not.",
     "size": "Medium",
     "size_description": "Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium.",
-    "starting_proficiencies": [
-      {
-        "index": "skill-perception",
-        "name": "Skill: Perception",
-        "url": "/api/2014/proficiencies/skill-perception"
-      }
-    ],
     "languages": [
       {
         "index": "common",
@@ -209,7 +146,6 @@
     "alignment": "Most halflings are lawful good. As a rule, they are good-hearted and kind, hate to see others in pain, and have no tolerance for oppression. They are also very orderly and traditional, leaning heavily on the support of their community and the comfort of their old ways.",
     "size": "Small",
     "size_description": "Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small.",
-    "starting_proficiencies": [],
     "languages": [
       {
         "index": "common",
@@ -307,7 +243,6 @@
     "alignment": "Humans tend toward no particular alignment. The best and the worst are found among them.",
     "size": "Medium",
     "size_description": "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.",
-    "starting_proficiencies": [],
     "languages": [
       {
         "index": "common",
@@ -475,7 +410,6 @@
     "age": "Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80.",
     "size": "Medium",
     "size_description": "Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium.",
-    "starting_proficiencies": [],
     "languages": [
       {
         "index": "common",
@@ -527,7 +461,6 @@
     "age": "Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years.",
     "size": "Small",
     "size_description": "Gnomes are between 3 and 4 feet tall and average about 40 pounds. Your size is Small.",
-    "starting_proficiencies": [],
     "languages": [
       {
         "index": "common",
@@ -634,160 +567,6 @@
     "age": "Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years.",
     "size": "Medium",
     "size_description": "Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium.",
-    "starting_proficiencies": [],
-    "starting_proficiency_options": {
-      "choose": 2,
-      "type": "proficiencies",
-      "from": {
-        "option_set_type": "options_array",
-        "options": [
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-acrobatics",
-              "name": "Skill: Acrobatics",
-              "url": "/api/2014/proficiencies/skill-acrobatics"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-animal-handling",
-              "name": "Skill: Animal Handling",
-              "url": "/api/2014/proficiencies/skill-animal-handling"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-arcana",
-              "name": "Skill: Arcana",
-              "url": "/api/2014/proficiencies/skill-arcana"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-athletics",
-              "name": "Skill: Athletics",
-              "url": "/api/2014/proficiencies/skill-athletics"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-deception",
-              "name": "Skill: Deception",
-              "url": "/api/2014/proficiencies/skill-deception"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-history",
-              "name": "Skill: History",
-              "url": "/api/2014/proficiencies/skill-history"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-insight",
-              "name": "Skill: Insight",
-              "url": "/api/2014/proficiencies/skill-insight"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-intimidation",
-              "name": "Skill: Intimidation",
-              "url": "/api/2014/proficiencies/skill-intimidation"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-investigation",
-              "name": "Skill: Investigation",
-              "url": "/api/2014/proficiencies/skill-investigation"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-medicine",
-              "name": "Skill: Medicine",
-              "url": "/api/2014/proficiencies/skill-medicine"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-nature",
-              "name": "Skill: Nature",
-              "url": "/api/2014/proficiencies/skill-nature"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-perception",
-              "name": "Skill: Perception",
-              "url": "/api/2014/proficiencies/skill-perception"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-performance",
-              "name": "Skill: Performance",
-              "url": "/api/2014/proficiencies/skill-performance"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-persuasion",
-              "name": "Skill: Persuasion",
-              "url": "/api/2014/proficiencies/skill-persuasion"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-religion",
-              "name": "Skill: Religion",
-              "url": "/api/2014/proficiencies/skill-religion"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-sleight-of-hand",
-              "name": "Skill: Sleight of Hand",
-              "url": "/api/2014/proficiencies/skill-sleight-of-hand"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-stealth",
-              "name": "Skill: Stealth",
-              "url": "/api/2014/proficiencies/skill-stealth"
-            }
-          },
-          {
-            "option_type": "reference",
-            "item": {
-              "index": "skill-survival",
-              "name": "Skill: Survival",
-              "url": "/api/2014/proficiencies/skill-survival"
-            }
-          }
-        ]
-      }
-    },
     "languages": [
       {
         "index": "common",
@@ -968,13 +747,6 @@
     "age": "Half-orcs mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years.",
     "size": "Medium",
     "size_description": "Half-orcs are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium.",
-    "starting_proficiencies": [
-      {
-        "index": "skill-intimidation",
-        "name": "Skill: Intimidation",
-        "url": "/api/2014/proficiencies/skill-intimidation"
-      }
-    ],
     "languages": [
       {
         "index": "common",
@@ -1039,7 +811,6 @@
     "age": "Tieflings mature at the same rate as humans but live a few years longer.",
     "size": "Medium",
     "size_description": "Tieflings are about the same size and build as humans. Your size is Medium.",
-    "starting_proficiencies": [],
     "languages": [
       {
         "index": "common",
