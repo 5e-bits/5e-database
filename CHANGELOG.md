@@ -1,3 +1,25 @@
+# [4.0.0](https://github.com/5e-bits/5e-database/compare/v3.26.1...v4.0.0) (2025-09-04)
+
+
+* refactor(race/subrace)!: remove redundant data ([#875](https://github.com/5e-bits/5e-database/issues/875)) ([67261fb](https://github.com/5e-bits/5e-database/commit/67261fbf4b1c5c785aeab47fbd4356c328b0593c)), closes [#874](https://github.com/5e-bits/5e-database/issues/874)
+
+
+### BREAKING CHANGES
+
+* dropped the `race.starting_proficiencies`,
+`race.starting_proficiency_options`, `subrace.starting_proficiencies`,
+`subrace.language_options`, and `subrace.languages` properties of all
+races and subraces in the database. Clients can instead find this data
+on the corresponding traits linked to each race or subrace.
+
+## How was it tested?
+
+I ran the database + API project locally with Docker and called the
+endpoints of the various classes and subclasses. I also ran the unit and
+integration tests in the API project.
+
+## Is there a Github issue this is resolving?
+
 ## [3.26.1](https://github.com/5e-bits/5e-database/compare/v3.26.0...v3.26.1) (2025-06-30)
 
 
