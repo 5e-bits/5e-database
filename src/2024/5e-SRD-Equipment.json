@@ -36,6 +36,91 @@
     "url": "/api/2024/equipment/alchemists-fire"
   },
   {
+    "index": "alchemist-supplies",
+    "name": "Alchemist's Supplies",
+    "equipment_categories": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/2024/equipment-categories/artisans-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "int",
+      "name": "Int",
+      "url": "/api/2024/ability-scores/int"
+    },
+    "craft": [
+      {
+        "index": "acid",
+        "name": "Acid",
+        "url": "/api/2024/equipment/acid"
+      },
+      {
+        "index": "alchemist-fire",
+        "name": "Alchemist's Fire",
+        "url": "/api/2024/equipment/alchemist-fire"
+      },
+      {
+        "index": "component-pouch",
+        "name": "Component Pouch",
+        "url": "/api/2024/equipment/component-pouch"
+      },
+      {
+        "index": "oil",
+        "name": "Oil",
+        "url": "/api/2024/equipment/oil"
+      },
+      {
+        "index": "paper",
+        "name": "Paper",
+        "url": "/api/2024/equipment/paper"
+      },
+      {
+        "index": "perfume",
+        "name": "Perfume",
+        "url": "/api/2024/equipment/perfume"
+      }
+    ],
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Identify a substance",
+        "dc": {
+          "dc_type": {
+            "index": "int",
+            "name": "Int",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Start a fire",
+        "dc": {
+          "dc_type": {
+            "index": "int",
+            "name": "Int",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 8,
+    "url": "/api/2024/equipment/alchemist-supplies"
+  },
+  {
     "index": "antitoxin",
     "name": "Antitoxin",
     "equipment_categories": [
@@ -93,6 +178,59 @@
     "description": "A Backpack holds up to 30 pounds within 1 cubic foot. It can also serve as a saddlebag.",
     "weight": 5,
     "url": "/api/2024/equipment/backpack"
+  },
+  {
+    "index": "bagpipes",
+    "name": "Bagpipes",
+    "equipment_categories": [
+      {
+        "index": "musical-instruments",
+        "name": "Musical Instruments",
+        "url": "/api/2024/equipment-categories/musical-instruments"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "cha",
+      "name": "Charisma",
+      "url": "/api/2024/ability-scores/cha"
+    },
+    "cost": {
+      "quantity": 30,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Play a known tune",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Improvise a song",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 6,
+    "url": "/api/2024/equipment/bagpipes"
   },
   {
     "index": "ball-bearings",
@@ -441,6 +579,66 @@
     "url": "/api/2024/equipment/breastplate"
   },
   {
+    "index": "brewers-supplies",
+    "name": "Brewer's Supplies",
+    "equipment_categories": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/2024/equipment-categories/artisans-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "int",
+      "name": "Int",
+      "url": "/api/2024/ability-scores/int"
+    },
+    "craft": [
+      {
+        "index": "antitoxin",
+        "name": "Antitoxin",
+        "url": "/api/2024/equipment/antitoxin"
+      }
+    ],
+    "cost": {
+      "quantity": 20,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Detect poisoned drink",
+        "dc": {
+          "dc_type": {
+            "index": "int",
+            "name": "Int",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Identify alcohol",
+        "dc": {
+          "dc_type": {
+            "index": "int",
+            "name": "Int",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 9,
+    "url": "/api/2024/equipment/brewers-supplies"
+  },
+  {
     "index": "bucket",
     "name": "Bucket",
     "equipment_categories": [
@@ -512,6 +710,11 @@
         "index": "adventuring-gear",
         "name": "Adventuring Gear",
         "url": "/api/2024/equipment-categories/adventuring-gear"
+      },
+      {
+        "index": "equipment-packs",
+        "name": "Equipment Packs",
+        "url": "/api/2024/equipment-categories/equipment-packs"
       }
     ],
     "cost": {
@@ -621,6 +824,64 @@
     "url": "/api/2024/equipment/burglars-pack"
   },
   {
+    "index": "calligrapher-supplies",
+    "name": "Calligrapher's Supplies",
+    "equipment_categories": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/2024/equipment-categories/artisans-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "dex",
+      "name": "Dex",
+      "url": "/api/2024/ability-scores/dex"
+    },
+    "craft": [
+      {
+        "index": "ink",
+        "name": "Ink",
+        "url": "/api/2024/equipment/ink"
+      },
+      {
+        "index": "spell-scroll-cantrip",
+        "name": "Spell Scroll, Cantrip",
+        "url": "/api/2024/equipment/spell-scroll-cantrip"
+      },
+      {
+        "index": "spell-scroll-level-1",
+        "name": "Spell Scroll, Level 1",
+        "url": "/api/2024/equipment/spell-scroll-level-1"
+      }
+    ],
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Write text with impressive flourishes that guard against forgery",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "Dex",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 5,
+    "url": "/api/2024/equipment/calligrapher-supplies"
+  },
+  {
     "index": "caltrops",
     "name": "Caltrops",
     "equipment_categories": [
@@ -655,6 +916,142 @@
     "weight": 0,
     "description": "For 1 hour, a lit Candle sheds Bright Light in a 5-foot radius and Dim Light for an additional 5 feet.",
     "url": "/api/2024/equipment/candle"
+  },
+  {
+    "index": "carpenters-tools",
+    "name": "Carpenter's Tools",
+    "equipment_categories": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/2024/equipment-categories/artisans-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "str",
+      "name": "Str",
+      "url": "/api/2024/ability-scores/str"
+    },
+    "craft": [
+      {
+        "index": "club",
+        "name": "Club",
+        "url": "/api/2024/equipment/club"
+      },
+      {
+        "index": "greatclub",
+        "name": "Greatclub",
+        "url": "/api/2024/equipment/greatclub"
+      },
+      {
+        "index": "quarterstaff",
+        "name": "Quarterstaff",
+        "url": "/api/2024/equipment/quarterstaff"
+      },
+      {
+        "index": "barrel",
+        "name": "Barrel",
+        "url": "/api/2024/equipment/barrel"
+      },
+      {
+        "index": "chest",
+        "name": "Chest",
+        "url": "/api/2024/equipment/chest"
+      },
+      {
+        "index": "ladder",
+        "name": "Ladder",
+        "url": "/api/2024/equipment/ladder"
+      },
+      {
+        "index": "pole",
+        "name": "Pole",
+        "url": "/api/2024/equipment/pole"
+      },
+      {
+        "index": "portable-ram",
+        "name": "Portable Ram",
+        "url": "/api/2024/equipment/portable-ram"
+      },
+      {
+        "index": "torch",
+        "name": "Torch",
+        "url": "/api/2024/equipment/torch"
+      }
+    ],
+    "cost": {
+      "quantity": 8,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": ": Seal or pry open a door or container",
+        "dc": {
+          "dc_type": {
+            "index": "str",
+            "name": "Str",
+            "url": "/api/2024/ability-scores/str"
+          },
+          "dc_value": 20,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 6,
+    "url": "/api/2024/equipment/carpenters-tools"
+  },
+  {
+    "index": "cartographer-tools",
+    "name": "Cartographer's Tools",
+    "equipment_categories": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/2024/equipment-categories/artisans-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "wis",
+      "name": "Wis",
+      "url": "/api/2024/ability-scores/wis"
+    },
+    "craft": [
+      {
+        "index": "map",
+        "name": "Map",
+        "url": "/api/2024/equipment/map"
+      }
+    ],
+    "cost": {
+      "quantity": 15,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Draft a map of a small area",
+        "dc": {
+          "dc_type": {
+            "index": "wis",
+            "name": "Wis",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 6,
+    "url": "/api/2024/equipment/cartographer-tools"
   },
   {
     "index": "case-crossbow-bolt",
@@ -900,6 +1297,54 @@
     "url": "/api/2024/equipment/club"
   },
   {
+    "index": "cobblers-tools",
+    "name": "Cobbler's Tools",
+    "equipment_categories": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/2024/equipment-categories/artisans-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "dex",
+      "name": "Dex",
+      "url": "/api/2024/ability-scores/dex"
+    },
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    },
+    "craft": [
+      {
+        "index": "climbers-kit",
+        "name": "Climber's Kit",
+        "url": "/api/2024/equipment/climbers-kit"
+      }
+    ],
+    "utilize": [
+      {
+        "name": "Modify footwear to give Advantage on the wearer’s next Dexterity (Acrobatics) check",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "Dex",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 5,
+    "url": "/api/2024/equipment/cobblers-tools"
+  },
+  {
     "index": "component-pouch",
     "name": "Component Pouch",
     "equipment_categories": [
@@ -916,6 +1361,66 @@
     "description": "A Component Pouch is watertight and filled with compartments that hold all the free Material components of your spells.",
     "weight": 1,
     "url": "/api/2024/equipment/component-pouch"
+  },
+  {
+    "index": "cooks-utensils",
+    "name": "Cook's Utensils",
+    "equipment_categories": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/2024/equipment-categories/artisans-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "wis",
+      "name": "Wis",
+      "url": "/api/2024/ability-scores/wis"
+    },
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    },
+    "craft": [
+      {
+        "index": "rations",
+        "name": "Rations",
+        "url": "/api/2024/equipment/rations"
+      }
+    ],
+    "utilize": [
+      {
+        "name": "Improve food's flavor",
+        "dc": {
+          "dc_type": {
+            "index": "wis",
+            "name": "Wis",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Detect spoiled or poisoned food",
+        "dc": {
+          "dc_type": {
+            "index": "wis",
+            "name": "Wis",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 8,
+    "url": "/api/2024/equipment/cooks-utensils"
   },
   {
     "index": "costume",
@@ -1092,6 +1597,59 @@
     "url": "/api/2024/equipment/dart"
   },
   {
+    "index": "dice",
+    "name": "Dice",
+    "equipment_categories": [
+      {
+        "index": "gaming-sets",
+        "name": "Gaming Sets",
+        "url": "/api/2024/equipment-categories/gaming-sets"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "wis",
+      "name": "Wis",
+      "url": "/api/2024/ability-scores/wis"
+    },
+    "cost": {
+      "quantity": 1,
+      "unit": "sp"
+    },
+    "utilize": [
+      {
+        "name": "Discern whether someone is cheating",
+        "dc": {
+          "dc_type": {
+            "index": "wis",
+            "name": "Wis",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Win the game",
+        "dc": {
+          "dc_type": {
+            "index": "wis",
+            "name": "Wis",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc_value": 20,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 0,
+    "url": "/api/2024/equipment/dice"
+  },
+  {
     "index": "diplomat-pack",
     "name": "Diplomat's Pack",
     "equipment_categories": [
@@ -1213,6 +1771,213 @@
     "url": "/api/2024/equipment/diplomat-pack"
   },
   {
+    "index": "disguise-kit",
+    "name": "Disguise Kit",
+    "equipment_categories": [
+      {
+        "index": "adventuring-gear",
+        "name": "Adventuring Gear",
+        "url": "/api/2024/equipment-categories/adventuring-gear"
+      },
+      {
+        "index": "other-tools",
+        "name": "Other Tools",
+        "url": "/api/2024/equipment-categories/other-tools"
+      }
+    ],
+    "ability": {
+      "index": "cha",
+      "name": "Charisma",
+      "url": "/api/2024/ability-scores/cha"
+    },
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    },
+    "craft": [
+      {
+        "index": "costume",
+        "name": "Costume",
+        "url": "/api/2024/equipment/costume"
+      }
+    ],
+    "utilize": [
+      {
+        "name": "Apply makeup",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 3,
+    "url": "/api/2024/equipment/disguise-kit"
+  },
+  {
+    "index": "dragonchess",
+    "name": "Dragonchess",
+    "equipment_categories": [
+      {
+        "index": "gaming-sets",
+        "name": "Gaming Sets",
+        "url": "/api/2024/equipment-categories/gaming-sets"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "wis",
+      "name": "Wis",
+      "url": "/api/2024/ability-scores/wis"
+    },
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Discern whether someone is cheating",
+        "dc": {
+          "dc_type": {
+            "index": "wis",
+            "name": "Wis",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Win the game",
+        "dc": {
+          "dc_type": {
+            "index": "wis",
+            "name": "Wis",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc_value": 20,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 0,
+    "url": "/api/2024/equipment/dragonchess"
+  },
+  {
+    "index": "drum",
+    "name": "Drum",
+    "equipment_categories": [
+      {
+        "index": "musical-instruments",
+        "name": "Musical Instruments",
+        "url": "/api/2024/equipment-categories/musical-instruments"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "cha",
+      "name": "Charisma",
+      "url": "/api/2024/ability-scores/cha"
+    },
+    "cost": {
+      "quantity": 6,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Play a known tune",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Improvise a song",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 3,
+    "url": "/api/2024/equipment/drum"
+  },
+  {
+    "index": "dulcimer",
+    "name": "Dulcimer",
+    "equipment_categories": [
+      {
+        "index": "musical-instruments",
+        "name": "Musical Instruments",
+        "url": "/api/2024/equipment-categories/musical-instruments"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "cha",
+      "name": "Charisma",
+      "url": "/api/2024/ability-scores/cha"
+    },
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Play a known tune",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Improvise a song",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 10,
+    "url": "/api/2024/equipment/dulcimer"
+  },
+  {
     "index": "dungeoneer-pack",
     "name": "Dungeoneer's Pack",
     "equipment_categories": [
@@ -1313,7 +2078,7 @@
         "quantity": 1
       }
     ],
-    "description": "A Dungeoneer’s Pack contains the following items: Backpack, Caltrops, Crowbar, 2 flasks of Oil, 10 days of Rations, Rope, Tinderbox, 10 Torches, and Waterskin.",
+    "description": "A Dungeoneer's Pack contains the following items: Backpack, Caltrops, Crowbar, 2 flasks of Oil, 10 days of Rations, Rope, Tinderbox, 10 Torches, and Waterskin.",
     "weight": 55,
     "url": "/api/2024/equipment/dungeoneer-pack"
   },
@@ -1365,6 +2130,112 @@
       "url": "/api/2024/weapon-mastery-properties/sap"
     },
     "url": "/api/2024/equipment/flail"
+  },
+  {
+    "index": "flute",
+    "name": "Flute",
+    "equipment_categories": [
+      {
+        "index": "musical-instruments",
+        "name": "Musical Instruments",
+        "url": "/api/2024/equipment-categories/musical-instruments"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "cha",
+      "name": "Charisma",
+      "url": "/api/2024/ability-scores/cha"
+    },
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Play a known tune",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Improvise a song",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 1,
+    "url": "/api/2024/equipment/flute"
+  },
+  {
+    "index": "forgery-kit",
+    "name": "Forgery Kit",
+    "equipment_categories": [
+      {
+        "index": "other-tools",
+        "name": "Other Tools",
+        "url": "/api/2024/equipment-categories/other-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "dex",
+      "name": "Dex",
+      "url": "/api/2024/ability-scores/dex"
+    },
+    "cost": {
+      "quantity": 15,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Mimic 10 or fewer words of someone else's handwriting",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "Dex",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Duplicate a wax seal",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "Dex",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "dc_value": 20,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 5,
+    "url": "/api/2024/equipment/forgery-kit"
   },
   {
     "index": "glaive",
@@ -1430,6 +2301,55 @@
       "url": "/api/2024/weapon-mastery-properties/graze"
     },
     "url": "/api/2024/equipment/glaive"
+  },
+  {
+    "index": "glassblowers-tools",
+    "name": "Glassblower's Tools",
+    "equipment_categories": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/2024/equipment-categories/artisans-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "int",
+      "name": "Int",
+      "url": "/api/2024/ability-scores/int"
+    },
+    "cost": {
+      "quantity": 30,
+      "unit": "gp"
+    },
+    "craft": [
+      {
+        "index": "bottle-glass",
+        "name": "Bottle, Glass",
+        "url": "/api/2024/equipment/bottle-glass"
+      },
+      {
+        "index": "magnifying-glass",
+        "name": "Magnifying Glass",
+        "url": "/api/2024/equipment/magnifying-glass"
+      },
+      {
+        "index": "spyglass",
+        "name": "Spyglass",
+        "url": "/api/2024/equipment/spyglass"
+      },
+      {
+        "index": "vial",
+        "name": "Vial",
+        "url": "/api/2024/equipment/vial"
+      }
+    ],
+    "weight": 5,
+    "url": "/api/2024/equipment/glassblowers-tools"
   },
   {
     "index": "greataxe",
@@ -1915,6 +2835,69 @@
     "url": "/api/2024/equipment/heavy-crossbow"
   },
   {
+    "index": "herbalism-kit",
+    "name": "Herbalism Kit",
+    "equipment_categories": [
+      {
+        "index": "other-tools",
+        "name": "Other Tools",
+        "url": "/api/2024/equipment-categories/other-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "int",
+      "name": "Int",
+      "url": "/api/2024/ability-scores/int"
+    },
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    },
+    "craft": [
+      {
+        "index": "antitoxin",
+        "name": "Antitoxin",
+        "url": "/api/2024/equipment/antitoxin"
+      },
+      {
+        "index": "candle",
+        "name": "Candle",
+        "url": "/api/2024/equipment/candle"
+      },
+      {
+        "index": "healer-s-kit",
+        "name": "Healer's Kit",
+        "url": "/api/2024/equipment/healer-s-kit"
+      },
+      {
+        "index": "potion-of-healing",
+        "name": "Potion of Healing",
+        "url": "/api/2024/equipment/potion-of-healing"
+      }
+    ],
+    "utilize": [
+      {
+        "name": "Identify a plant",
+        "dc": {
+          "dc_type": {
+            "index": "int",
+            "name": "Int",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 3,
+    "url": "/api/2024/equipment/herbalism-kit"
+  },
+  {
     "index": "hide-armor",
     "name": "Hide Armor",
     "equipment_categories": [
@@ -1944,6 +2927,59 @@
     "str_minimum": 0,
     "weight": 12,
     "url": "/api/2024/equipment/hide-armor"
+  },
+  {
+    "index": "horn",
+    "name": "Horn",
+    "equipment_categories": [
+      {
+        "index": "musical-instruments",
+        "name": "Musical Instruments",
+        "url": "/api/2024/equipment-categories/musical-instruments"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "cha",
+      "name": "Charisma",
+      "url": "/api/2024/ability-scores/cha"
+    },
+    "cost": {
+      "quantity": 3,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Play a known tune",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Improvise a song",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 2,
+    "url": "/api/2024/equipment/horn"
   },
   {
     "index": "ink",
@@ -2039,6 +3075,59 @@
       "long": 120
     },
     "url": "/api/2024/equipment/javelin"
+  },
+  {
+    "index": "jewelers-tools",
+    "name": "Jeweler's Tools",
+    "equipment_categories": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/2024/equipment-categories/artisans-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "int",
+      "name": "Int",
+      "url": "/api/2024/ability-scores/int"
+    },
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    },
+    "craft": [
+      {
+        "index": "arcane-focus",
+        "name": "Arcane Focus",
+        "url": "/api/2024/equipment/arcane-focus"
+      },
+      {
+        "index": "holy-symbol",
+        "name": "Holy Symbol",
+        "url": "/api/2024/equipment/holy-symbol"
+      }
+    ],
+    "utilize": [
+      {
+        "name": " Discern a gem’s value",
+        "dc": {
+          "dc_type": {
+            "index": "int",
+            "name": "Int",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 2,
+    "url": "/api/2024/equipment/jewelers-tools"
   },
   {
     "index": "jug",
@@ -2209,6 +3298,109 @@
     "str_minimum": 0,
     "weight": 10,
     "url": "/api/2024/equipment/leather-armor"
+  },
+  {
+    "index": "leatherworkers-tools",
+    "name": "Leatherworker's Tools",
+    "equipment_categories": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/2024/equipment-categories/artisans-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "dex",
+      "name": "Dex",
+      "url": "/api/2024/ability-scores/dex"
+    },
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    },
+    "craft": [
+      {
+        "index": "sling",
+        "name": "Sling",
+        "url": "/api/2024/equipment/sling"
+      },
+      {
+        "index": "whip",
+        "name": "Whip",
+        "url": "/api/2024/equipment/whip"
+      },
+      {
+        "index": "hide-armor",
+        "name": "Hide Armor",
+        "url": "/api/2024/equipment/hide-armor"
+      },
+      {
+        "index": "leather-armor",
+        "name": "Leather Armor",
+        "url": "/api/2024/equipment/leather-armor"
+      },
+      {
+        "index": "studded-leather-armor",
+        "name": "Studded Leather Armor",
+        "url": "/api/2024/equipment/studded-leather-armor"
+      },
+      {
+        "index": "backpack",
+        "name": "Backpack",
+        "url": "/api/2024/equipment/backpack"
+      },
+      {
+        "index": "crossbow-bolt-case",
+        "name": "Crossbow Bolt Case",
+        "url": "/api/2024/equipment/crossbow-bolt-case"
+      },
+      {
+        "index": "case-map-or-scroll",
+        "name": "Case, Map or Scroll",
+        "url": "/api/2024/equipment/case-map-or-scroll"
+      },
+      {
+        "index": "parchment",
+        "name": "Parchment",
+        "url": "/api/2024/equipment/parchment"
+      },
+      {
+        "index": "pouch",
+        "name": "Pouch",
+        "url": "/api/2024/equipment/pouch"
+      },
+      {
+        "index": "quiver",
+        "name": "Quiver",
+        "url": "/api/2024/equipment/quiver"
+      },
+      {
+        "index": "waterskin",
+        "name": "Waterskin",
+        "url": "/api/2024/equipment/waterskin"
+      }
+    ],
+    "utilize": [
+      {
+        "name": "Add a design to a leather item",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "Dex",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 5,
+    "url": "/api/2024/equipment/leatherworkers-tools"
   },
   {
     "index": "light-crossbow",
@@ -2498,6 +3690,112 @@
     "url": "/api/2024/equipment/longsword"
   },
   {
+    "index": "lute",
+    "name": "Lute",
+    "equipment_categories": [
+      {
+        "index": "musical-instruments",
+        "name": "Musical Instruments",
+        "url": "/api/2024/equipment-categories/musical-instruments"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "cha",
+      "name": "Charisma",
+      "url": "/api/2024/ability-scores/cha"
+    },
+    "cost": {
+      "quantity": 35,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Play a known tune",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Improvise a song",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 2,
+    "url": "/api/2024/equipment/lute"
+  },
+  {
+    "index": "lyre",
+    "name": "Lyre",
+    "equipment_categories": [
+      {
+        "index": "musical-instruments",
+        "name": "Musical Instruments",
+        "url": "/api/2024/equipment-categories/musical-instruments"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "cha",
+      "name": "Charisma",
+      "url": "/api/2024/ability-scores/cha"
+    },
+    "cost": {
+      "quantity": 30,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Play a known tune",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Improvise a song",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 2,
+    "url": "/api/2024/equipment/lyre"
+  },
+  {
     "index": "mace",
     "name": "Mace",
     "equipment_categories": [
@@ -2581,6 +3879,54 @@
     "description": "As a Utilize action, you can use Manacles to bind an unwilling Small or Medium creature within 5 feet of yourself that has the Grappled, Incapacitated, or Restrained condition if you succeed on a DC 13 Dexterity (Sleight of Hand) check. While bound, a creature has Disadvantage on attack rolls, and the creature is Restrained if the Manacles are attached to a chain or hook that is fixed in place. Escaping the Manacles requires a successful DC 20 Dexterity (Sleight of Hand) check as an action. Bursting them requires a successful DC 25 Strength (Athletics) check as an action.\nEach set of Manacles comes with a key. Without the key, a creature can use Thieves’ Tools to pick the Manacles’ lock with a successful DC 15 Dexterity (Sleight of Hand) check.",
     "weight": 6,
     "url": "/api/2024/equipment/manacles"
+  },
+  {
+    "index": "masons-tools",
+    "name": "Mason's Tools",
+    "equipment_categories": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/2024/equipment-categories/artisans-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "str",
+      "name": "Str",
+      "url": "/api/2024/ability-scores/str"
+    },
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    },
+    "craft": [
+      {
+        "index": "block-and-tackle",
+        "name": "Block and Tackle",
+        "url": "/api/2024/equipment/block-and-tackle"
+      }
+    ],
+    "utilize": [
+      {
+        "name": ": Chisel a symbol or hole in stone",
+        "dc": {
+          "dc_type": {
+            "index": "str",
+            "name": "Str",
+            "url": "/api/2024/ability-scores/str"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 8,
+    "url": "/api/2024/equipment/masons-tools"
   },
   {
     "index": "map",
@@ -2796,6 +4142,59 @@
     "url": "/api/2024/equipment/musket"
   },
   {
+    "index": "navigators-tools",
+    "name": "Navigator's Tools",
+    "equipment_categories": [
+      {
+        "index": "other-tools",
+        "name": "Other Tools",
+        "url": "/api/2024/equipment-categories/other-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "wis",
+      "name": "Wis",
+      "url": "/api/2024/ability-scores/wis"
+    },
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Plot a course",
+        "dc": {
+          "dc_type": {
+            "index": "wis",
+            "name": "Wis",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Determine position by stargazing",
+        "dc": {
+          "dc_type": {
+            "index": "wis",
+            "name": "Wis",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 2,
+    "url": "/api/2024/equipment/navigators-tools"
+  },
+  {
     "index": "needles",
     "name": "Needles",
     "equipment_categories": [
@@ -2905,6 +4304,112 @@
     "str_minimum": 0,
     "weight": 8,
     "url": "/api/2024/equipment/padded-armor"
+  },
+  {
+    "index": "painters-supplies",
+    "name": "Painter's Supplies",
+    "equipment_categories": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/2024/equipment-categories/artisans-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "wis",
+      "name": "Wis",
+      "url": "/api/2024/ability-scores/wis"
+    },
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    },
+    "craft": [
+      {
+        "index": "druidic-foci",
+        "name": "Druidic Focus",
+        "url": "/api/2024/equipment/druidic-foci"
+      },
+      {
+        "index": "holy-symbol",
+        "name": "Holy Symbol",
+        "url": "/api/2024/equipment/holy-symbol"
+      }
+    ],
+    "utilize": [
+      {
+        "name": "Paint a recognizable image of something you've seen",
+        "dc": {
+          "dc_type": {
+            "index": "wis",
+            "name": "Wis",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 5,
+    "url": "/api/2024/equipment/painters-supplies"
+  },
+  {
+    "index": "pan-flute",
+    "name": "Pan flute",
+    "equipment_categories": [
+      {
+        "index": "musical-instruments",
+        "name": "Musical Instruments",
+        "url": "/api/2024/equipment-categories/musical-instruments"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "cha",
+      "name": "Charisma",
+      "url": "/api/2024/ability-scores/cha"
+    },
+    "cost": {
+      "quantity": 12,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Play a known tune",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Improvise a song",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 2,
+    "url": "/api/2024/equipment/pan-flute"
   },
   {
     "index": "paper",
@@ -3092,6 +4597,54 @@
     "url": "/api/2024/equipment/pistol"
   },
   {
+    "index": "poisoners-kit",
+    "name": "Poisoner's Kit",
+    "equipment_categories": [
+      {
+        "index": "other-tools",
+        "name": "Other Tools",
+        "url": "/api/2024/equipment-categories/other-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "int",
+      "name": "Int",
+      "url": "/api/2024/ability-scores/int"
+    },
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    },
+    "craft": [
+      {
+        "index": "poison-basic",
+        "name": "Poison, Basic",
+        "url": "/api/2024/equipment/poison-basic"
+      }
+    ],
+    "utilize": [
+      {
+        "name": "Detect a poisoned object",
+        "dc": {
+          "dc_type": {
+            "index": "int",
+            "name": "Int",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 2,
+    "url": "/api/2024/equipment/poisoners-kit"
+  },
+  {
     "index": "plate-armor",
     "name": "Plate Armor",
     "equipment_categories": [
@@ -3121,6 +4674,59 @@
     "str_minimum": 15,
     "weight": 65,
     "url": "/api/2024/equipment/plate-armor"
+  },
+  {
+    "index": "playing-cards",
+    "name": "Playing Cards",
+    "equipment_categories": [
+      {
+        "index": "gaming-sets",
+        "name": "Gaming Sets",
+        "url": "/api/2024/equipment-categories/gaming-sets"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "wis",
+      "name": "Wis",
+      "url": "/api/2024/ability-scores/wis"
+    },
+    "cost": {
+      "quantity": 5,
+      "unit": "sp"
+    },
+    "utilize": [
+      {
+        "name": "Discern whether someone is cheating",
+        "dc": {
+          "dc_type": {
+            "index": "wis",
+            "name": "Wis",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Win the game",
+        "dc": {
+          "dc_type": {
+            "index": "wis",
+            "name": "Wis",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc_value": 20,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 0,
+    "url": "/api/2024/equipment/playing-cards"
   },
   {
     "index": "poison-basic",
@@ -3195,6 +4801,59 @@
     "url": "/api/2024/equipment/potion-of-healing"
   },
   {
+    "index": "potters-tools",
+    "name": "Potter's Tools",
+    "equipment_categories": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/2024/equipment-categories/artisans-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "int",
+      "name": "Int",
+      "url": "/api/2024/ability-scores/int"
+    },
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    },
+    "craft": [
+      {
+        "index": "jug",
+        "name": "Jug",
+        "url": "/api/2024/equipment/jug"
+      },
+      {
+        "index": "lamp",
+        "name": "Lamp",
+        "url": "/api/2024/equipment/lamp"
+      }
+    ],
+    "utilize": [
+      {
+        "name": "Discern what a ceramic object held in the past 24 hours",
+        "dc": {
+          "dc_type": {
+            "index": "int",
+            "name": "Int",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 3,
+    "url": "/api/2024/equipment/potters-tools"
+  },
+  {
     "index": "pouch",
     "name": "Pouch",
     "description": "A Pouch holds up to 6 pounds within one-fifth of a cubic foot.",
@@ -3220,9 +4879,14 @@
         "index": "adventuring-gear",
         "name": "Adventuring Gear",
         "url": "/api/2024/equipment-categories/adventuring-gear"
+      },
+      {
+        "index": "equipment-packs",
+        "name": "Equipment Packs",
+        "url": "/api/2024/equipment-categories/equipment-packs"
       }
     ],
-    "container": [
+    "contents": [
       {
         "index": "backpack",
         "name": "Backpack",
@@ -3264,7 +4928,7 @@
       "quantity": 33,
       "unit": "gp"
     },
-    "description": "A Priest’s Pack contains the following items: Backpack, Blanket, Holy Water, Lamp, 7 days of Rations, Robe, and Tinderbox.",
+    "description": "A Priest's Pack contains the following items: Backpack, Blanket, Holy Water, Lamp, 7 days of Rations, Robe, and Tinderbox.",
     "weight": 29,
     "url": "/api/2024/equipment/priests-pack"
   },
@@ -3596,6 +5260,11 @@
         "index": "adventuring-gear",
         "name": "Adventuring Gear",
         "url": "/api/2024/equipment-categories/adventuring-gear"
+      },
+      {
+        "index": "equipment-packs",
+        "name": "Equipment Packs",
+        "url": "/api/2024/equipment-categories/equipment-packs"
       }
     ],
     "container": [
@@ -3714,6 +5383,59 @@
       "url": "/api/2024/weapon-mastery-properties/nick"
     },
     "url": "/api/2024/equipment/scimitar"
+  },
+  {
+    "index": "shawm",
+    "name": "Shawm",
+    "equipment_categories": [
+      {
+        "index": "musical-instruments",
+        "name": "Musical Instruments",
+        "url": "/api/2024/equipment-categories/musical-instruments"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "cha",
+      "name": "Charisma",
+      "url": "/api/2024/ability-scores/cha"
+    },
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Play a known tune",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Improvise a song",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 1,
+    "url": "/api/2024/equipment/shawm"
   },
   {
     "index": "shield",
@@ -4022,6 +5744,234 @@
     "url": "/api/2024/equipment/sling"
   },
   {
+    "index": "smiths-tools",
+    "name": "Smith's Tools",
+    "equipment_categories": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/2024/equipment-categories/artisans-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "str",
+      "name": "Str",
+      "url": "/api/2024/ability-scores/str"
+    },
+    "cost": {
+      "quantity": 20,
+      "unit": "gp"
+    },
+    "craft": [
+      {
+        "index": "battleaxe",
+        "name": "Battleaxe",
+        "url": "/api/2024/equipment/battleaxe"
+      },
+      {
+        "index": "dagger",
+        "name": "Dagger",
+        "url": "/api/2024/equipment/dagger"
+      },
+      {
+        "index": "flail",
+        "name": "Flail",
+        "url": "/api/2024/equipment/flail"
+      },
+      {
+        "index": "glaive",
+        "name": "Glaive",
+        "url": "/api/2024/equipment/glaive"
+      },
+      {
+        "index": "greataxe",
+        "name": "Greataxe",
+        "url": "/api/2024/equipment/greataxe"
+      },
+      {
+        "index": "greatsword",
+        "name": "Greatsword",
+        "url": "/api/2024/equipment/greatsword"
+      },
+      {
+        "index": "halberd",
+        "name": "Halberd",
+        "url": "/api/2024/equipment/halberd"
+      },
+      {
+        "index": "handaxe",
+        "name": "Handaxe",
+        "url": "/api/2024/equipment/handaxe"
+      },
+      {
+        "index": "javelin",
+        "name": "Javelin",
+        "url": "/api/2024/equipment/javelin"
+      },
+      {
+        "index": "lance",
+        "name": "Lance",
+        "url": "/api/2024/equipment/lance"
+      },
+      {
+        "index": "light-hammer",
+        "name": "Light Hammer",
+        "url": "/api/2024/equipment/light-hammer"
+      },
+      {
+        "index": "longsword",
+        "name": "Longsword",
+        "url": "/api/2024/equipment/longsword"
+      },
+      {
+        "index": "mace",
+        "name": "Mace",
+        "url": "/api/2024/equipment/mace"
+      },
+      {
+        "index": "maul",
+        "name": "Maul",
+        "url": "/api/2024/equipment/maul"
+      },
+      {
+        "index": "sickle",
+        "name": "Sickle",
+        "url": "/api/2024/equipment/sickle"
+      },
+      {
+        "index": "spear",
+        "name": "Spear",
+        "url": "/api/2024/equipment/spear"
+      },
+      {
+        "index": "trident",
+        "name": "Trident",
+        "url": "/api/2024/equipment/trident"
+      },
+      {
+        "index": "warhammer",
+        "name": "Warhammer",
+        "url": "/api/2024/equipment/warhammer"
+      },
+      {
+        "index": "war-pick",
+        "name": "War Pick",
+        "url": "/api/2024/equipment/war-pick"
+      },
+      {
+        "index": "breastplate",
+        "name": "Breastplate",
+        "url": "/api/2024/equipment/breastplate"
+      },
+      {
+        "index": "chain-shirt",
+        "name": "Chain Shirt",
+        "url": "/api/2024/equipment/chain-shirt"
+      },
+      {
+        "index": "half-plate-armor",
+        "name": "Half-Plate Armor",
+        "url": "/api/2024/equipment/half-plate-armor"
+      },
+      {
+        "index": "scale-mail",
+        "name": "Scale Mail",
+        "url": "/api/2024/equipment/scale-mail"
+      },
+      {
+        "index": "chain-mail",
+        "name": "Chain Mail",
+        "url": "/api/2024/equipment/chain-mail"
+      },
+      {
+        "index": "plate-armor",
+        "name": "Plate Armor",
+        "url": "/api/2024/equipment/plate-armor"
+      },
+      {
+        "index": "ring-mail",
+        "name": "Ring Mail",
+        "url": "/api/2024/equipment/ring-mail"
+      },
+      {
+        "index": "splint-armor",
+        "name": "Splint Armor",
+        "url": "/api/2024/equipment/splint-armor"
+      },
+      {
+        "index": "ball-bearings",
+        "name": "Ball Bearings",
+        "url": "/api/2024/equipment/ball-bearings"
+      },
+      {
+        "index": "bucket",
+        "name": "Bucket",
+        "url": "/api/2024/equipment/bucket"
+      },
+      {
+        "index": "caltrops",
+        "name": "Caltrops",
+        "url": "/api/2024/equipment/caltrops"
+      },
+      {
+        "index": "chain",
+        "name": "Chain",
+        "url": "/api/2024/equipment/chain"
+      },
+      {
+        "index": "crowbar",
+        "name": "Crowbar",
+        "url": "/api/2024/equipment/crowbar"
+      },
+      {
+        "index": "bullets-firearm",
+        "name": "Bullets, Firearm",
+        "url": "/api/2024/equipment/bullets-firearm"
+      },
+      {
+        "index": "grappling-hook",
+        "name": "Grappling Hook",
+        "url": "/api/2024/equipment/grappling-hook"
+      },
+      {
+        "index": "iron-pot",
+        "name": "Iron Pot",
+        "url": "/api/2024/equipment/iron-pot"
+      },
+      {
+        "index": "iron-spikes",
+        "name": "Iron Spikes",
+        "url": "/api/2024/equipment/iron-spikes"
+      },
+      {
+        "index": "bullets-sling",
+        "name": "Bullets, Sling",
+        "url": "/api/2024/equipment/bullets-sling"
+      }
+    ],
+    "utilize": [
+      {
+        "name": "Pry open a door or container",
+        "dc": {
+          "dc_type": {
+            "index": "str",
+            "name": "Str",
+            "url": "/api/2024/ability-scores/str"
+          },
+          "dc_value": 20,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 8,
+    "url": "/api/2024/equipment/smiths-tools"
+  },
+  {
     "index": "spear",
     "name": "Spear",
     "equipment_categories": [
@@ -4312,6 +6262,112 @@
     "url": "/api/2024/equipment/tent"
   },
   {
+    "index": "thieves-tools",
+    "name": "Thieves' Tools",
+    "equipment_categories": [
+      {
+        "index": "other-tools",
+        "name": "Other Tools",
+        "url": "/api/2024/equipment-categories/other-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "dex",
+      "name": "Dex",
+      "url": "/api/2024/ability-scores/dex"
+    },
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Pick a lock",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "Dex",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Disarm a trap",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "Dex",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 2,
+    "url": "/api/2024/equipment/thieves-tools"
+  },
+  {
+    "index": "three-dragon-ante",
+    "name": "Three-dragon Ante",
+    "equipment_categories": [
+      {
+        "index": "gaming-sets",
+        "name": "Gaming Sets",
+        "url": "/api/2024/equipment-categories/gaming-sets"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "wis",
+      "name": "Wis",
+      "url": "/api/2024/ability-scores/wis"
+    },
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Discern whether someone is cheating",
+        "dc": {
+          "dc_type": {
+            "index": "wis",
+            "name": "Wis",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Win the game",
+        "dc": {
+          "dc_type": {
+            "index": "wis",
+            "name": "Wis",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc_value": 20,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 0,
+    "url": "/api/2024/equipment/three-dragon-ante"
+  },
+  {
     "index": "tinderbox",
     "name": "Tinderbox",
     "equipment_categories": [
@@ -4328,6 +6384,114 @@
     "description": "A Tinderbox is a small container holding flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a Candle, Lamp, Lantern, or Torch—or anything else with exposed fuel—takes a Bonus Action. Lighting any other fire takes 1 minute.",
     "weight": 1,
     "url": "/api/2024/equipment/tinderbox"
+  },
+  {
+    "index": "tinkers-tools",
+    "name": "Tinker's Tools",
+    "equipment_categories": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/2024/equipment-categories/artisans-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "dex",
+      "name": "Dex",
+      "url": "/api/2024/ability-scores/dex"
+    },
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    },
+    "craft": [
+      {
+        "index": "musket",
+        "name": "Musket",
+        "url": "/api/2024/equipment/musket"
+      },
+      {
+        "index": "pistol",
+        "name": "Pistol",
+        "url": "/api/2024/equipment/pistol"
+      },
+      {
+        "index": "bell",
+        "name": "Bell",
+        "url": "/api/2024/equipment/bell"
+      },
+      {
+        "index": "bullseye-lantern",
+        "name": "Bullseye Lantern",
+        "url": "/api/2024/equipment/bullseye-lantern"
+      },
+      {
+        "index": "flask",
+        "name": "Flask",
+        "url": "/api/2024/equipment/flask"
+      },
+      {
+        "index": "hooded-lantern",
+        "name": "Hooded Lantern",
+        "url": "/api/2024/equipment/hooded-lantern"
+      },
+      {
+        "index": "hunting-trap",
+        "name": "Hunting Trap",
+        "url": "/api/2024/equipment/hunting-trap"
+      },
+      {
+        "index": "lock",
+        "name": "Lock",
+        "url": "/api/2024/equipment/lock"
+      },
+      {
+        "index": "manacles",
+        "name": "Manacles",
+        "url": "/api/2024/equipment/manacles"
+      },
+      {
+        "index": "mirror",
+        "name": "Mirror",
+        "url": "/api/2024/equipment/mirror"
+      },
+      {
+        "index": "shovel",
+        "name": "Shovel",
+        "url": "/api/2024/equipment/shovel"
+      },
+      {
+        "index": "signal-whistle",
+        "name": "Signal Whistle",
+        "url": "/api/2024/equipment/signal-whistle"
+      },
+      {
+        "index": "tinderbox",
+        "name": "Tinderbox",
+        "url": "/api/2024/equipment/tinderbox"
+      }
+    ],
+    "utilize": [
+      {
+        "name": "Assemble a Tiny item composed of scrap, which falls apart in 1 minute",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "Dex",
+            "url": "/api/2024/ability-scores/dex"
+          }
+        },
+        "dc_value": 10,
+        "success_type": "none"
+      }
+    ],
+    "weight": 10,
+    "url": "/api/2024/equipment/tinkers-tools"
   },
   {
     "index": "torch",
@@ -4436,6 +6600,59 @@
     "description": "A Vial holds up to 4 ounces.",
     "weight": 0,
     "url": "/api/2024/equipment/vial"
+  },
+  {
+    "index": "viol",
+    "name": "Viol",
+    "equipment_categories": [
+      {
+        "index": "musical-instruments",
+        "name": "Musical Instruments",
+        "url": "/api/2024/equipment-categories/musical-instruments"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "cha",
+      "name": "Charisma",
+      "url": "/api/2024/ability-scores/cha"
+    },
+    "cost": {
+      "quantity": 30,
+      "unit": "gp"
+    },
+    "utilize": [
+      {
+        "name": "Play a known tune",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Improvise a song",
+        "dc": {
+          "dc_type": {
+            "index": "cha",
+            "name": "Charisma",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 2,
+    "url": "/api/2024/equipment/viol"
   },
   {
     "index": "wand",
@@ -4604,6 +6821,121 @@
     "url": "/api/2024/equipment/water-skin"
   },
   {
+    "index": "weavers-tools",
+    "name": "Weaver's Tools",
+    "equipment_categories": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/2024/equipment-categories/artisans-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "dex",
+      "name": "Dex",
+      "url": "/api/2024/ability-scores/dex"
+    },
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    },
+    "craft": [
+      {
+        "index": "padded-armor",
+        "name": "Padded Armor",
+        "url": "/api/2024/equipment/padded-armor"
+      },
+      {
+        "index": "basket",
+        "name": "Basket",
+        "url": "/api/2024/equipment/basket"
+      },
+      {
+        "index": "bedroll",
+        "name": "Bedroll",
+        "url": "/api/2024/equipment/bedroll"
+      },
+      {
+        "index": "blanket",
+        "name": "Blanket",
+        "url": "/api/2024/equipment/blanket"
+      },
+      {
+        "index": "fine-clothes",
+        "name": "Fine Clothes",
+        "url": "/api/2024/equipment/fine-clothes"
+      },
+      {
+        "index": "net",
+        "name": "Net",
+        "url": "/api/2024/equipment/net"
+      },
+      {
+        "index": "robe",
+        "name": "Robe",
+        "url": "/api/2024/equipment/robe"
+      },
+      {
+        "index": "rope",
+        "name": "Rope",
+        "url": "/api/2024/equipment/rope"
+      },
+      {
+        "index": "sack",
+        "name": "Sack",
+        "url": "/api/2024/equipment/sack"
+      },
+      {
+        "index": "string",
+        "name": "String",
+        "url": "/api/2024/equipment/string"
+      },
+      {
+        "index": "tent",
+        "name": "Tent",
+        "url": "/api/2024/equipment/tent"
+      },
+      {
+        "index": "traveler-clothes",
+        "name": "Traveler's Clothes",
+        "url": "/api/2024/equipment/traveler-clothes"
+      }
+    ],
+    "utilize": [
+      {
+        "name": "Mend a tear in clothing",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "Dex",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "sew a Tiny design",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "Dex",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 5,
+    "url": "/api/2024/equipment/weavers-tools"
+  },
+  {
     "index": "whip",
     "name": "Whip",
     "equipment_categories": [
@@ -4662,6 +6994,129 @@
       "url": "/api/2024/weapon-mastery-properties/slow"
     },
     "url": "/api/2024/equipment/whip"
+  },
+  {
+    "index": "woodcarvers-tools",
+    "name": "Woodcarver's Tools",
+    "equipment_categories": [
+      {
+        "index": "artisans-tools",
+        "name": "Artisan's Tools",
+        "url": "/api/2024/equipment-categories/artisans-tools"
+      },
+      {
+        "index": "tools",
+        "name": "Tools",
+        "url": "/api/2024/equipment-categories/tools"
+      }
+    ],
+    "ability": {
+      "index": "dex",
+      "name": "Dex",
+      "url": "/api/2024/ability-scores/dex"
+    },
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    },
+    "craft": [
+      {
+        "index": "club",
+        "name": "Club",
+        "url": "/api/2024/equipment/club"
+      },
+      {
+        "index": "greatclub",
+        "name": "Greatclub",
+        "url": "/api/2024/equipment/greatclub"
+      },
+      {
+        "index": "quarterstaff",
+        "name": "Quarterstaff",
+        "url": "/api/2024/equipment/quarterstaff"
+      },
+      {
+        "index": "blowgun",
+        "name": "Blowgun",
+        "url": "/api/2024/equipment/blowgun"
+      },
+      {
+        "index": "dart",
+        "name": "Dart",
+        "url": "/api/2024/equipment/dart"
+      },
+      {
+        "index": "hand-crossbow",
+        "name": "Hand Crossbow",
+        "url": "/api/2024/equipment/hand-crossbow"
+      },
+      {
+        "index": "heavy-crossbow",
+        "name": "Heavy Crossbow",
+        "url": "/api/2024/equipment/heavy-crossbow"
+      },
+      {
+        "index": "light-crossbow",
+        "name": "Light Crossbow",
+        "url": "/api/2024/equipment/light-crossbow"
+      },
+      {
+        "index": "longbow",
+        "name": "Longbow",
+        "url": "/api/2024/equipment/longbow"
+      },
+      {
+        "index": "shortbow",
+        "name": "Shortbow",
+        "url": "/api/2024/equipment/shortbow"
+      },
+      {
+        "index": "arcane-focus",
+        "name": "Arcane Focus",
+        "url": "/api/2024/equipment/arcane-focus"
+      },
+      {
+        "index": "arrows",
+        "name": "Arrows",
+        "url": "/api/2024/equipment/arrows"
+      },
+      {
+        "index": "bolts",
+        "name": "Bolts",
+        "url": "/api/2024/equipment/bolts"
+      },
+      {
+        "index": "druidic-focus",
+        "name": "Druidic Focus",
+        "url": "/api/2024/equipment/druidic-focus"
+      },
+      {
+        "index": "ink-pen",
+        "name": "Ink Pen",
+        "url": "/api/2024/equipment/ink-pen"
+      },
+      {
+        "index": "needles",
+        "name": "Needles",
+        "url": "/api/2024/equipment/needles"
+      }
+    ],
+    "utilize": [
+      {
+        "name": "Carve a pattern in wood",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "Dex",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "dc_value": 10,
+          "success_type": "none"
+        }
+      }
+    ],
+    "weight": 5,
+    "url": "/api/2024/equipment/woodcarvers-tools"
   },
   {
     "index": "yew-wand",
