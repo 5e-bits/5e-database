@@ -62,9 +62,9 @@
         "url": "/api/2024/equipment/acid"
       },
       {
-        "index": "alchemist-fire",
+        "index": "alchemists-fire",
         "name": "Alchemist's Fire",
-        "url": "/api/2024/equipment/alchemist-fire"
+        "url": "/api/2024/equipment/alchemists-fire"
       },
       {
         "index": "component-pouch",
@@ -119,6 +119,29 @@
     ],
     "weight": 8,
     "url": "/api/2024/equipment/alchemist-supplies"
+  },
+  {
+    "index": "amulet",
+    "name": "Amulet",
+    "equipment_categories": [
+      {
+        "index": "adventuring-gear",
+        "name": "Adventuring Gear",
+        "url": "/api/2024/equipment-categories/adventuring-gear"
+      },
+      {
+        "index": "holy-symbols",
+        "name": "Holy Symbols",
+        "url": "/api/2024/equipment-categories/holy-symbols"
+      }
+    ],
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    },
+    "description": "A Holy Symbol takes one of the forms in the Holy Symbol table and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus.\nThe table indicates whether a Holy Symbol needs to be held, worn, or borne on fabric (such as a tabard or banner) or a Shield.",
+    "weight": 1,
+    "url": "/api/2024/equipment/amulet"
   },
   {
     "index": "antitoxin",
@@ -974,9 +997,9 @@
         "url": "/api/2024/equipment/pole"
       },
       {
-        "index": "portable-ram",
-        "name": "Portable Ram",
-        "url": "/api/2024/equipment/portable-ram"
+        "index": "ram-portable",
+        "name": "Ram, Portable",
+        "url": "/api/2024/equipment/ram-portable"
       },
       {
         "index": "torch",
@@ -1329,7 +1352,7 @@
     ],
     "utilize": [
       {
-        "name": "Modify footwear to give Advantage on the wearer’s next Dexterity (Acrobatics) check",
+        "name": "Modify footwear to give Advantage on the wearer's next Dexterity (Acrobatics) check",
         "dc": {
           "dc_type": {
             "index": "dex",
@@ -1439,6 +1462,24 @@
     "weight": 4,
     "description": "While wearing a Costume, you have Advantage on any ability check you make to impersonate the person or type of person it represents.",
     "url": "/api/2024/equipment/costume"
+  },
+  {
+    "index": "crowbar",
+    "name": "Crowbar",
+    "equipment_categories": [
+      {
+        "index": "adventuring-gear",
+        "name": "Adventuring Gear",
+        "url": "/api/2024/equipment-categories/adventuring-gear"
+      }
+    ],
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    },
+    "weight": 5,
+    "description": "Using a Crowbar gives you Advantage on Strength checks where the Crowbar's leverage can be applied.",
+    "url": "/api/2024/equipment/crowbar"
   },
   {
     "index": "crystal",
@@ -2083,6 +2124,29 @@
     "url": "/api/2024/equipment/dungeoneer-pack"
   },
   {
+    "index": "emblem",
+    "name": "Emblem",
+    "equipment_categories": [
+      {
+        "index": "adventuring-gear",
+        "name": "Adventuring Gear",
+        "url": "/api/2024/equipment-categories/adventuring-gear"
+      },
+      {
+        "index": "holy-symbols",
+        "name": "Holy Symbols",
+        "url": "/api/2024/equipment-categories/holy-symbols"
+      }
+    ],
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    },
+    "description": "A Holy Symbol takes one of the forms in the Holy Symbol table and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus.\nThe table indicates whether a Holy Symbol needs to be held, worn, or borne on fabric (such as a tabard or banner) or a Shield.",
+    "weight": 0,
+    "url": "/api/2024/equipment/emblem"
+  },
+  {
     "index": "flail",
     "name": "Flail",
     "equipment_categories": [
@@ -2368,6 +2432,24 @@
     ],
     "weight": 5,
     "url": "/api/2024/equipment/glassblowers-tools"
+  },
+  {
+    "index": "grappling-hook",
+    "name": "Grappling Hook",
+    "equipment_categories": [
+      {
+        "index": "adventuring-gear",
+        "name": "Adventuring Gear",
+        "url": "/api/2024/equipment-categories/adventuring-gear"
+      }
+    ],
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    },
+    "weight": 4,
+    "description": "As a Utilize action, you can throw the Grappling Hook at a railing, a ledge, or another catch within 50 feet of yourself, and the hook catches on if you succeed on a DC 13 Dexterity (Acrobatics) check. If you tied a Rope to the hook, you can then climb it.",
+    "url": "/api/2024/equipment/grappling-hook"
   },
   {
     "index": "greataxe",
@@ -2776,6 +2858,24 @@
     "url": "/api/2024/equipment/handaxe"
   },
   {
+    "index": "healers-kit",
+    "name": "Healer's Kit",
+    "equipment_categories": [
+      {
+        "index": "adventuring-gear",
+        "name": "Adventuring Gear",
+        "url": "/api/2024/equipment-categories/adventuring-gear"
+      }
+    ],
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    },
+    "description": "A Healer's Kit has ten uses. As a Utilize action, you can expend one of its uses to stabilize an Unconscious creature that has 0 Hit Points without needing to make a Wisdom (Medicine) check.",
+    "weight": 3,
+    "url": "/api/2024/equipment/healers-kit"
+  },
+  {
     "index": "heavy-crossbow",
     "name": "Heavy Crossbow",
     "equipment_categories": [
@@ -2888,9 +2988,9 @@
         "url": "/api/2024/equipment/candle"
       },
       {
-        "index": "healer-s-kit",
+        "index": "healers-kit",
         "name": "Healer's Kit",
-        "url": "/api/2024/equipment/healer-s-kit"
+        "url": "/api/2024/equipment/healers-kit"
       },
       {
         "index": "potion-of-healing",
@@ -2947,6 +3047,24 @@
     "url": "/api/2024/equipment/hide-armor"
   },
   {
+    "index": "holy-water",
+    "name": "Holy Water",
+    "equipment_categories": [
+      {
+        "index": "adventuring-gear",
+        "name": "Adventuring Gear",
+        "url": "/api/2024/equipment-categories/adventuring-gear"
+      }
+    ],
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    },
+    "description": "When you take the Attack action, you can replace one of your attacks with throwing a flask of Holy Water. Target one creature you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d8 Radiant damage if it is a Fiend or an Undead.",
+    "weight": 1,
+    "url": "/api/2024/equipment/holy-water"
+  },
+  {
     "index": "horn",
     "name": "Horn",
     "equipment_categories": [
@@ -2998,6 +3116,24 @@
     ],
     "weight": 2,
     "url": "/api/2024/equipment/horn"
+  },
+  {
+    "index": "hunting-trap",
+    "name": "Hunting Trap",
+    "equipment_categories": [
+      {
+        "index": "adventuring-gear",
+        "name": "Adventuring Gear",
+        "url": "/api/2024/equipment-categories/adventuring-gear"
+      }
+    ],
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    },
+    "description": "As a Utilize action, you can set a Hunting Trap, which is a sawtooth steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 Piercing damage and have its Speed reduced to 0 until the start of its next turn. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet). A creature can use its action to make a DC 13 Strength (Athletics) check, freeing itself or another creature within its reach on a success. Each failed check deals 1 Piercing damage to the trapped creature.",
+    "weight": 25,
+    "url": "/api/2024/equipment/hunting-trap"
   },
   {
     "index": "ink",
@@ -3120,19 +3256,54 @@
     },
     "craft": [
       {
-        "index": "arcane-focus",
-        "name": "Arcane Focus",
-        "url": "/api/2024/equipment/arcane-focus"
+        "index": "crystal",
+        "name": "Crystal",
+        "url": "/api/2024/equipment/crystal"
       },
       {
-        "index": "holy-symbol",
-        "name": "Holy Symbol",
-        "url": "/api/2024/equipment/holy-symbol"
+        "index": "orb",
+        "name": "Orb",
+        "url": "/api/2024/equipment/orb"
+      },
+      {
+        "index": "quarterstaff",
+        "name": "Quarterstaff",
+        "url": "/api/2024/equipment/quarterstaff"
+      },
+      {
+        "index": "rod",
+        "name": "Rod",
+        "url": "/api/2024/equipment/rod"
+      },
+      {
+        "index": "staff",
+        "name": "Staff",
+        "url": "/api/2024/equipment/staff"
+      },
+      {
+        "index": "wand",
+        "name": "Wand",
+        "url": "/api/2024/equipment/wand"
+      },
+      {
+        "index": "amulet",
+        "name": "Amulet",
+        "url": "/api/2024/equipment/amulet"
+      },
+      {
+        "index": "emblem",
+        "name": "Emblem",
+        "url": "/api/2024/equipment/emblem"
+      },
+      {
+        "index": "reliquary",
+        "name": "Reliquary",
+        "url": "/api/2024/equipment/reliquary"
       }
     ],
     "utilize": [
       {
-        "name": " Discern a gem’s value",
+        "name": " Discern a gem's value",
         "dc": {
           "dc_type": {
             "index": "int",
@@ -3182,6 +3353,24 @@
     "description": "A Ladder is 10 feet tall. You must climb to move up or down it. Lamp (5 SP)",
     "weight": 25,
     "url": "/api/2024/equipment/ladder"
+  },
+  {
+    "index": "lamp",
+    "name": "Lamp",
+    "equipment_categories": [
+      {
+        "index": "adventuring-gear",
+        "name": "Adventuring Gear",
+        "url": "/api/2024/equipment-categories/adventuring-gear"
+      }
+    ],
+    "cost": {
+      "quantity": 5,
+      "unit": "sp"
+    },
+    "description": "A Lamp burns Oil as fuel to cast Bright Light in a 15- foot radius and Dim Light for an additional 30 feet",
+    "weight": 1,
+    "url": "/api/2024/equipment/lamp"
   },
   {
     "index": "lance",
@@ -3373,9 +3562,9 @@
         "url": "/api/2024/equipment/backpack"
       },
       {
-        "index": "crossbow-bolt-case",
-        "name": "Crossbow Bolt Case",
-        "url": "/api/2024/equipment/crossbow-bolt-case"
+        "index": "case-crossbow-bolt",
+        "name": "Case, Crossbow Bolt",
+        "url": "/api/2024/equipment/case-crossbow-bolt"
       },
       {
         "index": "case-map-or-scroll",
@@ -3569,7 +3758,7 @@
       "quantity": 10,
       "unit": "gp"
     },
-    "description": "A Lock comes with a key. Without the key, a creature can use Thieves’ Tools to pick this Lock with a successful DC 15 Dexterity (Sleight of Hand) check.",
+    "description": "A Lock comes with a key. Without the key, a creature can use Thieves' Tools to pick this Lock with a successful DC 15 Dexterity (Sleight of Hand) check.",
     "weight": 1,
     "url": "/api/2024/equipment/lock"
   },
@@ -3894,7 +4083,7 @@
       "quantity": 2,
       "unit": "gp"
     },
-    "description": "As a Utilize action, you can use Manacles to bind an unwilling Small or Medium creature within 5 feet of yourself that has the Grappled, Incapacitated, or Restrained condition if you succeed on a DC 13 Dexterity (Sleight of Hand) check. While bound, a creature has Disadvantage on attack rolls, and the creature is Restrained if the Manacles are attached to a chain or hook that is fixed in place. Escaping the Manacles requires a successful DC 20 Dexterity (Sleight of Hand) check as an action. Bursting them requires a successful DC 25 Strength (Athletics) check as an action.\nEach set of Manacles comes with a key. Without the key, a creature can use Thieves’ Tools to pick the Manacles’ lock with a successful DC 15 Dexterity (Sleight of Hand) check.",
+    "description": "As a Utilize action, you can use Manacles to bind an unwilling Small or Medium creature within 5 feet of yourself that has the Grappled, Incapacitated, or Restrained condition if you succeed on a DC 13 Dexterity (Sleight of Hand) check. While bound, a creature has Disadvantage on attack rolls, and the creature is Restrained if the Manacles are attached to a chain or hook that is fixed in place. Escaping the Manacles requires a successful DC 20 Dexterity (Sleight of Hand) check as an action. Bursting them requires a successful DC 25 Strength (Athletics) check as an action.\nEach set of Manacles comes with a key. Without the key, a creature can use Thieves' Tools to pick the Manacles' lock with a successful DC 15 Dexterity (Sleight of Hand) check.",
     "weight": 6,
     "url": "/api/2024/equipment/manacles"
   },
@@ -4349,14 +4538,39 @@
     },
     "craft": [
       {
-        "index": "druidic-foci",
-        "name": "Druidic Focus",
-        "url": "/api/2024/equipment/druidic-foci"
+        "index": "quarterstaff",
+        "name": "Quarterstaff",
+        "url": "/api/2024/equipment/quarterstaff"
       },
       {
-        "index": "holy-symbol",
-        "name": "Holy Symbol",
-        "url": "/api/2024/equipment/holy-symbol"
+        "index": "sprig-of-mistletoe",
+        "name": "Sprig of Mistletoe",
+        "url": "/api/2024/equipment/sprig-of-mistletoe"
+      },
+      {
+        "index": "staff",
+        "name": "Staff",
+        "url": "/api/2024/equipment/staff"
+      },
+      {
+        "index": "yew-wand",
+        "name": "Yew Wand",
+        "url": "/api/2024/equipment/yew-wand"
+      },
+      {
+        "index": "amulet",
+        "name": "Amulet",
+        "url": "/api/2024/equipment/amulet"
+      },
+      {
+        "index": "emblem",
+        "name": "Emblem",
+        "url": "/api/2024/equipment/emblem"
+      },
+      {
+        "index": "reliquary",
+        "name": "Reliquary",
+        "url": "/api/2024/equipment/reliquary"
       }
     ],
     "utilize": [
@@ -5133,6 +5347,29 @@
     "url": "/api/2024/equipment/rations"
   },
   {
+    "index": "reliquary",
+    "name": "Reliquary",
+    "equipment_categories": [
+      {
+        "index": "adventuring-gear",
+        "name": "Adventuring Gear",
+        "url": "/api/2024/equipment-categories/adventuring-gear"
+      },
+      {
+        "index": "holy-symbols",
+        "name": "Holy Symbols",
+        "url": "/api/2024/equipment-categories/holy-symbols"
+      }
+    ],
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    },
+    "description": "A Holy Symbol takes one of the forms in the Holy Symbol table and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus.\nThe table indicates whether a Holy Symbol needs to be held, worn, or borne on fabric (such as a tabard or banner) or a Shield.",
+    "weight": 2,
+    "url": "/api/2024/equipment/reliquary"
+  },
+  {
     "index": "ring-mail",
     "name": "Ring Mail",
     "equipment_categories": [
@@ -5217,7 +5454,7 @@
       "quantity": 1,
       "unit": "gp"
     },
-    "description": "As a Utilize action, you can tie a knot with Rope if you succeed on a DC 10 Dexterity (Sleight of Hand) check. The Rope can be burst with a successful DC 20 Strength (Athletics) check.\n You can bind an unwilling creature with the Rope only if the creature has the Grappled, Incapacitated, or Restrained condition. If the creature’s legs are bound, the creature has the Restrained condition until it escapes. Escaping the Rope requires the creature to make a successful DC 15 Dexterity (Acrobatics) check as an action.",
+    "description": "As a Utilize action, you can tie a knot with Rope if you succeed on a DC 10 Dexterity (Sleight of Hand) check. The Rope can be burst with a successful DC 20 Strength (Athletics) check.\n You can bind an unwilling creature with the Rope only if the creature has the Grappled, Incapacitated, or Restrained condition. If the creature's legs are bound, the creature has the Restrained condition until it escapes. Escaping the Rope requires the creature to make a successful DC 15 Dexterity (Acrobatics) check as an action.",
     "weight": 5,
     "url": "/api/2024/equipment/rope"
   },
@@ -5957,14 +6194,14 @@
         "url": "/api/2024/equipment/grappling-hook"
       },
       {
-        "index": "iron-pot",
-        "name": "Iron Pot",
-        "url": "/api/2024/equipment/iron-pot"
+        "index": "pot-iron",
+        "name": "Pot, Iron",
+        "url": "/api/2024/equipment/pot-iron"
       },
       {
-        "index": "iron-spikes",
-        "name": "Iron Spikes",
-        "url": "/api/2024/equipment/iron-spikes"
+        "index": "spikes-iron",
+        "name": "Spikes, Iron",
+        "url": "/api/2024/equipment/spikes-iron"
       },
       {
         "index": "bullets-sling",
@@ -6444,9 +6681,9 @@
         "url": "/api/2024/equipment/bell"
       },
       {
-        "index": "bullseye-lantern",
-        "name": "Bullseye Lantern",
-        "url": "/api/2024/equipment/bullseye-lantern"
+        "index": "lantern-bullseye",
+        "name": "Lantern, Bullseye",
+        "url": "/api/2024/equipment/lantern-bullseye"
       },
       {
         "index": "flask",
@@ -6454,9 +6691,9 @@
         "url": "/api/2024/equipment/flask"
       },
       {
-        "index": "hooded-lantern",
-        "name": "Hooded Lantern",
-        "url": "/api/2024/equipment/hooded-lantern"
+        "index": "lantern-hooded",
+        "name": "Lantern, Hooded",
+        "url": "/api/2024/equipment/lantern-hooded"
       },
       {
         "index": "hunting-trap",
@@ -6821,8 +7058,8 @@
     "url": "/api/2024/equipment/war-pick"
   },
   {
-    "index": "water-skin",
-    "name": "Water Skin",
+    "index": "waterskin",
+    "name": "Waterskin",
     "equipment_categories": [
       {
         "index": "adventuring-gear",
@@ -6836,7 +7073,7 @@
     },
     "description": "A Waterskin holds up to 4 pints. If you don't drink sufficient water, you risk dehydration (see “Rules Glossary”).",
     "weight": 5,
-    "url": "/api/2024/equipment/water-skin"
+    "url": "/api/2024/equipment/waterskin"
   },
   {
     "index": "weavers-tools",
@@ -6884,9 +7121,9 @@
         "url": "/api/2024/equipment/blanket"
       },
       {
-        "index": "fine-clothes",
-        "name": "Fine Clothes",
-        "url": "/api/2024/equipment/fine-clothes"
+        "index": "clothes-fine",
+        "name": "Clothes, Fine",
+        "url": "/api/2024/equipment/clothes-fine"
       },
       {
         "index": "net",
@@ -6919,9 +7156,9 @@
         "url": "/api/2024/equipment/tent"
       },
       {
-        "index": "traveler-clothes",
-        "name": "Traveler's Clothes",
-        "url": "/api/2024/equipment/traveler-clothes"
+        "index": "clothes-travelers",
+        "name": "Clothes, Traveler's",
+        "url": "/api/2024/equipment/clothes-travelers"
       }
     ],
     "utilize": [
@@ -7089,9 +7326,34 @@
         "url": "/api/2024/equipment/shortbow"
       },
       {
-        "index": "arcane-focus",
-        "name": "Arcane Focus",
-        "url": "/api/2024/equipment/arcane-focus"
+        "index": "crystal",
+        "name": "Crystal",
+        "url": "/api/2024/equipment/crystal"
+      },
+      {
+        "index": "orb",
+        "name": "Orb",
+        "url": "/api/2024/equipment/orb"
+      },
+      {
+        "index": "quarterstaff",
+        "name": "Quarterstaff",
+        "url": "/api/2024/equipment/quarterstaff"
+      },
+      {
+        "index": "rod",
+        "name": "Rod",
+        "url": "/api/2024/equipment/rod"
+      },
+      {
+        "index": "staff",
+        "name": "Staff",
+        "url": "/api/2024/equipment/staff"
+      },
+      {
+        "index": "wand",
+        "name": "Wand",
+        "url": "/api/2024/equipment/wand"
       },
       {
         "index": "arrows",
@@ -7104,9 +7366,19 @@
         "url": "/api/2024/equipment/bolts"
       },
       {
-        "index": "druidic-focus",
-        "name": "Druidic Focus",
-        "url": "/api/2024/equipment/druidic-focus"
+        "index": "sprig-of-mistletoe",
+        "name": "Sprig of Mistletoe",
+        "url": "/api/2024/equipment/sprig-of-mistletoe"
+      },
+      {
+        "index": "staff",
+        "name": "Staff",
+        "url": "/api/2024/equipment/staff"
+      },
+      {
+        "index": "yew-wand",
+        "name": "Yew Wand",
+        "url": "/api/2024/equipment/yew-wand"
       },
       {
         "index": "ink-pen",
