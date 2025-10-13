@@ -2,6 +2,7 @@
   {
     "index": "hill-dwarf",
     "name": "Hill Dwarf",
+    "source": "srd",
     "race": {
       "index": "dwarf",
       "name": "Dwarf",
@@ -30,8 +31,103 @@
     "url": "/api/2014/subraces/hill-dwarf"
   },
   {
+    "index": "forge-dwarf",
+    "name": "Forge Dwarf",
+    "source": "homebrew-base",
+    "race": {
+      "index": "dwarf",
+      "name": "Dwarf",
+      "url": "/api/2014/races/dwarf"
+    },
+    "desc": "As a forge dwarf, you are descended from dwarves who made their homes near volcanic forges and ancient smithies. Your people are renowned for their metalworking prowess and their natural affinity for combat.",
+    "ability_bonuses": [
+      {
+        "ability_score": {
+          "index": "str",
+          "name": "STR",
+          "url": "/api/2014/ability-scores/str"
+        },
+        "bonus": 1
+      }
+    ],
+    "starting_proficiencies": [
+      {
+        "index": "smiths-tools",
+        "name": "Smith's Tools",
+        "url": "/api/2014/proficiencies/smiths-tools"
+      },
+      {
+        "index": "medium-armor",
+        "name": "Medium Armor",
+        "url": "/api/2014/proficiencies/medium-armor"
+      }
+    ],
+    "languages": [],
+    "racial_traits": [
+      {
+        "index": "forgeborn-resilience",
+        "name": "Forgeborn Resilience",
+        "url": "/api/2014/traits/forgeborn-resilience"
+      },
+      {
+        "index": "battle-ready",
+        "name": "Battle-Ready",
+        "url": "/api/2014/traits/battle-ready"
+      }
+    ],
+    "url": "/api/2014/subraces/forge-dwarf"
+  },
+  {
+    "index": "forest-elf",
+    "name": "Forest Elf",
+    "source": "homebrew-base",
+    "race": {
+      "index": "elf",
+      "name": "Elf",
+      "url": "/api/2014/races/elf"
+    },
+    "desc": "As a forest elf, you have keen senses and deep connection to the wilderness. Your people move swiftly through the trees and can vanish into the underbrush with ease.",
+    "ability_bonuses": [
+      {
+        "ability_score": {
+          "index": "wis",
+          "name": "WIS",
+          "url": "/api/2014/ability-scores/wis"
+        },
+        "bonus": 1
+      }
+    ],
+    "starting_proficiencies": [
+      {
+        "index": "longbows",
+        "name": "Longbows",
+        "url": "/api/2014/proficiencies/longbows"
+      },
+      {
+        "index": "shortbows",
+        "name": "Shortbows",
+        "url": "/api/2014/proficiencies/shortbows"
+      }
+    ],
+    "languages": [],
+    "racial_traits": [
+      {
+        "index": "swift-stride",
+        "name": "Swift Stride",
+        "url": "/api/2014/traits/swift-stride"
+      },
+      {
+        "index": "forest-camouflage",
+        "name": "Forest Camouflage",
+        "url": "/api/2014/traits/forest-camouflage"
+      }
+    ],
+    "url": "/api/2014/subraces/forest-elf"
+  },
+  {
     "index": "high-elf",
     "name": "High Elf",
+    "source": "srd",
     "race": {
       "index": "elf",
       "name": "Elf",
@@ -212,8 +308,97 @@
     "url": "/api/2014/subraces/high-elf"
   },
   {
+    "index": "shadow-elf",
+    "name": "Shadow Elf",
+    "source": "homebrew-base",
+    "race": {
+      "index": "elf",
+      "name": "Elf",
+      "url": "/api/2014/races/elf"
+    },
+    "desc": "As a shadow elf, you are descended from elves who adapted to life in the deep underground. Your ancestors dwelt in shadowy caverns and subterranean realms, developing innate magical abilities and enhanced vision in the darkness.",
+    "ability_bonuses": [
+      {
+        "ability_score": {
+          "index": "cha",
+          "name": "CHA",
+          "url": "/api/2014/ability-scores/cha"
+        },
+        "bonus": 1
+      }
+    ],
+    "starting_proficiencies": [
+      {
+        "index": "rapiers",
+        "name": "Rapiers",
+        "url": "/api/2014/proficiencies/rapiers"
+      },
+      {
+        "index": "hand-crossbows",
+        "name": "Hand Crossbows",
+        "url": "/api/2014/proficiencies/hand-crossbows"
+      }
+    ],
+    "languages": [],
+    "racial_traits": [
+      {
+        "index": "deep-darkvision",
+        "name": "Deep Darkvision",
+        "url": "/api/2014/traits/deep-darkvision"
+      },
+      {
+        "index": "shadowborn-magic",
+        "name": "Shadowborn Magic",
+        "url": "/api/2014/traits/shadowborn-magic"
+      },
+      {
+        "index": "light-sensitivity",
+        "name": "Light Sensitivity",
+        "url": "/api/2014/traits/light-sensitivity"
+      }
+    ],
+    "url": "/api/2014/subraces/shadow-elf"
+  },
+  {
+    "index": "ironfoot-halfling",
+    "name": "Ironfoot Halfling",
+    "source": "homebrew-base",
+    "race": {
+      "index": "halfling",
+      "name": "Halfling",
+      "url": "/api/2014/races/halfling"
+    },
+    "desc": "As an ironfoot halfling, you are hardier than most of your kin, with exceptional endurance and resistance to toxins. Your ancestors lived alongside dwarves in mountainous regions, developing a resilience that has been passed down through generations.",
+    "ability_bonuses": [
+      {
+        "ability_score": {
+          "index": "con",
+          "name": "CON",
+          "url": "/api/2014/ability-scores/con"
+        },
+        "bonus": 1
+      }
+    ],
+    "starting_proficiencies": [],
+    "languages": [],
+    "racial_traits": [
+      {
+        "index": "hardy-constitution",
+        "name": "Hardy Constitution",
+        "url": "/api/2014/traits/hardy-constitution"
+      },
+      {
+        "index": "steadfast-vigor",
+        "name": "Steadfast Vigor",
+        "url": "/api/2014/traits/steadfast-vigor"
+      }
+    ],
+    "url": "/api/2014/subraces/ironfoot-halfling"
+  },
+  {
     "index": "lightfoot-halfling",
     "name": "Lightfoot Halfling",
+    "source": "srd",
     "race": {
       "index": "halfling",
       "name": "Halfling",
@@ -242,8 +427,45 @@
     "url": "/api/2014/subraces/lightfoot-halfling"
   },
   {
+    "index": "woodland-gnome",
+    "name": "Woodland Gnome",
+    "source": "homebrew-base",
+    "race": {
+      "index": "gnome",
+      "name": "Gnome",
+      "url": "/api/2014/races/gnome"
+    },
+    "desc": "As a woodland gnome, you are naturally attuned to the forests and have an innate gift for illusion magic. Your people are secretive and reclusive, preferring to remain hidden in sylvan groves where you commune with nature and small woodland creatures.",
+    "ability_bonuses": [
+      {
+        "ability_score": {
+          "index": "dex",
+          "name": "DEX",
+          "url": "/api/2014/ability-scores/dex"
+        },
+        "bonus": 1
+      }
+    ],
+    "starting_proficiencies": [],
+    "languages": [],
+    "racial_traits": [
+      {
+        "index": "natural-trickster",
+        "name": "Natural Trickster",
+        "url": "/api/2014/traits/natural-trickster"
+      },
+      {
+        "index": "woodland-whisper",
+        "name": "Woodland Whisper",
+        "url": "/api/2014/traits/woodland-whisper"
+      }
+    ],
+    "url": "/api/2014/subraces/woodland-gnome"
+  },
+  {
     "index": "rock-gnome",
     "name": "Rock Gnome",
+    "source": "srd",
     "race": {
       "index": "gnome",
       "name": "Gnome",
