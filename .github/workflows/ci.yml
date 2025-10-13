@@ -48,7 +48,7 @@ jobs:
     name: Deploy Changes (Update Database)
     runs-on: ubuntu-latest
     needs: [test, lint]
-    if: ${{ github.event_name != 'pull_request' && github.repository == '5e-bits/5e-database' }}
+    if: ${{ github.event_name != 'pull_request' && github.repository == 'rmunoz33/dnd-homebrew-database' }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -70,7 +70,7 @@ jobs:
     name: Create Github Release
     runs-on: ubuntu-latest
     needs: [deploy]
-    if: ${{ github.event_name != 'pull_request' && github.repository == '5e-bits/5e-database' }}
+    if: ${{ github.event_name != 'pull_request' && github.repository == 'rmunoz33/dnd-homebrew-database' }}
     outputs:
       new_release_published: ${{ steps.semantic.outputs.new_release_published }}
       version: ${{ steps.semantic.outputs.new_release_version }}
@@ -101,7 +101,7 @@ jobs:
     name: Container Release
     runs-on: ubuntu-latest
     needs: [github-release]
-    if: ${{ needs.github-release.outputs.new_release_published == 'true' && github.repository == '5e-bits/5e-database' }}
+    if: ${{ needs.github-release.outputs.new_release_published == 'true' && github.repository == 'rmunoz33/dnd-homebrew-database' }}
     env:
       REGISTRY: ghcr.io
       IMAGE_NAME: ${{ github.repository }}
@@ -129,7 +129,7 @@ jobs:
     name: Trigger downstream
     runs-on: ubuntu-latest
     needs: deploy
-    if: ${{ github.ref == 'refs/heads/main' && github.repository == '5e-bits/5e-database' }}
+    if: ${{ github.ref == 'refs/heads/main' && github.repository == 'rmunoz33/dnd-homebrew-database' }}
     steps:
       - name: Generate GitHub App Token
         id: generate_token
