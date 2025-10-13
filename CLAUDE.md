@@ -123,7 +123,41 @@ This project uses Semantic Release. Follow these conventions:
 
 ## MongoDB Requirements
 
-- MongoDB must be installed locally for development
+- MongoDB must be installed locally for development, or use MongoDB Atlas
 - Set `MONGODB_URI` environment variable before running database scripts
 - Default: `mongodb://localhost/5e-database`
 - Database operations create/update collections with edition-specific prefixes
+- For local development, connection string can be stored in `.env` file (not tracked in git)
+
+## MongoDB MCP Integration
+
+This project has MongoDB MCP (Model Context Protocol) configured for Claude Code. The MCP server enables:
+- Direct database queries using natural language
+- CRUD operations on collections
+- Schema inspection and collection management
+- Atlas cluster management (with API credentials)
+
+The MCP is configured to connect to MongoDB Atlas using the connection string from environment variables.
+
+## CI/CD Pipeline
+
+The GitHub Actions workflow (`.github/workflows/ci.yml`) automatically:
+
+1. **On Pull Requests**: Runs lint and tests
+2. **On Push to Main**:
+   - Runs lint and tests
+   - Deploys database changes using `npm run db:update`
+   - Creates semantic releases
+   - Builds and publishes Docker container
+   - Triggers downstream API updates
+
+**Important**: The deploy step requires `MONGODB_URI` to be set as a GitHub repository secret at Settings → Secrets and variables → Actions.
+
+## Manual Database Operations
+
+If automatic deployment fails or you need to manually refresh the database:
+
+1. **Via GitHub Actions**: Go to Actions tab → "Manual Database Refresh" → Run workflow
+2. **Locally**: `MONGODB_URI=<your-connection-string> npm run db:refresh`
+
+Note: `db:refresh` drops all collections and reloads, while `db:update` only updates changed collections.
