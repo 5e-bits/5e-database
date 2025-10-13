@@ -58,6 +58,8 @@ Located in `scripts/` directory (TypeScript):
 
 - **`dbRefresh.ts`** - Drops all collections and reloads from JSON files
 - **`dbUpdate.ts`** - Updates specific collections without dropping
+  - **Important**: Only processes files that were modified in the most recent git commit
+  - If you need to deploy changes from multiple commits, use `db:refresh` instead
 - **`dbUtils.ts`** - Shared utilities for database operations:
   - Collection name extraction from file paths
   - Index management
@@ -160,4 +162,16 @@ If automatic deployment fails or you need to manually refresh the database:
 1. **Via GitHub Actions**: Go to Actions tab → "Manual Database Refresh" → Run workflow
 2. **Locally**: `MONGODB_URI=<your-connection-string> npm run db:refresh`
 
-Note: `db:refresh` drops all collections and reloads, while `db:update` only updates changed collections.
+### When to Use db:refresh vs db:update
+
+- **`db:update`** (used in CI/CD pipeline):
+  - Only processes files modified in the most recent commit
+  - Faster, incremental updates
+  - May miss changes if multiple commits modify different files
+
+- **`db:refresh`** (used in Manual Database Refresh workflow):
+  - Drops all collections and reloads everything
+  - Slower but guaranteed to include all changes
+  - Use when `db:update` misses changes from earlier commits
+
+**Tip**: If you push multiple commits and some changes don't appear in the database, run the "Manual Database Refresh" workflow to ensure all changes are deployed.
