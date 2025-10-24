@@ -22,7 +22,7 @@ jobs:
           fetch-depth: 0
       - name: Release Please
         id: release
-        uses: google-github-actions/release-please-action@v4
+        uses: googleapis/release-please-action@v4
         with:
           release-type: node
           config-file: release-please-config.json
