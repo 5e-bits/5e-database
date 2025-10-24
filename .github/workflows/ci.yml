@@ -1,13 +1,11 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# This workflow handles CI tasks: linting, testing, and deployment
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: 5e Database CI/CD
+name: CI
 
 on:
   push:
     branches: [main]
-    tags:
-      - 'v*'
   pull_request:
     branches: [main]
 
@@ -43,104 +41,3 @@ jobs:
         run: npm ci
       - name: Run tests
         run: npm run test
-
-  deploy:
-    name: Deploy Changes (Update Database)
-    runs-on: ubuntu-latest
-    needs: [test, lint]
-    if: ${{ github.event_name != 'pull_request' && github.repository == '5e-bits/5e-database' }}
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v5
-        with:
-          fetch-depth: 2
-      - name: Set up Node.js 22.x
-        uses: actions/setup-node@v6
-        with:
-          node-version: 22.x
-          cache: 'npm'
-      - name: Install dependencies
-        run: npm ci
-      - name: Run Database Update Script
-        env:
-          MONGODB_URI: ${{ secrets.MONGODB_URI }}
-        run: npm run db:update
-
-  github-release:
-    name: Create Github Release
-    runs-on: ubuntu-latest
-    needs: [deploy]
-    if: ${{ github.event_name != 'pull_request' && github.repository == '5e-bits/5e-database' }}
-    outputs:
-      new_release_published: ${{ steps.semantic.outputs.new_release_published }}
-      version: ${{ steps.semantic.outputs.new_release_version }}
-    permissions:
-      contents: write
-    steps:
-      - name: Generate GitHub App Token
-        id: generate_token
-        uses: tibdex/github-app-token@3beb63f4bd073e61482598c45c71c1019b59b73a # Use a specific version
-        with:
-          # These secrets will be resolved from Org or Repo level
-          app_id: ${{ secrets.SEMANTIC_RELEASE_APP_ID }}
-          private_key: ${{ secrets.SEMANTIC_RELEASE_APP_PRIVATE_KEY }}
-      - name: Checkout latest code
-        uses: actions/checkout@ff7abcd0c3c05ccf6adc123a8cd1fd4fb30fb493 # @v4.2.2
-        with:
-          fetch-depth: 0
-          token: ${{ steps.generate_token.outputs.token }}
-      - name: Install Dependencies
-        run: npm ci
-      - name: Semantic Release
-        id: semantic
-        uses: cycjimmy/semantic-release-action@ba330626c4750c19d8299de843f05c7aa5574f62 # @v5.0.2
-        env:
-          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-
-  container-release:
-    name: Container Release
-    runs-on: ubuntu-latest
-    needs: [github-release]
-    if: ${{ needs.github-release.outputs.new_release_published == 'true' && github.repository == '5e-bits/5e-database' }}
-    env:
-      REGISTRY: ghcr.io
-      IMAGE_NAME: ${{ github.repository }}
-    permissions:
-      contents: read
-      packages: write
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v5
-      - name: Log in to the Container registry
-        uses: docker/login-action@v3
-        with:
-          registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ needs.github-release.outputs.version }},${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-          labels: version=${{ needs.github-release.outputs.version }}
-
-  trigger_downstream:
-    name: Trigger downstream
-    runs-on: ubuntu-latest
-    needs: deploy
-    if: ${{ github.ref == 'refs/heads/main' && github.repository == '5e-bits/5e-database' }}
-    steps:
-      - name: Generate GitHub App Token
-        id: generate_token
-        uses: tibdex/github-app-token@3beb63f4bd073e61482598c45c71c1019b59b73a # Use a specific version
-        with:
-          # These secrets will be resolved from Org or Repo level
-          app_id: ${{ secrets.DEPLOYMENT_APP_ID }}
-          private_key: ${{ secrets.DEPLOYMENT_APP_PRIVATE_KEY }}
-      - name: Trigger downstream
-        uses: peter-evans/repository-dispatch@v4
-        with:
-          token: ${{ steps.generate_token.outputs.token }}
-          repository: 5e-bits/5e-srd-api
-          event-type: build_application
