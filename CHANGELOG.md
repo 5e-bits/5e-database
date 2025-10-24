@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [4.2.1](https://github.com/5e-bits/5e-database/compare/v4.2.0...v4.2.1) (2025-10-24)
+
+
+### Bug Fixes
+
+* **dependabot:** use build instead of deps ([#941](https://github.com/5e-bits/5e-database/issues/941)) ([782da71](https://github.com/5e-bits/5e-database/commit/782da71224510f0118de187c7f7431bf2780f616))
+
 ## [4.2.0](https://github.com/5e-bits/5e-database/compare/v4.1.0...v4.2.0) (2025-10-24)
 
 
