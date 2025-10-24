@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [4.2.0](https://github.com/5e-bits/5e-database/compare/v4.1.0...v4.2.0) (2025-10-24)
+
+
+### Features
+
+* **release:** Swap to release-please ([#934](https://github.com/5e-bits/5e-database/issues/934)) ([bf73da0](https://github.com/5e-bits/5e-database/commit/bf73da05f0a5044ca43db789d0871f351fde6ddd))
+
 ## [3.26.1](https://github.com/5e-bits/5e-database/compare/v3.26.0...v3.26.1) (2025-06-30)
 
 
