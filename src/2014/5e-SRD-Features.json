@@ -349,6 +349,95 @@
     "source": "srd"
   },
   {
+    "index": "elemental-fury",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/2014/classes/barbarian"
+    },
+    "subclass": {
+      "index": "primal-fury",
+      "name": "Primal Fury",
+      "url": "/api/2014/subclasses/primal-fury"
+    },
+    "name": "Elemental Fury",
+    "level": 3,
+    "prerequisites": [],
+    "desc": [
+      "Starting when you choose this path at 3rd level, you can channel raw elemental power through your rage. When you enter your rage, choose one of the following damage types: acid, cold, fire, or lightning.",
+      "While raging, the first time you hit a creature with a melee weapon attack on your turn, you deal an extra 1d6 damage of the chosen type. This extra damage increases when you reach certain levels in this class, increasing to 1d8 at 10th level and 1d10 at 14th level.",
+      "Additionally, you gain resistance to the chosen damage type while raging."
+    ],
+    "url": "/api/2014/features/elemental-fury",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "primal-resilience",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/2014/classes/barbarian"
+    },
+    "subclass": {
+      "index": "primal-fury",
+      "name": "Primal Fury",
+      "url": "/api/2014/subclasses/primal-fury"
+    },
+    "name": "Primal Resilience",
+    "level": 6,
+    "prerequisites": [],
+    "desc": [
+      "Beginning at 6th level, the elemental forces that flow through you make your mind and body more resistant to magical influence. While you are raging, you have advantage on saving throws against spells and other magical effects.",
+      "Additionally, you can change the damage type of your Elemental Fury feature as a bonus action on your turn, choosing from acid, cold, fire, or lightning. Your resistance to the previous damage type ends, and you gain resistance to the new damage type you chose."
+    ],
+    "url": "/api/2014/features/primal-resilience",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "retributive-fury",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/2014/classes/barbarian"
+    },
+    "subclass": {
+      "index": "primal-fury",
+      "name": "Primal Fury",
+      "url": "/api/2014/subclasses/primal-fury"
+    },
+    "name": "Retributive Fury",
+    "level": 10,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 10th level, the crackling energy that surrounds you while raging lashes out at those who strike you. When you take damage from a creature within 5 feet of you while raging, that creature takes damage of your chosen Elemental Fury type equal to your Constitution modifier (minimum of 1).",
+      "This damage occurs automatically and doesn't require your reaction."
+    ],
+    "url": "/api/2014/features/retributive-fury",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "elemental-eruption",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/2014/classes/barbarian"
+    },
+    "subclass": {
+      "index": "primal-fury",
+      "name": "Primal Fury",
+      "url": "/api/2014/subclasses/primal-fury"
+    },
+    "name": "Elemental Eruption",
+    "level": 14,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 14th level, when your rage ends, you can choose to release a devastating burst of elemental energy. Each creature within 10 feet of you must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Constitution modifier) or take 4d8 damage of your chosen Elemental Fury type. A creature that succeeds on the save takes half damage.",
+      "Once you use this feature, you can't use it again until you finish a long rest."
+    ],
+    "url": "/api/2014/features/elemental-eruption",
+    "source": "homebrew-base"
+  },
+  {
     "index": "primal-path-improvement-3",
     "class": {
       "index": "barbarian",
@@ -1189,6 +1278,94 @@
     ],
     "url": "/api/2014/features/peerless-skill",
     "source": "srd"
+  },
+  {
+    "index": "martial-training",
+    "class": {
+      "index": "bard",
+      "name": "Bard",
+      "url": "/api/2014/classes/bard"
+    },
+    "subclass": {
+      "index": "battle",
+      "name": "Battle",
+      "url": "/api/2014/subclasses/battle"
+    },
+    "name": "Martial Training",
+    "level": 3,
+    "prerequisites": [],
+    "desc": [
+      "When you join the College of Battle at 3rd level, you gain proficiency with medium armor, shields, and martial weapons."
+    ],
+    "url": "/api/2014/features/martial-training",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "battle-inspiration",
+    "class": {
+      "index": "bard",
+      "name": "Bard",
+      "url": "/api/2014/classes/bard"
+    },
+    "subclass": {
+      "index": "battle",
+      "name": "Battle",
+      "url": "/api/2014/subclasses/battle"
+    },
+    "name": "Battle Inspiration",
+    "level": 3,
+    "prerequisites": [],
+    "desc": [
+      "Also at 3rd level, you learn to inspire your allies through your martial prowess. A creature that has a Bardic Inspiration die from you can use it in the following additional ways:",
+      "When the creature makes a weapon attack roll, it can roll the Bardic Inspiration die and add the number rolled to the attack roll.",
+      "When the creature deals weapon damage, it can roll the Bardic Inspiration die and add the number rolled to the damage dealt.",
+      "Immediately after the creature hits with a weapon attack, it can roll the Bardic Inspiration die and gain a bonus to the next saving throw it makes before the start of its next turn equal to the number rolled."
+    ],
+    "url": "/api/2014/features/battle-inspiration",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "battle-bard-extra-attack",
+    "class": {
+      "index": "bard",
+      "name": "Bard",
+      "url": "/api/2014/classes/bard"
+    },
+    "subclass": {
+      "index": "battle",
+      "name": "Battle",
+      "url": "/api/2014/subclasses/battle"
+    },
+    "name": "Extra Attack",
+    "level": 6,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+    ],
+    "url": "/api/2014/features/battle-bard-extra-attack",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "combat-crescendo",
+    "class": {
+      "index": "bard",
+      "name": "Bard",
+      "url": "/api/2014/classes/bard"
+    },
+    "subclass": {
+      "index": "battle",
+      "name": "Battle",
+      "url": "/api/2014/subclasses/battle"
+    },
+    "name": "Combat Crescendo",
+    "level": 14,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 14th level, you have mastered the art of weaving spellcasting and weapon attacks into a deadly performance. When you take the Attack action on your turn, you can cast one bard spell with a casting time of 1 action as a bonus action.",
+      "Once you use this feature, you can't use it again until you finish a short or long rest."
+    ],
+    "url": "/api/2014/features/combat-crescendo",
+    "source": "homebrew-base"
   },
   {
     "index": "bardic-inspiration-d12",
@@ -5736,6 +5913,99 @@
     "source": "srd"
   },
   {
+    "index": "mystical-companion",
+    "class": {
+      "index": "ranger",
+      "name": "Ranger",
+      "url": "/api/2014/classes/ranger"
+    },
+    "subclass": {
+      "index": "beastbound",
+      "name": "Beastbound",
+      "url": "/api/2014/subclasses/beastbound"
+    },
+    "name": "Mystical Companion",
+    "level": 3,
+    "prerequisites": [],
+    "desc": [
+      "At 3rd level, you gain a beast companion that accompanies you on your adventures and shares a mystical bond with you. Choose a beast that is no larger than Medium and that has a challenge rating of 1/4 or lower.",
+      "Add your proficiency bonus to the beast's AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals its normal maximum or four times your ranger level, whichever is higher.",
+      "The beast obeys your commands as best as it can. It takes its turn on your initiative, though it doesn't take an action unless you command it to. On your turn, you can verbally command the beast where to move (no action required by you). You can use your action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action.",
+      "You can communicate telepathically with your companion while it is within 100 feet of you. As an action, you can see through your companion's eyes and hear through its ears until the start of your next turn, gaining the benefits of any special senses the companion has. During this time, you are deaf and blind with regard to your own senses.",
+      "If the beast dies, you can obtain another one by spending 8 hours magically bonding with another beast that isn't hostile to you."
+    ],
+    "url": "/api/2014/features/mystical-companion",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "shared-essence",
+    "class": {
+      "index": "ranger",
+      "name": "Ranger",
+      "url": "/api/2014/classes/ranger"
+    },
+    "subclass": {
+      "index": "beastbound",
+      "name": "Beastbound",
+      "url": "/api/2014/subclasses/beastbound"
+    },
+    "name": "Shared Essence",
+    "level": 7,
+    "prerequisites": [],
+    "desc": [
+      "Beginning at 7th level, the bond between you and your companion deepens. When you or your companion takes damage while within 30 feet of each other, you can use your reaction to split the damage evenly between both of you (rounded down). Any resistances or vulnerabilities apply separately to each creature's share of the damage.",
+      "Additionally, your companion's attacks now count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
+      "Finally, you can use a bonus action on your turn to command your companion to take the Dash, Disengage, Help, or Hide action."
+    ],
+    "url": "/api/2014/features/shared-essence",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "unity-of-mind-and-body",
+    "class": {
+      "index": "ranger",
+      "name": "Ranger",
+      "url": "/api/2014/classes/ranger"
+    },
+    "subclass": {
+      "index": "beastbound",
+      "name": "Beastbound",
+      "url": "/api/2014/subclasses/beastbound"
+    },
+    "name": "Unity of Mind and Body",
+    "level": 11,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 11th level, you and your companion move and act as one being. When your companion takes the Attack action, it can make two attacks instead of one.",
+      "Additionally, when you take the Attack action on your turn, your companion can use its reaction to make one weapon attack."
+    ],
+    "url": "/api/2014/features/unity-of-mind-and-body",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "life-bond",
+    "class": {
+      "index": "ranger",
+      "name": "Ranger",
+      "url": "/api/2014/classes/ranger"
+    },
+    "subclass": {
+      "index": "beastbound",
+      "name": "Beastbound",
+      "url": "/api/2014/subclasses/beastbound"
+    },
+    "name": "Life Bond",
+    "level": 15,
+    "prerequisites": [],
+    "desc": [
+      "Beginning at 15th level, the bond between you and your companion has become unbreakable. When you cast a ranger spell targeting yourself, you can also affect your companion with the spell if the beast is within 30 feet of you.",
+      "Additionally, if your companion is reduced to 0 hit points, you can use your reaction and expend a spell slot of any level to have it drop to 1 hit point instead. Once you use this aspect of the feature, you can't use it again until you finish a long rest.",
+      "Finally, while your companion is within 10 feet of you, you both have advantage on saving throws against being frightened or charmed."
+    ],
+    "url": "/api/2014/features/life-bond",
+    "source": "homebrew-base"
+  },
+  {
     "index": "rogue-expertise-1",
     "class": {
       "index": "rogue",
@@ -7843,6 +8113,99 @@
     "source": "srd"
   },
   {
+    "index": "entropic-magic",
+    "class": {
+      "index": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/api/2014/classes/sorcerer"
+    },
+    "subclass": {
+      "index": "chaos-born",
+      "name": "Chaos Born",
+      "url": "/api/2014/subclasses/chaos-born"
+    },
+    "name": "Entropic Magic",
+    "level": 1,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 1st level when you choose this origin, your magic is infused with chaotic energy. When you cast a spell that deals acid, cold, fire, lightning, or thunder damage, you can choose to infuse it with entropic power. If you do, roll a d4:",
+      "On a 1-2, the damage type remains unchanged.",
+      "On a 3-4, roll a d5 to randomly determine the new damage type: 1 = acid, 2 = cold, 3 = fire, 4 = lightning, 5 = thunder.",
+      "Additionally, whenever you cast a sorcerer spell of 1st level or higher, you can roll a d20. On a 20, you regain one expended sorcery point (minimum 1)."
+    ],
+    "url": "/api/2014/features/entropic-magic",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "chaos-bolt-mastery",
+    "class": {
+      "index": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/api/2014/classes/sorcerer"
+    },
+    "subclass": {
+      "index": "chaos-born",
+      "name": "Chaos Born",
+      "url": "/api/2014/subclasses/chaos-born"
+    },
+    "name": "Chaos Bolt Mastery",
+    "level": 6,
+    "prerequisites": [],
+    "desc": [
+      "At 6th level, you've learned to harness chaos to empower your spells. When you cast a spell that deals damage, you can spend 2 sorcery points to reroll any 1s on the damage dice. You must use the new rolls.",
+      "Additionally, once per turn when you roll damage for a sorcerer spell, you can choose to maximize one damage die instead of rolling it. Once you use this feature, you can't use it again until you finish a short or long rest."
+    ],
+    "url": "/api/2014/features/chaos-bolt-mastery",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "embrace-entropy",
+    "class": {
+      "index": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/api/2014/classes/sorcerer"
+    },
+    "subclass": {
+      "index": "chaos-born",
+      "name": "Chaos Born",
+      "url": "/api/2014/subclasses/chaos-born"
+    },
+    "name": "Embrace Entropy",
+    "level": 14,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 14th level, your chaotic nature makes you resistant to unpredictability. You have advantage on saving throws against spells and other magical effects.",
+      "Additionally, when you use a Metamagic option, roll a d6. On a 6, you regain sorcery points equal to half the amount you spent (rounded up, minimum 1)."
+    ],
+    "url": "/api/2014/features/embrace-entropy",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "chaos-incarnate",
+    "class": {
+      "index": "sorcerer",
+      "name": "Sorcerer",
+      "url": "/api/2014/classes/sorcerer"
+    },
+    "subclass": {
+      "index": "chaos-born",
+      "name": "Chaos Born",
+      "url": "/api/2014/subclasses/chaos-born"
+    },
+    "name": "Chaos Incarnate",
+    "level": 18,
+    "prerequisites": [],
+    "desc": [
+      "At 18th level, you can fully embrace your chaotic nature. As an action, you can transform into a being of pure entropy for 1 minute. For the duration:",
+      "You gain resistance to all damage types.",
+      "When you cast a spell that deals damage, roll a d8 and add the result to one damage roll of that spell.",
+      "Critical hits against you become normal hits.",
+      "Once you use this feature, you can't use it again until you finish a long rest."
+    ],
+    "url": "/api/2014/features/chaos-incarnate",
+    "source": "homebrew-base"
+  },
+  {
     "index": "otherworldly-patron",
     "class": {
       "index": "warlock",
@@ -9595,6 +9958,777 @@
     ],
     "url": "/api/2014/features/signature-spell",
     "source": "srd"
+  },
+  {
+    "index": "foresight-savant",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "foresight",
+      "name": "Foresight",
+      "url": "/api/2014/subclasses/foresight"
+    },
+    "name": "Divination Savant",
+    "level": 2,
+    "prerequisites": [],
+    "desc": [
+      "Beginning when you select this school at 2nd level, the gold and time you must spend to copy a divination spell into your spellbook is halved."
+    ],
+    "url": "/api/2014/features/foresight-savant",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "glimpse-the-future",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "foresight",
+      "name": "Foresight",
+      "url": "/api/2014/subclasses/foresight"
+    },
+    "name": "Glimpse the Future",
+    "level": 2,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 2nd level, glimpses of the future begin to press in on your awareness. When you finish a long rest, roll one d20 and record the number rolled.",
+      "Before any creature you can see makes an attack roll, saving throw, or ability check, you can use your reaction to replace their roll with your recorded number. You must choose to do so before the roll is made.",
+      "Once you use this feature, you must finish a long rest before you can use it again. When you reach 6th level in this class, you roll two d20s instead of one when you use this feature."
+    ],
+    "url": "/api/2014/features/glimpse-the-future",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "temporal-insight",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "foresight",
+      "name": "Foresight",
+      "url": "/api/2014/subclasses/foresight"
+    },
+    "name": "Temporal Insight",
+    "level": 6,
+    "prerequisites": [],
+    "desc": [
+      "At 6th level, your ability to perceive time gives you an edge in combat. You can add your Intelligence modifier to your initiative rolls.",
+      "Additionally, when you cast a divination spell of 1st level or higher, you gain a bonus to your AC equal to half the spell's level (rounded up) until the end of your next turn as you perceive attacks before they happen."
+    ],
+    "url": "/api/2014/features/temporal-insight",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "inevitable-outcome",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "foresight",
+      "name": "Foresight",
+      "url": "/api/2014/subclasses/foresight"
+    },
+    "name": "Inevitable Outcome",
+    "level": 10,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 10th level, you can ensure that certain futures come to pass. When you or a creature you can see within 30 feet makes a saving throw, you can use your reaction to grant them advantage on that save as you guide them toward the timeline where they succeed.",
+      "Once you use this feature, you can't use it again until you finish a short or long rest."
+    ],
+    "url": "/api/2014/features/inevitable-outcome",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "master-of-fate",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "foresight",
+      "name": "Foresight",
+      "url": "/api/2014/subclasses/foresight"
+    },
+    "name": "Master of Fate",
+    "level": 14,
+    "prerequisites": [],
+    "desc": [
+      "Beginning at 14th level, you have learned to reshape probability itself. When you see a creature within 60 feet make an attack roll, ability check, or saving throw, you can use your reaction to force them to reroll. The creature must use the new roll.",
+      "Once you use this feature, you can't use it again until you finish a long rest.",
+      "Additionally, you now roll three d20s instead of two when you use your Glimpse the Future feature, giving you even greater control over destiny."
+    ],
+    "url": "/api/2014/features/master-of-fate",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "warding-savant",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "warding",
+      "name": "Warding",
+      "url": "/api/2014/subclasses/warding"
+    },
+    "name": "Abjuration Savant",
+    "level": 2,
+    "prerequisites": [],
+    "desc": [
+      "Beginning when you select this school at 2nd level, the gold and time you must spend to copy an abjuration spell into your spellbook is halved."
+    ],
+    "url": "/api/2014/features/warding-savant",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "barrier-field",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "warding",
+      "name": "Warding",
+      "url": "/api/2014/subclasses/warding"
+    },
+    "name": "Barrier Field",
+    "level": 2,
+    "prerequisites": [],
+    "desc": [
+      "At 2nd level, you can weave protective barriers that rebound attacks. When you cast an abjuration spell of 1st level or higher, you create a shimmering barrier around yourself that lasts until the start of your next turn.",
+      "While the barrier is active, when a creature you can see within 15 feet hits you with an attack, that creature takes force damage equal to your Intelligence modifier (minimum of 1)."
+    ],
+    "url": "/api/2014/features/barrier-field",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "extended-barriers",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "warding",
+      "name": "Warding",
+      "url": "/api/2014/subclasses/warding"
+    },
+    "name": "Extended Barriers",
+    "level": 6,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 6th level, your Barrier Field can protect your allies. When you create your Barrier Field, you can choose up to three creatures you can see within 30 feet. Those creatures also gain the benefit of your Barrier Field until the start of your next turn.",
+      "Additionally, you can use your reaction when a creature you can see within 30 feet is hit by an attack to grant that creature a bonus to AC equal to your Intelligence modifier until the start of your next turn, potentially causing the attack to miss."
+    ],
+    "url": "/api/2014/features/extended-barriers",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "spell-deflection",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "warding",
+      "name": "Warding",
+      "url": "/api/2014/subclasses/warding"
+    },
+    "name": "Spell Deflection",
+    "level": 10,
+    "prerequisites": [],
+    "desc": [
+      "Beginning at 10th level, you can turn hostile magic back upon its caster. When you succeed on a saving throw against a spell, you can use your reaction to redirect the spell back at the caster. The original caster must make a saving throw against the spell using your spell save DC.",
+      "Once you use this feature, you can't use it again until you finish a short or long rest."
+    ],
+    "url": "/api/2014/features/spell-deflection",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "impenetrable-defense",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "warding",
+      "name": "Warding",
+      "url": "/api/2014/subclasses/warding"
+    },
+    "name": "Impenetrable Defense",
+    "level": 14,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 14th level, when you cast an abjuration spell of 1st level or higher, choose one damage type: acid, cold, fire, lightning, or thunder. You gain immunity to that damage type until the end of your next turn.",
+      "Additionally, you have advantage on saving throws against spells, and you have resistance to damage from spells."
+    ],
+    "url": "/api/2014/features/impenetrable-defense",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "gateways-savant",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "gateways",
+      "name": "Gateways",
+      "url": "/api/2014/subclasses/gateways"
+    },
+    "name": "Conjuration Savant",
+    "level": 2,
+    "prerequisites": [],
+    "desc": [
+      "Beginning when you select this school at 2nd level, the gold and time you must spend to copy a conjuration spell into your spellbook is halved."
+    ],
+    "url": "/api/2014/features/gateways-savant",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "pocket-dimension",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "gateways",
+      "name": "Gateways",
+      "url": "/api/2014/subclasses/gateways"
+    },
+    "name": "Pocket Dimension",
+    "level": 2,
+    "prerequisites": [],
+    "desc": [
+      "At 2nd level, you can create a small extradimensional space. As an action, you can store or retrieve an object weighing up to 10 pounds in your pocket dimension. The space can hold up to 100 pounds of items, not exceeding a volume of 10 cubic feet.",
+      "You can access your pocket dimension from anywhere. If you die, the contents of your pocket dimension are expelled into the nearest unoccupied space."
+    ],
+    "url": "/api/2014/features/pocket-dimension",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "step-between-worlds",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "gateways",
+      "name": "Gateways",
+      "url": "/api/2014/subclasses/gateways"
+    },
+    "name": "Step Between Worlds",
+    "level": 6,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 6th level, you can briefly step through the spaces between realities. As a bonus action, you can teleport up to 30 feet to an unoccupied space you can see.",
+      "Once you use this feature, you can't use it again until you finish a short or long rest, or until you cast a conjuration spell of 1st level or higher."
+    ],
+    "url": "/api/2014/features/step-between-worlds",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "gateway-conduit",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "gateways",
+      "name": "Gateways",
+      "url": "/api/2014/subclasses/gateways"
+    },
+    "name": "Gateway Conduit",
+    "level": 10,
+    "prerequisites": [],
+    "desc": [
+      "Beginning at 10th level, you can create linked portals. As an action, you can create two shimmering portals, each occupying a 5-foot square within 60 feet of you. The portals last for 1 minute.",
+      "Creatures and objects can pass through either portal as if the two locations were adjacent. A creature can use 5 feet of movement to step through one portal and emerge from the other.",
+      "Once you use this feature, you can't use it again until you finish a long rest."
+    ],
+    "url": "/api/2014/features/gateway-conduit",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "dimensional-anchor",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "gateways",
+      "name": "Gateways",
+      "url": "/api/2014/subclasses/gateways"
+    },
+    "name": "Dimensional Anchor",
+    "level": 14,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 14th level, you can lock down space itself. As an action, choose a point you can see within 120 feet. For the next minute, creatures within 30 feet of that point cannot teleport or use planar travel. This effect moves with you, staying centered on the point relative to your position.",
+      "Additionally, when you cast a conjuration spell that summons creatures, you can summon them from anywhere on the same plane, not just from within the spell's normal range.",
+      "Once you use the dimensional anchor effect, you can't use it again until you finish a long rest."
+    ],
+    "url": "/api/2014/features/dimensional-anchor",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "compulsion-savant",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "compulsion",
+      "name": "Compulsion",
+      "url": "/api/2014/subclasses/compulsion"
+    },
+    "name": "Enchantment Savant",
+    "level": 2,
+    "prerequisites": [],
+    "desc": [
+      "Beginning when you select this school at 2nd level, the gold and time you must spend to copy an enchantment spell into your spellbook is halved."
+    ],
+    "url": "/api/2014/features/compulsion-savant",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "commanding-presence",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "compulsion",
+      "name": "Compulsion",
+      "url": "/api/2014/subclasses/compulsion"
+    },
+    "name": "Commanding Presence",
+    "level": 2,
+    "prerequisites": [],
+    "desc": [
+      "At 2nd level, you can impose your will upon others with a word. As a bonus action, you can target one creature you can see within 30 feet. The target must succeed on a Wisdom saving throw against your spell save DC or be compelled to follow a one-word command on its next turn (such as \"flee,\" \"grovel,\" \"halt,\" or \"drop\").",
+      "The command cannot be directly harmful to the creature. Once you use this feature, you can't use it again until you finish a short or long rest."
+    ],
+    "url": "/api/2014/features/commanding-presence",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "iron-will",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "compulsion",
+      "name": "Compulsion",
+      "url": "/api/2014/subclasses/compulsion"
+    },
+    "name": "Iron Will",
+    "level": 6,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 6th level, your mastery of mental domination makes you immune to it. You are immune to being charmed.",
+      "Additionally, when you cast an enchantment spell, you can choose to extend its duration. If the spell has a duration of 1 minute or longer, you can double that duration. Once you use this feature, you can't use it again until you finish a long rest."
+    ],
+    "url": "/api/2014/features/iron-will",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "twin-compulsion",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "compulsion",
+      "name": "Compulsion",
+      "url": "/api/2014/subclasses/compulsion"
+    },
+    "name": "Twin Compulsion",
+    "level": 10,
+    "prerequisites": [],
+    "desc": [
+      "Beginning at 10th level, when you cast an enchantment spell of 1st level or higher that targets only one creature, you can have it target a second creature within range."
+    ],
+    "url": "/api/2014/features/twin-compulsion",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "total-dominance",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "compulsion",
+      "name": "Compulsion",
+      "url": "/api/2014/subclasses/compulsion"
+    },
+    "name": "Total Dominance",
+    "level": 14,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 14th level, your enchantments can become permanent. When you cast an enchantment spell of 5th level or lower with a duration of at least 1 minute, you can choose to make it last until it is dispelled. You must concentrate on the spell for its entire normal duration for this effect to take hold.",
+      "Once you use this feature, you can't use it again until you finish a long rest."
+    ],
+    "url": "/api/2014/features/total-dominance",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "phantasm-savant",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "phantasm",
+      "name": "Phantasm",
+      "url": "/api/2014/subclasses/phantasm"
+    },
+    "name": "Illusion Savant",
+    "level": 2,
+    "prerequisites": [],
+    "desc": [
+      "Beginning when you select this school at 2nd level, the gold and time you must spend to copy an illusion spell into your spellbook is halved."
+    ],
+    "url": "/api/2014/features/phantasm-savant",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "fearful-illusion",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "phantasm",
+      "name": "Phantasm",
+      "url": "/api/2014/subclasses/phantasm"
+    },
+    "name": "Fearful Illusion",
+    "level": 2,
+    "prerequisites": [],
+    "desc": [
+      "At 2nd level, your illusions can terrify and harm. When you cast an illusion spell of 1st level or higher, you can choose one creature that can see the illusion within 60 feet. That creature must succeed on a Wisdom saving throw against your spell save DC or become frightened of the illusion until the end of your next turn.",
+      "Additionally, when a frightened creature ends its turn within 30 feet of one of your illusions, it takes psychic damage equal to your Intelligence modifier (minimum of 1)."
+    ],
+    "url": "/api/2014/features/fearful-illusion",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "adaptive-phantasm",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "phantasm",
+      "name": "Phantasm",
+      "url": "/api/2014/subclasses/phantasm"
+    },
+    "name": "Adaptive Phantasm",
+    "level": 6,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 6th level, your illusions draw upon the fears of those who perceive them. When you cast an illusion spell, you can use a bonus action to alter its appearance to reflect what each viewer fears most. This doesn't change the spell's mechanical effects, but each creature sees a different, personalized version of the illusion.",
+      "Creatures have disadvantage on saving throws and ability checks to disbelieve your illusions."
+    ],
+    "url": "/api/2014/features/adaptive-phantasm",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "phantom-defense",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "phantasm",
+      "name": "Phantasm",
+      "url": "/api/2014/subclasses/phantasm"
+    },
+    "name": "Phantom Defense",
+    "level": 10,
+    "prerequisites": [],
+    "desc": [
+      "Beginning at 10th level, you can create an illusory duplicate to protect yourself. When you are hit by an attack, you can use your reaction to create an illusory duplicate that takes the hit instead. The attack misses you, and the illusion dissipates.",
+      "Once you use this feature, you can't use it again until you finish a short or long rest."
+    ],
+    "url": "/api/2014/features/phantom-defense",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "nightmare-reality",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "phantasm",
+      "name": "Phantasm",
+      "url": "/api/2014/subclasses/phantasm"
+    },
+    "name": "Nightmare Reality",
+    "level": 14,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 14th level, your phantasms become so convincing that they can cause real harm. When you cast an illusion spell that deals psychic damage, you can choose to have it deal an additional damage type of your choice (acid, cold, fire, lightning, or thunder) in addition to the psychic damage.",
+      "Additionally, once per turn when a creature fails a saving throw against one of your illusion spells, you can deal an extra 2d8 psychic damage to that creature."
+    ],
+    "url": "/api/2014/features/nightmare-reality",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "entropy-savant",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "entropy",
+      "name": "Entropy",
+      "url": "/api/2014/subclasses/entropy"
+    },
+    "name": "Necromancy Savant",
+    "level": 2,
+    "prerequisites": [],
+    "desc": [
+      "Beginning when you select this school at 2nd level, the gold and time you must spend to copy a necromancy spell into your spellbook is halved."
+    ],
+    "url": "/api/2014/features/entropy-savant",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "entropic-touch",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "entropy",
+      "name": "Entropy",
+      "url": "/api/2014/subclasses/entropy"
+    },
+    "name": "Entropic Touch",
+    "level": 2,
+    "prerequisites": [],
+    "desc": [
+      "At 2nd level, you can channel the forces of decay through your touch. As an action, make a melee spell attack against a creature within 5 feet. On a hit, the target takes 1d10 necrotic damage.",
+      "This damage increases when you reach certain wizard levels: to 2d10 at 5th level, 3d10 at 11th level, and 4d10 at 17th level.",
+      "Additionally, you can use this feature as a bonus action to target a nonmagical object you touch that isn't being worn or carried. The object begins to decay, taking 2d10 damage. This damage bypasses the object's damage threshold."
+    ],
+    "url": "/api/2014/features/entropic-touch",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "life-siphon",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "entropy",
+      "name": "Entropy",
+      "url": "/api/2014/subclasses/entropy"
+    },
+    "name": "Life Siphon",
+    "level": 6,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 6th level, you can siphon life force from those you harm. When you deal necrotic damage to a creature with a spell, you regain hit points equal to half the necrotic damage dealt (rounded down).",
+      "You can't regain more hit points than your wizard level in this way each turn."
+    ],
+    "url": "/api/2014/features/life-siphon",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "accelerated-decay",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "entropy",
+      "name": "Entropy",
+      "url": "/api/2014/subclasses/entropy"
+    },
+    "name": "Accelerated Decay",
+    "level": 10,
+    "prerequisites": [],
+    "desc": [
+      "Beginning at 10th level, your entropic magic is nearly impossible to resist. When you deal necrotic damage with a wizard spell, you ignore resistance to necrotic damage.",
+      "Additionally, you have resistance to necrotic damage, and your hit point maximum can't be reduced."
+    ],
+    "url": "/api/2014/features/accelerated-decay",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "temporal-entropy",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "entropy",
+      "name": "Entropy",
+      "url": "/api/2014/subclasses/entropy"
+    },
+    "name": "Temporal Entropy",
+    "level": 14,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 14th level, you can rapidly age your enemies. When you cast a necromancy spell that deals damage, you can choose to age one target of that spell. The target must make a Constitution saving throw against your spell save DC. On a failed save, the target's speed is halved, it can't take reactions, and it can take either an action or a bonus action on its turn, not both. These effects last for 1 minute.",
+      "Once you use this feature, you can't use it again until you finish a long rest."
+    ],
+    "url": "/api/2014/features/temporal-entropy",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "metamorphosis-savant",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "metamorphosis",
+      "name": "Metamorphosis",
+      "url": "/api/2014/subclasses/metamorphosis"
+    },
+    "name": "Transmutation Savant",
+    "level": 2,
+    "prerequisites": [],
+    "desc": [
+      "Beginning when you select this school at 2nd level, the gold and time you must spend to copy a transmutation spell into your spellbook is halved."
+    ],
+    "url": "/api/2014/features/metamorphosis-savant",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "adaptive-form",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "metamorphosis",
+      "name": "Metamorphosis",
+      "url": "/api/2014/subclasses/metamorphosis"
+    },
+    "name": "Adaptive Form",
+    "level": 2,
+    "prerequisites": [],
+    "desc": [
+      "At 2nd level, you can subtly alter your physical form. As a bonus action, you can gain one of the following benefits for 10 minutes:",
+      "You gain darkvision out to a range of 60 feet. If you already have darkvision, its range increases by 30 feet.",
+      "You gain a climbing speed equal to your walking speed.",
+      "You gain a swimming speed equal to your walking speed and can breathe underwater.",
+      "You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+    ],
+    "url": "/api/2014/features/adaptive-form",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "elemental-shift",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "metamorphosis",
+      "name": "Metamorphosis",
+      "url": "/api/2014/subclasses/metamorphosis"
+    },
+    "name": "Elemental Shift",
+    "level": 6,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 6th level, you can infuse your body with elemental energy. As a bonus action, choose one damage type: acid, cold, fire, lightning, or thunder. For the next 10 minutes, you gain resistance to that damage type, and when you deal damage with a wizard spell, you can change the damage type to your chosen type.",
+      "Once you use this feature, you can't use it again until you finish a short or long rest."
+    ],
+    "url": "/api/2014/features/elemental-shift",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "fluid-transformation",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "metamorphosis",
+      "name": "Metamorphosis",
+      "url": "/api/2014/subclasses/metamorphosis"
+    },
+    "name": "Fluid Transformation",
+    "level": 10,
+    "prerequisites": [],
+    "desc": [
+      "Beginning at 10th level, you can transform yourself at will. You can cast Polymorph on yourself without expending a spell slot. When you do so, you can only transform into beasts with a challenge rating of 1 or lower.",
+      "You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+    ],
+    "url": "/api/2014/features/fluid-transformation",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "perfect-adaptation",
+    "class": {
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/2014/classes/wizard"
+    },
+    "subclass": {
+      "index": "metamorphosis",
+      "name": "Metamorphosis",
+      "url": "/api/2014/subclasses/metamorphosis"
+    },
+    "name": "Perfect Adaptation",
+    "level": 14,
+    "prerequisites": [],
+    "desc": [
+      "Starting at 14th level, your body has become supremely adaptable. You are immune to the poisoned condition and disease.",
+      "Additionally, you can adapt to hostile environments. You automatically succeed on saving throws against extreme heat, extreme cold, and effects that would cause you to suffocate. You can survive without food or water for a number of days equal to your wizard level.",
+      "Finally, when you are subjected to a condition (blinded, deafened, paralyzed, or stunned), you can use your reaction to immediately end that condition on yourself. Once you use this aspect of the feature, you can't use it again until you finish a long rest."
+    ],
+    "url": "/api/2014/features/perfect-adaptation",
+    "source": "homebrew-base"
   },
   {
     "index": "scholars-insight",
