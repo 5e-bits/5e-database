@@ -12,7 +12,7 @@ jobs:
     if: ${{ github.repository == '5e-bits/5e-database' }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 2
       - name: Set up Node.js 22.x
@@ -40,7 +40,7 @@ jobs:
       packages: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
       - name: Get version from package.json
