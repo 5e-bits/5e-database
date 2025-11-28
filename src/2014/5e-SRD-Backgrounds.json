@@ -335,5 +335,4341 @@
     },
     "url": "/api/2014/backgrounds/acolyte",
     "source": "srd"
+  },
+  {
+    "index": "underworld-operative",
+    "name": "Underworld Operative",
+    "starting_proficiencies": [
+      {
+        "index": "skill-deception",
+        "name": "Skill: Deception",
+        "url": "/api/2014/proficiencies/skill-deception"
+      },
+      {
+        "index": "skill-stealth",
+        "name": "Skill: Stealth",
+        "url": "/api/2014/proficiencies/skill-stealth"
+      },
+      {
+        "index": "thieves-tools",
+        "name": "Thieves' Tools",
+        "url": "/api/2014/proficiencies/thieves-tools"
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/2014/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "crowbar",
+          "name": "Crowbar",
+          "url": "/api/2014/equipment/crowbar"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "clothes-common",
+          "name": "Clothes, common",
+          "url": "/api/2014/equipment/clothes-common"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/2014/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [],
+    "feature": {
+      "name": "Underworld Contacts",
+      "desc": [
+        "You have a network of contacts within the criminal underworld. You know how to communicate with other operatives over long distances, using secret signs, coded messages, and dead drops. You can arrange meetings with members of the underworld in any city, though they are not obligated to help you.",
+        "Additionally, you know the local laws and criminal customs of most settlements, allowing you to identify safe houses, black markets, and other illicit establishments with relative ease."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I always have a plan for what to do when things go wrong."
+          },
+          {
+            "option_type": "string",
+            "string": "I am always calm, no matter the situation. I never raise my voice or let my emotions control me."
+          },
+          {
+            "option_type": "string",
+            "string": "The first thing I do in a new place is note the locations of everything valuable—or where such things could be hidden."
+          },
+          {
+            "option_type": "string",
+            "string": "I would rather make a new friend than a new enemy."
+          },
+          {
+            "option_type": "string",
+            "string": "I am incredibly slow to trust. Those who seem the fairest often have the most to hide."
+          },
+          {
+            "option_type": "string",
+            "string": "I don't pay attention to the risks in a situation. Never tell me the odds."
+          },
+          {
+            "option_type": "string",
+            "string": "The best way to get me to do something is to tell me I can't do it."
+          },
+          {
+            "option_type": "string",
+            "string": "I blow up at the slightest insult."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Honor. I don't steal from others in the trade.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Freedom. Chains are meant to be broken, as are those who would forge them.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Charity. I steal from the wealthy so that I can help people in need.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Greed. I will do whatever it takes to become wealthy.",
+            "alignments": [
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "People. I'm loyal to my friends, not to any ideals, and everyone else can take a trip down the river for all I care.",
+            "alignments": [
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Redemption. There's a spark of good in everyone.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'm trying to pay off an old debt I owe to a generous benefactor."
+          },
+          {
+            "option_type": "string",
+            "string": "My ill-gotten gains go to support my family."
+          },
+          {
+            "option_type": "string",
+            "string": "Something important was taken from me, and I aim to steal it back."
+          },
+          {
+            "option_type": "string",
+            "string": "I will become the greatest thief that ever lived."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm guilty of a terrible crime, and I hope I can redeem myself for it."
+          },
+          {
+            "option_type": "string",
+            "string": "Someone I loved died because of a mistake I made. That will never happen again."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "When I see something valuable, I can't think about anything but how to steal it."
+          },
+          {
+            "option_type": "string",
+            "string": "When faced with a choice between money and my friends, I usually choose the money."
+          },
+          {
+            "option_type": "string",
+            "string": "If there's a plan, I'll forget it. If I don't forget it, I'll ignore it."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a 'tell' that reveals when I'm lying."
+          },
+          {
+            "option_type": "string",
+            "string": "I turn tail and run when things look bad."
+          },
+          {
+            "option_type": "string",
+            "string": "An innocent person is in prison for a crime that I committed. I'm okay with that."
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/backgrounds/underworld-operative",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "veteran-warrior",
+    "name": "Veteran Warrior",
+    "starting_proficiencies": [
+      {
+        "index": "skill-athletics",
+        "name": "Skill: Athletics",
+        "url": "/api/2014/proficiencies/skill-athletics"
+      },
+      {
+        "index": "skill-intimidation",
+        "name": "Skill: Intimidation",
+        "url": "/api/2014/proficiencies/skill-intimidation"
+      },
+      {
+        "index": "vehicles-land",
+        "name": "Vehicles (land)",
+        "url": "/api/2014/proficiencies/vehicles-land"
+      }
+    ],
+    "starting_proficiency_options": {
+      "choose": 1,
+      "type": "proficiencies",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "dice-set",
+              "name": "Dice Set",
+              "url": "/api/2014/proficiencies/dice-set"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "playing-card-set",
+              "name": "Playing Card Set",
+              "url": "/api/2014/proficiencies/playing-card-set"
+            }
+          }
+        ]
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "dagger",
+          "name": "Dagger",
+          "url": "/api/2014/equipment/dagger"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "clothes-common",
+          "name": "Clothes, common",
+          "url": "/api/2014/equipment/clothes-common"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/2014/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dice-set",
+                "name": "Dice Set",
+                "url": "/api/2014/equipment/dice-set"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "playing-card-set",
+                "name": "Playing Card Set",
+                "url": "/api/2014/equipment/playing-card-set"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "feature": {
+      "name": "Military Rank",
+      "desc": [
+        "You have a military rank from your career as a soldier. Soldiers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use.",
+        "You can also usually gain access to friendly military encampments and fortresses where your rank is recognized."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'm always polite and respectful."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm haunted by memories of war. I can't get the images of violence out of my mind."
+          },
+          {
+            "option_type": "string",
+            "string": "I've lost too many friends, and I'm slow to make new ones."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm full of inspiring and cautionary tales from my military experience relevant to almost every combat situation."
+          },
+          {
+            "option_type": "string",
+            "string": "I can stare down a hell hound without flinching."
+          },
+          {
+            "option_type": "string",
+            "string": "I enjoy being strong and like breaking things."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a crude sense of humor."
+          },
+          {
+            "option_type": "string",
+            "string": "I face problems head-on. A simple, direct solution is the best path to success."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Greater Good. Our lot is to lay down our lives in defense of others.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Responsibility. I do what I must and obey just authority.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Independence. When people follow orders blindly, they embrace a kind of tyranny.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Might. In life as in war, the stronger force wins.",
+            "alignments": [
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Live and Let Live. Ideals aren't worth killing over or going to war for.",
+            "alignments": [
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Nation. My city, nation, or people are all that matter.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I would still lay down my life for the people I served with."
+          },
+          {
+            "option_type": "string",
+            "string": "Someone saved my life on the battlefield. To this day, I will never leave a friend behind."
+          },
+          {
+            "option_type": "string",
+            "string": "My honor is my life."
+          },
+          {
+            "option_type": "string",
+            "string": "I'll never forget the crushing defeat my company suffered or the enemies who dealt it."
+          },
+          {
+            "option_type": "string",
+            "string": "Those who fight beside me are those worth dying for."
+          },
+          {
+            "option_type": "string",
+            "string": "I fight for those who cannot fight for themselves."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "The monstrous enemy we faced in battle still leaves me quivering with fear."
+          },
+          {
+            "option_type": "string",
+            "string": "I have little respect for anyone who is not a proven warrior."
+          },
+          {
+            "option_type": "string",
+            "string": "I made a terrible mistake in battle that cost many lives, and I would do anything to keep that mistake secret."
+          },
+          {
+            "option_type": "string",
+            "string": "My hatred of my enemies is blind and unreasoning."
+          },
+          {
+            "option_type": "string",
+            "string": "I obey the law, even if the law causes misery."
+          },
+          {
+            "option_type": "string",
+            "string": "I'd rather eat my armor than admit when I'm wrong."
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/backgrounds/veteran-warrior",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "scholar",
+    "name": "Scholar",
+    "starting_proficiencies": [
+      {
+        "index": "skill-arcana",
+        "name": "Skill: Arcana",
+        "url": "/api/2014/proficiencies/skill-arcana"
+      },
+      {
+        "index": "skill-history",
+        "name": "Skill: History",
+        "url": "/api/2014/proficiencies/skill-history"
+      }
+    ],
+    "language_options": {
+      "choose": 2,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/2014/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "ink-1-ounce-bottle",
+          "name": "Ink (1 ounce bottle)",
+          "url": "/api/2014/equipment/ink-1-ounce-bottle"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "ink-pen",
+          "name": "Ink pen",
+          "url": "/api/2014/equipment/ink-pen"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "knife-small",
+          "name": "Knife, small",
+          "url": "/api/2014/equipment/knife-small"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "clothes-common",
+          "name": "Clothes, common",
+          "url": "/api/2014/equipment/clothes-common"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/2014/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [],
+    "feature": {
+      "name": "Researcher",
+      "desc": [
+        "When you attempt to learn or recall a piece of lore, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, scriptorium, university, or a sage or other learned person or creature. Your DM might rule that the knowledge you seek is secreted away in an almost inaccessible place, or that it simply cannot be found.",
+        "Unearthing the deepest secrets of the multiverse can require an adventure or even a whole campaign."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I use polysyllabic words that convey the impression of great erudition."
+          },
+          {
+            "option_type": "string",
+            "string": "I've read every book in the world's greatest libraries—or I like to boast that I have."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm used to helping out those who aren't as smart as I am, and I patiently explain anything and everything to others."
+          },
+          {
+            "option_type": "string",
+            "string": "There's nothing I like more than a good mystery."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm willing to listen to every side of an argument before I make my own judgment."
+          },
+          {
+            "option_type": "string",
+            "string": "I... speak... slowly... when talking... to idiots,... which... almost... everyone... is... compared... to me."
+          },
+          {
+            "option_type": "string",
+            "string": "I am horribly, horribly awkward in social situations."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm convinced that people are always trying to steal my secrets."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Knowledge. The path to power and self-improvement is through knowledge.",
+            "alignments": [
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Beauty. What is beautiful points us beyond itself toward what is true.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Logic. Emotions must not cloud our logical thinking.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "No Limits. Nothing should fetter the infinite possibility inherent in all existence.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Power. Knowledge is the path to power and domination.",
+            "alignments": [
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Self-Improvement. The goal of a life of study is the betterment of oneself.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "It is my duty to protect my students."
+          },
+          {
+            "option_type": "string",
+            "string": "I have an ancient text that holds terrible secrets that must not fall into the wrong hands."
+          },
+          {
+            "option_type": "string",
+            "string": "I work to preserve a library, university, scriptorium, or monastery."
+          },
+          {
+            "option_type": "string",
+            "string": "My life's work is a series of tomes related to a specific field of lore."
+          },
+          {
+            "option_type": "string",
+            "string": "I've been searching my whole life for the answer to a certain question."
+          },
+          {
+            "option_type": "string",
+            "string": "I sold my soul for knowledge. I hope to do great deeds and win it back."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I am easily distracted by the promise of information."
+          },
+          {
+            "option_type": "string",
+            "string": "Most people scream and run when they see a demon. I stop and take notes on its anatomy."
+          },
+          {
+            "option_type": "string",
+            "string": "Unlocking an ancient mystery is worth the price of a civilization."
+          },
+          {
+            "option_type": "string",
+            "string": "I overlook obvious solutions in favor of complicated ones."
+          },
+          {
+            "option_type": "string",
+            "string": "I speak without really thinking through my words, invariably insulting others."
+          },
+          {
+            "option_type": "string",
+            "string": "I can't keep a secret to save my life, or anyone else's."
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/backgrounds/scholar",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "aristocrat",
+    "name": "Aristocrat",
+    "starting_proficiencies": [
+      {
+        "index": "skill-history",
+        "name": "Skill: History",
+        "url": "/api/2014/proficiencies/skill-history"
+      },
+      {
+        "index": "skill-persuasion",
+        "name": "Skill: Persuasion",
+        "url": "/api/2014/proficiencies/skill-persuasion"
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/2014/languages"
+      }
+    },
+    "starting_proficiency_options": {
+      "choose": 1,
+      "type": "proficiencies",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "dice-set",
+              "name": "Dice Set",
+              "url": "/api/2014/proficiencies/dice-set"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "playing-card-set",
+              "name": "Playing Card Set",
+              "url": "/api/2014/proficiencies/playing-card-set"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "dragonchess-set",
+              "name": "Dragonchess Set",
+              "url": "/api/2014/proficiencies/dragonchess-set"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "three-dragon-ante-set",
+              "name": "Three-Dragon Ante Set",
+              "url": "/api/2014/proficiencies/three-dragon-ante-set"
+            }
+          }
+        ]
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "clothes-fine",
+          "name": "Clothes, fine",
+          "url": "/api/2014/equipment/clothes-fine"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "signet-ring",
+          "name": "Signet ring",
+          "url": "/api/2014/equipment/signet-ring"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/2014/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [],
+    "feature": {
+      "name": "Position of Privilege",
+      "desc": [
+        "Thanks to your noble birth, people are inclined to think the best of you. You are welcome in high society, and people assume you have the right to be wherever you are. The common folk make every effort to accommodate you and avoid your displeasure, and other people of high birth treat you as a member of the same social sphere.",
+        "You can secure an audience with a local noble if you need to."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "My eloquent flattery makes everyone I talk to feel like the most wonderful and important person in the world."
+          },
+          {
+            "option_type": "string",
+            "string": "The common folk love me for my kindness and generosity."
+          },
+          {
+            "option_type": "string",
+            "string": "No one could doubt by looking at my regal bearing that I am a cut above the unwashed masses."
+          },
+          {
+            "option_type": "string",
+            "string": "I take great pains to always look my best and follow the latest fashions."
+          },
+          {
+            "option_type": "string",
+            "string": "I don't like to get my hands dirty, and I won't be caught dead in unsuitable accommodations."
+          },
+          {
+            "option_type": "string",
+            "string": "Despite my noble birth, I do not place myself above other folk. We all have the same blood."
+          },
+          {
+            "option_type": "string",
+            "string": "My favor, once lost, is lost forever."
+          },
+          {
+            "option_type": "string",
+            "string": "If you do me an injury, I will crush you, ruin your name, and salt your fields."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Respect. Respect is due to me because of my position, but all people regardless of station deserve to be treated with dignity.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Responsibility. It is my duty to respect the authority of those above me, just as those below me must respect mine.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Independence. I must prove that I can handle myself without the coddling of my family.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Power. If I can attain more power, no one will tell me what to do.",
+            "alignments": [
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Family. Blood runs thicker than water.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Noble Obligation. It is my duty to protect and care for the people beneath me.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I will face any challenge to win the approval of my family."
+          },
+          {
+            "option_type": "string",
+            "string": "My house's alliance with another noble family must be sustained at all costs."
+          },
+          {
+            "option_type": "string",
+            "string": "Nothing is more important than the other members of my family."
+          },
+          {
+            "option_type": "string",
+            "string": "I am in love with the heir of a family that my family despises."
+          },
+          {
+            "option_type": "string",
+            "string": "My loyalty to my sovereign is unwavering."
+          },
+          {
+            "option_type": "string",
+            "string": "The common folk must see me as a hero of the people."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I secretly believe that everyone is beneath me."
+          },
+          {
+            "option_type": "string",
+            "string": "I hide a truly scandalous secret that could ruin my family forever."
+          },
+          {
+            "option_type": "string",
+            "string": "I too often hear veiled insults and threats in every word addressed to me, and I'm quick to anger."
+          },
+          {
+            "option_type": "string",
+            "string": "I have an insatiable desire for carnal pleasures."
+          },
+          {
+            "option_type": "string",
+            "string": "In fact, the world does revolve around me."
+          },
+          {
+            "option_type": "string",
+            "string": "By my words and actions, I often bring shame to my family."
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/backgrounds/aristocrat",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "performer",
+    "name": "Performer",
+    "starting_proficiencies": [
+      {
+        "index": "skill-acrobatics",
+        "name": "Skill: Acrobatics",
+        "url": "/api/2014/proficiencies/skill-acrobatics"
+      },
+      {
+        "index": "skill-performance",
+        "name": "Skill: Performance",
+        "url": "/api/2014/proficiencies/skill-performance"
+      },
+      {
+        "index": "disguise-kit",
+        "name": "Disguise Kit",
+        "url": "/api/2014/proficiencies/disguise-kit"
+      }
+    ],
+    "starting_proficiency_options": {
+      "choose": 1,
+      "type": "proficiencies",
+      "from": {
+        "option_set_type": "equipment_category",
+        "equipment_category": {
+          "index": "musical-instruments",
+          "name": "Musical Instruments",
+          "url": "/api/2014/equipment-categories/musical-instruments"
+        }
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "costume-clothes",
+          "name": "Costume clothes",
+          "url": "/api/2014/equipment/costume-clothes"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/2014/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "equipment_category",
+          "equipment_category": {
+            "index": "musical-instruments",
+            "name": "Musical Instruments",
+            "url": "/api/2014/equipment-categories/musical-instruments"
+          }
+        }
+      }
+    ],
+    "feature": {
+      "name": "By Popular Demand",
+      "desc": [
+        "You can always find a place to perform, usually in an inn or tavern but possibly with a circus, at a theater, or even in a noble's court. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of the establishment), as long as you perform each night.",
+        "In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I know a story relevant to almost every situation."
+          },
+          {
+            "option_type": "string",
+            "string": "Whenever I come to a new place, I collect local rumors and spread gossip."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a hopeless romantic, always searching for that \"special someone.\""
+          },
+          {
+            "option_type": "string",
+            "string": "Nobody stays angry at me or around me for long, since I can defuse any amount of tension."
+          },
+          {
+            "option_type": "string",
+            "string": "I love a good insult, even one directed at me."
+          },
+          {
+            "option_type": "string",
+            "string": "I get bitter if I'm not the center of attention."
+          },
+          {
+            "option_type": "string",
+            "string": "I'll settle for nothing less than perfection."
+          },
+          {
+            "option_type": "string",
+            "string": "I change my mood or my mind as quickly as I change key in a song."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Beauty. When I perform, I make the world better than it was.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Tradition. The stories, legends, and songs of the past must never be forgotten, for they teach us who we are.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Creativity. The world is in need of new ideas and bold action.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Greed. I'm only in it for the money and fame.",
+            "alignments": [
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "People. I like seeing the smiles on people's faces when I perform. That's all that matters.",
+            "alignments": [
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Honesty. Art should reflect the soul; it should come from within and reveal who we really are.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "My instrument is my most treasured possession, and it reminds me of someone I love."
+          },
+          {
+            "option_type": "string",
+            "string": "Someone stole my precious instrument, and someday I'll get it back."
+          },
+          {
+            "option_type": "string",
+            "string": "I want to be famous, whatever it takes."
+          },
+          {
+            "option_type": "string",
+            "string": "I idolize a hero of the old tales and measure my deeds against that person's."
+          },
+          {
+            "option_type": "string",
+            "string": "I will do anything to prove myself superior to my hated rival."
+          },
+          {
+            "option_type": "string",
+            "string": "I would do anything for the other members of my old troupe."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'll do anything to win fame and renown."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a sucker for a pretty face."
+          },
+          {
+            "option_type": "string",
+            "string": "A scandal prevents me from ever going home again. That kind of trouble seems to follow me around."
+          },
+          {
+            "option_type": "string",
+            "string": "I once satirized a noble who still wants my head. It was a mistake that I will likely repeat."
+          },
+          {
+            "option_type": "string",
+            "string": "I have trouble keeping my true feelings hidden. My sharp tongue lands me in trouble."
+          },
+          {
+            "option_type": "string",
+            "string": "Despite my best efforts, I am unreliable to my friends."
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/backgrounds/performer",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "local-champion",
+    "name": "Local Champion",
+    "starting_proficiencies": [
+      {
+        "index": "skill-animal-handling",
+        "name": "Skill: Animal Handling",
+        "url": "/api/2014/proficiencies/skill-animal-handling"
+      },
+      {
+        "index": "skill-survival",
+        "name": "Skill: Survival",
+        "url": "/api/2014/proficiencies/skill-survival"
+      },
+      {
+        "index": "vehicles-land",
+        "name": "Vehicles (land)",
+        "url": "/api/2014/proficiencies/vehicles-land"
+      }
+    ],
+    "starting_proficiency_options": {
+      "choose": 1,
+      "type": "proficiencies",
+      "from": {
+        "option_set_type": "equipment_category",
+        "equipment_category": {
+          "index": "artisans-tools",
+          "name": "Artisan's Tools",
+          "url": "/api/2014/equipment-categories/artisans-tools"
+        }
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "shovel",
+          "name": "Shovel",
+          "url": "/api/2014/equipment/shovel"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pot-iron",
+          "name": "Pot, iron",
+          "url": "/api/2014/equipment/pot-iron"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "clothes-common",
+          "name": "Clothes, common",
+          "url": "/api/2014/equipment/clothes-common"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/2014/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "equipment_category",
+          "equipment_category": {
+            "index": "artisans-tools",
+            "name": "Artisan's Tools",
+            "url": "/api/2014/equipment-categories/artisans-tools"
+          }
+        }
+      }
+    ],
+    "feature": {
+      "name": "Rustic Hospitality",
+      "desc": [
+        "Since you come from the ranks of the common folk, you fit in among them with ease. You can find a place to hide, rest, or recuperate among other commoners, unless you have shown yourself to be a danger to them.",
+        "They will shield you from the law or anyone else searching for you, though they will not risk their lives for you."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I judge people by their actions, not their words."
+          },
+          {
+            "option_type": "string",
+            "string": "If someone is in trouble, I'm always ready to lend help."
+          },
+          {
+            "option_type": "string",
+            "string": "When I set my mind to something, I follow through no matter what gets in my way."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a strong sense of fair play and always try to find the most equitable solution to arguments."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm confident in my own abilities and do what I can to instill confidence in others."
+          },
+          {
+            "option_type": "string",
+            "string": "Thinking is for other people. I prefer action."
+          },
+          {
+            "option_type": "string",
+            "string": "I misuse long words in an attempt to sound smarter."
+          },
+          {
+            "option_type": "string",
+            "string": "I get bored easily. When am I going to get on with my destiny?"
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Respect. People deserve to be treated with dignity and respect.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Fairness. No one should get preferential treatment before the law, and no one is above the law.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Freedom. Tyrants must not be allowed to oppress the people.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Might. If I become strong, I can take what I want—what I deserve.",
+            "alignments": [
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Sincerity. There's no good in pretending to be something I'm not.",
+            "alignments": [
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Destiny. Nothing and no one can steer me away from my higher calling.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I have a family, but I have no idea where they are. One day, I hope to see them again."
+          },
+          {
+            "option_type": "string",
+            "string": "I worked the land, I love the land, and I will protect the land."
+          },
+          {
+            "option_type": "string",
+            "string": "A proud noble once gave me a horrible beating, and I will take my revenge on any bully I encounter."
+          },
+          {
+            "option_type": "string",
+            "string": "My tools are symbols of my past life, and I carry them so that I will never forget my roots."
+          },
+          {
+            "option_type": "string",
+            "string": "I protect those who cannot protect themselves."
+          },
+          {
+            "option_type": "string",
+            "string": "I wish my childhood sweetheart had come with me to pursue my destiny."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "The tyrant who rules my land will stop at nothing to see me killed."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm convinced of the significance of my destiny, and blind to my shortcomings and the risk of failure."
+          },
+          {
+            "option_type": "string",
+            "string": "The people who knew me when I was young know my shameful secret, so I can never go home again."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a weakness for the vices of the city, especially hard drink."
+          },
+          {
+            "option_type": "string",
+            "string": "Secretly, I believe that things would be better if I were a tyrant lording over the land."
+          },
+          {
+            "option_type": "string",
+            "string": "I have trouble trusting in my allies."
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/backgrounds/local-champion",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "recluse",
+    "name": "Recluse",
+    "starting_proficiencies": [
+      {
+        "index": "skill-medicine",
+        "name": "Skill: Medicine",
+        "url": "/api/2014/proficiencies/skill-medicine"
+      },
+      {
+        "index": "skill-religion",
+        "name": "Skill: Religion",
+        "url": "/api/2014/proficiencies/skill-religion"
+      },
+      {
+        "index": "herbalism-kit",
+        "name": "Herbalism Kit",
+        "url": "/api/2014/proficiencies/herbalism-kit"
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/2014/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "case-map-or-scroll",
+          "name": "Case, map or scroll",
+          "url": "/api/2014/equipment/case-map-or-scroll"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "blanket",
+          "name": "Blanket",
+          "url": "/api/2014/equipment/blanket"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "clothes-common",
+          "name": "Clothes, common",
+          "url": "/api/2014/equipment/clothes-common"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "herbalism-kit",
+          "name": "Herbalism Kit",
+          "url": "/api/2014/equipment/herbalism-kit"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [],
+    "feature": {
+      "name": "Discovery",
+      "desc": [
+        "The quiet seclusion of your extended hermitage gave you access to a unique and powerful discovery. The exact nature of this revelation depends on the nature of your seclusion. It might be a great truth about the cosmos, the deities, the powerful beings of the outer planes, or the forces of nature. It could be a site that no one else has ever seen. You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history. It might be information that would be damaging to the people who consigned you to exile, and hence the reason for your return to society.",
+        "Work with your DM to determine the details of your discovery and its impact on the campaign."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I've been isolated for so long that I rarely speak, preferring gestures and the occasional grunt."
+          },
+          {
+            "option_type": "string",
+            "string": "I am utterly serene, even in the face of disaster."
+          },
+          {
+            "option_type": "string",
+            "string": "The leader of my community had something wise to say on every topic, and I am eager to share that wisdom."
+          },
+          {
+            "option_type": "string",
+            "string": "I feel tremendous empathy for all who suffer."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm oblivious to etiquette and social expectations."
+          },
+          {
+            "option_type": "string",
+            "string": "I connect everything that happens to me to a grand, cosmic plan."
+          },
+          {
+            "option_type": "string",
+            "string": "I often get lost in my own thoughts and contemplation, becoming oblivious to my surroundings."
+          },
+          {
+            "option_type": "string",
+            "string": "I am working on a grand philosophical theory and love sharing my ideas."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Greater Good. My gifts are meant to be shared with all, not used for my own benefit.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Logic. Emotions must not cloud our sense of what is right and true, or our logical thinking.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Free Thinking. Inquiry and curiosity are the pillars of progress.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Power. Solitude and contemplation are paths toward mystical or magical power.",
+            "alignments": [
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Live and Let Live. Meddling in the affairs of others only causes trouble.",
+            "alignments": [
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Self-Knowledge. If you know yourself, there's nothing left to know.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Nothing is more important than the other members of my hermitage, order, or association."
+          },
+          {
+            "option_type": "string",
+            "string": "I entered seclusion to hide from the ones who might still be hunting me. I must someday confront them."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm still seeking the enlightenment I pursued in my seclusion, and it still eludes me."
+          },
+          {
+            "option_type": "string",
+            "string": "I entered seclusion because I loved someone I could not have."
+          },
+          {
+            "option_type": "string",
+            "string": "Should my discovery come to light, it could bring ruin to the world."
+          },
+          {
+            "option_type": "string",
+            "string": "My isolation gave me great insight into a great evil that only I can destroy."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Now that I've returned to the world, I enjoy its delights a little too much."
+          },
+          {
+            "option_type": "string",
+            "string": "I harbor dark, bloodthirsty thoughts that my isolation and meditation failed to quell."
+          },
+          {
+            "option_type": "string",
+            "string": "I am dogmatic in my thoughts and philosophy."
+          },
+          {
+            "option_type": "string",
+            "string": "I let my need to win arguments overshadow friendships and harmony."
+          },
+          {
+            "option_type": "string",
+            "string": "I'd risk too much to uncover a lost bit of knowledge."
+          },
+          {
+            "option_type": "string",
+            "string": "I like keeping secrets and won't share them with anyone."
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/backgrounds/recluse",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "wilderness-wanderer",
+    "name": "Wilderness Wanderer",
+    "starting_proficiencies": [
+      {
+        "index": "skill-athletics",
+        "name": "Skill: Athletics",
+        "url": "/api/2014/proficiencies/skill-athletics"
+      },
+      {
+        "index": "skill-survival",
+        "name": "Skill: Survival",
+        "url": "/api/2014/proficiencies/skill-survival"
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/2014/languages"
+      }
+    },
+    "starting_proficiency_options": {
+      "choose": 1,
+      "type": "proficiencies",
+      "from": {
+        "option_set_type": "equipment_category",
+        "equipment_category": {
+          "index": "musical-instruments",
+          "name": "Musical Instruments",
+          "url": "/api/2014/equipment-categories/musical-instruments"
+        }
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "quarterstaff",
+          "name": "Quarterstaff",
+          "url": "/api/2014/equipment/quarterstaff"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "hunting-trap",
+          "name": "Hunting trap",
+          "url": "/api/2014/equipment/hunting-trap"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "clothes-travelers",
+          "name": "Clothes, traveler's",
+          "url": "/api/2014/equipment/clothes-travelers"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/2014/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [],
+    "feature": {
+      "name": "Wanderer",
+      "desc": [
+        "You have an excellent memory for maps and geography, and you can always recall the general layout of terrain, settlements, and other features around you.",
+        "In addition, you can find food and fresh water for yourself and up to five other people each day, provided that the land offers berries, small game, water, and so forth."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'm driven by a wanderlust that led me away from home."
+          },
+          {
+            "option_type": "string",
+            "string": "I watch over my friends as if they were a litter of newborn pups."
+          },
+          {
+            "option_type": "string",
+            "string": "I once ran twenty-five miles without stopping to warn my clan of an approaching orc horde. I'd do it again if I had to."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a lesson for every situation, drawn from observing nature."
+          },
+          {
+            "option_type": "string",
+            "string": "I place no stock in wealthy or well-mannered folk. Money and manners won't save you from a hungry owlbear."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm always picking things up, absently fiddling with them, and sometimes accidentally breaking them."
+          },
+          {
+            "option_type": "string",
+            "string": "I feel far more comfortable around animals than people."
+          },
+          {
+            "option_type": "string",
+            "string": "I was, in fact, raised by wolves."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Change. Life is like the seasons, in constant change, and we must change with it.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Greater Good. It is each person's responsibility to make the most happiness for the whole tribe.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Honor. If I dishonor myself, I dishonor my whole clan.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Might. The strongest are meant to rule.",
+            "alignments": [
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Nature. The natural world is more important than all the constructs of civilization.",
+            "alignments": [
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Glory. I must earn glory in battle, for myself and my clan.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "My family, clan, or tribe is the most important thing in my life, even when they are far from me."
+          },
+          {
+            "option_type": "string",
+            "string": "An injury to the unspoiled wilderness of my home is an injury to me."
+          },
+          {
+            "option_type": "string",
+            "string": "I will bring terrible wrath down on the evildoers who destroyed my homeland."
+          },
+          {
+            "option_type": "string",
+            "string": "I am the last of my tribe, and it is up to me to ensure their names enter legend."
+          },
+          {
+            "option_type": "string",
+            "string": "I suffer awful visions of a coming disaster and will do anything to prevent it."
+          },
+          {
+            "option_type": "string",
+            "string": "It is my duty to provide children to sustain my tribe."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I am too enamored of ale, wine, and other intoxicants."
+          },
+          {
+            "option_type": "string",
+            "string": "There's no room for caution in a life lived to the fullest."
+          },
+          {
+            "option_type": "string",
+            "string": "I remember every insult I've received and nurse a silent resentment toward anyone who's ever wronged me."
+          },
+          {
+            "option_type": "string",
+            "string": "I am slow to trust members of other races, tribes, and societies."
+          },
+          {
+            "option_type": "string",
+            "string": "Violence is my answer to almost any challenge."
+          },
+          {
+            "option_type": "string",
+            "string": "Don't expect me to save those who can't save themselves. It is nature's way that the strong thrive and the weak perish."
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/backgrounds/wilderness-wanderer",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "seafarer",
+    "name": "Seafarer",
+    "starting_proficiencies": [
+      {
+        "index": "skill-athletics",
+        "name": "Skill: Athletics",
+        "url": "/api/2014/proficiencies/skill-athletics"
+      },
+      {
+        "index": "skill-perception",
+        "name": "Skill: Perception",
+        "url": "/api/2014/proficiencies/skill-perception"
+      },
+      {
+        "index": "navigators-tools",
+        "name": "Navigator's Tools",
+        "url": "/api/2014/proficiencies/navigators-tools"
+      },
+      {
+        "index": "vehicles-water",
+        "name": "Vehicles (water)",
+        "url": "/api/2014/proficiencies/vehicles-water"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "club",
+          "name": "Club",
+          "url": "/api/2014/equipment/club"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "rope-silk-50-feet",
+          "name": "Rope, silk (50 feet)",
+          "url": "/api/2014/equipment/rope-silk-50-feet"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "clothes-common",
+          "name": "Clothes, common",
+          "url": "/api/2014/equipment/clothes-common"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/2014/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [],
+    "feature": {
+      "name": "Ship's Passage",
+      "desc": [
+        "When you need to, you can secure free passage on a sailing ship for yourself and your adventuring companions. You might sail on the ship you served on, or another ship you have good relations with (perhaps one captained by a former crewmate). Because you're calling in a favor, you can't be certain of a schedule or route that will meet your every need. Your DM will determine how long it takes to get where you need to go.",
+        "In return for your free passage, you and your companions are expected to assist the crew during the voyage."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "My friends know they can rely on me, no matter what."
+          },
+          {
+            "option_type": "string",
+            "string": "I work hard so that I can play hard when the work is done."
+          },
+          {
+            "option_type": "string",
+            "string": "I enjoy sailing into new ports and making new friends over a flagon of ale."
+          },
+          {
+            "option_type": "string",
+            "string": "I stretch the truth for the sake of a good story."
+          },
+          {
+            "option_type": "string",
+            "string": "To me, a tavern brawl is a nice way to get to know a new city."
+          },
+          {
+            "option_type": "string",
+            "string": "I never pass up a friendly wager."
+          },
+          {
+            "option_type": "string",
+            "string": "My language is as foul as an otyugh nest."
+          },
+          {
+            "option_type": "string",
+            "string": "I like a job well done, especially if I can convince someone else to do it."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Respect. The thing that keeps a ship together is mutual respect between captain and crew.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Fairness. We all do the work, so we all share in the rewards.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Freedom. The sea is freedom—the freedom to go anywhere and do anything.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Mastery. I'm a predator, and the other ships on the sea are my prey.",
+            "alignments": [
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "People. I'm committed to my crewmates, not to ideals.",
+            "alignments": [
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Aspiration. Someday I'll own my own ship and chart my own destiny.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'm loyal to my captain first, everything else second."
+          },
+          {
+            "option_type": "string",
+            "string": "The ship is most important—crewmates and captains come and go."
+          },
+          {
+            "option_type": "string",
+            "string": "I'll always remember my first ship."
+          },
+          {
+            "option_type": "string",
+            "string": "In a harbor town, I have a paramour whose eyes nearly stole me from the sea."
+          },
+          {
+            "option_type": "string",
+            "string": "I was cheated out of my fair share of the profits, and I want to get my due."
+          },
+          {
+            "option_type": "string",
+            "string": "Ruthless pirates murdered my captain and crewmates, plundered our ship, and left me to die. Vengeance will be mine."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I follow orders, even if I think they're wrong."
+          },
+          {
+            "option_type": "string",
+            "string": "I'll say anything to avoid having to do extra work."
+          },
+          {
+            "option_type": "string",
+            "string": "Once someone questions my courage, I never back down no matter how dangerous the situation."
+          },
+          {
+            "option_type": "string",
+            "string": "Once I start drinking, it's hard for me to stop."
+          },
+          {
+            "option_type": "string",
+            "string": "I can't help but pocket loose coins and other trinkets I come across."
+          },
+          {
+            "option_type": "string",
+            "string": "My pride will probably lead to my destruction."
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/backgrounds/seafarer",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "street-survivor",
+    "name": "Street Survivor",
+    "starting_proficiencies": [
+      {
+        "index": "skill-sleight-of-hand",
+        "name": "Skill: Sleight of Hand",
+        "url": "/api/2014/proficiencies/skill-sleight-of-hand"
+      },
+      {
+        "index": "skill-stealth",
+        "name": "Skill: Stealth",
+        "url": "/api/2014/proficiencies/skill-stealth"
+      },
+      {
+        "index": "disguise-kit",
+        "name": "Disguise Kit",
+        "url": "/api/2014/proficiencies/disguise-kit"
+      },
+      {
+        "index": "thieves-tools",
+        "name": "Thieves' Tools",
+        "url": "/api/2014/proficiencies/thieves-tools"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "knife-small",
+          "name": "Knife, small",
+          "url": "/api/2014/equipment/knife-small"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "clothes-common",
+          "name": "Clothes, common",
+          "url": "/api/2014/equipment/clothes-common"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/2014/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [],
+    "feature": {
+      "name": "City Secrets",
+      "desc": [
+        "You know the secret patterns and flow to cities and can find passages through the urban sprawl that others would miss.",
+        "When you are not in combat, you (and companions you lead) can travel between any two locations in the city twice as fast as your speed would normally allow."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I hide scraps of food and trinkets away in my pockets."
+          },
+          {
+            "option_type": "string",
+            "string": "I ask a lot of questions."
+          },
+          {
+            "option_type": "string",
+            "string": "I like to squeeze into small places where no one else can get to me."
+          },
+          {
+            "option_type": "string",
+            "string": "I sleep with my back to a wall or tree, with everything I own wrapped in a bundle in my arms."
+          },
+          {
+            "option_type": "string",
+            "string": "I eat like a pig and have bad manners."
+          },
+          {
+            "option_type": "string",
+            "string": "I think anyone who's nice to me is hiding evil intent."
+          },
+          {
+            "option_type": "string",
+            "string": "I don't like to bathe."
+          },
+          {
+            "option_type": "string",
+            "string": "I bluntly say what other people are hinting at or hiding."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Respect. All people, rich or poor, deserve respect.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Community. We have to take care of each other, because no one else is going to do it.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Change. The low are lifted up, and the high and mighty are brought down. Change is the nature of things.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Retribution. The rich need to be shown what life and death are like in the gutters.",
+            "alignments": [
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "People. I help the people who help me—that's what keeps us alive.",
+            "alignments": [
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Aspiration. I'm going to prove that I'm worthy of a better life.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "My town or city is my home, and I'll fight to defend it."
+          },
+          {
+            "option_type": "string",
+            "string": "I sponsor an orphanage to keep others from enduring what I was forced to endure."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe my survival to another street survivor who taught me to live on the streets."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe a debt I can never repay to the person who took pity on me."
+          },
+          {
+            "option_type": "string",
+            "string": "I escaped my life of poverty by robbing an important person, and I'm wanted for it."
+          },
+          {
+            "option_type": "string",
+            "string": "No one else should have to endure the hardships I've been through."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "If I'm outnumbered, I will run away from a fight."
+          },
+          {
+            "option_type": "string",
+            "string": "Gold seems like a lot of money to me, and I'll do just about anything for more of it."
+          },
+          {
+            "option_type": "string",
+            "string": "I will never fully trust anyone other than myself."
+          },
+          {
+            "option_type": "string",
+            "string": "I'd rather kill someone in their sleep than fight fair."
+          },
+          {
+            "option_type": "string",
+            "string": "It's not stealing if I need it more than someone else."
+          },
+          {
+            "option_type": "string",
+            "string": "People who can't take care of themselves get what they deserve."
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/backgrounds/street-survivor",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "confidence-artist",
+    "name": "Confidence Artist",
+    "starting_proficiencies": [
+      {
+        "index": "skill-deception",
+        "name": "Skill: Deception",
+        "url": "/api/2014/proficiencies/skill-deception"
+      },
+      {
+        "index": "skill-sleight-of-hand",
+        "name": "Skill: Sleight of Hand",
+        "url": "/api/2014/proficiencies/skill-sleight-of-hand"
+      },
+      {
+        "index": "disguise-kit",
+        "name": "Disguise Kit",
+        "url": "/api/2014/proficiencies/disguise-kit"
+      },
+      {
+        "index": "forgery-kit",
+        "name": "Forgery Kit",
+        "url": "/api/2014/proficiencies/forgery-kit"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "clothes-fine",
+          "name": "Clothes, fine",
+          "url": "/api/2014/equipment/clothes-fine"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "disguise-kit",
+          "name": "Disguise Kit",
+          "url": "/api/2014/equipment/disguise-kit"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/2014/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [],
+    "feature": {
+      "name": "False Identity",
+      "desc": [
+        "You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona.",
+        "Additionally, you can forge documents including official papers and personal letters, as long as you have seen an example of the kind of document or the handwriting you are trying to copy."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I fall in and out of love easily, and am always pursuing someone."
+          },
+          {
+            "option_type": "string",
+            "string": "I have a joke for every occasion, especially occasions where humor is inappropriate."
+          },
+          {
+            "option_type": "string",
+            "string": "Flattery is my preferred trick for getting what I want."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm a born gambler who can't resist taking a risk for a potential payoff."
+          },
+          {
+            "option_type": "string",
+            "string": "I lie about almost everything, even when there's no good reason to."
+          },
+          {
+            "option_type": "string",
+            "string": "Sarcasm and insults are my weapons of choice."
+          },
+          {
+            "option_type": "string",
+            "string": "I keep multiple holy symbols on me and invoke whatever deity might come in useful at any given moment."
+          },
+          {
+            "option_type": "string",
+            "string": "I pocket anything I see that might have some value."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Independence. I am a free spirit—no one tells me what to do.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Fairness. I never target people who can't afford to lose a few coins.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Charity. I distribute the money I acquire to the people who really need it.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Creativity. I never run the same con twice.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Friendship. Material goods come and go. Bonds of friendship last forever.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Aspiration. I'm determined to make something of myself.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I fleeced the wrong person and must work to ensure that this individual never crosses paths with me or those I care about."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe everything to my mentor—a horrible person who's probably rotting in jail somewhere."
+          },
+          {
+            "option_type": "string",
+            "string": "Somewhere out there, I have a child who doesn't know me. I'm making the world better for him or her."
+          },
+          {
+            "option_type": "string",
+            "string": "I come from a noble family, and one day I'll reclaim my lands and title from those who stole them from me."
+          },
+          {
+            "option_type": "string",
+            "string": "A powerful person killed someone I love. Some day soon, I'll have my revenge."
+          },
+          {
+            "option_type": "string",
+            "string": "I swindled and ruined a person who didn't deserve it. I seek to atone for my misdeeds but might never be able to forgive myself."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I can't resist a pretty face."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm always in debt. I spend my ill-gotten gains on decadent luxuries faster than I bring them in."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm convinced that no one could ever fool me the way I fool others."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm too greedy for my own good. I can't resist taking a risk if there's money involved."
+          },
+          {
+            "option_type": "string",
+            "string": "I can't resist swindling people who are more powerful than me."
+          },
+          {
+            "option_type": "string",
+            "string": "I hate to admit it and will hate myself for it, but I'll run and preserve my own hide if the going gets tough."
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/backgrounds/confidence-artist",
+    "source": "homebrew-base"
+  },
+  {
+    "index": "tradesperson",
+    "name": "Tradesperson",
+    "starting_proficiencies": [
+      {
+        "index": "skill-insight",
+        "name": "Skill: Insight",
+        "url": "/api/2014/proficiencies/skill-insight"
+      },
+      {
+        "index": "skill-persuasion",
+        "name": "Skill: Persuasion",
+        "url": "/api/2014/proficiencies/skill-persuasion"
+      }
+    ],
+    "starting_proficiency_options": {
+      "choose": 1,
+      "type": "proficiencies",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "alchemists-supplies",
+              "name": "Alchemist's Supplies",
+              "url": "/api/2014/proficiencies/alchemists-supplies"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "brewers-supplies",
+              "name": "Brewer's Supplies",
+              "url": "/api/2014/proficiencies/brewers-supplies"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "calligraphers-supplies",
+              "name": "Calligrapher's Supplies",
+              "url": "/api/2014/proficiencies/calligraphers-supplies"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "carpenters-tools",
+              "name": "Carpenter's Tools",
+              "url": "/api/2014/proficiencies/carpenters-tools"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "cartographers-tools",
+              "name": "Cartographer's Tools",
+              "url": "/api/2014/proficiencies/cartographers-tools"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "cobblers-tools",
+              "name": "Cobbler's Tools",
+              "url": "/api/2014/proficiencies/cobblers-tools"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "cooks-utensils",
+              "name": "Cook's Utensils",
+              "url": "/api/2014/proficiencies/cooks-utensils"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "glassblowers-tools",
+              "name": "Glassblower's Tools",
+              "url": "/api/2014/proficiencies/glassblowers-tools"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "jewelers-tools",
+              "name": "Jeweler's Tools",
+              "url": "/api/2014/proficiencies/jewelers-tools"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "leatherworkers-tools",
+              "name": "Leatherworker's Tools",
+              "url": "/api/2014/proficiencies/leatherworkers-tools"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "masons-tools",
+              "name": "Mason's Tools",
+              "url": "/api/2014/proficiencies/masons-tools"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "painters-supplies",
+              "name": "Painter's Supplies",
+              "url": "/api/2014/proficiencies/painters-supplies"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "potters-tools",
+              "name": "Potter's Tools",
+              "url": "/api/2014/proficiencies/potters-tools"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "smiths-tools",
+              "name": "Smith's Tools",
+              "url": "/api/2014/proficiencies/smiths-tools"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "tinkers-tools",
+              "name": "Tinker's Tools",
+              "url": "/api/2014/proficiencies/tinkers-tools"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "weavers-tools",
+              "name": "Weaver's Tools",
+              "url": "/api/2014/proficiencies/weavers-tools"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "woodcarvers-tools",
+              "name": "Woodcarver's Tools",
+              "url": "/api/2014/proficiencies/woodcarvers-tools"
+            }
+          }
+        ]
+      }
+    },
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/2014/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "clothes-travelers",
+          "name": "Clothes, traveler's",
+          "url": "/api/2014/equipment/clothes-travelers"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Pouch",
+          "url": "/api/2014/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "equipment_category",
+          "equipment_category": {
+            "index": "artisans-tools",
+            "name": "Artisan's Tools",
+            "url": "/api/2014/equipment-categories/artisans-tools"
+          }
+        }
+      }
+    ],
+    "feature": {
+      "name": "Trade Network",
+      "desc": [
+        "As a member of a craft guild, you have connections with other tradespeople in cities and towns. You can find lodging and food at guild halls, and fellow artisans will assist you in finding buyers for your wares, locating rare materials, or learning about local opportunities. Your guild membership also provides a measure of legal protection in disputes related to your trade."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I take immense pride in my work and can talk about my craft for hours."
+          },
+          {
+            "option_type": "string",
+            "string": "I believe quality craftsmanship speaks louder than words ever could."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm always examining objects to understand how they were made."
+          },
+          {
+            "option_type": "string",
+            "string": "I keep detailed records of every transaction and business dealing."
+          },
+          {
+            "option_type": "string",
+            "string": "I treat my tools with the same care most people reserve for family heirlooms."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm quick to offer advice on how to fix or improve things."
+          },
+          {
+            "option_type": "string",
+            "string": "I measure twice, cut once—this philosophy applies to everything I do."
+          },
+          {
+            "option_type": "string",
+            "string": "I judge people partly by the quality of goods they own or create."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Community. My trade serves the common good and connects me to others.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Tradition. The old ways of crafting are worth preserving.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Innovation. Progress comes from experimenting and improving techniques.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Self-Improvement. My goal is to become the finest in my craft.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Profit. A fair price for quality work—that's what matters.",
+            "alignments": [
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Exploitation. Control the supply, and you control the demand.",
+            "alignments": [
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "The workshop where I trained is like a second home to me."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe my guild master everything for teaching me my trade."
+          },
+          {
+            "option_type": "string",
+            "string": "I created a masterwork piece that was stolen, and I want it back."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm working to earn enough to provide for my family."
+          },
+          {
+            "option_type": "string",
+            "string": "My tools were passed down through generations of my family."
+          },
+          {
+            "option_type": "string",
+            "string": "A rival artisan ruined my reputation, and I seek to restore it."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I'm never satisfied with my work—there's always something to improve."
+          },
+          {
+            "option_type": "string",
+            "string": "I look down on those who don't appreciate fine craftsmanship."
+          },
+          {
+            "option_type": "string",
+            "string": "I'm overly competitive with others in my trade."
+          },
+          {
+            "option_type": "string",
+            "string": "I hoard quality materials, even when I don't need them."
+          },
+          {
+            "option_type": "string",
+            "string": "I can be bribed or swayed by the promise of rare resources."
+          },
+          {
+            "option_type": "string",
+            "string": "I undervalue my own work to make sales, leaving myself short."
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/backgrounds/tradesperson",
+    "source": "homebrew-base"
   }
 ]
