@@ -1,0 +1,41 @@
+name: 'Validate PR Title'
+description: 'Validates that PR titles follow conventional commit format with custom types'
+inputs:
+  title:
+    description: 'PR title to validate'
+    required: true
+outputs:
+  valid:
+    description: 'Whether the title is valid'
+    value: ${{ steps.validate.outputs.valid }}
+runs:
+  using: 'composite'
+  steps:
+    - name: Validate PR title
+      id: validate
+      shell: bash
+      run: |
+        title="${{ inputs.title }}"
+
+        # Define allowed types
+        allowed_types="feat|fix|docs|style|refactor|perf|test|build|ci|chore|deps"
+
+        # Check if title matches conventional commit format
+        if echo "$title" | grep -qE "^($allowed_types)(\(.+\))?!?: .+"; then
+          echo "valid=true" >> $GITHUB_OUTPUT
+          echo "✅ PR title is valid: $title"
+        else
+          echo "valid=false" >> $GITHUB_OUTPUT
+          echo "❌ PR title is invalid: $title"
+          echo ""
+          echo "Expected format: <type>[optional scope]: <description>"
+          echo ""
+          echo "Allowed types: $allowed_types"
+          echo ""
+          echo "Examples:"
+          echo "  feat: add new feature"
+          echo "  fix: resolve bug"
+          echo "  deps: update dependencies"
+          echo "  chore: update CI configuration"
+          exit 1
+        fi

@@ -1,3 +1,46 @@
+# [4.1.0](https://github.com/5e-bits/5e-database/compare/v4.0.0...v4.1.0) (2025-09-15)
+
+
+### Features
+
+* **2024:** Adding equipment and equipment categories ([#860](https://github.com/5e-bits/5e-database/issues/860)) ([15fb5eb](https://github.com/5e-bits/5e-database/commit/15fb5ebeb2eed406bd97e8ea566a67a59793b340))
+
+# [4.0.0](https://github.com/5e-bits/5e-database/compare/v3.26.1...v4.0.0) (2025-09-04)
+
+
+* refactor(race/subrace)!: remove redundant data ([#875](https://github.com/5e-bits/5e-database/issues/875)) ([67261fb](https://github.com/5e-bits/5e-database/commit/67261fbf4b1c5c785aeab47fbd4356c328b0593c)), closes [#874](https://github.com/5e-bits/5e-database/issues/874)
+
+
+### BREAKING CHANGES
+
+* dropped the `race.starting_proficiencies`,
+`race.starting_proficiency_options`, `subrace.starting_proficiencies`,
+`subrace.language_options`, and `subrace.languages` properties of all
+races and subraces in the database. Clients can instead find this data
+on the corresponding traits linked to each race or subrace.
+
+## How was it tested?
+
+I ran the database + API project locally with Docker and called the
+endpoints of the various classes and subclasses. I also ran the unit and
+integration tests in the API project.
+
+## Is there a Github issue this is resolving?
+
+## [4.2.1](https://github.com/5e-bits/5e-database/compare/v4.2.0...v4.2.1) (2025-10-24)
+
+
+### Bug Fixes
+
+* **dependabot:** use build instead of deps ([#941](https://github.com/5e-bits/5e-database/issues/941)) ([782da71](https://github.com/5e-bits/5e-database/commit/782da71224510f0118de187c7f7431bf2780f616))
+
+## [4.2.0](https://github.com/5e-bits/5e-database/compare/v4.1.0...v4.2.0) (2025-10-24)
+
+
+### Features
+
+* **release:** Swap to release-please ([#934](https://github.com/5e-bits/5e-database/issues/934)) ([bf73da0](https://github.com/5e-bits/5e-database/commit/bf73da05f0a5044ca43db789d0871f351fde6ddd))
+
 ## [3.26.1](https://github.com/5e-bits/5e-database/compare/v3.26.0...v3.26.1) (2025-06-30)
 
 

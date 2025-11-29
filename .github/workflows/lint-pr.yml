@@ -12,6 +12,10 @@ jobs:
     name: Validate PR title
     runs-on: ubuntu-latest
     steps:
-      - uses: amannn/action-semantic-pull-request@v5
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Validate PR title
+        uses: ./.github/actions/validate-pr-title
+        with:
+          title: ${{ github.event.pull_request.title }}
