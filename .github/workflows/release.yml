@@ -81,7 +81,7 @@ jobs:
     needs: [deploy, container-release]
     if: github.repository == '5e-bits/5e-database'
     steps:
-      - name: Generate GitHub App Token
+      - name: Generate Deploy Bot token
         id: generate-token
         uses: actions/create-github-app-token@v1
         with:
