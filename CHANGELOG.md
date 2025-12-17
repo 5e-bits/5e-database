@@ -27,6 +27,14 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [4.2.2](https://github.com/5e-bits/5e-database/compare/v4.2.1...v4.2.2) (2025-12-17)
+
+
+### Bug Fixes
+
+* **ci:** Auto release ([#969](https://github.com/5e-bits/5e-database/issues/969)) ([c94ccd3](https://github.com/5e-bits/5e-database/commit/c94ccd3e2a8b5777a22cf30296ad99679308113d))
+* **release-please:** Include all commit types in changelog config ([c16433d](https://github.com/5e-bits/5e-database/commit/c16433dbd7b1bdd500733da5e1efe8f6de9c27fc))
+
 ## [4.2.1](https://github.com/5e-bits/5e-database/compare/v4.2.0...v4.2.1) (2025-10-24)
 
 
