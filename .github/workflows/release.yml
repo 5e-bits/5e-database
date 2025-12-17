@@ -5,21 +5,39 @@ on:
     types: [published]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   deploy:
     name: Deploy Changes (Update Database)
     runs-on: ubuntu-latest
-    if: ${{ github.repository == '5e-bits/5e-database' }}
+    if: github.repository == '5e-bits/5e-database'
+    outputs:
+      tag: ${{ steps.tag.outputs.tag }}
     steps:
+      - name: Determine Release Tag
+        id: tag
+        run: |
+          if [ "${{ github.event_name }}" = "release" ]; then
+            echo "tag=${{ github.event.release.tag_name }}" >> $GITHUB_OUTPUT
+          else
+            # For workflow_dispatch, get the latest release tag
+            LATEST_TAG=$(gh api repos/${{ github.repository }}/releases/latest --jq .tag_name)
+            echo "tag=$LATEST_TAG" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
+          ref: ${{ steps.tag.outputs.tag }}
           fetch-depth: 2
       - name: Set up Node.js 22.x
         uses: actions/setup-node@v6
         with:
           node-version: 22.x
-          cache: 'npm'
+          cache: "npm"
       - name: Install dependencies
         run: npm ci
       - name: Run Database Update Script
@@ -31,7 +49,7 @@ jobs:
     name: Container Release
     runs-on: ubuntu-latest
     needs: [deploy]
-    if: ${{ github.repository == '5e-bits/5e-database' }}
+    if: github.repository == '5e-bits/5e-database'
     env:
       REGISTRY: ghcr.io
       IMAGE_NAME: ${{ github.repository }}
@@ -42,18 +60,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
-          fetch-depth: 0
-      - name: Get version from package.json
-        id: version
-        run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.version }}" ]; then
-            echo "version=${{ github.event.inputs.version }}" >> $GITHUB_OUTPUT
-          elif [ "${{ github.event_name }}" = "release" ]; then
-            echo "version=${{ github.event.release.tag_name }}" >> $GITHUB_OUTPUT
-          else
-            VERSION=$(node -p "require('./package.json').version")
-            echo "version=$VERSION" >> $GITHUB_OUTPUT
-          fi
+          ref: ${{ needs.deploy.outputs.tag }}
       - name: Log in to the Container registry
         uses: docker/login-action@v3
         with:
@@ -65,24 +72,24 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.version.outputs.version }},${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-          labels: version=${{ steps.version.outputs.version }}
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ needs.deploy.outputs.tag }},${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          labels: version=${{ needs.deploy.outputs.tag }}
 
   trigger-downstream:
     name: Trigger Downstream
     runs-on: ubuntu-latest
     needs: [deploy, container-release]
-    if: ${{ github.repository == '5e-bits/5e-database' }}
+    if: github.repository == '5e-bits/5e-database'
     steps:
-      - name: Generate GitHub App Token
-        id: generate_token
-        uses: tibdex/github-app-token@3beb63f4bd073e61482598c45c71c1019b59b73a
+      - name: Generate Deploy Bot token
+        id: generate-token
+        uses: actions/create-github-app-token@v1
         with:
-          app_id: ${{ secrets.DEPLOYMENT_APP_ID }}
-          private_key: ${{ secrets.DEPLOYMENT_APP_PRIVATE_KEY }}
+          app-id: ${{ secrets.DEPLOYMENT_APP_ID }}
+          private-key: ${{ secrets.DEPLOYMENT_APP_PRIVATE_KEY }}
       - name: Trigger downstream
         uses: peter-evans/repository-dispatch@v4
         with:
-          token: ${{ steps.generate_token.outputs.token }}
+          token: ${{ steps.generate-token.outputs.token }}
           repository: 5e-bits/5e-srd-api
           event-type: build_application
