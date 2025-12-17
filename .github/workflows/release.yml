@@ -87,6 +87,7 @@ jobs:
         with:
           app-id: ${{ secrets.DEPLOYMENT_APP_ID }}
           private-key: ${{ secrets.DEPLOYMENT_APP_PRIVATE_KEY }}
+          repositories: 5e-srd-api
       - name: Trigger downstream
         uses: peter-evans/repository-dispatch@v4
         with:
