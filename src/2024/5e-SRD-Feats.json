@@ -65,5 +65,94 @@
 			}
 		],
 		"url": "/api/2024/feats/skilled"
+	},
+	{
+		"index": "ability-score-improvement",
+		"name": "Ability Score Improvement",
+		"category": "general",
+		"prerequisites": [
+			"Level 4+"
+		],
+		"description": "Increase one ability score of your choice by 2, or increase two ability scores of your choice by 1. This feat can’t increase an ability score above 20.",
+		"benefits": [
+			{
+				"name": "Repeatable",
+				"description": "You can take this feat more than once."
+			}
+		],
+		"url": "/api/2024/feats/ability-score-improvement"
+	},
+	{
+		"index": "grappler",
+		"name": "Grappler",
+		"category": "general",
+		"prerequisites": [
+			"Level 4+",
+			"Strength or Dexterity 13+"
+		],
+		"description": "You gain the following benefits.",
+		"benefits": [
+			{
+				"name": "Ability Score Increase",
+				"description": "Increase your Strength or Dexterity score by 1, to a maximum of 20."
+			},
+			{
+				"name": "Punch and Grab",
+				"description": "When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. You can use this benefit only once per turn."
+			},
+			{
+				"name": "Attack Advantage",
+				"description": "You have Advantage on attack rolls against a creature Grappled by you."
+			},
+			{
+				"name": "Fast Wrestly",
+				"description": "You don’t have to spend extra movement to move a creature Grappled by you if the creature is your size or smaller."
+			}
+		],
+		"url": "/api/2024/feats/grappler"
+	},
+	{
+		"index": "archery",
+		"name": "Archery",
+		"category": "fighting-style",
+		"prerequisites": [
+			"Fighting Style Feature"
+		],
+		"description": "You gain a +2 bonus to attack rolls you make with Ranged weapons.",
+		"benefits": [],
+		"url": "/api/2024/feats/archery"
+	},
+	{
+		"index": "defense",
+		"name": "Defense",
+		"category": "fighting-style",
+		"prerequisites": [
+			"Fighting Style Feature"
+		],
+		"description": "While you’re wearing Light, Medium, or Heavy armor, you gain a +1 bonus to Armor Class.",
+		"benefits": [],
+		"url": "/api/2024/feats/defense"
+	},
+	{
+		"index": "great-weapon-fighting",
+		"name": "Great Weapon Fighting",
+		"category": "fighting-style",
+		"prerequisites": [
+			"Fighting Style Feature"
+		],
+		"description": "When you roll damage for an attack you make with a Melee weapon that you are holding with two hands, you can treat any 1 or 2 on a damage die as a 3. The weapon must have the Two-Handed or Versatile property to gain this benefit.",
+		"benefits": [],
+		"url": "/api/2024/feats/great-weapon-fighting"
+	},
+	{
+		"index": "two-weapon-fighting",
+		"name": "Two Weapon Fighting",
+		"category": "fighting-style",
+		"prerequisites": [
+			"Fighting Style Feature"
+		],
+		"description": "When you make an extra attack as a result of using a weapon that has the Light property, you can add your ability modifier to the damage of that attack if you aren’t already adding it to the damage.",
+		"benefits": [],
+		"url": "/api/2024/feats/two-weapon-fighting"
 	}
 ]
