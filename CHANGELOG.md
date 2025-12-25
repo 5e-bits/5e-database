@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [4.3.0](https://github.com/5e-bits/5e-database/compare/v4.2.3...v4.3.0) (2025-12-25)
+
+
+### Features
+
+* **2024:** Adding Backgrounds + related Feats and Proficiencies ([#973](https://github.com/5e-bits/5e-database/issues/973)) ([529c9fe](https://github.com/5e-bits/5e-database/commit/529c9fe5f5059bcda360d5799790a0acc42a8425))
+
 ## [4.2.3](https://github.com/5e-bits/5e-database/compare/v4.2.2...v4.2.3) (2025-12-17)
 
 
