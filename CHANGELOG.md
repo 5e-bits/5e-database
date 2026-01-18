@@ -27,6 +27,33 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [4.3.0](https://github.com/5e-bits/5e-database/compare/v4.2.3...v4.3.0) (2026-01-02)
+
+
+### Features
+
+* **2024:** Adding Backgrounds + related Feats and Proficiencies ([#973](https://github.com/5e-bits/5e-database/issues/973)) ([529c9fe](https://github.com/5e-bits/5e-database/commit/529c9fe5f5059bcda360d5799790a0acc42a8425))
+
+
+### Bug Fixes
+
+* add remaining 2024 Feats ([#982](https://github.com/5e-bits/5e-database/issues/982)) ([eeebd78](https://github.com/5e-bits/5e-database/commit/eeebd78ad01c5c3a93ac4b7827bc3d2574bbe720))
+
+## [4.2.3](https://github.com/5e-bits/5e-database/compare/v4.2.2...v4.2.3) (2025-12-17)
+
+
+### Bug Fixes
+
+* **ci:** Set repo on token to allow downstream trigger ([d91315c](https://github.com/5e-bits/5e-database/commit/d91315c4f08651f99a58e6ce5c2a6607bf455a22))
+
+## [4.2.2](https://github.com/5e-bits/5e-database/compare/v4.2.1...v4.2.2) (2025-12-17)
+
+
+### Bug Fixes
+
+* **ci:** Auto release ([#969](https://github.com/5e-bits/5e-database/issues/969)) ([c94ccd3](https://github.com/5e-bits/5e-database/commit/c94ccd3e2a8b5777a22cf30296ad99679308113d))
+* **release-please:** Include all commit types in changelog config ([c16433d](https://github.com/5e-bits/5e-database/commit/c16433dbd7b1bdd500733da5e1efe8f6de9c27fc))
+
 ## [4.2.1](https://github.com/5e-bits/5e-database/compare/v4.2.0...v4.2.1) (2025-10-24)
 
 
