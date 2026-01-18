@@ -1,0 +1,534 @@
+[
+  {
+    "index": "acolyte",
+    "name": "Acolyte",
+    "ability_scores": [
+      {
+        "index": "int",
+        "name": "INT",
+        "url": "/api/2024/ability-scores/int"
+      },
+      {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/2024/ability-scores/wis"
+      },
+      {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2024/ability-scores/cha"
+      }
+    ],
+    "feat": {
+      "index": "magic-initiate",
+      "name": "Magic Initiate",
+      "note": "Cleric",
+      "url": "/api/2024/feats/magic-initiate"
+    },
+    "proficiencies": [
+      {
+        "index": "skill-insight",
+        "name": "Skill: Insight",
+        "url": "/api/2024/proficiencies/skill-insight"
+      },
+      {
+        "index": "skill-religion",
+        "name": "Skill: Religion",
+        "url": "/api/2024/proficiencies/skill-religion"
+      },
+      {
+        "index": "tool-calligraphers-supplies",
+        "name": "Tool: Calligrapher's Supplies",
+        "url": "/api/2024/proficiencies/tool-calligraphers-supplies"
+      }
+    ],
+    "equipment_options": {
+      "choose": 1,
+      "type": "equipment",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "multiple",
+            "items": [
+              {
+                "option_type": "counted_reference",
+                "count": 1,
+                "of": {
+                  "index": "calligraphers-supplies",
+                  "name": "Calligrapher's Supplies",
+                  "url": "/api/2024/equipment/calligraphers-supplies"
+                }
+              },
+              {
+                "option_type": "counted_reference",
+                "count": 1,
+                "of": {
+                  "index": "book",
+                  "name": "Book",
+                  "note": "Prayers",
+                  "url": "/api/2024/equipment/book"
+                }
+              },
+              {
+                "option_type": "counted_reference",
+                "count": 1,
+                "of": {
+                  "index": "holy-symbols",
+                  "name": "Holy Symbols",
+                  "url": "/api/2024/equipment-categories/holy-symbols"
+                }
+              },
+              {
+                "option_type": "counted_reference",
+                "count": 10,
+                "of": {
+                  "index": "parchment",
+                  "name": "Parchment",
+                  "url": "/api/2024/equipment/parchment"
+                }
+              },
+              {
+                "option_type": "counted_reference",
+                "count": 1,
+                "of": {
+                  "index": "robe",
+                  "name": "Robe",
+                  "url": "/api/2024/equipment/robe"
+                }
+              },
+              {
+                "option_type": "money",
+                "count": 8,
+                "unit": "gp"
+              }
+            ]
+          },
+          {
+            "option_type": "money",
+            "count": 50,
+            "unit": "gp"
+          }
+        ]
+      }
+    },
+    "url": "/api/2024/backgrounds/acolyte"
+  },
+  {
+    "index": "criminal",
+    "name": "Criminal",
+    "ability_scores": [
+      {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/2024/ability-scores/dex"
+      },
+      {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/2024/ability-scores/con"
+      },
+      {
+        "index": "int",
+        "name": "INT",
+        "url": "/api/2024/ability-scores/int"
+      }
+    ],
+    "feat": {
+      "index": "alert",
+      "name": "Alert",
+      "url": "/api/2024/feats/alert"
+    },
+    "proficiencies": [
+      {
+        "index": "skill-sleight-of-hand",
+        "name": "Skill: Sleight of Hand",
+        "url": "/api/2024/proficiencies/skill-sleight-of-hand"
+      },
+      {
+        "index": "skill-stealth",
+        "name": "Skill: Stealth",
+        "url": "/api/2024/proficiencies/skill-stealth"
+      },
+      {
+        "index": "tool-thieves-tools",
+        "name": "Tool: Thieves' Tools",
+        "url": "/api/2024/proficiencies/tool-thieves-tools"
+      }
+    ],
+    "equipment_options": [
+      {
+        "option_type": "choice",
+        "choice": {
+          "choose": 1,
+          "type": "equipment",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "multiple",
+                "items": [
+                  {
+                    "option_type": "counted_reference",
+                    "count": 2,
+                    "of": {
+                      "index": "dagger",
+                      "name": "Dagger",
+                      "url": "/api/2024/equipment/dagger"
+                    }
+                  },
+                  {
+                    "option_type": "counted_reference",
+                    "count": 1,
+                    "of": {
+                      "index": "thieves-tools",
+                      "name": "Thieves' Tools",
+                      "url": "/api/2024/equipment/thieves-tools"
+                    }
+                  },
+                  {
+                    "option_type": "counted_reference",
+                    "count": 1,
+                    "of": {
+                      "index": "crowbar",
+                      "name": "Crowbar",
+                      "url": "/api/2024/equipment/crowbar"
+                    }
+                  },
+                  {
+                    "option_type": "counted_reference",
+                    "count": 2,
+                    "of": {
+                      "index": "pouch",
+                      "name": "Pouch",
+                      "url": "/api/2024/equipment/pouch"
+                    }
+                  },
+                  {
+                    "option_type": "counted_reference",
+                    "count": 1,
+                    "of": {
+                      "index": "clothes-travelers",
+                      "name": "Clothes, Traveler's",
+                      "url": "/api/2024/equipment/clothes-travelers"
+                    }
+                  },
+                  {
+                    "option_type": "money",
+                    "count": 16,
+                    "unit": "gp"
+                  }
+                ]
+              },
+              {
+                "option_type": "money",
+                "count": 50,
+                "unit": "gp"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "url": "/api/2024/backgrounds/criminal"
+  },
+  {
+    "index": "sage",
+    "name": "Sage",
+    "ability_scores": [
+      {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/2024/ability-scores/con"
+      },
+      {
+        "index": "int",
+        "name": "INT",
+        "url": "/api/2024/ability-scores/int"
+      },
+      {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/2024/ability-scores/wis"
+      }
+    ],
+    "feat": {
+      "index": "magic-initiate",
+      "name": "Magic Initiate",
+      "url": "/api/2024/feats/magic-initiate"
+    },
+    "proficiencies": [
+      {
+        "index": "skill-arcana",
+        "name": "Skill: Arcana",
+        "url": "/api/2024/proficiencies/skill-arcana"
+      },
+      {
+        "index": "skill-history",
+        "name": "Skill: History",
+        "url": "/api/2024/proficiencies/skill-history"
+      },
+      {
+        "index": "tool-calligraphers-supplies",
+        "name": "Tool: Calligrapher's Supplies",
+        "url": "/api/2024/proficiencies/tool-calligraphers-supplies"
+      }
+    ],
+    "equipment_options": [
+      {
+        "option_type": "choice",
+        "choice": {
+          "choose": 1,
+          "type": "equipment",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "multiple",
+                "items": [
+                  {
+                    "option_type": "counted_reference",
+                    "count": 1,
+                    "of": {
+                      "index": "quarterstaff",
+                      "name": "Quarterstaff",
+                      "url": "/api/2024/equipment/quarterstaff"
+                    }
+                  },
+                  {
+                    "option_type": "counted_reference",
+                    "count": 1,
+                    "of": {
+                      "index": "calligraphers-supplies",
+                      "name": "Calligrapher's Supplies",
+                      "url": "/api/2024/equipment/calligraphers-supplies"
+                    }
+                  },
+                  {
+                    "option_type": "counted_reference",
+                    "count": 1,
+                    "of": {
+                      "index": "book",
+                      "name": "Book",
+                      "note": "History",
+                      "url": "/api/2024/equipment/book"
+                    }
+                  },
+                  {
+                    "option_type": "counted_reference",
+                    "count": 8,
+                    "of": {
+                      "index": "parchment",
+                      "name": "Parchment",
+                      "url": "/api/2024/equipment/parchment"
+                    }
+                  },
+                  {
+                    "option_type": "counted_reference",
+                    "count": 1,
+                    "of": {
+                      "index": "robe",
+                      "name": "Robe",
+                      "url": "/api/2024/equipment/robe"
+                    }
+                  },
+                  {
+                    "option_type": "money",
+                    "count": 8,
+                    "unit": "gp"
+                  }
+                ]
+              },
+              {
+                "option_type": "money",
+                "count": 50,
+                "unit": "gp"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "url": "/api/2024/backgrounds/sage"
+  },
+  {
+    "index": "soldier",
+    "name": "Soldier",
+    "ability_scores": [
+      {
+        "index": "str",
+        "name": "STR",
+        "url": "/api/2024/ability-scores/str"
+      },
+      {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/2024/ability-scores/dex"
+      },
+      {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/2024/ability-scores/con"
+      }
+    ],
+    "feat": {
+      "index": "savage-attacker",
+      "name": "Savage Attacker",
+      "url": "/api/2024/feats/savage-attacker"
+    },
+    "proficiencies": [
+      {
+        "index": "skill-athletics",
+        "name": "Skill: Athletics",
+        "url": "/api/2024/proficiencies/skill-athletics"
+      },
+      {
+        "index": "skill-intimidation",
+        "name": "Skill: Intimidation",
+        "url": "/api/2024/proficiencies/skill-intimidation"
+      }
+    ],
+    "proficiency_choices": [
+      {
+        "choose": 1,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "tool-dice",
+                "name": "Tool: Dice",
+                "url": "/api/2024/proficiencies/tool-dice"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "tool-dragonchess",
+                "name": "Tool: Dragonchess",
+                "url": "/api/2024/proficiencies/tool-dragonchess"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "tool-playing-cards",
+                "name": "Tool: Playing Cards",
+                "url": "/api/2024/proficiencies/tool-playing-cards"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "tool-three-dragon-ante",
+                "name": "Tool: Three-Dragon Ante",
+                "url": "/api/2024/proficiencies/tool-three-dragon-ante"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "equipment_options": [
+      {
+        "option_type": "choice",
+        "choice": {
+          "choose": 1,
+          "type": "equipment",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "multiple",
+                "items": [
+                  {
+                    "option_type": "counted_reference",
+                    "count": 1,
+                    "of": {
+                      "index": "spear",
+                      "name": "Spear",
+                      "url": "/api/2024/equipment/spear"
+                    }
+                  },
+                  {
+                    "option_type": "counted_reference",
+                    "count": 1,
+                    "of": {
+                      "index": "shortbow",
+                      "name": "Shortbow",
+                      "url": "/api/2024/equipment/shortbow"
+                    }
+                  },
+                  {
+                    "option_type": "counted_reference",
+                    "count": 20,
+                    "of": {
+                      "index": "arrows",
+                      "name": "Arrows",
+                      "url": "/api/2024/equipment/arrows"
+                    }
+                  },
+                  {
+                    "option_type": "choice",
+                    "choice": {
+                      "choose": 1,
+                      "type": "equipment",
+                      "from": {
+                        "option_set_type": "equipment_category",
+                        "equipment_category": {
+                          "index": "gaming-sets",
+                          "name": "Gaming Sets",
+                          "url": "/api/2024/equipment-categories/gaming-sets"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "option_type": "counted_reference",
+                    "count": 1,
+                    "of": {
+                      "index": "healers-kit",
+                      "name": "Healer's Kit",
+                      "url": "/api/2024/equipment/healers-kit"
+                    }
+                  },
+                  {
+                    "option_type": "counted_reference",
+                    "count": 1,
+                    "of": {
+                      "index": "quiver",
+                      "name": "Quiver",
+                      "url": "/api/2024/equipment/quiver"
+                    }
+                  },
+                  {
+                    "option_type": "counted_reference",
+                    "count": 1,
+                    "of": {
+                      "index": "clothes-travelers",
+                      "name": "Clothes, Traveler's",
+                      "url": "/api/2024/equipment/clothes-travelers"
+                    }
+                  },
+                  {
+                    "option_type": "money",
+                    "count": 14,
+                    "unit": "gp"
+                  }
+                ]
+              },
+              {
+                "option_type": "money",
+                "count": 50,
+                "unit": "gp"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "url": "/api/2024/backgrounds/soldier"
+  }
+]
