@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [4.3.1](https://github.com/5e-bits/5e-database/compare/v4.3.0...v4.3.1) (2026-02-21)
+
+
+### Bug Fixes
+
+* Correct Ankheg XP ([#1007](https://github.com/5e-bits/5e-database/issues/1007)) ([30696ae](https://github.com/5e-bits/5e-database/commit/30696ae6feeb5b712eb0cbd7af2b1f208e0c68c4))
+
 ## [4.3.0](https://github.com/5e-bits/5e-database/compare/v4.2.3...v4.3.0) (2026-01-02)
 
 
