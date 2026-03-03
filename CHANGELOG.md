@@ -27,6 +27,14 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [4.3.2](https://github.com/5e-bits/5e-database/compare/v4.3.1...v4.3.2) (2026-03-03)
+
+
+### Bug Fixes
+
+* **2024:** Acolyte's equipment_options to be consistent ([#1016](https://github.com/5e-bits/5e-database/issues/1016)) ([230de74](https://github.com/5e-bits/5e-database/commit/230de74ce5f0bc09fa554137931b0f0d2457aab3))
+* **2024:** Species don't have proficiencies ([b2081db](https://github.com/5e-bits/5e-database/commit/b2081dbe41ea24682cc115dff9ce2fa61116d272))
+
 ## [4.3.1](https://github.com/5e-bits/5e-database/compare/v4.3.0...v4.3.1) (2026-02-21)
 
 
