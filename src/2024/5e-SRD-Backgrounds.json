@@ -44,76 +44,74 @@
     ],
     "equipment_options": [
       {
-        "option_type": "choice",
-        "choice": {
-          "choose": 1,
-          "type": "equipment",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "counted_reference",
-                    "count": 1,
-                    "of": {
-                      "index": "calligraphers-supplies",
-                      "name": "Calligrapher's Supplies",
-                      "url": "/api/2024/equipment/calligraphers-supplies"
-                    }
-                  },
-                  {
-                    "option_type": "counted_reference",
-                    "count": 1,
-                    "of": {
-                      "index": "book",
-                      "name": "Book",
-                      "note": "Prayers",
-                      "url": "/api/2024/equipment/book"
-                    }
-                  },
-                  {
-                    "option_type": "counted_reference",
-                    "count": 1,
-                    "of": {
-                      "index": "holy-symbols",
-                      "name": "Holy Symbols",
-                      "url": "/api/2024/equipment-categories/holy-symbols"
-                    }
-                  },
-                  {
-                    "option_type": "counted_reference",
-                    "count": 10,
-                    "of": {
-                      "index": "parchment",
-                      "name": "Parchment",
-                      "url": "/api/2024/equipment/parchment"
-                    }
-                  },
-                  {
-                    "option_type": "counted_reference",
-                    "count": 1,
-                    "of": {
-                      "index": "robe",
-                      "name": "Robe",
-                      "url": "/api/2024/equipment/robe"
-                    }
-                  },
-                  {
-                    "option_type": "money",
-                    "count": 8,
-                    "unit": "gp"
+        "desc": "Choose A or B: (A) Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP; or (B) 50 GP",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "calligraphers-supplies",
+                    "name": "Calligrapher's Supplies",
+                    "url": "/api/2024/equipment/calligraphers-supplies"
                   }
-                ]
-              },
-              {
-                "option_type": "money",
-                "count": 50,
-                "unit": "gp"
-              }
-            ]
-          }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "book",
+                    "name": "Book",
+                    "note": "Prayers",
+                    "url": "/api/2024/equipment/book"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "holy-symbols",
+                    "name": "Holy Symbols",
+                    "url": "/api/2024/equipment-categories/holy-symbols"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 10,
+                  "of": {
+                    "index": "parchment",
+                    "name": "Parchment",
+                    "url": "/api/2024/equipment/parchment"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "robe",
+                    "name": "Robe",
+                    "url": "/api/2024/equipment/robe"
+                  }
+                },
+                {
+                  "option_type": "money",
+                  "count": 8,
+                  "unit": "gp"
+                }
+              ]
+            },
+            {
+              "option_type": "money",
+              "count": 50,
+              "unit": "gp"
+            }
+          ]
         }
       }
     ],
@@ -163,75 +161,73 @@
     ],
     "equipment_options": [
       {
-        "option_type": "choice",
-        "choice": {
-          "choose": 1,
-          "type": "equipment",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "counted_reference",
-                    "count": 2,
-                    "of": {
-                      "index": "dagger",
-                      "name": "Dagger",
-                      "url": "/api/2024/equipment/dagger"
-                    }
-                  },
-                  {
-                    "option_type": "counted_reference",
-                    "count": 1,
-                    "of": {
-                      "index": "thieves-tools",
-                      "name": "Thieves' Tools",
-                      "url": "/api/2024/equipment/thieves-tools"
-                    }
-                  },
-                  {
-                    "option_type": "counted_reference",
-                    "count": 1,
-                    "of": {
-                      "index": "crowbar",
-                      "name": "Crowbar",
-                      "url": "/api/2024/equipment/crowbar"
-                    }
-                  },
-                  {
-                    "option_type": "counted_reference",
-                    "count": 2,
-                    "of": {
-                      "index": "pouch",
-                      "name": "Pouch",
-                      "url": "/api/2024/equipment/pouch"
-                    }
-                  },
-                  {
-                    "option_type": "counted_reference",
-                    "count": 1,
-                    "of": {
-                      "index": "clothes-travelers",
-                      "name": "Clothes, Traveler's",
-                      "url": "/api/2024/equipment/clothes-travelers"
-                    }
-                  },
-                  {
-                    "option_type": "money",
-                    "count": 16,
-                    "unit": "gp"
+        "desc": "Choose A or B: (A) 2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 2,
+                  "of": {
+                    "index": "dagger",
+                    "name": "Dagger",
+                    "url": "/api/2024/equipment/dagger"
                   }
-                ]
-              },
-              {
-                "option_type": "money",
-                "count": 50,
-                "unit": "gp"
-              }
-            ]
-          }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "thieves-tools",
+                    "name": "Thieves' Tools",
+                    "url": "/api/2024/equipment/thieves-tools"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "crowbar",
+                    "name": "Crowbar",
+                    "url": "/api/2024/equipment/crowbar"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 2,
+                  "of": {
+                    "index": "pouch",
+                    "name": "Pouch",
+                    "url": "/api/2024/equipment/pouch"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "clothes-travelers",
+                    "name": "Clothes, Traveler's",
+                    "url": "/api/2024/equipment/clothes-travelers"
+                  }
+                },
+                {
+                  "option_type": "money",
+                  "count": 16,
+                  "unit": "gp"
+                }
+              ]
+            },
+            {
+              "option_type": "money",
+              "count": 50,
+              "unit": "gp"
+            }
+          ]
         }
       }
     ],
@@ -281,76 +277,74 @@
     ],
     "equipment_options": [
       {
-        "option_type": "choice",
-        "choice": {
-          "choose": 1,
-          "type": "equipment",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "counted_reference",
-                    "count": 1,
-                    "of": {
-                      "index": "quarterstaff",
-                      "name": "Quarterstaff",
-                      "url": "/api/2024/equipment/quarterstaff"
-                    }
-                  },
-                  {
-                    "option_type": "counted_reference",
-                    "count": 1,
-                    "of": {
-                      "index": "calligraphers-supplies",
-                      "name": "Calligrapher's Supplies",
-                      "url": "/api/2024/equipment/calligraphers-supplies"
-                    }
-                  },
-                  {
-                    "option_type": "counted_reference",
-                    "count": 1,
-                    "of": {
-                      "index": "book",
-                      "name": "Book",
-                      "note": "History",
-                      "url": "/api/2024/equipment/book"
-                    }
-                  },
-                  {
-                    "option_type": "counted_reference",
-                    "count": 8,
-                    "of": {
-                      "index": "parchment",
-                      "name": "Parchment",
-                      "url": "/api/2024/equipment/parchment"
-                    }
-                  },
-                  {
-                    "option_type": "counted_reference",
-                    "count": 1,
-                    "of": {
-                      "index": "robe",
-                      "name": "Robe",
-                      "url": "/api/2024/equipment/robe"
-                    }
-                  },
-                  {
-                    "option_type": "money",
-                    "count": 8,
-                    "unit": "gp"
+        "desc": "Choose A or B: (A) Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8 GP; or (B) 50 GP",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "quarterstaff",
+                    "name": "Quarterstaff",
+                    "url": "/api/2024/equipment/quarterstaff"
                   }
-                ]
-              },
-              {
-                "option_type": "money",
-                "count": 50,
-                "unit": "gp"
-              }
-            ]
-          }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "calligraphers-supplies",
+                    "name": "Calligrapher's Supplies",
+                    "url": "/api/2024/equipment/calligraphers-supplies"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "book",
+                    "name": "Book",
+                    "note": "History",
+                    "url": "/api/2024/equipment/book"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 8,
+                  "of": {
+                    "index": "parchment",
+                    "name": "Parchment",
+                    "url": "/api/2024/equipment/parchment"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "robe",
+                    "name": "Robe",
+                    "url": "/api/2024/equipment/robe"
+                  }
+                },
+                {
+                  "option_type": "money",
+                  "count": 8,
+                  "unit": "gp"
+                }
+              ]
+            },
+            {
+              "option_type": "money",
+              "count": 50,
+              "unit": "gp"
+            }
+          ]
         }
       }
     ],
@@ -438,99 +432,97 @@
     ],
     "equipment_options": [
       {
-        "option_type": "choice",
-        "choice": {
-          "choose": 1,
-          "type": "equipment",
-          "from": {
-            "option_set_type": "options_array",
-            "options": [
-              {
-                "option_type": "multiple",
-                "items": [
-                  {
-                    "option_type": "counted_reference",
-                    "count": 1,
-                    "of": {
-                      "index": "spear",
-                      "name": "Spear",
-                      "url": "/api/2024/equipment/spear"
-                    }
-                  },
-                  {
-                    "option_type": "counted_reference",
-                    "count": 1,
-                    "of": {
-                      "index": "shortbow",
-                      "name": "Shortbow",
-                      "url": "/api/2024/equipment/shortbow"
-                    }
-                  },
-                  {
-                    "option_type": "counted_reference",
-                    "count": 20,
-                    "of": {
-                      "index": "arrows",
-                      "name": "Arrows",
-                      "url": "/api/2024/equipment/arrows"
-                    }
-                  },
-                  {
-                    "option_type": "choice",
-                    "choice": {
-                      "choose": 1,
-                      "type": "equipment",
-                      "from": {
-                        "option_set_type": "equipment_category",
-                        "equipment_category": {
-                          "index": "gaming-sets",
-                          "name": "Gaming Sets",
-                          "url": "/api/2024/equipment-categories/gaming-sets"
-                        }
+        "desc": "Choose A or B: (A) Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer's Kit, Quiver, Traveler's Clothes, 14 GP; or (B) 50 GP",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "spear",
+                    "name": "Spear",
+                    "url": "/api/2024/equipment/spear"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "shortbow",
+                    "name": "Shortbow",
+                    "url": "/api/2024/equipment/shortbow"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "arrows",
+                    "name": "Arrows",
+                    "url": "/api/2024/equipment/arrows"
+                  }
+                },
+                {
+                  "option_type": "choice",
+                  "choice": {
+                    "choose": 1,
+                    "type": "equipment",
+                    "from": {
+                      "option_set_type": "equipment_category",
+                      "equipment_category": {
+                        "index": "gaming-sets",
+                        "name": "Gaming Sets",
+                        "url": "/api/2024/equipment-categories/gaming-sets"
                       }
                     }
-                  },
-                  {
-                    "option_type": "counted_reference",
-                    "count": 1,
-                    "of": {
-                      "index": "healers-kit",
-                      "name": "Healer's Kit",
-                      "url": "/api/2024/equipment/healers-kit"
-                    }
-                  },
-                  {
-                    "option_type": "counted_reference",
-                    "count": 1,
-                    "of": {
-                      "index": "quiver",
-                      "name": "Quiver",
-                      "url": "/api/2024/equipment/quiver"
-                    }
-                  },
-                  {
-                    "option_type": "counted_reference",
-                    "count": 1,
-                    "of": {
-                      "index": "clothes-travelers",
-                      "name": "Clothes, Traveler's",
-                      "url": "/api/2024/equipment/clothes-travelers"
-                    }
-                  },
-                  {
-                    "option_type": "money",
-                    "count": 14,
-                    "unit": "gp"
                   }
-                ]
-              },
-              {
-                "option_type": "money",
-                "count": 50,
-                "unit": "gp"
-              }
-            ]
-          }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "healers-kit",
+                    "name": "Healer's Kit",
+                    "url": "/api/2024/equipment/healers-kit"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "quiver",
+                    "name": "Quiver",
+                    "url": "/api/2024/equipment/quiver"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "clothes-travelers",
+                    "name": "Clothes, Traveler's",
+                    "url": "/api/2024/equipment/clothes-travelers"
+                  }
+                },
+                {
+                  "option_type": "money",
+                  "count": 14,
+                  "unit": "gp"
+                }
+              ]
+            },
+            {
+              "option_type": "money",
+              "count": 50,
+              "unit": "gp"
+            }
+          ]
         }
       }
     ],
