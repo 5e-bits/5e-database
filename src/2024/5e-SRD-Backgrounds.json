@@ -42,76 +42,81 @@
         "url": "/api/2024/proficiencies/tool-calligraphers-supplies"
       }
     ],
-    "equipment_options": {
-      "choose": 1,
-      "type": "equipment",
-      "from": {
-        "option_set_type": "options_array",
-        "options": [
-          {
-            "option_type": "multiple",
-            "items": [
+    "equipment_options": [
+      {
+        "option_type": "choice",
+        "choice": {
+          "choose": 1,
+          "type": "equipment",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
               {
-                "option_type": "counted_reference",
-                "count": 1,
-                "of": {
-                  "index": "calligraphers-supplies",
-                  "name": "Calligrapher's Supplies",
-                  "url": "/api/2024/equipment/calligraphers-supplies"
-                }
-              },
-              {
-                "option_type": "counted_reference",
-                "count": 1,
-                "of": {
-                  "index": "book",
-                  "name": "Book",
-                  "note": "Prayers",
-                  "url": "/api/2024/equipment/book"
-                }
-              },
-              {
-                "option_type": "counted_reference",
-                "count": 1,
-                "of": {
-                  "index": "holy-symbols",
-                  "name": "Holy Symbols",
-                  "url": "/api/2024/equipment-categories/holy-symbols"
-                }
-              },
-              {
-                "option_type": "counted_reference",
-                "count": 10,
-                "of": {
-                  "index": "parchment",
-                  "name": "Parchment",
-                  "url": "/api/2024/equipment/parchment"
-                }
-              },
-              {
-                "option_type": "counted_reference",
-                "count": 1,
-                "of": {
-                  "index": "robe",
-                  "name": "Robe",
-                  "url": "/api/2024/equipment/robe"
-                }
+                "option_type": "multiple",
+                "items": [
+                  {
+                    "option_type": "counted_reference",
+                    "count": 1,
+                    "of": {
+                      "index": "calligraphers-supplies",
+                      "name": "Calligrapher's Supplies",
+                      "url": "/api/2024/equipment/calligraphers-supplies"
+                    }
+                  },
+                  {
+                    "option_type": "counted_reference",
+                    "count": 1,
+                    "of": {
+                      "index": "book",
+                      "name": "Book",
+                      "note": "Prayers",
+                      "url": "/api/2024/equipment/book"
+                    }
+                  },
+                  {
+                    "option_type": "counted_reference",
+                    "count": 1,
+                    "of": {
+                      "index": "holy-symbols",
+                      "name": "Holy Symbols",
+                      "url": "/api/2024/equipment-categories/holy-symbols"
+                    }
+                  },
+                  {
+                    "option_type": "counted_reference",
+                    "count": 10,
+                    "of": {
+                      "index": "parchment",
+                      "name": "Parchment",
+                      "url": "/api/2024/equipment/parchment"
+                    }
+                  },
+                  {
+                    "option_type": "counted_reference",
+                    "count": 1,
+                    "of": {
+                      "index": "robe",
+                      "name": "Robe",
+                      "url": "/api/2024/equipment/robe"
+                    }
+                  },
+                  {
+                    "option_type": "money",
+                    "count": 8,
+                    "unit": "gp"
+                  }
+                ]
               },
               {
                 "option_type": "money",
-                "count": 8,
+                "count": 50,
                 "unit": "gp"
               }
             ]
-          },
-          {
-            "option_type": "money",
-            "count": 50,
-            "unit": "gp"
           }
-        ]
+        }
       }
-    },
+    ],
     "url": "/api/2024/backgrounds/acolyte"
   },
   {
