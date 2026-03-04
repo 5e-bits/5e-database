@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [4.3.3](https://github.com/5e-bits/5e-database/compare/v4.3.2...v4.3.3) (2026-03-04)
+
+
+### Bug Fixes
+
+* **2024:** Adjust choice implementation to match other top level choices ([#1018](https://github.com/5e-bits/5e-database/issues/1018)) ([4cbfe16](https://github.com/5e-bits/5e-database/commit/4cbfe16aacc8758d08b6a88e90c450f5328d1275))
+
 ## [4.3.2](https://github.com/5e-bits/5e-database/compare/v4.3.1...v4.3.2) (2026-03-03)
 
 
