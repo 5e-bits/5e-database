@@ -1,14 +1,14 @@
 // @ts-check
 
 import eslint from '@eslint/js';
-import eslintPluginVitest from 'eslint-plugin-vitest';
-import json from 'eslint-plugin-json';
+import eslintPluginVitest from '@vitest/eslint-plugin';
+import json from '@eslint/json';
 import globals from 'globals';
 
 export default [
   {
     name: 'base',
-    ignores: ['**/node_modules/**', '**/dist/**', '**/built/**'],
+    ignores: ['**/node_modules/**', '**/dist/**', '**/built/**', 'package-lock.json'],
   },
   {
     name: 'eslint/recommended-with-overrides',
@@ -36,11 +36,12 @@ export default [
     },
   },
   {
-    name: 'json/recommended-with-comments',
+    name: 'json/recommended',
+    plugins: { json },
+    language: 'json/json',
     files: ['**/*.json'],
-    ...json.configs['recommended'],
     rules: {
-      'json/*': ['warn', { allowComments: false }],
+      ...json.configs.recommended.rules,
     },
   },
 ];
