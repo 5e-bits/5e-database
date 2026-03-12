@@ -283,7 +283,24 @@
 		"url": "/api/2024/species/human",
 		"name": "Human",
 		"type": "Humanoid",
-		"size_options": ["Small", "Medium"],
+		"size_options": {
+			"desc": "Choose a size when you select this species.",
+			"choose": 1,
+			"type": "size_categories",
+			"from": {
+				"option_set_type": "options_array",
+				"options": [
+					{
+						"option_type": "size",
+						"size": "Small"
+					},
+					{
+						"option_type": "size",
+						"size": "Medium"
+					}
+				]
+			}
+		},
 		"speed": 30,
 		"traits": [
 			{
