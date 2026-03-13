@@ -273,7 +273,7 @@
 		"index": "elven-lineage-high-elf",
 		"url" : "/api/2024/subspecies/elven-lineage-high-elf",
 		"name": "Elven Lineage: High Elf",
-		"level_effects": [
+		"traits": [
 			{
 				"level": 1,
 				"description": "You know the Prestidigitation cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Wizard spell list.",
@@ -306,34 +306,24 @@
 		"index": "elven-lineage-wood-elf",
 		"url" : "/api/2024/subspecies/elven-lineage-wood-elf",
 		"name": "Elven Lineage: Wood Elf",
-		"level_effects": [
+		"traits": [
 			{
-				"level": 1,
-				"description": "Your Speed increases to 35 feet. You also know the Druidcraft cantrip.",
-				"traits": [
-					{
-						"index": "wood-elf-speed-increase",
-						"url": "/api/2024/traits/wood-elf-speed-increase",
-						"name": "Wood Elf: Movement Speed Increase"
-					}
-				],
-				"spells": [
-					{ "nyi": "Druidcraft" }
-				]
+				"index": "wood-elf-speed-increase",
+				"url": "/api/2024/traits/wood-elf-speed-increase",
+				"name": "Wood Elf: Movement Speed Increase",
+				"level": 1
 			},
 			{
-				"level": 3,
-				"description": "Longstrider",
-				"spells": [
-					{ "nyi": "Longstrider" }
-				]
+				"index": "wood-elf-longstrider",
+				"url": "/api/2024/traits/wood-elf-longstrider",
+				"name": "Wood Elf: Longstrider",
+				"level": 3
 			},
 			{
-				"level": 5,
-				"description": "Pass without Trace",
-				"spells": [
-					{ "nyi": "Pass without Trace" }
-				]
+				"index": "wood-elf-pass-without-trace",
+				"url": "/api/2024/traits/wood-elf-pass-without-trace",
+				"name": "Wood Elf: Pass without Trace",
+				"level": 5
 			}
 		],
 		"species" : {
