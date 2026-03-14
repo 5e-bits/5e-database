@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [4.4.0](https://github.com/5e-bits/5e-database/compare/v4.3.3...v4.4.0) (2026-03-14)
+
+
+### Features
+
+* **2024:** Add Traits + Species ([#1014](https://github.com/5e-bits/5e-database/issues/1014)) ([ccd3e1d](https://github.com/5e-bits/5e-database/commit/ccd3e1df1f1d9eda9c164f28fa5c61effaf898b3))
+
 ## [4.3.3](https://github.com/5e-bits/5e-database/compare/v4.3.2...v4.3.3) (2026-03-04)
 
 
