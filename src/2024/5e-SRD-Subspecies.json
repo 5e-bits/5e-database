@@ -241,21 +241,21 @@
 				"level": 1
 			},
 			{
-				"index": "drow-dancing-lights",
-				"url": "/api/2024/traits/drow-dancing-lights",
-				"name": "Drow: Dancing Lights",
+				"index": "lineage-dancing-lights",
+				"url": "/api/2024/traits/lineage-dancing-lights",
+				"name": "Dancing Lights",
 				"level": 1
 			},
 			{
-				"index": "drow-faerie-fire",
-				"url": "/api/2024/traits/drow-faerie-fire",
-				"name": "Drow: Faerie Fire",
+				"index": "lineage-faerie-fire",
+				"url": "/api/2024/traits/lineage-faerie-fire",
+				"name": "Faerie Fire",
 				"level": 3
 			},
 			{
-				"index": "drow-darkness",
-				"url": "/api/2024/traits/drow-darkness",
-				"name": "Drow: Darkness",
+				"index": "lineage-darkness",
+				"url": "/api/2024/traits/lineage-darkness",
+				"name": "Darkness",
 				"level": 5
 			}
 		],
@@ -277,15 +277,15 @@
 				"level": 1
 			},
 			{
-				"index": "high-elf-detect-magic",
-				"url": "/api/2024/traits/high-elf-detect-magic",
-				"name": "High Elf: Detect Magic",
+				"index": "lineage-detect-magic",
+				"url": "/api/2024/traits/lineage-detect-magic",
+				"name": "Detect Magic",
 				"level": 3
 			},
 			{
-				"index": "high-elf-misty-step",
-				"url": "/api/2024/traits/high-elf-misty-step",
-				"name": "High Elf: Misty Step",
+				"index": "lineage-misty-step",
+				"url": "/api/2024/traits/lineage-misty-step",
+				"name": "Misty Step",
 				"level": 5
 			}
 		],
@@ -307,15 +307,15 @@
 				"level": 1
 			},
 			{
-				"index": "wood-elf-longstrider",
-				"url": "/api/2024/traits/wood-elf-longstrider",
-				"name": "Wood Elf: Longstrider",
+				"index": "lineage-longstrider",
+				"url": "/api/2024/traits/lineage-longstrider",
+				"name": "Longstrider",
 				"level": 3
 			},
 			{
-				"index": "wood-elf-pass-without-trace",
-				"url": "/api/2024/traits/wood-elf-pass-without-trace",
-				"name": "Wood Elf: Pass without Trace",
+				"index": "lineage-pass-without-trace",
+				"url": "/api/2024/traits/lineage-pass-without-trace",
+				"name": "Pass without Trace",
 				"level": 5
 			}
 		],
@@ -472,35 +472,31 @@
 	{
 		"index": "fiendish-legacy-abyssal",
 		"url" : "/api/2024/subspecies/fiendish-legacy-abyssal",
-		"name": "Fiendish Lineage: Abyssal",
-		"level_effects": [
+		"name": "Fiendish Legacy: Abyssal",
+		"traits": [
 			{
-				"level": 1,
-				"description": "You have Resistance to Poison damage.\nYou also know the Poison Spray cantrip.",
-				"traits" : [
-					{
-						"index": "fiendish-damage-resistance-poison",
-						"url": "/api/2024/traits/fiendish-damage-resistance-poison",
-						"name": "Damage Resistance: Poison"
-					}
-				],
-				"spells": [
-					{ "nyi": "Poison Spray" }
-				]
+				"index": "fiendish-damage-resistance-poison",
+				"url": "/api/2024/traits/fiendish-damage-resistance-poison",
+				"name": "Damage Resistance: Poison",
+				"level": 1
 			},
 			{
-				"level": 3,
-				"description": "Ray of Sickness",
-				"spells": [
-					{ "nyi": "Ray of Sickness" }
-				]
+				"index": "lineage-poison-spray",
+				"url": "/api/2024/traits/lineage-poison-spray",
+				"name": "Poison Spray",
+				"level": 1
 			},
 			{
-				"level": 5,
-				"description": "Hold Person",
-				"spells": [
-					{ "nyi": "Hold Person" }
-				]
+				"index": "lineage-ray-of-sickness",
+				"url": "/api/2024/traits/lineage-ray-of-sickness",
+				"name": "Ray of Sickness",
+				"level": 3
+			},
+			{
+				"index": "lineage-hold-person",
+				"url": "/api/2024/traits/lineage-hold-person",
+				"name": "Hold Person",
+				"level": 5
 			}
 		],
 		"species" : {
@@ -512,35 +508,30 @@
 	{
 		"index": "fiendish-legacy-chthonic",
 		"url" : "/api/2024/subspecies/fiendish-legacy-chthonic",
-		"name": "Fiendish Lineage: Chthonic",
+		"name": "Fiendish Legacy: Chthonic",
 		"level_effects": [
 			{
-				"level": 1,
-				"description": "You have Resistance to Necrotic damage.\nYou also know the Chill Touch cantrip.",
-				"traits" : [
-					{
-						"index": "fiendish-damage-resistance-necrotic",
-						"url": "/api/2024/traits/fiendish-damage-resistance-necrotic",
-						"name": "Damage Resistance: Necrotic"
-					}
-				],
-				"spells": [
-					{ "nyi": "Chill Touch" }
-				]
+				"index": "fiendish-damage-resistance-necrotic",
+				"url": "/api/2024/traits/fiendish-damage-resistance-necrotic",
+				"name": "Damage Resistance: Necrotic",
+				"level": 1
+			},{
+				"index": "lineage-chill-touch",
+				"url": "/api/2024/traits/lineage-chill-touch",
+				"name": "Chill Touch",
+				"level": 1
 			},
 			{
-				"level": 3,
-				"description": "False Life",
-				"spells": [
-					{ "nyi": "False Life" }
-				]
+				"index": "lineage-false-life",
+				"url": "/api/2024/traits/lineage-false-life",
+				"name": "False Life",
+				"level": 3
 			},
 			{
-				"level": 5,
-				"description": "Ray of Enfeeblement",
-				"spells": [
-					{ "nyi": "Ray of Enfeeblement" }
-				]
+				"index": "lineage-ray-of-enfeeblement",
+				"url": "/api/2024/traits/lineage-ray-of-enfeeblement",
+				"name": "Ray of Enfeeblement",
+				"level": 5
 			}
 		],
 		"species" : {
@@ -552,35 +543,31 @@
 	{
 		"index": "fiendish-legacy-infernal",
 		"url" : "/api/2024/subspecies/fiendish-legacy-infernal",
-		"name": "Fiendish Lineage: Infernal",
-		"level_effects": [
+		"name": "Fiendish Legacy: Infernal",
+		"traits": [
 			{
-				"level": 1,
-				"description": "You have Resistance to Fire damage.\nYou also know the Fire Bolt cantrip.",
-				"traits" : [
-					{
-						"index": "fiendish-damage-resistance-fire",
-						"url": "/api/2024/traits/fiendish-damage-resistance-fire",
-						"name": "Damage Resistance: Fire"
-					}
-				],
-				"spells": [
-					{ "nyi": "Fire Bolt" }
-				]
+				"index": "fiendish-damage-resistance-fire",
+				"url": "/api/2024/traits/fiendish-damage-resistance-fire",
+				"name": "Damage Resistance: Fire",
+				"level": 1
 			},
 			{
-				"level": 3,
-				"description": "Hellish Rebuke",
-				"spells": [
-					{ "nyi": "Hellish Rebuke" }
-				]
+				"index": "lineage-fire-bolt",
+				"url": "/api/2024/traits/lineage-fire-bolt",
+				"name": "Fire Bolt",
+				"level": 1
 			},
 			{
-				"level": 5,
-				"description": "Darkness",
-				"spells": [
-					{ "nyi": "Darkness" }
-				]
+				"index": "lineage-hellish-rebuke",
+				"url": "/api/2024/traits/lineage-hellish-rebuke",
+				"name": "Hellish Rebuke",
+				"level": 3
+			},
+			{
+				"index": "lineage-darkness",
+				"url": "/api/2024/traits/lineage-darkness",
+				"name": "Darkness",
+				"level": 5
 			}
 		],
 		"species" : {
