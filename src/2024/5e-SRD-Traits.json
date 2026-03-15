@@ -388,66 +388,6 @@
     ]
   },
   {
-    "index": "fiendish-damage-resistance-fire",
-    "url": "/api/2024/traits/fiendish-damage-resistance-fire",
-    "name": "Damage Resistance: Fire",
-    "description": "You have Resistance to Fire damage.",
-    "species": [
-      {
-        "index": "tiefling",
-        "url": "/api/2024/species/tiefling",
-        "name": "Tiefling"
-      }
-    ],
-    "subspecies": [
-      {
-        "index": "fiendish-legacy-infernal",
-        "url" : "/api/2024/subspecies/fiendish-legacy-infernal",
-        "name": "Fiendish Legacy: Infernal"
-      }
-    ]
-  },
-  {
-    "index": "fiendish-damage-resistance-necrotic",
-    "url": "/api/2024/traits/fiendish-damage-resistance-necrotic",
-    "name": "Damage Resistance: Necrotic",
-    "description": "You have Resistance to Necrotic damage.",
-    "species": [
-      {
-        "index": "tiefling",
-        "url": "/api/2024/species/tiefling",
-        "name": "Tiefling"
-      }
-    ],
-    "subspecies": [
-      {
-        "index": "fiendish-legacy-chthonic",
-        "url" : "/api/2024/subspecies/fiendish-legacy-chthonic",
-        "name": "Fiendish Legacy: Chthonic"
-      }
-    ]
-  },
-  {
-    "index": "fiendish-damage-resistance-poison",
-    "url": "/api/2024/traits/fiendish-damage-resistance-poison",
-    "name": "Damage Resistance: Poison",
-    "description": "You have Resistance to Poison damage.",
-    "species": [
-      {
-        "index": "tiefling",
-        "url": "/api/2024/species/tiefling",
-        "name": "Tiefling"
-      }
-    ],
-    "subspecies": [
-      {
-        "index": "fiendish-legacy-abyssal",
-        "url" : "/api/2024/subspecies/fiendish-legacy-abyssal",
-        "name": "Fiendish Legacy: Abyssal"
-      }
-    ]
-  },
-  {
     "index": "fiendish-legacy",
     "url": "/api/2024/traits/fiendish-legacy",
     "name": "Fiendish Legacy",
@@ -611,11 +551,8 @@
     "index": "gnomish-lineage-forest-gnome",
     "url" : "/api/2024/traits/gnomish-lineage-forest-gnome",
     "name": "Gnomish Lineage: Forest Gnome",
-    "description": "You know the Minor Illusion cantrip. You also always have the Speak with Animals spell prepared. You can cast it without a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. You can also use any spell slots you have to cast the spell.",
+    "description": "You always have the Speak with Animals spell prepared. You can cast it without a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. You can also use any spell slots you have to cast the spell.",
     "spells": [
-      {
-        "nyi": "Minor Illusion"
-      },
       {
         "nyi": "Speak with Animals",
         "uses": "Proficiency Bonus",
@@ -639,11 +576,8 @@
     "index": "gnomish-lineage-rock-gnome",
     "url" : "/api/2024/traits/gnomish-lineage-rock-gnome",
     "name": "Gnomish Lineage: Rock Gnome",
-    "description": "You know the Mending and Prestidigitation cantrips. In addition, you can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5, 1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from Prestidigitation; the device produces that effect whenever you or another creature takes a Bonus Action to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell’s ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn’t do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action.",
+    "description": "You know the Prestidigitation cantrip. In addition, you can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5, 1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from Prestidigitation; the device produces that effect whenever you or another creature takes a Bonus Action to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell’s ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn’t do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action.",
     "spells": [
-      {
-        "nyi": "Mending"
-      },
       {
         "nyi": "Prestidigitation"
       }
@@ -743,8 +677,68 @@
     ]
   },
   {
-    "index": "lineage-chill-touch",
-    "url": "/api/2024/traits/lineage-chill-touch",
+    "index": "lineage-resistance-fire",
+    "url": "/api/2024/traits/lineage-resistance-fire",
+    "name": "Damage Resistance: Fire",
+    "description": "You have Resistance to Fire damage.",
+    "species": [
+      {
+        "index": "tiefling",
+        "url": "/api/2024/species/tiefling",
+        "name": "Tiefling"
+      }
+    ],
+    "subspecies": [
+      {
+        "index": "fiendish-legacy-infernal",
+        "url" : "/api/2024/subspecies/fiendish-legacy-infernal",
+        "name": "Fiendish Legacy: Infernal"
+      }
+    ]
+  },
+  {
+    "index": "lineage-resistance-necrotic",
+    "url": "/api/2024/traits/lineage-resistance-necrotic",
+    "name": "Damage Resistance: Necrotic",
+    "description": "You have Resistance to Necrotic damage.",
+    "species": [
+      {
+        "index": "tiefling",
+        "url": "/api/2024/species/tiefling",
+        "name": "Tiefling"
+      }
+    ],
+    "subspecies": [
+      {
+        "index": "fiendish-legacy-chthonic",
+        "url" : "/api/2024/subspecies/fiendish-legacy-chthonic",
+        "name": "Fiendish Legacy: Chthonic"
+      }
+    ]
+  },
+  {
+    "index": "lineage-resistance-poison",
+    "url": "/api/2024/traits/lineage-resistance-poison",
+    "name": "Damage Resistance: Poison",
+    "description": "You have Resistance to Poison damage.",
+    "species": [
+      {
+        "index": "tiefling",
+        "url": "/api/2024/species/tiefling",
+        "name": "Tiefling"
+      }
+    ],
+    "subspecies": [
+      {
+        "index": "fiendish-legacy-abyssal",
+        "url" : "/api/2024/subspecies/fiendish-legacy-abyssal",
+        "name": "Fiendish Legacy: Abyssal"
+      }
+    ]
+  },
+  {
+    "index": "lineage-spell-chill-touch",
+    "url": "/api/2024/traits/lineage-spell-chill-touch",
     "name": "Chill Touch",
     "description": "You know the spell Chill Touch.",
     "spells": [
@@ -768,8 +762,8 @@
     ]
   },
   {
-    "index": "lineage-dancing-lights",
-    "url": "/api/2024/traits/lineage-dancing-lights",
+    "index": "lineage-spell-dancing-lights",
+    "url": "/api/2024/traits/lineage-spell-dancing-lights",
     "name": "Dancing Lights",
     "description": "You know the spell Dancing Lights.",
     "spells": [
@@ -793,8 +787,8 @@
     ]
   },
   {
-    "index": "lineage-darkness",
-    "url": "/api/2024/traits/lineage-darkness",
+    "index": "lineage-spell-darkness",
+    "url": "/api/2024/traits/lineage-spell-darkness",
     "name": "Darkness",
     "description": "You know the spell Darkness.",
     "spells": [
@@ -818,8 +812,8 @@
     ]
   },
   {
-    "index": "lineage-detect-magic",
-    "url": "/api/2024/traits/lineage-detect-magic",
+    "index": "lineage-spell-detect-magic",
+    "url": "/api/2024/traits/lineage-spell-detect-magic",
     "name": "Detect Magic",
     "description": "You know the spell Detect Magic.",
     "spells": [
@@ -843,8 +837,8 @@
     ]
   },
   {
-    "index": "lineage-faerie-fire",
-    "url": "/api/2024/traits/lineage-faerie-fire",
+    "index": "lineage-spell-faerie-fire",
+    "url": "/api/2024/traits/lineage-spell-faerie-fire",
     "name": "Faerie Fire",
     "description": "You know the spell Faerie Fire.",
     "spells": [
@@ -868,8 +862,8 @@
     ]
   },
   {
-    "index": "lineage-false-life",
-    "url": "/api/2024/traits/lineage-false-life",
+    "index": "lineage-spell-false-life",
+    "url": "/api/2024/traits/lineage-spell-false-life",
     "name": "False Life",
     "description": "You know the spell False Life.",
     "spells": [
@@ -893,8 +887,8 @@
     ]
   },
   {
-    "index": "lineage-fire-bolt",
-    "url": "/api/2024/traits/lineage-fire-bolt",
+    "index": "lineage-spell-fire-bolt",
+    "url": "/api/2024/traits/lineage-spell-fire-bolt",
     "name": "Fire Bolt",
     "description": "You know the spell Fire Bolt.",
     "spells": [
@@ -918,8 +912,8 @@
     ]
   },
   {
-    "index": "lineage-hellish-rebuke",
-    "url": "/api/2024/traits/lineage-hellish-rebuke",
+    "index": "lineage-spell-hellish-rebuke",
+    "url": "/api/2024/traits/lineage-spell-hellish-rebuke",
     "name": "Hellish Rebuke",
     "description": "You know the spell Hellish Rebuke.",
     "spells": [
@@ -943,8 +937,8 @@
     ]
   },
   {
-    "index": "lineage-hold-person",
-    "url": "/api/2024/traits/lineage-hold-person",
+    "index": "lineage-spell-hold-person",
+    "url": "/api/2024/traits/lineage-spell-hold-person",
     "name": "Hold Person",
     "description": "You know the spell Hold Person.",
     "spells": [
@@ -968,8 +962,8 @@
     ]
   },
   {
-    "index": "lineage-longstrider",
-    "url": "/api/2024/traits/lineage-longstrider",
+    "index": "lineage-spell-longstrider",
+    "url": "/api/2024/traits/lineage-spell-longstrider",
     "name": "Longstrider",
     "description": "You learn the spell Longstrider.",
     "spells": [
@@ -993,8 +987,58 @@
     ]
   },
   {
-    "index": "lineage-misty-step",
-    "url": "/api/2024/traits/lineage-misty-step",
+    "index": "lineage-spell-mending",
+    "url": "/api/2024/traits/lineage-spell-mending",
+    "name": "Mending",
+    "description": "You know the cantrip Mending.",
+    "spells": [
+      {
+        "nyi": "Mending"
+      }
+    ],
+    "species": [
+      {
+        "index": "gnome",
+        "url": "/api/2024/species/gnome",
+        "name": "Gnome"
+      }
+    ],
+    "subspecies": [
+      {
+        "index": "gnomish-lineage-rock-gnome",
+        "url" : "/api/2024/subspecies/gnomish-lineage-rock-gnome",
+        "name": "Gnomish Lineage: Rock Gnome"
+      }
+    ]
+  },
+  {
+    "index": "lineage-spell-minor-illusion",
+    "url": "/api/2024/traits/lineage-spell-minor-illusion",
+    "name": "Minor Illusion",
+    "description": "You know the spell Minor Illusion.",
+    "spells": [
+      {
+        "nyi": "Minor Illusion"
+      }
+    ],
+    "species": [
+      {
+        "index": "gnome",
+        "url": "/api/2024/species/gnome",
+        "name": "Gnome"
+      }
+    ],
+    "subspecies": [
+      {
+        "index": "gnomish-lineage-forest-gnome",
+        "url" : "/api/2024/subspecies/gnomish-lineage-forest-gnome",
+        "name": "Gnomish Lineage: Forest Gnome"
+      }
+    ]
+  },
+  {
+    "index": "lineage-spell-misty-step",
+    "url": "/api/2024/traits/lineage-spell-misty-step",
     "name": "Misty Step",
     "description": "You know the spell Misty Step.",
     "spells": [
@@ -1018,8 +1062,8 @@
     ]
   },
   {
-    "index": "lineage-pass-without-trace",
-    "url": "/api/2024/traits/lineage-pass-without-trace",
+    "index": "lineage-spell-pass-without-trace",
+    "url": "/api/2024/traits/lineage-spell-pass-without-trace",
     "name": "Pass without Trace",
     "description": "You learn the spell Pass without Trace.",
     "spells": [
@@ -1043,8 +1087,8 @@
     ]
   },
   {
-    "index": "lineage-poison-spray",
-    "url": "/api/2024/traits/lineage-poison-spray",
+    "index": "lineage-spell-poison-spray",
+    "url": "/api/2024/traits/lineage-spell-poison-spray",
     "name": "Poison Spray",
     "description": "You know the spell Poison Spray.",
     "spells": [
@@ -1068,8 +1112,8 @@
     ]
   },
   {
-    "index": "lineage-ray-of-enfeeblement",
-    "url": "/api/2024/traits/lineage-ray-of-enfeeblement",
+    "index": "lineage-spell-ray-of-enfeeblement",
+    "url": "/api/2024/traits/lineage-spell-ray-of-enfeeblement",
     "name": "Ray of Enfeeblement",
     "description": "You know the spell Ray of Enfeeblement.",
     "spells": [
@@ -1093,8 +1137,8 @@
     ]
   },
   {
-    "index": "lineage-ray-of-sickness",
-    "url": "/api/2024/traits/lineage-ray-of-sickness",
+    "index": "lineage-spell-ray-of-sickness",
+    "url": "/api/2024/traits/lineage-spell-ray-of-sickness",
     "name": "Ray of Sickness",
     "description": "You know the spell Ray of Sickness.",
     "spells": [
