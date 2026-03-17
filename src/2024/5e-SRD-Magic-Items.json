@@ -9,11 +9,12 @@
 			"name": "Armor",
 			"url": "/api/2024/equipment-categories/armor"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Armor (Any Medium or Heavy, Except Hide Armor)",
 			"This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any Critical Hit against you becomes a normal hit."
@@ -29,14 +30,96 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [  
+			{  
+				"index": "ammunition-1",  
+				"name": "Ammunition, +1",  
+				"url": "/api/2014/magic-items/ammunition-1"  
+			},  
+			{  
+				"index": "ammunition-2",  
+				"name": "Ammunition, +2",  
+				"url": "/api/2014/magic-items/ammunition-2"  
+			},  
+			{  
+				"index": "ammunition-3",  
+				"name": "Ammunition, +3",  
+				"url": "/api/2014/magic-items/ammunition-3"  
+			}  
+		],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon (+1), Rare (+2), or Very Rare (+3)"
 		},
-
 		"desc": [
 			"Weapon (Any Ammunition)",
 			"You have a bonus to attack rolls and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hits a target, the ammunition is no longer magical.",
+			"This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity."
+		]
+	},{
+		"index": "ammunition-1",
+		"url": "/api/2024/magic-items/ammunition-1",
+		"image" : "/api/images/magic-items/ammunition.png",
+		"name": "Ammunition +1",
+		"equipment_category": {
+			"index": "weapons",
+			"name": "Weapons",
+			"url": "/api/2024/equipment-categories/weapons"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": false,
+		"rarity" : {
+			"name": "Uncommon (+1)"
+		},
+		"desc": [
+			"Weapon (Uncommon)",
+			"You have a bonus to attack rolls and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hits a target, the ammunition is no longer magical.",
+			"This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity."
+		]
+	},
+	{
+		"index": "ammunition-2",
+		"url": "/api/2024/magic-items/ammunition-2",
+		"image" : "/api/images/magic-items/ammunition.png",
+		"name": "Ammunition +2",
+		"equipment_category": {
+			"index": "weapons",
+			"name": "Weapons",
+			"url": "/api/2024/equipment-categories/weapons"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": false,
+		"rarity" : {
+			"name": "Rare (+2)"
+		},
+		"desc": [
+			"Weapon (Rare)",
+			"You have a +2 bonus to attack rolls and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hits a target, the ammunition is no longer magical.",
+			"This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity."
+		]
+	},
+	{
+		"index": "ammunition-3",
+		"url": "/api/2024/magic-items/ammunition-3",
+		"image" : "/api/images/magic-items/ammunition.png",
+		"name": "Ammunition +3",
+		"equipment_category": {
+			"index": "weapons",
+			"name": "Weapons",
+			"url": "/api/2024/equipment-categories/weapons"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": false,
+		"rarity" : {
+			"name": "Very Rare (+3)"
+		},
+		"desc": [
+			"Weapon (Very Rare)",
+			"You have a +3 bonus to attack rolls and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hits a target, the ammunition is no longer magical.",
 			"This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity."
 		]
 	},
@@ -50,11 +133,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Weapon (Any Ammunition)",
 			"This magic ammunition is meant to slay creatures of a particular type, which the GM chooses or determines randomly by rolling on the table below. If a creature of that type takes damage from the ammunition, the creature makes a DC 17 Constitution saving throw, taking an extra 6d10 Force damage on a failed save or half as much extra damage on a successful one.",
@@ -71,11 +155,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"Your Constitution is 19 while you wear this amulet. It has no effect on you if your Constitution is 19 or higher without it."
@@ -91,11 +176,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing this amulet, you can't be targeted by Divination spells or perceived through magical scrying sensors unless you allow it."
@@ -111,11 +197,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing this amulet, you can take a Magic action to name a location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence (Arcana) check. On a successful check, you cast Plane Shift. On a failed check, you and each creature and object within 15 feet of you travel toa random destination determined by rolling 1d100 and consulting the following table.1d100 Destination 01-60 Random location on the plane you named 61-70 Random location on an Inner Plane determined by rolling 1d6: on a 1, the Plane of Air; on a 2, the Plane of Earth; on a 3, the Plane of Fire; on a 4, the Plane of Water; on a 5, the Feywild; on a 6, the Shadowfell 81-90 Random location on an Outer Plane determined by rolling 1d8: on a 1, the Abyss; on a 2, Acheron; on a 3, Carceri; on a 4, Gehenna;on a 5, Hades; on a 6, Limbo; on a 7, the Nine Hells; on an 8, Pandemonium 91-00  Random location on the Astral Plane"
@@ -131,11 +218,12 @@
 			"name": "Armor",
 			"url": "/api/2024/equipment-categories/armor"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Armor (Shield)",
 			"While holding this Shield, you can take a Bonus Action to cause it to animate. The Shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The Shield remains animate for 1 minute, until you take a Bonus Action to end this effect, or until you die or have the Incapacitated condition, at which point the Shield falls to the ground or into your hand if you have one free."
@@ -151,11 +239,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This item first appears to be a sealed iron barrel weighing 500 pounds. The barrel has a hidden catch, which can be found with a successful DC 20 Intelligence (Investigation) check. Releasing the catch unlocks a hatch at one end of the barrel, allowing two Medium or smaller creatures to crawl inside. Ten levers are set in a row at the far end, each in a neutral position, able to move up or down. When certain levers are used, the apparatus transforms to resemble a giant lobster.",
@@ -175,14 +264,94 @@
 			"name": "Armor",
 			"url": "/api/2024/equipment-categories/armor"
 		},
+		"variants": [
+			{
+				"index": "armor-1",
+				"url": "/api/2024/magic-items/armor-1",
+				"name": "Armor +1"
+			},
+			{
+				"index": "armor-2",
+				"url": "/api/2024/magic-items/armor-2",
+				"name": "Armor +2"
+			},
+			{
+				"index": "armor-3",
+				"url": "/api/2024/magic-items/armor-3",
+				"name": "Armor +3"
+			}
+		],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare (+1), Very Rare (+2), or Legendary (+3)"
 		},
-
 		"desc": [
 			"Armor (Any Light, Medium, or Heavy)",
 			"You have a bonus to Armor Class while wearing this armor. The bonus is determined by its rarity."
+		]
+	},
+	{
+		"index": "armor-1",
+		"url": "/api/2024/magic-items/armor-1",
+		"image" : "/api/images/magic-items/armor.png",
+		"name": "Armor +1",
+		"equipment_category": {
+			"index": "armor",
+			"name": "Armor",
+			"url": "/api/2024/equipment-categories/armor"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": false,
+		"rarity" : {
+			"name": "Rare"
+		},
+		"desc": [
+			"Armor (Any Light, Medium, or Heavy)",
+			"You have a +1 bonus to Armor Class while wearing this armor."
+		]
+	},
+	{
+		"index": "armor-2",
+		"url": "/api/2024/magic-items/armor-2",
+		"image" : "/api +2/images/magic-items/armor.png",
+		"name": "Armor +2",
+		"equipment_category": {
+			"index": "armor",
+			"name": "Armor",
+			"url": "/api/2024/equipment-categories/armor"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": false,
+		"rarity" : {
+			"name": "Very Rare"
+		},
+		"desc": [
+			"Armor (Any Light, Medium, or Heavy)",
+			"You have a +2 bonus to Armor Class while wearing this armor."
+		]
+	},
+	{
+		"index": "armor-3",
+		"url": "/api/2024/magic-items/armor-3",
+		"image" : "/api/images/magic-items/armor.png",
+		"name": "Armor +3",
+		"equipment_category": {
+			"index": "armor",
+			"name": "Armor",
+			"url": "/api/2024/equipment-categories/armor"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": false,
+		"rarity" : {
+			"name": "Legendary"
+		},
+		"desc": [
+			"Armor (Any Light, Medium, or Heavy)",
+			"You have a +3 bonus to Armor Class while wearing this armor."
 		]
 	},
 	{
@@ -195,11 +364,12 @@
 			"name": "Armor",
 			"url": "/api/2024/equipment-categories/armor"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Armor (Plate Armor)",
 			"You have Resistance to Bludgeoning, Piercing, and Slashing damage while you wear this armor.",
@@ -216,11 +386,12 @@
 			"name": "Armor",
 			"url": "/api/2024/equipment-categories/armor"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Armor (Any Light, Medium, or Heavy)",
 			"You have Resistance to one type of damage while you wear this armor. The GM chooses the type or determines it randomly by rolling on the following table.1d10Damage Type1d10Damage Type1Acid6Necrotic2Cold7Poison3Fire8Psychic4Force9Radiant5Lightning10Thunder"
@@ -236,11 +407,12 @@
 			"name": "Armor",
 			"url": "/api/2024/equipment-categories/armor"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Armor (Any Light, Medium, or Heavy)",
 			"While wearing this armor, you have Resistance to one of the following damage types: Bludgeoning, Piercing, or Slashing. The GM chooses the type or determines it randomly.",
@@ -257,11 +429,12 @@
 			"name": "Armor",
 			"url": "/api/2024/equipment-categories/armor"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Armor (Shield)",
 			"You gain a +2 bonus to Armor Class against ranged attack rolls while you wield this Shield. This bonus is in addition to the Shield's normal bonus to AC.",
@@ -278,11 +451,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This heavy cloth bag contains 3d4 dry beans when found. The bag weighs half a pound regardless of how many beans it contains and becomes a non-magical item when it no longer contains any beans.",
@@ -300,11 +474,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This bag resembles a Bag of Holding but is a feedingorifice for a gigantic extradimensional creature. Turning the bag inside out closes the orifice.",
@@ -323,11 +498,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This bag has an interior space considerably larger than its outside dimensions-roughly 2 feet square and 4 feet deep on the inside. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 5 pounds, regardless of its contents. Retrieving an item from the bag requires a Utilize action.",
@@ -345,11 +521,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This bag made from gray, rust, or tan cloth appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object.",
@@ -431,11 +608,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This small black sphere measures 3/4 of an inch in diameter and weighs an ounce. Typically, 1d4 + 4 Beads of Force are found together.",
@@ -453,11 +631,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing this belt, you gain the followingbenefits:Dwarvish. You know Dwarvish.Friend of Dwarvenkind. You have Advantage on Charisma (Persuasion) checks made to interact with dwarves and duergar.Toughness. Your Constitution increases by 2, to a maximum of 20.In addition, while attuned to the belt, you have a 50 percent chance each day at dawn of growing a full beard if you can grow one, or a thicker beard if you already have one.If you aren't a dwarf or duergar, you gain the following additional benefits while wearing the belt:Darkvision. You have Darkvision with a range of 60 feet.Resilience. You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition."
@@ -473,11 +652,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rarity Varies"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing this belt, your Strength changes to a score granted by the belt. The type of giant determines the score (see the table below). The item has no effect on you if your Strength without the belt is equal to or greater than the belt's score.BeltStr.RarityBelt of Giant Strength (hill)21RareBelt of Giant Strength (frost or stone)23Very RareBelt of Giant Strength (fire)25Very RareBelt of Giant Strength (cloud)27LegendaryBelt of Giant Strength (storm)29Legendary"
@@ -493,11 +673,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Weapon (Battleaxe, Greataxe, or Halberd)",
 			"You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon, your Hit Point maximum increases by 1 for each level you have attained.",
@@ -516,11 +697,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have Advantage on Dexterity (Stealth) checks."
@@ -536,11 +718,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While you wear these boots, you can cast Levitate on yourself."
@@ -556,11 +739,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While you wear these boots, you can take a Bonus Action to click the boots' heels together. If you do, the boots double your Speed, and any creature that makes an Opportunity Attack against you has Disadvantage on the attack roll. If you click your heels together again, you end the effect.",
@@ -577,11 +761,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While you wear these boots, your Speed becomes 30 feet unless your Speed is higher, and your Speed isn't reduced by you carrying weight in excess of your carrying capacity or wearing Heavy Armor.",
@@ -598,11 +783,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"These furred boots are snug and feel warm. Whilewearing them, you gain the following benefits.",
@@ -620,11 +806,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While this bowl is filled with water and you are within 5 feet of it, you can take a Magic action to summon a Water Elemental. The elemental appears in an unoccupied space as close to the bowl as possible, understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action. The bowl can't be used this way again until the next dawn.",
@@ -641,11 +828,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing these bracers, you have proficiency with the Longbow and Shortbow, and you gain a +2 bonus to damage rolls made with such weapons."
@@ -661,11 +849,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing these bracers, you gain a +2 bonus to Armor Class if you are wearing no armor and using no Shield."
@@ -681,11 +870,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While you are within 5 feet of this brazier, you can take a Magic action to summon a Fire Elemental. The elemental appears in an unoccupied space as close to the brazier as possible, understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action. The brazier can't be used this way again until the next dawn."
@@ -701,11 +891,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing this brooch, you have Resistance to Force damage, and you have Immunity to damage from the Magic Missile spell."
@@ -721,11 +912,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This wooden broom functions like a mundane broom until you stand astride it and take a Magic action to make it hover beneath you, at which time it can be ridden in the air. It has a Fly Speed of 50 feet. It can carry up to 400 pounds, but its Fly Speed becomes 30 feet while carrying over 200 pounds.The broom stops hovering when you land or when you're no longer riding it.",
@@ -742,11 +934,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This candle's magic is activated when the candle is lit, which requires a Magic action. After burning for 4 hours, the candle is destroyed. You can snuff it out early for use at a later time. Deduct the time it burned in increments of 1 minute from its total burn time.",
@@ -764,11 +957,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This cape smells faintly of brimstone. While wearing it, you can use it to cast Dimension Door as a Magic action. This property can't be used again until the next dawn.",
@@ -785,11 +979,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"You can make this carpet hover and fly by taking a Magic action and using the carpet's command word. It moves according to your directions if you are within 30 feet of it.",
@@ -806,11 +1001,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While gently swinging this censer, you can take a Magic action to summon an Air Elemental. The elemental appears in an unoccupied space as close to the censer as possible, understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action. The censer can't be used this way again until the next dawn."
@@ -826,11 +1022,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This hollow metal tube measures about 1 foot long and weighs 1 pound. As a Magic action, you can strike the chime to cast Knock. The spell's customary knocking sound is replaced by the clear, ringing tone of the chime, which is audible out to 300 feet.",
@@ -847,11 +1044,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing this circlet, you can cast Scorching Ray with it (+5 to hit). The circlet can't cast this spell again until the next dawn."
@@ -867,11 +1065,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This fine garment is made of black silk interwoven with faint, silvery threads. While wearing it, you gain the following benefits.",
@@ -891,11 +1090,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While you wear this cloak, it magically projects an illusion that makes you appear to be standing in a place near your actual location, causing any creature to have Disadvantage on attack rolls against you. If you take damage, the property ceases to function until the start of your next turn. This property is suppressed while your Speed is 0."
@@ -911,11 +1111,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While you wear this cloak, Wisdom (Perception) checks made to perceive you have Disadvantage, and you have Advantage on Dexterity (Stealth) checks."
@@ -931,11 +1132,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"You gain a +1 bonus to Armor Class and saving throws while you wear this cloak."
@@ -951,11 +1153,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing this cloak, you have Advantage on Dexterity (Stealth) checks. In an area of Dim Light or Darkness, you can grip the edges of the cloak and use it to gain a Fly Speed of 40 feet. If you ever fail to grip the cloak's edges while flying in this way, or if you are no longer in Dim Light or Darkness, you lose this Fly Speed.",
@@ -972,11 +1175,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing this cloak, you can breathe underwater, and you have a Swim Speed of 60 feet."
@@ -992,11 +1196,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While touching this crystal orb, you can cast Scrying(save DC 17) with it."
@@ -1012,11 +1217,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While touching this crystal orb, you can cast Scrying (save DC 17) with it. In addition, you can cast Detect Thoughts (save DC 17) targeting creatures you can see within 30 feet of the spell's sensor. You don't need to concentrate on this Detect Thoughts spellto maintain it during its duration, but it ends if theScrying spell ends."
@@ -1032,11 +1238,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While touching this crystal orb, you can cast Scrying (save DC 17) with it. In addition, you can communicate telepathically with creatures you can see within 30 feet of the spell's sensor. You can also cast Suggestion (save DC 17) through the sensor on one of those creatures. You don't need to concentrate on this Suggestion to maintain it during its duration, but it ends if Scrying ends. You can't cast Suggestion in this way again until the next dawn."
@@ -1052,11 +1259,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While touching this crystal orb, you can cast Scrying (save DC 17) with it. In addition, you have Truesight with a range of 120 feet centered on the spell's sensor."
@@ -1072,11 +1280,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This cube is about an inch across. Each face has a distinct marking on it. You can press one of those faces, expend the number of charges required for it, and thereby cast the spell associated with it (save DC 17), as shown in the Cube of Force Faces table.",
@@ -1093,11 +1302,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"    This cube is 3 inches across and radiates palpable magical energy. The six sides of the cube are each keyed to a different plane of existence, one of which is the Material Plane. The other sides are linked to planes determined by the GM.",
@@ -1116,11 +1326,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Weapon (Dagger)",
 			"You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.",
@@ -1137,11 +1348,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Weapon (Greatsword, Longsword, Rapier, Scimitar, or Shortsword)",
 			"You can take a Bonus Action to toss this magic weapon into the air. When you do so, the weapon begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of itself. The weapon uses your attack roll and adds your ability modifier to damage rolls.",
@@ -1158,11 +1370,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This stoppered flask sloshes when shaken, as if itcontains water. The decanter weighs 2 pounds.",
@@ -1179,11 +1392,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This box contains a set of cards. A full deck has 34 cards: 32 depicting specific creatures and two with a mirrored surface. A deck found as treasure is usually missing 1d20 1 cards.",
@@ -1201,11 +1415,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Weapon (Any Melee Weapon)",
 			"You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon.",
@@ -1222,11 +1437,12 @@
 			"name": "Armor",
 			"url": "/api/2024/equipment-categories/armor"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Armor (Any Light, Medium, or Heavy)",
 			"While wearing this armor, you gain a +1 bonus to Armor Class, and you know Abyssal. In addition, the armor's clawed gauntlets allow your Unarmed Strikes to deal 1d8 Slashing damage instead of the usual Bludgeoning damage, and you gain a +1 bonus to the attack and damage rolls of your Unarmed Strikes.",
@@ -1243,11 +1459,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"You can take a Utilize action to place these shackles on a creature that has the Incapacitated condition. The shackles adjust to fit a creature of Small to Large size. The shackles prevent a creature bound by them from using any method of extradimensional movement, including teleportation or travel to a different plane of existence. They don't prevent the creature from passing through an interdimensional portal.",
@@ -1264,11 +1481,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Artifact"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"An orb is an etched crystal globe about 10 inches in diameter. When used, it grows to about 20 inches in diameter, and mist swirls inside it.",
@@ -1289,11 +1507,12 @@
 			"name": "Armor",
 			"url": "/api/2024/equipment-categories/armor"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Armor (Scale Mail)",
 			"Dragon Scale Mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them. Other times, hunters carefully preserve the hide of a dead dragon. In either case, Dragon Scale Mail is highly valued.",
@@ -1311,11 +1530,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Weapon (Any Simple or Martial)",
 			"You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.",
@@ -1332,11 +1552,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This powder resembles fine sand. There is enough of it for one use. When you take a Utilize action to throw the dust into the air, you and each creature and object within a 10-foot Emanation originating from you have the Invisible condition for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. Immediately after an affected creature makes an attack roll, deals damage, or casts a spell, the Invisible condition ends for that creature."
@@ -1352,11 +1573,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This small packet contains 1d6 + 4 pinches of dust. As a Utilize action, you can sprinkle a pinch of the dust over water, turning up to a 15-foot Cube of water into one marble-sized pellet, which floatsor rests near where the dust was sprinkled. The pellet's weight is negligible. A creature can take a Utilize action to smash the pellet against a hardsurface, causing the pellet to shatter and release the water the dust absorbed. Doing so destroys the pellet and ends its magic.",
@@ -1373,11 +1595,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"Found in a small container, this powder resembles Dust of Disappearance, and Identify reveals it to be such. There is enough of it for one use.",
@@ -1395,11 +1618,12 @@
 			"name": "Armor",
 			"url": "/api/2024/equipment-categories/armor"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Armor (Half Plate Armor or Plate Armor)",
 			"While wearing this armor, you gain a +2 bonus to Armor Class. In addition, if an effect moves you against your will along the ground, you can take a Reaction to reduce the distance you are moved by up to 10 feet."
@@ -1415,12 +1639,13 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Dwarf or a Creature Attuned to a Belt of Dwarvenkind",
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Weapon (Warhammer)",
 			"You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. It has the Thrown property with a normal range of 20 feet and a long range of 60 feet. When you hit with a ranged attack using this weapon, it deals an extra 1d8 Force damage, or an extra 2d8 Force damage if the target isa Giant. Immediately after hitting or missing, theweapon flies back to your hand."
@@ -1436,11 +1661,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"Each of the quiver's three compartments connects to an extradimensional space that allows the quiver to hold numerous items while never weighing more than 2 pounds. The shortest compartment can hold up to 60 Arrows, Bolts, or similar objects. The midsize compartment holds up to 18 Javelins or similar objects. The longest compartment holds up to 6 long objects, such as bows, Quarterstaffs, or Spears.",
@@ -1457,11 +1683,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"When you take a Magic action to remove the stopper of this painted brass bottle, a cloud of thick smoke flows out of it. At the end of your turn, the smoke disappears with a flash of harmless fire, and an Efreeti appears in an unoccupied space within 30 feet of you.The first time the bottle is opened, the GM rolls onthe following table to determine what happens.1d10  Effect2-9  The efreeti understands your languages and obeys your commands for 1 hour, after which it returns to the bottle, and a new stopper contains it. The stopper can't be removed for 24 hours. The next two times the bottle is opened, the same effect occurs. If the bottle is opened a fourth time, the efreeti escapes and disappears, and the bottle loses its magic."
@@ -1477,11 +1704,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This gem contains a mote of elemental energy. When you take a Utilize action to break the gem, an elemental is summoned (see \"Monsters\" for its stat block), and the gem ceases to be magical. The elemental appears in an unoccupied space as close to the broken gem as possible, understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action. The type of gem determines the elemental, as shown in the following table. Gem Summoned Elemental Emerald Water Elemental Red corundum Fire Elemental Yellow diamond Earth Elemental"
@@ -1497,11 +1725,12 @@
 			"name": "Armor",
 			"url": "/api/2024/equipment-categories/armor"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Armor (Chain Mail or Chain Shirt)",
 			"You gain a +1 bonus to Armor Class while you wear this armor. You are considered trained with this armor even if you lack training with Medium or Heavy armor."
@@ -1517,11 +1746,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"As a Magic action, you can open or close this bottle. Opening the bottle causes thick smoke to billow out, forming a cloud that fills a 60-foot Emanationoriginating from the bottle. The area within the smoke is Heavily Obscured.",
@@ -1539,11 +1769,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 or more charges to cast Charm Person (save DC13). For 1 charge, you cast the level 1 version of the spell. You increase the spell's level by one for each additional charge you expend. The lenses regain all expended charges daily at dawn."
@@ -1559,11 +1790,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"These crystal lenses fit over the eyes. While wearing them, your vision improves significantly out to a range of 1 foot, granting you Darkvision within that range and Advantage on Intelligence (Investigation) checks made to examine something within that range."
@@ -1579,11 +1811,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"These crystal lenses fit over the eyes. While wearing them, you have Advantage on Wisdom (Perception) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across."
@@ -1599,11 +1832,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rarity Varies"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This object looks like a feather. Different types of feather tokens exist, each with a different single-use effect. The GM chooses the kind of token or determines it randomly by rolling on the Feather Tokens table. The type of token determines its rarity.",
@@ -1626,11 +1860,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rarity Varies"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"A Figurine of Wondrous Power is a statuette small enough to fit in a pocket. If you take a Magic action to throw the figurine to a point on the ground within 60 feet of yourself, the figurine becomes a living creature specified in the figurine's description below. If the space where the creature wouldappear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
@@ -1658,11 +1893,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Weapon (Any Melee Weapon)",
 			"While holding this magic weapon, you can take a Bonus Action and use a command word to cause flames to engulf the damage-dealing part of the weapon. These flames shed Bright Light in a 40foot radius and Dim Light for an additional 40 feet. While the weapon is ablaze, it deals an extra 2d6 Fire damage on a hit. The flames last until you take a Bonus Action to issue the command again or until you drop, stow, or sheathe the weapon."
@@ -1678,11 +1914,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This object appears as a wooden box that measures 12 inches long, 6 inches wide, and 6 inches deep.It weighs 4 pounds and floats. It can be opened to store items inside. This item also has three command words, each requiring a Magic action to use:First Command Word. The box unfolds into a Rowboat.Second Command Word. The box unfolds into a Keelboat.Third Command Word. The Folding Boat folds back into a box if no creatures are aboard. Any objects in the vessel that can't fit inside the box remain outside the box as it folds. Any objects in the vessel that can fit inside the box do so.When the box becomes a vessel, its weight becomes that of a normal vessel its size, and anything that was stored in the box remains in the boat.",
@@ -1699,11 +1936,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Weapon (Glaive, Greatsword, Longsword, Rapier, Scimitar, or Shortsword)",
 			"When you hit with an attack roll using this magic weapon, the target takes an extra 1d6 Cold damage. In addition, while you hold the weapon, you have Resistance to Fire damage.",
@@ -1721,11 +1959,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"Your Strength is 19 while you wear these gauntlets. They have no effect on you if your Strength is 19 or higher without them."
@@ -1741,11 +1980,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This prism has 50 charges. While you are holding it, you can take a Magic action and use one of three command words to cause one of the following effects:First Command Word. The gem sheds Bright Light in a 30-foot radius and Dim Light for an additional 30 feet. This effect doesn't expend a charge. It lasts until you take a Bonus Action to repeat the command word or until you use another function of the gem.Second Command Word. You expend 1 charge and cause the gem to fire a brilliant beam of light at one creature you can see within 60 feet of yourself. The creature must succeed on a DC 15 Constitution saving throw or have the Blinded condition for 1 minute. The creature repeats the save at the end of each of its turns, ending the effect on itself on a success.Third Command Word. You expend 5 charges and cause the gem to flare with intense light in a 30foot Cone. Each creature in the Cone makes a saving throw as if struck by the beam created with the second command word.When all of the gem's charges are expended, the gem becomes a nonmagical jewel worth 50 GP."
@@ -1761,11 +2001,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This gem has 3 charges. As a Magic action, you can expend 1 charge. For the next 10 minutes, you have Truesight out to 120 feet when you peer through the gem.",
@@ -1782,11 +2023,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Weapon (Any Simple or Martial)",
 			"You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.",
@@ -1803,11 +2045,12 @@
 			"name": "Armor",
 			"url": "/api/2024/equipment-categories/armor"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Armor (Studded Leather Armor)",
 			"While wearing this armor, you gain a +1 bonus to Armor Class. You can also take a Bonus Action tocause the armor to assume the appearance of a normal set of clothing or some other kind of armor. You decide what it looks like-including color, style, and accessories-but the armor retains its normal bulk and weight. The illusory appearance lasts until you use this property again or doff the armor."
@@ -1823,11 +2066,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"If you're hit by an attack roll made with a Ranged or Thrown weapon while wearing these gloves, you can take a Reaction to reduce the damage by 1d10plus your Dexterity modifier if you have a free hand. If you reduce the damage to 0, you can catch the ammunition or weapon if it is small enough for you to hold in that hand."
@@ -1843,11 +2087,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing these gloves, you have a Climb Speed and a Swim Speed equal to your Speed, and you gain a +5 bonus to Strength (Athletics) checks made to climb or swim."
@@ -1863,11 +2108,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing these dark lenses, you have Darkvision out to 60 feet. If you already have Darkvision, wearing the goggles increases its range by 60 feet."
@@ -1883,11 +2129,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Weapon (Maul or Warhammer)",
 			"You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.",
@@ -1905,11 +2152,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This backpack has a central pouch and two side pouches, each of which is an extradimensional space. Each side pouch can hold up to 200 pounds of material, not exceeding a volume of 25 cubic feet. The central pouch can hold up to 500 pounds of material, not exceeding a volume of 64 cubic feet. Thehaversack always weighs 5 pounds, regardless of its contents.",
@@ -1929,11 +2177,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing this hat, you can cast the Disguise Self spell. The spell ends if the hat is removed."
@@ -1949,11 +2198,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"Your Intelligence is 19 while you wear this headband. It has no effect on you if your Intelligence is 19 or higher without it."
@@ -1969,11 +2219,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This helm is set with 1d10 diamonds, 2d10 rubies, 3d10 fire opals, and 4d10 opals. Any gem pried from the helm crumbles to dust. When all the gems are removed or destroyed, the helm loses its magic.You gain the following benefits while wearing thehelm.",
@@ -1994,11 +2245,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing this helm, you can cast Comprehend Languages from it."
@@ -2014,11 +2266,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing this helm, you have telepathy with a range of 30 feet, and you can cast Detect Thoughts or Suggestion (save DC 13) from the helm. Once either spell is cast from the helm, that spell can't be cast from it again until the next dawn."
@@ -2034,11 +2287,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This helm has 3 charges. While wearing it, you can expend 1 charge to cast Teleport from it. The helm regains 1d3 expended charges daily at dawn."
@@ -2054,12 +2308,13 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Paladin",
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Weapon (Any Simple or Martial)",
 			"You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a Fiend or an Undead with it, that creature takes an extra 2d10 Radiant damage.While you hold the drawn weapon, it creates a10-foot Emanation originating from you. You and all creatures Friendly to you in the Emanation have Advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the Paladin class, the size of the Emanation increases to 30 feet."
@@ -2075,11 +2330,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"You can take a Magic action to blow the horn, which emits a thunderous blast in a 30-foot Cone that is audible out to 600 feet. Each creature in the Cone makes a DC 15 Constitution saving throw. On a failed save, a creature takes 5d8 Thunder damage and has the Deafened condition for 1 minute. On a successful save, a creature takes half as much damage only. Glass or crystal objects in the Cone that aren't being worn or carried take 10d8 Thunder damage.",
@@ -2096,13 +2352,131 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [
+			{
+				"index": "horn-of-valhalla-1",
+				"url": "/api/2024/magic-items/horn-of-valhalla-1",
+				"name": "Silver Horn of Valhalla"
+			},
+			{
+				"index": "horn-of-valhalla-2",
+				"url": "/api/2024/magic-items/horn-of-valhalla-2",
+				"name": "Brass Horn of Valhalla"
+			},
+			{
+				"index": "horn-of-valhalla-3",
+				"url": "/api/2024/magic-items/horn-of-valhalla-3",
+				"name": "Bronze Horn of Valhalla"
+			},
+			{
+				"index": "horn-of-valhalla-4",
+				"url": "/api/2024/magic-items/horn-of-valhalla-4",
+				"name": "Iron Horn of Valhalla"
+			}
+		],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare (Silver or Brass), Very Rare (Bronze), or Legendary (Iron)"
 		},
-
 		"desc": [
 			"Wondrous Item",
+			"You can take a Magic action to blow this horn. In response, warrior spirits from the plane of Ysgard appear in unoccupied spaces within 60 feet of you. Each spirit uses the Berserker stat block and returns to Ysgard after 1 hour or when it drops to 0 Hit Points. The spirits look like living, breathing warriors, and they have Immunity to the Charmed and Frightened conditions. Once you use the horn, it can't be used again until 7 days have passed.",
+			"Four types of Horn of Valhalla are known to exist, each made of a different metal. The horn's type determines how many spirits it summons, as well as the requirement for its use. The GM chooses the horn's type or determines it randomly by rolling on the following table.",
+			"If you blow the horn without meeting its requirement, the summoned spirits attack you. If you meet the requirement, they are Friendly to you and your allies and follow your commands.1d100Horn TypeSpiritsRequirement01-40Silver2None41-75Brass3Proficiency with allSimple weapons76-90Bronze4Training with all Medium armor91-00Iron5Proficiency with allMartial weapons"
+		]
+	},
+	{
+		"index": "horn-of-valhalla-1",
+		"url": "/api/2024/magic-items/horn-of-valhalla-1",
+		"image" : "/api/images/magic-items/horn-of-valhalla.png",
+		"name": "Silver Horn of Valhalla",
+		"equipment_category": {
+			"index": "wondrous-items",
+			"name": "Wondrous Items",
+			"url": "/api/2024/equipment-categories/wondrous-items"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": false,
+		"rarity" : {
+			"name": "Rare"
+		},
+		"desc": [
+			"Wondrous Item",
+			"Rare (Silver)",
+			"You can take a Magic action to blow this horn. In response, warrior spirits from the plane of Ysgard appear in unoccupied spaces within 60 feet of you. Each spirit uses the Berserker stat block and returns to Ysgard after 1 hour or when it drops to 0 Hit Points. The spirits look like living, breathing warriors, and they have Immunity to the Charmed and Frightened conditions. Once you use the horn, it can't be used again until 7 days have passed.",
+			"Four types of Horn of Valhalla are known to exist, each made of a different metal. The horn's type determines how many spirits it summons, as well as the requirement for its use. The GM chooses the horn's type or determines it randomly by rolling on the following table.",
+			"If you blow the horn without meeting its requirement, the summoned spirits attack you. If you meet the requirement, they are Friendly to you and your allies and follow your commands.1d100Horn TypeSpiritsRequirement01-40Silver2None41-75Brass3Proficiency with allSimple weapons76-90Bronze4Training with all Medium armor91-00Iron5Proficiency with allMartial weapons"
+		]
+	},
+	{
+		"index": "horn-of-valhalla-2",
+		"url": "/api/2024/magic-items/horn-of-valhalla-2",
+		"image" : "/api/images/magic-items/horn-of-valhalla.png",
+		"name": "Brass Horn of Valhalla",
+		"equipment_category": {
+			"index": "wondrous-items",
+			"name": "Wondrous Items",
+			"url": "/api/2024/equipment-categories/wondrous-items"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": false,
+		"rarity" : {
+			"name": "Rare"
+		},
+		"desc": [
+			"Wondrous Item",
+			"Rare (Brass)",
+			"You can take a Magic action to blow this horn. In response, warrior spirits from the plane of Ysgard appear in unoccupied spaces within 60 feet of you. Each spirit uses the Berserker stat block and returns to Ysgard after 1 hour or when it drops to 0 Hit Points. The spirits look like living, breathing warriors, and they have Immunity to the Charmed and Frightened conditions. Once you use the horn, it can't be used again until 7 days have passed.",
+			"Four types of Horn of Valhalla are known to exist, each made of a different metal. The horn's type determines how many spirits it summons, as well as the requirement for its use. The GM chooses the horn's type or determines it randomly by rolling on the following table.",
+			"If you blow the horn without meeting its requirement, the summoned spirits attack you. If you meet the requirement, they are Friendly to you and your allies and follow your commands.1d100Horn TypeSpiritsRequirement01-40Silver2None41-75Brass3Proficiency with allSimple weapons76-90Bronze4Training with all Medium armor91-00Iron5Proficiency with allMartial weapons"
+		]
+	},
+	{
+		"index": "horn-of-valhalla-3",
+		"url": "/api/2024/magic-items/horn-of-valhalla-3",
+		"image" : "/api/images/magic-items/horn-of-valhalla.png",
+		"name": "Bronze Horn of Valhalla",
+		"equipment_category": {
+			"index": "wondrous-items",
+			"name": "Wondrous Items",
+			"url": "/api/2024/equipment-categories/wondrous-items"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": false,
+		"rarity" : {
+			"name": "Very Rare"
+		},
+		"desc": [
+			"Wondrous Item",
+			"Very Rare (Bronze)",
+			"You can take a Magic action to blow this horn. In response, warrior spirits from the plane of Ysgard appear in unoccupied spaces within 60 feet of you. Each spirit uses the Berserker stat block and returns to Ysgard after 1 hour or when it drops to 0 Hit Points. The spirits look like living, breathing warriors, and they have Immunity to the Charmed and Frightened conditions. Once you use the horn, it can't be used again until 7 days have passed.",
+			"Four types of Horn of Valhalla are known to exist, each made of a different metal. The horn's type determines how many spirits it summons, as well as the requirement for its use. The GM chooses the horn's type or determines it randomly by rolling on the following table.",
+			"If you blow the horn without meeting its requirement, the summoned spirits attack you. If you meet the requirement, they are Friendly to you and your allies and follow your commands.1d100Horn TypeSpiritsRequirement01-40Silver2None41-75Brass3Proficiency with allSimple weapons76-90Bronze4Training with all Medium armor91-00Iron5Proficiency with allMartial weapons"
+		]
+	},
+	{
+		"index": "horn-of-valhalla-4",
+		"url": "/api/2024/magic-items/horn-of-valhalla-4",
+		"image" : "/api/images/magic-items/horn-of-valhalla.png",
+		"name": "Iron Horn of Valhalla",
+		"equipment_category": {
+			"index": "wondrous-items",
+			"name": "Wondrous Items",
+			"url": "/api/2024/equipment-categories/wondrous-items"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": false,
+		"rarity" : {
+			"name": "Legendary"
+		},
+		"desc": [
+			"Wondrous Item",
+			"Legendary (Iron)",
 			"You can take a Magic action to blow this horn. In response, warrior spirits from the plane of Ysgard appear in unoccupied spaces within 60 feet of you. Each spirit uses the Berserker stat block and returns to Ysgard after 1 hour or when it drops to 0 Hit Points. The spirits look like living, breathing warriors, and they have Immunity to the Charmed and Frightened conditions. Once you use the horn, it can't be used again until 7 days have passed.",
 			"Four types of Horn of Valhalla are known to exist, each made of a different metal. The horn's type determines how many spirits it summons, as well as the requirement for its use. The GM chooses the horn's type or determines it randomly by rolling on the following table.",
 			"If you blow the horn without meeting its requirement, the summoned spirits attack you. If you meet the requirement, they are Friendly to you and your allies and follow your commands.1d100Horn TypeSpiritsRequirement01-40Silver2None41-75Brass3Proficiency with allSimple weapons76-90Bronze4Training with all Medium armor91-00Iron5Proficiency with allMartial weapons"
@@ -2118,11 +2492,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"These horseshoes come in a set of four. As a Magic action, you can touch one of the horseshoes to the hoof of a horse or similar creature, whereupon the horseshoe affixes itself to the hoof. Removing a horseshoe also takes a Magic action.",
@@ -2139,11 +2514,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"These horseshoes come in a set of four. As a Magic action, you can touch one of the horseshoes to the hoof of a horse or similar creature, whereupon the horseshoe affixes itself to the hoof. Removing a horseshoe also takes a Magic action.",
@@ -2160,11 +2536,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Rod",
 			"This iron rod has a button on one end. You can take a Utilize action to press the button, which causes the rod to become magically fixed in place. Until you or another creature takes a Utilize action to push the button again, the rod doesn't move, even if it defies gravity. The rod can hold up to 8,000 pounds of weight. More weight causes the rod to deactivate and fall. A creature can take a Utilize action to make a DC 30 Strength (Athletics) check, moving the fixed rod up to 10 feet on a successful check."
@@ -2180,11 +2557,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"As a Magic action, you can place this 1-inch adamantine statuette on the ground and, using a command word, cause it to grow rapidly into asquare adamantine tower. Repeating the commandword causes the tower to revert to statuette form, which works only if the tower is empty. Each creature in the area where the tower appears is pushed to an unoccupied space outside but next to the tower. Objects in the area that aren't being worn or carried are also pushed clear of the tower.",
@@ -2202,11 +2580,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rarity Varies"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"Roughly marble sized, Ioun Stones are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun Stones exist, each type a distinct combination of shape and color.",
@@ -2242,11 +2621,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This rusty iron sphere measures 3 inches in diameter and weighs 1 pound. You can take a Magic action to throw the sphere at a Huge or smaller creature you can see within 60 feet of yourself. As the sphere moves through the air, it opens into a tangle of metal bands.",
@@ -2265,11 +2645,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While holding this brass-stoppered iron flask, you can take a Magic action to target a creature that you can see within 60 feet of yourself. If the flask is empty and the target is native to a plane of existence other than the one you're on, the target must succeed on a DC 17 Wisdom saving throw or be trapped in the flask. If the target has been trapped by the flask before, it has Advantage on the save. Once trapped, a creature remains in the flask until released. The flask can hold only one creature at atime. A creature trapped in the flask doesn't age anddoesn't need to breathe, eat, or drink.",
@@ -2287,11 +2668,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Weapon (Javelin)",
 			"Each time you make an attack roll with this magic weapon and hit, you can have it deal Lightning damage instead of Piercing damage.",
@@ -2308,11 +2690,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While lit, this hooded lantern burns for 6 hours on 1 pint of oil, shedding Bright Light in a 30-foot radius and Dim Light for an additional 30 feet. Invisible creatures and objects are visible as long as they are in the lantern's Bright Light. You can take a Utilize action to lower the hood, reducing the lantern's light to Dim Light in a 5-foot radius."
@@ -2328,11 +2711,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Weapon (Glaive, Greatsword, Longsword, Rapier, Scimitar, Sickle, or Shortsword)",
 			"You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. While the weapon is on your person, you also gain a +1 bonus to saving throws.",
@@ -2350,11 +2734,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Weapon (Mace)",
 			"When you hit a Fiend or an Undead with this magic weapon, that creature takes an extra 2d6 Radiant damage. If the target has 25 Hit Points or fewer after taking this damage, it must succeed on a DC 15 Wisdom saving throw or be destroyed. On a successful save, the creature has the Frightened condition until the end of your next turn.",
@@ -2371,11 +2756,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Weapon (Mace)",
 			"You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. The bonus increases to +3 when you use the weapon to attack a Construct.",
@@ -2392,11 +2778,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Weapon (Mace)",
 			"This magic weapon has 3 charges and regains 1d3 expended charges daily at dawn. While holding the weapon, you can take a Magic action and expend1 charge to release a wave of terror from it. Each creature of your choice within 30 feet of you must succeed on a DC 15 Wisdom saving throw or have the Frightened condition for 1 minute. While Frightened in this way, a creature must spend its turns trying to move as far away from you as it can, andit can't make Opportunity Attacks. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can take the Dodge action. At the end of each of its turns, a creature repeats the save, ending the effect on itself on a success."
@@ -2412,11 +2799,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"You have Advantage on saving throws against spells while you wear this cloak."
@@ -2432,11 +2820,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This book contains health and nutrition tips, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Constitution increases by 2, to a maximum of 30. The manual then loses its magic but regains it in a century."
@@ -2452,11 +2841,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This book describes fitness exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Strengthincreases by 2, to a maximum of 30. The manual then loses its magic but regains it in a century."
@@ -2472,11 +2862,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This tome contains information and incantations necessary to make a particular type of golem. The GM chooses the type or determines it randomly by rolling on the accompanying table. To decipher and use the manual, you must be a spellcaster with at least two level 5 spell slots. A creature that can't use a Manual of Golems and attempts to read it takes 6d6 Psychic damage.",
@@ -2494,11 +2885,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This book contains coordination and balance exercises, and its words are charged with magic.If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Dexterity increases by 2, to a maximum of 30. The manual then loses its magic but regains it in a century."
@@ -2514,11 +2906,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This fine wooden box contains 1d4 pots of pigmentand a brush (weighing 1 pound in total).",
@@ -2538,11 +2931,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"The medallion has 5 charges. While wearing it, you can expend 1 charge to cast Detect Thoughts (save DC 13) from it. The medallion regains 1d4 expended charges daily at dawn."
@@ -2558,11 +2952,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"When this 4-foot-tall, 2-foot-wide mirror is viewed indirectly, its surface shows faint images of creatures. The mirror weighs 50 pounds, and it has AC 11, HP 10, Immunity to Poison and Psychic damage, and Vulnerability to Bludgeoning damage. It shatters and is destroyed when reduced to 0 Hit Points.",
@@ -2585,11 +2980,12 @@
 			"name": "Armor",
 			"url": "/api/2024/equipment-categories/armor"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Armor (Any Medium or Heavy, Except Hide Armor)",
 			"Mithral is a light, flexible metal. Armor made of this substance can be worn under normal clothes. If the armor normally imposes Disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't."
@@ -2605,11 +3001,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"Usually found in a box or pouch, this deck contains a number of cards made of ivory or vellum. Most (75 percent) of these decks have thirteen cards, but some have twenty-two. Use the appropriate column of the Mysterious Deck table when randomly determining cards drawn from the deck.",
@@ -2648,11 +3045,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing this necklace, you can breathe normally in any environment, and you have Advantage on saving throws made to avoid or end the Poisoned condition."
@@ -2668,11 +3066,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This necklace has 1d6 + 3 beads hanging from it. You can take a Magic action to detach a bead and throw it up to 60 feet away. When it reaches the end of its trajectory, the bead detonates as a level 3 Fireball (save DC 15).",
@@ -2689,12 +3088,13 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Cleric, Druid, or Paladin",
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This necklace has 1d4 + 2 magic beads made from aquamarine, black pearl, or topaz. It also has many nonmagical beads made from stones such as amber, bloodstone, citrine, coral, jade, pearl, or quartz. If a magic bead is removed from the necklace, that bead loses its magic.",
@@ -2711,11 +3111,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Weapon (Any Simple or Martial)",
 			"You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.",
@@ -2732,11 +3133,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Weapon (Longbow or Shortbow)",
 			"When you nock an arrow on this bow, it whispers in Elvish, \"Swift defeat to my enemies.\" When you use this weapon to make a ranged attack, you can utter or sign the following command words: \"Swift death to you who have wronged me.\" The target of your attack becomes your sworn enemy until it dies or until dawn 7 days later. You can have only one such sworn enemy at a time. When your sworn enemy dies, you can choose a new one after the next dawn.",
@@ -2754,11 +3156,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Potion",
 			"One vial of this oil can cover one Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of the Etherealness spell for 1 hour.",
@@ -2775,11 +3178,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Potion",
 			"One vial of this oil can coat one Melee weapon or twenty pieces of ammunition, but only ammunition and Melee weapons that are nonmagical and deal Slashing or Piercing damage are affected. Applying the oil takes 1 minute, after which the oil magicallyseeps into whatever it coats, turning the coated weapon into a +3 Weapon or the coated ammunition into +3 Ammunition.",
@@ -2796,11 +3200,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Potion",
 			"One vial of this oil can cover one Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of the Freedom of Movement spell for 8 hours.",
@@ -2817,12 +3222,13 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Spellcaster",
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While this pearl is on your person, you can take a Magic action to regain one expended spell slot of level 3 or lower. Once you use the pearl, it can't be used again until the next dawn."
@@ -2838,11 +3244,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing this pendant, you can take a Magic action to regain 2d4 + 2 Hit Points. Once used, this property can't be used again until the next dawn.",
@@ -2859,11 +3266,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This delicate silver chain has a brilliant-cut black gem pendant. While you wear it, you have Immunity to the Poisoned condition and Poison damage."
@@ -2879,11 +3287,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing this pendant, you gain the followingbenefits.",
@@ -2901,11 +3310,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Potion",
 			"The next time you see a creature within 10 minutes after drinking this philter, you are charmed by that creature and have the Charmed condition for 1 hour.",
@@ -2922,11 +3332,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"These pipes have 3 charges and regain 1d3 expended charges daily at dawn. You can take a Magic action to play them and expend 1 charge to create an eerie, spellbinding tune. Each creature of your choice within 30 feet of you must succeed on a DC 15 Wisdom saving throw or have the Frightened condition for 1 minute. A creature that fails the save repeats it at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on its save is immune to the effect of these pipes for 24 hours."
@@ -2942,11 +3353,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While these pipes are on your person, ordinary rats and giant rats are Indifferent toward you and won't attack you unless you threaten or harm them.",
@@ -2964,11 +3376,12 @@
 			"name": "Armor",
 			"url": "/api/2024/equipment-categories/armor"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Armor (Half Plate Armor or Plate Armor)",
 			"While you're wearing this armor, you can take a Magic action and use a command word to gain the effect of the Etherealness spell. The spell ends immediately if you remove the armor or take a Magic action to repeat the command word. This property of the armor can't be used again until the next dawn."
@@ -2984,11 +3397,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.",
@@ -3008,11 +3422,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Potion",
 			"When you drink this potion, you can cast the level3 version of the Animal Friendship spell (save DC 13). Agitating this potion's muddy liquid brings little bits into view: a fish scale, a hummingbird feather, acat claw, or a squirrel hair."
@@ -3028,11 +3443,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Potion",
 			"When you drink this potion, you gain the effect of the Clairvoyance spell (no Concentration required).",
@@ -3049,11 +3465,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Common"
 		},
-
 		"desc": [
 			"Potion",
 			"When you drink this potion, you gain a Climb Speed equal to your Speed for 1 hour. During this time, you have Advantage on Strength (Athletics) checks to climb.",
@@ -3070,11 +3487,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Potion",
 			"When you drink this potion, you gain the \"reduce\" effect of the Enlarge/Reduce spell for 1d4 hours (no Concentration required).",
@@ -3091,11 +3509,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Potion",
 			"When you drink this potion, you gain a Fly Speed equal to your Speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft.This potion's clear liquid floats at the top of itsPotionStr.RarityPotion of Giant Strength (hill)21UncommonPotion of Giant Strength (frost or stone)23RarePotion of Giant Strength (fire)25RarePotion of Giant Strength (cloud)27Very RarePotion of Giant Strength (storm)29Legendary"
@@ -3111,11 +3530,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Potion",
 			"When you drink this potion, you gain the \"enlarge\" effect of the Enlarge/Reduce spell for 10 minutes (no Concentration required).",
@@ -3132,11 +3552,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rarity Varies"
 		},
-
 		"desc": [
 			"Potion",
 			"You regain Hit Points when you drink this potion. The number of Hit Points depends on the potion's rarity, as shown in the table below.",
@@ -3153,11 +3574,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Potion",
 			"Potion of Healing    (supreme)"
@@ -3173,11 +3595,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Potion",
 			"    10d4 + 20  Very Rare      When you drink this potion, you gain the effect of the Gaseous Form spell for 1 hour (no Concentration required) or until you end the effect as a Bonus Action.",
@@ -3194,11 +3617,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rarity Varies"
 		},
-
 		"desc": [
 			"Potion",
 			"When you drink this potion, your Strength score changes for 1 hour. The type of giant determines the score (see the table below). The potion has no effect on you if your Strength is equal to or greater than that score.",
@@ -3216,11 +3640,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Potion",
 			"This potion's container looks empty but feels as though it holds liquid. When you drink the potion, you have the Invisible condition for 1 hour. The effect ends early if you make an attack roll, deal damage, or cast a spell."
@@ -3236,11 +3661,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Potion",
 			"When you drink this potion, you gain the effect of the Detect Thoughts spell (save DC 13) for 10 minutes (no Concentration required).This potion's dense, purple liquid has an ovoidcloud of pink floating in it."
@@ -3256,11 +3682,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Potion",
 			"This concoction looks, smells, and tastes like a Potion of Healing or another beneficial potion. However, it is actually poison masked by illusion magic. Identify reveals its true nature.",
@@ -3277,11 +3704,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Potion",
 			"When you drink this potion, you have Resistance to one type of damage for 1 hour. The GM chooses the type or determines it randomly by rolling on the following table.1d10  Damage Type  1d10  Damage Type1 Acid  6  Necrotic2 Cold  7  Poison3 Fire  8  Psychic4 Force  9  Radiant5 Lightning  10  Thunder"
@@ -3297,11 +3725,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Potion",
 			"When you drink this potion, you gain the effect of the Haste spell for 1 minute (no Concentration required) without suffering the wave of lethargy that typically occurs when the effect ends.This potion's yellow fluid is streaked with blackand swirls on its own."
@@ -3317,11 +3746,12 @@
 			"name": "Potions",
 			"url": "/api/2024/equipment-categories/potions"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Potion",
 			"You can breathe underwater for 24 hours after drinking this potion.",
@@ -3338,11 +3768,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Ring",
 			"This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can expend 1 charge to cast one of the following spells (save DC 13) from it:• Animal Friendship• Fear (affects Beasts only)• Speak with Animals"
@@ -3358,11 +3789,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Ring",
 			"While wearing this ring, you can take a Magic action to summon a particular Djinni from the Elemental Plane of Air. The djinni appears in an unoccupied space you choose within 120 feet of yourself. It remains as long as you maintain Concentration, to a maximum of 1 hour, or until it drops to 0 Hit Points.",
@@ -3381,11 +3813,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Ring",
 			"Each Ring of Elemental Command is linked to one of the four Elemental Planes. The GM chooses or randomly determines the linked plane. For example, a Ring of Elemental Command (air) is linked to the Elemental Plane of Air.",
@@ -3404,11 +3837,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Ring",
 			"This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. When you fail a Dexterity saving throw while wearing the ring, you can take a Reaction to expend 1 charge to succeed on that save instead."
@@ -3424,11 +3858,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Ring",
 			"When you fall while wearing this ring, you descend 60 feet per round and take no damage from falling."
@@ -3444,11 +3879,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Ring",
 			"While you wear this ring, Difficult Terrain doesn't cost you extra movement. In addition, magic can neither reduce any of your Speeds nor cause you to have the Paralyzed or Restrained condition."
@@ -3464,11 +3900,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Ring",
 			"While wearing this ring, you can take a Magic action to give yourself the Invisible condition. You remain Invisible until the ring is removed or until you take a Bonus Action to become visible again."
@@ -3484,11 +3921,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Ring",
 			"While wearing this ring, you can cast Jump from it, but can target only yourself when you do so."
@@ -3504,11 +3942,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Ring",
 			"While wearing this ring, you are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can telepathically communicate with you only if you allow it.",
@@ -3526,11 +3965,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Ring",
 			"You gain a +1 bonus to Armor Class and saving throws while wearing this ring."
@@ -3546,11 +3986,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Ring",
 			"While wearing this ring, you regain 1d6 Hit Points every 10 minutes if you have at least 1 Hit Point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after 1d6 + 1 days if you have at least 1 Hit Point the whole time."
@@ -3566,11 +4007,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Ring",
 			"You have Resistance to one damage type while wearing this ring. The gemstone in the ring indicates the type, which the GM chooses or determines randomly by rolling on the following table."
@@ -3586,11 +4028,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Ring",
 			"You can cast Dancing Lights or Light from the ring.",
@@ -3612,11 +4055,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Ring",
 			"This ring stores spells cast into it, holding them until the attuned wearer uses them. The ring can store up to 5 levels worth of spells at a time. When found, it contains 1d6 1 levels of stored spells chosen by the GM.",
@@ -3634,11 +4078,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Ring",
 			"While wearing this ring, you have Advantage on saving throws against spells. If you succeed on the save for a spell of level 7 or lower, the spell has no effect on you. If that spell targeted only you and didn't create an area of effect, you can take a Reaction to deflect the spell back at the spell's caster; the caster must make a saving throw against the spell using their own spell save DC."
@@ -3654,11 +4099,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Ring",
 			"You have a Swim Speed of 40 feet while wearing this ring."
@@ -3674,11 +4120,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Ring",
 			"While wearing this ring, you can cast Telekinesisfrom it."
@@ -3694,11 +4141,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Ring",
 			"This ring has 3 charges and regains 1d3 expended charges daily at dawn. While wearing the ring, you can take a Magic action to expend 1 to 3 charges to make a ranged spell attack against one creature you can see within 60 feet of yourself. The ring produces a spectral ram's head and makes its attack roll with a +7 bonus. On a hit, for each charge you spend, the target takes 2d10 Force damage and is pushed 5 feet away from you.",
@@ -3715,11 +4163,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Ring",
 			"While wearing this ring, you can expend 1 of its 3 charges to cast Wish from it. The ring becomes nonmagical when you use the last charge."
@@ -3735,11 +4184,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Ring",
 			"If you take Cold damage while wearing this ring, the ring reduces the damage you take by 2d8.",
@@ -3756,11 +4206,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Ring",
 			"While wearing this ring, you cast Water Walk from it, targeting only yourself."
@@ -3776,11 +4227,12 @@
 			"name": "Rings",
 			"url": "/api/2024/equipment-categories/rings"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Ring",
 			"While wearing this ring, you can take a Magic action to gain X-ray vision with a range of 30 feet for 1 minute. To you, solid objects within that radius appear transparent and don't prevent light from passing through them. The vision can penetrate 1foot of stone, 1 inch of common metal, or up to 3 feet of wood or dirt. Thicker substances or a thin sheet of lead block the vision.",
@@ -3797,11 +4249,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This robe is adorned with eyelike patterns. Whileyou wear the robe, you gain the following benefits:All-Around Vision. The robe gives you Advantage on Wisdom (Perception) checks that rely on sight.Special Senses. You have Darkvision and Truesight, both with a range of 120 feet.",
@@ -3818,11 +4271,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This robe has 3 charges, and it regains 1d3 expended charges daily at dawn. While you wear it, you can take a Magic action and expend 1 charge to cause the garment to display a shifting pattern of dazzling hues until the end of your next turn. During this time, the robe sheds Bright Light in a 30-foot radius and Dim Light for an additional 30feet, and creatures that can see you have Disadvantage on attack rolls against you. Any creature in the Bright Light that can see you when the robe's power is activated must succeed on a DC 15 Wisdom saving throw or have the Stunned condition until the effect ends."
@@ -3838,11 +4292,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This black or dark-blue robe is embroidered with small white or silver stars. You gain a +1 bonus to saving throws while you wear it.",
@@ -3860,12 +4315,13 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Sorcerer, Warlock, or Wizard",
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This elegant garment is made from exquisite cloth and adorned with runes.",
@@ -3885,11 +4341,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This robe has cloth patches of various shapes and colors covering it. While wearing the robe, you can take a Magic action to detach one of the patches, causing it to become the object or creature it represents. Once the last patch is removed, the robe becomes an ordinary garment.The robe has two of each of the following patches:• Bullseye Lantern (filled and lit)• Dagger• Mirror• Pole• Rope (coiled)• SackIn addition, the robe has 4d4 other patches. The GM chooses the patches or determines them randomly by rolling on the following table.1d100  Patch 01-08 Bag of 100 GP   09-15 Silver coffer (1 foot long, 6 inches wide anddeep) worth 500 GP23-30  10 gems worth 100 GP each 31-44 Wooden ladder (24 feet long)   45-51 Riding Horse with a Riding Saddle60-68  4 Potions of Healing 69-75 Rowboat (12 feet long)   76-83 Spell Scroll containing one spell of level 1, 2, or3 (your choice) 84-90  2 Mastiffs  91-96 Window (2 feet by 4 feet, up to 2 feet deep), which you can place on a vertical surface you can reach 97-00  Portable Ram"
@@ -3905,11 +4362,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Rod",
 			"While holding this rod, you can take a Reaction to absorb a spell that is targeting only you and doesn't create an area of effect. The absorbed spell's effect is canceled, and the spell's energy-not the spell itself-is stored in the rod. The energy has the same level as the spell when it was cast. A canceled spell dissipates with no effect, and any resources usedto cast it are wasted. The rod can absorb and store up to 50 levels of energy over the course of its existence. Once the rod absorbs 50 levels of energy, it can't absorb more. If you are targeted by a spellthat the rod can't store, the rod has no effect on that spell.",
@@ -3928,11 +4386,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Rod",
 			"This rod has the following properties.",
@@ -3952,11 +4411,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Rod",
 			"This rod has a flanged head, and it functions as a magic Mace that grants a +3 bonus to attack rolls and damage rolls made with it. The rod has properties associated with six different buttons that are set in a row along the haft. It has three other properties as well, detailed below.",
@@ -3976,11 +4436,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Rod",
 			"You can take a Magic action to present the rod and command obedience from each creature of your choice that you can see within 120 feet of yourself.Each target must succeed on a DC 15 Wisdom saving throw or have the Charmed condition for 8 hours. While Charmed in this way, the creature regards you as its trusted leader. If harmed by you or your allies or commanded to do something contrary to its nature, a target ceases to be Charmed in this way. Once used, this property can't be used again until the next dawn."
@@ -3996,11 +4457,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Rod",
 			"While holding this rod, you can take a Magic action to activate it. The rod then instantly transports you and up to 199 other willing creatures you can see to a demiplane. You choose the form the demiplanetakes. It could be a tranquil garden, a cheery tavern, an immense palace, a tropical island, a fantastic carnival, or whatever else you can imagine. Regardless of its nature, the demiplane contains enough water and food to sustain its visitors, and the demiplane's environment can't harm its occupants. Everything else that can be interacted with there can existonly there. For example, a flower picked from a garden there disappears if it is taken outside the demiplane.",
@@ -4018,11 +4480,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This 60-foot length of rope can hold up to 3,000 pounds. While holding one end of the rope, you can take a Magic action to command the other end of the rope to animate and move toward a destination you choose, up to the rope's length away from you. That end moves 10 feet on your turn when you first command it and 10 feet at the start of each of your subsequent turns until reaching its destination or until you tell it to stop. You can also tell the rope to fasten itself securely to an object or to unfasten itself, to knot or unknot itself, or to coil itself for carrying.",
@@ -4039,11 +4502,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This rope is 30 feet long. While holding one end of the rope, you can take a Magic action to command the other end to dart forward and entangle one creature you can see within 20 feet of yourself. The target must succeed on a DC 15 Dexterity saving throw or have the Restrained condition. You can release the target by letting go of your end of the rope (causing the rope to coil up in the target's space)or by using a Bonus Action to repeat the command (causing the rope to coil up in your hand).",
@@ -4061,11 +4525,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This beetle-shaped medallion provides three bene-fits while it is on your person.Defense. You gain a +1 bonus to Armor Class.",
@@ -4083,11 +4548,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Weapon (Scimitar)",
 			"You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. In addition, you can make one attack with it as a Bonus Action on each of your turns."
@@ -4103,14 +4569,94 @@
 			"name": "Armor",
 			"url": "/api/2024/equipment-categories/armor"
 		},
+		"variants": [
+			{
+				"index": "shield-1",
+				"url": "/api/2024/magic-items/shield-1",
+				"name": "Shield +1"
+			},
+			{
+				"index": "shield-2",
+				"url": "/api/2024/magic-items/shield-2",
+				"name": "Shield +2"
+			},
+			{
+				"index": "shield-3",
+				"url": "/api/2024/magic-items/shield-3",
+				"name": "Shield +3"
+			}
+		],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon (+1), Rare (+2), or Very Rare (+3)"
 		},
-
 		"desc": [
 			"Armor (Shield)",
 			"While holding this Shield, you have a bonus to Armor Class determined by the Shield's rarity, in addition to the Shield's normal bonus to AC."
+		]
+	},
+	{
+		"index": "shield-1",
+		"url": "/api/2024/magic-items/shield-1",
+		"image" : "/api/images/magic-items/shield.png",
+		"name": "Shield +1",
+		"equipment_category": {
+			"index": "armor",
+			"name": "Armor",
+			"url": "/api/2024/equipment-categories/armor"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": false,
+		"rarity" : {
+			"name": "Uncommon"
+		},
+		"desc": [
+			"Armor (Shield)",
+			"While holding this Shield, you have a +1 bonus to Armor Class, in addition to the Shield's normal bonus to AC."
+		]
+	},
+	{
+		"index": "shield-2",
+		"url": "/api/2024/magic-items/shield-2",
+		"image" : "/api/images/magic-items/shield.png",
+		"name": "Shield +2",
+		"equipment_category": {
+			"index": "armor",
+			"name": "Armor",
+			"url": "/api/2024/equipment-categories/armor"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": false,
+		"rarity" : {
+			"name": "Rare"
+		},
+		"desc": [
+			"Armor (Shield)",
+			"While holding this Shield, you have a +2 bonus to Armor Class, in addition to the Shield's normal bonus to AC."
+		]
+	},
+	{
+		"index": "shield-3",
+		"url": "/api/2024/magic-items/shield-3",
+		"image" : "/api/images/magic-items/shield.png",
+		"name": "Shield +3",
+		"equipment_category": {
+			"index": "armor",
+			"name": "Armor",
+			"url": "/api/2024/equipment-categories/armor"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": false,
+		"rarity" : {
+			"name": "Very Rare"
+		},
+		"desc": [
+			"Armor (Shield)",
+			"While holding this Shield, you have a +3 bonus to Armor Class, in addition to the Shield's normal bonus to AC."
 		]
 	},
 	{
@@ -4123,11 +4669,12 @@
 			"name": "Armor",
 			"url": "/api/2024/equipment-categories/armor"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Armor (Shield)",
 			"While holding this Shield, you have Resistance to damage from attacks made with Ranged weapons.",
@@ -4144,11 +4691,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While you wear these light shoes, you can move up, down, and across vertical surfaces and along ceilings, while leaving your hands free. You have aClimb Speed equal to your Speed. However, the slippers don't allow you to move this way on a slippery surface, such as one covered by ice or oil."
@@ -4164,11 +4712,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This viscous, milky-white substance can form a permanent adhesive bond between any two objects. It must be stored in a jar or flask that has been coated inside with Oil of Slipperiness. When found, a container contains 1d6 + 1 ounces.",
@@ -4185,11 +4734,12 @@
 			"name": "Armor",
 			"url": "/api/2024/equipment-categories/armor"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Armor (Shield)",
 			"While holding this Shield, you have Advantage on saving throws against spells and other magical effects, and spell attack rolls have Disadvantage against you."
@@ -4205,11 +4755,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rarity Varies"
 		},
-
 		"desc": [
 			"Scroll",
 			"A Spell Scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the scroll crumbles to dust. If the casting is interrupted, the scroll isn't lost.",
@@ -4228,11 +4779,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This 2-foot-diameter black sphere is a hole in the multiverse, hovering in space and stabilized by a magical field surrounding it.",
@@ -4252,12 +4804,13 @@
 			"name": "Staffs",
 			"url": "/api/2024/equipment-categories/staffs"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Bard, Cleric, Druid, Sorcerer, Warlock, or Wizard",
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Staff",
 			"This staff has 10 charges. While holding the staff, you can use any of its properties:Cast Spell. You can expend 1 of the staff's charges to cast Charm Person, Command, or Comprehend Languages from it using your spell save DC.Reflect Enchantment. If you succeed on a saving throw against an Enchantment spell that targets only you, you can take a Reaction to expend 1 charge from the staff and turn the spell back on its caster as if you had cast the spell.Resist Enchantment. If you fail a saving throw against an Enchantment spell that targets only you, you can turn your failed save into a successful one. You can't use this property of the staff again until the next dawn.",
@@ -4274,12 +4827,13 @@
 			"name": "Staffs",
 			"url": "/api/2024/equipment-categories/staffs"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Druid, Sorcerer, Warlock, or Wizard",
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Staff",
 			"You have Resistance to Fire damage while you hold this staff.",
@@ -4297,12 +4851,13 @@
 			"name": "Staffs",
 			"url": "/api/2024/equipment-categories/staffs"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Druid, Sorcerer, Warlock, or Wizard",
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Staff",
 			"You have Resistance to Cold damage while you hold this staff.",
@@ -4320,12 +4875,13 @@
 			"name": "Staffs",
 			"url": "/api/2024/equipment-categories/staffs"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Bard, Cleric, or Druid",
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Staff",
 			"This staff has 10 charges. While holding the staff, you can cast one of the spells on the following table from it, using your spellcasting ability modifier. The table indicates how many charges you must expend to cast the spell.Spell  Charge CostLesser Restoration  2",
@@ -4342,12 +4898,13 @@
 			"name": "Staffs",
 			"url": "/api/2024/equipment-categories/staffs"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Sorcerer, Warlock, or Wizard",
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Staff",
 			"This staff has 20 charges and can be wielded as a magic Quarterstaff that grants a +2 bonus to attack rolls and damage rolls made with it. While holding it, you gain a +2 bonus to Armor Class, saving throws, and spell attack rolls.",
@@ -4365,11 +4922,12 @@
 			"name": "Staffs",
 			"url": "/api/2024/equipment-categories/staffs"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Staff",
 			"This staff can be wielded as a magic Quarterstaff that grants a +3 bonus to attack rolls and damage rolls made with it.",
@@ -4387,12 +4945,13 @@
 			"name": "Staffs",
 			"url": "/api/2024/equipment-categories/staffs"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Bard, Cleric, Druid, Sorcerer, Warlock, or Wizard",
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Staff",
 			"This staff has 10 charges.",
@@ -4411,12 +4970,13 @@
 			"name": "Staffs",
 			"url": "/api/2024/equipment-categories/staffs"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Sorcerer, Warlock, or Wizard",
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Staff",
 			"This staff has 50 charges and can be wielded as a magic Quarterstaff that grants a +2 bonus to attack rolls and damage rolls made with it. While you hold it, you gain a +2 bonus to spell attack rolls.",
@@ -4436,11 +4996,12 @@
 			"name": "Staffs",
 			"url": "/api/2024/equipment-categories/staffs"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Staff",
 			"As a Magic action, you can throw this staff so that it lands in an unoccupied space within 10 feet of you, causing the staff to become a Giant Constrictor Snake in that space. The snake is under your control and shares your Initiative count, taking its turn immediately after yours.",
@@ -4458,12 +5019,13 @@
 			"name": "Staffs",
 			"url": "/api/2024/equipment-categories/staffs"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Druid",
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Staff",
 			"This staff has 6 charges and can be wielded as a magic Quarterstaff that grants a +2 bonus to attack rolls and damage rolls made with it. While holding it, you have a +2 bonus to spell attack rolls.",
@@ -4482,11 +5044,12 @@
 			"name": "Staffs",
 			"url": "/api/2024/equipment-categories/staffs"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Staff",
 			"This staff can be wielded as a magic Quarterstaff that grants a +2 bonus to attack rolls and damage rolls made with it. It also has the following additional properties. Once one of these properties is used, it can't be used again until the next dawn.",
@@ -4507,11 +5070,12 @@
 			"name": "Staffs",
 			"url": "/api/2024/equipment-categories/staffs"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Staff",
 			"This staff has 3 charges and regains 1d3 expended charges daily at dawn.",
@@ -4528,11 +5092,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While touching this 5-pound stone to the ground, you can take a Magic action to summon an Earth Elemental. The elemental appears in an unoccupied space you choose within 30 feet of yourself, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action. The stone can't be used this way again until the next dawn."
@@ -4548,11 +5113,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While this polished agate is on your person, you gain a +1 bonus to ability checks and saving throws."
@@ -4568,11 +5134,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Weapon (Longsword)",
 			"This item appears to be a sword hilt.",
@@ -4591,11 +5158,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Weapon (Glaive, Greatsword, Longsword, Rapier, Scimitar, or Shortsword)",
 			"When you attack a creature with this magic weapon and roll a 20 on the d20 for the attack roll, that target takes an extra 15 Necrotic damage if it isn'ta Construct or an Undead, and you gain Temporary Hit Points equal to the amount of Necrotic damage taken."
@@ -4611,11 +5179,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Weapon (Glaive, Greatsword, Longsword, or Scimitar)",
 			"When you attack an object with this magic weapon and hit, maximize your weapon damage dice against the target.",
@@ -4632,11 +5201,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Weapon (Glaive, Greatsword, Longsword, Rapier, Scimitar, or Shortsword)",
 			"When you hit a creature with an attack using this magic weapon, the target takes an extra 2d6 Necrotic damage and must succeed on a DC 15Constitution saving throw or be unable to regain Hit Points for 1 hour. The target repeats the save at the end of each of its turns, ending the effect on itself on a success."
@@ -4652,12 +5222,13 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Cleric or Paladin",
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This talisman is a mighty symbol of goodness. A Fiend or an Undead that touches the talisman takes 8d6 Radiant damage and takes the damage again each time it ends its turn holding or carrying the talisman.",
@@ -4675,11 +5246,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While holding or wearing this talisman, you have Advantage on any Intelligence (Arcana) check you make to control a Sphere of Annihilation. In addition, when you start your turn in control of a Sphere of Annihilation, you can take a Magic action to move it 10 feet plus a number of additional feet equal to 10 times your Intelligence modifier. This movement doesn't have to be in a straight line."
@@ -4695,11 +5267,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This item symbolizes unrepentant evil. A creature that isn't a Fiend or an Undead that touches the talisman takes 8d6 Necrotic damage and takes the damage again each time it ends its turn holding or carrying the talisman.",
@@ -4717,11 +5290,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This book contains memory and logic exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Intelligence increases by 2, to a maximum of30. The manual then loses its magic but regains it in a century."
@@ -4737,11 +5311,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This book contains guidelines for influencing and charming others, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Charisma increases by 2, to a maximum of 30. The manual then loses its magic but regains it in a century."
@@ -4757,11 +5332,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This book contains intuition and insight exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Wisdom increases by 2, to a maximum of 30.The manual then loses its magic, but regains it in a century."
@@ -4777,11 +5353,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Weapon (Trident)",
 			"This magic weapon has 3 charges, and it regains 1d3 expended charges daily at dawn. While you carry it, you can expend 1 charge to cast Dominate Beast (save DC 15) from it on a Beast that has a Swim Speed."
@@ -4797,11 +5374,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This tube holds milky liquid with a strong alcohol smell. When found, a tube contains 1d6 + 1 ounces.",
@@ -4818,11 +5396,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Weapon (Any Simple or Martial)",
 			"This magic weapon deals an extra 2d6 damage to any creature it hits. This extra damage is of the same type as the weapon's normal damage."
@@ -4838,11 +5417,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Weapon (Glaive, Greatsword, Longsword, or Scimitar)",
 			"You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. In addition, the weapon ignores Resistance to Slashing damage.",
@@ -4859,11 +5439,12 @@
 			"name": "Wands",
 			"url": "/api/2024/equipment-categories/wands"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wand",
 			"This wand has 7 charges.",
@@ -4881,11 +5462,12 @@
 			"name": "Wands",
 			"url": "/api/2024/equipment-categories/wands"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wand",
 			"This wand has 7 charges. While holding it, you can take a Magic action to expend 1 charge. For 1 minute, you know the direction of the nearest creature Hostile to you within 60 feet, but not its distance from you. The wand can sense the presence of Hostile creatures that are Invisible, ethereal, disguised, or hidden, as well as those in plain sight. The effect ends if you stop holding the wand.",
@@ -4902,11 +5484,12 @@
 			"name": "Wands",
 			"url": "/api/2024/equipment-categories/wands"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wand",
 			"This wand has 7 charges.",
@@ -4923,12 +5506,13 @@
 			"name": "Wands",
 			"url": "/api/2024/equipment-categories/wands"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Spellcaster",
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wand",
 			"This wand has 7 charges. While holding it, you can expend no more than 3 charges to cast Fireball (save DC 15) from it. For 1 charge, you cast the level 3 version of the spell. You can increase the spell's level by 1 for each additional charge you expend.",
@@ -4945,12 +5529,13 @@
 			"name": "Wands",
 			"url": "/api/2024/equipment-categories/wands"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Spellcaster",
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wand",
 			"This wand has 7 charges. While holding it, you can expend no more than 3 charges to cast Lightning Bolt (save DC 15) from it. For 1 charge, you cast the level 3 version of the spell. You can increase the spell's level by 1 for each additional charge you expend.",
@@ -4967,11 +5552,12 @@
 			"name": "Wands",
 			"url": "/api/2024/equipment-categories/wands"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wand",
 			"This wand has 3 charges. While holding it, you can expend 1 charge to cast Detect Magic from it. The wand regains 1d3 expended charges daily at dawn."
@@ -4987,11 +5573,12 @@
 			"name": "Wands",
 			"url": "/api/2024/equipment-categories/wands"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wand",
 			"This wand has 7 charges. While holding it, you can expend no more than 3 charges to cast Magic Missile from it. For 1 charge, you cast the level 1 version of the spell. You can increase the spell's level by 1 for each additional charge you expend.",
@@ -5008,12 +5595,13 @@
 			"name": "Wands",
 			"url": "/api/2024/equipment-categories/wands"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Spellcaster",
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wand",
 			"This wand has 7 charges. While holding it, you can take a Magic action to expend 1 charge to cause a thin blue ray to streak from the tip toward a creature you can see within 60 feet of yourself. The target must succeed on a DC 15 Constitution savingthrow or have the Paralyzed condition for 1 minute. At the end of each of the target's turns, it repeats the save, ending the effect on itself on a success.",
@@ -5030,12 +5618,13 @@
 			"name": "Wands",
 			"url": "/api/2024/equipment-categories/wands"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Spellcaster",
 		"rarity" : {
 			"name": "Very Rare"
 		},
-
 		"desc": [
 			"Wand",
 			"This wand has 7 charges. While holding it, you can expend 1 charge to cast Polymorph (save DC 15) from it.",
@@ -5052,11 +5641,12 @@
 			"name": "Wands",
 			"url": "/api/2024/equipment-categories/wands"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wand",
 			"This wand has 3 charges and regains 1d3 expended charges daily at dawn. While holding it, you can take a Magic action to expend 1 charge, and if a secret door or trap is within 60 feet of you, the wand pulses and points at the one nearest to you."
@@ -5072,15 +5662,101 @@
 			"name": "Wands",
 			"url": "/api/2024/equipment-categories/wands"
 		},
+		"variants": [
+			{
+				"index": "wand-of-the-war-mage-1",
+				"url": "/api/2024/magic-items/wand-of-the-war-mage-1",
+				"name": "Wand of the War Mage +1"
+			},
+			{
+				"index": "wand-of-the-war-mage-2",
+				"url": "/api/2024/magic-items/wand-of-the-war-mage-2",
+				"name": "Wand of the War Mage +2"
+			},
+			{
+				"index": "wand-of-the-war-mage-3",
+				"url": "/api/2024/magic-items/wand-of-the-war-mage-3",
+				"name": "Wand of the War Mage +3"
+			}
+		],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Spellcaster",
 		"rarity" : {
 			"name": "Uncommon (+1), Rare (+2), or Very Rare (+3)"
 		},
-
 		"desc": [
 			"Wand",
 			"While holding this wand, you gain a bonus to spell attack rolls determined by the wand's rarity. In addition, you ignore Half Cover when making a spell attack roll."
+		]
+	},
+	{
+		"index": "wand-of-the-war-mage-1",
+		"url": "/api/2024/magic-items/wand-of-the-war-mage-1",
+		"image" : "/api/images/magic-items/wand-of-the-war-mage.png",
+		"name": "Wand of the War Mage +1",
+		"equipment_category": {
+			"index": "wands",
+			"name": "Wands",
+			"url": "/api/2024/equipment-categories/wands"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": true,
+		"limited-to": "Spellcaster",
+		"rarity" : {
+			"name": "Uncommon"
+		},
+		"desc": [
+			"Wand",
+			"Uncommon (+1)",
+			"While holding this wand, you gain a +1 bonus to spell attack rolls. In addition, you ignore Half Cover when making a spell attack roll."
+		]
+	},
+	{
+		"index": "wand-of-the-war-mage-2",
+		"url": "/api/2024/magic-items/wand-of-the-war-mage-2",
+		"image" : "/api/images/magic-items/wand-of-the-war-mage.png",
+		"name": "Wand of the War Mage +2",
+		"equipment_category": {
+			"index": "wands",
+			"name": "Wands",
+			"url": "/api/2024/equipment-categories/wands"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": true,
+		"limited-to": "Spellcaster",
+		"rarity" : {
+			"name": "Rare"
+		},
+		"desc": [
+			"Wand",
+			"Rare (+2)",
+			"While holding this wand, you gain a +2 bonus to spell attack rolls. In addition, you ignore Half Cover when making a spell attack roll."
+		]
+	},
+	{
+		"index": "wand-of-the-war-mage-3",
+		"url": "/api/2024/magic-items/wand-of-the-war-mage-3",
+		"image" : "/api/images/magic-items/wand-of-the-war-mage.png",
+		"name": "Wand of the War Mage +3",
+		"equipment_category": {
+			"index": "wands",
+			"name": "Wands",
+			"url": "/api/2024/equipment-categories/wands"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": true,
+		"limited-to": "Spellcaster",
+		"rarity" : {
+			"name": "Very Rare"
+		},
+		"desc": [
+			"Wand",
+			"Very Rare (+3)",
+			"While holding this wand, you gain a +3 bonus to spell attack rolls. In addition, you ignore Half Cover when making a spell attack roll."
 		]
 	},
 	{
@@ -5093,12 +5769,13 @@
 			"name": "Wands",
 			"url": "/api/2024/equipment-categories/wands"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"limited-to": "Spellcaster",
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wand",
 			"This wand has 7 charges. While holding it, you can expend 1 charge to cast Web (save DC 13) from it.",
@@ -5115,11 +5792,12 @@
 			"name": "Wands",
 			"url": "/api/2024/equipment-categories/wands"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wand",
 			"This wand has 7 charges. While holding it, you can take a Magic action to expend 1 charge while choosing a point within 120 feet of yourself. Thatlocation becomes the point of origin of a spell or other magical effect determined by rolling on the Wand of Wonder Effects table. Spells cast from the wand have a save DC of 15. If a spell's maximum range is normally less than 120 feet, it becomes 120 feet when cast from the wand. If an effect has multiple possible subjects, the GM determines randomly which among them are affected.",
@@ -5136,14 +5814,97 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [
+			{
+				"index": "weapon-1",
+				"url": "/api/2024/magic-items/weapon-1",
+				"name": "Weapon +1"
+			},
+			{
+				"index": "weapon-2",
+				"url": "/api/2024/magic-items/weapon-2",
+				"name": "Weapon +2"
+			},
+			{
+				"index": "weapon-3",
+				"url": "/api/2024/magic-items/weapon-3",
+				"name": "Weapon +3"
+			}
+		],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon (+1), Rare (+2), or Very Rare (+3)"
 		},
-
 		"desc": [
 			"Weapon (Any Simple or Martial)",
 			"You have a bonus to attack rolls and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity."
+		]
+	},
+	{
+		"index": "weapon-1",
+		"url": "/api/2024/magic-items/weapon-1",
+		"image" : "/api/images/magic-items/weapon.png",
+		"name": "Weapon +1",
+		"equipment_category": {
+			"index": "weapons",
+			"name": "Weapons",
+			"url": "/api/2024/equipment-categories/weapons"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": false,
+		"rarity" : {
+			"name": "Uncommon"
+		},
+		"desc": [
+			"Weapon (Any Simple or Martial)",
+			"Uncommon (+1)",
+			"You have a +1 bonus to attack rolls and damage rolls made with this magic weapon."
+		]
+	},
+	{
+		"index": "weapon-2",
+		"url": "/api/2024/magic-items/weapon-2",
+		"image" : "/api/images/magic-items/weapon.png",
+		"name": "Weapon +2",
+		"equipment_category": {
+			"index": "weapons",
+			"name": "Weapons",
+			"url": "/api/2024/equipment-categories/weapons"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": false,
+		"rarity" : {
+			"name": "Rare"
+		},
+		"desc": [
+			"Weapon (Any Simple or Martial)",
+			"Rare (+2)",
+			"You have a +2 bonus to attack rolls and damage rolls made with this magic weapon."
+		]
+	},
+	{
+		"index": "weapon-3",
+		"url": "/api/2024/magic-items/weapon-3",
+		"image" : "/api/images/magic-items/weapon.png",
+		"name": "Weapon +3",
+		"equipment_category": {
+			"index": "weapons",
+			"name": "Weapons",
+			"url": "/api/2024/equipment-categories/weapons"
+		},
+		"variants": [],
+		"variant": true,
+		"attunement": false,
+		"rarity" : {
+			"name": "Very Rare"
+		},
+		"desc": [
+			"Weapon (Any Simple or Martial)",
+			"Very Rare (+3)",
+			"You have a +3 bonus to attack rolls and damage rolls made with this magic weapon."
 		]
 	},
 	{
@@ -5156,11 +5917,12 @@
 			"name": "Weapons",
 			"url": "/api/2024/equipment-categories/weapons"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Weapon (Any Simple or Martial)",
 			"As long as this weapon is within your reach and you are attuned to it, you and allies within 30 feet of you gain the following benefits.",
@@ -5178,11 +5940,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Legendary"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.",
@@ -5200,11 +5963,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": false,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While holding this fan, you can cast Gust of Wind (save DC 13) from it. Each subsequent time the fan is used before the next dawn, it has a cumulative 20 percent chance of not working; if the fan fails to work, it tears into useless, nonmagical tatters."
@@ -5220,11 +5984,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Uncommon"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"These boots have 4 charges and regain 1d4 expended charges daily at dawn. While wearing the boots, you can take a Magic action to expend 1 charge, gaining a Fly Speed of 30 feet for 1 hour. If you are flying when the duration expires, you descend at a rate of 30 feet per round until you land."
@@ -5240,11 +6005,12 @@
 			"name": "Wondrous Items",
 			"url": "/api/2024/equipment-categories/wondrous-items"
 		},
+		"variants": [],
+		"variant": false,
 		"attunement": true,
 		"rarity" : {
 			"name": "Rare"
 		},
-
 		"desc": [
 			"Wondrous Item",
 			"While wearing this cloak, you can take a Magic action to turn the cloak into a pair of wings on your back. The wings lasts for 1 hour or until you end the effect early as a Magic action. The wings give you a Fly Speed of 60 feet. If you are aloft when the wings disappear, you fall. When the wings disappear, you can't use them again for 1d12 hours."
