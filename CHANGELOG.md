@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [4.5.0](https://github.com/5e-bits/5e-database/compare/v4.4.0...v4.5.0) (2026-03-23)
+
+
+### Features
+
+* **2024:** Finish Traits, Species, and Subspecies ([#1028](https://github.com/5e-bits/5e-database/issues/1028)) ([e647cdb](https://github.com/5e-bits/5e-database/commit/e647cdbf0bae2fa4323fcf43e5f5c07336615053))
+
 ## [4.4.0](https://github.com/5e-bits/5e-database/compare/v4.3.3...v4.4.0) (2026-03-14)
 
 
