@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [4.6.0](https://github.com/5e-bits/5e-database/compare/v4.5.1...v4.6.0) (2026-03-29)
+
+
+### Features
+
+* **2024:** Initial pass at Subclass data ([#1031](https://github.com/5e-bits/5e-database/issues/1031)) ([f48137f](https://github.com/5e-bits/5e-database/commit/f48137f4c47765bbd8361d153a565efefa2fde4e))
+
 ## [4.5.1](https://github.com/5e-bits/5e-database/compare/v4.5.0...v4.5.1) (2026-03-29)
 
 
