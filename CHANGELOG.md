@@ -27,6 +27,16 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [4.5.1](https://github.com/5e-bits/5e-database/compare/v4.5.0...v4.5.1) (2026-03-29)
+
+
+### Bug Fixes
+
+* **2024:** Dragonborn subspeciese traits now have level as well ([91963e0](https://github.com/5e-bits/5e-database/commit/91963e0474db42312203f412551c09ed83cc6853))
+* **2024:** Goliath subspecies traits were pointing to subspecies ([6f7da3b](https://github.com/5e-bits/5e-database/commit/6f7da3b2fb018d37100dec1eb70e0bef9afd6be8))
+* **2024:** Subspecies now uses DamageType refs ([25ae94a](https://github.com/5e-bits/5e-database/commit/25ae94aab6eeebb199fac0d6e743e8a5d346fdb7))
+* **2024:** Trait schema consistency ([2bb2e16](https://github.com/5e-bits/5e-database/commit/2bb2e166eabde0fc3f00cb0fa6593512e0ba767d))
+
 ## [4.5.0](https://github.com/5e-bits/5e-database/compare/v4.4.0...v4.5.0) (2026-03-23)
 
 
