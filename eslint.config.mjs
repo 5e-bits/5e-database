@@ -44,6 +44,9 @@ export default [
         ...eslintPluginVitest.environments.env.globals,
       },
     },
+    rules: {
+      'vitest/expect-expect': ['error', { assertFunctionNames: ['expect', 'testAll'] }],
+    },
   },
   {
     name: 'json/recommended',
