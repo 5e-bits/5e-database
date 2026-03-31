@@ -22,6 +22,22 @@ export const AreaOfEffectSchema = z.object({
   type: z.enum(['sphere', 'cube', 'cylinder', 'line', 'cone']),
 });
 
+export const ChoiceSchema: z.ZodType<any> = z.lazy(() =>
+  z.object({
+    desc: z.string().optional(),
+    choose: z.number(),
+    type: z.string(),
+    from: OptionSetSchema,
+  })
+);
+
+const OptionSchema: z.ZodType<any> = z.lazy(() =>
+  z.union([
+    z.object({ option_type: z.literal('choice'), choice: ChoiceSchema }),
+    z.object({ option_type: z.string() }).passthrough(),
+  ])
+);
+
 const OptionSetSchema = z.union([
   z.object({
     option_set_type: z.literal('equipment_category'),
@@ -33,13 +49,6 @@ const OptionSetSchema = z.union([
   }),
   z.object({
     option_set_type: z.literal('options_array'),
-    options: z.array(z.object({ option_type: z.string() }).passthrough()),
+    options: z.array(OptionSchema),
   }),
 ]);
-
-export const ChoiceSchema = z.object({
-  desc: z.string().optional(),
-  choose: z.number(),
-  type: z.string(),
-  from: OptionSetSchema,
-});
