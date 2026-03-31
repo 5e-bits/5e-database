@@ -1,5 +1,6 @@
-const fs = require('fs');
-const glob = require('glob');
+import { describe, it, expect } from 'vitest';
+import fs from 'fs';
+import { glob } from 'glob';
 
 describe('duplicate indices', () => {
   it('should contain unique indices', () => {

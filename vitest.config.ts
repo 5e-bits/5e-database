@@ -4,7 +4,7 @@ import { defineConfig } from 'vitest/config';
 export default defineConfig({
   test: {
     // Glob pattern to find test files
-    include: ['**/*.test.js'],
+    include: ['**/*.test.js', '**/*.test.ts'],
     // Test environment (node, jsdom, happy-dom, edge-runtime)
     // 'node' is suitable for backend/Node.js tests. Use 'jsdom' if you need browser APIs.
     environment: 'node',
