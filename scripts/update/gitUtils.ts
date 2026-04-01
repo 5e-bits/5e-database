@@ -1,5 +1,9 @@
 import { execSync, spawn } from 'child_process';
 
+function hasStderr(err: unknown): err is { stderr: string } {
+  return typeof err === 'object' && err !== null && 'stderr' in err && typeof (err as { stderr: unknown }).stderr === 'string';
+}
+
 // Define a type for the file status and path
 export type ChangedFile = {
   status: 'A' | 'M' | 'D' | 'R' | 'C' | 'T' | 'U' | 'X' | 'B'; // Git status codes
@@ -61,7 +65,7 @@ export function getChangedJsonFilesWithStatus(): ChangedFile[] {
     });
   } catch (error) {
     // Check if the error is due to missing history (e.g., first commit)
-    if (error.stderr?.includes('unknown revision or path not in the working tree')) {
+    if (hasStderr(error) && error.stderr.includes('unknown revision or path not in the working tree')) {
       console.warn(
         'Could not find previous commit (HEAD~1). Checking working tree status against index...'
       );
@@ -122,21 +126,21 @@ export async function getOldFileContent(gitPath: string): Promise<string> {
     let oldFileContent = '';
     let errorOutput = '';
 
-    gitShow.stdout.on('data', (data) => {
+    gitShow.stdout.on('data', (data: Buffer) => {
       oldFileContent += data.toString();
     });
 
-    gitShow.stderr.on('data', (data) => {
+    gitShow.stderr.on('data', (data: Buffer) => {
       errorOutput += data.toString();
     });
 
-    gitShow.on('error', (err) => {
+    gitShow.on('error', (err: Error) => {
       // Handle errors spawning the process itself
       console.error(`Error spawning git show for HEAD~1:${gitPath}:`, err);
       resolve(''); // Resolve with empty string on spawn error
     });
 
-    gitShow.on('close', (code) => {
+    gitShow.on('close', (code: number | null) => {
       if (code === 0) {
         resolve(oldFileContent);
       } else {

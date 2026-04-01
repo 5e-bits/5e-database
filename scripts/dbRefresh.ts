@@ -1,5 +1,5 @@
 import { readdirSync, readFileSync } from 'fs';
-import { MongoClient, Collection, Db } from 'mongodb'; // Import MongoClient and types
+import { MongoClient, Collection, Db, MongoServerError } from 'mongodb'; // Import MongoClient and types
 // Import utilities and constants
 import {
   checkMongoUri,
@@ -77,7 +77,7 @@ async function _processFileForRefresh(
     await collection.drop();
     console.log(`  Dropped existing collection '${collectionName}'.`);
   } catch (err) {
-    if (err.codeName !== 'NamespaceNotFound') {
+    if (!(err instanceof MongoServerError && err.codeName === 'NamespaceNotFound')) {
       console.error(`  Error dropping collection '${collectionName}':`, err);
       // Decide if we should stop the whole process - maybe throw here?
       return null; // Indicate failure
@@ -117,7 +117,7 @@ async function _refreshIndexCollection(
     await collectionsCollection.drop();
     console.log(`  Dropped existing collection '${collectionsCollectionName}'.`);
   } catch (err) {
-    if (err.codeName !== 'NamespaceNotFound') {
+    if (!(err instanceof MongoServerError && err.codeName === 'NamespaceNotFound')) {
       console.error(`  Error dropping collection '${collectionsCollectionName}':`, err);
       throw err; // Throw if dropping index fails unexpectedly
     }

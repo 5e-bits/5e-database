@@ -1,5 +1,5 @@
 import { readFileSync } from 'fs';
-import { MongoClient, AnyBulkWriteOperation, Document, Db } from 'mongodb';
+import { MongoClient, AnyBulkWriteOperation, Document, Db, MongoServerError } from 'mongodb';
 import { diff } from 'deep-diff';
 import {
   getCollectionNameFromJsonFile,
@@ -291,7 +291,7 @@ async function _handleFileRenamed(db: Db, filepath: string, oldFilepath: string)
       await db.collection(oldCollectionName).drop();
       console.log(`Dropped old collection '${oldCollectionName}'.`);
     } catch (err) {
-      if (err.codeName !== 'NamespaceNotFound') {
+      if (!(err instanceof MongoServerError && err.codeName === 'NamespaceNotFound')) {
         console.error(`Error dropping old collection '${oldCollectionName}' during rename:`, err);
       }
     }
@@ -318,7 +318,7 @@ async function _handleFileDeleted(db: Db, filepath: string): Promise<void> {
       await db.collection(collectionName).drop();
       console.log(`Dropped collection '${collectionName}' due to file deletion.`);
     } catch (err) {
-      if (err.codeName !== 'NamespaceNotFound') {
+      if (!(err instanceof MongoServerError && err.codeName === 'NamespaceNotFound')) {
         console.error(`Error dropping collection '${collectionName}' for deleted file:`, err);
       } else {
         console.log(`Collection '${collectionName}' not found, likely already dropped.`);
