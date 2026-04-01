@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { APIReferenceSchema, DamageSchema, DifficultyClassSchema } from '../../schemas/common';
+import { APIReferenceSchema, ChoiceSchema, DamageSchema, DifficultyClassSchema } from '../../schemas/common';
 
 const MonsterSpeedSchema = z.object({
   walk: z.string().optional(),
@@ -23,10 +23,14 @@ const MonsterProficiencySchema = z.object({
   proficiency: APIReferenceSchema,
 });
 
-const MonsterArmorClassSchema = z.object({
+const MonsterArmorClassSchema = z.strictObject({
   type: z.string(),
   value: z.number(),
-}).passthrough();
+  armor: z.array(APIReferenceSchema).optional(),
+  condition: APIReferenceSchema.optional(),
+  spell: APIReferenceSchema.optional(),
+  desc: z.string().optional(),
+});
 
 const ActionUsageSchema = z.object({
   type: z.string(),
@@ -34,13 +38,31 @@ const ActionUsageSchema = z.object({
   min_value: z.number().optional(),
 });
 
-const MonsterActionSchema = z.object({
+const MonsterActionItemSchema = z.strictObject({
+  action_name: z.string(),
+  count: z.union([z.number(), z.string()]),
+  type: z.string(),
+});
+
+const MonsterAttackSchema = z.strictObject({
+  name: z.string(),
+  dc: DifficultyClassSchema,
+  damage: z.array(DamageSchema).optional(),
+});
+
+const MonsterActionSchema = z.strictObject({
   name: z.string(),
   desc: z.string(),
   attack_bonus: z.number().optional(),
   dc: DifficultyClassSchema.optional(),
   usage: ActionUsageSchema.optional(),
-}).passthrough();
+  multiattack_type: z.string().optional(),
+  actions: z.array(MonsterActionItemSchema).optional(),
+  action_options: ChoiceSchema.optional(),
+  attacks: z.array(MonsterAttackSchema).optional(),
+  options: ChoiceSchema.optional(),
+  damage: z.array(z.union([DamageSchema, ChoiceSchema])).optional(),
+});
 
 const LegendaryActionSchema = z.object({
   name: z.string(),
@@ -62,14 +84,39 @@ const SpecialAbilityUsageSchema = z.object({
   rest_types: z.array(z.string()).optional(),
 });
 
-const SpecialAbilitySchema = z.object({
+const SpellcastingSpellUsageSchema = z.strictObject({
+  type: z.string(),
+  times: z.number().optional(),
+});
+
+const SpellcastingSpellSchema = z.strictObject({
+  name: z.string(),
+  level: z.number(),
+  url: z.string(),
+  usage: SpellcastingSpellUsageSchema.optional(),
+  notes: z.string().optional(),
+});
+
+const SpellcastingSchema = z.strictObject({
+  ability: APIReferenceSchema,
+  components_required: z.array(z.string()),
+  spells: z.array(SpellcastingSpellSchema),
+  level: z.number().optional(),
+  dc: z.number().optional(),
+  modifier: z.number().optional(),
+  school: z.string().optional(),
+  slots: z.record(z.string(), z.number()).optional(),
+});
+
+const SpecialAbilitySchema = z.strictObject({
   name: z.string(),
   desc: z.string(),
   attack_bonus: z.number().optional(),
   damage: z.array(DamageSchema).optional(),
   dc: DifficultyClassSchema.optional(),
   usage: SpecialAbilityUsageSchema.optional(),
-}).passthrough();
+  spellcasting: SpellcastingSchema.optional(),
+});
 
 export const MonsterSchema = z.object({
   index: z.string(),
