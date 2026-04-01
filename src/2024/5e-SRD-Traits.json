@@ -654,23 +654,40 @@
     "url": "/api/2024/traits/keen-senses",
     "name": "Keen Senses",
     "description": "You have proficiency in the Insight, Perception, or Survival skill.",
-    "proficiency_choices": [
-      {
-        "index": "insight",
-        "name": "Insight",
-        "url": "/api/2024/skills/insight"
-      },
-      {
-        "index": "perception",
-        "name": "Perception",
-        "url": "/api/2024/skills/perception"
-      },
-      {
-        "index": "survival",
-        "name": "Survival",
-        "url": "/api/2024/skills/survival"
+    "proficiency_choices": {
+      "desc": "Choose one of the following skills: Insight, Perception, or Survival.",
+      "choose": 1,
+      "type": "proficiencies",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "insight",
+              "name": "Insight",
+              "url": "/api/2024/skills/insight"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "perception",
+              "name": "Perception",
+              "url": "/api/2024/skills/perception"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "survival",
+              "name": "Survival",
+              "url": "/api/2024/skills/survival"
+            }
+          }
+        ]
       }
-    ],
+    },
     "species": [
       {
         "index": "elf",
@@ -1270,98 +1287,160 @@
     "url": "/api/2024/traits/skillful",
     "name": "Skillful",
     "description": "You gain proficiency in one skill of your choice.",
-    "proficiency_choices": [
-      {
-        "index": "acrobatics",
-        "name": "Acrobatics",
-        "url": "/api/2024/skills/acrobatics"
-      },
-      {
-        "index": "animal-handling",
-        "name": "Animal Handling",
-        "url": "/api/2024/skills/animal-handling"
-      },
-      {
-        "index": "arcana",
-        "name": "Arcana",
-        "url": "/api/2024/skills/arcana"
-      },
-      {
-        "index": "athletics",
-        "name": "Athletics",
-        "url": "/api/2024/skills/athletics"
-      },
-      {
-        "index": "deception",
-        "name": "Deception",
-        "url": "/api/2024/skills/deception"
-      },
-      {
-        "index": "history",
-        "name": "History",
-        "url": "/api/2024/skills/history"
-      },
-      {
-        "index": "insight",
-        "name": "Insight",
-        "url": "/api/2024/skills/insight"
-      },
-      {
-        "index": "intimidation",
-        "name": "Intimidation",
-        "url": "/api/2024/skills/intimidation"
-      },
-      {
-        "index": "investigation",
-        "name": "Investigation",
-        "url": "/api/2024/skills/investigation"
-      },
-      {
-        "index": "medicine",
-        "name": "Medicine",
-        "url": "/api/2024/skills/medicine"
-      },
-      {
-        "index": "nature",
-        "name": "Nature",
-        "url": "/api/2024/skills/nature"
-      },
-      {
-        "index": "perception",
-        "name": "Perception",
-        "url": "/api/2024/skills/perception"
-      },
-      {
-        "index": "performance",
-        "name": "Performance",
-        "url": "/api/2024/skills/performance"
-      },
-      {
-        "index": "persuasion",
-        "name": "Persuasion",
-        "url": "/api/2024/skills/persuasion"
-      },
-      {
-        "index": "religion",
-        "name": "Religion",
-        "url": "/api/2024/skills/religion"
-      },
-      {
-        "index": "sleight-of-hand",
-        "name": "Sleight of Hand",
-        "url": "/api/2024/skills/sleight-of-hand"
-      },
-      {
-        "index": "stealth",
-        "name": "Stealth",
-        "url": "/api/2024/skills/stealth"
-      },
-      {
-        "index": "survival",
-        "name": "Survival",
-        "url": "/api/2024/skills/survival"
+    "proficiency_choices": {
+      "desc": "Choose any skill.",
+      "choose": 1,
+      "type": "proficiencies",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "acrobatics",
+              "name": "Acrobatics",
+              "url": "/api/2024/skills/acrobatics"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "animal-handling",
+              "name": "Animal Handling",
+              "url": "/api/2024/skills/animal-handling"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "arcana",
+              "name": "Arcana",
+              "url": "/api/2024/skills/arcana"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "athletics",
+              "name": "Athletics",
+              "url": "/api/2024/skills/athletics"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "deception",
+              "name": "Deception",
+              "url": "/api/2024/skills/deception"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "history",
+              "name": "History",
+              "url": "/api/2024/skills/history"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "insight",
+              "name": "Insight",
+              "url": "/api/2024/skills/insight"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "intimidation",
+              "name": "Intimidation",
+              "url": "/api/2024/skills/intimidation"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "investigation",
+              "name": "Investigation",
+              "url": "/api/2024/skills/investigation"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "medicine",
+              "name": "Medicine",
+              "url": "/api/2024/skills/medicine"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "nature",
+              "name": "Nature",
+              "url": "/api/2024/skills/nature"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "perception",
+              "name": "Perception",
+              "url": "/api/2024/skills/perception"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "performance",
+              "name": "Performance",
+              "url": "/api/2024/skills/performance"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "persuasion",
+              "name": "Persuasion",
+              "url": "/api/2024/skills/persuasion"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "religion",
+              "name": "Religion",
+              "url": "/api/2024/skills/religion"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "sleight-of-hand",
+              "name": "Sleight of Hand",
+              "url": "/api/2024/skills/sleight-of-hand"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "stealth",
+              "name": "Stealth",
+              "url": "/api/2024/skills/stealth"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "survival",
+              "name": "Survival",
+              "url": "/api/2024/skills/survival"
+            }
+          }
+        ]
       }
-    ],
+    },
     "species": [
       {
         "index": "human",
