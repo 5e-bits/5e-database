@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [4.6.3](https://github.com/5e-bits/5e-database/compare/v4.6.2...v4.6.3) (2026-04-01)
+
+
+### Bug Fixes
+
+* **ci:** Set ignoreDeprecations for TS ([2929152](https://github.com/5e-bits/5e-database/commit/2929152dbc2a91985d26425677de2dc5c4d66180))
+
 ## [4.6.2](https://github.com/5e-bits/5e-database/compare/v4.6.1...v4.6.2) (2026-04-01)
 
 
