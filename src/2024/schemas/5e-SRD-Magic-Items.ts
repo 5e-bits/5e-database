@@ -12,7 +12,7 @@ export const MagicItemSchema = z.object({
   image: z.string(),
   equipment_category: APIReferenceSchema,
   variant: z.boolean(),
-  variants: z.array(z.unknown()),
+  variants: z.array(APIReferenceSchema),
   attunement: z.boolean(),
   rarity: RaritySchema,
   desc: z.string(),
