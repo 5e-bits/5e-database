@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [4.6.1](https://github.com/5e-bits/5e-database/compare/v4.6.0...v4.6.1) (2026-04-01)
+
+
+### Bug Fixes
+
+* **2024:** Replace unknown with APIReferenceSchema for magic items ([5c15e94](https://github.com/5e-bits/5e-database/commit/5c15e944ff6da300f80238102039d32cfcc1a533))
+
 ## [4.6.0](https://github.com/5e-bits/5e-database/compare/v4.5.1...v4.6.0) (2026-04-01)
 
 
