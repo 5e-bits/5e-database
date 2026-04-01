@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [4.6.2](https://github.com/5e-bits/5e-database/compare/v4.6.1...v4.6.2) (2026-04-01)
+
+
+### Bug Fixes
+
+* **ci:** Deploy should now work with TS ([62e257a](https://github.com/5e-bits/5e-database/commit/62e257a0cb4c1d8c07e1289967062d0525ca8b98))
+
 ## [4.6.1](https://github.com/5e-bits/5e-database/compare/v4.6.0...v4.6.1) (2026-04-01)
 
 
