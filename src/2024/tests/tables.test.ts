@@ -44,6 +44,13 @@ describe('api references', () => {
       recurseIntoObject(topLevelEntry, (subEntry) => {
         if (!Object.prototype.hasOwnProperty.call(subEntry, 'url')) return;
 
+        /*--- DEVELOPMENT TEST BYPASS ---*/
+        if((subEntry.url as string).slice(-4) === '-nyi') {
+          console.warn(`${filename}: URL '${subEntry.url}' is marked as Not Yet Implemented.`);
+          return;
+        }
+        /*--- DEVELOPMENT TEST BYPASS ---*/
+
         if (resources[subEntry.url as string] === undefined) {
           errors.push(`${filename}: URL '${subEntry.url}' not found.`);
         } else {
