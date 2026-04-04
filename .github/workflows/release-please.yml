@@ -1,9 +1,7 @@
 name: Release Please
 
 on:
-  push:
-    branches: [main]
-  workflow_dispatch:
+  workflow_dispatch: # disabled — fork manages releases manually
 
 permissions:
   contents: write
