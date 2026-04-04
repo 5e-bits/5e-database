@@ -110,9 +110,19 @@ const indexAndUrlChecks = (filename: string, entry: Entry) => {
     errors.push(`${filename}: Index '${entry.index as string}' contains whitespace`);
   }
 
+  // Check Index for illegal characters
+  if((entry.index as string).match(/[^-a-z0-9()]/)){
+    errors.push(`${filename}: Index '${entry.index as string}' contains illegal characters`);
+  }
+
   // Check URL for whitespace
   if((entry.url as string).indexOf(' ') != -1){
     errors.push(`${filename}: URL '${entry.url as string}' contains whitespace`);
+  }
+
+  // Check URL for illegal characters
+  if((entry.url as string).match(/[^-/a-z0-9()]/)){
+    errors.push(`${filename}: Index '${entry.url as string}' contains illegal characters`);
   }
 
   // Check URL starts correctly
