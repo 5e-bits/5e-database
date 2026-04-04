@@ -122,7 +122,7 @@ const indexAndUrlChecks = (filename: string, entry: Entry) => {
 
   // Check URL for illegal characters
   if((entry.url as string).match(/[^-/a-z0-9()]/)){
-    errors.push(`${filename}: Index '${entry.url as string}' contains illegal characters`);
+    errors.push(`${filename}: URL '${entry.url as string}' contains illegal characters`);
   }
 
   // Check URL starts correctly
