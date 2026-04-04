@@ -9,12 +9,16 @@ permissions:
   contents: read
 
 jobs:
-  deploy:
-    name: Deploy Changes (Update Database)
+  container-release:
+    name: Container Release
     runs-on: ubuntu-latest
-    if: github.repository == '5e-bits/5e-database'
-    outputs:
-      tag: ${{ steps.tag.outputs.tag }}
+    if: github.repository == 't11z/5e-database'
+    env:
+      REGISTRY: ghcr.io
+      IMAGE_NAME: ${{ github.repository }}
+    permissions:
+      contents: read
+      packages: write
     steps:
       - name: Determine Release Tag
         id: tag
@@ -32,35 +36,6 @@ jobs:
         uses: actions/checkout@v6
         with:
           ref: ${{ steps.tag.outputs.tag }}
-          fetch-depth: 2
-      - name: Set up Node.js 22.x
-        uses: actions/setup-node@v6
-        with:
-          node-version: 22.x
-          cache: "npm"
-      - name: Install dependencies
-        run: npm ci
-      - name: Run Database Update Script
-        env:
-          MONGODB_URI: ${{ secrets.MONGODB_URI }}
-        run: npm run db:update
-
-  container-release:
-    name: Container Release
-    runs-on: ubuntu-latest
-    needs: [deploy]
-    if: github.repository == '5e-bits/5e-database'
-    env:
-      REGISTRY: ghcr.io
-      IMAGE_NAME: ${{ github.repository }}
-    permissions:
-      contents: read
-      packages: write
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-        with:
-          ref: ${{ needs.deploy.outputs.tag }}
       - name: Log in to the Container registry
         uses: docker/login-action@v4
         with:
@@ -72,25 +47,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ needs.deploy.outputs.tag }},${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-          labels: version=${{ needs.deploy.outputs.tag }}
-
-  trigger-downstream:
-    name: Trigger Downstream
-    runs-on: ubuntu-latest
-    needs: [deploy, container-release]
-    if: github.repository == '5e-bits/5e-database'
-    steps:
-      - name: Generate Deploy Bot token
-        id: generate-token
-        uses: actions/create-github-app-token@v3
-        with:
-          app-id: ${{ secrets.DEPLOYMENT_APP_ID }}
-          private-key: ${{ secrets.DEPLOYMENT_APP_PRIVATE_KEY }}
-          repositories: 5e-srd-api
-      - name: Trigger downstream
-        uses: peter-evans/repository-dispatch@v4
-        with:
-          token: ${{ steps.generate-token.outputs.token }}
-          repository: 5e-bits/5e-srd-api
-          event-type: build_application
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.tag.outputs.tag }},${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          labels: version=${{ steps.tag.outputs.tag }}
