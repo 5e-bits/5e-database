@@ -50,6 +50,7 @@ describe('api references', () => {
 
         // Do not return errors if flagged as NYI
         if((subEntry.url as string).slice(-4) === '-nyi') {
+          console.warn(`${filename}: URL '${subEntry.url}' is marked as Not Yet Implemented.`);
           errors.forEach((error: string)=>{
             console.warn(error);
           })
