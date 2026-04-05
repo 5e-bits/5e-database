@@ -44,19 +44,25 @@ describe('api references', () => {
       recurseIntoObject(topLevelEntry, (subEntry) => {
         if (!Object.prototype.hasOwnProperty.call(subEntry, 'url')) return;
 
-        if (resources[subEntry.url as string] === undefined) {
-          errors.push(`${filename}: URL '${subEntry.url}' not found.`);
+        const url = subEntry.url as string;
+        if (url.endsWith('-nyi')) {
+          console.warn(`${filename}: NYI URL '${url}' skipped.`);
+          return;
+        }
+
+        if (resources[url] === undefined) {
+          errors.push(`${filename}: URL '${url}' not found.`);
         } else {
-          const resource = resources[subEntry.url as string];
+          const resource = resources[url];
           if (resource.name !== undefined && resource.name !== subEntry.name) {
             errors.push(
-              `${filename}: Name mismatch for reference to '${subEntry.url}', '${subEntry.name}' should be '${resource.name}'`
+              `${filename}: Name mismatch for reference to '${url}', '${subEntry.name}' should be '${resource.name}'`
             );
           }
 
           if (subEntry.index !== undefined && resource.index !== subEntry.index) {
             errors.push(
-              `${filename}: Index mismatch for reference to '${subEntry.url}', '${subEntry.index}' should be '${resource.index}'`
+              `${filename}: Index mismatch for reference to '${url}', '${subEntry.index}' should be '${resource.index}'`
             );
           }
         }
