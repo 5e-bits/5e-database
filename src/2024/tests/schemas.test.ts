@@ -22,7 +22,7 @@ import Subspecies from '../5e-SRD-Subspecies.json' with { type: 'json' };
 import Traits from '../5e-SRD-Traits.json' with { type: 'json' };
 import WeaponMasteryProperties from '../5e-SRD-Weapon-Mastery-Properties.json' with { type: 'json' };
 import WeaponProperties from '../5e-SRD-Weapon-Properties.json' with { type: 'json' };
-import Spells from '../5e-SRD-Spells-cantrips-and-level1.json' with { type: 'json' };
+import Spells from '../5e-SRD-Spells.json' with { type: 'json' };
 
 import { AbilityScoreSchema } from '../schemas/5e-SRD-Ability-Scores';
 import { AlignmentSchema } from '../schemas/5e-SRD-Alignments';
