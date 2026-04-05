@@ -1,0 +1,2447 @@
+[
+  {
+    "index": "barbarian",
+    "name": "Barbarian",
+    "hit_die": 12,
+    "proficiency_choices": [
+      {
+        "desc": "Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "resource_list",
+          "resource_list_url": "/api/2024/proficiencies"
+        }
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "str",
+        "name": "STR",
+        "url": "/api/2024/ability-scores/str"
+      },
+      {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/2024/ability-scores/con"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "javelin",
+          "name": "Javelin",
+          "url": "/api/2024/equipment/javelin"
+        },
+        "quantity": 4
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) a greataxe or (b) any martial melee weapon",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "greataxe",
+                "name": "Greataxe",
+                "url": "/api/2024/equipment/greataxe"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "any martial melee weapon",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "martial-melee-weapons",
+                    "name": "Martial Melee Weapons",
+                    "url": "/api/2024/equipment-categories/martial-melee-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) two handaxes or (b) any simple weapon",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 2,
+              "of": {
+                "index": "handaxe",
+                "name": "Handaxe",
+                "url": "/api/2024/equipment/handaxe"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "any simple weapon",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Simple Weapons",
+                    "url": "/api/2024/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "class_levels": "/api/2024/classes/barbarian/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "str",
+            "name": "STR",
+            "url": "/api/2024/ability-scores/str"
+          },
+          "minimum_score": 13
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "path-of-the-berserker",
+        "name": "Path of the Berserker",
+        "url": "/api/2024/subclasses/path-of-the-berserker"
+      }
+    ],
+    "url": "/api/2024/classes/barbarian"
+  },
+  {
+    "index": "bard",
+    "name": "Bard",
+    "hit_die": 8,
+    "proficiency_choices": [
+      {
+        "desc": "Choose any three",
+        "choose": 3,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "resource_list",
+          "resource_list_url": "/api/2024/proficiencies"
+        }
+      },
+      {
+        "desc": "Three musical instruments of your choice",
+        "choose": 3,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "resource_list",
+          "resource_list_url": "/api/2024/proficiencies"
+        }
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/2024/ability-scores/dex"
+      },
+      {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2024/ability-scores/cha"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "leather-armor",
+          "name": "Leather Armor",
+          "url": "/api/2024/equipment/leather-armor"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "dagger",
+          "name": "Dagger",
+          "url": "/api/2024/equipment/dagger"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) a rapier, (b) a longsword, or (c) any simple weapon",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "rapier",
+                "name": "Rapier",
+                "url": "/api/2024/equipment/rapier"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "longsword",
+                "name": "Longsword",
+                "url": "/api/2024/equipment/longsword"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "any simple weapon",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Simple Weapons",
+                    "url": "/api/2024/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a diplomat's pack or (b) an entertainer's pack",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "diplomat-pack",
+                "name": "Diplomat's Pack",
+                "url": "/api/2024/equipment/diplomat-pack"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a lute or (b) any other musical instrument",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "lute",
+                "name": "Lute",
+                "url": "/api/2024/equipment/lute"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "any other musical instrument",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "musical-instruments",
+                    "name": "Musical Instruments",
+                    "url": "/api/2024/equipment-categories/musical-instruments"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "class_levels": "/api/2024/classes/bard/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiency_choices": [
+        {
+          "desc": "skill",
+          "choose": 1,
+          "type": "proficiencies",
+          "from": {
+            "option_set_type": "resource_list",
+            "resource_list_url": "/api/2024/proficiencies"
+          }
+        },
+        {
+          "desc": "musical instrument",
+          "choose": 1,
+          "type": "proficiencies",
+          "from": {
+            "option_set_type": "resource_list",
+            "resource_list_url": "/api/2024/proficiencies"
+          }
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "college-of-lore",
+        "name": "College of Lore",
+        "url": "/api/2024/subclasses/college-of-lore"
+      }
+    ],
+    "spellcasting": {
+      "level": 1,
+      "spellcasting_ability": {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2024/ability-scores/cha"
+      },
+      "info": [
+        {
+          "name": "Cantrips",
+          "desc": [
+            "You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Bard table."
+          ]
+        },
+        {
+          "name": "Spell Slots",
+          "desc": [
+            "The Bard table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+            "For example, if you know the 1st-level spell cure wounds and have a 1st-level and a 2nd-level spell slot available, you can cast cure wounds using either slot."
+          ]
+        },
+        {
+          "name": "Spells Known of 1st Level and Higher",
+          "desc": [
+            "You know four 1st-level spells of your choice from the bard spell list.",
+            "The Spells Known column of the Bard table shows when you learn more bard spells of your choice.",
+            "Each of these spells must be of a level for which you have spell slots, as shown on the table. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.",
+            "Additionally, when you gain a level in this class, you can choose one of the bard spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have spell slots."
+          ]
+        },
+        {
+          "name": "Spellcasting Ability",
+          "desc": [
+            "Charisma is your spellcasting ability for your bard spells. Your magic comes from the heart and soul you pour into the performance of your music or oration. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.",
+            "Spell save DC = 8 + your proficiency bonus + your Charisma modifier.",
+            "Spell attack modifier = your proficiency bonus + your Charisma modifier."
+          ]
+        },
+        {
+          "name": "Ritual Casting",
+          "desc": [
+            "You can cast any bard spell you know as a ritual if that spell has the ritual tag."
+          ]
+        },
+        {
+          "name": "Spellcasting Focus",
+          "desc": [
+            "You can use a musical instrument (see Equipment) as a spellcasting focus for your bard spells."
+          ]
+        }
+      ]
+    },
+    "spells": "/api/2024/classes/bard/spells",
+    "url": "/api/2024/classes/bard"
+  },
+  {
+    "index": "cleric",
+    "name": "Cleric",
+    "hit_die": 8,
+    "proficiency_choices": [
+      {
+        "desc": "Choose two from History, Insight, Medicine, Persuasion, and Religion",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "resource_list",
+          "resource_list_url": "/api/2024/proficiencies"
+        }
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/2024/ability-scores/wis"
+      },
+      {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2024/ability-scores/cha"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "shield",
+          "name": "Shield",
+          "url": "/api/2024/equipment/shield"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) a mace or (b) a warhammer (if proficient)",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "mace",
+                "name": "Mace",
+                "url": "/api/2024/equipment/mace"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "warhammer",
+                "name": "Warhammer",
+                "url": "/api/2024/equipment/warhammer"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) scale mail, (b) leather armor, or (c) chain mail (if proficient)",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "scale-mail",
+                "name": "Scale Mail",
+                "url": "/api/2024/equipment/scale-mail"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "leather-armor",
+                "name": "Leather Armor",
+                "url": "/api/2024/equipment/leather-armor"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "chain-mail",
+                "name": "Chain Mail",
+                "url": "/api/2024/equipment/chain-mail"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a light crossbow and 20 bolts or (b) any simple weapon",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "light-crossbow",
+                    "name": "Light Crossbow",
+                    "url": "/api/2024/equipment/light-crossbow"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "bolts",
+                    "name": "Bolts",
+                    "url": "/api/2024/equipment/bolts"
+                  }
+                }
+              ]
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "any simple weapon",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Simple Weapons",
+                    "url": "/api/2024/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a priest's pack or (b) an explorer's pack",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "priests-pack",
+                "name": "Priest's Pack",
+                "url": "/api/2024/equipment/priests-pack"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "holy symbol",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "equipment_category",
+          "equipment_category": {
+            "index": "holy-symbols",
+            "name": "Holy Symbols",
+            "url": "/api/2024/equipment-categories/holy-symbols"
+          }
+        }
+      }
+    ],
+    "class_levels": "/api/2024/classes/cleric/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "minimum_score": 13
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "life-domain",
+        "name": "Life Domain",
+        "url": "/api/2024/subclasses/life-domain"
+      }
+    ],
+    "spellcasting": {
+      "level": 1,
+      "spellcasting_ability": {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/2024/ability-scores/wis"
+      },
+      "info": [
+        {
+          "name": "Cantrips",
+          "desc": [
+            "At 1st level, you know three cantrips of your choice from the cleric spell list. You learn additional cleric cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Cleric table."
+          ]
+        },
+        {
+          "name": "Preparing and Casting Spells",
+          "desc": [
+            "The Cleric table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+            "You prepare the list of cleric spells that are available for you to cast, choosing from the cleric spell list. When you do so, choose a number of cleric spells equal to your Wisdom modifier + your cleric level (minimum of one spell). The spells must be of a level for which you have spell slots.",
+            "For example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+            "You can change your list of prepared spells when you finish a long rest. Preparing a new list of cleric spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
+          ]
+        },
+        {
+          "name": "Spellcasting Ability",
+          "desc": [
+            "Wisdom is your spellcasting ability for your cleric spells. The power of your spells comes from your devotion to your deity. You use your Wisdom whenever a cleric spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.",
+            "Spell save DC = 8 + your proficiency bonus + your Wisdom modifier",
+            "Spell attack modifier = your proficiency bonus + your Wisdom modifier"
+          ]
+        },
+        {
+          "name": "Ritual Casting",
+          "desc": [
+            "You can cast a cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared."
+          ]
+        },
+        {
+          "name": "Spellcasting Focus",
+          "desc": [
+            "You can use a holy symbol (see Equipment) as a spellcasting focus for your cleric spells."
+          ]
+        }
+      ]
+    },
+    "spells": "/api/2024/classes/cleric/spells",
+    "url": "/api/2024/classes/cleric"
+  },
+  {
+    "index": "druid",
+    "name": "Druid",
+    "hit_die": 8,
+    "proficiency_choices": [
+      {
+        "desc": "Choose two from Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, and Survival",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "resource_list",
+          "resource_list_url": "/api/2024/proficiencies"
+        }
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "int",
+        "name": "INT",
+        "url": "/api/2024/ability-scores/int"
+      },
+      {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/2024/ability-scores/wis"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "leather-armor",
+          "name": "Leather Armor",
+          "url": "/api/2024/equipment/leather-armor"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) a wooden shield or (b) any simple weapon",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "shield",
+                "name": "Shield",
+                "url": "/api/2024/equipment/shield"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "any simple weapon",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Simple Weapons",
+                    "url": "/api/2024/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a scimitar or (b) any simple melee weapon",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "scimitar",
+                "name": "Scimitar",
+                "url": "/api/2024/equipment/scimitar"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "any simple melee weapon",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-melee-weapons",
+                    "name": "Simple Melee Weapons",
+                    "url": "/api/2024/equipment-categories/simple-melee-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "druidic focus",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "equipment_category",
+          "equipment_category": {
+            "index": "druidic-foci",
+            "name": "Druidic Foci",
+            "url": "/api/2024/equipment-categories/druidic-foci"
+          }
+        }
+      }
+    ],
+    "class_levels": "/api/2024/classes/druid/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "minimum_score": 13
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "circle-of-the-land",
+        "name": "Circle of the Land",
+        "url": "/api/2024/subclasses/circle-of-the-land"
+      }
+    ],
+    "spellcasting": {
+      "level": 1,
+      "spellcasting_ability": {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/2024/ability-scores/wis"
+      },
+      "info": [
+        {
+          "name": "Cantrips",
+          "desc": [
+            "At 1st level, you know two cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Druid table."
+          ]
+        },
+        {
+          "name": "Preparing and Casting Spells",
+          "desc": [
+            "The Druid table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these druid spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+            "You prepare the list of druid spells that are available for you to cast, choosing from the druid spell list. When you do so, choose a number of druid spells equal to your Wisdom modifier + your druid level (minimum of one spell). The spells must be of a level for which you have spell slots.",
+            "For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+            "You can also change your list of prepared spells when you finish a long rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
+          ]
+        },
+        {
+          "name": "Spellcasting Ability",
+          "desc": [
+            "Wisdom is your spellcasting ability for your druid spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.",
+            "Spell save DC = 8 + your proficiency bonus + your Wisdom modifier.",
+            "Spell attack modifier = your proficiency bonus + your Wisdom modifier."
+          ]
+        },
+        {
+          "name": "Ritual Casting",
+          "desc": [
+            "You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared."
+          ]
+        },
+        {
+          "name": "Spellcasting Focus",
+          "desc": [
+            "You can use a druidic focus (see chapter 5, \"Equipment\") as a spellcasting focus for your druid spells."
+          ]
+        }
+      ]
+    },
+    "spells": "/api/2024/classes/druid/spells",
+    "url": "/api/2024/classes/druid"
+  },
+  {
+    "index": "fighter",
+    "name": "Fighter",
+    "hit_die": 10,
+    "proficiency_choices": [
+      {
+        "desc": "Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "resource_list",
+          "resource_list_url": "/api/2024/proficiencies"
+        }
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "str",
+        "name": "STR",
+        "url": "/api/2024/ability-scores/str"
+      },
+      {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/2024/ability-scores/con"
+      }
+    ],
+    "starting_equipment": [],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) chain mail or (b) leather armor, longbow, and 20 arrows",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "chain-mail",
+                "name": "Chain Mail",
+                "url": "/api/2024/equipment/chain-mail"
+              }
+            },
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "leather-armor",
+                    "name": "Leather Armor",
+                    "url": "/api/2024/equipment/leather-armor"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "longbow",
+                    "name": "Longbow",
+                    "url": "/api/2024/equipment/longbow"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "arrows",
+                    "name": "Arrows",
+                    "url": "/api/2024/equipment/arrows"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a martial weapon and a shield or (b) two martial weapons",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "choice",
+                  "choice": {
+                    "desc": "a martial weapon",
+                    "choose": 1,
+                    "type": "equipment",
+                    "from": {
+                      "option_set_type": "equipment_category",
+                      "equipment_category": {
+                        "index": "martial-weapons",
+                        "name": "Martial Weapons",
+                        "url": "/api/2024/equipment-categories/martial-weapons"
+                      }
+                    }
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "shield",
+                    "name": "Shield",
+                    "url": "/api/2024/equipment/shield"
+                  }
+                }
+              ]
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "two martial weapons",
+                "choose": 2,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "martial-weapons",
+                    "name": "Martial Weapons",
+                    "url": "/api/2024/equipment-categories/martial-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a light crossbow and 20 bolts or (b) two handaxes",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "light-crossbow",
+                    "name": "Light Crossbow",
+                    "url": "/api/2024/equipment/light-crossbow"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "bolts",
+                    "name": "Bolts",
+                    "url": "/api/2024/equipment/bolts"
+                  }
+                }
+              ]
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 2,
+              "of": {
+                "index": "handaxe",
+                "name": "Handaxe",
+                "url": "/api/2024/equipment/handaxe"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a dungeoneer's pack or (b) an explorer's pack",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneer-pack",
+                "name": "Dungeoneer's Pack",
+                "url": "/api/2024/equipment/dungeoneer-pack"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "class_levels": "/api/2024/classes/fighter/levels",
+    "multi_classing": {
+      "prerequisite_options": {
+        "type": "ability-scores",
+        "choose": 1,
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "score_prerequisite",
+              "ability_score": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/2024/ability-scores/str"
+              },
+              "minimum_score": 13
+            },
+            {
+              "option_type": "score_prerequisite",
+              "ability_score": {
+                "index": "dex",
+                "name": "DEX",
+                "url": "/api/2024/ability-scores/dex"
+              },
+              "minimum_score": 13
+            }
+          ]
+        }
+      }
+    },
+    "subclasses": [
+      {
+        "index": "champion",
+        "name": "Champion",
+        "url": "/api/2024/subclasses/champion"
+      }
+    ],
+    "url": "/api/2024/classes/fighter"
+  },
+  {
+    "index": "monk",
+    "name": "Monk",
+    "hit_die": 8,
+    "proficiency_choices": [
+      {
+        "desc": "Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "resource_list",
+          "resource_list_url": "/api/2024/proficiencies"
+        }
+      },
+      {
+        "desc": "Choose one type of artisan's tools or one musical instrument",
+        "choose": 1,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "resource_list",
+          "resource_list_url": "/api/2024/proficiencies"
+        }
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "str",
+        "name": "STR",
+        "url": "/api/2024/ability-scores/str"
+      },
+      {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/2024/ability-scores/dex"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "dart",
+          "name": "Dart",
+          "url": "/api/2024/equipment/dart"
+        },
+        "quantity": 10
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) a shortsword or (b) any simple weapon",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "shortsword",
+                "name": "Shortsword",
+                "url": "/api/2024/equipment/shortsword"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "any simple weapon",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Simple Weapons",
+                    "url": "/api/2024/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a dungeoneer's pack or (b) an explorer's pack",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneer-pack",
+                "name": "Dungeoneer's Pack",
+                "url": "/api/2024/equipment/dungeoneer-pack"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "class_levels": "/api/2024/classes/monk/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "minimum_score": 13
+        },
+        {
+          "ability_score": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "minimum_score": 13
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "warrior-of-the-open-hand",
+        "name": "Warrior of the Open Hand",
+        "url": "/api/2024/subclasses/warrior-of-the-open-hand"
+      }
+    ],
+    "url": "/api/2024/classes/monk"
+  },
+  {
+    "index": "paladin",
+    "name": "Paladin",
+    "hit_die": 10,
+    "proficiency_choices": [
+      {
+        "desc": "Choose two from Athletics, Insight, Intimidation, Medicine, Persuasion, and Religion",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "resource_list",
+          "resource_list_url": "/api/2024/proficiencies"
+        }
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/2024/ability-scores/wis"
+      },
+      {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2024/ability-scores/cha"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "chain-mail",
+          "name": "Chain Mail",
+          "url": "/api/2024/equipment/chain-mail"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) a martial weapon and a shield or (b) two martial weapons",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "choice",
+                  "choice": {
+                    "desc": "a martial weapon",
+                    "choose": 1,
+                    "type": "equipment",
+                    "from": {
+                      "option_set_type": "equipment_category",
+                      "equipment_category": {
+                        "name": "Martial Weapons",
+                        "index": "martial-weapons",
+                        "url": "/api/2024/equipment-categories/martial-weapons"
+                      }
+                    }
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "shield",
+                    "name": "Shield",
+                    "url": "/api/2024/equipment/shield"
+                  }
+                }
+              ]
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "two martial weapons",
+                "choose": 2,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "martial-weapons",
+                    "name": "Martial Weapons",
+                    "url": "/api/2024/equipment-categories/martial-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) five javelins or (b) any simple melee weapon",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 5,
+              "of": {
+                "index": "javelin",
+                "name": "Javelin",
+                "url": "/api/2024/equipment/javelin"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "any simple weapon",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Simple Weapons",
+                    "url": "/api/2024/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a priest's pack or (b) an explorer's pack",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "priests-pack",
+                "name": "Priest's Pack",
+                "url": "/api/2024/equipment/priests-pack"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "holy symbol",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "equipment_category",
+          "equipment_category": {
+            "index": "holy-symbols",
+            "name": "Holy Symbols",
+            "url": "/api/2024/equipment-categories/holy-symbols"
+          }
+        }
+      }
+    ],
+    "class_levels": "/api/2024/classes/paladin/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "str",
+            "name": "STR",
+            "url": "/api/2024/ability-scores/str"
+          },
+          "minimum_score": 13
+        },
+        {
+          "ability_score": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "minimum_score": 13
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "oath-of-devotion",
+        "name": "Oath of Devotion",
+        "url": "/api/2024/subclasses/oath-of-devotion"
+      }
+    ],
+    "spellcasting": {
+      "level": 2,
+      "spellcasting_ability": {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2024/ability-scores/cha"
+      },
+      "info": [
+        {
+          "name": "Preparing and Casting Spells",
+          "desc": [
+            "The Paladin table shows how many spell slots you have to cast your spells. To cast one of your paladin spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+            "You prepare the list of paladin spells that are available for you to cast, choosing from the paladin spell list. When you do so, choose a number of paladin spells equal to your Charisma modifier + half your paladin level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
+            "For example, if you are a 5th-level paladin, you have four 1st-level and two 2nd-level spell slots. With a Charisma of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or a 2nd- level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+            "You can change your list of prepared spells when you finish a long rest. Preparing a new list of paladin spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
+          ]
+        },
+        {
+          "name": "Spellcasting Ability",
+          "desc": [
+            "Charisma is your spellcasting ability for your paladin spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a paladin spell you cast and when making an attack roll with one.",
+            "Spell save DC = 8 + your proficiency bonus + your Charisma modifier.",
+            "Spell attack modifier = your proficiency bonus + your Charisma modifier."
+          ]
+        },
+        {
+          "name": "Spellcasting Focus",
+          "desc": [
+            "You can use a holy symbol as a spellcasting focus for your paladin spells."
+          ]
+        }
+      ]
+    },
+    "spells": "/api/2024/classes/paladin/spells",
+    "url": "/api/2024/classes/paladin"
+  },
+  {
+    "index": "ranger",
+    "name": "Ranger",
+    "hit_die": 10,
+    "proficiency_choices": [
+      {
+        "desc": "Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival",
+        "choose": 3,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "resource_list",
+          "resource_list_url": "/api/2024/proficiencies"
+        }
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "str",
+        "name": "STR",
+        "url": "/api/2024/ability-scores/str"
+      },
+      {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/2024/ability-scores/dex"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "longbow",
+          "name": "Longbow",
+          "url": "/api/2024/equipment/longbow"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "arrows",
+          "name": "Arrows",
+          "url": "/api/2024/equipment/arrows"
+        },
+        "quantity": 20
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) scale mail or (b) leather armor",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "scale-mail",
+                "name": "Scale Mail",
+                "url": "/api/2024/equipment/scale-mail"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "leather-armor",
+                "name": "Leather Armor",
+                "url": "/api/2024/equipment/leather-armor"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) two shortswords or (b) two simple melee weapons",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 2,
+              "of": {
+                "index": "shortsword",
+                "name": "Shortsword",
+                "url": "/api/2024/equipment/shortsword"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "two simple melee weapons",
+                "choose": 2,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-melee-weapons",
+                    "name": "Simple Melee Weapons",
+                    "url": "/api/2024/equipment-categories/simple-melee-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a dungeoneer's pack or (b) an explorer's pack",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneer-pack",
+                "name": "Dungeoneer's Pack",
+                "url": "/api/2024/equipment/dungeoneer-pack"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "class_levels": "/api/2024/classes/ranger/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "minimum_score": 13
+        },
+        {
+          "ability_score": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiency_choices": [
+        {
+          "desc": "",
+          "choose": 1,
+          "type": "proficiencies",
+          "from": {
+            "option_set_type": "resource_list",
+            "resource_list_url": "/api/2024/proficiencies"
+          }
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "hunter",
+        "name": "Hunter",
+        "url": "/api/2024/subclasses/hunter"
+      }
+    ],
+    "spellcasting": {
+      "level": 1,
+      "spellcasting_ability": {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/2024/ability-scores/wis"
+      },
+      "info": [
+        {
+          "name": "Spell Slots",
+          "desc": [
+            "The Ranger table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+            "For example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2nd-level spell slot available, you can cast animal friendship using either slot."
+          ]
+        },
+        {
+          "name": "Spells Known of 1st Level and Higher",
+          "desc": [
+            "You know two 1st-level spells of your choice from the ranger spell list.",
+            "The Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
+            "Additionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots."
+          ]
+        },
+        {
+          "name": "Spellcasting Ability",
+          "desc": [
+            "Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.",
+            "Spell save DC = 8 + your proficiency bonus + your Wisdom modifier.",
+            "Spell attack modifier = your proficiency bonus + your Wisdom modifier."
+          ]
+        }
+      ]
+    },
+    "spells": "/api/2024/classes/ranger/spells",
+    "url": "/api/2024/classes/ranger"
+  },
+  {
+    "index": "rogue",
+    "name": "Rogue",
+    "hit_die": 8,
+    "proficiency_choices": [
+      {
+        "desc": "Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth",
+        "choose": 4,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "resource_list",
+          "resource_list_url": "/api/2024/proficiencies"
+        }
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/2024/ability-scores/dex"
+      },
+      {
+        "index": "int",
+        "name": "INT",
+        "url": "/api/2024/ability-scores/int"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "leather-armor",
+          "name": "Leather Armor",
+          "url": "/api/2024/equipment/leather-armor"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "dagger",
+          "name": "Dagger",
+          "url": "/api/2024/equipment/dagger"
+        },
+        "quantity": 2
+      },
+      {
+        "equipment": {
+          "index": "thieves-tools",
+          "name": "Thieves' Tools",
+          "url": "/api/2024/equipment/thieves-tools"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) a rapier or (b) a shortsword",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "rapier",
+                "name": "Rapier",
+                "url": "/api/2024/equipment/rapier"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "shortsword",
+                "name": "Shortsword",
+                "url": "/api/2024/equipment/shortsword"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a shortbow and quiver of 20 arrows or (b) a shortsword",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "shortbow",
+                    "name": "Shortbow",
+                    "url": "/api/2024/equipment/shortbow"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "arrows",
+                    "name": "Arrows",
+                    "url": "/api/2024/equipment/arrows"
+                  }
+                }
+              ]
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "shortsword",
+                "name": "Shortsword",
+                "url": "/api/2024/equipment/shortsword"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a burglar's pack, (b) a dungeoneer's pack, or (c) an explorer's pack",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "burglars-pack",
+                "name": "Burglar's Pack",
+                "url": "/api/2024/equipment/burglars-pack"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneer-pack",
+                "name": "Dungeoneer's Pack",
+                "url": "/api/2024/equipment/dungeoneer-pack"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "class_levels": "/api/2024/classes/rogue/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiency_choices": [
+        {
+          "desc": "",
+          "choose": 1,
+          "type": "proficiencies",
+          "from": {
+            "option_set_type": "resource_list",
+            "resource_list_url": "/api/2024/proficiencies"
+          }
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "thief",
+        "name": "Thief",
+        "url": "/api/2024/subclasses/thief"
+      }
+    ],
+    "url": "/api/2024/classes/rogue"
+  },
+  {
+    "index": "sorcerer",
+    "name": "Sorcerer",
+    "hit_die": 6,
+    "proficiency_choices": [
+      {
+        "desc": "Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "resource_list",
+          "resource_list_url": "/api/2024/proficiencies"
+        }
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/2024/ability-scores/con"
+      },
+      {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2024/ability-scores/cha"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "dagger",
+          "name": "Dagger",
+          "url": "/api/2024/equipment/dagger"
+        },
+        "quantity": 2
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) a light crossbow and 20 bolts or (b) any simple weapon",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "light-crossbow",
+                    "name": "Light Crossbow",
+                    "url": "/api/2024/equipment/light-crossbow"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "bolts",
+                    "name": "Bolts",
+                    "url": "/api/2024/equipment/bolts"
+                  }
+                }
+              ]
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "any simple weapon",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Simple Weapons",
+                    "url": "/api/2024/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a component pouch or (b) an arcane focus",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "component-pouch",
+                "name": "Component Pouch",
+                "url": "/api/2024/equipment/component-pouch"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "arcane focus",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "arcane-foci",
+                    "name": "Arcane Foci",
+                    "url": "/api/2024/equipment-categories/arcane-foci"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a dungeoneer's pack or (b) an explorer's pack",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneer-pack",
+                "name": "Dungeoneer's Pack",
+                "url": "/api/2024/equipment/dungeoneer-pack"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "class_levels": "/api/2024/classes/sorcerer/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "minimum_score": 13
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "draconic-sorcery",
+        "name": "Draconic Sorcery",
+        "url": "/api/2024/subclasses/draconic-sorcery"
+      }
+    ],
+    "spellcasting": {
+      "level": 1,
+      "spellcasting_ability": {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2024/ability-scores/cha"
+      },
+      "info": [
+        {
+          "name": "Cantrips",
+          "desc": [
+            "At 1st level, you know four cantrips of your choice from the sorcerer spell list. You learn additional sorcerer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Sorcerer table."
+          ]
+        },
+        {
+          "name": "Spell Slots",
+          "desc": [
+            "The Sorcerer table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these sorcerer spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+            "For example, if you know the 1st-level spell burning hands and have a 1st-level and a 2nd-level spell slot available, you can cast burning hands using either slot."
+          ]
+        },
+        {
+          "name": "Spells Known of 1st Level and Higher",
+          "desc": [
+            "You know two 1st-level spells of your choice from the sorcerer spell list.",
+            "The Spells Known column of the Sorcerer table shows when you learn more sorcerer spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level. ",
+            "Additionally, when you gain a level in this class, you can choose one of the sorcerer spells you know and replace it with another spell from the sorcerer spell list, which also must be of a level for which you have spell slots."
+          ]
+        },
+        {
+          "name": "Spellcasting Ability",
+          "desc": [
+            "Charisma is your spellcasting ability for your sorcerer spells, since the power of your magic relies on your ability to project your will into the world. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a sorcerer spell you cast and when making an attack roll with one.",
+            "Spell save DC = 8 + your proficiency bonus + your Charisma modifier.",
+            "Spell attack modifier = your proficiency bonus + your Charisma modifier."
+          ]
+        },
+        {
+          "name": "Spellcasting Focus",
+          "desc": [
+            "You can use an arcane focus as a spellcasting focus for your sorcerer spells."
+          ]
+        }
+      ]
+    },
+    "spells": "/api/2024/classes/sorcerer/spells",
+    "url": "/api/2024/classes/sorcerer"
+  },
+  {
+    "index": "warlock",
+    "name": "Warlock",
+    "hit_die": 8,
+    "proficiency_choices": [
+      {
+        "desc": "Choose two skills from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "resource_list",
+          "resource_list_url": "/api/2024/proficiencies"
+        }
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/2024/ability-scores/wis"
+      },
+      {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2024/ability-scores/cha"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "dagger",
+          "name": "Dagger",
+          "url": "/api/2024/equipment/dagger"
+        },
+        "quantity": 2
+      },
+      {
+        "equipment": {
+          "index": "leather-armor",
+          "name": "Leather Armor",
+          "url": "/api/2024/equipment/leather-armor"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) a light crossbow and 20 bolts or (b) any simple weapon",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "light-crossbow",
+                    "name": "Light Crossbow",
+                    "url": "/api/2024/equipment/light-crossbow"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "bolts",
+                    "name": "Bolts",
+                    "url": "/api/2024/equipment/bolts"
+                  }
+                }
+              ]
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "any simple weapon",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Simple Weapons",
+                    "url": "/api/2024/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a component pouch or (b) an arcane focus",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "component-pouch",
+                "name": "Component Pouch",
+                "url": "/api/2024/equipment/component-pouch"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "arcane focus",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "arcane-foci",
+                    "name": "Arcane Foci",
+                    "url": "/api/2024/equipment-categories/arcane-foci"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a scholar's pack or (b) a dungeoneer's pack",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "scholars-pack",
+                "name": "Scholar's Pack",
+                "url": "/api/2024/equipment/scholars-pack"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneer-pack",
+                "name": "Dungeoneer's Pack",
+                "url": "/api/2024/equipment/dungeoneer-pack"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "any simple weapon",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "equipment_category",
+          "equipment_category": {
+            "index": "simple-weapons",
+            "name": "Simple Weapons",
+            "url": "/api/2024/equipment-categories/simple-weapons"
+          }
+        }
+      }
+    ],
+    "class_levels": "/api/2024/classes/warlock/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "minimum_score": 13
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "fiend-patron",
+        "name": "Fiend Patron",
+        "url": "/api/2024/subclasses/fiend-patron"
+      }
+    ],
+    "spellcasting": {
+      "level": 1,
+      "spellcasting_ability": {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2024/ability-scores/cha"
+      },
+      "info": [
+        {
+          "name": "Cantrips",
+          "desc": [
+            "You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table."
+          ]
+        },
+        {
+          "name": "Spell Slots",
+          "desc": [
+            "The Warlock table shows how many spell slots you have. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.",
+            "For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell thunderwave, you must spend one of those slots, and you cast it as a 3rd-level spell."
+          ]
+        },
+        {
+          "name": "Spells Known of 1st Level and Higher",
+          "desc": [
+            "At 1st level, you know two 1st-level spells of your choice from the warlock spell list.",
+            "The Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. ",
+            "A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.",
+            "Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots."
+          ]
+        },
+        {
+          "name": "Spellcasting Ability",
+          "desc": [
+            "Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.",
+            "Spell save DC = 8 + your proficiency bonus + your Charisma modifier.",
+            "Spell attack modifier = your proficiency bonus + your Charisma modifier."
+          ]
+        },
+        {
+          "name": "Spellcasting Focus",
+          "desc": [
+            "You can use an arcane focus as a spellcasting focus for your warlock spells."
+          ]
+        }
+      ]
+    },
+    "spells": "/api/2024/classes/warlock/spells",
+    "url": "/api/2024/classes/warlock"
+  },
+  {
+    "index": "wizard",
+    "name": "Wizard",
+    "hit_die": 6,
+    "proficiency_choices": [
+      {
+        "desc": "Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "resource_list",
+          "resource_list_url": "/api/2024/proficiencies"
+        }
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "int",
+        "name": "INT",
+        "url": "/api/2024/ability-scores/int"
+      },
+      {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/2024/ability-scores/wis"
+      }
+    ],
+    "starting_equipment": [],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) a quarterstaff or (b) a dagger",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "quarterstaff",
+                "name": "Quarterstaff",
+                "url": "/api/2024/equipment/quarterstaff"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dagger",
+                "name": "Dagger",
+                "url": "/api/2024/equipment/dagger"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a component pouch or (b) an arcane focus",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "component-pouch",
+                "name": "Component Pouch",
+                "url": "/api/2024/equipment/component-pouch"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "arcane focus",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "arcane-foci",
+                    "name": "Arcane Foci",
+                    "url": "/api/2024/equipment-categories/arcane-foci"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) a scholar's pack or (b) an explorer's pack",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "scholars-pack",
+                "name": "Scholar's Pack",
+                "url": "/api/2024/equipment/scholars-pack"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "class_levels": "/api/2024/classes/wizard/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "minimum_score": 13
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "evoker",
+        "name": "Evoker",
+        "url": "/api/2024/subclasses/evoker"
+      }
+    ],
+    "spellcasting": {
+      "level": 1,
+      "spellcasting_ability": {
+        "index": "int",
+        "name": "INT",
+        "url": "/api/2024/ability-scores/int"
+      },
+      "info": [
+        {
+          "name": "Cantrips",
+          "desc": [
+            "At 1st level, you know three cantrips of your choice from the wizard spell list. You learn additional wizard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Wizard table."
+          ]
+        },
+        {
+          "name": "Spellbook",
+          "desc": [
+            "At 1st level, you have a spellbook containing six 1st- level wizard spells of your choice. Your spellbook is the repository of the wizard spells you know, except your cantrips, which are fixed in your mind."
+          ]
+        },
+        {
+          "name": "Preparing and Casting Spells",
+          "desc": [
+            "The Wizard table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+            "You prepare the list of wizard spells that are available for you to cast. To do so, choose a number of wizard spells from your spellbook equal to your Intelligence modifier + your wizard level (minimum of one spell). The spells must be of a level for which you have spell slots.",
+            "For example, if you're a 3rd-level wizard, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination, chosen from your spellbook. If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+            "You can change your list of prepared spells when you finish a long rest. Preparing a new list of wizard spells requires time spent studying your spellbook and memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per spell level for each spell on your list."
+          ]
+        },
+        {
+          "name": "Spellcasting Ability",
+          "desc": [
+            "Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.",
+            "Spell save DC = 8 + your proficiency bonus + your Intelligence modifier.",
+            "Spell attack modifier = your proficiency bonus + your Intelligence modifier."
+          ]
+        },
+        {
+          "name": "Ritual Casting",
+          "desc": [
+            "You can cast a wizard spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared."
+          ]
+        },
+        {
+          "name": "Spellcasting Focus",
+          "desc": [
+            "You can use an arcane focus as a spellcasting focus for your wizard spells."
+          ]
+        }
+      ]
+    },
+    "spells": "/api/2024/classes/wizard/spells",
+    "url": "/api/2024/classes/wizard"
+  }
+]
