@@ -22,6 +22,7 @@ import Subspecies from '../5e-SRD-Subspecies.json' with { type: 'json' };
 import Traits from '../5e-SRD-Traits.json' with { type: 'json' };
 import WeaponMasteryProperties from '../5e-SRD-Weapon-Mastery-Properties.json' with { type: 'json' };
 import WeaponProperties from '../5e-SRD-Weapon-Properties.json' with { type: 'json' };
+import Spells from '../5e-SRD-Spells-cantrips-and-level1.json' with { type: 'json' };
 
 import { AbilityScoreSchema } from '../schemas/5e-SRD-Ability-Scores';
 import { AlignmentSchema } from '../schemas/5e-SRD-Alignments';
@@ -44,6 +45,7 @@ import { SubspeciesSchema } from '../schemas/5e-SRD-Subspecies';
 import { TraitSchema } from '../schemas/5e-SRD-Traits';
 import { WeaponMasteryPropertySchema } from '../schemas/5e-SRD-Weapon-Mastery-Properties';
 import { WeaponPropertySchema } from '../schemas/5e-SRD-Weapon-Properties';
+import { SpellSchema } from '../schemas/5e-SRD-Spells';
 
 function testAll(data: unknown[], schema: z.ZodTypeAny) {
   for (const item of data as { index?: string; name?: string }[]) {
@@ -74,4 +76,5 @@ describe('2024 schemas', () => {
   it('traits', () => testAll(Traits, TraitSchema));
   it('weapon mastery properties', () => testAll(WeaponMasteryProperties, WeaponMasteryPropertySchema));
   it('weapon properties', () => testAll(WeaponProperties, WeaponPropertySchema));
+  it('spells', () => testAll(Spells, SpellSchema));
 });
