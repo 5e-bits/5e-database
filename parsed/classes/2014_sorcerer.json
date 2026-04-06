@@ -1,0 +1,306 @@
+{
+    "index": "sorcerer",
+    "name": "Sorcerer",
+    "hit_die": 6,
+    "proficiency_choices": [
+        {
+            "desc": "Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion",
+            "choose": 2,
+            "type": "proficiencies",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-arcana",
+                            "name": "Skill: Arcana",
+                            "url": "/api/2024/proficiencies/skill-arcana"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-deception",
+                            "name": "Skill: Deception",
+                            "url": "/api/2024/proficiencies/skill-deception"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-insight",
+                            "name": "Skill: Insight",
+                            "url": "/api/2024/proficiencies/skill-insight"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-intimidation",
+                            "name": "Skill: Intimidation",
+                            "url": "/api/2024/proficiencies/skill-intimidation"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-persuasion",
+                            "name": "Skill: Persuasion",
+                            "url": "/api/2024/proficiencies/skill-persuasion"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-religion",
+                            "name": "Skill: Religion",
+                            "url": "/api/2024/proficiencies/skill-religion"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "proficiencies": [
+        {
+            "index": "daggers",
+            "name": "Daggers",
+            "url": "/api/2024/proficiencies/daggers"
+        },
+        {
+            "index": "darts",
+            "name": "Darts",
+            "url": "/api/2024/proficiencies/darts"
+        },
+        {
+            "index": "slings",
+            "name": "Slings",
+            "url": "/api/2024/proficiencies/slings"
+        },
+        {
+            "index": "quarterstaffs",
+            "name": "Quarterstaffs",
+            "url": "/api/2024/proficiencies/quarterstaffs"
+        },
+        {
+            "index": "crossbows-light",
+            "name": "Crossbows, light",
+            "url": "/api/2024/proficiencies/crossbows-light"
+        },
+        {
+            "index": "saving-throw-con",
+            "name": "Saving Throw: CON",
+            "url": "/api/2024/proficiencies/saving-throw-con"
+        },
+        {
+            "index": "saving-throw-cha",
+            "name": "Saving Throw: CHA",
+            "url": "/api/2024/proficiencies/saving-throw-cha"
+        }
+    ],
+    "saving_throws": [
+        {
+            "index": "con",
+            "name": "CON",
+            "url": "/api/2024/ability-scores/con"
+        },
+        {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+        }
+    ],
+    "starting_equipment": [
+        {
+            "equipment": {
+                "index": "dagger",
+                "name": "Dagger",
+                "url": "/api/2024/equipment/dagger"
+            },
+            "quantity": 2
+        }
+    ],
+    "starting_equipment_options": [
+        {
+            "desc": "(a) a light crossbow and 20 bolts or (b) any simple weapon",
+            "choose": 1,
+            "type": "equipment",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "multiple",
+                        "items": [
+                            {
+                                "option_type": "counted_reference",
+                                "count": 1,
+                                "of": {
+                                    "index": "crossbow-light",
+                                    "name": "Crossbow, light",
+                                    "url": "/api/2024/equipment/crossbow-light"
+                                }
+                            },
+                            {
+                                "option_type": "counted_reference",
+                                "count": 20,
+                                "of": {
+                                    "index": "crossbow-bolt",
+                                    "name": "Crossbow bolt",
+                                    "url": "/api/2024/equipment/crossbow-bolt"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "option_type": "choice",
+                        "choice": {
+                            "desc": "any simple weapon",
+                            "choose": 1,
+                            "type": "equipment",
+                            "from": {
+                                "option_set_type": "equipment_category",
+                                "equipment_category": {
+                                    "index": "simple-weapons",
+                                    "name": "Simple Weapons",
+                                    "url": "/api/2024/equipment-categories/simple-weapons"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "desc": "(a) a component pouch or (b) an arcane focus",
+            "choose": 1,
+            "type": "equipment",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "counted_reference",
+                        "count": 1,
+                        "of": {
+                            "index": "component-pouch",
+                            "name": "Component pouch",
+                            "url": "/api/2024/equipment/component-pouch"
+                        }
+                    },
+                    {
+                        "option_type": "choice",
+                        "choice": {
+                            "desc": "arcane focus",
+                            "choose": 1,
+                            "type": "equipment",
+                            "from": {
+                                "option_set_type": "equipment_category",
+                                "equipment_category": {
+                                    "index": "arcane-foci",
+                                    "name": "Arcane Foci",
+                                    "url": "/api/2024/equipment-categories/arcane-foci"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "desc": "(a) a dungeoneer\u00e2\u20ac\u2122s pack or (b) an explorer\u00e2\u20ac\u2122s pack",
+            "choose": 1,
+            "type": "equipment",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "counted_reference",
+                        "count": 1,
+                        "of": {
+                            "index": "dungeoneers-pack",
+                            "name": "Dungeoneer's Pack",
+                            "url": "/api/2024/equipment/dungeoneers-pack"
+                        }
+                    },
+                    {
+                        "option_type": "counted_reference",
+                        "count": 1,
+                        "of": {
+                            "index": "explorers-pack",
+                            "name": "Explorer's Pack",
+                            "url": "/api/2024/equipment/explorers-pack"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "class_levels": "/api/2024/classes/sorcerer/levels",
+    "multi_classing": {
+        "prerequisites": [
+            {
+                "ability_score": {
+                    "index": "cha",
+                    "name": "CHA",
+                    "url": "/api/2024/ability-scores/cha"
+                },
+                "minimum_score": 13
+            }
+        ],
+        "proficiencies": []
+    },
+    "subclasses": [
+        {
+            "index": "draconic",
+            "name": "Draconic",
+            "url": "/api/2024/subclasses/draconic"
+        }
+    ],
+    "spellcasting": {
+        "level": 1,
+        "spellcasting_ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+        },
+        "info": [
+            {
+                "name": "Cantrips",
+                "desc": [
+                    "At 1st level, you know four cantrips of your choice from the sorcerer spell list. You learn additional sorcerer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Sorcerer table."
+                ]
+            },
+            {
+                "name": "Spell Slots",
+                "desc": [
+                    "The Sorcerer table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these sorcerer spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+                    "For example, if you know the 1st-level spell burning hands and have a 1st-level and a 2nd-level spell slot available, you can cast burning hands using either slot."
+                ]
+            },
+            {
+                "name": "Spells Known of 1st Level and Higher",
+                "desc": [
+                    "You know two 1st-level spells of your choice from the sorcerer spell list.",
+                    "The Spells Known column of the Sorcerer table shows when you learn more sorcerer spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level. ",
+                    "Additionally, when you gain a level in this class, you can choose one of the sorcerer spells you know and replace it with another spell from the sorcerer spell list, which also must be of a level for which you have spell slots."
+                ]
+            },
+            {
+                "name": "Spellcasting Ability",
+                "desc": [
+                    "Charisma is your spellcasting ability for your sorcerer spells, since the power of your magic relies on your ability to project your will into the world. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a sorcerer spell you cast and when making an attack roll with one.",
+                    "Spell save DC = 8 + your proficiency bonus + your Charisma modifier.",
+                    "Spell attack modifier = your proficiency bonus + your Charisma modifier."
+                ]
+            },
+            {
+                "name": "Spellcasting Focus",
+                "desc": [
+                    "You can use an arcane focus as a spellcasting focus for your sorcerer spells."
+                ]
+            }
+        ]
+    },
+    "spells": "/api/2024/classes/sorcerer/spells",
+    "url": "/api/2024/classes/sorcerer"
+}

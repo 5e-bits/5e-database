@@ -1,0 +1,183 @@
+{
+    "index": "barbarian",
+    "name": "Barbarian",
+    "primary_ability": {
+        "desc": "Strength",
+        "all_of": [
+            {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/2024/ability-scores/str"
+            }
+        ]
+    },
+    "hit_die": 12,
+    "proficiency_choices": [
+        {
+            "desc": "Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival",
+            "choose": 2,
+            "type": "proficiencies",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-animal-handling",
+                            "name": "Skill: Animal Handling",
+                            "url": "/api/2024/proficiencies/skill-animal-handling"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-athletics",
+                            "name": "Skill: Athletics",
+                            "url": "/api/2024/proficiencies/skill-athletics"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-intimidation",
+                            "name": "Skill: Intimidation",
+                            "url": "/api/2024/proficiencies/skill-intimidation"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-nature",
+                            "name": "Skill: Nature",
+                            "url": "/api/2024/proficiencies/skill-nature"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-perception",
+                            "name": "Skill: Perception",
+                            "url": "/api/2024/proficiencies/skill-perception"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-survival",
+                            "name": "Skill: Survival",
+                            "url": "/api/2024/proficiencies/skill-survival"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "proficiencies": [
+        {
+            "index": "light-armor",
+            "name": "Light Armor",
+            "url": "/api/2024/proficiencies/light-armor"
+        },
+        {
+            "index": "medium-armor",
+            "name": "Medium Armor",
+            "url": "/api/2024/proficiencies/medium-armor"
+        },
+        {
+            "index": "shields",
+            "name": "Shields",
+            "url": "/api/2024/proficiencies/shields"
+        },
+        {
+            "index": "simple-weapons",
+            "name": "Simple Weapons",
+            "url": "/api/2024/proficiencies/simple-weapons"
+        },
+        {
+            "index": "martial-weapons",
+            "name": "Martial Weapons",
+            "url": "/api/2024/proficiencies/martial-weapons"
+        },
+        {
+            "index": "saving-throw-str",
+            "name": "Saving Throw: STR",
+            "url": "/api/2024/proficiencies/saving-throw-str"
+        },
+        {
+            "index": "saving-throw-con",
+            "name": "Saving Throw: CON",
+            "url": "/api/2024/proficiencies/saving-throw-con"
+        }
+    ],
+    "saving_throws": [
+        {
+            "index": "str",
+            "name": "STR",
+            "url": "/api/2024/ability-scores/str"
+        },
+        {
+            "index": "con",
+            "name": "CON",
+            "url": "/api/2024/ability-scores/con"
+        }
+    ],
+    "starting_equipment_options": [
+        {
+            "desc": "(a) Greataxe, 4 Handaxes, Explorer's Pack, and 15 GP or (b) 75 GP",
+            "choose": 1,
+            "type": "equipment",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "multiple",
+                        "items": [
+                            { "option_type": "counted_reference", "count": 1,"of":{ "index":  "greataxe", "name":  "Greataxe", "url":  "/api/2024/equipment/greataxe" }},
+                            { "option_type": "counted_reference", "count": 4, "of": { "index": "handaxe", "name": "Handaxe", "url": "/api/2024/equipment/handaxe" }},
+                            { "option_type": "counted_reference", "count": 1, "of": { "index": "explorers-pack", "name": "Explorer's Pack", "url": "/api/2014/equipment/explorers-pack" }},
+                            { "option_type": "money", "count":  15, "unit": "gp"}
+                        ]
+                    },
+                    {
+                        "option_type": "money",
+                        "count": 75,
+                        "unit": "gp"
+                    }
+                ]
+            }
+        }
+    ],
+    "class_levels": "/api/2024/classes/barbarian/levels",
+    "multi_classing": {
+        "prerequisites": [
+            {
+                "ability_score": {
+                    "index": "str",
+                    "name": "STR",
+                    "url": "/api/2024/ability-scores/str"
+                },
+                "minimum_score": 13
+            }
+        ],
+        "proficiencies": [
+            {
+                "index": "shields",
+                "name": "Shields",
+                "url": "/api/2024/proficiencies/shields"
+            },
+            {
+                "index": "martial-weapons",
+                "name": "Martial Weapons",
+                "url": "/api/2024/proficiencies/martial-weapons"
+            }
+        ]
+    },
+    "subclasses": [
+        {
+            "index": "path-of-the-berserker",
+            "name": "Path of the Berserker",
+            "url": "/api/2024/subclasses/path-of-the-berserker"
+        }
+    ],
+    "url": "/api/2024/classes/barbarian"
+}

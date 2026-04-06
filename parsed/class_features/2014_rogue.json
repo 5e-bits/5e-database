@@ -1,0 +1,938 @@
+[
+    {
+        "index": "rogue-expertise-1",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Expertise",
+        "level": 1,
+        "prerequisites": [],
+        "desc": [
+            "At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
+            "At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit"
+        ],
+        "feature_specific": {
+            "expertise_options": {
+                "choose": 1,
+                "type": "proficiency",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        {
+                            "option_type": "choice",
+                            "choice": {
+                                "choose": 2,
+                                "type": "proficiency",
+                                "from": {
+                                    "option_set_type": "options_array",
+                                    "options": [
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-acrobatics",
+                                                "name": "Skill: Acrobatics",
+                                                "url": "/api/2024/proficiencies/skill-acrobatics"
+                                            }
+                                        },
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-animal-handling",
+                                                "name": "Skill: Animal Handling",
+                                                "url": "/api/2024/proficiencies/skill-animal-handling"
+                                            }
+                                        },
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-arcana",
+                                                "name": "Skill: Arcana",
+                                                "url": "/api/2024/proficiencies/skill-arcana"
+                                            }
+                                        },
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-athletics",
+                                                "name": "Skill: Athletics",
+                                                "url": "/api/2024/proficiencies/skill-athletics"
+                                            }
+                                        },
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-deception",
+                                                "name": "Skill: Deception",
+                                                "url": "/api/2024/proficiencies/skill-deception"
+                                            }
+                                        },
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-history",
+                                                "name": "Skill: History",
+                                                "url": "/api/2024/proficiencies/skill-history"
+                                            }
+                                        },
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-insight",
+                                                "name": "Skill: Insight",
+                                                "url": "/api/2024/proficiencies/skill-insight"
+                                            }
+                                        },
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-intimidation",
+                                                "name": "Skill: Intimidation",
+                                                "url": "/api/2024/proficiencies/skill-intimidation"
+                                            }
+                                        },
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-investigation",
+                                                "name": "Skill: Investigation",
+                                                "url": "/api/2024/proficiencies/skill-investigation"
+                                            }
+                                        },
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-medicine",
+                                                "name": "Skill: Medicine",
+                                                "url": "/api/2024/proficiencies/skill-medicine"
+                                            }
+                                        },
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-nature",
+                                                "name": "Skill: Nature",
+                                                "url": "/api/2024/proficiencies/skill-nature"
+                                            }
+                                        },
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-perception",
+                                                "name": "Skill: Perception",
+                                                "url": "/api/2024/proficiencies/skill-perception"
+                                            }
+                                        },
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-performance",
+                                                "name": "Skill: Performance",
+                                                "url": "/api/2024/proficiencies/skill-performance"
+                                            }
+                                        },
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-persuasion",
+                                                "name": "Skill: Persuasion",
+                                                "url": "/api/2024/proficiencies/skill-persuasion"
+                                            }
+                                        },
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-religion",
+                                                "name": "Skill: Religion",
+                                                "url": "/api/2024/proficiencies/skill-religion"
+                                            }
+                                        },
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-sleight-of-hand",
+                                                "name": "Skill: Sleight of Hand",
+                                                "url": "/api/2024/proficiencies/skill-sleight-of-hand"
+                                            }
+                                        },
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-stealth",
+                                                "name": "Skill: Stealth",
+                                                "url": "/api/2024/proficiencies/skill-stealth"
+                                            }
+                                        },
+                                        {
+                                            "option_type": "reference",
+                                            "item": {
+                                                "index": "skill-survival",
+                                                "name": "Skill: Survival",
+                                                "url": "/api/2024/proficiencies/skill-survival"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "option_type": "multiple",
+                            "items": [
+                                {
+                                    "option_type": "choice",
+                                    "choice": {
+                                        "choose": 1,
+                                        "type": "proficiency",
+                                        "from": {
+                                            "option_set_type": "options_array",
+                                            "options": [
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-acrobatics",
+                                                        "name": "Skill: Acrobatics",
+                                                        "url": "/api/2024/proficiencies/skill-acrobatics"
+                                                    }
+                                                },
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-animal-handling",
+                                                        "name": "Skill: Animal Handling",
+                                                        "url": "/api/2024/proficiencies/skill-animal-handling"
+                                                    }
+                                                },
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-arcana",
+                                                        "name": "Skill: Arcana",
+                                                        "url": "/api/2024/proficiencies/skill-arcana"
+                                                    }
+                                                },
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-athletics",
+                                                        "name": "Skill: Athletics",
+                                                        "url": "/api/2024/proficiencies/skill-athletics"
+                                                    }
+                                                },
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-deception",
+                                                        "name": "Skill: Deception",
+                                                        "url": "/api/2024/proficiencies/skill-deception"
+                                                    }
+                                                },
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-history",
+                                                        "name": "Skill: History",
+                                                        "url": "/api/2024/proficiencies/skill-history"
+                                                    }
+                                                },
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-insight",
+                                                        "name": "Skill: Insight",
+                                                        "url": "/api/2024/proficiencies/skill-insight"
+                                                    }
+                                                },
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-intimidation",
+                                                        "name": "Skill: Intimidation",
+                                                        "url": "/api/2024/proficiencies/skill-intimidation"
+                                                    }
+                                                },
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-investigation",
+                                                        "name": "Skill: Investigation",
+                                                        "url": "/api/2024/proficiencies/skill-investigation"
+                                                    }
+                                                },
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-medicine",
+                                                        "name": "Skill: Medicine",
+                                                        "url": "/api/2024/proficiencies/skill-medicine"
+                                                    }
+                                                },
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-nature",
+                                                        "name": "Skill: Nature",
+                                                        "url": "/api/2024/proficiencies/skill-nature"
+                                                    }
+                                                },
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-perception",
+                                                        "name": "Skill: Perception",
+                                                        "url": "/api/2024/proficiencies/skill-perception"
+                                                    }
+                                                },
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-performance",
+                                                        "name": "Skill: Performance",
+                                                        "url": "/api/2024/proficiencies/skill-performance"
+                                                    }
+                                                },
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-persuasion",
+                                                        "name": "Skill: Persuasion",
+                                                        "url": "/api/2024/proficiencies/skill-persuasion"
+                                                    }
+                                                },
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-religion",
+                                                        "name": "Skill: Religion",
+                                                        "url": "/api/2024/proficiencies/skill-religion"
+                                                    }
+                                                },
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-sleight-of-hand",
+                                                        "name": "Skill: Sleight of Hand",
+                                                        "url": "/api/2024/proficiencies/skill-sleight-of-hand"
+                                                    }
+                                                },
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-stealth",
+                                                        "name": "Skill: Stealth",
+                                                        "url": "/api/2024/proficiencies/skill-stealth"
+                                                    }
+                                                },
+                                                {
+                                                    "option_type": "reference",
+                                                    "item": {
+                                                        "index": "skill-survival",
+                                                        "name": "Skill: Survival",
+                                                        "url": "/api/2024/proficiencies/skill-survival"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "option_type": "reference",
+                                    "item": {
+                                        "index": "thieves-tools",
+                                        "name": "Thieves' Tools",
+                                        "url": "/api/2024/proficiencies/thieves-tools"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "url": "/api/2024/features/rogue-expertise-1"
+    },
+    {
+        "index": "sneak-attack",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Sneak Attack",
+        "level": 1,
+        "prerequisites": [],
+        "desc": [
+            "Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.",
+            "You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.",
+            "The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+        ],
+        "url": "/api/2024/features/sneak-attack"
+    },
+    {
+        "index": "thieves-cant",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Thieves' Cant",
+        "level": 1,
+        "prerequisites": [],
+        "desc": [
+            "During your rogue training you learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.",
+            "In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run."
+        ],
+        "url": "/api/2024/features/thieves-cant"
+    },
+    {
+        "index": "cunning-action",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Cunning Action",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
+        ],
+        "url": "/api/2024/features/cunning-action"
+    },
+    {
+        "index": "roguish-archetype",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Roguish Archetype",
+        "level": 3,
+        "prerequisites": [],
+        "desc": [
+            "At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities, such as Thief. Additional archetypes are available in the original source material. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
+        ],
+        "url": "/api/2024/features/roguish-archetype"
+    },
+    {
+        "index": "fast-hands",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "subclass": {
+            "index": "thief",
+            "name": "Thief",
+            "url": "/api/2024/subclasses/thief"
+        },
+        "name": "Fast Hands",
+        "level": 3,
+        "prerequisites": [],
+        "desc": [
+            "Starting at 3rd level, you can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves' tools to disarm a trap or open a lock, or take the Use an Object action."
+        ],
+        "url": "/api/2024/features/fast-hands"
+    },
+    {
+        "index": "second-story-work",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "subclass": {
+            "index": "thief",
+            "name": "Thief",
+            "url": "/api/2024/subclasses/thief"
+        },
+        "name": "Second-Story Work",
+        "level": 3,
+        "prerequisites": [],
+        "desc": [
+            "When you choose this archetype at 3rd level, you gain the ability to climb faster than normal; climbing no longer costs you extra movement.",
+            "In addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier."
+        ],
+        "url": "/api/2024/features/second-story-work"
+    },
+    {
+        "index": "rogue-ability-score-improvement-1",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Ability Score Improvement",
+        "level": 4,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/rogue-ability-score-improvement-1"
+    },
+    {
+        "index": "uncanny-dodge",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Uncanny Dodge",
+        "level": 5,
+        "prerequisites": [],
+        "desc": [
+            "Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
+        ],
+        "url": "/api/2024/features/uncanny-dodge"
+    },
+    {
+        "index": "rogue-expertise-2",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Expertise",
+        "level": 6,
+        "prerequisites": [],
+        "desc": [
+            "At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
+            "At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit"
+        ],
+        "feature_specific": {
+            "expertise_options": {
+                "choose": 2,
+                "type": "proficiency",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-acrobatics",
+                                "name": "Skill: Acrobatics",
+                                "url": "/api/2024/proficiencies/skill-acrobatics"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-animal-handling",
+                                "name": "Skill: Animal Handling",
+                                "url": "/api/2024/proficiencies/skill-animal-handling"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-arcana",
+                                "name": "Skill: Arcana",
+                                "url": "/api/2024/proficiencies/skill-arcana"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-athletics",
+                                "name": "Skill: Athletics",
+                                "url": "/api/2024/proficiencies/skill-athletics"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-deception",
+                                "name": "Skill: Deception",
+                                "url": "/api/2024/proficiencies/skill-deception"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-history",
+                                "name": "Skill: History",
+                                "url": "/api/2024/proficiencies/skill-history"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-insight",
+                                "name": "Skill: Insight",
+                                "url": "/api/2024/proficiencies/skill-insight"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-intimidation",
+                                "name": "Skill: Intimidation",
+                                "url": "/api/2024/proficiencies/skill-intimidation"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-investigation",
+                                "name": "Skill: Investigation",
+                                "url": "/api/2024/proficiencies/skill-investigation"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-medicine",
+                                "name": "Skill: Medicine",
+                                "url": "/api/2024/proficiencies/skill-medicine"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-nature",
+                                "name": "Skill: Nature",
+                                "url": "/api/2024/proficiencies/skill-nature"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-perception",
+                                "name": "Skill: Perception",
+                                "url": "/api/2024/proficiencies/skill-perception"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-performance",
+                                "name": "Skill: Performance",
+                                "url": "/api/2024/proficiencies/skill-performance"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-persuasion",
+                                "name": "Skill: Persuasion",
+                                "url": "/api/2024/proficiencies/skill-persuasion"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-religion",
+                                "name": "Skill: Religion",
+                                "url": "/api/2024/proficiencies/skill-religion"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-sleight-of-hand",
+                                "name": "Skill: Sleight of Hand",
+                                "url": "/api/2024/proficiencies/skill-sleight-of-hand"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-stealth",
+                                "name": "Skill: Stealth",
+                                "url": "/api/2024/proficiencies/skill-stealth"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-survival",
+                                "name": "Skill: Survival",
+                                "url": "/api/2024/proficiencies/skill-survival"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "thieves-tools",
+                                "name": "Thieves' Tools",
+                                "url": "/api/2024/proficiencies/thieves-tools"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "url": "/api/2024/features/rogue-expertise-2"
+    },
+    {
+        "index": "rogue-evasion",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Evasion",
+        "level": 7,
+        "prerequisites": [],
+        "desc": [
+            "Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+        ],
+        "url": "/api/2024/features/rogue-evasion"
+    },
+    {
+        "index": "rogue-ability-score-improvement-2",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Ability Score Improvement",
+        "level": 8,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/rogue-ability-score-improvement-2"
+    },
+    {
+        "index": "roguish-archetype-improvement-1",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Roguish Archetype feature",
+        "level": 9,
+        "prerequisites": [],
+        "desc": [
+            "At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities, such as Thief. Additional archetypes are available in the original source material. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
+        ],
+        "url": "/api/2024/features/roguish-archetype-improvement-1"
+    },
+    {
+        "index": "supreme-sneak",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "subclass": {
+            "index": "thief",
+            "name": "Thief",
+            "url": "/api/2024/subclasses/thief"
+        },
+        "name": "Supreme Sneak",
+        "level": 9,
+        "prerequisites": [],
+        "desc": [
+            "Starting at 9th level, you have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn."
+        ],
+        "url": "/api/2024/features/supreme-sneak"
+    },
+    {
+        "index": "rogue-ability-score-improvement-3",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Ability Score Improvement",
+        "level": 10,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/rogue-ability-score-improvement-3"
+    },
+    {
+        "index": "reliable-talent",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Reliable Talent",
+        "level": 11,
+        "prerequisites": [],
+        "desc": [
+            "By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10."
+        ],
+        "url": "/api/2024/features/reliable-talent"
+    },
+    {
+        "index": "rogue-ability-score-improvement-4",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Ability Score Improvement",
+        "level": 12,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/rogue-ability-score-improvement-4"
+    },
+    {
+        "index": "roguish-archetype-improvement-2",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Roguish Archetype feature",
+        "level": 13,
+        "prerequisites": [],
+        "desc": [
+            "At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities, such as Thief. Additional archetypes are available in the original source material. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
+        ],
+        "url": "/api/2024/features/roguish-archetype-improvement-2"
+    },
+    {
+        "index": "use-magic-device",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "subclass": {
+            "index": "thief",
+            "name": "Thief",
+            "url": "/api/2024/subclasses/thief"
+        },
+        "name": "Use Magic Device",
+        "level": 13,
+        "prerequisites": [],
+        "desc": [
+            "By 13th level, you have learned enough about the workings of magic that you can improvise the use of items even when they are not intended for you. You ignore all class, race, and level requirements on the use of magic items."
+        ],
+        "url": "/api/2024/features/use-magic-device"
+    },
+    {
+        "index": "blindsense",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Blindsense",
+        "level": 14,
+        "prerequisites": [],
+        "desc": [
+            "Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you."
+        ],
+        "url": "/api/2024/features/blindsense"
+    },
+    {
+        "index": "slippery-mind",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Slippery Mind",
+        "level": 15,
+        "prerequisites": [],
+        "desc": [
+            "By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws."
+        ],
+        "url": "/api/2024/features/slippery-mind"
+    },
+    {
+        "index": "rogue-ability-score-improvement-5",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Ability Score Improvement",
+        "level": 16,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/rogue-ability-score-improvement-5"
+    },
+    {
+        "index": "roguish-archetype-improvement-3",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Roguish Archetype feature",
+        "level": 17,
+        "prerequisites": [],
+        "desc": [
+            "At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities, such as Thief. Additional archetypes are available in the original source material. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
+        ],
+        "url": "/api/2024/features/roguish-archetype-improvement-3"
+    },
+    {
+        "index": "thiefs-reflexes",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "subclass": {
+            "index": "thief",
+            "name": "Thief",
+            "url": "/api/2024/subclasses/thief"
+        },
+        "name": "Thief's Reflexes",
+        "level": 17,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 17th level, you have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can't use this feature when you are surprised."
+        ],
+        "url": "/api/2024/features/thiefs-reflexes"
+    },
+    {
+        "index": "elusive",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Elusive",
+        "level": 18,
+        "prerequisites": [],
+        "desc": [
+            "Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated."
+        ],
+        "url": "/api/2024/features/elusive"
+    },
+    {
+        "index": "rogue-ability-score-improvement-6",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Ability Score Improvement",
+        "level": 19,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/rogue-ability-score-improvement-6"
+    },
+    {
+        "index": "stroke-of-luck",
+        "class": {
+            "index": "rogue",
+            "name": "Rogue",
+            "url": "/api/2024/classes/rogue"
+        },
+        "name": "Stroke of Luck",
+        "level": 20,
+        "prerequisites": [],
+        "desc": [
+            "At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.",
+            "Once you use this feature, you can't use it again until you finish a short or long rest."
+        ],
+        "url": "/api/2024/features/stroke-of-luck"
+    }
+]

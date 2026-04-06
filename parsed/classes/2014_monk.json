@@ -1,0 +1,483 @@
+{
+    "index": "monk",
+    "name": "Monk",
+    "hit_die": 8,
+    "proficiency_choices": [
+        {
+            "desc": "Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth",
+            "choose": 2,
+            "type": "proficiencies",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-acrobatics",
+                            "name": "Skill: Acrobatics",
+                            "url": "/api/2024/proficiencies/skill-acrobatics"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-athletics",
+                            "name": "Skill: Athletics",
+                            "url": "/api/2024/proficiencies/skill-athletics"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-history",
+                            "name": "Skill: History",
+                            "url": "/api/2024/proficiencies/skill-history"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-insight",
+                            "name": "Skill: Insight",
+                            "url": "/api/2024/proficiencies/skill-insight"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-religion",
+                            "name": "Skill: Religion",
+                            "url": "/api/2024/proficiencies/skill-religion"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-stealth",
+                            "name": "Skill: Stealth",
+                            "url": "/api/2024/proficiencies/skill-stealth"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "desc": "Choose one type of artisan\u00e2\u20ac\u2122s tools or one musical instrument",
+            "type": "proficiencies",
+            "choose": 1,
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "choice",
+                        "choice": {
+                            "desc": "artisan's tools",
+                            "type": "proficiencies",
+                            "choose": 1,
+                            "from": {
+                                "option_set_type": "options_array",
+                                "options": [
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "alchemists-supplies",
+                                            "name": "Alchemist's Supplies",
+                                            "url": "/api/2024/proficiencies/alchemists-supplies"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "brewers-supplies",
+                                            "name": "Brewer's Supplies",
+                                            "url": "/api/2024/proficiencies/brewers-supplies"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "calligraphers-supplies",
+                                            "name": "Calligrapher's Supplies",
+                                            "url": "/api/2024/proficiencies/calligraphers-supplies"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "carpenters-tools",
+                                            "name": "Carpenter's Tools",
+                                            "url": "/api/2024/proficiencies/carpenters-tools"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "cartographers-tools",
+                                            "name": "Cartographer's Tools",
+                                            "url": "/api/2024/proficiencies/cartographers-tools"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "cobblers-tools",
+                                            "name": "Cobbler's Tools",
+                                            "url": "/api/2024/proficiencies/cobblers-tools"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "cooks-utensils",
+                                            "name": "Cook's utensils",
+                                            "url": "/api/2024/proficiencies/cooks-utensils"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "glassblowers-tools",
+                                            "name": "Glassblower's Tools",
+                                            "url": "/api/2024/proficiencies/glassblowers-tools"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "jewelers-tools",
+                                            "name": "Jeweler's Tools",
+                                            "url": "/api/2024/proficiencies/jewelers-tools"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "leatherworkers-tools",
+                                            "name": "Leatherworker's Tools",
+                                            "url": "/api/2024/proficiencies/leatherworkers-tools"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "masons-tools",
+                                            "name": "Mason's Tools",
+                                            "url": "/api/2024/proficiencies/masons-tools"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "painters-supplies",
+                                            "name": "Painter's Supplies",
+                                            "url": "/api/2024/proficiencies/painters-supplies"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "potters-tools",
+                                            "name": "Potter's Tools",
+                                            "url": "/api/2024/proficiencies/potters-tools"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "smiths-tools",
+                                            "name": "Smith's Tools",
+                                            "url": "/api/2024/proficiencies/smiths-tools"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "tinkers-tools",
+                                            "name": "Tinker's Tools",
+                                            "url": "/api/2024/proficiencies/tinkers-tools"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "weavers-tools",
+                                            "name": "Weaver's Tools",
+                                            "url": "/api/2024/proficiencies/weavers-tools"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "woodcarvers-tools",
+                                            "name": "Woodcarver's Tools",
+                                            "url": "/api/2024/proficiencies/woodcarvers-tools"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "disguise-kit",
+                                            "name": "Disguise Kit",
+                                            "url": "/api/2024/proficiencies/disguise-kit"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "forgery-kit",
+                                            "name": "Forgery Kit",
+                                            "url": "/api/2024/proficiencies/forgery-kit"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "option_type": "choice",
+                        "choice": {
+                            "desc": "musical instrument",
+                            "type": "proficiencies",
+                            "choose": 1,
+                            "from": {
+                                "option_set_type": "options_array",
+                                "options": [
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "bagpipes",
+                                            "name": "Bagpipes",
+                                            "url": "/api/2024/proficiencies/bagpipes"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "drum",
+                                            "name": "Drum",
+                                            "url": "/api/2024/proficiencies/drum"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "dulcimer",
+                                            "name": "Dulcimer",
+                                            "url": "/api/2024/proficiencies/dulcimer"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "flute",
+                                            "name": "Flute",
+                                            "url": "/api/2024/proficiencies/flute"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "lute",
+                                            "name": "Lute",
+                                            "url": "/api/2024/proficiencies/lute"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "lyre",
+                                            "name": "Lyre",
+                                            "url": "/api/2024/proficiencies/lyre"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "horn",
+                                            "name": "Horn",
+                                            "url": "/api/2024/proficiencies/horn"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "pan-flute",
+                                            "name": "Pan flute",
+                                            "url": "/api/2024/proficiencies/pan-flute"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "shawm",
+                                            "name": "Shawm",
+                                            "url": "/api/2024/proficiencies/shawm"
+                                        }
+                                    },
+                                    {
+                                        "option_type": "reference",
+                                        "item": {
+                                            "index": "viol",
+                                            "name": "Viol",
+                                            "url": "/api/2024/proficiencies/viol"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "proficiencies": [
+        {
+            "index": "simple-weapons",
+            "name": "Simple Weapons",
+            "url": "/api/2024/proficiencies/simple-weapons"
+        },
+        {
+            "index": "shortswords",
+            "name": "Shortswords",
+            "url": "/api/2024/proficiencies/shortswords"
+        },
+        {
+            "index": "saving-throw-dex",
+            "name": "Saving Throw: DEX",
+            "url": "/api/2024/proficiencies/saving-throw-dex"
+        },
+        {
+            "index": "saving-throw-str",
+            "name": "Saving Throw: STR",
+            "url": "/api/2024/proficiencies/saving-throw-str"
+        }
+    ],
+    "saving_throws": [
+        {
+            "index": "str",
+            "name": "STR",
+            "url": "/api/2024/ability-scores/str"
+        },
+        {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2024/ability-scores/dex"
+        }
+    ],
+    "starting_equipment": [
+        {
+            "equipment": {
+                "index": "dart",
+                "name": "Dart",
+                "url": "/api/2024/equipment/dart"
+            },
+            "quantity": 10
+        }
+    ],
+    "starting_equipment_options": [
+        {
+            "desc": "(a) a shortsword or (b) any simple weapon",
+            "choose": 1,
+            "type": "equipment",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "counted_reference",
+                        "count": 1,
+                        "of": {
+                            "index": "shortsword",
+                            "name": "Shortsword",
+                            "url": "/api/2024/equipment/shortsword"
+                        }
+                    },
+                    {
+                        "option_type": "choice",
+                        "choice": {
+                            "desc": "any simple weapon",
+                            "choose": 1,
+                            "type": "equipment",
+                            "from": {
+                                "option_set_type": "equipment_category",
+                                "equipment_category": {
+                                    "index": "simple-weapons",
+                                    "name": "Simple Weapons",
+                                    "url": "/api/2024/equipment-categories/simple-weapons"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "desc": "(a) a dungeoneer\u00e2\u20ac\u2122s pack or (b) an explorer\u00e2\u20ac\u2122s pack",
+            "choose": 1,
+            "type": "equipment",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "counted_reference",
+                        "count": 1,
+                        "of": {
+                            "index": "dungeoneers-pack",
+                            "name": "Dungeoneer's Pack",
+                            "url": "/api/2024/equipment/dungeoneers-pack"
+                        }
+                    },
+                    {
+                        "option_type": "counted_reference",
+                        "count": 1,
+                        "of": {
+                            "index": "explorers-pack",
+                            "name": "Explorer's Pack",
+                            "url": "/api/2024/equipment/explorers-pack"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "class_levels": "/api/2024/classes/monk/levels",
+    "multi_classing": {
+        "prerequisites": [
+            {
+                "ability_score": {
+                    "index": "dex",
+                    "name": "DEX",
+                    "url": "/api/2024/ability-scores/dex"
+                },
+                "minimum_score": 13
+            },
+            {
+                "ability_score": {
+                    "index": "wis",
+                    "name": "WIS",
+                    "url": "/api/2024/ability-scores/wis"
+                },
+                "minimum_score": 13
+            }
+        ],
+        "proficiencies": [
+            {
+                "index": "simple-weapons",
+                "name": "Simple Weapons",
+                "url": "/api/2024/proficiencies/simple-weapons"
+            },
+            {
+                "index": "shortswords",
+                "name": "Shortswords",
+                "url": "/api/2024/proficiencies/shortswords"
+            }
+        ]
+    },
+    "subclasses": [
+        {
+            "index": "open-hand",
+            "name": "Open Hand",
+            "url": "/api/2024/subclasses/open-hand"
+        }
+    ],
+    "url": "/api/2024/classes/monk"
+}

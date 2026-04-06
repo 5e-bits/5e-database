@@ -1,0 +1,370 @@
+{
+    "index": "fighter",
+    "name": "Fighter",
+    "hit_die": 10,
+    "proficiency_choices": [
+        {
+            "desc": "Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival",
+            "choose": 2,
+            "type": "proficiencies",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-acrobatics",
+                            "name": "Skill: Acrobatics",
+                            "url": "/api/2024/proficiencies/skill-acrobatics"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-animal-handling",
+                            "name": "Skill: Animal Handling",
+                            "url": "/api/2024/proficiencies/skill-animal-handling"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-athletics",
+                            "name": "Skill: Athletics",
+                            "url": "/api/2024/proficiencies/skill-athletics"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-history",
+                            "name": "Skill: History",
+                            "url": "/api/2024/proficiencies/skill-history"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-insight",
+                            "name": "Skill: Insight",
+                            "url": "/api/2024/proficiencies/skill-insight"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-intimidation",
+                            "name": "Skill: Intimidation",
+                            "url": "/api/2024/proficiencies/skill-intimidation"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-perception",
+                            "name": "Skill: Perception",
+                            "url": "/api/2024/proficiencies/skill-perception"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-survival",
+                            "name": "Skill: Survival",
+                            "url": "/api/2024/proficiencies/skill-survival"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "proficiencies": [
+        {
+            "index": "all-armor",
+            "name": "All armor",
+            "url": "/api/2024/proficiencies/all-armor"
+        },
+        {
+            "index": "shields",
+            "name": "Shields",
+            "url": "/api/2024/proficiencies/shields"
+        },
+        {
+            "index": "simple-weapons",
+            "name": "Simple Weapons",
+            "url": "/api/2024/proficiencies/simple-weapons"
+        },
+        {
+            "index": "martial-weapons",
+            "name": "Martial Weapons",
+            "url": "/api/2024/proficiencies/martial-weapons"
+        },
+        {
+            "index": "saving-throw-str",
+            "name": "Saving Throw: STR",
+            "url": "/api/2024/proficiencies/saving-throw-str"
+        },
+        {
+            "index": "saving-throw-con",
+            "name": "Saving Throw: CON",
+            "url": "/api/2024/proficiencies/saving-throw-con"
+        }
+    ],
+    "saving_throws": [
+        {
+            "index": "str",
+            "name": "STR",
+            "url": "/api/2024/ability-scores/str"
+        },
+        {
+            "index": "con",
+            "name": "CON",
+            "url": "/api/2024/ability-scores/con"
+        }
+    ],
+    "starting_equipment": [],
+    "starting_equipment_options": [
+        {
+            "desc": "(a) chain mail or (b) leather armor, longbow, and 20 arrows",
+            "choose": 1,
+            "type": "equipment",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "counted_reference",
+                        "count": 1,
+                        "of": {
+                            "index": "chain-mail",
+                            "name": "Chain Mail",
+                            "url": "/api/2024/equipment/chain-mail"
+                        }
+                    },
+                    {
+                        "option_type": "multiple",
+                        "items": [
+                            {
+                                "option_type": "counted_reference",
+                                "count": 1,
+                                "of": {
+                                    "index": "leather-armor",
+                                    "name": "Leather Armor",
+                                    "url": "/api/2024/equipment/leather-armor"
+                                }
+                            },
+                            {
+                                "option_type": "counted_reference",
+                                "count": 1,
+                                "of": {
+                                    "index": "longbow",
+                                    "name": "Longbow",
+                                    "url": "/api/2024/equipment/longbow"
+                                }
+                            },
+                            {
+                                "option_type": "counted_reference",
+                                "count": 20,
+                                "of": {
+                                    "index": "arrow",
+                                    "name": "Arrow",
+                                    "url": "/api/2024/equipment/arrow"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "desc": "(a) a martial weapon and a shield or (b) two martial weapons",
+            "choose": 1,
+            "type": "equipment",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "multiple",
+                        "items": [
+                            {
+                                "option_type": "choice",
+                                "choice": {
+                                    "desc": "a martial weapon",
+                                    "choose": 1,
+                                    "type": "equipment",
+                                    "from": {
+                                        "option_set_type": "equipment_category",
+                                        "equipment_category": {
+                                            "index": "martial-weapons",
+                                            "name": "Martial Weapons",
+                                            "url": "/api/2024/equipment-categories/martial-weapons"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "option_type": "counted_reference",
+                                "count": 1,
+                                "of": {
+                                    "index": "shield",
+                                    "name": "Shield",
+                                    "url": "/api/2024/equipment/shield"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "option_type": "choice",
+                        "choice": {
+                            "desc": "two martial weapons",
+                            "choose": 2,
+                            "type": "equipment",
+                            "from": {
+                                "option_set_type": "equipment_category",
+                                "equipment_category": {
+                                    "index": "martial-weapons",
+                                    "name": "Martial Weapons",
+                                    "url": "/api/2024/equipment-categories/martial-weapons"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "desc": "(a) a light crossbow and 20 bolts or (b) two handaxes",
+            "choose": 1,
+            "type": "equipment",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "multiple",
+                        "items": [
+                            {
+                                "option_type": "counted_reference",
+                                "count": 1,
+                                "of": {
+                                    "index": "crossbow-light",
+                                    "name": "Crossbow, light",
+                                    "url": "/api/2024/equipment/crossbow-light"
+                                }
+                            },
+                            {
+                                "option_type": "counted_reference",
+                                "count": 20,
+                                "of": {
+                                    "index": "crossbow-bolt",
+                                    "name": "Crossbow bolt",
+                                    "url": "/api/2024/equipment/crossbow-bolt"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "option_type": "counted_reference",
+                        "count": 2,
+                        "of": {
+                            "index": "handaxe",
+                            "name": "Handaxe",
+                            "url": "/api/2024/equipment/handaxe"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "desc": "(a) a dungeoneer\u00e2\u20ac\u2122s pack or (b) an explorer\u00e2\u20ac\u2122s pack",
+            "choose": 1,
+            "type": "equipment",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "counted_reference",
+                        "count": 1,
+                        "of": {
+                            "index": "dungeoneers-pack",
+                            "name": "Dungeoneer's Pack",
+                            "url": "/api/2024/equipment/dungeoneers-pack"
+                        }
+                    },
+                    {
+                        "option_type": "counted_reference",
+                        "count": 1,
+                        "of": {
+                            "index": "explorers-pack",
+                            "name": "Explorer's Pack",
+                            "url": "/api/2024/equipment/explorers-pack"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "class_levels": "/api/2024/classes/fighter/levels",
+    "multi_classing": {
+        "prerequisite_options": {
+            "type": "ability-scores",
+            "choose": 1,
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "score_prerequisite",
+                        "ability_score": {
+                            "index": "str",
+                            "name": "STR",
+                            "url": "/api/2024/ability-scores/str"
+                        },
+                        "minimum_score": 13
+                    },
+                    {
+                        "option_type": "score_prerequisite",
+                        "ability_score": {
+                            "index": "dex",
+                            "name": "DEX",
+                            "url": "/api/2024/ability-scores/dex"
+                        },
+                        "minimum_score": 13
+                    }
+                ]
+            }
+        },
+        "proficiencies": [
+            {
+                "index": "light-armor",
+                "name": "Light Armor",
+                "url": "/api/2024/proficiencies/light-armor"
+            },
+            {
+                "index": "medium-armor",
+                "name": "Medium Armor",
+                "url": "/api/2024/proficiencies/medium-armor"
+            },
+            {
+                "index": "shields",
+                "name": "Shields",
+                "url": "/api/2024/proficiencies/shields"
+            },
+            {
+                "index": "simple-weapons",
+                "name": "Simple Weapons",
+                "url": "/api/2024/proficiencies/simple-weapons"
+            },
+            {
+                "index": "martial-weapons",
+                "name": "Martial Weapons",
+                "url": "/api/2024/proficiencies/martial-weapons"
+            }
+        ]
+    },
+    "subclasses": [
+        {
+            "index": "champion",
+            "name": "Champion",
+            "url": "/api/2024/subclasses/champion"
+        }
+    ],
+    "url": "/api/2024/classes/fighter"
+}

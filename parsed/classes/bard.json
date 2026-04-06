@@ -1,0 +1,646 @@
+{
+    "index": "bard",
+    "name": "Bard",
+    "primary_ability": {
+        "desc": "Charisma",
+        "all_of": [
+            {
+                "index": "cha",
+                "name": "CHA",
+                "url": "/api/2024/ability-scores/cha"
+            }
+        ]
+    },
+    "hit_die": 8,
+    "proficiency_choices": [
+        {
+            "desc": "Choose any three",
+            "choose": 3,
+            "type": "proficiencies",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-acrobatics",
+                            "name": "Skill: Acrobatics",
+                            "url": "/api/2024/proficiencies/skill-acrobatics"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-animal-handling",
+                            "name": "Skill: Animal Handling",
+                            "url": "/api/2024/proficiencies/skill-animal-handling"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-arcana",
+                            "name": "Skill: Arcana",
+                            "url": "/api/2024/proficiencies/skill-arcana"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-athletics",
+                            "name": "Skill: Athletics",
+                            "url": "/api/2024/proficiencies/skill-athletics"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-deception",
+                            "name": "Skill: Deception",
+                            "url": "/api/2024/proficiencies/skill-deception"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-history",
+                            "name": "Skill: History",
+                            "url": "/api/2024/proficiencies/skill-history"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-insight",
+                            "name": "Skill: Insight",
+                            "url": "/api/2024/proficiencies/skill-insight"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-intimidation",
+                            "name": "Skill: Intimidation",
+                            "url": "/api/2024/proficiencies/skill-intimidation"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-investigation",
+                            "name": "Skill: Investigation",
+                            "url": "/api/2024/proficiencies/skill-investigation"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-medicine",
+                            "name": "Skill: Medicine",
+                            "url": "/api/2024/proficiencies/skill-medicine"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-nature",
+                            "name": "Skill: Nature",
+                            "url": "/api/2024/proficiencies/skill-nature"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-perception",
+                            "name": "Skill: Perception",
+                            "url": "/api/2024/proficiencies/skill-perception"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-performance",
+                            "name": "Skill: Performance",
+                            "url": "/api/2024/proficiencies/skill-performance"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-persuasion",
+                            "name": "Skill: Persuasion",
+                            "url": "/api/2024/proficiencies/skill-persuasion"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-religion",
+                            "name": "Skill: Religion",
+                            "url": "/api/2024/proficiencies/skill-religion"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-sleight-of-hand",
+                            "name": "Skill: Sleight of Hand",
+                            "url": "/api/2024/proficiencies/skill-sleight-of-hand"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-stealth",
+                            "name": "Skill: Stealth",
+                            "url": "/api/2024/proficiencies/skill-stealth"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-survival",
+                            "name": "Skill: Survival",
+                            "url": "/api/2024/proficiencies/skill-survival"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "desc": "Three musical instruments of your choice",
+            "choose": 3,
+            "type": "proficiencies",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "bagpipes",
+                            "name": "Bagpipes",
+                            "url": "/api/2024/proficiencies/bagpipes"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "drum",
+                            "name": "Drum",
+                            "url": "/api/2024/proficiencies/drum"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "dulcimer",
+                            "name": "Dulcimer",
+                            "url": "/api/2024/proficiencies/dulcimer"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "flute",
+                            "name": "Flute",
+                            "url": "/api/2024/proficiencies/flute"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "lute",
+                            "name": "Lute",
+                            "url": "/api/2024/proficiencies/lute"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "lyre",
+                            "name": "Lyre",
+                            "url": "/api/2024/proficiencies/lyre"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "horn",
+                            "name": "Horn",
+                            "url": "/api/2024/proficiencies/horn"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "pan-flute",
+                            "name": "Pan flute",
+                            "url": "/api/2024/proficiencies/pan-flute"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "shawm",
+                            "name": "Shawm",
+                            "url": "/api/2024/proficiencies/shawm"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "viol",
+                            "name": "Viol",
+                            "url": "/api/2024/proficiencies/viol"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "proficiencies": [
+        {
+            "index": "light-armor",
+            "name": "Light Armor",
+            "url": "/api/2024/proficiencies/light-armor"
+        },
+        {
+            "index": "simple-weapons",
+            "name": "Simple Weapons",
+            "url": "/api/2024/proficiencies/simple-weapons"
+        },
+        {
+            "index": "saving-throw-dex",
+            "name": "Saving Throw: DEX",
+            "url": "/api/2024/proficiencies/saving-throw-dex"
+        },
+        {
+            "index": "saving-throw-cha",
+            "name": "Saving Throw: CHA",
+            "url": "/api/2024/proficiencies/saving-throw-cha"
+        }
+    ],
+    "saving_throws": [
+        {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2024/ability-scores/dex"
+        },
+        {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+        }
+    ],
+    "starting_equipment_options": [
+        {
+            "desc": "(A) Leather Armor, 2 Daggers, Musical Instrument of your choice, Entertainer’s Pack, and 19 GP; or (B) 90 GP",
+            "choose": 1,
+            "type": "equipment",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "multiple",
+                        "items": [
+                            { "option_type": "counted_reference", "count": 1,"of":{ "index":  "leather-armor", "name":  "Leather Armor", "url":  "/api/2024/equipment/leather-armor" }},
+                            { "option_type": "counted_reference", "count": 2, "of": { "index": "dagger", "name": "dagger", "url": "/api/2024/equipment/dagger" }},
+                            { "option_type": "counted_reference", "count": 1, "of": { "index": "explorers-pack", "name": "Explorer's Pack", "url": "/api/2024/equipment/explorers-pack" }},
+                            { "option_type": "money", "count":  19, "unit": "gp"}
+                        ]
+                    },
+                    {
+                        "option_type": "money",
+                        "count": 90,
+                        "unit": "gp"
+                    }
+                ]
+            }
+        }
+    ],
+    "class_levels": "/api/2024/classes/bard/levels",
+    "multi_classing": {
+        "prerequisites": [
+            {
+                "ability_score": {
+                    "index": "cha",
+                    "name": "CHA",
+                    "url": "/api/2024/ability-scores/cha"
+                },
+                "minimum_score": 13
+            }
+        ],
+        "proficiencies": [
+            {
+                "index": "light-armor",
+                "name": "Light Armor",
+                "url": "/api/2024/proficiencies/light-armor"
+            }
+        ],
+        "proficiency_choices": [
+            {
+                "desc": "skill",
+                "choose": 1,
+                "type": "proficiencies",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-acrobatics",
+                                "name": "Skill: Acrobatics",
+                                "url": "/api/2024/proficiencies/skill-acrobatics"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-animal-handling",
+                                "name": "Skill: Animal Handling",
+                                "url": "/api/2024/proficiencies/skill-animal-handling"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-arcana",
+                                "name": "Skill: Arcana",
+                                "url": "/api/2024/proficiencies/skill-arcana"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-athletics",
+                                "name": "Skill: Athletics",
+                                "url": "/api/2024/proficiencies/skill-athletics"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-deception",
+                                "name": "Skill: Deception",
+                                "url": "/api/2024/proficiencies/skill-deception"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-history",
+                                "name": "Skill: History",
+                                "url": "/api/2024/proficiencies/skill-history"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-insight",
+                                "name": "Skill: Insight",
+                                "url": "/api/2024/proficiencies/skill-insight"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-intimidation",
+                                "name": "Skill: Intimidation",
+                                "url": "/api/2024/proficiencies/skill-intimidation"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-investigation",
+                                "name": "Skill: Investigation",
+                                "url": "/api/2024/proficiencies/skill-investigation"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-medicine",
+                                "name": "Skill: Medicine",
+                                "url": "/api/2024/proficiencies/skill-medicine"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-nature",
+                                "name": "Skill: Nature",
+                                "url": "/api/2024/proficiencies/skill-nature"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-perception",
+                                "name": "Skill: Perception",
+                                "url": "/api/2024/proficiencies/skill-perception"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-performance",
+                                "name": "Skill: Performance",
+                                "url": "/api/2024/proficiencies/skill-performance"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-persuasion",
+                                "name": "Skill: Persuasion",
+                                "url": "/api/2024/proficiencies/skill-persuasion"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-religion",
+                                "name": "Skill: Religion",
+                                "url": "/api/2024/proficiencies/skill-religion"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-sleight-of-hand",
+                                "name": "Skill: Sleight of Hand",
+                                "url": "/api/2024/proficiencies/skill-sleight-of-hand"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-stealth",
+                                "name": "Skill: Stealth",
+                                "url": "/api/2024/proficiencies/skill-stealth"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-survival",
+                                "name": "Skill: Survival",
+                                "url": "/api/2024/proficiencies/skill-survival"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "desc": "musical instrument",
+                "choose": 1,
+                "type": "proficiencies",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "bagpipes",
+                                "name": "Bagpipes",
+                                "url": "/api/2024/proficiencies/bagpipes"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "drum",
+                                "name": "Drum",
+                                "url": "/api/2024/proficiencies/drum"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "dulcimer",
+                                "name": "Dulcimer",
+                                "url": "/api/2024/proficiencies/dulcimer"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "flute",
+                                "name": "Flute",
+                                "url": "/api/2024/proficiencies/flute"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "lute",
+                                "name": "Lute",
+                                "url": "/api/2024/proficiencies/lute"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "lyre",
+                                "name": "Lyre",
+                                "url": "/api/2024/proficiencies/lyre"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "horn",
+                                "name": "Horn",
+                                "url": "/api/2024/proficiencies/horn"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "pan-flute",
+                                "name": "Pan flute",
+                                "url": "/api/2024/proficiencies/pan-flute"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "shawm",
+                                "name": "Shawm",
+                                "url": "/api/2024/proficiencies/shawm"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "viol",
+                                "name": "Viol",
+                                "url": "/api/2024/proficiencies/viol"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "subclasses": [
+        {
+            "index": "college-of-lore",
+            "name": "College of Lore",
+            "url": "/api/2024/subclasses/college-of-lore"
+        }
+    ],
+    "spellcasting": {
+        "level": 1,
+        "spellcasting_ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+        },
+        "info": [
+            {
+                "name": "Cantrips",
+                "desc": [
+                    "You know two cantrips of your choice from the Bard spell list. Dancing Lights and Vicious Mockery are recommended.",
+                    "Whenever you gain a Bard level, you can replace one of your cantrips with another cantrip of your choice from the Bard spell list",
+                    "When you reach Bard levels 4 and 10, you learn another cantrip of your choice from the Bard spell list, as shown in the Cantrips column of the Bard Features table."
+                ]
+            },
+            {
+                "name": "Spell Slots",
+                "desc": [
+                    "The Bard Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a long rest."
+                ]
+            },
+            {
+                "name": "Prepared Spells of Level 1+",
+                "desc": [
+                    "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the Bard spell list. Charm Person, Color Spray, Dissonant Whispers, and Healing Word are recommended.",
+                    "The number of spells on your list increases as you gain Bard levels, as shown in the Prepared Spells column of the Bard Features table. Whenever that number increases, choose additional spells from the Bard spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Bard, your list of prepared spells can include six spells of levels 1 and 2 in any combination.",
+                    "If another Bard feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Bard spells for you."
+                ]
+            },
+            {
+                "name": "Changing Your Prepared Spells",
+                "desc": [
+                    "Whenever you gain a Bard level, you can replace one spell on your list with another Bard spell for which you have spell slots."
+                ]
+            },
+            {
+                "name": "Spellcasting Ability",
+                "desc": [
+                    "Charisma is your spellcasting ability for your bard spells."
+                ]
+            },
+            {
+                "name": "Spellcasting Focus",
+                "desc": [
+                    "You can use a Musical Instrument as a Spellcasting Focus for your bard spells."
+                ]
+            }
+        ]
+    },
+    "spells": "/api/2024/classes/bard/spells",
+    "url": "/api/2024/classes/bard"
+}
