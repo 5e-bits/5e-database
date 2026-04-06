@@ -1,0 +1,1158 @@
+[
+    {
+        "index": "favored-enemy-1-type",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Favored Enemy (1 type)",
+        "level": 1,
+        "prerequisites": [],
+        "desc": [
+            "Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.",
+            "Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies.",
+            "You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.",
+            "When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.",
+            "You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures."
+        ],
+        "feature_specific": {
+            "enemy_type_options": {
+                "desc": "one enemy type",
+                "choose": 1,
+                "type": "string",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        "aberrations",
+                        "beasts",
+                        "celestials",
+                        "constructs",
+                        "dragons",
+                        "elementals",
+                        "fey",
+                        "fiends",
+                        "giants",
+                        "monstrosities",
+                        "oozes",
+                        "plants",
+                        "undead",
+                        "humanoids"
+                    ]
+                }
+            }
+        },
+        "url": "/api/2024/features/favored-enemy-1-type"
+    },
+    {
+        "index": "natural-explorer-1-terrain-type",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Natural Explorer (1 terrain type)",
+        "level": 1,
+        "prerequisites": [],
+        "desc": [
+            "You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, or swamp. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.",
+            "While traveling for an hour or more in your favored terrain, you gain the following benefits:",
+            "- Difficult terrain doesn't slow your group's travel.",
+            "- Your group can't become lost except by magical means.",
+            "- Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.",
+            "- If you are traveling alone, you can move stealthily at a normal pace.",
+            "- When you forage, you find twice as much food as you normally would.",
+            "- While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.",
+            "You choose additional favored terrain types at 6th and 10th level."
+        ],
+        "feature_specific": {
+            "terrain_type_options": {
+                "desc": "one terrain type",
+                "choose": 1,
+                "type": "string",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        "arctic",
+                        "coast",
+                        "desert",
+                        "forest",
+                        "grassland",
+                        "mountain",
+                        "swamp"
+                    ]
+                }
+            }
+        },
+        "url": "/api/2024/features/natural-explorer-1-terrain-type"
+    },
+    {
+        "index": "ranger-fighting-style",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Fighting Style",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again."
+        ],
+        "feature_specific": {
+            "subfeature_options": {
+                "choose": 1,
+                "type": "feature",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "ranger-fighting-style-archery",
+                                "name": "Fighting Style: Archery",
+                                "url": "/api/2024/features/ranger-fighting-style-archery"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "ranger-fighting-style-defense",
+                                "name": "Fighting Style: Defense",
+                                "url": "/api/2024/features/ranger-fighting-style-defense"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "ranger-fighting-style-dueling",
+                                "name": "Fighting Style: Dueling",
+                                "url": "/api/2024/features/ranger-fighting-style-dueling"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "ranger-fighting-style-two-weapon-fighting",
+                                "name": "Fighting Style: Two-Weapon Fighting",
+                                "url": "/api/2024/features/ranger-fighting-style-two-weapon-fighting"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "url": "/api/2024/features/ranger-fighting-style"
+    },
+    {
+        "index": "ranger-fighting-style-archery",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Fighting Style: Archery",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "You gain a +2 bonus to attack rolls you make with ranged weapons."
+        ],
+        "parent": {
+            "index": "ranger-fighting-style",
+            "name": "Fighting Style",
+            "url": "/api/2024/features/ranger-fighting-style"
+        },
+        "url": "/api/2024/features/ranger-fighting-style-archery"
+    },
+    {
+        "index": "ranger-fighting-style-defense",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Fighting Style: Defense",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "While you are wearing armor, you gain a +1 bonus to AC."
+        ],
+        "parent": {
+            "index": "ranger-fighting-style",
+            "name": "Fighting Style",
+            "url": "/api/2024/features/ranger-fighting-style"
+        },
+        "url": "/api/2024/features/ranger-fighting-style-defense"
+    },
+    {
+        "index": "ranger-fighting-style-dueling",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Fighting Style: Dueling",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon."
+        ],
+        "parent": {
+            "index": "ranger-fighting-style",
+            "name": "Fighting Style",
+            "url": "/api/2024/features/ranger-fighting-style"
+        },
+        "url": "/api/2024/features/ranger-fighting-style-dueling"
+    },
+    {
+        "index": "ranger-fighting-style-two-weapon-fighting",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Fighting Style: Two-Weapon Fighting",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
+        ],
+        "parent": {
+            "index": "ranger-fighting-style",
+            "name": "Fighting Style",
+            "url": "/api/2024/features/ranger-fighting-style"
+        },
+        "url": "/api/2024/features/ranger-fighting-style-two-weapon-fighting"
+    },
+    {
+        "index": "spellcasting-ranger",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Spellcasting: Ranger",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does."
+        ],
+        "reference": "/api/2024/classes/ranger/spellcasting",
+        "url": "/api/2024/features/spellcasting-ranger"
+    },
+    {
+        "index": "ranger-archetype",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Ranger Archetype",
+        "level": 3,
+        "prerequisites": [],
+        "desc": [
+            "At 3rd level, you choose an archetype that you strive to emulate, such as the Hunter. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
+        ],
+        "url": "/api/2024/features/ranger-archetype"
+    },
+    {
+        "index": "hunters-prey",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "subclass": {
+            "index": "hunter",
+            "name": "Hunter",
+            "url": "/api/2024/subclasses/hunter"
+        },
+        "name": "Hunter's Prey",
+        "level": 3,
+        "prerequisites": [],
+        "desc": [
+            "At 3rd level, you gain one of the following features of your choice.",
+            "Colossus Slayer",
+            "Giant Killer",
+            "Horde Breaker"
+        ],
+        "feature_specific": {
+            "subfeature_options": {
+                "choose": 1,
+                "type": "feature",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "hunters-prey-colossus-slayer",
+                                "name": "Hunter's Prey: Colossus Slayer",
+                                "url": "/api/2024/features/hunters-prey-colossus-slayer"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "hunters-prey-giant-killer",
+                                "name": "Hunter's Prey: Giant Killer",
+                                "url": "/api/2024/features/hunters-prey-giant-killer"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "hunters-prey-horde-breaker",
+                                "name": "Hunter's Prey: Horde Breaker",
+                                "url": "/api/2024/features/hunters-prey-horde-breaker"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "url": "/api/2024/features/hunters-prey"
+    },
+    {
+        "index": "hunters-prey-colossus-slayer",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "subclass": {
+            "index": "hunter",
+            "name": "Hunter",
+            "url": "/api/2024/subclasses/hunter"
+        },
+        "name": "Hunter's Prey: Colossus Slayer",
+        "level": 3,
+        "prerequisites": [],
+        "desc": [
+            "Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. You can deal this extra damage only once per turn."
+        ],
+        "parent": {
+            "index": "hunters-prey",
+            "name": "Hunter's Prey",
+            "url": "/api/2024/features/hunters-prey"
+        },
+        "url": "/api/2024/features/hunters-prey-colossus-slayer"
+    },
+    {
+        "index": "hunters-prey-giant-killer",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "subclass": {
+            "index": "hunter",
+            "name": "Hunter",
+            "url": "/api/2024/subclasses/hunter"
+        },
+        "name": "Hunter's Prey: Giant Killer",
+        "level": 3,
+        "prerequisites": [],
+        "desc": [
+            "When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature."
+        ],
+        "parent": {
+            "index": "hunters-prey",
+            "name": "Hunter's Prey",
+            "url": "/api/2024/features/hunters-prey"
+        },
+        "url": "/api/2024/features/hunters-prey-giant-killer"
+    },
+    {
+        "index": "hunters-prey-horde-breaker",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "subclass": {
+            "index": "hunter",
+            "name": "Hunter",
+            "url": "/api/2024/subclasses/hunter"
+        },
+        "name": "Hunter's Prey: Horde Breaker",
+        "level": 3,
+        "prerequisites": [],
+        "desc": [
+            "Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon."
+        ],
+        "parent": {
+            "index": "hunters-prey",
+            "name": "Hunter's Prey",
+            "url": "/api/2024/features/hunters-prey"
+        },
+        "url": "/api/2024/features/hunters-prey-horde-breaker"
+    },
+    {
+        "index": "primeval-awareness",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Primeval Awareness",
+        "level": 3,
+        "prerequisites": [],
+        "desc": [
+            "Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn't reveal the creatures' location or number."
+        ],
+        "url": "/api/2024/features/primeval-awareness"
+    },
+    {
+        "index": "ranger-ability-score-improvement-1",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Ability Score Improvement",
+        "level": 4,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/ranger-ability-score-improvement-1"
+    },
+    {
+        "index": "ranger-extra-attack",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Extra Attack",
+        "level": 5,
+        "prerequisites": [],
+        "desc": [
+            "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+        ],
+        "url": "/api/2024/features/ranger-extra-attack"
+    },
+    {
+        "index": "favored-enemy-2-types",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Favored Enemy (2 types)",
+        "level": 6,
+        "prerequisites": [],
+        "desc": [
+            "Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.",
+            "Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies.",
+            "You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.",
+            "When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.",
+            "You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures."
+        ],
+        "feature_specific": {
+            "enemy_type_options": {
+                "desc": "one enemy type",
+                "choose": 1,
+                "type": "string",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        "aberrations",
+                        "beasts",
+                        "celestials",
+                        "constructs",
+                        "dragons",
+                        "elementals",
+                        "fey",
+                        "fiends",
+                        "giants",
+                        "monstrosities",
+                        "oozes",
+                        "plants",
+                        "undead",
+                        "humanoids"
+                    ]
+                }
+            }
+        },
+        "url": "/api/2024/features/favored-enemy-2-types"
+    },
+    {
+        "index": "natural-explorer-2-terrain-types",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Natural Explorer (2 terrain types)",
+        "level": 6,
+        "prerequisites": [],
+        "desc": [
+            "You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, or swamp. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.",
+            "While traveling for an hour or more in your favored terrain, you gain the following benefits:",
+            "- Difficult terrain doesn't slow your group's travel.",
+            "- Your group can't become lost except by magical means.",
+            "- Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.",
+            "- If you are traveling alone, you can move stealthily at a normal pace.",
+            "- When you forage, you find twice as much food as you normally would.",
+            "- While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.",
+            "You choose additional favored terrain types at 6th and 10th level."
+        ],
+        "feature_specific": {
+            "terrain_type_options": {
+                "desc": "one terrain type",
+                "choose": 1,
+                "type": "string",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        "arctic",
+                        "coast",
+                        "desert",
+                        "forest",
+                        "grassland",
+                        "mountain",
+                        "swamp"
+                    ]
+                }
+            }
+        },
+        "url": "/api/2024/features/natural-explorer-2-terrain-types"
+    },
+    {
+        "index": "ranger-archetype-improvement-1",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Ranger Archetype feature",
+        "level": 7,
+        "prerequisites": [],
+        "desc": [
+            "At 3rd level, you choose an archetype that you strive to emulate, such as the Hunter. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
+        ],
+        "url": "/api/2024/features/ranger-archetype-improvement-1"
+    },
+    {
+        "index": "defensive-tactics",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "subclass": {
+            "index": "hunter",
+            "name": "Hunter",
+            "url": "/api/2024/subclasses/hunter"
+        },
+        "name": "Defensive Tactics",
+        "level": 7,
+        "prerequisites": [],
+        "desc": [
+            "At 7th level, you gain one of the following features of your choice.",
+            "Escape the Horde",
+            "Multiattack Defense",
+            "Steel Will"
+        ],
+        "feature_specific": {
+            "subfeature_options": {
+                "choose": 1,
+                "type": "feature",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "defensive-tactics-escape-the-horde",
+                                "name": "Defensive Tactics: Escape the Horde",
+                                "url": "/api/2024/features/defensive-tactics-escape-the-horde"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "defensive-tactics-multiattack-defense",
+                                "name": "Defensive Tactics: Multiattack Defense",
+                                "url": "/api/2024/features/defensive-tactics-multiattack-defense"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "defensive-tactics-steel-will",
+                                "name": "Defensive Tactics: Steel Will",
+                                "url": "/api/2024/features/defensive-tactics-steel-will"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "url": "/api/2024/features/defensive-tactics"
+    },
+    {
+        "index": "defensive-tactics-escape-the-horde",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "subclass": {
+            "index": "hunter",
+            "name": "Hunter",
+            "url": "/api/2024/subclasses/hunter"
+        },
+        "name": "Defensive Tactics: Escape the Horde",
+        "level": 7,
+        "prerequisites": [],
+        "desc": [
+            "Opportunity attacks against you are made with disadvantage."
+        ],
+        "parent": {
+            "index": "defensive-tactics",
+            "name": "Defensive Tactics",
+            "url": "/api/2024/features/defensive-tactics"
+        },
+        "url": "/api/2024/features/defensive-tactics-escape-the-horde"
+    },
+    {
+        "index": "defensive-tactics-multiattack-defense",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "subclass": {
+            "index": "hunter",
+            "name": "Hunter",
+            "url": "/api/2024/subclasses/hunter"
+        },
+        "name": "Defensive Tactics: Multiattack Defense",
+        "level": 7,
+        "prerequisites": [],
+        "desc": [
+            "When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn."
+        ],
+        "parent": {
+            "index": "defensive-tactics",
+            "name": "Defensive Tactics",
+            "url": "/api/2024/features/defensive-tactics"
+        },
+        "url": "/api/2024/features/defensive-tactics-multiattack-defense"
+    },
+    {
+        "index": "defensive-tactics-steel-will",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "subclass": {
+            "index": "hunter",
+            "name": "Hunter",
+            "url": "/api/2024/subclasses/hunter"
+        },
+        "name": "Defensive Tactics: Steel Will",
+        "level": 7,
+        "prerequisites": [],
+        "desc": [
+            "You have advantage on saving throws against being frightened."
+        ],
+        "parent": {
+            "index": "defensive-tactics",
+            "name": "Defensive Tactics",
+            "url": "/api/2024/features/defensive-tactics"
+        },
+        "url": "/api/2024/features/defensive-tactics-steel-will"
+    },
+    {
+        "index": "ranger-ability-score-improvement-2",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Ability Score Improvement",
+        "level": 8,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/ranger-ability-score-improvement-2"
+    },
+    {
+        "index": "ranger-lands-stride",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Land's Stride",
+        "level": 8,
+        "prerequisites": [],
+        "desc": [
+            "Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.",
+            "In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell."
+        ],
+        "url": "/api/2024/features/ranger-lands-stride"
+    },
+    {
+        "index": "natural-explorer-3-terrain-types",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Natural Explorer (3 terrain types)",
+        "level": 10,
+        "prerequisites": [],
+        "desc": [
+            "You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, or swamp. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.",
+            "While traveling for an hour or more in your favored terrain, you gain the following benefits:",
+            "- Difficult terrain doesn't slow your group's travel.",
+            "- Your group can't become lost except by magical means.",
+            "- Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.",
+            "- If you are traveling alone, you can move stealthily at a normal pace.",
+            "- When you forage, you find twice as much food as you normally would.",
+            "- While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.",
+            "You choose additional favored terrain types at 6th and 10th level."
+        ],
+        "feature_specific": {
+            "terrain_type_options": {
+                "desc": "one terrain type",
+                "choose": 1,
+                "type": "string",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        "arctic",
+                        "coast",
+                        "desert",
+                        "forest",
+                        "grassland",
+                        "mountain",
+                        "swamp"
+                    ]
+                }
+            }
+        },
+        "url": "/api/2024/features/natural-explorer-3-terrain-types"
+    },
+    {
+        "index": "hide-in-plain-sight",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Hide in Plain Sight",
+        "level": 10,
+        "prerequisites": [],
+        "desc": [
+            "Starting at 10th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.",
+            "Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit."
+        ],
+        "url": "/api/2024/features/hide-in-plain-sight"
+    },
+    {
+        "index": "ranger-archetype-improvement-2",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Ranger Archetype feature",
+        "level": 11,
+        "prerequisites": [],
+        "desc": [
+            "At 3rd level, you choose an archetype that you strive to emulate, such as the Hunter. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
+        ],
+        "url": "/api/2024/features/ranger-archetype-improvement-2"
+    },
+    {
+        "index": "multiattack",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "subclass": {
+            "index": "hunter",
+            "name": "Hunter",
+            "url": "/api/2024/subclasses/hunter"
+        },
+        "name": "Multiattack",
+        "level": 11,
+        "prerequisites": [],
+        "desc": [
+            "At 11th level, you gain one of the following features of your choice.",
+            "Volley",
+            "Whirlwind Attack"
+        ],
+        "feature_specific": {
+            "subfeature_options": {
+                "choose": 1,
+                "type": "feature",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "multiattack-volley",
+                                "name": "Multiattack: Volley",
+                                "url": "/api/2024/features/multiattack-volley"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "multiattack-whirlwind-attack",
+                                "name": "Multiattack: Whirlwind Attack",
+                                "url": "/api/2024/features/multiattack-whirlwind-attack"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "url": "/api/2024/features/multiattack"
+    },
+    {
+        "index": "multiattack-volley",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "subclass": {
+            "index": "hunter",
+            "name": "Hunter",
+            "url": "/api/2024/subclasses/hunter"
+        },
+        "name": "Multiattack: Volley",
+        "level": 11,
+        "prerequisites": [],
+        "desc": [
+            "You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon's range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target."
+        ],
+        "parent": {
+            "index": "multiattack",
+            "name": "Multiattack",
+            "url": "/api/2024/features/multiattack"
+        },
+        "url": "/api/2024/features/multiattack-volley"
+    },
+    {
+        "index": "multiattack-whirlwind-attack",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "subclass": {
+            "index": "hunter",
+            "name": "Hunter",
+            "url": "/api/2024/subclasses/hunter"
+        },
+        "name": "Multiattack: Whirlwind Attack",
+        "level": 11,
+        "prerequisites": [],
+        "desc": [
+            "You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target."
+        ],
+        "parent": {
+            "index": "multiattack",
+            "name": "Multiattack",
+            "url": "/api/2024/features/multiattack"
+        },
+        "url": "/api/2024/features/multiattack-whirlwind-attack"
+    },
+    {
+        "index": "ranger-ability-score-improvement-3",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Ability Score Improvement",
+        "level": 12,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/ranger-ability-score-improvement-3"
+    },
+    {
+        "index": "favored-enemy-3-enemies",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Favored Enemy (3 enemies)",
+        "level": 14,
+        "prerequisites": [],
+        "desc": [
+            "Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.",
+            "Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies.",
+            "You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.",
+            "When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.",
+            "You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures."
+        ],
+        "feature_specific": {
+            "enemy_type_options": {
+                "desc": "one enemy type",
+                "choose": 1,
+                "type": "string",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        "aberrations",
+                        "beasts",
+                        "celestials",
+                        "constructs",
+                        "dragons",
+                        "elementals",
+                        "fey",
+                        "fiends",
+                        "giants",
+                        "monstrosities",
+                        "oozes",
+                        "plants",
+                        "undead",
+                        "humanoids"
+                    ]
+                }
+            }
+        },
+        "url": "/api/2024/features/favored-enemy-3-enemies"
+    },
+    {
+        "index": "vanish",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Vanish",
+        "level": 14,
+        "prerequisites": [],
+        "desc": [
+            "Starting at 14th level, you can use the Hide action as a bonus action on your turn. Also, you can't be tracked by nonmagical means, unless you choose to leave a trail."
+        ],
+        "url": "/api/2024/features/vanish"
+    },
+    {
+        "index": "ranger-archetype-improvement-3",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Ranger Archetype feature",
+        "level": 15,
+        "prerequisites": [],
+        "desc": [
+            "At 3rd level, you choose an archetype that you strive to emulate, such as the Hunter. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
+        ],
+        "url": "/api/2024/features/ranger-archetype-improvement-3"
+    },
+    {
+        "index": "superior-hunters-defense",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "subclass": {
+            "index": "hunter",
+            "name": "Hunter",
+            "url": "/api/2024/subclasses/hunter"
+        },
+        "name": "Superior Hunter's Defense",
+        "level": 15,
+        "prerequisites": [],
+        "desc": [
+            "At 15th level, you gain one of the following features of your choice.",
+            "Evasion",
+            "Stand Against the Tide",
+            "Uncanny Dodge"
+        ],
+        "feature_specific": {
+            "subfeature_options": {
+                "choose": 1,
+                "type": "feature",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "superior-hunters-defense-evasion",
+                                "name": "Superior Hunter's Defense: Evasion",
+                                "url": "/api/2024/features/superior-hunters-defense-evasion"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "superior-hunters-defense-stand-against-the-tide",
+                                "name": "Superior Hunter's Defense: Stand Against the Tide",
+                                "url": "/api/2024/features/superior-hunters-defense-stand-against-the-tide"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "superior-hunters-defense-uncanny-dodge",
+                                "name": "Superior Hunter's Defense: Uncanny Dodge",
+                                "url": "/api/2024/features/superior-hunters-defense-uncanny-dodge"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "url": "/api/2024/features/superior-hunters-defense"
+    },
+    {
+        "index": "superior-hunters-defense-evasion",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "subclass": {
+            "index": "hunter",
+            "name": "Hunter",
+            "url": "/api/2024/subclasses/hunter"
+        },
+        "name": "Superior Hunter's Defense: Evasion",
+        "level": 15,
+        "prerequisites": [],
+        "desc": [
+            "When you are subjected to an effect, such as a red dragon's fiery breath or a lightning bolt spell, that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+        ],
+        "parent": {
+            "index": "superior-hunters-defense",
+            "name": "Superior Hunter's Defense",
+            "url": "/api/2024/features/superior-hunters-defense"
+        },
+        "url": "/api/2024/features/superior-hunters-defense-evasion"
+    },
+    {
+        "index": "superior-hunters-defense-stand-against-the-tide",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "subclass": {
+            "index": "hunter",
+            "name": "Hunter",
+            "url": "/api/2024/subclasses/hunter"
+        },
+        "name": "Superior Hunter's Defense: Stand Against the Tide",
+        "level": 15,
+        "prerequisites": [],
+        "desc": [
+            "When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice."
+        ],
+        "parent": {
+            "index": "superior-hunters-defense",
+            "name": "Superior Hunter's Defense",
+            "url": "/api/2024/features/superior-hunters-defense"
+        },
+        "url": "/api/2024/features/superior-hunters-defense-stand-against-the-tide"
+    },
+    {
+        "index": "superior-hunters-defense-uncanny-dodge",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "subclass": {
+            "index": "hunter",
+            "name": "Hunter",
+            "url": "/api/2024/subclasses/hunter"
+        },
+        "name": "Superior Hunter's Defense: Uncanny Dodge",
+        "level": 15,
+        "prerequisites": [],
+        "desc": [
+            "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
+        ],
+        "parent": {
+            "index": "superior-hunters-defense",
+            "name": "Superior Hunter's Defense",
+            "url": "/api/2024/features/superior-hunters-defense"
+        },
+        "url": "/api/2024/features/superior-hunters-defense-uncanny-dodge"
+    },
+    {
+        "index": "ranger-ability-score-improvement-4",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Ability Score Improvement",
+        "level": 16,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/ranger-ability-score-improvement-4"
+    },
+    {
+        "index": "feral-senses",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Feral Senses",
+        "level": 18,
+        "prerequisites": [],
+        "desc": [
+            "At 18th level, you gain preternatural senses that help you fight creatures you can't see. When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack rolls against it.",
+            "You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't blinded or deafened."
+        ],
+        "url": "/api/2024/features/feral-senses"
+    },
+    {
+        "index": "ranger-ability-score-improvement-5",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Ability Score Improvement",
+        "level": 19,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/ranger-ability-score-improvement-5"
+    },
+    {
+        "index": "foe-slayer",
+        "class": {
+            "index": "ranger",
+            "name": "Ranger",
+            "url": "/api/2024/classes/ranger"
+        },
+        "name": "Foe Slayer",
+        "level": 20,
+        "prerequisites": [],
+        "desc": [
+            "At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied."
+        ],
+        "url": "/api/2024/features/foe-slayer"
+    }
+]

@@ -1,0 +1,735 @@
+[
+    {
+        "index": "spellcasting-druid",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "name": "Spellcasting: Druid",
+        "level": 1,
+        "prerequisites": [],
+        "desc": [
+            "Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will."
+        ],
+        "reference": "/api/2024/classes/druid/spellcasting",
+        "url": "/api/2024/features/spellcasting-druid"
+    },
+    {
+        "index": "druidic",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "name": "Druidic",
+        "level": 1,
+        "prerequisites": [],
+        "desc": [
+            "You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic."
+        ],
+        "url": "/api/2024/features/druidic"
+    },
+    {
+        "index": "wild-shape-cr-1-4-or-below-no-flying-or-swim-speed",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "name": "Wild Shape (CR 1/4 or below, no flying or swim speed)",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.",
+            "Your druid level determines the beasts you can transform into, as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn't have a flying or swimming speed.",
+            "You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.",
+            "While you are transformed, the following rules apply:",
+            "- Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature's bonus instead of yours. If the creature has any legendary or lair actions, you can't use them.",
+            "- When you transform, you assume the beast's hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked unconscious.",
+            "- You can't cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn't break your concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you've already cast.",
+            "- You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can't use any of your special senses, such as darkvision, unless your new form also has that sense.",
+            "- You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the GM decides whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."
+        ],
+        "url": "/api/2024/features/wild-shape-cr-1-4-or-below-no-flying-or-swim-speed"
+    },
+    {
+        "index": "druid-circle",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "name": "Druid Circle",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "At 2nd level, you choose to identify with a circle of druids, such as the Circle of the Land. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
+        ],
+        "url": "/api/2024/features/druid-circle"
+    },
+    {
+        "index": "circle-of-the-land",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "subclass": {
+            "index": "land",
+            "name": "Land",
+            "url": "/api/2024/subclasses/land"
+        },
+        "name": "Circle of the Land",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
+        ],
+        "feature_specific": {
+            "subfeature_options": {
+                "choose": 1,
+                "type": "feature",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "circle-of-the-land-arctic",
+                                "name": "Circle of the Land: Arctic",
+                                "url": "/api/2024/features/circle-of-the-land-arctic"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "circle-of-the-land-coast",
+                                "name": "Circle of the Land: Coast",
+                                "url": "/api/2024/features/circle-of-the-land-coast"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "circle-of-the-land-desert",
+                                "name": "Circle of the Land: Desert",
+                                "url": "/api/2024/features/circle-of-the-land-desert"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "circle-of-the-land-forest",
+                                "name": "Circle of the Land: Forest",
+                                "url": "/api/2024/features/circle-of-the-land-forest"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "circle-of-the-land-grassland",
+                                "name": "Circle of the Land: Grassland",
+                                "url": "/api/2024/features/circle-of-the-land-grassland"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "circle-of-the-land-mountain",
+                                "name": "Circle of the Land: Mountain",
+                                "url": "/api/2024/features/circle-of-the-land-mountain"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "circle-of-the-land-swamp",
+                                "name": "Circle of the Land: Swamp",
+                                "url": "/api/2024/features/circle-of-the-land-swamp"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "url": "/api/2024/features/circle-of-the-land"
+    },
+    {
+        "index": "circle-of-the-land-arctic",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "subclass": {
+            "index": "land",
+            "name": "Land",
+            "url": "/api/2024/subclasses/land"
+        },
+        "name": "Circle of the Land: Arctic",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
+        ],
+        "parent": {
+            "index": "circle-of-the-land",
+            "name": "Circle of the Land",
+            "url": "/api/2024/features/circle-of-the-land"
+        },
+        "url": "/api/2024/features/circle-of-the-land-arctic"
+    },
+    {
+        "index": "circle-of-the-land-coast",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "subclass": {
+            "index": "land",
+            "name": "Land",
+            "url": "/api/2024/subclasses/land"
+        },
+        "name": "Circle of the Land: Coast",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
+        ],
+        "parent": {
+            "index": "circle-of-the-land",
+            "name": "Circle of the Land",
+            "url": "/api/2024/features/circle-of-the-land"
+        },
+        "url": "/api/2024/features/circle-of-the-land-coast"
+    },
+    {
+        "index": "circle-of-the-land-desert",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "subclass": {
+            "index": "land",
+            "name": "Land",
+            "url": "/api/2024/subclasses/land"
+        },
+        "name": "Circle of the Land: Desert",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
+        ],
+        "parent": {
+            "index": "circle-of-the-land",
+            "name": "Circle of the Land",
+            "url": "/api/2024/features/circle-of-the-land"
+        },
+        "url": "/api/2024/features/circle-of-the-land-desert"
+    },
+    {
+        "index": "circle-of-the-land-forest",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "subclass": {
+            "index": "land",
+            "name": "Land",
+            "url": "/api/2024/subclasses/land"
+        },
+        "name": "Circle of the Land: Forest",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
+        ],
+        "parent": {
+            "index": "circle-of-the-land",
+            "name": "Circle of the Land",
+            "url": "/api/2024/features/circle-of-the-land"
+        },
+        "url": "/api/2024/features/circle-of-the-land-forest"
+    },
+    {
+        "index": "circle-of-the-land-grassland",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "subclass": {
+            "index": "land",
+            "name": "Land",
+            "url": "/api/2024/subclasses/land"
+        },
+        "name": "Circle of the Land: Grassland",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
+        ],
+        "parent": {
+            "index": "circle-of-the-land",
+            "name": "Circle of the Land",
+            "url": "/api/2024/features/circle-of-the-land"
+        },
+        "url": "/api/2024/features/circle-of-the-land-grassland"
+    },
+    {
+        "index": "circle-of-the-land-mountain",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "subclass": {
+            "index": "land",
+            "name": "Land",
+            "url": "/api/2024/subclasses/land"
+        },
+        "name": "Circle of the Land: Mountain",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
+        ],
+        "parent": {
+            "index": "circle-of-the-land",
+            "name": "Circle of the Land",
+            "url": "/api/2024/features/circle-of-the-land"
+        },
+        "url": "/api/2024/features/circle-of-the-land-mountain"
+    },
+    {
+        "index": "circle-of-the-land-swamp",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "subclass": {
+            "index": "land",
+            "name": "Land",
+            "url": "/api/2024/subclasses/land"
+        },
+        "name": "Circle of the Land: Swamp",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
+        ],
+        "parent": {
+            "index": "circle-of-the-land",
+            "name": "Circle of the Land",
+            "url": "/api/2024/features/circle-of-the-land"
+        },
+        "url": "/api/2024/features/circle-of-the-land-swamp"
+    },
+    {
+        "index": "bonus-cantrip",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "subclass": {
+            "index": "land",
+            "name": "Land",
+            "url": "/api/2024/subclasses/land"
+        },
+        "name": "Bonus Cantrip",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "When you choose this circle at 2nd level, you learn one additional druid cantrip of your choice."
+        ],
+        "url": "/api/2024/features/bonus-cantrip"
+    },
+    {
+        "index": "natural-recovery",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "subclass": {
+            "index": "land",
+            "name": "Land",
+            "url": "/api/2024/subclasses/land"
+        },
+        "name": "Natural Recovery",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "Starting at 2nd level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can't use this feature again until you finish a long rest.",
+            "For example, when you are a 4th-level druid, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level slot or two 1st-level slots."
+        ],
+        "url": "/api/2024/features/natural-recovery"
+    },
+    {
+        "index": "circle-spells-1",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "subclass": {
+            "index": "land",
+            "name": "Land",
+            "url": "/api/2024/subclasses/land"
+        },
+        "name": "Circle Spells",
+        "level": 3,
+        "prerequisites": [],
+        "desc": [
+            "Your mystical connection to the land infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.",
+            "Choose that land--arctic, coast, desert, forest, grassland, mountain, or swamp--and consult the associated list of spells.",
+            "Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you."
+        ],
+        "url": "/api/2024/features/circle-spells-1"
+    },
+    {
+        "index": "wild-shape-cr-1-2-or-below-no-flying-speed",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "name": "Wild Shape (CR 1/2 or below, no flying speed)",
+        "level": 4,
+        "prerequisites": [],
+        "desc": [
+            "Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.",
+            "Your druid level determines the beasts you can transform into, as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn't have a flying or swimming speed.",
+            "You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.",
+            "While you are transformed, the following rules apply:",
+            "- Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature's bonus instead of yours. If the creature has any legendary or lair actions, you can't use them.",
+            "- When you transform, you assume the beast's hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked unconscious.",
+            "- You can't cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn't break your concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you've already cast.",
+            "- You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can't use any of your special senses, such as darkvision, unless your new form also has that sense.",
+            "- You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the GM decides whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."
+        ],
+        "url": "/api/2024/features/wild-shape-cr-1-2-or-below-no-flying-speed"
+    },
+    {
+        "index": "druid-ability-score-improvement-1",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "name": "Ability Score Improvement",
+        "level": 4,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/druid-ability-score-improvement-1"
+    },
+    {
+        "index": "circle-spells-2",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "subclass": {
+            "index": "land",
+            "name": "Land",
+            "url": "/api/2024/subclasses/land"
+        },
+        "name": "Circle Spells",
+        "level": 5,
+        "prerequisites": [],
+        "desc": [
+            "Your mystical connection to the land infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.",
+            "Choose that land--arctic, coast, desert, forest, grassland, mountain, or swamp--and consult the associated list of spells.",
+            "Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you."
+        ],
+        "url": "/api/2024/features/circle-spells-2"
+    },
+    {
+        "index": "druid-circle-improvement-1",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "name": "Druid Circle feature",
+        "level": 6,
+        "prerequisites": [],
+        "desc": [
+            "At 2nd level, you choose to identify with a circle of druids, such as the Circle of the Land. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
+        ],
+        "url": "/api/2024/features/druid-circle-improvement-1"
+    },
+    {
+        "index": "druid-lands-stride",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "subclass": {
+            "index": "land",
+            "name": "Land",
+            "url": "/api/2024/subclasses/land"
+        },
+        "name": "Land's Stride",
+        "level": 6,
+        "prerequisites": [],
+        "desc": [
+            "Starting at 6th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.",
+            "In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell."
+        ],
+        "url": "/api/2024/features/druid-lands-stride"
+    },
+    {
+        "index": "circle-spells-3",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "subclass": {
+            "index": "land",
+            "name": "Land",
+            "url": "/api/2024/subclasses/land"
+        },
+        "name": "Circle Spells",
+        "level": 7,
+        "prerequisites": [],
+        "desc": [
+            "Your mystical connection to the land infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.",
+            "Choose that land--arctic, coast, desert, forest, grassland, mountain, or swamp--and consult the associated list of spells.",
+            "Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you."
+        ],
+        "url": "/api/2024/features/circle-spells-3"
+    },
+    {
+        "index": "wild-shape-cr-1-or-below",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "name": "Wild Shape (CR 1 or below)",
+        "level": 8,
+        "prerequisites": [],
+        "desc": [
+            "Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.",
+            "Your druid level determines the beasts you can transform into, as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn't have a flying or swimming speed.",
+            "You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.",
+            "While you are transformed, the following rules apply:",
+            "- Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature's bonus instead of yours. If the creature has any legendary or lair actions, you can't use them.",
+            "- When you transform, you assume the beast's hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked unconscious.",
+            "- You can't cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn't break your concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you've already cast.",
+            "- You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can't use any of your special senses, such as darkvision, unless your new form also has that sense.",
+            "- You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the GM decides whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."
+        ],
+        "url": "/api/2024/features/wild-shape-cr-1-or-below"
+    },
+    {
+        "index": "druid-ability-score-improvement-2",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "name": "Ability Score Improvement",
+        "level": 8,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/druid-ability-score-improvement-2"
+    },
+    {
+        "index": "circle-spells-4",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "subclass": {
+            "index": "land",
+            "name": "Land",
+            "url": "/api/2024/subclasses/land"
+        },
+        "name": "Circle Spells",
+        "level": 9,
+        "prerequisites": [],
+        "desc": [
+            "Your mystical connection to the land infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid.",
+            "Choose that land--arctic, coast, desert, forest, grassland, mountain, or swamp--and consult the associated list of spells.",
+            "Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you."
+        ],
+        "url": "/api/2024/features/circle-spells-4"
+    },
+    {
+        "index": "druid-circle-improvement-2",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "name": "Druid Circle feature",
+        "level": 10,
+        "prerequisites": [],
+        "desc": [
+            "At 2nd level, you choose to identify with a circle of druids, such as the Circle of the Land. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
+        ],
+        "url": "/api/2024/features/druid-circle-improvement-2"
+    },
+    {
+        "index": "natures-ward",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "subclass": {
+            "index": "land",
+            "name": "Land",
+            "url": "/api/2024/subclasses/land"
+        },
+        "name": "Nature's Ward",
+        "level": 10,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 10th level, you can't be charmed or frightened by elementals or fey, and you are immune to poison and disease."
+        ],
+        "url": "/api/2024/features/natures-ward"
+    },
+    {
+        "index": "druid-ability-score-improvement-3",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "name": "Ability Score Improvement",
+        "level": 12,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/druid-ability-score-improvement-3"
+    },
+    {
+        "index": "druid-circle-improvement-3",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "name": "Druid Circle feature",
+        "level": 14,
+        "prerequisites": [],
+        "desc": [
+            "At 2nd level, you choose to identify with a circle of druids, such as the Circle of the Land. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
+        ],
+        "url": "/api/2024/features/druid-circle-improvement-3"
+    },
+    {
+        "index": "natures-sanctuary",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "subclass": {
+            "index": "land",
+            "name": "Land",
+            "url": "/api/2024/subclasses/land"
+        },
+        "name": "Nature's Sanctuary",
+        "level": 14,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 14th level, creatures of the natural world sense your connection to nature and become hesitant to attack you. When a beast or plant creature attacks you, that creature must make a Wisdom saving throw against your druid spell save DC. On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours. The creature is aware of this effect before it makes its attack against you."
+        ],
+        "url": "/api/2024/features/natures-sanctuary"
+    },
+    {
+        "index": "druid-ability-score-improvement-4",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "name": "Ability Score Improvement",
+        "level": 16,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/druid-ability-score-improvement-4"
+    },
+    {
+        "index": "druid-timeless-body",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "name": "Timeless Body",
+        "level": 18,
+        "prerequisites": [],
+        "desc": [
+            "Starting at 18th level, the primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year."
+        ],
+        "url": "/api/2024/features/druid-timeless-body"
+    },
+    {
+        "index": "beast-spells",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "name": "Beast Spells",
+        "level": 18,
+        "prerequisites": [],
+        "desc": [
+            "Beginning at 18th level, you can cast many of your druid spells in any shape you assume using Wild Shape. You can perform the somatic and verbal components of a druid spell while in a beast shape, but you aren't able to provide material components."
+        ],
+        "url": "/api/2024/features/beast-spells"
+    },
+    {
+        "index": "druid-ability-score-improvement-5",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "name": "Ability Score Improvement",
+        "level": 19,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/druid-ability-score-improvement-5"
+    },
+    {
+        "index": "archdruid",
+        "class": {
+            "index": "druid",
+            "name": "Druid",
+            "url": "/api/2024/classes/druid"
+        },
+        "name": "Archdruid",
+        "level": 20,
+        "prerequisites": [],
+        "desc": [
+            "At 20th level, you can use your Wild Shape an unlimited number of times.",
+            "Additionally, you can ignore the verbal and somatic components of your druid spells, as well as any material components that lack a cost and aren't consumed by a spell. You gain this benefit in both your normal shape and your beast shape from Wild Shape."
+        ],
+        "url": "/api/2024/features/archdruid"
+    }
+]

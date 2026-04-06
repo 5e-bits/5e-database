@@ -1,0 +1,803 @@
+[
+    {
+        "index": "spellcasting-bard",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Spellcasting: Bard",
+        "level": 1,
+        "prerequisites": [],
+        "desc": [
+            "You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations."
+        ],
+        "reference": "/api/2024/classes/bard/spellcasting",
+        "url": "/api/2024/features/spellcasting-bard"
+    },
+    {
+        "index": "bardic-inspiration-d6",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Bardic Inspiration (d6)",
+        "level": 1,
+        "prerequisites": [],
+        "desc": [
+            "You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6. Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.",
+            "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest. ",
+            "Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
+        ],
+        "url": "/api/2024/features/bardic-inspiration-d6"
+    },
+    {
+        "index": "jack-of-all-trades",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Jack of All Trades",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus."
+        ],
+        "url": "/api/2024/features/jack-of-all-trades"
+    },
+    {
+        "index": "song-of-rest-d6",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Song of Rest (d6)",
+        "level": 2,
+        "prerequisites": [],
+        "desc": [
+            "Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points. ",
+            "The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level."
+        ],
+        "url": "/api/2024/features/song-of-rest-d6"
+    },
+    {
+        "index": "bard-college",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Bard College",
+        "level": 3,
+        "prerequisites": [],
+        "desc": [
+            "At 3rd level, you delve into the advanced techniques of a bard college of your choice, such as the College of Lore. Your choice grants you features at 3rd level and again at 6th and 14th level."
+        ],
+        "url": "/api/2024/features/bard-college"
+    },
+    {
+        "index": "bonus-proficiencies",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "subclass": {
+            "index": "lore",
+            "name": "Lore",
+            "url": "/api/2024/subclasses/lore"
+        },
+        "name": "Bonus Proficiencies",
+        "level": 3,
+        "prerequisites": [],
+        "desc": [
+            "When you join the College of Lore at 3rd level, you gain proficiency with three skills of your choice."
+        ],
+        "url": "/api/2024/features/bonus-proficiencies"
+    },
+    {
+        "index": "cutting-words",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "subclass": {
+            "index": "lore",
+            "name": "Lore",
+            "url": "/api/2024/subclasses/lore"
+        },
+        "name": "Cutting Words",
+        "level": 3,
+        "prerequisites": [],
+        "desc": [
+            "Also at 3rd level, you learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others.",
+            "When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature's roll.",
+            "You can choose to use this feature after the creature makes its roll, but before the GM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can't hear you or if it's immune to being charmed."
+        ],
+        "url": "/api/2024/features/cutting-words"
+    },
+    {
+        "index": "bard-expertise-1",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Expertise",
+        "level": 3,
+        "prerequisites": [],
+        "desc": [
+            "At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. At 10th level, you can choose another two skill proficiencies to gain this benefit."
+        ],
+        "feature_specific": {
+            "expertise_options": {
+                "choose": 2,
+                "type": "proficiency",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-acrobatics",
+                                "name": "Skill: Acrobatics",
+                                "url": "/api/2024/proficiencies/skill-acrobatics"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-animal-handling",
+                                "name": "Skill: Animal Handling",
+                                "url": "/api/2024/proficiencies/skill-animal-handling"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-arcana",
+                                "name": "Skill: Arcana",
+                                "url": "/api/2024/proficiencies/skill-arcana"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-athletics",
+                                "name": "Skill: Athletics",
+                                "url": "/api/2024/proficiencies/skill-athletics"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-deception",
+                                "name": "Skill: Deception",
+                                "url": "/api/2024/proficiencies/skill-deception"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-history",
+                                "name": "Skill: History",
+                                "url": "/api/2024/proficiencies/skill-history"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-insight",
+                                "name": "Skill: Insight",
+                                "url": "/api/2024/proficiencies/skill-insight"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-intimidation",
+                                "name": "Skill: Intimidation",
+                                "url": "/api/2024/proficiencies/skill-intimidation"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-investigation",
+                                "name": "Skill: Investigation",
+                                "url": "/api/2024/proficiencies/skill-investigation"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-medicine",
+                                "name": "Skill: Medicine",
+                                "url": "/api/2024/proficiencies/skill-medicine"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-nature",
+                                "name": "Skill: Nature",
+                                "url": "/api/2024/proficiencies/skill-nature"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-perception",
+                                "name": "Skill: Perception",
+                                "url": "/api/2024/proficiencies/skill-perception"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-performance",
+                                "name": "Skill: Performance",
+                                "url": "/api/2024/proficiencies/skill-performance"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-persuasion",
+                                "name": "Skill: Persuasion",
+                                "url": "/api/2024/proficiencies/skill-persuasion"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-religion",
+                                "name": "Skill: Religion",
+                                "url": "/api/2024/proficiencies/skill-religion"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-sleight-of-hand",
+                                "name": "Skill: Sleight of Hand",
+                                "url": "/api/2024/proficiencies/skill-sleight-of-hand"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-stealth",
+                                "name": "Skill: Stealth",
+                                "url": "/api/2024/proficiencies/skill-stealth"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-survival",
+                                "name": "Skill: Survival",
+                                "url": "/api/2024/proficiencies/skill-survival"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "url": "/api/2024/features/bard-expertise-1"
+    },
+    {
+        "index": "bard-ability-score-improvement-1",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Ability Score Improvement",
+        "level": 4,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/bard-ability-score-improvement-1"
+    },
+    {
+        "index": "bardic-inspiration-d8",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Bardic Inspiration (d8)",
+        "level": 5,
+        "prerequisites": [],
+        "desc": [
+            "You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6. Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.",
+            "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest. ",
+            "Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
+        ],
+        "url": "/api/2024/features/bardic-inspiration-d8"
+    },
+    {
+        "index": "font-of-inspiration",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Font of Inspiration",
+        "level": 5,
+        "prerequisites": [],
+        "desc": [
+            "Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest."
+        ],
+        "url": "/api/2024/features/font-of-inspiration"
+    },
+    {
+        "index": "countercharm",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Countercharm",
+        "level": 6,
+        "prerequisites": [],
+        "desc": [
+            "At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are incapacitated or silenced or if you voluntarily end it (no action required)."
+        ],
+        "url": "/api/2024/features/countercharm"
+    },
+    {
+        "index": "bard-college-improvement-1",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Bard College feature",
+        "level": 6,
+        "prerequisites": [],
+        "desc": [
+            "At 3rd level, you delve into the advanced techniques of a bard college of your choice, such as the College of Lore. Your choice grants you features at 3rd level and again at 6th and 14th level."
+        ],
+        "url": "/api/2024/features/bard-college-improvement-1"
+    },
+    {
+        "index": "additional-magical-secrets",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "subclass": {
+            "index": "lore",
+            "name": "Lore",
+            "url": "/api/2024/subclasses/lore"
+        },
+        "name": "Additional Magical Secrets",
+        "level": 6,
+        "prerequisites": [],
+        "desc": [
+            "At 6th level, you learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you but don't count against the number of bard spells you know."
+        ],
+        "url": "/api/2024/features/additional-magical-secrets"
+    },
+    {
+        "index": "bard-ability-score-improvement-2",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Ability Score Improvement",
+        "level": 8,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/bard-ability-score-improvement-2"
+    },
+    {
+        "index": "song-of-rest-d8",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Song of Rest (d8)",
+        "level": 9,
+        "prerequisites": [],
+        "desc": [
+            "Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points. ",
+            "The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level."
+        ],
+        "url": "/api/2024/features/song-of-rest-d8"
+    },
+    {
+        "index": "bardic-inspiration-d10",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Bardic Inspiration (d10)",
+        "level": 10,
+        "prerequisites": [],
+        "desc": [
+            "You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6. Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.",
+            "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest. ",
+            "Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
+        ],
+        "url": "/api/2024/features/bardic-inspiration-d10"
+    },
+    {
+        "index": "bard-expertise-2",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Expertise",
+        "level": 10,
+        "prerequisites": [],
+        "desc": [
+            "At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. At 10th level, you can choose another two skill proficiencies to gain this benefit."
+        ],
+        "feature_specific": {
+            "expertise_options": {
+                "choose": 2,
+                "type": "proficiency",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-acrobatics",
+                                "name": "Skill: Acrobatics",
+                                "url": "/api/2024/proficiencies/skill-acrobatics"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-animal-handling",
+                                "name": "Skill: Animal Handling",
+                                "url": "/api/2024/proficiencies/skill-animal-handling"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-arcana",
+                                "name": "Skill: Arcana",
+                                "url": "/api/2024/proficiencies/skill-arcana"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-athletics",
+                                "name": "Skill: Athletics",
+                                "url": "/api/2024/proficiencies/skill-athletics"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-deception",
+                                "name": "Skill: Deception",
+                                "url": "/api/2024/proficiencies/skill-deception"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-history",
+                                "name": "Skill: History",
+                                "url": "/api/2024/proficiencies/skill-history"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-insight",
+                                "name": "Skill: Insight",
+                                "url": "/api/2024/proficiencies/skill-insight"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-intimidation",
+                                "name": "Skill: Intimidation",
+                                "url": "/api/2024/proficiencies/skill-intimidation"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-investigation",
+                                "name": "Skill: Investigation",
+                                "url": "/api/2024/proficiencies/skill-investigation"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-medicine",
+                                "name": "Skill: Medicine",
+                                "url": "/api/2024/proficiencies/skill-medicine"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-nature",
+                                "name": "Skill: Nature",
+                                "url": "/api/2024/proficiencies/skill-nature"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-perception",
+                                "name": "Skill: Perception",
+                                "url": "/api/2024/proficiencies/skill-perception"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-performance",
+                                "name": "Skill: Performance",
+                                "url": "/api/2024/proficiencies/skill-performance"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-persuasion",
+                                "name": "Skill: Persuasion",
+                                "url": "/api/2024/proficiencies/skill-persuasion"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-religion",
+                                "name": "Skill: Religion",
+                                "url": "/api/2024/proficiencies/skill-religion"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-sleight-of-hand",
+                                "name": "Skill: Sleight of Hand",
+                                "url": "/api/2024/proficiencies/skill-sleight-of-hand"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-stealth",
+                                "name": "Skill: Stealth",
+                                "url": "/api/2024/proficiencies/skill-stealth"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-survival",
+                                "name": "Skill: Survival",
+                                "url": "/api/2024/proficiencies/skill-survival"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "url": "/api/2024/features/bard-expertise-2"
+    },
+    {
+        "index": "magical-secrets-1",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Magical Secrets",
+        "level": 10,
+        "prerequisites": [],
+        "desc": [
+            "By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. ",
+            "The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table. ",
+            "You learn two additional spells from any class at 14th level and again at 18th level."
+        ],
+        "url": "/api/2024/features/magical-secrets-1"
+    },
+    {
+        "index": "bard-ability-score-improvement-3",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Ability Score Improvement",
+        "level": 12,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/bard-ability-score-improvement-3"
+    },
+    {
+        "index": "song-of-rest-d10",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Song of Rest (d10)",
+        "level": 13,
+        "prerequisites": [],
+        "desc": [
+            "Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points. ",
+            "The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level."
+        ],
+        "url": "/api/2024/features/song-of-rest-d10"
+    },
+    {
+        "index": "magical-secrets-2",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Magical Secrets",
+        "level": 14,
+        "prerequisites": [],
+        "desc": [
+            "By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. ",
+            "The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table. ",
+            "You learn two additional spells from any class at 14th level and again at 18th level."
+        ],
+        "url": "/api/2024/features/magical-secrets-2"
+    },
+    {
+        "index": "bard-college-improvement-2",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Bard College feature",
+        "level": 14,
+        "prerequisites": [],
+        "desc": [
+            "At 3rd level, you delve into the advanced techniques of a bard college of your choice, such as the College of Lore. Your choice grants you features at 3rd level and again at 6th and 14th level."
+        ],
+        "url": "/api/2024/features/bard-college-improvement-2"
+    },
+    {
+        "index": "peerless-skill",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "subclass": {
+            "index": "lore",
+            "name": "Lore",
+            "url": "/api/2024/subclasses/lore"
+        },
+        "name": "Peerless Skill",
+        "level": 14,
+        "prerequisites": [],
+        "desc": [
+            "Starting at 14th level, when you make an ability check, you can expend one use of Bardic Inspiration. Roll a Bardic Inspiration die and add the number rolled to your ability check. You can choose to do so after you roll the die for the ability check, but before the GM tells you whether you succeed or fail."
+        ],
+        "url": "/api/2024/features/peerless-skill"
+    },
+    {
+        "index": "bardic-inspiration-d12",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Bardic Inspiration (d12)",
+        "level": 15,
+        "prerequisites": [],
+        "desc": [
+            "You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6. Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.",
+            "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest. ",
+            "Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
+        ],
+        "url": "/api/2024/features/bardic-inspiration-d12"
+    },
+    {
+        "index": "bard-ability-score-improvement-4",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Ability Score Improvement",
+        "level": 16,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/bard-ability-score-improvement-4"
+    },
+    {
+        "index": "song-of-rest-d12",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Song of Rest (d12)",
+        "level": 17,
+        "prerequisites": [],
+        "desc": [
+            "Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points. ",
+            "The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level."
+        ],
+        "url": "/api/2024/features/song-of-rest-d12"
+    },
+    {
+        "index": "magical-secrets-3",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Magical Secrets",
+        "level": 18,
+        "prerequisites": [],
+        "desc": [
+            "By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. ",
+            "The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table. ",
+            "You learn two additional spells from any class at 14th level and again at 18th level."
+        ],
+        "url": "/api/2024/features/magical-secrets-3"
+    },
+    {
+        "index": "bard-ability-score-improvement-5",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Ability Score Improvement",
+        "level": 19,
+        "prerequisites": [],
+        "desc": [
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ],
+        "url": "/api/2024/features/bard-ability-score-improvement-5"
+    },
+    {
+        "index": "superior-inspiration",
+        "class": {
+            "index": "bard",
+            "name": "Bard",
+            "url": "/api/2024/classes/bard"
+        },
+        "name": "Superior Inspiration",
+        "level": 20,
+        "prerequisites": [],
+        "desc": [
+            "At 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use."
+        ],
+        "url": "/api/2024/features/superior-inspiration"
+    }
+]

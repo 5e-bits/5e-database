@@ -1,0 +1,406 @@
+{
+    "index": "ranger",
+    "name": "Ranger",
+    "hit_die": 10,
+    "proficiency_choices": [
+        {
+            "desc": "Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival",
+            "choose": 3,
+            "type": "proficiencies",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-animal-handling",
+                            "name": "Skill: Animal Handling",
+                            "url": "/api/2024/proficiencies/skill-animal-handling"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-athletics",
+                            "name": "Skill: Athletics",
+                            "url": "/api/2024/proficiencies/skill-athletics"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-insight",
+                            "name": "Skill: Insight",
+                            "url": "/api/2024/proficiencies/skill-insight"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-investigation",
+                            "name": "Skill: Investigation",
+                            "url": "/api/2024/proficiencies/skill-investigation"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-nature",
+                            "name": "Skill: Nature",
+                            "url": "/api/2024/proficiencies/skill-nature"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-perception",
+                            "name": "Skill: Perception",
+                            "url": "/api/2024/proficiencies/skill-perception"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-stealth",
+                            "name": "Skill: Stealth",
+                            "url": "/api/2024/proficiencies/skill-stealth"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-survival",
+                            "name": "Skill: Survival",
+                            "url": "/api/2024/proficiencies/skill-survival"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "proficiencies": [
+        {
+            "index": "light-armor",
+            "name": "Light Armor",
+            "url": "/api/2024/proficiencies/light-armor"
+        },
+        {
+            "index": "medium-armor",
+            "name": "Medium Armor",
+            "url": "/api/2024/proficiencies/medium-armor"
+        },
+        {
+            "index": "shields",
+            "name": "Shields",
+            "url": "/api/2024/proficiencies/shields"
+        },
+        {
+            "index": "simple-weapons",
+            "name": "Simple Weapons",
+            "url": "/api/2024/proficiencies/simple-weapons"
+        },
+        {
+            "index": "martial-weapons",
+            "name": "Martial Weapons",
+            "url": "/api/2024/proficiencies/martial-weapons"
+        },
+        {
+            "index": "saving-throw-dex",
+            "name": "Saving Throw: DEX",
+            "url": "/api/2024/proficiencies/saving-throw-dex"
+        },
+        {
+            "index": "saving-throw-str",
+            "name": "Saving Throw: STR",
+            "url": "/api/2024/proficiencies/saving-throw-str"
+        }
+    ],
+    "saving_throws": [
+        {
+            "index": "str",
+            "name": "STR",
+            "url": "/api/2024/ability-scores/str"
+        },
+        {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2024/ability-scores/dex"
+        }
+    ],
+    "starting_equipment": [
+        {
+            "equipment": {
+                "index": "longbow",
+                "name": "Longbow",
+                "url": "/api/2024/equipment/longbow"
+            },
+            "quantity": 1
+        },
+        {
+            "equipment": {
+                "index": "arrow",
+                "name": "Arrow",
+                "url": "/api/2024/equipment/arrow"
+            },
+            "quantity": 20
+        }
+    ],
+    "starting_equipment_options": [
+        {
+            "desc": "(a) scale mail or (b) leather armor",
+            "choose": 1,
+            "type": "equipment",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "counted_reference",
+                        "count": 1,
+                        "of": {
+                            "index": "scale-mail",
+                            "name": "Scale Mail",
+                            "url": "/api/2024/equipment/scale-mail"
+                        }
+                    },
+                    {
+                        "option_type": "counted_reference",
+                        "count": 1,
+                        "of": {
+                            "index": "leather-armor",
+                            "name": "Leather Armor",
+                            "url": "/api/2024/equipment/leather-armor"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "desc": "(a) two shortswords or (b) two simple melee weapons",
+            "choose": 1,
+            "type": "equipment",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "counted_reference",
+                        "count": 2,
+                        "of": {
+                            "index": "shortsword",
+                            "name": "Shortsword",
+                            "url": "/api/2024/equipment/shortsword"
+                        }
+                    },
+                    {
+                        "option_type": "choice",
+                        "choice": {
+                            "desc": "two simple melee weapons",
+                            "choose": 2,
+                            "type": "equipment",
+                            "from": {
+                                "option_set_type": "equipment_category",
+                                "equipment_category": {
+                                    "index": "simple-melee-weapons",
+                                    "name": "Simple Melee Weapons",
+                                    "url": "/api/2024/equipment-categories/simple-melee-weapons"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "desc": "(a) a dungeoneer\u00e2\u20ac\u2122s pack or (b) an explorer\u00e2\u20ac\u2122s pack",
+            "choose": 1,
+            "type": "equipment",
+            "from": {
+                "option_set_type": "options_array",
+                "options": [
+                    {
+                        "option_type": "counted_reference",
+                        "count": 1,
+                        "of": {
+                            "index": "dungeoneers-pack",
+                            "name": "Dungeoneer's Pack",
+                            "url": "/api/2024/equipment/dungeoneers-pack"
+                        }
+                    },
+                    {
+                        "option_type": "counted_reference",
+                        "count": 1,
+                        "of": {
+                            "index": "explorers-pack",
+                            "name": "Explorer's Pack",
+                            "url": "/api/2024/equipment/explorers-pack"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "class_levels": "/api/2024/classes/ranger/levels",
+    "multi_classing": {
+        "prerequisites": [
+            {
+                "ability_score": {
+                    "index": "dex",
+                    "name": "DEX",
+                    "url": "/api/2024/ability-scores/dex"
+                },
+                "minimum_score": 13
+            },
+            {
+                "ability_score": {
+                    "index": "wis",
+                    "name": "WIS",
+                    "url": "/api/2024/ability-scores/wis"
+                },
+                "minimum_score": 13
+            }
+        ],
+        "proficiencies": [
+            {
+                "index": "light-armor",
+                "name": "Light Armor",
+                "url": "/api/2024/proficiencies/light-armor"
+            },
+            {
+                "index": "medium-armor",
+                "name": "Medium Armor",
+                "url": "/api/2024/proficiencies/medium-armor"
+            },
+            {
+                "index": "shields",
+                "name": "Shields",
+                "url": "/api/2024/proficiencies/shields"
+            },
+            {
+                "index": "simple-weapons",
+                "name": "Simple Weapons",
+                "url": "/api/2024/proficiencies/simple-weapons"
+            },
+            {
+                "index": "martial-weapons",
+                "name": "Martial Weapons",
+                "url": "/api/2024/proficiencies/martial-weapons"
+            }
+        ],
+        "proficiency_choices": [
+            {
+                "choose": 1,
+                "type": "proficiencies",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-animal-handling",
+                                "name": "Skill: Animal Handling",
+                                "url": "/api/2024/proficiencies/skill-animal-handling"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-athletics",
+                                "name": "Skill: Athletics",
+                                "url": "/api/2024/proficiencies/skill-athletics"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-insight",
+                                "name": "Skill: Insight",
+                                "url": "/api/2024/proficiencies/skill-insight"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-investigation",
+                                "name": "Skill: Investigation",
+                                "url": "/api/2024/proficiencies/skill-investigation"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-nature",
+                                "name": "Skill: Nature",
+                                "url": "/api/2024/proficiencies/skill-nature"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-perception",
+                                "name": "Skill: Perception",
+                                "url": "/api/2024/proficiencies/skill-perception"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-stealth",
+                                "name": "Skill: Stealth",
+                                "url": "/api/2024/proficiencies/skill-stealth"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "skill-survival",
+                                "name": "Skill: Survival",
+                                "url": "/api/2024/proficiencies/skill-survival"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "subclasses": [
+        {
+            "index": "hunter",
+            "name": "Hunter",
+            "url": "/api/2024/subclasses/hunter"
+        }
+    ],
+    "spellcasting": {
+        "level": 2,
+        "spellcasting_ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+        },
+        "info": [
+            {
+                "name": "Spell Slots",
+                "desc": [
+                    "The Ranger table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+                    "For example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2nd-level spell slot available, you can cast animal friendship using either slot."
+                ]
+            },
+            {
+                "name": "Spells Known of 1st Level and Higher",
+                "desc": [
+                    "You know two 1st-level spells of your choice from the ranger spell list.",
+                    "The Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
+                    "Additionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots."
+                ]
+            },
+            {
+                "name": "Spellcasting Ability",
+                "desc": [
+                    "Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.",
+                    "Spell save DC = 8 + your proficiency bonus + your Wisdom modifier.",
+                    "Spell attack modifier = your proficiency bonus + your Wisdom modifier."
+                ]
+            }
+        ]
+    },
+    "spells": "/api/2024/classes/ranger/spells",
+    "url": "/api/2024/classes/ranger"
+}
