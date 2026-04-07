@@ -1,6 +1,21 @@
 {
     "index": "monk",
     "name": "Monk",
+    "primary_ability": {
+        "desc": "Dexterity and Wisdom",
+        "all_of": [
+            {
+                "index": "dex",
+                "name": "DEX",
+                "url": "/api/2024/ability-scores/dex"
+            },
+            {
+                "index": "wis",
+                "name": "WIS",
+                "url": "/api/2024/ability-scores/wis"
+            }
+        ]
+    },
     "hit_die": 8,
     "proficiency_choices": [
         {
@@ -337,9 +352,19 @@
             "url": "/api/2024/proficiencies/simple-weapons"
         },
         {
+            "index": "scimitars",
+            "name": "Scimitars",
+            "url": "/api/2024/proficiencies/scimitars"
+        },
+        {
             "index": "shortswords",
             "name": "Shortswords",
             "url": "/api/2024/proficiencies/shortswords"
+        },
+        {
+            "index": "hand-crossbows",
+            "name": "Hand Crossbows",
+            "url": "/api/2024/proficiencies/hand-crossbows"
         },
         {
             "index": "saving-throw-dex",
@@ -364,81 +389,57 @@
             "url": "/api/2024/ability-scores/dex"
         }
     ],
-    "starting_equipment": [
-        {
-            "equipment": {
-                "index": "dart",
-                "name": "Dart",
-                "url": "/api/2024/equipment/dart"
-            },
-            "quantity": 10
-        }
-    ],
+    "starting_equipment": [],
     "starting_equipment_options": [
         {
-            "desc": "(a) a shortsword or (b) any simple weapon",
+            "desc": "(a) Spear, 5 Daggers, Artisan’s Tools or Musical Instrument chosen for the tool proficiency above,Explorer’s Pack, and 11 GP; or (b) 50 GP",
             "choose": 1,
             "type": "equipment",
             "from": {
                 "option_set_type": "options_array",
                 "options": [
                     {
-                        "option_type": "counted_reference",
-                        "count": 1,
-                        "of": {
-                            "index": "shortsword",
-                            "name": "Shortsword",
-                            "url": "/api/2024/equipment/shortsword"
-                        }
+                        "option_type": "multiple",
+                        "items": [
+                            { "option_type": "counted_reference", "count": 1,"of":{ "index":  "spear", "name":  "Spear", "url":  "/api/2024/equipment/spear" }},
+                            { "option_type": "counted_reference", "count": 5, "of": { "index": "dagger", "name": "Dagger", "url": "/api/2024/equipment/dagger" }},
+                            { "option_type": "choice",
+                            "choice":  {
+                                "desc": "Artisan’s Tools or Musical Instrument",
+                                "choose": 1,
+                                "type": "equipment",
+                                "from": {
+                                    "option_set_type": "options_array",
+                                    "options": [
+                                        {
+                                            "option_type": "choice",
+                                            "choice": {
+                                                "desc": "An Artisan's Tool",
+                                                "choose": 1, "type": "equipment",
+                                                "from": { "option_set_type": "equipment_category", "equipment_category": { "index": "artisans-tools", "name": "Artisan's Tools", "url": "/api/2024/equipment-categories/artisans-tools" }}
+                                            }
+                                        },
+                                        {
+                                            "option_type": "choice",
+                                            "choice": {
+                                                "desc": "A Musical Instrument",
+                                                "choose": 1, "type": "equipment",
+                                                "from": { "option_set_type": "equipment_category", "equipment_category": { "index": "musical-instruments", "name": "Musical Instruments", "url": "/api/2024/equipment-categories/musical-instruments" } }
+                                            }
+                                        }]
+                                        }}
+                                    },
+                            { "option_type": "counted_reference", "count": 1, "of": { "index": "explorers-pack", "name": "Explorer's Pack", "url": "/api/2014/equipment/explorers-pack" }},
+                            { "option_type": "money", "count":  11, "unit": "gp"}
+                        ]
                     },
                     {
-                        "option_type": "choice",
-                        "choice": {
-                            "desc": "any simple weapon",
-                            "choose": 1,
-                            "type": "equipment",
-                            "from": {
-                                "option_set_type": "equipment_category",
-                                "equipment_category": {
-                                    "index": "simple-weapons",
-                                    "name": "Simple Weapons",
-                                    "url": "/api/2024/equipment-categories/simple-weapons"
-                                }
-                            }
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "desc": "(a) a dungeoneer\u00e2\u20ac\u2122s pack or (b) an explorer\u00e2\u20ac\u2122s pack",
-            "choose": 1,
-            "type": "equipment",
-            "from": {
-                "option_set_type": "options_array",
-                "options": [
-                    {
-                        "option_type": "counted_reference",
-                        "count": 1,
-                        "of": {
-                            "index": "dungeoneers-pack",
-                            "name": "Dungeoneer's Pack",
-                            "url": "/api/2024/equipment/dungeoneers-pack"
-                        }
-                    },
-                    {
-                        "option_type": "counted_reference",
-                        "count": 1,
-                        "of": {
-                            "index": "explorers-pack",
-                            "name": "Explorer's Pack",
-                            "url": "/api/2024/equipment/explorers-pack"
-                        }
-                    }
-                ]
-            }
+                        "option_type": "money",
+                        "count": 50,
+                        "unit": "gp"
+            }]
         }
-    ],
+    }],
     "class_levels": "/api/2024/classes/monk/levels",
     "multi_classing": {
         "prerequisites": [
@@ -459,24 +460,13 @@
                 "minimum_score": 13
             }
         ],
-        "proficiencies": [
-            {
-                "index": "simple-weapons",
-                "name": "Simple Weapons",
-                "url": "/api/2024/proficiencies/simple-weapons"
-            },
-            {
-                "index": "shortswords",
-                "name": "Shortswords",
-                "url": "/api/2024/proficiencies/shortswords"
-            }
-        ]
+        "proficiencies": []
     },
     "subclasses": [
         {
-            "index": "open-hand",
-            "name": "Open Hand",
-            "url": "/api/2024/subclasses/open-hand"
+            "index": "warrior-of-the-open-hand",
+            "name": "Warrior of the Open Hand",
+            "url": "/api/2024/subclasses/warrior-of-the-open-hand"
         }
     ],
     "url": "/api/2024/classes/monk"
