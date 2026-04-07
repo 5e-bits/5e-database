@@ -1,6 +1,21 @@
 {
     "index": "ranger",
     "name": "Ranger",
+    "primary_ability": {
+        "desc": "Dexterity and Wisdom",
+        "all_of": [
+            {
+                "index": "dex",
+                "name": "DEX",
+                "url": "/api/2024/ability-scores/dex"
+            },
+            {
+                "index": "wis",
+                "name": "WIS",
+                "url": "/api/2024/ability-scores/wis"
+            }
+        ]
+    },
     "hit_die": 10,
     "proficiency_choices": [
         {
@@ -127,112 +142,33 @@
             "url": "/api/2024/ability-scores/dex"
         }
     ],
-    "starting_equipment": [
-        {
-            "equipment": {
-                "index": "longbow",
-                "name": "Longbow",
-                "url": "/api/2024/equipment/longbow"
-            },
-            "quantity": 1
-        },
-        {
-            "equipment": {
-                "index": "arrow",
-                "name": "Arrow",
-                "url": "/api/2024/equipment/arrow"
-            },
-            "quantity": 20
-        }
-    ],
+    "starting_equipment": [],
     "starting_equipment_options": [
         {
-            "desc": "(a) scale mail or (b) leather armor",
+            "desc": "(a) Studded Leather Armor, Scimitar, Shortsword, Longbow, 20 Arrows, Quiver, Druidic Focus (sprig of mistletoe), Explorer's Pack, and 7 GP; or (b) 150 GP",
             "choose": 1,
             "type": "equipment",
             "from": {
                 "option_set_type": "options_array",
                 "options": [
                     {
-                        "option_type": "counted_reference",
-                        "count": 1,
-                        "of": {
-                            "index": "scale-mail",
-                            "name": "Scale Mail",
-                            "url": "/api/2024/equipment/scale-mail"
-                        }
+                        "option_type": "multiple",
+                        "items": [
+                            { "option_type": "counted_reference", "count": 1, "of": { "index":  "studded-leather-armor", "name":  "Studded Leather Armor", "url":  "/api/2024/equipment/studded-leather-armor" }},
+                            { "option_type": "counted_reference", "count": 1, "of": { "index": "scimitar", "name": "Scimitar", "url": "/api/2024/equipment/scimitar" }},
+                            { "option_type": "counted_reference", "count": 1, "of": { "index": "shortsword", "name": "Shortsword", "url": "/api/2014/equipment/shortsword" }},
+                            { "option_type": "counted_reference", "count": 1, "of": { "index": "longbow", "name": "longbow", "url": "/api/2014/equipment/longbow" }},
+                            { "option_type": "counted_reference", "count": 20, "of": { "index": "arrows", "name": "Arrows", "url": "/api/2014/equipment/arrows" }},
+                            { "option_type": "counted_reference", "count": 1, "of": { "index": "quiver", "name": "Quiver", "url": "/api/2014/equipment/quiver" }},
+                            { "option_type": "counted_reference", "count": 1, "of": { "index": "druidic-foci", "name": "Druidic Focus", "url": "/api/2024/equipment/druidic-foci" }},
+                            { "option_type": "counted_reference", "count": 1, "of": { "index": "explorers-pack", "name": "Explorer's Pack", "url": "/api/2014/equipment/explorers-pack" }},
+                            { "option_type": "money", "count":  7, "unit": "gp"}
+                        ]
                     },
                     {
-                        "option_type": "counted_reference",
-                        "count": 1,
-                        "of": {
-                            "index": "leather-armor",
-                            "name": "Leather Armor",
-                            "url": "/api/2024/equipment/leather-armor"
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "desc": "(a) two shortswords or (b) two simple melee weapons",
-            "choose": 1,
-            "type": "equipment",
-            "from": {
-                "option_set_type": "options_array",
-                "options": [
-                    {
-                        "option_type": "counted_reference",
-                        "count": 2,
-                        "of": {
-                            "index": "shortsword",
-                            "name": "Shortsword",
-                            "url": "/api/2024/equipment/shortsword"
-                        }
-                    },
-                    {
-                        "option_type": "choice",
-                        "choice": {
-                            "desc": "two simple melee weapons",
-                            "choose": 2,
-                            "type": "equipment",
-                            "from": {
-                                "option_set_type": "equipment_category",
-                                "equipment_category": {
-                                    "index": "simple-melee-weapons",
-                                    "name": "Simple Melee Weapons",
-                                    "url": "/api/2024/equipment-categories/simple-melee-weapons"
-                                }
-                            }
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "desc": "(a) a dungeoneer\u00e2\u20ac\u2122s pack or (b) an explorer\u00e2\u20ac\u2122s pack",
-            "choose": 1,
-            "type": "equipment",
-            "from": {
-                "option_set_type": "options_array",
-                "options": [
-                    {
-                        "option_type": "counted_reference",
-                        "count": 1,
-                        "of": {
-                            "index": "dungeoneers-pack",
-                            "name": "Dungeoneer's Pack",
-                            "url": "/api/2024/equipment/dungeoneers-pack"
-                        }
-                    },
-                    {
-                        "option_type": "counted_reference",
-                        "count": 1,
-                        "of": {
-                            "index": "explorers-pack",
-                            "name": "Explorer's Pack",
-                            "url": "/api/2024/equipment/explorers-pack"
-                        }
+                        "option_type": "money",
+                        "count": 150,
+                        "unit": "gp"
                     }
                 ]
             }
@@ -273,11 +209,6 @@
                 "index": "shields",
                 "name": "Shields",
                 "url": "/api/2024/proficiencies/shields"
-            },
-            {
-                "index": "simple-weapons",
-                "name": "Simple Weapons",
-                "url": "/api/2024/proficiencies/simple-weapons"
             },
             {
                 "index": "martial-weapons",
@@ -369,7 +300,7 @@
         }
     ],
     "spellcasting": {
-        "level": 2,
+        "level": 1,
         "spellcasting_ability": {
             "index": "wis",
             "name": "WIS",
@@ -379,24 +310,33 @@
             {
                 "name": "Spell Slots",
                 "desc": [
-                    "The Ranger table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-                    "For example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2nd-level spell slot available, you can cast animal friendship using either slot."
+                    "The Ranger Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest."
                 ]
             },
             {
-                "name": "Spells Known of 1st Level and Higher",
+                "name": "Prepared Spells of Level 1+",
                 "desc": [
-                    "You know two 1st-level spells of your choice from the ranger spell list.",
-                    "The Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
-                    "Additionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots."
+                    "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Ranger spells. Cure Wounds and Ensnaring Strike are recommended.",
+                    "The number of spells on your list increases as you gain Ranger levels, as shown in the Prepared Spells column of the Ranger Features table. Whenever that number increases, choose additional Ranger spells until the number of spells on your list matches the number in the Ranger Features table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Ranger, your list of prepared spells can include six Ranger spells of level 1 or 2 in any combination.",
+                    "If another Ranger feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Ranger spells for you."
+                ]
+            },
+            {
+                "name": "Changing Your Prepared Spells",
+                "desc": [
+                    "Whenever you finish a Long Rest, you can replace one spell on your list with another Ranger spell for which you have spell slots."
                 ]
             },
             {
                 "name": "Spellcasting Ability",
                 "desc": [
-                    "Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.",
-                    "Spell save DC = 8 + your proficiency bonus + your Wisdom modifier.",
-                    "Spell attack modifier = your proficiency bonus + your Wisdom modifier."
+                    "Wisdom is your spellcasting ability for your Ranger spells."
+                ]
+            },
+            {
+                "name": "Spellcasting Focus",
+                "desc": [
+                    "You can use a Druidic Focus as a Spellcasting Focus for your Ranger spells."
                 ]
             }
         ]
