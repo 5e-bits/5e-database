@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { APIReferenceSchema, ChoiceSchema } from '../../schemas/common';
+import { APIReferenceSchema, ChoiceSchema } from '../../src/schemas/common';
 
 const SpellcastingInfoSchema = z.object({
   name: z.string(),
