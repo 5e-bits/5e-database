@@ -1,10 +1,20 @@
 {
     "index": "rogue",
     "name": "Rogue",
+    "primary_ability": {
+        "desc": "Dexterity",
+        "all_of": [
+            {
+                "index": "dex",
+                "name": "DEX",
+                "url": "/api/2024/ability-scores/dex"
+            }
+        ]
+    },
     "hit_die": 8,
     "proficiency_choices": [
         {
-            "desc": "Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth",
+            "desc": "Choose 4: Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, or Stealth",
             "choose": 4,
             "type": "proficiencies",
             "from": {
@@ -124,9 +134,19 @@
             "url": "/api/2024/proficiencies/rapiers"
         },
         {
+            "index": "scimitar",
+            "name": "Scimitar",
+            "url": "/api/2024/proficiencies/scimitar"
+        },
+        {
             "index": "shortswords",
             "name": "Shortswords",
             "url": "/api/2024/proficiencies/shortswords"
+        },
+        {
+            "index": "whips",
+            "name": "Whips",
+            "url": "/api/2024/proficiencies/whips"
         },
         {
             "index": "hand-crossbows",
@@ -161,63 +181,10 @@
             "url": "/api/2024/ability-scores/int"
         }
     ],
-    "starting_equipment": [
-        {
-            "equipment": {
-                "index": "leather-armor",
-                "name": "Leather Armor",
-                "url": "/api/2024/equipment/leather-armor"
-            },
-            "quantity": 1
-        },
-        {
-            "equipment": {
-                "index": "dagger",
-                "name": "Dagger",
-                "url": "/api/2024/equipment/dagger"
-            },
-            "quantity": 2
-        },
-        {
-            "equipment": {
-                "index": "thieves-tools",
-                "name": "Thieves' Tools",
-                "url": "/api/2024/equipment/thieves-tools"
-            },
-            "quantity": 1
-        }
-    ],
+    "starting_equipment": [],
     "starting_equipment_options": [
         {
-            "desc": "(a) a rapier or (b) a shortsword",
-            "choose": 1,
-            "type": "equipment",
-            "from": {
-                "option_set_type": "options_array",
-                "options": [
-                    {
-                        "option_type": "counted_reference",
-                        "count": 1,
-                        "of": {
-                            "index": "rapier",
-                            "name": "Rapier",
-                            "url": "/api/2024/equipment/rapier"
-                        }
-                    },
-                    {
-                        "option_type": "counted_reference",
-                        "count": 1,
-                        "of": {
-                            "index": "shortsword",
-                            "name": "Shortsword",
-                            "url": "/api/2024/equipment/shortsword"
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "desc": "(a) a shortbow and quiver of 20 arrows or (b) a shortsword",
+            "desc": "(a) Leather Armor, 2 Daggers, Shortsword, Shortbow, 20 Arrows, Quiver, Thieves’ Tools, Burglar’s Pack, and 8 GP; (b) 100 GP",
             "choose": 1,
             "type": "equipment",
             "from": {
@@ -226,71 +193,21 @@
                     {
                         "option_type": "multiple",
                         "items": [
-                            {
-                                "option_type": "counted_reference",
-                                "count": 1,
-                                "of": {
-                                    "index": "shortbow",
-                                    "name": "Shortbow",
-                                    "url": "/api/2024/equipment/shortbow"
-                                }
-                            },
-                            {
-                                "option_type": "counted_reference",
-                                "count": 20,
-                                "of": {
-                                    "index": "arrow",
-                                    "name": "Arrow",
-                                    "url": "/api/2024/equipment/arrow"
-                                }
-                            }
+                            { "option_type": "counted_reference", "count": 1,"of":{ "index":  "leather-armor", "name":  "Leather Armor", "url":  "/api/2024/equipment/leather-armor" }},
+                            { "option_type": "counted_reference", "count": 2, "of": { "index": "dagger", "name": "Dagger", "url": "/api/2024/equipment/dagger" }},
+                            { "option_type": "counted_reference", "count": 1, "of": { "index": "shortsword", "name": "Shortsword", "url": "/api/2024/equipment/shortsword" }},
+                            { "option_type": "counted_reference", "count": 1, "of": { "index": "shortbow", "name": "Shortbow", "url": "/api/2024/equipment/shortbow" }},
+                            { "option_type": "counted_reference", "count": 20, "of": { "index": "arrows", "name": "Arrows", "url": "/api/2024/equipment/arrows" }},
+                            { "option_type": "counted_reference", "count": 1, "of": { "index": "quiver", "name": "Quiver", "url": "/api/2024/equipment/quiver" }},
+                            { "option_type": "counted_reference", "count": 1, "of": { "index": "thieves-tools", "name": "Thieves' Tools", "url": "/api/2024/equipment/thieves-tools" }},
+                            { "option_type": "counted_reference", "count": 1, "of": { "index": "burglars-pack", "name": "Burglar's Pack", "url": "/api/2014/equipment/burglars-pack" }},
+                            { "option_type": "money", "count":  8, "unit": "gp"}
                         ]
                     },
                     {
-                        "option_type": "counted_reference",
-                        "count": 1,
-                        "of": {
-                            "index": "shortsword",
-                            "name": "Shortsword",
-                            "url": "/api/2024/equipment/shortsword"
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "desc": "(a) a burglar\u00e2\u20ac\u2122s pack, (b) a dungeoneer\u00e2\u20ac\u2122s pack, or (c) an explorer\u00e2\u20ac\u2122s pack",
-            "choose": 1,
-            "type": "equipment",
-            "from": {
-                "option_set_type": "options_array",
-                "options": [
-                    {
-                        "option_type": "counted_reference",
-                        "count": 1,
-                        "of": {
-                            "index": "burglars-pack",
-                            "name": "Burglar's Pack",
-                            "url": "/api/2024/equipment/burglars-pack"
-                        }
-                    },
-                    {
-                        "option_type": "counted_reference",
-                        "count": 1,
-                        "of": {
-                            "index": "dungeoneers-pack",
-                            "name": "Dungeoneer's Pack",
-                            "url": "/api/2024/equipment/dungeoneers-pack"
-                        }
-                    },
-                    {
-                        "option_type": "counted_reference",
-                        "count": 1,
-                        "of": {
-                            "index": "explorers-pack",
-                            "name": "Explorer's Pack",
-                            "url": "/api/2024/equipment/explorers-pack"
-                        }
+                        "option_type": "money",
+                        "count": 100,
+                        "unit": "gp"
                     }
                 ]
             }

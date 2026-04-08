@@ -1,20 +1,25 @@
 {
-    "index": "cleric",
-    "name": "Cleric",
+    "index": "paladin",
+    "name": "Paladin",
     "primary_ability": {
-        "desc": "Wisdom",
+        "desc": "Strength and Charisma",
         "all_of": [
             {
-                "index": "wis",
-                "name": "WIS",
-                "url": "/api/2024/ability-scores/wis"
+                "index": "str",
+                "name": "STR",
+                "url": "/api/2024/ability-scores/str"
+            },
+            {
+                "index": "cha",
+                "name": "CHA",
+                "url": "/api/2024/ability-scores/cha"
             }
         ]
     },
-    "hit_die": 8,
+    "hit_die": 10,
     "proficiency_choices": [
         {
-            "desc": "Choose two from History, Insight, Medicine, Persuasion, and Religion",
+            "desc": "Choose 2: Athletics, Insight, Intimidation, Medicine, Persuasion, or Religion",
             "choose": 2,
             "type": "proficiencies",
             "from": {
@@ -23,9 +28,9 @@
                     {
                         "option_type": "reference",
                         "item": {
-                            "index": "skill-history",
-                            "name": "Skill: History",
-                            "url": "/api/2024/proficiencies/skill-history"
+                            "index": "skill-athletics",
+                            "name": "Skill: Athletics",
+                            "url": "/api/2024/proficiencies/skill-athletics"
                         }
                     },
                     {
@@ -34,6 +39,14 @@
                             "index": "skill-insight",
                             "name": "Skill: Insight",
                             "url": "/api/2024/proficiencies/skill-insight"
+                        }
+                    },
+                    {
+                        "option_type": "reference",
+                        "item": {
+                            "index": "skill-intimidation",
+                            "name": "Skill: Intimidation",
+                            "url": "/api/2024/proficiencies/skill-intimidation"
                         }
                     },
                     {
@@ -66,14 +79,9 @@
     ],
     "proficiencies": [
         {
-            "index": "light-armor",
-            "name": "Light Armor",
-            "url": "/api/2024/proficiencies/light-armor"
-        },
-        {
-            "index": "medium-armor",
-            "name": "Medium Armor",
-            "url": "/api/2024/proficiencies/medium-armor"
+            "index": "all-armor",
+            "name": "All armor",
+            "url": "/api/2024/proficiencies/all-armor"
         },
         {
             "index": "shields",
@@ -84,6 +92,11 @@
             "index": "simple-weapons",
             "name": "Simple Weapons",
             "url": "/api/2024/proficiencies/simple-weapons"
+        },
+        {
+            "index": "martial-weapons",
+            "name": "Martial Weapons",
+            "url": "/api/2024/proficiencies/martial-weapons"
         },
         {
             "index": "saving-throw-wis",
@@ -111,7 +124,7 @@
     "starting_equipment": [],
     "starting_equipment_options": [
         {
-            "desc": "(a) Chain Shirt, Shield, Mace, Holy Symbol, Priest’s Pack, and 7 GP; or (b) 110 GP",
+            "desc": "(a) Chain Mail, Shield, Longsword, 6 Javelins, Holy Symbol, Priest’s Pack, and 9 GP; or (b) 150 GP",
             "choose": 1,
             "type": "equipment",
             "from": {
@@ -120,31 +133,40 @@
                     {
                         "option_type": "multiple",
                         "items": [
-                            { "option_type": "counted_reference", "count": 1,"of":{ "index":  "chain-shirt", "name":  "Chain Shirt", "url":  "/api/2024/equipment/chain-shirt" }},
+                            { "option_type": "counted_reference", "count": 1,"of":{ "index":  "chain-mail", "name":  "Chain Mail", "url":  "/api/2024/equipment/chain-mail" }},
                             { "option_type": "counted_reference", "count": 1, "of": { "index": "shield", "name": "Shield", "url": "/api/2024/equipment/shield" }},
-                            { "option_type": "counted_reference", "count": 1, "of": { "index": "mace", "name": "Mace", "url": "/api/2024/equipment/mace" }},
+                            { "option_type": "counted_reference", "count": 1, "of": { "index": "longsword", "name": "Longsword", "url": "/api/2024/equipment/longsword" }},
+                            { "option_type": "counted_reference", "count": 6, "of":  { "index":  "javelin", "name": "Javelin", "url":  "/api/2024/equipment/javelin"}},
                             { "option_type": "counted_reference", "count": 1, "of": { "index": "holy-symbol", "name": "Holy Symbol", "url": "/api/2024/equipment/holy-symbols" }},
                             { "option_type": "counted_reference", "count": 1, "of": { "index": "priests-pack", "name": "Priests Pack", "url": "/api/2024/equipment/priests-pack" }},
-                            { "option_type": "money", "count":  7, "unit": "gp"}
+                            { "option_type": "money", "count":  9, "unit": "gp"}
                         ]
                     },
                     {
                         "option_type": "money",
-                        "count": 110,
+                        "count": 150,
                         "unit": "gp"
                     }
                 ]
             }
         }
     ],
-    "class_levels": "/api/2024/classes/cleric/levels",
+    "class_levels": "/api/2024/classes/paladin/levels",
     "multi_classing": {
         "prerequisites": [
             {
                 "ability_score": {
-                    "index": "wis",
-                    "name": "WIS",
-                    "url": "/api/2024/ability-scores/wis"
+                    "index": "str",
+                    "name": "STR",
+                    "url": "/api/2024/ability-scores/str"
+                },
+                "minimum_score": 13
+            },
+            {
+                "ability_score": {
+                    "index": "cha",
+                    "name": "CHA",
+                    "url": "/api/2024/ability-scores/cha"
                 },
                 "minimum_score": 13
             }
@@ -164,66 +186,63 @@
                 "index": "shields",
                 "name": "Shields",
                 "url": "/api/2024/proficiencies/shields"
+            },
+            {
+                "index": "martial-weapons",
+                "name": "Martial Weapons",
+                "url": "/api/2024/proficiencies/martial-weapons"
             }
         ]
     },
     "subclasses": [
         {
-            "index": "life-domain",
-            "name": "Life Domain",
-            "url": "/api/2024/subclasses/life-domain"
+            "index": "oath-of-devotion",
+            "name": "Oath of Devotion",
+            "url": "/api/2024/subclasses/oath-of-devotion"
         }
     ],
     "spellcasting": {
         "level": 1,
         "spellcasting_ability": {
-            "index": "wis",
-            "name": "WIS",
-            "url": "/api/2024/ability-scores/wis"
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
         },
         "info": [
             {
-                "name": "Cantrips",
-                "desc": [
-                    "You know three cantrips of your choice from the Cleric spell list. Guidance, Sacred Flame, and Thaumaturgy are recommended.",
-                    "Whenever you gain a Cleric level, you can replace one of your cantrips with another cantrip of your choice from the Cleric spell list.",
-                    "When you reach Cleric levels 4 and 10, you can learn another cantrip of your choice from the Cleric spell list, as shown in the Cantrips column of the Cleric Features table."
-                ]
-            },
-            {
                 "name": "Spell Slots",
                 "desc": [
-                    "The Cleric Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest."
+                    "The Paladin Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest."
                 ]
             },
             {
                 "name": "Prepared Spells of Level 1+",
                 "desc": [
-                    "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the Cleric spell list. Bless, Cure Wounds, Guiding Bolt, and Shield of Faith are recommended.",
-                    "The number of spells on your list increases as you gain Cleric levels, as shown in the Prepared Spells column of the Cleric Features table. Whenever that number increases, choose additional spells from the Cleric spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which oyu have spell slots. For example, if you're a level 3 Cleric, your list of prepared spells can include six spells of levels 1 and 2 in any combination.",
-                    "If another Cleric feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Cleric spells for you."
+                    "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Paladin spells. Heroism and Searing Smite are recommended.",
+                    "The number of spells on your list increases as you gain Paladin levels, as shown in the Prepared Spells column of the Paladin Features table. Whenever that number increases, choose additional Paladin spells until the number of spells on your list matches the number in the Paladin Features table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Paladin, your list of prepared spells can include six Paladin spells of level 1 or 2 in any combination.",
+                    "If another Paladin feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Paladin spells for you."
                 ]
             },
             {
                 "name": "Changing Your Prepared Spells",
                 "desc": [
-                    "Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells there with other Cleric spells for which you have spell slots."
+                    "Whenever you finish a Long Rest, you can replace one spell on your list with another Paladin spell for which you have spell slots."
                 ]
             },
             {
                 "name": "Spellcasting Ability",
                 "desc": [
-                    "Wisdom is your spellcasting ability for your Cleric spells."
+                    "Charisma is your spellcasting ability for your Paladin spells."
                 ]
             },
             {
                 "name": "Spellcasting Focus",
                 "desc": [
-                    "You can use a Holy Symbol as a Spellcasting Focus for your Cleric spells."
+                    "You can use a Holy Symbol as a Spellcasting Focus for your Paladin spells."
                 ]
             }
         ]
     },
-    "spells": "/api/2024/classes/cleric/spells",
-    "url": "/api/2024/classes/cleric"
+    "spells": "/api/2024/classes/paladin/spells",
+    "url": "/api/2024/classes/paladin"
 }
