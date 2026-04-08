@@ -36,7 +36,7 @@
     "url": "/api/2024/equipment/alchemists-fire"
   },
   {
-    "index": "alchemist-supplies",
+    "index": "alchemists-supplies",
     "name": "Alchemist's Supplies",
     "equipment_categories": [
       {
@@ -118,7 +118,7 @@
       }
     ],
     "weight": 8,
-    "url": "/api/2024/equipment/alchemist-supplies"
+    "url": "/api/2024/equipment/alchemists-supplies"
   },
   {
     "index": "amulet",
@@ -2145,6 +2145,164 @@
     "description": "A Holy Symbol takes one of the forms in the Holy Symbol table and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus.\nThe table indicates whether a Holy Symbol needs to be held, worn, or borne on fabric (such as a tabard or banner) or a Shield.",
     "weight": 0,
     "url": "/api/2024/equipment/emblem"
+  },
+  {
+    "index": "entertainers-pack",
+    "name": "Entertainer's Pack",
+    "equipment_categories": [
+      {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/2024/equipment-categories/adventuring-gear"
+    }
+    ],
+    "cost": {
+      "quantity": 40,
+      "unit": "gp"
+    },
+    "contents": [
+      {
+        "item": {
+          "index": "backpack",
+          "name": "Backpack",
+          "url": "/api/2024/equipment/backpack"
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "index": "bedroll",
+          "name": "Bedroll",
+          "url": "/api/2024/equipment/bedroll"
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "index": "costume",
+          "name": "Costume",
+          "url": "/api/2024/equipment/costume"
+        },
+        "quantity": 2
+      },
+      {
+        "item": {
+          "index": "candle",
+          "name": "Candle",
+          "url": "/api/2024/equipment/candle"
+        },
+        "quantity": 5
+      },
+      {
+        "item": {
+          "index": "rations",
+          "name": "Rations",
+          "url": "/api/2024/equipment/rations"
+        },
+        "quantity": 5
+      },
+      {
+        "item": {
+          "index": "waterskin",
+          "name": "Waterskin",
+          "url": "/api/2024/equipment/waterskin"
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "index": "disguise-kit",
+          "name": "Disguise Kit",
+          "url": "/api/2024/equipment/disguise-kit"
+        },
+        "quantity": 1
+      }
+    ],
+    "url": "/api/2024/equipment/entertainers-pack"
+  },
+  {
+    "index": "explorers-pack",
+    "name": "Explorer's Pack",
+    "equipment_categories": [
+      {
+        "index": "adventuring-gear",
+        "name": "Adventuring Gear",
+        "url": "/api/2024/equipment-categories/adventuring-gear"
+      }
+    ],
+    "contents": [
+      {
+        "item": {
+          "index": "backpack",
+          "name": "Backpack",
+          "url": "/api/2024/equipment/backpack"
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "index": "bedroll",
+          "name": "Bedroll",
+          "url": "/api/2024/equipment/bedroll"
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "index": "oil",
+          "name": "Oil",
+          "url": "/api/2024/equipment/oil"
+        },
+        "quantity": 2
+      },
+      {
+        "item": {
+          "index": "rations",
+          "name": "Rations",
+          "url": "/api/2024/equipment/rations"
+        },
+        "quantity": 10
+      },
+      {
+        "item": {
+          "index": "rope",
+          "name": "Rope",
+          "url": "/api/2024/equipment/rope"
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "index": "tinderbox",
+          "name": "Tinderbox",
+          "url": "/api/2024/equipment/tinderbox"
+        },
+        "quantity": 1
+      },
+      {
+        "item": {
+          "index": "torch",
+          "name": "Torch",
+          "url": "/api/2024/equipment/torch"
+        },
+        "quantity": 10
+      },
+      {
+        "item": {
+          "index": "waterskin",
+          "name": "Waterskin",
+          "url": "/api/2024/equipment/waterskin"
+        },
+        "quantity": 1
+      }
+    ],
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    },
+    "description": "An Explorer’s Pack contains the following items: Backpack, Bedroll, 2 flasks of Oil, 10 days of Rations, Rope, Tinderbox, 10 Torches, and Waterskin.",
+    "weight": 55,
+    "url": "/api/2024/equipment/explorers-pack"
   },
   {
     "index": "flail",
@@ -6317,6 +6475,26 @@
       }
     },
     "url": "/api/2024/equipment/spear"
+  },
+  {
+    "index": "spellbook",
+    "name": "Spellbook",
+    "equipment_categories": [
+      {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/2024/equipment-categories/adventuring-gear"
+    }
+    ],
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    },
+    "weight": 3,
+    "desc": [
+      "Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells."
+    ],
+    "url": "/api/2024/equipment/spellbook"
   },
   {
     "index": "spell-scroll-cantrip",
