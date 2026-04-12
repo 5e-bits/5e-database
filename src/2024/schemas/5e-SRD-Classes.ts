@@ -12,11 +12,6 @@ const SpellcastingSchema = z.object({
   info: z.array(SpellcastingInfoSchema),
 });
 
-const StartingEquipmentSchema = z.object({
-  equipment: APIReferenceSchema,
-  quantity: z.number(),
-});
-
 const MultiClassingPrereqSchema = z.object({
   ability_score: APIReferenceSchema.optional(),
   minimum_score: z.number(),
@@ -45,7 +40,6 @@ export const ClassSchema = z.object({
   proficiencies: z.array(APIReferenceSchema).optional(),
   proficiency_choices: z.array(ChoiceSchema),
   saving_throws: z.array(APIReferenceSchema).optional(),
-  starting_equipment: z.array(StartingEquipmentSchema).optional(),
   starting_equipment_options: z.array(ChoiceSchema),
   subclasses: z.array(APIReferenceSchema).optional(),
   spellcasting: SpellcastingSchema.optional(),
