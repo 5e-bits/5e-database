@@ -32,6 +32,37 @@ const MonsterArmorClassSchema = z.strictObject({
   desc: z.string().optional(),
 });
 
+const SpecialAbilityUsageSchema = z.object({
+  type: z.string(),
+  times: z.number().optional(),
+  times_in_lair: z.number().optional(),
+  rest_types: z.array(z.string()).optional(),
+});
+
+const SpellcastingSpellUsageSchema = z.strictObject({
+  type: z.string(),
+  times: z.number().optional(),
+});
+
+const SpellcastingSpellSchema = z.strictObject({
+  name: z.string(),
+  level: z.number(),
+  url: z.string(),
+  usage: SpellcastingSpellUsageSchema.optional(),
+  notes: z.string().optional(),
+});
+
+const SpellcastingSchema = z.strictObject({
+  ability: APIReferenceSchema,
+  components_required: z.array(z.string()),
+  spells: z.array(SpellcastingSpellSchema),
+  level: z.number().optional(),
+  dc: z.number().optional(),
+  modifier: z.number().optional(),
+  school: z.string().optional(),
+  slots: z.record(z.string(), z.number()).optional(),
+});
+
 const ActionUsageSchema = z.object({
   type: z.string(),
   dice: z.string().optional(),
@@ -62,6 +93,7 @@ const MonsterActionSchema = z.strictObject({
   attacks: z.array(MonsterAttackSchema).optional(),
   options: ChoiceSchema.optional(),
   damage: z.array(z.union([DamageSchema, ChoiceSchema])).optional(),
+  spellcasting: SpellcastingSchema.optional(),
 });
 
 const LegendaryActionSchema = z.object({
@@ -76,37 +108,6 @@ const ReactionSchema = z.object({
   name: z.string(),
   desc: z.string(),
   dc: DifficultyClassSchema.optional(),
-});
-
-const SpecialAbilityUsageSchema = z.object({
-  type: z.string(),
-  times: z.number().optional(),
-  time_in_lair: z.number().optional(),
-  rest_types: z.array(z.string()).optional(),
-});
-
-const SpellcastingSpellUsageSchema = z.strictObject({
-  type: z.string(),
-  times: z.number().optional(),
-});
-
-const SpellcastingSpellSchema = z.strictObject({
-  name: z.string(),
-  level: z.number(),
-  url: z.string(),
-  usage: SpellcastingSpellUsageSchema.optional(),
-  notes: z.string().optional(),
-});
-
-const SpellcastingSchema = z.strictObject({
-  ability: APIReferenceSchema,
-  components_required: z.array(z.string()),
-  spells: z.array(SpellcastingSpellSchema),
-  level: z.number().optional(),
-  dc: z.number().optional(),
-  modifier: z.number().optional(),
-  school: z.string().optional(),
-  slots: z.record(z.string(), z.number()).optional(),
 });
 
 const SpecialAbilitySchema = z.strictObject({
