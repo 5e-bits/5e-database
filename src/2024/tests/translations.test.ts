@@ -24,29 +24,30 @@ import { TraitSchema } from '../schemas/5e-SRD-Traits';
 import { WeaponMasteryPropertySchema } from '../schemas/5e-SRD-Weapon-Mastery-Properties';
 import { WeaponPropertySchema } from '../schemas/5e-SRD-Weapon-Properties';
 
+import { TRANSLATION_SKIP_DIRS } from '../../../scripts/translationUtils';
+
 const YEAR_DIR = 'src/2024';
 const EN_DIR = `${YEAR_DIR}/en`;
-const SKIP_DIRS = new Set(['en', 'schemas', 'tests']);
 
 // Maps collection index name → Zod schema. Add entries here when new collections are introduced.
 const COLLECTION_SCHEMAS: Record<string, z.ZodTypeAny> = {
   'ability-scores': AbilityScoreSchema,
-  'alignments': AlignmentSchema,
-  'backgrounds': BackgroundSchema,
-  'conditions': ConditionSchema,
+  alignments: AlignmentSchema,
+  backgrounds: BackgroundSchema,
+  conditions: ConditionSchema,
   'damage-types': DamageTypeSchema,
   'equipment-categories': EquipmentCategorySchema,
-  'equipment': EquipmentSchema,
-  'feats': FeatSchema,
-  'languages': LanguageSchema,
+  equipment: EquipmentSchema,
+  feats: FeatSchema,
+  languages: LanguageSchema,
   'magic-items': MagicItemSchema,
   'magic-schools': MagicSchoolSchema,
-  'proficiencies': ProficiencySchema,
-  'skills': SkillSchema,
-  'species': SpeciesSchema,
-  'subclasses': SubclassSchema,
-  'subspecies': SubspeciesSchema,
-  'traits': TraitSchema,
+  proficiencies: ProficiencySchema,
+  skills: SkillSchema,
+  species: SpeciesSchema,
+  subclasses: SubclassSchema,
+  subspecies: SubspeciesSchema,
+  traits: TraitSchema,
   'weapon-mastery-properties': WeaponMasteryPropertySchema,
   'weapon-properties': WeaponPropertySchema,
 };
@@ -55,13 +56,18 @@ type Entry = Record<string, unknown>;
 
 function getLangDirs(): string[] {
   if (!fs.existsSync(YEAR_DIR)) return [];
-  return fs.readdirSync(YEAR_DIR, { withFileTypes: true })
-    .filter(e => e.isDirectory() && !SKIP_DIRS.has(e.name))
-    .map(e => e.name);
+  return fs
+    .readdirSync(YEAR_DIR, { withFileTypes: true })
+    .filter((e) => e.isDirectory() && !TRANSLATION_SKIP_DIRS.has(e.name))
+    .map((e) => e.name);
 }
 
 function collectionNameFromFilename(filename: string): string {
-  return filename.replace(/^5e-SRD-/, '').replace(/\.json$/, '').toLowerCase().replace(/[\s_]+/g, '-');
+  return filename
+    .replace(/^5e-SRD-/, '')
+    .replace(/\.json$/, '')
+    .toLowerCase()
+    .replace(/[\s_]+/g, '-');
 }
 
 describe('2024 translation files', () => {
@@ -82,7 +88,7 @@ describe('2024 translation files', () => {
 
         const enData = JSON.parse(fs.readFileSync(enFile, 'utf8')) as Entry[];
         const transData = JSON.parse(fs.readFileSync(transFile, 'utf8')) as Entry[];
-        const enIndices = new Set(enData.map(r => r.index as string));
+        const enIndices = new Set(enData.map((r) => r.index as string));
 
         for (const entry of transData) {
           const idx = entry.index as string;
@@ -91,11 +97,13 @@ describe('2024 translation files', () => {
             continue;
           }
 
-          const enEntry = enData.find(r => r.index === idx)!;
+          const enEntry = enData.find((r) => r.index === idx)!;
           const { index: _index, ...transFields } = entry;
           for (const field of Object.keys(transFields)) {
             if (!(field in enEntry)) {
-              errors.push(`${transFile}['${idx}']: field '${field}' does not exist in English entry`);
+              errors.push(
+                `${transFile}['${idx}']: field '${field}' does not exist in English entry`
+              );
             }
           }
         }
@@ -145,7 +153,7 @@ describe('2024 translation files', () => {
 
         const enData = JSON.parse(fs.readFileSync(enFile, 'utf8')) as Entry[];
         const transData = JSON.parse(fs.readFileSync(transFile, 'utf8')) as Entry[];
-        const enMap = new Map(enData.map(r => [r.index as string, r]));
+        const enMap = new Map(enData.map((r) => [r.index as string, r]));
 
         for (const entry of transData) {
           const idx = entry.index as string;

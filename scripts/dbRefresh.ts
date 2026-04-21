@@ -11,6 +11,7 @@ import {
   buildTranslationDoc,
   computeLocaleDocuments,
   TranslationDocument,
+  TRANSLATION_SKIP_DIRS,
 } from './translationUtils';
 
 const mongodbUri = checkMongoUri('db:refresh');
@@ -149,10 +150,71 @@ const uploadTablesFromFolder = async (db: Db, jsonDbDir: string, collectionPrefi
   await _refreshIndexCollection(db, collectionPrefix, collectionIndexEntries);
 };
 
+function _processLangDir(lang: string, langDir: string, enDir: string): TranslationDocument[] {
+  const docs: TranslationDocument[] = [];
+  let langFiles: string[];
+  try {
+    langFiles = readdirSync(langDir) as string[];
+  } catch (e) {
+    console.error(`Error reading ${langDir}:`, e);
+    return docs;
+  }
+
+  for (const filename of langFiles) {
+    if (!filename.includes(SRD_PREFIX) || !filename.endsWith('.json')) continue;
+
+    const indexName = getIndexName(filename);
+    if (!indexName) continue;
+
+    let enData: Record<string, unknown>[];
+    try {
+      const raw = JSON.parse(readFileSync(`${enDir}/${filename}`, 'utf8'));
+      if (!Array.isArray(raw)) throw new Error('not an array');
+      enData = raw;
+    } catch {
+      console.warn(`  No English source at ${enDir}/${filename}. Skipping ${lang}/${filename}.`);
+      continue;
+    }
+
+    const enMap = new Map<string, Record<string, unknown>>();
+    for (const record of enData) {
+      if (typeof (record as { index?: unknown }).index === 'string') {
+        enMap.set((record as { index: string }).index, record);
+      }
+    }
+
+    let transData: Record<string, unknown>[];
+    try {
+      const raw = JSON.parse(readFileSync(`${langDir}/${filename}`, 'utf8'));
+      if (!Array.isArray(raw)) throw new Error('not an array');
+      transData = raw;
+    } catch (err) {
+      console.error(`  Error parsing ${langDir}/${filename}:`, err);
+      continue;
+    }
+
+    console.log(
+      `  Processing ${lang} translations for '${indexName}' (${transData.length} entries)...`
+    );
+
+    for (const transEntry of transData) {
+      const doc = buildTranslationDoc(
+        transEntry as Record<string, unknown>,
+        enMap,
+        indexName,
+        lang
+      );
+      if (doc) docs.push(doc);
+    }
+  }
+
+  return docs;
+}
+
 /**
  * Discovers all non-English locale directories under jsonDbDir, loads their
- * translation JSON files, validates them against the English source, computes
- * per-entry completeness, and upserts into `{collectionPrefix}translations`.
+ * translation JSON files, validates them against the English source, and
+ * upserts into `{collectionPrefix}translations`.
  */
 async function uploadTranslationsFromFolder(
   db: Db,
@@ -171,11 +233,10 @@ async function uploadTranslationsFromFolder(
     }
   }
 
-  const SKIP_DIRS = new Set(['en', 'schemas', 'tests']);
   let langDirs: string[];
   try {
     langDirs = readdirSync(jsonDbDir, { withFileTypes: true })
-      .filter((e) => e.isDirectory() && !SKIP_DIRS.has(e.name))
+      .filter((e) => e.isDirectory() && !TRANSLATION_SKIP_DIRS.has(e.name))
       .map((e) => e.name);
   } catch (e) {
     console.error(`Error reading ${jsonDbDir}:`, e);
@@ -191,64 +252,8 @@ async function uploadTranslationsFromFolder(
   const translationDocs: TranslationDocument[] = [];
 
   for (const lang of langDirs) {
-    const langDir = `${jsonDbDir}/${lang}`;
-    let langFiles: string[];
-    try {
-      langFiles = readdirSync(langDir) as string[];
-    } catch (e) {
-      console.error(`Error reading ${langDir}:`, e);
-      continue;
-    }
-
-    for (const filename of langFiles) {
-      if (!filename.includes(SRD_PREFIX) || !filename.endsWith('.json')) continue;
-
-      const indexName = getIndexName(filename);
-      if (!indexName) continue;
-
-      const enFilepath = `${jsonDbDir}/en/${filename}`;
-      let enData: Record<string, unknown>[];
-      try {
-        const raw = JSON.parse(readFileSync(enFilepath, 'utf8'));
-        if (!Array.isArray(raw)) throw new Error('not an array');
-        enData = raw;
-      } catch {
-        console.warn(`  No English source at ${enFilepath}. Skipping ${lang}/${filename}.`);
-        continue;
-      }
-
-      const enMap = new Map<string, Record<string, unknown>>();
-      for (const record of enData) {
-        if (typeof (record as { index?: unknown }).index === 'string') {
-          enMap.set((record as { index: string }).index, record);
-        }
-      }
-
-      const transFilepath = `${jsonDbDir}/${lang}/${filename}`;
-      let transData: Record<string, unknown>[];
-      try {
-        const raw = JSON.parse(readFileSync(transFilepath, 'utf8'));
-        if (!Array.isArray(raw)) throw new Error('not an array');
-        transData = raw;
-      } catch (err) {
-        console.error(`  Error parsing ${transFilepath}:`, err);
-        continue;
-      }
-
-      console.log(
-        `  Processing ${lang} translations for '${indexName}' (${transData.length} entries)...`
-      );
-
-      for (const transEntry of transData) {
-        const doc = buildTranslationDoc(
-          transEntry as Record<string, unknown>,
-          enMap,
-          indexName,
-          lang
-        );
-        if (doc) translationDocs.push(doc);
-      }
-    }
+    const docs = _processLangDir(lang, `${jsonDbDir}/${lang}`, `${jsonDbDir}/en`);
+    translationDocs.push(...docs);
   }
 
   if (translationDocs.length > 0) {

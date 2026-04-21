@@ -9,10 +9,7 @@ import {
   getLocaleFromFilepath,
 } from '../dbUtils'; // Import from parent dir
 import { getOldFileContent, ChangedFile } from './gitUtils'; // Import from sibling
-import {
-  buildTranslationDoc,
-  getEnglishSourcePath,
-} from '../translationUtils';
+import { buildTranslationDoc, getEnglishSourcePath } from '../translationUtils';
 
 // --- Constants for MongoDB Operations ---
 const MONGO_OP_UPDATE_ONE = 'updateOne';
@@ -348,7 +345,7 @@ async function _handleFileDeleted(db: Db, filepath: string): Promise<void> {
 
 // --- Translation Handlers ---
 
-function buildEnMap(data: any[]): Map<string, Record<string, unknown>> {
+function buildEnMap(data: Record<string, unknown>[]): Map<string, Record<string, unknown>> {
   return new Map(
     data
       .filter((r) => typeof r.index === 'string')
@@ -357,7 +354,8 @@ function buildEnMap(data: any[]): Map<string, Record<string, unknown>> {
 }
 
 async function _handleTranslationFileAdded(db: Db, filepath: string): Promise<void> {
-  const lang = getLocaleFromFilepath(filepath)!;
+  const lang = getLocaleFromFilepath(filepath);
+  if (!lang) return;
   const filename = filepath.split('/').pop()!;
   const indexName = getIndexName(filename);
   if (!indexName) return;
@@ -397,7 +395,8 @@ async function _handleTranslationFileAdded(db: Db, filepath: string): Promise<vo
 }
 
 async function _handleTranslationFileModified(db: Db, filepath: string): Promise<void> {
-  const lang = getLocaleFromFilepath(filepath)!;
+  const lang = getLocaleFromFilepath(filepath);
+  if (!lang) return;
   const filename = filepath.split('/').pop()!;
   const indexName = getIndexName(filename);
   if (!indexName) return;
@@ -427,11 +426,7 @@ async function _handleTranslationFileModified(db: Db, filepath: string): Promise
       if (!doc) continue;
       ops.push({
         [MONGO_OP_UPDATE_ONE]: {
-          filter: {
-            source_collection: doc.source_collection,
-            source_index: doc.source_index,
-            lang: doc.lang,
-          },
+          filter: { source_collection: indexName, source_index: idx, lang },
           update: { $set: doc },
           upsert: true,
         },
@@ -455,7 +450,8 @@ async function _handleTranslationFileModified(db: Db, filepath: string): Promise
 }
 
 async function _handleTranslationFileDeleted(db: Db, filepath: string): Promise<void> {
-  const lang = getLocaleFromFilepath(filepath)!;
+  const lang = getLocaleFromFilepath(filepath);
+  if (!lang) return;
   const filename = filepath.split('/').pop()!;
   const indexName = getIndexName(filename);
   if (!indexName) return;

@@ -1,11 +1,8 @@
+export const TRANSLATION_SKIP_DIRS = new Set(['en', 'schemas', 'tests']);
+
 export interface LocaleDocument {
   lang: string;
   updated_at: Date;
-}
-
-export function computeLocaleDocuments(translationDocs: TranslationDocument[]): LocaleDocument[] {
-  const langs = new Set(translationDocs.map((d) => d.lang));
-  return Array.from(langs).map((lang) => ({ lang, updated_at: new Date() }));
 }
 
 export interface TranslationDocument {
@@ -14,6 +11,11 @@ export interface TranslationDocument {
   lang: string;
   fields: Record<string, unknown>;
   updated_at: Date;
+}
+
+export function computeLocaleDocuments(translationDocs: TranslationDocument[]): LocaleDocument[] {
+  const langs = new Set(translationDocs.map((d) => d.lang));
+  return Array.from(langs).map((lang) => ({ lang, updated_at: new Date() }));
 }
 
 /**
@@ -53,15 +55,18 @@ export function buildTranslationDoc(
   }
 
   const enEntry = enMap.get(sourceIndex)!;
-  const { index: _index, ...translatedFields } = transEntry;
+  const { index: _index, ...rawFields } = transEntry;
 
-  const invalidFields = Object.keys(translatedFields).filter((k) => !(k in enEntry));
-  if (invalidFields.length > 0) {
+  const invalidFields = new Set(Object.keys(rawFields).filter((k) => !(k in enEntry)));
+  if (invalidFields.size > 0) {
     console.warn(
-      `  Invalid fields in ${lang}/${sourceCollection}['${sourceIndex}']: ${invalidFields.join(', ')}. Removing.`
+      `  Invalid fields in ${lang}/${sourceCollection}['${sourceIndex}']: ${[...invalidFields].join(', ')}. Removing.`
     );
-    for (const f of invalidFields) delete translatedFields[f];
   }
+
+  const translatedFields = Object.fromEntries(
+    Object.entries(rawFields).filter(([k]) => !invalidFields.has(k))
+  );
 
   return {
     source_index: sourceIndex,

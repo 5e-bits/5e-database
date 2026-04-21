@@ -4,8 +4,9 @@ import { execSync } from 'child_process';
 export const SRD_PREFIX = '5e-SRD-';
 export const INDEX_COLLECTION_SUFFIX = 'collections';
 
-// BCP 47 locale tag pattern (e.g. "en", "de", "pt-BR")
-const LOCALE_PATTERN = /^[a-z]{2,3}(-[A-Z]{2})?$/;
+// BCP 47 locale tag: language[-script][-region]
+// Handles ll, ll-RR, ll-Ssss, ll-Ssss-RR (e.g. de, pt-BR, zh-Hans, zh-Hans-CN)
+const LOCALE_PATTERN = /^[a-z]{2,3}(-[A-Z][a-z]{3})?(-[A-Z]{2})?$/;
 
 /**
  * Checks if the MONGODB_URI environment variable is set. If not, prints an error
