@@ -217,8 +217,6 @@ async function _handleFileAdded(db: Db, filepath: string): Promise<void> {
   const collectionName = getCollectionNameFromJsonFile(filepath);
   if (!collectionName) {
     console.warn(`Could not determine collection name for added file ${filepath}. Skipping.`);
-    // Even if data processing is skipped, try to update index in case it matches pattern
-    await updateIndexCollection(db, filepath, 'upsert');
     return;
   }
   console.log(`\nProcessing Added file ${filepath} for collection '${collectionName}'...`);
@@ -396,6 +394,8 @@ async function _handleTranslationFileModified(db: Db, filepath: string): Promise
   const enPath = getEnglishSourcePath(filepath);
   if (!enPath) return;
 
+  // enPath is read from disk (post-commit), so if the English source was also modified in the
+  // same commit this correctly validates against the updated schema — no special handling needed.
   const enData = await readFileContent(enPath);
   const enMap = buildIndexMap(enData);
   const currentData = await readFileContent(filepath);
@@ -508,6 +508,8 @@ export async function processFileUpdate(db: Db, file: ChangedFile): Promise<void
         await _handleTranslationFileModified(db, filepath);
         break;
       case 'R':
+        // delete+add rather than diff: simpler and correct since a rename implies
+        // a collection change, and translation docs are cheap to recreate.
         if (oldFilepath) await _handleTranslationFileDeleted(db, oldFilepath);
         await _handleTranslationFileAdded(db, filepath);
         break;

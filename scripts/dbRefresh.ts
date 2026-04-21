@@ -57,7 +57,7 @@ async function _processFileForRefresh(
 
   if (updatedData.length === 0) {
     console.log(`  Skipping collection '${collectionName}' as no data was found or parsed.`);
-    return indexName;
+    return null;
   }
 
   const collection: Collection = db.collection(collectionName);
@@ -222,9 +222,16 @@ async function _refreshLocaleCollection(
 
   const localeDocs = computeLocaleDocuments(translationDocs);
   if (localeDocs.length > 0) {
-    await localeCollection.createIndex({ lang: 1 }, { unique: true });
-    await localeCollection.insertMany(localeDocs);
-    console.log(`  Inserted ${localeDocs.length} locale documents into '${localeCollectionName}'.`);
+    try {
+      await localeCollection.createIndex({ lang: 1 }, { unique: true });
+      await localeCollection.insertMany(localeDocs, { ordered: false });
+      console.log(
+        `  Inserted ${localeDocs.length} locale documents into '${localeCollectionName}'.`
+      );
+    } catch (err) {
+      console.error(`  Error inserting locale documents into '${localeCollectionName}':`, err);
+      throw err;
+    }
   } else {
     console.log(`  No locales to insert into '${localeCollectionName}'.`);
   }
