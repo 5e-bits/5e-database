@@ -1,5 +1,5 @@
 import { readFileSync } from 'fs';
-import { MongoClient, AnyBulkWriteOperation, Document, Db, MongoServerError } from 'mongodb';
+import { AnyBulkWriteOperation, Document, Db, MongoServerError } from 'mongodb';
 import { diff } from 'deep-diff';
 import {
   getCollectionNameFromJsonFile,
@@ -341,20 +341,33 @@ async function _handleFileDeleted(db: Db, filepath: string): Promise<void> {
   await updateIndexCollection(db, filepath, 'delete');
 }
 
+// --- Translation Helpers ---
+
+interface TranslationContext {
+  lang: string;
+  indexName: string;
+  enMap: Map<string, Record<string, unknown>>;
+}
+
+async function resolveTranslationContext(filepath: string): Promise<TranslationContext | null> {
+  const lang = getLocaleFromFilepath(filepath);
+  if (!lang) return null;
+  const filename = filepath.split('/').pop()!;
+  const indexName = getIndexName(filename);
+  if (!indexName) return null;
+  const enPath = getEnglishSourcePath(filepath);
+  if (!enPath) return null;
+  const enData = await readFileContent(enPath);
+  return { lang, indexName, enMap: buildIndexMap(enData) };
+}
+
 // --- Translation Handlers ---
 
 async function _handleTranslationFileAdded(db: Db, filepath: string): Promise<void> {
-  const lang = getLocaleFromFilepath(filepath);
-  if (!lang) return;
-  const filename = filepath.split('/').pop()!;
-  const indexName = getIndexName(filename);
-  if (!indexName) return;
+  const ctx = await resolveTranslationContext(filepath);
+  if (!ctx) return;
+  const { lang, indexName, enMap } = ctx;
 
-  const enPath = getEnglishSourcePath(filepath);
-  if (!enPath) return;
-
-  const enData = await readFileContent(enPath);
-  const enMap = buildIndexMap(enData);
   const transData = await readFileContent(filepath);
 
   console.log(`\nProcessing Added translation ${filepath}...`);
@@ -385,19 +398,12 @@ async function _handleTranslationFileAdded(db: Db, filepath: string): Promise<vo
 }
 
 async function _handleTranslationFileModified(db: Db, filepath: string): Promise<void> {
-  const lang = getLocaleFromFilepath(filepath);
-  if (!lang) return;
-  const filename = filepath.split('/').pop()!;
-  const indexName = getIndexName(filename);
-  if (!indexName) return;
-
-  const enPath = getEnglishSourcePath(filepath);
-  if (!enPath) return;
-
   // enPath is read from disk (post-commit), so if the English source was also modified in the
   // same commit this correctly validates against the updated schema — no special handling needed.
-  const enData = await readFileContent(enPath);
-  const enMap = buildIndexMap(enData);
+  const ctx = await resolveTranslationContext(filepath);
+  if (!ctx) return;
+  const { lang, indexName, enMap } = ctx;
+
   const currentData = await readFileContent(filepath);
   const oldData = parseJsonArrayContent(await getOldFileContent(filepath), `HEAD~1:${filepath}`);
 
