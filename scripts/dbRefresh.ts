@@ -6,6 +6,7 @@ import {
   getIndexName,
   getIndexCollectionName,
   LOCALE_PATTERN,
+  TRANSLATION_SKIP_DIRS,
   SRD_PREFIX,
 } from './dbUtils';
 import {
@@ -213,6 +214,30 @@ function _processLangDir(lang: string, langDir: string, enDir: string): Translat
   return docs;
 }
 
+async function _refreshLocaleCollection(
+  db: Db,
+  collectionPrefix: string,
+  translationDocs: TranslationDocument[]
+): Promise<void> {
+  const localeCollectionName = `${collectionPrefix}locales`;
+  const localeCollection = db.collection(localeCollectionName);
+
+  try {
+    await localeCollection.drop();
+  } catch (err) {
+    if (!(err instanceof MongoServerError && err.codeName === 'NamespaceNotFound')) throw err;
+  }
+
+  const localeDocs = computeLocaleDocuments(translationDocs);
+  if (localeDocs.length > 0) {
+    await localeCollection.createIndex({ lang: 1 }, { unique: true });
+    await localeCollection.insertMany(localeDocs);
+    console.log(`  Inserted ${localeDocs.length} locale documents into '${localeCollectionName}'.`);
+  } else {
+    console.log(`  No locales to insert into '${localeCollectionName}'.`);
+  }
+}
+
 /**
  * Discovers all non-English locale directories under jsonDbDir, loads their
  * translation JSON files, validates them against the English source, and
@@ -238,7 +263,9 @@ async function uploadTranslationsFromFolder(
   let langDirs: string[];
   try {
     langDirs = readdirSync(jsonDbDir, { withFileTypes: true })
-      .filter((e) => e.isDirectory() && LOCALE_PATTERN.test(e.name) && e.name !== 'en')
+      .filter(
+        (e) => e.isDirectory() && LOCALE_PATTERN.test(e.name) && !TRANSLATION_SKIP_DIRS.has(e.name)
+      )
       .map((e) => e.name);
   } catch (e) {
     console.error(`Error reading ${jsonDbDir}:`, e);
@@ -272,30 +299,6 @@ async function uploadTranslationsFromFolder(
   }
 
   await _refreshLocaleCollection(db, collectionPrefix, translationDocs);
-}
-
-async function _refreshLocaleCollection(
-  db: Db,
-  collectionPrefix: string,
-  translationDocs: TranslationDocument[]
-): Promise<void> {
-  const localeCollectionName = `${collectionPrefix}locales`;
-  const localeCollection = db.collection(localeCollectionName);
-
-  try {
-    await localeCollection.drop();
-  } catch (err) {
-    if (!(err instanceof MongoServerError && err.codeName === 'NamespaceNotFound')) throw err;
-  }
-
-  const localeDocs = computeLocaleDocuments(translationDocs);
-  if (localeDocs.length > 0) {
-    await localeCollection.createIndex({ lang: 1 }, { unique: true });
-    await localeCollection.insertMany(localeDocs);
-    console.log(`  Inserted ${localeDocs.length} locale documents into '${localeCollectionName}'.`);
-  } else {
-    console.log(`  No locales to insert into '${localeCollectionName}'.`);
-  }
 }
 
 async function main() {

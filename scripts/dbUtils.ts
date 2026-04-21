@@ -4,9 +4,19 @@ import { execSync } from 'child_process';
 export const SRD_PREFIX = '5e-SRD-';
 export const INDEX_COLLECTION_SUFFIX = 'collections';
 
-// BCP 47 locale tag: language[-script][-region]
-// Handles ll, ll-RR, ll-Ssss, ll-Ssss-RR (e.g. de, pt-BR, zh-Hans, zh-Hans-CN)
-export const LOCALE_PATTERN = /^[a-z]{2,3}(-[A-Z][a-z]{3})?(-[A-Z]{2})?$/;
+// Full RFC 5646 BCP 47 language tag pattern (named groups converted to non-capturing
+// because JS forbids duplicate group names even across alternations).
+// NOTE: The language subtag allows 2–8 letters, so this regex is syntactically permissive —
+// short words like 'docs', 'tests', 'schemas' also match. Use TRANSLATION_SKIP_DIRS
+// alongside this to exclude known non-locale project directories.
+// prettier-ignore
+export const LOCALE_PATTERN =
+  /^(?:(?:en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE|art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)|(?:(?:[A-Za-z]{2,3}(?:-[A-Za-z]{3}(?:-[A-Za-z]{3}){0,2})?)|[A-Za-z]{4}|[A-Za-z]{5,8})(?:-[A-Za-z]{4})?(?:-(?:[A-Za-z]{2}|[0-9]{3}))?(?:-(?:[A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(?:-(?:[0-9A-WY-Za-wy-z](?:-[A-Za-z0-9]{2,8})+))*(?:-x(?:-[A-Za-z0-9]{1,8})+)?|x(?:-[A-Za-z0-9]{1,8})+)$/;
+
+// Non-locale directories that live alongside locale dirs in src/{year}/.
+// 'en' is the English source and must never be treated as a translation target.
+// 'schemas' and 'tests' match the BCP 47 pattern syntactically but are project structure.
+export const TRANSLATION_SKIP_DIRS = new Set(['en', 'schemas', 'tests']);
 
 /**
  * Checks if the MONGODB_URI environment variable is set. If not, prints an error
@@ -88,7 +98,11 @@ export function getLocaleFromFilepath(filepath: string): string | null {
   const yearIdx = parts.findIndex((p) => /^\d{4}$/.test(p));
   if (yearIdx < 0) return null;
   const localeCandidate = parts[yearIdx + 1];
-  return localeCandidate && LOCALE_PATTERN.test(localeCandidate) ? localeCandidate : null;
+  if (!localeCandidate || !LOCALE_PATTERN.test(localeCandidate)) return null;
+  // Exclude structural dirs that match BCP 47 syntax but are not locales (schemas, tests).
+  // 'en' is intentionally allowed — callers use locale === 'en' to detect source files.
+  if (localeCandidate === 'schemas' || localeCandidate === 'tests') return null;
+  return localeCandidate;
 }
 
 /**

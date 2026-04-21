@@ -38,7 +38,7 @@ Create a file at:
 src/{year}/{lang}/5e-SRD-{Collection}.json
 ```
 
-where `{lang}` is a [BCP 47](https://www.rfc-editor.org/rfc/rfc5646) language tag (e.g. `de`, `fr`, `pt-BR`).
+where `{lang}` is a [BCP 47](https://www.rfc-editor.org/rfc/rfc5646) language tag (e.g. `de`, `fr`, `pt-BR`, `es-419`, `zh-Hans`).
 
 **Examples:**
 ```
@@ -68,7 +68,9 @@ A translation file is a JSON array. Each entry must include `index` (to identify
 
 ### Translatable fields
 
-Only text fields may be translated. Structural fields (`index`, `url`, numeric values, and API references) must be omitted.
+Only text fields may be translated. Structural fields (`index`, `url`, numeric values, and API references) must be omitted. The exact set of translatable fields depends on the collection — any field present in the English entry for that `index` is allowed.
+
+The table below shows common examples from the Spells collection:
 
 | Field                 | Translatable                                 |
 | --------------------- | -------------------------------------------- |
@@ -79,6 +81,8 @@ Only text fields may be translated. Structural fields (`index`, `url`, numeric v
 | `url`                 | No                                           |
 | Numeric values        | No                                           |
 | API reference objects | No                                           |
+
+Other collections expose different text fields (e.g. `summary` on subclasses, `description` on some entries). Include any text field that appears in the English source — CI will reject fields that don't exist there.
 
 ### Validation rules
 
