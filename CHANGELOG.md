@@ -27,6 +27,15 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [4.7.0](https://github.com/5e-bits/5e-database/compare/v4.6.3...v4.7.0) (2026-04-19)
+
+
+### Features
+
+* **2024:** 2024 classes and updates to proficiencies and equipments ([#1068](https://github.com/5e-bits/5e-database/issues/1068)) ([d418128](https://github.com/5e-bits/5e-database/commit/d4181284546f4d49bc013e04701f32b52f1b3bed))
+* **2024:** Add Dev bypass to tests ('-nyi') ([#1075](https://github.com/5e-bits/5e-database/issues/1075)) ([70a2768](https://github.com/5e-bits/5e-database/commit/70a2768e320cce4f19344033aad1325127e1cf4d))
+* update 2024 ClassSchema with primary_ability logic ([#1066](https://github.com/5e-bits/5e-database/issues/1066)) ([e413273](https://github.com/5e-bits/5e-database/commit/e4132737f8ace1674e33643123d3a4a1ec38a3e9))
+
 ## [4.6.3](https://github.com/5e-bits/5e-database/compare/v4.6.2...v4.6.3) (2026-04-01)
 
 
