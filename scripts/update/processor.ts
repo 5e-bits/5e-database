@@ -9,7 +9,7 @@ import {
   getLocaleFromFilepath,
 } from '../dbUtils'; // Import from parent dir
 import { getOldFileContent, ChangedFile } from './gitUtils'; // Import from sibling
-import { buildTranslationDoc, getEnglishSourcePath } from '../translationUtils';
+import { buildEnMap, buildTranslationDoc, getEnglishSourcePath } from '../translationUtils';
 
 // --- Constants for MongoDB Operations ---
 const MONGO_OP_UPDATE_ONE = 'updateOne';
@@ -345,14 +345,6 @@ async function _handleFileDeleted(db: Db, filepath: string): Promise<void> {
 
 // --- Translation Handlers ---
 
-function buildEnMap(data: Record<string, unknown>[]): Map<string, Record<string, unknown>> {
-  return new Map(
-    data
-      .filter((r) => typeof r.index === 'string')
-      .map((r) => [r.index as string, r as Record<string, unknown>])
-  );
-}
-
 async function _handleTranslationFileAdded(db: Db, filepath: string): Promise<void> {
   const lang = getLocaleFromFilepath(filepath);
   if (!lang) return;
@@ -426,7 +418,11 @@ async function _handleTranslationFileModified(db: Db, filepath: string): Promise
       if (!doc) continue;
       ops.push({
         [MONGO_OP_UPDATE_ONE]: {
-          filter: { source_collection: indexName, source_index: idx, lang },
+          filter: {
+            source_collection: doc.source_collection,
+            source_index: doc.source_index,
+            lang: doc.lang,
+          },
           update: { $set: doc },
           upsert: true,
         },

@@ -1,4 +1,15 @@
+import { z } from 'zod';
+import { LOCALE_PATTERN } from './dbUtils';
+
 export const TRANSLATION_SKIP_DIRS = new Set(['en', 'schemas', 'tests']);
+
+export const TranslationDocumentSchema = z.object({
+  source_index: z.string(),
+  source_collection: z.string(),
+  lang: z.string().regex(LOCALE_PATTERN, 'Must be a BCP 47 language tag'),
+  fields: z.record(z.string(), z.unknown()),
+  updated_at: z.date(),
+});
 
 export interface LocaleDocument {
   lang: string;
@@ -16,6 +27,12 @@ export interface TranslationDocument {
 export function computeLocaleDocuments(translationDocs: TranslationDocument[]): LocaleDocument[] {
   const langs = new Set(translationDocs.map((d) => d.lang));
   return Array.from(langs).map((lang) => ({ lang, updated_at: new Date() }));
+}
+
+export function buildEnMap(data: Record<string, unknown>[]): Map<string, Record<string, unknown>> {
+  return new Map(
+    data.filter((r) => typeof r.index === 'string').map((r) => [r.index as string, r])
+  );
 }
 
 /**

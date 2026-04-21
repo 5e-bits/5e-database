@@ -8,6 +8,7 @@ import {
   SRD_PREFIX,
 } from './dbUtils';
 import {
+  buildEnMap,
   buildTranslationDoc,
   computeLocaleDocuments,
   TranslationDocument,
@@ -176,12 +177,7 @@ function _processLangDir(lang: string, langDir: string, enDir: string): Translat
       continue;
     }
 
-    const enMap = new Map<string, Record<string, unknown>>();
-    for (const record of enData) {
-      if (typeof (record as { index?: unknown }).index === 'string') {
-        enMap.set((record as { index: string }).index, record);
-      }
-    }
+    const enMap = buildEnMap(enData);
 
     let transData: Record<string, unknown>[];
     try {

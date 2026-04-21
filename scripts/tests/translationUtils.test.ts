@@ -4,6 +4,7 @@ import {
   computeLocaleDocuments,
   getEnglishSourcePath,
 } from '../translationUtils';
+import { TranslationDocumentSchema } from '../translationUtils';
 
 const enMap = new Map([
   ['acid-arrow', { index: 'acid-arrow', name: 'Acid Arrow', desc: ['A spell.'], level: 2 }],
@@ -62,6 +63,26 @@ describe('buildTranslationDoc', () => {
       'de'
     );
     expect(result!.fields).not.toHaveProperty('index');
+  });
+
+  it('output satisfies TranslationDocumentSchema', () => {
+    const result = buildTranslationDoc(
+      { index: 'acid-arrow', name: 'Säurepfeil' },
+      enMap,
+      'spells',
+      'de'
+    );
+    expect(TranslationDocumentSchema.safeParse(result).success).toBe(true);
+  });
+
+  it('TranslationDocumentSchema accepts script-subtag locales like zh-Hans', () => {
+    const result = buildTranslationDoc(
+      { index: 'acid-arrow', name: '酸箭' },
+      enMap,
+      'spells',
+      'zh-Hans'
+    );
+    expect(TranslationDocumentSchema.safeParse(result).success).toBe(true);
   });
 });
 
