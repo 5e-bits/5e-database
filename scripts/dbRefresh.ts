@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync } from 'fs';
+import { readdirSync, readFileSync, existsSync } from 'fs';
 import { MongoClient, Collection, Db, MongoServerError } from 'mongodb';
 import {
   checkMongoUri,
@@ -260,11 +260,23 @@ async function uploadTranslationsFromFolder(
     }
   }
 
+  const enDir = `${jsonDbDir}/en`;
+  if (!existsSync(enDir)) {
+    console.warn(
+      `  No English source directory at ${enDir}. Skipping translations for ${jsonDbDir}.`
+    );
+    return;
+  }
+
   let langDirs: string[];
   try {
     langDirs = readdirSync(jsonDbDir, { withFileTypes: true })
       .filter(
-        (e) => e.isDirectory() && LOCALE_PATTERN.test(e.name) && !TRANSLATION_SKIP_DIRS.has(e.name)
+        (e) =>
+          e.isDirectory() &&
+          LOCALE_PATTERN.test(e.name) &&
+          e.name !== 'en' &&
+          !TRANSLATION_SKIP_DIRS.has(e.name)
       )
       .map((e) => e.name);
   } catch (e) {
@@ -281,7 +293,7 @@ async function uploadTranslationsFromFolder(
   const translationDocs: TranslationDocument[] = [];
 
   for (const lang of langDirs) {
-    const docs = _processLangDir(lang, `${jsonDbDir}/${lang}`, `${jsonDbDir}/en`);
+    const docs = _processLangDir(lang, `${jsonDbDir}/${lang}`, enDir);
     translationDocs.push(...docs);
   }
 

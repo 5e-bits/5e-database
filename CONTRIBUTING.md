@@ -68,7 +68,7 @@ A translation file is a JSON array. Each entry must include `index` (to identify
 
 ### Translatable fields
 
-Only text fields may be translated. Structural fields (`index`, `url`, numeric values, and API references) must be omitted. The exact set of translatable fields depends on the collection — any field present in the English entry for that `index` is allowed.
+Only text fields may be translated. Structural fields (`url`, numeric values, and API references) must be omitted. `index` is required for matching but must not be translated — its value must be identical to the English source. The exact set of translatable fields depends on the collection — any text field present in the English entry for that `index` is allowed.
 
 The table below shows common examples from the Spells collection:
 

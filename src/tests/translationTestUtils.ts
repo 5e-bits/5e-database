@@ -12,7 +12,11 @@ export function getLangDirs(yearDir: string): string[] {
   return fs
     .readdirSync(yearDir, { withFileTypes: true })
     .filter(
-      (e) => e.isDirectory() && LOCALE_PATTERN.test(e.name) && !TRANSLATION_SKIP_DIRS.has(e.name)
+      (e) =>
+        e.isDirectory() &&
+        LOCALE_PATTERN.test(e.name) &&
+        e.name !== 'en' &&
+        !TRANSLATION_SKIP_DIRS.has(e.name)
     )
     .map((e) => e.name);
 }
