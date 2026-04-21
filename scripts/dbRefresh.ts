@@ -55,11 +55,6 @@ async function _processFileForRefresh(
     ? data.map((record: any) => ({ ...record, updated_at: new Date().toISOString() }))
     : [];
 
-  if (updatedData.length === 0) {
-    console.log(`  Skipping collection '${collectionName}' as no data was found or parsed.`);
-    return null;
-  }
-
   const collection: Collection = db.collection(collectionName);
 
   try {
@@ -70,6 +65,11 @@ async function _processFileForRefresh(
       console.error(`  Error dropping collection '${collectionName}':`, err);
       return null;
     }
+  }
+
+  if (updatedData.length === 0) {
+    console.log(`  No data found in '${collectionName}' — collection dropped and left empty.`);
+    return null;
   }
 
   try {
@@ -285,6 +285,7 @@ async function uploadTranslationsFromFolder(
 
   if (langDirs.length === 0) {
     console.log(`  No translation directories found in ${jsonDbDir}.`);
+    await _refreshLocaleCollection(db, collectionPrefix, []);
     return;
   }
 
