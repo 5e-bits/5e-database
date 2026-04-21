@@ -9,7 +9,7 @@ import {
   getLocaleFromFilepath,
 } from '../dbUtils'; // Import from parent dir
 import { getOldFileContent, ChangedFile } from './gitUtils'; // Import from sibling
-import { buildEnMap, buildTranslationDoc, getEnglishSourcePath } from '../translationUtils';
+import { buildIndexMap, buildTranslationDoc, getEnglishSourcePath } from '../translationUtils';
 
 // --- Constants for MongoDB Operations ---
 const MONGO_OP_UPDATE_ONE = 'updateOne';
@@ -356,7 +356,7 @@ async function _handleTranslationFileAdded(db: Db, filepath: string): Promise<vo
   if (!enPath) return;
 
   const enData = await readFileContent(enPath);
-  const enMap = buildEnMap(enData);
+  const enMap = buildIndexMap(enData);
   const transData = await readFileContent(filepath);
 
   console.log(`\nProcessing Added translation ${filepath}...`);
@@ -397,7 +397,7 @@ async function _handleTranslationFileModified(db: Db, filepath: string): Promise
   if (!enPath) return;
 
   const enData = await readFileContent(enPath);
-  const enMap = buildEnMap(enData);
+  const enMap = buildIndexMap(enData);
   const currentData = await readFileContent(filepath);
   const oldData = parseJsonArrayContent(await getOldFileContent(filepath), `HEAD~1:${filepath}`);
 
@@ -406,8 +406,8 @@ async function _handleTranslationFileModified(db: Db, filepath: string): Promise
   const collectionPrefix = getCollectionPrefix(filepath);
   const translationCollection = db.collection(`${collectionPrefix}translations`);
 
-  const oldMap = buildEnMap(oldData);
-  const newMap = buildEnMap(currentData);
+  const oldMap = buildIndexMap(oldData);
+  const newMap = buildIndexMap(currentData);
 
   const ops: AnyBulkWriteOperation<Document>[] = [];
 

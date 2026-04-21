@@ -72,15 +72,15 @@ Only text fields may be translated. Structural fields (`url`, numeric values, an
 
 The table below shows common examples from the Spells collection:
 
-| Field                 | Translatable                                 |
-| --------------------- | -------------------------------------------- |
-| `name`                | Yes                                          |
-| `desc`                | Yes                                          |
-| `higher_level`        | Yes                                          |
-| `index`               | No — always omit (but required for matching) |
-| `url`                 | No                                           |
-| Numeric values        | No                                           |
-| API reference objects | No                                           |
+| Field                 | Translatable                                                |
+| --------------------- | ----------------------------------------------------------- |
+| `name`                | Yes                                                         |
+| `desc`                | Yes                                                         |
+| `higher_level`        | Yes                                                         |
+| `index`               | No — include it for matching, but don't translate its value |
+| `url`                 | No                                                          |
+| Numeric values        | No                                                          |
+| API reference objects | No                                                          |
 
 Other collections expose different text fields (e.g. `summary` on subclasses, `description` on some entries). Include any text field that appears in the English source — CI will reject fields that don't exist there.
 

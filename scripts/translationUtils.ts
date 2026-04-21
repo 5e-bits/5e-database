@@ -21,7 +21,9 @@ export function computeLocaleDocuments(translationDocs: TranslationDocument[]): 
   return Array.from(langs).map((lang) => ({ lang, updated_at: new Date() }));
 }
 
-export function buildEnMap(data: Record<string, unknown>[]): Map<string, Record<string, unknown>> {
+export function buildIndexMap(
+  data: Record<string, unknown>[]
+): Map<string, Record<string, unknown>> {
   return new Map(
     data.filter((r) => typeof r.index === 'string').map((r) => [r.index as string, r])
   );
@@ -36,7 +38,7 @@ export function getEnglishSourcePath(filepath: string): string | null {
   const yearIdx = parts.findIndex((p) => /^\d{4}$/.test(p));
   if (yearIdx < 0) return null;
   const localeSegment = parts[yearIdx + 1];
-  if (!localeSegment || localeSegment.includes('.')) return null;
+  if (!localeSegment || !LOCALE_PATTERN.test(localeSegment)) return null;
   const result = [...parts];
   result[yearIdx + 1] = 'en';
   return result.join('/');
