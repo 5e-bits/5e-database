@@ -153,6 +153,10 @@ describe('getEnglishSourcePath', () => {
     expect(getEnglishSourcePath('some/random/path/file.json')).toBeNull();
   });
 
+  it('returns null when the year is immediately followed by a filename (no locale dir)', () => {
+    expect(getEnglishSourcePath('src/2024/5e-SRD-Spells.json')).toBeNull();
+  });
+
   it('leaves en paths pointing to en', () => {
     expect(getEnglishSourcePath('src/2014/en/5e-SRD-Spells.json')).toBe(
       'src/2014/en/5e-SRD-Spells.json'

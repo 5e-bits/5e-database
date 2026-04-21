@@ -35,6 +35,8 @@ export function getEnglishSourcePath(filepath: string): string | null {
   const parts = filepath.split('/');
   const yearIdx = parts.findIndex((p) => /^\d{4}$/.test(p));
   if (yearIdx < 0) return null;
+  const localeSegment = parts[yearIdx + 1];
+  if (!localeSegment || localeSegment.includes('.')) return null;
   const result = [...parts];
   result[yearIdx + 1] = 'en';
   return result.join('/');

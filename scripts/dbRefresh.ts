@@ -172,8 +172,14 @@ function _processLangDir(lang: string, langDir: string, enDir: string): Translat
       const raw = JSON.parse(readFileSync(`${enDir}/${filename}`, 'utf8'));
       if (!Array.isArray(raw)) throw new Error('not an array');
       enData = raw;
-    } catch {
-      console.warn(`  No English source at ${enDir}/${filename}. Skipping ${lang}/${filename}.`);
+    } catch (err) {
+      if ((err as NodeJS.ErrnoException).code === 'ENOENT') {
+        console.warn(`  No English source at ${enDir}/${filename}. Skipping ${lang}/${filename}.`);
+      } else {
+        console.warn(
+          `  Failed to parse English source ${enDir}/${filename}: ${err}. Skipping ${lang}/${filename}.`
+        );
+      }
       continue;
     }
 
