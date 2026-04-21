@@ -3,6 +3,7 @@ import { z } from 'zod';
 import { AbilityScoreSchema } from '../schemas/5e-SRD-Ability-Scores';
 import { AlignmentSchema } from '../schemas/5e-SRD-Alignments';
 import { BackgroundSchema } from '../schemas/5e-SRD-Backgrounds';
+import { ClassSchema } from '../schemas/5e-SRD-Classes';
 import { ConditionSchema } from '../schemas/5e-SRD-Conditions';
 import { DamageTypeSchema } from '../schemas/5e-SRD-Damage-Types';
 import { EquipmentCategorySchema } from '../schemas/5e-SRD-Equipment-Categories';
@@ -29,6 +30,7 @@ const COLLECTION_SCHEMAS: Record<string, z.ZodTypeAny> = {
   'ability-scores': AbilityScoreSchema,
   alignments: AlignmentSchema,
   backgrounds: BackgroundSchema,
+  classes: ClassSchema,
   conditions: ConditionSchema,
   'damage-types': DamageTypeSchema,
   'equipment-categories': EquipmentCategorySchema,
