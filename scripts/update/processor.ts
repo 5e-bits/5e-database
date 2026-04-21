@@ -9,7 +9,10 @@ import {
   getLocaleFromFilepath,
 } from '../dbUtils'; // Import from parent dir
 import { getOldFileContent, ChangedFile } from './gitUtils'; // Import from sibling
-import { buildTranslationDoc, getEnglishSourcePath } from '../translationUtils';
+import {
+  buildTranslationDoc,
+  getEnglishSourcePath,
+} from '../translationUtils';
 
 // --- Constants for MongoDB Operations ---
 const MONGO_OP_UPDATE_ONE = 'updateOne';
@@ -390,6 +393,7 @@ async function _handleTranslationFileAdded(db: Db, filepath: string): Promise<vo
 
   if (ops.length > 0) await translationCollection.bulkWrite(ops, { ordered: false });
   console.log(`  Processed ${ops.length} translation entries.`);
+  await _refreshLocaleStatsForLang(db, filepath, lang);
 }
 
 async function _handleTranslationFileModified(db: Db, filepath: string): Promise<void> {
@@ -447,6 +451,7 @@ async function _handleTranslationFileModified(db: Db, filepath: string): Promise
 
   if (ops.length > 0) await translationCollection.bulkWrite(ops, { ordered: false });
   console.log(`  Processed ${ops.length} translation changes.`);
+  await _refreshLocaleStatsForLang(db, filepath, lang);
 }
 
 async function _handleTranslationFileDeleted(db: Db, filepath: string): Promise<void> {
@@ -461,6 +466,30 @@ async function _handleTranslationFileDeleted(db: Db, filepath: string): Promise<
   console.log(`\nProcessing Deleted translation ${filepath}...`);
   const result = await translationCollection.deleteMany({ source_collection: indexName, lang });
   console.log(`  Deleted ${result.deletedCount} translation documents.`);
+
+  await _refreshLocaleStatsForLang(db, filepath, lang);
+}
+
+async function _refreshLocaleStatsForLang(db: Db, filepath: string, lang: string): Promise<void> {
+  const collectionPrefix = getCollectionPrefix(filepath);
+
+  const localeCollection = db.collection(`${collectionPrefix}locales`);
+  const hasTranslations =
+    (await db
+      .collection(`${collectionPrefix}translations`)
+      .countDocuments({ lang }, { limit: 1 })) > 0;
+
+  if (hasTranslations) {
+    await localeCollection.updateOne(
+      { lang },
+      { $set: { lang, updated_at: new Date() } },
+      { upsert: true }
+    );
+    console.log(`  Updated locale entry for '${lang}'.`);
+  } else {
+    await localeCollection.deleteOne({ lang });
+    console.log(`  Removed locale entry for '${lang}' (no translations remaining).`);
+  }
 }
 
 // --- Main Processor Function ---

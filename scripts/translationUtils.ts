@@ -1,9 +1,11 @@
-/** Returns true for string or string-array fields (i.e. translatable text content). */
-export function isTranslatableField(key: string, value: unknown): boolean {
-  if (key === 'index' || key === 'url' || key === 'updated_at') return false;
-  if (typeof value === 'string') return true;
-  if (Array.isArray(value) && value.length > 0 && typeof value[0] === 'string') return true;
-  return false;
+export interface LocaleDocument {
+  lang: string;
+  updated_at: Date;
+}
+
+export function computeLocaleDocuments(translationDocs: TranslationDocument[]): LocaleDocument[] {
+  const langs = new Set(translationDocs.map((d) => d.lang));
+  return Array.from(langs).map((lang) => ({ lang, updated_at: new Date() }));
 }
 
 export interface TranslationDocument {
@@ -11,7 +13,6 @@ export interface TranslationDocument {
   source_collection: string;
   lang: string;
   fields: Record<string, unknown>;
-  completeness: number;
   updated_at: Date;
 }
 
@@ -62,21 +63,11 @@ export function buildTranslationDoc(
     for (const f of invalidFields) delete translatedFields[f];
   }
 
-  const translatableKeys = Object.entries(enEntry)
-    .filter(([k, v]) => isTranslatableField(k, v))
-    .map(([k]) => k);
-
-  const translatedCount = Object.keys(translatedFields).filter((k) =>
-    translatableKeys.includes(k)
-  ).length;
-  const completeness = translatableKeys.length > 0 ? translatedCount / translatableKeys.length : 0;
-
   return {
     source_index: sourceIndex,
     source_collection: sourceCollection,
     lang,
     fields: translatedFields,
-    completeness,
     updated_at: new Date(),
   };
 }

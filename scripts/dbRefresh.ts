@@ -7,7 +7,11 @@ import {
   getIndexCollectionName,
   SRD_PREFIX,
 } from './dbUtils';
-import { buildTranslationDoc, TranslationDocument } from './translationUtils';
+import {
+  buildTranslationDoc,
+  computeLocaleDocuments,
+  TranslationDocument,
+} from './translationUtils';
 
 const mongodbUri = checkMongoUri('db:refresh');
 
@@ -258,6 +262,32 @@ async function uploadTranslationsFromFolder(
     );
   } else {
     console.log(`  No translation documents to insert into '${translationCollectionName}'.`);
+  }
+
+  await _refreshLocaleCollection(db, collectionPrefix, translationDocs);
+}
+
+async function _refreshLocaleCollection(
+  db: Db,
+  collectionPrefix: string,
+  translationDocs: TranslationDocument[]
+): Promise<void> {
+  const localeCollectionName = `${collectionPrefix}locales`;
+  const localeCollection = db.collection(localeCollectionName);
+
+  try {
+    await localeCollection.drop();
+  } catch (err) {
+    if (!(err instanceof MongoServerError && err.codeName === 'NamespaceNotFound')) throw err;
+  }
+
+  const localeDocs = computeLocaleDocuments(translationDocs);
+  if (localeDocs.length > 0) {
+    await localeCollection.createIndex({ lang: 1 }, { unique: true });
+    await localeCollection.insertMany(localeDocs);
+    console.log(`  Inserted ${localeDocs.length} locale documents into '${localeCollectionName}'.`);
+  } else {
+    console.log(`  No locales to insert into '${localeCollectionName}'.`);
   }
 }
 
