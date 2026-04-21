@@ -406,8 +406,8 @@ async function _handleTranslationFileModified(db: Db, filepath: string): Promise
   const collectionPrefix = getCollectionPrefix(filepath);
   const translationCollection = db.collection(`${collectionPrefix}translations`);
 
-  const oldMap = new Map(oldData.map((r) => [r.index as string, r]));
-  const newMap = new Map(currentData.map((r) => [r.index as string, r]));
+  const oldMap = buildEnMap(oldData);
+  const newMap = buildEnMap(currentData);
 
   const ops: AnyBulkWriteOperation<Document>[] = [];
 

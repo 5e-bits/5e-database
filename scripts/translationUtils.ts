@@ -16,13 +16,7 @@ export interface LocaleDocument {
   updated_at: Date;
 }
 
-export interface TranslationDocument {
-  source_index: string;
-  source_collection: string;
-  lang: string;
-  fields: Record<string, unknown>;
-  updated_at: Date;
-}
+export type TranslationDocument = z.infer<typeof TranslationDocumentSchema>;
 
 export function computeLocaleDocuments(translationDocs: TranslationDocument[]): LocaleDocument[] {
   const langs = new Set(translationDocs.map((d) => d.lang));
@@ -64,14 +58,13 @@ export function buildTranslationDoc(
     return null;
   }
 
-  if (!enMap.has(sourceIndex)) {
+  const enEntry = enMap.get(sourceIndex);
+  if (!enEntry) {
     console.warn(
       `  Orphaned translation: ${lang}/${sourceCollection}['${sourceIndex}'] not in English. Skipping.`
     );
     return null;
   }
-
-  const enEntry = enMap.get(sourceIndex)!;
   const { index: _index, ...rawFields } = transEntry;
 
   const invalidFields = new Set(Object.keys(rawFields).filter((k) => !(k in enEntry)));

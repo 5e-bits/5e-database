@@ -88,16 +88,16 @@ describe('2024 translation files', () => {
 
         const enData = JSON.parse(fs.readFileSync(enFile, 'utf8')) as Entry[];
         const transData = JSON.parse(fs.readFileSync(transFile, 'utf8')) as Entry[];
-        const enIndices = new Set(enData.map((r) => r.index as string));
+        const enMap = new Map(enData.map((r) => [r.index as string, r]));
 
         for (const entry of transData) {
           const idx = entry.index as string;
-          if (!enIndices.has(idx)) {
+          const enEntry = enMap.get(idx);
+          if (!enEntry) {
             errors.push(`${transFile}: index '${idx}' does not exist in English source`);
             continue;
           }
 
-          const enEntry = enData.find((r) => r.index === idx)!;
           const { index: _index, ...transFields } = entry;
           for (const field of Object.keys(transFields)) {
             if (!(field in enEntry)) {

@@ -12,10 +12,10 @@ Thanks for helping improve the 5e SRD database! This guide covers the two main w
 
 We use [Semantic Release](https://semantic-release.gitbook.io/semantic-release/), so please follow conventional commit message conventions for your PR title:
 
-| PR title prefix | Effect |
-|---|---|
-| `fix(...)` | Patch release |
-| `feat(...)` | Minor release |
+| PR title prefix                       | Effect        |
+| ------------------------------------- | ------------- |
+| `fix(...)`                            | Patch release |
+| `feat(...)`                           | Minor release |
 | `feat(...) + BREAKING CHANGE:` footer | Major release |
 
 ---
@@ -70,15 +70,15 @@ A translation file is a JSON array. Each entry must include `index` (to identify
 
 Only text fields may be translated. Structural fields (`index`, `url`, numeric values, and API references) must be omitted.
 
-| Field | Translatable |
-|---|---|
-| `name` | Yes |
-| `desc` | Yes |
-| `higher_level` | Yes |
-| `index` | No — always omit (but required for matching) |
-| `url` | No |
-| Numeric values | No |
-| API reference objects | No |
+| Field                 | Translatable                                 |
+| --------------------- | -------------------------------------------- |
+| `name`                | Yes                                          |
+| `desc`                | Yes                                          |
+| `higher_level`        | Yes                                          |
+| `index`               | No — always omit (but required for matching) |
+| `url`                 | No                                           |
+| Numeric values        | No                                           |
+| API reference objects | No                                           |
 
 ### Validation rules
 
@@ -87,6 +87,7 @@ CI will reject translation PRs that:
 - Include an `index` that does not exist in the corresponding English file
 - Include a field that does not exist in the English entry for that `index`
 - Contain duplicate `index` values within a single file
+- Fail Zod schema validation when translation fields are merged with the English entry
 
 Run `npm test` locally before opening a PR to catch these issues early.
 
