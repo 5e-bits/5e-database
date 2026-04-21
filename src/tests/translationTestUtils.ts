@@ -49,7 +49,11 @@ export function runTranslationTestSuite(
           const enMap = new Map(enData.map((r) => [r.index as string, r]));
 
           for (const entry of transData) {
-            const idx = entry.index as string;
+            if (typeof entry.index !== 'string') {
+              errors.push(`${transFile}: entry missing required 'index' field`);
+              continue;
+            }
+            const idx = entry.index;
             const enEntry = enMap.get(idx);
             if (!enEntry) {
               errors.push(`${transFile}: index '${idx}' does not exist in English source`);

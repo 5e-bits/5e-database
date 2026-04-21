@@ -86,7 +86,7 @@ Other collections expose different text fields (e.g. `summary` on subclasses, `d
 
 ### Validation rules
 
-CI will reject translation PRs that:
+The test suite (`npm test`) enforces these rules automatically — the same tests run in CI on every PR:
 
 - Include an `index` that does not exist in the corresponding English file
 - Include a field that does not exist in the English entry for that `index`

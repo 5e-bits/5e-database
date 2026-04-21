@@ -432,6 +432,7 @@ async function _handleTranslationFileModified(db: Db, filepath: string): Promise
 
   for (const idx of oldMap.keys()) {
     if (!newMap.has(idx)) {
+      // source_collection matches indexName because buildTranslationDoc stores it that way.
       ops.push({
         [MONGO_OP_DELETE_ONE]: {
           filter: { source_collection: indexName, source_index: idx, lang },

@@ -294,7 +294,7 @@ async function uploadTranslationsFromFolder(
       { source_collection: 1, source_index: 1, lang: 1 },
       { unique: true }
     );
-    const result = await translationCollection.insertMany(translationDocs);
+    const result = await translationCollection.insertMany(translationDocs, { ordered: false });
     console.log(
       `  Inserted ${result.insertedCount} documents into '${translationCollectionName}'.`
     );
