@@ -30,7 +30,7 @@ import { SubraceSchema } from '../schemas/5e-SRD-Subraces';
 import { TraitSchema } from '../schemas/5e-SRD-Traits';
 import { WeaponPropertySchema } from '../schemas/5e-SRD-Weapon-Properties';
 
-import { TRANSLATION_SKIP_DIRS } from '../../../scripts/translationUtils';
+import { getLangDirs, collectionNameFromFilename } from '../../tests/translationTestUtils';
 
 const YEAR_DIR = 'src/2014';
 const EN_DIR = `${YEAR_DIR}/en`;
@@ -66,27 +66,11 @@ const COLLECTION_SCHEMAS: Record<string, z.ZodTypeAny> = {
 
 type Entry = Record<string, unknown>;
 
-function getLangDirs(): string[] {
-  if (!fs.existsSync(YEAR_DIR)) return [];
-  return fs
-    .readdirSync(YEAR_DIR, { withFileTypes: true })
-    .filter((e) => e.isDirectory() && !TRANSLATION_SKIP_DIRS.has(e.name))
-    .map((e) => e.name);
-}
-
-function collectionNameFromFilename(filename: string): string {
-  return filename
-    .replace(/^5e-SRD-/, '')
-    .replace(/\.json$/, '')
-    .toLowerCase()
-    .replace(/[\s_]+/g, '-');
-}
-
 describe('2014 translation files', () => {
   it('should only reference indices that exist in the English source', () => {
     const errors: string[] = [];
 
-    for (const lang of getLangDirs()) {
+    for (const lang of getLangDirs(YEAR_DIR)) {
       const transFiles = globSync(`${YEAR_DIR}/${lang}/5e-SRD-*.json`);
 
       for (const transFile of transFiles) {
@@ -128,7 +112,7 @@ describe('2014 translation files', () => {
   it('should not contain duplicate indices within a file', () => {
     const errors: string[] = [];
 
-    for (const lang of getLangDirs()) {
+    for (const lang of getLangDirs(YEAR_DIR)) {
       const transFiles = globSync(`${YEAR_DIR}/${lang}/5e-SRD-*.json`);
 
       for (const transFile of transFiles) {
@@ -151,7 +135,7 @@ describe('2014 translation files', () => {
   it('should produce valid documents when merged with the English source', () => {
     const errors: string[] = [];
 
-    for (const lang of getLangDirs()) {
+    for (const lang of getLangDirs(YEAR_DIR)) {
       const transFiles = globSync(`${YEAR_DIR}/${lang}/5e-SRD-*.json`);
 
       for (const transFile of transFiles) {

@@ -1,8 +1,6 @@
 import { z } from 'zod';
 import { LOCALE_PATTERN } from './dbUtils';
 
-export const TRANSLATION_SKIP_DIRS = new Set(['en', 'schemas', 'tests']);
-
 export const TranslationDocumentSchema = z.object({
   source_index: z.string(),
   source_collection: z.string(),

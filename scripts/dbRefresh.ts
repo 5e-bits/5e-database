@@ -5,6 +5,7 @@ import {
   getCollectionNameFromJsonFile,
   getIndexName,
   getIndexCollectionName,
+  LOCALE_PATTERN,
   SRD_PREFIX,
 } from './dbUtils';
 import {
@@ -12,7 +13,6 @@ import {
   buildTranslationDoc,
   computeLocaleDocuments,
   TranslationDocument,
-  TRANSLATION_SKIP_DIRS,
 } from './translationUtils';
 
 const mongodbUri = checkMongoUri('db:refresh');
@@ -232,7 +232,7 @@ async function uploadTranslationsFromFolder(
   let langDirs: string[];
   try {
     langDirs = readdirSync(jsonDbDir, { withFileTypes: true })
-      .filter((e) => e.isDirectory() && !TRANSLATION_SKIP_DIRS.has(e.name))
+      .filter((e) => e.isDirectory() && LOCALE_PATTERN.test(e.name) && e.name !== 'en')
       .map((e) => e.name);
   } catch (e) {
     console.error(`Error reading ${jsonDbDir}:`, e);
