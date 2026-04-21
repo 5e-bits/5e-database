@@ -80,7 +80,7 @@ describe('api references', () => {
 });
 
 const forEachFileEntry = (callback: (filename: string, entry: Entry) => void) => {
-  const filenames = globSync('src/2024/*.json');
+  const filenames = globSync('src/2024/en/*.json');
 
   for (const filename of filenames) {
     const fileText = fs.readFileSync(filename, 'utf8');

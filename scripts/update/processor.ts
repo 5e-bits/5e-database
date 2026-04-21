@@ -6,8 +6,10 @@ import {
   getCollectionPrefix,
   getIndexName,
   getIndexCollectionName,
+  getLocaleFromFilepath,
 } from '../dbUtils'; // Import from parent dir
 import { getOldFileContent, ChangedFile } from './gitUtils'; // Import from sibling
+import { buildTranslationDoc, getEnglishSourcePath } from '../translationUtils';
 
 // --- Constants for MongoDB Operations ---
 const MONGO_OP_UPDATE_ONE = 'updateOne';
@@ -174,6 +176,13 @@ async function updateIndexCollection(
     return;
   }
 
+  const locale = getLocaleFromFilepath(filepath);
+  if (locale && locale !== 'en') {
+    // Translation files share the same index name as their English counterpart — never touch the
+    // collections index for them, or a deletion would remove the English entry.
+    return;
+  }
+
   const collectionPrefix = getCollectionPrefix(filepath);
   const indexCollectionName = getIndexCollectionName(collectionPrefix);
   const indexCollection = db.collection(indexCollectionName);
@@ -334,6 +343,126 @@ async function _handleFileDeleted(db: Db, filepath: string): Promise<void> {
   await updateIndexCollection(db, filepath, 'delete');
 }
 
+// --- Translation Handlers ---
+
+function buildEnMap(data: any[]): Map<string, Record<string, unknown>> {
+  return new Map(
+    data
+      .filter((r) => typeof r.index === 'string')
+      .map((r) => [r.index as string, r as Record<string, unknown>])
+  );
+}
+
+async function _handleTranslationFileAdded(db: Db, filepath: string): Promise<void> {
+  const lang = getLocaleFromFilepath(filepath)!;
+  const filename = filepath.split('/').pop()!;
+  const indexName = getIndexName(filename);
+  if (!indexName) return;
+
+  const enPath = getEnglishSourcePath(filepath);
+  if (!enPath) return;
+
+  const enData = await readFileContent(enPath);
+  const enMap = buildEnMap(enData);
+  const transData = await readFileContent(filepath);
+
+  console.log(`\nProcessing Added translation ${filepath}...`);
+
+  const collectionPrefix = getCollectionPrefix(filepath);
+  const translationCollection = db.collection(`${collectionPrefix}translations`);
+
+  const ops: AnyBulkWriteOperation<Document>[] = [];
+  for (const entry of transData) {
+    const doc = buildTranslationDoc(entry as Record<string, unknown>, enMap, indexName, lang);
+    if (!doc) continue;
+    ops.push({
+      [MONGO_OP_UPDATE_ONE]: {
+        filter: {
+          source_collection: doc.source_collection,
+          source_index: doc.source_index,
+          lang: doc.lang,
+        },
+        update: { $set: doc },
+        upsert: true,
+      },
+    });
+  }
+
+  if (ops.length > 0) await translationCollection.bulkWrite(ops, { ordered: false });
+  console.log(`  Processed ${ops.length} translation entries.`);
+}
+
+async function _handleTranslationFileModified(db: Db, filepath: string): Promise<void> {
+  const lang = getLocaleFromFilepath(filepath)!;
+  const filename = filepath.split('/').pop()!;
+  const indexName = getIndexName(filename);
+  if (!indexName) return;
+
+  const enPath = getEnglishSourcePath(filepath);
+  if (!enPath) return;
+
+  const enData = await readFileContent(enPath);
+  const enMap = buildEnMap(enData);
+  const currentData = await readFileContent(filepath);
+  const oldData = parseJsonArrayContent(await getOldFileContent(filepath), `HEAD~1:${filepath}`);
+
+  console.log(`\nProcessing Modified translation ${filepath}...`);
+
+  const collectionPrefix = getCollectionPrefix(filepath);
+  const translationCollection = db.collection(`${collectionPrefix}translations`);
+
+  const oldMap = new Map(oldData.map((r) => [r.index as string, r]));
+  const newMap = new Map(currentData.map((r) => [r.index as string, r]));
+
+  const ops: AnyBulkWriteOperation<Document>[] = [];
+
+  for (const [idx, entry] of newMap) {
+    const oldEntry = oldMap.get(idx);
+    if (!oldEntry || diff(oldEntry, entry)) {
+      const doc = buildTranslationDoc(entry as Record<string, unknown>, enMap, indexName, lang);
+      if (!doc) continue;
+      ops.push({
+        [MONGO_OP_UPDATE_ONE]: {
+          filter: {
+            source_collection: doc.source_collection,
+            source_index: doc.source_index,
+            lang: doc.lang,
+          },
+          update: { $set: doc },
+          upsert: true,
+        },
+      });
+    }
+  }
+
+  for (const idx of oldMap.keys()) {
+    if (!newMap.has(idx)) {
+      ops.push({
+        [MONGO_OP_DELETE_ONE]: {
+          filter: { source_collection: indexName, source_index: idx, lang },
+        },
+      });
+    }
+  }
+
+  if (ops.length > 0) await translationCollection.bulkWrite(ops, { ordered: false });
+  console.log(`  Processed ${ops.length} translation changes.`);
+}
+
+async function _handleTranslationFileDeleted(db: Db, filepath: string): Promise<void> {
+  const lang = getLocaleFromFilepath(filepath)!;
+  const filename = filepath.split('/').pop()!;
+  const indexName = getIndexName(filename);
+  if (!indexName) return;
+
+  const collectionPrefix = getCollectionPrefix(filepath);
+  const translationCollection = db.collection(`${collectionPrefix}translations`);
+
+  console.log(`\nProcessing Deleted translation ${filepath}...`);
+  const result = await translationCollection.deleteMany({ source_collection: indexName, lang });
+  console.log(`  Deleted ${result.deletedCount} translation documents.`);
+}
+
 // --- Main Processor Function ---
 
 /**
@@ -344,6 +473,30 @@ async function _handleFileDeleted(db: Db, filepath: string): Promise<void> {
  */
 export async function processFileUpdate(db: Db, file: ChangedFile): Promise<void> {
   const { status, filepath, oldFilepath } = file;
+
+  const locale = getLocaleFromFilepath(filepath);
+  const isTranslation = locale !== null && locale !== 'en';
+
+  if (isTranslation) {
+    switch (status) {
+      case 'A':
+        await _handleTranslationFileAdded(db, filepath);
+        break;
+      case 'M':
+        await _handleTranslationFileModified(db, filepath);
+        break;
+      case 'R':
+        if (oldFilepath) await _handleTranslationFileDeleted(db, oldFilepath);
+        await _handleTranslationFileAdded(db, filepath);
+        break;
+      case 'D':
+        await _handleTranslationFileDeleted(db, filepath);
+        break;
+      default:
+        console.log(`\nSkipping translation file ${filepath} with unhandled status ${status}.`);
+    }
+    return;
+  }
 
   switch (status) {
     case 'A':

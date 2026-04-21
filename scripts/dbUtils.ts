@@ -4,6 +4,9 @@ import { execSync } from 'child_process';
 export const SRD_PREFIX = '5e-SRD-';
 export const INDEX_COLLECTION_SUFFIX = 'collections';
 
+// BCP 47 locale tag pattern (e.g. "en", "de", "pt-BR")
+const LOCALE_PATTERN = /^[a-z]{2,3}(-[A-Z]{2})?$/;
+
 /**
  * Checks if the MONGODB_URI environment variable is set. If not, prints an error
  * message specific to the script being run and exits the process.
@@ -32,58 +35,59 @@ export function checkMongoUri(scriptCommand: string): string {
 
 /**
  * Extracts the MongoDB collection name from a JSON filepath.
- * It assumes a filename pattern like '5e-SRD-CollectionName.json'.
- * It also determines a prefix based on the parent directory (e.g., '2014-' for files in 'src/2014/').
- * @param filepath The full path to the JSON file (e.g., 'src/2014/5e-SRD-Ability-Scores.json').
- * @returns The determined collection name (e.g., '2014-ability-scores') or null if the pattern doesn't match.
+ * Expects the locale-nested structure: src/{year}/{locale}/file.json.
+ * Returns null for non-English translation files (locale !== 'en') so the
+ * update pipeline skips them — translations require a full dbRefresh.
+ * @param filepath The full path to the JSON file.
+ * @returns The collection name (e.g., '2014-ability-scores') or null.
  */
 export function getCollectionNameFromJsonFile(filepath: string): string | null {
   const parts = filepath.split('/');
   const filename = parts.pop();
   if (!filename) return null;
 
-  // Determine prefix based on parent directory
-  let prefix = '';
-  if (parts.length > 1) {
-    // Check if there is a parent directory besides 'src'
-    const parentDir = parts[parts.length - 1];
-    // Use the parent directory name, lowercased, plus a hyphen as the prefix
-    prefix = parentDir.toLowerCase() + '-';
+  const yearIdx = parts.findIndex((p) => /^\d{4}$/.test(p));
+  if (yearIdx < 0) return null;
+
+  const localeCandidate = parts[yearIdx + 1];
+  if (localeCandidate && LOCALE_PATTERN.test(localeCandidate) && localeCandidate !== 'en') {
+    return null; // Non-English translation file — skip in incremental update pipeline
   }
 
-  // Extract data name from filename
-  const jsonDbCollectionPrefix = SRD_PREFIX;
-  const jsonDataPattern = `\\b${jsonDbCollectionPrefix}(.+)\\.json\\b`;
-  const regex = new RegExp(jsonDataPattern);
-  const match = regex.exec(filename);
-
+  const match = new RegExp(`\\b${SRD_PREFIX}(.+)\\.json\\b`).exec(filename);
   if (!match) return null;
 
-  const dataName = match[1];
-  // Convert to lowercase and replace spaces/underscores with hyphens
-  const baseCollectionName = dataName.toLowerCase().replace(/[\s_]+/g, '-');
-
-  return `${prefix}${baseCollectionName}`;
+  const baseCollectionName = match[1].toLowerCase().replace(/[\s_]+/g, '-');
+  return `${parts[yearIdx]}-${baseCollectionName}`;
 }
 
 /**
- * Determines the collection prefix based on the directory structure.
- * e.g., 'src/2014/file.json' -> '2014-'
- *       'src/file.json' -> ''
+ * Determines the collection prefix from a filepath.
+ * Expects the locale-nested structure: src/{year}/{locale}/file.json.
+ * e.g., 'src/2014/en/file.json' -> '2014-'
  * @param filepath Path to the file.
  * @returns The prefix string (e.g., '2014-') or an empty string.
  */
 export function getCollectionPrefix(filepath: string): string {
   const parts = filepath.split('/');
-  // Needs at least 3 parts: 'src', 'subdir', 'filename.json' for a prefix
-  if (parts.length >= 3) {
-    const parentDir = parts[parts.length - 2]; // Directory containing the file
-    if (parentDir && parentDir !== 'src') {
-      // Allow any directory under src that isn't src itself to be a prefix
-      return parentDir.toLowerCase() + '-';
-    }
-  }
-  return ''; // No prefix if directly in 'src' or structure is unexpected
+  const yearIdx = parts.findIndex((p) => /^\d{4}$/.test(p));
+  return yearIdx >= 0 ? parts[yearIdx] + '-' : '';
+}
+
+/**
+ * Extracts the BCP 47 locale code from a locale-nested filepath.
+ * e.g., 'src/2014/de/5e-SRD-Spells.json' -> 'de'
+ *       'src/2014/en/5e-SRD-Spells.json' -> 'en'
+ *       'src/2014/5e-SRD-Spells.json'    -> null
+ * @param filepath Path to the file.
+ * @returns The locale string or null if no locale directory is present.
+ */
+export function getLocaleFromFilepath(filepath: string): string | null {
+  const parts = filepath.split('/');
+  const yearIdx = parts.findIndex((p) => /^\d{4}$/.test(p));
+  if (yearIdx < 0) return null;
+  const localeCandidate = parts[yearIdx + 1];
+  return localeCandidate && LOCALE_PATTERN.test(localeCandidate) ? localeCandidate : null;
 }
 
 /**
