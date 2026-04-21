@@ -11,8 +11,8 @@ import {
 } from './dbUtils';
 import {
   buildIndexMap,
-  buildTranslationDoc,
   computeLocaleDocuments,
+  processTranslationEntries,
   TranslationDocument,
 } from './translationUtils';
 
@@ -200,24 +200,7 @@ function _processLangDir(lang: string, langDir: string, enDir: string): Translat
       `  Processing ${lang} translations for '${indexName}' (${transData.length} entries)...`
     );
 
-    const seen = new Set<string>();
-    for (const transEntry of transData) {
-      const idx = (transEntry as { index?: string }).index;
-      if (typeof idx === 'string') {
-        if (seen.has(idx)) {
-          console.warn(`  Duplicate index '${idx}' in ${lang}/${filename}. Skipping.`);
-          continue;
-        }
-        seen.add(idx);
-      }
-      const doc = buildTranslationDoc(
-        transEntry as Record<string, unknown>,
-        enMap,
-        indexName,
-        lang
-      );
-      if (doc) docs.push(doc);
-    }
+    docs.push(...processTranslationEntries(transData, enMap, indexName, lang, filename));
   }
 
   return docs;

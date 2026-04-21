@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { LOCALE_PATTERN } from './dbUtils';
+import { LOCALE_PATTERN, YEAR_DIR_PATTERN } from './dbUtils';
 
 export const TranslationDocumentSchema = z.object({
   source_index: z.string(),
@@ -35,7 +35,7 @@ export function buildIndexMap(
  */
 export function getEnglishSourcePath(filepath: string): string | null {
   const parts = filepath.split('/');
-  const yearIdx = parts.findIndex((p) => /^\d{4}$/.test(p));
+  const yearIdx = parts.findIndex((p) => YEAR_DIR_PATTERN.test(p));
   if (yearIdx < 0) return null;
   const localeSegment = parts[yearIdx + 1];
   if (!localeSegment || !LOCALE_PATTERN.test(localeSegment)) return null;
@@ -87,4 +87,39 @@ export function buildTranslationDoc(
     fields: translatedFields,
     updated_at: new Date(),
   };
+}
+
+/**
+ * Processes an array of raw translation entries against an English source map,
+ * deduplicating by index and delegating validation to buildTranslationDoc.
+ * @param transData Raw entries from a translation JSON file.
+ * @param enMap Map of English source entries keyed by index.
+ * @param indexName The collection index name (e.g., 'spells').
+ * @param lang The BCP 47 locale code (e.g., 'de').
+ * @param filename The source filename, used only in warning messages.
+ */
+export function processTranslationEntries(
+  transData: Record<string, unknown>[],
+  enMap: Map<string, Record<string, unknown>>,
+  indexName: string,
+  lang: string,
+  filename: string
+): TranslationDocument[] {
+  const docs: TranslationDocument[] = [];
+  const seen = new Set<string>();
+
+  for (const transEntry of transData) {
+    const idx = (transEntry as { index?: string }).index;
+    if (typeof idx === 'string') {
+      if (seen.has(idx)) {
+        console.warn(`  Duplicate index '${idx}' in ${lang}/${filename}. Skipping.`);
+        continue;
+      }
+      seen.add(idx);
+    }
+    const doc = buildTranslationDoc(transEntry, enMap, indexName, lang);
+    if (doc) docs.push(doc);
+  }
+
+  return docs;
 }

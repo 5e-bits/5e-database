@@ -1,10 +1,11 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import {
   buildTranslationDoc,
   computeLocaleDocuments,
   getEnglishSourcePath,
+  processTranslationEntries,
+  TranslationDocumentSchema,
 } from '../translationUtils';
-import { TranslationDocumentSchema } from '../translationUtils';
 
 const enMap = new Map([
   ['acid-arrow', { index: 'acid-arrow', name: 'Acid Arrow', desc: ['A spell.'], level: 2 }],
@@ -161,5 +162,63 @@ describe('getEnglishSourcePath', () => {
     expect(getEnglishSourcePath('src/2014/en/5e-SRD-Spells.json')).toBe(
       'src/2014/en/5e-SRD-Spells.json'
     );
+  });
+});
+
+describe('processTranslationEntries', () => {
+  const enMap = new Map([
+    ['acid-arrow', { index: 'acid-arrow', name: 'Acid Arrow', desc: ['A spell.'] }],
+    ['fireball', { index: 'fireball', name: 'Fireball', desc: ['A big spell.'] }],
+  ]);
+
+  it('returns one doc per valid entry', () => {
+    const result = processTranslationEntries(
+      [
+        { index: 'acid-arrow', name: 'Säurepfeil' },
+        { index: 'fireball', name: 'Feuerball' },
+      ],
+      enMap,
+      'spells',
+      'de',
+      '5e-SRD-Spells.json'
+    );
+    expect(result).toHaveLength(2);
+    expect(result.map((d) => d.source_index)).toEqual(['acid-arrow', 'fireball']);
+  });
+
+  it('skips the second occurrence of a duplicate index and warns', () => {
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const result = processTranslationEntries(
+      [
+        { index: 'acid-arrow', name: 'Säurepfeil' },
+        { index: 'acid-arrow', name: 'Duplicate' },
+      ],
+      enMap,
+      'spells',
+      'de',
+      '5e-SRD-Spells.json'
+    );
+    expect(result).toHaveLength(1);
+    expect(result[0].fields).toHaveProperty('name', 'Säurepfeil');
+    expect(warn).toHaveBeenCalledWith(expect.stringContaining("Duplicate index 'acid-arrow'"));
+    warn.mockRestore();
+  });
+
+  it('returns empty array for empty input', () => {
+    expect(processTranslationEntries([], enMap, 'spells', 'de', '5e-SRD-Spells.json')).toEqual([]);
+  });
+
+  it('passes entries without a string index to buildTranslationDoc (which warns and returns null)', () => {
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const result = processTranslationEntries(
+      [{ name: 'No index here' }],
+      enMap,
+      'spells',
+      'de',
+      '5e-SRD-Spells.json'
+    );
+    expect(result).toHaveLength(0);
+    expect(warn).toHaveBeenCalled();
+    warn.mockRestore();
   });
 });

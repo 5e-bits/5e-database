@@ -3,6 +3,7 @@ import { execSync } from 'child_process';
 // --- Constants ---
 export const SRD_PREFIX = '5e-SRD-';
 export const INDEX_COLLECTION_SUFFIX = 'collections';
+export const YEAR_DIR_PATTERN = /^\d{4}$/;
 
 // Full RFC 5646 BCP 47 language tag pattern (named groups converted to non-capturing
 // because JS forbids duplicate group names even across alternations).
@@ -45,9 +46,8 @@ export function checkMongoUri(scriptCommand: string): string {
 
 /**
  * Extracts the MongoDB collection name from a JSON filepath.
- * Expects the locale-nested structure: src/{year}/{locale}/file.json.
- * Returns null for non-English translation files (locale !== 'en') so the
- * update pipeline skips them — translations require a full dbRefresh.
+ * Works for any locale — callers are responsible for skipping non-English
+ * files when the operation targets the English source collection.
  * @param filepath The full path to the JSON file.
  * @returns The collection name (e.g., '2014-ability-scores') or null.
  */
@@ -56,13 +56,8 @@ export function getCollectionNameFromJsonFile(filepath: string): string | null {
   const filename = parts.pop();
   if (!filename) return null;
 
-  const yearIdx = parts.findIndex((p) => /^\d{4}$/.test(p));
+  const yearIdx = parts.findIndex((p) => YEAR_DIR_PATTERN.test(p));
   if (yearIdx < 0) return null;
-
-  const localeCandidate = parts[yearIdx + 1];
-  if (localeCandidate && LOCALE_PATTERN.test(localeCandidate) && localeCandidate !== 'en') {
-    return null; // Non-English translation file — skip in incremental update pipeline
-  }
 
   const match = new RegExp(`\\b${SRD_PREFIX}(.+)\\.json\\b`).exec(filename);
   if (!match) return null;
@@ -80,7 +75,7 @@ export function getCollectionNameFromJsonFile(filepath: string): string | null {
  */
 export function getCollectionPrefix(filepath: string): string {
   const parts = filepath.split('/');
-  const yearIdx = parts.findIndex((p) => /^\d{4}$/.test(p));
+  const yearIdx = parts.findIndex((p) => YEAR_DIR_PATTERN.test(p));
   return yearIdx >= 0 ? parts[yearIdx] + '-' : '';
 }
 
@@ -94,7 +89,7 @@ export function getCollectionPrefix(filepath: string): string {
  */
 export function getLocaleFromFilepath(filepath: string): string | null {
   const parts = filepath.split('/');
-  const yearIdx = parts.findIndex((p) => /^\d{4}$/.test(p));
+  const yearIdx = parts.findIndex((p) => YEAR_DIR_PATTERN.test(p));
   if (yearIdx < 0) return null;
   const localeCandidate = parts[yearIdx + 1];
   if (!localeCandidate || !LOCALE_PATTERN.test(localeCandidate)) return null;
