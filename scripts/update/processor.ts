@@ -363,6 +363,28 @@ async function resolveTranslationContext(filepath: string): Promise<TranslationC
 
 // --- Translation Handlers ---
 
+async function _refreshLocaleStatsForLang(db: Db, filepath: string, lang: string): Promise<void> {
+  const collectionPrefix = getCollectionPrefix(filepath);
+
+  const localeCollection = db.collection(`${collectionPrefix}locales`);
+  const hasTranslations =
+    (await db
+      .collection(`${collectionPrefix}translations`)
+      .countDocuments({ lang }, { limit: 1 })) > 0;
+
+  if (hasTranslations) {
+    await localeCollection.updateOne(
+      { lang },
+      { $set: { lang, updated_at: new Date() } },
+      { upsert: true }
+    );
+    console.log(`  Updated locale entry for '${lang}'.`);
+  } else {
+    await localeCollection.deleteOne({ lang });
+    console.log(`  Removed locale entry for '${lang}' (no translations remaining).`);
+  }
+}
+
 async function _handleTranslationFileAdded(db: Db, filepath: string): Promise<void> {
   const ctx = await resolveTranslationContext(filepath);
   if (!ctx) return;
@@ -467,28 +489,6 @@ async function _handleTranslationFileDeleted(db: Db, filepath: string): Promise<
   console.log(`  Deleted ${result.deletedCount} translation documents.`);
 
   await _refreshLocaleStatsForLang(db, filepath, lang);
-}
-
-async function _refreshLocaleStatsForLang(db: Db, filepath: string, lang: string): Promise<void> {
-  const collectionPrefix = getCollectionPrefix(filepath);
-
-  const localeCollection = db.collection(`${collectionPrefix}locales`);
-  const hasTranslations =
-    (await db
-      .collection(`${collectionPrefix}translations`)
-      .countDocuments({ lang }, { limit: 1 })) > 0;
-
-  if (hasTranslations) {
-    await localeCollection.updateOne(
-      { lang },
-      { $set: { lang, updated_at: new Date() } },
-      { upsert: true }
-    );
-    console.log(`  Updated locale entry for '${lang}'.`);
-  } else {
-    await localeCollection.deleteOne({ lang });
-    console.log(`  Removed locale entry for '${lang}' (no translations remaining).`);
-  }
 }
 
 // --- Main Processor Function ---
