@@ -45,6 +45,7 @@ const SpellcastingSpellUsageSchema = z.strictObject({
 });
 
 const SpellcastingSpellSchema = z.strictObject({
+  index: z.string(),
   name: z.string(),
   level: z.number(),
   url: z.string(),

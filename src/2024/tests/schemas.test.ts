@@ -12,6 +12,7 @@ import Feats from '../en/5e-SRD-Feats.json' with { type: 'json' };
 import Languages from '../en/5e-SRD-Languages.json' with { type: 'json' };
 import MagicItems from '../en/5e-SRD-Magic-Items.json' with { type: 'json' };
 import MagicSchools from '../en/5e-SRD-Magic-Schools.json' with { type: 'json' };
+import Monsters from '../en/5e-SRD-Monsters.json' with { type: 'json' };
 import Proficiencies from '../en/5e-SRD-Proficiencies.json' with { type: 'json' };
 import Skills from '../en/5e-SRD-Skills.json' with { type: 'json' };
 import Species from '../en/5e-SRD-Species.json' with { type: 'json' };
@@ -32,6 +33,7 @@ import { FeatSchema } from '../schemas/5e-SRD-Feats';
 import { LanguageSchema } from '../schemas/5e-SRD-Languages';
 import { MagicItemSchema } from '../schemas/5e-SRD-Magic-Items';
 import { MagicSchoolSchema } from '../schemas/5e-SRD-Magic-Schools';
+import { MonsterSchema } from '../schemas/5e-SRD-Monsters';
 import { ProficiencySchema } from '../schemas/5e-SRD-Proficiencies';
 import { SkillSchema } from '../schemas/5e-SRD-Skills';
 import { SpeciesSchema } from '../schemas/5e-SRD-Species';
@@ -40,6 +42,7 @@ import { SubspeciesSchema } from '../schemas/5e-SRD-Subspecies';
 import { TraitSchema } from '../schemas/5e-SRD-Traits';
 import { WeaponMasteryPropertySchema } from '../schemas/5e-SRD-Weapon-Mastery-Properties';
 import { WeaponPropertySchema } from '../schemas/5e-SRD-Weapon-Properties';
+
 
 function testAll(data: unknown[], schema: z.ZodTypeAny) {
   for (const item of data as { index?: string; name?: string }[]) {
@@ -60,6 +63,7 @@ describe('2024 schemas', () => {
   it('languages', () => testAll(Languages, LanguageSchema));
   it('magic items', () => testAll(MagicItems, MagicItemSchema));
   it('magic schools', () => testAll(MagicSchools, MagicSchoolSchema));
+  it('monsters', () => testAll(Monsters, MonsterSchema));
   it('proficiencies', () => testAll(Proficiencies, ProficiencySchema));
   it('skills', () => testAll(Skills, SkillSchema));
   it('species', () => testAll(Species, SpeciesSchema));
