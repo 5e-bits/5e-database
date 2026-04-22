@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.0.1](https://github.com/5e-bits/5e-database/compare/v5.0.0...v5.0.1) (2026-04-22)
+
+
+### Bug Fixes
+
+* **2024:** Clean up existing nyi urls ([#1083](https://github.com/5e-bits/5e-database/issues/1083)) ([6068eda](https://github.com/5e-bits/5e-database/commit/6068eda4652e5bfc32c11584405e9b4d7bfac0c5))
+
 ## [5.0.0](https://github.com/5e-bits/5e-database/compare/v4.7.0...v5.0.0) (2026-04-21)
 
 
