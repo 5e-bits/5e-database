@@ -1,30 +1,27 @@
-import { readdirSync, readFileSync } from 'fs';
-import { MongoClient, Collection, Db, MongoServerError } from 'mongodb'; // Import MongoClient and types
-// Import utilities and constants
+import { readdirSync, readFileSync, existsSync } from 'fs';
+import { MongoClient, Collection, Db, MongoServerError } from 'mongodb';
 import {
   checkMongoUri,
   getCollectionNameFromJsonFile,
   getIndexName,
   getIndexCollectionName,
+  LOCALE_PATTERN,
+  TRANSLATION_SKIP_DIRS,
   SRD_PREFIX,
 } from './dbUtils';
+import {
+  buildIndexMap,
+  computeLocaleDocuments,
+  processTranslationEntries,
+  TranslationDocument,
+} from './translationUtils';
 
-// check the environment variable is set
 const mongodbUri = checkMongoUri('db:refresh');
 
-// Define type for index collection entries
 interface IndexEntry {
   index: string;
 }
 
-/**
- * Processes a single JSON file for database refresh.
- * Reads, parses, adds updated_at, drops the collection, and inserts new data.
- * @param db The MongoDB database instance.
- * @param filepath Full path to the JSON file.
- * @param collectionPrefix The prefix for the collection name (e.g., '2014-').
- * @returns The base index name (without prefix) if successful, otherwise null.
- */
 async function _processFileForRefresh(
   db: Db,
   filepath: string,
@@ -35,18 +32,12 @@ async function _processFileForRefresh(
 
   if (!collectionName || !filename) {
     console.warn(`Could not determine collection or filename for ${filepath}. Skipping.`);
-    return null; // Indicate failure/skip
+    return null;
   }
 
-  // Determine the base name for the index table entry using the new util
   const indexName = getIndexName(filename);
   if (indexName === null) {
-    // This *shouldn't* happen if getCollectionNameFromJsonFile succeeded and the file has SRD_PREFIX,
-    // but handle defensively.
     console.warn(`Could not extract index name from filename ${filename}. Skipping index entry.`);
-    // We might still want to process the data, but won't add to index.
-    // Decide if we should return null or proceed without adding to index.
-    // For now, let's return null as index entry is the main goal here for the caller.
     return null;
   }
 
@@ -57,52 +48,41 @@ async function _processFileForRefresh(
     data = JSON.parse(readFileSync(filepath, 'utf8'));
   } catch (err) {
     console.error(`  Error parsing JSON from ${filepath}:`, err);
-    return null; // Indicate failure
+    return null;
   }
 
   const updatedData = Array.isArray(data)
     ? data.map((record: any) => ({ ...record, updated_at: new Date().toISOString() }))
     : [];
 
-  if (updatedData.length === 0) {
-    console.log(`  Skipping collection '${collectionName}' as no data was found or parsed.`);
-    // Still return indexName, as the file exists but might be empty
-    return indexName;
-  }
-
   const collection: Collection = db.collection(collectionName);
 
-  // Drop the existing collection
   try {
     await collection.drop();
     console.log(`  Dropped existing collection '${collectionName}'.`);
   } catch (err) {
     if (!(err instanceof MongoServerError && err.codeName === 'NamespaceNotFound')) {
       console.error(`  Error dropping collection '${collectionName}':`, err);
-      // Decide if we should stop the whole process - maybe throw here?
-      return null; // Indicate failure
+      return null;
     }
   }
 
-  // Insert the new data
+  if (updatedData.length === 0) {
+    console.log(`  No data found in '${collectionName}' — collection dropped and left empty.`);
+    return null;
+  }
+
   try {
     const insertResult = await collection.insertMany(updatedData);
     console.log(`  Inserted ${insertResult.insertedCount} documents into '${collectionName}'.`);
   } catch (err) {
     console.error(`  Error inserting documents into '${collectionName}':`, err);
-    // Decide if we should stop the whole process - maybe throw here?
-    return null; // Indicate failure
+    return null;
   }
 
-  return indexName; // Return the base name for the index
+  return indexName;
 }
 
-/**
- * Refreshes the index collection (e.g., '2014-collections') based on processed files.
- * @param db The MongoDB database instance.
- * @param collectionPrefix The prefix for the collection name (e.g., '2014-').
- * @param collections Array of IndexEntry objects.
- */
 async function _refreshIndexCollection(
   db: Db,
   collectionPrefix: string,
@@ -112,28 +92,25 @@ async function _refreshIndexCollection(
   const collectionsCollectionName = getIndexCollectionName(collectionPrefix);
   const collectionsCollection: Collection = db.collection(collectionsCollectionName);
 
-  // Drop existing collections table
   try {
     await collectionsCollection.drop();
     console.log(`  Dropped existing collection '${collectionsCollectionName}'.`);
   } catch (err) {
     if (!(err instanceof MongoServerError && err.codeName === 'NamespaceNotFound')) {
       console.error(`  Error dropping collection '${collectionsCollectionName}':`, err);
-      throw err; // Throw if dropping index fails unexpectedly
+      throw err;
     }
   }
 
-  // Insert new collections index
   if (collections.length > 0) {
     try {
-      // No cast needed now, insertMany accepts compatible objects
       const insertResult = await collectionsCollection.insertMany(collections);
       console.log(
         `  Inserted ${insertResult.insertedCount} documents into '${collectionsCollectionName}'.`
       );
     } catch (err) {
       console.error(`  Error inserting documents into '${collectionsCollectionName}':`, err);
-      throw err; // Throw if inserting index fails
+      throw err;
     }
   } else {
     console.log(
@@ -142,9 +119,8 @@ async function _refreshIndexCollection(
   }
 }
 
-// Make the function async to use await
 const uploadTablesFromFolder = async (db: Db, jsonDbDir: string, collectionPrefix = '') => {
-  const collectionIndexEntries: IndexEntry[] = []; // Use IndexEntry[] type
+  const collectionIndexEntries: IndexEntry[] = [];
   let files = [];
 
   try {
@@ -159,47 +135,200 @@ const uploadTablesFromFolder = async (db: Db, jsonDbDir: string, collectionPrefi
     process.exit(1);
   }
 
-  // Use a for...of loop to allow async/await inside
   for (const filename of files) {
-    // Basic filter
     if (!filename.includes(SRD_PREFIX) || !filename.endsWith('.json')) {
       continue;
     }
 
     const filepath = `${jsonDbDir}/${filename}`;
-    // Call the helper function to process the file
     const indexName = await _processFileForRefresh(db, filepath, collectionPrefix);
     if (indexName !== null) {
-      // If processing was successful (even if file was empty), add index name
       collectionIndexEntries.push({ index: indexName });
     } else {
-      // Log or handle the case where processing a file failed critically
-      // For now, we assume errors are logged within the helper and we continue
       console.warn(`Critical error processing ${filepath}, it will not be included in the index.`);
     }
   }
 
-  // Make collections table
   await _refreshIndexCollection(db, collectionPrefix, collectionIndexEntries);
 };
 
-// Main execution function
+function _processLangDir(lang: string, langDir: string, enDir: string): TranslationDocument[] {
+  const docs: TranslationDocument[] = [];
+  let langFiles: string[];
+  try {
+    langFiles = readdirSync(langDir) as string[];
+  } catch (e) {
+    console.error(`Error reading ${langDir}:`, e);
+    return docs;
+  }
+
+  for (const filename of langFiles) {
+    if (!filename.includes(SRD_PREFIX) || !filename.endsWith('.json')) continue;
+
+    const indexName = getIndexName(filename);
+    if (!indexName) continue;
+
+    let enData: Record<string, unknown>[];
+    try {
+      const raw = JSON.parse(readFileSync(`${enDir}/${filename}`, 'utf8'));
+      if (!Array.isArray(raw)) throw new Error('not an array');
+      enData = raw;
+    } catch (err) {
+      if ((err as NodeJS.ErrnoException).code === 'ENOENT') {
+        console.warn(`  No English source at ${enDir}/${filename}. Skipping ${lang}/${filename}.`);
+      } else {
+        console.warn(
+          `  Failed to parse English source ${enDir}/${filename}: ${err}. Skipping ${lang}/${filename}.`
+        );
+      }
+      continue;
+    }
+
+    const enMap = buildIndexMap(enData);
+
+    let transData: Record<string, unknown>[];
+    try {
+      const raw = JSON.parse(readFileSync(`${langDir}/${filename}`, 'utf8'));
+      if (!Array.isArray(raw)) throw new Error('not an array');
+      transData = raw;
+    } catch (err) {
+      console.error(`  Error parsing ${langDir}/${filename}:`, err);
+      continue;
+    }
+
+    console.log(
+      `  Processing ${lang} translations for '${indexName}' (${transData.length} entries)...`
+    );
+
+    docs.push(...processTranslationEntries(transData, enMap, indexName, lang, filename));
+  }
+
+  return docs;
+}
+
+async function _refreshLocaleCollection(
+  db: Db,
+  collectionPrefix: string,
+  translationDocs: TranslationDocument[]
+): Promise<void> {
+  const localeCollectionName = `${collectionPrefix}locales`;
+  const localeCollection = db.collection(localeCollectionName);
+
+  try {
+    await localeCollection.drop();
+  } catch (err) {
+    if (!(err instanceof MongoServerError && err.codeName === 'NamespaceNotFound')) throw err;
+  }
+
+  const localeDocs = computeLocaleDocuments(translationDocs);
+  if (localeDocs.length > 0) {
+    try {
+      await localeCollection.createIndex({ lang: 1 }, { unique: true });
+      await localeCollection.insertMany(localeDocs, { ordered: false });
+      console.log(
+        `  Inserted ${localeDocs.length} locale documents into '${localeCollectionName}'.`
+      );
+    } catch (err) {
+      console.error(`  Error inserting locale documents into '${localeCollectionName}':`, err);
+      throw err;
+    }
+  } else {
+    console.log(`  No locales to insert into '${localeCollectionName}'.`);
+  }
+}
+
+/**
+ * Discovers all non-English locale directories under jsonDbDir, loads their
+ * translation JSON files, validates them against the English source, and
+ * upserts into `{collectionPrefix}translations`.
+ */
+async function uploadTranslationsFromFolder(
+  db: Db,
+  jsonDbDir: string,
+  collectionPrefix: string
+): Promise<void> {
+  const translationCollectionName = `${collectionPrefix}translations`;
+  const translationCollection = db.collection(translationCollectionName);
+
+  try {
+    await translationCollection.drop();
+    console.log(`  Dropped existing collection '${translationCollectionName}'.`);
+  } catch (err) {
+    if (!(err instanceof MongoServerError && err.codeName === 'NamespaceNotFound')) {
+      throw err;
+    }
+  }
+
+  const enDir = `${jsonDbDir}/en`;
+  if (!existsSync(enDir)) {
+    console.warn(
+      `  No English source directory at ${enDir}. Skipping translations for ${jsonDbDir}.`
+    );
+    return;
+  }
+
+  let langDirs: string[];
+  try {
+    langDirs = readdirSync(jsonDbDir, { withFileTypes: true })
+      .filter(
+        (e) =>
+          e.isDirectory() &&
+          LOCALE_PATTERN.test(e.name) &&
+          e.name !== 'en' &&
+          !TRANSLATION_SKIP_DIRS.has(e.name)
+      )
+      .map((e) => e.name);
+  } catch (e) {
+    console.error(`Error reading ${jsonDbDir}:`, e);
+    return;
+  }
+
+  if (langDirs.length === 0) {
+    console.log(`  No translation directories found in ${jsonDbDir}.`);
+    await _refreshLocaleCollection(db, collectionPrefix, []);
+    return;
+  }
+
+  console.log(`  Found translation languages: ${langDirs.join(', ')}`);
+  const translationDocs: TranslationDocument[] = [];
+
+  for (const lang of langDirs) {
+    const docs = _processLangDir(lang, `${jsonDbDir}/${lang}`, enDir);
+    translationDocs.push(...docs);
+  }
+
+  if (translationDocs.length > 0) {
+    await translationCollection.createIndex(
+      { source_collection: 1, source_index: 1, lang: 1 },
+      { unique: true }
+    );
+    const result = await translationCollection.insertMany(translationDocs, { ordered: false });
+    console.log(
+      `  Inserted ${result.insertedCount} documents into '${translationCollectionName}'.`
+    );
+  } else {
+    console.log(`  No translation documents to insert into '${translationCollectionName}'.`);
+  }
+
+  await _refreshLocaleCollection(db, collectionPrefix, translationDocs);
+}
+
 async function main() {
   const client = new MongoClient(mongodbUri);
   try {
     await client.connect();
     console.log('Connected successfully to MongoDB server');
-    const db = client.db(); // Assumes DB name is in the URI
+    const db = client.db();
 
     console.log('\nUploading 2014 tables...');
-    await uploadTablesFromFolder(db, 'src/2014', '2014-');
+    await uploadTablesFromFolder(db, 'src/2014/en', '2014-');
+    console.log('\nLoading 2014 translations...');
+    await uploadTranslationsFromFolder(db, 'src/2014', '2014-');
 
     console.log('\nUploading 2024 tables...');
-    await uploadTablesFromFolder(db, 'src/2024', '2024-');
-
-    // Add calls for other directories if needed, e.g.:
-    // console.log('\nUploading root src tables...');
-    // await uploadTablesFromFolder(db, 'src/');
+    await uploadTablesFromFolder(db, 'src/2024/en', '2024-');
+    console.log('\nLoading 2024 translations...');
+    await uploadTranslationsFromFolder(db, 'src/2024', '2024-');
 
     console.log('\nDatabase refresh completed successfully.');
   } catch (error) {
@@ -211,5 +340,4 @@ async function main() {
   }
 }
 
-// Execute main function
 main().catch(console.error);

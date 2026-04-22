@@ -1,13 +1,15 @@
 import { readFileSync } from 'fs';
-import { MongoClient, AnyBulkWriteOperation, Document, Db, MongoServerError } from 'mongodb';
+import { AnyBulkWriteOperation, Document, Db, MongoServerError } from 'mongodb';
 import { diff } from 'deep-diff';
 import {
   getCollectionNameFromJsonFile,
   getCollectionPrefix,
   getIndexName,
   getIndexCollectionName,
+  getLocaleFromFilepath,
 } from '../dbUtils'; // Import from parent dir
 import { getOldFileContent, ChangedFile } from './gitUtils'; // Import from sibling
+import { buildIndexMap, buildTranslationDoc, getEnglishSourcePath } from '../translationUtils';
 
 // --- Constants for MongoDB Operations ---
 const MONGO_OP_UPDATE_ONE = 'updateOne';
@@ -174,6 +176,13 @@ async function updateIndexCollection(
     return;
   }
 
+  const locale = getLocaleFromFilepath(filepath);
+  if (locale && locale !== 'en') {
+    // Translation files share the same index name as their English counterpart — never touch the
+    // collections index for them, or a deletion would remove the English entry.
+    return;
+  }
+
   const collectionPrefix = getCollectionPrefix(filepath);
   const indexCollectionName = getIndexCollectionName(collectionPrefix);
   const indexCollection = db.collection(indexCollectionName);
@@ -208,8 +217,6 @@ async function _handleFileAdded(db: Db, filepath: string): Promise<void> {
   const collectionName = getCollectionNameFromJsonFile(filepath);
   if (!collectionName) {
     console.warn(`Could not determine collection name for added file ${filepath}. Skipping.`);
-    // Even if data processing is skipped, try to update index in case it matches pattern
-    await updateIndexCollection(db, filepath, 'upsert');
     return;
   }
   console.log(`\nProcessing Added file ${filepath} for collection '${collectionName}'...`);
@@ -334,6 +341,156 @@ async function _handleFileDeleted(db: Db, filepath: string): Promise<void> {
   await updateIndexCollection(db, filepath, 'delete');
 }
 
+// --- Translation Helpers ---
+
+interface TranslationContext {
+  lang: string;
+  indexName: string;
+  enMap: Map<string, Record<string, unknown>>;
+}
+
+async function resolveTranslationContext(filepath: string): Promise<TranslationContext | null> {
+  const lang = getLocaleFromFilepath(filepath);
+  if (!lang) return null;
+  const filename = filepath.split('/').pop()!;
+  const indexName = getIndexName(filename);
+  if (!indexName) return null;
+  const enPath = getEnglishSourcePath(filepath);
+  if (!enPath) return null;
+  const enData = await readFileContent(enPath);
+  return { lang, indexName, enMap: buildIndexMap(enData) };
+}
+
+// --- Translation Handlers ---
+
+async function _refreshLocaleStatsForLang(db: Db, filepath: string, lang: string): Promise<void> {
+  const collectionPrefix = getCollectionPrefix(filepath);
+
+  const localeCollection = db.collection(`${collectionPrefix}locales`);
+  const hasTranslations =
+    (await db
+      .collection(`${collectionPrefix}translations`)
+      .countDocuments({ lang }, { limit: 1 })) > 0;
+
+  if (hasTranslations) {
+    await localeCollection.updateOne(
+      { lang },
+      { $set: { lang, updated_at: new Date() } },
+      { upsert: true }
+    );
+    console.log(`  Updated locale entry for '${lang}'.`);
+  } else {
+    await localeCollection.deleteOne({ lang });
+    console.log(`  Removed locale entry for '${lang}' (no translations remaining).`);
+  }
+}
+
+async function _handleTranslationFileAdded(db: Db, filepath: string): Promise<void> {
+  const ctx = await resolveTranslationContext(filepath);
+  if (!ctx) return;
+  const { lang, indexName, enMap } = ctx;
+
+  const transData = await readFileContent(filepath);
+
+  console.log(`\nProcessing Added translation ${filepath}...`);
+
+  const collectionPrefix = getCollectionPrefix(filepath);
+  const translationCollection = db.collection(`${collectionPrefix}translations`);
+
+  const ops: AnyBulkWriteOperation<Document>[] = [];
+  for (const entry of transData) {
+    const doc = buildTranslationDoc(entry as Record<string, unknown>, enMap, indexName, lang);
+    if (!doc) continue;
+    ops.push({
+      [MONGO_OP_UPDATE_ONE]: {
+        filter: {
+          source_collection: doc.source_collection,
+          source_index: doc.source_index,
+          lang: doc.lang,
+        },
+        update: { $set: doc },
+        upsert: true,
+      },
+    });
+  }
+
+  if (ops.length > 0) await translationCollection.bulkWrite(ops, { ordered: false });
+  console.log(`  Processed ${ops.length} translation entries.`);
+  await _refreshLocaleStatsForLang(db, filepath, lang);
+}
+
+async function _handleTranslationFileModified(db: Db, filepath: string): Promise<void> {
+  // enPath is read from disk (post-commit), so if the English source was also modified in the
+  // same commit this correctly validates against the updated schema — no special handling needed.
+  const ctx = await resolveTranslationContext(filepath);
+  if (!ctx) return;
+  const { lang, indexName, enMap } = ctx;
+
+  const currentData = await readFileContent(filepath);
+  const oldData = parseJsonArrayContent(await getOldFileContent(filepath), `HEAD~1:${filepath}`);
+
+  console.log(`\nProcessing Modified translation ${filepath}...`);
+
+  const collectionPrefix = getCollectionPrefix(filepath);
+  const translationCollection = db.collection(`${collectionPrefix}translations`);
+
+  const oldMap = buildIndexMap(oldData);
+  const newMap = buildIndexMap(currentData);
+
+  const ops: AnyBulkWriteOperation<Document>[] = [];
+
+  for (const [idx, entry] of newMap) {
+    const oldEntry = oldMap.get(idx);
+    if (!oldEntry || diff(oldEntry, entry)) {
+      const doc = buildTranslationDoc(entry as Record<string, unknown>, enMap, indexName, lang);
+      if (!doc) continue;
+      ops.push({
+        [MONGO_OP_UPDATE_ONE]: {
+          filter: {
+            source_collection: doc.source_collection,
+            source_index: doc.source_index,
+            lang: doc.lang,
+          },
+          update: { $set: doc },
+          upsert: true,
+        },
+      });
+    }
+  }
+
+  for (const idx of oldMap.keys()) {
+    if (!newMap.has(idx)) {
+      // source_collection matches indexName because buildTranslationDoc stores it that way.
+      ops.push({
+        [MONGO_OP_DELETE_ONE]: {
+          filter: { source_collection: indexName, source_index: idx, lang },
+        },
+      });
+    }
+  }
+
+  if (ops.length > 0) await translationCollection.bulkWrite(ops, { ordered: false });
+  console.log(`  Processed ${ops.length} translation changes.`);
+  await _refreshLocaleStatsForLang(db, filepath, lang);
+}
+
+async function _handleTranslationFileDeleted(db: Db, filepath: string): Promise<void> {
+  const lang = getLocaleFromFilepath(filepath);
+  if (!lang) return;
+  const filename = filepath.split('/').pop()!;
+  const indexName = getIndexName(filename);
+  if (!indexName) return;
+
+  const collectionPrefix = getCollectionPrefix(filepath);
+  const translationCollection = db.collection(`${collectionPrefix}translations`);
+
+  console.log(`\nProcessing Deleted translation ${filepath}...`);
+  const result = await translationCollection.deleteMany({ source_collection: indexName, lang });
+  console.log(`  Deleted ${result.deletedCount} translation documents.`);
+
+  await _refreshLocaleStatsForLang(db, filepath, lang);
+}
+
 // --- Main Processor Function ---
 
 /**
@@ -344,6 +501,32 @@ async function _handleFileDeleted(db: Db, filepath: string): Promise<void> {
  */
 export async function processFileUpdate(db: Db, file: ChangedFile): Promise<void> {
   const { status, filepath, oldFilepath } = file;
+
+  const locale = getLocaleFromFilepath(filepath);
+  const isTranslation = locale !== null && locale !== 'en';
+
+  if (isTranslation) {
+    switch (status) {
+      case 'A':
+        await _handleTranslationFileAdded(db, filepath);
+        break;
+      case 'M':
+        await _handleTranslationFileModified(db, filepath);
+        break;
+      case 'R':
+        // delete+add rather than diff: simpler and correct since a rename implies
+        // a collection change, and translation docs are cheap to recreate.
+        if (oldFilepath) await _handleTranslationFileDeleted(db, oldFilepath);
+        await _handleTranslationFileAdded(db, filepath);
+        break;
+      case 'D':
+        await _handleTranslationFileDeleted(db, filepath);
+        break;
+      default:
+        console.log(`\nSkipping translation file ${filepath} with unhandled status ${status}.`);
+    }
+    return;
+  }
 
   switch (status) {
     case 'A':

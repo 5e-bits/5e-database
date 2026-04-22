@@ -27,6 +27,33 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.0.1](https://github.com/5e-bits/5e-database/compare/v5.0.0...v5.0.1) (2026-04-22)
+
+
+### Bug Fixes
+
+* **2024:** Clean up existing nyi urls ([#1083](https://github.com/5e-bits/5e-database/issues/1083)) ([6068eda](https://github.com/5e-bits/5e-database/commit/6068eda4652e5bfc32c11584405e9b4d7bfac0c5))
+
+## [5.0.0](https://github.com/5e-bits/5e-database/compare/v4.7.0...v5.0.0) (2026-04-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* **all:** Multi language support ([#1081](https://github.com/5e-bits/5e-database/issues/1081))
+
+### Features
+
+* **all:** Multi language support ([#1081](https://github.com/5e-bits/5e-database/issues/1081)) ([6c7f2ed](https://github.com/5e-bits/5e-database/commit/6c7f2ed20e66a38fafb29fa0634ed5e13a7f5020))
+
+## [4.7.0](https://github.com/5e-bits/5e-database/compare/v4.6.3...v4.7.0) (2026-04-19)
+
+
+### Features
+
+* **2024:** 2024 classes and updates to proficiencies and equipments ([#1068](https://github.com/5e-bits/5e-database/issues/1068)) ([d418128](https://github.com/5e-bits/5e-database/commit/d4181284546f4d49bc013e04701f32b52f1b3bed))
+* **2024:** Add Dev bypass to tests ('-nyi') ([#1075](https://github.com/5e-bits/5e-database/issues/1075)) ([70a2768](https://github.com/5e-bits/5e-database/commit/70a2768e320cce4f19344033aad1325127e1cf4d))
+* update 2024 ClassSchema with primary_ability logic ([#1066](https://github.com/5e-bits/5e-database/issues/1066)) ([e413273](https://github.com/5e-bits/5e-database/commit/e4132737f8ace1674e33643123d3a4a1ec38a3e9))
+
 ## [4.6.3](https://github.com/5e-bits/5e-database/compare/v4.6.2...v4.6.3) (2026-04-01)
 
 
