@@ -3,8 +3,8 @@ import { APIReferenceSchema, ChoiceSchema } from '../../schemas/common';
 
 const SpellTraitSchema = z.object({
   spell: APIReferenceSchema,
-  uses: z.string(),
-  recovery: z.string(),
+  uses: z.string().optional(),
+  recovery: z.string().optional(),
 });
 
 export const TraitSchema = z.object({
