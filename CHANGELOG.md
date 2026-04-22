@@ -27,6 +27,17 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.0.0](https://github.com/5e-bits/5e-database/compare/v4.7.0...v5.0.0) (2026-04-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* **all:** Multi language support ([#1081](https://github.com/5e-bits/5e-database/issues/1081))
+
+### Features
+
+* **all:** Multi language support ([#1081](https://github.com/5e-bits/5e-database/issues/1081)) ([6c7f2ed](https://github.com/5e-bits/5e-database/commit/6c7f2ed20e66a38fafb29fa0634ed5e13a7f5020))
+
 ## [4.7.0](https://github.com/5e-bits/5e-database/compare/v4.6.3...v4.7.0) (2026-04-19)
 
 
