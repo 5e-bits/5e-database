@@ -4,7 +4,17 @@ name: Manual Database Refresh
 # from the JSON files in the repository. Use with caution.
 
 on:
-  workflow_dispatch: # Allows manual triggering from the Actions tab
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Which DB version to refresh'
+        required: false
+        type: choice
+        default: 'all'
+        options:
+          - 'all'
+          - '2014'
+          - '2024'
 
 jobs:
   refresh-database:
@@ -27,4 +37,5 @@ jobs:
       - name: Run Database Refresh Script
         run: npm run db:refresh
         env:
-          MONGODB_URI: ${{ secrets.MONGODB_URI }} # Inject DB URI from secrets
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+          DB_VERSION: ${{ inputs.version }}
