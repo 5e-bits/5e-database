@@ -27,6 +27,14 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.1.0](https://github.com/5e-bits/5e-database/compare/v5.0.1...v5.1.0) (2026-04-23)
+
+
+### Features
+
+* **2024:** monster schema and first monsters ([#1074](https://github.com/5e-bits/5e-database/issues/1074)) ([fe415c6](https://github.com/5e-bits/5e-database/commit/fe415c66f53603797fe8316ca04e9c466158c62c))
+* **language:** added some portuguese translations ([#1086](https://github.com/5e-bits/5e-database/issues/1086)) ([1df99c9](https://github.com/5e-bits/5e-database/commit/1df99c9337e5bf45dc57a87198389988a386a6a8))
+
 ## [5.0.1](https://github.com/5e-bits/5e-database/compare/v5.0.0...v5.0.1) (2026-04-22)
 
 
