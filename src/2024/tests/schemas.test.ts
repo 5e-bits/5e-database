@@ -9,7 +9,7 @@ import DamageTypes from '../en/5e-SRD-Damage-Types.json' with { type: 'json' };
 import EquipmentCategories from '../en/5e-SRD-Equipment-Categories.json' with { type: 'json' };
 import Equipment from '../en/5e-SRD-Equipment.json' with { type: 'json' };
 import Feats from '../en/5e-SRD-Feats.json' with { type: 'json' };
-import Features from '../5e-SRD-Features.json' with { type: 'json' };
+import Features from '../en/5e-SRD-Features.json' with { type: 'json' };
 import Languages from '../en/5e-SRD-Languages.json' with { type: 'json' };
 import MagicItems from '../en/5e-SRD-Magic-Items.json' with { type: 'json' };
 import MagicSchools from '../en/5e-SRD-Magic-Schools.json' with { type: 'json' };
