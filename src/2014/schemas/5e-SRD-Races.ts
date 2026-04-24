@@ -1,12 +1,12 @@
 import { z } from 'zod';
 import { APIReferenceSchema, ChoiceSchema } from '../../schemas/common';
 
-const AbilityBonusSchema = z.object({
+const AbilityBonusSchema = z.strictObject({
   ability_score: APIReferenceSchema,
   bonus: z.number(),
 });
 
-export const RaceSchema = z.object({
+export const RaceSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
   speed: z.number(),

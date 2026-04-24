@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const LanguageSchema = z.object({
+export const LanguageSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
   is_rare: z.boolean(),

@@ -1,14 +1,14 @@
 import { z } from 'zod';
 import { APIReferenceSchema, ChoiceSchema } from '../../schemas/common';
 
-const BackgroundFeatReferenceSchema = z.object({
+const BackgroundFeatReferenceSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
   url: z.string(),
   note: z.string().optional(),
 });
 
-export const BackgroundSchema = z.object({
+export const BackgroundSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
   ability_scores: z.array(APIReferenceSchema),
