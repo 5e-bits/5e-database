@@ -4,7 +4,7 @@
         "name": "Barbarian",
         "primary_ability": {
             "desc": "Strength",
-            "all_of": [
+            "ability_scores": [
                 {
                     "index": "str",
                     "name": "STR",
@@ -215,7 +215,7 @@
         "name": "Bard",
         "primary_ability": {
             "desc": "Charisma",
-            "all_of": [
+            "ability_scores": [
                 {
                     "index": "cha",
                     "name": "CHA",
@@ -889,7 +889,7 @@
         "name": "Cleric",
         "primary_ability": {
             "desc": "Wisdom",
-            "all_of": [
+            "ability_scores": [
                 {
                     "index": "wis",
                     "name": "WIS",
@@ -1161,7 +1161,7 @@
         "name": "Druid",
         "primary_ability": {
             "desc": "Wisdom",
-            "all_of": [
+            "ability_scores": [
                 {
                     "index": "wis",
                     "name": "WIS",
@@ -1461,18 +1461,31 @@
         "name": "Fighter",
         "primary_ability": {
             "desc": "Strength or Dexterity",
-            "any_of": [
-                {
-                    "index": "str",
-                    "name": "STR",
-                    "url": "/api/2024/ability-scores/str"
-                },
-                {
-                    "index": "dex",
-                    "name": "DEX",
-                    "url": "/api/2024/ability-scores/dex"
+            "ability_score_options": {
+                "choose": 1,
+                "type": "ability_scores",
+                "from": {
+                    "option_set_type": "options_array",
+                    "options": [
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "str",
+                                "name": "STR",
+                                "url": "/api/2024/ability-scores/str"
+                            }
+                        },
+                        {
+                            "option_type": "reference",
+                            "item": {
+                                "index": "dex",
+                                "name": "DEX",
+                                "url": "/api/2024/ability-scores/dex"
+                            }
+                        }
+                    ]
                 }
-            ]
+            }
         },
         "hit_die": 10,
         "proficiency_choices": [
@@ -1806,7 +1819,7 @@
         "name": "Monk",
         "primary_ability": {
             "desc": "Dexterity and Wisdom",
-            "all_of": [
+            "ability_scores": [
                 {
                     "index": "dex",
                     "name": "DEX",
@@ -2327,7 +2340,7 @@
         "name": "Paladin",
         "primary_ability": {
             "desc": "Strength and Charisma",
-            "all_of": [
+            "ability_scores": [
                 {
                     "index": "str",
                     "name": "STR",
@@ -2626,7 +2639,7 @@
         "name": "Ranger",
         "primary_ability": {
             "desc": "Dexterity and Wisdom",
-            "all_of": [
+            "ability_scores": [
                 {
                     "index": "dex",
                     "name": "DEX",
@@ -3039,7 +3052,7 @@
         "name": "Rogue",
         "primary_ability": {
             "desc": "Dexterity",
-            "all_of": [
+            "ability_scores": [
                 {
                     "index": "dex",
                     "name": "DEX",
@@ -3454,7 +3467,7 @@
         "name": "Sorcerer",
         "primary_ability": {
             "desc": "Charisma",
-            "all_of": [
+            "ability_scores": [
                 {
                     "index": "cha",
                     "name": "CHA",
@@ -3693,7 +3706,7 @@
         "name": "Warlock",
         "primary_ability": {
             "desc": "Charisma",
-            "all_of": [
+            "ability_scores": [
                 {
                     "index": "cha",
                     "name": "CHA",
@@ -3970,7 +3983,7 @@
         "name": "Wizard",
         "primary_ability": {
             "desc": "Intelligence",
-            "all_of": [
+            "ability_scores": [
                 {
                     "index": "int",
                     "name": "INT",
