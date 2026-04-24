@@ -11,7 +11,7 @@ export const SubclassSchema = z.object({
   index: z.string(),
   url: z.string(),
   name: z.string(),
-  class: z.object(APIReferenceSchema),
+  class: APIReferenceSchema,
   summary: z.string(),
   description: z.string(),
   features: z.array(SubclassFeatureSchema),
