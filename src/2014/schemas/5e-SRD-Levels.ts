@@ -1,16 +1,16 @@
 import { z } from 'zod';
 import { APIReferenceSchema } from '../../schemas/common';
 
-const ClassSpecificSchema = z.object({
+const ClassSpecificSchema = z.strictObject({
   action_surges: z.number().optional(),
   arcane_recovery_levels: z.number().optional(),
   aura_range: z.number().optional(),
   bardic_inspiration_die: z.number().optional(),
   brutal_critical_dice: z.number().optional(),
   channel_divinity_charges: z.number().optional(),
-  creating_spell_slots: z.array(
-    z.object({ sorcery_point_cost: z.number(), spell_slot_level: z.number() })
-  ).optional(),
+  creating_spell_slots: z
+    .array(z.strictObject({ sorcery_point_cost: z.number(), spell_slot_level: z.number() }))
+    .optional(),
   destroy_undead_cr: z.number().optional(),
   extra_attacks: z.number().optional(),
   favored_enemies: z.number().optional(),
@@ -21,7 +21,7 @@ const ClassSpecificSchema = z.object({
   magical_secrets_max_5: z.number().optional(),
   magical_secrets_max_7: z.number().optional(),
   magical_secrets_max_9: z.number().optional(),
-  martial_arts: z.object({ dice_count: z.number(), dice_value: z.number() }).optional(),
+  martial_arts: z.strictObject({ dice_count: z.number(), dice_value: z.number() }).optional(),
   metamagic_known: z.number().optional(),
   mystic_arcanum_level_6: z.number().optional(),
   mystic_arcanum_level_7: z.number().optional(),
@@ -29,7 +29,7 @@ const ClassSpecificSchema = z.object({
   mystic_arcanum_level_9: z.number().optional(),
   rage_count: z.number().optional(),
   rage_damage_bonus: z.number().optional(),
-  sneak_attack: z.object({ dice_count: z.number(), dice_value: z.number() }).optional(),
+  sneak_attack: z.strictObject({ dice_count: z.number(), dice_value: z.number() }).optional(),
   song_of_rest_die: z.number().optional(),
   sorcery_points: z.number().optional(),
   unarmored_movement: z.number().optional(),
@@ -38,7 +38,7 @@ const ClassSpecificSchema = z.object({
   wild_shape_swim: z.boolean().optional(),
 });
 
-const LevelSpellcastingSchema = z.object({
+const LevelSpellcastingSchema = z.strictObject({
   cantrips_known: z.number().optional(),
   spell_slots_level_1: z.number(),
   spell_slots_level_2: z.number(),
@@ -52,12 +52,12 @@ const LevelSpellcastingSchema = z.object({
   spells_known: z.number().optional(),
 });
 
-const SubclassSpecificSchema = z.object({
+const SubclassSpecificSchema = z.strictObject({
   additional_magical_secrets_max_lvl: z.number().optional(),
   aura_range: z.number().optional(),
 });
 
-export const LevelSchema = z.object({
+export const LevelSchema = z.strictObject({
   index: z.string(),
   level: z.number(),
   ability_score_bonuses: z.number().optional(),

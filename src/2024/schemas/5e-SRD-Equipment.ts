@@ -1,38 +1,38 @@
 import { z } from 'zod';
 import { APIReferenceSchema, DamageSchema, DifficultyClassSchema } from '../../schemas/common';
 
-const CostSchema = z.object({
+const CostSchema = z.strictObject({
   quantity: z.number(),
   unit: z.string(),
 });
 
-const ArmorClassSchema = z.object({
+const ArmorClassSchema = z.strictObject({
   base: z.number(),
   dex_bonus: z.boolean(),
   max_bonus: z.number().optional(),
 });
 
-const RangeSchema = z.object({
+const RangeSchema = z.strictObject({
   normal: z.number(),
   long: z.number().optional(),
 });
 
-const ThrowRangeSchema = z.object({
+const ThrowRangeSchema = z.strictObject({
   normal: z.number(),
   long: z.number(),
 });
 
-const ContentSchema = z.object({
+const ContentSchema = z.strictObject({
   item: APIReferenceSchema,
   quantity: z.number(),
 });
 
-const UtilizeSchema = z.object({
+const UtilizeSchema = z.strictObject({
   name: z.string(),
   dc: DifficultyClassSchema,
 });
 
-export const EquipmentSchema = z.object({
+export const EquipmentSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
   equipment_categories: z.array(APIReferenceSchema),
@@ -53,6 +53,7 @@ export const EquipmentSchema = z.object({
   notes: z.array(z.string()).optional(),
   properties: z.array(APIReferenceSchema).optional(),
   quantity: z.number().optional(),
+  storage: APIReferenceSchema.optional(),
   range: RangeSchema.optional(),
   stealth_disadvantage: z.boolean().optional(),
   str_minimum: z.number().optional(),
