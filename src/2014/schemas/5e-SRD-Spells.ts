@@ -1,19 +1,19 @@
 import { z } from 'zod';
 import { APIReferenceSchema, AreaOfEffectSchema } from '../../schemas/common';
 
-const SpellDamageSchema = z.object({
+const SpellDamageSchema = z.strictObject({
   damage_type: APIReferenceSchema.optional(),
   damage_at_slot_level: z.record(z.string(), z.string()).optional(),
   damage_at_character_level: z.record(z.string(), z.string()).optional(),
 });
 
-const SpellDCSchema = z.object({
+const SpellDCSchema = z.strictObject({
   dc_type: APIReferenceSchema,
   dc_success: z.string(),
   desc: z.string().optional(),
 });
 
-export const SpellSchema = z.object({
+export const SpellSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
   desc: z.array(z.string()),

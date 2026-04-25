@@ -4,6 +4,7 @@ import { z } from 'zod';
 import AbilityScores from '../en/5e-SRD-Ability-Scores.json' with { type: 'json' };
 import Alignments from '../en/5e-SRD-Alignments.json' with { type: 'json' };
 import Backgrounds from '../en/5e-SRD-Backgrounds.json' with { type: 'json' };
+import Classes from '../en/5e-SRD-Classes.json' with { type: 'json' };
 import Conditions from '../en/5e-SRD-Conditions.json' with { type: 'json' };
 import DamageTypes from '../en/5e-SRD-Damage-Types.json' with { type: 'json' };
 import EquipmentCategories from '../en/5e-SRD-Equipment-Categories.json' with { type: 'json' };
@@ -25,6 +26,7 @@ import WeaponProperties from '../en/5e-SRD-Weapon-Properties.json' with { type: 
 import { AbilityScoreSchema } from '../schemas/5e-SRD-Ability-Scores';
 import { AlignmentSchema } from '../schemas/5e-SRD-Alignments';
 import { BackgroundSchema } from '../schemas/5e-SRD-Backgrounds';
+import { ClassSchema } from '../schemas/5e-SRD-Classes';
 import { ConditionSchema } from '../schemas/5e-SRD-Conditions';
 import { DamageTypeSchema } from '../schemas/5e-SRD-Damage-Types';
 import { EquipmentCategorySchema } from '../schemas/5e-SRD-Equipment-Categories';
@@ -43,7 +45,6 @@ import { TraitSchema } from '../schemas/5e-SRD-Traits';
 import { WeaponMasteryPropertySchema } from '../schemas/5e-SRD-Weapon-Mastery-Properties';
 import { WeaponPropertySchema } from '../schemas/5e-SRD-Weapon-Properties';
 
-
 function testAll(data: unknown[], schema: z.ZodTypeAny) {
   for (const item of data as { index?: string; name?: string }[]) {
     const result = schema.safeParse(item);
@@ -55,6 +56,7 @@ describe('2024 schemas', () => {
   it('ability scores', () => testAll(AbilityScores, AbilityScoreSchema));
   it('alignments', () => testAll(Alignments, AlignmentSchema));
   it('backgrounds', () => testAll(Backgrounds, BackgroundSchema));
+  it('classes', () => testAll(Classes, ClassSchema));
   it('conditions', () => testAll(Conditions, ConditionSchema));
   it('damage types', () => testAll(DamageTypes, DamageTypeSchema));
   it('equipment categories', () => testAll(EquipmentCategories, EquipmentCategorySchema));
@@ -70,6 +72,7 @@ describe('2024 schemas', () => {
   it('subclasses', () => testAll(Subclasses, SubclassSchema));
   it('subspecies', () => testAll(Subspecies, SubspeciesSchema));
   it('traits', () => testAll(Traits, TraitSchema));
-  it('weapon mastery properties', () => testAll(WeaponMasteryProperties, WeaponMasteryPropertySchema));
+  it('weapon mastery properties', () =>
+    testAll(WeaponMasteryProperties, WeaponMasteryPropertySchema));
   it('weapon properties', () => testAll(WeaponProperties, WeaponPropertySchema));
 });

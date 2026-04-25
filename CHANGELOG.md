@@ -27,6 +27,24 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.1.1](https://github.com/5e-bits/5e-database/compare/v5.1.0...v5.1.1) (2026-04-24)
+
+
+### Bug Fixes
+
+* **2024:** Add class property to subclass schema ([#1090](https://github.com/5e-bits/5e-database/issues/1090)) ([cb53916](https://github.com/5e-bits/5e-database/commit/cb539168c32b32ae5c08e18343d183cd5c54d917))
+* **2024:** Change field names for primary ability in classes and convert to choice schema ([#1091](https://github.com/5e-bits/5e-database/issues/1091)) ([9bf45e8](https://github.com/5e-bits/5e-database/commit/9bf45e89eb7fcc43bfc0135253a7d13a84f1f41f))
+* **5e-SRD-Monsters.json:** regular range format ([#1088](https://github.com/5e-bits/5e-database/issues/1088)) ([6d98821](https://github.com/5e-bits/5e-database/commit/6d988211c27bb0bce7d9c9dee8993f66ea6ab466))
+* **all:** Shift everything to strict schemas and make sure they still pass ([#1092](https://github.com/5e-bits/5e-database/issues/1092)) ([fb1c360](https://github.com/5e-bits/5e-database/commit/fb1c360153c74a95f8e3e5ba0915fbee2ce6936e))
+
+## [5.1.0](https://github.com/5e-bits/5e-database/compare/v5.0.1...v5.1.0) (2026-04-23)
+
+
+### Features
+
+* **2024:** monster schema and first monsters ([#1074](https://github.com/5e-bits/5e-database/issues/1074)) ([fe415c6](https://github.com/5e-bits/5e-database/commit/fe415c66f53603797fe8316ca04e9c466158c62c))
+* **language:** added some portuguese translations ([#1086](https://github.com/5e-bits/5e-database/issues/1086)) ([1df99c9](https://github.com/5e-bits/5e-database/commit/1df99c9337e5bf45dc57a87198389988a386a6a8))
+
 ## [5.0.1](https://github.com/5e-bits/5e-database/compare/v5.0.0...v5.0.1) (2026-04-22)
 
 

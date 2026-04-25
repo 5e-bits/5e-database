@@ -1,38 +1,38 @@
 import { z } from 'zod';
 import { APIReferenceSchema, DamageSchema } from '../../schemas/common';
 
-const CostSchema = z.object({
+const CostSchema = z.strictObject({
   quantity: z.number(),
   unit: z.string(),
 });
 
-const ArmorClassSchema = z.object({
+const ArmorClassSchema = z.strictObject({
   base: z.number(),
   dex_bonus: z.boolean(),
   max_bonus: z.number().optional(),
 });
 
-const ContentSchema = z.object({
+const ContentSchema = z.strictObject({
   item: APIReferenceSchema,
   quantity: z.number(),
 });
 
-const RangeSchema = z.object({
+const RangeSchema = z.strictObject({
   normal: z.number(),
   long: z.number().optional(),
 });
 
-const ThrowRangeSchema = z.object({
+const ThrowRangeSchema = z.strictObject({
   normal: z.number(),
   long: z.number(),
 });
 
-const SpeedSchema = z.object({
+const SpeedSchema = z.strictObject({
   quantity: z.number(),
   unit: z.string(),
 });
 
-export const EquipmentSchema = z.object({
+export const EquipmentSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
   equipment_category: APIReferenceSchema,
