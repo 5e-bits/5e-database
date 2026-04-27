@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.2.0](https://github.com/5e-bits/5e-database/compare/v5.1.1...v5.2.0) (2026-04-27)
+
+
+### Features
+
+* **translation:** added 2014 data portuguese translation ([#1094](https://github.com/5e-bits/5e-database/issues/1094)) ([2b07755](https://github.com/5e-bits/5e-database/commit/2b07755c3a549ea698111ce04cce7449e6f82b8e))
+
 ## [5.1.1](https://github.com/5e-bits/5e-database/compare/v5.1.0...v5.1.1) (2026-04-24)
 
 
