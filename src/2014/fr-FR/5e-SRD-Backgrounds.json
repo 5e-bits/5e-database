@@ -1,0 +1,321 @@
+[
+  {
+    "index": "acolyte",
+    "name": "Acolyte",
+    "starting_proficiencies": [
+      {
+        "index": "skill-insight",
+        "name": "Compétence : Intuition",
+        "url": "/api/2014/proficiencies/skill-insight"
+      },
+      {
+        "index": "skill-religion",
+        "name": "Compétence : Religion",
+        "url": "/api/2014/proficiencies/skill-religion"
+      }
+    ],
+    "language_options": {
+      "choose": 2,
+      "type": "languages",
+      "from": { "option_set_type": "resource_list", "resource_list_url": "/api/2014/languages" }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "clothes-common",
+          "name": "Vêtements commun",
+          "url": "/api/2014/equipment/clothes-common"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": { "index": "pouch", "name": "Bourse", "url": "/api/2014/equipment/pouch" },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "equipment_category",
+          "equipment_category": {
+            "index": "holy-symbols",
+            "name": "Symbole sacré",
+            "url": "/api/2014/equipment-categories/holy-symbols"
+          }
+        }
+      }
+    ],
+    "feature": {
+      "name": "Abri du fidèle",
+      "desc": [
+        "En tant qu’acolyte, vous imposez le respect à ceux qui partagent votre foi, et pouvez mener les cérémonies religieuses de votre divinité. Vous et vos compagnons aventuriers pouvez vous attendre à recevoir des soins gratuits dans un temple, un sanctuaire ou toute autre présence établie de votre foi, bien que vous soyez responsable de fournir toutes les composantes matérielles nécessaires aux sorts. Ceux qui partagent votre religion vous aideront (mais seulement vous) et vous offriront un mode de vie modeste.",
+        "Vous pouvez également avoir des liens avec un temple spécifique dédié à votre divinité ou votre panthéon, et vous y avez une résidence. Cela pourrait être le temple où vous avez servi, si vous êtes resté en bons termes avec lui, ou un temple dans lequel vous avez trouvé une nouvelle maison. Lorsque vous êtes proche de votre temple, vous pouvez faire appel à des religieux pour vous aider, à condition que l’aide que vous demandiez ne soit pas dangereuse et que vous restiez en règle avec votre temple."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "J’idolâtre un héros particulier de ma foi, et renvoie constamment à ses actes et à son exemple."
+          },
+          {
+            "option_type": "string",
+            "string": "Je peux trouver un terrain d’entente entre les ennemis les plus féroces, ressentir de l’empathie pour eux et toujours travailler vers la paix."
+          },
+          {
+            "option_type": "string",
+            "string": "Je vois des présages dans chaque événement et action. Les dieux essaient de nous parler, nous avons juste besoin d’écouter."
+          },
+          { "option_type": "string", "string": "J’ai toujours une attitude optimiste." },
+          {
+            "option_type": "string",
+            "string": "Je cite (ou paraphrase) des textes sacrés et des proverbes dans presque toutes les situations."
+          },
+          {
+            "option_type": "string",
+            "string": "Je suis tolérant (ou intolérant) vis-à-vis des autres fois et je respecte (ou condamne) l’adoration des autres dieux."
+          },
+          {
+            "option_type": "string",
+            "string": "J’ai apprécié la bonne nourriture, les boissons et la haute société parmi l’élite de mon temple. La vie rude me fait grincer."
+          },
+          {
+            "option_type": "string",
+            "string": "J’ai passé tellement de temps dans mon temple que j’ai peu d’expérience pratique pour traiter avec les gens du monde extérieur."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Tradition. Les anciennes traditions de culte et de sacrifice doivent être préservées et respectées (Loyal).",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Loyal Bon",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Loyal Neutre",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Loyal Mauvais",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Charité. J’essaie toujours d’aider ceux dans le besoin, quel qu’en soit le coût (Bon).",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Loyal Bon",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutre Bon",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotique Bon",
+                "url": "/api/2014/alignments/chaotic-good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Progrès. Nous devons aider à mettre en place sur terre les changements que les dieux réalisent constamment (Chaotique).",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotique Bon",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotique Neutre",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotique Mauvais",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Pouvoir. J’espère un jour parvenir au sommet de la hiérarchie religieuse de ma foi (Loyal).",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Loyal Bon",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Loyal Neutre",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Loyal Mauvais",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Foi. J’ai confiance dans le fait que ma divinité guidera mes actions et que si je travaille dur, tout ira bien (Loyal).",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Loyal Bon",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Loyal Neutre",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Loyal Mauvais",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Aspiration. Je cherche à me montrer digne de la faveur de mon dieu en faisant correspondre mes actions avec ses enseignements (tout alignement).",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Loyal Bon",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutre Bon",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotique Bon",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Loyal Neutre",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              { "index": "neutral", "name": "Neutre", "url": "/api/2014/alignments/neutral" },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotique Neutre",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Loyal Mauvais",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutre Mauvais",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotique Mauvais",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Je cherche une ancienne relique de ma foi qui a été perdue il y a longtemps. Je mourrais pour la récupérer."
+          },
+          {
+            "option_type": "string",
+            "string": "Un jour je me vengerai de la hiérarchie corrompue de ce temple qui m’a accusé d’être un hérétique."
+          },
+          {
+            "option_type": "string",
+            "string": "Je dois ma vie au prêtre qui m’a recueilli quand mes parents sont morts."
+          },
+          {
+            "option_type": "string",
+            "string": "Tout ce que je fais est pour les gens ordinaires."
+          },
+          {
+            "option_type": "string",
+            "string": "Je ferais tout pour protéger le temple dans lequel je servais."
+          },
+          {
+            "option_type": "string",
+            "string": "Je cherche à préserver un texte sacré que mes ennemis veulent détruire car ils le considèrent hérétique."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Je juge sévèrement les autres, en partie parce que je suis encore plus sévère envers moi-même."
+          },
+          {
+            "option_type": "string",
+            "string": "J’ai trop confiance en ceux qui exercent le pouvoir au sein de la hiérarchie de mon temple."
+          },
+          {
+            "option_type": "string",
+            "string": "Ma piété me conduit parfois à faire confiance aveuglément à ceux qui professent la foi de mon dieu."
+          },
+          { "option_type": "string", "string": "Je suis inflexible dans ma pensée." },
+          {
+            "option_type": "string",
+            "string": "Je suis méfiant envers les étrangers et m’attends au pire de leur part."
+          },
+          {
+            "option_type": "string",
+            "string": "Une fois que j’ai un but, je deviens obsédé par celui-ci, au détriment du reste de ma vie."
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/backgrounds/acolyte"
+  }
+]
