@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.5.0](https://github.com/5e-bits/5e-database/compare/v5.4.0...v5.5.0) (2026-05-01)
+
+
+### Features
+
+* **language:** polish russian translations and add four collections ([#1106](https://github.com/5e-bits/5e-database/issues/1106)) ([da1dbef](https://github.com/5e-bits/5e-database/commit/da1dbefdd35567db7e7d59ceaff4518a64c10ee8))
+
 ## [5.4.0](https://github.com/5e-bits/5e-database/compare/v5.3.0...v5.4.0) (2026-05-01)
 
 
