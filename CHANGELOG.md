@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.5.1](https://github.com/5e-bits/5e-database/compare/v5.5.0...v5.5.1) (2026-05-05)
+
+
+### Bug Fixes
+
+* **accessibility:** clean headings structure in rule sections descriptions ([#1112](https://github.com/5e-bits/5e-database/issues/1112)) ([828257c](https://github.com/5e-bits/5e-database/commit/828257c4ca1be54b38162bb3b8c56345634cc809))
+
 ## [5.5.0](https://github.com/5e-bits/5e-database/compare/v5.4.0...v5.5.0) (2026-05-01)
 
 
