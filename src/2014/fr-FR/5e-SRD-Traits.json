@@ -1,0 +1,1723 @@
+[
+  {
+    "index": "darkvision",
+    "races": [
+      {
+        "index": "dwarf",
+        "name": "Nain",
+        "url": "/api/2014/races/dwarf"
+      },
+      {
+        "index": "elf",
+        "name": "Elfe",
+        "url": "/api/2014/races/elf"
+      },
+      {
+        "index": "gnome",
+        "name": "Gnome",
+        "url": "/api/2014/races/gnome"
+      },
+      {
+        "index": "half-elf",
+        "name": "Demi-Elfe",
+        "url": "/api/2014/races/half-elf"
+      },
+      {
+        "index": "half-orc",
+        "name": "Demi-Orc",
+        "url": "/api/2014/races/half-orc"
+      },
+      {
+        "index": "tiefling",
+        "name": "Tieffelin",
+        "url": "/api/2014/races/tiefling"
+      }
+    ],
+    "subraces": [],
+    "name": "Vision dans le noir",
+    "desc": [
+      "Habitué à vivre sous terre, vous disposez d’une vision supérieure dans l’obscurité et la pénombre. Dans un rayon de 18 m, vous voyez en conditions de lumière faible comme si la lumière était vive, et dans les ténèbres comme sous une lumière faible. Vous ne discernez pas les couleurs dans les ténèbres, mais percevez des nuances de gris."
+    ],
+    "proficiencies": [],
+    "url": "/api/2014/traits/darkvision"
+  },
+  {
+    "index": "dwarven-resilience",
+    "races": [
+      {
+        "index": "dwarf",
+        "name": "Nain",
+        "url": "/api/2014/races/dwarf"
+      }
+    ],
+    "subraces": [],
+    "name": "Résistance naine",
+    "desc": [
+      "Vous êtes avantagé aux jets de sauvegarde contre le poison et bénéficiez de la résistance aux dégâts de poison."
+    ],
+    "proficiencies": [],
+    "url": "/api/2014/traits/dwarven-resilience"
+  },
+  {
+    "index": "dwarven-combat-training",
+    "races": [
+      {
+        "index": "dwarf",
+        "name": "Nain",
+        "url": "/api/2014/races/dwarf"
+      }
+    ],
+    "subraces": [],
+    "name": "Entraînement martial nain",
+    "desc": [
+      "Vous avez la maîtrise de la hache d’armes, de la hachette, du marteau léger et du marteau de guerre."
+    ],
+    "proficiencies": [
+      {
+        "index": "battleaxes",
+        "name": "Haches d'armes",
+        "url": "/api/2014/proficiencies/battleaxes"
+      },
+      {
+        "index": "handaxes",
+        "name": "Hachettes",
+        "url": "/api/2014/proficiencies/handaxes"
+      },
+      {
+        "index": "light-hammers",
+        "name": "Marteaux légers",
+        "url": "/api/2014/proficiencies/light-hammers"
+      },
+      {
+        "index": "warhammers",
+        "name": "Marteaux de guerre",
+        "url": "/api/2014/proficiencies/warhammers"
+      }
+    ],
+    "url": "/api/2014/traits/dwarven-combat-training"
+  },
+  {
+    "index": "tool-proficiency",
+    "races": [
+      {
+        "index": "dwarf",
+        "name": "Nain",
+        "url": "/api/2014/races/dwarf"
+      }
+    ],
+    "subraces": [],
+    "name": "Maîtrise d’outils",
+    "desc": [
+      "Vous recevez la maîtrise des outils d’artisan de votre choix parmi : outils de forgeron, matériel de brasseur, outils de maçon."
+    ],
+    "proficiencies": [],
+    "proficiency_choices": {
+      "choose": 1,
+      "type": "proficiencies",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "smiths-tools",
+              "name": "Outils de forgeron",
+              "url": "/api/2014/proficiencies/smiths-tools"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "brewers-supplies",
+              "name": "Matériel de brasseur",
+              "url": "/api/2014/proficiencies/brewers-supplies"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "masons-tools",
+              "name": "Outils de maçon",
+              "url": "/api/2014/proficiencies/masons-tools"
+            }
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/traits/tool-proficiency"
+  },
+  {
+    "index": "stonecunning",
+    "races": [
+      {
+        "index": "dwarf",
+        "name": "Nain",
+        "url": "/api/2014/races/dwarf"
+      }
+    ],
+    "subraces": [],
+    "name": "Connaissance de la pierre",
+    "desc": [
+      "Chaque fois que vous effectuez un test d’Intelligence (Histoire) lié aux origines d’un travail de maçonnerie, on considère que vous avez la maîtrise de la compétence Histoire et vous appliquez le double de votre bonus de maîtrise au test, au lieu du simple bonus."
+    ],
+    "proficiencies": [],
+    "url": "/api/2014/traits/stonecunning"
+  },
+  {
+    "index": "dwarven-toughness",
+    "races": [],
+    "subraces": [
+      {
+        "index": "hill-dwarf",
+        "name": "Nain des collines",
+        "url": "/api/2014/subraces/hill-dwarf"
+      }
+    ],
+    "name": "Ténacité naine",
+    "desc": [
+      "Votre maximum de points de vie augmente de 1, et augmente encore de 1 chaque fois que vous gagnez un niveau."
+    ],
+    "proficiencies": [],
+    "url": "/api/2014/traits/dwarven-toughness"
+  },
+  {
+    "index": "keen-senses",
+    "races": [
+      {
+        "index": "elf",
+        "name": "Elfe",
+        "url": "/api/2014/races/elf"
+      }
+    ],
+    "subraces": [],
+    "name": "Sens aiguisés",
+    "desc": ["Vous avez la maîtrise de la compétence Perception."],
+    "proficiencies": [
+      {
+        "index": "skill-perception",
+        "name": "Compétence : Perception",
+        "url": "/api/2014/proficiencies/skill-perception"
+      }
+    ],
+    "url": "/api/2014/traits/keen-senses"
+  },
+  {
+    "index": "fey-ancestry",
+    "races": [
+      {
+        "index": "elf",
+        "name": "Elfe",
+        "url": "/api/2014/races/elf"
+      },
+      {
+        "index": "half-elf",
+        "name": "Demi-Elfe",
+        "url": "/api/2014/races/half-elf"
+      }
+    ],
+    "subraces": [],
+    "name": "Ascendance féerique",
+    "desc": [
+      "Vous êtes avantagé aux jets de sauvegarde contre l’état charmé et la magie ne peut pas vous endormir."
+    ],
+    "proficiencies": [],
+    "url": "/api/2014/traits/fey-ancestry"
+  },
+  {
+    "index": "trance",
+    "races": [
+      {
+        "index": "elf",
+        "name": "Elfe",
+        "url": "/api/2014/races/elf"
+      }
+    ],
+    "subraces": [],
+    "name": "Transe",
+    "desc": [
+      "Les elfes n’ont pas besoin de dormir. En lieu et place de sommeil, ils méditent profondément dans un état de conscience partielle, pendant 4 heures par jour. (Cette méditation est communément appelée « transe »). Elle peut s’accompagner de songes personnalisés qui sont en vérité des exercices mentaux, devenus au fil des ans une seconde nature. Une fois que vous terminez un tel repos, vous recevez les mêmes bénéfices qu’un humain émergeant de 8 heures de sommeil."
+    ],
+    "proficiencies": [],
+    "url": "/api/2014/traits/trance"
+  },
+  {
+    "index": "elf-weapon-training",
+    "races": [],
+    "subraces": [
+      {
+        "index": "high-elf",
+        "name": "Haut-elfe",
+        "url": "/api/2014/subraces/high-elf"
+      }
+    ],
+    "name": "Entraînement martial elfique",
+    "desc": [
+      "Vous avez la maîtrise de l’épée longue, de l’épée courte, de l’arc court et de l’arc long."
+    ],
+    "proficiencies": [
+      {
+        "index": "longswords",
+        "name": "Épées longues",
+        "url": "/api/2014/proficiencies/longswords"
+      },
+      {
+        "index": "shortswords",
+        "name": "Épées courtes",
+        "url": "/api/2014/proficiencies/shortswords"
+      },
+      {
+        "index": "shortbows",
+        "name": "Arcs courts",
+        "url": "/api/2014/proficiencies/shortbows"
+      },
+      {
+        "index": "longbows",
+        "name": "Arcs longs",
+        "url": "/api/2014/proficiencies/longbows"
+      }
+    ],
+    "url": "/api/2014/traits/elf-weapon-training"
+  },
+  {
+    "index": "high-elf-cantrip",
+    "races": [],
+    "subraces": [
+      {
+        "index": "high-elf",
+        "name": "Haut-elfe",
+        "url": "/api/2014/subraces/high-elf"
+      }
+    ],
+    "name": "Sort mineur",
+    "desc": [
+      "Vous connaissez un sort mineur de la liste de sorts du magicien (au choix). L’Intelligence est la caractéristique d’incantation correspondante."
+    ],
+    "proficiencies": [],
+    "trait_specific": {
+      "spell_options": {
+        "choose": 1,
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "light",
+                "name": "Lumière",
+                "url": "/api/2014/spells/light"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "mage-hand",
+                "name": "Main du mage",
+                "url": "/api/2014/spells/mage-hand"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "mending",
+                "name": "Réparation",
+                "url": "/api/2014/spells/mending"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "message",
+                "name": "Message",
+                "url": "/api/2014/spells/message"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "minor-illusion",
+                "name": "Illusion mineure",
+                "url": "/api/2014/spells/minor-illusion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "acid-splash",
+                "name": "Aspersion d’acide",
+                "url": "/api/2014/spells/acid-splash"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "prestidigitation",
+                "name": "Prestidigitation",
+                "url": "/api/2014/spells/prestidigitation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "ray-of-frost",
+                "name": "Rayon de givre",
+                "url": "/api/2014/spells/ray-of-frost"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "shocking-grasp",
+                "name": "Poigne électrique",
+                "url": "/api/2014/spells/shocking-grasp"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "true-strike",
+                "name": "Coup au but",
+                "url": "/api/2014/spells/true-strike"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "chill-touch",
+                "name": "Contact glacial",
+                "url": "/api/2014/spells/chill-touch"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "dancing-lights",
+                "name": "Lumières dansantes",
+                "url": "/api/2014/spells/dancing-lights"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "fire-bolt",
+                "name": "Trait de feu",
+                "url": "/api/2014/spells/fire-bolt"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "poison-spray",
+                "name": "Bouffée de poison",
+                "url": "/api/2014/spells/poison-spray"
+              }
+            }
+          ]
+        },
+        "type": "spell"
+      }
+    },
+    "url": "/api/2014/traits/high-elf-cantrip"
+  },
+  {
+    "index": "extra-language",
+    "races": [],
+    "subraces": [
+      {
+        "index": "high-elf",
+        "name": "Haut-elfe",
+        "url": "/api/2014/subraces/high-elf"
+      }
+    ],
+    "name": "Langue supplémentaire",
+    "desc": ["Vous parlez, lisez et écrivez une langue supplémentaire de votre choix."],
+    "proficiencies": [],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "dwarvish",
+              "name": "Nain",
+              "url": "/api/2014/languages/dwarvish"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "giant",
+              "name": "Géant",
+              "url": "/api/2014/languages/giant"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "gnomish",
+              "name": "Gnome",
+              "url": "/api/2014/languages/gnomish"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "goblin",
+              "name": "Gobelin",
+              "url": "/api/2014/languages/goblin"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "halfling",
+              "name": "Halfelin",
+              "url": "/api/2014/languages/halfling"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "orc",
+              "name": "Orc",
+              "url": "/api/2014/languages/orc"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "abyssal",
+              "name": "Abyssal",
+              "url": "/api/2014/languages/abyssal"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "celestial",
+              "name": "Céleste",
+              "url": "/api/2014/languages/celestial"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "draconic",
+              "name": "Draconique",
+              "url": "/api/2014/languages/draconic"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "deep-speech",
+              "name": "Profond",
+              "url": "/api/2014/languages/deep-speech"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "infernal",
+              "name": "Infernal",
+              "url": "/api/2014/languages/infernal"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "primordial",
+              "name": "Primordial",
+              "url": "/api/2014/languages/primordial"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "sylvan",
+              "name": "Sylvain",
+              "url": "/api/2014/languages/sylvan"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "undercommon",
+              "name": "Commun des profondeurs",
+              "url": "/api/2014/languages/undercommon"
+            }
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/traits/extra-language"
+  },
+  {
+    "index": "lucky",
+    "races": [
+      {
+        "index": "halfling",
+        "name": "Halfelin",
+        "url": "/api/2014/races/halfling"
+      }
+    ],
+    "subraces": [],
+    "name": "Chanceux",
+    "desc": [
+      "Lorsque vous obtenez un 1 sur le d20 d’un jet d’attaque, d’un test de caractéristique ou d’un jet de sauvegarde, vous pouvez relancer ce dé, auquel cas c’est le second résultat qui s’applique."
+    ],
+    "proficiencies": [],
+    "url": "/api/2014/traits/lucky"
+  },
+  {
+    "index": "brave",
+    "races": [
+      {
+        "index": "halfling",
+        "name": "Halfelin",
+        "url": "/api/2014/races/halfling"
+      }
+    ],
+    "subraces": [],
+    "name": "Brave",
+    "desc": ["Vous êtes avantagé aux jets de sauvegarde contre l’état effrayé."],
+    "proficiencies": [],
+    "url": "/api/2014/traits/brave"
+  },
+  {
+    "index": "halfling-nimbleness",
+    "races": [
+      {
+        "index": "halfling",
+        "name": "Halfelin",
+        "url": "/api/2014/races/halfling"
+      }
+    ],
+    "subraces": [],
+    "name": "Agilité halfeline",
+    "desc": [
+      "Vous pouvez vous déplacer à travers l’espace de toute créature dont la catégorie de taille est supérieure à la vôtre."
+    ],
+    "proficiencies": [],
+    "url": "/api/2014/traits/halfling-nimbleness"
+  },
+  {
+    "index": "naturally-stealthy",
+    "races": [],
+    "subraces": [
+      {
+        "index": "lightfoot-halfling",
+        "name": "Pied-léger",
+        "url": "/api/2014/subraces/lightfoot-halfling"
+      }
+    ],
+    "name": "Discrétion naturelle",
+    "desc": [
+      "Il vous suffit d’être derrière une créature dont la catégorie de taille est d’au moins un cran supérieure à la vôtre pour pouvoir tenter de vous cacher."
+    ],
+    "proficiencies": [],
+    "url": "/api/2014/traits/naturally-stealthy"
+  },
+  {
+    "index": "draconic-ancestry",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Drakéide",
+        "url": "/api/2014/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Ascendance draconique",
+    "desc": [
+      "Vous avez des ancêtres draconiques. Choisissez un type de dragon dans la table Ascendance draconique. Ce choix détermine votre souffle et votre résistance aux dégâts, comme indiqué dans la table."
+    ],
+    "proficiencies": [],
+    "trait_specific": {
+      "subtrait_options": {
+        "choose": 1,
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "draconic-ancestry-black",
+                "name": "Ascendance draconique (Noir)",
+                "url": "/api/2014/traits/draconic-ancestry-black"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "draconic-ancestry-blue",
+                "name": "Ascendance draconique (Bleu)",
+                "url": "/api/2014/traits/draconic-ancestry-blue"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "draconic-ancestry-brass",
+                "name": "Ascendance draconique (Airain)",
+                "url": "/api/2014/traits/draconic-ancestry-brass"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "draconic-ancestry-bronze",
+                "name": "Ascendance draconique (Bronze)",
+                "url": "/api/2014/traits/draconic-ancestry-bronze"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "draconic-ancestry-copper",
+                "name": "Ascendance draconique (Cuivre)",
+                "url": "/api/2014/traits/draconic-ancestry-copper"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "draconic-ancestry-gold",
+                "name": "Ascendance draconique (Or)",
+                "url": "/api/2014/traits/draconic-ancestry-gold"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "draconic-ancestry-green",
+                "name": "Ascendance draconique (Vert)",
+                "url": "/api/2014/traits/draconic-ancestry-green"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "draconic-ancestry-red",
+                "name": "Ascendance draconique (Rouge)",
+                "url": "/api/2014/traits/draconic-ancestry-red"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "draconic-ancestry-silver",
+                "name": "Ascendance draconique (Argent)",
+                "url": "/api/2014/traits/draconic-ancestry-silver"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "draconic-ancestry-white",
+                "name": "Ascendance draconique (Blanc)",
+                "url": "/api/2014/traits/draconic-ancestry-white"
+              }
+            }
+          ]
+        },
+        "type": "trait"
+      }
+    },
+    "url": "/api/2014/traits/draconic-ancestry"
+  },
+  {
+    "index": "draconic-ancestry-black",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Drakéide",
+        "url": "/api/2014/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Ascendance draconique (Noir)",
+    "desc": [
+      "Vous avez des ancêtres draconiques. Choisissez un type de dragon dans la table Ascendance draconique. Ce choix détermine votre souffle et votre résistance aux dégâts, comme indiqué dans la table."
+    ],
+    "parent": {
+      "index": "draconic-ancestry",
+      "name": "Ascendance draconique",
+      "url": "/api/2014/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "acid",
+        "name": "Acide",
+        "url": "/api/2014/damage-types/acid"
+      },
+      "breath_weapon": {
+        "name": "Souffle",
+        "desc": "Vous pouvez consacrer votre action à exhaler une vague d’énergie destructrice. Votre ascendance draconique détermine la taille, la forme et le type de dégâts de ce souffle. Quand vous utilisez votre souffle, chaque créature dans la zone d’effet effectue un jet de sauvegarde dont le type est déterminé par votre ascendance draconique. Le DD du jet de sauvegarde contre ce souffle est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature subit 2d6 dégâts en cas d’échec, la moitié en cas de réussite. La quantité de dégâts passe à 3d6 au niveau 6, à 4d6 au niveau 11 et à 5d6 au niveau 16. Une fois votre souffle utilisé, vous ne pouvez plus y recourir avant d’avoir terminé un repos court ou long.",
+        "area_of_effect": {
+          "size": 30,
+          "type": "line"
+        },
+        "usage": {
+          "type": "par repos",
+          "times": 1
+        },
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "acid",
+              "name": "Acide",
+              "url": "/api/2014/damage-types/acid"
+            },
+            "damage_at_character_level": {
+              "1": "2d6",
+              "6": "3d6",
+              "11": "4d6",
+              "16": "5d6"
+            }
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/traits/draconic-ancestry-black"
+  },
+  {
+    "index": "draconic-ancestry-blue",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Drakéide",
+        "url": "/api/2014/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Ascendance draconique (Bleu)",
+    "desc": [
+      "Vous avez des ancêtres draconiques. Choisissez un type de dragon dans la table Ascendance draconique. Ce choix détermine votre souffle et votre résistance aux dégâts, comme indiqué dans la table."
+    ],
+    "parent": {
+      "index": "draconic-ancestry",
+      "name": "Ascendance draconique",
+      "url": "/api/2014/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "lightning",
+        "name": "Foudre",
+        "url": "/api/2014/damage-types/lightning"
+      },
+      "breath_weapon": {
+        "name": "Souffle",
+        "desc": "Vous pouvez consacrer votre action à exhaler une vague d’énergie destructrice. Votre ascendance draconique détermine la taille, la forme et le type de dégâts de ce souffle. Quand vous utilisez votre souffle, chaque créature dans la zone d’effet effectue un jet de sauvegarde dont le type est déterminé par votre ascendance draconique. Le DD du jet de sauvegarde contre ce souffle est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature subit 2d6 dégâts en cas d’échec, la moitié en cas de réussite. La quantité de dégâts passe à 3d6 au niveau 6, à 4d6 au niveau 11 et à 5d6 au niveau 16. Une fois votre souffle utilisé, vous ne pouvez plus y recourir avant d’avoir terminé un repos court ou long.",
+        "area_of_effect": {
+          "size": 30,
+          "type": "line"
+        },
+        "usage": {
+          "type": "par repos",
+          "times": 1
+        },
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "lightning",
+              "name": "Foudre",
+              "url": "/api/2014/damage-types/lightning"
+            },
+            "damage_at_character_level": {
+              "1": "2d6",
+              "6": "3d6",
+              "11": "4d6",
+              "16": "5d6"
+            }
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/traits/draconic-ancestry-blue"
+  },
+  {
+    "index": "draconic-ancestry-brass",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Drakéide",
+        "url": "/api/2014/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Ascendance draconique (Airain)",
+    "desc": [
+      "Vous avez des ancêtres draconiques. Choisissez un type de dragon dans la table Ascendance draconique. Ce choix détermine votre souffle et votre résistance aux dégâts, comme indiqué dans la table."
+    ],
+    "parent": {
+      "index": "draconic-ancestry",
+      "name": "Ascendance draconique",
+      "url": "/api/2014/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "fire",
+        "name": "Feu",
+        "url": "/api/2014/damage-types/fire"
+      },
+      "breath_weapon": {
+        "name": "Souffle",
+        "desc": "Vous pouvez consacrer votre action à exhaler une vague d’énergie destructrice. Votre ascendance draconique détermine la taille, la forme et le type de dégâts de ce souffle. Quand vous utilisez votre souffle, chaque créature dans la zone d’effet effectue un jet de sauvegarde dont le type est déterminé par votre ascendance draconique. Le DD du jet de sauvegarde contre ce souffle est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature subit 2d6 dégâts en cas d’échec, la moitié en cas de réussite. La quantité de dégâts passe à 3d6 au niveau 6, à 4d6 au niveau 11 et à 5d6 au niveau 16. Une fois votre souffle utilisé, vous ne pouvez plus y recourir avant d’avoir terminé un repos court ou long.",
+        "area_of_effect": {
+          "size": 30,
+          "type": "line"
+        },
+        "usage": {
+          "type": "par repos",
+          "times": 1
+        },
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "fire",
+              "name": "Feu",
+              "url": "/api/2014/damage-types/fire"
+            },
+            "damage_at_character_level": {
+              "1": "2d6",
+              "6": "3d6",
+              "11": "4d6",
+              "16": "5d6"
+            }
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/traits/draconic-ancestry-brass"
+  },
+  {
+    "index": "draconic-ancestry-bronze",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Drakéide",
+        "url": "/api/2014/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Ascendance draconique (Bronze)",
+    "desc": [
+      "Vous avez des ancêtres draconiques. Choisissez un type de dragon dans la table Ascendance draconique. Ce choix détermine votre souffle et votre résistance aux dégâts, comme indiqué dans la table."
+    ],
+    "parent": {
+      "index": "draconic-ancestry",
+      "name": "Ascendance draconique",
+      "url": "/api/2014/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "lightning",
+        "name": "Foudre",
+        "url": "/api/2014/damage-types/lightning"
+      },
+      "breath_weapon": {
+        "name": "Souffle",
+        "desc": "Vous pouvez consacrer votre action à exhaler une vague d’énergie destructrice. Votre ascendance draconique détermine la taille, la forme et le type de dégâts de ce souffle. Quand vous utilisez votre souffle, chaque créature dans la zone d’effet effectue un jet de sauvegarde dont le type est déterminé par votre ascendance draconique. Le DD du jet de sauvegarde contre ce souffle est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature subit 2d6 dégâts en cas d’échec, la moitié en cas de réussite. La quantité de dégâts passe à 3d6 au niveau 6, à 4d6 au niveau 11 et à 5d6 au niveau 16. Une fois votre souffle utilisé, vous ne pouvez plus y recourir avant d’avoir terminé un repos court ou long.",
+        "area_of_effect": {
+          "size": 30,
+          "type": "line"
+        },
+        "usage": {
+          "type": "par repos",
+          "times": 1
+        },
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "lightning",
+              "name": "Foudre",
+              "url": "/api/2014/damage-types/lightning"
+            },
+            "damage_at_character_level": {
+              "1": "2d6",
+              "6": "3d6",
+              "11": "4d6",
+              "16": "5d6"
+            }
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/traits/draconic-ancestry-bronze"
+  },
+  {
+    "index": "draconic-ancestry-copper",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Drakéide",
+        "url": "/api/2014/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Ascendance draconique (Cuivre)",
+    "desc": [
+      "Vous avez des ancêtres draconiques. Choisissez un type de dragon dans la table Ascendance draconique. Ce choix détermine votre souffle et votre résistance aux dégâts, comme indiqué dans la table."
+    ],
+    "parent": {
+      "index": "draconic-ancestry",
+      "name": "Ascendance draconique",
+      "url": "/api/2014/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "acid",
+        "name": "Acide",
+        "url": "/api/2014/damage-types/acid"
+      },
+      "breath_weapon": {
+        "name": "Souffle",
+        "desc": "Vous pouvez consacrer votre action à exhaler une vague d’énergie destructrice. Votre ascendance draconique détermine la taille, la forme et le type de dégâts de ce souffle. Quand vous utilisez votre souffle, chaque créature dans la zone d’effet effectue un jet de sauvegarde dont le type est déterminé par votre ascendance draconique. Le DD du jet de sauvegarde contre ce souffle est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature subit 2d6 dégâts en cas d’échec, la moitié en cas de réussite. La quantité de dégâts passe à 3d6 au niveau 6, à 4d6 au niveau 11 et à 5d6 au niveau 16. Une fois votre souffle utilisé, vous ne pouvez plus y recourir avant d’avoir terminé un repos court ou long.",
+        "area_of_effect": {
+          "size": 30,
+          "type": "line"
+        },
+        "usage": {
+          "type": "par repos",
+          "times": 1
+        },
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "acid",
+              "name": "Acide",
+              "url": "/api/2014/damage-types/acid"
+            },
+            "damage_at_character_level": {
+              "1": "2d6",
+              "6": "3d6",
+              "11": "4d6",
+              "16": "5d6"
+            }
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/traits/draconic-ancestry-copper"
+  },
+  {
+    "index": "draconic-ancestry-gold",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Drakéide",
+        "url": "/api/2014/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Ascendance draconique (Or)",
+    "desc": [
+      "Vous avez des ancêtres draconiques. Choisissez un type de dragon dans la table Ascendance draconique. Ce choix détermine votre souffle et votre résistance aux dégâts, comme indiqué dans la table."
+    ],
+    "parent": {
+      "index": "draconic-ancestry",
+      "name": "Ascendance draconique",
+      "url": "/api/2014/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "fire",
+        "name": "Feu",
+        "url": "/api/2014/damage-types/fire"
+      },
+      "breath_weapon": {
+        "name": "Souffle",
+        "desc": "Vous pouvez consacrer votre action à exhaler une vague d’énergie destructrice. Votre ascendance draconique détermine la taille, la forme et le type de dégâts de ce souffle. Quand vous utilisez votre souffle, chaque créature dans la zone d’effet effectue un jet de sauvegarde dont le type est déterminé par votre ascendance draconique. Le DD du jet de sauvegarde contre ce souffle est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature subit 2d6 dégâts en cas d’échec, la moitié en cas de réussite. La quantité de dégâts passe à 3d6 au niveau 6, à 4d6 au niveau 11 et à 5d6 au niveau 16. Une fois votre souffle utilisé, vous ne pouvez plus y recourir avant d’avoir terminé un repos court ou long.",
+        "area_of_effect": {
+          "size": 15,
+          "type": "cone"
+        },
+        "usage": {
+          "type": "par repos",
+          "times": 1
+        },
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "fire",
+              "name": "Feu",
+              "url": "/api/2014/damage-types/fire"
+            },
+            "damage_at_character_level": {
+              "1": "2d6",
+              "6": "3d6",
+              "11": "4d6",
+              "16": "5d6"
+            }
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/traits/draconic-ancestry-gold"
+  },
+  {
+    "index": "draconic-ancestry-green",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Drakéide",
+        "url": "/api/2014/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Ascendance draconique (Vert)",
+    "desc": [
+      "Vous avez des ancêtres draconiques. Choisissez un type de dragon dans la table Ascendance draconique. Ce choix détermine votre souffle et votre résistance aux dégâts, comme indiqué dans la table."
+    ],
+    "parent": {
+      "index": "draconic-ancestry",
+      "name": "Ascendance draconique",
+      "url": "/api/2014/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "poison",
+        "name": "Poison",
+        "url": "/api/2014/damage-types/poison"
+      },
+      "breath_weapon": {
+        "name": "Souffle",
+        "desc": "Vous pouvez consacrer votre action à exhaler une vague d’énergie destructrice. Votre ascendance draconique détermine la taille, la forme et le type de dégâts de ce souffle. Quand vous utilisez votre souffle, chaque créature dans la zone d’effet effectue un jet de sauvegarde dont le type est déterminé par votre ascendance draconique. Le DD du jet de sauvegarde contre ce souffle est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature subit 2d6 dégâts en cas d’échec, la moitié en cas de réussite. La quantité de dégâts passe à 3d6 au niveau 6, à 4d6 au niveau 11 et à 5d6 au niveau 16. Une fois votre souffle utilisé, vous ne pouvez plus y recourir avant d’avoir terminé un repos court ou long.",
+        "area_of_effect": {
+          "size": 15,
+          "type": "cone"
+        },
+        "usage": {
+          "type": "par repos",
+          "times": 1
+        },
+        "dc": {
+          "dc_type": {
+            "index": "con",
+            "name": "CON",
+            "url": "/api/2014/ability-scores/con"
+          },
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/2014/damage-types/poison"
+            },
+            "damage_at_character_level": {
+              "1": "2d6",
+              "6": "3d6",
+              "11": "4d6",
+              "16": "5d6"
+            }
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/traits/draconic-ancestry-green"
+  },
+  {
+    "index": "draconic-ancestry-red",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Drakéide",
+        "url": "/api/2014/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Ascendance draconique (Rouge)",
+    "desc": [
+      "Vous avez des ancêtres draconiques. Choisissez un type de dragon dans la table Ascendance draconique. Ce choix détermine votre souffle et votre résistance aux dégâts, comme indiqué dans la table."
+    ],
+    "parent": {
+      "index": "draconic-ancestry",
+      "name": "Ascendance draconique",
+      "url": "/api/2014/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "fire",
+        "name": "Feu",
+        "url": "/api/2014/damage-types/fire"
+      },
+      "breath_weapon": {
+        "name": "Souffle",
+        "desc": "Vous pouvez consacrer votre action à exhaler une vague d’énergie destructrice. Votre ascendance draconique détermine la taille, la forme et le type de dégâts de ce souffle. Quand vous utilisez votre souffle, chaque créature dans la zone d’effet effectue un jet de sauvegarde dont le type est déterminé par votre ascendance draconique. Le DD du jet de sauvegarde contre ce souffle est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature subit 2d6 dégâts en cas d’échec, la moitié en cas de réussite. La quantité de dégâts passe à 3d6 au niveau 6, à 4d6 au niveau 11 et à 5d6 au niveau 16. Une fois votre souffle utilisé, vous ne pouvez plus y recourir avant d’avoir terminé un repos court ou long.",
+        "area_of_effect": {
+          "size": 15,
+          "type": "cone"
+        },
+        "usage": {
+          "type": "par repos",
+          "times": 1
+        },
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "fire",
+              "name": "Feu",
+              "url": "/api/2014/damage-types/fire"
+            },
+            "damage_at_character_level": {
+              "1": "2d6",
+              "6": "3d6",
+              "11": "4d6",
+              "16": "5d6"
+            }
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/traits/draconic-ancestry-red"
+  },
+  {
+    "index": "draconic-ancestry-silver",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Drakéide",
+        "url": "/api/2014/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Ascendance draconique (Argent)",
+    "desc": [
+      "Vous avez des ancêtres draconiques. Choisissez un type de dragon dans la table Ascendance draconique. Ce choix détermine votre souffle et votre résistance aux dégâts, comme indiqué dans la table."
+    ],
+    "parent": {
+      "index": "draconic-ancestry",
+      "name": "Ascendance draconique",
+      "url": "/api/2014/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "cold",
+        "name": "Froid",
+        "url": "/api/2014/damage-types/cold"
+      },
+      "breath_weapon": {
+        "name": "Souffle",
+        "desc": "Vous pouvez consacrer votre action à exhaler une vague d’énergie destructrice. Votre ascendance draconique détermine la taille, la forme et le type de dégâts de ce souffle. Quand vous utilisez votre souffle, chaque créature dans la zone d’effet effectue un jet de sauvegarde dont le type est déterminé par votre ascendance draconique. Le DD du jet de sauvegarde contre ce souffle est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature subit 2d6 dégâts en cas d’échec, la moitié en cas de réussite. La quantité de dégâts passe à 3d6 au niveau 6, à 4d6 au niveau 11 et à 5d6 au niveau 16. Une fois votre souffle utilisé, vous ne pouvez plus y recourir avant d’avoir terminé un repos court ou long.",
+        "area_of_effect": {
+          "size": 15,
+          "type": "cone"
+        },
+        "usage": {
+          "type": "par repos",
+          "times": 1
+        },
+        "dc": {
+          "dc_type": {
+            "index": "con",
+            "name": "CON",
+            "url": "/api/2014/ability-scores/con"
+          },
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "cold",
+              "name": "Froid",
+              "url": "/api/2014/damage-types/cold"
+            },
+            "damage_at_character_level": {
+              "1": "2d6",
+              "6": "3d6",
+              "11": "4d6",
+              "16": "5d6"
+            }
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/traits/draconic-ancestry-silver"
+  },
+  {
+    "index": "draconic-ancestry-white",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Drakéide",
+        "url": "/api/2014/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Ascendance draconique (Blanc)",
+    "desc": [
+      "Vous avez des ancêtres draconiques. Choisissez un type de dragon dans la table Ascendance draconique. Ce choix détermine votre souffle et votre résistance aux dégâts, comme indiqué dans la table."
+    ],
+    "parent": {
+      "index": "draconic-ancestry",
+      "name": "Ascendance draconique",
+      "url": "/api/2014/traits/draconic-ancestry"
+    },
+    "proficiencies": [],
+    "trait_specific": {
+      "damage_type": {
+        "index": "cold",
+        "name": "Froid",
+        "url": "/api/2014/damage-types/cold"
+      },
+      "breath_weapon": {
+        "name": "Souffle",
+        "desc": "Vous pouvez consacrer votre action à exhaler une vague d’énergie destructrice. Votre ascendance draconique détermine la taille, la forme et le type de dégâts de ce souffle. Quand vous utilisez votre souffle, chaque créature dans la zone d’effet effectue un jet de sauvegarde dont le type est déterminé par votre ascendance draconique. Le DD du jet de sauvegarde contre ce souffle est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature subit 2d6 dégâts en cas d’échec, la moitié en cas de réussite. La quantité de dégâts passe à 3d6 au niveau 6, à 4d6 au niveau 11 et à 5d6 au niveau 16. Une fois votre souffle utilisé, vous ne pouvez plus y recourir avant d’avoir terminé un repos court ou long.",
+        "area_of_effect": {
+          "size": 15,
+          "type": "cone"
+        },
+        "usage": {
+          "type": "par repos",
+          "times": 1
+        },
+        "dc": {
+          "dc_type": {
+            "index": "con",
+            "name": "CON",
+            "url": "/api/2014/ability-scores/con"
+          },
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "cold",
+              "name": "Froid",
+              "url": "/api/2014/damage-types/cold"
+            },
+            "damage_at_character_level": {
+              "1": "2d6",
+              "6": "3d6",
+              "11": "4d6",
+              "16": "5d6"
+            }
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/traits/draconic-ancestry-white"
+  },
+  {
+    "index": "breath-weapon",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Drakéide",
+        "url": "/api/2014/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Souffle",
+    "desc": [
+      "Vous pouvez Vous pouvez consacrer votre action à exhaler une vague d’énergie destructrice. Votre ascendance draconique détermine la taille, la forme et le type de dégâts de ce souffle.",
+      "Quand vous utilisez votre souffle, chaque créature dans la zone d’effet effectue un jet de sauvegarde dont le type est déterminé par votre ascendance draconique. Le DD du jet de sauvegarde contre ce souffle est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature subit 2d6 dégâts en cas d’échec, la moitié en cas de réussite. La quantité de dégâts passe à 3d6 au niveau 6, à 4d6 au niveau 11 et à 5d6 au niveau 16.",
+      "Une fois votre souffle utilisé, vous ne pouvez plus y recourir avant d’avoir terminé un repos court ou long."
+    ],
+    "proficiencies": [],
+    "url": "/api/2014/traits/breath-weapon"
+  },
+  {
+    "index": "damage-resistance",
+    "races": [
+      {
+        "index": "dragonborn",
+        "name": "Drakéide",
+        "url": "/api/2014/races/dragonborn"
+      }
+    ],
+    "subraces": [],
+    "name": "Résistance aux dégâts",
+    "desc": [
+      "Vous bénéficiez de la résistance au type de dégâts associé à votre ascendance draconique."
+    ],
+    "proficiencies": [],
+    "url": "/api/2014/traits/damage-resistance"
+  },
+  {
+    "index": "gnome-cunning",
+    "races": [
+      {
+        "index": "gnome",
+        "name": "Gnome",
+        "url": "/api/2014/races/gnome"
+      }
+    ],
+    "subraces": [],
+    "name": "Ruse gnome",
+    "desc": [
+      "Vous êtes avantagé à tous les jets de sauvegarde d’Intelligence, de Sagesse et de Charisme contre la magie."
+    ],
+    "proficiencies": [],
+    "url": "/api/2014/traits/gnome-cunning"
+  },
+  {
+    "index": "artificers-lore",
+    "races": [],
+    "subraces": [
+      {
+        "index": "rock-gnome",
+        "name": "Gnome des roches",
+        "url": "/api/2014/subraces/rock-gnome"
+      }
+    ],
+    "name": "Connaissances en ingénierie",
+    "desc": [
+      "Chaque fois que vous effectuez un test d’Intelligence (Histoire) relatif aux objets magiques, alchimiques ou technologiques, vous ajoutez le double de votre bonus de maîtrise au lieu du bonus de maîtrise habituel."
+    ],
+    "proficiencies": [],
+    "url": "/api/2014/traits/artificers-lore"
+  },
+  {
+    "index": "tinker",
+    "races": [],
+    "subraces": [
+      {
+        "index": "rock-gnome",
+        "name": "Rock Gnome",
+        "url": "/api/2014/subraces/rock-gnome"
+      }
+    ],
+    "name": "Bricoleur",
+    "desc": [
+      "Vous avez la maîtrise des outils d’artisan (outils de bricoleur). Au moyen de ces outils et pour peu que vous passiez 1 heure et dépensiez 10 po de matériaux, vous construisez un mécanisme de taille TP (CA 5, 1 pv). Ce mécanisme cesse de fonctionner au bout de 24 heures (sauf si vous consacrez 1 heure à le réparer pour le maintenir en état de marche) ou si vous consacrez votre action à le démanteler. Vous pouvez alors récupérer les matériaux qui ont servi à sa création. Vous pouvez avoir jusqu’à trois mécanismes de ce type fonctionnant en même temps.",
+      "Quand vous créez un appareil, choisissez l’une des options suivantes :",
+      "Boîte à musique. Quand elle est ouverte, cette boîte à musique joue une mélodie à un volume sonore modéré. La boîte à musique cesse de jouer lorsqu’elle atteint la fin de la chanson ou si elle est refermée.",
+      "Boutefeu. L’appareil produit une petite flamme qui permet d’allumer une bougie, une torche ou un feu de camp. Utiliser cet appareil nécessite que vous y consacriez votre action.",
+      "Jouet mécanique. Ce jouet est un animal, un monstre ou une personne mécanique : une grenouille, une souris, un oiseau, un dragon ou un soldat, par exemple. Placé au sol, le jouet se déplace de 1,50 m à chacun de vos tours dans une direction aléatoire. Il émet un bruit en rapport avec la créature qu’il représente."
+    ],
+    "proficiencies": [
+      {
+        "index": "tinkers-tools",
+        "name": "Outils de bricoleur",
+        "url": "/api/2014/proficiencies/tinkers-tools"
+      }
+    ],
+    "url": "/api/2014/traits/tinker"
+  },
+  {
+    "index": "skill-versatility",
+    "races": [
+      {
+        "index": "half-elf",
+        "name": "Demi-Elfe",
+        "url": "/api/2014/races/half-elf"
+      }
+    ],
+    "subraces": [],
+    "name": "Polyvalence",
+    "desc": ["Vous recevez la maîtrise de deux compétences de votre choix."],
+    "proficiencies": [],
+    "proficiency_choices": {
+      "choose": 2,
+      "type": "proficiencies",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-acrobatics",
+              "name": "Compétence : Acrobaties",
+              "url": "/api/2014/proficiencies/skill-acrobatics"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-animal-handling",
+              "name": "Compétence : Dressage",
+              "url": "/api/2014/proficiencies/skill-animal-handling"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-arcana",
+              "name": "Compétence : Arcanes",
+              "url": "/api/2014/proficiencies/skill-arcana"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-athletics",
+              "name": "Compétence : Athlétisme",
+              "url": "/api/2014/proficiencies/skill-athletics"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-deception",
+              "name": "Compétence : Tromperie",
+              "url": "/api/2014/proficiencies/skill-deception"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-history",
+              "name": "Compétence : Histoire",
+              "url": "/api/2014/proficiencies/skill-history"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-insight",
+              "name": "Compétence : Intuition",
+              "url": "/api/2014/proficiencies/skill-insight"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-intimidation",
+              "name": "Compétence : Intimidation",
+              "url": "/api/2014/proficiencies/skill-intimidation"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-investigation",
+              "name": "Compétence : Investigation",
+              "url": "/api/2014/proficiencies/skill-investigation"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-medicine",
+              "name": "Compétence : Médecine",
+              "url": "/api/2014/proficiencies/skill-medicine"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-nature",
+              "name": "Compétence : Nature",
+              "url": "/api/2014/proficiencies/skill-nature"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-perception",
+              "name": "Compétence : Perception",
+              "url": "/api/2014/proficiencies/skill-perception"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-performance",
+              "name": "Compétence : Représentation",
+              "url": "/api/2014/proficiencies/skill-performance"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-persuasion",
+              "name": "Compétence : Persuasion",
+              "url": "/api/2014/proficiencies/skill-persuasion"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-religion",
+              "name": "Compétence : Religion",
+              "url": "/api/2014/proficiencies/skill-religion"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-sleight-of-hand",
+              "name": "Compétence : Escamotage",
+              "url": "/api/2014/proficiencies/skill-sleight-of-hand"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-stealth",
+              "name": "Compétence : Discrétion",
+              "url": "/api/2014/proficiencies/skill-stealth"
+            }
+          },
+          {
+            "option_type": "reference",
+            "item": {
+              "index": "skill-survival",
+              "name": "Compétence : Survie",
+              "url": "/api/2014/proficiencies/skill-survival"
+            }
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/traits/skill-versatility"
+  },
+  {
+    "index": "menacing",
+    "races": [
+      {
+        "index": "half-orc",
+        "name": "Demi-Orc",
+        "url": "/api/2014/races/half-orc"
+      }
+    ],
+    "subraces": [],
+    "name": "Menaçant",
+    "desc": ["Vous recevez la maîtrise de la compétence Intimidation."],
+    "proficiencies": [
+      {
+        "index": "skill-intimidation",
+        "name": "Compétence : Intimidation",
+        "url": "/api/2014/proficiencies/skill-intimidation"
+      }
+    ],
+    "url": "/api/2014/traits/menacing"
+  },
+  {
+    "index": "relentless-endurance",
+    "races": [
+      {
+        "index": "half-orc",
+        "name": "Demi-Orc",
+        "url": "/api/2014/races/half-orc"
+      }
+    ],
+    "subraces": [],
+    "name": "Acharnement",
+    "desc": [
+      "Si vous tombez à 0 point de vie sans être tué sur le coup, vous pouvez en fait vous retrouver à 1 point de vie. Une fois que vous avez utilisé cette aptitude, vous devez terminer un repos long pour pouvoir y recourir de nouveau."
+    ],
+    "proficiencies": [],
+    "url": "/api/2014/traits/relentless-endurance"
+  },
+  {
+    "index": "savage-attacks",
+    "races": [
+      {
+        "index": "half-orc",
+        "name": "Demi-Orc",
+        "url": "/api/2014/races/half-orc"
+      }
+    ],
+    "subraces": [],
+    "name": "Sauvagerie",
+    "desc": [
+      "Quand vous obtenez un coup critique avec une attaque d’arme au corps à corps, vous pouvez lancer l’un des dés de dégâts de l’arme une fois de plus et en ajouter le résultat aux dégâts supplémentaires du coup critique."
+    ],
+    "proficiencies": [],
+    "url": "/api/2014/traits/savage-attacks"
+  },
+  {
+    "index": "hellish-resistance",
+    "races": [
+      {
+        "index": "tiefling",
+        "name": "Tieffelin",
+        "url": "/api/2014/races/tiefling"
+      }
+    ],
+    "subraces": [],
+    "name": "Résistance infernale",
+    "desc": ["Vous bénéficiez de la résistance aux dégâts de feu."],
+    "proficiencies": [],
+    "url": "/api/2014/traits/hellish-resistance"
+  },
+  {
+    "index": "infernal-legacy",
+    "races": [
+      {
+        "index": "tiefling",
+        "name": "Tieffelin",
+        "url": "/api/2014/races/tiefling"
+      }
+    ],
+    "subraces": [],
+    "name": "Ascendance infernale",
+    "desc": [
+      "Vous connaissez le sort mineur thaumaturgie. Lorsque vous atteignez le niveau 3, vous pouvez lancer une fois le sort représailles infernales en tant que sort de 2e niveau par l’intermédiaire de ce trait et vous récupérez cette faculté en terminant un repos long. Lorsque vous atteignez le niveau 5, vous pouvez lancer le sort ténèbres une fois par l’intermédiaire de ce trait et récupérez cette faculté en terminant un repos long. Le Charisme est la caractéristique d’incantation pour ces sorts."
+    ],
+    "proficiencies": [],
+    "url": "/api/2014/traits/infernal-legacy"
+  }
+]
