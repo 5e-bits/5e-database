@@ -1,13 +1,13 @@
 import { z } from 'zod';
 import { APIReferenceSchema, ChoiceSchema } from '../../schemas/common';
 
-const SpellTraitSchema = z.object({
+const SpellTraitSchema = z.strictObject({
   spell: APIReferenceSchema,
   uses: z.string().optional(),
   recovery: z.string().optional(),
 });
 
-export const TraitSchema = z.object({
+export const TraitSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
   url: z.string(),

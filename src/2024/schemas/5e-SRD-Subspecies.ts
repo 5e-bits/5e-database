@@ -1,14 +1,14 @@
 import { z } from 'zod';
 import { APIReferenceSchema } from '../../schemas/common';
 
-const SubspeciesTraitSchema = z.object({
+const SubspeciesTraitSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
   url: z.string(),
   level: z.number(),
 });
 
-export const SubspeciesSchema = z.object({
+export const SubspeciesSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
   url: z.string(),

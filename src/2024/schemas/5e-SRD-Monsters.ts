@@ -1,7 +1,12 @@
 import { z } from 'zod';
-import { APIReferenceSchema, ChoiceSchema, DamageSchema, DifficultyClassSchema } from '../../schemas/common';
+import {
+  APIReferenceSchema,
+  ChoiceSchema,
+  DamageSchema,
+  DifficultyClassSchema,
+} from '../../schemas/common';
 
-const MonsterSpeedSchema = z.object({
+const MonsterSpeedSchema = z.strictObject({
   walk: z.string().optional(),
   burrow: z.string().optional(),
   climb: z.string().optional(),
@@ -10,7 +15,7 @@ const MonsterSpeedSchema = z.object({
   hover: z.boolean().optional(),
 });
 
-const SenseSchema = z.object({
+const SenseSchema = z.strictObject({
   passive_perception: z.number(),
   blindsight: z.string().optional(),
   darkvision: z.string().optional(),
@@ -18,7 +23,7 @@ const SenseSchema = z.object({
   truesight: z.string().optional(),
 });
 
-const MonsterProficiencySchema = z.object({
+const MonsterProficiencySchema = z.strictObject({
   value: z.number(),
   proficiency: APIReferenceSchema,
 });
@@ -32,7 +37,7 @@ const MonsterArmorClassSchema = z.strictObject({
   desc: z.string().optional(),
 });
 
-const SpecialAbilityUsageSchema = z.object({
+const SpecialAbilityUsageSchema = z.strictObject({
   type: z.string(),
   times: z.number().optional(),
   times_in_lair: z.number().optional(),
@@ -64,10 +69,11 @@ const SpellcastingSchema = z.strictObject({
   slots: z.record(z.string(), z.number()).optional(),
 });
 
-const ActionUsageSchema = z.object({
+const ActionUsageSchema = z.strictObject({
   type: z.string(),
   dice: z.string().optional(),
   min_value: z.number().optional(),
+  times: z.number().optional(),
 });
 
 const MonsterActionItemSchema = z.strictObject({
@@ -97,7 +103,7 @@ const MonsterActionSchema = z.strictObject({
   spellcasting: SpellcastingSchema.optional(),
 });
 
-const LegendaryActionSchema = z.object({
+const LegendaryActionSchema = z.strictObject({
   name: z.string(),
   desc: z.string(),
   attack_bonus: z.number().optional(),
@@ -105,7 +111,7 @@ const LegendaryActionSchema = z.object({
   dc: DifficultyClassSchema.optional(),
 });
 
-const ReactionSchema = z.object({
+const ReactionSchema = z.strictObject({
   name: z.string(),
   desc: z.string(),
   dc: DifficultyClassSchema.optional(),
@@ -121,7 +127,7 @@ const SpecialAbilitySchema = z.strictObject({
   spellcasting: SpellcastingSchema.optional(),
 });
 
-export const MonsterSchema = z.object({
+export const MonsterSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
   size: z.string(),

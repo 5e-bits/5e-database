@@ -1,35 +1,35 @@
 import { z } from 'zod';
 import { APIReferenceSchema, ChoiceSchema } from '../../schemas/common';
 
-const SpellcastingInfoSchema = z.object({
+const SpellcastingInfoSchema = z.strictObject({
   name: z.string(),
   desc: z.array(z.string()),
 });
 
-const SpellcastingSchema = z.object({
+const SpellcastingSchema = z.strictObject({
   level: z.number(),
   spellcasting_ability: APIReferenceSchema,
   info: z.array(SpellcastingInfoSchema),
 });
 
-const StartingEquipmentSchema = z.object({
+const StartingEquipmentSchema = z.strictObject({
   equipment: APIReferenceSchema,
   quantity: z.number(),
 });
 
-const MultiClassingPrereqSchema = z.object({
+const MultiClassingPrereqSchema = z.strictObject({
   ability_score: APIReferenceSchema.optional(),
   minimum_score: z.number(),
 });
 
-const MultiClassingSchema = z.object({
+const MultiClassingSchema = z.strictObject({
   prerequisites: z.array(MultiClassingPrereqSchema).optional(),
   prerequisite_options: ChoiceSchema.optional(),
   proficiencies: z.array(APIReferenceSchema).optional(),
   proficiency_choices: z.array(ChoiceSchema).optional(),
 });
 
-export const ClassSchema = z.object({
+export const ClassSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
   hit_die: z.number(),

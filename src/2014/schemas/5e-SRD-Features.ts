@@ -16,7 +16,7 @@ const FeaturePrerequisiteSchema = z.strictObject({
   spell: z.string().optional(),
 });
 
-export const FeatureSchema = z.object({
+export const FeatureSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
   level: z.number(),

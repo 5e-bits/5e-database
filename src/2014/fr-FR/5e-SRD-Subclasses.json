@@ -1,0 +1,1801 @@
+[
+  {
+    "index": "berserker",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbare",
+      "url": "/api/2014/classes/barbarian"
+    },
+    "name": "Berserker",
+    "subclass_flavor": "Voie primitive",
+    "desc": [
+      "Pour certains barbares, la rage est un moyen de parvenir à une fin… et cette fin est la violence. La voie du berserker est un chemin pavé de fureur débridée et poisseux de sang. Quand vous entrez dans la rage du berserker, tout à l’ivresse de la bataille, vous faites fi de votre santé comme de votre bien-être."
+    ],
+    "subclass_levels": "/api/2014/subclasses/berserker/levels",
+    "url": "/api/2014/subclasses/berserker"
+  },
+  {
+    "index": "lore",
+    "class": {
+      "index": "bard",
+      "name": "Barde",
+      "url": "/api/2014/classes/bard"
+    },
+    "name": "Savoir",
+    "subclass_flavor": "Collège du Savoir",
+    "desc": [
+      "Les connaissances des bardes du Collège du Savoir portent sur presque tous les sujets, les bribes de savoir qu’ils détiennent allant des manuscrits les plus savants aux contes ruraux. Qu’ils entonnent une ballade populaire dans une taverne ou interprètent une composition complexe à la cour d’un roi, ces bardes usent de leurs talents pour captiver l’auditoire. Et quand les applaudissements cessent, l’auditoire se surprend parfois à remettre en question certaines évidences, comme sa foi dans le clergé local ou sa loyauté envers le souverain du cru."
+    ],
+    "subclass_levels": "/api/2014/subclasses/lore/levels",
+    "url": "/api/2014/subclasses/lore"
+  },
+  {
+    "index": "life",
+    "class": {
+      "index": "cleric",
+      "name": "Clerc",
+      "url": "/api/2014/classes/cleric"
+    },
+    "name": "Vie",
+    "subclass_flavor": "Domaine divin",
+    "desc": [
+      "Le domaine de la Vie est centré sur l’énergie positive, l’une des forces fondamentales de l’univers, à l’origine de toute forme de vie. Les dieux de la Vie favorisent la vitalité et la santé en soignant les malades et les blessés, en veillant sur les indigents et en détruisant les forces de la non-vie. La grande majorité des divinités non mauvaises exercent une influence sur ce domaine, notamment les dieux et déesses agricoles (comme Chauntéa, Arawai et Déméter), les dieux du soleil (comme Lathandre, Pélor et Rê-Horakhty), les dieux de la guérison et de l’endurance (comme Ilmater, Mishakal, Apollon et Diancecht) et les dieux du foyer et de la communauté (comme Hestia, Hathor et Boldrei)."
+    ],
+    "spells": [
+      {
+        "prerequisites": [
+          {
+            "index": "cleric-1",
+            "type": "level",
+            "name": "Clerc 1",
+            "url": "/api/2014/classes/cleric/levels/1"
+          }
+        ],
+        "spell": {
+          "index": "bless",
+          "name": "Bénédiction",
+          "url": "/api/2014/spells/bless"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "cleric-1",
+            "type": "level",
+            "name": "Clerc 1",
+            "url": "/api/2014/classes/cleric/levels/1"
+          }
+        ],
+        "spell": {
+          "index": "cure-wounds",
+          "name": "Soins",
+          "url": "/api/2014/spells/cure-wounds"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "cleric-3",
+            "type": "level",
+            "name": "Clerc 3",
+            "url": "/api/2014/classes/cleric/levels/3"
+          }
+        ],
+        "spell": {
+          "index": "lesser-restoration",
+          "name": "Restauration partielle",
+          "url": "/api/2014/spells/lesser-restoration"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "cleric-3",
+            "type": "level",
+            "name": "Clerc 3",
+            "url": "/api/2014/classes/cleric/levels/3"
+          }
+        ],
+        "spell": {
+          "index": "spiritual-weapon",
+          "name": "Arme spirituelle",
+          "url": "/api/2014/spells/spiritual-weapon"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "cleric-5",
+            "type": "level",
+            "name": "Clerc 5",
+            "url": "/api/2014/classes/cleric/levels/5"
+          }
+        ],
+        "spell": {
+          "index": "beacon-of-hope",
+          "name": "Lueur d’espoir",
+          "url": "/api/2014/spells/beacon-of-hope"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "cleric-5",
+            "type": "level",
+            "name": "Clerc 5",
+            "url": "/api/2014/classes/cleric/levels/5"
+          }
+        ],
+        "spell": {
+          "index": "revivify",
+          "name": "Retour à la vie",
+          "url": "/api/2014/spells/revivify"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "cleric-7",
+            "type": "level",
+            "name": "Clerc 7",
+            "url": "/api/2014/classes/cleric/levels/7"
+          }
+        ],
+        "spell": {
+          "index": "death-ward",
+          "name": "Protection contre la mort",
+          "url": "/api/2014/spells/death-ward"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "cleric-9",
+            "type": "level",
+            "name": "Clerc 9",
+            "url": "/api/2014/classes/cleric/levels/9"
+          }
+        ],
+        "spell": {
+          "index": "mass-cure-wounds",
+          "name": "Soins de groupe",
+          "url": "/api/2014/spells/mass-cure-wounds"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "cleric-9",
+            "type": "level",
+            "name": "Clerc 9",
+            "url": "/api/2014/classes/cleric/levels/9"
+          }
+        ],
+        "spell": {
+          "index": "raise-dead",
+          "name": "Rappel à la vie",
+          "url": "/api/2014/spells/raise-dead"
+        }
+      }
+    ],
+    "subclass_levels": "/api/2014/subclasses/life/levels",
+    "url": "/api/2014/subclasses/life"
+  },
+  {
+    "index": "land",
+    "class": {
+      "index": "druid",
+      "name": "Druide",
+      "url": "/api/2014/classes/druid"
+    },
+    "name": "Terre",
+    "subclass_flavor": "Cercle druidique",
+    "desc": [
+      "Le Cercle de la Terre réunit des mystiques et des sages chargés de perpétuer d’antiques connaissances et rites au moyen d’une tradition orale considérable. Ces druides se rassemblent dans des cercles sacrés faits d’arbres ou de menhirs pour se murmurer des secrets primitifs en langue druidique. Les membres les plus sages du cercle font office de grands prêtres dans les communautés restées fidèles à la religion des temps anciens et conseillent leurs dirigeants. En tant que membre de ce cercle, votre magie est influencée par le type de terrain sur lequel vous avez subi l’initiation à ses mystères."
+    ],
+    "spells": [
+      {
+        "prerequisites": [
+          {
+            "index": "druid-3",
+            "type": "level",
+            "name": "Druide 3",
+            "url": "/api/2014/classes/druid/levels/3"
+          },
+          {
+            "index": "circle-of-the-land-arctic",
+            "type": "feature",
+            "name": "Cercle de la terre : Arctique",
+            "url": "/api/2014/features/circle-of-the-land-arctic"
+          }
+        ],
+        "spell": {
+          "index": "hold-person",
+          "name": "Immobilisation de personne",
+          "url": "/api/2014/spells/hold-person"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-3",
+            "type": "level",
+            "name": "Druide 3",
+            "url": "/api/2014/classes/druid/levels/3"
+          },
+          {
+            "index": "circle-of-the-land-arctic",
+            "type": "feature",
+            "name": "Cercle de la terre : Arctique",
+            "url": "/api/2014/features/circle-of-the-land-arctic"
+          }
+        ],
+        "spell": {
+          "index": "spike-growth",
+          "name": "Croissance d’épines",
+          "url": "/api/2014/spells/spike-growth"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-5",
+            "type": "level",
+            "name": "Druide 5",
+            "url": "/api/2014/classes/druid/levels/5"
+          },
+          {
+            "index": "circle-of-the-land-arctic",
+            "type": "feature",
+            "name": "Cercle de la terre : Arctique",
+            "url": "/api/2014/features/circle-of-the-land-arctic"
+          }
+        ],
+        "spell": {
+          "index": "sleet-storm",
+          "name": "Tempête de neige",
+          "url": "/api/2014/spells/sleet-storm"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-5",
+            "type": "level",
+            "name": "Druide 5",
+            "url": "/api/2014/classes/druid/levels/5"
+          },
+          {
+            "index": "circle-of-the-land-arctic",
+            "type": "feature",
+            "name": "Cercle de la terre : Arctique",
+            "url": "/api/2014/features/circle-of-the-land-arctic"
+          }
+        ],
+        "spell": {
+          "index": "slow",
+          "name": "Lenteur",
+          "url": "/api/2014/spells/slow"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-7",
+            "type": "level",
+            "name": "Druide 7",
+            "url": "/api/2014/classes/druid/levels/7"
+          },
+          {
+            "index": "circle-of-the-land-arctic",
+            "type": "feature",
+            "name": "Cercle de la terre : Arctique",
+            "url": "/api/2014/features/circle-of-the-land-arctic"
+          }
+        ],
+        "spell": {
+          "index": "freedom-of-movement",
+          "name": "Liberté de mouvement",
+          "url": "/api/2014/spells/freedom-of-movement"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-7",
+            "type": "level",
+            "name": "Druide 7",
+            "url": "/api/2014/classes/druid/levels/7"
+          },
+          {
+            "index": "circle-of-the-land-arctic",
+            "type": "feature",
+            "name": "Cercle de la terre : Arctique",
+            "url": "/api/2014/features/circle-of-the-land-arctic"
+          }
+        ],
+        "spell": {
+          "index": "ice-storm",
+          "name": "Tempête de grêle",
+          "url": "/api/2014/spells/ice-storm"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-9",
+            "type": "level",
+            "name": "Druide 9",
+            "url": "/api/2014/classes/druid/levels/9"
+          },
+          {
+            "index": "circle-of-the-land-arctic",
+            "type": "feature",
+            "name": "Cercle de la terre : Arctique",
+            "url": "/api/2014/features/circle-of-the-land-arctic"
+          }
+        ],
+        "spell": {
+          "index": "commune-with-nature",
+          "name": "Communion avec la nature",
+          "url": "/api/2014/spells/commune-with-nature"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-9",
+            "type": "level",
+            "name": "Druide 9",
+            "url": "/api/2014/classes/druid/levels/9"
+          },
+          {
+            "index": "circle-of-the-land-arctic",
+            "type": "feature",
+            "name": "Cercle de la terre : Arctique",
+            "url": "/api/2014/features/circle-of-the-land-arctic"
+          }
+        ],
+        "spell": {
+          "index": "cone-of-cold",
+          "name": "Cône de froid",
+          "url": "/api/2014/spells/cone-of-cold"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-3",
+            "type": "level",
+            "name": "Druide 3",
+            "url": "/api/2014/classes/druid/levels/3"
+          },
+          {
+            "index": "circle-of-the-land-coast",
+            "type": "feature",
+            "name": "Cercle de la terre : Littoral",
+            "url": "/api/2014/features/circle-of-the-land-coast"
+          }
+        ],
+        "spell": {
+          "index": "mirror-image",
+          "name": "Image miroir",
+          "url": "/api/2014/spells/mirror-image"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-3",
+            "type": "level",
+            "name": "Druide 3",
+            "url": "/api/2014/classes/druid/levels/3"
+          },
+          {
+            "index": "circle-of-the-land-coast",
+            "type": "feature",
+            "name": "Cercle de la terre : Littoral",
+            "url": "/api/2014/features/circle-of-the-land-coast"
+          }
+        ],
+        "spell": {
+          "index": "misty-step",
+          "name": "Foulée brumeuse",
+          "url": "/api/2014/spells/misty-step"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-5",
+            "type": "level",
+            "name": "Druide 5",
+            "url": "/api/2014/classes/druid/levels/5"
+          },
+          {
+            "index": "circle-of-the-land-coast",
+            "type": "feature",
+            "name": "Cercle de la terre : Littoral",
+            "url": "/api/2014/features/circle-of-the-land-coast"
+          }
+        ],
+        "spell": {
+          "index": "water-breathing",
+          "name": "Respiration aquatique",
+          "url": "/api/2014/spells/water-breathing"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-5",
+            "type": "level",
+            "name": "Druide 5",
+            "url": "/api/2014/classes/druid/levels/5"
+          },
+          {
+            "index": "circle-of-the-land-coast",
+            "type": "feature",
+            "name": "Cercle de la terre : Littoral",
+            "url": "/api/2014/features/circle-of-the-land-coast"
+          }
+        ],
+        "spell": {
+          "index": "water-walk",
+          "name": "Marche sur l’onde",
+          "url": "/api/2014/spells/water-walk"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-7",
+            "type": "level",
+            "name": "Druide 7",
+            "url": "/api/2014/classes/druid/levels/7"
+          },
+          {
+            "index": "circle-of-the-land-coast",
+            "type": "feature",
+            "name": "Cercle de la terre : Littoral",
+            "url": "/api/2014/features/circle-of-the-land-coast"
+          }
+        ],
+        "spell": {
+          "index": "control-water",
+          "name": "Contrôle de l’eau",
+          "url": "/api/2014/spells/control-water"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-7",
+            "type": "level",
+            "name": "Druide 7",
+            "url": "/api/2014/classes/druid/levels/7"
+          },
+          {
+            "index": "circle-of-the-land-coast",
+            "type": "feature",
+            "name": "Cercle de la terre : Littoral",
+            "url": "/api/2014/features/circle-of-the-land-coast"
+          }
+        ],
+        "spell": {
+          "index": "freedom-of-movement",
+          "name": "Liberté de mouvement",
+          "url": "/api/2014/spells/freedom-of-movement"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-9",
+            "type": "level",
+            "name": "Druide 9",
+            "url": "/api/2014/classes/druid/levels/9"
+          },
+          {
+            "index": "circle-of-the-land-coast",
+            "type": "feature",
+            "name": "Cercle de la terre : Littoral",
+            "url": "/api/2014/features/circle-of-the-land-coast"
+          }
+        ],
+        "spell": {
+          "index": "conjure-elemental",
+          "name": "Invocation d’élémentaire",
+          "url": "/api/2014/spells/conjure-elemental"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-9",
+            "type": "level",
+            "name": "Druide 9",
+            "url": "/api/2014/classes/druid/levels/9"
+          },
+          {
+            "index": "circle-of-the-land-coast",
+            "type": "feature",
+            "name": "Cercle de la terre : Littoral",
+            "url": "/api/2014/features/circle-of-the-land-coast"
+          }
+        ],
+        "spell": {
+          "index": "scrying",
+          "name": "Scrutation",
+          "url": "/api/2014/spells/scrying"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-3",
+            "type": "level",
+            "name": "Druide 3",
+            "url": "/api/2014/classes/druid/levels/3"
+          },
+          {
+            "index": "circle-of-the-land-desert",
+            "type": "feature",
+            "name": "Cercle de la terre : Désert",
+            "url": "/api/2014/features/circle-of-the-land-desert"
+          }
+        ],
+        "spell": {
+          "index": "blur",
+          "name": "Flou",
+          "url": "/api/2014/spells/blur"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-3",
+            "type": "level",
+            "name": "Druide 3",
+            "url": "/api/2014/classes/druid/levels/3"
+          },
+          {
+            "index": "circle-of-the-land-desert",
+            "type": "feature",
+            "name": "Cercle de la terre : Désert",
+            "url": "/api/2014/features/circle-of-the-land-desert"
+          }
+        ],
+        "spell": {
+          "index": "silence",
+          "name": "Silence",
+          "url": "/api/2014/spells/silence"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-5",
+            "type": "level",
+            "name": "Druide 5",
+            "url": "/api/2014/classes/druid/levels/5"
+          },
+          {
+            "index": "circle-of-the-land-desert",
+            "type": "feature",
+            "name": "Cercle de la terre : Désert",
+            "url": "/api/2014/features/circle-of-the-land-desert"
+          }
+        ],
+        "spell": {
+          "index": "create-food-and-water",
+          "name": "Création de nourriture et d’eau",
+          "url": "/api/2014/spells/create-food-and-water"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-5",
+            "type": "level",
+            "name": "Druide 5",
+            "url": "/api/2014/classes/druid/levels/5"
+          },
+          {
+            "index": "circle-of-the-land-desert",
+            "type": "feature",
+            "name": "Cercle de la terre : Désert",
+            "url": "/api/2014/features/circle-of-the-land-desert"
+          }
+        ],
+        "spell": {
+          "index": "protection-from-energy",
+          "name": "Protection contre l’énergie",
+          "url": "/api/2014/spells/protection-from-energy"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-7",
+            "type": "level",
+            "name": "Druide 7",
+            "url": "/api/2014/classes/druid/levels/7"
+          },
+          {
+            "index": "circle-of-the-land-desert",
+            "type": "feature",
+            "name": "Cercle de la terre : Désert",
+            "url": "/api/2014/features/circle-of-the-land-desert"
+          }
+        ],
+        "spell": {
+          "index": "blight",
+          "name": "Flétrissement",
+          "url": "/api/2014/spells/blight"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-7",
+            "type": "level",
+            "name": "Druide 7",
+            "url": "/api/2014/classes/druid/levels/7"
+          },
+          {
+            "index": "circle-of-the-land-desert",
+            "type": "feature",
+            "name": "Cercle de la terre : Désert",
+            "url": "/api/2014/features/circle-of-the-land-desert"
+          }
+        ],
+        "spell": {
+          "index": "hallucinatory-terrain",
+          "name": "Terrain hallucinatoire",
+          "url": "/api/2014/spells/hallucinatory-terrain"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-9",
+            "type": "level",
+            "name": "Druide 9",
+            "url": "/api/2014/classes/druid/levels/9"
+          },
+          {
+            "index": "circle-of-the-land-desert",
+            "type": "feature",
+            "name": "Cercle de la terre : Désert",
+            "url": "/api/2014/features/circle-of-the-land-desert"
+          }
+        ],
+        "spell": {
+          "index": "insect-plague",
+          "name": "Fléau d’insectes",
+          "url": "/api/2014/spells/insect-plague"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-9",
+            "type": "level",
+            "name": "Druide 9",
+            "url": "/api/2014/classes/druid/levels/9"
+          },
+          {
+            "index": "circle-of-the-land-desert",
+            "type": "feature",
+            "name": "Cercle de la terre : Désert",
+            "url": "/api/2014/features/circle-of-the-land-desert"
+          }
+        ],
+        "spell": {
+          "index": "wall-of-stone",
+          "name": "Mur de pierre",
+          "url": "/api/2014/spells/wall-of-stone"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-3",
+            "type": "level",
+            "name": "Druide 3",
+            "url": "/api/2014/classes/druid/levels/3"
+          },
+          {
+            "index": "circle-of-the-land-forest",
+            "type": "feature",
+            "name": "Cercle de la terre : Forêt",
+            "url": "/api/2014/features/circle-of-the-land-forest"
+          }
+        ],
+        "spell": {
+          "index": "barkskin",
+          "name": "Peau d’écorce",
+          "url": "/api/2014/spells/barkskin"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-3",
+            "type": "level",
+            "name": "Druide 3",
+            "url": "/api/2014/classes/druid/levels/3"
+          },
+          {
+            "index": "circle-of-the-land-forest",
+            "type": "feature",
+            "name": "Cercle de la terre : Forêt",
+            "url": "/api/2014/features/circle-of-the-land-forest"
+          }
+        ],
+        "spell": {
+          "index": "spider-climb",
+          "name": "Pattes d’araignée",
+          "url": "/api/2014/spells/spider-climb"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-5",
+            "type": "level",
+            "name": "Druide 5",
+            "url": "/api/2014/classes/druid/levels/5"
+          },
+          {
+            "index": "circle-of-the-land-forest",
+            "type": "feature",
+            "name": "Cercle de la terre : Forêt",
+            "url": "/api/2014/features/circle-of-the-land-forest"
+          }
+        ],
+        "spell": {
+          "index": "call-lightning",
+          "name": "Appel de la foudre",
+          "url": "/api/2014/spells/call-lightning"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-5",
+            "type": "level",
+            "name": "Druide 5",
+            "url": "/api/2014/classes/druid/levels/5"
+          },
+          {
+            "index": "circle-of-the-land-forest",
+            "type": "feature",
+            "name": "Cercle de la terre : Forêt",
+            "url": "/api/2014/features/circle-of-the-land-forest"
+          }
+        ],
+        "spell": {
+          "index": "plant-growth",
+          "name": "Croissance végétale",
+          "url": "/api/2014/spells/plant-growth"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-7",
+            "type": "level",
+            "name": "Druide 7",
+            "url": "/api/2014/classes/druid/levels/7"
+          },
+          {
+            "index": "circle-of-the-land-forest",
+            "type": "feature",
+            "name": "Cercle de la terre : Forêt",
+            "url": "/api/2014/features/circle-of-the-land-forest"
+          }
+        ],
+        "spell": {
+          "index": "divination",
+          "name": "Divination",
+          "url": "/api/2014/spells/divination"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-7",
+            "type": "level",
+            "name": "Druide 7",
+            "url": "/api/2014/classes/druid/levels/7"
+          },
+          {
+            "index": "circle-of-the-land-forest",
+            "type": "feature",
+            "name": "Cercle de la terre : Forêt",
+            "url": "/api/2014/features/circle-of-the-land-forest"
+          }
+        ],
+        "spell": {
+          "index": "freedom-of-movement",
+          "name": "Liberté de mouvement",
+          "url": "/api/2014/spells/freedom-of-movement"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-9",
+            "type": "level",
+            "name": "Druide 9",
+            "url": "/api/2014/classes/druid/levels/9"
+          },
+          {
+            "index": "circle-of-the-land-forest",
+            "type": "feature",
+            "name": "Cercle de la terre : Forêt",
+            "url": "/api/2014/features/circle-of-the-land-forest"
+          }
+        ],
+        "spell": {
+          "index": "commune-with-nature",
+          "name": "Communion avec la nature",
+          "url": "/api/2014/spells/commune-with-nature"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-9",
+            "type": "level",
+            "name": "Druide 9",
+            "url": "/api/2014/classes/druid/levels/9"
+          },
+          {
+            "index": "circle-of-the-land-forest",
+            "type": "feature",
+            "name": "Cercle de la terre : Forêt",
+            "url": "/api/2014/features/circle-of-the-land-forest"
+          }
+        ],
+        "spell": {
+          "index": "tree-stride",
+          "name": "Passage par les arbres",
+          "url": "/api/2014/spells/tree-stride"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-3",
+            "type": "level",
+            "name": "Druide 3",
+            "url": "/api/2014/classes/druid/levels/3"
+          },
+          {
+            "index": "circle-of-the-land-grassland",
+            "type": "feature",
+            "name": "Cercle de la terre : Plaine",
+            "url": "/api/2014/features/circle-of-the-land-grassland"
+          }
+        ],
+        "spell": {
+          "index": "invisibility",
+          "name": "Invisibilité",
+          "url": "/api/2014/spells/invisibility"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-3",
+            "type": "level",
+            "name": "Druide 3",
+            "url": "/api/2014/classes/druid/levels/3"
+          },
+          {
+            "index": "circle-of-the-land-grassland",
+            "type": "feature",
+            "name": "Cercle de la terre : Plaine",
+            "url": "/api/2014/features/circle-of-the-land-grassland"
+          }
+        ],
+        "spell": {
+          "index": "pass-without-trace",
+          "name": "Passage sans trace",
+          "url": "/api/2014/spells/pass-without-trace"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-5",
+            "type": "level",
+            "name": "Druide 5",
+            "url": "/api/2014/classes/druid/levels/5"
+          },
+          {
+            "index": "circle-of-the-land-grassland",
+            "type": "feature",
+            "name": "Cercle de la terre : Plaine",
+            "url": "/api/2014/features/circle-of-the-land-grassland"
+          }
+        ],
+        "spell": {
+          "index": "daylight",
+          "name": "Lumière du jour",
+          "url": "/api/2014/spells/daylight"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-5",
+            "type": "level",
+            "name": "Druide 5",
+            "url": "/api/2014/classes/druid/levels/5"
+          },
+          {
+            "index": "circle-of-the-land-grassland",
+            "type": "feature",
+            "name": "Cercle de la terre : Plaine",
+            "url": "/api/2014/features/circle-of-the-land-grassland"
+          }
+        ],
+        "spell": {
+          "index": "haste",
+          "name": "Hâte",
+          "url": "/api/2014/spells/haste"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-7",
+            "type": "level",
+            "name": "Druide 7",
+            "url": "/api/2014/classes/druid/levels/7"
+          },
+          {
+            "index": "circle-of-the-land-grassland",
+            "type": "feature",
+            "name": "Cercle de la terre : Plaine",
+            "url": "/api/2014/features/circle-of-the-land-grassland"
+          }
+        ],
+        "spell": {
+          "index": "divination",
+          "name": "Divination",
+          "url": "/api/2014/spells/divination"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-7",
+            "type": "level",
+            "name": "Druide 7",
+            "url": "/api/2014/classes/druid/levels/7"
+          },
+          {
+            "index": "circle-of-the-land-grassland",
+            "type": "feature",
+            "name": "Cercle de la terre : Plaine",
+            "url": "/api/2014/features/circle-of-the-land-grassland"
+          }
+        ],
+        "spell": {
+          "index": "freedom-of-movement",
+          "name": "Liberté de mouvement",
+          "url": "/api/2014/spells/freedom-of-movement"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-9",
+            "type": "level",
+            "name": "Druide 9",
+            "url": "/api/2014/classes/druid/levels/9"
+          },
+          {
+            "index": "circle-of-the-land-grassland",
+            "type": "feature",
+            "name": "Cercle de la terre : Plaine",
+            "url": "/api/2014/features/circle-of-the-land-grassland"
+          }
+        ],
+        "spell": {
+          "index": "dream",
+          "name": "Songe",
+          "url": "/api/2014/spells/dream"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-9",
+            "type": "level",
+            "name": "Druide 9",
+            "url": "/api/2014/classes/druid/levels/9"
+          },
+          {
+            "index": "circle-of-the-land-grassland",
+            "type": "feature",
+            "name": "Cercle de la terre : Plaine",
+            "url": "/api/2014/features/circle-of-the-land-grassland"
+          }
+        ],
+        "spell": {
+          "index": "insect-plague",
+          "name": "Fléau d’insectes",
+          "url": "/api/2014/spells/insect-plague"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-3",
+            "type": "level",
+            "name": "Druide 3",
+            "url": "/api/2014/classes/druid/levels/3"
+          },
+          {
+            "index": "circle-of-the-land-mountain",
+            "type": "feature",
+            "name": "Cercle de la terre : Montagne",
+            "url": "/api/2014/features/circle-of-the-land-mountain"
+          }
+        ],
+        "spell": {
+          "index": "spider-climb",
+          "name": "Pattes d’araignée",
+          "url": "/api/2014/spells/spider-climb"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-3",
+            "type": "level",
+            "name": "Druide 3",
+            "url": "/api/2014/classes/druid/levels/3"
+          },
+          {
+            "index": "circle-of-the-land-mountain",
+            "type": "feature",
+            "name": "Cercle de la terre : Montagne",
+            "url": "/api/2014/features/circle-of-the-land-mountain"
+          }
+        ],
+        "spell": {
+          "index": "spike-growth",
+          "name": "Croissance d’épines",
+          "url": "/api/2014/spells/spike-growth"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-5",
+            "type": "level",
+            "name": "Druide 5",
+            "url": "/api/2014/classes/druid/levels/5"
+          },
+          {
+            "index": "circle-of-the-land-mountain",
+            "type": "feature",
+            "name": "Cercle de la terre : Montagne",
+            "url": "/api/2014/features/circle-of-the-land-mountain"
+          }
+        ],
+        "spell": {
+          "index": "lightning-bolt",
+          "name": "Éclair",
+          "url": "/api/2014/spells/lightning-bolt"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-5",
+            "type": "level",
+            "name": "Druide 5",
+            "url": "/api/2014/classes/druid/levels/5"
+          },
+          {
+            "index": "circle-of-the-land-mountain",
+            "type": "feature",
+            "name": "Cercle de la terre : Montagne",
+            "url": "/api/2014/features/circle-of-the-land-mountain"
+          }
+        ],
+        "spell": {
+          "index": "meld-into-stone",
+          "name": "Fusion dans la pierre",
+          "url": "/api/2014/spells/meld-into-stone"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-7",
+            "type": "level",
+            "name": "Druide 7",
+            "url": "/api/2014/classes/druid/levels/7"
+          },
+          {
+            "index": "circle-of-the-land-mountain",
+            "type": "feature",
+            "name": "Cercle de la terre : Montagne",
+            "url": "/api/2014/features/circle-of-the-land-mountain"
+          }
+        ],
+        "spell": {
+          "index": "stone-shape",
+          "name": "Façonnage de la pierre",
+          "url": "/api/2014/spells/stone-shape"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-7",
+            "type": "level",
+            "name": "Druide 7",
+            "url": "/api/2014/classes/druid/levels/7"
+          },
+          {
+            "index": "circle-of-the-land-mountain",
+            "type": "feature",
+            "name": "Cercle de la terre : Montagne",
+            "url": "/api/2014/features/circle-of-the-land-mountain"
+          }
+        ],
+        "spell": {
+          "index": "stoneskin",
+          "name": "Peau de pierre",
+          "url": "/api/2014/spells/stoneskin"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-9",
+            "type": "level",
+            "name": "Druide 9",
+            "url": "/api/2014/classes/druid/levels/9"
+          },
+          {
+            "index": "circle-of-the-land-mountain",
+            "type": "feature",
+            "name": "Cercle de la terre : Montagne",
+            "url": "/api/2014/features/circle-of-the-land-mountain"
+          }
+        ],
+        "spell": {
+          "index": "passwall",
+          "name": "Passe-muraille",
+          "url": "/api/2014/spells/passwall"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-9",
+            "type": "level",
+            "name": "Druide 9",
+            "url": "/api/2014/classes/druid/levels/9"
+          },
+          {
+            "index": "circle-of-the-land-mountain",
+            "type": "feature",
+            "name": "Cercle de la terre : Montagne",
+            "url": "/api/2014/features/circle-of-the-land-mountain"
+          }
+        ],
+        "spell": {
+          "index": "wall-of-stone",
+          "name": "Mur de pierre",
+          "url": "/api/2014/spells/wall-of-stone"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-3",
+            "type": "level",
+            "name": "Druide 3",
+            "url": "/api/2014/classes/druid/levels/3"
+          },
+          {
+            "index": "circle-of-the-land-swamp",
+            "type": "feature",
+            "name": "Cercle de la terre : Marais",
+            "url": "/api/2014/features/circle-of-the-land-swamp"
+          }
+        ],
+        "spell": {
+          "index": "acid-arrow",
+          "name": "Flèche acide",
+          "url": "/api/2014/spells/acid-arrow"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-3",
+            "type": "level",
+            "name": "Druide 3",
+            "url": "/api/2014/classes/druid/levels/3"
+          },
+          {
+            "index": "circle-of-the-land-swamp",
+            "type": "feature",
+            "name": "Cercle de la terre : Marais",
+            "url": "/api/2014/features/circle-of-the-land-swamp"
+          }
+        ],
+        "spell": {
+          "index": "darkness",
+          "name": "Ténèbres",
+          "url": "/api/2014/spells/darkness"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-5",
+            "type": "level",
+            "name": "Druide 5",
+            "url": "/api/2014/classes/druid/levels/5"
+          },
+          {
+            "index": "circle-of-the-land-swamp",
+            "type": "feature",
+            "name": "Cercle de la terre : Marais",
+            "url": "/api/2014/features/circle-of-the-land-swamp"
+          }
+        ],
+        "spell": {
+          "index": "water-walk",
+          "name": "Marche sur l’onde",
+          "url": "/api/2014/spells/water-walk"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-5",
+            "type": "level",
+            "name": "Druide 5",
+            "url": "/api/2014/classes/druid/levels/5"
+          },
+          {
+            "index": "circle-of-the-land-swamp",
+            "type": "feature",
+            "name": "Cercle de la terre : Marais",
+            "url": "/api/2014/features/circle-of-the-land-swamp"
+          }
+        ],
+        "spell": {
+          "index": "stinking-cloud",
+          "name": "Nuage nauséabond",
+          "url": "/api/2014/spells/stinking-cloud"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-7",
+            "type": "level",
+            "name": "Druide 7",
+            "url": "/api/2014/classes/druid/levels/7"
+          },
+          {
+            "index": "circle-of-the-land-swamp",
+            "type": "feature",
+            "name": "Cercle de la terre : Marais",
+            "url": "/api/2014/features/circle-of-the-land-swamp"
+          }
+        ],
+        "spell": {
+          "index": "freedom-of-movement",
+          "name": "Liberté de mouvement",
+          "url": "/api/2014/spells/freedom-of-movement"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-7",
+            "type": "level",
+            "name": "Druide 7",
+            "url": "/api/2014/classes/druid/levels/7"
+          },
+          {
+            "index": "circle-of-the-land-swamp",
+            "type": "feature",
+            "name": "Cercle de la terre : Marais",
+            "url": "/api/2014/features/circle-of-the-land-swamp"
+          }
+        ],
+        "spell": {
+          "index": "locate-creature",
+          "name": "Localisation de créature",
+          "url": "/api/2014/spells/locate-creature"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-9",
+            "type": "level",
+            "name": "Druide 9",
+            "url": "/api/2014/classes/druid/levels/9"
+          },
+          {
+            "index": "circle-of-the-land-swamp",
+            "type": "feature",
+            "name": "Cercle de la terre : Marais",
+            "url": "/api/2014/features/circle-of-the-land-swamp"
+          }
+        ],
+        "spell": {
+          "index": "insect-plague",
+          "name": "Fléau d’insectes",
+          "url": "/api/2014/spells/insect-plague"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "druid-9",
+            "type": "level",
+            "name": "Druide 9",
+            "url": "/api/2014/classes/druid/levels/9"
+          },
+          {
+            "index": "circle-of-the-land-swamp",
+            "type": "feature",
+            "name": "Cercle de la terre : Marais",
+            "url": "/api/2014/features/circle-of-the-land-swamp"
+          }
+        ],
+        "spell": {
+          "index": "scrying",
+          "name": "Scrutation",
+          "url": "/api/2014/spells/scrying"
+        }
+      }
+    ],
+    "subclass_levels": "/api/2014/subclasses/land/levels",
+    "url": "/api/2014/subclasses/land"
+  },
+  {
+    "index": "champion",
+    "class": {
+      "index": "fighter",
+      "name": "Guerrier",
+      "url": "/api/2014/classes/fighter"
+    },
+    "name": "Champion",
+    "subclass_flavor": "Archétype martial",
+    "desc": [
+      "Le champion est l’incarnation du guerrier voué tout entier à devenir un instrument de mort en exploitant à la perfection sa puissance physique. Ceux qui suivent cet archétype allient entraînement rigoureux et excellence physique afin d’asséner des coups dévastateurs."
+    ],
+    "subclass_levels": "/api/2014/subclasses/champion/levels",
+    "url": "/api/2014/subclasses/champion"
+  },
+  {
+    "index": "open-hand",
+    "class": {
+      "index": "monk",
+      "name": "Moine",
+      "url": "/api/2014/classes/monk"
+    },
+    "name": "Voie de la Paume",
+    "subclass_flavor": "Tradition monastique",
+    "desc": [
+      "Les moines de la Voie de la Paume sont les maîtres incontestés des arts martiaux, qu’il s’agisse de combat armé ou non. Ils apprennent les techniques permettant de pousser et faire trébucher l’adversaire, emploient le ki à soigner les dégâts corporels et pratiquent une méditation avancée qui peut les protéger du mal."
+    ],
+    "subclass_levels": "/api/2014/subclasses/open-hand/levels",
+    "url": "/api/2014/subclasses/open-hand"
+  },
+  {
+    "index": "devotion",
+    "class": {
+      "index": "paladin",
+      "name": "Paladin",
+      "url": "/api/2014/classes/paladin"
+    },
+    "name": "Serment de dévotion",
+    "subclass_flavor": "Serment sacré",
+    "desc": [
+      "Le Serment de Dévotion lie un paladin aux idéaux les plus élevés de justice, de vertu et d’ordre. Parfois appelés cavaliers, chevaliers blancs ou guerriers saints, ces paladins sont l’incarnation du chevalier en armure étincelante, agissant avec honneur au nom de la justice et du bien commun. Ils respectent un code de conduite des plus rigoureux et certains, pour le meilleur ou le pire, imposent au reste du monde cette même rigueur. Beaucoup de ceux qui prêtent ce serment sont les fidèles serviteurs d’une divinité loyale bonne et mesurent leur propre dévotion à l’aune des préceptes de ce dieu. Considérant les anges, parfaits serviteurs du bien, comme un idéal vers lequel tendre, il n’est pas rare qu’ils parent leur heaume ou leurs armoiries d’ailes angéliques."
+    ],
+    "spells": [
+      {
+        "prerequisites": [
+          {
+            "index": "paladin-3",
+            "type": "level",
+            "name": "Paladin 3",
+            "url": "/api/2014/classes/paladin/levels/3"
+          }
+        ],
+        "spell": {
+          "index": "protection-from-evil-and-good",
+          "name": "Protection contre le mal et le bien",
+          "url": "/api/2014/spells/protection-from-evil-and-good"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "paladin-3",
+            "type": "level",
+            "name": "Paladin 3",
+            "url": "/api/2014/classes/paladin/levels/3"
+          }
+        ],
+        "spell": {
+          "index": "sanctuary",
+          "name": "Sanctuaire",
+          "url": "/api/2014/spells/sanctuary"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "paladin-5",
+            "type": "level",
+            "name": "Paladin 5",
+            "url": "/api/2014/classes/paladin/levels/5"
+          }
+        ],
+        "spell": {
+          "index": "lesser-restoration",
+          "name": "Restauration partielle",
+          "url": "/api/2014/spells/lesser-restoration"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "paladin-5",
+            "type": "level",
+            "name": "Paladin 5",
+            "url": "/api/2014/classes/paladin/levels/5"
+          }
+        ],
+        "spell": {
+          "index": "zone-of-truth",
+          "name": "Zone de vérité",
+          "url": "/api/2014/spells/zone-of-truth"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "paladin-9",
+            "type": "level",
+            "name": "Paladin 9",
+            "url": "/api/2014/classes/paladin/levels/9"
+          }
+        ],
+        "spell": {
+          "index": "beacon-of-hope",
+          "name": "Lueur d’espoir",
+          "url": "/api/2014/spells/beacon-of-hope"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "paladin-9",
+            "type": "level",
+            "name": "Paladin 9",
+            "url": "/api/2014/classes/paladin/levels/9"
+          }
+        ],
+        "spell": {
+          "index": "dispel-magic",
+          "name": "Dissipation de la magie",
+          "url": "/api/2014/spells/dispel-magic"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "paladin-13",
+            "type": "level",
+            "name": "Paladin 13",
+            "url": "/api/2014/classes/paladin/levels/13"
+          }
+        ],
+        "spell": {
+          "index": "freedom-of-movement",
+          "name": "Liberté de mouvement",
+          "url": "/api/2014/spells/freedom-of-movement"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "paladin-13",
+            "type": "level",
+            "name": "Paladin 13",
+            "url": "/api/2014/classes/paladin/levels/13"
+          }
+        ],
+        "spell": {
+          "index": "guardian-of-faith",
+          "name": "Gardien de la foi",
+          "url": "/api/2014/spells/guardian-of-faith"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "paladin-17",
+            "type": "level",
+            "name": "Paladin 17",
+            "url": "/api/2014/classes/paladin/levels/17"
+          }
+        ],
+        "spell": {
+          "index": "commune",
+          "name": "Communion",
+          "url": "/api/2014/spells/commune"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "paladin-17",
+            "type": "level",
+            "name": "Paladin 17",
+            "url": "/api/2014/classes/paladin/levels/17"
+          }
+        ],
+        "spell": {
+          "index": "flame-strike",
+          "name": "Colonne de flamme",
+          "url": "/api/2014/spells/flame-strike"
+        }
+      }
+    ],
+    "subclass_levels": "/api/2014/subclasses/devotion/levels",
+    "url": "/api/2014/subclasses/devotion"
+  },
+  {
+    "index": "hunter",
+    "class": {
+      "index": "ranger",
+      "name": "Rôdeur",
+      "url": "/api/2014/classes/ranger"
+    },
+    "name": "Chasseur",
+    "subclass_flavor": "Archétype de rôdeur",
+    "desc": [
+      "Adopter l’archétype du chasseur, c’est accepter de devenir le rempart entre la civilisation et les terreurs issues des contrées sauvages. En arpentant la voie du chasseur, vous apprenez des techniques spéciales permettant de mieux combattre les menaces auxquelles vous faites face, qu’il s’agisse d’ogres déchaînés, de hordes d’orcs, de géants ou de terrifiants dragons."
+    ],
+    "subclass_levels": "/api/2014/subclasses/hunter/levels",
+    "url": "/api/2014/subclasses/hunter"
+  },
+  {
+    "index": "thief",
+    "class": {
+      "index": "rogue",
+      "name": "Roublard",
+      "url": "/api/2014/classes/rogue"
+    },
+    "name": "Voleur",
+    "subclass_flavor": "Archétype de roublard",
+    "desc": [
+      "Votre savoir-faire s’oriente en premier lieu vers le larcin. Cambrioleurs, brigands, voleurs à la tire et autres criminels optent généralement pour cet archétype, ainsi que les roublards qui se voient plutôt comme des chasseurs de trésor professionnels, des explorateurs tout-terrain ou des enquêteurs. En plus de mettre l’accent sur l’agilité et la discrétion, vous apprenez des compétences utiles pour explorer les ruines oubliées, lire les langues exotiques et utiliser des objets magiques dont l’emploi vous serait interdit en temps normal."
+    ],
+    "subclass_levels": "/api/2014/subclasses/thief/levels",
+    "url": "/api/2014/subclasses/thief"
+  },
+  {
+    "index": "draconic",
+    "class": {
+      "index": "sorcerer",
+      "name": "Ensorceleur",
+      "url": "/api/2014/classes/sorcerer"
+    },
+    "name": "Lignée draconique",
+    "subclass_flavor": "Origine magique",
+    "desc": [
+      "Votre magie innée provient de la magie draconique qui s’est mêlée à votre sang ou à celui de vos ancêtres. Le plus souvent, les ensorceleurs de cette origine peuvent remonter jusqu’à un puissant ensorceleur des temps anciens ayant conclu un pacte avec un dragon, à moins que cet ancêtre ait lui-même eu un parent dragon. Si certaines de ces lignées sont bien implantées, la plupart restent obscures. Tout ensorceleur peut fort bien être le premier d’une nouvelle lignée, à la suite d’un pacte ou de toute autre circonstance exceptionnelle."
+    ],
+    "subclass_levels": "/api/2014/subclasses/draconic/levels",
+    "url": "/api/2014/subclasses/draconic"
+  },
+  {
+    "index": "fiend",
+    "class": {
+      "index": "warlock",
+      "name": "Occultiste",
+      "url": "/api/2014/classes/warlock"
+    },
+    "name": "Le Fiélon",
+    "subclass_flavor": "Protecteur d’outre-monde",
+    "desc": [
+      "Vous avez conclu un pacte avec un fiélon des Plans Inférieurs, une entité tout entière vouée au mal, quand bien même vous auriez des objectifs radicalement opposés. De tels êtres sont mus par la soif de corrompre ou détruire toute forme de vie, vous y compris. Parmi les fiélons assez puissants pour conclure un tel pacte, citons des seigneurs démons tels Démogorgon, Orcus, Fraz’Urb-luu ou Baphomet ; des archidiables comme Asmodée, Dispater, Méphistophélès ou Bélial ; les plus puissants des diantrefosses et des balors ; les ultroloths et autres seigneurs des yugoloths."
+    ],
+    "spells": [
+      {
+        "prerequisites": [
+          {
+            "index": "warlock-1",
+            "type": "level",
+            "name": "Occultiste 1",
+            "url": "/api/2014/classes/warlock/levels/1"
+          }
+        ],
+        "spell": {
+          "index": "burning-hands",
+          "name": "Mains brûlantes",
+          "url": "/api/2014/spells/burning-hands"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "warlock-1",
+            "type": "level",
+            "name": "Occultiste 1",
+            "url": "/api/2014/classes/warlock/levels/1"
+          }
+        ],
+        "spell": {
+          "index": "command",
+          "name": "Injonction",
+          "url": "/api/2014/spells/command"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "warlock-3",
+            "type": "level",
+            "name": "Occultiste 3",
+            "url": "/api/2014/classes/warlock/levels/3"
+          }
+        ],
+        "spell": {
+          "index": "blindness-deafness",
+          "name": "Cécité/Surdité",
+          "url": "/api/2014/spells/blindness-deafness"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "warlock-3",
+            "type": "level",
+            "name": "Occultiste 3",
+            "url": "/api/2014/classes/warlock/levels/3"
+          }
+        ],
+        "spell": {
+          "index": "scorching-ray",
+          "name": "Rayon ardent",
+          "url": "/api/2014/spells/scorching-ray"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "warlock-5",
+            "type": "level",
+            "name": "Occultiste 5",
+            "url": "/api/2014/classes/warlock/levels/5"
+          }
+        ],
+        "spell": {
+          "index": "fireball",
+          "name": "Boule de feu",
+          "url": "/api/2014/spells/fireball"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "warlock-5",
+            "type": "level",
+            "name": "Occultiste 5",
+            "url": "/api/2014/classes/warlock/levels/5"
+          }
+        ],
+        "spell": {
+          "index": "stinking-cloud",
+          "name": "Nuage nauséabond",
+          "url": "/api/2014/spells/stinking-cloud"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "warlock-7",
+            "type": "level",
+            "name": "Occultiste 7",
+            "url": "/api/2014/classes/warlock/levels/7"
+          }
+        ],
+        "spell": {
+          "index": "fire-shield",
+          "name": "Bouclier de feu",
+          "url": "/api/2014/spells/fire-shield"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "warlock-7",
+            "type": "level",
+            "name": "Occultiste 7",
+            "url": "/api/2014/classes/warlock/levels/7"
+          }
+        ],
+        "spell": {
+          "index": "wall-of-fire",
+          "name": "Mur de feu",
+          "url": "/api/2014/spells/wall-of-fire"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "warlock-9",
+            "type": "level",
+            "name": "Occultiste 9",
+            "url": "/api/2014/classes/warlock/levels/9"
+          }
+        ],
+        "spell": {
+          "index": "flame-strike",
+          "name": "Colonne de flamme",
+          "url": "/api/2014/spells/flame-strike"
+        }
+      },
+      {
+        "prerequisites": [
+          {
+            "index": "warlock-9",
+            "type": "level",
+            "name": "Occultiste 9",
+            "url": "/api/2014/classes/warlock/levels/9"
+          }
+        ],
+        "spell": {
+          "index": "hallow",
+          "name": "Sanctification",
+          "url": "/api/2014/spells/hallow"
+        }
+      }
+    ],
+    "subclass_levels": "/api/2014/subclasses/fiend/levels",
+    "url": "/api/2014/subclasses/fiend"
+  },
+  {
+    "index": "evocation",
+    "class": {
+      "index": "wizard",
+      "name": "Magicien",
+      "url": "/api/2014/classes/wizard"
+    },
+    "name": "École de l’Évocation",
+    "subclass_flavor": "Tradition arcanique",
+    "desc": [
+      "Vos études magiques ont essentiellement porté sur les effets élémentaires les plus intenses, comme le gel le plus froid, les flammes les plus torrides, le tonnerre rugissant, les crépitements de la foudre et les corrosions de l’acide. Certains évocateurs œuvrent au service d’armées comme artilleurs spécialisés. D’autres mettent ces pouvoirs spectaculaires au service de la protection des opprimés tandis que certains, motivés par l’appât du gain, embrassent la carrière de bandit, d’aventurier ou d’apprenti tyran."
+    ],
+    "subclass_levels": "/api/2014/subclasses/evocation/levels",
+    "url": "/api/2014/subclasses/evocation"
+  }
+]

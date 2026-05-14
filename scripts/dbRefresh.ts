@@ -314,21 +314,32 @@ async function uploadTranslationsFromFolder(
 }
 
 async function main() {
+  const version = process.env.DB_VERSION;
+  if (version && version !== 'all' && version !== '2014' && version !== '2024') {
+    console.error(`Invalid DB_VERSION: '${version}'. Must be 'all', '2014', or '2024'.`);
+    process.exit(1);
+  }
+  const runAll = !version || version === 'all';
+
   const client = new MongoClient(mongodbUri);
   try {
     await client.connect();
     console.log('Connected successfully to MongoDB server');
     const db = client.db();
 
-    console.log('\nUploading 2014 tables...');
-    await uploadTablesFromFolder(db, 'src/2014/en', '2014-');
-    console.log('\nLoading 2014 translations...');
-    await uploadTranslationsFromFolder(db, 'src/2014', '2014-');
+    if (runAll || version === '2014') {
+      console.log('\nUploading 2014 tables...');
+      await uploadTablesFromFolder(db, 'src/2014/en', '2014-');
+      console.log('\nLoading 2014 translations...');
+      await uploadTranslationsFromFolder(db, 'src/2014', '2014-');
+    }
 
-    console.log('\nUploading 2024 tables...');
-    await uploadTablesFromFolder(db, 'src/2024/en', '2024-');
-    console.log('\nLoading 2024 translations...');
-    await uploadTranslationsFromFolder(db, 'src/2024', '2024-');
+    if (runAll || version === '2024') {
+      console.log('\nUploading 2024 tables...');
+      await uploadTablesFromFolder(db, 'src/2024/en', '2024-');
+      console.log('\nLoading 2024 translations...');
+      await uploadTranslationsFromFolder(db, 'src/2024', '2024-');
+    }
 
     console.log('\nDatabase refresh completed successfully.');
   } catch (error) {

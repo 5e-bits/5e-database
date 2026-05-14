@@ -1,5 +1,10 @@
 import { z } from 'zod';
-import { APIReferenceSchema, AreaOfEffectSchema, ChoiceSchema, DifficultyClassSchema } from '../../schemas/common';
+import {
+  APIReferenceSchema,
+  AreaOfEffectSchema,
+  ChoiceSchema,
+  DifficultyClassSchema,
+} from '../../schemas/common';
 
 const BreathWeaponUsageSchema = z.strictObject({
   type: z.string(),
@@ -27,7 +32,7 @@ const TraitSpecificSchema = z.strictObject({
   subtrait_options: ChoiceSchema.optional(),
 });
 
-export const TraitSchema = z.object({
+export const TraitSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
   desc: z.array(z.string()),

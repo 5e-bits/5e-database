@@ -1,0 +1,338 @@
+[
+  {
+    "index": "acolyte",
+    "name": "Acólito",
+    "starting_proficiencies": [
+      {
+        "index": "skill-insight",
+        "name": "Perícia: Intuição",
+        "url": "/api/2014/proficiencies/skill-insight"
+      },
+      {
+        "index": "skill-religion",
+        "name": "Perícia: Religião",
+        "url": "/api/2014/proficiencies/skill-religion"
+      }
+    ],
+    "language_options": {
+      "choose": 2,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/2014/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "clothes-common",
+          "name": "Roupas, comum",
+          "url": "/api/2014/equipment/clothes-common"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "pouch",
+          "name": "Algibeira",
+          "url": "/api/2014/equipment/pouch"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "equipment_category",
+          "equipment_category": {
+            "index": "holy-symbols",
+            "name": "Símbolo Sagrado",
+            "url": "/api/2014/equipment-categories/holy-symbols"
+          }
+        }
+      }
+    ],
+    "feature": {
+      "name": "Abrigo dos Fiéis",
+      "desc": [
+        "Como um acólito, você detém o respeito daqueles que compartilham de sua fé, e você pode realizar cerimônias de sua divindade. Você e seus companheiros de aventura podem até receber cura e caridade de um templo, santuário ou outro posto de sua fé, embora devam fornecer quaisquer componentes materiais necessários para as magias. Aqueles que compartilham de sua religião vão garantir a você (mas apenas você), custeando um estilo de vida modesto.",
+        "Você também pode possuir laços com um templo específico devotado à sua divindade ou panteão, e fixar residência nele. Pode ser o templo que você está acostumado a servir, se ainda tiver boas relações com ele, ou um templo no qual você encontrou um novo lar. Enquanto frequentar as redondezas desse templo, você pode solicitar os sacerdotes para assisti-lo, desde que essa assistência não seja de alguma forma perigosa e que você sempre esteja em uma boa relação com seu templo."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Eu idolatro um herói particular da minha fé, e constantemente me refiro a seus feitos e exemplos."
+          },
+          {
+            "option_type": "string",
+            "string": "Eu consigo encontrar semelhanças mesmo entre os inimigos mais violentos, com empatia e sempre trabalhando pela paz."
+          },
+          {
+            "option_type": "string",
+            "string": "Eu vejo presságios em cada evento e ação. Os deuses estão falando conosco, nós apenas temos de ouvi-los."
+          },
+          {
+            "option_type": "string",
+            "string": "Nada pode abalar minha atitude otimista."
+          },
+          {
+            "option_type": "string",
+            "string": "Eu cito (corretamente ou não) textos sagrados e provérbios em quase qualquer situação."
+          },
+          {
+            "option_type": "string",
+            "string": "Eu sou tolerante (ou intolerante) a qualquer outra fé, e respeito (ou condeno) a adoração a outros deuses."
+          },
+          {
+            "option_type": "string",
+            "string": "Eu aprecio comida requintada, bebidas e a elite entre o alto escalão de meu templo. Uma vida dura me irrita."
+          },
+          {
+            "option_type": "string",
+            "string": "Eu passei tanto tempo no templo que possuo pouca prática em lidar com as pessoas mundo a fora."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Tradição. As tradições ancestrais de adoração e sacrifício devem ser preservadas e perpetradas.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Leal e Bom",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Leal e Neutro",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Leal e Mau",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Caridade. Eu sempre tento ajudar aqueles em necessidade, não importando o custo pessoal.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Leal e Bom",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutro e Bom",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Caótico e Bom",
+                "url": "/api/2014/alignments/chaotic-good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Mudança. Nós devemos ajudar a conduzir as mudanças que os deuses estão constantemente trabalhando para o mundo.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Caótico e Bom",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Caótico e Neutro",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Caótico e Mau",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Poder. Eu espero que um dia eu consiga chegar ao topo na hierarquia da minha religião.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Leal e Bom",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Leal e Neutro",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Leal e Mau",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Fé. Eu acredito que minha divindade guia minhas ações. Eu tenho fé que, se eu trabalhar duro, coisas boas acontecerão.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Leal e Bom",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Leal e Neutro",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Leal e Mau",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Aspiração. Eu busco ser digno da graça do meu deus ao corresponder minhas ações aos seus ensinamentos.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Leal e Bom",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutro e Bom",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Caótico e Bom",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Leal e Neutro",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutro",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Caótico e Neutro",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Leal e Mau",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutro e Mau",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Caótico e Mau",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Eu morreria para recuperar uma relíquia ancestral de minha fé, perdida há muito tempo."
+          },
+          {
+            "option_type": "string",
+            "string": "Eu ainda terei minha vingança contra o templo corrupto que me acusou de heresia."
+          },
+          {
+            "option_type": "string",
+            "string": "Eu devo minha vida ao sacerdote que me acolheu quando meus pais morreram."
+          },
+          {
+            "option_type": "string",
+            "string": "Tudo o que faço, faço pelo povo."
+          },
+          {
+            "option_type": "string",
+            "string": "Eu farei qualquer coisa para proteger o templo que sirvo."
+          },
+          {
+            "option_type": "string",
+            "string": "Eu busco guardar um texto sagrado que meus inimigos dizem ser herético e tentam destruí-lo."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "Eu julgo os outros severamente, e a mim mesmo mais ainda."
+          },
+          {
+            "option_type": "string",
+            "string": "Eu deposito muita confiança naqueles que detêm o poder na hierarquia de meu templo."
+          },
+          {
+            "option_type": "string",
+            "string": "Minha devoção muitas vezes me cega perante aqueles que professam a fé do meu deus."
+          },
+          {
+            "option_type": "string",
+            "string": "Meu pensamento é inflexível."
+          },
+          {
+            "option_type": "string",
+            "string": "Eu suspeito de estranhos e sempre espero o pior deles."
+          },
+          {
+            "option_type": "string",
+            "string": "Depois de escolher um objetivo, eu fico obcecado em cumpri-lo, até mesmo em detrimento de qualquer outra coisa em minha vida."
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/backgrounds/acolyte"
+  }
+]

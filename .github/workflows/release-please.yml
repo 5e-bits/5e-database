@@ -28,7 +28,7 @@ jobs:
           fetch-depth: 0
       - name: Release Please
         id: release
-        uses: googleapis/release-please-action@v4
+        uses: googleapis/release-please-action@v5
         with:
           token: ${{ steps.generate-token.outputs.token }}
           release-type: node

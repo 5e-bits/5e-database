@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { APIReferenceSchema, ChoiceSchema } from '../../schemas/common';
 
-export const SpeciesSchema = z.object({
+export const SpeciesSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
   url: z.string(),

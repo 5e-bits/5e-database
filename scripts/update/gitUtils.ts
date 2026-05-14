@@ -49,23 +49,27 @@ function parseLsFilesOutput(output: string): ChangedFile[] {
 
 /**
  * Gets the list of changed JSON files with their status within the src/ directory
- * comparing the current HEAD to the previous commit (HEAD~1).
- * Includes fallback logic for initial commits or shallow clones.
+ * comparing the current HEAD to a base ref. The base ref is read from the
+ * GIT_FROM_REF environment variable (e.g. a previous release tag); falls back
+ * to HEAD~1 when not set. Includes fallback logic for initial commits or
+ * shallow clones when using the default HEAD~1 ref.
  * @returns An array of ChangedFile objects.
  */
 export function getChangedJsonFilesWithStatus(): ChangedFile[] {
-  console.log('Checking for changed JSON files with status in the last commit...');
+  const fromRef = process.env.GIT_FROM_REF || 'HEAD~1';
+  const isDefaultRef = fromRef === 'HEAD~1';
+  console.log(`Checking for changed JSON files with status since ${fromRef}...`);
   let diffOutput: string = '';
   let isFallback = false;
 
-  // 1. Try comparing HEAD vs the previous commit
+  // 1. Try comparing fromRef vs HEAD
   try {
-    diffOutput = execSync('git diff --name-status -M HEAD~1 HEAD -- src/**/*.json', {
+    diffOutput = execSync(`git diff --name-status -M ${fromRef} HEAD -- src/**/*.json`, {
       encoding: 'utf8',
     });
   } catch (error) {
-    // Check if the error is due to missing history (e.g., first commit)
-    if (hasStderr(error) && error.stderr.includes('unknown revision or path not in the working tree')) {
+    // Fallback for missing HEAD~1 history only applies to the default ref
+    if (isDefaultRef && hasStderr(error) && error.stderr.includes('unknown revision or path not in the working tree')) {
       console.warn(
         'Could not find previous commit (HEAD~1). Checking working tree status against index...'
       );
@@ -82,8 +86,7 @@ export function getChangedJsonFilesWithStatus(): ChangedFile[] {
         );
       }
     } else {
-      // Re-throw other errors
-      console.error('Error diffing HEAD~1..HEAD:', error);
+      console.error(`Error diffing ${fromRef}..HEAD:`, error);
       throw new Error(
         `Failed to get changed files from git: ${error instanceof Error ? error.message : String(error)}`
       );
@@ -115,14 +118,15 @@ export function getChangedJsonFilesWithStatus(): ChangedFile[] {
 }
 
 /**
- * Fetches JSON content string of a file from the previous commit (HEAD~1).
- * Uses spawn to stream output, avoiding buffer limits.
+ * Fetches JSON content string of a file from the base ref (GIT_FROM_REF env var,
+ * or HEAD~1 by default). Uses spawn to stream output, avoiding buffer limits.
  * @param gitPath The path used in the git command (could be old path for renames).
  * @returns A promise resolving to the raw string content, or an empty string on error.
  */
 export async function getOldFileContent(gitPath: string): Promise<string> {
+  const fromRef = process.env.GIT_FROM_REF || 'HEAD~1';
   return new Promise((resolve, reject) => {
-    const gitShow = spawn('git', ['show', `HEAD~1:${gitPath}`]);
+    const gitShow = spawn('git', ['show', `${fromRef}:${gitPath}`]);
     let oldFileContent = '';
     let errorOutput = '';
 
@@ -136,7 +140,7 @@ export async function getOldFileContent(gitPath: string): Promise<string> {
 
     gitShow.on('error', (err: Error) => {
       // Handle errors spawning the process itself
-      console.error(`Error spawning git show for HEAD~1:${gitPath}:`, err);
+      console.error(`Error spawning git show for ${fromRef}:${gitPath}:`, err);
       resolve(''); // Resolve with empty string on spawn error
     });
 
@@ -146,10 +150,10 @@ export async function getOldFileContent(gitPath: string): Promise<string> {
       } else {
         // Handle errors reported by git show (like file not found)
         if (errorOutput.includes('exists on disk, but not in')) {
-          console.warn(`Previous version not found in git history (HEAD~1:${gitPath}).`);
+          console.warn(`Previous version not found in git history (${fromRef}:${gitPath}).`);
         } else {
           console.error(
-            `Error running git show for HEAD~1:${gitPath} (code ${code}): ${errorOutput}`
+            `Error running git show for ${fromRef}:${gitPath} (code ${code}): ${errorOutput}`
           );
         }
         resolve(''); // Resolve with empty string if git show fails

@@ -1,0 +1,4699 @@
+[
+  {
+    "index": "barbarian",
+    "name": "Barbare",
+    "hit_die": 12,
+    "proficiency_choices": [
+      {
+        "desc": "Choisissez deux compétences parmi Athlétisme, Dressage, Intimidation, Nature, Perception et Survie",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-animal-handling",
+                "name": "Compétence : Dressage",
+                "url": "/api/2014/proficiencies/skill-animal-handling"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-athletics",
+                "name": "Compétence : Athlétisme",
+                "url": "/api/2014/proficiencies/skill-athletics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-intimidation",
+                "name": "Compétence : Intimidation",
+                "url": "/api/2014/proficiencies/skill-intimidation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-nature",
+                "name": "Compétence : Nature",
+                "url": "/api/2014/proficiencies/skill-nature"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-perception",
+                "name": "Compétence : Perception",
+                "url": "/api/2014/proficiencies/skill-perception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-survival",
+                "name": "Compétence : Survie",
+                "url": "/api/2014/proficiencies/skill-survival"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "proficiencies": [
+      {
+        "index": "light-armor",
+        "name": "Armures légères",
+        "url": "/api/2014/proficiencies/light-armor"
+      },
+      {
+        "index": "medium-armor",
+        "name": "Armures intermédiaires",
+        "url": "/api/2014/proficiencies/medium-armor"
+      },
+      {
+        "index": "shields",
+        "name": "Boucliers",
+        "url": "/api/2014/proficiencies/shields"
+      },
+      {
+        "index": "simple-weapons",
+        "name": "Armes courantes",
+        "url": "/api/2014/proficiencies/simple-weapons"
+      },
+      {
+        "index": "martial-weapons",
+        "name": "Armes de guerre",
+        "url": "/api/2014/proficiencies/martial-weapons"
+      },
+      {
+        "index": "saving-throw-str",
+        "name": "Jets de sauvegarde : FOR",
+        "url": "/api/2014/proficiencies/saving-throw-str"
+      },
+      {
+        "index": "saving-throw-con",
+        "name": "Jets de sauvegarde : CON",
+        "url": "/api/2014/proficiencies/saving-throw-con"
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "str",
+        "name": "FOR",
+        "url": "/api/2014/ability-scores/str"
+      },
+      {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/2014/ability-scores/con"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "explorers-pack",
+          "name": "Paquetage d'explorateur",
+          "url": "/api/2014/equipment/explorers-pack"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "javelin",
+          "name": "Javeline",
+          "url": "/api/2014/equipment/javelin"
+        },
+        "quantity": 4
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) une hache à deux mains ou (b) une arme de guerre de corps à corps au choix",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "greataxe",
+                "name": "Hache à deux mains",
+                "url": "/api/2014/equipment/greataxe"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "n'importe quelle arme de guerre de corps à corps",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "martial-melee-weapons",
+                    "name": "Armes de guerre au corps à corps",
+                    "url": "/api/2014/equipment-categories/martial-melee-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) deux hachettes ou (b) une arme courante au choix",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 2,
+              "of": {
+                "index": "handaxe",
+                "name": "Hachette",
+                "url": "/api/2014/equipment/handaxe"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "n'importe quelle arme courante",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Armes courantes",
+                    "url": "/api/2014/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "class_levels": "/api/2014/classes/barbarian/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "str",
+            "name": "FOR",
+            "url": "/api/2014/ability-scores/str"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "shields",
+          "name": "Boucliers",
+          "url": "/api/2014/proficiencies/shields"
+        },
+        {
+          "index": "simple-weapons",
+          "name": "Armes courantes",
+          "url": "/api/2014/proficiencies/simple-weapons"
+        },
+        {
+          "index": "martial-weapons",
+          "name": "Armes de guerre",
+          "url": "/api/2014/proficiencies/martial-weapons"
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "berserker",
+        "name": "Berserker",
+        "url": "/api/2014/subclasses/berserker"
+      }
+    ],
+    "url": "/api/2014/classes/barbarian"
+  },
+  {
+    "index": "bard",
+    "name": "Barde",
+    "hit_die": 8,
+    "proficiency_choices": [
+      {
+        "desc": "Choisissez trois compétences de votre choix",
+        "choose": 3,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-acrobatics",
+                "name": "Compétence : Acrobaties",
+                "url": "/api/2014/proficiencies/skill-acrobatics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-animal-handling",
+                "name": "Compétence : Dressage",
+                "url": "/api/2014/proficiencies/skill-animal-handling"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-arcana",
+                "name": "Compétence : Arcanes",
+                "url": "/api/2014/proficiencies/skill-arcana"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-athletics",
+                "name": "Compétence : Athlétisme",
+                "url": "/api/2014/proficiencies/skill-athletics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-deception",
+                "name": "Compétence : Tromperie",
+                "url": "/api/2014/proficiencies/skill-deception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-history",
+                "name": "Compétence : Histoire",
+                "url": "/api/2014/proficiencies/skill-history"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Compétence : Intuition",
+                "url": "/api/2014/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-intimidation",
+                "name": "Compétence : Intimidation",
+                "url": "/api/2014/proficiencies/skill-intimidation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-investigation",
+                "name": "Compétence : Investigation",
+                "url": "/api/2014/proficiencies/skill-investigation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-medicine",
+                "name": "Compétence : Médecine",
+                "url": "/api/2014/proficiencies/skill-medicine"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-nature",
+                "name": "Compétence : Nature",
+                "url": "/api/2014/proficiencies/skill-nature"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-perception",
+                "name": "Compétence : Perception",
+                "url": "/api/2014/proficiencies/skill-perception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-performance",
+                "name": "Compétence : Représentation",
+                "url": "/api/2014/proficiencies/skill-performance"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-persuasion",
+                "name": "Compétence : Persuasion",
+                "url": "/api/2014/proficiencies/skill-persuasion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Compétence : Religion",
+                "url": "/api/2014/proficiencies/skill-religion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-sleight-of-hand",
+                "name": "Compétence : Escamotage",
+                "url": "/api/2014/proficiencies/skill-sleight-of-hand"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-stealth",
+                "name": "Compétence : Discrétion",
+                "url": "/api/2014/proficiencies/skill-stealth"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-survival",
+                "name": "Compétence : Survie",
+                "url": "/api/2014/proficiencies/skill-survival"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "Trois instruments de musique de votre choix",
+        "choose": 3,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "bagpipes",
+                "name": "Cornemuse",
+                "url": "/api/2014/proficiencies/bagpipes"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "drum",
+                "name": "Tambour",
+                "url": "/api/2014/proficiencies/drum"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "dulcimer",
+                "name": "Tympanon",
+                "url": "/api/2014/proficiencies/dulcimer"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "flute",
+                "name": "Flûte",
+                "url": "/api/2014/proficiencies/flute"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "lute",
+                "name": "Luth",
+                "url": "/api/2014/proficiencies/lute"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "lyre",
+                "name": "Lyre",
+                "url": "/api/2014/proficiencies/lyre"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "horn",
+                "name": "Cor",
+                "url": "/api/2014/proficiencies/horn"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "pan-flute",
+                "name": "Flûte de pan",
+                "url": "/api/2014/proficiencies/pan-flute"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "shawm",
+                "name": "Chalemie",
+                "url": "/api/2014/proficiencies/shawm"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "viol",
+                "name": "Viole",
+                "url": "/api/2014/proficiencies/viol"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "proficiencies": [
+      {
+        "index": "light-armor",
+        "name": "Armures légères",
+        "url": "/api/2014/proficiencies/light-armor"
+      },
+      {
+        "index": "simple-weapons",
+        "name": "Armes courantes",
+        "url": "/api/2014/proficiencies/simple-weapons"
+      },
+      {
+        "index": "longswords",
+        "name": "Épées longues",
+        "url": "/api/2014/proficiencies/longswords"
+      },
+      {
+        "index": "rapiers",
+        "name": "Rapières",
+        "url": "/api/2014/proficiencies/rapiers"
+      },
+      {
+        "index": "shortswords",
+        "name": "Épées courtes",
+        "url": "/api/2014/proficiencies/shortswords"
+      },
+      {
+        "index": "hand-crossbows",
+        "name": "Arbalète de poing",
+        "url": "/api/2014/proficiencies/hand-crossbows"
+      },
+      {
+        "index": "saving-throw-dex",
+        "name": "Jet de sauvegarde : DEX",
+        "url": "/api/2014/proficiencies/saving-throw-dex"
+      },
+      {
+        "index": "saving-throw-cha",
+        "name": "Jet de sauvegarde : CHA",
+        "url": "/api/2014/proficiencies/saving-throw-cha"
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/2014/ability-scores/dex"
+      },
+      {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2014/ability-scores/cha"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "leather-armor",
+          "name": "Armure de cuir",
+          "url": "/api/2014/equipment/leather-armor"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "dagger",
+          "name": "Dague",
+          "url": "/api/2014/equipment/dagger"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) une rapière (b) une épée longue ou (c) une arme courante au choix",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "rapier",
+                "name": "Rapière",
+                "url": "/api/2014/equipment/rapier"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "longsword",
+                "name": "Épée longue",
+                "url": "/api/2014/equipment/longsword"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "n'importe quelle arme courante",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Armes courantes",
+                    "url": "/api/2014/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) un paquetage de diplomate ou (b) un paquetage d’artiste",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "diplomats-pack",
+                "name": "Paquetage de diplomate",
+                "url": "/api/2014/equipment/diplomats-pack"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "entertainers-pack",
+                "name": "Paquetage d'artiste",
+                "url": "/api/2014/equipment/entertainers-pack"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) un luth ou (b) tout autre instrument de musique",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "lute",
+                "name": "Luth",
+                "url": "/api/2014/equipment/lute"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "n'importe quel autre instrument de musique",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "musical-instruments",
+                    "name": "Instruments de musique",
+                    "url": "/api/2014/equipment-categories/musical-instruments"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "class_levels": "/api/2014/classes/bard/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2014/ability-scores/cha"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Armures légères",
+          "url": "/api/2014/proficiencies/light-armor"
+        }
+      ],
+      "proficiency_choices": [
+        {
+          "desc": "skill",
+          "choose": 1,
+          "type": "proficiencies",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-acrobatics",
+                  "name": "Compétence : Acrobaties",
+                  "url": "/api/2014/proficiencies/skill-acrobatics"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-animal-handling",
+                  "name": "Compétence : Dressage",
+                  "url": "/api/2014/proficiencies/skill-animal-handling"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-arcana",
+                  "name": "Compétence : Arcanes",
+                  "url": "/api/2014/proficiencies/skill-arcana"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-athletics",
+                  "name": "Compétence : Athlétisme",
+                  "url": "/api/2014/proficiencies/skill-athletics"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-deception",
+                  "name": "Compétence : Tromperie",
+                  "url": "/api/2014/proficiencies/skill-deception"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-history",
+                  "name": "Compétence : Histoire",
+                  "url": "/api/2014/proficiencies/skill-history"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-insight",
+                  "name": "Compétence : Intuition",
+                  "url": "/api/2014/proficiencies/skill-insight"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-intimidation",
+                  "name": "Compétence : Intimidation",
+                  "url": "/api/2014/proficiencies/skill-intimidation"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-investigation",
+                  "name": "Compétence : Investigation",
+                  "url": "/api/2014/proficiencies/skill-investigation"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-medicine",
+                  "name": "Compétence : Médecine",
+                  "url": "/api/2014/proficiencies/skill-medicine"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-nature",
+                  "name": "Compétence : Nature",
+                  "url": "/api/2014/proficiencies/skill-nature"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-perception",
+                  "name": "Compétence : Perception",
+                  "url": "/api/2014/proficiencies/skill-perception"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-performance",
+                  "name": "Compétence : Représentation",
+                  "url": "/api/2014/proficiencies/skill-performance"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-persuasion",
+                  "name": "Compétence : Persuasion",
+                  "url": "/api/2014/proficiencies/skill-persuasion"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-religion",
+                  "name": "Compétence : Religion",
+                  "url": "/api/2014/proficiencies/skill-religion"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-sleight-of-hand",
+                  "name": "Compétence : Escamotage",
+                  "url": "/api/2014/proficiencies/skill-sleight-of-hand"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-stealth",
+                  "name": "Compétence : Discrétion",
+                  "url": "/api/2014/proficiencies/skill-stealth"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-survival",
+                  "name": "Compétence : Survie",
+                  "url": "/api/2014/proficiencies/skill-survival"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "desc": "instrument de musique",
+          "choose": 1,
+          "type": "proficiencies",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "bagpipes",
+                  "name": "Cornemuse",
+                  "url": "/api/2014/proficiencies/bagpipes"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "drum",
+                  "name": "Tambour",
+                  "url": "/api/2014/proficiencies/drum"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "dulcimer",
+                  "name": "Tympanon",
+                  "url": "/api/2014/proficiencies/dulcimer"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "flute",
+                  "name": "Flûte",
+                  "url": "/api/2014/proficiencies/flute"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "lute",
+                  "name": "Luth",
+                  "url": "/api/2014/proficiencies/lute"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "lyre",
+                  "name": "Lyre",
+                  "url": "/api/2014/proficiencies/lyre"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "horn",
+                  "name": "Cor",
+                  "url": "/api/2014/proficiencies/horn"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "pan-flute",
+                  "name": "Flûte de pan",
+                  "url": "/api/2014/proficiencies/pan-flute"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "shawm",
+                  "name": "Chalemie",
+                  "url": "/api/2014/proficiencies/shawm"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "viol",
+                  "name": "Viole",
+                  "url": "/api/2014/proficiencies/viol"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "lore",
+        "name": "Savoir",
+        "url": "/api/2014/subclasses/lore"
+      }
+    ],
+    "spellcasting": {
+      "level": 1,
+      "spellcasting_ability": {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2014/ability-scores/cha"
+      },
+      "info": [
+        {
+          "name": "Sorts mineurs",
+          "desc": [
+            "Vous connaissez deux sorts mineurs que vous choisissez dans la liste des sorts de barde. Vous en apprenez d’autres que vous choisissez à plus haut niveau, comme le montre la colonne « Sorts mineurs connus » de la table « Le barde »."
+          ]
+        },
+        {
+          "name": "Emplacements de sorts",
+          "desc": [
+            "La table « Le barde » vous indique le nombre d’emplacements de sort dont vous disposez pour lancer vos sorts du 1er niveau et plus. Pour lancer un tel sort, vous devez dépenser un emplacement d’un niveau au moins égal à celui du sort. Vous récupérez tous les emplacements dépensés en terminant un repos long.",
+            "Si, par exemple, vous connaissez le sort du 1er niveau soins alors qu’il vous reste un emplacement de sort du 1er niveau et un autre du 2e niveau, vous pouvez le lancer en dépensant l’un ou l’autre de ces emplacements."
+          ]
+        },
+        {
+          "name": "Sorts connus du 1er niveau et plus",
+          "desc": [
+            "Vous connaissez quatre sorts de niveau 1, à choisir dans la liste des sorts de barde.",
+            "La colonne Sorts connus de la table ci-dessus indique les niveaux auxquels vous apprenez de nouveaux sorts de barde de votre choix.",
+            "Par ailleurs, lorsque vous gagnez un niveau dans cette classe, vous pouvez choisir l’un des sorts de barde que vous connaissez pour le remplacer par un autre sort de la liste des sorts de barde, qui doit lui aussi être d’un niveau pour lequel vous disposez d’emplacements."
+          ]
+        },
+        {
+          "name": "Caractéristique d'incantation",
+          "desc": [
+            "Le Charisme est la caractéristique d’incantation de vos sorts de barde. La magie que vous maniez est issue de votre cœur et de votre âme, de tout ce que vous insufflez dans votre musique ou vos oraisons.",
+            "Vous recourez au Charisme chaque fois qu’un sort se réfère à votre caractéristique d’incantation. En outre, vous utilisez votre modificateur de Charisme pour calculer le DD de sauvegarde des sorts de barde que vous lancez, ainsi que lorsqu’un tel sort entraîne un jet d’attaque de votre part.",
+            "DD de sauvegarde des sorts = 8 + votre bonus de maîtrise + votre modificateur de Charisme.",
+            "Modificateur aux attaques avec un sort = votre bonus de maîtrise + votre modificateur de Charisme."
+          ]
+        },
+        {
+          "name": "Incantation rituelle",
+          "desc": [
+            "Vous pouvez lancer comme rituel un sort de barde que vous connaissez si ce sort porte la mention « rituel »."
+          ]
+        },
+        {
+          "name": "Focaliseur d'incantation",
+          "desc": [
+            "Vous pouvez vous servir d’un instrument de musique (cf. « Équipement ») comme focaliseur d’incantation de vos sorts de barde."
+          ]
+        }
+      ]
+    },
+    "spells": "/api/2014/classes/bard/spells",
+    "url": "/api/2014/classes/bard"
+  },
+  {
+    "index": "cleric",
+    "name": "Clerc",
+    "hit_die": 8,
+    "proficiency_choices": [
+      {
+        "desc": "Choisissez deux compétences parmi Histoire, Intuition, Médecine, Persuasion, et Religion",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-history",
+                "name": "Compétence : Histoire",
+                "url": "/api/2014/proficiencies/skill-history"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Compétence : Intuition",
+                "url": "/api/2014/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-medicine",
+                "name": "Compétence : Médecine",
+                "url": "/api/2014/proficiencies/skill-medicine"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-persuasion",
+                "name": "Compétence : Persuasion",
+                "url": "/api/2014/proficiencies/skill-persuasion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Compétence : Religion",
+                "url": "/api/2014/proficiencies/skill-religion"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "proficiencies": [
+      {
+        "index": "light-armor",
+        "name": "Armures légères",
+        "url": "/api/2014/proficiencies/light-armor"
+      },
+      {
+        "index": "medium-armor",
+        "name": "Armures intermédiaires",
+        "url": "/api/2014/proficiencies/medium-armor"
+      },
+      {
+        "index": "shields",
+        "name": "Boucliers",
+        "url": "/api/2014/proficiencies/shields"
+      },
+      {
+        "index": "simple-weapons",
+        "name": "Armes courantes",
+        "url": "/api/2014/proficiencies/simple-weapons"
+      },
+      {
+        "index": "saving-throw-wis",
+        "name": "Jet de sauvegarde : SAG",
+        "url": "/api/2014/proficiencies/saving-throw-wis"
+      },
+      {
+        "index": "saving-throw-cha",
+        "name": "Jet de sauvegarde : CHA",
+        "url": "/api/2014/proficiencies/saving-throw-cha"
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "wis",
+        "name": "SAG",
+        "url": "/api/2014/ability-scores/wis"
+      },
+      {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2014/ability-scores/cha"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "shield",
+          "name": "Bouclier",
+          "url": "/api/2014/equipment/shield"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) une masse d’armes ou (b) un marteau de guerre (si maîtrise)",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "mace",
+                "name": "Mace",
+                "url": "/api/2014/equipment/mace"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "warhammer",
+                "name": "Marteau de guerre",
+                "url": "/api/2014/equipment/warhammer"
+              },
+              "prerequisites": [
+                {
+                  "type": "proficiency",
+                  "proficiency": {
+                    "index": "warhammers",
+                    "name": "Marteaux de guerre",
+                    "url": "/api/2014/proficiencies/warhammers"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) une armure d’écailles ou (b) une armure de cuir ou (c) une cotte de mailles (si maîtrise)",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "scale-mail",
+                "name": "Armure d'écailles",
+                "url": "/api/2014/equipment/scale-mail"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "leather-armor",
+                "name": "Armure de cuir",
+                "url": "/api/2014/equipment/leather-armor"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "chain-mail",
+                "name": "Cotte de mailles",
+                "url": "/api/2014/equipment/chain-mail"
+              },
+              "prerequisites": [
+                {
+                  "type": "proficiency",
+                  "proficiency": {
+                    "index": "chain-mail",
+                    "name": "Cotte de mailles",
+                    "url": "/api/2014/proficiencies/chain-mail"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) une arbalète légère et 20 carreaux ou (b) une arme courante au choix",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "crossbow-light",
+                    "name": "Arbalète légère",
+                    "url": "/api/2014/equipment/crossbow-light"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "crossbow-bolt",
+                    "name": "Carreau",
+                    "url": "/api/2014/equipment/crossbow-bolt"
+                  }
+                }
+              ]
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "n'importe quelle arme courante",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Armes courantes",
+                    "url": "/api/2014/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) un paquetage d’ecclésiastique ou (b) un paquetage d’explorateur",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "priests-pack",
+                "name": "Paquetage d'ecclésiastique",
+                "url": "/api/2014/equipment/priests-pack"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "explorers-pack",
+                "name": "Paquetage d'explorateur",
+                "url": "/api/2014/equipment/explorers-pack"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "symbole sacré",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "equipment_category",
+          "equipment_category": {
+            "index": "holy-symbols",
+            "name": "Symboles sacrés",
+            "url": "/api/2014/equipment-categories/holy-symbols"
+          }
+        }
+      }
+    ],
+    "class_levels": "/api/2014/classes/cleric/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "wis",
+            "name": "SAG",
+            "url": "/api/2014/ability-scores/wis"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Armure légère",
+          "url": "/api/2014/proficiencies/light-armor"
+        },
+        {
+          "index": "medium-armor",
+          "name": "Armure intermédiaire",
+          "url": "/api/2014/proficiencies/medium-armor"
+        },
+        {
+          "index": "shields",
+          "name": "Boucliers",
+          "url": "/api/2014/proficiencies/shields"
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "life",
+        "name": "Vie",
+        "url": "/api/2014/subclasses/life"
+      }
+    ],
+    "spellcasting": {
+      "level": 1,
+      "spellcasting_ability": {
+        "index": "wis",
+        "name": "SAG",
+        "url": "/api/2014/ability-scores/wis"
+      },
+      "info": [
+        {
+          "name": "Sorts mineurs",
+          "desc": [
+            "Au niveau 1, vous connaissez deux sorts mineurs que vous choisissez dans la liste des sorts de clerc. Vous en apprenez d’autres que vous choisissez à plus haut niveau, comme le montre la colonne « Sorts mineurs connus » de la table « Le clerc »."
+          ]
+        },
+        {
+          "name": "Préparation et incantation des sorts",
+          "desc": [
+            "La table « Le clerc » vous indique le nombre d’emplacements de sort dont vous disposez pour lancer vos sorts de clerc du 1er niveau et plus. Pour lancer un tel sort, vous devez dépenser un emplacement d’un niveau au moins égal à celui du sort. Vous récupérez tous les emplacements dépensés en terminant un repos long.",
+            "Vous préparez la liste des sorts de clerc disponibles à l’incantation en les sélectionnant dans la liste des sorts de clerc. Ce faisant, choisissez autant de sorts de clerc que votre modificateur de Sagesse + votre niveau de clerc (minimum d’un sort). Ces sorts doivent tous être d’un niveau pour lequel vous disposez d’emplacements.",
+            "Si, par exemple, vous êtes clerc de niveau 3, vous disposez de quatre emplacements de sort du 1er niveau et de deux emplacements du 2e niveau. Avec une Sagesse de 16, vous pouvez préparer une liste contenant six sorts du 1er ou 2e niveau, selon la répartition de votre choix. Si vous préparez le sort du 1er niveau soins, vous pouvez le lancer en dépensant un emplacement du 1er ou du 2e niveau. Cette incantation ne retire pas le sort de votre liste de sorts préparés.",
+            "Vous pouvez modifier votre liste de sorts préparés lorsque vous terminez un repos long. Préparer une nouvelle liste de sorts de clerc demande du temps de prière et de méditation : au moins 1 minute par niveau de sort pour chaque sort de la liste."
+          ]
+        },
+        {
+          "name": "Caractéristique d'incantation",
+          "desc": [
+            "La Sagesse est la caractéristique d’incantation de vos sorts de clerc. Vos sorts tirent leur puissance de votre piété. Vous recourez à la Sagesse chaque fois qu’un sort de clerc se réfère à votre caractéristique d’incantation. En outre, vous utilisez votre modificateur de Sagesse pour calculer le DD de sauvegarde des sorts de clerc que vous lancez, ainsi que lorsqu’un tel sort entraîne un jet d’attaque de votre part.",
+            "DD de sauvegarde des sorts = 8 + votre bonus de maîtrise + votre modificateur de Sagesse",
+            "Modificateur d’attaque des sorts = votre bonus de maîtrise + votre modificateur de Sagesse"
+          ]
+        },
+        {
+          "name": "Incantation rituelle",
+          "desc": [
+            "You can cast a cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared."
+          ]
+        },
+        {
+          "name": "Focaliseur d'incantation",
+          "desc": [
+            "Vous pouvez lancer comme rituel un sort de clerc que vous avez préparé si ce sort porte la mention « rituel »."
+          ]
+        }
+      ]
+    },
+    "spells": "/api/2014/classes/cleric/spells",
+    "url": "/api/2014/classes/cleric"
+  },
+  {
+    "index": "druid",
+    "name": "Druide",
+    "hit_die": 8,
+    "proficiency_choices": [
+      {
+        "desc": "Choisissez deux compétences parmi Arcanes, Dressage, Intuition, Médecine, Nature, Perception, Religion, and Survie",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-arcana",
+                "name": "Compétence : Arcanes",
+                "url": "/api/2014/proficiencies/skill-arcana"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-animal-handling",
+                "name": "Compétence : Dressage",
+                "url": "/api/2014/proficiencies/skill-animal-handling"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Compétence : Intuition",
+                "url": "/api/2014/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-medicine",
+                "name": "Compétence : Médecine",
+                "url": "/api/2014/proficiencies/skill-medicine"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-nature",
+                "name": "Compétence : Nature",
+                "url": "/api/2014/proficiencies/skill-nature"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-perception",
+                "name": "Compétence : Perception",
+                "url": "/api/2014/proficiencies/skill-perception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Compétence : Religion",
+                "url": "/api/2014/proficiencies/skill-religion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-survival",
+                "name": "Compétence : Survie",
+                "url": "/api/2014/proficiencies/skill-survival"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "proficiencies": [
+      {
+        "index": "light-armor",
+        "name": "Armure légère",
+        "url": "/api/2014/proficiencies/light-armor"
+      },
+      {
+        "index": "medium-armor",
+        "name": "Armure intermédiaire",
+        "url": "/api/2014/proficiencies/medium-armor"
+      },
+      {
+        "index": "shields",
+        "name": "Boucliers",
+        "url": "/api/2014/proficiencies/shields"
+      },
+      {
+        "index": "clubs",
+        "name": "Gourdins",
+        "url": "/api/2014/proficiencies/clubs"
+      },
+      {
+        "index": "daggers",
+        "name": "Dagues",
+        "url": "/api/2014/proficiencies/daggers"
+      },
+      {
+        "index": "javelins",
+        "name": "Javelines",
+        "url": "/api/2014/proficiencies/javelins"
+      },
+      {
+        "index": "maces",
+        "name": "Masses d'armes",
+        "url": "/api/2014/proficiencies/maces"
+      },
+      {
+        "index": "quarterstaffs",
+        "name": "Bâtons",
+        "url": "/api/2014/proficiencies/quarterstaffs"
+      },
+      {
+        "index": "sickles",
+        "name": "Serpes",
+        "url": "/api/2014/proficiencies/sickles"
+      },
+      {
+        "index": "spears",
+        "name": "Lances",
+        "url": "/api/2014/proficiencies/spears"
+      },
+      {
+        "index": "darts",
+        "name": "Fléchettes",
+        "url": "/api/2014/proficiencies/darts"
+      },
+      {
+        "index": "slings",
+        "name": "Frondes",
+        "url": "/api/2014/proficiencies/slings"
+      },
+      {
+        "index": "scimitars",
+        "name": "Cimeterres",
+        "url": "/api/2014/proficiencies/scimitars"
+      },
+      {
+        "index": "herbalism-kit",
+        "name": "Matériel d'herboriste",
+        "url": "/api/2014/proficiencies/herbalism-kit"
+      },
+      {
+        "index": "saving-throw-int",
+        "name": "Jet de sauvegarde : INT",
+        "url": "/api/2014/proficiencies/saving-throw-int"
+      },
+      {
+        "index": "saving-throw-wis",
+        "name": "Jet de sauvegarde : SAG",
+        "url": "/api/2014/proficiencies/saving-throw-wis"
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "int",
+        "name": "INT",
+        "url": "/api/2014/ability-scores/int"
+      },
+      {
+        "index": "wis",
+        "name": "SAG",
+        "url": "/api/2014/ability-scores/wis"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "leather-armor",
+          "name": "Armure de cuir",
+          "url": "/api/2014/equipment/leather-armor"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "explorers-pack",
+          "name": "Paquetage d'explorateur",
+          "url": "/api/2014/equipment/explorers-pack"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) un bouclier en bois ou (b) une arme courante au choix",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "shield",
+                "name": "Bouclier",
+                "url": "/api/2014/equipment/shield"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "n'importe quelle arme courante",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Armes courantes",
+                    "url": "/api/2014/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) un cimeterre ou (b) une arme courante de corps à corps au choix",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "scimitar",
+                "name": "Cimeterre",
+                "url": "/api/2014/equipment/scimitar"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "n'importe quelle arme courante de corps à corps",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-melee-weapons",
+                    "name": "Armes courantes au corps à corps",
+                    "url": "/api/2014/equipment-categories/simple-melee-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "focaliseur druidique",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "equipment_category",
+          "equipment_category": {
+            "index": "druidic-foci",
+            "name": "Focaliseur druidique",
+            "url": "/api/2014/equipment-categories/druidic-foci"
+          }
+        }
+      }
+    ],
+    "class_levels": "/api/2014/classes/druid/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "wis",
+            "name": "SAG",
+            "url": "/api/2014/ability-scores/wis"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Armure légère",
+          "url": "/api/2014/proficiencies/light-armor"
+        },
+        {
+          "index": "medium-armor",
+          "name": "Armure intermédiaire",
+          "url": "/api/2014/proficiencies/medium-armor"
+        },
+        {
+          "index": "shields",
+          "name": "Boucliers",
+          "url": "/api/2014/proficiencies/shields"
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "land",
+        "name": "Terre",
+        "url": "/api/2014/subclasses/land"
+      }
+    ],
+    "spellcasting": {
+      "level": 1,
+      "spellcasting_ability": {
+        "index": "wis",
+        "name": "SAG",
+        "url": "/api/2014/ability-scores/wis"
+      },
+      "info": [
+        {
+          "name": "Sorts mineurs",
+          "desc": [
+            "Au niveau 1, vous connaissez deux sorts mineurs que vous choisissez dans la liste des sorts de druide. Vous en apprenez d’autres que vous choisissez à plus haut niveau, comme le montre la colonne « Sorts mineurs connus » de la table « Le druide »."
+          ]
+        },
+        {
+          "name": "Préparation et incantation des sorts",
+          "desc": [
+            "La table « Le druide » vous indique le nombre d’emplacements de sort dont vous disposez pour lancer vos sorts du 1er niveau et plus. Pour lancer un tel sort de druide, vous devez dépenser un emplacement d’un niveau au moins égal à celui du sort. Vous récupérez tous les emplacements dépensés en terminant un repos long.",
+            "Vous préparez la liste des sorts de druide disponibles à l’incantation en les sélectionnant dans la liste des sorts de druide. Ce faisant, choisissez autant de sorts de druide que votre modificateur de Sagesse + votre niveau de druide (minimum d’un sort). Ces sorts doivent tous être d’un niveau pour lequel vous disposez d’emplacements de sort.",
+            "Si, par exemple, vous êtes druide de niveau 3, vous disposez de quatre emplacements de sort du 1er niveau et de deux emplacements du 2e niveau. Avec une Sagesse de 16, vous pouvez préparer une liste contenant six sorts du 1er ou 2e niveau, selon la répartition de votre choix. Si vous préparez le sort du 1er niveau soins, vous pouvez le lancer en dépensant un emplacement de sort du 1er ou du 2e niveau. Cette incantation ne retire pas le sort de votre liste de sorts préparés.",
+            "Vous pouvez modifier votre liste de sorts préparés lorsque vous terminez un repos long. Préparer une nouvelle liste de sorts de druide demande du temps de prière et de méditation : au moins 1 minute par niveau de sort pour chaque sort de la liste."
+          ]
+        },
+        {
+          "name": "Caractéristique d'incantation",
+          "desc": [
+            "La Sagesse est la caractéristique d’incantation de vos sorts de druide, cette magie provenant de votre dévotion et du lien étroit que vous entretenez avec la nature. Vous recourez à la Sagesse chaque fois qu’un sort se réfère à votre caractéristique d’incantation. En outre, vous utilisez votre modificateur de Sagesse pour calculer le DD de sauvegarde des sorts de druide que vous lancez, ainsi que lorsqu’un tel sort entraîne un jet d’attaque de votre part.",
+            "DD de sauvegarde des sorts = 8 + votre bonus de maîtrise + votre modificateur de Sagesse.",
+            "Modificateur d’attaque des sorts = votre bonus de maîtrise + votre modificateur de Sagesse."
+          ]
+        },
+        {
+          "name": "Incantation rituelle",
+          "desc": [
+            "Vous pouvez lancer comme rituel un sort de druide que vous avez préparé si ce sort porte la mention « rituel »."
+          ]
+        },
+        {
+          "name": "Focaliseur d'incantation",
+          "desc": [
+            "Vous pouvez vous servir d’un focaliseur druidique(cf. « Équipement ») comme focaliseur d’incantation de vos sorts de druide."
+          ]
+        }
+      ]
+    },
+    "spells": "/api/2014/classes/druid/spells",
+    "url": "/api/2014/classes/druid"
+  },
+  {
+    "index": "fighter",
+    "name": "Fighter",
+    "hit_die": 10,
+    "proficiency_choices": [
+      {
+        "desc": "Choisisez deux compétences parmi Acrobaties, Dressage, Athlétisme, Histoire, Intuition, Intimidation, Perception, and Survie",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-acrobatics",
+                "name": "Compétence : Acrobaties",
+                "url": "/api/2014/proficiencies/skill-acrobatics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-animal-handling",
+                "name": "Compétence : Dressage",
+                "url": "/api/2014/proficiencies/skill-animal-handling"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-athletics",
+                "name": "Compétence : Athlétisme",
+                "url": "/api/2014/proficiencies/skill-athletics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-history",
+                "name": "Compétence : Histoire",
+                "url": "/api/2014/proficiencies/skill-history"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Compétence : Intuition",
+                "url": "/api/2014/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-intimidation",
+                "name": "Compétence : Intimidation",
+                "url": "/api/2014/proficiencies/skill-intimidation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-perception",
+                "name": "Compétence : Perception",
+                "url": "/api/2014/proficiencies/skill-perception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-survival",
+                "name": "Compétence : Survie",
+                "url": "/api/2014/proficiencies/skill-survival"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "proficiencies": [
+      {
+        "index": "all-armor",
+        "name": "Toutes les armures",
+        "url": "/api/2014/proficiencies/all-armor"
+      },
+      {
+        "index": "shields",
+        "name": "Boucliers",
+        "url": "/api/2014/proficiencies/shields"
+      },
+      {
+        "index": "simple-weapons",
+        "name": "Armes courantes",
+        "url": "/api/2014/proficiencies/simple-weapons"
+      },
+      {
+        "index": "martial-weapons",
+        "name": "Armes de guerre",
+        "url": "/api/2014/proficiencies/martial-weapons"
+      },
+      {
+        "index": "saving-throw-str",
+        "name": "Jet de sauvegarde : FOR",
+        "url": "/api/2014/proficiencies/saving-throw-str"
+      },
+      {
+        "index": "saving-throw-con",
+        "name": "Jet de sauvegarde : CON",
+        "url": "/api/2014/proficiencies/saving-throw-con"
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "str",
+        "name": "FOR",
+        "url": "/api/2014/ability-scores/str"
+      },
+      {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/2014/ability-scores/con"
+      }
+    ],
+    "starting_equipment": [],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) cotte de mailles ou (b) armure de cuir, arc long et 20 flèches",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "chain-mail",
+                "name": "Cotte de mailles",
+                "url": "/api/2014/equipment/chain-mail"
+              }
+            },
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "leather-armor",
+                    "name": "Armure de cuir",
+                    "url": "/api/2014/equipment/leather-armor"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "longbow",
+                    "name": "Arc long",
+                    "url": "/api/2014/equipment/longbow"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "arrow",
+                    "name": "Flèche",
+                    "url": "/api/2014/equipment/arrow"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) une arme de guerre et un bouclier ou (b) deux armes de guerre",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "choice",
+                  "choice": {
+                    "desc": "une arme de guerre",
+                    "choose": 1,
+                    "type": "equipment",
+                    "from": {
+                      "option_set_type": "equipment_category",
+                      "equipment_category": {
+                        "index": "martial-weapons",
+                        "name": "Armes de guerre",
+                        "url": "/api/2014/equipment-categories/martial-weapons"
+                      }
+                    }
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "shield",
+                    "name": "Bouclier",
+                    "url": "/api/2014/equipment/shield"
+                  }
+                }
+              ]
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "deux armes de guerre",
+                "choose": 2,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "martial-weapons",
+                    "name": "Armes de guerre",
+                    "url": "/api/2014/equipment-categories/martial-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) une arbalète légère et 20 carreaux ou (b) deux hachettes",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "crossbow-light",
+                    "name": "Arbalète légère",
+                    "url": "/api/2014/equipment/crossbow-light"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "crossbow-bolt",
+                    "name": "Carreau",
+                    "url": "/api/2014/equipment/crossbow-bolt"
+                  }
+                }
+              ]
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 2,
+              "of": {
+                "index": "handaxe",
+                "name": "Hachette",
+                "url": "/api/2014/equipment/handaxe"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) un paquetage d’exploration souterraine ou (b) un paquetage d’explorateur",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneers-pack",
+                "name": "Paquetage d'exploration souterraine",
+                "url": "/api/2014/equipment/dungeoneers-pack"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "explorers-pack",
+                "name": "Paquetage d'explorateur",
+                "url": "/api/2014/equipment/explorers-pack"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "class_levels": "/api/2014/classes/fighter/levels",
+    "multi_classing": {
+      "prerequisite_options": {
+        "type": "ability-scores",
+        "choose": 1,
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "score_prerequisite",
+              "ability_score": {
+                "index": "str",
+                "name": "FOR",
+                "url": "/api/2014/ability-scores/str"
+              },
+              "minimum_score": 13
+            },
+            {
+              "option_type": "score_prerequisite",
+              "ability_score": {
+                "index": "dex",
+                "name": "DEX",
+                "url": "/api/2014/ability-scores/dex"
+              },
+              "minimum_score": 13
+            }
+          ]
+        }
+      },
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Armure légère",
+          "url": "/api/2014/proficiencies/light-armor"
+        },
+        {
+          "index": "medium-armor",
+          "name": "Armure intermédiaire",
+          "url": "/api/2014/proficiencies/medium-armor"
+        },
+        {
+          "index": "shields",
+          "name": "Boucliers",
+          "url": "/api/2014/proficiencies/shields"
+        },
+        {
+          "index": "simple-weapons",
+          "name": "Armes courantes",
+          "url": "/api/2014/proficiencies/simple-weapons"
+        },
+        {
+          "index": "martial-weapons",
+          "name": "Armes de guerre",
+          "url": "/api/2014/proficiencies/martial-weapons"
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "champion",
+        "name": "Champion",
+        "url": "/api/2014/subclasses/champion"
+      }
+    ],
+    "url": "/api/2014/classes/fighter"
+  },
+  {
+    "index": "monk",
+    "name": "Moine",
+    "hit_die": 8,
+    "proficiency_choices": [
+      {
+        "desc": "Choisissez deux compétences parmi Acrobaties, Athlétisme, Histoire, Intuition, Religion, et Discrétion",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-acrobatics",
+                "name": "Compétence : Acrobaties",
+                "url": "/api/2014/proficiencies/skill-acrobatics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-athletics",
+                "name": "Compétence : Athlétisme",
+                "url": "/api/2014/proficiencies/skill-athletics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-history",
+                "name": "Compétence : Histoire",
+                "url": "/api/2014/proficiencies/skill-history"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Compétence : Intuition",
+                "url": "/api/2014/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Compétence : Religion",
+                "url": "/api/2014/proficiencies/skill-religion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-stealth",
+                "name": "Compétence : Discrétion",
+                "url": "/api/2014/proficiencies/skill-stealth"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "Choisissez un type d’outil d’artisan ou un instrument de musique au choix",
+        "type": "proficiencies",
+        "choose": 1,
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "outil d'artisan",
+                "type": "proficiencies",
+                "choose": 1,
+                "from": {
+                  "option_set_type": "options_array",
+                  "options": [
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "alchemists-supplies",
+                        "name": "Matériel d'alchimiste",
+                        "url": "/api/2014/proficiencies/alchemists-supplies"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "brewers-supplies",
+                        "name": "Matériel de brasseur",
+                        "url": "/api/2014/proficiencies/brewers-supplies"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "calligraphers-supplies",
+                        "name": "Matériel de calligraphe",
+                        "url": "/api/2014/proficiencies/calligraphers-supplies"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "carpenters-tools",
+                        "name": "Outils de charpentier",
+                        "url": "/api/2014/proficiencies/carpenters-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "cartographers-tools",
+                        "name": "Outils de cartographe",
+                        "url": "/api/2014/proficiencies/cartographers-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "cobblers-tools",
+                        "name": "Outils de cordonnier",
+                        "url": "/api/2014/proficiencies/cobblers-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "cooks-utensils",
+                        "name": "Ustensiles de cuisinier",
+                        "url": "/api/2014/proficiencies/cooks-utensils"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "glassblowers-tools",
+                        "name": "Outils de souffleur de verre",
+                        "url": "/api/2014/proficiencies/glassblowers-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "jewelers-tools",
+                        "name": "Outils de bijoutier",
+                        "url": "/api/2014/proficiencies/jewelers-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "leatherworkers-tools",
+                        "name": "Outils de tanneur",
+                        "url": "/api/2014/proficiencies/leatherworkers-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "masons-tools",
+                        "name": "Outils de maçon",
+                        "url": "/api/2014/proficiencies/masons-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "painters-supplies",
+                        "name": "Matériel de peintre",
+                        "url": "/api/2014/proficiencies/painters-supplies"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "potters-tools",
+                        "name": "Outils de potier",
+                        "url": "/api/2014/proficiencies/potters-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "smiths-tools",
+                        "name": "Outils de forgeron",
+                        "url": "/api/2014/proficiencies/smiths-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "tinkers-tools",
+                        "name": "Outils de bricoleur",
+                        "url": "/api/2014/proficiencies/tinkers-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "weavers-tools",
+                        "name": "Outils de tisserand",
+                        "url": "/api/2014/proficiencies/weavers-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "woodcarvers-tools",
+                        "name": "Outils de menuisier",
+                        "url": "/api/2014/proficiencies/woodcarvers-tools"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "disguise-kit",
+                        "name": "Kit de déguisement",
+                        "url": "/api/2014/proficiencies/disguise-kit"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "forgery-kit",
+                        "name": "Kit de contrefaçon",
+                        "url": "/api/2014/proficiencies/forgery-kit"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "instrument de musique",
+                "type": "proficiencies",
+                "choose": 1,
+                "from": {
+                  "option_set_type": "options_array",
+                  "options": [
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "bagpipes",
+                        "name": "Cornemuse",
+                        "url": "/api/2014/proficiencies/bagpipes"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "drum",
+                        "name": "Tambour",
+                        "url": "/api/2014/proficiencies/drum"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "dulcimer",
+                        "name": "Tympanon",
+                        "url": "/api/2014/proficiencies/dulcimer"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "flute",
+                        "name": "Flûte",
+                        "url": "/api/2014/proficiencies/flute"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "lute",
+                        "name": "Luth",
+                        "url": "/api/2014/proficiencies/lute"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "lyre",
+                        "name": "Lyre",
+                        "url": "/api/2014/proficiencies/lyre"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "horn",
+                        "name": "Cor",
+                        "url": "/api/2014/proficiencies/horn"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "pan-flute",
+                        "name": "Flûte de pan",
+                        "url": "/api/2014/proficiencies/pan-flute"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "shawm",
+                        "name": "Chalemie",
+                        "url": "/api/2014/proficiencies/shawm"
+                      }
+                    },
+                    {
+                      "option_type": "reference",
+                      "item": {
+                        "index": "viol",
+                        "name": "Viole",
+                        "url": "/api/2014/proficiencies/viol"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "proficiencies": [
+      {
+        "index": "simple-weapons",
+        "name": "Armes courantes",
+        "url": "/api/2014/proficiencies/simple-weapons"
+      },
+      {
+        "index": "shortswords",
+        "name": "Épées courtes",
+        "url": "/api/2014/proficiencies/shortswords"
+      },
+      {
+        "index": "saving-throw-dex",
+        "name": "Jet de sauvegarde : DEX",
+        "url": "/api/2014/proficiencies/saving-throw-dex"
+      },
+      {
+        "index": "saving-throw-str",
+        "name": "Jet de sauvegarde : FOR",
+        "url": "/api/2014/proficiencies/saving-throw-str"
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "str",
+        "name": "FOR",
+        "url": "/api/2014/ability-scores/str"
+      },
+      {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/2014/ability-scores/dex"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "dart",
+          "name": "Fléchette",
+          "url": "/api/2014/equipment/dart"
+        },
+        "quantity": 10
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) une épée courte ou (b) une arme courante au choix",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "shortsword",
+                "name": "Épée courte",
+                "url": "/api/2014/equipment/shortsword"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "n'importe quelle arme courante",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Armes courantes",
+                    "url": "/api/2014/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) un paquetage d’exploration souterraine ou (b) un paquetage d’explorateur",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneers-pack",
+                "name": "Paquetage d'exploration souterraine",
+                "url": "/api/2014/equipment/dungeoneers-pack"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "explorers-pack",
+                "name": "Paquetage d'explorateur",
+                "url": "/api/2014/equipment/explorers-pack"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "class_levels": "/api/2014/classes/monk/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "minimum_score": 13
+        },
+        {
+          "ability_score": {
+            "index": "wis",
+            "name": "SAG",
+            "url": "/api/2014/ability-scores/wis"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "simple-weapons",
+          "name": "Armes courantes",
+          "url": "/api/2014/proficiencies/simple-weapons"
+        },
+        {
+          "index": "shortswords",
+          "name": "Épée courte",
+          "url": "/api/2014/proficiencies/shortswords"
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "open-hand",
+        "name": "Paume",
+        "url": "/api/2014/subclasses/open-hand"
+      }
+    ],
+    "url": "/api/2014/classes/monk"
+  },
+  {
+    "index": "paladin",
+    "name": "Paladin",
+    "hit_die": 10,
+    "proficiency_choices": [
+      {
+        "desc": "Choisissez deux compétences parmi Athlétisme, Intuition, Intimidation, Médecine, Persuasion, et Religion",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-athletics",
+                "name": "Compétence : Athlétisme",
+                "url": "/api/2014/proficiencies/skill-athletics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Compétence : Intuition",
+                "url": "/api/2014/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-intimidation",
+                "name": "Compétence : Intimidation",
+                "url": "/api/2014/proficiencies/skill-intimidation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-medicine",
+                "name": "Compétence : Médecine",
+                "url": "/api/2014/proficiencies/skill-medicine"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-persuasion",
+                "name": "Compétence : Persuasion",
+                "url": "/api/2014/proficiencies/skill-persuasion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Compétence : Religion",
+                "url": "/api/2014/proficiencies/skill-religion"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "proficiencies": [
+      {
+        "index": "all-armor",
+        "name": "Toutes les armures",
+        "url": "/api/2014/proficiencies/all-armor"
+      },
+      {
+        "index": "shields",
+        "name": "Boucliers",
+        "url": "/api/2014/proficiencies/shields"
+      },
+      {
+        "index": "simple-weapons",
+        "name": "Armes courantes",
+        "url": "/api/2014/proficiencies/simple-weapons"
+      },
+      {
+        "index": "martial-weapons",
+        "name": "Armes de guerre",
+        "url": "/api/2014/proficiencies/martial-weapons"
+      },
+      {
+        "index": "saving-throw-wis",
+        "name": "Jet de sauvegarde : SAG",
+        "url": "/api/2014/proficiencies/saving-throw-wis"
+      },
+      {
+        "index": "saving-throw-cha",
+        "name": "Jet de sauvegarde : CHA",
+        "url": "/api/2014/proficiencies/saving-throw-cha"
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "wis",
+        "name": "SAG",
+        "url": "/api/2014/ability-scores/wis"
+      },
+      {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2014/ability-scores/cha"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "chain-mail",
+          "name": "Cotte de mailles",
+          "url": "/api/2014/equipment/chain-mail"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) une arme de guerre et un bouclier ou (b) deux armes de guerre",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "choice",
+                  "choice": {
+                    "desc": "n'importe quelle arme de guerre",
+                    "choose": 1,
+                    "type": "equipment",
+                    "from": {
+                      "option_set_type": "equipment_category",
+                      "equipment_category": {
+                        "name": "Armes de guerre",
+                        "index": "martial-weapons",
+                        "url": "/api/2014/equipment-categories/martial-weapons"
+                      }
+                    }
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "shield",
+                    "name": "Bouclier",
+                    "url": "/api/2014/equipment/shield"
+                  }
+                }
+              ]
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "deux armes de guerre",
+                "choose": 2,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "martial-weapons",
+                    "name": "Armes de guerre",
+                    "url": "/api/2014/equipment-categories/martial-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) cinq javelines ou (b) une arme courante de corps à corps au choix",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 5,
+              "of": {
+                "index": "javelin",
+                "name": "Javeline",
+                "url": "/api/2014/equipment/javelin"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "n'importe quelle arme courante",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Armes courantes",
+                    "url": "/api/2014/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) un paquetage d’ecclésiastique ou (b) un paquetage d’explorateur",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "priests-pack",
+                "name": "Paquetage d'ecclésiastique",
+                "url": "/api/2014/equipment/priests-pack"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "explorers-pack",
+                "name": "Paquetage d'explorateur",
+                "url": "/api/2014/equipment/explorers-pack"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "symbole sacré",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "equipment_category",
+          "equipment_category": {
+            "index": "holy-symbols",
+            "name": "Symboles sacrés",
+            "url": "/api/2014/equipment-categories/holy-symbols"
+          }
+        }
+      }
+    ],
+    "class_levels": "/api/2014/classes/paladin/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "str",
+            "name": "FOR",
+            "url": "/api/2014/ability-scores/str"
+          },
+          "minimum_score": 13
+        },
+        {
+          "ability_score": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2014/ability-scores/cha"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Armure légère",
+          "url": "/api/2014/proficiencies/light-armor"
+        },
+        {
+          "index": "medium-armor",
+          "name": "Armure intermédiaire",
+          "url": "/api/2014/proficiencies/medium-armor"
+        },
+        {
+          "index": "shields",
+          "name": "Boucliers",
+          "url": "/api/2014/proficiencies/shields"
+        },
+        {
+          "index": "simple-weapons",
+          "name": "Armes courantes",
+          "url": "/api/2014/proficiencies/simple-weapons"
+        },
+        {
+          "index": "martial-weapons",
+          "name": "Armes de guerre",
+          "url": "/api/2014/proficiencies/martial-weapons"
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "devotion",
+        "name": "Dévotion",
+        "url": "/api/2014/subclasses/devotion"
+      }
+    ],
+    "spellcasting": {
+      "level": 2,
+      "spellcasting_ability": {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2014/ability-scores/cha"
+      },
+      "info": [
+        {
+          "name": "Préparation et incantation des sorts",
+          "desc": [
+            "La table « Le paladin » vous indique le nombre d’emplacements de sort dont vous disposez pour lancer vos sorts. Pour lancer l’un de vos sorts de paladin de 1er niveau ou plus, vous devez dépenser un emplacement d’un niveau au moins égal à celui du sort. Vous récupérez tous les emplacements dépensés en terminant un repos long.",
+            "Vous préparez la liste des sorts de paladin disponibles à l’incantation en les sélectionnant dans la liste des sorts de paladin. Ce faisant, choisissez autant de sorts de paladin que votre modificateur de Charisme + la moitié de votre niveau de paladin arrondi à l’inférieur (minimum d’un sort). Ces sorts doivent tous être d’un niveau pour lequel vous disposez d’emplacements de sort.",
+            "Si, par exemple, vous êtes paladin de niveau 5, vous disposez de quatre emplacements de sort du 1er niveau et de deux emplacements du 2e niveau. Avec un Charisme de 14, vous pouvez préparer une liste contenant quatre sorts du 1er ou 2e niveau, selon la répartition de votre choix. Si vous préparez le sort du 1er niveau soins, vous pouvez le lancer en dépensant un emplacement du 1er ou du 2e niveau. Cette incantation ne retire pas le sort de votre liste de sorts préparés.",
+            "Vous pouvez modifier votre liste de sorts préparés lorsque vous terminez un repos long. Préparer une nouvelle liste de sorts de paladin demande du temps de prière et de méditation : au moins 1 minute par niveau de sort pour chaque sort de la liste."
+          ]
+        },
+        {
+          "name": "Caractéristique d'incantation",
+          "desc": [
+            "Le Charisme est la caractéristique d’incantation de vos sorts de paladin, leur puissance étant en lien étroit avec la force de vos convictions. Vous recourez au Charisme chaque fois qu’un sort se réfère à votre caractéristique d’incantation. En outre, vous utilisez votre modificateur de Charisme pour calculer le DD de sauvegarde des sorts de paladin que vous lancez, ainsi que lorsqu’un tel sort entraîne un jet d’attaque de votre part.",
+            "DD de sauvegarde des sorts = 8 + votre bonus de maîtrise + votre modificateur de Charisme.",
+            "Modificateur d’attaque des sorts = votre bonus de maîtrise + votre modificateur de Charisme."
+          ]
+        },
+        {
+          "name": "Focaliseur d'incantation",
+          "desc": [
+            "Vous pouvez vous servir d’un symbole sacré comme focaliseur d’incantation de vos sorts de paladin."
+          ]
+        }
+      ]
+    },
+    "spells": "/api/2014/classes/paladin/spells",
+    "url": "/api/2014/classes/paladin"
+  },
+  {
+    "index": "ranger",
+    "name": "Rôdeur",
+    "hit_die": 10,
+    "proficiency_choices": [
+      {
+        "desc": "Choisissez trois compétences parmi Dressage, Athlétisme, Intuition, Investigation, Nature, Perception, Discrétion, and Survie",
+        "choose": 3,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-animal-handling",
+                "name": "Compétence : Dressage",
+                "url": "/api/2014/proficiencies/skill-animal-handling"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-athletics",
+                "name": "Compétence : Athlétisme",
+                "url": "/api/2014/proficiencies/skill-athletics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Compétence : Intuition",
+                "url": "/api/2014/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-investigation",
+                "name": "Compétence : Investigation",
+                "url": "/api/2014/proficiencies/skill-investigation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-nature",
+                "name": "Compétence : Nature",
+                "url": "/api/2014/proficiencies/skill-nature"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-perception",
+                "name": "Compétence : Perception",
+                "url": "/api/2014/proficiencies/skill-perception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-stealth",
+                "name": "Compétence : Discrétion",
+                "url": "/api/2014/proficiencies/skill-stealth"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-survival",
+                "name": "Compétence : Survie",
+                "url": "/api/2014/proficiencies/skill-survival"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "proficiencies": [
+      {
+        "index": "light-armor",
+        "name": "Armure légère",
+        "url": "/api/2014/proficiencies/light-armor"
+      },
+      {
+        "index": "medium-armor",
+        "name": "Armure intermédiaire",
+        "url": "/api/2014/proficiencies/medium-armor"
+      },
+      {
+        "index": "shields",
+        "name": "Boucliers",
+        "url": "/api/2014/proficiencies/shields"
+      },
+      {
+        "index": "simple-weapons",
+        "name": "Armes courantes",
+        "url": "/api/2014/proficiencies/simple-weapons"
+      },
+      {
+        "index": "martial-weapons",
+        "name": "Armes de guerre",
+        "url": "/api/2014/proficiencies/martial-weapons"
+      },
+      {
+        "index": "saving-throw-dex",
+        "name": "Jet de sauvegarde : DEX",
+        "url": "/api/2014/proficiencies/saving-throw-dex"
+      },
+      {
+        "index": "saving-throw-str",
+        "name": "Jet de sauvegarde : FOR",
+        "url": "/api/2014/proficiencies/saving-throw-str"
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "str",
+        "name": "FOR",
+        "url": "/api/2014/ability-scores/str"
+      },
+      {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/2014/ability-scores/dex"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "longbow",
+          "name": "Arc long",
+          "url": "/api/2014/equipment/longbow"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "arrow",
+          "name": "Flèche",
+          "url": "/api/2014/equipment/arrow"
+        },
+        "quantity": 20
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) armure d’écailles ou (b) armure de cuir",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "scale-mail",
+                "name": "Armure d'écailles",
+                "url": "/api/2014/equipment/scale-mail"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "leather-armor",
+                "name": "Armure de cuir",
+                "url": "/api/2014/equipment/leather-armor"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) deux épées courtes ou (b) deux armes courantes de corps à corps",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 2,
+              "of": {
+                "index": "shortsword",
+                "name": "Épée courte",
+                "url": "/api/2014/equipment/shortsword"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "deux armes courantes de corps à corps",
+                "choose": 2,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-melee-weapons",
+                    "name": "Armes courantes au corps à corps",
+                    "url": "/api/2014/equipment-categories/simple-melee-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) un paquetage d’exploration souterraine ou (b) un paquetage d’explorateur",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneers-pack",
+                "name": "Paquetage d'exploration souterraine",
+                "url": "/api/2014/equipment/dungeoneers-pack"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "explorers-pack",
+                "name": "Paquetage d'explorateur",
+                "url": "/api/2014/equipment/explorers-pack"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "class_levels": "/api/2014/classes/ranger/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "minimum_score": 13
+        },
+        {
+          "ability_score": {
+            "index": "wis",
+            "name": "SAG",
+            "url": "/api/2014/ability-scores/wis"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Armure légère",
+          "url": "/api/2014/proficiencies/light-armor"
+        },
+        {
+          "index": "medium-armor",
+          "name": "Armure intermédiaire",
+          "url": "/api/2014/proficiencies/medium-armor"
+        },
+        {
+          "index": "shields",
+          "name": "Boucliers",
+          "url": "/api/2014/proficiencies/shields"
+        },
+        {
+          "index": "simple-weapons",
+          "name": "Armes courantes",
+          "url": "/api/2014/proficiencies/simple-weapons"
+        },
+        {
+          "index": "martial-weapons",
+          "name": "Armes de guerre",
+          "url": "/api/2014/proficiencies/martial-weapons"
+        }
+      ],
+      "proficiency_choices": [
+        {
+          "choose": 1,
+          "type": "proficiencies",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-animal-handling",
+                  "name": "Compétence : Dressage",
+                  "url": "/api/2014/proficiencies/skill-animal-handling"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-athletics",
+                  "name": "Compétence : Athlétisme",
+                  "url": "/api/2014/proficiencies/skill-athletics"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-insight",
+                  "name": "Compétence : Intuition",
+                  "url": "/api/2014/proficiencies/skill-insight"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-investigation",
+                  "name": "Compétence : Investigation",
+                  "url": "/api/2014/proficiencies/skill-investigation"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-nature",
+                  "name": "Compétence : Nature",
+                  "url": "/api/2014/proficiencies/skill-nature"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-perception",
+                  "name": "Compétence : Perception",
+                  "url": "/api/2014/proficiencies/skill-perception"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-stealth",
+                  "name": "Compétence : Discrétion",
+                  "url": "/api/2014/proficiencies/skill-stealth"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-survival",
+                  "name": "Compétence : Survie",
+                  "url": "/api/2014/proficiencies/skill-survival"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "hunter",
+        "name": "Chasseur",
+        "url": "/api/2014/subclasses/hunter"
+      }
+    ],
+    "spellcasting": {
+      "level": 2,
+      "spellcasting_ability": {
+        "index": "wis",
+        "name": "SAG",
+        "url": "/api/2014/ability-scores/wis"
+      },
+      "info": [
+        {
+          "name": "Emplacements de sorts",
+          "desc": [
+            "La table « Le rôdeur » vous indique le nombre d’emplacements de sort dont vous disposez pour lancer vos sorts du 1er niveau et plus. Pour lancer un tel sort, vous devez dépenser un emplacement d’un niveau au moins égal à celui du sort. Vous récupérez tous les emplacements dépensés en terminant un repos long.",
+            "Si, par exemple, vous connaissez le sort du 1er niveau amitié avec les animaux alors qu’il vous reste un emplacement de sort du 1er niveau et un autre du 2e niveau, vous pouvez lancer ce sort en dépensant l’un ou l’autre de ces emplacements."
+          ]
+        },
+        {
+          "name": "Sorts connus de niveau 1 et supérieur",
+          "desc": [
+            "Vous connaissez deux sorts du 1er niveau de votre choix tirés de la liste de sorts du rôdeur.",
+            "La colonne « Sorts connus » de la table « Le rôdeur » indique à quel rythme vous apprenez de nouveaux sorts de rôdeur de votre choix. Ces sorts doivent tous être d’un niveau pour lequel vous disposez d’emplacements. Lorsque vous atteignez le niveau 5 dans cette classe, par exemple, vous pouvez apprendre un nouveau sort du 1er ou du 2e niveau.",
+            "Par ailleurs, lorsque vous gagnez un niveau dans cette classe, vous pouvez choisir l’un des sorts de rôdeur que vous connaissez pour le remplacer par un autre sort de la liste des sorts de rôdeur, qui doit lui aussi être d’un niveau pour lequel vous disposez d’emplacements."
+          ]
+        },
+        {
+          "name": "Caractéristique d'incantation",
+          "desc": [
+            "La Sagesse est la caractéristique d’incantation de vos sorts de rôdeur, cette magie provenant du lien étroit que vous entretenez avec la nature. Vous recourez à la Sagesse chaque fois qu’un sort se réfère à votre caractéristique d’incantation. En outre, vous utilisez votre modificateur de Sagesse pour calculer le DD de sauvegarde des sorts de rôdeur que vous lancez, ainsi que lorsqu’un tel sort entraîne un jet d’attaque de votre part.",
+            "DD de sauvegarde des sorts = 8 + votre bonus de maîtrise + votre modificateur de Sagesse.",
+            "Modificateur d’attaque des sorts = votre bonus de maîtrise + votre modificateur de Sagesse."
+          ]
+        }
+      ]
+    },
+    "spells": "/api/2014/classes/ranger/spells",
+    "url": "/api/2014/classes/ranger"
+  },
+  {
+    "index": "rogue",
+    "name": "Roublard",
+    "hit_die": 8,
+    "proficiency_choices": [
+      {
+        "desc": "Choisissez quatre compétences parmi Acrobaties, Athlétisme, Tromperie, Intuition, Intimidation, Investigation, Perception, Représentation, Persuasion, Escamotage, and Discrétion",
+        "choose": 4,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-acrobatics",
+                "name": "Compétence : Acrobaties",
+                "url": "/api/2014/proficiencies/skill-acrobatics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-athletics",
+                "name": "Compétence : Athlétisme",
+                "url": "/api/2014/proficiencies/skill-athletics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-deception",
+                "name": "Compétence : Tromperie",
+                "url": "/api/2014/proficiencies/skill-deception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Compétence : Intuition",
+                "url": "/api/2014/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-intimidation",
+                "name": "Compétence : Intimidation",
+                "url": "/api/2014/proficiencies/skill-intimidation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-investigation",
+                "name": "Compétence : Investigation",
+                "url": "/api/2014/proficiencies/skill-investigation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-perception",
+                "name": "Compétence : Perception",
+                "url": "/api/2014/proficiencies/skill-perception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-performance",
+                "name": "Compétence : Représentation",
+                "url": "/api/2014/proficiencies/skill-performance"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-persuasion",
+                "name": "Compétence : Persuasion",
+                "url": "/api/2014/proficiencies/skill-persuasion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-sleight-of-hand",
+                "name": "Compétence : Escamotage",
+                "url": "/api/2014/proficiencies/skill-sleight-of-hand"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-stealth",
+                "name": "Compétence : Discrétion",
+                "url": "/api/2014/proficiencies/skill-stealth"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "proficiencies": [
+      {
+        "index": "light-armor",
+        "name": "Armure légère",
+        "url": "/api/2014/proficiencies/light-armor"
+      },
+      {
+        "index": "simple-weapons",
+        "name": "Armes courantes",
+        "url": "/api/2014/proficiencies/simple-weapons"
+      },
+      {
+        "index": "longswords",
+        "name": "Épées longues",
+        "url": "/api/2014/proficiencies/longswords"
+      },
+      {
+        "index": "rapiers",
+        "name": "Rapières",
+        "url": "/api/2014/proficiencies/rapiers"
+      },
+      {
+        "index": "shortswords",
+        "name": "Épée courte",
+        "url": "/api/2014/proficiencies/shortswords"
+      },
+      {
+        "index": "hand-crossbows",
+        "name": "Arbalète de poing",
+        "url": "/api/2014/proficiencies/hand-crossbows"
+      },
+      {
+        "index": "thieves-tools",
+        "name": "Outils de voleur",
+        "url": "/api/2014/proficiencies/thieves-tools"
+      },
+      {
+        "index": "saving-throw-dex",
+        "name": "Jet de sauvegarde : DEX",
+        "url": "/api/2014/proficiencies/saving-throw-dex"
+      },
+      {
+        "index": "saving-throw-int",
+        "name": "Jet de sauvegarde : INT",
+        "url": "/api/2014/proficiencies/saving-throw-int"
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/2014/ability-scores/dex"
+      },
+      {
+        "index": "int",
+        "name": "INT",
+        "url": "/api/2014/ability-scores/int"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "leather-armor",
+          "name": "Armure de cuir",
+          "url": "/api/2014/equipment/leather-armor"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "dagger",
+          "name": "Dague",
+          "url": "/api/2014/equipment/dagger"
+        },
+        "quantity": 2
+      },
+      {
+        "equipment": {
+          "index": "thieves-tools",
+          "name": "Outils de voleur",
+          "url": "/api/2014/equipment/thieves-tools"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) une rapière ou (b) une épée courte",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "rapier",
+                "name": "Rapière",
+                "url": "/api/2014/equipment/rapier"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "shortsword",
+                "name": "Épée courte",
+                "url": "/api/2014/equipment/shortsword"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) un arc court et un carquois de 20 flèches ou (b) une épée courte",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "shortbow",
+                    "name": "Arc court",
+                    "url": "/api/2014/equipment/shortbow"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "arrow",
+                    "name": "Flèche",
+                    "url": "/api/2014/equipment/arrow"
+                  }
+                }
+              ]
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "shortsword",
+                "name": "Épée courte",
+                "url": "/api/2014/equipment/shortsword"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) un paquetage de cambrioleur, (b) un paquetage d’exploration souterraine ou (c) un paquetage d’explorateur",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "burglars-pack",
+                "name": "Paquetage de cambrioleur",
+                "url": "/api/2014/equipment/burglars-pack"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneers-pack",
+                "name": "Paquetage d'exploration souterraine",
+                "url": "/api/2014/equipment/dungeoneers-pack"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "explorers-pack",
+                "name": "Paquetage d'explorateur",
+                "url": "/api/2014/equipment/explorers-pack"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "class_levels": "/api/2014/classes/rogue/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Armure légère",
+          "url": "/api/2014/proficiencies/light-armor"
+        },
+        {
+          "index": "thieves-tools",
+          "name": "Outils de voleur",
+          "url": "/api/2014/proficiencies/thieves-tools"
+        }
+      ],
+      "proficiency_choices": [
+        {
+          "choose": 1,
+          "type": "proficiencies",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-acrobatics",
+                  "name": "Compétence : Acrobaties",
+                  "url": "/api/2014/proficiencies/skill-acrobatics"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-athletics",
+                  "name": "Compétence : Athlétisme",
+                  "url": "/api/2014/proficiencies/skill-athletics"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-deception",
+                  "name": "Compétence : Tromperie",
+                  "url": "/api/2014/proficiencies/skill-deception"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-insight",
+                  "name": "Compétence : Intuition",
+                  "url": "/api/2014/proficiencies/skill-insight"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-intimidation",
+                  "name": "Compétence : Intimidation",
+                  "url": "/api/2014/proficiencies/skill-intimidation"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-investigation",
+                  "name": "Compétence : Investigation",
+                  "url": "/api/2014/proficiencies/skill-investigation"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-perception",
+                  "name": "Compétence : Perception",
+                  "url": "/api/2014/proficiencies/skill-perception"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-performance",
+                  "name": "Compétence : Représentation",
+                  "url": "/api/2014/proficiencies/skill-performance"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-persuasion",
+                  "name": "Compétence : Persuasion",
+                  "url": "/api/2014/proficiencies/skill-persuasion"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-sleight-of-hand",
+                  "name": "Compétence : Escamotage",
+                  "url": "/api/2014/proficiencies/skill-sleight-of-hand"
+                }
+              },
+              {
+                "option_type": "reference",
+                "item": {
+                  "index": "skill-stealth",
+                  "name": "Compétence : Discrétion",
+                  "url": "/api/2014/proficiencies/skill-stealth"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "thief",
+        "name": "Voleur",
+        "url": "/api/2014/subclasses/thief"
+      }
+    ],
+    "url": "/api/2014/classes/rogue"
+  },
+  {
+    "index": "sorcerer",
+    "name": "Ensorceleur",
+    "hit_die": 6,
+    "proficiency_choices": [
+      {
+        "desc": "Choisissez deux compétences parmi Arcanes, Tromperie, Intuition, Intimidation, Persuasion, et Religion",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-arcana",
+                "name": "Compétence : Arcanes",
+                "url": "/api/2014/proficiencies/skill-arcana"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-deception",
+                "name": "Compétence : Tromperie",
+                "url": "/api/2014/proficiencies/skill-deception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Compétence : Intuition",
+                "url": "/api/2014/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-intimidation",
+                "name": "Compétence : Intimidation",
+                "url": "/api/2014/proficiencies/skill-intimidation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-persuasion",
+                "name": "Compétence : Persuasion",
+                "url": "/api/2014/proficiencies/skill-persuasion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Compétence : Religion",
+                "url": "/api/2014/proficiencies/skill-religion"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "proficiencies": [
+      {
+        "index": "daggers",
+        "name": "Dagues",
+        "url": "/api/2014/proficiencies/daggers"
+      },
+      {
+        "index": "darts",
+        "name": "Fléchettes",
+        "url": "/api/2014/proficiencies/darts"
+      },
+      {
+        "index": "slings",
+        "name": "Frondes",
+        "url": "/api/2014/proficiencies/slings"
+      },
+      {
+        "index": "quarterstaffs",
+        "name": "Bâtons",
+        "url": "/api/2014/proficiencies/quarterstaffs"
+      },
+      {
+        "index": "crossbows-light",
+        "name": "Arbalètes légères",
+        "url": "/api/2014/proficiencies/crossbows-light"
+      },
+      {
+        "index": "saving-throw-con",
+        "name": "Jet de sauvegarde : CON",
+        "url": "/api/2014/proficiencies/saving-throw-con"
+      },
+      {
+        "index": "saving-throw-cha",
+        "name": "Jet de sauvegarde : CHA",
+        "url": "/api/2014/proficiencies/saving-throw-cha"
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/2014/ability-scores/con"
+      },
+      {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2014/ability-scores/cha"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "dagger",
+          "name": "Dague",
+          "url": "/api/2014/equipment/dagger"
+        },
+        "quantity": 2
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) une arbalète légère et 20 carreaux ou (b) une arme courante au choix",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "crossbow-light",
+                    "name": "Arbalète légère",
+                    "url": "/api/2014/equipment/crossbow-light"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "crossbow-bolt",
+                    "name": "Carreau",
+                    "url": "/api/2014/equipment/crossbow-bolt"
+                  }
+                }
+              ]
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "n'importe quelle arme courante",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Armes courantes",
+                    "url": "/api/2014/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) une sacoche à composantes ou (b) un focaliseur arcanique",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "component-pouch",
+                "name": "Sacoche à composantes",
+                "url": "/api/2014/equipment/component-pouch"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "focaliseur arcanique",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "arcane-foci",
+                    "name": "Focaliseur arcanique",
+                    "url": "/api/2014/equipment-categories/arcane-foci"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) un paquetage d’exploration souterraine ou (b) un paquetage d’explorateur",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneers-pack",
+                "name": "Paquetage d'exploration souterraine",
+                "url": "/api/2014/equipment/dungeoneers-pack"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "explorers-pack",
+                "name": "Paquetage d'explorateur",
+                "url": "/api/2014/equipment/explorers-pack"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "class_levels": "/api/2014/classes/sorcerer/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2014/ability-scores/cha"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": []
+    },
+    "subclasses": [
+      {
+        "index": "draconic",
+        "name": "Lignée draconique",
+        "url": "/api/2014/subclasses/draconic"
+      }
+    ],
+    "spellcasting": {
+      "level": 1,
+      "spellcasting_ability": {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2014/ability-scores/cha"
+      },
+      "info": [
+        {
+          "name": "Sorts mineurs",
+          "desc": [
+            "Au niveau 1, vous connaissez quatre sorts mineurs que vous choisissez dans la liste des sorts d’ensorceleur. Vous en apprenez d’autres que vous choisissez à plus haut niveau, comme le montre la colonne « Sorts mineurs connus » de la table « L’ensorceleur »."
+          ]
+        },
+        {
+          "name": "Emplacements de sorts",
+          "desc": [
+            "La table « L’ensorceleur » vous indique le nombre d’emplacements de sort dont vous disposez pour lancer vos sorts du 1er niveau et plus. Pour lancer un tel sort d’ensorceleur, vous devez dépenser un emplacement d’un niveau au moins égal à celui du sort. Vous récupérez tous les emplacements dépensés en terminant un repos long.",
+            "Si, par exemple, vous connaissez le sort du 1er niveau mains brûlantes alors qu’il vous reste un emplacement de sort du 1er niveau et un autre du 2e niveau, vous pouvez le lancer en dépensant l’un ou l’autre de ces emplacements."
+          ]
+        },
+        {
+          "name": "Sorts connus de niveau 1 et supérieur",
+          "desc": [
+            "Vous connaissez deux sorts du 1er niveau de votre choix tirés de la liste de sorts de l’ensorceleur",
+            "La colonne « Sorts connus » de la table « L’ensorceleur » indique à quel rythme vous apprenez de nouveaux sorts d’ensorceleur de votre choix. Ces sorts doivent tous être d’un niveau pour lequel vous disposez d’emplacements. Lorsque vous atteignez par exemple le niveau 3 dans cette classe, vous pouvez apprendre un nouveau sort du 1er ou du 2e niveau.",
+            "Par ailleurs, lorsque vous gagnez un niveau dans cette classe, vous pouvez choisir l’un des sorts d’ensorceleur que vous connaissez pour le remplacer par un autre sort de la liste des sorts d’ensorceleur, qui doit lui aussi être d’un niveau pour lequel vous disposez d’emplacements."
+          ]
+        },
+        {
+          "name": "Caractéristique d'incantation",
+          "desc": [
+            "Le Charisme est votre caractéristique d’incantation pour vos sorts d’ensorceleur, la puissance de votre magie reposant sur votre capacité à projeter votre volonté sur le monde environnant. Vous recourez au Charisme chaque fois qu’un sort se réfère à votre caractéristique d’incantation. En outre, vous utilisez votre modificateur de Charisme pour calculer le DD de sauvegarde des sorts d’ensorceleur que vous lancez, ainsi que lorsqu’un tel sort entraîne un jet d’attaque de votre part.",
+            "DD de sauvegarde des sorts = 8 + votre bonus de maîtrise + votre modificateur de Charisme.",
+            "Modificateur d’attaque des sorts = votre bonus de maîtrise + votre modificateur de Charisme."
+          ]
+        },
+        {
+          "name": "Focaliseur d'incantation",
+          "desc": [
+            "Vous pouvez vous servir d’un focaliseur arcanique comme focaliseur d’incantation de vos sorts d’ensorceleur."
+          ]
+        }
+      ]
+    },
+    "spells": "/api/2014/classes/sorcerer/spells",
+    "url": "/api/2014/classes/sorcerer"
+  },
+  {
+    "index": "warlock",
+    "name": "Occultiste",
+    "hit_die": 8,
+    "proficiency_choices": [
+      {
+        "desc": "Choisissez deux compétences parmi Arcanes, Tromperie, Histoire, Intimidation, Investigation, Nature, et Religion",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-arcana",
+                "name": "Compétence : Arcanes",
+                "url": "/api/2014/proficiencies/skill-arcana"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-deception",
+                "name": "Compétence : Tromperie",
+                "url": "/api/2014/proficiencies/skill-deception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-history",
+                "name": "Compétence : Histoire",
+                "url": "/api/2014/proficiencies/skill-history"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-intimidation",
+                "name": "Compétence : Intimidation",
+                "url": "/api/2014/proficiencies/skill-intimidation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-investigation",
+                "name": "Compétence : Investigation",
+                "url": "/api/2014/proficiencies/skill-investigation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-nature",
+                "name": "Compétence : Nature",
+                "url": "/api/2014/proficiencies/skill-nature"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Compétence : Religion",
+                "url": "/api/2014/proficiencies/skill-religion"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "proficiencies": [
+      {
+        "index": "light-armor",
+        "name": "Armure légère",
+        "url": "/api/2014/proficiencies/light-armor"
+      },
+      {
+        "index": "simple-weapons",
+        "name": "Armes courantes",
+        "url": "/api/2014/proficiencies/simple-weapons"
+      },
+      {
+        "index": "saving-throw-wis",
+        "name": "Jet de sauvegarde : SAG",
+        "url": "/api/2014/proficiencies/saving-throw-wis"
+      },
+      {
+        "index": "saving-throw-cha",
+        "name": "Jet de sauvegarde : CHA",
+        "url": "/api/2014/proficiencies/saving-throw-cha"
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "wis",
+        "name": "SAG",
+        "url": "/api/2014/ability-scores/wis"
+      },
+      {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2014/ability-scores/cha"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "dagger",
+          "name": "Dague",
+          "url": "/api/2014/equipment/dagger"
+        },
+        "quantity": 2
+      },
+      {
+        "equipment": {
+          "index": "leather-armor",
+          "name": "Armure de cuir",
+          "url": "/api/2014/equipment/leather-armor"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) une arbalète légère et 20 carreaux ou (b) une arme courante au choix",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "crossbow-light",
+                    "name": "Arbalète légère",
+                    "url": "/api/2014/equipment/crossbow-light"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "crossbow-bolt",
+                    "name": "Carreau",
+                    "url": "/api/2014/equipment/crossbow-bolt"
+                  }
+                }
+              ]
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "n'importe quelle arme courante",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "simple-weapons",
+                    "name": "Armes courantes",
+                    "url": "/api/2014/equipment-categories/simple-weapons"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) une sacoche à composantes ou (b) un focaliseur arcanique",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "component-pouch",
+                "name": "Component pouch",
+                "url": "/api/2014/equipment/component-pouch"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "focaliseur arcanique",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "arcane-foci",
+                    "name": "Focaliseur arcanique",
+                    "url": "/api/2014/equipment-categories/arcane-foci"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) un paquetage d’érudit ou (b) un paquetage d’exploration souterraine",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "scholars-pack",
+                "name": "Paquetage d’érudit",
+                "url": "/api/2014/equipment/scholars-pack"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dungeoneers-pack",
+                "name": "Paquetage d'exploration souterraine",
+                "url": "/api/2014/equipment/dungeoneers-pack"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "n'importe quelle arme courante",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "equipment_category",
+          "equipment_category": {
+            "index": "simple-weapons",
+            "name": "Armes courantes",
+            "url": "/api/2014/equipment-categories/simple-weapons"
+          }
+        }
+      }
+    ],
+    "class_levels": "/api/2014/classes/warlock/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2014/ability-scores/cha"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Armure légère",
+          "url": "/api/2014/proficiencies/light-armor"
+        },
+        {
+          "index": "simple-weapons",
+          "name": "Armes courantes",
+          "url": "/api/2014/proficiencies/simple-weapons"
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "fiend",
+        "name": "Fiélon",
+        "url": "/api/2014/subclasses/fiend"
+      }
+    ],
+    "spellcasting": {
+      "level": 1,
+      "spellcasting_ability": {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2014/ability-scores/cha"
+      },
+      "info": [
+        {
+          "name": "Sorts mineurs",
+          "desc": [
+            "Vous connaissez deux sorts mineurs que vous choisissez dans la liste de sorts d’occultiste. Vous en apprendrez d’autres que vous choisirez à plus haut niveau, comme le montre la colonne « Sorts mineurs connus » de la table « L’occultiste »."
+          ]
+        },
+        {
+          "name": "Emplacements de sorts",
+          "desc": [
+            "La table « L’occultiste » vous indique le nombre d’emplacements de sort dont vous disposez. Cette table vous indique également de quel niveau sont ces emplacements ; tous vos emplacements de sort sont du même niveau. Pour lancer l’un de vos sorts d’occultiste du 1er niveau ou plus, vous devez dépenser un emplacement de sort. Vous récupérez tous les emplacements de sort dépensés en terminant un repos court ou long.",
+            "Par exemple, lorsque vous êtes au niveau 5, vous disposez de deux emplacements de sort du 3e niveau. Pour lancer le sort du 1er niveau vague tonnante, vous devez dépenser l’un de ces emplacements et le lancez comme un sort du 3e niveau."
+          ]
+        },
+        {
+          "name": "Sorts connus de niveau 1 et supérieur",
+          "desc": [
+            "Au niveau 1, vous connaissez deux sorts du 1er niveau de votre choix tirés de la liste de sorts d’occultiste.",
+            "La colonne « Sorts connus » de la table « L’occultiste » indique quand vous apprenez de nouveaux sorts d’occultiste de votre choix du 1er niveau et plus.",
+            "Un sort que vous choisissez ne doit pas être d’un niveau supérieur à ce qui figure dans la colonne « Niveau des emplacements » pour votre niveau. Au niveau 6, par exemple, vous apprenez un nouveau sort d’occultiste qui peut être du 1er, 2e ou 3e niveau.",
+            "Par ailleurs, lorsque vous gagnez un niveau dans cette classe, vous pouvez choisir l’un des sorts d’occultiste que vous connaissez pour le remplacer par un autre sort de la liste des sorts d’occultiste, qui doit lui aussi être d’un niveau pour lequel vous disposez d’emplacements."
+          ]
+        },
+        {
+          "name": "Caractéristique d'incantation",
+          "desc": [
+            "Le Charisme est votre caractéristique d’incantation. Vous recourez au Charisme chaque fois qu’un sort d’occultiste se réfère à votre caractéristique d’incantation. En outre, vous utilisez votre modificateur de Charisme pour calculer le DD de sauvegarde des sorts d’occultiste que vous lancez, ainsi que lorsqu’un tel sort entraîne un jet d’attaque de votre part.",
+            "DD de sauvegarde des sorts = 8 + votre bonus de maîtrise + votre modificateur de Charisme.",
+            "Modificateur d’attaque des sorts = votre bonus de maîtrise + votre modificateur de Charisme."
+          ]
+        },
+        {
+          "name": "Focaliseur d'incantation",
+          "desc": [
+            "Vous pouvez vous servir d’un focaliseur arcanique comme focaliseur d’incantation de vos sorts d’occultiste."
+          ]
+        }
+      ]
+    },
+    "spells": "/api/2014/classes/warlock/spells",
+    "url": "/api/2014/classes/warlock"
+  },
+  {
+    "index": "wizard",
+    "name": "Magicien",
+    "hit_die": 6,
+    "proficiency_choices": [
+      {
+        "desc": "Choisissez deux compétences parmi Arcanes, Histoire, Intuition, Investigation, Médecine, et Religion",
+        "choose": 2,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-arcana",
+                "name": "Compétence : Arcanes",
+                "url": "/api/2014/proficiencies/skill-arcana"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-history",
+                "name": "Compétence : Histoire",
+                "url": "/api/2014/proficiencies/skill-history"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Compétence : Intuition",
+                "url": "/api/2014/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-investigation",
+                "name": "Compétence : Investigation",
+                "url": "/api/2014/proficiencies/skill-investigation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-medicine",
+                "name": "Compétence : Médecine",
+                "url": "/api/2014/proficiencies/skill-medicine"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Compétence : Religion",
+                "url": "/api/2014/proficiencies/skill-religion"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "proficiencies": [
+      {
+        "index": "daggers",
+        "name": "Dagues",
+        "url": "/api/2014/proficiencies/daggers"
+      },
+      {
+        "index": "darts",
+        "name": "Fléchettes",
+        "url": "/api/2014/proficiencies/darts"
+      },
+      {
+        "index": "slings",
+        "name": "Frondes",
+        "url": "/api/2014/proficiencies/slings"
+      },
+      {
+        "index": "quarterstaffs",
+        "name": "Bâtons",
+        "url": "/api/2014/proficiencies/quarterstaffs"
+      },
+      {
+        "index": "crossbows-light",
+        "name": "Arbalètes légères",
+        "url": "/api/2014/proficiencies/crossbows-light"
+      },
+      {
+        "index": "saving-throw-int",
+        "name": "Jet de sauvegarde : INT",
+        "url": "/api/2014/proficiencies/saving-throw-int"
+      },
+      {
+        "index": "saving-throw-wis",
+        "name": "Jet de sauvegarde : SAG",
+        "url": "/api/2014/proficiencies/saving-throw-wis"
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "int",
+        "name": "INT",
+        "url": "/api/2014/ability-scores/int"
+      },
+      {
+        "index": "wis",
+        "name": "SAG",
+        "url": "/api/2014/ability-scores/wis"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "spellbook",
+          "name": "Grimoire",
+          "url": "/api/2014/equipment/spellbook"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "(a) un bâton de combat ou (b) une dague",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "quarterstaff",
+                "name": "Bâton",
+                "url": "/api/2014/equipment/quarterstaff"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "dagger",
+                "name": "Dague",
+                "url": "/api/2014/equipment/dagger"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) une sacoche à composantes ou (b) un focaliseur arcanique",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "component-pouch",
+                "name": "Sacoche à composantes",
+                "url": "/api/2014/equipment/component-pouch"
+              }
+            },
+            {
+              "option_type": "choice",
+              "choice": {
+                "desc": "focaliseur arcanique",
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "option_set_type": "equipment_category",
+                  "equipment_category": {
+                    "index": "arcane-foci",
+                    "name": "Focaliseur arcanique",
+                    "url": "/api/2014/equipment-categories/arcane-foci"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "desc": "(a) un paquetage d’érudit ou (b) un paquetage d’explorateur",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "scholars-pack",
+                "name": "Paquetage d’érudit",
+                "url": "/api/2014/equipment/scholars-pack"
+              }
+            },
+            {
+              "option_type": "counted_reference",
+              "count": 1,
+              "of": {
+                "index": "explorers-pack",
+                "name": "Paquetage d'explorateur",
+                "url": "/api/2014/equipment/explorers-pack"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "class_levels": "/api/2014/classes/wizard/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2014/ability-scores/int"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": []
+    },
+    "subclasses": [
+      {
+        "index": "evocation",
+        "name": "Évocation",
+        "url": "/api/2014/subclasses/evocation"
+      }
+    ],
+    "spellcasting": {
+      "level": 1,
+      "spellcasting_ability": {
+        "index": "int",
+        "name": "INT",
+        "url": "/api/2014/ability-scores/int"
+      },
+      "info": [
+        {
+          "name": "Sorts mineurs",
+          "desc": [
+            "Au niveau 1, vous connaissez trois sorts mineurs que vous choisissez dans la liste des sorts de magicien. Vous en apprenez d’autres que vous choisissez à plus haut niveau, comme le montre la colonne « Sorts mineurs connus » de la table « Le magicien »."
+          ]
+        },
+        {
+          "name": "Grimoire",
+          "desc": [
+            "Au niveau 1, vous possédez un grimoire contenant six sorts de magicien du 1er niveau, de votre choix. Ce recueil renferme les sorts de magicien que vous connaissez en plus de vos sorts mineurs (gravés dans votre mémoire, quant à eux)."
+          ]
+        },
+        {
+          "name": "Préparation et incantation des sorts",
+          "desc": [
+            "La table « Le magicien » vous indique le nombre d’emplacements de sort dont vous disposez pour lancer vos sorts du 1er niveau et plus. Pour lancer un tel sort, vous devez dépenser un emplacement d’un niveau au moins égal à celui du sort. Vous récupérez tous les emplacements dépensés en terminant un repos long.",
+            "Vous préparez la liste des sorts de magicien disponibles à l’incantation. Ce faisant, choisissez autant de sorts de magicien de votre grimoire que votre modificateur d’Intelligence + votre niveau de magicien (minimum d’un sort). Ces sorts doivent tous être d’un niveau pour lequel vous disposez d’emplacements de sort.",
+            "Exemple : si vous êtes magicien de niveau 3, vous disposez de quatre emplacements de sort du 1er niveau et de deux emplacements du 2e niveau. Avec une Intelligence de 16, vous pouvez préparer une liste contenant six sorts du 1er ou 2e niveau tirés de votre grimoire, selon la répartition de votre choix. Si vous préparez le sort du 1er niveau projectile magique, vous pouvez le lancer en dépensant un emplacement du 1er ou du 2e niveau. Cette incantation ne retire pas le sort de votre liste de sorts préparés.",
+            "Vous pouvez modifier votre liste de sorts préparés lorsque vous terminez un repos long. Préparer une nouvelle liste de sorts de magicien demande du temps d’étude de votre grimoire pendant lequel vous mémorisez les formules et gestes demandés par chaque incantation : au moins 1 minute par niveau de sort pour chaque sort de la liste."
+          ]
+        },
+        {
+          "name": "Caractéristique d'incantation",
+          "desc": [
+            "L’Intelligence est la caractéristique d’incantation de vos sorts de magicien. Vous recourez à l’Intelligence chaque fois qu’un sort se réfère à votre caractéristique d’incantation. En outre, vous utilisez votre modi- ficateur d’Intelligence pour calculer le DD de sauvegarde des sorts de magicien que vous lancez, ainsi que lorsqu’un tel sort entraîne un jet d’attaque de votre part.",
+            "DD de sauvegarde des sorts = 8 + votre bonus de maîtrise + votre modificateur d’Intelligence.",
+            "Modificateur d’attaque des sorts = votre bonus de maîtrise + votre modificateur d’Intelligence."
+          ]
+        },
+        {
+          "name": "Incantation rituelle",
+          "desc": [
+            "Vous pouvez lancer comme rituel un sort de magicien si ce sort porte la mention « rituel » et figure dans votre grimoire. Vous pouvez le lancer même s’il n’est pas actuellement préparé."
+          ]
+        },
+        {
+          "name": "Focaliseur d'incantation",
+          "desc": [
+            "Vous pouvez vous servir d’un focaliseur arcanique comme focaliseur d’incantation de vos sorts de magicien."
+          ]
+        }
+      ]
+    },
+    "spells": "/api/2014/classes/wizard/spells",
+    "url": "/api/2014/classes/wizard"
+  }
+]

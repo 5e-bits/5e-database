@@ -27,6 +27,65 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.7.0](https://github.com/5e-bits/5e-database/compare/v5.6.0...v5.7.0) (2026-05-11)
+
+
+### Features
+
+* **language:** add even more French translations ([#1120](https://github.com/5e-bits/5e-database/issues/1120)) ([3eb31be](https://github.com/5e-bits/5e-database/commit/3eb31be72310edfb205032e2b2684a49f4941a05))
+
+## [5.6.0](https://github.com/5e-bits/5e-database/compare/v5.5.1...v5.6.0) (2026-05-05)
+
+
+### Features
+
+* **language:** add more French translations ([#1114](https://github.com/5e-bits/5e-database/issues/1114)) ([9ad3173](https://github.com/5e-bits/5e-database/commit/9ad3173e85e7e2bd99603a06dcdd825ed77d4aa1))
+
+## [5.5.1](https://github.com/5e-bits/5e-database/compare/v5.5.0...v5.5.1) (2026-05-05)
+
+
+### Bug Fixes
+
+* **accessibility:** clean headings structure in rule sections descriptions ([#1112](https://github.com/5e-bits/5e-database/issues/1112)) ([828257c](https://github.com/5e-bits/5e-database/commit/828257c4ca1be54b38162bb3b8c56345634cc809))
+
+## [5.5.0](https://github.com/5e-bits/5e-database/compare/v5.4.0...v5.5.0) (2026-05-01)
+
+
+### Features
+
+* **language:** polish russian translations and add four collections ([#1106](https://github.com/5e-bits/5e-database/issues/1106)) ([da1dbef](https://github.com/5e-bits/5e-database/commit/da1dbefdd35567db7e7d59ceaff4518a64c10ee8))
+
+## [5.4.0](https://github.com/5e-bits/5e-database/compare/v5.3.0...v5.4.0) (2026-05-01)
+
+
+### Features
+
+* **language:** add russian translations ([#1104](https://github.com/5e-bits/5e-database/issues/1104)) ([05f0cba](https://github.com/5e-bits/5e-database/commit/05f0cbacd70c30d7ddb0b571879ad5d0fff0b9f5))
+
+## [5.3.0](https://github.com/5e-bits/5e-database/compare/v5.2.0...v5.3.0) (2026-05-01)
+
+
+### Features
+
+* **language:** add some french translations ([#1102](https://github.com/5e-bits/5e-database/issues/1102)) ([64ef437](https://github.com/5e-bits/5e-database/commit/64ef4371179f59b158ffe59ce7da80194f0d12ce))
+
+## [5.2.0](https://github.com/5e-bits/5e-database/compare/v5.1.1...v5.2.0) (2026-04-27)
+
+
+### Features
+
+* **translation:** added 2014 data portuguese translation ([#1094](https://github.com/5e-bits/5e-database/issues/1094)) ([2b07755](https://github.com/5e-bits/5e-database/commit/2b07755c3a549ea698111ce04cce7449e6f82b8e))
+
+## [5.1.1](https://github.com/5e-bits/5e-database/compare/v5.1.0...v5.1.1) (2026-04-24)
+
+
+### Bug Fixes
+
+* **2024:** Add class property to subclass schema ([#1090](https://github.com/5e-bits/5e-database/issues/1090)) ([cb53916](https://github.com/5e-bits/5e-database/commit/cb539168c32b32ae5c08e18343d183cd5c54d917))
+* **2024:** Change field names for primary ability in classes and convert to choice schema ([#1091](https://github.com/5e-bits/5e-database/issues/1091)) ([9bf45e8](https://github.com/5e-bits/5e-database/commit/9bf45e89eb7fcc43bfc0135253a7d13a84f1f41f))
+* **5e-SRD-Monsters.json:** regular range format ([#1088](https://github.com/5e-bits/5e-database/issues/1088)) ([6d98821](https://github.com/5e-bits/5e-database/commit/6d988211c27bb0bce7d9c9dee8993f66ea6ab466))
+* **all:** Shift everything to strict schemas and make sure they still pass ([#1092](https://github.com/5e-bits/5e-database/issues/1092)) ([fb1c360](https://github.com/5e-bits/5e-database/commit/fb1c360153c74a95f8e3e5ba0915fbee2ce6936e))
+
 ## [5.1.0](https://github.com/5e-bits/5e-database/compare/v5.0.1...v5.1.0) (2026-04-23)
 
 

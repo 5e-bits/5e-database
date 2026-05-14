@@ -1,11 +1,11 @@
 import { z } from 'zod';
 import { APIReferenceSchema } from '../../schemas/common';
 
-const RaritySchema = z.object({
+const RaritySchema = z.strictObject({
   name: z.string(),
 });
 
-export const MagicItemSchema = z.object({
+export const MagicItemSchema = z.strictObject({
   name: z.string(),
   index: z.string(),
   url: z.string(),
