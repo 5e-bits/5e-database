@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.8.1](https://github.com/5e-bits/5e-database/compare/v5.8.0...v5.8.1) (2026-05-23)
+
+
+### Bug Fixes
+
+* **translation:** add missing features french translations ([#1130](https://github.com/5e-bits/5e-database/issues/1130)) ([6e137b5](https://github.com/5e-bits/5e-database/commit/6e137b599d0b5b84e4ffec3629c6f415ba1ad96a))
+
 ## [5.8.0](https://github.com/5e-bits/5e-database/compare/v5.7.0...v5.8.0) (2026-05-18)
 
 
