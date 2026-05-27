@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.8.2](https://github.com/5e-bits/5e-database/compare/v5.8.1...v5.8.2) (2026-05-27)
+
+
+### Bug Fixes
+
+* **5e-SRD-Monsters.json:** OCR mistake ([#1137](https://github.com/5e-bits/5e-database/issues/1137)) ([4e3a266](https://github.com/5e-bits/5e-database/commit/4e3a266ba94412a81f4994c15d2c8ccb4bba5afd))
+
 ## [5.8.1](https://github.com/5e-bits/5e-database/compare/v5.8.0...v5.8.1) (2026-05-23)
 
 
