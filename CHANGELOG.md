@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.8.3](https://github.com/5e-bits/5e-database/compare/v5.8.2...v5.8.3) (2026-05-27)
+
+
+### Bug Fixes
+
+* **5e-SRD-Monsters:** Whitespaces, spelling ([#1139](https://github.com/5e-bits/5e-database/issues/1139)) ([11a8a6b](https://github.com/5e-bits/5e-database/commit/11a8a6be4dd45cddc8c1d05530a6e7423178cb02))
+
 ## [5.8.2](https://github.com/5e-bits/5e-database/compare/v5.8.1...v5.8.2) (2026-05-27)
 
 
