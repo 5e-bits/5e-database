@@ -27,6 +27,14 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.8.4](https://github.com/5e-bits/5e-database/compare/v5.8.3...v5.8.4) (2026-05-29)
+
+
+### Bug Fixes
+
+* Add starting_gold to Acolyte background ([#1141](https://github.com/5e-bits/5e-database/issues/1141)) ([c38a1fb](https://github.com/5e-bits/5e-database/commit/c38a1fb86923d82e4d6b7b75c87a837bce943e68))
+* magic missile damage ([#1142](https://github.com/5e-bits/5e-database/issues/1142)) ([fcf94eb](https://github.com/5e-bits/5e-database/commit/fcf94ebb3f9326986cc366084ec40cbb2d6d7e52)), closes [#628](https://github.com/5e-bits/5e-database/issues/628)
+
 ## [5.8.3](https://github.com/5e-bits/5e-database/compare/v5.8.2...v5.8.3) (2026-05-27)
 
 
