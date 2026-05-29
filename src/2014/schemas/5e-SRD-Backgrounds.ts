@@ -1,6 +1,11 @@
 import { z } from 'zod';
 import { APIReferenceSchema, ChoiceSchema } from '../../schemas/common';
 
+const CostSchema = z.strictObject({
+  quantity: z.number(),
+  unit: z.string(),
+});
+
 const BackgroundFeatureSchema = z.strictObject({
   name: z.string(),
   desc: z.array(z.string()),
@@ -18,6 +23,7 @@ export const BackgroundSchema = z.strictObject({
   language_options: ChoiceSchema.optional(),
   starting_equipment: z.array(StartingEquipmentSchema).optional(),
   starting_equipment_options: z.array(ChoiceSchema).optional(),
+  starting_gold: CostSchema.optional(),
   feature: BackgroundFeatureSchema.optional(),
   personality_traits: ChoiceSchema.optional(),
   ideals: ChoiceSchema.optional(),
