@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.8.5](https://github.com/5e-bits/5e-database/compare/v5.8.4...v5.8.5) (2026-06-02)
+
+
+### Bug Fixes
+
+* **monsters:** Fix monster structured-field/desc errata that contradict each entry's own prose (2014 SRD) ([#1149](https://github.com/5e-bits/5e-database/issues/1149)) ([5afdb8f](https://github.com/5e-bits/5e-database/commit/5afdb8f0bf02a3f06c56339f78f9f9206dda5068))
+
 ## [5.8.4](https://github.com/5e-bits/5e-database/compare/v5.8.3...v5.8.4) (2026-05-29)
 
 
