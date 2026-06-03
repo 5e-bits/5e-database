@@ -27,6 +27,49 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.8.5](https://github.com/5e-bits/5e-database/compare/v5.8.4...v5.8.5) (2026-06-02)
+
+
+### Bug Fixes
+
+* **monsters:** Fix monster structured-field/desc errata that contradict each entry's own prose (2014 SRD) ([#1149](https://github.com/5e-bits/5e-database/issues/1149)) ([5afdb8f](https://github.com/5e-bits/5e-database/commit/5afdb8f0bf02a3f06c56339f78f9f9206dda5068))
+
+## [5.8.4](https://github.com/5e-bits/5e-database/compare/v5.8.3...v5.8.4) (2026-05-29)
+
+
+### Bug Fixes
+
+* Add starting_gold to Acolyte background ([#1141](https://github.com/5e-bits/5e-database/issues/1141)) ([c38a1fb](https://github.com/5e-bits/5e-database/commit/c38a1fb86923d82e4d6b7b75c87a837bce943e68))
+* magic missile damage ([#1142](https://github.com/5e-bits/5e-database/issues/1142)) ([fcf94eb](https://github.com/5e-bits/5e-database/commit/fcf94ebb3f9326986cc366084ec40cbb2d6d7e52)), closes [#628](https://github.com/5e-bits/5e-database/issues/628)
+
+## [5.8.3](https://github.com/5e-bits/5e-database/compare/v5.8.2...v5.8.3) (2026-05-27)
+
+
+### Bug Fixes
+
+* **5e-SRD-Monsters:** Whitespaces, spelling ([#1139](https://github.com/5e-bits/5e-database/issues/1139)) ([11a8a6b](https://github.com/5e-bits/5e-database/commit/11a8a6be4dd45cddc8c1d05530a6e7423178cb02))
+
+## [5.8.2](https://github.com/5e-bits/5e-database/compare/v5.8.1...v5.8.2) (2026-05-27)
+
+
+### Bug Fixes
+
+* **5e-SRD-Monsters.json:** OCR mistake ([#1137](https://github.com/5e-bits/5e-database/issues/1137)) ([4e3a266](https://github.com/5e-bits/5e-database/commit/4e3a266ba94412a81f4994c15d2c8ccb4bba5afd))
+
+## [5.8.1](https://github.com/5e-bits/5e-database/compare/v5.8.0...v5.8.1) (2026-05-23)
+
+
+### Bug Fixes
+
+* **translation:** add missing features french translations ([#1130](https://github.com/5e-bits/5e-database/issues/1130)) ([6e137b5](https://github.com/5e-bits/5e-database/commit/6e137b599d0b5b84e4ffec3629c6f415ba1ad96a))
+
+## [5.8.0](https://github.com/5e-bits/5e-database/compare/v5.7.0...v5.8.0) (2026-05-18)
+
+
+### Features
+
+* **language:** add levels, rule-sections and features French translations ([#1128](https://github.com/5e-bits/5e-database/issues/1128)) ([d4a7a31](https://github.com/5e-bits/5e-database/commit/d4a7a31811a6610740aa0a0f61593d19ccd46f0b))
+
 ## [5.7.0](https://github.com/5e-bits/5e-database/compare/v5.6.0...v5.7.0) (2026-05-11)
 
 
