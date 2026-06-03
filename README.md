@@ -26,6 +26,14 @@ docker build -t 5e-database .
 docker run -i -t 5e-database:latest
 ```
 
+During the `build` step, you can specify the version of MongoDB to use with the following:
+
+```bash
+docker build --build-arg MONGODB=4.4 -t 5e-database .
+```
+
+*MongoDB v4.4 is the latest version that does not require the AVX instruction set to run.*
+
 ### Without Docker
 
 First you need to make sure you have [MongoDB installed locally.](https://docs.mongodb.com/manual/installation/)
