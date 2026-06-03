@@ -27,6 +27,14 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.9.0](https://github.com/5e-bits/5e-database/compare/v5.8.5...v5.9.0) (2026-06-03)
+
+
+### Features
+
+* **2024:** Add 2024 Features ([#1056](https://github.com/5e-bits/5e-database/issues/1056)) ([367bbe3](https://github.com/5e-bits/5e-database/commit/367bbe38eb0a4fbd23c943916d4d64f45f55287d))
+* **2024:** Add 2024 Poisons ([#1151](https://github.com/5e-bits/5e-database/issues/1151)) ([ae8b5e0](https://github.com/5e-bits/5e-database/commit/ae8b5e0d30e5451f6195461aa15f36b6cee0ce7a))
+
 ## [5.8.5](https://github.com/5e-bits/5e-database/compare/v5.8.4...v5.8.5) (2026-06-02)
 
 
