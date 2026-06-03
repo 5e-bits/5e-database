@@ -9,6 +9,7 @@ import { DamageTypeSchema } from '../schemas/5e-SRD-Damage-Types';
 import { EquipmentCategorySchema } from '../schemas/5e-SRD-Equipment-Categories';
 import { EquipmentSchema } from '../schemas/5e-SRD-Equipment';
 import { FeatSchema } from '../schemas/5e-SRD-Feats';
+import { FeatureSchema } from '../schemas/5e-SRD-Features';
 import { LanguageSchema } from '../schemas/5e-SRD-Languages';
 import { MagicItemSchema } from '../schemas/5e-SRD-Magic-Items';
 import { MagicSchoolSchema } from '../schemas/5e-SRD-Magic-Schools';
@@ -37,6 +38,7 @@ const COLLECTION_SCHEMAS: Record<string, z.ZodTypeAny> = {
   'equipment-categories': EquipmentCategorySchema,
   equipment: EquipmentSchema,
   feats: FeatSchema,
+  features: FeatureSchema,
   languages: LanguageSchema,
   'magic-items': MagicItemSchema,
   'magic-schools': MagicSchoolSchema,
