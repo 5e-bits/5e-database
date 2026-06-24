@@ -1,6 +1,5 @@
 import { z } from 'zod';
-import { ClassSchema } from './5e-SRD-Classes';
-import { FeatureSchema } from './5e-SRD-Features';
+import { APIReferenceSchema } from '../../schemas/common';
 
 const ClassSpecificSchema = z.strictObject({
   bardic_inspiration_die: z.number().optional(),
@@ -38,8 +37,8 @@ export const LevelSchema = z.strictObject({
   name: z.string(),
   level: z.number(),
   prof_bonus: z.number().optional(),
-  features: z.array(FeatureSchema).optional(),
-  class: ClassSchema,
+  features: z.array(APIReferenceSchema).optional(),
+  class: APIReferenceSchema,
   class_specific: ClassSpecificSchema.optional(),
   spellcasting: LevelSpellcastingSchema.optional(),
   url: z.string(),
