@@ -135,11 +135,10 @@ const indexAndUrlChecks = (filename: string, entry: Entry) => {
     console.warn(`${filename}: URL '${entry.url}' is marked as Not Yet Implemented.`)
   } else if((entry.url as string).includes('/levels/')){
     const [ name, level ] = (entry.index as string).split('-');
-    let type = '';
-    if ((entry.url as string).includes('/classes/')) type = 'classes';
-    if ((entry.url as string).includes('/subclasses/')) type = 'subclasses';
-    
+    const type = (entry.url as string).split('/')[3];
+
     const templateUrl = `/api/2024/${type}/${name}/levels/${level}`;
+
     if(entry.url != templateUrl) {
       errors.push(`${filename}: Index '${entry.index as string}' does not match template URL ${entry.url as string}`);
     }
