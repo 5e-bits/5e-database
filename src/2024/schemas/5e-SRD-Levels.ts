@@ -39,6 +39,7 @@ export const LevelSchema = z.strictObject({
   prof_bonus: z.number().optional(),
   features: z.array(APIReferenceSchema).optional(),
   class: APIReferenceSchema,
+  subclass: APIReferenceSchema.optional(),
   class_specific: ClassSpecificSchema.optional(),
   spellcasting: LevelSpellcastingSchema.optional(),
   url: z.string(),
