@@ -133,6 +133,15 @@ const indexAndUrlChecks = (filename: string, entry: Entry) => {
   // Check Index matches URL
   if((entry.url as string).slice(-4) == '-nyi'){
     console.warn(`${filename}: URL '${entry.url}' is marked as Not Yet Implemented.`)
+  } else if((entry.url as string).includes('/levels/')){
+    const [ name, level ] = (entry.index as string).split('-');
+    const type = (entry.url as string).split('/')[3];
+
+    const templateUrl = `/api/2024/${type}/${name}/levels/${level}`;
+
+    if(entry.url != templateUrl) {
+      errors.push(`${filename}: Index '${entry.index as string}' does not match template URL ${entry.url as string}`);
+    }
   } else {
     if((entry.index as string) != (entry.url as string).slice(0 - (entry.index as string).length)){
       errors.push(`${filename}: Index '${entry.index as string}' does not match URL ${entry.url as string}`);
