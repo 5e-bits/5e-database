@@ -23,6 +23,7 @@
 		"material": "powdered rhubarb leaf",
 		"duration": "Instantaneous",
 		"concentration": false,
+		"attack_type": "ranged",
 		"description": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 Acid damage and 2d4 Acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage only.",
 		"higher_level": "The damage (both initial and later) increases by 1d4 for each spell slot level above 2."
 	},
@@ -478,6 +479,7 @@
 		"material": "an eggshell and a glove",
 		"duration": "up to 1 minute",
 		"concentration": true,
+		"attack_type": "melee",
 		"description": "You create a Large hand of shimmering magical energy in an unoccupied space that you can see within range. The hand lasts for the duration, and it moves at your command, mimicking the movements of your own hand.\n  The hand is an object that has AC 20 and Hit Points equal to your Hit Point maximum. If it drops to 0 Hit Points, the spell ends. The hand doesn't occupy its space.\n  When you cast the spell and as a Bonus Action on your later turns, you can move the hand up to 60 feet and then cause one of the following effects: Clenched Fist. The hand strikes a target within 5 feet of it. Make a melee spell attack. On a hit, the target takes 5d8 Force damage. Forceful Hand. The hand attempts to push a Huge or smaller creature within 5 feet of it. The target must succeed on a Strength saving throw, or the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target, remaining within 5 feet of it. Grasping Hand. The hand attempts to grapple a Huge or smaller creature within 5 feet of it. The target must succeed on a Dexterity saving throw, or the target has the Grappled condition, with an escape DC equal to your spell save DC. While the hand grapples the target, you can take a Bonus Action to cause the hand to crush it, dealing Bludgeoning damage to the target equal to 4d6 plus your spellcasting ability modifier. Interposing Hand. The hand grants you Half Cover against attacks and other effects that originate from its space or that pass through it. In addition, its space counts as Difficult Terrain for your enemies.",
 		"higher_level": "The damage of the Clenched Fist increases by 2d8 and the damage of the Grasping Hand increases by 2d6 for each spell slot level above 5."
 	},
@@ -536,6 +538,7 @@
 		"material": "(a miniature sword worth 250+ GP",
 		"duration": "up to 1 minute",
 		"concentration": true,
+		"attack_type": "melee",
 		"description": "You create a spectral sword that hovers within range. It lasts for the duration.\n  When the sword appears, you make a melee spell attack against a target within 5 feet of the sword. On a hit, the target takes Force damage equal to 4d12 plus your spellcasting ability modifier.\n  On your later turns, you can take a Bonus Action to move the sword up to 30 feet to a spot you can see and repeat the attack against the same target or a different one."
 	},
 	{
@@ -1383,6 +1386,7 @@
 		"components": ["V", "S"],
 		"duration": "Instantaneous",
 		"concentration": false,
+		"attack_type": "melee",
 		"description": "Channeling the chill of the grave, make a melee spell attack against a target within reach. On a hit, the target takes 1d10 Necrotic damage, and it can't regain Hit Points until the end of your next turn.\n  Cantrip Upgrade. The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10)."
 	},
 	{
@@ -1414,6 +1418,7 @@
 		"material": "a diamond worth 50+ GP",
 		"duration": "Instantaneous",
 		"concentration": false,
+		"attack_type": "ranged",
 		"description": "You hurl an orb of energy at a target within range. Choose Acid, Cold, Fire, Lightning, Poison, or Thunder for the type of orb you create, and then make a ranged spell attack against the target. On a hit, the target takes 3d8 damage of the chosen type.\n  If you roll the same number on two or more of the d8s, the orb leaps to a different target of your choice within 30 feet of the target. Make an attack roll against the new target, and make a new damage roll. The orb can't leap again unless you cast the spell with a level 2+ spell slot.",
 		"higher_level": "The damage increases by 1d8 for each spell slot level above 1. The orb can leap a maximum number of times equal to the level of the slot expended, and a creature can be targeted only once by each casting of this spell."
 	},
@@ -1936,6 +1941,7 @@
 		"components": ["V", "S"],
 		"duration": "up to 10 minutes",
 		"concentration": true,
+		"attack_type": "melee",
 		"description": "You conjure a Medium spirit from the Feywild in an unoccupied space you can see within range. The spirit lasts for the duration, and it looks like a Fey creature of your choice. When the spirit appears, you can make one melee spell attack against a creature within 5 feet of it. On a hit, the target takes Psychic damage equal to 3d12 plus your spellcasting ability modifier, and the target has the Frightened condition until the start of your next turn, with both you and the spirit as the source of the fear.\n  As a Bonus Action on your later turns, you can teleport the spirit to an unoccupied space you can see within 30 feet of the space it left and make the attack against a creature within 5 feet of it.",
 		"higher_level": "The damage increases by 1d12 for each spell slot level above 6."
 	},
@@ -2157,7 +2163,7 @@
 		"material": "a mixture of water and dust",
 		"duration": "up to 10 minutes",
 		"concentration": true,
-		"description": "Until the spell ends, you control any water inside an area you choose that is a Cube up to 100 feet on a side, using one of the following effects. As a Magic action on your later turns, you can repeat the same effect or choose a different one.\n  Flood. You cause the water level of all standing water in the area to rise by as much as 20 feet. If you choose an area in a large body of water, you instead create a 20-foot tall wave that travels from one side of the area to the other and then crashes. Any Huge or smaller vehicles in the wave's path are carried with it to the other side. Any Huge or smaller vehicles struck by the wave have a 25 percent chance of capsizing.\n  The water level remains elevated until the spell ends or you choose a different effect. If this effect produced a wave, the wave repeats on the start of your next turn while the flood effect lasts.\n  Part Water. You part water in the area and create a trench. The trench extends across the spell's area, and the separated water forms a wall to either side. The trench remains until the spell ends or you choose a different effect. The water then slowly fills in the trench over the course of the next round until the normal water level is restored. conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.\n  When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction. Precipitation Stage | Condition\n1 | Clear | 2 | Light clouds\n3 | Overcast or ground fog | 4 | Rain, hail, or snow\n5 | Torrential rain, driving hail, or blizzard    \n  Redirect Flow. You cause flowing water in the area to move in a direction you choose, even if the water has to flow over obstacles, up walls, or in other unlikely directions. The water in the area moves as you direct it, but once it moves beyond the spell's area, it resumes its flow based on the terrain. The water continues to move in the direction you chose until the spell ends or you choose a different effect.\n  Whirlpool. You cause a whirlpool to form in the center of the area, which must be at least 50 feet. Temperature Stage | Condition\n1 | Heat wave | 2 | Hot\n3 | Warm | 4 | Cool\n5 | Cold | 6 | Freezing Counterspell Wind Stage Condition\n10 | Calm | 2 | Moderate wind\n3 | Strong wind | 4 | Gale\n5 | Storm    square and 25 feet deep. The whirlpool lasts until you choose a different effect or the spell ends. The whirlpool is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature in the water and within 25 feet of the whirlpool is pulled 10 feet toward it. When a creature enters the whirl- pool for the first time on a turn or ends its turn there, it makes a Strength saving throw. On a failed save, the creature takes 2d8 Bludgeoning dam- age. On a successful save, the creature takes half as much damage. A creature can swim away from the whirlpool only if it first takes an action to pull away and succeeds on a Strength (Athletics) check against your spell save DC."
+		"description": "Until the spell ends, you control any water inside an area you choose that is a Cube up to 100 feet on a side, using one of the following effects. As a Magic action on your later turns, you can repeat the same effect or choose a different one.\n  Flood. You cause the water level of all standing water in the area to rise by as much as 20 feet. If you choose an area in a large body of water, you instead create a 20-foot tall wave that travels from one side of the area to the other and then crashes. Any Huge or smaller vehicles in the wave's path are carried with it to the other side. Any Huge or smaller vehicles struck by the wave have a 25 percent chance of capsizing.\n  The water level remains elevated until the spell ends or you choose a different effect. If this effect produced a wave, the wave repeats on the start of your next turn while the flood effect lasts.\n  Part Water. You part water in the area and create a trench. The trench extends across the spell's area, and the separated water forms a wall to either side. The trench remains until the spell ends or you choose a different effect. The water then slowly fills in the trench over the course of the next round until the normal water level is restored. conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.\n  When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction. Precipitation Stage | Condition\n1 | Clear | 2 | Light clouds\n3 | Overcast or ground fog | 4 | Rain, hail, or snow\n5 | Torrential rain, driving hail, or blizzard    \n  Redirect Flow. You cause flowing water in the area to move in a direction you choose, even if the water has to flow over obstacles, up walls, or in other unlikely directions. The water in the area moves as you direct it, but once it moves beyond the spell's area, it resumes its flow based on the terrain. The water continues to move in the direction you chose until the spell ends or you choose a different effect.\n  Whirlpool. You cause a whirlpool to form in the center of the area, which must be at least 50 feet. Temperature Stage | Condition\n1 | Heat wave | 2 | Hot\n3 | Warm | 4 | Cool\n5 | Cold | 6 | Freezing Counterspell Wind Stage Condition\n10 | Calm | 2 | Moderate wind\n3 | Strong wind | 4 | Gale\n5 | Storm    square and 25 feet deep. The whirlpool lasts until you choose a different effect or the spell ends. The whirlpool is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature in the water and within 25 feet of the whirlpool is pulled 10 feet toward it. When a creature enters the whirl- pool for the first time on a turn or ends its turn there, it makes a Strength saving throw. On a failed save, the creature takes 2d8 Bludgeoning damage. On a successful save, the creature takes half as much damage. A creature can swim away from the whirlpool only if it first takes an action to pull away and succeeds on a Strength (Athletics) check against your spell save DC."
 	},
 	{
 		"index": "control-weather",
@@ -3429,6 +3435,7 @@
 		"components": ["V", "S"],
 		"duration": "Instantaneous",
 		"concentration": false,
+		"attack_type": "ranged",
 		"description": "You hurl a beam of crackling energy. Make a ranged spell attack against one creature or object in range. On a hit, the target takes 1d10 Force damage.\n  Cantrip Upgrade. The spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam."
 	},
 	{
@@ -4174,6 +4181,7 @@
 		"components": ["V", "S"],
 		"duration": "Instantaneous",
 		"concentration": false,
+		"attack_type": "ranged",
 		"description": "You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Fire damage. A flammable object hit by this spell starts burning if it isn't being worn or carried.\n  Cantrip Upgrade. The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10)."
 	},
 	{
@@ -4276,6 +4284,7 @@
 		"material": "a sumac leaf",
 		"duration": "up to 10 minutes",
 		"concentration": true,
+		"attack_type": "melee",
 		"description": " You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke it again as a Bonus Action.\n  As a Magic action, you can make a melee spell attack with the fiery blade. On a hit, the target takes Fire damage equal to 3d6 plus your spellcasting ability modifier.\n  The flaming blade sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet.",
 		"higher_level": "The damage increases by 1d6 for each spell slot level above 2."
 	},
@@ -5197,6 +5206,7 @@
 		"components": ["V", "S"],
 		"duration": "1 round",
 		"concentration": false,
+		"attack_type": "ranged",
 		"description": "You hurl a bolt of light toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 4d6 Radiant damage, and the next attack roll made against it before the end of your next turn has Advantage.",
 		"higher_level": "The damage increases by 1d6 for each spell slot level above 1."
 	},
@@ -5841,6 +5851,7 @@
 		"material": "a drop of water or a piece of ice",
 		"duration": "Instantaneous",
 		"concentration": false,
+		"attack_type": "ranged",
 		"description": "You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must succeed on a Dexterity saving throw or take 2d6 Cold damage.",
 		"higher_level": "The Cold damage increases by 1d6 for each spell slot level above 1."
 	},
@@ -7960,6 +7971,7 @@
 		"components": ["V", "S"],
 		"duration": "Instantaneous",
 		"concentration": false,
+		"attack_type": "ranged",
 		"description": "You spray toxic mist at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d12 Poison damage.\n  Cantrip Upgrade. The damage increases by 1d12 when you reach levels 5 (2d12), 11 (3d12), and 17 (4d12)."
 	},
 	{
@@ -8298,6 +8310,7 @@
 		"components": ["V", "S"],
 		"duration": "10 minutes",
 		"concentration": false,
+		"attack_type": "ranged",
 		"description": "A flickering flame appears in your hand and remains there for the duration. While there, the flame emits no heat and ignites nothing, and it sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The spell ends if you cast it again.\n  Until the spell ends, you can take a Magic action to hurl fire at a creature or an object within 60 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 Fire damage.\n  Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
 	},
 	{
@@ -8622,6 +8635,7 @@
 		"components": ["V", "S"],
 		"duration": "Instantaneous",
 		"concentration": false,
+		"attack_type": "ranged",
 		"description": "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 Cold damage, and its Speed is reduced by 10 feet until the start of your next turn.\n  Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
 	},
 	{
@@ -8688,6 +8702,7 @@
 		"components": ["V", "S"],
 		"duration": "Instantaneous",
 		"concentration": false,
+		"attack_type": "ranged",
 		"description": "You shoot a greenish ray at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 Poison damage and has the Poisoned condition until the end of your next turn. Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 1."
 	},
 	{
@@ -9025,6 +9040,7 @@
 		"components": ["V", "S"],
 		"duration": "Instantaneous",
 		"concentration": false,
+		"attack_type": "ranged",
 		"description": "You hurl three fiery rays. You can hurl them at one target within range or at several. Make a ranged spell attack for each ray. On a hit, the target takes 2d6 Fire damage.",
 		"higher_level": "You create one additional ray for each spell slot level above 2."
 	},
@@ -9467,6 +9483,7 @@
 		"components": ["V", "S"],
 		"duration": "Instantaneous",
 		"concentration": false,
+		"attack_type": "melee",
 		"description": "Lightning springs from you to a creature that you try to touch. Make a melee spell attack against the target. On a hit, the target takes 1d8 Lightning damage, and it can't make Opportunity Attacks until the start of its next turn.\n  Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
 	},
 	{
@@ -9697,6 +9714,7 @@
 		"components": [],
 		"duration": "Instantaneous",
 		"concentration": false,
+		"attack_type": "ranged",
 		"description": "You cast sorcerous energy at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 damage of a type you choose: Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder.\n  If you roll an 8 on a d8 for this spell, you can roll another d8, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell's damage equals your spellcasting ability modifier.\n  Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
 	},
 	{
@@ -9958,6 +9976,7 @@
 		"components": ["V", "S"],
 		"duration": "up to 1 minute",
 		"concentration": true,
+		"attack_type": "melee",
 		"description": "You create a floating, spectral force that resembles a weapon of your choice and lasts for the duration. The force appears within range in a space of your choice, and you can immediately make one melee spell attack against one creature within 5 feet of the force. On a hit, the target takes Force damage equal to 1d8 plus your spellcasting ability modifier.\n  As a Bonus Action on your later turns, you can move the force up to 20 feet and repeat the attack against a creature within 5 feet of it.",
 		"higher_level": "The damage increases by 1d8 for every slot level above 2."
 	},
@@ -9989,6 +10008,7 @@
 		"components": ["V", "S"],
 		"duration": "Instantaneous",
 		"concentration": false,
+		"attack_type": "ranged",
 		"description": "You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can't benefit from the Invisible condition.\n  Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
 	},
 	{
@@ -10932,6 +10952,7 @@
 		"components": ["V", "S"],
 		"duration": "up to 1 minute",
 		"concentration": true,
+		"attack_type": "melee",
 		"description": "The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against one creature within reach. On a hit, the target takes 3d6 Necrotic damage, and you regain Hit Points equal to half the amount of Necrotic damage dealt.\n  Until the spell ends, you can make the attack again on each of your turns as a Magic action, targeting the same creature or a different one.",
 		"higher_level": "The damage increases by 1d6 for each spell slot level above 3."
 	},
