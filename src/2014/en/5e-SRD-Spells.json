@@ -17,23 +17,25 @@
     "casting_time": "1 action",
     "level": 2,
     "attack_type": "ranged",
-    "damage": {
-      "damage_type": {
-        "index": "acid",
-        "name": "Acid",
-        "url": "/api/2014/damage-types/acid"
-      },
-      "damage_at_slot_level": {
-        "2": "4d4",
-        "3": "5d4",
-        "4": "6d4",
-        "5": "7d4",
-        "6": "8d4",
-        "7": "9d4",
-        "8": "10d4",
-        "9": "11d4"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "acid",
+          "name": "Acid",
+          "url": "/api/2014/damage-types/acid"
+        },
+        "damage_at_slot_level": {
+          "2": "4d4",
+          "3": "5d4",
+          "4": "6d4",
+          "5": "7d4",
+          "6": "8d4",
+          "7": "9d4",
+          "8": "10d4",
+          "9": "11d4"
+        }
       }
-    },
+    ],
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -74,19 +76,21 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
-    "damage": {
-      "damage_type": {
-        "index": "acid",
-        "name": "Acid",
-        "url": "/api/2014/damage-types/acid"
-      },
-      "damage_at_character_level": {
-        "1": "1d6",
-        "5": "2d6",
-        "11": "3d6",
-        "17": "4d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "acid",
+          "name": "Acid",
+          "url": "/api/2014/damage-types/acid"
+        },
+        "damage_at_character_level": {
+          "1": "1d6",
+          "5": "2d6",
+          "11": "3d6",
+          "17": "4d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -739,16 +743,18 @@
     "casting_time": "1 action",
     "level": 7,
     "attack_type": "melee",
-    "damage": {
-      "damage_type": {
-        "index": "force",
-        "name": "Force",
-        "url": "/api/2014/damage-types/force"
-      },
-      "damage_at_slot_level": {
-        "7": "3d10"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "force",
+          "name": "Force",
+          "url": "/api/2014/damage-types/force"
+        },
+        "damage_at_slot_level": {
+          "7": "3d10"
+        }
       }
-    },
+    ],
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -1206,16 +1212,18 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 4,
-    "damage": {
-      "damage_type": {
-        "index": "bludgeoning",
-        "name": "Bludgeoning",
-        "url": "/api/2014/damage-types/bludgeoning"
-      },
-      "damage_at_slot_level": {
-        "4": "3d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "bludgeoning",
+          "name": "Bludgeoning",
+          "url": "/api/2014/damage-types/bludgeoning"
+        },
+        "damage_at_slot_level": {
+          "4": "3d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -1258,16 +1266,18 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 6,
-    "damage": {
-      "damage_type": {
-        "index": "slashing",
-        "name": "Slashing",
-        "url": "/api/2014/damage-types/slashing"
-      },
-      "damage_at_slot_level": {
-        "6": "6d10"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "slashing",
+          "name": "Slashing",
+          "url": "/api/2014/damage-types/slashing"
+        },
+        "damage_at_slot_level": {
+          "6": "6d10"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -1361,21 +1371,23 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 4,
-    "damage": {
-      "damage_type": {
-        "index": "necrotic",
-        "name": "Necrotic",
-        "url": "/api/2014/damage-types/necrotic"
-      },
-      "damage_at_slot_level": {
-        "4": "8d8",
-        "5": "9d8",
-        "6": "10d8",
-        "7": "11d8",
-        "8": "12d8",
-        "9": "13d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "necrotic",
+          "name": "Necrotic",
+          "url": "/api/2014/damage-types/necrotic"
+        },
+        "damage_at_slot_level": {
+          "4": "8d8",
+          "5": "9d8",
+          "6": "10d8",
+          "7": "11d8",
+          "8": "12d8",
+          "9": "13d8"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "con",
@@ -1585,23 +1597,25 @@
     "concentration": true,
     "casting_time": "1 bonus action",
     "level": 2,
-    "damage": {
-      "damage_type": {
-        "index": "radiant",
-        "name": "Radiant",
-        "url": "/api/2014/damage-types/radiant"
-      },
-      "damage_at_slot_level": {
-        "2": "2d6",
-        "3": "3d6",
-        "4": "4d6",
-        "5": "5d6",
-        "6": "6d6",
-        "7": "7d6",
-        "8": "8d6",
-        "9": "9d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "radiant",
+          "name": "Radiant",
+          "url": "/api/2014/damage-types/radiant"
+        },
+        "damage_at_slot_level": {
+          "2": "2d6",
+          "3": "3d6",
+          "4": "4d6",
+          "5": "5d6",
+          "6": "6d6",
+          "7": "7d6",
+          "8": "8d6",
+          "9": "9d6"
+        }
       }
-    },
+    ],
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -1634,24 +1648,26 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
-    "damage": {
-      "damage_type": {
-        "index": "fire",
-        "name": "Fire",
-        "url": "/api/2014/damage-types/fire"
-      },
-      "damage_at_slot_level": {
-        "1": "3d6",
-        "2": "4d6",
-        "3": "5d6",
-        "4": "6d6",
-        "5": "7d6",
-        "6": "8d6",
-        "7": "9d6",
-        "8": "10d6",
-        "9": "11d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/2014/damage-types/fire"
+        },
+        "damage_at_slot_level": {
+          "1": "3d6",
+          "2": "4d6",
+          "3": "5d6",
+          "4": "6d6",
+          "5": "7d6",
+          "6": "8d6",
+          "7": "9d6",
+          "8": "10d6",
+          "9": "11d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -1713,22 +1729,24 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 3,
-    "damage": {
-      "damage_type": {
-        "index": "lightning",
-        "name": "Lightning",
-        "url": "/api/2014/damage-types/lightning"
-      },
-      "damage_at_slot_level": {
-        "3": "3d10",
-        "4": "4d10",
-        "5": "5d10",
-        "6": "6d10",
-        "7": "7d10",
-        "8": "8d10",
-        "9": "9d10"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "lightning",
+          "name": "Lightning",
+          "url": "/api/2014/damage-types/lightning"
+        },
+        "damage_at_slot_level": {
+          "3": "3d10",
+          "4": "4d10",
+          "5": "5d10",
+          "6": "6d10",
+          "7": "7d10",
+          "8": "8d10",
+          "9": "9d10"
+        }
       }
-    },
+    ],
     "area_of_effect": {
       "type": "sphere",
       "size": 5
@@ -1829,16 +1847,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 6,
-    "damage": {
-      "damage_type": {
-        "index": "lightning",
-        "name": "Lightning",
-        "url": "/api/2014/damage-types/lightning"
-      },
-      "damage_at_slot_level": {
-        "6": "10d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "lightning",
+          "name": "Lightning",
+          "url": "/api/2014/damage-types/lightning"
+        },
+        "damage_at_slot_level": {
+          "6": "10d8"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -1948,19 +1968,21 @@
     "casting_time": "1 action",
     "level": 0,
     "attack_type": "ranged",
-    "damage": {
-      "damage_type": {
-        "index": "necrotic",
-        "name": "Necrotic",
-        "url": "/api/2014/damage-types/necrotic"
-      },
-      "damage_at_character_level": {
-        "1": "1d8",
-        "5": "2d8",
-        "11": "3d8",
-        "17": "4d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "necrotic",
+          "name": "Necrotic",
+          "url": "/api/2014/damage-types/necrotic"
+        },
+        "damage_at_character_level": {
+          "1": "1d8",
+          "5": "2d8",
+          "11": "3d8",
+          "17": "4d8"
+        }
       }
-    },
+    ],
     "school": {
       "index": "necromancy",
       "name": "Necromancy",
@@ -2009,19 +2031,21 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 6,
-    "damage": {
-      "damage_type": {
-        "index": "necrotic",
-        "name": "Necrotic",
-        "url": "/api/2014/damage-types/necrotic"
-      },
-      "damage_at_slot_level": {
-        "6": "8d6",
-        "7": "10d6",
-        "8": "12d6",
-        "9": "14d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "necrotic",
+          "name": "Necrotic",
+          "url": "/api/2014/damage-types/necrotic"
+        },
+        "damage_at_slot_level": {
+          "6": "8d6",
+          "7": "10d6",
+          "8": "12d6",
+          "9": "14d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "con",
@@ -2159,20 +2183,22 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 5,
-    "damage": {
-      "damage_type": {
-        "index": "poison",
-        "name": "Poison",
-        "url": "/api/2014/damage-types/poison"
-      },
-      "damage_at_slot_level": {
-        "5": "5d8",
-        "6": "6d8",
-        "7": "7d8",
-        "8": "8d8",
-        "9": "9d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "poison",
+          "name": "Poison",
+          "url": "/api/2014/damage-types/poison"
+        },
+        "damage_at_slot_level": {
+          "5": "5d8",
+          "6": "6d8",
+          "7": "7d8",
+          "8": "8d8",
+          "9": "9d8"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "con",
@@ -2510,20 +2536,22 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 5,
-    "damage": {
-      "damage_type": {
-        "index": "cold",
-        "name": "Cold",
-        "url": "/api/2014/damage-types/cold"
-      },
-      "damage_at_slot_level": {
-        "5": "8d8",
-        "6": "9d8",
-        "7": "10d8",
-        "8": "11d8",
-        "9": "12d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "cold",
+          "name": "Cold",
+          "url": "/api/2014/damage-types/cold"
+        },
+        "damage_at_slot_level": {
+          "5": "8d8",
+          "6": "9d8",
+          "7": "10d8",
+          "8": "11d8",
+          "9": "12d8"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "con",
@@ -3075,16 +3103,18 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 4,
-    "damage": {
-      "damage_type": {
-        "index": "bludgeoning",
-        "name": "Bludgeoning",
-        "url": "/api/2014/damage-types/bludgeoning"
-      },
-      "damage_at_slot_level": {
-        "4": "2d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "bludgeoning",
+          "name": "Bludgeoning",
+          "url": "/api/2014/damage-types/bludgeoning"
+        },
+        "damage_at_slot_level": {
+          "4": "2d8"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "str",
@@ -3778,18 +3808,20 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 7,
-    "damage": {
-      "damage_type": {
-        "index": "fire",
-        "name": "Fire",
-        "url": "/api/2014/damage-types/fire"
-      },
-      "damage_at_slot_level": {
-        "7": "12d6",
-        "8": "13d6",
-        "9": "14d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/2014/damage-types/fire"
+        },
+        "damage_at_slot_level": {
+          "7": "12d6",
+          "8": "13d6",
+          "9": "14d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -4088,16 +4120,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 4,
-    "damage": {
-      "damage_type": {
-        "index": "force",
-        "name": "Force",
-        "url": "/api/2014/damage-types/force"
-      },
-      "damage_at_slot_level": {
-        "4": "4d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "force",
+          "name": "Force",
+          "url": "/api/2014/damage-types/force"
+        },
+        "damage_at_slot_level": {
+          "4": "4d6"
+        }
       }
-    },
+    ],
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -4194,16 +4228,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 6,
-    "damage": {
-      "damage_type": {
-        "index": "force",
-        "name": "Force",
-        "url": "/api/2014/damage-types/force"
-      },
-      "damage_at_slot_level": {
-        "6": "10d6 + 40"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "force",
+          "name": "Force",
+          "url": "/api/2014/damage-types/force"
+        },
+        "damage_at_slot_level": {
+          "6": "10d6 + 40"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -4404,16 +4440,18 @@
     "concentration": true,
     "casting_time": "1 bonus action",
     "level": 1,
-    "damage": {
-      "damage_type": {
-        "index": "radiant",
-        "name": "Radiant",
-        "url": "/api/2014/damage-types/radiant"
-      },
-      "damage_at_slot_level": {
-        "1": "1d4"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "radiant",
+          "name": "Radiant",
+          "url": "/api/2014/damage-types/radiant"
+        },
+        "damage_at_slot_level": {
+          "1": "1d4"
+        }
       }
-    },
+    ],
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -4652,16 +4690,18 @@
     "concentration": false,
     "casting_time": "1 minute",
     "level": 5,
-    "damage": {
-      "damage_type": {
-        "index": "psychic",
-        "name": "Psychic",
-        "url": "/api/2014/damage-types/psychic"
-      },
-      "damage_at_slot_level": {
-        "5": "3d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "psychic",
+          "name": "Psychic",
+          "url": "/api/2014/damage-types/psychic"
+        },
+        "damage_at_slot_level": {
+          "5": "3d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "wis",
@@ -4797,19 +4837,21 @@
     "casting_time": "1 action",
     "level": 0,
     "attack_type": "ranged",
-    "damage": {
-      "damage_type": {
-        "index": "force",
-        "name": "Force",
-        "url": "/api/2014/damage-types/force"
-      },
-      "damage_at_character_level": {
-        "1": "1d10",
-        "5": "1d10",
-        "11": "1d10",
-        "17": "1d10"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "force",
+          "name": "Force",
+          "url": "/api/2014/damage-types/force"
+        },
+        "damage_at_character_level": {
+          "1": "1d10",
+          "5": "1d10",
+          "11": "1d10",
+          "17": "1d10"
+        }
       }
-    },
+    ],
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -5284,16 +5326,18 @@
     "casting_time": "1 action",
     "level": 4,
     "attack_type": "melee",
-    "damage": {
-      "damage_type": {
-        "index": "piercing",
-        "name": "Piercing",
-        "url": "/api/2014/damage-types/piercing"
-      },
-      "damage_at_slot_level": {
-        "4": "4d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "piercing",
+          "name": "Piercing",
+          "url": "/api/2014/damage-types/piercing"
+        },
+        "damage_at_slot_level": {
+          "4": "4d8"
+        }
       }
-    },
+    ],
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -5489,16 +5533,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 8,
-    "damage": {
-      "damage_type": {
-        "index": "psychic",
-        "name": "Psychic",
-        "url": "/api/2014/damage-types/psychic"
-      },
-      "damage_at_slot_level": {
-        "8": "4d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "psychic",
+          "name": "Psychic",
+          "url": "/api/2014/damage-types/psychic"
+        },
+        "damage_at_slot_level": {
+          "8": "4d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "int",
@@ -5710,16 +5756,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 7,
-    "damage": {
-      "damage_type": {
-        "index": "necrotic",
-        "name": "Necrotic",
-        "url": "/api/2014/damage-types/necrotic"
-      },
-      "damage_at_slot_level": {
-        "7": "7d8 + 30"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "necrotic",
+          "name": "Necrotic",
+          "url": "/api/2014/damage-types/necrotic"
+        },
+        "damage_at_slot_level": {
+          "7": "7d8 + 30"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "con",
@@ -5768,19 +5816,21 @@
     "casting_time": "1 action",
     "level": 0,
     "attack_type": "ranged",
-    "damage": {
-      "damage_type": {
-        "index": "fire",
-        "name": "Fire",
-        "url": "/api/2014/damage-types/fire"
-      },
-      "damage_at_character_level": {
-        "1": "1d10",
-        "5": "2d10",
-        "11": "3d10",
-        "17": "4d10"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/2014/damage-types/fire"
+        },
+        "damage_at_character_level": {
+          "1": "1d10",
+          "5": "2d10",
+          "11": "3d10",
+          "17": "4d10"
+        }
       }
-    },
+    ],
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -5817,16 +5867,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 4,
-    "damage": {
-      "damage_type": {
-        "index": "fire",
-        "name": "Fire",
-        "url": "/api/2014/damage-types/fire"
-      },
-      "damage_at_slot_level": {
-        "4": "2d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/2014/damage-types/fire"
+        },
+        "damage_at_slot_level": {
+          "4": "2d8"
+        }
       }
-    },
+    ],
     "area_of_effect": {
       "type": "sphere",
       "size": 5
@@ -5866,16 +5918,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 7,
-    "damage": {
-      "damage_type": {
-        "index": "fire",
-        "name": "Fire",
-        "url": "/api/2014/damage-types/fire"
-      },
-      "damage_at_slot_level": {
-        "7": "7d10"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/2014/damage-types/fire"
+        },
+        "damage_at_slot_level": {
+          "7": "7d10"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -5931,22 +5985,24 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 3,
-    "damage": {
-      "damage_type": {
-        "index": "fire",
-        "name": "Fire",
-        "url": "/api/2014/damage-types/fire"
-      },
-      "damage_at_slot_level": {
-        "3": "8d6",
-        "4": "9d6",
-        "5": "10d6",
-        "6": "11d6",
-        "7": "12d6",
-        "8": "13d6",
-        "9": "14d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/2014/damage-types/fire"
+        },
+        "damage_at_slot_level": {
+          "3": "8d6",
+          "4": "9d6",
+          "5": "10d6",
+          "6": "11d6",
+          "7": "12d6",
+          "8": "13d6",
+          "9": "14d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -6009,19 +6065,21 @@
     "concentration": true,
     "casting_time": "1 bonus action",
     "level": 2,
-    "damage": {
-      "damage_type": {
-        "index": "fire",
-        "name": "Fire",
-        "url": "/api/2014/damage-types/fire"
-      },
-      "damage_at_slot_level": {
-        "2": "3d6",
-        "4": "4d6",
-        "6": "5d6",
-        "8": "6d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/2014/damage-types/fire"
+        },
+        "damage_at_slot_level": {
+          "2": "3d6",
+          "4": "4d6",
+          "6": "5d6",
+          "8": "6d6"
+        }
       }
-    },
+    ],
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -6060,20 +6118,36 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 5,
-    "damage": {
-      "damage_type": {
-        "index": "fire",
-        "name": "Fire",
-        "url": "/api/2014/damage-types/fire"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/2014/damage-types/fire"
+        },
+        "damage_at_slot_level": {
+          "5": "4d6",
+          "6": "4d6 OR 5d6",
+          "7": "4d6 OR 6d6",
+          "8": "4d6 OR 7d6",
+          "9": "4d6 OR 8d6"
+        }
       },
-      "damage_at_slot_level": {
-        "5": "4d6 + 4d6",
-        "6": "4d6 + 5d6",
-        "7": "4d6 + 6d6",
-        "8": "4d6 + 7d6",
-        "9": "4d6 + 8d6"
+      {
+        "damage_type": {
+          "index": "radiant",
+          "name": "Radiant",
+          "url": "/api/2014/damage-types/radiant"
+        },
+        "damage_at_slot_level": {
+          "5": "4d6",
+          "6": "4d6 OR 5d6",
+          "7": "4d6 OR 6d6",
+          "8": "4d6 OR 7d6",
+          "9": "4d6 OR 8d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -6131,23 +6205,25 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 2,
-    "damage": {
-      "damage_type": {
-        "index": "fire",
-        "name": "Fire",
-        "url": "/api/2014/damage-types/fire"
-      },
-      "damage_at_slot_level": {
-        "2": "2d6",
-        "3": "3d6",
-        "4": "4d6",
-        "5": "5d6",
-        "6": "6d6",
-        "7": "7d6",
-        "8": "8d6",
-        "9": "9d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/2014/damage-types/fire"
+        },
+        "damage_at_slot_level": {
+          "2": "2d6",
+          "3": "3d6",
+          "4": "4d6",
+          "5": "5d6",
+          "6": "6d6",
+          "7": "7d6",
+          "8": "8d6",
+          "9": "9d6"
+        }
       }
-    },
+    ],
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -6565,16 +6641,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 6,
-    "damage": {
-      "damage_type": {
-        "index": "cold",
-        "name": "Cold",
-        "url": "/api/2014/damage-types/cold"
-      },
-      "damage_at_slot_level": {
-        "6": "10d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "cold",
+          "name": "Cold",
+          "url": "/api/2014/damage-types/cold"
+        },
+        "damage_at_slot_level": {
+          "6": "10d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "con",
@@ -7142,16 +7220,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 4,
-    "damage": {
-      "damage_type": {
-        "index": "radiant",
-        "name": "Radiant",
-        "url": "/api/2014/damage-types/radiant"
-      },
-      "damage_at_slot_level": {
-        "4": "20"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "radiant",
+          "name": "Radiant",
+          "url": "/api/2014/damage-types/radiant"
+        },
+        "damage_at_slot_level": {
+          "4": "20"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -7286,24 +7366,26 @@
     "casting_time": "1 action",
     "level": 1,
     "attack_type": "ranged",
-    "damage": {
-      "damage_type": {
-        "index": "radiant",
-        "name": "Radiant",
-        "url": "/api/2014/damage-types/radiant"
-      },
-      "damage_at_slot_level": {
-        "1": "4d6",
-        "2": "5d6",
-        "3": "6d6",
-        "4": "7d6",
-        "5": "8d6",
-        "6": "9d6",
-        "7": "10d6",
-        "8": "11d6",
-        "9": "12d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "radiant",
+          "name": "Radiant",
+          "url": "/api/2014/damage-types/radiant"
+        },
+        "damage_at_slot_level": {
+          "1": "4d6",
+          "2": "5d6",
+          "3": "6d6",
+          "4": "7d6",
+          "5": "8d6",
+          "6": "9d6",
+          "7": "10d6",
+          "8": "11d6",
+          "9": "12d6"
+        }
       }
-    },
+    ],
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -7512,16 +7594,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 6,
-    "damage": {
-      "damage_type": {
-        "index": "necrotic",
-        "name": "Necrotic",
-        "url": "/api/2014/damage-types/necrotic"
-      },
-      "damage_at_slot_level": {
-        "6": "14d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "necrotic",
+          "name": "Necrotic",
+          "url": "/api/2014/damage-types/necrotic"
+        },
+        "damage_at_slot_level": {
+          "6": "14d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "con",
@@ -7709,23 +7793,25 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 2,
-    "damage": {
-      "damage_type": {
-        "index": "fire",
-        "name": "Fire",
-        "url": "/api/2014/damage-types/fire"
-      },
-      "damage_at_slot_level": {
-        "2": "2d8",
-        "3": "3d8",
-        "4": "4d8",
-        "5": "5d8",
-        "6": "6d8",
-        "7": "7d8",
-        "8": "8d8",
-        "9": "9d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/2014/damage-types/fire"
+        },
+        "damage_at_slot_level": {
+          "2": "2d8",
+          "3": "3d8",
+          "4": "4d8",
+          "5": "5d8",
+          "6": "6d8",
+          "7": "7d8",
+          "8": "8d8",
+          "9": "9d8"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "con",
@@ -7777,24 +7863,26 @@
     "concentration": false,
     "casting_time": "1 reaction",
     "level": 1,
-    "damage": {
-      "damage_type": {
-        "index": "fire",
-        "name": "Fire",
-        "url": "/api/2014/damage-types/fire"
-      },
-      "damage_at_slot_level": {
-        "1": "2d10",
-        "2": "3d10",
-        "3": "4d10",
-        "4": "5d10",
-        "5": "6d10",
-        "6": "7d10",
-        "7": "8d10",
-        "8": "9d10",
-        "9": "10d10"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/2014/damage-types/fire"
+        },
+        "damage_at_slot_level": {
+          "1": "2d10",
+          "2": "3d10",
+          "3": "4d10",
+          "4": "5d10",
+          "5": "6d10",
+          "6": "7d10",
+          "7": "8d10",
+          "8": "9d10",
+          "9": "10d10"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -8214,21 +8302,38 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 4,
-    "damage": {
-      "damage_type": {
-        "index": "bludgeoning",
-        "name": "Bludgeoning",
-        "url": "/api/2014/damage-types/bludgeoning"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "bludgeoning",
+          "name": "Bludgeoning",
+          "url": "/api/2014/damage-types/bludgeoning"
+        },
+        "damage_at_slot_level": {
+          "4": "2d8",
+          "5": "3d8",
+          "6": "4d8",
+          "7": "5d8",
+          "8": "6d8",
+          "9": "7d8"
+        }
       },
-      "damage_at_slot_level": {
-        "4": "2d8 + 4d6",
-        "5": "3d8 + 4d6",
-        "6": "4d8 + 4d6",
-        "7": "5d8 + 4d6",
-        "8": "6d8 + 4d6",
-        "9": "7d8 + 4d6"
+      {
+        "damage_type": {
+          "index": "cold",
+          "name": "Cold",
+          "url": "/api/2014/damage-types/cold"
+        },
+        "damage_at_slot_level": {
+          "4": "4d6",
+          "5": "4d6",
+          "6": "4d6",
+          "7": "4d6",
+          "8": "4d6",
+          "9": "4d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -8433,16 +8538,18 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 8,
-    "damage": {
-      "damage_type": {
-        "index": "fire",
-        "name": "Fire",
-        "url": "/api/2014/damage-types/fire"
-      },
-      "damage_at_slot_level": {
-        "8": "10d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/2014/damage-types/fire"
+        },
+        "damage_at_slot_level": {
+          "8": "10d8"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -8492,24 +8599,26 @@
     "casting_time": "1 action",
     "level": 1,
     "attack_type": "melee",
-    "damage": {
-      "damage_type": {
-        "index": "necrotic",
-        "name": "Necrotic",
-        "url": "/api/2014/damage-types/necrotic"
-      },
-      "damage_at_slot_level": {
-        "1": "3d10",
-        "2": "4d10",
-        "3": "5d10",
-        "4": "6d10",
-        "5": "7d10",
-        "6": "8d10",
-        "7": "9d10",
-        "8": "10d10",
-        "9": "11d10"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "necrotic",
+          "name": "Necrotic",
+          "url": "/api/2014/damage-types/necrotic"
+        },
+        "damage_at_slot_level": {
+          "1": "3d10",
+          "2": "4d10",
+          "3": "5d10",
+          "4": "6d10",
+          "5": "7d10",
+          "6": "8d10",
+          "7": "9d10",
+          "8": "10d10",
+          "9": "11d10"
+        }
       }
-    },
+    ],
     "school": {
       "index": "necromancy",
       "name": "Necromancy",
@@ -8549,20 +8658,22 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 5,
-    "damage": {
-      "damage_type": {
-        "index": "piercing",
-        "name": "Piercing",
-        "url": "/api/2014/damage-types/piercing"
-      },
-      "damage_at_slot_level": {
-        "5": "4d10",
-        "6": "5d10",
-        "7": "6d10",
-        "8": "7d10",
-        "9": "8d10"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "piercing",
+          "name": "Piercing",
+          "url": "/api/2014/damage-types/piercing"
+        },
+        "damage_at_slot_level": {
+          "5": "4d10",
+          "6": "5d10",
+          "7": "6d10",
+          "8": "7d10",
+          "9": "8d10"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "con",
@@ -9050,22 +9161,24 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 3,
-    "damage": {
-      "damage_type": {
-        "index": "lightning",
-        "name": "Lightning",
-        "url": "/api/2014/damage-types/lightning"
-      },
-      "damage_at_slot_level": {
-        "3": "8d6",
-        "4": "9d6",
-        "5": "10d6",
-        "6": "11d6",
-        "7": "12d6",
-        "8": "13d6",
-        "9": "14d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "lightning",
+          "name": "Lightning",
+          "url": "/api/2014/damage-types/lightning"
+        },
+        "damage_at_slot_level": {
+          "3": "8d6",
+          "4": "9d6",
+          "5": "10d6",
+          "6": "11d6",
+          "7": "12d6",
+          "8": "13d6",
+          "9": "14d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -9553,24 +9666,26 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
-    "damage": {
-      "damage_type": {
-        "index": "force",
-        "name": "Force",
-        "url": "/api/2014/damage-types/force"
-      },
-      "damage_at_slot_level": {
-        "1": "3d4 + 3",
-        "2": "4d4 + 4",
-        "3": "5d4 + 5",
-        "4": "6d4 + 6",
-        "5": "7d4 + 7",
-        "6": "8d4 + 8",
-        "7": "9d4 + 9",
-        "8": "10d4 + 10",
-        "9": "11d4 + 11"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "force",
+          "name": "Force",
+          "url": "/api/2014/damage-types/force"
+        },
+        "damage_at_slot_level": {
+          "1": "3d4 + 3",
+          "2": "4d4 + 4",
+          "3": "5d4 + 5",
+          "4": "6d4 + 6",
+          "5": "7d4 + 7",
+          "6": "8d4 + 8",
+          "7": "9d4 + 9",
+          "8": "10d4 + 10",
+          "9": "11d4 + 11"
+        }
       }
-    },
+    ],
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -10157,16 +10272,28 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 9,
-    "damage": {
-      "damage_type": {
-        "index": "fire",
-        "name": "Fire",
-        "url": "/api/2014/damage-types/fire"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/2014/damage-types/fire"
+        },
+        "damage_at_slot_level": {
+          "9": "20d6"
+        }
       },
-      "damage_at_slot_level": {
-        "9": "20d6 + 20d6"
+      {
+        "damage_type": {
+          "index": "bludgeoning",
+          "name": "Bludgeoning",
+          "url": "/api/2014/damage-types/bludgeoning"
+        },
+        "damage_at_slot_level": {
+          "9": "20d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -10535,23 +10662,25 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 2,
-    "damage": {
-      "damage_type": {
-        "index": "radiant",
-        "name": "Radiant",
-        "url": "/api/2014/damage-types/radiant"
-      },
-      "damage_at_slot_level": {
-        "2": "2d10",
-        "3": "3d10",
-        "4": "4d10",
-        "5": "5d10",
-        "6": "6d10",
-        "7": "7d10",
-        "8": "8d10",
-        "9": "9d10"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "radiant",
+          "name": "Radiant",
+          "url": "/api/2014/damage-types/radiant"
+        },
+        "damage_at_slot_level": {
+          "2": "2d10",
+          "3": "3d10",
+          "4": "4d10",
+          "5": "5d10",
+          "6": "6d10",
+          "7": "7d10",
+          "8": "8d10",
+          "9": "9d10"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "con",
@@ -10774,16 +10903,18 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 4,
-    "damage": {
-      "damage_type": {
-        "index": "psychic",
-        "name": "Psychic",
-        "url": "/api/2014/damage-types/psychic"
-      },
-      "damage_at_slot_level": {
-        "4": "4d10"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "psychic",
+          "name": "Psychic",
+          "url": "/api/2014/damage-types/psychic"
+        },
+        "damage_at_slot_level": {
+          "4": "4d10"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "wis",
@@ -11058,19 +11189,21 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
-    "damage": {
-      "damage_type": {
-        "index": "poison",
-        "name": "Poison",
-        "url": "/api/2014/damage-types/poison"
-      },
-      "damage_at_character_level": {
-        "1": "1d12",
-        "5": "2d12",
-        "11": "3d12",
-        "17": "4d12"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "poison",
+          "name": "Poison",
+          "url": "/api/2014/damage-types/poison"
+        },
+        "damage_at_character_level": {
+          "1": "1d12",
+          "5": "2d12",
+          "11": "3d12",
+          "17": "4d12"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "con",
@@ -11376,11 +11509,13 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 7,
-    "damage": {
-      "damage_at_slot_level": {
-        "7": "10d6"
+    "damage": [
+      {
+        "damage_at_slot_level": {
+          "7": "10d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -11517,19 +11652,21 @@
     "casting_time": "1 action",
     "level": 0,
     "attack_type": "ranged",
-    "damage": {
-      "damage_type": {
-        "index": "fire",
-        "name": "Fire",
-        "url": "/api/2014/damage-types/fire"
-      },
-      "damage_at_character_level": {
-        "1": "1d8",
-        "5": "2d8",
-        "11": "3d8",
-        "17": "4d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/2014/damage-types/fire"
+        },
+        "damage_at_character_level": {
+          "1": "1d8",
+          "5": "2d8",
+          "11": "3d8",
+          "17": "4d8"
+        }
       }
-    },
+    ],
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -11950,19 +12087,21 @@
     "casting_time": "1 action",
     "level": 0,
     "attack_type": "ranged",
-    "damage": {
-      "damage_type": {
-        "index": "cold",
-        "name": "Cold",
-        "url": "/api/2014/damage-types/cold"
-      },
-      "damage_at_character_level": {
-        "1": "1d8",
-        "5": "2d8",
-        "11": "3d8",
-        "17": "4d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "cold",
+          "name": "Cold",
+          "url": "/api/2014/damage-types/cold"
+        },
+        "damage_at_character_level": {
+          "1": "1d8",
+          "5": "2d8",
+          "11": "3d8",
+          "17": "4d8"
+        }
       }
-    },
+    ],
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -12397,19 +12536,21 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
-    "damage": {
-      "damage_type": {
-        "index": "radiant",
-        "name": "Radiant",
-        "url": "/api/2014/damage-types/radiant"
-      },
-      "damage_at_character_level": {
-        "1": "1d8",
-        "5": "2d8",
-        "11": "3d8",
-        "17": "4d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "radiant",
+          "name": "Radiant",
+          "url": "/api/2014/damage-types/radiant"
+        },
+        "damage_at_character_level": {
+          "1": "1d8",
+          "5": "2d8",
+          "11": "3d8",
+          "17": "4d8"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -12497,16 +12638,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 2,
-    "damage": {
-      "damage_type": {
-        "index": "fire",
-        "name": "Fire",
-        "url": "/api/2014/damage-types/fire"
-      },
-      "damage_at_slot_level": {
-        "2": "2d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/2014/damage-types/fire"
+        },
+        "damage_at_slot_level": {
+          "2": "2d6"
+        }
       }
-    },
+    ],
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -12866,23 +13009,25 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 2,
-    "damage": {
-      "damage_type": {
-        "index": "thunder",
-        "name": "Thunder",
-        "url": "/api/2014/damage-types/thunder"
-      },
-      "damage_at_slot_level": {
-        "2": "3d8",
-        "3": "4d8",
-        "4": "5d8",
-        "5": "6d8",
-        "6": "7d8",
-        "7": "8d8",
-        "8": "9d8",
-        "9": "10d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "thunder",
+          "name": "Thunder",
+          "url": "/api/2014/damage-types/thunder"
+        },
+        "damage_at_slot_level": {
+          "2": "3d8",
+          "3": "4d8",
+          "4": "5d8",
+          "5": "6d8",
+          "6": "7d8",
+          "7": "8d8",
+          "8": "9d8",
+          "9": "10d8"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "con",
@@ -13060,19 +13205,21 @@
     "casting_time": "1 action",
     "level": 0,
     "attack_type": "melee",
-    "damage": {
-      "damage_type": {
-        "index": "lightning",
-        "name": "Lightning",
-        "url": "/api/2014/damage-types/lightning"
-      },
-      "damage_at_character_level": {
-        "1": "1d8",
-        "5": "2d8",
-        "11": "3d8",
-        "17": "4d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "lightning",
+          "name": "Lightning",
+          "url": "/api/2014/damage-types/lightning"
+        },
+        "damage_at_character_level": {
+          "1": "1d8",
+          "5": "2d8",
+          "11": "3d8",
+          "17": "4d8"
+        }
       }
-    },
+    ],
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -13255,11 +13402,13 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
-    "damage": {
-      "damage_at_slot_level": {
-        "1": "5d8"
+    "damage": [
+      {
+        "damage_at_slot_level": {
+          "1": "5d8"
+        }
       }
-    },
+    ],
     "area_of_effect": {
       "type": "sphere",
       "size": 20
@@ -13735,23 +13884,25 @@
     "casting_time": "1 bonus action",
     "level": 2,
     "attack_type": "melee",
-    "damage": {
-      "damage_type": {
-        "index": "force",
-        "name": "Force",
-        "url": "/api/2014/damage-types/force"
-      },
-      "damage_at_slot_level": {
-        "2": "1d8 + MOD",
-        "3": "1d8 + MOD",
-        "4": "2d8 + MOD",
-        "5": "2d8 + MOD",
-        "6": "3d8 + MOD",
-        "7": "3d8 + MOD",
-        "8": "4d8 + MOD",
-        "9": "4d8 + MOD"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "force",
+          "name": "Force",
+          "url": "/api/2014/damage-types/force"
+        },
+        "damage_at_slot_level": {
+          "2": "1d8 + MOD",
+          "3": "1d8 + MOD",
+          "4": "2d8 + MOD",
+          "5": "2d8 + MOD",
+          "6": "3d8 + MOD",
+          "7": "3d8 + MOD",
+          "8": "4d8 + MOD",
+          "9": "4d8 + MOD"
+        }
       }
-    },
+    ],
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -13961,16 +14112,18 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 9,
-    "damage": {
-      "damage_type": {
-        "index": "thunder",
-        "name": "Thunder",
-        "url": "/api/2014/damage-types/thunder"
-      },
-      "damage_at_slot_level": {
-        "9": "2d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "thunder",
+          "name": "Thunder",
+          "url": "/api/2014/damage-types/thunder"
+        },
+        "damage_at_slot_level": {
+          "9": "2d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "con",
@@ -14076,16 +14229,18 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 6,
-    "damage": {
-      "damage_type": {
-        "index": "radiant",
-        "name": "Radiant",
-        "url": "/api/2014/damage-types/radiant"
-      },
-      "damage_at_slot_level": {
-        "6": "6d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "radiant",
+          "name": "Radiant",
+          "url": "/api/2014/damage-types/radiant"
+        },
+        "damage_at_slot_level": {
+          "6": "6d8"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "con",
@@ -14140,16 +14295,18 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 8,
-    "damage": {
-      "damage_type": {
-        "index": "radiant",
-        "name": "Radiant",
-        "url": "/api/2014/damage-types/radiant"
-      },
-      "damage_at_slot_level": {
-        "8": "12d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "radiant",
+          "name": "Radiant",
+          "url": "/api/2014/damage-types/radiant"
+        },
+        "damage_at_slot_level": {
+          "8": "12d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "con",
@@ -14481,24 +14638,26 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 1,
-    "damage": {
-      "damage_type": {
-        "index": "thunder",
-        "name": "Thunder",
-        "url": "/api/2014/damage-types/thunder"
-      },
-      "damage_at_slot_level": {
-        "1": "2d8",
-        "2": "3d8",
-        "3": "4d8",
-        "4": "5d8",
-        "5": "6d8",
-        "6": "7d8",
-        "7": "8d8",
-        "8": "9d8",
-        "9": "10d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "thunder",
+          "name": "Thunder",
+          "url": "/api/2014/damage-types/thunder"
+        },
+        "damage_at_slot_level": {
+          "1": "2d8",
+          "2": "3d8",
+          "3": "4d8",
+          "4": "5d8",
+          "5": "6d8",
+          "6": "7d8",
+          "7": "8d8",
+          "8": "9d8",
+          "9": "10d8"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "con",
@@ -14995,22 +15154,24 @@
     "casting_time": "1 action",
     "level": 3,
     "attack_type": "melee",
-    "damage": {
-      "damage_type": {
-        "index": "necrotic",
-        "name": "Necrotic",
-        "url": "/api/2014/damage-types/necrotic"
-      },
-      "damage_at_slot_level": {
-        "3": "3d6",
-        "4": "4d6",
-        "5": "5d6",
-        "6": "6d6",
-        "7": "7d6",
-        "8": "8d6",
-        "9": "9d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "necrotic",
+          "name": "Necrotic",
+          "url": "/api/2014/damage-types/necrotic"
+        },
+        "damage_at_slot_level": {
+          "3": "3d6",
+          "4": "4d6",
+          "5": "5d6",
+          "6": "6d6",
+          "7": "7d6",
+          "8": "8d6",
+          "9": "9d6"
+        }
       }
-    },
+    ],
     "school": {
       "index": "necromancy",
       "name": "Necromancy",
@@ -15051,19 +15212,21 @@
     "concentration": false,
     "casting_time": "1 action",
     "level": 0,
-    "damage": {
-      "damage_type": {
-        "index": "psychic",
-        "name": "Psychic",
-        "url": "/api/2014/damage-types/psychic"
-      },
-      "damage_at_character_level": {
-        "1": "1d4",
-        "5": "2d4",
-        "11": "3d4",
-        "17": "4d4"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "psychic",
+          "name": "Psychic",
+          "url": "/api/2014/damage-types/psychic"
+        },
+        "damage_at_character_level": {
+          "1": "1d4",
+          "5": "2d4",
+          "11": "3d4",
+          "17": "4d4"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "wis",
@@ -15107,16 +15270,18 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 4,
-    "damage": {
-      "damage_type": {
-        "index": "fire",
-        "name": "Fire",
-        "url": "/api/2014/damage-types/fire"
-      },
-      "damage_at_slot_level": {
-        "4": "5d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/2014/damage-types/fire"
+        },
+        "damage_at_slot_level": {
+          "4": "5d8"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -15209,19 +15374,21 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 6,
-    "damage": {
-      "damage_type": {
-        "index": "cold",
-        "name": "Cold",
-        "url": "/api/2014/damage-types/cold"
-      },
-      "damage_at_slot_level": {
-        "6": "10d6",
-        "7": "12d6",
-        "8": "14d6",
-        "9": "16d6"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "cold",
+          "name": "Cold",
+          "url": "/api/2014/damage-types/cold"
+        },
+        "damage_at_slot_level": {
+          "6": "10d6",
+          "7": "12d6",
+          "8": "14d6",
+          "9": "16d6"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -15318,19 +15485,21 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 6,
-    "damage": {
-      "damage_type": {
-        "index": "piercing",
-        "name": "Piercing",
-        "url": "/api/2014/damage-types/piercing"
-      },
-      "damage_at_slot_level": {
-        "6": "7d8",
-        "7": "8d8",
-        "8": "9d8",
-        "9": "10d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "piercing",
+          "name": "Piercing",
+          "url": "/api/2014/damage-types/piercing"
+        },
+        "damage_at_slot_level": {
+          "6": "7d8",
+          "7": "8d8",
+          "8": "9d8",
+          "9": "10d8"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "dex",
@@ -15645,16 +15814,18 @@
     "concentration": true,
     "casting_time": "1 action",
     "level": 3,
-    "damage": {
-      "damage_type": {
-        "index": "bludgeoning",
-        "name": "Bludgeoning",
-        "url": "/api/2014/damage-types/bludgeoning"
-      },
-      "damage_at_slot_level": {
-        "3": "3d8"
+    "damage": [
+      {
+        "damage_type": {
+          "index": "bludgeoning",
+          "name": "Bludgeoning",
+          "url": "/api/2014/damage-types/bludgeoning"
+        },
+        "damage_at_slot_level": {
+          "3": "3d8"
+        }
       }
-    },
+    ],
     "dc": {
       "dc_type": {
         "index": "str",
