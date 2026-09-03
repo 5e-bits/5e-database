@@ -27,6 +27,14 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.11.0](https://github.com/5e-bits/5e-database/compare/v5.10.0...v5.11.0) (2026-09-03)
+
+
+### Features
+
+* **Equipment.json:** Add Equipment french translation ([#1215](https://github.com/5e-bits/5e-database/issues/1215)) ([43d7c59](https://github.com/5e-bits/5e-database/commit/43d7c5984ca2c6de6502dca035551ab78cae324d))
+* **language:** Add Equipment category french translation ([#1217](https://github.com/5e-bits/5e-database/issues/1217)) ([edc5a53](https://github.com/5e-bits/5e-database/commit/edc5a53c05097a4d9727aeedb6426003a6ffad74))
+
 ## [5.10.0](https://github.com/5e-bits/5e-database/compare/v5.9.0...v5.10.0) (2026-07-05)
 
 
