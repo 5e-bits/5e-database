@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.10.0](https://github.com/5e-bits/5e-database/compare/v5.9.0...v5.10.0) (2026-07-05)
+
+
+### Features
+
+* **2024:** Add Levels ([#1165](https://github.com/5e-bits/5e-database/issues/1165)) ([0e112c1](https://github.com/5e-bits/5e-database/commit/0e112c1fffa93cfeb0ac3ccabd8c438080e951dd))
+
 ## [5.9.0](https://github.com/5e-bits/5e-database/compare/v5.8.5...v5.9.0) (2026-06-03)
 
 
