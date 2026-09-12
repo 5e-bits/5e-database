@@ -27,6 +27,13 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.11.1](https://github.com/5e-bits/5e-database/compare/v5.11.0...v5.11.1) (2026-09-12)
+
+
+### Bug Fixes
+
+* **5e-SRD-spell.ts:** Modify Spell damage schema and add multi damage type support ([#1190](https://github.com/5e-bits/5e-database/issues/1190)) ([536928f](https://github.com/5e-bits/5e-database/commit/536928f7460b5e5343dfb1805ded15706616765e))
+
 ## [5.11.0](https://github.com/5e-bits/5e-database/compare/v5.10.0...v5.11.0) (2026-09-12)
 
 
