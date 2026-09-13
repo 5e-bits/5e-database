@@ -28,7 +28,9 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 	result.proficiencies = [];
 
 	stats.forEach((stat)=>{
-		if(result[`${stat}_save`] != Math.floor((result[stat] - 10) / 2)){
+		const stat_mod = Math.floor((result[stat] - 10) / 2);
+		if(result[`${stat}_save`] != stat_mod){
+			result.proficiency_bonus = result[`${stat}_save`] - stat_mod;
 			result.proficiencies.push(
 				{
 					"value": result[`${stat}_save`],
@@ -40,6 +42,7 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 				}
 			);
 		}
+		if(!result.proficiency_bonus) result.proficiency_bonus = 0;
 		delete result[`${stat}_save`];
 	});
 
@@ -87,3 +90,5 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 })
 
 fs.writeFileSync('./5e-SRD-Monsters-New.json', JSON.stringify(monstersNew, null, 2));
+
+console.log('Monster data entries:', monstersNew.length);
