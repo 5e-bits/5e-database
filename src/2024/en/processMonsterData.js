@@ -3,12 +3,14 @@ import { resourceLimits } from 'worker_threads';
 
 const monsters = JSON.parse(fs.readFileSync('./monsters.json', 'utf-8'));
 
+const monstersOld = JSON.parse(fs.readFileSync('../../2014/en/5e-SRD-Monsters.json', 'utf-8'));
+
 const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '_info'}).map((monster)=>{
 	const result = { ...monsters[monster] };
 
 	result.index = result.slug;
 	result.url = `/api/2024/monsters/${result.slug}`;
-	result.image = `/api/images/monsters/${result.slug}.png`
+	result.image = monstersOld.filter((monster)=>{ return monster.index == result.slug; })[0]?.image || `/api/images/monsters/${result.slug}-NYI.png`;
 	delete result.slug;
 
 	delete result.document_slug;
