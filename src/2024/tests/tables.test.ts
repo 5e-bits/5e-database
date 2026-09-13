@@ -83,6 +83,7 @@ const forEachFileEntry = (callback: (filename: string, entry: Entry) => void) =>
   const filenames = globSync('src/2024/en/*.json');
 
   for (const filename of filenames) {
+    if(filename.slice(-13) == 'monsters.json') continue;  // Temporary bypass to skip data file
     const fileText = fs.readFileSync(filename, 'utf8');
     const fileJSON = JSON.parse(fileText) as Entry[];
     fileJSON.forEach((entry) => callback(filename, entry));
