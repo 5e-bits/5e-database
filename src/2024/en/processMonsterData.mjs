@@ -1,11 +1,27 @@
 import fs from 'fs'
-import { resourceLimits } from 'worker_threads';
 
-const monsters = JSON.parse(fs.readFileSync('./monsters.json', 'utf-8'));
+const textSource = fs.readFileSync('./monster-text-data.txt', 'utf-8').split(/\nMOD/);
+
+textSource.splice(0, 1);
+
+console.log('Text data array length:', textSource.length);
+
+const textData = [];
+
+textSource.forEach((data, index)=>{
+	textData[index] =  {
+		skills: ( data.match(/^(Skills .*)$/gm) || ['Skills None'] )[0].slice(7),
+		gear: ( data.match(/^(Gear .*)$/gm) || ['Gear None'] )[0].slice(5),
+		proficiency_bonus: Number (( data.match(/( PB \+\d\))/g) || [' PB +0'] )[0].slice(5,6))
+	};
+});
+
+
+const monsters = JSON.parse(fs.readFileSync('./monster-data.json', 'utf-8'));
 
 const monstersOld = JSON.parse(fs.readFileSync('../../2014/en/5e-SRD-Monsters.json', 'utf-8'));
 
-const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '_info'}).map((monster)=>{
+const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '_info'}).map((monster, index)=>{
 	const result = { ...monsters[monster] };
 
 	result.index = result.slug;
@@ -30,7 +46,6 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 	stats.forEach((stat)=>{
 		const stat_mod = Math.floor((result[stat] - 10) / 2);
 		if(result[`${stat}_save`] != stat_mod){
-			result.proficiency_bonus = result[`${stat}_save`] - stat_mod;
 			result.proficiencies.push(
 				{
 					"value": result[`${stat}_save`],
@@ -42,7 +57,6 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 				}
 			);
 		}
-		if(!result.proficiency_bonus) result.proficiency_bonus = 0;
 		delete result[`${stat}_save`];
 	});
 
@@ -85,6 +99,10 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 	lowerCaseArrays.forEach((array_name)=>{
 		result[array_name] = result[array_name].map((value)=>{ return value.toLowerCase(); });
 	});
+
+	result.skills = textData[index].skills;
+	result.gear = textData[index].gear;
+	result.proficiency_bonus = textData[index].proficiency_bonus;
 
 	return result;
 })
