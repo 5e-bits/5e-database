@@ -86,14 +86,14 @@ Other collections expose different text fields (e.g. `summary` on subclasses, `d
 
 ### Validation rules
 
-The test suite (`npm test`, also run by CI on every PR) will fail if your translation file:
+The test suite (`pnpm test`, also run by CI on every PR) will fail if your translation file:
 
 - Contains an `index` that does not exist in the corresponding English file
 - Contains a field that does not exist in the English entry for that `index`
 - Contains duplicate `index` values
 - Produces an invalid document when translation fields are merged with the English entry (Zod schema validation)
 
-Run `npm test` locally before opening a PR to catch these issues early.
+Run `pnpm test` locally before opening a PR to catch these issues early.
 
 ### Partial translations are fine
 

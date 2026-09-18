@@ -16,20 +16,21 @@ RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
 RUN apt-get install -y nodejs \
   && apt-get clean \
   && rm -rf /var/apt/lists/*
+RUN npm install -g pnpm@10
 
 ENV MONGODB_URI=mongodb://localhost:27017/5e-database
 
 ## Add code
 WORKDIR /data/db2
-COPY --chown=mongodb:mongodb package.json package-lock.json /data/db2/
-RUN npm install
+COPY --chown=mongodb:mongodb package.json pnpm-lock.yaml /data/db2/
+RUN pnpm install --frozen-lockfile
 COPY --chown=mongodb:mongodb . /data/db2/
 
 # Compile TypeScript scripts before running them
-RUN npm run build:ts
+RUN pnpm run build:ts
 
 RUN mongod --fork --logpath /var/log/mongodb.log --dbpath /data/db2 \
-  && npm run db:refresh \
+  && pnpm run db:refresh \
   && mongod --dbpath /data/db2 --shutdown \
   && chown -R mongodb:mongodb /data/db2
 
