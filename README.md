@@ -33,7 +33,7 @@ First you need to make sure you have [MongoDB installed locally.](https://docs.m
 You can load this data locally by running:
 
 ```bash
-MONGODB_URI=mongodb://localhost/5e-database npm run db:refresh
+MONGODB_URI=mongodb://localhost/5e-database pnpm run db:refresh
 ```
 
 ## API Issues

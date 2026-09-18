@@ -3,6 +3,7 @@
   "version": "5.11.1",
   "description": "Database for 5e-srd-api",
   "private": true,
+  "packageManager": "pnpm@10.34.5",
   "engines": {
     "node": "22.x"
   },
@@ -11,8 +12,8 @@
     "test": "vitest run",
     "coverage": "vitest run --coverage",
     "build:ts": "tsc --project scripts",
-    "db:refresh": "npm run build:ts && node scripts/built/dbRefresh.js",
-    "db:update": "npm run build:ts && node scripts/built/dbUpdate.js"
+    "db:refresh": "pnpm run build:ts && node scripts/built/dbRefresh.js",
+    "db:update": "pnpm run build:ts && node scripts/built/dbUpdate.js"
   },
   "repository": {
     "type": "git",
