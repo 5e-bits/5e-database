@@ -4,6 +4,7 @@ import fs from 'fs';
 import os from 'os';
 import path from 'path';
 import { z } from 'zod';
+import Spells from '../en/5e-SRD-Spells.json' with { type: 'json' };
 import { MonsterSchema } from '../schemas/5e-SRD-Monsters';
 
 /** Fields the generator emits that the schema does not define yet. */
@@ -104,6 +105,24 @@ describe('generated 2024 monsters', () => {
           }
           const rolls = entry.desc.match(/\d+ \(\d+d\d+[^)]*\) \w+ damage/g) ?? [];
           if (rolls.length !== (entry.damage?.length ?? 0)) errors.push(`${m.index} ${entry.name}: damage`);
+        }
+      }
+    }
+    expect(errors).toEqual([]);
+  });
+
+  it('builds spellcasting from every spell list entry', () => {
+    const spellUrls = new Set((Spells as { url: string }[]).map((spell) => spell.url));
+    const errors: string[] = [];
+    for (const m of generated) {
+      for (const section of entrySections) {
+        for (const entry of (m[section] ?? []) as Monster[]) {
+          if (!/casts one of the following spells.*as (the )?spellcasting ability/.test(entry.desc)) continue;
+          const spells = (entry.spellcasting?.spells ?? []) as { url: string }[];
+          if (spells.length === 0) errors.push(`${m.index} ${entry.name}: no spells`);
+          for (const spell of spells) {
+            if (!spellUrls.has(spell.url)) errors.push(`${m.index} ${entry.name}: ${spell.url}`);
+          }
         }
       }
     }

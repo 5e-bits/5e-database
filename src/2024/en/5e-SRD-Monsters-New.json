@@ -2505,7 +2505,69 @@
       {
         "name": "Spellcasting",
         "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17, +9 to hit with spell attacks):",
-        "attack_bonus": 9
+        "attack_bonus": 9,
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 17,
+          "modifier": 9,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "acid-arrow",
+              "name": "Acid Arrow",
+              "level": 3,
+              "url": "/api/2024/spells/acid-arrow",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "fear",
+              "name": "Fear",
+              "level": 3,
+              "url": "/api/2024/spells/fear",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "speak-with-dead",
+              "name": "Speak with Dead",
+              "level": 3,
+              "url": "/api/2024/spells/speak-with-dead",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "vitriolic-sphere",
+              "name": "Vitriolic Sphere",
+              "level": 4,
+              "url": "/api/2024/spells/vitriolic-sphere",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -2681,7 +2743,79 @@
       {
         "name": "Spellcasting",
         "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 21, +13 to hit with spell attacks):",
-        "attack_bonus": 13
+        "attack_bonus": 13,
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 21,
+          "modifier": 13,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "acid-arrow",
+              "name": "Acid Arrow",
+              "level": 4,
+              "url": "/api/2024/spells/acid-arrow",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "fear",
+              "name": "Fear",
+              "level": 3,
+              "url": "/api/2024/spells/fear",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "create-undead",
+              "name": "Create Undead",
+              "level": 6,
+              "url": "/api/2024/spells/create-undead",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "speak-with-dead",
+              "name": "Speak with Dead",
+              "level": 3,
+              "url": "/api/2024/spells/speak-with-dead",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "vitriolic-sphere",
+              "name": "Vitriolic Sphere",
+              "level": 5,
+              "url": "/api/2024/spells/vitriolic-sphere",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -3283,7 +3417,77 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 18):"
+        "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 18):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 18,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "invisibility",
+              "name": "Invisibility",
+              "level": 2,
+              "url": "/api/2024/spells/invisibility",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "mage-hand",
+              "name": "Mage Hand",
+              "level": 0,
+              "url": "/api/2024/spells/mage-hand",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "shatter",
+              "name": "Shatter",
+              "level": 2,
+              "url": "/api/2024/spells/shatter",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "scrying",
+              "name": "Scrying",
+              "level": 5,
+              "url": "/api/2024/spells/scrying",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "sending",
+              "name": "Sending",
+              "level": 3,
+              "url": "/api/2024/spells/sending",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -3431,7 +3635,77 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 22):"
+        "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 22):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 22,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "invisibility",
+              "name": "Invisibility",
+              "level": 2,
+              "url": "/api/2024/spells/invisibility",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "mage-hand",
+              "name": "Mage Hand",
+              "level": 0,
+              "url": "/api/2024/spells/mage-hand",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "shatter",
+              "name": "Shatter",
+              "level": 3,
+              "url": "/api/2024/spells/shatter",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "scrying",
+              "name": "Scrying",
+              "level": 5,
+              "url": "/api/2024/spells/scrying",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "sending",
+              "name": "Sending",
+              "level": 3,
+              "url": "/api/2024/spells/sending",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -3972,7 +4246,87 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 16):"
+        "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 16):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 16,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "minor-illusion",
+              "name": "Minor Illusion",
+              "level": 0,
+              "url": "/api/2024/spells/minor-illusion",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "scorching-ray",
+              "name": "Scorching Ray",
+              "level": 2,
+              "url": "/api/2024/spells/scorching-ray",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "shapechange",
+              "name": "Shapechange",
+              "level": 9,
+              "url": "/api/2024/spells/shapechange",
+              "notes": "Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "speak-with-animals",
+              "name": "Speak with Animals",
+              "level": 1,
+              "url": "/api/2024/spells/speak-with-animals",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "detect-thoughts",
+              "name": "Detect Thoughts",
+              "level": 2,
+              "url": "/api/2024/spells/detect-thoughts",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "control-weather",
+              "name": "Control Weather",
+              "level": 8,
+              "url": "/api/2024/spells/control-weather",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -4152,7 +4506,87 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 20):"
+        "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 20):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 20,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "minor-illusion",
+              "name": "Minor Illusion",
+              "level": 0,
+              "url": "/api/2024/spells/minor-illusion",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "scorching-ray",
+              "name": "Scorching Ray",
+              "level": 3,
+              "url": "/api/2024/spells/scorching-ray",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "shapechange",
+              "name": "Shapechange",
+              "level": 9,
+              "url": "/api/2024/spells/shapechange",
+              "notes": "Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "speak-with-animals",
+              "name": "Speak with Animals",
+              "level": 1,
+              "url": "/api/2024/spells/speak-with-animals",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "control-weather",
+              "name": "Control Weather",
+              "level": 8,
+              "url": "/api/2024/spells/control-weather",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "detect-thoughts",
+              "name": "Detect Thoughts",
+              "level": 2,
+              "url": "/api/2024/spells/detect-thoughts",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -4591,7 +5025,88 @@
       {
         "name": "Spellcasting",
         "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17, +10 to hit with spell attacks):",
-        "attack_bonus": 10
+        "attack_bonus": 10,
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 17,
+          "modifier": 10,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "guiding-bolt",
+              "name": "Guiding Bolt",
+              "level": 2,
+              "url": "/api/2024/spells/guiding-bolt",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "shapechange",
+              "name": "Shapechange",
+              "level": 9,
+              "url": "/api/2024/spells/shapechange",
+              "notes": "Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "speak-with-animals",
+              "name": "Speak with Animals",
+              "level": 1,
+              "url": "/api/2024/spells/speak-with-animals",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "thaumaturgy",
+              "name": "Thaumaturgy",
+              "level": 0,
+              "url": "/api/2024/spells/thaumaturgy",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "detect-thoughts",
+              "name": "Detect Thoughts",
+              "level": 2,
+              "url": "/api/2024/spells/detect-thoughts",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "water-breathing",
+              "name": "Water Breathing",
+              "level": 3,
+              "url": "/api/2024/spells/water-breathing",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -4776,7 +5291,108 @@
       {
         "name": "Spellcasting",
         "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 22, +14 to hit with spell attacks):",
-        "attack_bonus": 14
+        "attack_bonus": 14,
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 22,
+          "modifier": 14,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "guiding-bolt",
+              "name": "Guiding Bolt",
+              "level": 2,
+              "url": "/api/2024/spells/guiding-bolt",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "shapechange",
+              "name": "Shapechange",
+              "level": 9,
+              "url": "/api/2024/spells/shapechange",
+              "notes": "Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "speak-with-animals",
+              "name": "Speak with Animals",
+              "level": 1,
+              "url": "/api/2024/spells/speak-with-animals",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "thaumaturgy",
+              "name": "Thaumaturgy",
+              "level": 0,
+              "url": "/api/2024/spells/thaumaturgy",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "detect-thoughts",
+              "name": "Detect Thoughts",
+              "level": 2,
+              "url": "/api/2024/spells/detect-thoughts",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "control-water",
+              "name": "Control Water",
+              "level": 4,
+              "url": "/api/2024/spells/control-water",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "scrying",
+              "name": "Scrying",
+              "level": 5,
+              "url": "/api/2024/spells/scrying",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "water-breathing",
+              "name": "Water Breathing",
+              "level": 3,
+              "url": "/api/2024/spells/water-breathing",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -5956,7 +6572,78 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The giant casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 15):"
+        "desc": "The giant casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 15):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 15,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "fog-cloud",
+              "name": "Fog Cloud",
+              "level": 1,
+              "url": "/api/2024/spells/fog-cloud",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "light",
+              "name": "Light",
+              "level": 0,
+              "url": "/api/2024/spells/light",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "control-weather",
+              "name": "Control Weather",
+              "level": 8,
+              "url": "/api/2024/spells/control-weather",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "gaseous-form",
+              "name": "Gaseous Form",
+              "level": 3,
+              "url": "/api/2024/spells/gaseous-form",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "telekinesis",
+              "name": "Telekinesis",
+              "level": 5,
+              "url": "/api/2024/spells/telekinesis",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -6485,7 +7172,78 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17):"
+        "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 17,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "mind-spike",
+              "name": "Mind Spike",
+              "level": 4,
+              "url": "/api/2024/spells/mind-spike",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "minor-illusion",
+              "name": "Minor Illusion",
+              "level": 0,
+              "url": "/api/2024/spells/minor-illusion",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "shapechange",
+              "name": "Shapechange",
+              "level": 9,
+              "url": "/api/2024/spells/shapechange",
+              "notes": "Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "greater-restoration",
+              "name": "Greater Restoration",
+              "level": 5,
+              "url": "/api/2024/spells/greater-restoration",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "major-image",
+              "name": "Major Image",
+              "level": 3,
+              "url": "/api/2024/spells/major-image",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -6669,7 +7427,88 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 21):"
+        "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 21):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 21,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "mind-spike",
+              "name": "Mind Spike",
+              "level": 5,
+              "url": "/api/2024/spells/mind-spike",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "minor-illusion",
+              "name": "Minor Illusion",
+              "level": 0,
+              "url": "/api/2024/spells/minor-illusion",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "shapechange",
+              "name": "Shapechange",
+              "level": 9,
+              "url": "/api/2024/spells/shapechange",
+              "notes": "Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "greater-restoration",
+              "name": "Greater Restoration",
+              "level": 5,
+              "url": "/api/2024/spells/greater-restoration",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "major-image",
+              "name": "Major Image",
+              "level": 3,
+              "url": "/api/2024/spells/major-image",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "project-image",
+              "name": "Project Image",
+              "level": 7,
+              "url": "/api/2024/spells/project-image",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -6831,7 +7670,105 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The couatl casts one of the following spells, requiring no spell components and using Wisdom as the spellcasting ability (spell save DC 15):"
+        "desc": "The couatl casts one of the following spells, requiring no spell components and using Wisdom as the spellcasting ability (spell save DC 15):",
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc": 15,
+          "components_required": [],
+          "spells": [
+            {
+              "index": "detect-evil-and-good",
+              "name": "Detect Evil and Good",
+              "level": 1,
+              "url": "/api/2024/spells/detect-evil-and-good",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "detect-thoughts",
+              "name": "Detect Thoughts",
+              "level": 2,
+              "url": "/api/2024/spells/detect-thoughts",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "shapechange",
+              "name": "Shapechange",
+              "level": 9,
+              "url": "/api/2024/spells/shapechange",
+              "notes": "Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "create-food-and-water",
+              "name": "Create Food and Water",
+              "level": 3,
+              "url": "/api/2024/spells/create-food-and-water",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "dream",
+              "name": "Dream",
+              "level": 5,
+              "url": "/api/2024/spells/dream",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "greater-restoration",
+              "name": "Greater Restoration",
+              "level": 5,
+              "url": "/api/2024/spells/greater-restoration",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "scrying",
+              "name": "Scrying",
+              "level": 5,
+              "url": "/api/2024/spells/scrying",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "sleep",
+              "name": "Sleep",
+              "level": 1,
+              "url": "/api/2024/spells/sleep",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -7139,7 +8076,61 @@
       {
         "name": "Spellcasting",
         "desc": "The cultist casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 12, +4 to hit with spell attacks):",
-        "attack_bonus": 4
+        "attack_bonus": 4,
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc": 12,
+          "modifier": 4,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "light",
+              "name": "Light",
+              "level": 0,
+              "url": "/api/2024/spells/light",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "thaumaturgy",
+              "name": "Thaumaturgy",
+              "level": 0,
+              "url": "/api/2024/spells/thaumaturgy",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "command",
+              "name": "Command",
+              "level": 1,
+              "url": "/api/2024/spells/command",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "hold-person",
+              "name": "Hold Person",
+              "level": 2,
+              "url": "/api/2024/spells/hold-person",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -7417,7 +8408,60 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The deva casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17):"
+        "desc": "The deva casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 17,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-evil-and-good",
+              "name": "Detect Evil and Good",
+              "level": 1,
+              "url": "/api/2024/spells/detect-evil-and-good",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "shapechange",
+              "name": "Shapechange",
+              "level": 9,
+              "url": "/api/2024/spells/shapechange",
+              "notes": "Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "commune",
+              "name": "Commune",
+              "level": 5,
+              "url": "/api/2024/spells/commune",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "raise-dead",
+              "name": "Raise Dead",
+              "level": 5,
+              "url": "/api/2024/spells/raise-dead",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -7579,7 +8623,120 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The djinni casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17):"
+        "desc": "The djinni casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 17,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-evil-and-good",
+              "name": "Detect Evil and Good",
+              "level": 1,
+              "url": "/api/2024/spells/detect-evil-and-good",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "create-food-and-water",
+              "name": "Create Food and Water",
+              "level": 3,
+              "url": "/api/2024/spells/create-food-and-water",
+              "notes": "Can create wine instead of water",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "tongues",
+              "name": "Tongues",
+              "level": 3,
+              "url": "/api/2024/spells/tongues",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "wind-walk",
+              "name": "Wind Walk",
+              "level": 6,
+              "url": "/api/2024/spells/wind-walk",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "creation",
+              "name": "Creation",
+              "level": 5,
+              "url": "/api/2024/spells/creation",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "gaseous-form",
+              "name": "Gaseous Form",
+              "level": 3,
+              "url": "/api/2024/spells/gaseous-form",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "invisibility",
+              "name": "Invisibility",
+              "level": 2,
+              "url": "/api/2024/spells/invisibility",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "major-image",
+              "name": "Major Image",
+              "level": 3,
+              "url": "/api/2024/spells/major-image",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "plane-shift",
+              "name": "Plane Shift",
+              "level": 7,
+              "url": "/api/2024/spells/plane-shift",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -8103,7 +9260,90 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The druid casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 13):"
+        "desc": "The druid casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 13):",
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc": 13,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "druidcraft",
+              "name": "Druidcraft",
+              "level": 0,
+              "url": "/api/2024/spells/druidcraft",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "speak-with-animals",
+              "name": "Speak with Animals",
+              "level": 1,
+              "url": "/api/2024/spells/speak-with-animals",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "entangle",
+              "name": "Entangle",
+              "level": 1,
+              "url": "/api/2024/spells/entangle",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "thunderwave",
+              "name": "Thunderwave",
+              "level": 1,
+              "url": "/api/2024/spells/thunderwave",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "animal-messenger",
+              "name": "Animal Messenger",
+              "level": 2,
+              "url": "/api/2024/spells/animal-messenger",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "longstrider",
+              "name": "Longstrider",
+              "level": 1,
+              "url": "/api/2024/spells/longstrider",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "moonbeam",
+              "name": "Moonbeam",
+              "level": 2,
+              "url": "/api/2024/spells/moonbeam",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -8206,7 +9446,69 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The dryad casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 14):"
+        "desc": "The dryad casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 14):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 14,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "animal-friendship",
+              "name": "Animal Friendship",
+              "level": 1,
+              "url": "/api/2024/spells/animal-friendship",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "charm-monster",
+              "name": "Charm Monster",
+              "level": 4,
+              "url": "/api/2024/spells/charm-monster",
+              "notes": "Lasts 24 hours; ends early if the dryad casts the spell again",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "druidcraft",
+              "name": "Druidcraft",
+              "level": 0,
+              "url": "/api/2024/spells/druidcraft",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "entangle",
+              "name": "Entangle",
+              "level": 1,
+              "url": "/api/2024/spells/entangle",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "pass-without-trace",
+              "name": "Pass without Trace",
+              "level": 2,
+              "url": "/api/2024/spells/pass-without-trace",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -8446,7 +9748,99 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The efreeti casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 16):"
+        "desc": "The efreeti casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 16):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 16,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "elementalism",
+              "name": "Elementalism",
+              "level": 0,
+              "url": "/api/2024/spells/elementalism",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "gaseous-form",
+              "name": "Gaseous Form",
+              "level": 3,
+              "url": "/api/2024/spells/gaseous-form",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "invisibility",
+              "name": "Invisibility",
+              "level": 2,
+              "url": "/api/2024/spells/invisibility",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "major-image",
+              "name": "Major Image",
+              "level": 3,
+              "url": "/api/2024/spells/major-image",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "plane-shift",
+              "name": "Plane Shift",
+              "level": 7,
+              "url": "/api/2024/spells/plane-shift",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "tongues",
+              "name": "Tongues",
+              "level": 3,
+              "url": "/api/2024/spells/tongues",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "wall-of-fire",
+              "name": "Wall of Fire",
+              "level": 7,
+              "url": "/api/2024/spells/wall-of-fire",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -10402,7 +11796,78 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The glabrezu casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save DC 16):"
+        "desc": "The glabrezu casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save DC 16):",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 16,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "darkness",
+              "name": "Darkness",
+              "level": 2,
+              "url": "/api/2024/spells/darkness",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "dispel-magic",
+              "name": "Dispel Magic",
+              "level": 3,
+              "url": "/api/2024/spells/dispel-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "confusion",
+              "name": "Confusion",
+              "level": 4,
+              "url": "/api/2024/spells/confusion",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "fly",
+              "name": "Fly",
+              "level": 3,
+              "url": "/api/2024/spells/fly",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "power-word-stun",
+              "name": "Power Word Stun",
+              "level": 8,
+              "url": "/api/2024/spells/power-word-stun",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -11284,7 +12749,70 @@
       {
         "name": "Spellcasting",
         "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 21, +13 to hit with spell attacks):",
-        "attack_bonus": 13
+        "attack_bonus": 13,
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 21,
+          "modifier": 13,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "guiding-bolt",
+              "name": "Guiding Bolt",
+              "level": 2,
+              "url": "/api/2024/spells/guiding-bolt",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "shapechange",
+              "name": "Shapechange",
+              "level": 9,
+              "url": "/api/2024/spells/shapechange",
+              "notes": "Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "flame-strike",
+              "name": "Flame Strike",
+              "level": 5,
+              "url": "/api/2024/spells/flame-strike",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "zone-of-truth",
+              "name": "Zone of Truth",
+              "level": 2,
+              "url": "/api/2024/spells/zone-of-truth",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -11470,7 +12998,80 @@
       {
         "name": "Spellcasting",
         "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 24, +16 to hit with spell attacks):",
-        "attack_bonus": 16
+        "attack_bonus": 16,
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 24,
+          "modifier": 16,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "guiding-bolt",
+              "name": "Guiding Bolt",
+              "level": 4,
+              "url": "/api/2024/spells/guiding-bolt",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "shapechange",
+              "name": "Shapechange",
+              "level": 9,
+              "url": "/api/2024/spells/shapechange",
+              "notes": "Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "flame-strike",
+              "name": "Flame Strike",
+              "level": 6,
+              "url": "/api/2024/spells/flame-strike",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "word-of-recall",
+              "name": "Word of Recall",
+              "level": 6,
+              "url": "/api/2024/spells/word-of-recall",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "zone-of-truth",
+              "name": "Zone of Truth",
+              "level": 2,
+              "url": "/api/2024/spells/zone-of-truth",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -12100,7 +13701,49 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17):"
+        "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 17,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "mind-spike",
+              "name": "Mind Spike",
+              "level": 3,
+              "url": "/api/2024/spells/mind-spike",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "geas",
+              "name": "Geas",
+              "level": 5,
+              "url": "/api/2024/spells/geas",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -12277,7 +13920,59 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 21):"
+        "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 21):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 21,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "mind-spike",
+              "name": "Mind Spike",
+              "level": 5,
+              "url": "/api/2024/spells/mind-spike",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "geas",
+              "name": "Geas",
+              "level": 5,
+              "url": "/api/2024/spells/geas",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "modify-memory",
+              "name": "Modify Memory",
+              "level": 5,
+              "url": "/api/2024/spells/modify-memory",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -12435,7 +14130,69 @@
       {
         "name": "Spellcasting",
         "desc": "The hag casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 12, +4 to hit with spell attacks):",
-        "attack_bonus": 4
+        "attack_bonus": 4,
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc": 12,
+          "modifier": 4,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "dancing-lights",
+              "name": "Dancing Lights",
+              "level": 0,
+              "url": "/api/2024/spells/dancing-lights",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "disguise-self",
+              "name": "Disguise Self",
+              "level": 1,
+              "url": "/api/2024/spells/disguise-self",
+              "notes": "24-hour duration",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "invisibility",
+              "name": "Invisibility",
+              "level": 2,
+              "url": "/api/2024/spells/invisibility",
+              "notes": "Self only, and the hag leaves no tracks while Invisible",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "minor-illusion",
+              "name": "Minor Illusion",
+              "level": 0,
+              "url": "/api/2024/spells/minor-illusion",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "ray-of-sickness",
+              "name": "Ray of Sickness",
+              "level": 3,
+              "url": "/api/2024/spells/ray-of-sickness",
+              "usage": {
+                "type": "at will"
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -12799,7 +14556,79 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The naga casts one of the following spells, requiring no Somatic or Material components and using Wisdom as the spellcasting ability (spell save DC 16):"
+        "desc": "The naga casts one of the following spells, requiring no Somatic or Material components and using Wisdom as the spellcasting ability (spell save DC 16):",
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc": 16,
+          "components_required": [
+            "V"
+          ],
+          "spells": [
+            {
+              "index": "thaumaturgy",
+              "name": "Thaumaturgy",
+              "level": 0,
+              "url": "/api/2024/spells/thaumaturgy",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "clairvoyance",
+              "name": "Clairvoyance",
+              "level": 3,
+              "url": "/api/2024/spells/clairvoyance",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "cure-wounds",
+              "name": "Cure Wounds",
+              "level": 6,
+              "url": "/api/2024/spells/cure-wounds",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "flame-strike",
+              "name": "Flame Strike",
+              "level": 6,
+              "url": "/api/2024/spells/flame-strike",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "geas",
+              "name": "Geas",
+              "level": 5,
+              "url": "/api/2024/spells/geas",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "true-seeing",
+              "name": "True Seeing",
+              "level": 6,
+              "url": "/api/2024/spells/true-seeing",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -14409,7 +16238,59 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The incubus casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 15):"
+        "desc": "The incubus casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 15):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 15,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "disguise-self",
+              "name": "Disguise Self",
+              "level": 1,
+              "url": "/api/2024/spells/disguise-self",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "etherealness",
+              "name": "Etherealness",
+              "level": 7,
+              "url": "/api/2024/spells/etherealness",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "dream",
+              "name": "Dream",
+              "level": 5,
+              "url": "/api/2024/spells/dream",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "hypnotic-pattern",
+              "name": "Hypnotic Pattern",
+              "level": 3,
+              "url": "/api/2024/spells/hypnotic-pattern",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -15278,7 +17159,70 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The lamia casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 13):"
+        "desc": "The lamia casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 13):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 13,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "disguise-self",
+              "name": "Disguise Self",
+              "level": 1,
+              "url": "/api/2024/spells/disguise-self",
+              "notes": "Can appear as a Large or Medium biped",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "minor-illusion",
+              "name": "Minor Illusion",
+              "level": 0,
+              "url": "/api/2024/spells/minor-illusion",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "geas",
+              "name": "Geas",
+              "level": 5,
+              "url": "/api/2024/spells/geas",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "major-image",
+              "name": "Major Image",
+              "level": 3,
+              "url": "/api/2024/spells/major-image",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "scrying",
+              "name": "Scrying",
+              "level": 5,
+              "url": "/api/2024/spells/scrying",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -15501,7 +17445,164 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The lich casts one of the following spells, using Intelligence as the spellcasting ability (spell save DC 20):"
+        "desc": "The lich casts one of the following spells, using Intelligence as the spellcasting ability (spell save DC 20):",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 20,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "detect-thoughts",
+              "name": "Detect Thoughts",
+              "level": 2,
+              "url": "/api/2024/spells/detect-thoughts",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "dispel-magic",
+              "name": "Dispel Magic",
+              "level": 3,
+              "url": "/api/2024/spells/dispel-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "fireball",
+              "name": "Fireball",
+              "level": 5,
+              "url": "/api/2024/spells/fireball",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "invisibility",
+              "name": "Invisibility",
+              "level": 2,
+              "url": "/api/2024/spells/invisibility",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "lightning-bolt",
+              "name": "Lightning Bolt",
+              "level": 5,
+              "url": "/api/2024/spells/lightning-bolt",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "mage-hand",
+              "name": "Mage Hand",
+              "level": 0,
+              "url": "/api/2024/spells/mage-hand",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "prestidigitation",
+              "name": "Prestidigitation",
+              "level": 0,
+              "url": "/api/2024/spells/prestidigitation",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "animate-dead",
+              "name": "Animate Dead",
+              "level": 3,
+              "url": "/api/2024/spells/animate-dead",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "dimension-door",
+              "name": "Dimension Door",
+              "level": 4,
+              "url": "/api/2024/spells/dimension-door",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "plane-shift",
+              "name": "Plane Shift",
+              "level": 7,
+              "url": "/api/2024/spells/plane-shift",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "chain-lightning",
+              "name": "Chain Lightning",
+              "level": 6,
+              "url": "/api/2024/spells/chain-lightning",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "finger-of-death",
+              "name": "Finger of Death",
+              "level": 7,
+              "url": "/api/2024/spells/finger-of-death",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "power-word-kill",
+              "name": "Power Word Kill",
+              "level": 9,
+              "url": "/api/2024/spells/power-word-kill",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "scrying",
+              "name": "Scrying",
+              "level": 5,
+              "url": "/api/2024/spells/scrying",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -15662,7 +17763,108 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The mage casts one of the following spells, using Intelligence as the spellcasting ability (spell save DC 14):"
+        "desc": "The mage casts one of the following spells, using Intelligence as the spellcasting ability (spell save DC 14):",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 14,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "light",
+              "name": "Light",
+              "level": 0,
+              "url": "/api/2024/spells/light",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "mage-armor",
+              "name": "Mage Armor",
+              "level": 1,
+              "url": "/api/2024/spells/mage-armor",
+              "notes": "Included in AC",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "mage-hand",
+              "name": "Mage Hand",
+              "level": 0,
+              "url": "/api/2024/spells/mage-hand",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "prestidigitation",
+              "name": "Prestidigitation",
+              "level": 0,
+              "url": "/api/2024/spells/prestidigitation",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "fireball",
+              "name": "Fireball",
+              "level": 4,
+              "url": "/api/2024/spells/fireball",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "invisibility",
+              "name": "Invisibility",
+              "level": 2,
+              "url": "/api/2024/spells/invisibility",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "cone-of-cold",
+              "name": "Cone of Cold",
+              "level": 5,
+              "url": "/api/2024/spells/cone-of-cold",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "fly",
+              "name": "Fly",
+              "level": 3,
+              "url": "/api/2024/spells/fly",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -15783,7 +17985,156 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The archmage casts one of the following spells, using Intelligence as the spellcasting ability (spell save DC 17):"
+        "desc": "The archmage casts one of the following spells, using Intelligence as the spellcasting ability (spell save DC 17):",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 17,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "detect-thoughts",
+              "name": "Detect Thoughts",
+              "level": 2,
+              "url": "/api/2024/spells/detect-thoughts",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "disguise-self",
+              "name": "Disguise Self",
+              "level": 1,
+              "url": "/api/2024/spells/disguise-self",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "invisibility",
+              "name": "Invisibility",
+              "level": 2,
+              "url": "/api/2024/spells/invisibility",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "light",
+              "name": "Light",
+              "level": 0,
+              "url": "/api/2024/spells/light",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "mage-armor",
+              "name": "Mage Armor",
+              "level": 1,
+              "url": "/api/2024/spells/mage-armor",
+              "notes": "Included in AC",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "mage-hand",
+              "name": "Mage Hand",
+              "level": 0,
+              "url": "/api/2024/spells/mage-hand",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "prestidigitation",
+              "name": "Prestidigitation",
+              "level": 0,
+              "url": "/api/2024/spells/prestidigitation",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "fly",
+              "name": "Fly",
+              "level": 3,
+              "url": "/api/2024/spells/fly",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "lightning-bolt",
+              "name": "Lightning Bolt",
+              "level": 7,
+              "url": "/api/2024/spells/lightning-bolt",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "cone-of-cold",
+              "name": "Cone of Cold",
+              "level": 9,
+              "url": "/api/2024/spells/cone-of-cold",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "mind-blank",
+              "name": "Mind Blank",
+              "level": 8,
+              "url": "/api/2024/spells/mind-blank",
+              "notes": "Cast before combat",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "scrying",
+              "name": "Scrying",
+              "level": 5,
+              "url": "/api/2024/spells/scrying",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "teleport",
+              "name": "Teleport",
+              "level": 7,
+              "url": "/api/2024/spells/teleport",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -17507,7 +19858,70 @@
       {
         "name": "Spellcasting",
         "desc": "The mummy casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 17, +9 to hit with spell attacks):",
-        "attack_bonus": 9
+        "attack_bonus": 9,
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc": 17,
+          "modifier": 9,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "dispel-magic",
+              "name": "Dispel Magic",
+              "level": 3,
+              "url": "/api/2024/spells/dispel-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "thaumaturgy",
+              "name": "Thaumaturgy",
+              "level": 0,
+              "url": "/api/2024/spells/thaumaturgy",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "animate-dead",
+              "name": "Animate Dead",
+              "level": 3,
+              "url": "/api/2024/spells/animate-dead",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "harm",
+              "name": "Harm",
+              "level": 6,
+              "url": "/api/2024/spells/harm",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "insect-plague",
+              "name": "Insect Plague",
+              "level": 7,
+              "url": "/api/2024/spells/insect-plague",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -17809,7 +20223,69 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The hag casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save DC 14):"
+        "desc": "The hag casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save DC 14):",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 14,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "etherealness",
+              "name": "Etherealness",
+              "level": 7,
+              "url": "/api/2024/spells/etherealness",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "magic-missile",
+              "name": "Magic Missile",
+              "level": 4,
+              "url": "/api/2024/spells/magic-missile",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "phantasmal-killer",
+              "name": "Phantasmal Killer",
+              "level": 4,
+              "url": "/api/2024/spells/phantasmal-killer",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "plane-shift",
+              "name": "Plane Shift",
+              "level": 7,
+              "url": "/api/2024/spells/plane-shift",
+              "notes": "Self only",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -18270,7 +20746,61 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The oni casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 13):"
+        "desc": "The oni casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 13):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 13,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "charm-person",
+              "name": "Charm Person",
+              "level": 2,
+              "url": "/api/2024/spells/charm-person",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "darkness",
+              "name": "Darkness",
+              "level": 2,
+              "url": "/api/2024/spells/darkness",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "gaseous-form",
+              "name": "Gaseous Form",
+              "level": 3,
+              "url": "/api/2024/spells/gaseous-form",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "sleep",
+              "name": "Sleep",
+              "level": 1,
+              "url": "/api/2024/spells/sleep",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "1/Day Each",
@@ -19204,7 +21734,70 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The planetar casts one of the following spells, requiring no Material components and using Charisma as spellcasting ability (spell save DC 20):"
+        "desc": "The planetar casts one of the following spells, requiring no Material components and using Charisma as spellcasting ability (spell save DC 20):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 20,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-evil-and-good",
+              "name": "Detect Evil and Good",
+              "level": 1,
+              "url": "/api/2024/spells/detect-evil-and-good",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "commune",
+              "name": "Commune",
+              "level": 5,
+              "url": "/api/2024/spells/commune",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "control-weather",
+              "name": "Control Weather",
+              "level": 8,
+              "url": "/api/2024/spells/control-weather",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "dispel-evil-and-good",
+              "name": "Dispel Evil and Good",
+              "level": 5,
+              "url": "/api/2024/spells/dispel-evil-and-good",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "raise-dead",
+              "name": "Raise Dead",
+              "level": 5,
+              "url": "/api/2024/spells/raise-dead",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -19336,7 +21929,39 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The priest casts one of the following spells, using Wisdom as the spellcasting ability:"
+        "desc": "The priest casts one of the following spells, using Wisdom as the spellcasting ability:",
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "light",
+              "name": "Light",
+              "level": 0,
+              "url": "/api/2024/spells/light",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "thaumaturgy",
+              "name": "Thaumaturgy",
+              "level": 0,
+              "url": "/api/2024/spells/thaumaturgy",
+              "usage": {
+                "type": "at will"
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -19435,7 +22060,50 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The priest casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 13):"
+        "desc": "The priest casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 13):",
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc": 13,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "light",
+              "name": "Light",
+              "level": 0,
+              "url": "/api/2024/spells/light",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "thaumaturgy",
+              "name": "Thaumaturgy",
+              "level": 0,
+              "url": "/api/2024/spells/thaumaturgy",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "spirit-guardians",
+              "name": "Spirit Guardians",
+              "level": 3,
+              "url": "/api/2024/spells/spirit-guardians",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -19898,7 +22566,106 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The rakshasa casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 18):"
+        "desc": "The rakshasa casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 18):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 18,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "detect-thoughts",
+              "name": "Detect Thoughts",
+              "level": 2,
+              "url": "/api/2024/spells/detect-thoughts",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "disguise-self",
+              "name": "Disguise Self",
+              "level": 1,
+              "url": "/api/2024/spells/disguise-self",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "mage-hand",
+              "name": "Mage Hand",
+              "level": 0,
+              "url": "/api/2024/spells/mage-hand",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "minor-illusion",
+              "name": "Minor Illusion",
+              "level": 0,
+              "url": "/api/2024/spells/minor-illusion",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "fly",
+              "name": "Fly",
+              "level": 3,
+              "url": "/api/2024/spells/fly",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "invisibility",
+              "name": "Invisibility",
+              "level": 2,
+              "url": "/api/2024/spells/invisibility",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "major-image",
+              "name": "Major Image",
+              "level": 3,
+              "url": "/api/2024/spells/major-image",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "plane-shift",
+              "name": "Plane Shift",
+              "level": 7,
+              "url": "/api/2024/spells/plane-shift",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -20250,7 +23017,59 @@
       {
         "name": "Spellcasting",
         "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 20, +12 to hit with spell attacks):",
-        "attack_bonus": 12
+        "attack_bonus": 12,
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 20,
+          "modifier": 12,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "command",
+              "name": "Command",
+              "level": 2,
+              "url": "/api/2024/spells/command",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "scorching-ray",
+              "name": "Scorching Ray",
+              "level": 2,
+              "url": "/api/2024/spells/scorching-ray",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "fireball",
+              "name": "Fireball",
+              "level": 3,
+              "url": "/api/2024/spells/fireball",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -20399,7 +23218,69 @@
       {
         "name": "Spellcasting",
         "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 23, +15 to hit with spell attacks):",
-        "attack_bonus": 15
+        "attack_bonus": 15,
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 23,
+          "modifier": 15,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "command",
+              "name": "Command",
+              "level": 2,
+              "url": "/api/2024/spells/command",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "scorching-ray",
+              "name": "Scorching Ray",
+              "level": 3,
+              "url": "/api/2024/spells/scorching-ray",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "fireball",
+              "name": "Fireball",
+              "level": 6,
+              "url": "/api/2024/spells/fireball",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "scrying",
+              "name": "Scrying",
+              "level": 5,
+              "url": "/api/2024/spells/scrying",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -22091,7 +24972,79 @@
       {
         "name": "Spellcasting",
         "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 19, +11 to hit with spell attacks):",
-        "attack_bonus": 11
+        "attack_bonus": 11,
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 19,
+          "modifier": 11,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "hold-monster",
+              "name": "Hold Monster",
+              "level": 5,
+              "url": "/api/2024/spells/hold-monster",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "ice-knife",
+              "name": "Ice Knife",
+              "level": 1,
+              "url": "/api/2024/spells/ice-knife",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "shapechange",
+              "name": "Shapechange",
+              "level": 9,
+              "url": "/api/2024/spells/shapechange",
+              "notes": "Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "ice-storm",
+              "name": "Ice Storm",
+              "level": 5,
+              "url": "/api/2024/spells/ice-storm",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "zone-of-truth",
+              "name": "Zone of Truth",
+              "level": 2,
+              "url": "/api/2024/spells/zone-of-truth",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -22271,7 +25224,99 @@
       {
         "name": "Spellcasting",
         "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 23, +15 to hit with spell attacks):",
-        "attack_bonus": 15
+        "attack_bonus": 15,
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 23,
+          "modifier": 15,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "hold-monster",
+              "name": "Hold Monster",
+              "level": 5,
+              "url": "/api/2024/spells/hold-monster",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "ice-knife",
+              "name": "Ice Knife",
+              "level": 2,
+              "url": "/api/2024/spells/ice-knife",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "shapechange",
+              "name": "Shapechange",
+              "level": 9,
+              "url": "/api/2024/spells/shapechange",
+              "notes": "Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "control-weather",
+              "name": "Control Weather",
+              "level": 8,
+              "url": "/api/2024/spells/control-weather",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "ice-storm",
+              "name": "Ice Storm",
+              "level": 7,
+              "url": "/api/2024/spells/ice-storm",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "teleport",
+              "name": "Teleport",
+              "level": 7,
+              "url": "/api/2024/spells/teleport",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "zone-of-truth",
+              "name": "Zone of Truth",
+              "level": 2,
+              "url": "/api/2024/spells/zone-of-truth",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -22740,7 +25785,70 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The solar casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 25):"
+        "desc": "The solar casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 25):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 25,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-evil-and-good",
+              "name": "Detect Evil and Good",
+              "level": 1,
+              "url": "/api/2024/spells/detect-evil-and-good",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "commune",
+              "name": "Commune",
+              "level": 5,
+              "url": "/api/2024/spells/commune",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "control-weather",
+              "name": "Control Weather",
+              "level": 8,
+              "url": "/api/2024/spells/control-weather",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "dispel-evil-and-good",
+              "name": "Dispel Evil and Good",
+              "level": 5,
+              "url": "/api/2024/spells/dispel-evil-and-good",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "resurrection",
+              "name": "Resurrection",
+              "level": 7,
+              "url": "/api/2024/spells/resurrection",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -23133,7 +26241,126 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The sphinx casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save DC 16):"
+        "desc": "The sphinx casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save DC 16):",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 16,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "identify",
+              "name": "Identify",
+              "level": 1,
+              "url": "/api/2024/spells/identify",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "mage-hand",
+              "name": "Mage Hand",
+              "level": 0,
+              "url": "/api/2024/spells/mage-hand",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "minor-illusion",
+              "name": "Minor Illusion",
+              "level": 0,
+              "url": "/api/2024/spells/minor-illusion",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "prestidigitation",
+              "name": "Prestidigitation",
+              "level": 0,
+              "url": "/api/2024/spells/prestidigitation",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "dispel-magic",
+              "name": "Dispel Magic",
+              "level": 3,
+              "url": "/api/2024/spells/dispel-magic",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "legend-lore",
+              "name": "Legend Lore",
+              "level": 5,
+              "url": "/api/2024/spells/legend-lore",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "locate-object",
+              "name": "Locate Object",
+              "level": 2,
+              "url": "/api/2024/spells/locate-object",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "plane-shift",
+              "name": "Plane Shift",
+              "level": 7,
+              "url": "/api/2024/spells/plane-shift",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "remove-curse",
+              "name": "Remove Curse",
+              "level": 3,
+              "url": "/api/2024/spells/remove-curse",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "tongues",
+              "name": "Tongues",
+              "level": 3,
+              "url": "/api/2024/spells/tongues",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -23307,7 +26534,89 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The sphinx casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 20):"
+        "desc": "The sphinx casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 20):",
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc": 20,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-evil-and-good",
+              "name": "Detect Evil and Good",
+              "level": 1,
+              "url": "/api/2024/spells/detect-evil-and-good",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "thaumaturgy",
+              "name": "Thaumaturgy",
+              "level": 0,
+              "url": "/api/2024/spells/thaumaturgy",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "dispel-magic",
+              "name": "Dispel Magic",
+              "level": 3,
+              "url": "/api/2024/spells/dispel-magic",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "greater-restoration",
+              "name": "Greater Restoration",
+              "level": 5,
+              "url": "/api/2024/spells/greater-restoration",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "heroes-feast",
+              "name": "Heroes' Feast",
+              "level": 6,
+              "url": "/api/2024/spells/heroes-feast",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "zone-of-truth",
+              "name": "Zone of Truth",
+              "level": 2,
+              "url": "/api/2024/spells/zone-of-truth",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -23475,7 +26784,96 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The naga casts one of the following spells, requiring no Somatic or Material components and using Intelligence as the spellcasting ability (spell save DC 14):"
+        "desc": "The naga casts one of the following spells, requiring no Somatic or Material components and using Intelligence as the spellcasting ability (spell save DC 14):",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 14,
+          "components_required": [
+            "V"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "mage-hand",
+              "name": "Mage Hand",
+              "level": 0,
+              "url": "/api/2024/spells/mage-hand",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "minor-illusion",
+              "name": "Minor Illusion",
+              "level": 0,
+              "url": "/api/2024/spells/minor-illusion",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "water-breathing",
+              "name": "Water Breathing",
+              "level": 3,
+              "url": "/api/2024/spells/water-breathing",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "detect-thoughts",
+              "name": "Detect Thoughts",
+              "level": 2,
+              "url": "/api/2024/spells/detect-thoughts",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "dimension-door",
+              "name": "Dimension Door",
+              "level": 4,
+              "url": "/api/2024/spells/dimension-door",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "hold-person",
+              "name": "Hold Person",
+              "level": 3,
+              "url": "/api/2024/spells/hold-person",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "lightning-bolt",
+              "name": "Lightning Bolt",
+              "level": 4,
+              "url": "/api/2024/spells/lightning-bolt",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -24152,7 +27550,49 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The giant casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 18):"
+        "desc": "The giant casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 18):",
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc": 18,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "light",
+              "name": "Light",
+              "level": 0,
+              "url": "/api/2024/spells/light",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "control-weather",
+              "name": "Control Weather",
+              "level": 8,
+              "url": "/api/2024/spells/control-weather",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -25081,7 +28521,86 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The unicorn casts one of the following spells, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 14):"
+        "desc": "The unicorn casts one of the following spells, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 14):",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 14,
+          "components_required": [],
+          "spells": [
+            {
+              "index": "detect-evil-and-good",
+              "name": "Detect Evil and Good",
+              "level": 1,
+              "url": "/api/2024/spells/detect-evil-and-good",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "druidcraft",
+              "name": "Druidcraft",
+              "level": 0,
+              "url": "/api/2024/spells/druidcraft",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "calm-emotions",
+              "name": "Calm Emotions",
+              "level": 2,
+              "url": "/api/2024/spells/calm-emotions",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "dispel-evil-and-good",
+              "name": "Dispel Evil and Good",
+              "level": 5,
+              "url": "/api/2024/spells/dispel-evil-and-good",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "entangle",
+              "name": "Entangle",
+              "level": 1,
+              "url": "/api/2024/spells/entangle",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "pass-without-trace",
+              "name": "Pass without Trace",
+              "level": 2,
+              "url": "/api/2024/spells/pass-without-trace",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "word-of-recall",
+              "name": "Word of Recall",
+              "level": 6,
+              "url": "/api/2024/spells/word-of-recall",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",
@@ -31111,7 +34630,45 @@
       },
       {
         "name": "Spellcasting",
-        "desc": "The owl casts one of the following spells, requiring no spell components and using Wisdom as the spellcasting ability:"
+        "desc": "The owl casts one of the following spells, requiring no spell components and using Wisdom as the spellcasting ability:",
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "components_required": [],
+          "spells": [
+            {
+              "index": "detect-evil-and-good",
+              "name": "Detect Evil and Good",
+              "level": 1,
+              "url": "/api/2024/spells/detect-evil-and-good",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "detect-magic",
+              "name": "Detect Magic",
+              "level": 1,
+              "url": "/api/2024/spells/detect-magic",
+              "usage": {
+                "type": "at will"
+              }
+            },
+            {
+              "index": "clairvoyance",
+              "name": "Clairvoyance",
+              "level": 3,
+              "url": "/api/2024/spells/clairvoyance",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "At Will",

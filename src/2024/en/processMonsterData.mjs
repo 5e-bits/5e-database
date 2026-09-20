@@ -9,7 +9,7 @@ const MID_LINE_LABEL = /(?<=\S) ?(?=(?:Skills|Gear|Resistances|Immunities|Vulner
  * line to the CR line.
  */
 const normalizeText = (rawText)=>{
-	const text = rawText.replace(/^(Str|Dex|Con|Int|Wis|Cha) *\n? *(\d+)$/gim, (_, stat, score)=>`${stat[0].toUpperCase()}${stat.slice(1).toLowerCase()} ${score}`);
+	const text = rawText.replace(/(\S) (At Will|\d+\/Day(?: Each)?): /g, '$1\n$2: ').replace(/^(Str|Dex|Con|Int|Wis|Cha) *\n? *(\d+)$/gim, (_, stat, score)=>`${stat[0].toUpperCase()}${stat.slice(1).toLowerCase()} ${score}`);
 	const out = [];
 	let inHeader = false;
 
@@ -66,6 +66,102 @@ const parseDc = (desc)=>{
 	}
 };
 
+const SPELL_USAGE = /^(At Will|(\d+)\/Day(?: Each)?):\s*(.*)$/;
+const SECTION_HEADING = /^(Traits|Actions|Bonus Actions|Reactions|Legendary Actions)\s*$/;
+const ENTRY_START = /^[^:]*?\. [A-Z]/;
+
+const spells = JSON.parse(fs.readFileSync('./5e-SRD-Spells.json', 'utf-8'));
+const spellsByName = new Map(spells.map((spell)=>[spell.name.toLowerCase(), spell]));
+
+/**
+ * A wrapped spell list line continues until the next label, entry, section, or the
+ * next stat block header (a name line followed by AC within a few lines).
+ */
+const continuesSpellList = (lines, index)=>
+	Boolean(lines[index]?.trim())
+	&& !SPELL_USAGE.test(lines[index])
+	&& !SECTION_HEADING.test(lines[index])
+	&& !ENTRY_START.test(lines[index])
+	&& !(/^[A-Z][^,()]*$/.test(lines[index]) && lines.slice(index, index + 6).some((line)=>/^AC \d/.test(line)));
+
+const parseSpellEntry = (entry)=>{
+	const notes = entry.match(/\(([^)]*)\)/)?.[1];
+	const name = entry.replace(/\s*\(.*\)/, '').trim();
+	const spell = spellsByName.get(name.toLowerCase().replace(/’/g, "'"));
+	if(!spell){ throw new Error(`Unknown spell '${name}'`); }
+
+	const version = notes?.match(/^level (\d) version$/);
+	const result = { index: spell.index, name: spell.name, level: version ? Number(version[1]) : spell.level, url: spell.url };
+	if(notes && !version){ result.notes = `${notes[0].toUpperCase()}${notes.slice(1)}`; }
+	return result;
+};
+
+/**
+ * The PDF layout can place one stat block's spellcasting entry inside the previous block's
+ * text, so lists are matched to entries by the intro's ability, save DC and to-hit bonus.
+ */
+const spellcastingKey = (text)=>{
+	const intro = text.replace(/([a-z])- ([a-z])/g, '$1$2').replace(/\s+/g, ' ');
+	const scoped = intro.slice(Math.max(0, intro.lastIndexOf('casts one of the following')));
+	const ability = scoped.match(/(\w+) as (?:the )?spellcasting ability/)?.[1];
+	const dc = scoped.match(/spell save DC (\d+)/)?.[1];
+	const modifier = scoped.match(/\+(\d+) to hit with spell attacks/)?.[1];
+	return `${ability}|${dc}|${modifier}`;
+};
+
+/**
+ * Spell lists are not in the gist descriptions, so read them from the stat block text.
+ * Returns one list per spellcasting entry, in stat block order.
+ */
+const parseSpellLists = (data)=>{
+	const lines = data.split('\n');
+	const lists = [];
+	let previousEnd = -2;
+
+	for(let i = 0; i < lines.length; i++){
+		const match = lines[i].match(SPELL_USAGE);
+		if(!match){ continue; }
+
+		if(i !== previousEnd + 1){ lists.push({ key: spellcastingKey(lines.slice(Math.max(0, i - 5), i).join(' ')), spells: [], used: false }); }
+
+		let text = match[3];
+		for(;;){
+			let next = i + 1;
+			const open = text.trim().endsWith(',') || (text.match(/\(/g) || []).length > (text.match(/\)/g) || []).length;
+			while(open && lines[next] !== undefined && !lines[next].trim()){ next++; }
+			if(!continuesSpellList(lines, next)){ break; }
+			i = next;
+			text += ` ${lines[i].trim()}`;
+		}
+		previousEnd = i;
+
+		const usage = match[2] ? { type: 'per day', times: Number(match[2]) } : { type: 'at will' };
+		text.replace(/([a-z])- ([a-z])/g, '$1$2').split(/,\s*(?![^()]*\))/).forEach((entry)=>{
+			lists[lists.length - 1].spells.push({ ...parseSpellEntry(entry), usage });
+		});
+	}
+
+	return lists;
+};
+
+const buildSpellcasting = (desc, spellList)=>{
+	const components = new Set(['V', 'S', 'M']);
+	const missing = desc.match(/requiring no (.+?) components/)?.[1];
+	if(missing && /spell/.test(missing)){ components.clear(); }
+	else if(missing){
+		[['Verbal', 'V'], ['Somatic', 'S'], ['Material', 'M']].forEach(([word, letter])=>{
+			if(missing.includes(word)){ components.delete(letter); }
+		});
+	}
+
+	const spellcasting = { ability: abilityRef(desc.match(/using (\w+) as (?:the )?spellcasting ability/)[1]) };
+	const dc = desc.match(/spell save DC (\d+)/);
+	const modifier = desc.match(/\+(\d+) to hit with spell attacks/);
+	if(dc){ spellcasting.dc = Number(dc[1]); }
+	if(modifier){ spellcasting.modifier = Number(modifier[1]); }
+	return { ...spellcasting, components_required: [...components], spells: spellList };
+};
+
 const normalizedText = normalizeText(fs.readFileSync('./monster-text-data.txt', 'utf-8'));
 fs.writeFileSync(process.argv[3] ?? './monster-text-data.normalized.txt', normalizedText);
 
@@ -86,6 +182,8 @@ textSource.forEach((data, index)=>{
 		skills: ( data.match(/^(Skills .*)$/gm) || ['Skills None'] )[0].slice(7),
 		gear: ( data.match(/^(Gear .*)$/gm) || ['Gear None'] )[0].slice(5),
 		passive_perception: Number(( data.match(/^Senses .*Passive Perception (\d+)/m) || [])[1]),
+		position: index,
+		spellLists: parseSpellLists(data),
 		xp: Number((( data.match(/^CR \S+ \((?:XP )?([\d,]+)/m) || [])[1] || '').replace(/,/g, '')),
 		xp_in_lair: Number((( data.match(/^CR \S+ \(XP [\d,]+, or ([\d,]+) in lair/m) || [])[1] || '').replace(/,/g, '')) || undefined,
 		proficiency_bonus: Number (( data.match(/( PB \+\d\))/g) || [' PB +0'] )[0].slice(5,6))
@@ -199,13 +297,28 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 
 			const dc = parseDc(entry.desc);
 			if(dc){ entry.dc = dc; }
+
+			if(/casts one of the following spells.*as (?:the )?spellcasting ability/.test(entry.desc)){
+				const key = spellcastingKey(entry.desc);
+				const nearby = [textData[monsterText.position - 1], monsterText, textData[monsterText.position + 1]].flatMap((data)=>data?.spellLists ?? []);
+				const spellList = nearby.find((list)=>!list.used && list.key === key);
+				if(!spellList){ throw new Error(`No spell list for ${result.index} ${entry.name} (${key})`); }
+				spellList.used = true;
+				entry.spellcasting = buildSpellcasting(entry.desc, spellList.spells);
+			}
 		});
 	});
+
 
 	['armor_desc', 'initiative', 'perception', 'old_senses'].forEach((key)=>{ delete result[key]; });
 
 	return result;
 })
+
+const unusedLists = textData.flatMap((data)=>data.spellLists).filter((list)=>!list.used);
+if(unusedLists.length){
+	throw new Error(`Unused spell lists: ${JSON.stringify(unusedLists.map((list)=>[list.key, list.spells[0].name]))}`);
+}
 
 fs.writeFileSync(process.argv[2] ?? './5e-SRD-Monsters-New.json', JSON.stringify(monstersNew, null, 2));
 
