@@ -166,7 +166,7 @@ const buildSpellcasting = (desc, spellList, main)=>{
 	return { ...spellcasting, components_required: [...components], spells: spellList };
 };
 
-const SINGLE_CAST_INTRO = /^(?:The [\w ]+ casts? |While within 30 feet of at least two hag allies, the hag can cast )/;
+const SINGLE_CAST_INTRO = /^(?:While within 30 feet of at least two hag allies, the hag can cast |(?:While [^,]+, )?[Tt]he [\w ]+ casts? )/;
 const CAST_NAMES = /casts (?:the )?(.+?)(?: spell)?( on itself| twice)?,? (?:requiring|using|in response)/;
 const COVEN_NAMES = /following spells,.*?: (.+?)\. /;
 const REPLACEMENT_NAMES = /replace one (\w+) with (.+?)\./;
@@ -180,7 +180,7 @@ const parseSingleCast = (entry)=>{
 	const cast = coven ? null : entry.desc.match(CAST_NAMES);
 	if(!coven && !cast){ throw new Error(`Cannot read cast spells: ${entry.desc}`); }
 
-	const usage = entry.name.match(/\((\d+)\/Day\)/);
+	const usage = entry.name.match(/\((\d+)\/Day[;)]/);
 	const spellsCast = (coven ? coven[1] : cast[1]).split(NAME_SEPARATOR).map((name)=>({
 		...parseSpellEntry(name),
 		...(usage && { usage: { type: 'per day', times: Number(usage[1]) } })
@@ -220,6 +220,7 @@ textSource.forEach((data, index)=>{
 		gear: ( data.match(/^(Gear .*)$/gm) || ['Gear None'] )[0].slice(5),
 		passive_perception: Number(( data.match(/^Senses .*Passive Perception (\d+)/m) || [])[1]),
 		position: index,
+		lines: data.split('\n'),
 		spellLists: parseSpellLists(data),
 		xp: Number((( data.match(/^CR \S+ \((?:XP )?([\d,]+)/m) || [])[1] || '').replace(/,/g, '')),
 		xp_in_lair: Number((( data.match(/^CR \S+ \(XP [\d,]+, or ([\d,]+) in lair/m) || [])[1] || '').replace(/,/g, '')) || undefined,
@@ -227,6 +228,90 @@ textSource.forEach((data, index)=>{
 	};
 });
 
+
+const ENTRY_SECTIONS = ['special_abilities', 'actions', 'bonus_actions', 'reactions', 'legendary_actions'];
+const SPELL_LIST_ENTRY_NAME = /^(At Will|\d+\/Day(?: Each)?)$/;
+const USAGE_HEADING = /^([A-Z][^.]{2,60}\((?:\d+\/Day[^)]*|Recharge[^)]*)\))\. /;
+
+const normalizedLines = normalizedText.split('\n');
+const blockTitles = normalizedLines
+	.filter((line, index)=>/^[A-Z][A-Za-z’' -]+$/.test(line) && normalizedLines.slice(index + 1, index + 9).some((next)=>/^AC \d/.test(next)))
+	.map((line)=>line.trim())
+	.sort((a, b)=>b.length - a.length);
+
+const flatten = (text)=>text.replace(/’/g, "'").replace(/–/g, '-').replace(/\s+/g, ' ').replace(/([a-z])- ([a-z])/g, '$1$2').trim();
+
+/**
+ * The gist runs the next stat block's title onto the last entry of a block.
+ */
+const stripTrailingTitle = (desc)=>{
+	const title = blockTitles.find((candidate)=>desc.endsWith(` ${candidate}`) && /[.)]$/.test(desc.slice(0, -candidate.length - 1)));
+	return title ? desc.slice(0, -title.length - 1) : desc;
+};
+
+/**
+ * The gist truncates some entries at a page or column break. Take the rest from the stat
+ * block text, and only when the gist text is an exact prefix of the text paragraph.
+ */
+const completeFromText = (entry, otherNames, lines)=>{
+	const prefix = flatten(`${entry.name}. ${entry.desc}`);
+
+	for(let start = 0; start < lines.length; start++){
+		if(!flatten(lines[start]).startsWith(`${flatten(entry.name)}. `)){ continue; }
+
+		let paragraph = lines[start];
+		for(let next = start + 1; next < lines.length; next++){
+			const line = flatten(lines[next]);
+			if(SECTION_HEADING.test(lines[next]) || otherNames.some((name)=>line.startsWith(`${name}. `)) || USAGE_HEADING.test(lines[next])){ break; }
+			if(/^[A-Z][^,()]*$/.test(lines[next]) && lines.slice(next, next + 9).some((after)=>/^AC \d/.test(after))){ break; }
+			paragraph += ` ${lines[next]}`;
+		}
+
+		const flat = flatten(paragraph);
+		if(flat.startsWith(prefix)){
+			return flat.slice(prefix.length).trim().replace(/'/g, '’');
+		}
+	}
+};
+
+/**
+ * The gist sometimes folds an entry with a usage heading into the previous entry.
+ */
+const splitMergedEntry = (entry, lines)=>{
+	const heading = entry.desc.match(/\. ([A-Z][^.]{2,60}\((?:\d+\/Day[^)]*|Recharge[^)]*)\))\. /);
+	if(!heading || !lines.some((line)=>flatten(line).startsWith(`${flatten(heading[1])}. `))){ return [entry]; }
+
+	const at = entry.desc.indexOf(`${heading[1]}. `);
+	return [
+		{ ...entry, desc: entry.desc.slice(0, at).trim() },
+		{ name: heading[1], desc: entry.desc.slice(at + heading[1].length + 2).trim() }
+	];
+};
+
+const cleanEntries = (result, monsterText)=>{
+	const lines = [monsterText.position - 1, monsterText.position, monsterText.position + 1].flatMap((position)=>textData[position]?.lines ?? []);
+
+	ENTRY_SECTIONS.filter((key)=>result[key]).forEach((key)=>{
+		result[key] = result[key]
+			.filter((entry)=>!SPELL_LIST_ENTRY_NAME.test(entry.name))
+			.map((entry)=>({ ...entry, desc: stripTrailingTitle(entry.desc) }))
+			.flatMap((entry)=>splitMergedEntry(entry, lines));
+	});
+
+	const allEntries = ENTRY_SECTIONS.flatMap((key)=>result[key] || []);
+
+	ENTRY_SECTIONS.filter((key)=>result[key]).forEach((key)=>{
+		result[key].filter((entry)=>!/[.):]$/.test(entry.desc.trim())).forEach((entry)=>{
+			const otherNames = allEntries.filter((other)=>other !== entry).map((other)=>flatten(other.name));
+			const rest = completeFromText(entry, otherNames, lines);
+			if(rest){ entry.desc = `${entry.desc} ${rest}`; }
+		});
+
+		result[key] = result[key].filter((entry, index, entries)=>
+			!(index > 0 && flatten(entries[index - 1].desc).includes(`${flatten(entry.name)}. ${flatten(entry.desc).slice(0, 15)}`))
+		);
+	});
+};
 
 const monsters = JSON.parse(fs.readFileSync('./monsters.json', 'utf-8'));
 
@@ -301,6 +386,7 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 	});
 
 	const monsterText = findTextData(monsters[monster]);
+	cleanEntries(result, monsterText);
 	['skills', 'gear'].forEach((key)=>{
 		if(monsterText[key] !== 'None'){ result[key] = monsterText[key]; }
 	});

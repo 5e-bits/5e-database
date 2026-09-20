@@ -301,7 +301,7 @@
       },
       {
         "name": "Whirlwind (Recharge 4–6)",
-        "desc": "Strength Saving Throw: DC 13, one Medium or smaller creature in the elemental’s space. Failure: 24 (4d10 + 2) Thunder damage, and the target is pushed up to 20 feet straight away from the elemental and has the Prone condition. Success: Half damage only. Animated Objects",
+        "desc": "Strength Saving Throw: DC 13, one Medium or smaller creature in the elemental’s space. Failure: 24 (4d10 + 2) Thunder damage, and the target is pushed up to 20 feet straight away from the elemental and has the Prone condition. Success: Half damage only.",
         "damage": [
           {
             "damage_type": {
@@ -852,7 +852,7 @@
     "bonus_actions": [
       {
         "name": "Cunning Action",
-        "desc": "The assassin takes the Dash, Disengage, or Hide action. Awakened Plants"
+        "desc": "The assassin takes the Dash, Disengage, or Hide action."
       }
     ],
     "legendary_actions": [],
@@ -1031,7 +1031,7 @@
     "actions": [
       {
         "name": "Beak",
-        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Slashing damage. Azer",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Slashing damage.",
         "damage": [
           {
             "damage_type": {
@@ -1213,20 +1213,7 @@
     "special_abilities": [
       {
         "name": "Death Throes",
-        "desc": "The balor explodes when it dies. Dexterity Saving Throw: DC 20, each creature in a 30-foot",
-        "dc": {
-          "dc_type": {
-            "index": "dex",
-            "name": "DEX",
-            "url": "/api/2024/ability-scores/dex"
-          },
-          "dc_value": 20,
-          "success_type": "none"
-        }
-      },
-      {
-        "name": "Emanation originating from the balor",
-        "desc": "Failure: 31 (9d6) Fire damage plus 31 (9d6) Force damage. Success: Half damage. Failure or Success: If the balor dies outside the Abyss, it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss.",
+        "desc": "The balor explodes when it dies. Dexterity Saving Throw: DC 20, each creature in a 30-foot Emanation originating from the balor. Failure: 31 (9d6) Fire damage plus 31 (9d6) Force damage. Success: Half damage. Failure or Success: If the balor dies outside the Abyss, it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss.",
         "damage": [
           {
             "damage_type": {
@@ -1244,7 +1231,16 @@
             },
             "damage_dice": "9d6"
           }
-        ]
+        ],
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "dc_value": 20,
+          "success_type": "half"
+        }
       },
       {
         "name": "Fire Aura",
@@ -1322,7 +1318,7 @@
     "bonus_actions": [
       {
         "name": "Teleport",
-        "desc": "The balor teleports itself or a willing demon within 10 feet of itself up to 60 feet to an unoccupied space the balor can see. Bandits"
+        "desc": "The balor teleports itself or a willing demon within 10 feet of itself up to 60 feet to an unoccupied space the balor can see."
       }
     ],
     "legendary_actions": [],
@@ -1856,7 +1852,7 @@
       },
       {
         "name": "Infernal Glaive",
-        "desc": "Melee Attack Roll: +5, reach 10 ft. Hit: 8 (1d10 + 3) Slashing damage. If the target is a creature and doesn’t already have an infernal wound, it is subjected to the following effect. Constitution Saving Throw: DC 12. Failure: The target receives an infernal wound. While wounded, the target loses 5 (1d10) Hit",
+        "desc": "Melee Attack Roll: +5, reach 10 ft. Hit: 8 (1d10 + 3) Slashing damage. If the target is a creature and doesn’t already have an infernal wound, it is subjected to the following effect. Constitution Saving Throw: DC 12. Failure: The target receives an infernal wound. While wounded, the target loses 5 (1d10) Hit Points at the start of each of its turns. The wound closes after 1 minute, after a spell restores Hit Points to the target, or after the target or a creature within 5 feet of it takes an action to stanch the wound, doing so by succeeding on a DC 12 Wisdom (Medicine) check.",
         "damage": [
           {
             "damage_type": {
@@ -1872,19 +1868,6 @@
             "index": "con",
             "name": "CON",
             "url": "/api/2024/ability-scores/con"
-          },
-          "dc_value": 12,
-          "success_type": "none"
-        }
-      },
-      {
-        "name": "Points at the start of each of its turns",
-        "desc": "The wound closes after 1 minute, after a spell restores Hit Points to the target, or after the target or a creature within 5 feet of it takes an action to stanch the wound, doing so by succeeding on a DC 12 Wisdom (Medicine) check.",
-        "dc": {
-          "dc_type": {
-            "index": "wis",
-            "name": "WIS",
-            "url": "/api/2024/ability-scores/wis"
           },
           "dc_value": 12,
           "success_type": "none"
@@ -2110,7 +2093,7 @@
     "actions": [
       {
         "name": "Greataxe",
-        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 9 (1d12 + 3) Slashing damage. Black Dragons",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 9 (1d12 + 3) Slashing damage.",
         "damage": [
           {
             "damage_type": {
@@ -2538,14 +2521,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Acid Arrow (level 3 version), Detect Magic, Fear"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Speak with Dead, Vitriolic Sphere"
       }
     ],
     "legendary_actions": [
@@ -2574,11 +2549,7 @@
       },
       {
         "name": "Frightful Presence",
-        "desc": "The dragon uses Spellcasting to cast"
-      },
-      {
-        "name": "Fear",
-        "desc": "The dragon can’t take this action again until the start of its next turn."
+        "desc": "The dragon uses Spellcasting to cast Fear. The dragon can’t take this action again until the start of its next turn."
       },
       {
         "name": "Pounce",
@@ -2785,14 +2756,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Acid Arrow (level 4 version), Detect Magic, Fear"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Create Undead, Speak with Dead, Vitriolic Sphere (level 5 version)"
       }
     ],
     "legendary_actions": [
@@ -2821,11 +2784,7 @@
       },
       {
         "name": "Frightful Presence",
-        "desc": "The dragon uses Spellcasting to cast"
-      },
-      {
-        "name": "Fear",
-        "desc": "The dragon can’t take this action again until the start of its next turn."
+        "desc": "The dragon uses Spellcasting to cast Fear. The dragon can’t take this action again until the start of its next turn."
       },
       {
         "name": "Pounce",
@@ -3040,7 +2999,7 @@
     "bonus_actions": [
       {
         "name": "Teleport (Recharge 4–6)",
-        "desc": "The dog teleports up to 40 feet to an unoccupied space it can see. Blue Dragons"
+        "desc": "The dog teleports up to 40 feet to an unoccupied space it can see."
       }
     ],
     "legendary_actions": [],
@@ -3451,14 +3410,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Invisibility, Mage Hand, Shatter"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Scrying, Sending"
       }
     ],
     "legendary_actions": [
@@ -3668,14 +3619,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Invisibility, Mage Hand, Shatter (level 3 version)"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Scrying, Sending"
       }
     ],
     "legendary_actions": [
@@ -3794,7 +3737,7 @@
       },
       {
         "name": "Infernal Sting",
-        "desc": "Melee Attack Roll: +8, reach 10 ft. Hit: 15 (2d10 + 4) Piercing damage plus 18 (4d8) Poison damage, and the target has the Poisoned condition until the start of the devil’s next turn. While Poisoned, the target can’t regain Hit Points. Brass Dragons",
+        "desc": "Melee Attack Roll: +8, reach 10 ft. Hit: 15 (2d10 + 4) Piercing damage plus 18 (4d8) Poison damage, and the target has the Poisoned condition until the start of the devil’s next turn. While Poisoned, the target can’t regain Hit Points.",
         "damage": [
           {
             "damage_type": {
@@ -4285,14 +4228,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Minor Illusion, Scorching Ray, Shapechange (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell), Speak with Animals"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Detect Thoughts, Control Weather"
       }
     ],
     "legendary_actions": [
@@ -4544,14 +4479,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Minor Illusion, Scorching Ray (level 3 version), Shapechange (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell), Speak with Animals"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Control Weather, Detect Thoughts"
       }
     ],
     "legendary_actions": [
@@ -4565,7 +4492,7 @@
       },
       {
         "name": "Scorching Sands",
-        "desc": "Dexterity Saving Throw: DC 20, one creature the dragon can see within 120 feet. Failure: 36 (8d8) Fire damage, and the target’s Speed is halved until the end of its next turn. Failure or Success: The dragon can’t take this action again until the start of its next turn. Bronze Dragons",
+        "desc": "Dexterity Saving Throw: DC 20, one creature the dragon can see within 120 feet. Failure: 36 (8d8) Fire damage, and the target’s Speed is halved until the end of its next turn. Failure or Success: The dragon can’t take this action again until the start of its next turn.",
         "damage": [
           {
             "damage_type": {
@@ -5061,14 +4988,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Guiding Bolt (level 2 version), Shapechange (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell), Speak with Animals, Thaumaturgy"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Detect Thoughts, Water Breathing"
       }
     ],
     "legendary_actions": [
@@ -5346,14 +5265,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Guiding Bolt (level 2 version), Shapechange (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell), Speak with Animals, Thaumaturgy"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Detect Thoughts, Control Water, Scrying, Water Breathing"
       }
     ],
     "legendary_actions": [
@@ -5367,7 +5278,7 @@
       },
       {
         "name": "Thunderclap",
-        "desc": "Constitution Saving Throw: DC 22, each creature in a 20-foot-radius Sphere centered on a point the dragon can see within 120 feet. Failure: 13 (3d8) Thunder damage, and the target has the Deafened condition until the end of its next turn. Bugbears",
+        "desc": "Constitution Saving Throw: DC 22, each creature in a 20-foot-radius Sphere centered on a point the dragon can see within 120 feet. Failure: 13 (3d8) Thunder damage, and the target has the Deafened condition until the end of its next turn.",
         "damage": [
           {
             "damage_type": {
@@ -5700,7 +5611,7 @@
     "bonus_actions": [
       {
         "name": "Leap",
-        "desc": "The bulette jumps up to 30 feet by spending 10 feet of movement. Centaur"
+        "desc": "The bulette jumps up to 30 feet by spending 10 feet of movement."
       }
     ],
     "legendary_actions": [],
@@ -6604,14 +6515,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Fog Cloud, Light"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Control Weather, Gaseous Form, Telekinesis"
       }
     ],
     "bonus_actions": [
@@ -6778,7 +6681,7 @@
     "actions": [
       {
         "name": "Club",
-        "desc": "Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Bludgeoning damage. Copper Dragons",
+        "desc": "Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Bludgeoning damage.",
         "damage": [
           {
             "damage_type": {
@@ -7219,14 +7122,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Mind Spike (level 4 version), Minor Illusion, Shapechange (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell)"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Greater Restoration, Major Image"
       }
     ],
     "legendary_actions": [
@@ -7255,11 +7150,7 @@
       },
       {
         "name": "Mind Jolt",
-        "desc": "The dragon uses Spellcasting to cast Mind"
-      },
-      {
-        "name": "Spike (level 4 version)",
-        "desc": "The dragon can’t take this action again until the start of its next turn."
+        "desc": "The dragon uses Spellcasting to cast Mind Spike (level 4 version). The dragon can’t take this action again until the start of its next turn."
       },
       {
         "name": "Pounce",
@@ -7483,14 +7374,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Mind Spike (level 5 version), Minor Illusion, Shapechange (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell)"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Greater Restoration, Major Image, Project Image"
       }
     ],
     "legendary_actions": [
@@ -7519,7 +7402,7 @@
       },
       {
         "name": "Mind Jolt",
-        "desc": "The dragon uses Spellcasting to cast Mind"
+        "desc": "The dragon uses Spellcasting to cast Mind Spike (level 4 version). The dragon can’t take this action again until the start of its next turn."
       },
       {
         "name": "Spike (level 5 version)",
@@ -7742,20 +7625,12 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Evil and Good, Detect Magic, Detect Thoughts, Shapechange (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell)"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Create Food and Water, Dream, Greater Restoration, Scrying, Sleep"
       }
     ],
     "bonus_actions": [
       {
         "name": "Divine Aid (2/Day)",
-        "desc": "The couatl casts Bless, Lesser Restoration, or Sanctuary, requiring no spell components and using the same spellcasting ability as Spellcasting. Crawling Claw",
+        "desc": "The couatl casts Bless, Lesser Restoration, or Sanctuary, requiring no spell components and using the same spellcasting ability as Spellcasting.",
         "spellcasting": {
           "ability": {
             "index": "wis",
@@ -7930,7 +7805,7 @@
     "actions": [
       {
         "name": "Swarm of Grasping Hands",
-        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 20 (4d8 + 2) Necrotic damage, or 11 (2d8 + 2) Necrotic damage if the swarm is Bloodied. If the target is a Medium or smaller creature, it has the Prone condition. Cultists",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 20 (4d8 + 2) Necrotic damage, or 11 (2d8 + 2) Necrotic damage if the swarm is Bloodied. If the target is a Medium or smaller creature, it has the Prone condition.",
         "damage": [
           {
             "damage_type": {
@@ -8141,18 +8016,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Light, Thaumaturgy"
-      },
-      {
-        "name": "2/Day",
-        "desc": "Command"
-      },
-      {
-        "name": "1/Day",
-        "desc": "Hold Person"
       }
     ],
     "bonus_actions": [
@@ -8267,11 +8130,7 @@
       },
       {
         "name": "Darkness Aura (1/Day)",
-        "desc": "Magical Darkness fills a 15-foot"
-      },
-      {
-        "name": "Emanation originating from the darkmantle",
-        "desc": "This effect lasts while the darkmantle maintains Concentration on it, up to 10 minutes. Darkvision can’t penetrate this area, and no light can illuminate it."
+        "desc": "Magical Darkness fills a 15-foot Emanation originating from the darkmantle. This effect lasts while the darkmantle maintains Concentration on it, up to 10 minutes. Darkvision can’t penetrate this area, and no light can illuminate it."
       }
     ],
     "legendary_actions": [],
@@ -8496,14 +8355,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Evil and Good, Shapechange (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell)"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Commune, Raise Dead"
       }
     ],
     "bonus_actions": [
@@ -8815,18 +8666,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Evil and Good, Detect Magic"
-      },
-      {
-        "name": "2/Day Each",
-        "desc": "Create Food and Water (can create wine instead of water), Tongues, Wind Walk"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Creation, Gaseous Form, Invisibility, Major Image, Plane Shift"
       }
     ],
     "legendary_actions": [],
@@ -9463,18 +9302,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Druidcraft, Speak with Animals"
-      },
-      {
-        "name": "2/Day Each",
-        "desc": "Entangle, Thunderwave"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Animal Messenger, Longstrider, Moonbeam"
       }
     ],
     "legendary_actions": [],
@@ -9628,14 +9455,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Animal Friendship, Charm Monster (lasts 24 hours; ends early if the dryad casts the spell again), Druidcraft"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Entangle, Pass without Trace"
       }
     ],
     "bonus_actions": [
@@ -9957,14 +9776,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Elementalism"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Gaseous Form, Invisibility, Major Image, Plane Shift, Tongues, Wall of Fire (level 7 version)"
       }
     ],
     "legendary_actions": [],
@@ -10839,7 +10650,7 @@
     "bonus_actions": [
       {
         "name": "War Cry (Recharge 5–6)",
-        "desc": "The giant or one creature of its choice that can see or hear it gains 16 (2d10 + 5) Temporary Hit Points and has Advantage on attack rolls until the start of the giant’s next turn. Fungi"
+        "desc": "The giant or one creature of its choice that can see or hear it gains 16 (2d10 + 5) Temporary Hit Points and has Advantage on attack rolls until the start of the giant’s next turn."
       }
     ],
     "legendary_actions": [],
@@ -11473,11 +11284,7 @@
       },
       {
         "name": "Incorporeal Movement",
-        "desc": "The ghost can move through other creatures and objects as if they were Difficult"
-      },
-      {
-        "name": "Terrain",
-        "desc": "It takes 5 (1d10) Force damage if it ends its turn inside an object.",
+        "desc": "The ghost can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.",
         "damage": [
           {
             "damage_type": {
@@ -11554,7 +11361,7 @@
       },
       {
         "name": "Possession (Recharge 6)",
-        "desc": "Charisma Saving Throw: DC 13, one Humanoid the ghost can see within 5 feet. Failure: The target is possessed by the ghost; the ghost disappears, and the target has the Incapacitated condition and loses control of its body. The ghost now controls the body, but the target retains awareness. The ghost can’t be targeted by any attack, spell, or other effect, except ones that specifically target Undead. The ghost’s game statistics are the same, except it uses the possessed target’s Speed, as well as the target’s Strength, Dexterity, and Constitution modifiers. The possession lasts until the body drops to 0 Hit",
+        "desc": "Charisma Saving Throw: DC 13, one Humanoid the ghost can see within 5 feet. Failure: The target is possessed by the ghost; the ghost disappears, and the target has the Incapacitated condition and loses control of its body. The ghost now controls the body, but the target retains awareness. The ghost can’t be targeted by any attack, spell, or other effect, except ones that specifically target Undead. The ghost’s game statistics are the same, except it uses the possessed target’s Speed, as well as the target’s Strength, Dexterity, and Constitution modifiers. The possession lasts until the body drops to 0 Hit Points or the ghost leaves as a Bonus Action. When the possession ends, the ghost appears in an unoccupied space within 5 feet of the target, and the target is immune to this ghost’s Possession for 24 hours. Success: The target is immune to this ghost’s Possession for 24 hours.",
         "dc": {
           "dc_type": {
             "index": "cha",
@@ -11564,10 +11371,6 @@
           "dc_value": 13,
           "success_type": "none"
         }
-      },
-      {
-        "name": "Points or the ghost leaves as a Bonus Action",
-        "desc": "When the possession ends, the ghost appears in an unoccupied space within 5 feet of the target, and the target is immune to this ghost’s Possession for 24 hours. Success: The target is immune to this ghost’s Possession for 24 hours."
       }
     ],
     "legendary_actions": [],
@@ -11876,20 +11679,7 @@
       },
       {
         "name": "Pummel",
-        "desc": "Dexterity Saving Throw: DC 17, one creature",
-        "dc": {
-          "dc_type": {
-            "index": "dex",
-            "name": "DEX",
-            "url": "/api/2024/ability-scores/dex"
-          },
-          "dc_value": 17,
-          "success_type": "none"
-        }
-      },
-      {
-        "name": "Grappled by the glabrezu",
-        "desc": "Failure: 15 (3d6 + 5) Bludgeoning damage. Success: Half damage.",
+        "desc": "Dexterity Saving Throw: DC 17, one creature Grappled by the glabrezu. Failure: 15 (3d6 + 5) Bludgeoning damage. Success: Half damage.",
         "damage": [
           {
             "damage_type": {
@@ -11899,7 +11689,16 @@
             },
             "damage_dice": "3d6+5"
           }
-        ]
+        ],
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "dc_value": 17,
+          "success_type": "half"
+        }
       },
       {
         "name": "Spellcasting",
@@ -11975,14 +11774,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Darkness, Detect Magic, Dispel Magic"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Confusion, Fly, Power Word Stun"
       }
     ],
     "legendary_actions": [],
@@ -12106,7 +11897,7 @@
     "reactions": [
       {
         "name": "Parry",
-        "desc": "Trigger: The gladiator is hit by a melee attack roll while holding a weapon. Response: The gladiator adds 3 to its AC against that attack, possibly causing it to miss. Gnoll"
+        "desc": "Trigger: The gladiator is hit by a melee attack roll while holding a weapon. Response: The gladiator adds 3 to its AC against that attack, possibly causing it to miss."
       }
     ],
     "legendary_actions": [],
@@ -12219,7 +12010,7 @@
     "bonus_actions": [
       {
         "name": "Rampage (1/Day)",
-        "desc": "Immediately after dealing damage to a creature that is already Bloodied, the gnoll moves up to half its Speed, and it makes one Rend attack. Goblins"
+        "desc": "Immediately after dealing damage to a creature that is already Bloodied, the gnoll moves up to half its Speed, and it makes one Rend attack."
       }
     ],
     "legendary_actions": [],
@@ -12485,7 +12276,7 @@
     "reactions": [
       {
         "name": "Redirect Attack",
-        "desc": "Trigger: A creature the goblin can see makes an attack roll against it. Response: The goblin chooses a Small or Medium ally within 5 feet of itself. The goblin and that ally swap places, and the ally becomes the target of the attack instead. Gold Dragons"
+        "desc": "Trigger: A creature the goblin can see makes an attack roll against it. Response: The goblin chooses a Small or Medium ally within 5 feet of itself. The goblin and that ally swap places, and the ally becomes the target of the attack instead."
       }
     ],
     "legendary_actions": [],
@@ -12917,14 +12708,6 @@
         }
       },
       {
-        "name": "At Will",
-        "desc": "Detect Magic, Guiding Bolt (level 2 version), Shapechange (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell)"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Flame Strike, Zone of Truth"
-      },
-      {
         "name": "Weakening Breath",
         "desc": "Strength Saving Throw: DC 21, each creature that isn’t currently affected by this breath in a 60-foot Cone. Failure: The target has Disadvantage on Strength-based D20 Tests and subtracts 3 (1d6) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
         "dc": {
@@ -13175,14 +12958,6 @@
         }
       },
       {
-        "name": "At Will",
-        "desc": "Detect Magic, Guiding Bolt (level 4 version), Shapechange (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell)"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Flame Strike (level 6 version), Word of Recall, Zone of Truth"
-      },
-      {
         "name": "Weakening Breath",
         "desc": "Strength Saving Throw: DC 24, each creature that isn’t currently affected by this breath in a 90-foot Cone. Failure: The target has Disadvantage on Strength-based D20 Tests and subtracts 5 (1d10) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
         "dc": {
@@ -13415,7 +13190,7 @@
     "actions": [
       {
         "name": "Pseudopod",
-        "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 10 (2d8 + 1) Acid damage. Nonmagical armor worn by the target takes a −1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10. The penalty can be removed by casting the Mending spell on the armor. Green Dragons",
+        "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 10 (2d8 + 1) Acid damage. Nonmagical armor worn by the target takes a −1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10. The penalty can be removed by casting the Mending spell on the armor.",
         "damage": [
           {
             "damage_type": {
@@ -13840,14 +13615,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Mind Spike (level 3 version)"
-      },
-      {
-        "name": "1/Day",
-        "desc": "Geas"
       }
     ],
     "legendary_actions": [
@@ -14068,14 +13835,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Mind Spike (level 5 version)"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Geas, Modify Memory"
       }
     ],
     "legendary_actions": [
@@ -14337,10 +14096,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Dancing Lights, Disguise Self (24-hour duration), Invisibility (self only, and the hag leaves no tracks while Invisible), Minor Illusion, Ray of Sickness (level 3 version)"
       }
     ],
     "legendary_actions": [],
@@ -14769,14 +14524,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Thaumaturgy"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Clairvoyance, Cure Wounds (level 6 version), Flame Strike (level 6 version), Geas, True Seeing Guards"
       }
     ],
     "legendary_actions": [],
@@ -15014,7 +14761,7 @@
       },
       {
         "name": "Claw",
-        "desc": "Melee Attack Roll: +7, reach 10 ft. Hit: 6 (1d4 + 4) Slashing damage plus 7 (2d6) damage of the type chosen for the Draconic Origin trait. Dragon’s Breath (Recharge 5–6). Dexterity Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: 28 (8d6) damage of the type chosen for the Draconic",
+        "desc": "Melee Attack Roll: +7, reach 10 ft. Hit: 6 (1d4 + 4) Slashing damage plus 7 (2d6) damage of the type chosen for the Draconic Origin trait.",
         "damage": [
           {
             "damage_type": {
@@ -15024,7 +14771,11 @@
             },
             "damage_dice": "1d4+4"
           }
-        ],
+        ]
+      },
+      {
+        "name": "Dragon’s Breath (Recharge 5–6)",
+        "desc": "Dexterity Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: 28 (8d6) damage of the type chosen for the Draconic Origin trait. Success: Half damage.",
         "dc": {
           "dc_type": {
             "index": "dex",
@@ -15032,12 +14783,8 @@
             "url": "/api/2024/ability-scores/dex"
           },
           "dc_value": 14,
-          "success_type": "none"
+          "success_type": "half"
         }
-      },
-      {
-        "name": "Origin trait",
-        "desc": "Success: Half damage."
       }
     ],
     "bonus_actions": [
@@ -15123,7 +14870,7 @@
       },
       {
         "name": "Luring Song",
-        "desc": "The harpy sings a magical melody, which lasts until the harpy’s Concentration ends on it. Wisdom Saving Throw: DC 11, each Humanoid and Giant in a 300-foot Emanation originating from the harpy when the song starts. Failure: The target has the Charmed condition until the song ends and repeats the save at the end of each of its turns. While Charmed, the target has the Incapacitated condition and ignores the Luring",
+        "desc": "The harpy sings a magical melody, which lasts until the harpy’s Concentration ends on it. Wisdom Saving Throw: DC 11, each Humanoid and Giant in a 300-foot Emanation originating from the harpy when the song starts. Failure: The target has the Charmed condition until the song ends and repeats the save at the end of each of its turns. While Charmed, the target has the Incapacitated condition and ignores the Luring Song of other harpies. If the target is more than 5 feet from the harpy, the target moves on its turn toward the harpy by the most direct route, trying to get within 5 feet of the harpy. It doesn’t avoid Opportunity Attacks; however, before moving into damaging terrain (such as lava or a pit) and whenever it takes damage from a source other than the harpy, the target repeats the save. Success: The target is immune to this harpy’s Luring Song for 24 hours.",
         "dc": {
           "dc_type": {
             "index": "wis",
@@ -15133,10 +14880,6 @@
           "dc_value": 11,
           "success_type": "none"
         }
-      },
-      {
-        "name": "Song of other harpies",
-        "desc": "If the target is more than 5 feet from the harpy, the target moves on its turn toward the harpy by the most direct route, trying to get within 5 feet of the harpy. It doesn’t avoid Opportunity Attacks; however, before moving into damaging terrain (such as lava or a pit) and whenever it takes damage from a source other than the harpy, the target repeats the save. Success: The target is immune to this harpy’s Luring Song for 24 hours."
       }
     ],
     "legendary_actions": [],
@@ -15505,7 +15248,7 @@
       },
       {
         "name": "Rend",
-        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Slashing damage. Hobgoblins",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Slashing damage.",
         "damage": [
           {
             "damage_type": {
@@ -16013,11 +15756,7 @@
       },
       {
         "name": "Multiple Heads",
-        "desc": "The hydra has five heads. Whenever the hydra takes 25 damage or more on a single turn, one of its heads dies. The hydra dies if all its heads are dead. At the end of each of its turns when it has at least one living head, the hydra grows two heads for each of its heads that died since its last turn, unless it has taken"
-      },
-      {
-        "name": "Fire damage since its last turn",
-        "desc": "The hydra regains 20 Hit Points when it grows new heads."
+        "desc": "The hydra has five heads. Whenever the hydra takes 25 damage or more on a single turn, one of its heads dies. The hydra dies if all its heads are dead. At the end of each of its turns when it has at least one living head, the hydra grows two heads for each of its heads that died since its last turn, unless it has taken Fire damage since its last turn. The hydra regains 20 Hit Points when it grows new heads."
       },
       {
         "name": "Reactive Heads",
@@ -16447,14 +16186,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Disguise Self, Etherealness"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Dream, Hypnotic Pattern"
       }
     ],
     "bonus_actions": [
@@ -16886,7 +16617,7 @@
     "reactions": [
       {
         "name": "Parry",
-        "desc": "Trigger: The knight is hit by a melee attack roll while holding a weapon. Response: The knight adds 2 to its AC against that attack, possibly causing it to miss. Kobold"
+        "desc": "Trigger: The knight is hit by a melee attack roll while holding a weapon. Response: The knight adds 2 to its AC against that attack, possibly causing it to miss."
       }
     ],
     "legendary_actions": [],
@@ -17372,14 +17103,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Disguise Self (can appear as a Large or Medium biped), Minor Illusion"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Geas, Major Image, Scrying"
       }
     ],
     "bonus_actions": [
@@ -17749,18 +17472,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Detect Thoughts, Dispel Magic, Fireball (level 5 version), Invisibility, Lightning Bolt (level 5 version), Mage Hand, Prestidigitation"
-      },
-      {
-        "name": "2/Day Each",
-        "desc": "Animate Dead, Dimension Door, Plane Shift"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Chain Lightning, Finger of Death, Power Word Kill, Scrying"
       }
     ],
     "reactions": [
@@ -17836,7 +17547,7 @@
       },
       {
         "name": "Frightening Gaze",
-        "desc": "The lich casts Fear, using the same spellcasting ability as Spellcasting. The lich can’t take this action again until the start of its next turn. Mages",
+        "desc": "The lich casts Fear, using the same spellcasting ability as Spellcasting. The lich can’t take this action again until the start of its next turn.",
         "spellcasting": {
           "ability": {
             "index": "int",
@@ -18059,18 +17770,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Light, Mage Armor (included in AC), Mage Hand, Prestidigitation"
-      },
-      {
-        "name": "2/Day Each",
-        "desc": "Fireball (level 4 version), Invisibility"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Cone of Cold, Fly"
       }
     ],
     "bonus_actions": [
@@ -18389,18 +18088,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Detect Thoughts, Disguise Self, Invisibility, Light, Mage Armor (included in AC), Mage Hand, Prestidigitation"
-      },
-      {
-        "name": "2/Day Each",
-        "desc": "Fly, Lightning Bolt (level 7 version)"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Cone of Cold (level 9 version), Mind Blank (cast before combat), Scrying, Teleport"
       }
     ],
     "bonus_actions": [
@@ -18540,20 +18227,7 @@
     "special_abilities": [
       {
         "name": "Death Burst",
-        "desc": "The magmin explodes when it dies. Dexterity Saving Throw: DC 11, each creature in a 10-foot",
-        "dc": {
-          "dc_type": {
-            "index": "dex",
-            "name": "DEX",
-            "url": "/api/2024/ability-scores/dex"
-          },
-          "dc_value": 11,
-          "success_type": "none"
-        }
-      },
-      {
-        "name": "Emanation originating from the magmin",
-        "desc": "Failure: 7 (2d6) Fire damage. Success: Half damage.",
+        "desc": "The magmin explodes when it dies. Dexterity Saving Throw: DC 11, each creature in a 10-foot Emanation originating from the magmin. Failure: 7 (2d6) Fire damage. Success: Half damage.",
         "damage": [
           {
             "damage_type": {
@@ -18563,7 +18237,16 @@
             },
             "damage_dice": "2d6"
           }
-        ]
+        ],
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "dc_value": 11,
+          "success_type": "half"
+        }
       }
     ],
     "actions": [
@@ -18931,7 +18614,7 @@
     "bonus_actions": [
       {
         "name": "Petrifying Gaze (Recharge 5–6)",
-        "desc": "Constitution Saving Throw: DC 13, each creature in a 30-foot Cone. If the medusa sees its reflection in the Cone, the medusa must make this save. First Failure: The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition instead of the Restrained condition. Mephits",
+        "desc": "Constitution Saving Throw: DC 13, each creature in a 30-foot Cone. If the medusa sees its reflection in the Cone, the medusa must make this save. First Failure: The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition instead of the Restrained condition.",
         "dc": {
           "dc_type": {
             "index": "con",
@@ -19013,20 +18696,7 @@
     "special_abilities": [
       {
         "name": "Death Burst",
-        "desc": "The mephit explodes when it dies. Dexterity Saving Throw: DC 10, each creature in a 5-foot",
-        "dc": {
-          "dc_type": {
-            "index": "dex",
-            "name": "DEX",
-            "url": "/api/2024/ability-scores/dex"
-          },
-          "dc_value": 10,
-          "success_type": "none"
-        }
-      },
-      {
-        "name": "Emanation originating from the mephit",
-        "desc": "Failure: 5 (2d4) Bludgeoning damage. Success: Half damage.",
+        "desc": "The mephit explodes when it dies. Dexterity Saving Throw: DC 10, each creature in a 5-foot Emanation originating from the mephit. Failure: 5 (2d4) Bludgeoning damage. Success: Half damage.",
         "damage": [
           {
             "damage_type": {
@@ -19036,7 +18706,16 @@
             },
             "damage_dice": "2d4"
           }
-        ]
+        ],
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "dc_value": 10,
+          "success_type": "half"
+        }
       }
     ],
     "actions": [
@@ -19155,20 +18834,7 @@
     "special_abilities": [
       {
         "name": "Death Burst",
-        "desc": "The mephit explodes when it dies. Constitution Saving Throw: DC 10, each creature in a 5-foot",
-        "dc": {
-          "dc_type": {
-            "index": "con",
-            "name": "CON",
-            "url": "/api/2024/ability-scores/con"
-          },
-          "dc_value": 10,
-          "success_type": "none"
-        }
-      },
-      {
-        "name": "Emanation originating from the mephit",
-        "desc": "Failure: 5 (2d4) Cold damage. Success: Half damage.",
+        "desc": "The mephit explodes when it dies. Constitution Saving Throw: DC 10, each creature in a 5-foot Emanation originating from the mephit. Failure: 5 (2d4) Cold damage. Success: Half damage.",
         "damage": [
           {
             "damage_type": {
@@ -19178,7 +18844,16 @@
             },
             "damage_dice": "2d4"
           }
-        ]
+        ],
+        "dc": {
+          "dc_type": {
+            "index": "con",
+            "name": "CON",
+            "url": "/api/2024/ability-scores/con"
+          },
+          "dc_value": 10,
+          "success_type": "half"
+        }
       }
     ],
     "actions": [
@@ -19314,20 +18989,7 @@
     "special_abilities": [
       {
         "name": "Death Burst",
-        "desc": "The mephit explodes when it dies. Dexterity Saving Throw: DC 11, each creature in a 5-foot",
-        "dc": {
-          "dc_type": {
-            "index": "dex",
-            "name": "DEX",
-            "url": "/api/2024/ability-scores/dex"
-          },
-          "dc_value": 11,
-          "success_type": "none"
-        }
-      },
-      {
-        "name": "Emanation originating from the mephit",
-        "desc": "Failure: 7 (2d6) Fire damage. Success: Half damage.",
+        "desc": "The mephit explodes when it dies. Dexterity Saving Throw: DC 11, each creature in a 5-foot Emanation originating from the mephit. Failure: 7 (2d6) Fire damage. Success: Half damage.",
         "damage": [
           {
             "damage_type": {
@@ -19337,7 +18999,16 @@
             },
             "damage_dice": "2d6"
           }
-        ]
+        ],
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "dc_value": 11,
+          "success_type": "half"
+        }
       }
     ],
     "actions": [
@@ -19451,20 +19122,7 @@
       },
       {
         "name": "Death Burst",
-        "desc": "The mephit explodes when it dies. Dexterity Saving Throw: DC 10, each creature in a 5-foot",
-        "dc": {
-          "dc_type": {
-            "index": "dex",
-            "name": "DEX",
-            "url": "/api/2024/ability-scores/dex"
-          },
-          "dc_value": 10,
-          "success_type": "none"
-        }
-      },
-      {
-        "name": "Emanation originating from the mephit",
-        "desc": "Failure: 5 (2d4) Fire damage. Success: Half damage.",
+        "desc": "The mephit explodes when it dies. Dexterity Saving Throw: DC 10, each creature in a 5-foot Emanation originating from the mephit. Failure: 5 (2d4) Fire damage. Success: Half damage.",
         "damage": [
           {
             "damage_type": {
@@ -19474,7 +19132,16 @@
             },
             "damage_dice": "2d4"
           }
-        ]
+        ],
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2024/ability-scores/dex"
+          },
+          "dc_value": 10,
+          "success_type": "half"
+        }
       }
     ],
     "actions": [
@@ -19525,7 +19192,7 @@
       },
       {
         "name": "Half damage only",
-        "desc": "Failure or Success: Being underwater doesn’t grant Resistance to this Fire damage. Merfolk"
+        "desc": "Failure or Success: Being underwater doesn’t grant Resistance to this Fire damage."
       }
     ],
     "legendary_actions": [],
@@ -19897,7 +19564,7 @@
       },
       {
         "name": "Gore (Recharge 5–6)",
-        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 18 (4d6 + 4) Piercing damage. If the target is a Large or smaller creature and the minotaur moved 10+ feet straight toward it immediately before the hit, the target takes an extra 10 (3d6) Piercing damage and has the Prone condition. Mummies",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 18 (4d6 + 4) Piercing damage. If the target is a Large or smaller creature and the minotaur moved 10+ feet straight toward it immediately before the hit, the target takes an extra 10 (3d6) Piercing damage and has the Prone condition.",
         "damage": [
           {
             "damage_type": {
@@ -20259,14 +19926,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Dispel Magic, Thaumaturgy"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Animate Dead, Harm, Insect Plague (level 7 version)"
       }
     ],
     "reactions": [
@@ -20611,7 +20270,7 @@
       },
       {
         "name": "Claw",
-        "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Slashing damage. Nightmare Haunting (1/Day; Requires Soul Bag). While on the Ethereal Plane, the hag casts Dream, using the same spellcasting ability as Spellcasting. Only the hag can serve as the spell’s messenger, and the target must be a creature the hag can see on the Material",
+        "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Slashing damage.",
         "damage": [
           {
             "damage_type": {
@@ -20624,8 +20283,33 @@
         ]
       },
       {
-        "name": "Plane",
-        "desc": "The spell fails and is wasted if the target is under the effect of the Protection from Evil and Good spell or within a Magic Circle spell. If the target takes damage from the Dream spell, the target’s Hit Point maximum decreases by an amount equal to that damage. If the spell kills the target, its soul is trapped in the hag’s soul bag, and the target can’t be raised from the dead until its soul is released."
+        "name": "Nightmare Haunting (1/Day; Requires Soul Bag)",
+        "desc": "While on the Ethereal Plane, the hag casts Dream, using the same spellcasting ability as Spellcasting. Only the hag can serve as the spell’s messenger, and the target must be a creature the hag can see on the Material Plane. The spell fails and is wasted if the target is under the effect of the Protection from Evil and Good spell or within a Magic Circle spell. If the target takes damage from the Dream spell, the target’s Hit Point maximum decreases by an amount equal to that damage. If the spell kills the target, its soul is trapped in the hag’s soul bag, and the target can’t be raised from the dead until its soul is released.",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 14,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "dream",
+              "name": "Dream",
+              "level": 5,
+              "url": "/api/2024/spells/dream",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "Spellcasting",
@@ -20692,14 +20376,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Etherealness, Magic Missile (level 4 version)"
-      },
-      {
-        "name": "2/Day Each",
-        "desc": "Phantasmal Killer, Plane Shift (self only)"
       }
     ],
     "bonus_actions": [
@@ -21098,11 +20774,7 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The oni makes two Claw or Nightmare"
-      },
-      {
-        "name": "Ray attacks",
-        "desc": "It can replace one attack with a use of Spellcasting."
+        "desc": "The oni makes two Claw or Nightmare Ray attacks. It can replace one attack with a use of Spellcasting."
       },
       {
         "name": "Claw",
@@ -21201,10 +20873,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Charm Person (level 2 version), Darkness, Gaseous Form, Sleep"
       }
     ],
     "bonus_actions": [
@@ -21642,7 +21310,7 @@
     "bonus_actions": [
       {
         "name": "Ethereal Jaunt",
-        "desc": "The spider teleports from the Material Plane to the Ethereal Plane or vice versa. Pirates"
+        "desc": "The spider teleports from the Material Plane to the Ethereal Plane or vice versa."
       }
     ],
     "legendary_actions": [],
@@ -22243,20 +21911,12 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Evil and Good"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Commune, Control Weather, Dispel Evil and Good, Raise Dead"
       }
     ],
     "bonus_actions": [
       {
         "name": "Divine Aid (2/Day)",
-        "desc": "The planetar casts Cure Wounds, Invisibility, Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting. Priests",
+        "desc": "The planetar casts Cure Wounds, Invisibility, Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting.",
         "spellcasting": {
           "ability": {
             "index": "cha",
@@ -22461,10 +22121,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Light, Thaumaturgy"
       }
     ],
     "bonus_actions": [
@@ -22647,14 +22303,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Light, Thaumaturgy"
-      },
-      {
-        "name": "1/Day",
-        "desc": "Spirit Guardians"
       }
     ],
     "bonus_actions": [
@@ -23277,14 +22925,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Detect Thoughts, Disguise Self, Mage Hand, Minor Illusion"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Fly, Invisibility, Major Image, Plane Shift Red Dragons"
       }
     ],
     "legendary_actions": [],
@@ -23678,14 +23318,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Command (level 2 version), Detect Magic, Scorching Ray"
-      },
-      {
-        "name": "1/Day",
-        "desc": "Fireball"
       }
     ],
     "legendary_actions": [
@@ -23888,14 +23520,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Command (level 2 version), Detect Magic, Scorching Ray (level 3 version)"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Fireball (level 6 version), Scrying"
       }
     ],
     "legendary_actions": [
@@ -24340,7 +23964,7 @@
     "reactions": [
       {
         "name": "Reflexive Antennae",
-        "desc": "Trigger: An attack roll hits the rust monster. Response: The rust monster uses Antennae. Sahuagin"
+        "desc": "Trigger: An attack roll hits the rust monster. Response: The rust monster uses Antennae."
       }
     ],
     "legendary_actions": [],
@@ -24494,11 +24118,7 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The salamander makes two Flame"
-      },
-      {
-        "name": "Spear attacks",
-        "desc": "It can replace one attack with a use of Constrict."
+        "desc": "The salamander makes two Flame Spear attacks. It can replace one attack with a use of Constrict."
       },
       {
         "name": "Flame Spear",
@@ -25094,11 +24714,7 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The shambling mound makes three"
-      },
-      {
-        "name": "Charged Tendril attacks",
-        "desc": "It can replace one attack with a use of Engulf."
+        "desc": "The shambling mound makes three Charged Tendril attacks. It can replace one attack with a use of Engulf."
       },
       {
         "name": "Charged Tendril",
@@ -25124,20 +24740,7 @@
       },
       {
         "name": "Engulf",
-        "desc": "Strength Saving Throw: DC 15, one Medium or smaller creature within 5 feet. Failure: The target is pulled into the shambling mound’s space and has the",
-        "dc": {
-          "dc_type": {
-            "index": "str",
-            "name": "STR",
-            "url": "/api/2024/ability-scores/str"
-          },
-          "dc_value": 15,
-          "success_type": "none"
-        }
-      },
-      {
-        "name": "Grappled condition (escape DC 14)",
-        "desc": "Until the grapple ends, the target has the Blinded and Restrained conditions, and it takes 10 (3d6) Lightning damage at the start of each of its turns. When the shambling mound moves, the Grappled target moves with it, costing it no extra movement. The shambling mound can have only one creature Grappled by this action at a time.",
+        "desc": "Strength Saving Throw: DC 15, one Medium or smaller creature within 5 feet. Failure: The target is pulled into the shambling mound’s space and has the Grappled condition (escape DC 14). Until the grapple ends, the target has the Blinded and Restrained conditions, and it takes 10 (3d6) Lightning damage at the start of each of its turns. When the shambling mound moves, the Grappled target moves with it, costing it no extra movement. The shambling mound can have only one creature Grappled by this action at a time.",
         "damage": [
           {
             "damage_type": {
@@ -25147,7 +24750,16 @@
             },
             "damage_dice": "3d6"
           }
-        ]
+        ],
+        "dc": {
+          "dc_type": {
+            "index": "str",
+            "name": "STR",
+            "url": "/api/2024/ability-scores/str"
+          },
+          "dc_value": 15,
+          "success_type": "none"
+        }
       }
     ],
     "legendary_actions": [],
@@ -25271,7 +24883,7 @@
     "reactions": [
       {
         "name": "Protection",
-        "desc": "Trigger: An attack roll hits the wearer of the guardian’s amulet while the wearer is within 5 feet of the guardian. Response: The wearer gains a +5 bonus to AC, including against the triggering attack and possibly causing it to miss, until the start of the guardian’s next turn. Silver Dragons"
+        "desc": "Trigger: An attack roll hits the wearer of the guardian’s amulet while the wearer is within 5 feet of the guardian. Response: The wearer gains a +5 bonus to AC, including against the triggering attack and possibly causing it to miss, until the start of the guardian’s next turn."
       }
     ],
     "legendary_actions": [],
@@ -25704,14 +25316,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Hold Monster, Ice Knife, Shapechange (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell)"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Ice Storm (level 5 version), Zone of Truth"
       }
     ],
     "legendary_actions": [
@@ -25975,14 +25579,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Hold Monster, Ice Knife (level 2 version), Shapechange (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell)"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Control Weather, Ice Storm (level 7 version), Teleport, Zone of Truth"
       }
     ],
     "legendary_actions": [
@@ -26015,7 +25611,7 @@
       },
       {
         "name": "Pounce",
-        "desc": "The dragon moves up to half its Speed, and it makes one Rend attack. Skeletons"
+        "desc": "The dragon moves up to half its Speed, and it makes one Rend attack."
       }
     ],
     "index": "ancient-silver-dragon",
@@ -26501,14 +26097,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Evil and Good"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Commune, Control Weather, Dispel Evil and Good, Resurrection"
       }
     ],
     "bonus_actions": [
@@ -26702,11 +26290,7 @@
     "special_abilities": [
       {
         "name": "Incorporeal Movement",
-        "desc": "The specter can move through other creatures and objects as if they were Difficult"
-      },
-      {
-        "name": "Terrain",
-        "desc": "It takes 5 (1d10) Force damage if it ends its turn inside an object.",
+        "desc": "The specter can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.",
         "damage": [
           {
             "damage_type": {
@@ -26726,7 +26310,7 @@
     "actions": [
       {
         "name": "Life Drain",
-        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d6) Necrotic damage. If the target is a creature, its Hit Point maximum decreases by an amount equal to the damage taken. Sphinxes",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d6) Necrotic damage. If the target is a creature, its Hit Point maximum decreases by an amount equal to the damage taken.",
         "damage": [
           {
             "damage_type": {
@@ -27054,14 +26638,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Identify, Mage Hand, Minor Illusion, Prestidigitation"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Dispel Magic, Legend Lore, Locate Object, Plane Shift, Remove Curse, Tongues"
       }
     ],
     "legendary_actions": [
@@ -27309,14 +26885,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Evil and Good, Thaumaturgy"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Detect Magic, Dispel Magic, Greater Restoration, Heroes’ Feast, Zone of Truth"
       }
     ],
     "legendary_actions": [
@@ -27565,14 +27133,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Mage Hand, Minor Illusion, Water Breathing"
-      },
-      {
-        "name": "2/Day Each",
-        "desc": "Detect Thoughts, Dimension Door, Hold Person (level 3 version), Lightning Bolt (level 4 version)"
       }
     ],
     "legendary_actions": [],
@@ -28310,14 +27870,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Magic, Light"
-      },
-      {
-        "name": "1/Day",
-        "desc": "Control Weather"
       }
     ],
     "legendary_actions": [],
@@ -28474,11 +28026,7 @@
     "bonus_actions": [
       {
         "name": "Shape-Shift",
-        "desc": "The succubus shape-shifts into a Medium or Small Humanoid, or it returns to its true form. Its game statistics are the same in each form, except its Fly"
-      },
-      {
-        "name": "Speed is available only in its true form",
-        "desc": "Any equipment it is wearing or carrying isn’t transformed."
+        "desc": "The succubus shape-shifts into a Medium or Small Humanoid, or it returns to its true form. Its game statistics are the same in each form, except its Fly Speed is available only in its true form. Any equipment it is wearing or carrying isn’t transformed."
       }
     ],
     "legendary_actions": [],
@@ -28688,7 +28236,7 @@
       },
       {
         "name": "World-Shaking Movement",
-        "desc": "The tarrasque moves up to its Speed. At the end of this movement, the tarrasque creates an instantaneous shock wave in a 60-foot Emanation originating from itself. Creatures in that area lose Concentration and, if Medium or smaller, have the Prone condition. The tarrasque can’t take this action again until the start of its next turn. Toughs"
+        "desc": "The tarrasque moves up to its Speed. At the end of this movement, the tarrasque creates an instantaneous shock wave in a 60-foot Emanation originating from itself. Creatures in that area lose Concentration and, if Medium or smaller, have the Prone condition. The tarrasque can’t take this action again until the start of its next turn. Toughs SAVE MOD SAVE MOD SAVE Str 15 +2 +2 Dex 12 +1 +1 Con 14 +2 +2 Int 10 +0 +0 Wis 10 +0 +0 Cha 11 +0 +0 Gear Heavy Crossbow, Leather Armor, Mace Senses Passive Perception 10 Languages Common CR 1/2 (XP 100; PB +2)"
       }
     ],
     "index": "tarrasque",
@@ -29325,14 +28873,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Evil and Good, Druidcraft"
-      },
-      {
-        "name": "1/Day Each",
-        "desc": "Calm Emotions, Dispel Evil and Good, Entangle, Pass without Trace, Word of Recall"
       }
     ],
     "legendary_actions": [
@@ -29342,7 +28882,7 @@
       },
       {
         "name": "Shimmering Shield",
-        "desc": "The unicorn targets itself or one creature it can see within 60 feet of itself. The target gains 10 (3d6) Temporary Hit Points, and its AC increases by 2 until the end of the unicorn’s next turn. The unicorn can’t take this action again until the start of its next turn. Vampires"
+        "desc": "The unicorn targets itself or one creature it can see within 60 feet of itself. The target gains 10 (3d6) Temporary Hit Points, and its AC increases by 2 until the end of the unicorn’s next turn. The unicorn can’t take this action again until the start of its next turn."
       }
     ],
     "index": "unicorn",
@@ -29952,7 +29492,7 @@
       },
       {
         "name": "Stunning Screech (1/Day)",
-        "desc": "Constitution Saving Throw: DC 15, each creature in a 20-foot Emanation originating from the vrock (demons succeed automatically). Failure: 10 (3d6) Thunder damage, and the target has the Stunned condition until the end of the vrock’s next turn. Warriors",
+        "desc": "Constitution Saving Throw: DC 15, each creature in a 20-foot Emanation originating from the vrock (demons succeed automatically). Failure: 10 (3d6) Thunder damage, and the target has the Stunned condition until the end of the vrock’s next turn.",
         "damage": [
           {
             "damage_type": {
@@ -30340,11 +29880,7 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The werebear makes two attacks, using"
-      },
-      {
-        "name": "Handaxe or Rend in any combination",
-        "desc": "It can replace one attack with a Bite attack."
+        "desc": "The werebear makes two attacks, using Handaxe or Rend in any combination. It can replace one attack with a Bite attack."
       },
       {
         "name": "Bite (Bear or Hybrid Form Only)",
@@ -30454,11 +29990,7 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The wereboar makes two attacks, using"
-      },
-      {
-        "name": "Javelin or Tusk in any combination",
-        "desc": "It can replace one attack with a Gore attack."
+        "desc": "The wereboar makes two attacks, using Javelin or Tusk in any combination. It can replace one attack with a Gore attack."
       },
       {
         "name": "Gore (Boar or Hybrid Form Only)",
@@ -30578,11 +30110,7 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The wererat makes two attacks, using"
-      },
-      {
-        "name": "Scratch or Hand Crossbow in any combination",
-        "desc": "It can replace one attack with a Bite attack."
+        "desc": "The wererat makes two attacks, using Scratch or Hand Crossbow in any combination. It can replace one attack with a Bite attack."
       },
       {
         "name": "Bite (Rat or Hybrid Form Only)",
@@ -30683,11 +30211,7 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The weretiger makes two attacks, using"
-      },
-      {
-        "name": "Scratch or Longbow in any combination",
-        "desc": "It can replace one attack with a Bite attack."
+        "desc": "The weretiger makes two attacks, using Scratch or Longbow in any combination. It can replace one attack with a Bite attack."
       },
       {
         "name": "Bite (Tiger or Hybrid Form Only)",
@@ -30748,11 +30272,7 @@
     "bonus_actions": [
       {
         "name": "Prowl (Tiger or Hybrid Form Only)",
-        "desc": "The weretiger moves up to its Speed without provoking Opportunity"
-      },
-      {
-        "name": "Attacks",
-        "desc": "At the end of this movement, the weretiger can take the Hide action."
+        "desc": "The weretiger moves up to its Speed without provoking Opportunity Attacks. At the end of this movement, the weretiger can take the Hide action."
       },
       {
         "name": "Shape-Shift",
@@ -30811,11 +30331,7 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The werewolf makes two attacks, using"
-      },
-      {
-        "name": "Scratch or Longbow in any combination",
-        "desc": "It can replace one attack with a Bite attack."
+        "desc": "The werewolf makes two attacks, using Scratch or Longbow in any combination. It can replace one attack with a Bite attack."
       },
       {
         "name": "Bite (Wolf or Hybrid Form Only)",
@@ -30876,7 +30392,7 @@
     "bonus_actions": [
       {
         "name": "Shape-Shift",
-        "desc": "The werewolf shape-shifts into a Large wolf-humanoid hybrid or a Medium wolf, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. White Dragons"
+        "desc": "The werewolf shape-shifts into a Large wolf-humanoid hybrid or a Medium wolf, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed."
       }
     ],
     "legendary_actions": [],
@@ -31733,11 +31249,7 @@
       },
       {
         "name": "Incorporeal Movement",
-        "desc": "The wisp can move through other creatures and objects as if they were Difficult"
-      },
-      {
-        "name": "Terrain",
-        "desc": "It takes 5 (1d10) Force damage if it ends its turn inside an object.",
+        "desc": "The wisp can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.",
         "damage": [
           {
             "damage_type": {
@@ -32034,11 +31546,7 @@
     "special_abilities": [
       {
         "name": "Incorporeal Movement",
-        "desc": "The wraith can move through other creatures and objects as if they were Difficult"
-      },
-      {
-        "name": "Terrain",
-        "desc": "It takes 5 (1d10) Force damage if it ends its turn inside an object.",
+        "desc": "The wraith can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.",
         "damage": [
           {
             "damage_type": {
@@ -32269,7 +31777,7 @@
     "bonus_actions": [
       {
         "name": "Charge",
-        "desc": "The xorn moves up to its Speed or Burrow Speed straight toward an enemy it can sense. Zombies"
+        "desc": "The xorn moves up to its Speed or Burrow Speed straight toward an enemy it can sense."
       }
     ],
     "legendary_actions": [],
@@ -32437,7 +31945,7 @@
     "actions": [
       {
         "name": "Slam",
-        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 13 (2d8 + 4) Bludgeoning damage. Animals",
+        "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 13 (2d8 + 4) Bludgeoning damage.",
         "damage": [
           {
             "damage_type": {
@@ -35389,14 +34897,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "At Will",
-        "desc": "Detect Evil and Good, Detect Magic"
-      },
-      {
-        "name": "1/Day",
-        "desc": "Clairvoyance"
       }
     ],
     "legendary_actions": [],

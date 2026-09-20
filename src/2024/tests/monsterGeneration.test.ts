@@ -35,6 +35,9 @@ const skillQuirks = new Set(['shambling-mound', 'giant-frog']);
 
 const entrySections = ['special_abilities', 'actions', 'bonus_actions', 'reactions', 'legendary_actions'];
 
+/** Descriptions the source text itself cuts off mid-sentence. */
+const sourceTruncated = new Set(['chain-devil']);
+
 const crToNumber = (cr: string) => (cr.includes('/') ? 1 / Number(cr.split('/')[1]) : Number(cr));
 const abilityMod = (score: number) => Math.floor((score - 10) / 2);
 
@@ -109,11 +112,26 @@ describe('generated 2024 monsters', () => {
     for (const m of generated) {
       for (const section of entrySections) {
         for (const entry of (m[section] ?? []) as Monster[]) {
-          if (!/spellcasting ability/.test(entry.desc) || !/^(The [\w ]+ casts? |While within 30 feet)/.test(entry.desc)) continue;
+          if (!/spellcasting ability/.test(entry.desc) || !/^(While within 30 feet|(While [^,]+, )?[Tt]he [\w ]+ casts? )/.test(entry.desc)) continue;
           const spells = (entry.spellcasting?.spells ?? []) as { url: string }[];
           if (spells.length === 0) errors.push(`${m.index} ${entry.name}: no spells`);
           for (const spell of spells) {
             if (!spellUrls.has(spell.url)) errors.push(`${m.index} ${entry.name}: ${spell.url}`);
+          }
+        }
+      }
+    }
+    expect(errors).toEqual([]);
+  });
+
+  it('has no PDF debris in entries', () => {
+    const errors: string[] = [];
+    for (const m of generated) {
+      for (const section of entrySections) {
+        for (const entry of (m[section] ?? []) as Monster[]) {
+          if (/^(At Will|\d+\/Day( Each)?)$/.test(entry.name)) errors.push(`${m.index} ${entry.name}: spell list entry`);
+          if (!/[.):]$/.test(entry.desc.trim()) && !sourceTruncated.has(m.index)) {
+            errors.push(`${m.index} ${entry.name}: ...${entry.desc.slice(-40)}`);
           }
         }
       }
