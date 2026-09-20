@@ -239,7 +239,7 @@ const blockTitles = normalizedLines
 	.map((line)=>line.trim())
 	.sort((a, b)=>b.length - a.length);
 
-const flatten = (text)=>text.replace(/’/g, "'").replace(/–/g, '-').replace(/\s+/g, ' ').replace(/([a-z])- ([a-z])/g, '$1$2').trim();
+const flatten = (text)=>text.replace(/’/g, "'").replace(/[–—]/g, '-').replace(/\s+/g, ' ').replace(/([a-z])- ([a-z])/g, '$1$2').trim();
 
 /**
  * The gist runs the next stat block's title onto the last entry of a block.

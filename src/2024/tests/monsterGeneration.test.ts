@@ -35,9 +35,6 @@ const skillQuirks = new Set(['shambling-mound', 'giant-frog']);
 
 const entrySections = ['special_abilities', 'actions', 'bonus_actions', 'reactions', 'legendary_actions'];
 
-/** Descriptions the source text itself cuts off mid-sentence. */
-const sourceTruncated = new Set(['chain-devil']);
-
 const crToNumber = (cr: string) => (cr.includes('/') ? 1 / Number(cr.split('/')[1]) : Number(cr));
 const abilityMod = (score: number) => Math.floor((score - 10) / 2);
 
@@ -130,7 +127,7 @@ describe('generated 2024 monsters', () => {
       for (const section of entrySections) {
         for (const entry of (m[section] ?? []) as Monster[]) {
           if (/^(At Will|\d+\/Day( Each)?)$/.test(entry.name)) errors.push(`${m.index} ${entry.name}: spell list entry`);
-          if (!/[.):]$/.test(entry.desc.trim()) && !sourceTruncated.has(m.index)) {
+          if (!/[.):]$/.test(entry.desc.trim())) {
             errors.push(`${m.index} ${entry.name}: ...${entry.desc.slice(-40)}`);
           }
         }
