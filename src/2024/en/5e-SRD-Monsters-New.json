@@ -6426,7 +6426,23 @@
       },
       {
         "name": "Phantasms (Recharge after a Short or Long Rest)",
-        "desc": "The cloaker casts the Mirror Image spell, requiring no spell components and using Wisdom as the spellcasting ability. The spell ends early if the cloaker starts or ends its turn in Bright Light."
+        "desc": "The cloaker casts the Mirror Image spell, requiring no spell components and using Wisdom as the spellcasting ability. The spell ends early if the cloaker starts or ends its turn in Bright Light.",
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "components_required": [],
+          "spells": [
+            {
+              "index": "mirror-image",
+              "name": "Mirror Image",
+              "level": 2,
+              "url": "/api/2024/spells/mirror-image"
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -6601,7 +6617,28 @@
     "bonus_actions": [
       {
         "name": "Misty Step",
-        "desc": "The giant casts the Misty Step spell, using the same spellcasting ability as Spellcasting."
+        "desc": "The giant casts the Misty Step spell, using the same spellcasting ability as Spellcasting.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 15,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "misty-step",
+              "name": "Misty Step",
+              "level": 2,
+              "url": "/api/2024/spells/misty-step"
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -7718,7 +7755,48 @@
     "bonus_actions": [
       {
         "name": "Divine Aid (2/Day)",
-        "desc": "The couatl casts Bless, Lesser Restoration, or Sanctuary, requiring no spell components and using the same spellcasting ability as Spellcasting. Crawling Claw"
+        "desc": "The couatl casts Bless, Lesser Restoration, or Sanctuary, requiring no spell components and using the same spellcasting ability as Spellcasting. Crawling Claw",
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc": 15,
+          "components_required": [],
+          "spells": [
+            {
+              "index": "bless",
+              "name": "Bless",
+              "level": 1,
+              "url": "/api/2024/spells/bless",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "lesser-restoration",
+              "name": "Lesser Restoration",
+              "level": 2,
+              "url": "/api/2024/spells/lesser-restoration",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "sanctuary",
+              "name": "Sanctuary",
+              "level": 1,
+              "url": "/api/2024/spells/sanctuary",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -8080,7 +8158,33 @@
     "bonus_actions": [
       {
         "name": "Spiritual Weapon (2/Day)",
-        "desc": "The cultist casts the Spiritual Weapon spell, using the same spellcasting ability as Spellcasting."
+        "desc": "The cultist casts the Spiritual Weapon spell, using the same spellcasting ability as Spellcasting.",
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc": 12,
+          "modifier": 4,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "spiritual-weapon",
+              "name": "Spiritual Weapon",
+              "level": 2,
+              "url": "/api/2024/spells/spiritual-weapon",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -8405,7 +8509,52 @@
     "bonus_actions": [
       {
         "name": "Divine Aid (2/Day)",
-        "desc": "The deva casts Cure Wounds, Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting."
+        "desc": "The deva casts Cure Wounds, Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 17,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "cure-wounds",
+              "name": "Cure Wounds",
+              "level": 1,
+              "url": "/api/2024/spells/cure-wounds",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "lesser-restoration",
+              "name": "Lesser Restoration",
+              "level": 2,
+              "url": "/api/2024/spells/lesser-restoration",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "remove-curse",
+              "name": "Remove Curse",
+              "level": 3,
+              "url": "/api/2024/spells/remove-curse",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -8762,7 +8911,24 @@
       },
       {
         "name": "Read Thoughts",
-        "desc": "The doppelganger casts Detect Thoughts, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 12)."
+        "desc": "The doppelganger casts Detect Thoughts, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 12).",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 12,
+          "components_required": [],
+          "spells": [
+            {
+              "index": "detect-thoughts",
+              "name": "Detect Thoughts",
+              "level": 2,
+              "url": "/api/2024/spells/detect-thoughts"
+            }
+          ]
+        }
       },
       {
         "name": "Unsettling Visage (Recharge 6)",
@@ -9093,7 +9259,39 @@
     "bonus_actions": [
       {
         "name": "Magic of the Spider Queen (Recharge 5–6)",
-        "desc": "The drider casts Darkness, Faerie Fire, or Web, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 14)."
+        "desc": "The drider casts Darkness, Faerie Fire, or Web, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 14).",
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc": 14,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "darkness",
+              "name": "Darkness",
+              "level": 2,
+              "url": "/api/2024/spells/darkness"
+            },
+            {
+              "index": "faerie-fire",
+              "name": "Faerie Fire",
+              "level": 1,
+              "url": "/api/2024/spells/faerie-fire"
+            },
+            {
+              "index": "web",
+              "name": "Web",
+              "level": 2,
+              "url": "/api/2024/spells/web"
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -11313,7 +11511,23 @@
       },
       {
         "name": "Etherealness",
-        "desc": "The ghost casts the Etherealness spell, requiring no spell components and using Charisma as the spellcasting ability. The ghost is visible on the Material Plane while on the Border Ethereal and vice versa, but it can’t affect or be affected by anything on the other plane."
+        "desc": "The ghost casts the Etherealness spell, requiring no spell components and using Charisma as the spellcasting ability. The ghost is visible on the Material Plane while on the Border Ethereal and vice versa, but it can’t affect or be affected by anything on the other plane.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "components_required": [],
+          "spells": [
+            {
+              "index": "etherealness",
+              "name": "Etherealness",
+              "level": 7,
+              "url": "/api/2024/spells/etherealness"
+            }
+          ]
+        }
       },
       {
         "name": "Horrific Visage",
@@ -13964,7 +14178,57 @@
       },
       {
         "name": "Coven Magic",
-        "desc": "While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell’s normal casting time, and using Intelligence as the spellcasting ability (spell save DC 11): Augury, Find Familiar, Identify, Locate Object, Scrying, or Unseen Servant. The hag must finish a Long Rest before using this trait to cast that spell again."
+        "desc": "While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell’s normal casting time, and using Intelligence as the spellcasting ability (spell save DC 11): Augury, Find Familiar, Identify, Locate Object, Scrying, or Unseen Servant. The hag must finish a Long Rest before using this trait to cast that spell again.",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 11,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "augury",
+              "name": "Augury",
+              "level": 2,
+              "url": "/api/2024/spells/augury"
+            },
+            {
+              "index": "find-familiar",
+              "name": "Find Familiar",
+              "level": 1,
+              "url": "/api/2024/spells/find-familiar"
+            },
+            {
+              "index": "identify",
+              "name": "Identify",
+              "level": 1,
+              "url": "/api/2024/spells/identify"
+            },
+            {
+              "index": "locate-object",
+              "name": "Locate Object",
+              "level": 2,
+              "url": "/api/2024/spells/locate-object"
+            },
+            {
+              "index": "scrying",
+              "name": "Scrying",
+              "level": 5,
+              "url": "/api/2024/spells/scrying"
+            },
+            {
+              "index": "unseen-servant",
+              "name": "Unseen Servant",
+              "level": 1,
+              "url": "/api/2024/spells/unseen-servant"
+            }
+          ]
+        }
       },
       {
         "name": "Mimicry",
@@ -15893,7 +16157,24 @@
       },
       {
         "name": "Ice Wall (Recharge 6)",
-        "desc": "The devil casts Wall of Ice (level 8 version), requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 17)."
+        "desc": "The devil casts Wall of Ice (level 8 version), requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 17).",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 17,
+          "components_required": [],
+          "spells": [
+            {
+              "index": "wall-of-ice",
+              "name": "Wall of Ice",
+              "level": 8,
+              "url": "/api/2024/spells/wall-of-ice"
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -16014,7 +16295,24 @@
       },
       {
         "name": "Invisibility",
-        "desc": "The imp casts Invisibility on itself, requiring no spell components and using Charisma as the spellcasting ability."
+        "desc": "The imp casts Invisibility on itself, requiring no spell components and using Charisma as the spellcasting ability.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "components_required": [],
+          "spells": [
+            {
+              "index": "invisibility",
+              "name": "Invisibility",
+              "level": 2,
+              "url": "/api/2024/spells/invisibility",
+              "notes": "Self only"
+            }
+          ]
+        }
       },
       {
         "name": "Shape-Shift",
@@ -17468,7 +17766,34 @@
     "reactions": [
       {
         "name": "Protective Magic",
-        "desc": "The lich casts Counterspell or Shield in response to the spell’s trigger, using the same spellcasting ability as Spellcasting."
+        "desc": "The lich casts Counterspell or Shield in response to the spell’s trigger, using the same spellcasting ability as Spellcasting.",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 20,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "counterspell",
+              "name": "Counterspell",
+              "level": 3,
+              "url": "/api/2024/spells/counterspell"
+            },
+            {
+              "index": "shield",
+              "name": "Shield",
+              "level": 1,
+              "url": "/api/2024/spells/shield"
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [
@@ -17511,7 +17836,28 @@
       },
       {
         "name": "Frightening Gaze",
-        "desc": "The lich casts Fear, using the same spellcasting ability as Spellcasting. The lich can’t take this action again until the start of its next turn. Mages"
+        "desc": "The lich casts Fear, using the same spellcasting ability as Spellcasting. The lich can’t take this action again until the start of its next turn. Mages",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 20,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "fear",
+              "name": "Fear",
+              "level": 3,
+              "url": "/api/2024/spells/fear"
+            }
+          ]
+        }
       }
     ],
     "index": "lich",
@@ -17730,13 +18076,73 @@
     "bonus_actions": [
       {
         "name": "Misty Step (3/Day)",
-        "desc": "The mage casts Misty Step, using the same spellcasting ability as Spellcasting."
+        "desc": "The mage casts Misty Step, using the same spellcasting ability as Spellcasting.",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 14,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "misty-step",
+              "name": "Misty Step",
+              "level": 2,
+              "url": "/api/2024/spells/misty-step",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            }
+          ]
+        }
       }
     ],
     "reactions": [
       {
         "name": "Protective Magic (3/Day)",
-        "desc": "The mage casts Counterspell or Shield in response to the spell’s trigger, using the same spellcasting ability as Spellcasting."
+        "desc": "The mage casts Counterspell or Shield in response to the spell’s trigger, using the same spellcasting ability as Spellcasting.",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 14,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "counterspell",
+              "name": "Counterspell",
+              "level": 3,
+              "url": "/api/2024/spells/counterspell",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "index": "shield",
+              "name": "Shield",
+              "level": 1,
+              "url": "/api/2024/spells/shield",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -18000,13 +18406,73 @@
     "bonus_actions": [
       {
         "name": "Misty Step (3/Day)",
-        "desc": "The mage casts Misty Step, using the same spellcasting ability as Spellcasting."
+        "desc": "The mage casts Misty Step, using the same spellcasting ability as Spellcasting.",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 17,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "misty-step",
+              "name": "Misty Step",
+              "level": 2,
+              "url": "/api/2024/spells/misty-step",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            }
+          ]
+        }
       }
     ],
     "reactions": [
       {
         "name": "Protective Magic (3/Day)",
-        "desc": "The archmage casts Counterspell or Shield in response to the spell’s trigger, using the same spellcasting ability as Spellcasting."
+        "desc": "The archmage casts Counterspell or Shield in response to the spell’s trigger, using the same spellcasting ability as Spellcasting.",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 17,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "counterspell",
+              "name": "Counterspell",
+              "level": 3,
+              "url": "/api/2024/spells/counterspell",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "index": "shield",
+              "name": "Shield",
+              "level": 1,
+              "url": "/api/2024/spells/shield",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -18603,7 +19069,28 @@
       },
       {
         "name": "Sleep (1/Day)",
-        "desc": "The mephit casts the Sleep spell, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 10)."
+        "desc": "The mephit casts the Sleep spell, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 10).",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 10,
+          "components_required": [],
+          "spells": [
+            {
+              "index": "sleep",
+              "name": "Sleep",
+              "level": 1,
+              "url": "/api/2024/spells/sleep",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -18719,7 +19206,27 @@
       },
       {
         "name": "Fog Cloud (1/Day)",
-        "desc": "The mephit casts Fog Cloud, requiring no spell components and using Charisma as the spellcasting ability."
+        "desc": "The mephit casts Fog Cloud, requiring no spell components and using Charisma as the spellcasting ability.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "components_required": [],
+          "spells": [
+            {
+              "index": "fog-cloud",
+              "name": "Fog Cloud",
+              "level": 1,
+              "url": "/api/2024/spells/fog-cloud",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       },
       {
         "name": "Frost Breath (Recharge 6)",
@@ -19771,7 +20278,29 @@
     "legendary_actions": [
       {
         "name": "Dread Command",
-        "desc": "The mummy casts Command (level 2 version), using the same spellcasting ability as Spellcasting. The mummy can’t take this action again until the start of its next turn."
+        "desc": "The mummy casts Command (level 2 version), using the same spellcasting ability as Spellcasting. The mummy can’t take this action again until the start of its next turn.",
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc": 17,
+          "modifier": 9,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "command",
+              "name": "Command",
+              "level": 2,
+              "url": "/api/2024/spells/command"
+            }
+          ]
+        }
       },
       {
         "name": "Glare",
@@ -20014,7 +20543,57 @@
     "special_abilities": [
       {
         "name": "Coven Magic",
-        "desc": "While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell’s normal casting time, and using Intelligence as the spellcasting ability (spell save DC 14): Augury, Find Familiar, Identify, Locate Object, Scrying, or Unseen Servant. The hag must finish a Long Rest before using this trait to cast that spell again."
+        "desc": "While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell’s normal casting time, and using Intelligence as the spellcasting ability (spell save DC 14): Augury, Find Familiar, Identify, Locate Object, Scrying, or Unseen Servant. The hag must finish a Long Rest before using this trait to cast that spell again.",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 14,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "augury",
+              "name": "Augury",
+              "level": 2,
+              "url": "/api/2024/spells/augury"
+            },
+            {
+              "index": "find-familiar",
+              "name": "Find Familiar",
+              "level": 1,
+              "url": "/api/2024/spells/find-familiar"
+            },
+            {
+              "index": "identify",
+              "name": "Identify",
+              "level": 1,
+              "url": "/api/2024/spells/identify"
+            },
+            {
+              "index": "locate-object",
+              "name": "Locate Object",
+              "level": 2,
+              "url": "/api/2024/spells/locate-object"
+            },
+            {
+              "index": "scrying",
+              "name": "Scrying",
+              "level": 5,
+              "url": "/api/2024/spells/scrying"
+            },
+            {
+              "index": "unseen-servant",
+              "name": "Unseen Servant",
+              "level": 1,
+              "url": "/api/2024/spells/unseen-servant"
+            }
+          ]
+        }
       },
       {
         "name": "Magic Resistance",
@@ -20631,7 +21210,25 @@
     "bonus_actions": [
       {
         "name": "Invisibility",
-        "desc": "The oni casts Invisibility on itself, requiring no spell components and using the same spellcasting ability as Spellcasting."
+        "desc": "The oni casts Invisibility on itself, requiring no spell components and using the same spellcasting ability as Spellcasting.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 13,
+          "components_required": [],
+          "spells": [
+            {
+              "index": "invisibility",
+              "name": "Invisibility",
+              "level": 2,
+              "url": "/api/2024/spells/invisibility",
+              "notes": "Self only"
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -21411,7 +22008,42 @@
       },
       {
         "name": "Hellfire Spellcasting (Recharge 4–6)",
-        "desc": "The pit fiend casts Fireball (level 5 version) twice, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 21). It can replace one Fireball with Hold Monster (level 7 version) or Wall of Fire."
+        "desc": "The pit fiend casts Fireball (level 5 version) twice, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 21). It can replace one Fireball with Hold Monster (level 7 version) or Wall of Fire.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 21,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "fireball",
+              "name": "Fireball",
+              "level": 5,
+              "url": "/api/2024/spells/fireball",
+              "notes": "Cast twice"
+            },
+            {
+              "index": "hold-monster",
+              "name": "Hold Monster",
+              "level": 7,
+              "url": "/api/2024/spells/hold-monster",
+              "notes": "Can replace one Fireball"
+            },
+            {
+              "index": "wall-of-fire",
+              "name": "Wall of Fire",
+              "level": 4,
+              "url": "/api/2024/spells/wall-of-fire",
+              "notes": "Can replace one Fireball"
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -21624,7 +22256,62 @@
     "bonus_actions": [
       {
         "name": "Divine Aid (2/Day)",
-        "desc": "The planetar casts Cure Wounds, Invisibility, Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting. Priests"
+        "desc": "The planetar casts Cure Wounds, Invisibility, Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting. Priests",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 20,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "cure-wounds",
+              "name": "Cure Wounds",
+              "level": 1,
+              "url": "/api/2024/spells/cure-wounds",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "invisibility",
+              "name": "Invisibility",
+              "level": 2,
+              "url": "/api/2024/spells/invisibility",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "lesser-restoration",
+              "name": "Lesser Restoration",
+              "level": 2,
+              "url": "/api/2024/spells/lesser-restoration",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            },
+            {
+              "index": "remove-curse",
+              "name": "Remove Curse",
+              "level": 3,
+              "url": "/api/2024/spells/remove-curse",
+              "usage": {
+                "type": "per day",
+                "times": 2
+              }
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -21783,7 +22470,51 @@
     "bonus_actions": [
       {
         "name": "Divine Aid (1/Day)",
-        "desc": "The priest casts Bless, Healing Word, or Sanctuary, using the same spellcasting ability as Spellcasting."
+        "desc": "The priest casts Bless, Healing Word, or Sanctuary, using the same spellcasting ability as Spellcasting.",
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "bless",
+              "name": "Bless",
+              "level": 1,
+              "url": "/api/2024/spells/bless",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "healing-word",
+              "name": "Healing Word",
+              "level": 1,
+              "url": "/api/2024/spells/healing-word",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            },
+            {
+              "index": "sanctuary",
+              "name": "Sanctuary",
+              "level": 1,
+              "url": "/api/2024/spells/sanctuary",
+              "usage": {
+                "type": "per day",
+                "times": 1
+              }
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -21929,7 +22660,62 @@
     "bonus_actions": [
       {
         "name": "Divine Aid (3/Day)",
-        "desc": "The priest casts Bless, Dispel Magic, Healing Word, or Lesser Restoration, using the same spellcasting ability as Spellcasting."
+        "desc": "The priest casts Bless, Dispel Magic, Healing Word, or Lesser Restoration, using the same spellcasting ability as Spellcasting.",
+        "spellcasting": {
+          "ability": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/2024/ability-scores/wis"
+          },
+          "dc": 13,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "bless",
+              "name": "Bless",
+              "level": 1,
+              "url": "/api/2024/spells/bless",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "index": "dispel-magic",
+              "name": "Dispel Magic",
+              "level": 3,
+              "url": "/api/2024/spells/dispel-magic",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "index": "healing-word",
+              "name": "Healing Word",
+              "level": 1,
+              "url": "/api/2024/spells/healing-word",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "index": "lesser-restoration",
+              "name": "Lesser Restoration",
+              "level": 2,
+              "url": "/api/2024/spells/lesser-restoration",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -22245,7 +23031,24 @@
       },
       {
         "name": "Invisibility",
-        "desc": "The quasit casts Invisibility on itself, requiring no spell components and using Charisma as the spellcasting ability."
+        "desc": "The quasit casts Invisibility on itself, requiring no spell components and using Charisma as the spellcasting ability.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "components_required": [],
+          "spells": [
+            {
+              "index": "invisibility",
+              "name": "Invisibility",
+              "level": 2,
+              "url": "/api/2024/spells/invisibility",
+              "notes": "Self only"
+            }
+          ]
+        }
       },
       {
         "name": "Scare (1/Day)",
@@ -23963,7 +24766,57 @@
       },
       {
         "name": "Coven Magic",
-        "desc": "While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell’s normal casting time, and using Intelligence as the spellcasting ability (spell save DC 11): Augury, Find Familiar, Identify, Locate Object, Scrying, or Unseen Servant. The hag must finish a Long Rest before using this trait to cast that spell again."
+        "desc": "While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell’s normal casting time, and using Intelligence as the spellcasting ability (spell save DC 11): Augury, Find Familiar, Identify, Locate Object, Scrying, or Unseen Servant. The hag must finish a Long Rest before using this trait to cast that spell again.",
+        "spellcasting": {
+          "ability": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/2024/ability-scores/int"
+          },
+          "dc": 11,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "augury",
+              "name": "Augury",
+              "level": 2,
+              "url": "/api/2024/spells/augury"
+            },
+            {
+              "index": "find-familiar",
+              "name": "Find Familiar",
+              "level": 1,
+              "url": "/api/2024/spells/find-familiar"
+            },
+            {
+              "index": "identify",
+              "name": "Identify",
+              "level": 1,
+              "url": "/api/2024/spells/identify"
+            },
+            {
+              "index": "locate-object",
+              "name": "Locate Object",
+              "level": 2,
+              "url": "/api/2024/spells/locate-object"
+            },
+            {
+              "index": "scrying",
+              "name": "Scrying",
+              "level": 5,
+              "url": "/api/2024/spells/scrying"
+            },
+            {
+              "index": "unseen-servant",
+              "name": "Unseen Servant",
+              "level": 1,
+              "url": "/api/2024/spells/unseen-servant"
+            }
+          ]
+        }
       },
       {
         "name": "Vile Appearance",
@@ -24019,7 +24872,28 @@
       },
       {
         "name": "Illusory Appearance",
-        "desc": "The hag casts Disguise Self, using Constitution as the spellcasting ability (spell save DC 13). The spell’s duration is 24 hours."
+        "desc": "The hag casts Disguise Self, using Constitution as the spellcasting ability (spell save DC 13). The spell’s duration is 24 hours.",
+        "spellcasting": {
+          "ability": {
+            "index": "con",
+            "name": "CON",
+            "url": "/api/2024/ability-scores/con"
+          },
+          "dc": 13,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "disguise-self",
+              "name": "Disguise Self",
+              "level": 1,
+              "url": "/api/2024/spells/disguise-self"
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -25640,7 +26514,52 @@
     "bonus_actions": [
       {
         "name": "Divine Aid (3/Day)",
-        "desc": "The solar casts Cure Wounds (level 2 version), Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting."
+        "desc": "The solar casts Cure Wounds (level 2 version), Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 25,
+          "components_required": [
+            "V",
+            "S",
+            "M"
+          ],
+          "spells": [
+            {
+              "index": "cure-wounds",
+              "name": "Cure Wounds",
+              "level": 2,
+              "url": "/api/2024/spells/cure-wounds",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "index": "lesser-restoration",
+              "name": "Lesser Restoration",
+              "level": 2,
+              "url": "/api/2024/spells/lesser-restoration",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            },
+            {
+              "index": "remove-curse",
+              "name": "Remove Curse",
+              "level": 3,
+              "url": "/api/2024/spells/remove-curse",
+              "usage": {
+                "type": "per day",
+                "times": 3
+              }
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [
@@ -26765,7 +27684,24 @@
       },
       {
         "name": "Invisibility",
-        "desc": "The sprite casts Invisibility on itself, requiring no spell components and using Charisma as the spellcasting ability."
+        "desc": "The sprite casts Invisibility on itself, requiring no spell components and using Charisma as the spellcasting ability.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "components_required": [],
+          "spells": [
+            {
+              "index": "invisibility",
+              "name": "Invisibility",
+              "level": 2,
+              "url": "/api/2024/spells/invisibility",
+              "notes": "Self only"
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -27189,7 +28125,24 @@
     "bonus_actions": [
       {
         "name": "Slow (Recharge 5–6)",
-        "desc": "The golem casts the Slow spell, requiring no spell components and using Constitution as the spellcasting ability (spell save DC 17)."
+        "desc": "The golem casts the Slow spell, requiring no spell components and using Constitution as the spellcasting ability (spell save DC 17).",
+        "spellcasting": {
+          "ability": {
+            "index": "con",
+            "name": "CON",
+            "url": "/api/2024/ability-scores/con"
+          },
+          "dc": 17,
+          "components_required": [],
+          "spells": [
+            {
+              "index": "slow",
+              "name": "Slow",
+              "level": 3,
+              "url": "/api/2024/spells/slow"
+            }
+          ]
+        }
       }
     ],
     "legendary_actions": [],
@@ -27475,7 +28428,24 @@
       },
       {
         "name": "Charm",
-        "desc": "The succubus casts Dominate Person (level 8 version), requiring no spell components and using Charisma as the spellcasting ability (spell save DC 15)."
+        "desc": "The succubus casts Dominate Person (level 8 version), requiring no spell components and using Charisma as the spellcasting ability (spell save DC 15).",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 15,
+          "components_required": [],
+          "spells": [
+            {
+              "index": "dominate-person",
+              "name": "Dominate Person",
+              "level": 8,
+              "url": "/api/2024/spells/dominate-person"
+            }
+          ]
+        }
       },
       {
         "name": "Draining Kiss",
@@ -28781,7 +29751,24 @@
     "bonus_actions": [
       {
         "name": "Charm (Recharge 5–6)",
-        "desc": "The vampire casts Charm Person, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17), and the duration is 24 hours. The Charmed target is a willing recipient of the vampire’s Bite, the damage of which doesn’t end the spell. When the spell ends, the target is unaware it was Charmed by the vampire."
+        "desc": "The vampire casts Charm Person, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17), and the duration is 24 hours. The Charmed target is a willing recipient of the vampire’s Bite, the damage of which doesn’t end the spell. When the spell ends, the target is unaware it was Charmed by the vampire.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 17,
+          "components_required": [],
+          "spells": [
+            {
+              "index": "charm-person",
+              "name": "Charm Person",
+              "level": 1,
+              "url": "/api/2024/spells/charm-person"
+            }
+          ]
+        }
       },
       {
         "name": "Shape-Shift",
@@ -28791,7 +29778,24 @@
     "legendary_actions": [
       {
         "name": "Beguile",
-        "desc": "The vampire casts Command, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17). The vampire can’t take this action again until the start of its next turn."
+        "desc": "The vampire casts Command, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17). The vampire can’t take this action again until the start of its next turn.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 17,
+          "components_required": [],
+          "spells": [
+            {
+              "index": "command",
+              "name": "Command",
+              "level": 1,
+              "url": "/api/2024/spells/command"
+            }
+          ]
+        }
       },
       {
         "name": "Deathless Strike",
@@ -30263,7 +31267,27 @@
       },
       {
         "name": "Frightful Presence",
-        "desc": "The dragon casts Fear, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 14). The dragon can’t take this action again until the start of its next turn."
+        "desc": "The dragon casts Fear, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 14). The dragon can’t take this action again until the start of its next turn.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 14,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "fear",
+              "name": "Fear",
+              "level": 3,
+              "url": "/api/2024/spells/fear"
+            }
+          ]
+        }
       },
       {
         "name": "Pounce",
@@ -30422,7 +31446,27 @@
       },
       {
         "name": "Frightful Presence",
-        "desc": "The dragon casts Fear, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 18). The dragon can’t take this action again until the start of its next turn."
+        "desc": "The dragon casts Fear, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 18). The dragon can’t take this action again until the start of its next turn.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 18,
+          "components_required": [
+            "V",
+            "S"
+          ],
+          "spells": [
+            {
+              "index": "fear",
+              "name": "Fear",
+              "level": 3,
+              "url": "/api/2024/spells/fear"
+            }
+          ]
+        }
       },
       {
         "name": "Pounce",

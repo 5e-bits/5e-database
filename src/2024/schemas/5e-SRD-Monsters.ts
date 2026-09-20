@@ -109,6 +109,7 @@ const LegendaryActionSchema = z.strictObject({
   attack_bonus: z.number().optional(),
   damage: z.array(DamageSchema).optional(),
   dc: DifficultyClassSchema.optional(),
+  spellcasting: SpellcastingSchema.optional(),
 });
 
 const ReactionSchema = z.strictObject({
@@ -116,6 +117,7 @@ const ReactionSchema = z.strictObject({
   desc: z.string(),
   dc: DifficultyClassSchema.optional(),
   damage: z.array(DamageSchema).optional(),
+  spellcasting: SpellcastingSchema.optional(),
 });
 
 const SpecialAbilitySchema = z.strictObject({

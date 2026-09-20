@@ -103,13 +103,13 @@ describe('generated 2024 monsters', () => {
     expect(errors).toEqual([]);
   });
 
-  it('builds spellcasting from every spell list entry', () => {
+  it('builds spellcasting for every entry that casts spells', () => {
     const spellUrls = new Set((Spells as { url: string }[]).map((spell) => spell.url));
     const errors: string[] = [];
     for (const m of generated) {
       for (const section of entrySections) {
         for (const entry of (m[section] ?? []) as Monster[]) {
-          if (!/casts one of the following spells.*as (the )?spellcasting ability/.test(entry.desc)) continue;
+          if (!/spellcasting ability/.test(entry.desc) || !/^(The [\w ]+ casts? |While within 30 feet)/.test(entry.desc)) continue;
           const spells = (entry.spellcasting?.spells ?? []) as { url: string }[];
           if (spells.length === 0) errors.push(`${m.index} ${entry.name}: no spells`);
           for (const spell of spells) {

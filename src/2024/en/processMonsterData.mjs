@@ -144,7 +144,7 @@ const parseSpellLists = (data)=>{
 	return lists;
 };
 
-const buildSpellcasting = (desc, spellList)=>{
+const buildSpellcasting = (desc, spellList, main)=>{
 	const components = new Set(['V', 'S', 'M']);
 	const missing = desc.match(/requiring no (.+?) components/)?.[1];
 	if(missing && /spell/.test(missing)){ components.clear(); }
@@ -154,12 +154,49 @@ const buildSpellcasting = (desc, spellList)=>{
 		});
 	}
 
-	const spellcasting = { ability: abilityRef(desc.match(/using (\w+) as (?:the )?spellcasting ability/)[1]) };
-	const dc = desc.match(/spell save DC (\d+)/);
-	const modifier = desc.match(/\+(\d+) to hit with spell attacks/);
-	if(dc){ spellcasting.dc = Number(dc[1]); }
-	if(modifier){ spellcasting.modifier = Number(modifier[1]); }
+	const abilityName = desc.match(/using (\w+) as (?:the )?spellcasting ability/)?.[1];
+	const inherits = !abilityName && /the same spellcasting ability as Spellcasting/.test(desc);
+	if(inherits && !main){ throw new Error(`No main Spellcasting to inherit from: ${desc}`); }
+
+	const spellcasting = { ability: inherits ? main.ability : abilityRef(abilityName) };
+	const dc = desc.match(/spell save DC (\d+)/)?.[1] ?? (inherits ? main.dc : undefined);
+	const modifier = desc.match(/\+(\d+) to hit with spell attacks/)?.[1] ?? (inherits ? main.modifier : undefined);
+	if(dc !== undefined){ spellcasting.dc = Number(dc); }
+	if(modifier !== undefined){ spellcasting.modifier = Number(modifier); }
 	return { ...spellcasting, components_required: [...components], spells: spellList };
+};
+
+const SINGLE_CAST_INTRO = /^(?:The [\w ]+ casts? |While within 30 feet of at least two hag allies, the hag can cast )/;
+const CAST_NAMES = /casts (?:the )?(.+?)(?: spell)?( on itself| twice)?,? (?:requiring|using|in response)/;
+const COVEN_NAMES = /following spells,.*?: (.+?)\. /;
+const REPLACEMENT_NAMES = /replace one (\w+) with (.+?)\./;
+const NAME_SEPARATOR = /,\s*(?:or |and )?|\s+or\s+/;
+
+/**
+ * Entries that cast named spells inline, e.g. "casts Fear, using ...".
+ */
+const parseSingleCast = (entry)=>{
+	const coven = entry.desc.match(COVEN_NAMES);
+	const cast = coven ? null : entry.desc.match(CAST_NAMES);
+	if(!coven && !cast){ throw new Error(`Cannot read cast spells: ${entry.desc}`); }
+
+	const usage = entry.name.match(/\((\d+)\/Day\)/);
+	const spellsCast = (coven ? coven[1] : cast[1]).split(NAME_SEPARATOR).map((name)=>({
+		...parseSpellEntry(name),
+		...(usage && { usage: { type: 'per day', times: Number(usage[1]) } })
+	}));
+
+	if(cast?.[2]?.trim() === 'on itself'){ spellsCast.forEach((spell)=>{ spell.notes = 'Self only'; }); }
+	if(cast?.[2]?.trim() === 'twice'){ spellsCast[0].notes = 'Cast twice'; }
+
+	const replacement = entry.desc.match(REPLACEMENT_NAMES);
+	if(replacement){
+		replacement[2].split(NAME_SEPARATOR).forEach((name)=>{
+			spellsCast.push({ ...parseSpellEntry(name), notes: `Can replace one ${replacement[1]}` });
+		});
+	}
+
+	return spellsCast;
 };
 
 const normalizedText = normalizeText(fs.readFileSync('./monster-text-data.txt', 'utf-8'));
@@ -307,6 +344,15 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 				spellList.used = true;
 				entry.spellcasting = buildSpellcasting(entry.desc, spellList.spells);
 			}
+		});
+	});
+
+	const main = ['special_abilities', 'actions'].flatMap((key)=>result[key] || []).find((entry)=>entry.spellcasting)?.spellcasting;
+
+	['special_abilities', 'actions', 'bonus_actions', 'reactions', 'legendary_actions'].forEach((key)=>{
+		(result[key] || []).forEach((entry)=>{
+			if(entry.spellcasting || !/spellcasting ability/.test(entry.desc) || !SINGLE_CAST_INTRO.test(entry.desc)){ return; }
+			entry.spellcasting = buildSpellcasting(entry.desc, parseSingleCast(entry), main);
 		});
 	});
 
