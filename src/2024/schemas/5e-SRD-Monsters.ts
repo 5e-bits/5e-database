@@ -115,6 +115,7 @@ const ReactionSchema = z.strictObject({
   name: z.string(),
   desc: z.string(),
   dc: DifficultyClassSchema.optional(),
+  damage: z.array(DamageSchema).optional(),
 });
 
 const SpecialAbilitySchema = z.strictObject({
