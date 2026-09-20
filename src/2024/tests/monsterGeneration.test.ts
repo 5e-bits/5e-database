@@ -3,16 +3,8 @@ import { execFileSync } from 'child_process';
 import fs from 'fs';
 import os from 'os';
 import path from 'path';
-import { z } from 'zod';
 import Spells from '../en/5e-SRD-Spells.json' with { type: 'json' };
 import { MonsterSchema } from '../schemas/5e-SRD-Monsters';
-
-/** Fields the generator emits that the schema does not define yet. */
-const GeneratedMonsterSchema = MonsterSchema.extend({
-  skills: z.string(),
-  gear: z.string(),
-  bonus_actions: z.array(z.unknown()).optional(),
-});
 
 type Monster = Record<string, any>;
 
@@ -69,7 +61,7 @@ describe('generated 2024 monsters', () => {
   it('matches the monster schema', () => {
     const errors = new Map<string, string[]>();
     for (const m of generated) {
-      const r = GeneratedMonsterSchema.safeParse(m);
+      const r = MonsterSchema.safeParse(m);
       if (r.success) continue;
       for (const issue of r.error.issues) {
         const key = `${issue.code} ${issue.path.filter((p) => typeof p !== 'number').join('.')} ${'keys' in issue ? JSON.stringify(issue.keys) : ''}`;
@@ -144,7 +136,7 @@ describe('generated 2024 monsters', () => {
   it('has skill bonuses of ability mod + PB, or + 2 x PB with expertise', () => {
     const errors: string[] = [];
     for (const m of generated) {
-      if (m.skills === 'None' || skillQuirks.has(m.index)) continue;
+      if (!m.skills || skillQuirks.has(m.index)) continue;
       for (const entry of String(m.skills).split(/,\s*/)) {
         const match = /^(.+) \+(\d+)$/.exec(entry.trim());
         const ability = match && skillAbility[match[1]];

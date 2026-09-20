@@ -264,8 +264,9 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 	});
 
 	const monsterText = findTextData(monsters[monster]);
-	result.skills = monsterText.skills;
-	result.gear = monsterText.gear;
+	['skills', 'gear'].forEach((key)=>{
+		if(monsterText[key] !== 'None'){ result[key] = monsterText[key]; }
+	});
 	result.proficiency_bonus = monsterText.proficiency_bonus;
 	result.senses.passive_perception = monsterText.passive_perception;
 	result.xp = monsterText.xp;
