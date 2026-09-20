@@ -76,7 +76,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The aboleth makes two Tentacle attacks and uses either Consume Memories or Dominate Mind if available."
+        "desc": "The aboleth makes two Tentacle attacks and uses either Consume Memories or Dominate Mind if available.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Tentacle",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Consume Memories",
+                "count": 1,
+                "type": "special"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Dominate Mind",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Tentacle",
@@ -283,7 +312,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The elemental makes two Thunderous Slam attacks."
+        "desc": "The elemental makes two Thunderous Slam attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Thunderous Slam",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Thunderous Slam",
@@ -407,7 +444,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The armor makes two Slam attacks."
+        "desc": "The armor makes two Slam attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Slam",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Slam",
@@ -802,7 +847,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The assassin makes three attacks, using Shortsword or Light Crossbow in any combination."
+        "desc": "The assassin makes three attacks, using Shortsword or Light Crossbow in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 3,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Shortsword",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Light Crossbow",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Shortsword",
@@ -1268,7 +1336,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The balor makes one Flame Whip attack and one Lightning Blade attack."
+        "desc": "The balor makes one Flame Whip attack and one Lightning Blade attack.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Flame Whip",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Lightning Blade",
+            "count": 1,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Flame Whip",
@@ -1455,7 +1536,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The bandit makes two attacks, using Scimitar and Pistol in any combination."
+        "desc": "The bandit makes two attacks, using Scimitar and Pistol in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Scimitar",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Pistol",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Scimitar",
@@ -1599,7 +1703,40 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The devil makes one Claws attack and one Tail attack, or it makes two Hurl Flame attacks."
+        "desc": "The devil makes one Claws attack and one Tail attack, or it makes two Hurl Flame attacks.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "multiple",
+                "items": [
+                  {
+                    "option_type": "action",
+                    "action_name": "Claws",
+                    "count": 1,
+                    "type": "melee"
+                  },
+                  {
+                    "option_type": "action",
+                    "action_name": "Tail",
+                    "count": 1,
+                    "type": "melee"
+                  }
+                ]
+              },
+              {
+                "option_type": "action",
+                "action_name": "Hurl Flame",
+                "count": 2,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Claws",
@@ -1834,7 +1971,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The devil makes one Beard attack and one Infernal Glaive attack."
+        "desc": "The devil makes one Beard attack and one Infernal Glaive attack.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Beard",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Infernal Glaive",
+            "count": 1,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Beard",
@@ -1947,7 +2097,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The behir makes one Bite attack and uses Constrict."
+        "desc": "The behir makes one Bite attack and uses Constrict.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Constrict",
+            "count": 1,
+            "type": "special"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -2162,7 +2325,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes two Rend attacks."
+        "desc": "The dragon makes two Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -2283,7 +2454,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks."
+        "desc": "The dragon makes three Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 3,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -2408,7 +2587,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Acid Arrow (level 3 version)."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Acid Arrow (level 3 version).",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Acid Arrow",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -2633,7 +2841,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Acid Arrow (level 4 version)."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Acid Arrow (level 4 version).",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Acid Arrow",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -3053,7 +3290,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes two Rend attacks."
+        "desc": "The dragon makes two Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -3169,7 +3414,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks."
+        "desc": "The dragon makes three Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 3,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -3290,7 +3543,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Shatter."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Shatter.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Shatter",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -3499,7 +3781,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Shatter (level 3 version)."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Shatter (level 3 version).",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Shatter",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -3719,7 +4030,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The devil makes two Claw attacks and one Infernal Sting attack."
+        "desc": "The devil makes two Claw attacks and one Infernal Sting attack.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
+          },
+          {
+            "action_name": "Infernal Sting",
+            "count": 1,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Claw",
@@ -3959,7 +4283,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace two attacks with a use of Sleep Breath."
+        "desc": "The dragon makes three Rend attacks. It can replace two attacks with a use of Sleep Breath.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 1,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Sleep Breath",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -4085,7 +4438,42 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Sleep Breath or (B) Spellcasting to cast Scorching Ray."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Sleep Breath or (B) Spellcasting to cast Scorching Ray.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Sleep Breath",
+                "count": 1,
+                "type": "special"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Scorching Ray",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -4336,7 +4724,42 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Sleep Breath or (B) Spellcasting to cast Scorching Ray (level 3 version)."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Sleep Breath or (B) Spellcasting to cast Scorching Ray (level 3 version).",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Sleep Breath",
+                "count": 1,
+                "type": "special"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Scorching Ray",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -4587,7 +5010,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes two Rend attacks."
+        "desc": "The dragon makes two Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -4713,7 +5144,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Repulsion Breath."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Repulsion Breath.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Repulsion Breath",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -4843,7 +5303,42 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Repulsion Breath or (B) Spellcasting to cast Guiding Bolt (level 2 version)."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Repulsion Breath or (B) Spellcasting to cast Guiding Bolt (level 2 version).",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Repulsion Breath",
+                "count": 1,
+                "type": "special"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Guiding Bolt",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -5100,7 +5595,42 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Repulsion Breath or (B) Spellcasting to cast Guiding Bolt (level 2 version)."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Repulsion Breath or (B) Spellcasting to cast Guiding Bolt (level 2 version).",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Repulsion Breath",
+                "count": 1,
+                "type": "special"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Guiding Bolt",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -5368,7 +5898,29 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The bugbear makes two Javelin or Morningstar attacks."
+        "desc": "The bugbear makes two Javelin or Morningstar attacks.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Javelin",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Morningstar",
+                "count": 2,
+                "type": "melee"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Javelin",
@@ -5568,7 +6120,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The bulette makes two Bite attacks."
+        "desc": "The bulette makes two Bite attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -5659,7 +6219,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The centaur makes two attacks, using Pike or Longbow in any combination."
+        "desc": "The centaur makes two attacks, using Pike or Longbow in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Pike",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Longbow",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Pike",
@@ -5785,7 +6368,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The devil makes two Chain attacks and uses Conjure Infernal Chain."
+        "desc": "The devil makes two Chain attacks and uses Conjure Infernal Chain.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Chain",
+            "count": 2,
+            "type": "melee"
+          },
+          {
+            "action_name": "Conjure Infernal Chain",
+            "count": 1,
+            "type": "special"
+          }
+        ]
       },
       {
         "name": "Chain",
@@ -5912,7 +6508,41 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The chimera makes one Ram attack, one Bite attack, and one Claw attack. It can replace the Claw attack with a use of Fire Breath if available."
+        "desc": "The chimera makes one Ram attack, one Bite attack, and one Claw attack. It can replace the Claw attack with a use of Fire Breath if available.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Ram",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Claw",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Fire Breath",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Bite",
@@ -6052,7 +6682,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The chuul makes two Pincer attacks and uses Paralyzing Tentacles."
+        "desc": "The chuul makes two Pincer attacks and uses Paralyzing Tentacles.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Pincer",
+            "count": 2,
+            "type": "melee"
+          },
+          {
+            "action_name": "Paralyzing Tentacles",
+            "count": 1,
+            "type": "special"
+          }
+        ]
       },
       {
         "name": "Pincer",
@@ -6193,7 +6836,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The golem makes two Slam attacks, or it makes three Slam attacks if it used Hasten this turn."
+        "desc": "The golem makes two Slam attacks, or it makes three Slam attacks if it used Hasten this turn.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "two Slam attacks, or it makes three Slam attacks if it used Hasten this turn",
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Slam",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Slam",
+                "count": 3,
+                "type": "melee"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Slam",
@@ -6277,7 +6943,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The cloaker makes one Attach attack and two Tail attacks."
+        "desc": "The cloaker makes one Attach attack and two Tail attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Attach",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Tail",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Attach",
@@ -6858,7 +7537,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Slowing Breath."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Slowing Breath.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Slowing Breath",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -6984,7 +7692,42 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Slowing Breath or (B) Spellcasting to cast Mind Spike (level 4 version)."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Slowing Breath or (B) Spellcasting to cast Mind Spike (level 4 version).",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Slowing Breath",
+                "count": 1,
+                "type": "special"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Mind Spike",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -7226,7 +7969,42 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Slowing Breath or (B) Spellcasting to cast Mind Spike (level 5 version)."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Slowing Breath or (B) Spellcasting to cast Mind Spike (level 5 version).",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Slowing Breath",
+                "count": 1,
+                "type": "special"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Mind Spike",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -8182,7 +8960,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The death dog makes two Bite attacks."
+        "desc": "The death dog makes two Bite attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -8271,7 +9057,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The deva makes two Holy Mace attacks."
+        "desc": "The deva makes two Holy Mace attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Holy Mace",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Holy Mace",
@@ -8485,7 +9279,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The djinni makes three attacks, using Storm Blade or Storm Bolt in any combination."
+        "desc": "The djinni makes three attacks, using Storm Blade or Storm Bolt in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 3,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Storm Blade",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Storm Bolt",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Storm Blade",
@@ -8728,7 +9545,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The doppelganger makes two Slam attacks and uses Unsettling Visage if available."
+        "desc": "The doppelganger makes two Slam attacks and uses Unsettling Visage if available.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Slam",
+            "count": 2,
+            "type": "melee"
+          },
+          {
+            "action_name": "Unsettling Visage",
+            "count": 1,
+            "type": "special"
+          }
+        ]
       },
       {
         "name": "Slam",
@@ -8839,7 +9669,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Bite attacks. It can replace one attack with a Tail attack."
+        "desc": "The dragon makes three Bite attacks. It can replace one attack with a Tail attack.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Bite",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Tail",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Bite",
@@ -9060,7 +9919,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The drider makes three attacks, using Foreleg or Poison Burst in any combination."
+        "desc": "The drider makes three attacks, using Foreleg or Poison Burst in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 3,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Foreleg",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Poison Burst",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Foreleg",
@@ -9174,7 +10056,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The druid makes two attacks, using Vine Staff or Verdant Wisp in any combination."
+        "desc": "The druid makes two attacks, using Vine Staff or Verdant Wisp in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Vine Staff",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Verdant Wisp",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Vine Staff",
@@ -9546,7 +10451,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The elemental makes two attacks, using Slam or Rock Launch in any combination."
+        "desc": "The elemental makes two attacks, using Slam or Rock Launch in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Slam",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Rock Launch",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Slam",
@@ -9639,7 +10567,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The efreeti makes three attacks, using Heated Blade or Hurl Flame in any combination."
+        "desc": "The efreeti makes three attacks, using Heated Blade or Hurl Flame in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 3,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Heated Blade",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Hurl Flame",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Heated Blade",
@@ -9861,7 +10812,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The erinyes makes three Withering Sword attacks and can use Entangling Rope."
+        "desc": "The erinyes makes three Withering Sword attacks and can use Entangling Rope.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Withering Sword",
+            "count": 3,
+            "type": "melee"
+          },
+          {
+            "action_name": "Entangling Rope",
+            "count": 1,
+            "type": "special"
+          }
+        ]
       },
       {
         "name": "Withering Sword",
@@ -9996,7 +10960,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The ettercap makes one Bite attack and one Claw attack."
+        "desc": "The ettercap makes one Bite attack and one Claw attack.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 1,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -10107,7 +11084,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The ettin makes one Battleaxe attack and one Morningstar attack."
+        "desc": "The ettin makes one Battleaxe attack and one Morningstar attack.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Battleaxe",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Morningstar",
+            "count": 1,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Battleaxe",
@@ -10280,7 +11270,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The elemental makes two Burn attacks."
+        "desc": "The elemental makes two Burn attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Burn",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Burn",
@@ -10343,7 +11341,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The giant makes two attacks, using Flame Sword or Hammer Throw in any combination."
+        "desc": "The giant makes two attacks, using Flame Sword or Hammer Throw in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Flame Sword",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Hammer Throw",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Flame Sword",
@@ -10525,7 +11546,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The golem makes two Slam attacks."
+        "desc": "The golem makes two Slam attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Slam",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Slam",
@@ -10596,7 +11625,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The giant makes two attacks, using Frost Axe or Great Bow in any combination."
+        "desc": "The giant makes two attacks, using Frost Axe or Great Bow in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Frost Axe",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Great Bow",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Frost Axe",
@@ -10779,7 +11831,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The fungus makes two Rotting Touch attacks."
+        "desc": "The fungus makes two Rotting Touch attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rotting Touch",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rotting Touch",
@@ -10865,7 +11925,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The gargoyle makes two Claw attacks."
+        "desc": "The gargoyle makes two Claw attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Claw",
@@ -11296,7 +12364,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The ghost makes two Withering Touch attacks."
+        "desc": "The ghost makes two Withering Touch attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Withering Touch",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Withering Touch",
@@ -11432,7 +12508,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The ghoul makes two Bite attacks."
+        "desc": "The ghoul makes two Bite attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -11648,7 +12732,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The glabrezu makes two Pincer attacks and uses Pummel or Spellcasting."
+        "desc": "The glabrezu makes two Pincer attacks and uses Pummel or Spellcasting.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Pincer",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Pummel",
+                "count": 1,
+                "type": "special"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Spellcasting",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Pincer",
@@ -11850,7 +12963,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The gladiator makes three Spear attacks. It can replace one attack with a use of Shield Bash."
+        "desc": "The gladiator makes three Spear attacks. It can replace one attack with a use of Shield Bash.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Spear",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Spear",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Shield Bash",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Spear",
@@ -12216,7 +13358,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The goblin makes two attacks, using Scimitar or Shortbow in any combination."
+        "desc": "The goblin makes two attacks, using Scimitar or Shortbow in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Scimitar",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Shortbow",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Scimitar",
@@ -12332,7 +13497,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes two Rend attacks."
+        "desc": "The dragon makes two Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -12458,7 +13631,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Weakening Breath."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Weakening Breath.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Weakening Breath",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -12588,7 +13790,42 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Spellcasting to cast Guiding Bolt (level 2 version) or (B) Weakening Breath."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Spellcasting to cast Guiding Bolt (level 2 version) or (B) Weakening Breath.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Guiding Bolt",
+                "count": 1,
+                "type": "ranged"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Weakening Breath",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -12827,7 +14064,42 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Spellcasting to cast Guiding Bolt (level 4 version) or (B) Weakening Breath."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Spellcasting to cast Guiding Bolt (level 4 version) or (B) Weakening Breath.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Guiding Bolt",
+                "count": 1,
+                "type": "ranged"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Weakening Breath",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -13261,7 +14533,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes two Rend attacks."
+        "desc": "The dragon makes two Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -13388,7 +14668,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks."
+        "desc": "The dragon makes three Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 3,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -13519,7 +14807,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Mind Spike (level 3 version)."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Mind Spike (level 3 version).",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Mind Spike",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -13729,7 +15046,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Mind Spike (level 5 version)."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Mind Spike (level 5 version).",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Mind Spike",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -14002,7 +15348,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The hag makes two Claw attacks."
+        "desc": "The hag makes two Claw attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Claw",
@@ -14141,7 +15495,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The grick makes one Beak attack and one Tentacles attack."
+        "desc": "The grick makes one Beak attack and one Tentacles attack.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Beak",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Tentacles",
+            "count": 1,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Beak",
@@ -14228,7 +15595,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The griffon makes two Rend attacks."
+        "desc": "The griffon makes two Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -14667,7 +16042,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The guard makes two attacks, using Javelin or Longsword in any combination."
+        "desc": "The guard makes two attacks, using Javelin or Longsword in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Javelin",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Longsword",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Javelin",
@@ -14753,7 +16151,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The half-dragon makes two Claw attacks."
+        "desc": "The half-dragon makes two Claw attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Claw",
@@ -14930,7 +16336,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The hound makes two Bite attacks."
+        "desc": "The hound makes two Bite attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -15058,7 +16472,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The hezrou makes three Rend attacks."
+        "desc": "The hezrou makes three Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 3,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -15158,7 +16580,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The giant makes two attacks, using Tree Club or Trash Lob in any combination."
+        "desc": "The giant makes two attacks, using Tree Club or Trash Lob in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Tree Club",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Trash Lob",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Tree Club",
@@ -15240,7 +16685,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The hippogriff makes two Rend attacks."
+        "desc": "The hippogriff makes two Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -15394,7 +16847,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The hobgoblin makes two attacks, using Greatsword or Longbow in any combination."
+        "desc": "The hobgoblin makes two attacks, using Greatsword or Longbow in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Greatsword",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Longbow",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Greatsword",
@@ -15762,7 +17238,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The hydra makes as many Bite attacks as it has heads."
+        "desc": "The hydra makes as many Bite attacks as it has heads.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": "Number of Heads",
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -15844,7 +17328,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The devil makes three Ice Spear attacks. It can replace one attack with a Tail attack."
+        "desc": "The devil makes three Ice Spear attacks. It can replace one attack with a Tail attack.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Ice Spear",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Ice Spear",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Tail",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Ice Spear",
@@ -16111,7 +17624,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The incubus makes two Restless Touch attacks."
+        "desc": "The incubus makes two Restless Touch attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Restless Touch",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Restless Touch",
@@ -16313,7 +17834,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The stalker makes three Wind Swipe attacks. It can replace one attack with a use of Vortex."
+        "desc": "The stalker makes three Wind Swipe attacks. It can replace one attack with a use of Vortex.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Wind Swipe",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Wind Swipe",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Vortex",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Wind Swipe",
@@ -16455,7 +18005,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The golem makes two attacks, using Bladed Arm or Fiery Bolt in any combination."
+        "desc": "The golem makes two attacks, using Bladed Arm or Fiery Bolt in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Bladed Arm",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Fiery Bolt",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Bladed Arm",
@@ -16563,7 +18136,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The knight makes two attacks, using Greatsword or Heavy Crossbow in any combination."
+        "desc": "The knight makes two attacks, using Greatsword or Heavy Crossbow in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Greatsword",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Heavy Crossbow",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Greatsword",
@@ -16785,7 +18381,42 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The kraken makes two Tentacle attacks and uses Fling, Lightning Strike, or Swallow."
+        "desc": "The kraken makes two Tentacle attacks and uses Fling, Lightning Strike, or Swallow.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Tentacle",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Fling",
+                "count": 1,
+                "type": "special"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Lightning Strike",
+                "count": 1,
+                "type": "special"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Swallow",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Tentacle",
@@ -16986,7 +18617,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The lamia makes two Claw attacks. It can replace one attack with a use of Corrupting Touch."
+        "desc": "The lamia makes two Claw attacks. It can replace one attack with a use of Corrupting Touch.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 1,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Claw",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Corrupting Touch",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Claw",
@@ -17278,7 +18938,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The lich makes three attacks, using Eldritch Burst or Paralyzing Touch in any combination."
+        "desc": "The lich makes three attacks, using Eldritch Burst or Paralyzing Touch in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 3,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Eldritch Burst",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Paralyzing Touch",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Eldritch Burst",
@@ -17646,7 +19329,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The mage makes three Arcane Burst attacks."
+        "desc": "The mage makes three Arcane Burst attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Arcane Burst",
+            "count": 3,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Arcane Burst",
@@ -17916,7 +19607,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The archmage makes four Arcane Burst attacks."
+        "desc": "The archmage makes four Arcane Burst attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Arcane Burst",
+            "count": 4,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Arcane Burst",
@@ -18313,7 +20012,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The manticore makes three attacks, using Rend or Tail Spike in any combination."
+        "desc": "The manticore makes three attacks, using Rend or Tail Spike in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 3,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Tail Spike",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -18415,7 +20137,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The marilith makes six Pact Blade attacks and uses Constrict."
+        "desc": "The marilith makes six Pact Blade attacks and uses Constrict.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Pact Blade",
+            "count": 6,
+            "type": "melee"
+          },
+          {
+            "action_name": "Constrict",
+            "count": 1,
+            "type": "special"
+          }
+        ]
       },
       {
         "name": "Pact Blade",
@@ -18554,7 +20289,40 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The medusa makes two Claw attacks and one Snake Hair attack, or it makes three Poison Ray attacks."
+        "desc": "The medusa makes two Claw attacks and one Snake Hair attack, or it makes three Poison Ray attacks.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "multiple",
+                "items": [
+                  {
+                    "option_type": "action",
+                    "action_name": "Claw",
+                    "count": 2,
+                    "type": "melee"
+                  },
+                  {
+                    "option_type": "action",
+                    "action_name": "Snake Hair",
+                    "count": 1,
+                    "type": "melee"
+                  }
+                ]
+              },
+              {
+                "option_type": "action",
+                "action_name": "Poison Ray",
+                "count": 3,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Claw",
@@ -19314,7 +21082,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The merrow makes two attacks, using Bite, Claw, or Harpoon in any combination."
+        "desc": "The merrow makes two attacks, using Bite, Claw, or Harpoon in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Bite",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Claw",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Harpoon",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Bite",
@@ -19658,7 +21455,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The mummy makes two Rotting Fist attacks and uses Dreadful Glare."
+        "desc": "The mummy makes two Rotting Fist attacks and uses Dreadful Glare.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rotting Fist",
+            "count": 2,
+            "type": "melee"
+          },
+          {
+            "action_name": "Dreadful Glare",
+            "count": 1,
+            "type": "special"
+          }
+        ]
       },
       {
         "name": "Rotting Fist",
@@ -19794,7 +21604,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The mummy makes one Rotting Fist or Channel Negative Energy attack, and it uses Dreadful Glare."
+        "desc": "The mummy makes one Rotting Fist or Channel Negative Energy attack, and it uses Dreadful Glare.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Dreadful Glare",
+            "count": 1,
+            "type": "special"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rotting Fist",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Channel Negative Energy",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rotting Fist",
@@ -20056,7 +21895,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The nalfeshnee makes three Rend attacks."
+        "desc": "The nalfeshnee makes three Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 3,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -20262,7 +22109,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The hag makes two Claw attacks."
+        "desc": "The hag makes two Claw attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Claw",
@@ -20974,7 +22829,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The otyugh makes one Bite attack and two Tentacle attacks."
+        "desc": "The otyugh makes one Bite attack and two Tentacle attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Tentacle",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -21101,7 +22969,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The owlbear makes two Rend attacks."
+        "desc": "The owlbear makes two Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -21278,7 +23154,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The spider makes two Bite attacks."
+        "desc": "The spider makes two Bite attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -21354,7 +23238,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The pirate makes two Dagger attacks. It can replace one attack with a use of Enthralling Panache."
+        "desc": "The pirate makes two Dagger attacks. It can replace one attack with a use of Enthralling Panache.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Dagger",
+            "count": 1,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Dagger",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Enthralling Panache",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Dagger",
@@ -21446,7 +23359,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The pirate makes three attacks, using Rapier or Pistol in any combination."
+        "desc": "The pirate makes three attacks, using Rapier or Pistol in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 3,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rapier",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Pistol",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rapier",
@@ -21601,7 +23537,25 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The pit fiend makes one Bite attack, two Devilish Claw attacks, and one Fiery Mace attack."
+        "desc": "The pit fiend makes one Bite attack, two Devilish Claw attacks, and one Fiery Mace attack.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Devilish Claw",
+            "count": 2,
+            "type": "melee"
+          },
+          {
+            "action_name": "Fiery Mace",
+            "count": 1,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -21794,7 +23748,29 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The planetar makes three Radiant Sword attacks or uses Holy Burst twice."
+        "desc": "The planetar makes three Radiant Sword attacks or uses Holy Burst twice.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Radiant Sword",
+                "count": 3,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Holy Burst",
+                "count": 2,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Radiant Sword",
@@ -22215,7 +24191,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The priest makes two attacks, using Mace or Radiant Flame in any combination."
+        "desc": "The priest makes two attacks, using Mace or Radiant Flame in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Mace",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Radiant Flame",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Mace",
@@ -22416,7 +24415,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The pseudodragon makes two Bite attacks."
+        "desc": "The pseudodragon makes two Bite attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -22509,7 +24516,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The worm makes one Bite attack and one Tail Stinger attack."
+        "desc": "The worm makes one Bite attack and one Tail Stinger attack.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Tail Stinger",
+            "count": 1,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -22772,7 +24792,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The rakshasa makes three Cursed Touch attacks."
+        "desc": "The rakshasa makes three Cursed Touch attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Cursed Touch",
+            "count": 3,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Cursed Touch",
@@ -22974,7 +25002,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes two Rend attacks."
+        "desc": "The dragon makes two Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -23090,7 +25126,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks."
+        "desc": "The dragon makes three Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 3,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -23211,7 +25255,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Scorching Ray."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Scorching Ray.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Scorching Ray",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -23403,7 +25476,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Scorching Ray (level 3 version)."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Scorching Ray (level 3 version).",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Scorching Ray",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -23723,7 +25825,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The roc makes two Beak attacks. It can replace one attack with a Talons attack."
+        "desc": "The roc makes two Beak attacks. It can replace one attack with a Talons attack.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Beak",
+            "count": 1,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Beak",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Talons",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Beak",
@@ -23838,7 +25969,25 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The roper makes two Tentacle attacks, uses Reel, and makes two Bite attacks."
+        "desc": "The roper makes two Tentacle attacks, uses Reel, and makes two Bite attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Tentacle",
+            "count": 2,
+            "type": "melee"
+          },
+          {
+            "action_name": "Reel",
+            "count": 1,
+            "type": "special"
+          },
+          {
+            "action_name": "Bite",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -23923,7 +26072,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The rust monster makes one Bite attack and uses Antennae twice."
+        "desc": "The rust monster makes one Bite attack and uses Antennae twice.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Antennae",
+            "count": 2,
+            "type": "special"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -24025,7 +26187,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The sahuagin makes two Claw attacks."
+        "desc": "The sahuagin makes two Claw attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Claw",
@@ -24114,7 +26284,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The salamander makes two Flame Spear attacks. It can replace one attack with a use of Constrict."
+        "desc": "The salamander makes two Flame Spear attacks. It can replace one attack with a use of Constrict.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Flame Spear",
+            "count": 1,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Flame Spear",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Constrict",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Flame Spear",
@@ -24300,7 +26499,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The scout makes two attacks, using Shortsword and Longbow in any combination."
+        "desc": "The scout makes two attacks, using Shortsword and Longbow in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Shortsword",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Longbow",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Shortsword",
@@ -24710,7 +26932,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The shambling mound makes three Charged Tendril attacks. It can replace one attack with a use of Engulf."
+        "desc": "The shambling mound makes three Charged Tendril attacks. It can replace one attack with a use of Engulf.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Charged Tendril",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Charged Tendril",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Engulf",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Charged Tendril",
@@ -24851,7 +27102,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The guardian makes two Fist attacks."
+        "desc": "The guardian makes two Fist attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Fist",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Fist",
@@ -24931,7 +27190,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes two Rend attacks."
+        "desc": "The dragon makes two Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -25051,7 +27318,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Paralyzing Breath."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Paralyzing Breath.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Paralyzing Breath",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -25176,7 +27472,42 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Paralyzing Breath or (B) Spellcasting to cast Ice Knife."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Paralyzing Breath or (B) Spellcasting to cast Ice Knife.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Paralyzing Breath",
+                "count": 1,
+                "type": "special"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Ice Knife",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -25419,7 +27750,42 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Paralyzing Breath or (B) Spellcasting to cast Ice Knife (level 2 version)."
+        "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of (A) Paralyzing Breath or (B) Spellcasting to cast Ice Knife (level 2 version).",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Paralyzing Breath",
+                "count": 1,
+                "type": "special"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Ice Knife",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -25972,7 +28338,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The solar makes two Flying Sword attacks. It can replace one attack with a use of Slaying Bow."
+        "desc": "The solar makes two Flying Sword attacks. It can replace one attack with a use of Slaying Bow.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Flying Sword",
+            "count": 1,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Flying Sword",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Slaying Bow",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Flying Sword",
@@ -26473,7 +28868,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The sphinx makes three Claw attacks."
+        "desc": "The sphinx makes three Claw attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 3,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Claw",
@@ -26727,7 +29130,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The sphinx makes two Claw attacks and uses Roar."
+        "desc": "The sphinx makes two Claw attacks and uses Roar.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
+          },
+          {
+            "action_name": "Roar",
+            "count": 1,
+            "type": "special"
+          }
+        ]
       },
       {
         "name": "Claw",
@@ -26999,7 +29415,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The naga makes three attacks, using Bite or Necrotic Ray in any combination."
+        "desc": "The naga makes three attacks, using Bite or Necrotic Ray in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 3,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Bite",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Necrotic Ray",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Bite",
@@ -27469,7 +29908,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The giant makes two attacks, using Stone Club or Boulder in any combination."
+        "desc": "The giant makes two attacks, using Stone Club or Boulder in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Stone Club",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Boulder",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Stone Club",
@@ -27639,7 +30101,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The golem makes two attacks, using Slam or Force Bolt in any combination."
+        "desc": "The golem makes two attacks, using Slam or Force Bolt in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Slam",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Force Bolt",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Slam",
@@ -27760,7 +30245,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The giant makes two attacks, using Storm Sword or Thunderbolt in any combination."
+        "desc": "The giant makes two attacks, using Storm Sword or Thunderbolt in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Storm Sword",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Thunderbolt",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Storm Sword",
@@ -27958,7 +30466,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The succubus makes one Fiendish Touch attack and uses Charm or Draining Kiss."
+        "desc": "The succubus makes one Fiendish Touch attack and uses Charm or Draining Kiss.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Fiendish Touch",
+            "count": 1,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Charm",
+                "count": 1,
+                "type": "special"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Draining Kiss",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Fiendish Touch",
@@ -28123,7 +30660,37 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The tarrasque makes one Bite attack and three other attacks, using Claw or Tail in any combination."
+        "desc": "The tarrasque makes one Bite attack and three other attacks, using Claw or Tail in any combination.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 3,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Claw",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Tail",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Bite",
@@ -28394,7 +30961,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The tough makes two attacks, using Warhammer or Heavy Crossbow in any combination."
+        "desc": "The tough makes two attacks, using Warhammer or Heavy Crossbow in any combination.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Warhammer",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Heavy Crossbow",
+                "count": 1,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Warhammer",
@@ -28505,7 +31095,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The treant makes two Slam attacks."
+        "desc": "The treant makes two Slam attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Slam",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Slam",
@@ -28594,7 +31192,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The troll makes three Rend attacks."
+        "desc": "The troll makes three Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 3,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -28757,7 +31363,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The unicorn makes one Hooves attack and one Radiant Horn attack."
+        "desc": "The unicorn makes one Hooves attack and one Radiant Horn attack.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Hooves",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Radiant Horn",
+            "count": 1,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Hooves",
@@ -28935,7 +31554,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The familiar makes two Umbral Dagger attacks."
+        "desc": "The familiar makes two Umbral Dagger attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Umbral Dagger",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Umbral Dagger",
@@ -29057,7 +31684,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The vampire makes two Claw attacks and uses Bite."
+        "desc": "The vampire makes two Claw attacks and uses Bite.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "special"
+          }
+        ]
       },
       {
         "name": "Claw",
@@ -29219,7 +31859,20 @@
     "actions": [
       {
         "name": "Multiattack (Vampire Form Only)",
-        "desc": "The vampire makes two Grave Strike attacks and uses Bite."
+        "desc": "The vampire makes two Grave Strike attacks and uses Bite.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Grave Strike",
+            "count": 2,
+            "type": "melee"
+          },
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "special"
+          }
+        ]
       },
       {
         "name": "Grave Strike (Vampire Form Only)",
@@ -29439,7 +32092,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The vrock makes two Shred attacks."
+        "desc": "The vrock makes two Shred attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Shred",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Shred",
@@ -29642,7 +32303,29 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The warrior makes two Greatsword or Heavy Crossbow attacks."
+        "desc": "The warrior makes two Greatsword or Heavy Crossbow attacks.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Greatsword",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Heavy Crossbow",
+                "count": 2,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Greatsword",
@@ -29782,7 +32465,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The elemental makes two Slam attacks."
+        "desc": "The elemental makes two Slam attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Slam",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Slam",
@@ -30449,7 +33140,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes two Rend attacks."
+        "desc": "The dragon makes two Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -30571,7 +33270,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks."
+        "desc": "The dragon makes three Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 3,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -30705,7 +33412,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks."
+        "desc": "The dragon makes three Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 3,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -30884,7 +33599,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dragon makes three Rend attacks."
+        "desc": "The dragon makes three Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 3,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -31625,7 +34348,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The wyvern makes one Bite attack and one Sting attack."
+        "desc": "The wyvern makes one Bite attack and one Sting attack.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Sting",
+            "count": 1,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -31739,7 +34475,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The xorn makes one Bite attack and three Claw attacks."
+        "desc": "The xorn makes one Bite attack and three Claw attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 3,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -32079,7 +34828,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The ankylosaurus makes two Tail attacks."
+        "desc": "The ankylosaurus makes two Tail attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Tail",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Tail",
@@ -32150,7 +34907,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The ape makes two Fist attacks."
+        "desc": "The ape makes two Fist attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Fist",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Fist",
@@ -32232,7 +34997,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The archelon makes two Bite attacks."
+        "desc": "The archelon makes two Bite attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -32461,7 +35234,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The bear makes two Rend attacks."
+        "desc": "The bear makes two Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -32667,7 +35448,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The bear makes one Bite attack and one Claw attack."
+        "desc": "The bear makes one Bite attack and one Claw attack.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Claw",
+            "count": 1,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -33338,7 +36132,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The elephant makes two Gore attacks."
+        "desc": "The elephant makes two Gore attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Gore",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Gore",
@@ -33616,7 +36418,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The ape makes two Fist attacks."
+        "desc": "The ape makes two Fist attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Fist",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Fist",
@@ -33968,7 +36778,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The snake makes one Bite attack and uses Constrict."
+        "desc": "The snake makes one Bite attack and uses Constrict.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Constrict",
+            "count": 1,
+            "type": "special"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -34133,7 +36956,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The crocodile makes one Bite attack and one Tail attack."
+        "desc": "The crocodile makes one Bite attack and one Tail attack.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Tail",
+            "count": 1,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -34222,7 +37058,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The eagle makes two Rend attacks."
+        "desc": "The eagle makes two Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -35024,7 +37868,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The scorpion makes two Claw attacks and one Sting attack."
+        "desc": "The scorpion makes two Claw attacks and one Sting attack.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Claw",
+            "count": 2,
+            "type": "melee"
+          },
+          {
+            "action_name": "Sting",
+            "count": 1,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Claw",
@@ -35200,7 +38057,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The shark makes two Bite attacks."
+        "desc": "The shark makes two Bite attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -35915,7 +38780,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The hippopotamus makes two Bite attacks."
+        "desc": "The hippopotamus makes two Bite attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",
@@ -36249,7 +39122,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The lion makes two Rend attacks. It can replace one attack with a use of Roar."
+        "desc": "The lion makes two Rend attacks. It can replace one attack with a use of Roar.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 1,
+            "type": "melee"
+          }
+        ],
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Roar",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Rend",
@@ -36378,7 +39280,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The mammoth makes two Gore attacks."
+        "desc": "The mammoth makes two Gore attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Gore",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Gore",
@@ -36863,7 +39773,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The bear makes two Rend attacks."
+        "desc": "The bear makes two Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -37370,7 +40288,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The tiger makes two Rend attacks."
+        "desc": "The tiger makes two Rend attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Rend",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Rend",
@@ -38248,7 +41174,15 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The triceratops makes two Gore attacks."
+        "desc": "The triceratops makes two Gore attacks.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Gore",
+            "count": 2,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Gore",
@@ -38317,7 +41251,20 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The tyrannosaurus makes one Bite attack and one Tail attack."
+        "desc": "The tyrannosaurus makes one Bite attack and one Tail attack.",
+        "multiattack_type": "actions",
+        "actions": [
+          {
+            "action_name": "Bite",
+            "count": 1,
+            "type": "melee"
+          },
+          {
+            "action_name": "Tail",
+            "count": 1,
+            "type": "melee"
+          }
+        ]
       },
       {
         "name": "Bite",

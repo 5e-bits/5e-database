@@ -35,6 +35,21 @@ const skillQuirks = new Set(['shambling-mound', 'giant-frog']);
 
 const entrySections = ['special_abilities', 'actions', 'bonus_actions', 'reactions', 'legendary_actions'];
 
+/** Multiattack shapes the generator leaves as plain descriptions. */
+const unstructuredMultiattack = new Set([
+  'cloud-giant',
+  'dryad',
+  'guardian-naga',
+  'horned-devil',
+  'oni',
+  'werebear',
+  'wereboar',
+  'wererat',
+  'weretiger',
+  'werewolf',
+  'wight',
+]);
+
 const crToNumber = (cr: string) => (cr.includes('/') ? 1 / Number(cr.split('/')[1]) : Number(cr));
 const abilityMod = (score: number) => Math.floor((score - 10) / 2);
 
@@ -130,6 +145,36 @@ describe('generated 2024 monsters', () => {
           if (!/[.):]$/.test(entry.desc.trim())) {
             errors.push(`${m.index} ${entry.name}: ...${entry.desc.slice(-40)}`);
           }
+        }
+      }
+    }
+    expect(errors).toEqual([]);
+  });
+
+  it('structures multiattack except for known unsupported shapes', () => {
+    const errors: string[] = [];
+    for (const m of generated) {
+      for (const entry of (m.actions ?? []) as Monster[]) {
+        if (!/^Multiattack/.test(entry.name)) continue;
+        const structured = Boolean(entry.multiattack_type);
+        if (structured === unstructuredMultiattack.has(m.index)) {
+          errors.push(`${m.index}: ${structured ? 'now structured' : 'not structured'}`);
+        }
+      }
+    }
+    expect(errors).toEqual([]);
+  });
+
+  it('keeps counts for simple multiattack descriptions', () => {
+    const errors: string[] = [];
+    const words: Record<string, number> = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8 };
+    for (const m of generated) {
+      for (const entry of (m.actions ?? []) as Monster[]) {
+        const match = /^The [\w -]+ makes (\w+) ([A-Z][a-z’']+(?: [A-Z][a-z’']+)*) attacks\.$/.exec(entry.desc);
+        if (!match || !entry.multiattack_type) continue;
+        const [item] = entry.actions ?? [];
+        if (entry.actions?.length !== 1 || item.count !== words[match[1]] || item.action_name !== match[2]) {
+          errors.push(`${m.index}: ${entry.desc}`);
         }
       }
     }

@@ -12,6 +12,8 @@ const NAME_SEPARATOR = /,\s*(?:or |and )?|\s+or\s+/;
 const spells = JSON.parse(fs.readFileSync(new URL('./5e-SRD-Spells.json', import.meta.url), 'utf-8'));
 const spellsByName = new Map(spells.map((spell)=>[spell.name.toLowerCase(), spell]));
 
+export const findSpell = (name)=>spellsByName.get(name.toLowerCase().replace(/’/g, "'"));
+
 /**
  * A wrapped spell list line continues until the next label, entry, section, or the
  * next stat block header (a name line followed by AC within a few lines).
@@ -26,7 +28,7 @@ const continuesSpellList = (lines, index)=>
 const parseSpellEntry = (entry)=>{
 	const notes = entry.match(/\(([^)]*)\)/)?.[1];
 	const name = entry.replace(/\s*\(.*\)/, '').trim();
-	const spell = spellsByName.get(name.toLowerCase().replace(/’/g, "'"));
+	const spell = findSpell(name);
 	if(!spell){ throw new Error(`Unknown spell '${name}'`); }
 
 	const version = notes?.match(/^level (\d) version$/);

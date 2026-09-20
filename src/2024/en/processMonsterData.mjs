@@ -1,5 +1,6 @@
 import fs from 'fs';
 import { cleanEntries, addDamageAndDc } from './monsterEntries.mjs';
+import { addMultiattack } from './monsterMultiattack.mjs';
 import { addSpellcasting, assertAllSpellListsUsed } from './monsterSpellcasting.mjs';
 import { createTextFinder, findBlockTitles, normalizeText, parseTextBlocks } from './monsterText.mjs';
 
@@ -13,6 +14,8 @@ const findTextData = createTextFinder(textData);
 const monsters = JSON.parse(fs.readFileSync('./monsters.json', 'utf-8'));
 
 const monstersOld = JSON.parse(fs.readFileSync('../../2014/en/5e-SRD-Monsters.json', 'utf-8'));
+
+const unparsedMultiattack = [];
 
 const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '_info'}).map((monster)=>{
 	const result = { ...monsters[monster] };
@@ -97,6 +100,7 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 	});
 	addDamageAndDc(result);
 	addSpellcasting(result, monsterText, textData);
+	unparsedMultiattack.push(...addMultiattack(result));
 
 	['armor_desc', 'initiative', 'perception', 'old_senses'].forEach((key)=>{ delete result[key]; });
 
@@ -104,6 +108,8 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 })
 
 assertAllSpellListsUsed(textData);
+
+console.log('Multiattack entries without structure:', unparsedMultiattack.length);
 
 fs.writeFileSync(process.argv[2] ?? './5e-SRD-Monsters-New.json', JSON.stringify(monstersNew, null, 2));
 
