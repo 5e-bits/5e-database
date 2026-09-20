@@ -103,6 +103,32 @@ const splitMergedEntry = (entry, lines)=>{
 };
 
 /**
+ * The gist sometimes cuts an entry at a "Failure:" or "Success:" and turns the rest into a fake
+ * entry named after its first sentence. Real entries start their own line in the text; these
+ * fakes sit mid-paragraph, so they are folded back into the previous entry.
+ */
+const mergeContinuations = (entries, allNames, lines)=>{
+	const merged = [];
+
+	entries.forEach((entry)=>{
+		const previous = merged[merged.length - 1];
+		const name = flatten(entry.name);
+
+		if(previous && /:$/.test(previous.desc.trim()) && !lines.some((line)=>flatten(line).startsWith(`${name}. `))){
+			const rest = completeFromText(previous, allNames.filter((other)=>other !== name), lines);
+			if(rest && flatten(rest).startsWith(`${name}. `)){
+				previous.desc = `${previous.desc} ${rest}`;
+				return;
+			}
+		}
+
+		merged.push(entry);
+	});
+
+	return merged;
+};
+
+/**
  * Remove PDF debris the gist left in entries, using the stat block text as the source of truth.
  */
 export const cleanEntries = (result, monsterText, textData, blockTitles)=>{
@@ -127,5 +153,7 @@ export const cleanEntries = (result, monsterText, textData, blockTitles)=>{
 		result[key] = result[key].filter((entry, index, entries)=>
 			!(index > 0 && flatten(entries[index - 1].desc).includes(`${flatten(entry.name)}. ${flatten(entry.desc).slice(0, 15)}`))
 		);
+
+		result[key] = mergeContinuations(result[key], allEntries.map((entry)=>flatten(entry.name)), lines);
 	});
 };

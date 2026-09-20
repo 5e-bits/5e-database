@@ -35,6 +35,9 @@ const skillQuirks = new Set(['shambling-mound', 'giant-frog']);
 
 const entrySections = ['special_abilities', 'actions', 'bonus_actions', 'reactions', 'legendary_actions'];
 
+/** Monsters split into one monster per form, and how many forms each has. */
+const formCounts: Record<string, number> = { werebear: 3, wereboar: 3, wererat: 3, weretiger: 3, werewolf: 3, vampire: 3 };
+
 const crToNumber = (cr: string) => (cr.includes('/') ? 1 / Number(cr.split('/')[1]) : Number(cr));
 const abilityMod = (score: number) => Math.floor((score - 10) / 2);
 
@@ -54,7 +57,8 @@ afterAll(() => fs.rmSync(tmpDir, { recursive: true, force: true }));
 
 describe('generated 2024 monsters', () => {
   it('has one entry per source monster with unique indices', () => {
-    expect(generated).toHaveLength(Object.keys(source).filter((k) => k !== '_info').length);
+    const extraForms = Object.values(formCounts).reduce((total, forms) => total + forms - 1, 0);
+    expect(generated).toHaveLength(Object.keys(source).filter((k) => k !== '_info').length + extraForms);
     expect(new Set(generated.map((m) => m.index)).size).toBe(generated.length);
   });
 
@@ -127,6 +131,7 @@ describe('generated 2024 monsters', () => {
       for (const section of entrySections) {
         for (const entry of (m[section] ?? []) as Monster[]) {
           if (/^(At Will|\d+\/Day( Each)?)$/.test(entry.name)) errors.push(`${m.index} ${entry.name}: spell list entry`);
+          if (/^(The target|Half damage|Failure|Success)/.test(entry.name)) errors.push(`${m.index} ${entry.name}: fragment entry`);
           if (!/[.):]$/.test(entry.desc.trim())) {
             errors.push(`${m.index} ${entry.name}: ...${entry.desc.slice(-40)}`);
           }
@@ -159,6 +164,41 @@ describe('generated 2024 monsters', () => {
         }
       }
     }
+    expect(errors).toEqual([]);
+  });
+
+  it('splits form monsters and links their forms', () => {
+    const indices = new Set(generated.map((m) => m.index));
+    const errors: string[] = [];
+    for (const base of Object.keys(formCounts)) {
+      if (indices.has(base)) errors.push(`${base}: unsplit monster still present`);
+      const forms = generated.filter((m) => m.forms && m.index.startsWith(`${base}-`) && m.index !== `${base}-spawn`);
+      if (forms.length !== formCounts[base]) errors.push(`${base}: ${forms.length} forms`);
+      for (const form of forms) {
+        const linked = (form.forms as { index: string; url: string }[]).map((f) => f.index).sort();
+        const others = forms.map((f) => f.index).filter((i) => i !== form.index).sort();
+        if (JSON.stringify(linked) !== JSON.stringify(others)) errors.push(`${form.index}: forms ${linked}`);
+        if (linked.some((i) => !indices.has(i))) errors.push(`${form.index}: broken form link`);
+      }
+    }
+    expect(errors).toEqual([]);
+  });
+
+  it('keeps only the entries a form has', () => {
+    const errors: string[] = [];
+    for (const m of generated) {
+      for (const section of entrySections) {
+        for (const entry of (m[section] ?? []) as Monster[]) {
+          if (/Form Only\)/.test(entry.name) && m.index !== 'mimic') errors.push(`${m.index}: ${entry.name}`);
+        }
+      }
+    }
+    const werewolfHuman = generated.find((m) => m.index === 'werewolf-human');
+    const werewolfWolf = generated.find((m) => m.index === 'werewolf-wolf');
+    expect((werewolfHuman?.actions as Monster[]).map((a) => a.name)).toEqual(['Multiattack', 'Scratch', 'Longbow']);
+    expect((werewolfWolf?.actions as Monster[]).map((a) => a.name)).toEqual(['Multiattack', 'Bite', 'Scratch']);
+    expect(werewolfWolf?.speed).toEqual({ walk: '40 ft.' });
+    expect(werewolfHuman?.speed).toEqual({ walk: '30 ft.' });
     expect(errors).toEqual([]);
   });
 

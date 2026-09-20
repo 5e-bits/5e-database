@@ -82,3 +82,18 @@ export const createTextFinder = (textData)=>{
 		return textData[match];
 	};
 };
+
+/**
+ * Header lines can be displaced in the PDF text, so find a monster's Speed line from its
+ * own hit points line instead of from its position. The type line tells apart monsters
+ * that share hit points.
+ */
+export const findSpeedLine = (normalizedText, monster, typePattern)=>{
+	const lines = normalizedText.replace(/−/g, '-').split('\n');
+	const speeds = lines
+		.map((line, index)=>line === `HP ${monster.hit_points} (${monster.hit_points_roll})` && typePattern.test(lines[index - 2]) ? lines[index + 1] : undefined)
+		.filter((next)=>next?.startsWith('Speed '));
+
+	if(speeds.length !== 1){ throw new Error(`Expected one Speed line for ${monster.index}, found ${speeds.length}`); }
+	return speeds[0].slice('Speed '.length);
+};

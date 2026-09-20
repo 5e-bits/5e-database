@@ -1,8 +1,9 @@
 import fs from 'fs';
 import { cleanEntries, addDamageAndDc } from './monsterEntries.mjs';
+import { splitForms } from './monsterForms.mjs';
 import { addMultiattack } from './monsterMultiattack.mjs';
 import { addSpellcasting, assertAllSpellListsUsed } from './monsterSpellcasting.mjs';
-import { createTextFinder, findBlockTitles, normalizeText, parseTextBlocks } from './monsterText.mjs';
+import { createTextFinder, findBlockTitles, findSpeedLine, normalizeText, parseTextBlocks } from './monsterText.mjs';
 
 const normalizedText = normalizeText(fs.readFileSync('./monster-text-data.txt', 'utf-8'));
 fs.writeFileSync(process.argv[3] ?? './monster-text-data.normalized.txt', normalizedText);
@@ -15,14 +16,16 @@ const monsters = JSON.parse(fs.readFileSync('./monsters.json', 'utf-8'));
 
 const monstersOld = JSON.parse(fs.readFileSync('../../2014/en/5e-SRD-Monsters.json', 'utf-8'));
 
+const imageFor = (index)=>monstersOld.find((monster)=>monster.index === index)?.image || `/api/images/monsters/${index}-NYI.png`;
+
 const unparsedMultiattack = [];
 
-const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '_info'}).map((monster)=>{
+const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '_info'}).flatMap((monster)=>{
 	const result = { ...monsters[monster] };
 
 	result.index = result.slug;
 	result.url = `/api/2024/monsters/${result.slug}`;
-	result.image = monstersOld.filter((monster)=>{ return monster.index == result.slug; })[0]?.image || `/api/images/monsters/${result.slug}-NYI.png`;
+	result.image = imageFor(result.slug);
 	delete result.slug;
 
 	delete result.document_slug;
@@ -104,7 +107,7 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 
 	['armor_desc', 'initiative', 'perception', 'old_senses'].forEach((key)=>{ delete result[key]; });
 
-	return result;
+	return splitForms(result, imageFor, ()=>findSpeedLine(normalizedText, result, /Lycanthrope/));
 })
 
 assertAllSpellListsUsed(textData);

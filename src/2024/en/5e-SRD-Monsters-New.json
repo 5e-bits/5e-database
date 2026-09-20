@@ -21042,7 +21042,7 @@
       },
       {
         "name": "Steam Breath (Recharge 6)",
-        "desc": "Constitution Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: 5 (2d4) Fire damage, and the target’s Speed decreases by 10 feet until the end of the mephit’s next turn. Success:",
+        "desc": "Constitution Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: 5 (2d4) Fire damage, and the target’s Speed decreases by 10 feet until the end of the mephit’s next turn. Success: Half damage only. Failure or Success: Being underwater doesn’t grant Resistance to this Fire damage.",
         "damage": [
           {
             "damage_type": {
@@ -21060,12 +21060,8 @@
             "url": "/api/2024/ability-scores/con"
           },
           "dc_value": 10,
-          "success_type": "none"
+          "success_type": "half"
         }
-      },
-      {
-        "name": "Half damage only",
-        "desc": "Failure or Success: Being underwater doesn’t grant Resistance to this Fire damage."
       }
     ],
     "legendary_actions": [],
@@ -31925,7 +31921,7 @@
     "xp": 1800
   },
   {
-    "name": "Vampire",
+    "name": "Vampire, Vampire Form",
     "size": "Medium",
     "type": "or small undead",
     "alignment": "lawful evil",
@@ -31995,7 +31991,7 @@
     ],
     "actions": [
       {
-        "name": "Multiattack (Vampire Form Only)",
+        "name": "Multiattack",
         "desc": "The vampire makes two Grave Strike attacks and uses Bite.",
         "multiattack_type": "actions",
         "actions": [
@@ -32012,7 +32008,7 @@
         ]
       },
       {
-        "name": "Grave Strike (Vampire Form Only)",
+        "name": "Grave Strike",
         "desc": "Melee Attack Roll: +9, reach 5 ft. Hit: 8 (1d8 + 4) Bludgeoning damage plus 7 (2d6) Necrotic damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 14) from one of two hands.",
         "damage": [
           {
@@ -32043,7 +32039,7 @@
         }
       },
       {
-        "name": "Bite (Bat or Vampire Form Only)",
+        "name": "Bite",
         "desc": "Constitution Saving Throw: DC 17, one creature within 5 feet that is willing or that has the Grappled, Incapacitated, or Restrained condition. Failure: 6 (1d4 + 4) Piercing damage plus 13 (3d8) Necrotic damage. The target’s Hit Point maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount. A Humanoid reduced to 0 Hit Points by this damage and then buried rises the following sunset as a Vampire Spawn under the vampire’s control.",
         "damage": [
           {
@@ -32128,9 +32124,9 @@
         "desc": "The vampire moves up to half its Speed, and it makes one Grave Strike attack."
       }
     ],
-    "index": "vampire",
-    "url": "/api/2024/monsters/vampire",
-    "image": "/api/images/monsters/vampire-NYI.png",
+    "index": "vampire-vampire",
+    "url": "/api/2024/monsters/vampire-vampire",
+    "image": "/api/images/monsters/vampire-vampire.png",
     "hit_points_roll": "23d8 + 92",
     "proficiencies": [
       {
@@ -32169,7 +32165,409 @@
     "skills": "Perception +7, Stealth +9",
     "proficiency_bonus": 5,
     "xp": 10000,
-    "xp_in_lair": 11500
+    "xp_in_lair": 11500,
+    "forms": [
+      {
+        "index": "vampire-bat",
+        "name": "Vampire, Bat Form",
+        "url": "/api/2024/monsters/vampire-bat"
+      },
+      {
+        "index": "vampire-mist",
+        "name": "Vampire, Mist Form",
+        "url": "/api/2024/monsters/vampire-mist"
+      }
+    ]
+  },
+  {
+    "name": "Vampire, Bat Form",
+    "size": "Tiny",
+    "type": "or small undead",
+    "alignment": "lawful evil",
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 16
+      }
+    ],
+    "hit_points": 195,
+    "hit_dice": "23d8",
+    "speed": {
+      "walk": "5 ft.",
+      "fly": "30 ft."
+    },
+    "strength": 18,
+    "dexterity": 18,
+    "constitution": 18,
+    "intelligence": 17,
+    "wisdom": 15,
+    "charisma": 18,
+    "damage_resistances": [
+      "necrotic"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": {
+      "darkvision": "120 ft.",
+      "passive_perception": 17
+    },
+    "languages": "Common plus two other languages",
+    "challenge_rating": 13,
+    "special_abilities": [
+      {
+        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
+        "desc": "If the vampire fails a saving throw, it can choose to succeed instead."
+      },
+      {
+        "name": "Misty Escape",
+        "desc": "If the vampire drops to 0 Hit Points outside its resting place, the vampire uses Shape-Shift to become mist (no action required). If it can’t use ShapeShift, it is destroyed. While it has 0 Hit Points in mist form, it can’t return to its vampire form, and it must reach its resting place within 2 hours or be destroyed. Once in its resting place, it returns to its vampire form and has the Paralyzed condition until it regains any Hit Points, and it regains 1 Hit Point after spending 1 hour there."
+      },
+      {
+        "name": "Spider Climb",
+        "desc": "The vampire can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+      },
+      {
+        "name": "Vampire Weakness",
+        "desc": "The vampire has these weaknesses:"
+      },
+      {
+        "name": "Forbiddance",
+        "desc": "The vampire can’t enter a residence without an invitation from an occupant."
+      },
+      {
+        "name": "Running Water",
+        "desc": "The vampire takes 20 Acid damage if it ends its turn in running water."
+      },
+      {
+        "name": "Stake to the Heart",
+        "desc": "If a weapon that deals Piercing damage is driven into the vampire’s heart while the vampire has the Incapacitated condition in its resting place, the vampire has the Paralyzed condition until the weapon is removed."
+      },
+      {
+        "name": "Sunlight",
+        "desc": "The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Constitution Saving Throw: DC 17, one creature within 5 feet that is willing or that has the Grappled, Incapacitated, or Restrained condition. Failure: 6 (1d4 + 4) Piercing damage plus 13 (3d8) Necrotic damage. The target’s Hit Point maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount. A Humanoid reduced to 0 Hit Points by this damage and then buried rises the following sunset as a Vampire Spawn under the vampire’s control.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/2024/damage-types/piercing"
+            },
+            "damage_dice": "1d4+4"
+          },
+          {
+            "damage_type": {
+              "index": "necrotic",
+              "name": "Necrotic",
+              "url": "/api/2024/damage-types/necrotic"
+            },
+            "damage_dice": "3d8"
+          }
+        ],
+        "dc": {
+          "dc_type": {
+            "index": "con",
+            "name": "CON",
+            "url": "/api/2024/ability-scores/con"
+          },
+          "dc_value": 17,
+          "success_type": "none"
+        }
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Charm (Recharge 5–6)",
+        "desc": "The vampire casts Charm Person, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17), and the duration is 24 hours. The Charmed target is a willing recipient of the vampire’s Bite, the damage of which doesn’t end the spell. When the spell ends, the target is unaware it was Charmed by the vampire.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 17,
+          "components_required": [],
+          "spells": [
+            {
+              "index": "charm-person",
+              "name": "Charm Person",
+              "level": 1,
+              "url": "/api/2024/spells/charm-person"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Shape-Shift",
+        "desc": "If the vampire isn’t in sunlight or running water, it shape-shifts into a Tiny bat (Speed 5 ft., Fly Speed 30 ft.) or a Medium cloud of mist (Speed 5 ft., Fly Speed 20 ft. [hover]), or it returns to its vampire form. Anything it is wearing transforms with it. While in bat form, the vampire can’t speak. Its game statistics, other than its size and Speed, are unchanged. While in mist form, the vampire can’t take any actions, speak, or manipulate objects. It is weightless and can enter an enemy’s space and stop there. If air can pass through a space, the mist can do so, but it can’t pass through liquid. It has Resistance to all damage, except the damage it takes from sunlight."
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Beguile",
+        "desc": "The vampire casts Command, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17). The vampire can’t take this action again until the start of its next turn.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 17,
+          "components_required": [],
+          "spells": [
+            {
+              "index": "command",
+              "name": "Command",
+              "level": 1,
+              "url": "/api/2024/spells/command"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Deathless Strike",
+        "desc": "The vampire moves up to half its Speed, and it makes one Grave Strike attack."
+      }
+    ],
+    "index": "vampire-bat",
+    "url": "/api/2024/monsters/vampire-bat",
+    "image": "/api/images/monsters/vampire-bat.png",
+    "hit_points_roll": "23d8 + 92",
+    "proficiencies": [
+      {
+        "value": 9,
+        "proficiency": {
+          "index": "saving-throw-dex",
+          "name": "Saving Throw: DEX",
+          "url": "/api/2024/proficiencies/saving-throw-dex"
+        }
+      },
+      {
+        "value": 9,
+        "proficiency": {
+          "index": "saving-throw-con",
+          "name": "Saving Throw: CON",
+          "url": "/api/2024/proficiencies/saving-throw-con"
+        }
+      },
+      {
+        "value": 7,
+        "proficiency": {
+          "index": "saving-throw-wis",
+          "name": "Saving Throw: WIS",
+          "url": "/api/2024/proficiencies/saving-throw-wis"
+        }
+      },
+      {
+        "value": 9,
+        "proficiency": {
+          "index": "saving-throw-cha",
+          "name": "Saving Throw: CHA",
+          "url": "/api/2024/proficiencies/saving-throw-cha"
+        }
+      }
+    ],
+    "skills": "Perception +7, Stealth +9",
+    "proficiency_bonus": 5,
+    "xp": 10000,
+    "xp_in_lair": 11500,
+    "forms": [
+      {
+        "index": "vampire-vampire",
+        "name": "Vampire, Vampire Form",
+        "url": "/api/2024/monsters/vampire-vampire"
+      },
+      {
+        "index": "vampire-mist",
+        "name": "Vampire, Mist Form",
+        "url": "/api/2024/monsters/vampire-mist"
+      }
+    ]
+  },
+  {
+    "name": "Vampire, Mist Form",
+    "size": "Medium",
+    "type": "or small undead",
+    "alignment": "lawful evil",
+    "armor_class": [
+      {
+        "type": "natural",
+        "value": 16
+      }
+    ],
+    "hit_points": 195,
+    "hit_dice": "23d8",
+    "speed": {
+      "walk": "5 ft.",
+      "fly": "20 ft.",
+      "hover": true
+    },
+    "strength": 18,
+    "dexterity": 18,
+    "constitution": 18,
+    "intelligence": 17,
+    "wisdom": 15,
+    "charisma": 18,
+    "damage_resistances": [
+      "necrotic"
+    ],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": {
+      "darkvision": "120 ft.",
+      "passive_perception": 17
+    },
+    "languages": "Common plus two other languages",
+    "challenge_rating": 13,
+    "special_abilities": [
+      {
+        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
+        "desc": "If the vampire fails a saving throw, it can choose to succeed instead."
+      },
+      {
+        "name": "Misty Escape",
+        "desc": "If the vampire drops to 0 Hit Points outside its resting place, the vampire uses Shape-Shift to become mist (no action required). If it can’t use ShapeShift, it is destroyed. While it has 0 Hit Points in mist form, it can’t return to its vampire form, and it must reach its resting place within 2 hours or be destroyed. Once in its resting place, it returns to its vampire form and has the Paralyzed condition until it regains any Hit Points, and it regains 1 Hit Point after spending 1 hour there."
+      },
+      {
+        "name": "Spider Climb",
+        "desc": "The vampire can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+      },
+      {
+        "name": "Vampire Weakness",
+        "desc": "The vampire has these weaknesses:"
+      },
+      {
+        "name": "Forbiddance",
+        "desc": "The vampire can’t enter a residence without an invitation from an occupant."
+      },
+      {
+        "name": "Running Water",
+        "desc": "The vampire takes 20 Acid damage if it ends its turn in running water."
+      },
+      {
+        "name": "Stake to the Heart",
+        "desc": "If a weapon that deals Piercing damage is driven into the vampire’s heart while the vampire has the Incapacitated condition in its resting place, the vampire has the Paralyzed condition until the weapon is removed."
+      },
+      {
+        "name": "Sunlight",
+        "desc": "The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks."
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Charm (Recharge 5–6)",
+        "desc": "The vampire casts Charm Person, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17), and the duration is 24 hours. The Charmed target is a willing recipient of the vampire’s Bite, the damage of which doesn’t end the spell. When the spell ends, the target is unaware it was Charmed by the vampire.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 17,
+          "components_required": [],
+          "spells": [
+            {
+              "index": "charm-person",
+              "name": "Charm Person",
+              "level": 1,
+              "url": "/api/2024/spells/charm-person"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Shape-Shift",
+        "desc": "If the vampire isn’t in sunlight or running water, it shape-shifts into a Tiny bat (Speed 5 ft., Fly Speed 30 ft.) or a Medium cloud of mist (Speed 5 ft., Fly Speed 20 ft. [hover]), or it returns to its vampire form. Anything it is wearing transforms with it. While in bat form, the vampire can’t speak. Its game statistics, other than its size and Speed, are unchanged. While in mist form, the vampire can’t take any actions, speak, or manipulate objects. It is weightless and can enter an enemy’s space and stop there. If air can pass through a space, the mist can do so, but it can’t pass through liquid. It has Resistance to all damage, except the damage it takes from sunlight."
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Beguile",
+        "desc": "The vampire casts Command, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17). The vampire can’t take this action again until the start of its next turn.",
+        "spellcasting": {
+          "ability": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/2024/ability-scores/cha"
+          },
+          "dc": 17,
+          "components_required": [],
+          "spells": [
+            {
+              "index": "command",
+              "name": "Command",
+              "level": 1,
+              "url": "/api/2024/spells/command"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Deathless Strike",
+        "desc": "The vampire moves up to half its Speed, and it makes one Grave Strike attack."
+      }
+    ],
+    "index": "vampire-mist",
+    "url": "/api/2024/monsters/vampire-mist",
+    "image": "/api/images/monsters/vampire-mist.png",
+    "hit_points_roll": "23d8 + 92",
+    "proficiencies": [
+      {
+        "value": 9,
+        "proficiency": {
+          "index": "saving-throw-dex",
+          "name": "Saving Throw: DEX",
+          "url": "/api/2024/proficiencies/saving-throw-dex"
+        }
+      },
+      {
+        "value": 9,
+        "proficiency": {
+          "index": "saving-throw-con",
+          "name": "Saving Throw: CON",
+          "url": "/api/2024/proficiencies/saving-throw-con"
+        }
+      },
+      {
+        "value": 7,
+        "proficiency": {
+          "index": "saving-throw-wis",
+          "name": "Saving Throw: WIS",
+          "url": "/api/2024/proficiencies/saving-throw-wis"
+        }
+      },
+      {
+        "value": 9,
+        "proficiency": {
+          "index": "saving-throw-cha",
+          "name": "Saving Throw: CHA",
+          "url": "/api/2024/proficiencies/saving-throw-cha"
+        }
+      }
+    ],
+    "skills": "Perception +7, Stealth +9",
+    "proficiency_bonus": 5,
+    "xp": 10000,
+    "xp_in_lair": 11500,
+    "forms": [
+      {
+        "index": "vampire-vampire",
+        "name": "Vampire, Vampire Form",
+        "url": "/api/2024/monsters/vampire-vampire"
+      },
+      {
+        "index": "vampire-bat",
+        "name": "Vampire, Bat Form",
+        "url": "/api/2024/monsters/vampire-bat"
+      }
+    ]
   },
   {
     "name": "Vrock",
@@ -32668,7 +33066,7 @@
     "xp": 1800
   },
   {
-    "name": "Werebear",
+    "name": "Werebear, Human Form",
     "size": "Medium",
     "type": "or small monstrosity",
     "alignment": "neutral good",
@@ -32681,8 +33079,7 @@
     "hit_points": 135,
     "hit_dice": "18d8",
     "speed": {
-      "walk": "40 ft.",
-      "climb": "30 ft."
+      "walk": "30 ft."
     },
     "strength": 19,
     "dexterity": 10,
@@ -32700,7 +33097,103 @@
     },
     "languages": "Common (can’t speak in bear form)",
     "challenge_rating": 5,
-    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The werebear makes two attacks, using Handaxe or Rend in any combination. It can replace one attack with a Bite attack.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Handaxe",
+                "count": 2,
+                "type": "melee"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Handaxe",
+        "desc": "Melee or Ranged Attack Roll: +7, reach 5 ft or range 20/60 ft. Hit: 14 (3d6 + 4) Slashing damage.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "slashing",
+              "name": "Slashing",
+              "url": "/api/2024/damage-types/slashing"
+            },
+            "damage_dice": "3d6+4"
+          }
+        ]
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Shape-Shift",
+        "desc": "The werebear shape-shifts into a Large bear-humanoid hybrid form or a Large bear, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed."
+      }
+    ],
+    "index": "werebear-human",
+    "url": "/api/2024/monsters/werebear-human",
+    "image": "/api/images/monsters/werebear-human.png",
+    "hit_points_roll": "18d8 + 54",
+    "proficiencies": [],
+    "skills": "Perception +7",
+    "gear": "Handaxes (4)",
+    "proficiency_bonus": 3,
+    "xp": 1800,
+    "forms": [
+      {
+        "index": "werebear-hybrid",
+        "name": "Werebear, Hybrid Form",
+        "url": "/api/2024/monsters/werebear-hybrid"
+      },
+      {
+        "index": "werebear-bear",
+        "name": "Werebear, Bear Form",
+        "url": "/api/2024/monsters/werebear-bear"
+      }
+    ]
+  },
+  {
+    "name": "Werebear, Hybrid Form",
+    "size": "Large",
+    "type": "or small monstrosity",
+    "alignment": "neutral good",
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 15
+      }
+    ],
+    "hit_points": 135,
+    "hit_dice": "18d8",
+    "speed": {
+      "walk": "30 ft."
+    },
+    "strength": 19,
+    "dexterity": 10,
+    "constitution": 17,
+    "intelligence": 11,
+    "wisdom": 12,
+    "charisma": 12,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": {
+      "darkvision": "60 ft.",
+      "passive_perception": 17
+    },
+    "languages": "Common (can’t speak in bear form)",
+    "challenge_rating": 5,
     "actions": [
       {
         "name": "Multiattack",
@@ -32736,8 +33229,8 @@
         }
       },
       {
-        "name": "Bite (Bear or Hybrid Form Only)",
-        "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 17 (2d12 + 4) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. Constitution Saving Throw: DC 14. Failure:",
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 17 (2d12 + 4) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. Constitution Saving Throw: DC 14. Failure: The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a Werebear under the GM’s control and has 10 Hit Points. Success: The target is immune to this werebear’s curse for 24 hours.",
         "damage": [
           {
             "damage_type": {
@@ -32759,11 +33252,7 @@
         }
       },
       {
-        "name": "The target is cursed",
-        "desc": "If the cursed target drops to 0 Hit Points, it instead becomes a Werebear under the GM’s control and has 10 Hit Points. Success: The target is immune to this werebear’s curse for 24 hours."
-      },
-      {
-        "name": "Handaxe (Humanoid or Hybrid Form Only)",
+        "name": "Handaxe",
         "desc": "Melee or Ranged Attack Roll: +7, reach 5 ft or range 20/60 ft. Hit: 14 (3d6 + 4) Slashing damage.",
         "damage": [
           {
@@ -32777,7 +33266,7 @@
         ]
       },
       {
-        "name": "Rend (Bear or Hybrid Form Only)",
+        "name": "Rend",
         "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Slashing damage.",
         "damage": [
           {
@@ -32797,19 +33286,157 @@
         "desc": "The werebear shape-shifts into a Large bear-humanoid hybrid form or a Large bear, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed."
       }
     ],
-    "legendary_actions": [],
-    "index": "werebear",
-    "url": "/api/2024/monsters/werebear",
-    "image": "/api/images/monsters/werebear-NYI.png",
+    "index": "werebear-hybrid",
+    "url": "/api/2024/monsters/werebear-hybrid",
+    "image": "/api/images/monsters/werebear-hybrid.png",
     "hit_points_roll": "18d8 + 54",
     "proficiencies": [],
     "skills": "Perception +7",
     "gear": "Handaxes (4)",
     "proficiency_bonus": 3,
-    "xp": 1800
+    "xp": 1800,
+    "forms": [
+      {
+        "index": "werebear-human",
+        "name": "Werebear, Human Form",
+        "url": "/api/2024/monsters/werebear-human"
+      },
+      {
+        "index": "werebear-bear",
+        "name": "Werebear, Bear Form",
+        "url": "/api/2024/monsters/werebear-bear"
+      }
+    ]
   },
   {
-    "name": "Wereboar",
+    "name": "Werebear, Bear Form",
+    "size": "Large",
+    "type": "or small monstrosity",
+    "alignment": "neutral good",
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 15
+      }
+    ],
+    "hit_points": 135,
+    "hit_dice": "18d8",
+    "speed": {
+      "walk": "40 ft.",
+      "climb": "30 ft."
+    },
+    "strength": 19,
+    "dexterity": 10,
+    "constitution": 17,
+    "intelligence": 11,
+    "wisdom": 12,
+    "charisma": 12,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": {
+      "darkvision": "60 ft.",
+      "passive_perception": 17
+    },
+    "languages": "Common (can’t speak in bear form)",
+    "challenge_rating": 5,
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The werebear makes two attacks, using Handaxe or Rend in any combination. It can replace one attack with a Bite attack.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Bite",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 17 (2d12 + 4) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. Constitution Saving Throw: DC 14. Failure: The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a Werebear under the GM’s control and has 10 Hit Points. Success: The target is immune to this werebear’s curse for 24 hours.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/2024/damage-types/piercing"
+            },
+            "damage_dice": "2d12+4"
+          }
+        ],
+        "dc": {
+          "dc_type": {
+            "index": "con",
+            "name": "CON",
+            "url": "/api/2024/ability-scores/con"
+          },
+          "dc_value": 14,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Rend",
+        "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Slashing damage.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "slashing",
+              "name": "Slashing",
+              "url": "/api/2024/damage-types/slashing"
+            },
+            "damage_dice": "2d8+4"
+          }
+        ]
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Shape-Shift",
+        "desc": "The werebear shape-shifts into a Large bear-humanoid hybrid form or a Large bear, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed."
+      }
+    ],
+    "index": "werebear-bear",
+    "url": "/api/2024/monsters/werebear-bear",
+    "image": "/api/images/monsters/werebear-bear.png",
+    "hit_points_roll": "18d8 + 54",
+    "proficiencies": [],
+    "skills": "Perception +7",
+    "gear": "Handaxes (4)",
+    "proficiency_bonus": 3,
+    "xp": 1800,
+    "forms": [
+      {
+        "index": "werebear-human",
+        "name": "Werebear, Human Form",
+        "url": "/api/2024/monsters/werebear-human"
+      },
+      {
+        "index": "werebear-hybrid",
+        "name": "Werebear, Hybrid Form",
+        "url": "/api/2024/monsters/werebear-hybrid"
+      }
+    ]
+  },
+  {
+    "name": "Wereboar, Human Form",
     "size": "Medium",
     "type": "or small monstrosity",
     "alignment": "neutral evil",
@@ -32822,7 +33449,7 @@
     "hit_points": 97,
     "hit_dice": "15d8",
     "speed": {
-      "walk": "40 ft."
+      "walk": "30 ft."
     },
     "strength": 17,
     "dexterity": 10,
@@ -32839,7 +33466,102 @@
     },
     "languages": "Common (can’t speak in boar form)",
     "challenge_rating": 4,
-    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The wereboar makes two attacks, using Javelin or Tusk in any combination. It can replace one attack with a Gore attack.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Javelin",
+                "count": 2,
+                "type": "melee"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Javelin",
+        "desc": "Melee or Ranged Attack Roll: +5, reach 5 ft. or range 30/120 ft. Hit: 13 (3d6 + 3) Piercing damage.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/2024/damage-types/piercing"
+            },
+            "damage_dice": "3d6+3"
+          }
+        ]
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Shape-Shift",
+        "desc": "The wereboar shape-shifts into a Medium boar-humanoid hybrid or a Small boar, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed."
+      }
+    ],
+    "index": "wereboar-human",
+    "url": "/api/2024/monsters/wereboar-human",
+    "image": "/api/images/monsters/wereboar-human.png",
+    "hit_points_roll": "15d8 + 30",
+    "proficiencies": [],
+    "skills": "Perception +2",
+    "gear": "Javelins (6)",
+    "proficiency_bonus": 2,
+    "xp": 1100,
+    "forms": [
+      {
+        "index": "wereboar-hybrid",
+        "name": "Wereboar, Hybrid Form",
+        "url": "/api/2024/monsters/wereboar-hybrid"
+      },
+      {
+        "index": "wereboar-boar",
+        "name": "Wereboar, Boar Form",
+        "url": "/api/2024/monsters/wereboar-boar"
+      }
+    ]
+  },
+  {
+    "name": "Wereboar, Hybrid Form",
+    "size": "Medium",
+    "type": "or small monstrosity",
+    "alignment": "neutral evil",
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 15
+      }
+    ],
+    "hit_points": 97,
+    "hit_dice": "15d8",
+    "speed": {
+      "walk": "30 ft."
+    },
+    "strength": 17,
+    "dexterity": 10,
+    "constitution": 15,
+    "intelligence": 10,
+    "wisdom": 11,
+    "charisma": 8,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": {
+      "passive_perception": 12
+    },
+    "languages": "Common (can’t speak in boar form)",
+    "challenge_rating": 4,
     "actions": [
       {
         "name": "Multiattack",
@@ -32875,8 +33597,8 @@
         }
       },
       {
-        "name": "Gore (Boar or Hybrid Form Only)",
-        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 12 (2d8 + 3) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. Constitution Saving Throw: DC 12. Failure:",
+        "name": "Gore",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 12 (2d8 + 3) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. Constitution Saving Throw: DC 12. Failure: The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a Wereboar under the GM’s control and has 10 Hit Points. Success: The target is immune to this wereboar’s curse for 24 hours.",
         "damage": [
           {
             "damage_type": {
@@ -32898,11 +33620,7 @@
         }
       },
       {
-        "name": "The target is cursed",
-        "desc": "If the cursed target drops to 0 Hit Points, it instead becomes a Wereboar under the GM’s control and has 10 Hit Points. Success: The target is immune to this wereboar’s curse for 24 hours."
-      },
-      {
-        "name": "Javelin (Humanoid or Hybrid Form Only)",
+        "name": "Javelin",
         "desc": "Melee or Ranged Attack Roll: +5, reach 5 ft. or range 30/120 ft. Hit: 13 (3d6 + 3) Piercing damage.",
         "damage": [
           {
@@ -32916,7 +33634,7 @@
         ]
       },
       {
-        "name": "Tusk (Boar or Hybrid Form Only)",
+        "name": "Tusk",
         "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Piercing damage. If the target is a Medium or smaller creature and the wereboar moved 20+ feet straight toward it immediately before the hit, the target takes an extra 7 (2d6) Piercing damage and has the Prone condition.",
         "damage": [
           {
@@ -32944,19 +33662,163 @@
         "desc": "The wereboar shape-shifts into a Medium boar-humanoid hybrid or a Small boar, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed."
       }
     ],
-    "legendary_actions": [],
-    "index": "wereboar",
-    "url": "/api/2024/monsters/wereboar",
-    "image": "/api/images/monsters/wereboar-NYI.png",
+    "index": "wereboar-hybrid",
+    "url": "/api/2024/monsters/wereboar-hybrid",
+    "image": "/api/images/monsters/wereboar-hybrid.png",
     "hit_points_roll": "15d8 + 30",
     "proficiencies": [],
     "skills": "Perception +2",
     "gear": "Javelins (6)",
     "proficiency_bonus": 2,
-    "xp": 1100
+    "xp": 1100,
+    "forms": [
+      {
+        "index": "wereboar-human",
+        "name": "Wereboar, Human Form",
+        "url": "/api/2024/monsters/wereboar-human"
+      },
+      {
+        "index": "wereboar-boar",
+        "name": "Wereboar, Boar Form",
+        "url": "/api/2024/monsters/wereboar-boar"
+      }
+    ]
   },
   {
-    "name": "Wererat",
+    "name": "Wereboar, Boar Form",
+    "size": "Small",
+    "type": "or small monstrosity",
+    "alignment": "neutral evil",
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 15
+      }
+    ],
+    "hit_points": 97,
+    "hit_dice": "15d8",
+    "speed": {
+      "walk": "40 ft."
+    },
+    "strength": 17,
+    "dexterity": 10,
+    "constitution": 15,
+    "intelligence": 10,
+    "wisdom": 11,
+    "charisma": 8,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": {
+      "passive_perception": 12
+    },
+    "languages": "Common (can’t speak in boar form)",
+    "challenge_rating": 4,
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The wereboar makes two attacks, using Javelin or Tusk in any combination. It can replace one attack with a Gore attack.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Tusk",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Gore",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Gore",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 12 (2d8 + 3) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. Constitution Saving Throw: DC 12. Failure: The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a Wereboar under the GM’s control and has 10 Hit Points. Success: The target is immune to this wereboar’s curse for 24 hours.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/2024/damage-types/piercing"
+            },
+            "damage_dice": "2d8+3"
+          }
+        ],
+        "dc": {
+          "dc_type": {
+            "index": "con",
+            "name": "CON",
+            "url": "/api/2024/ability-scores/con"
+          },
+          "dc_value": 12,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Tusk",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Piercing damage. If the target is a Medium or smaller creature and the wereboar moved 20+ feet straight toward it immediately before the hit, the target takes an extra 7 (2d6) Piercing damage and has the Prone condition.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/2024/damage-types/piercing"
+            },
+            "damage_dice": "2d6+3"
+          },
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/2024/damage-types/piercing"
+            },
+            "damage_dice": "2d6"
+          }
+        ]
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Shape-Shift",
+        "desc": "The wereboar shape-shifts into a Medium boar-humanoid hybrid or a Small boar, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed."
+      }
+    ],
+    "index": "wereboar-boar",
+    "url": "/api/2024/monsters/wereboar-boar",
+    "image": "/api/images/monsters/wereboar-boar.png",
+    "hit_points_roll": "15d8 + 30",
+    "proficiencies": [],
+    "skills": "Perception +2",
+    "gear": "Javelins (6)",
+    "proficiency_bonus": 2,
+    "xp": 1100,
+    "forms": [
+      {
+        "index": "wereboar-human",
+        "name": "Wereboar, Human Form",
+        "url": "/api/2024/monsters/wereboar-human"
+      },
+      {
+        "index": "wereboar-hybrid",
+        "name": "Wereboar, Hybrid Form",
+        "url": "/api/2024/monsters/wereboar-hybrid"
+      }
+    ]
+  },
+  {
+    "name": "Wererat, Human Form",
     "size": "Medium",
     "type": "or small monstrosity",
     "alignment": "lawful evil",
@@ -32988,7 +33850,124 @@
     },
     "languages": "Common (can’t speak in rat form)",
     "challenge_rating": 2,
-    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The wererat makes two attacks, using Scratch or Hand Crossbow in any combination. It can replace one attack with a Bite attack.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Scratch",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Hand Crossbow",
+                "count": 2,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Scratch",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Slashing damage.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "slashing",
+              "name": "Slashing",
+              "url": "/api/2024/damage-types/slashing"
+            },
+            "damage_dice": "1d6+3"
+          }
+        ]
+      },
+      {
+        "name": "Hand Crossbow",
+        "desc": "Ranged Attack Roll: +5, range 30/120 ft. Hit: 6 (1d6 + 3) Piercing damage.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/2024/damage-types/piercing"
+            },
+            "damage_dice": "1d6+3"
+          }
+        ]
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Shape-Shift",
+        "desc": "The wererat shape-shifts into a Medium rat-humanoid hybrid or a Small rat, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed."
+      }
+    ],
+    "index": "wererat-human",
+    "url": "/api/2024/monsters/wererat-human",
+    "image": "/api/images/monsters/wererat-human.png",
+    "hit_points_roll": "11d8 + 11",
+    "proficiencies": [],
+    "skills": "Perception +4, Stealth +5",
+    "gear": "Hand Crossbow",
+    "proficiency_bonus": 2,
+    "xp": 450,
+    "forms": [
+      {
+        "index": "wererat-hybrid",
+        "name": "Wererat, Hybrid Form",
+        "url": "/api/2024/monsters/wererat-hybrid"
+      },
+      {
+        "index": "wererat-rat",
+        "name": "Wererat, Rat Form",
+        "url": "/api/2024/monsters/wererat-rat"
+      }
+    ]
+  },
+  {
+    "name": "Wererat, Hybrid Form",
+    "size": "Medium",
+    "type": "or small monstrosity",
+    "alignment": "lawful evil",
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 13
+      }
+    ],
+    "hit_points": 60,
+    "hit_dice": "11d8",
+    "speed": {
+      "walk": "30 ft.",
+      "climb": "30 ft."
+    },
+    "strength": 10,
+    "dexterity": 16,
+    "constitution": 12,
+    "intelligence": 11,
+    "wisdom": 10,
+    "charisma": 8,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": {
+      "darkvision": "60 ft.",
+      "passive_perception": 14
+    },
+    "languages": "Common (can’t speak in rat form)",
+    "challenge_rating": 2,
     "actions": [
       {
         "name": "Multiattack",
@@ -33024,7 +34003,7 @@
         }
       },
       {
-        "name": "Bite (Rat or Hybrid Form Only)",
+        "name": "Bite",
         "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 8 (2d4 + 3) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. Constitution Saving Throw: DC 11. Failure: The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a Wererat under the GM’s control and has 10 Hit Points. Success: The target is immune to this wererat’s curse for 24 hours.",
         "damage": [
           {
@@ -33061,7 +34040,7 @@
         ]
       },
       {
-        "name": "Hand Crossbow (Humanoid or Hybrid Form Only)",
+        "name": "Hand Crossbow",
         "desc": "Ranged Attack Roll: +5, range 30/120 ft. Hit: 6 (1d6 + 3) Piercing damage.",
         "damage": [
           {
@@ -33081,19 +34060,157 @@
         "desc": "The wererat shape-shifts into a Medium rat-humanoid hybrid or a Small rat, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed."
       }
     ],
-    "legendary_actions": [],
-    "index": "wererat",
-    "url": "/api/2024/monsters/wererat",
-    "image": "/api/images/monsters/wererat-NYI.png",
+    "index": "wererat-hybrid",
+    "url": "/api/2024/monsters/wererat-hybrid",
+    "image": "/api/images/monsters/wererat-hybrid.png",
     "hit_points_roll": "11d8 + 11",
     "proficiencies": [],
     "skills": "Perception +4, Stealth +5",
     "gear": "Hand Crossbow",
     "proficiency_bonus": 2,
-    "xp": 450
+    "xp": 450,
+    "forms": [
+      {
+        "index": "wererat-human",
+        "name": "Wererat, Human Form",
+        "url": "/api/2024/monsters/wererat-human"
+      },
+      {
+        "index": "wererat-rat",
+        "name": "Wererat, Rat Form",
+        "url": "/api/2024/monsters/wererat-rat"
+      }
+    ]
   },
   {
-    "name": "Weretiger",
+    "name": "Wererat, Rat Form",
+    "size": "Small",
+    "type": "or small monstrosity",
+    "alignment": "lawful evil",
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 13
+      }
+    ],
+    "hit_points": 60,
+    "hit_dice": "11d8",
+    "speed": {
+      "walk": "30 ft.",
+      "climb": "30 ft."
+    },
+    "strength": 10,
+    "dexterity": 16,
+    "constitution": 12,
+    "intelligence": 11,
+    "wisdom": 10,
+    "charisma": 8,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": {
+      "darkvision": "60 ft.",
+      "passive_perception": 14
+    },
+    "languages": "Common (can’t speak in rat form)",
+    "challenge_rating": 2,
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The wererat makes two attacks, using Scratch or Hand Crossbow in any combination. It can replace one attack with a Bite attack.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Scratch",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Bite",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 8 (2d4 + 3) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. Constitution Saving Throw: DC 11. Failure: The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a Wererat under the GM’s control and has 10 Hit Points. Success: The target is immune to this wererat’s curse for 24 hours.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/2024/damage-types/piercing"
+            },
+            "damage_dice": "2d4+3"
+          }
+        ],
+        "dc": {
+          "dc_type": {
+            "index": "con",
+            "name": "CON",
+            "url": "/api/2024/ability-scores/con"
+          },
+          "dc_value": 11,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Scratch",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Slashing damage.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "slashing",
+              "name": "Slashing",
+              "url": "/api/2024/damage-types/slashing"
+            },
+            "damage_dice": "1d6+3"
+          }
+        ]
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Shape-Shift",
+        "desc": "The wererat shape-shifts into a Medium rat-humanoid hybrid or a Small rat, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed."
+      }
+    ],
+    "index": "wererat-rat",
+    "url": "/api/2024/monsters/wererat-rat",
+    "image": "/api/images/monsters/wererat-rat.png",
+    "hit_points_roll": "11d8 + 11",
+    "proficiencies": [],
+    "skills": "Perception +4, Stealth +5",
+    "gear": "Hand Crossbow",
+    "proficiency_bonus": 2,
+    "xp": 450,
+    "forms": [
+      {
+        "index": "wererat-human",
+        "name": "Wererat, Human Form",
+        "url": "/api/2024/monsters/wererat-human"
+      },
+      {
+        "index": "wererat-hybrid",
+        "name": "Wererat, Hybrid Form",
+        "url": "/api/2024/monsters/wererat-hybrid"
+      }
+    ]
+  },
+  {
+    "name": "Weretiger, Human Form",
     "size": "Medium",
     "type": "or small monstrosity",
     "alignment": "neutral",
@@ -33106,7 +34223,7 @@
     "hit_points": 120,
     "hit_dice": "16d8",
     "speed": {
-      "walk": "40 ft."
+      "walk": "30 ft."
     },
     "strength": 17,
     "dexterity": 15,
@@ -33124,7 +34241,123 @@
     },
     "languages": "Common (can’t speak in tiger form)",
     "challenge_rating": 4,
-    "special_abilities": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The weretiger makes two attacks, using Scratch or Longbow in any combination. It can replace one attack with a Bite attack.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Scratch",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Longbow",
+                "count": 2,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Scratch",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "slashing",
+              "name": "Slashing",
+              "url": "/api/2024/damage-types/slashing"
+            },
+            "damage_dice": "2d6+3"
+          }
+        ]
+      },
+      {
+        "name": "Longbow",
+        "desc": "Ranged Attack Roll: +4, range 150/600 ft. Hit: 11 (2d8 + 2) Piercing damage.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/2024/damage-types/piercing"
+            },
+            "damage_dice": "2d8+2"
+          }
+        ]
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Shape-Shift",
+        "desc": "The weretiger shape-shifts into a Large tiger-humanoid hybrid or a Large tiger, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed."
+      }
+    ],
+    "index": "weretiger-human",
+    "url": "/api/2024/monsters/weretiger-human",
+    "image": "/api/images/monsters/weretiger-human.png",
+    "hit_points_roll": "16d8 + 48",
+    "proficiencies": [],
+    "skills": "Perception +5, Stealth +4",
+    "gear": "Longbow",
+    "proficiency_bonus": 2,
+    "xp": 1100,
+    "forms": [
+      {
+        "index": "weretiger-hybrid",
+        "name": "Weretiger, Hybrid Form",
+        "url": "/api/2024/monsters/weretiger-hybrid"
+      },
+      {
+        "index": "weretiger-tiger",
+        "name": "Weretiger, Tiger Form",
+        "url": "/api/2024/monsters/weretiger-tiger"
+      }
+    ]
+  },
+  {
+    "name": "Weretiger, Hybrid Form",
+    "size": "Large",
+    "type": "or small monstrosity",
+    "alignment": "neutral",
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 12
+      }
+    ],
+    "hit_points": 120,
+    "hit_dice": "16d8",
+    "speed": {
+      "walk": "30 ft."
+    },
+    "strength": 17,
+    "dexterity": 15,
+    "constitution": 16,
+    "intelligence": 10,
+    "wisdom": 13,
+    "charisma": 11,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": {
+      "darkvision": "60 ft.",
+      "passive_perception": 15
+    },
+    "languages": "Common (can’t speak in tiger form)",
+    "challenge_rating": 4,
     "actions": [
       {
         "name": "Multiattack",
@@ -33160,8 +34393,8 @@
         }
       },
       {
-        "name": "Bite (Tiger or Hybrid Form Only)",
-        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 12 (2d8 + 3) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. Constitution Saving Throw: DC 13. Failure:",
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 12 (2d8 + 3) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. Constitution Saving Throw: DC 13. Failure: The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a Weretiger under the GM’s control and has 10 Hit Points. Success: The target is immune to this weretiger’s curse for 24 hours.",
         "damage": [
           {
             "damage_type": {
@@ -33183,8 +34416,261 @@
         }
       },
       {
-        "name": "The target is cursed",
-        "desc": "If the cursed target drops to 0 Hit Points, it instead becomes a Weretiger under the GM’s control and has 10 Hit Points. Success: The target is immune to this weretiger’s curse for 24 hours."
+        "name": "Scratch",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "slashing",
+              "name": "Slashing",
+              "url": "/api/2024/damage-types/slashing"
+            },
+            "damage_dice": "2d6+3"
+          }
+        ]
+      },
+      {
+        "name": "Longbow",
+        "desc": "Ranged Attack Roll: +4, range 150/600 ft. Hit: 11 (2d8 + 2) Piercing damage.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/2024/damage-types/piercing"
+            },
+            "damage_dice": "2d8+2"
+          }
+        ]
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Prowl",
+        "desc": "The weretiger moves up to its Speed without provoking Opportunity Attacks. At the end of this movement, the weretiger can take the Hide action."
+      },
+      {
+        "name": "Shape-Shift",
+        "desc": "The weretiger shape-shifts into a Large tiger-humanoid hybrid or a Large tiger, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed."
+      }
+    ],
+    "index": "weretiger-hybrid",
+    "url": "/api/2024/monsters/weretiger-hybrid",
+    "image": "/api/images/monsters/weretiger-hybrid.png",
+    "hit_points_roll": "16d8 + 48",
+    "proficiencies": [],
+    "skills": "Perception +5, Stealth +4",
+    "gear": "Longbow",
+    "proficiency_bonus": 2,
+    "xp": 1100,
+    "forms": [
+      {
+        "index": "weretiger-human",
+        "name": "Weretiger, Human Form",
+        "url": "/api/2024/monsters/weretiger-human"
+      },
+      {
+        "index": "weretiger-tiger",
+        "name": "Weretiger, Tiger Form",
+        "url": "/api/2024/monsters/weretiger-tiger"
+      }
+    ]
+  },
+  {
+    "name": "Weretiger, Tiger Form",
+    "size": "Large",
+    "type": "or small monstrosity",
+    "alignment": "neutral",
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 12
+      }
+    ],
+    "hit_points": 120,
+    "hit_dice": "16d8",
+    "speed": {
+      "walk": "40 ft."
+    },
+    "strength": 17,
+    "dexterity": 15,
+    "constitution": 16,
+    "intelligence": 10,
+    "wisdom": 13,
+    "charisma": 11,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": {
+      "darkvision": "60 ft.",
+      "passive_perception": 15
+    },
+    "languages": "Common (can’t speak in tiger form)",
+    "challenge_rating": 4,
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The weretiger makes two attacks, using Scratch or Longbow in any combination. It can replace one attack with a Bite attack.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Scratch",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Bite",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 12 (2d8 + 3) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. Constitution Saving Throw: DC 13. Failure: The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a Weretiger under the GM’s control and has 10 Hit Points. Success: The target is immune to this weretiger’s curse for 24 hours.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/2024/damage-types/piercing"
+            },
+            "damage_dice": "2d8+3"
+          }
+        ],
+        "dc": {
+          "dc_type": {
+            "index": "con",
+            "name": "CON",
+            "url": "/api/2024/ability-scores/con"
+          },
+          "dc_value": 13,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Scratch",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "slashing",
+              "name": "Slashing",
+              "url": "/api/2024/damage-types/slashing"
+            },
+            "damage_dice": "2d6+3"
+          }
+        ]
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Prowl",
+        "desc": "The weretiger moves up to its Speed without provoking Opportunity Attacks. At the end of this movement, the weretiger can take the Hide action."
+      },
+      {
+        "name": "Shape-Shift",
+        "desc": "The weretiger shape-shifts into a Large tiger-humanoid hybrid or a Large tiger, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed."
+      }
+    ],
+    "index": "weretiger-tiger",
+    "url": "/api/2024/monsters/weretiger-tiger",
+    "image": "/api/images/monsters/weretiger-tiger.png",
+    "hit_points_roll": "16d8 + 48",
+    "proficiencies": [],
+    "skills": "Perception +5, Stealth +4",
+    "gear": "Longbow",
+    "proficiency_bonus": 2,
+    "xp": 1100,
+    "forms": [
+      {
+        "index": "weretiger-human",
+        "name": "Weretiger, Human Form",
+        "url": "/api/2024/monsters/weretiger-human"
+      },
+      {
+        "index": "weretiger-hybrid",
+        "name": "Weretiger, Hybrid Form",
+        "url": "/api/2024/monsters/weretiger-hybrid"
+      }
+    ]
+  },
+  {
+    "name": "Werewolf, Human Form",
+    "size": "Medium",
+    "type": "or small monstrosity",
+    "alignment": "chaotic evil",
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 15
+      }
+    ],
+    "hit_points": 71,
+    "hit_dice": "11d8",
+    "speed": {
+      "walk": "30 ft."
+    },
+    "strength": 16,
+    "dexterity": 14,
+    "constitution": 14,
+    "intelligence": 10,
+    "wisdom": 11,
+    "charisma": 10,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": {
+      "darkvision": "60 ft.",
+      "passive_perception": 14
+    },
+    "languages": "Common (can’t speak in wolf form)",
+    "challenge_rating": 3,
+    "special_abilities": [
+      {
+        "name": "Pack Tactics",
+        "desc": "The werewolf has Advantage on an attack roll against a creature if at least one of the werewolf’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The werewolf makes two attacks, using Scratch or Longbow in any combination. It can replace one attack with a Bite attack.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Scratch",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Longbow",
+                "count": 2,
+                "type": "ranged"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Scratch",
@@ -33201,7 +34687,7 @@
         ]
       },
       {
-        "name": "Longbow (Humanoid or Hybrid Form Only)",
+        "name": "Longbow",
         "desc": "Ranged Attack Roll: +4, range 150/600 ft. Hit: 11 (2d8 + 2) Piercing damage.",
         "damage": [
           {
@@ -33217,28 +34703,35 @@
     ],
     "bonus_actions": [
       {
-        "name": "Prowl (Tiger or Hybrid Form Only)",
-        "desc": "The weretiger moves up to its Speed without provoking Opportunity Attacks. At the end of this movement, the weretiger can take the Hide action."
-      },
-      {
         "name": "Shape-Shift",
-        "desc": "The weretiger shape-shifts into a Large tiger-humanoid hybrid or a Large tiger, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed."
+        "desc": "The werewolf shape-shifts into a Large wolf-humanoid hybrid or a Medium wolf, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed."
       }
     ],
-    "legendary_actions": [],
-    "index": "weretiger",
-    "url": "/api/2024/monsters/weretiger",
-    "image": "/api/images/monsters/weretiger-NYI.png",
-    "hit_points_roll": "16d8 + 48",
+    "index": "werewolf-human",
+    "url": "/api/2024/monsters/werewolf-human",
+    "image": "/api/images/monsters/werewolf-human.png",
+    "hit_points_roll": "11d8 + 22",
     "proficiencies": [],
-    "skills": "Perception +5, Stealth +4",
+    "skills": "Perception +4, Stealth +4",
     "gear": "Longbow",
     "proficiency_bonus": 2,
-    "xp": 1100
+    "xp": 700,
+    "forms": [
+      {
+        "index": "werewolf-hybrid",
+        "name": "Werewolf, Hybrid Form",
+        "url": "/api/2024/monsters/werewolf-hybrid"
+      },
+      {
+        "index": "werewolf-wolf",
+        "name": "Werewolf, Wolf Form",
+        "url": "/api/2024/monsters/werewolf-wolf"
+      }
+    ]
   },
   {
-    "name": "Werewolf",
-    "size": "Medium",
+    "name": "Werewolf, Hybrid Form",
+    "size": "Large",
     "type": "or small monstrosity",
     "alignment": "chaotic evil",
     "armor_class": [
@@ -33250,7 +34743,7 @@
     "hit_points": 71,
     "hit_dice": "11d8",
     "speed": {
-      "walk": "40 ft."
+      "walk": "30 ft."
     },
     "strength": 16,
     "dexterity": 14,
@@ -33309,8 +34802,8 @@
         }
       },
       {
-        "name": "Bite (Wolf or Hybrid Form Only)",
-        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 12 (2d8 + 3) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. Constitution Saving Throw: DC 12. Failure:",
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 12 (2d8 + 3) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. Constitution Saving Throw: DC 12. Failure: The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a Werewolf under the GM’s control and has 10 Hit Points. Success: The target is immune to this werewolf’s curse for 24 hours.",
         "damage": [
           {
             "damage_type": {
@@ -33332,10 +34825,6 @@
         }
       },
       {
-        "name": "The target is cursed",
-        "desc": "If the cursed target drops to 0 Hit Points, it instead becomes a Werewolf under the GM’s control and has 10 Hit Points. Success: The target is immune to this werewolf’s curse for 24 hours."
-      },
-      {
         "name": "Scratch",
         "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage.",
         "damage": [
@@ -33350,7 +34839,7 @@
         ]
       },
       {
-        "name": "Longbow (Humanoid or Hybrid Form Only)",
+        "name": "Longbow",
         "desc": "Ranged Attack Roll: +4, range 150/600 ft. Hit: 11 (2d8 + 2) Piercing damage.",
         "damage": [
           {
@@ -33370,16 +34859,159 @@
         "desc": "The werewolf shape-shifts into a Large wolf-humanoid hybrid or a Medium wolf, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed."
       }
     ],
-    "legendary_actions": [],
-    "index": "werewolf",
-    "url": "/api/2024/monsters/werewolf",
-    "image": "/api/images/monsters/werewolf-NYI.png",
+    "index": "werewolf-hybrid",
+    "url": "/api/2024/monsters/werewolf-hybrid",
+    "image": "/api/images/monsters/werewolf-hybrid.png",
     "hit_points_roll": "11d8 + 22",
     "proficiencies": [],
     "skills": "Perception +4, Stealth +4",
     "gear": "Longbow",
     "proficiency_bonus": 2,
-    "xp": 700
+    "xp": 700,
+    "forms": [
+      {
+        "index": "werewolf-human",
+        "name": "Werewolf, Human Form",
+        "url": "/api/2024/monsters/werewolf-human"
+      },
+      {
+        "index": "werewolf-wolf",
+        "name": "Werewolf, Wolf Form",
+        "url": "/api/2024/monsters/werewolf-wolf"
+      }
+    ]
+  },
+  {
+    "name": "Werewolf, Wolf Form",
+    "size": "Medium",
+    "type": "or small monstrosity",
+    "alignment": "chaotic evil",
+    "armor_class": [
+      {
+        "type": "armor",
+        "value": 15
+      }
+    ],
+    "hit_points": 71,
+    "hit_dice": "11d8",
+    "speed": {
+      "walk": "40 ft."
+    },
+    "strength": 16,
+    "dexterity": 14,
+    "constitution": 14,
+    "intelligence": 10,
+    "wisdom": 11,
+    "charisma": 10,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": {
+      "darkvision": "60 ft.",
+      "passive_perception": 14
+    },
+    "languages": "Common (can’t speak in wolf form)",
+    "challenge_rating": 3,
+    "special_abilities": [
+      {
+        "name": "Pack Tactics",
+        "desc": "The werewolf has Advantage on an attack roll against a creature if at least one of the werewolf’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The werewolf makes two attacks, using Scratch or Longbow in any combination. It can replace one attack with a Bite attack.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Scratch",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Bite",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 12 (2d8 + 3) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. Constitution Saving Throw: DC 12. Failure: The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a Werewolf under the GM’s control and has 10 Hit Points. Success: The target is immune to this werewolf’s curse for 24 hours.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/2024/damage-types/piercing"
+            },
+            "damage_dice": "2d8+3"
+          }
+        ],
+        "dc": {
+          "dc_type": {
+            "index": "con",
+            "name": "CON",
+            "url": "/api/2024/ability-scores/con"
+          },
+          "dc_value": 12,
+          "success_type": "none"
+        }
+      },
+      {
+        "name": "Scratch",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "slashing",
+              "name": "Slashing",
+              "url": "/api/2024/damage-types/slashing"
+            },
+            "damage_dice": "2d6+3"
+          }
+        ]
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name": "Shape-Shift",
+        "desc": "The werewolf shape-shifts into a Large wolf-humanoid hybrid or a Medium wolf, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed."
+      }
+    ],
+    "index": "werewolf-wolf",
+    "url": "/api/2024/monsters/werewolf-wolf",
+    "image": "/api/images/monsters/werewolf-wolf.png",
+    "hit_points_roll": "11d8 + 22",
+    "proficiencies": [],
+    "skills": "Perception +4, Stealth +4",
+    "gear": "Longbow",
+    "proficiency_bonus": 2,
+    "xp": 700,
+    "forms": [
+      {
+        "index": "werewolf-human",
+        "name": "Werewolf, Human Form",
+        "url": "/api/2024/monsters/werewolf-human"
+      },
+      {
+        "index": "werewolf-hybrid",
+        "name": "Werewolf, Hybrid Form",
+        "url": "/api/2024/monsters/werewolf-hybrid"
+      }
+    ]
   },
   {
     "name": "White Dragon Wyrmling",
