@@ -6,7 +6,9 @@ const ESCAPE_DC = /escape DC (\d+)/;
 const CHECK_DC = /DC (\d+) (Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma) \(/;
 const VARIABLE_SAVE_DC = /(Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma) saving throw \(DC \d+ plus/;
 const SPELL_LIST_ENTRY_NAME = /^(At Will|\d+\/Day(?: Each)?)$/;
-const USAGE_HEADING = /^([A-Z][^.]{2,60}\((?:\d+\/Day[^)]*|Recharge[^)]*)\))\. /;
+const HEADING_NOTE = '\\d+\\/Day[^)]*|Recharge[^)]*|[^)]*Only';
+const USAGE_HEADING = new RegExp(`^([A-Z][^.]{2,60}\\((?:${HEADING_NOTE})\\))\\.(?: |$)`);
+const MERGED_HEADING = new RegExp(`\\. ([A-Z][^.]{2,60}\\((?:${HEADING_NOTE})\\))\\. `);
 
 /**
  * The gist keeps only the first damage roll, so read every damage type from the description.
@@ -90,8 +92,8 @@ const completeFromText = (entry, otherNames, lines)=>{
  * The gist sometimes folds an entry with a usage heading into the previous entry.
  */
 const splitMergedEntry = (entry, lines)=>{
-	const heading = entry.desc.match(/\. ([A-Z][^.]{2,60}\((?:\d+\/Day[^)]*|Recharge[^)]*)\))\. /);
-	if(!heading || !lines.some((line)=>flatten(line).startsWith(`${flatten(heading[1])}. `))){ return [entry]; }
+	const heading = entry.desc.match(MERGED_HEADING);
+	if(!heading || !lines.some((line)=>flatten(line).startsWith(`${flatten(heading[1])}.`))){ return [entry]; }
 
 	const at = entry.desc.indexOf(`${heading[1]}. `);
 	return [

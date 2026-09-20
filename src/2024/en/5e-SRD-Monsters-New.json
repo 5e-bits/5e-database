@@ -859,13 +859,13 @@
               {
                 "option_type": "action",
                 "action_name": "Shortsword",
-                "count": 1,
+                "count": 3,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Light Crossbow",
-                "count": 1,
+                "count": 3,
                 "type": "ranged"
               }
             ]
@@ -1548,13 +1548,13 @@
               {
                 "option_type": "action",
                 "action_name": "Scimitar",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Pistol",
-                "count": 1,
+                "count": 2,
                 "type": "ranged"
               }
             ]
@@ -5901,7 +5901,7 @@
         "desc": "The bugbear makes two Javelin or Morningstar attacks.",
         "multiattack_type": "action_options",
         "action_options": {
-          "choose": 1,
+          "choose": 2,
           "type": "action",
           "from": {
             "option_set_type": "options_array",
@@ -6231,13 +6231,13 @@
               {
                 "option_type": "action",
                 "action_name": "Pike",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Longbow",
-                "count": 1,
+                "count": 2,
                 "type": "ranged"
               }
             ]
@@ -7078,7 +7078,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The giant makes two attacks, using Thunderous Mace or Thundercloud in any combination. It can replace one attack with a use of Spellcasting to cast Fog Cloud."
+        "desc": "The giant makes two attacks, using Thunderous Mace or Thundercloud in any combination. It can replace one attack with a use of Spellcasting to cast Fog Cloud.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Thunderous Mace",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Thundercloud",
+                "count": 2,
+                "type": "ranged"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Fog Cloud",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Thunderous Mace",
@@ -9291,13 +9320,13 @@
               {
                 "option_type": "action",
                 "action_name": "Storm Blade",
-                "count": 1,
+                "count": 3,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Storm Bolt",
-                "count": 1,
+                "count": 3,
                 "type": "ranged"
               }
             ]
@@ -9931,13 +9960,13 @@
               {
                 "option_type": "action",
                 "action_name": "Foreleg",
-                "count": 1,
+                "count": 3,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Poison Burst",
-                "count": 1,
+                "count": 3,
                 "type": "ranged"
               }
             ]
@@ -10068,13 +10097,13 @@
               {
                 "option_type": "action",
                 "action_name": "Vine Staff",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Verdant Wisp",
-                "count": 1,
+                "count": 2,
                 "type": "ranged"
               }
             ]
@@ -10261,7 +10290,35 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The dryad makes one Vine Lash or Thorn Burst attack, and it can use Spellcasting to cast Charm Monster."
+        "desc": "The dryad makes one Vine Lash or Thorn Burst attack, and it can use Spellcasting to cast Charm Monster.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "choose": 1,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Vine Lash",
+                "count": 1,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Thorn Burst",
+                "count": 1,
+                "type": "ranged"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Charm Monster",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Vine Lash",
@@ -10463,13 +10520,13 @@
               {
                 "option_type": "action",
                 "action_name": "Slam",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Rock Launch",
-                "count": 1,
+                "count": 2,
                 "type": "ranged"
               }
             ]
@@ -10579,13 +10636,13 @@
               {
                 "option_type": "action",
                 "action_name": "Heated Blade",
-                "count": 1,
+                "count": 3,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Hurl Flame",
-                "count": 1,
+                "count": 3,
                 "type": "ranged"
               }
             ]
@@ -11353,13 +11410,13 @@
               {
                 "option_type": "action",
                 "action_name": "Flame Sword",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Hammer Throw",
-                "count": 1,
+                "count": 2,
                 "type": "ranged"
               }
             ]
@@ -11637,13 +11694,13 @@
               {
                 "option_type": "action",
                 "action_name": "Frost Axe",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Great Bow",
-                "count": 1,
+                "count": 2,
                 "type": "ranged"
               }
             ]
@@ -13370,13 +13427,13 @@
               {
                 "option_type": "action",
                 "action_name": "Scimitar",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Shortbow",
-                "count": 1,
+                "count": 2,
                 "type": "ranged"
               }
             ]
@@ -15773,7 +15830,30 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The naga makes two Bite attacks. It can replace any attack with a use of Poisonous Spittle."
+        "desc": "The naga makes two Bite attacks. It can replace any attack with a use of Poisonous Spittle.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Bite",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Poisonous Spittle",
+                "count": 2,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Bite",
@@ -16054,13 +16134,13 @@
               {
                 "option_type": "action",
                 "action_name": "Javelin",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Longsword",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               }
             ]
@@ -16592,13 +16672,13 @@
               {
                 "option_type": "action",
                 "action_name": "Tree Club",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Trash Lob",
-                "count": 1,
+                "count": 2,
                 "type": "ranged"
               }
             ]
@@ -16859,13 +16939,13 @@
               {
                 "option_type": "action",
                 "action_name": "Greatsword",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Longbow",
-                "count": 1,
+                "count": 2,
                 "type": "ranged"
               }
             ]
@@ -17077,7 +17157,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The devil makes three attacks, using Searing Fork or Hurl Flame in any combination. It can replace one attack with a use of Infernal Tail."
+        "desc": "The devil makes three attacks, using Searing Fork or Hurl Flame in any combination. It can replace one attack with a use of Infernal Tail.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 3,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Searing Fork",
+                "count": 3,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Hurl Flame",
+                "count": 3,
+                "type": "ranged"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Infernal Tail",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Searing Fork",
@@ -18017,13 +18126,13 @@
               {
                 "option_type": "action",
                 "action_name": "Bladed Arm",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Fiery Bolt",
-                "count": 1,
+                "count": 2,
                 "type": "ranged"
               }
             ]
@@ -18148,13 +18257,13 @@
               {
                 "option_type": "action",
                 "action_name": "Greatsword",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Heavy Crossbow",
-                "count": 1,
+                "count": 2,
                 "type": "ranged"
               }
             ]
@@ -18950,13 +19059,13 @@
               {
                 "option_type": "action",
                 "action_name": "Eldritch Burst",
-                "count": 1,
+                "count": 3,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Paralyzing Touch",
-                "count": 1,
+                "count": 3,
                 "type": "melee"
               }
             ]
@@ -20024,13 +20133,13 @@
               {
                 "option_type": "action",
                 "action_name": "Rend",
-                "count": 1,
+                "count": 3,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Tail Spike",
-                "count": 1,
+                "count": 3,
                 "type": "ranged"
               }
             ]
@@ -21094,19 +21203,19 @@
               {
                 "option_type": "action",
                 "action_name": "Bite",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Claw",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Harpoon",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               }
             ]
@@ -22625,7 +22734,35 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The oni makes two Claw or Nightmare Ray attacks. It can replace one attack with a use of Spellcasting."
+        "desc": "The oni makes two Claw or Nightmare Ray attacks. It can replace one attack with a use of Spellcasting.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Claw",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Nightmare Ray",
+                "count": 2,
+                "type": "ranged"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Spellcasting",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Claw",
@@ -23371,13 +23508,13 @@
               {
                 "option_type": "action",
                 "action_name": "Rapier",
-                "count": 1,
+                "count": 3,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Pistol",
-                "count": 1,
+                "count": 3,
                 "type": "ranged"
               }
             ]
@@ -24203,13 +24340,13 @@
               {
                 "option_type": "action",
                 "action_name": "Mace",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Radiant Flame",
-                "count": 1,
+                "count": 2,
                 "type": "ranged"
               }
             ]
@@ -26511,13 +26648,13 @@
               {
                 "option_type": "action",
                 "action_name": "Shortsword",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Longbow",
-                "count": 1,
+                "count": 2,
                 "type": "ranged"
               }
             ]
@@ -29427,13 +29564,13 @@
               {
                 "option_type": "action",
                 "action_name": "Bite",
-                "count": 1,
+                "count": 3,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Necrotic Ray",
-                "count": 1,
+                "count": 3,
                 "type": "ranged"
               }
             ]
@@ -29920,13 +30057,13 @@
               {
                 "option_type": "action",
                 "action_name": "Stone Club",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Boulder",
-                "count": 1,
+                "count": 2,
                 "type": "ranged"
               }
             ]
@@ -30113,13 +30250,13 @@
               {
                 "option_type": "action",
                 "action_name": "Slam",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Force Bolt",
-                "count": 1,
+                "count": 2,
                 "type": "ranged"
               }
             ]
@@ -30257,13 +30394,13 @@
               {
                 "option_type": "action",
                 "action_name": "Storm Sword",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Thunderbolt",
-                "count": 1,
+                "count": 2,
                 "type": "ranged"
               }
             ]
@@ -30679,13 +30816,13 @@
               {
                 "option_type": "action",
                 "action_name": "Claw",
-                "count": 1,
+                "count": 3,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Tail",
-                "count": 1,
+                "count": 3,
                 "type": "melee"
               }
             ]
@@ -30973,13 +31110,13 @@
               {
                 "option_type": "action",
                 "action_name": "Warhammer",
-                "count": 1,
+                "count": 2,
                 "type": "melee"
               },
               {
                 "option_type": "action",
                 "action_name": "Heavy Crossbow",
-                "count": 1,
+                "count": 2,
                 "type": "ranged"
               }
             ]
@@ -32306,7 +32443,7 @@
         "desc": "The warrior makes two Greatsword or Heavy Crossbow attacks.",
         "multiattack_type": "action_options",
         "action_options": {
-          "choose": 1,
+          "choose": 2,
           "type": "action",
           "from": {
             "option_set_type": "options_array",
@@ -32567,7 +32704,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The werebear makes two attacks, using Handaxe or Rend in any combination. It can replace one attack with a Bite attack."
+        "desc": "The werebear makes two attacks, using Handaxe or Rend in any combination. It can replace one attack with a Bite attack.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Handaxe",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Rend",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Bite",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Bite (Bear or Hybrid Form Only)",
@@ -32677,7 +32843,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The wereboar makes two attacks, using Javelin or Tusk in any combination. It can replace one attack with a Gore attack."
+        "desc": "The wereboar makes two attacks, using Javelin or Tusk in any combination. It can replace one attack with a Gore attack.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Javelin",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Tusk",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Gore",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Gore (Boar or Hybrid Form Only)",
@@ -32797,7 +32992,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The wererat makes two attacks, using Scratch or Hand Crossbow in any combination. It can replace one attack with a Bite attack."
+        "desc": "The wererat makes two attacks, using Scratch or Hand Crossbow in any combination. It can replace one attack with a Bite attack.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Scratch",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Hand Crossbow",
+                "count": 2,
+                "type": "ranged"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Bite",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Bite (Rat or Hybrid Form Only)",
@@ -32824,7 +33048,7 @@
       },
       {
         "name": "Scratch",
-        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Slashing damage. Hand Crossbow (Humanoid or Hybrid Form Only). Ranged Attack Roll: +5, range 30/120 ft. Hit: 6 (1d6 + 3) Piercing damage.",
+        "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Slashing damage.",
         "damage": [
           {
             "damage_type": {
@@ -32833,7 +33057,13 @@
               "url": "/api/2024/damage-types/slashing"
             },
             "damage_dice": "1d6+3"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Hand Crossbow (Humanoid or Hybrid Form Only)",
+        "desc": "Ranged Attack Roll: +5, range 30/120 ft. Hit: 6 (1d6 + 3) Piercing damage.",
+        "damage": [
           {
             "damage_type": {
               "index": "piercing",
@@ -32898,7 +33128,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The weretiger makes two attacks, using Scratch or Longbow in any combination. It can replace one attack with a Bite attack."
+        "desc": "The weretiger makes two attacks, using Scratch or Longbow in any combination. It can replace one attack with a Bite attack.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Scratch",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Longbow",
+                "count": 2,
+                "type": "ranged"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Bite",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Bite (Tiger or Hybrid Form Only)",
@@ -33018,7 +33277,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The werewolf makes two attacks, using Scratch or Longbow in any combination. It can replace one attack with a Bite attack."
+        "desc": "The werewolf makes two attacks, using Scratch or Longbow in any combination. It can replace one attack with a Bite attack.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Scratch",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Longbow",
+                "count": 2,
+                "type": "ranged"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Bite",
+                "count": 1,
+                "type": "melee"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Bite (Wolf or Hybrid Form Only)",
@@ -33791,7 +34079,36 @@
     "actions": [
       {
         "name": "Multiattack",
-        "desc": "The wight makes two attacks, using Necrotic Sword or Necrotic Bow in any combination. It can replace one attack with a use of Life Drain."
+        "desc": "The wight makes two attacks, using Necrotic Sword or Necrotic Bow in any combination. It can replace one attack with a use of Life Drain.",
+        "multiattack_type": "action_options",
+        "action_options": {
+          "desc": "Any combination",
+          "choose": 2,
+          "type": "action",
+          "from": {
+            "option_set_type": "options_array",
+            "options": [
+              {
+                "option_type": "action",
+                "action_name": "Necrotic Sword",
+                "count": 2,
+                "type": "melee"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Necrotic Bow",
+                "count": 2,
+                "type": "ranged"
+              },
+              {
+                "option_type": "action",
+                "action_name": "Life Drain",
+                "count": 1,
+                "type": "special"
+              }
+            ]
+          }
+        }
       },
       {
         "name": "Necrotic Sword",

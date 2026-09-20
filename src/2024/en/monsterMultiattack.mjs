@@ -50,8 +50,9 @@ const parseClause = (body, result)=>{
 	const any = body.match(/^(?:(.+?) and )?(\w+) (?:other )?attacks, using (.+) in any combination$/);
 	if(any){
 		if(any[1]){ parsed.fixed = parseTerms(any[1], result); }
-		const options = any[3].split(NAME_SEPARATOR).map((name)=>optionOf(action(name, 1, result)));
-		parsed.choice = choice(options, number(any[2]), 'Any combination');
+		const picks = number(any[2]);
+		const options = any[3].split(NAME_SEPARATOR).map((name)=>optionOf(action(name, picks, result)));
+		parsed.choice = choice(options, picks, 'Any combination');
 		return parsed;
 	}
 
@@ -65,15 +66,18 @@ const parseClause = (body, result)=>{
 
 	const eitherOr = attacks.match(new RegExp(`^(\\w+) (${NAME}) or (${NAME}) attacks?$`));
 	if(eitherOr){
-		parsed.choice = choice([eitherOr[2], eitherOr[3]].map((name)=>optionOf(action(name, number(eitherOr[1]), result))));
+		const picks = number(eitherOr[1]);
+		parsed.choice = choice([eitherOr[2], eitherOr[3]].map((name)=>optionOf(action(name, picks, result))), picks);
 	}
 	else{
 		parsed.fixed = parseTerms(attacks, result);
 	}
 
 	if(abilities){
+		const cast = abilities.match(new RegExp(`^Spellcasting to cast (${NAME})$`));
 		const names = abilities.replace(/ if available$/, '').replace(/^either /, '').split(NAME_SEPARATOR);
-		if(names.length === 1){ parsed.fixed.push(parseUse(names[0], result)); }
+		if(cast && parsed.choice){ parsed.choice.from.options.push(optionOf({ ...castAction(cast[1]), count: parsed.choice.choose })); }
+		else if(names.length === 1){ parsed.fixed.push(parseUse(names[0], result)); }
 		else if(parsed.choice){ throw new Error('Two choices'); }
 		else{ parsed.choice = choice(names.map((name)=>optionOf(action(name, 1, result)))); }
 	}
@@ -96,13 +100,30 @@ const parseTerms = (text, result)=>text.split(/,\s*(?:and )?| and /).map((term)=
 	throw new Error(`Cannot read term '${term}'`);
 });
 
+const REPLACEMENT = /^It can replace (one|two|any|the (.+?)) attacks? with (?:a use of |an? )?(.+?)(?: if available)?\.?$/;
+
+const replacementCandidates = (text, result)=>text.split(/^\(A\) | or \(B\) /).filter(Boolean).map((candidate)=>{
+	const cast = candidate.match(new RegExp(`^Spellcasting to cast (${NAME})(?: \\(level \\d version\\))?$`));
+	if(cast){ return castAction(cast[1]); }
+	return action(candidate.replace(/ attack$/, '').replace(/\s*\(level \d version\)$/, ''), 1, result);
+});
+
 /**
- * "It can replace one attack with a use of X": keep the remaining attacks fixed and offer
- * the replacement as a choice against the original attack, like the existing 2024 monsters.
+ * "It can replace one attack with X" after a fixed attack: keep the remaining attacks fixed
+ * and offer the replacement as a choice against the original attack, like the existing 2024
+ * monsters. "Any attack" means any mix of the attack and the replacement.
  */
 const applyReplacement = (fixed, sentence, result)=>{
-	const match = sentence.match(/^It can replace (one|two|any|the (.+?)) attacks? with (?:a use of |an? )?(.+?)(?: if available)?\.?$/);
-	if(!match || match[1] === 'any'){ throw new Error('Cannot read replacement'); }
+	const match = sentence.match(REPLACEMENT);
+	if(!match){ throw new Error('Cannot read replacement'); }
+
+	const candidates = replacementCandidates(match[3], result);
+
+	if(match[1] === 'any'){
+		if(fixed.length !== 1){ throw new Error('Ambiguous replacement'); }
+		const picks = fixed[0].count;
+		return { fixed: [], options: choice([fixed[0], ...candidates].map((item)=>optionOf({ ...item, count: picks })), picks, 'Any combination') };
+	}
 
 	const replaced = match[2] ? fixed.find((item)=>item.action_name === match[2]) : fixed[fixed.length - 1];
 	if(!replaced || (!match[2] && fixed.length !== 1)){ throw new Error('Ambiguous replacement'); }
@@ -110,14 +131,19 @@ const applyReplacement = (fixed, sentence, result)=>{
 	const removed = match[2] ? 1 : number(match[1]);
 	const remaining = fixed.map((item)=>item === replaced ? { ...item, count: item.count - removed } : item).filter((item)=>item.count > 0);
 
-	const candidates = match[3].split(/^\(A\) | or \(B\) /).filter(Boolean).map((text)=>{
-		const cast = text.match(new RegExp(`^Spellcasting to cast (${NAME})(?: \\(level \\d version\\))?$`));
-		if(cast){ return castAction(cast[1]); }
-		return action(text.replace(/ attack$/, '').replace(/\s*\(level \d version\)$/, ''), 1, result);
-	});
+	return { fixed: remaining, options: choice([{ ...replaced, count: removed }, ...candidates].map(optionOf)) };
+};
 
-	const original = { ...replaced, count: removed };
-	return { fixed: remaining, options: choice([original, ...candidates].map(optionOf)) };
+/**
+ * "It can replace one attack with X" after a choice: X joins the choice, and its count is
+ * how many of the attacks it can take the place of.
+ */
+const addReplacementToChoice = (pick, sentence, result)=>{
+	const match = sentence.match(REPLACEMENT);
+	if(!match || match[2]){ throw new Error('Cannot read replacement'); }
+
+	const uses = match[1] === 'any' ? pick.choose : number(match[1]);
+	pick.from.options.push(...replacementCandidates(match[3], result).map((item)=>optionOf({ ...item, count: uses })));
 };
 
 const build = (entry, result)=>{
@@ -136,10 +162,14 @@ const build = (entry, result)=>{
 
 	const [{ fixed, choice: pick }] = clauses;
 
+	if(rest.length && pick){
+		addReplacementToChoice(pick, rest[0], result);
+		return { multiattack_type: fixed.length ? 'actions' : 'action_options', ...(fixed.length && { actions: fixed }), action_options: pick };
+	}
+
 	if(rest.length){
-		if(pick){ throw new Error('Replacement with a choice'); }
 		const replaced = applyReplacement(fixed, rest[0], result);
-		return { multiattack_type: 'actions', ...(replaced.fixed.length && { actions: replaced.fixed }), action_options: replaced.options };
+		return { multiattack_type: replaced.fixed.length ? 'actions' : 'action_options', ...(replaced.fixed.length && { actions: replaced.fixed }), action_options: replaced.options };
 	}
 
 	return {

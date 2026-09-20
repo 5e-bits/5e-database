@@ -35,21 +35,6 @@ const skillQuirks = new Set(['shambling-mound', 'giant-frog']);
 
 const entrySections = ['special_abilities', 'actions', 'bonus_actions', 'reactions', 'legendary_actions'];
 
-/** Multiattack shapes the generator leaves as plain descriptions. */
-const unstructuredMultiattack = new Set([
-  'cloud-giant',
-  'dryad',
-  'guardian-naga',
-  'horned-devil',
-  'oni',
-  'werebear',
-  'wereboar',
-  'wererat',
-  'weretiger',
-  'werewolf',
-  'wight',
-]);
-
 const crToNumber = (cr: string) => (cr.includes('/') ? 1 / Number(cr.split('/')[1]) : Number(cr));
 const abilityMod = (score: number) => Math.floor((score - 10) / 2);
 
@@ -151,15 +136,11 @@ describe('generated 2024 monsters', () => {
     expect(errors).toEqual([]);
   });
 
-  it('structures multiattack except for known unsupported shapes', () => {
+  it('structures every multiattack', () => {
     const errors: string[] = [];
     for (const m of generated) {
       for (const entry of (m.actions ?? []) as Monster[]) {
-        if (!/^Multiattack/.test(entry.name)) continue;
-        const structured = Boolean(entry.multiattack_type);
-        if (structured === unstructuredMultiattack.has(m.index)) {
-          errors.push(`${m.index}: ${structured ? 'now structured' : 'not structured'}`);
-        }
+        if (/^Multiattack/.test(entry.name) && !entry.multiattack_type) errors.push(`${m.index}: ${entry.desc}`);
       }
     }
     expect(errors).toEqual([]);
