@@ -24,6 +24,11 @@ export const AreaOfEffectSchema = z.strictObject({
   type: z.enum(['sphere', 'cube', 'cylinder', 'line', 'cone']),
 });
 
+/**
+ * `choose` picks from `from`. An `action` option's `count` is the most times that action can be
+ * picked in the choice. Monster attacks "in any combination" use `choose: N` with each option at
+ * `count: N`, and an option at `count: 1` can be picked once.
+ */
 export const ChoiceSchema: z.ZodType<any> = z.lazy(() =>
   z.strictObject({
     desc: z.string().optional(),
