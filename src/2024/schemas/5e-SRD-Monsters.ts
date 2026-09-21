@@ -29,7 +29,7 @@ const MonsterProficiencySchema = z.strictObject({
 });
 
 const MonsterArmorClassSchema = z.strictObject({
-  type: z.string(),
+  type: z.string().optional(),
   value: z.number(),
   armor: z.array(APIReferenceSchema).optional(),
   condition: APIReferenceSchema.optional(),

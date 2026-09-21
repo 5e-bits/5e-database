@@ -3,6 +3,7 @@ import { execFileSync } from 'child_process';
 import fs from 'fs';
 import os from 'os';
 import path from 'path';
+import Equipment from '../en/5e-SRD-Equipment.json' with { type: 'json' };
 import Spells from '../en/5e-SRD-Spells.json' with { type: 'json' };
 import { MonsterSchema } from '../schemas/5e-SRD-Monsters';
 
@@ -199,6 +200,23 @@ describe('generated 2024 monsters', () => {
     expect((werewolfWolf?.actions as Monster[]).map((a) => a.name)).toEqual(['Multiattack', 'Bite', 'Scratch']);
     expect(werewolfWolf?.speed).toEqual({ walk: '40 ft.' });
     expect(werewolfHuman?.speed).toEqual({ walk: '30 ft.' });
+    expect(errors).toEqual([]);
+  });
+
+  it('links worn armor and shields from gear to equipment', () => {
+    const equipmentUrls = new Set((Equipment as { url: string }[]).map((item) => item.url));
+    const errors: string[] = [];
+    for (const m of generated) {
+      const [armorClass] = m.armor_class as { type?: string; armor?: { url: string }[] }[];
+      if (armorClass.type !== undefined) errors.push(`${m.index}: has armor type`);
+      const linked = (armorClass.armor ?? []).map((a) => a.url);
+      if (linked.some((url) => !equipmentUrls.has(url))) errors.push(`${m.index}: broken armor link`);
+
+      const worn = String(m.gear ?? '')
+        .split(', ')
+        .filter((item) => /Armor|Shirt|Mail|Breastplate|Shield/.test(item));
+      if (worn.length !== linked.length) errors.push(`${m.index}: gear ${worn} linked ${linked}`);
+    }
     expect(errors).toEqual([]);
   });
 

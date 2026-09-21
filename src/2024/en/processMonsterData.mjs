@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { armorFromGear } from './monsterArmor.mjs';
 import { cleanEntries, addDamageAndDc } from './monsterEntries.mjs';
 import { splitForms } from './monsterForms.mjs';
 import { addMultiattack } from './monsterMultiattack.mjs';
@@ -88,10 +89,8 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 	const [numerator, denominator = 1] = result.challenge_rating.split('/').map(Number);
 	result.challenge_rating = numerator / denominator;
 
-	/**
-	 * The gist has no armor type, so this is a guess: creatures with gear wear armor.
-	 */
-	result.armor_class = [{ type: monsterText.gear === 'None' ? 'natural' : 'armor', value: result.armor_class }];
+	const armor = armorFromGear(monsterText.gear);
+	result.armor_class = [{ value: result.armor_class, ...(armor.length && { armor }) }];
 
 	result.condition_immunities = result.condition_immunities.map((condition)=>{
 		const index = condition.replace(/ \(.*\)$/, '');
