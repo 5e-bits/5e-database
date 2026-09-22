@@ -46,6 +46,11 @@ export const parseTextBlocks = (normalizedText)=>{
 		].join('|'),
 		skills: ( data.match(/^(Skills .*)$/gm) || ['Skills None'] )[0].slice(7),
 		gear: ( data.match(/^(Gear .*)$/gm) || ['Gear None'] )[0].slice(5),
+		/**
+		 * The gist's own `languages` extraction truncates a number of monsters mid-sentence;
+		 * the wrapped Languages line is already joined in the normalized text.
+		 */
+		languages: ( data.match(/^Languages (.*)$/m) || [] )[1]?.replace(/'/g, '’'),
 		passive_perception: Number(( data.match(/^Senses .*Passive Perception (\d+)/m) || [])[1]),
 		position: index,
 		lines: data.split('\n'),
@@ -57,12 +62,14 @@ export const parseTextBlocks = (normalizedText)=>{
 };
 
 /**
- * Stat block and group titles, longest first, so trailing titles can be matched.
+ * Stat block and group titles, longest first, so trailing titles can be matched. A title is
+ * usually followed by its own AC line, but a group title (e.g. "Toughs") can have none of its
+ * own and lead straight into the ability-score table instead.
  */
 export const findBlockTitles = (normalizedText)=>{
 	const lines = normalizedText.split('\n');
 	return lines
-		.filter((line, index)=>/^[A-Z][A-Za-z’' -]+$/.test(line) && lines.slice(index + 1, index + 9).some((next)=>/^AC \d/.test(next)))
+		.filter((line, index)=>/^[A-Z][A-Za-z’' -]+$/.test(line) && lines.slice(index + 1, index + 9).some((next)=>/^AC \d/.test(next) || next.includes('MOD SAVE')))
 		.map((line)=>line.trim())
 		.sort((a, b)=>b.length - a.length);
 };

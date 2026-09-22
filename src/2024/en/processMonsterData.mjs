@@ -32,6 +32,16 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 	delete result.document_slug;
 	delete result.group;
 
+	/**
+	 * The gist splits "Medium or Small Humanoid" at the wrong point for most monsters with a
+	 * size-variable type, leaving `type` holding "or small humanoid" instead of `size`.
+	 */
+	const sizeType = result.type.match(/^or (\w+) (.+)$/);
+	if(sizeType){
+		result.size = `${result.size} or ${sizeType[1]}`;
+		result.type = sizeType[2];
+	}
+
 	result.hit_points_roll = result.hit_dice.replace('−', '-');
 	result.hit_dice = result.hit_dice.split(' ')[0];
 
@@ -83,6 +93,7 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 	});
 	result.proficiency_bonus = monsterText.proficiency_bonus;
 	result.senses.passive_perception = monsterText.passive_perception;
+	if(monsterText.languages){ result.languages = monsterText.languages; }
 	result.xp = monsterText.xp;
 	if(monsterText.xp_in_lair){ result.xp_in_lair = monsterText.xp_in_lair; }
 

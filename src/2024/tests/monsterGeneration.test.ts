@@ -126,6 +126,41 @@ describe('generated 2024 monsters', () => {
     expect(errors).toEqual([]);
   });
 
+  it('has a clean size and type, with no leaked "or small" text', () => {
+    const errors: string[] = [];
+    for (const m of generated) {
+      if (/^(or|and) /.test(m.type as string)) errors.push(`${m.index}: type '${m.type}'`);
+      if (/humanoid|undead|monstrosity/.test(m.size as string)) errors.push(`${m.index}: size '${m.size}'`);
+    }
+    expect(errors).toEqual([]);
+  });
+
+  it('has a complete languages string for every monster', () => {
+    const errors: string[] = [];
+    for (const m of generated) {
+      if (m.languages === undefined) errors.push(`${m.index}: missing`);
+      else if (/ (and|or|but|the|plus|with)$/.test(m.languages as string)) errors.push(`${m.index}: ${m.languages}`);
+      else if (((m.languages as string).match(/\(/g) ?? []).length !== ((m.languages as string).match(/\)/g) ?? []).length) {
+        errors.push(`${m.index}: unbalanced parens in '${m.languages}'`);
+      }
+    }
+    expect(errors).toEqual([]);
+  });
+
+  it('never bleeds another stat block into a description', () => {
+    const errors: string[] = [];
+    for (const m of generated) {
+      for (const section of entrySections) {
+        for (const entry of (m[section] ?? []) as Monster[]) {
+          if (/MOD SAVE|Senses Passive Perception|CR [\d/]+ \(XP/.test(entry.desc)) {
+            errors.push(`${m.index} ${entry.name}: ...${entry.desc.slice(-60)}`);
+          }
+        }
+      }
+    }
+    expect(errors).toEqual([]);
+  });
+
   it('has no PDF debris in entries', () => {
     const errors: string[] = [];
     for (const m of generated) {

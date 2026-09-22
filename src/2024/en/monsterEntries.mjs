@@ -9,6 +9,8 @@ const SPELL_LIST_ENTRY_NAME = /^(At Will|\d+\/Day(?: Each)?)$/;
 const HEADING_NOTE = '\\d+\\/Day[^)]*|Recharge[^)]*|[^)]*Only';
 const USAGE_HEADING = new RegExp(`^([A-Z][^.]{2,60}\\((?:${HEADING_NOTE})\\))\\.(?: |$)`);
 const MERGED_HEADING = new RegExp(`\\. ([A-Z][^.]{2,60}\\((?:${HEADING_NOTE})\\))\\. `);
+/** The ability-score table header, present verbatim at the start of every stat block. */
+const ABILITY_TABLE = /SAVE\tMOD SAVE/;
 
 /**
  * The gist keeps only the first damage roll, so read every damage type from the description.
@@ -78,6 +80,13 @@ const completeFromText = (entry, otherNames, lines)=>{
 			const line = flatten(lines[next]);
 			if(SECTION_HEADING.test(lines[next]) || otherNames.some((name)=>line.startsWith(`${name}. `)) || USAGE_HEADING.test(lines[next])){ break; }
 			if(/^[A-Z][^,()]*$/.test(lines[next]) && lines.slice(next, next + 9).some((after)=>/^AC \d/.test(after))){ break; }
+			/**
+			 * A block's title does not always sit close enough to its AC line for the check
+			 * above to catch it (e.g. a group title with no AC/HP/Speed of its own follows it);
+			 * the ability-score table is the one thing every stat block reliably starts with,
+			 * so never accumulate past it even when the title itself went undetected.
+			 */
+			if(ABILITY_TABLE.test(lines[next])){ break; }
 			paragraph += ` ${lines[next]}`;
 		}
 

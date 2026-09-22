@@ -101,13 +101,20 @@ export const splitForms = (base, imageFor, speedLineFor)=>{
 		form.image = imageFor(form.index);
 		form.forms = refs.filter((_, other)=>other !== position);
 
+		/**
+		 * The base monster's size holds every form's size ("Medium or Small"); the form that
+		 * has no Shape-Shift size of its own (the vampire's true form, or a lycanthrope's
+		 * human form) takes the first, since it isn't the size-variable one.
+		 */
+		const primarySize = base.size.split(' or ')[0];
+
 		if(base.index === 'vampire'){
-			if(sizes[key]){ Object.assign(form, { size: sizes[key].size, speed: sizes[key].speed }); }
+			form.size = sizes[key]?.size ?? primarySize;
+			if(sizes[key]){ form.speed = sizes[key].speed; }
 		}
 		else{
 			const isAnimal = key === animalKey;
-			const size = key === 'human' ? undefined : sizes[isAnimal ? 'animal' : 'hybrid'].size;
-			if(size){ form.size = size; }
+			form.size = key === 'human' ? primarySize : sizes[isAnimal ? 'animal' : 'hybrid'].size;
 			form.speed = lycanthropeSpeed(speedLine, animalKey, isAnimal);
 		}
 
