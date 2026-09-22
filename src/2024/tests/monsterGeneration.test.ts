@@ -102,6 +102,10 @@ describe('generated 2024 monsters', () => {
           }
           const rolls = entry.desc.match(/\d+ \(\d+d\d+[^)]*\) \w+ damage/g) ?? [];
           if (rolls.length !== (entry.damage?.length ?? 0)) errors.push(`${m.index} ${entry.name}: damage`);
+
+          const attackRoll = /Attack Roll: \+(\d+)/.exec(entry.desc);
+          if (attackRoll && entry.attack_bonus !== Number(attackRoll[1])) errors.push(`${m.index} ${entry.name}: attack_bonus`);
+          if (!attackRoll && entry.attack_bonus !== undefined) errors.push(`${m.index} ${entry.name}: unexpected attack_bonus`);
         }
       }
     }

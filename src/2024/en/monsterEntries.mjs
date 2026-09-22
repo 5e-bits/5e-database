@@ -1,6 +1,7 @@
 import { ENTRY_SECTIONS, SECTION_HEADING, abilityRef, flatten } from './monsterCommon.mjs';
 
 const DAMAGE = /\d+ \((\d+d\d+(?: [+−–-] \d+)?)\) (\w+) damage/g;
+const ATTACK_BONUS = /Attack Roll: \+(\d+)/;
 const SAVE_DC = /(Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma) Saving Throw: DC (\d+)/;
 const ESCAPE_DC = /escape DC (\d+)/;
 const CHECK_DC = /DC (\d+) (Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma) \(/;
@@ -40,19 +41,26 @@ const parseDc = (desc)=>{
 };
 
 /**
- * Replace the gist's damage_dice / damage_bonus with parsed `damage`, and add `dc`.
+ * Replace the gist's damage_dice / damage_bonus with parsed `damage`, and add `dc` and
+ * `attack_bonus`. The gist's own attack_bonus is a spell-attack modifier on some casting
+ * entries (already covered by spellcasting.modifier), never a weapon attack roll bonus, so
+ * it is dropped rather than kept.
  */
 export const addDamageAndDc = (result)=>{
 	ENTRY_SECTIONS.forEach((key)=>{
 		(result[key] || []).forEach((entry)=>{
 			delete entry.damage_dice;
 			delete entry.damage_bonus;
+			delete entry.attack_bonus;
 
 			const damage = parseDamage(entry.desc);
 			if(damage.length){ entry.damage = damage; }
 
 			const dc = parseDc(entry.desc);
 			if(dc){ entry.dc = dc; }
+
+			const attackBonus = entry.desc.match(ATTACK_BONUS);
+			if(attackBonus){ entry.attack_bonus = Number(attackBonus[1]); }
 		});
 	});
 };
