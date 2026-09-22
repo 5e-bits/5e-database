@@ -3,6 +3,8 @@ import { execFileSync } from 'child_process';
 import fs from 'fs';
 import os from 'os';
 import path from 'path';
+import Conditions from '../en/5e-SRD-Conditions.json' with { type: 'json' };
+import DamageTypes from '../en/5e-SRD-Damage-Types.json' with { type: 'json' };
 import Equipment from '../en/5e-SRD-Equipment.json' with { type: 'json' };
 import Spells from '../en/5e-SRD-Spells.json' with { type: 'json' };
 import { MonsterSchema } from '../schemas/5e-SRD-Monsters';
@@ -135,6 +137,26 @@ describe('generated 2024 monsters', () => {
     for (const m of generated) {
       if (/^(or|and) /.test(m.type as string)) errors.push(`${m.index}: type '${m.type}'`);
       if (/humanoid|undead|monstrosity/.test(m.size as string)) errors.push(`${m.index}: size '${m.size}'`);
+    }
+    expect(errors).toEqual([]);
+  });
+
+  it('never puts a condition in a damage array, or vice versa', () => {
+    const damageTypeNames = new Set((DamageTypes as { name: string }[]).map((type) => type.name.toLowerCase()));
+    const conditionNames = new Set((Conditions as { name: string }[]).map((condition) => condition.name.toLowerCase()));
+    const errors: string[] = [];
+    for (const m of generated) {
+      for (const key of ['damage_resistances', 'damage_vulnerabilities', 'damage_immunities']) {
+        for (const value of (m[key] ?? []) as string[]) {
+          if (conditionNames.has(value) && !damageTypeNames.has(value)) errors.push(`${m.index}: ${key} has condition '${value}'`);
+          if (value === '') errors.push(`${m.index}: ${key} has an empty entry`);
+        }
+      }
+      for (const condition of (m.condition_immunities ?? []) as { index: string }[]) {
+        if (damageTypeNames.has(condition.index) && !conditionNames.has(condition.index)) {
+          errors.push(`${m.index}: condition_immunities has damage type '${condition.index}'`);
+        }
+      }
     }
     expect(errors).toEqual([]);
   });

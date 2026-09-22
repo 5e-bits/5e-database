@@ -83,13 +83,18 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 		if(match){ result.senses[key] = match[1]; }
 	});
 
-	const lowerCaseArrays = [ 'damage_resistances', 'damage_vulnerabilities', 'damage_immunities', 'condition_immunities'];
-
-	lowerCaseArrays.forEach((array_name)=>{
-		result[array_name] = result[array_name].map((value)=>{ return value.toLowerCase(); });
-	});
-
+	/**
+	 * The gist's own damage_resistances/damage_vulnerabilities/damage_immunities/
+	 * condition_immunities can be truncated or, for immunities, mis-split entirely (a
+	 * conditions-only "Immunities" line with no semicolon lands whole in damage_immunities),
+	 * so read all four from the stat block text instead.
+	 */
 	const monsterText = findTextData(monsters[monster]);
+	result.damage_resistances = monsterText.damage_resistances;
+	result.damage_vulnerabilities = monsterText.damage_vulnerabilities;
+	result.damage_immunities = monsterText.immunities.damage;
+	result.condition_immunities = monsterText.immunities.conditions;
+
 	cleanEntries(result, monsterText, textData, blockTitles);
 	if(monsterText.gear !== 'None'){ result.gear = monsterText.gear; }
 	result.proficiencies.push(...skillProficienciesFrom(monsterText.skills));
@@ -106,8 +111,9 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 	result.armor_class = [{ value: result.armor_class, ...(armor.length && { armor }) }];
 
 	result.condition_immunities = result.condition_immunities.map((condition)=>{
-		const index = condition.replace(/ \(.*\)$/, '');
-		return { index, name: `${index[0].toUpperCase()}${index.slice(1)}`, url: `/api/2024/conditions/${index}` };
+		const note = condition.match(/ \((.*)\)$/)?.[1];
+		const index = condition.replace(/ \(.*\)$/, '').toLowerCase();
+		return { index, name: `${index[0].toUpperCase()}${index.slice(1)}`, url: `/api/2024/conditions/${index}`, ...(note && { note }) };
 	});
 
 	['reactions', 'bonus_actions'].forEach((key)=>{

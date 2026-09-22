@@ -1,3 +1,4 @@
+import { parseDamageList, parseImmunities } from './monsterImmunities.mjs';
 import { parseSpellLists } from './monsterSpellcasting.mjs';
 
 const LABEL = /^(Skills|Gear|Resistances|Immunities|Vulnerabilities|Senses|Languages|CR) /;
@@ -51,6 +52,9 @@ export const parseTextBlocks = (normalizedText)=>{
 		 * the wrapped Languages line is already joined in the normalized text.
 		 */
 		languages: ( data.match(/^Languages (.*)$/m) || [] )[1]?.replace(/'/g, '’'),
+		damage_resistances: parseDamageList(( data.match(/^Resistances (.*)$/m) || [] )[1]),
+		damage_vulnerabilities: parseDamageList(( data.match(/^Vulnerabilities (.*)$/m) || [] )[1]),
+		immunities: parseImmunities(( data.match(/^Immunities (.*)$/m) || [] )[1]),
 		passive_perception: Number(( data.match(/^Senses .*Passive Perception (\d+)/m) || [])[1]),
 		position: index,
 		lines: data.split('\n'),
