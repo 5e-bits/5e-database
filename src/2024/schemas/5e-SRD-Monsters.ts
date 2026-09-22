@@ -29,7 +29,7 @@ const MonsterProficiencySchema = z.strictObject({
 });
 
 const MonsterArmorClassSchema = z.strictObject({
-  type: z.string(),
+  type: z.string().optional(),
   value: z.number(),
   armor: z.array(APIReferenceSchema).optional(),
   condition: APIReferenceSchema.optional(),
@@ -74,6 +74,7 @@ const ActionUsageSchema = z.strictObject({
   dice: z.string().optional(),
   min_value: z.number().optional(),
   times: z.number().optional(),
+  rest_types: z.array(z.string()).optional(),
 });
 
 const MonsterActionItemSchema = z.strictObject({
@@ -109,12 +110,17 @@ const LegendaryActionSchema = z.strictObject({
   attack_bonus: z.number().optional(),
   damage: z.array(DamageSchema).optional(),
   dc: DifficultyClassSchema.optional(),
+  usage: ActionUsageSchema.optional(),
+  spellcasting: SpellcastingSchema.optional(),
 });
 
 const ReactionSchema = z.strictObject({
   name: z.string(),
   desc: z.string(),
   dc: DifficultyClassSchema.optional(),
+  damage: z.array(DamageSchema).optional(),
+  usage: ActionUsageSchema.optional(),
+  spellcasting: SpellcastingSchema.optional(),
 });
 
 const SpecialAbilitySchema = z.strictObject({
@@ -153,11 +159,13 @@ export const MonsterSchema = z.strictObject({
   senses: SenseSchema,
   languages: z.string(),
   challenge_rating: z.number(),
+  gear: z.string().optional(),
   proficiency_bonus: z.number().optional(),
   xp: z.number(),
   xp_in_lair: z.number().optional(),
   special_abilities: z.array(SpecialAbilitySchema).optional(),
   actions: z.array(MonsterActionSchema).optional(),
+  bonus_actions: z.array(MonsterActionSchema).optional(),
   legendary_actions: z.array(LegendaryActionSchema).optional(),
   reactions: z.array(ReactionSchema).optional(),
   forms: z.array(APIReferenceSchema).optional(),
