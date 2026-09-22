@@ -281,20 +281,25 @@ describe('generated 2024 monsters', () => {
     expect(errors.map((m) => `${m.index}: CR ${m.challenge_rating} PB ${m.proficiency_bonus}`)).toEqual([]);
   });
 
-  it('has skill bonuses of ability mod + PB, or + 2 x PB with expertise', () => {
+  it('has no skills string; skills live in proficiencies instead', () => {
+    const errors = generated.filter((m) => 'skills' in m);
+    expect(errors.map((m) => m.index)).toEqual([]);
+  });
+
+  it('has skill proficiency values of ability mod + PB, or + 2 x PB with expertise', () => {
+    const skillAbilityBySlug = Object.fromEntries(
+      Object.entries(skillAbility).map(([name, ability]) => [`skill-${name.toLowerCase().replace(/ /g, '-')}`, ability])
+    );
     const errors: string[] = [];
     for (const m of generated) {
-      if (!m.skills || skillQuirks.has(m.index)) continue;
-      for (const entry of String(m.skills).split(/,\s*/)) {
-        const match = /^(.+) \+(\d+)$/.exec(entry.trim());
-        const ability = match && skillAbility[match[1]];
-        if (!match || !ability) {
-          errors.push(`${m.index}: unparseable skill '${entry}'`);
-          continue;
-        }
-        const diff = Number(match[2]) - abilityMod(m[ability]);
+      if (skillQuirks.has(m.index)) continue;
+      for (const entry of (m.proficiencies as { value: number; proficiency: { index: string; name: string } }[]).filter(
+        (p) => p.proficiency.index.startsWith('skill-')
+      )) {
+        const ability = skillAbilityBySlug[entry.proficiency.index];
+        const diff = entry.value - abilityMod(m[ability]);
         if (diff !== m.proficiency_bonus && diff !== 2 * m.proficiency_bonus) {
-          errors.push(`${m.index}: ${entry} (mod ${abilityMod(m[ability])}, PB ${m.proficiency_bonus})`);
+          errors.push(`${m.index}: ${entry.proficiency.name} +${entry.value} (mod ${abilityMod(m[ability])}, PB ${m.proficiency_bonus})`);
         }
       }
     }

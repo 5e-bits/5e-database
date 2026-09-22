@@ -159,7 +159,6 @@ export const MonsterSchema = z.strictObject({
   senses: SenseSchema,
   languages: z.string(),
   challenge_rating: z.number(),
-  skills: z.string().optional(),
   gear: z.string().optional(),
   proficiency_bonus: z.number().optional(),
   xp: z.number(),

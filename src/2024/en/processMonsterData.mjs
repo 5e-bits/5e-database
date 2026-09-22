@@ -4,6 +4,7 @@ import { ENTRY_SECTIONS } from './monsterCommon.mjs';
 import { cleanEntries, addDamageAndDc } from './monsterEntries.mjs';
 import { splitForms } from './monsterForms.mjs';
 import { addMultiattack } from './monsterMultiattack.mjs';
+import { skillProficienciesFrom } from './monsterSkills.mjs';
 import { addSpellcasting, assertAllSpellListsUsed } from './monsterSpellcasting.mjs';
 import { createTextFinder, findBlockTitles, findSpeedLine, normalizeText, parseTextBlocks } from './monsterText.mjs';
 import { addUsage } from './monsterUsage.mjs';
@@ -90,9 +91,8 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 
 	const monsterText = findTextData(monsters[monster]);
 	cleanEntries(result, monsterText, textData, blockTitles);
-	['skills', 'gear'].forEach((key)=>{
-		if(monsterText[key] !== 'None'){ result[key] = monsterText[key]; }
-	});
+	if(monsterText.gear !== 'None'){ result.gear = monsterText.gear; }
+	result.proficiencies.push(...skillProficienciesFrom(monsterText.skills));
 	result.proficiency_bonus = monsterText.proficiency_bonus;
 	result.senses.passive_perception = monsterText.passive_perception;
 	if(monsterText.languages){ result.languages = monsterText.languages; }
