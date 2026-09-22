@@ -27,6 +27,15 @@ integration tests in the API project.
 
 ## Is there a Github issue this is resolving?
 
+## [5.12.0](https://github.com/5e-bits/5e-database/compare/v5.11.1...v5.12.0) (2026-09-22)
+
+
+### Features
+
+* **2024:** Add 2024 monsters ([#1229](https://github.com/5e-bits/5e-database/issues/1229)) ([cb70dd4](https://github.com/5e-bits/5e-database/commit/cb70dd49cc707895d71be731a27fd58b3d618700))
+* **2024:** finalize generated monster data ([#1231](https://github.com/5e-bits/5e-database/issues/1231)) ([6f6299e](https://github.com/5e-bits/5e-database/commit/6f6299e75b4fa56ed882bfb1429f6dc6b4c65330))
+* **2024:** validate and reshape generated monster data ([#1228](https://github.com/5e-bits/5e-database/issues/1228)) ([8693259](https://github.com/5e-bits/5e-database/commit/869325943d6ac0765166a33c65b14d9ce06ae0f1))
+
 ## [5.11.1](https://github.com/5e-bits/5e-database/compare/v5.11.0...v5.11.1) (2026-09-12)
 
 
