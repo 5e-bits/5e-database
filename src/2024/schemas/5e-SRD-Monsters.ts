@@ -74,6 +74,7 @@ const ActionUsageSchema = z.strictObject({
   dice: z.string().optional(),
   min_value: z.number().optional(),
   times: z.number().optional(),
+  rest_types: z.array(z.string()).optional(),
 });
 
 const MonsterActionItemSchema = z.strictObject({
@@ -109,6 +110,7 @@ const LegendaryActionSchema = z.strictObject({
   attack_bonus: z.number().optional(),
   damage: z.array(DamageSchema).optional(),
   dc: DifficultyClassSchema.optional(),
+  usage: ActionUsageSchema.optional(),
   spellcasting: SpellcastingSchema.optional(),
 });
 
@@ -117,6 +119,7 @@ const ReactionSchema = z.strictObject({
   desc: z.string(),
   dc: DifficultyClassSchema.optional(),
   damage: z.array(DamageSchema).optional(),
+  usage: ActionUsageSchema.optional(),
   spellcasting: SpellcastingSchema.optional(),
 });
 

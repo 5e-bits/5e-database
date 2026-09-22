@@ -1,10 +1,12 @@
 import fs from 'fs';
 import { armorFromGear } from './monsterArmor.mjs';
+import { ENTRY_SECTIONS } from './monsterCommon.mjs';
 import { cleanEntries, addDamageAndDc } from './monsterEntries.mjs';
 import { splitForms } from './monsterForms.mjs';
 import { addMultiattack } from './monsterMultiattack.mjs';
 import { addSpellcasting, assertAllSpellListsUsed } from './monsterSpellcasting.mjs';
 import { createTextFinder, findBlockTitles, findSpeedLine, normalizeText, parseTextBlocks } from './monsterText.mjs';
+import { addUsage } from './monsterUsage.mjs';
 
 const normalizedText = normalizeText(fs.readFileSync('./monster-text-data.txt', 'utf-8'));
 fs.writeFileSync(process.argv[3] ?? './monster-text-data.normalized.txt', normalizedText);
@@ -112,6 +114,7 @@ const monstersNew = Object.keys(monsters).filter((monster)=>{return monster != '
 		if(!result[key].length){ delete result[key]; }
 	});
 	addDamageAndDc(result);
+	addUsage(result, ENTRY_SECTIONS);
 	addSpellcasting(result, monsterText, textData);
 	unparsedMultiattack.push(...addMultiattack(result));
 

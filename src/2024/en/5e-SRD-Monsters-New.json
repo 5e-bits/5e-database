@@ -41,8 +41,13 @@
         "desc": "If destroyed, the aboleth gains a new body in 5d10 days, reviving with all its Hit Points in the Far Realm or another location chosen by the GM."
       },
       {
-        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
-        "desc": "If the aboleth fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the aboleth fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3,
+          "times_in_lair": 4
+        }
       },
       {
         "name": "Mucus Cloud",
@@ -153,7 +158,7 @@
         }
       },
       {
-        "name": "Dominate Mind (2/Day)",
+        "name": "Dominate Mind",
         "desc": "Wisdom Saving Throw: DC 16, one creature the aboleth can see within 30 feet. Failure: The target has the Charmed condition until the aboleth dies or is on a different plane of existence from the target. While Charmed, the target acts as an ally to the aboleth and is under its control while within 60 feet of it. In addition, the aboleth and the target can communicate telepathically with each other over any distance. The target repeats the save whenever it takes damage as well as after every 24 hours it spends at least 1 mile away from the aboleth, ending the effect on itself on a success.",
         "dc": {
           "dc_type": {
@@ -163,6 +168,10 @@
           },
           "dc_value": 16,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "per day",
+          "times": 2
         }
       }
     ],
@@ -335,7 +344,7 @@
         ]
       },
       {
-        "name": "Whirlwind (Recharge 4–6)",
+        "name": "Whirlwind",
         "desc": "Strength Saving Throw: DC 13, one Medium or smaller creature in the elemental’s space. Failure: 24 (4d10 + 2) Thunder damage, and the target is pushed up to 20 feet straight away from the elemental and has the Prone condition. Success: Half damage only.",
         "damage": [
           {
@@ -355,6 +364,11 @@
           },
           "dc_value": 13,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 4
         }
       }
     ],
@@ -767,7 +781,7 @@
         }
       },
       {
-        "name": "Acid Spray (Recharge 6)",
+        "name": "Acid Spray",
         "desc": "Dexterity Saving Throw: DC 12, each creature in a 30-foot-long, 5-foot-wide Line. Failure: 14 (4d6) Acid damage. Success: Half damage.",
         "damage": [
           {
@@ -787,6 +801,11 @@
           },
           "dc_value": 12,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 6
         }
       }
     ],
@@ -1320,8 +1339,12 @@
         ]
       },
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the balor fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the balor fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       },
       {
         "name": "Magic Resistance",
@@ -1897,7 +1920,7 @@
     ],
     "bonus_actions": [
       {
-        "name": "Petrifying Gaze (Recharge 4–6)",
+        "name": "Petrifying Gaze",
         "desc": "Constitution Saving Throw: DC 12, each creature in a 30-foot Cone. If the basilisk sees its reflection in the Cone, the basilisk must make this save. First Failure: The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition instead of the Restrained condition.",
         "dc": {
           "dc_type": {
@@ -1907,6 +1930,11 @@
           },
           "dc_value": 12,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 4
         }
       }
     ],
@@ -2161,7 +2189,7 @@
         }
       },
       {
-        "name": "Lightning Breath (Recharge 5–6)",
+        "name": "Lightning Breath",
         "desc": "Dexterity Saving Throw: DC 16, each creature in a 90-foot-long, 5-footwide Line. Failure: 66 (12d10) Lightning damage. Success: Half damage.",
         "damage": [
           {
@@ -2181,6 +2209,11 @@
           },
           "dc_value": 16,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -2366,7 +2399,7 @@
         ]
       },
       {
-        "name": "Acid Breath (Recharge 5–6)",
+        "name": "Acid Breath",
         "desc": "Dexterity Saving Throw: DC 11, each creature in a 15-foot-long, 5-footwide Line. Failure: 22 (5d8) Acid damage. Success: Half damage.",
         "damage": [
           {
@@ -2386,6 +2419,11 @@
           },
           "dc_value": 11,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -2494,7 +2532,7 @@
         ]
       },
       {
-        "name": "Acid Breath (Recharge 5–6)",
+        "name": "Acid Breath",
         "desc": "Dexterity Saving Throw: DC 14, each creature in a 30-foot-long, 5-footwide Line. Failure: 49 (14d6) Acid damage. Success: Half damage.",
         "damage": [
           {
@@ -2514,6 +2552,11 @@
           },
           "dc_value": 14,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -2586,8 +2629,13 @@
         "desc": "The dragon can breathe air and water."
       },
       {
-        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3,
+          "times_in_lair": 4
+        }
       }
     ],
     "actions": [
@@ -2647,7 +2695,7 @@
         ]
       },
       {
-        "name": "Acid Breath (Recharge 5–6)",
+        "name": "Acid Breath",
         "desc": "Dexterity Saving Throw: DC 18, each creature in a 60-foot-long, 5-footwide Line. Failure: 54 (12d8) Acid damage. Success: Half damage.",
         "damage": [
           {
@@ -2667,6 +2715,11 @@
           },
           "dc_value": 18,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -2839,8 +2892,13 @@
         "desc": "The dragon can breathe air and water."
       },
       {
-        "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 4,
+          "times_in_lair": 5
+        }
       }
     ],
     "actions": [
@@ -2900,7 +2958,7 @@
         ]
       },
       {
-        "name": "Acid Breath (Recharge 5–6)",
+        "name": "Acid Breath",
         "desc": "Dexterity Saving Throw: DC 22, each creature in a 90-foot-long, 10-footwide Line. Failure: 67 (15d8) Acid damage. Success: Half damage.",
         "damage": [
           {
@@ -2920,6 +2978,11 @@
           },
           "dc_value": 22,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -3238,8 +3301,13 @@
     ],
     "bonus_actions": [
       {
-        "name": "Teleport (Recharge 4–6)",
-        "desc": "The dog teleports up to 40 feet to an unoccupied space it can see."
+        "name": "Teleport",
+        "desc": "The dog teleports up to 40 feet to an unoccupied space it can see.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 4
+        }
       }
     ],
     "legendary_actions": [],
@@ -3325,7 +3393,7 @@
         ]
       },
       {
-        "name": "Lightning Breath (Recharge 5–6)",
+        "name": "Lightning Breath",
         "desc": "Dexterity Saving Throw: DC 12, each creature in a 30-foot-long, 5-footwide Line. Failure: 21 (6d6) Lightning damage. Success: Half damage.",
         "damage": [
           {
@@ -3345,6 +3413,11 @@
           },
           "dc_value": 12,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -3448,7 +3521,7 @@
         ]
       },
       {
-        "name": "Lightning Breath (Recharge 5–6)",
+        "name": "Lightning Breath",
         "desc": "Dexterity Saving Throw: DC 16, each creature in a 60-foot-long, 5-footwide Line. Failure: 55 (10d10) Lightning damage. Success: Half damage.",
         "damage": [
           {
@@ -3468,6 +3541,11 @@
           },
           "dc_value": 16,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -3536,8 +3614,13 @@
     "challenge_rating": 16,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3,
+          "times_in_lair": 4
+        }
       }
     ],
     "actions": [
@@ -3597,7 +3680,7 @@
         ]
       },
       {
-        "name": "Lightning Breath (Recharge 5–6)",
+        "name": "Lightning Breath",
         "desc": "Dexterity Saving Throw: DC 19, each creature in a 90-foot-long, 5-footwide Line. Failure: 60 (11d10) Lightning damage. Success: Half damage.",
         "damage": [
           {
@@ -3617,6 +3700,11 @@
           },
           "dc_value": 19,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -3773,8 +3861,13 @@
     "challenge_rating": 23,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 4,
+          "times_in_lair": 5
+        }
       }
     ],
     "actions": [
@@ -3834,7 +3927,7 @@
         ]
       },
       {
-        "name": "Lightning Breath (Recharge 5–6)",
+        "name": "Lightning Breath",
         "desc": "Dexterity Saving Throw: DC 23, each creature in a 120-foot-long, 10-foot-wide Line. Failure: 88 (16d10) Lightning damage. Success: Half damage.",
         "damage": [
           {
@@ -3854,6 +3947,11 @@
           },
           "dc_value": 23,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -4176,7 +4274,7 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5–6)",
+        "name": "Fire Breath",
         "desc": "Dexterity Saving Throw: DC 11, each creature in a 20-foot-long, 5-footwide Line. Failure: 14 (4d6) Fire damage. Success: Half damage.",
         "damage": [
           {
@@ -4196,6 +4294,11 @@
           },
           "dc_value": 11,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -4325,7 +4428,7 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5–6)",
+        "name": "Fire Breath",
         "desc": "Dexterity Saving Throw: DC 14, each creature in a 40-foot-long, 5-footwide Line. Failure: 38 (11d6) Fire damage. Success: Half damage.",
         "damage": [
           {
@@ -4345,6 +4448,11 @@
           },
           "dc_value": 14,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -4426,8 +4534,13 @@
     "challenge_rating": 13,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3,
+          "times_in_lair": 4
+        }
       }
     ],
     "actions": [
@@ -4493,7 +4606,7 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5–6)",
+        "name": "Fire Breath",
         "desc": "Dexterity Saving Throw: DC 18, each creature in a 60-foot-long, 5-footwide Line. Failure: 45 (10d8) Fire damage. Success: Half damage.",
         "damage": [
           {
@@ -4513,6 +4626,11 @@
           },
           "dc_value": 18,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -4711,8 +4829,13 @@
     "challenge_rating": 20,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 4,
+          "times_in_lair": 5
+        }
       }
     ],
     "actions": [
@@ -4778,7 +4901,7 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5–6)",
+        "name": "Fire Breath",
         "desc": "Dexterity Saving Throw: DC 21, each creature in a 90-foot-long, 5-footwide Line. Failure: 58 (13d8) Fire damage. Success: Half damage.",
         "damage": [
           {
@@ -4798,6 +4921,11 @@
           },
           "dc_value": 21,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -5028,7 +5156,7 @@
         ]
       },
       {
-        "name": "Lightning Breath (Recharge 5–6)",
+        "name": "Lightning Breath",
         "desc": "Dexterity Saving Throw: DC 12, each creature in a 40-foot-long, 5-footwide Line. Failure: 16 (3d10) Lightning damage. Success: Half damage.",
         "damage": [
           {
@@ -5048,6 +5176,11 @@
           },
           "dc_value": 12,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -5182,7 +5315,7 @@
         ]
       },
       {
-        "name": "Lightning Breath (Recharge 5–6)",
+        "name": "Lightning Breath",
         "desc": "Dexterity Saving Throw: DC 15, each creature in a 60-foot-long, 5-footwide Line. Failure: 49 (9d10) Lightning damage. Success: Half damage.",
         "damage": [
           {
@@ -5202,6 +5335,11 @@
           },
           "dc_value": 15,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -5287,8 +5425,13 @@
         "desc": "The dragon can breathe air and water."
       },
       {
-        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3,
+          "times_in_lair": 4
+        }
       }
     ],
     "actions": [
@@ -5354,7 +5497,7 @@
         ]
       },
       {
-        "name": "Lightning Breath (Recharge 5–6)",
+        "name": "Lightning Breath",
         "desc": "Dexterity Saving Throw: DC 19, each creature in a 90-foot-long, 5-footwide Line. Failure: 55 (10d10) Lightning damage. Success: Half damage.",
         "damage": [
           {
@@ -5374,6 +5517,11 @@
           },
           "dc_value": 19,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -5578,8 +5726,13 @@
         "desc": "The dragon can breathe air and water."
       },
       {
-        "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 4,
+          "times_in_lair": 5
+        }
       }
     ],
     "actions": [
@@ -5645,7 +5798,7 @@
         ]
       },
       {
-        "name": "Lightning Breath (Recharge 5–6)",
+        "name": "Lightning Breath",
         "desc": "Dexterity Saving Throw: DC 23, each creature in a 120-foot-long, 10-foot-wide Line. Failure: 82 (15d10) Lightning damage. Success: Half damage.",
         "damage": [
           {
@@ -5665,6 +5818,11 @@
           },
           "dc_value": 23,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -6282,7 +6440,7 @@
     ],
     "bonus_actions": [
       {
-        "name": "Trampling Charge (Recharge 5–6)",
+        "name": "Trampling Charge",
         "desc": "The centaur moves up to its Speed without provoking Opportunity Attacks and can move through the spaces of Medium or smaller creatures. Each creature whose space the centaur enters is targeted once by the following effect. Strength Saving Throw: DC 14. Failure: 7 (1d6 + 4) Bludgeoning damage, and the target has the Prone condition.",
         "damage": [
           {
@@ -6302,6 +6460,11 @@
           },
           "dc_value": 14,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -6600,7 +6763,7 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5–6)",
+        "name": "Fire Breath",
         "desc": "Dexterity Saving Throw: DC 15, each creature in a 15-foot Cone. Failure: 31 (7d8) Fire damage. Success: Half damage.",
         "damage": [
           {
@@ -6620,6 +6783,11 @@
           },
           "dc_value": 15,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -6889,8 +7057,13 @@
     ],
     "bonus_actions": [
       {
-        "name": "Hasten (Recharge 5–6)",
-        "desc": "The golem takes the Dash and Disengage actions."
+        "name": "Hasten",
+        "desc": "The golem takes the Dash and Disengage actions.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        }
       }
     ],
     "legendary_actions": [],
@@ -7013,8 +7186,15 @@
         }
       },
       {
-        "name": "Phantasms (Recharge after a Short or Long Rest)",
+        "name": "Phantasms",
         "desc": "The cloaker casts the Mirror Image spell, requiring no spell components and using Wisdom as the spellcasting ability. The spell ends early if the cloaker starts or ends its turn in Bright Light.",
+        "usage": {
+          "type": "recharge after rest",
+          "rest_types": [
+            "short",
+            "long"
+          ]
+        },
         "spellcasting": {
           "ability": {
             "index": "wis",
@@ -7460,7 +7640,7 @@
         ]
       },
       {
-        "name": "Acid Breath (Recharge 5–6)",
+        "name": "Acid Breath",
         "desc": "Dexterity Saving Throw: DC 11, each creature in a 20-foot-long, 5-footwide Line. Failure: 18 (4d8) Acid damage. Success: Half damage.",
         "damage": [
           {
@@ -7480,6 +7660,11 @@
           },
           "dc_value": 11,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -7609,7 +7794,7 @@
         ]
       },
       {
-        "name": "Acid Breath (Recharge 5–6)",
+        "name": "Acid Breath",
         "desc": "Dexterity Saving Throw: DC 14, each creature in a 40-foot-long, 5-footwide Line. Failure: 40 (9d8) Acid damage. Success: Half damage.",
         "damage": [
           {
@@ -7629,6 +7814,11 @@
           },
           "dc_value": 14,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -7710,8 +7900,13 @@
     "challenge_rating": 14,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3,
+          "times_in_lair": 4
+        }
       }
     ],
     "actions": [
@@ -7777,7 +7972,7 @@
         ]
       },
       {
-        "name": "Acid Breath (Recharge 5–6)",
+        "name": "Acid Breath",
         "desc": "Dexterity Saving Throw: DC 18, each creature in an 60-foot-long, 5-footwide Line. Failure: 54 (12d8) Acid damage. Success: Half damage.",
         "damage": [
           {
@@ -7797,6 +7992,11 @@
           },
           "dc_value": 18,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -7986,8 +8186,13 @@
     "challenge_rating": 21,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 4,
+          "times_in_lair": 5
+        }
       }
     ],
     "actions": [
@@ -8053,7 +8258,7 @@
         ]
       },
       {
-        "name": "Acid Breath (Recharge 5–6)",
+        "name": "Acid Breath",
         "desc": "Dexterity Saving Throw: DC 22, each creature in an 90-foot-long, 10-footwide Line. Failure: 63 (14d8) Acid damage. Success: Half damage.",
         "damage": [
           {
@@ -8073,6 +8278,11 @@
           },
           "dc_value": 22,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -8426,8 +8636,12 @@
     ],
     "bonus_actions": [
       {
-        "name": "Divine Aid (2/Day)",
+        "name": "Divine Aid",
         "desc": "The couatl casts Bless, Lesser Restoration, or Sanctuary, requiring no spell components and using the same spellcasting ability as Spellcasting.",
+        "usage": {
+          "type": "per day",
+          "times": 2
+        },
         "spellcasting": {
           "ability": {
             "index": "wis",
@@ -8441,31 +8655,19 @@
               "index": "bless",
               "name": "Bless",
               "level": 1,
-              "url": "/api/2024/spells/bless",
-              "usage": {
-                "type": "per day",
-                "times": 2
-              }
+              "url": "/api/2024/spells/bless"
             },
             {
               "index": "lesser-restoration",
               "name": "Lesser Restoration",
               "level": 2,
-              "url": "/api/2024/spells/lesser-restoration",
-              "usage": {
-                "type": "per day",
-                "times": 2
-              }
+              "url": "/api/2024/spells/lesser-restoration"
             },
             {
               "index": "sanctuary",
               "name": "Sanctuary",
               "level": 1,
-              "url": "/api/2024/spells/sanctuary",
-              "usage": {
-                "type": "per day",
-                "times": 2
-              }
+              "url": "/api/2024/spells/sanctuary"
             }
           ]
         }
@@ -8828,8 +9030,12 @@
     ],
     "bonus_actions": [
       {
-        "name": "Spiritual Weapon (2/Day)",
+        "name": "Spiritual Weapon",
         "desc": "The cultist casts the Spiritual Weapon spell, using the same spellcasting ability as Spellcasting.",
+        "usage": {
+          "type": "per day",
+          "times": 2
+        },
         "spellcasting": {
           "ability": {
             "index": "wis",
@@ -8848,11 +9054,7 @@
               "index": "spiritual-weapon",
               "name": "Spiritual Weapon",
               "level": 2,
-              "url": "/api/2024/spells/spiritual-weapon",
-              "usage": {
-                "type": "per day",
-                "times": 2
-              }
+              "url": "/api/2024/spells/spiritual-weapon"
             }
           ]
         }
@@ -8936,8 +9138,12 @@
         }
       },
       {
-        "name": "Darkness Aura (1/Day)",
-        "desc": "Magical Darkness fills a 15-foot Emanation originating from the darkmantle. This effect lasts while the darkmantle maintains Concentration on it, up to 10 minutes. Darkvision can’t penetrate this area, and no light can illuminate it."
+        "name": "Darkness Aura",
+        "desc": "Magical Darkness fills a 15-foot Emanation originating from the darkmantle. This effect lasts while the darkmantle maintains Concentration on it, up to 10 minutes. Darkvision can’t penetrate this area, and no light can illuminate it.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "legendary_actions": [],
@@ -9180,8 +9386,12 @@
     ],
     "bonus_actions": [
       {
-        "name": "Divine Aid (2/Day)",
+        "name": "Divine Aid",
         "desc": "The deva casts Cure Wounds, Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting.",
+        "usage": {
+          "type": "per day",
+          "times": 2
+        },
         "spellcasting": {
           "ability": {
             "index": "cha",
@@ -9199,31 +9409,19 @@
               "index": "cure-wounds",
               "name": "Cure Wounds",
               "level": 1,
-              "url": "/api/2024/spells/cure-wounds",
-              "usage": {
-                "type": "per day",
-                "times": 2
-              }
+              "url": "/api/2024/spells/cure-wounds"
             },
             {
               "index": "lesser-restoration",
               "name": "Lesser Restoration",
               "level": 2,
-              "url": "/api/2024/spells/lesser-restoration",
-              "usage": {
-                "type": "per day",
-                "times": 2
-              }
+              "url": "/api/2024/spells/lesser-restoration"
             },
             {
               "index": "remove-curse",
               "name": "Remove Curse",
               "level": 3,
-              "url": "/api/2024/spells/remove-curse",
-              "usage": {
-                "type": "per day",
-                "times": 2
-              }
+              "url": "/api/2024/spells/remove-curse"
             }
           ]
         }
@@ -9625,7 +9823,7 @@
         }
       },
       {
-        "name": "Unsettling Visage (Recharge 6)",
+        "name": "Unsettling Visage",
         "desc": "Wisdom Saving Throw: DC 12, each creature in a 15-foot Emanation originating from the doppelganger that can see the doppelganger. Failure: The target has the Frightened condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
         "dc": {
           "dc_type": {
@@ -9635,6 +9833,11 @@
           },
           "dc_value": 12,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 6
         }
       }
     ],
@@ -9765,7 +9968,7 @@
         ]
       },
       {
-        "name": "Steam Breath (Recharge 5–6)",
+        "name": "Steam Breath",
         "desc": "Constitution Saving Throw: DC 19, each creature in a 60-foot Cone. Failure: 56 (16d6) Fire damage. Success: Half damage. Failure or Success: Being underwater doesn’t grant Resistance to this Fire damage.",
         "damage": [
           {
@@ -9785,6 +9988,11 @@
           },
           "dc_value": 19,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -9874,7 +10082,7 @@
         ]
       },
       {
-        "name": "Fetid Cloud (1/Day)",
+        "name": "Fetid Cloud",
         "desc": "Constitution Saving Throw: DC 11, each creature in a 10-foot Emanation originating from the dretch. Failure: The target has the Poisoned condition until the end of its next turn. While Poisoned, the creature can take either an action or a Bonus Action on its turn, not both, and it can’t take Reactions.",
         "dc": {
           "dc_type": {
@@ -9884,6 +10092,10 @@
           },
           "dc_value": 11,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "per day",
+          "times": 1
         }
       }
     ],
@@ -10001,8 +10213,13 @@
     ],
     "bonus_actions": [
       {
-        "name": "Magic of the Spider Queen (Recharge 5–6)",
+        "name": "Magic of the Spider Queen",
         "desc": "The drider casts Darkness, Faerie Fire, or Web, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 14).",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "spellcasting": {
           "ability": {
             "index": "wis",
@@ -11067,7 +11284,7 @@
         ]
       },
       {
-        "name": "Web Strand (Recharge 5–6)",
+        "name": "Web Strand",
         "desc": "Dexterity Saving Throw: DC 12, one Large or smaller creature the ettercap can see within 30 feet. Failure: The target has the Restrained condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Bludgeoning, Poison, and Psychic damage).",
         "dc": {
           "dc_type": {
@@ -11077,6 +11294,11 @@
           },
           "dc_value": 12,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -11747,8 +11969,13 @@
     ],
     "bonus_actions": [
       {
-        "name": "War Cry (Recharge 5–6)",
-        "desc": "The giant or one creature of its choice that can see or hear it gains 16 (2d10 + 5) Temporary Hit Points and has Advantage on attack rolls until the start of the giant’s next turn."
+        "name": "War Cry",
+        "desc": "The giant or one creature of its choice that can see or hear it gains 16 (2d10 + 5) Temporary Hit Points and has Advantage on attack rolls until the start of the giant’s next turn.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        }
       }
     ],
     "legendary_actions": [],
@@ -12476,7 +12703,7 @@
         }
       },
       {
-        "name": "Possession (Recharge 6)",
+        "name": "Possession",
         "desc": "Charisma Saving Throw: DC 13, one Humanoid the ghost can see within 5 feet. Failure: The target is possessed by the ghost; the ghost disappears, and the target has the Incapacitated condition and loses control of its body. The ghost now controls the body, but the target retains awareness. The ghost can’t be targeted by any attack, spell, or other effect, except ones that specifically target Undead. The ghost’s game statistics are the same, except it uses the possessed target’s Speed, as well as the target’s Strength, Dexterity, and Constitution modifiers. The possession lasts until the body drops to 0 Hit Points or the ghost leaves as a Bonus Action. When the possession ends, the ghost appears in an unoccupied space within 5 feet of the target, and the target is immune to this ghost’s Possession for 24 hours. Success: The target is immune to this ghost’s Possession for 24 hours.",
         "dc": {
           "dc_type": {
@@ -12486,6 +12713,11 @@
           },
           "dc_value": 13,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 6
         }
       }
     ],
@@ -12685,7 +12917,7 @@
         ]
       },
       {
-        "name": "Blinding Spittle (Recharge 5–6)",
+        "name": "Blinding Spittle",
         "desc": "Dexterity Saving Throw: DC 10, each creature in a 10-foot-radius Sphere centered on a point within 30 feet. Failure: 7 (2d6) Radiant damage, and the target has the Blinded condition until the end of the mouther’s next turn.",
         "damage": [
           {
@@ -12705,6 +12937,11 @@
           },
           "dc_value": 10,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -13198,8 +13435,12 @@
     ],
     "bonus_actions": [
       {
-        "name": "Rampage (1/Day)",
-        "desc": "Immediately after dealing damage to a creature that is already Bloodied, the gnoll moves up to half its Speed, and it makes one Rend attack."
+        "name": "Rampage",
+        "desc": "Immediately after dealing damage to a creature that is already Bloodied, the gnoll moves up to half its Speed, and it makes one Rend attack.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "legendary_actions": [],
@@ -13593,7 +13834,7 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5–6)",
+        "name": "Fire Breath",
         "desc": "Dexterity Saving Throw: DC 13, each creature in a 15-foot Cone. Failure: 22 (4d10) Fire damage. Success: Half damage.",
         "damage": [
           {
@@ -13613,6 +13854,11 @@
           },
           "dc_value": 13,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -13747,7 +13993,7 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5–6)",
+        "name": "Fire Breath",
         "desc": "Dexterity Saving Throw: DC 17, each creature in a 30-foot Cone. Failure: 55 (10d10) Fire damage. Success: Half damage.",
         "damage": [
           {
@@ -13767,6 +14013,11 @@
           },
           "dc_value": 17,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -13852,8 +14103,13 @@
         "desc": "The dragon can breathe air and water."
       },
       {
-        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3,
+          "times_in_lair": 4
+        }
       }
     ],
     "actions": [
@@ -13919,7 +14175,7 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5–6)",
+        "name": "Fire Breath",
         "desc": "Dexterity Saving Throw: DC 21, each creature in a 60-foot Cone. Failure: 66 (12d10) Fire damage. Success: Half damage.",
         "damage": [
           {
@@ -13939,6 +14195,11 @@
           },
           "dc_value": 21,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -14125,8 +14386,13 @@
         "desc": "The dragon can breathe air and water."
       },
       {
-        "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 4,
+          "times_in_lair": 5
+        }
       }
     ],
     "actions": [
@@ -14193,7 +14459,7 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5–6)",
+        "name": "Fire Breath",
         "desc": "Dexterity Saving Throw: DC 24, each creature in a 90-foot Cone. Failure: 71 (13d10) Fire damage. Success: Half damage.",
         "damage": [
           {
@@ -14213,6 +14479,11 @@
           },
           "dc_value": 24,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -14418,7 +14689,7 @@
         ]
       },
       {
-        "name": "Petrifying Breath (Recharge 5–6)",
+        "name": "Petrifying Breath",
         "desc": "Constitution Saving Throw: DC 15, each creature in a 30-foot Cone. First Failure: The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition instead of the Restrained condition.",
         "dc": {
           "dc_type": {
@@ -14428,6 +14699,11 @@
           },
           "dc_value": 15,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -14631,7 +14907,7 @@
         ]
       },
       {
-        "name": "Poison Breath (Recharge 5–6)",
+        "name": "Poison Breath",
         "desc": "Constitution Saving Throw: DC 11, each creature in a 15-foot Cone. Failure: 21 (6d6) Poison damage. Success: Half damage.",
         "damage": [
           {
@@ -14651,6 +14927,11 @@
           },
           "dc_value": 11,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -14765,7 +15046,7 @@
         ]
       },
       {
-        "name": "Poison Breath (Recharge 5–6)",
+        "name": "Poison Breath",
         "desc": "Constitution Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: 42 (12d6) Poison damage. Success: Half damage.",
         "damage": [
           {
@@ -14785,6 +15066,11 @@
           },
           "dc_value": 14,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -14863,8 +15149,13 @@
         "desc": "The dragon can breathe air and water."
       },
       {
-        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3,
+          "times_in_lair": 4
+        }
       }
     ],
     "actions": [
@@ -14924,7 +15215,7 @@
         ]
       },
       {
-        "name": "Poison Breath (Recharge 5–6)",
+        "name": "Poison Breath",
         "desc": "Constitution Saving Throw: DC 18, each creature in a 60-foot Cone. Failure: 56 (16d6) Poison damage. Success: Half damage.",
         "damage": [
           {
@@ -14944,6 +15235,11 @@
           },
           "dc_value": 18,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -15101,8 +15397,13 @@
         "desc": "The dragon can breathe air and water."
       },
       {
-        "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 4,
+          "times_in_lair": 5
+        }
       }
     ],
     "actions": [
@@ -15162,7 +15463,7 @@
         ]
       },
       {
-        "name": "Poison Breath (Recharge 5–6)",
+        "name": "Poison Breath",
         "desc": "Constitution Saving Throw: DC 22, each creature in a 90-foot Cone. Failure: 77 (22d6) Poison damage. Success: Half damage.",
         "damage": [
           {
@@ -15182,6 +15483,11 @@
           },
           "dc_value": 22,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -16277,7 +16583,7 @@
         ]
       },
       {
-        "name": "Dragon’s Breath (Recharge 5–6)",
+        "name": "Dragon’s Breath",
         "desc": "Dexterity Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: 28 (8d6) damage of the type chosen for the Draconic Origin trait. Success: Half damage.",
         "dc": {
           "dc_type": {
@@ -16287,6 +16593,11 @@
           },
           "dc_value": 14,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -16468,7 +16779,7 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5–6)",
+        "name": "Fire Breath",
         "desc": "Dexterity Saving Throw: DC 12, each creature in a 15-foot Cone. Failure: 17 (5d6) Fire damage. Success: Half damage.",
         "damage": [
           {
@@ -16488,6 +16799,11 @@
           },
           "dc_value": 12,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -17542,8 +17858,13 @@
         ]
       },
       {
-        "name": "Ice Wall (Recharge 6)",
+        "name": "Ice Wall",
         "desc": "The devil casts Wall of Ice (level 8 version), requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 17).",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 6
+        },
         "spellcasting": {
           "ability": {
             "index": "int",
@@ -17843,7 +18164,7 @@
     ],
     "bonus_actions": [
       {
-        "name": "Nightmare (Recharge 6)",
+        "name": "Nightmare",
         "desc": "Wisdom Saving Throw: DC 15, one creature the incubus can see within 60 feet. Failure: If the target has 20 Hit Points or fewer, it has the Unconscious condition for 1 hour, until it takes damage, or until a creature within 5 feet of it takes an action to wake it. Otherwise, the target takes 18 (4d8) Psychic damage.",
         "damage": [
           {
@@ -17863,6 +18184,11 @@
           },
           "dc_value": 15,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 6
         }
       }
     ],
@@ -18201,7 +18527,7 @@
         ]
       },
       {
-        "name": "Poison Breath (Recharge 6)",
+        "name": "Poison Breath",
         "desc": "Constitution Saving Throw: DC 18, each creature in a 60-foot Cone. Failure: 55 (10d10) Poison damage. Success: Half damage.",
         "damage": [
           {
@@ -18221,6 +18547,11 @@
           },
           "dc_value": 18,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 6
         }
       }
     ],
@@ -18508,8 +18839,13 @@
         "desc": "The kraken can breathe air and water."
       },
       {
-        "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
-        "desc": "If the kraken fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the kraken fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 4,
+          "times_in_lair": 5
+        }
       },
       {
         "name": "Siege Monster",
@@ -19062,8 +19398,13 @@
     "challenge_rating": 21,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
-        "desc": "If the lich fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the lich fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 4,
+          "times_in_lair": 5
+        }
       },
       {
         "name": "Spirit Jar",
@@ -19595,8 +19936,12 @@
     ],
     "bonus_actions": [
       {
-        "name": "Misty Step (3/Day)",
+        "name": "Misty Step",
         "desc": "The mage casts Misty Step, using the same spellcasting ability as Spellcasting.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        },
         "spellcasting": {
           "ability": {
             "index": "int",
@@ -19614,11 +19959,7 @@
               "index": "misty-step",
               "name": "Misty Step",
               "level": 2,
-              "url": "/api/2024/spells/misty-step",
-              "usage": {
-                "type": "per day",
-                "times": 3
-              }
+              "url": "/api/2024/spells/misty-step"
             }
           ]
         }
@@ -19626,8 +19967,12 @@
     ],
     "reactions": [
       {
-        "name": "Protective Magic (3/Day)",
+        "name": "Protective Magic",
         "desc": "The mage casts Counterspell or Shield in response to the spell’s trigger, using the same spellcasting ability as Spellcasting.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        },
         "spellcasting": {
           "ability": {
             "index": "int",
@@ -19645,21 +19990,13 @@
               "index": "counterspell",
               "name": "Counterspell",
               "level": 3,
-              "url": "/api/2024/spells/counterspell",
-              "usage": {
-                "type": "per day",
-                "times": 3
-              }
+              "url": "/api/2024/spells/counterspell"
             },
             {
               "index": "shield",
               "name": "Shield",
               "level": 1,
-              "url": "/api/2024/spells/shield",
-              "usage": {
-                "type": "per day",
-                "times": 3
-              }
+              "url": "/api/2024/spells/shield"
             }
           ]
         }
@@ -19920,8 +20257,12 @@
     ],
     "bonus_actions": [
       {
-        "name": "Misty Step (3/Day)",
+        "name": "Misty Step",
         "desc": "The mage casts Misty Step, using the same spellcasting ability as Spellcasting.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        },
         "spellcasting": {
           "ability": {
             "index": "int",
@@ -19939,11 +20280,7 @@
               "index": "misty-step",
               "name": "Misty Step",
               "level": 2,
-              "url": "/api/2024/spells/misty-step",
-              "usage": {
-                "type": "per day",
-                "times": 3
-              }
+              "url": "/api/2024/spells/misty-step"
             }
           ]
         }
@@ -19951,8 +20288,12 @@
     ],
     "reactions": [
       {
-        "name": "Protective Magic (3/Day)",
+        "name": "Protective Magic",
         "desc": "The archmage casts Counterspell or Shield in response to the spell’s trigger, using the same spellcasting ability as Spellcasting.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        },
         "spellcasting": {
           "ability": {
             "index": "int",
@@ -19970,21 +20311,13 @@
               "index": "counterspell",
               "name": "Counterspell",
               "level": 3,
-              "url": "/api/2024/spells/counterspell",
-              "usage": {
-                "type": "per day",
-                "times": 3
-              }
+              "url": "/api/2024/spells/counterspell"
             },
             {
               "index": "shield",
               "name": "Shield",
               "level": 1,
-              "url": "/api/2024/spells/shield",
-              "usage": {
-                "type": "per day",
-                "times": 3
-              }
+              "url": "/api/2024/spells/shield"
             }
           ]
         }
@@ -20330,8 +20663,13 @@
     ],
     "bonus_actions": [
       {
-        "name": "Teleport (Recharge 5–6)",
-        "desc": "The marilith teleports up to 120 feet to an unoccupied space it can see."
+        "name": "Teleport",
+        "desc": "The marilith teleports up to 120 feet to an unoccupied space it can see.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        }
       }
     ],
     "reactions": [
@@ -20506,7 +20844,7 @@
     ],
     "bonus_actions": [
       {
-        "name": "Petrifying Gaze (Recharge 5–6)",
+        "name": "Petrifying Gaze",
         "desc": "Constitution Saving Throw: DC 13, each creature in a 30-foot Cone. If the medusa sees its reflection in the Cone, the medusa must make this save. First Failure: The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition instead of the Restrained condition.",
         "dc": {
           "dc_type": {
@@ -20516,6 +20854,11 @@
           },
           "dc_value": 13,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -20626,7 +20969,7 @@
         ]
       },
       {
-        "name": "Blinding Breath (Recharge 6)",
+        "name": "Blinding Breath",
         "desc": "Dexterity Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: The target has the Blinded condition until the end of the mephit’s next turn.",
         "dc": {
           "dc_type": {
@@ -20636,11 +20979,20 @@
           },
           "dc_value": 10,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 6
         }
       },
       {
-        "name": "Sleep (1/Day)",
+        "name": "Sleep",
         "desc": "The mephit casts the Sleep spell, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 10).",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        },
         "spellcasting": {
           "ability": {
             "index": "cha",
@@ -20654,11 +21006,7 @@
               "index": "sleep",
               "name": "Sleep",
               "level": 1,
-              "url": "/api/2024/spells/sleep",
-              "usage": {
-                "type": "per day",
-                "times": 1
-              }
+              "url": "/api/2024/spells/sleep"
             }
           ]
         }
@@ -20771,8 +21119,12 @@
         ]
       },
       {
-        "name": "Fog Cloud (1/Day)",
+        "name": "Fog Cloud",
         "desc": "The mephit casts Fog Cloud, requiring no spell components and using Charisma as the spellcasting ability.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        },
         "spellcasting": {
           "ability": {
             "index": "cha",
@@ -20785,17 +21137,13 @@
               "index": "fog-cloud",
               "name": "Fog Cloud",
               "level": 1,
-              "url": "/api/2024/spells/fog-cloud",
-              "usage": {
-                "type": "per day",
-                "times": 1
-              }
+              "url": "/api/2024/spells/fog-cloud"
             }
           ]
         }
       },
       {
-        "name": "Frost Breath (Recharge 6)",
+        "name": "Frost Breath",
         "desc": "Constitution Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: 7 (3d4) Cold damage. Success: Half damage.",
         "damage": [
           {
@@ -20815,6 +21163,11 @@
           },
           "dc_value": 10,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 6
         }
       }
     ],
@@ -20925,7 +21278,7 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 6)",
+        "name": "Fire Breath",
         "desc": "Dexterity Saving Throw: DC 11, each creature in a 15-foot Cone. Failure: 7 (2d6) Fire damage. Success: Half damage.",
         "damage": [
           {
@@ -20945,6 +21298,11 @@
           },
           "dc_value": 11,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 6
         }
       }
     ],
@@ -21057,7 +21415,7 @@
         ]
       },
       {
-        "name": "Steam Breath (Recharge 6)",
+        "name": "Steam Breath",
         "desc": "Constitution Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: 5 (2d4) Fire damage, and the target’s Speed decreases by 10 feet until the end of the mephit’s next turn. Success: Half damage only. Failure or Success: Being underwater doesn’t grant Resistance to this Fire damage.",
         "damage": [
           {
@@ -21077,6 +21435,11 @@
           },
           "dc_value": 10,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 6
         }
       }
     ],
@@ -21473,7 +21836,7 @@
         ]
       },
       {
-        "name": "Gore (Recharge 5–6)",
+        "name": "Gore",
         "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 18 (4d6 + 4) Piercing damage. If the target is a Large or smaller creature and the minotaur moved 10+ feet straight toward it immediately before the hit, the target takes an extra 10 (3d6) Piercing damage and has the Prone condition.",
         "damage": [
           {
@@ -21492,7 +21855,12 @@
             },
             "damage_dice": "3d6"
           }
-        ]
+        ],
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        }
       }
     ],
     "legendary_actions": [],
@@ -21704,8 +22072,13 @@
     "challenge_rating": 15,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
-        "desc": "If the mummy fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the mummy fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3,
+          "times_in_lair": 4
+        }
       },
       {
         "name": "Magic Resistance",
@@ -22048,7 +22421,7 @@
     ],
     "bonus_actions": [
       {
-        "name": "Horror Nimbus (Recharge 5–6)",
+        "name": "Horror Nimbus",
         "desc": "Wisdom Saving Throw: DC 15, each creature in a 15-foot Emanation originating from the nalfeshnee. Failure: 28 (8d6) Psychic damage, and the target has the Frightened condition for 1 minute, until it takes damage, or until it ends its turn with the nalfeshnee out of line of sight. Success: The target is immune to this nalfeshnee’s Horror Nimbus for 24 hours.",
         "damage": [
           {
@@ -22068,6 +22441,11 @@
           },
           "dc_value": 15,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -22247,8 +22625,12 @@
         ]
       },
       {
-        "name": "Nightmare Haunting (1/Day; Requires Soul Bag)",
+        "name": "Nightmare Haunting (Requires Soul Bag)",
         "desc": "While on the Ethereal Plane, the hag casts Dream, using the same spellcasting ability as Spellcasting. Only the hag can serve as the spell’s messenger, and the target must be a creature the hag can see on the Material Plane. The spell fails and is wasted if the target is under the effect of the Protection from Evil and Good spell or within a Magic Circle spell. If the target takes damage from the Dream spell, the target’s Hit Point maximum decreases by an amount equal to that damage. If the spell kills the target, its soul is trapped in the hag’s soul bag, and the target can’t be raised from the dead until its soul is released.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        },
         "spellcasting": {
           "ability": {
             "index": "int",
@@ -22266,11 +22648,7 @@
               "index": "dream",
               "name": "Dream",
               "level": 5,
-              "url": "/api/2024/spells/dream",
-              "usage": {
-                "type": "per day",
-                "times": 1
-              }
+              "url": "/api/2024/spells/dream"
             }
           ]
         }
@@ -23669,8 +24047,12 @@
         }
       },
       {
-        "name": "Legendary Resistance (4/Day)",
-        "desc": "If the pit fiend fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the pit fiend fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 4
+        }
       },
       {
         "name": "Magic Resistance",
@@ -23768,8 +24150,13 @@
         ]
       },
       {
-        "name": "Hellfire Spellcasting (Recharge 4–6)",
+        "name": "Hellfire Spellcasting",
         "desc": "The pit fiend casts Fireball (level 5 version) twice, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 21). It can replace one Fireball with Hold Monster (level 7 version) or Wall of Fire.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 4
+        },
         "spellcasting": {
           "ability": {
             "index": "cha",
@@ -24029,8 +24416,12 @@
     ],
     "bonus_actions": [
       {
-        "name": "Divine Aid (2/Day)",
+        "name": "Divine Aid",
         "desc": "The planetar casts Cure Wounds, Invisibility, Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting.",
+        "usage": {
+          "type": "per day",
+          "times": 2
+        },
         "spellcasting": {
           "ability": {
             "index": "cha",
@@ -24048,41 +24439,25 @@
               "index": "cure-wounds",
               "name": "Cure Wounds",
               "level": 1,
-              "url": "/api/2024/spells/cure-wounds",
-              "usage": {
-                "type": "per day",
-                "times": 2
-              }
+              "url": "/api/2024/spells/cure-wounds"
             },
             {
               "index": "invisibility",
               "name": "Invisibility",
               "level": 2,
-              "url": "/api/2024/spells/invisibility",
-              "usage": {
-                "type": "per day",
-                "times": 2
-              }
+              "url": "/api/2024/spells/invisibility"
             },
             {
               "index": "lesser-restoration",
               "name": "Lesser Restoration",
               "level": 2,
-              "url": "/api/2024/spells/lesser-restoration",
-              "usage": {
-                "type": "per day",
-                "times": 2
-              }
+              "url": "/api/2024/spells/lesser-restoration"
             },
             {
               "index": "remove-curse",
               "name": "Remove Curse",
               "level": 3,
-              "url": "/api/2024/spells/remove-curse",
-              "usage": {
-                "type": "per day",
-                "times": 2
-              }
+              "url": "/api/2024/spells/remove-curse"
             }
           ]
         }
@@ -24245,8 +24620,12 @@
     ],
     "bonus_actions": [
       {
-        "name": "Divine Aid (1/Day)",
+        "name": "Divine Aid",
         "desc": "The priest casts Bless, Healing Word, or Sanctuary, using the same spellcasting ability as Spellcasting.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        },
         "spellcasting": {
           "ability": {
             "index": "wis",
@@ -24263,31 +24642,19 @@
               "index": "bless",
               "name": "Bless",
               "level": 1,
-              "url": "/api/2024/spells/bless",
-              "usage": {
-                "type": "per day",
-                "times": 1
-              }
+              "url": "/api/2024/spells/bless"
             },
             {
               "index": "healing-word",
               "name": "Healing Word",
               "level": 1,
-              "url": "/api/2024/spells/healing-word",
-              "usage": {
-                "type": "per day",
-                "times": 1
-              }
+              "url": "/api/2024/spells/healing-word"
             },
             {
               "index": "sanctuary",
               "name": "Sanctuary",
               "level": 1,
-              "url": "/api/2024/spells/sanctuary",
-              "usage": {
-                "type": "per day",
-                "times": 1
-              }
+              "url": "/api/2024/spells/sanctuary"
             }
           ]
         }
@@ -24456,8 +24823,12 @@
     ],
     "bonus_actions": [
       {
-        "name": "Divine Aid (3/Day)",
+        "name": "Divine Aid",
         "desc": "The priest casts Bless, Dispel Magic, Healing Word, or Lesser Restoration, using the same spellcasting ability as Spellcasting.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        },
         "spellcasting": {
           "ability": {
             "index": "wis",
@@ -24475,41 +24846,25 @@
               "index": "bless",
               "name": "Bless",
               "level": 1,
-              "url": "/api/2024/spells/bless",
-              "usage": {
-                "type": "per day",
-                "times": 3
-              }
+              "url": "/api/2024/spells/bless"
             },
             {
               "index": "dispel-magic",
               "name": "Dispel Magic",
               "level": 3,
-              "url": "/api/2024/spells/dispel-magic",
-              "usage": {
-                "type": "per day",
-                "times": 3
-              }
+              "url": "/api/2024/spells/dispel-magic"
             },
             {
               "index": "healing-word",
               "name": "Healing Word",
               "level": 1,
-              "url": "/api/2024/spells/healing-word",
-              "usage": {
-                "type": "per day",
-                "times": 3
-              }
+              "url": "/api/2024/spells/healing-word"
             },
             {
               "index": "lesser-restoration",
               "name": "Lesser Restoration",
               "level": 2,
-              "url": "/api/2024/spells/lesser-restoration",
-              "usage": {
-                "type": "per day",
-                "times": 3
-              }
+              "url": "/api/2024/spells/lesser-restoration"
             }
           ]
         }
@@ -24866,7 +25221,7 @@
         }
       },
       {
-        "name": "Scare (1/Day)",
+        "name": "Scare",
         "desc": "Wisdom Saving Throw: DC 10, one creature within 20 feet. Failure: The target has the Frightened condition. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
         "dc": {
           "dc_type": {
@@ -24876,6 +25231,10 @@
           },
           "dc_value": 10,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "per day",
+          "times": 1
         }
       },
       {
@@ -24975,7 +25334,7 @@
         ]
       },
       {
-        "name": "Baleful Command (Recharge 5–6)",
+        "name": "Baleful Command",
         "desc": "Wisdom Saving Throw: DC 18, each enemy in a 30-foot Emanation originating from the rakshasa. Failure: 28 (8d6) Psychic damage, and the target has the Frightened and Incapacitated conditions until the start of the rakshasa’s next turn.",
         "damage": [
           {
@@ -24995,6 +25354,11 @@
           },
           "dc_value": 18,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -25184,7 +25548,7 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5–6)",
+        "name": "Fire Breath",
         "desc": "Dexterity Saving Throw: DC 13, each creature in a 15-foot Cone. Failure: 24 (7d6) Fire damage. Success: Half damage.",
         "damage": [
           {
@@ -25204,6 +25568,11 @@
           },
           "dc_value": 13,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -25307,7 +25676,7 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5–6)",
+        "name": "Fire Breath",
         "desc": "Dexterity Saving Throw: DC 17, each creature in a 30-foot Cone. Failure: 56 (16d6) Fire damage. Success: Half damage.",
         "damage": [
           {
@@ -25327,6 +25696,11 @@
           },
           "dc_value": 17,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -25395,8 +25769,13 @@
     "challenge_rating": 17,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3,
+          "times_in_lair": 4
+        }
       }
     ],
     "actions": [
@@ -25456,7 +25835,7 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5–6)",
+        "name": "Fire Breath",
         "desc": "Dexterity Saving Throw: DC 21, each creature in a 60-foot Cone. Failure: 59 (17d6) Fire damage. Success: Half damage.",
         "damage": [
           {
@@ -25476,6 +25855,11 @@
           },
           "dc_value": 21,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -25615,8 +25999,13 @@
     "challenge_rating": 24,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 4,
+          "times_in_lair": 5
+        }
       }
     ],
     "actions": [
@@ -25676,7 +26065,7 @@
         ]
       },
       {
-        "name": "Fire Breath (Recharge 5–6)",
+        "name": "Fire Breath",
         "desc": "Dexterity Saving Throw: DC 24, each creature in a 90-foot Cone. Failure: 91 (26d6) Fire damage. Success: Half damage.",
         "damage": [
           {
@@ -25696,6 +26085,11 @@
           },
           "dc_value": 24,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -26040,8 +26434,13 @@
     ],
     "bonus_actions": [
       {
-        "name": "Swoop (Recharge 5–6)",
-        "desc": "If the roc has a creature Grappled, the roc flies up to half its Fly Speed without provoking Opportunity Attacks and drops that creature."
+        "name": "Swoop",
+        "desc": "If the roc has a creature Grappled, the roc flies up to half its Fly Speed without provoking Opportunity Attacks and drops that creature.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        }
       }
     ],
     "legendary_actions": [],
@@ -26830,7 +27229,7 @@
         ]
       },
       {
-        "name": "Death Glare (Recharge 5–6)",
+        "name": "Death Glare",
         "desc": "Wisdom Saving Throw: DC 11, one Frightened creature the hag can see within 30 feet. Failure: If the target has 20 Hit Points or fewer, it drops to 0 Hit Points. Otherwise, the target takes 13 (3d8) Psychic damage.",
         "damage": [
           {
@@ -26850,6 +27249,11 @@
           },
           "dc_value": 11,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -27355,7 +27759,7 @@
         ]
       },
       {
-        "name": "Cold Breath (Recharge 5–6)",
+        "name": "Cold Breath",
         "desc": "Constitution Saving Throw: DC 13, each creature in a 15-foot Cone. Failure: 18 (4d8) Cold damage. Success: Half damage.",
         "damage": [
           {
@@ -27375,6 +27779,11 @@
           },
           "dc_value": 13,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -27503,7 +27912,7 @@
         ]
       },
       {
-        "name": "Cold Breath (Recharge 5–6)",
+        "name": "Cold Breath",
         "desc": "Constitution Saving Throw: DC 17, each creature in a 30-foot Cone. Failure: 49 (11d8) Cold damage. Success: Half damage.",
         "damage": [
           {
@@ -27523,6 +27932,11 @@
           },
           "dc_value": 17,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -27603,8 +28017,13 @@
     "challenge_rating": 16,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3,
+          "times_in_lair": 4
+        }
       }
     ],
     "actions": [
@@ -27670,7 +28089,7 @@
         ]
       },
       {
-        "name": "Cold Breath (Recharge 5–6)",
+        "name": "Cold Breath",
         "desc": "Constitution Saving Throw: DC 20, each creature in a 60-foot Cone. Failure: 54 (12d8) Cold damage. Success: Half damage.",
         "damage": [
           {
@@ -27690,6 +28109,11 @@
           },
           "dc_value": 20,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -27880,8 +28304,13 @@
     "challenge_rating": 23,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 4,
+          "times_in_lair": 5
+        }
       }
     ],
     "actions": [
@@ -27947,7 +28376,7 @@
         ]
       },
       {
-        "name": "Cold Breath (Recharge 5–6)",
+        "name": "Cold Breath",
         "desc": "Constitution Saving Throw: DC 24, each creature in a 90-foot Cone. Failure: 67 (15d8) Cold damage. Success: Half damage.",
         "damage": [
           {
@@ -27967,6 +28396,11 @@
           },
           "dc_value": 24,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -28460,8 +28894,12 @@
         "desc": "If the solar dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its Hit Points somewhere in Mount Celestia."
       },
       {
-        "name": "Legendary Resistance (4/Day)",
-        "desc": "If the solar fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the solar fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 4
+        }
       },
       {
         "name": "Magic Resistance",
@@ -28625,8 +29063,12 @@
     ],
     "bonus_actions": [
       {
-        "name": "Divine Aid (3/Day)",
+        "name": "Divine Aid",
         "desc": "The solar casts Cure Wounds (level 2 version), Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        },
         "spellcasting": {
           "ability": {
             "index": "cha",
@@ -28644,31 +29086,19 @@
               "index": "cure-wounds",
               "name": "Cure Wounds",
               "level": 2,
-              "url": "/api/2024/spells/cure-wounds",
-              "usage": {
-                "type": "per day",
-                "times": 3
-              }
+              "url": "/api/2024/spells/cure-wounds"
             },
             {
               "index": "lesser-restoration",
               "name": "Lesser Restoration",
               "level": 2,
-              "url": "/api/2024/spells/lesser-restoration",
-              "usage": {
-                "type": "per day",
-                "times": 3
-              }
+              "url": "/api/2024/spells/lesser-restoration"
             },
             {
               "index": "remove-curse",
               "name": "Remove Curse",
               "level": 3,
-              "url": "/api/2024/spells/remove-curse",
-              "usage": {
-                "type": "per day",
-                "times": 3
-              }
+              "url": "/api/2024/spells/remove-curse"
             }
           ]
         }
@@ -28923,8 +29353,12 @@
     ],
     "reactions": [
       {
-        "name": "Burst of Ingenuity (2/Day)",
-        "desc": "Trigger: The sphinx or another creature within 30 feet makes an ability check or a saving throw. Response: The sphinx adds 2 to the roll."
+        "name": "Burst of Ingenuity",
+        "desc": "Trigger: The sphinx or another creature within 30 feet makes an ability check or a saving throw. Response: The sphinx adds 2 to the roll.",
+        "usage": {
+          "type": "per day",
+          "times": 2
+        }
       }
     ],
     "legendary_actions": [],
@@ -28991,8 +29425,13 @@
         "desc": "No magic can observe the sphinx remotely or detect its thoughts without its permission. Wisdom (Insight) checks made to ascertain its intentions or sincerity are made with Disadvantage."
       },
       {
-        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
-        "desc": "If the sphinx fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the sphinx fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3,
+          "times_in_lair": 4
+        }
       }
     ],
     "actions": [
@@ -29023,7 +29462,7 @@
         ]
       },
       {
-        "name": "Mind-Rending Roar (Recharge 5–6)",
+        "name": "Mind-Rending Roar",
         "desc": "Wisdom Saving Throw: DC 16, each enemy in a 300-foot Emanation originating from the sphinx. Failure: 35 (10d6) Psychic damage, and the target has the Incapacitated condition until the start of the sphinx’s next turn.",
         "damage": [
           {
@@ -29043,6 +29482,11 @@
           },
           "dc_value": 16,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -29252,8 +29696,13 @@
         "desc": "No magic can observe the sphinx remotely or detect its thoughts without its permission. Wisdom (Insight) checks made to ascertain its intentions or sincerity are made with Disadvantage."
       },
       {
-        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
-        "desc": "If the sphinx fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the sphinx fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3,
+          "times_in_lair": 4
+        }
       }
     ],
     "actions": [
@@ -29289,8 +29738,12 @@
         ]
       },
       {
-        "name": "Roar (3/Day)",
-        "desc": "The sphinx emits a magical roar. Whenever it roars, the roar has a different effect, as detailed below (the sequence resets when it takes a Long Rest):"
+        "name": "Roar",
+        "desc": "The sphinx emits a magical roar. Whenever it roars, the roar has a different effect, as detailed below (the sequence resets when it takes a Long Rest):",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       },
       {
         "name": "First Roar",
@@ -30088,7 +30541,7 @@
     ],
     "reactions": [
       {
-        "name": "Deflect Missile (Recharge 5–6)",
+        "name": "Deflect Missile",
         "desc": "Trigger: The giant is hit by a ranged attack roll and takes Bludgeoning, Piercing, or Slashing damage from it. Response: The giant reduces the damage it takes from the attack by 11 (1d10 + 6), and if that damage is reduced to 0, the giant can redirect some of the attack’s force. Dexterity Saving Throw: DC 17, one creature the giant can see within 60 feet. Failure: 11 (1d10 + 6) Force damage.",
         "damage": [
           {
@@ -30108,6 +30561,11 @@
           },
           "dc_value": 17,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -30288,8 +30746,13 @@
     ],
     "bonus_actions": [
       {
-        "name": "Slow (Recharge 5–6)",
+        "name": "Slow",
         "desc": "The golem casts the Slow spell, requiring no spell components and using Constitution as the spellcasting ability (spell save DC 17).",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "spellcasting": {
           "ability": {
             "index": "con",
@@ -30429,7 +30892,7 @@
         ]
       },
       {
-        "name": "Lightning Storm (Recharge 5–6)",
+        "name": "Lightning Storm",
         "desc": "Dexterity Saving Throw: DC 18, each creature in a 10-foot-radius, 40-foot-high Cylinder originating from a point the giant can see within 500 feet. Failure: 55 (10d10) Lightning damage. Success: Half damage.",
         "damage": [
           {
@@ -30449,6 +30912,11 @@
           },
           "dc_value": 18,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       },
       {
@@ -30761,8 +31229,12 @@
     "challenge_rating": 30,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (6/Day)",
-        "desc": "If the tarrasque fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the tarrasque fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 6
+        }
       },
       {
         "name": "Magic Resistance",
@@ -30864,7 +31336,7 @@
         ]
       },
       {
-        "name": "Thunderous Bellow (Recharge 5–6)",
+        "name": "Thunderous Bellow",
         "desc": "Constitution Saving Throw: DC 27, each creature and each object that isn’t being worn or carried in a 150-foot Cone. Failure: 78 (12d12) Thunder damage, and the target has the Deafened and Frightened conditions until the end of its next turn. Success: Half damage only.",
         "damage": [
           {
@@ -30884,6 +31356,11 @@
           },
           "dc_value": 27,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -31265,8 +31742,12 @@
         ]
       },
       {
-        "name": "Animate Trees (1/Day)",
-        "desc": "The treant magically animates up to two trees it can see within 60 feet of itself. Each tree uses the Treant stat block, except it has Intelligence and Charisma scores of 1, it can’t speak, and it lacks this action. The tree takes its turn immediately after the treant on the same Initiative count, and it obeys the treant. A tree remains animate for 1 day or until it dies, the treant dies, or it is more than 120 feet from the treant. The tree then takes root if possible."
+        "name": "Animate Trees",
+        "desc": "The treant magically animates up to two trees it can see within 60 feet of itself. Each tree uses the Treant stat block, except it has Intelligence and Charisma scores of 1, it can’t speak, and it lacks this action. The tree takes its turn immediately after the treant on the same Initiative count, and it obeys the treant. A tree remains animate for 1 day or until it dies, the treant dies, or it is more than 120 feet from the treant. The tree then takes root if possible.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "legendary_actions": [],
@@ -31311,8 +31792,12 @@
     "challenge_rating": 5,
     "special_abilities": [
       {
-        "name": "Loathsome Limbs (4/Day)",
-        "desc": "If the troll ends any turn Bloodied and took 15+ Slashing damage during that turn, one of the troll’s limbs is severed, falls into the troll’s space, and becomes a Troll Limb. The limb acts immediately after the troll’s turn. The troll has 1 Exhaustion level for each missing limb, and it grows replacement limbs the next time it regains Hit Points."
+        "name": "Loathsome Limbs",
+        "desc": "If the troll ends any turn Bloodied and took 15+ Slashing damage during that turn, one of the troll’s limbs is severed, falls into the troll’s space, and becomes a Troll Limb. The limb acts immediately after the troll’s turn. The troll has 1 Exhaustion level for each missing limb, and it grows replacement limbs the next time it regains Hit Points.",
+        "usage": {
+          "type": "per day",
+          "times": 4
+        }
       },
       {
         "name": "Regeneration",
@@ -31480,8 +31965,12 @@
     "challenge_rating": 5,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day)",
-        "desc": "If the unicorn fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the unicorn fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3
+        }
       },
       {
         "name": "Magic Resistance",
@@ -31949,8 +32438,13 @@
     "challenge_rating": 13,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
-        "desc": "If the vampire fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the vampire fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3,
+          "times_in_lair": 4
+        }
       },
       {
         "name": "Misty Escape",
@@ -32064,8 +32558,13 @@
     ],
     "bonus_actions": [
       {
-        "name": "Charm (Recharge 5–6)",
+        "name": "Charm",
         "desc": "The vampire casts Charm Person, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17), and the duration is 24 hours. The Charmed target is a willing recipient of the vampire’s Bite, the damage of which doesn’t end the spell. When the spell ends, the target is unaware it was Charmed by the vampire.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "spellcasting": {
           "ability": {
             "index": "cha",
@@ -32207,8 +32706,13 @@
     "challenge_rating": 13,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
-        "desc": "If the vampire fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the vampire fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3,
+          "times_in_lair": 4
+        }
       },
       {
         "name": "Misty Escape",
@@ -32274,8 +32778,13 @@
     ],
     "bonus_actions": [
       {
-        "name": "Charm (Recharge 5–6)",
+        "name": "Charm",
         "desc": "The vampire casts Charm Person, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17), and the duration is 24 hours. The Charmed target is a willing recipient of the vampire’s Bite, the damage of which doesn’t end the spell. When the spell ends, the target is unaware it was Charmed by the vampire.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "spellcasting": {
           "ability": {
             "index": "cha",
@@ -32418,8 +32927,13 @@
     "challenge_rating": 13,
     "special_abilities": [
       {
-        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
-        "desc": "If the vampire fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the vampire fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3,
+          "times_in_lair": 4
+        }
       },
       {
         "name": "Misty Escape",
@@ -32452,8 +32966,13 @@
     ],
     "bonus_actions": [
       {
-        "name": "Charm (Recharge 5–6)",
+        "name": "Charm",
         "desc": "The vampire casts Charm Person, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17), and the duration is 24 hours. The Charmed target is a willing recipient of the vampire’s Bite, the damage of which doesn’t end the spell. When the spell ends, the target is unaware it was Charmed by the vampire.",
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
+        },
         "spellcasting": {
           "ability": {
             "index": "cha",
@@ -32649,7 +33168,7 @@
         ]
       },
       {
-        "name": "Spores (Recharge 6)",
+        "name": "Spores",
         "desc": "Constitution Saving Throw: DC 15, each creature in a 20-foot Emanation originating from the vrock. Failure: The target has the Poisoned condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. While Poisoned, the target takes 5 (1d10) Poison damage at the start of each of its turns. Emptying a flask of Holy Water on the target ends the effect early.",
         "damage": [
           {
@@ -32669,10 +33188,15 @@
           },
           "dc_value": 15,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 6
         }
       },
       {
-        "name": "Stunning Screech (1/Day)",
+        "name": "Stunning Screech",
         "desc": "Constitution Saving Throw: DC 15, each creature in a 20-foot Emanation originating from the vrock (demons succeed automatically). Failure: 10 (3d6) Thunder damage, and the target has the Stunned condition until the end of the vrock’s next turn.",
         "damage": [
           {
@@ -32692,6 +33216,10 @@
           },
           "dc_value": 15,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "per day",
+          "times": 1
         }
       }
     ],
@@ -33025,7 +33553,7 @@
         ]
       },
       {
-        "name": "Whelm (Recharge 4–6)",
+        "name": "Whelm",
         "desc": "Strength Saving Throw: DC 15, each creature in the elemental’s space. Failure: 22 (4d8 + 4) Bludgeoning damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 14). Until the grapple ends, the target has the Restrained condition, is suffocating unless it can breathe water, and takes 9 (2d8) Bludgeoning damage at the start of each of the elemental’s turns. The elemental can grapple one Large creature or up to two Medium or smaller creatures at a time with Whelm. As an action, a creature within 5 feet of the elemental can pull a creature out of it by succeeding on a DC 14 Strength (Athletics) check. Success: Half damage only.",
         "damage": [
           {
@@ -33053,6 +33581,11 @@
           },
           "dc_value": 15,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 4
         }
       }
     ],
@@ -35077,7 +35610,7 @@
         ]
       },
       {
-        "name": "Cold Breath (Recharge 5–6)",
+        "name": "Cold Breath",
         "desc": "Constitution Saving Throw: DC 12, each creature in a 15-foot Cone. Failure: 22 (5d8) Cold damage. Success: Half damage.",
         "damage": [
           {
@@ -35097,6 +35630,11 @@
           },
           "dc_value": 12,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -35206,7 +35744,7 @@
         ]
       },
       {
-        "name": "Cold Breath (Recharge 5–6)",
+        "name": "Cold Breath",
         "desc": "Constitution Saving Throw: DC 15, each creature in a 30-foot Cone. Failure: 40 (9d8) Cold damage. Success: Half damage.",
         "damage": [
           {
@@ -35226,6 +35764,11 @@
           },
           "dc_value": 15,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -35307,8 +35850,13 @@
         "desc": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, Difficult Terrain composed of ice or snow doesn’t cost it extra movement."
       },
       {
-        "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 3,
+          "times_in_lair": 4
+        }
       }
     ],
     "actions": [
@@ -35347,7 +35895,7 @@
         ]
       },
       {
-        "name": "Cold Breath (Recharge 5–6)",
+        "name": "Cold Breath",
         "desc": "Constitution Saving Throw: DC 19, each creature in a 60-foot Cone. Failure: 54 (12d8) Cold damage. Success: Half damage.",
         "damage": [
           {
@@ -35367,6 +35915,11 @@
           },
           "dc_value": 19,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -35493,8 +36046,13 @@
         "desc": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, Difficult Terrain composed of ice or snow doesn’t cost it extra movement."
       },
       {
-        "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
-        "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+        "name": "Legendary Resistance",
+        "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+        "usage": {
+          "type": "per day",
+          "times": 4,
+          "times_in_lair": 5
+        }
       }
     ],
     "actions": [
@@ -35533,7 +36091,7 @@
         ]
       },
       {
-        "name": "Cold Breath (Recharge 5–6)",
+        "name": "Cold Breath",
         "desc": "Constitution Saving Throw: DC 22, each creature in a 90-foot Cone. Failure: 63 (14d8) Cold damage. Success: Half damage.",
         "damage": [
           {
@@ -35553,6 +36111,11 @@
           },
           "dc_value": 22,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -36014,7 +36577,7 @@
         ]
       },
       {
-        "name": "Cold Breath (Recharge 5–6)",
+        "name": "Cold Breath",
         "desc": "Constitution Saving Throw: DC 12, each creature in a 15-foot Cone. Failure: 18 (4d8) Cold damage. Success: Half damage.",
         "damage": [
           {
@@ -36034,6 +36597,11 @@
           },
           "dc_value": 12,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -36857,7 +37425,7 @@
         ]
       },
       {
-        "name": "Rock (Recharge 6)",
+        "name": "Rock",
         "desc": "Ranged Attack Roll: +5, range 25/50 ft. Hit: 10 (2d6 + 3) Bludgeoning damage.",
         "damage": [
           {
@@ -36868,7 +37436,12 @@
             },
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 6
+        }
       }
     ],
     "legendary_actions": [],
@@ -38346,7 +38919,7 @@
         ]
       },
       {
-        "name": "Boulder Toss (Recharge 6)",
+        "name": "Boulder Toss",
         "desc": "The ape hurls a boulder at a point it can see within 90 feet. Dexterity Saving Throw: DC 17, each creature in a 5-foot-radius Sphere centered on that point. Failure: 24 (7d6) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition. Success: Half damage only.",
         "damage": [
           {
@@ -38366,6 +38939,11 @@
           },
           "dc_value": 17,
           "success_type": "half"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 6
         }
       }
     ],
@@ -39362,8 +39940,12 @@
     ],
     "bonus_actions": [
       {
-        "name": "Rampage (1/Day)",
-        "desc": "Immediately after dealing damage to a creature that was already Bloodied, the hyena can move up to half its Speed, and it makes one Bite attack."
+        "name": "Rampage",
+        "desc": "Immediately after dealing damage to a creature that was already Bloodied, the hyena can move up to half its Speed, and it makes one Bite attack.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "legendary_actions": [],
@@ -39513,8 +40095,12 @@
     ],
     "reactions": [
       {
-        "name": "Ink Cloud (1/Day)",
-        "desc": "Trigger: The octopus takes damage while underwater. Response: The octopus releases ink that fills a 10-foot Cube centered on itself, and the octopus moves up to its Swim Speed. The Cube is Heavily Obscured for 1 minute or until a strong current or similar effect disperses the ink."
+        "name": "Ink Cloud",
+        "desc": "Trigger: The octopus takes damage while underwater. Response: The octopus releases ink that fills a 10-foot Cube centered on itself, and the octopus moves up to its Swim Speed. The Cube is Heavily Obscured for 1 minute or until a strong current or similar effect disperses the ink.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "legendary_actions": [],
@@ -40041,7 +40627,7 @@
         ]
       },
       {
-        "name": "Web (Recharge 5–6)",
+        "name": "Web",
         "desc": "Dexterity Saving Throw: DC 13, one creature the spider can see within 60 feet. Failure: The target has the Restrained condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Poison and Psychic damage).",
         "dc": {
           "dc_type": {
@@ -40051,6 +40637,11 @@
           },
           "dc_value": 13,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 5
         }
       }
     ],
@@ -41337,8 +41928,12 @@
     ],
     "reactions": [
       {
-        "name": "Ink Cloud (1/Day)",
-        "desc": "Trigger: A creature ends its turn within 5 feet of the octopus while underwater. Response: The octopus releases ink that fills a 5-foot Cube centered on itself, and the octopus moves up to its Swim Speed. The Cube is Heavily Obscured for 1 minute or until a strong current or similar effect disperses the ink."
+        "name": "Ink Cloud",
+        "desc": "Trigger: A creature ends its turn within 5 feet of the octopus while underwater. Response: The octopus releases ink that fills a 5-foot Cube centered on itself, and the octopus moves up to its Swim Speed. The Cube is Heavily Obscured for 1 minute or until a strong current or similar effect disperses the ink.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
       }
     ],
     "legendary_actions": [],
@@ -42801,7 +43396,7 @@
         ]
       },
       {
-        "name": "Cacophony (Recharge 6)",
+        "name": "Cacophony",
         "desc": "Wisdom Saving Throw: DC 10, one creature in the swarm’s space. Failure: The target has the Deafened condition until the start of the swarm’s next turn. While Deafened, the target also has Disadvantage on ability checks and attack rolls.",
         "dc": {
           "dc_type": {
@@ -42811,6 +43406,11 @@
           },
           "dc_value": 10,
           "success_type": "none"
+        },
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 6
         }
       }
     ],

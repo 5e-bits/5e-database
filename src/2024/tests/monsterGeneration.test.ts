@@ -161,6 +161,20 @@ describe('generated 2024 monsters', () => {
     expect(errors).toEqual([]);
   });
 
+  it('parses usage out of every recharge/per-day name suffix', () => {
+    const errors: string[] = [];
+    for (const m of generated) {
+      for (const section of entrySections) {
+        for (const entry of (m[section] ?? []) as Monster[]) {
+          if (/\((?:\d+\/Day|Recharge)[^)]*\)$/.test(entry.name) && !entry.usage) {
+            errors.push(`${m.index}: ${entry.name}`);
+          }
+        }
+      }
+    }
+    expect(errors).toEqual([]);
+  });
+
   it('has no PDF debris in entries', () => {
     const errors: string[] = [];
     for (const m of generated) {
