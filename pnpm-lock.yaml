@@ -21,8 +21,8 @@ importers:
         specifier: ^4.0.7
         version: 4.0.7
       '@types/node':
-        specifier: ^26.4.1
-        version: 26.6.1
+        specifier: ^26.6.2
+        version: 26.6.2
       '@typescript-eslint/parser':
         specifier: ^8.69.0
         version: 8.70.0(eslint@10.10.0)(typescript@6.0.3)
@@ -64,7 +64,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: ^5.0.0
-        version: 5.0.1(@types/node@26.6.1)(@vitest/coverage-v8@5.0.1)(jsdom@30.1.0)(vite@8.3.0(@types/node@26.6.1))
+        version: 5.0.1(@types/node@26.6.2)(@vitest/coverage-v8@5.0.1)(jsdom@30.1.0)(vite@8.3.0(@types/node@26.6.2))
       zod:
         specifier: ^4.5.4
         version: 4.6.5
@@ -408,8 +408,8 @@ packages:
     resolution: {integrity: sha512-lPUYPpzA43baXqnd36cZ9xxorprybxXDzteVKCPAdp14ppHtFJHnXYvNpmBvtMUTb5fKXVv6sVbzo1LHkWhJlw==}
     deprecated: mongodb provides its own types. @types/mongodb is no longer needed.
 
-  '@types/node@26.6.1':
-    resolution: {integrity: sha512-VqGJBMCtdhqkBUCcBLvywI0NJ+KLuVzgNnlBUNFOQjqVxzo2lxLUNg1DSey8+u2u6ktswSAxg+s68QLzWHNOuA==}
+  '@types/node@26.6.2':
+    resolution: {integrity: sha512-X1P21scMv4zGKLYqjdGjaKa7COa0RKVYYZZN/NfvLQ1JegxFhdhpZG/Lyn8AXx6CDUavKAd11v6BvfpkDByK8g==}
 
   '@types/webidl-conversions@7.0.3':
     resolution: {integrity: sha512-CiJJvcRtIgzadHCYXw7dqEnMNRjhGZlYK05Mj9OyktqV8uVT8fD2BFOB7S1uwBE3Kj2Z+4UyPmFw/Ixgw/LAlA==}
@@ -1490,7 +1490,7 @@ snapshots:
       - snappy
       - socks
 
-  '@types/node@26.6.1':
+  '@types/node@26.6.2':
     dependencies:
       undici-types: 8.9.0
 
@@ -1573,7 +1573,7 @@ snapshots:
       obug: 2.2.1
       std-env: 4.2.0
       tinyrainbow: 3.1.1
-      vitest: 5.0.1(@types/node@26.6.1)(@vitest/coverage-v8@5.0.1)(jsdom@30.1.0)(vite@8.3.0(@types/node@26.6.1))
+      vitest: 5.0.1(@types/node@26.6.2)(@vitest/coverage-v8@5.0.1)(jsdom@30.1.0)(vite@8.3.0(@types/node@26.6.2))
 
   '@vitest/eslint-plugin@1.6.27(eslint@10.10.0)(typescript@6.0.3)(vitest@5.0.1)':
     dependencies:
@@ -1582,7 +1582,7 @@ snapshots:
       eslint: 10.10.0
     optionalDependencies:
       typescript: 6.0.3
-      vitest: 5.0.1(@types/node@26.6.1)(@vitest/coverage-v8@5.0.1)(jsdom@30.1.0)(vite@8.3.0(@types/node@26.6.1))
+      vitest: 5.0.1(@types/node@26.6.2)(@vitest/coverage-v8@5.0.1)(jsdom@30.1.0)(vite@8.3.0(@types/node@26.6.2))
     transitivePeerDependencies:
       - supports-color
 
@@ -1592,14 +1592,14 @@ snapshots:
     dependencies:
       '@vitest/istanbul-lib-coverage': 1.0.1
 
-  '@vitest/mocker@5.0.1(vite@8.3.0(@types/node@26.6.1))':
+  '@vitest/mocker@5.0.1(vite@8.3.0(@types/node@26.6.2))':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       '@vitest/spy': 5.0.1
       estree-walker: 3.0.3
       magic-string: 1.4.1
     optionalDependencies:
-      vite: 8.3.0(@types/node@26.6.1)
+      vite: 8.3.0(@types/node@26.6.2)
 
   '@vitest/spy@5.0.1': {}
 
@@ -2136,7 +2136,7 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  vite@8.3.0(@types/node@26.6.1):
+  vite@8.3.0(@types/node@26.6.2):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.7
@@ -2144,13 +2144,13 @@ snapshots:
       rolldown: 1.2.9
       tinyglobby: 0.2.17
     optionalDependencies:
-      '@types/node': 26.6.1
+      '@types/node': 26.6.2
       fsevents: 2.3.3
 
-  vitest@5.0.1(@types/node@26.6.1)(@vitest/coverage-v8@5.0.1)(jsdom@30.1.0)(vite@8.3.0(@types/node@26.6.1)):
+  vitest@5.0.1(@types/node@26.6.2)(@vitest/coverage-v8@5.0.1)(jsdom@30.1.0)(vite@8.3.0(@types/node@26.6.2)):
     dependencies:
       '@types/chai': 5.2.3
-      '@vitest/mocker': 5.0.1(vite@8.3.0(@types/node@26.6.1))
+      '@vitest/mocker': 5.0.1(vite@8.3.0(@types/node@26.6.2))
       chai: 6.2.2
       es-module-lexer: 2.3.2
       expect-type: 1.4.0
@@ -2161,10 +2161,10 @@ snapshots:
       tinybench: 6.1.4
       tinyexec: 1.3.0
       tinyglobby: 0.2.17
-      vite: 8.3.0(@types/node@26.6.1)
+      vite: 8.3.0(@types/node@26.6.2)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 26.6.1
+      '@types/node': 26.6.2
       '@vitest/coverage-v8': 5.0.1(vitest@5.0.1)
       jsdom: 30.1.0
     transitivePeerDependencies:
