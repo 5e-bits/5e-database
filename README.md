@@ -1,5 +1,8 @@
 # 5e-database
 
+> [!WARNING]
+> **This repository is deprecated and archived.** The database, along with everything else, now lives in the [5e SRD API repository](https://github.com/5e-bits/5e-srd-api). Please open issues and pull requests there.
+
 ![Build Status](https://github.com/5e-bits/5e-database/workflows/5e%20Database%20CI/badge.svg?branch=main)
 [![Discord](https://img.shields.io/discord/656547667601653787)](https://discord.gg/TQuYTv7)
 
